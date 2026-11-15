@@ -1,0 +1,17 @@
+{
+ "latest": "2026-11-13",
+ "dates": [
+  {
+   "date": "2026-11-13",
+   "br": true,
+   "audio": true,
+   "files": [
+    "doberman-swns.mp3",
+    "speed-english.mp3",
+    "speed-soty.mp3",
+    "stable-ronaldo-speech.mp3"
+   ],
+   "main": true
+  }
+ ]
+}

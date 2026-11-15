@@ -1,0 +1,131 @@
+{
+  "weather": {
+    "temp": "37°",
+    "cond": "Light Rain",
+    "advisory": "Winter Weather Advisory until Sat 7am",
+    "traffic": "Advisory in effect, leave extra time",
+    "high": "38°",
+    "low": "36°",
+    "tonight": "Snow Showers then Rain And Snow Showers",
+    "updated": "2026-11-13T15:13-05:00",
+    "source": [
+      "https://api.weather.gov/stations/KTVC/observations/latest",
+      "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+      "https://api.weather.gov/alerts/active?zone=MIZ026"
+    ],
+    "advisory_detail": {
+      "active": true,
+      "headline": "Winter Weather Advisory issued November 13 at 12:36PM EST until November 14 at 7:00AM EST by NWS Gaylord MI",
+      "areas": "Grand Traverse",
+      "until": "2026-11-14T07:00:00-05:00"
+    }
+  },
+  "vibe": {
+    "id": "vibe",
+    "title": "Vibe Check",
+    "category": "Daily",
+    "type": "text",
+    "content": "VIBE CHECK · FRIDAY THE 13TH<br><br>❄️ WINTER WEATHER ADVISORY until 1 PM<br>• GT, Leelanau and Benzie counties<br>• 1 to 2 more inches, mostly on the higher ground<br>• Under an inch in eastern GT County<br>• Slippery roads this morning<br><br>🌡 TODAY<br>• Snow showers this morning, then rain and snow this afternoon<br>• High near 42, dropping to 38<br>• North wind 5 to 10 mph<br><br>🌙 TONIGHT: rain and snow, low 33<br>☁️ SAT: high 44 · SUN: high 45<br><br>🏫 SCHOOLS: not confirmed, so check before you call it<br>🚗 ROADS: nothing verified overnight. Slow down and leave early.<br><br>It's Friday. Live, Local and Loud!<br>📱 231-929-4487",
+    "notes": "Weather: NWS Gaylord, Traverse City point forecast, updated 4:11 AM ET. Forecast: https://api.weather.gov/gridpoints/APX/29,46/forecast Advisory: https://api.weather.gov/alerts/active?point=44.7631,-85.6206<br>Schools PRODUCER FLAG: not confirmed. Breaker's 3:36 AM ET check of 9&10's closings page showed none. Backup check of UpNorthLive and TCAPS at 4:21 AM ET didn't load a list that could be confirmed. Recheck 9&10 or UpNorthLive before you air \"no closings.\"<br>Roads: no verified closings, crashes, or outages overnight (GT County Road Commission, MDOT, TCPD, per Breaker's pulse).<br>Sponsor light: TVC Airport. Continuity: Courtney Rehmer.<br>Source sheet: /workspace/morning-rush/hot-sheet-2026-11-13.md Drive: https://docs.google.com/document/d/1GsjTO_iYAbBAzIPY7buNm7wQWk4JUW9mog5I9GxJTYo/edit?usp=drivesdk",
+    "custom": false
+  },
+  "mood": {
+    "id": "mood",
+    "title": "Mood Boost",
+    "category": "6AM",
+    "type": "text",
+    "content": "Natalie Imbruglia, \"Torn,\" 1998. Stat: 11 weeks at No. 1 on Billboard's Hot 100 Airplay chart, and it never even made the Hot 100. It wasn't sold as a U.S. single, and back then you had to be a single to chart. Billboard changed that rule in December 1998.",
+    "notes": "Song pick, swapped live at 6:30 AM per Truce (replaced RHCP \"Snow (Hey Oh)\"). Source: Billboard chart history; rule change Dec 1998.",
+    "custom": false
+  },
+  "buzz": {
+    "id": "buzz",
+    "title": "Daily Buzz",
+    "category": "7AM",
+    "type": "text",
+    "content": "DAILY BUZZ · FRI NOV 13<br><br>━━ LOCAL ━━<br><br>1) TC HOLIDAY KICKOFF SPLITS INTO TWO NIGHTS<br>• Fri Nov 20: Light Up Downtown with cookies, cocoa and shopping<br>• 5 PM stage show, tree lighting around 6:30<br>• Sat Nov 21: Light Parade, 6 to 8 PM<br>• Kids follow Santa down the route \"like he's Elvis\" (Sara Klebba, DDA)<br>➜ TAKE: Yes, another tree story this week. Fort Worth got our spruce, but this one stays here, and nobody's putting it on a trailer.<br>➜ BAIT: Tree lighting Friday or parade Saturday?<br><br>2) 72ND MANCELONA BUCK POLE<br>• Firearm deer season opens Sunday, Nov 15<br>• The pole opens at daybreak Sunday and closes Mon Nov 16 at 6:30 PM<br>• Prizes for first deer, heaviest, widest rack and most points<br>• \"People take their kids out of school for it.\" (Kayla Moore)<br>➜ TAKE: Some towns have a parade. Mancelona has a pole full of bucks.<br>➜ BAIT: Biggest deer your family ever got, and how much has the story grown?<br><br>3) NORTHPORT'S MILL POND IS GOING AWAY<br>• The pond has been there since the 1930s<br>• Voters said no to about $2 million to fix the dam<br>• The plan is to take the dam down and let the creek run natural<br>• No timeline yet, and some feelings are hurt over the fishing derby<br>➜ TAKE: Ninety years of pond, gone with one vote.<br>➜ BAIT: Got a Mill Pond or fishing derby memory?<br><br>━━ NATIONAL ━━<br><br>4) HUMPBACK WHALE IN THE HUDSON<br>• It was breaching off the West Village yesterday, by Piers 40 to 45<br>• Gotham Whale wants photos to ID it<br>• It might still be in the harbor today<br>• Not a first: 272 NYC whale sightings back in 2018<br>➜ BAIT: Seen anything wild on Grand Traverse Bay?<br><br>5) THE DOBERMAN WHO KNEW 🔊<br>• Saraya the Doberman wouldn't leave baby Alexander's side<br>• His heart was racing at 280 beats a minute<br>• It's a treatable heart condition, and he's doing great now<br>• Saraya isn't a trained service dog. She just wouldn't quit.<br>🔊 CLIP: doberman-swns.mp3 (1:20)<br>   IN: \"I'm Kim Reynolds. This is Saraya.\"<br>   OUT: \"Yeah, he looks happy. Yes.\"<br>➜ BAIT: Has your dog ever tried to tell you something?<br><br>6) STREAMER AWARDS: SPEED THREE-PEATS 🔊<br>• IShowSpeed won Streamer of the Year for the third straight year<br>• He also won Best IRL and Best Series for his World Cup Tour<br>• Kai Cenat won 3, including Best Collab with Tyla<br>• Katie B also won 3<br>• Jynxzi is Gamer of the Year<br>• The show moved up from Nov 17 to get out of the way of GTA VI<br>🔊 CLIP: speed-english.mp3 (0:46)<br>   IN: \"And the winner is…\"<br>   OUT: \"Thank y'all so much.\"<br>   This is his English Best IRL speech, thanking his cameraman and team.<br>➜ BAIT: Whose house was cheering for Speed or Kai?<br><br>7) HOBOKEN: MOST WALKABLE CITY IN AMERICA<br>• Walk Score 97 out of 100<br>• Michigan's most walkable city is Hamtramck, at 82<br>➜ BAIT: Could downtown TC take Hamtramck's crown?<br><br>8) TEEN BUILDS A FREE APP FOR AUTISM CAREGIVERS<br>• Shashank Madala started at 15, with just one computer science class<br>• His app, Kora, helps caregivers read a child's emotions<br>• It's free and used by 700+ families in 12 countries<br>➜ BAIT: Know a caregiver or teacher who'd use this?<br><br>━━ BITS ━━<br>• First advisory of the year: who's driving like it's July, and who's crawling at 25?<br>• Deer opener at daybreak and the Lions at 9:30 Sunday: blind with one earbud, or skip one?<br>• The Petoskey jar: how many are in yours, and have you ever polished one?<br><br>━━ SPORTS ━━<br>• TONIGHT 7 PM: Kingsley (11-0) vs. Meridian (11-0), D6 regional final, streaming on NFHS<br>• SAT 3:30: Michigan at No. 18 Oregon (FS1)<br>• SAT 4:15: MSU (3-6) vs. Washington (5-4) (BTN)<br>• SUN 9:30 AM: Lions (6-2) vs. Patriots (5-4) in Munich (FOX)<br><br>📱 Text: 231-929-4487",
+    "notes": "CREDITS: Stories 1-3 photos and stories: UpNorthLive / WPBN. Whale: Gotham Whale, The Guardian, NY Post (photos: Erich Della Volpe, Classic Harbor Line, Ant Taboada). Doberman: Somerset Live, Good News Network, SWNS clip, Washington Post. Streamer Awards: The Streamer Awards, IBTimes UK. Hoboken: Walk Score data via Only In Your State, Travel & Leisure. Kora: Good News Network, Autism Spectrum News. Sports: MHSAA, Midland Daily News, NFHS, MGoBlue, MSU Athletics, Detroit Lions.<br><br>CLIPS (cut, clean, leveled; no bleeps):<br>- Doberman: /workspace/morning-rush/clips/2026-11-13/doberman-swns.mp3 (1:20). Credit SWNS. IN: \"I'm Kim Reynolds. This is Saraya.\" OUT: \"Yeah, he looks happy. Yes.\" Hospital ice-bath / IV detail was already cut. PRODUCER FLAG: do not lock baby Alexander's age in the talk-up (reports said 5, 6, or 7 months). The clip itself has dad John saying he's \"coming up seven months\" — live with that, or keep the talk-up as \"baby son Alexander.\" Prefer Somerset Live, Good News Network, and the SWNS clip on air.<br>- Speed Best IRL (English, the air clip): /workspace/morning-rush/clips/2026-11-13/speed-english.mp3 (0:46). Credit The Streamer Awards. IN: \"And the winner is…\" OUT: \"Thank y'all so much.\" This is his Best IRL Streamer acceptance, in English, thanking his cameraman Slipz and his team. Official source video: https://www.youtube.com/watch?v=7FQEqNiEP0U<br>- Speed SOTY (backup only, not the air clip): /workspace/morning-rush/clips/2026-11-13/speed-soty.mp3 (0:48). Credit The Streamer Awards. IN: \"All right, so the streamer of the year…\" OUT: \"Aku cinta kalian semuanya.\" The acceptance speech is in Indonesian. Official source: https://x.com/StreamerAwards/status/2121111550971027900<br>- Stable Ronaldo, Best Reality Streamer (English): /workspace/morning-rush/clips/2026-11-13/stable-ronaldo-speech.mp3 (1:27). Credit The Streamer Awards. IN: \"When I got nominated for this award last year\" OUT: \"Thank y'all.\" Emotional keep-going speech after losing the same category last year. No bleeps. Official source: https://x.com/StreamerAwards/status/2121098684691775988. Ironmouse won Best VTuber, but no 30-90s acceptance speech of hers turned up (official YouTube and X clips are red-carpet presenter announcements).<br>PRODUCER FLAGS: Katie B won three awards, not two (Best Breakout Streamer, Best Minecraft Streamer, and Best Stream Duo with Vanilla Mace). Joe Bartolozzi won President of Chat, not Best Brand Partner (that was Red Bull). Don't cite a December date for the ceremony; it happened Nov 12 after moving up from Nov 17. Don't call Shashank Madala a current 15-year-old.<br>Optional town buzz, if you have room: Mackinac ferries — Michigan AG Dana Nessel filed an antitrust lawsuit Thursday against the Hoffman Family of Companies, saying it bought up every Mackinac Island ferry line and nearly all the long-term parking lots. About 90% of island traffic rides a Hoffman-owned ferry. (UpNorthLive / WPBN) https://upnorthlive.com/news/local/theyve-raised-prices-limited-services-ag-sues-over-alleged-mackinac-ferry-monopoly-mackinac-island-hoffman-family-of-companies<br>Local sources: Light Up / Parade https://upnorthlive.com/news/local/traverse-city-gets-ready-for-holidays-with-nov-20-tree-lighting-and-nov-21-light-parade ; Buck Pole https://upnorthlive.com/news/local/hunters-to-gather-in-mancelona-for-northern-michigans-72nd-buck-pole-antrim-county ; Northport Mill Pond https://upnorthlive.com/news/local/leelanau-county-to-take-down-mill-pond-dam-after-millage-proposal-was-voted-down ; Kingsley-Meridian MHSAA / Midland Daily News / NFHS Network; Michigan at Oregon: MGoBlue; MSU vs. Washington: MSU Athletics; Lions: Detroit Lions.<br>National package: /workspace/morning-rush/national-headlines-2026-11-13.md Drive: https://docs.google.com/document/d/1eYr4KyZ-efmQSfUltpqxtltvZSeD5wOjdwOclNsscqA/edit?usp=drivesdk",
+    "custom": false
+  },
+  "verse": {
+    "id": "verse",
+    "title": "Verse Reverse",
+    "category": "Optional",
+    "type": "text",
+    "content": "",
+    "notes": "Optional / can revive. No obvious fun Verse Reverse for today, so this is left empty.",
+    "custom": false
+  },
+  "mental": {
+    "id": "mental",
+    "title": "Mental Health Minute",
+    "category": "8:05",
+    "type": "text",
+    "content": "Give Yourself the Ten Minutes<br><br>This morning's the first real lake-effect snow of the year, and with an advisory up until one this afternoon, a lot of us are about to find out the roads are slicker than our brains are ready for. When we're running late on a morning like this, our shoulders creep up around our ears and every slow car in front of us turns into a personal enemy, so the stress is already riding shotgun before we even get out of the driveway. Here's your move for today. Leave ten minutes earlier than you normally would, and when you get in the car, before you put it in drive, take three slow breaths while the defroster does its thing. Because you've got those extra minutes in your pocket, the slow drive stops feeling like an emergency and goes back to being just a drive. Then you get where you're going a little calmer, and the people around you get the better version of you too. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me how long your drive in took this morning.",
+    "notes": "Full script from the Fri Nov 13 Morning Rush Hot Sheet. Aimed at the adult in the driver's seat. Advice already fits today's advisory / sloppy-road weather. Do not invent extra claims.",
+    "custom": false
+  },
+  "flash": {
+    "id": "flash",
+    "title": "Flashback",
+    "category": "Daily",
+    "type": "text",
+    "content": "The Cure, \"Friday I'm in Love,\" 1992. It's Friday, it's November, and this is still the easiest way to shake off a sloppy commute.",
+    "notes": "Late 80s / early 90s pick. Year verified: single released May 1992 (The Cure official site / Wikipedia). Checked week-used.md; no Flashback song repeats logged this week. Not an Off the Charts pick, and not a repeat of earlier OTC suggestions (Jamiroquai, Coldplay, Sade, Pearl Jam, Bender).",
+    "custom": false
+  },
+  "cross": {
+    "id": "cross",
+    "title": "Cross Talk",
+    "category": "Midday",
+    "type": "text",
+    "content": "CROSS TALK with Courtney Rehmer<br><br>TOPIC: The Petoskey jar 🪨<br>• Everybody up here has a jar of unpolished Petoskeys<br>• Northport Trading Post teaches polishing classes<br>• Tip: you can't over-polish, but don't rush the sanding wheel<br><br>ASK:<br>1. How many are in your jar right now?<br>2. Ever actually polished one?<br>3. Best beach for them, or is it a secret spot?",
+    "notes": "Spelling is Courtney Rehmer. Credit: UpNorthLive / WPBN. https://upnorthlive.com/news/local/exploring-michigan-leelanau-county-shop-offers-petoskey-stone-polishing-classes<br>The Sunday deer-opener vs. Lions-in-Munich bit is already in Daily Buzz BITS, so Cross Talk uses the lighter Petoskey jar topic instead of repeating it.",
+    "custom": false
+  },
+  "offcharts": {
+    "id": "offcharts",
+    "title": "Off the Charts",
+    "category": "Fri 8:30",
+    "type": "text",
+    "content": "SPONSOR (read first):<br>Z93 OFF THE CHARTS is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort, where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com.<br><br>OFF THE CHARTS · Gigi Perez, \"Sailor Song\" (2024)<br><br>• Released July 26, 2024, on her own, after Interscope dropped her<br>• She wrote it in her bedroom, and the hook \"kiss me on the mouth and love me like a sailor\" came to her in the shower<br>• Recorded with one mic, stacking three vocals: left, right and center<br>• It blew up on TikTok first, with 75,000+ videos using it within a month of release<br>• No. 1 in the UK, Ireland and Latvia. In the UK it knocked off Sabrina Carpenter, who had held No. 1 for 21 weeks.<br>• Here in the US it only got to No. 22 on the Hot 100<br>➜ THE ANGLE: No. 1 overseas, and America left it at 22<br>➜ BAIT: Did you find this one on TikTok or on the radio?<br>📱 231-929-4487",
+    "notes": "Backup: Pearl Jam, \"Black\" (1991). The band refused to release it as a commercial single, even after Epic pushed them, because Eddie Vedder thought the song was too personal. It still reached No. 3 on Billboard's Mainstream Rock chart and No. 20 on Alternative Airplay — and it never hit the Hot 100. Official audio (5:46): https://www.youtube.com/watch?v=qgaRVvAKoqQ Optional live, MTV Unplugged (5:41): https://www.youtube.com/watch?v=pOM-h-bCHVA<br>Not repeats: earlier Off the Charts used/suggested picks were The Paradox \"Bender\" (played Oct 23), plus Jamiroquai \"Virtual Insanity\" and Coldplay \"The Scientist\" (suggested Nov 6, play not confirmed).<br>Source: /workspace/morning-rush/national-headlines-2026-11-13.md<br>Alt sponsor read (older version): Z93 OFF THE CHARTS is brought to you by Shanty Creek Resorts. When it's time for you to enjoy the wide-open spaces of Northern Michigan, check out Shanty Creek Resort, with over 275 lodging options, 42 downhill ski and snowboard runs, and plenty of outdoor fun.<br>TODAY'S PICK (Truce): Gigi Perez facts: Wikipedia (Sailor Song), Official Charts (UK No. 1, Nov 1 2024, ended Sabrina Carpenter's 21 weeks), Billboard (Hot 100 debut at No. 98; peak No. 22 per Chartify). ⚠ Lyric heads-up: \"I don't believe in God / But I believe that you're my savior.\" It touches the no-religion rule, so check your edit.<br>Earlier pick, Sade \"King of Sorrow\", replaced.",
+    "custom": false
+  },
+  "bit-trivia": {
+    "id": "bit-trivia",
+    "title": "BIT: This Day",
+    "category": "Bit",
+    "type": "text",
+    "content": "THIS DAY · NOV 13<br><br>• 1956 (70 yrs ago): the Supreme Court ends Montgomery bus segregation, in the Rosa Parks case<br>• 1940 (86 yrs ago): Disney's Fantasia premieres. Disney invented a stereo system just to play it.<br>• 🎂 Jimmy Kimmel turns 59<br>• 🎂 Steve Zahn turns 59<br>• 🎂 Whoopi Goldberg turns 71<br><br>➜ BAIT: Which Fantasia scene still lives in your head?<br>📱 231-929-4487",
+    "notes": "Credit: Supreme Court Historical Society (Browder v. Gayle); D23 / Disney Archives (Fantasia premiere, Nov 13, 1940); UPI's Nov 13, 2026 famous-birthdays list (Kimmel, Zahn, Goldberg).<br>PRODUCER FLAGS: Fantasia premiered on this date; it was not a normal wide release (Fantasound meant it opened in only 14 theaters at first). The Court affirmed the ruling on Nov 13, 1956, in a short per curiam decision; the boycott ended Dec 20 after the city complied. No official, rights-clean Fantasia or Kimmel clip was confirmed — keep this as a talker.",
+    "custom": true
+  },
+  "events": {
+    "id": "events",
+    "title": "Events",
+    "category": "Daily",
+    "type": "text",
+    "content": "EVENTS<br><br>• TODAY 9:30 AM: Red Kettle kickoff with Santa, Farm & Fleet, TC<br>• TONIGHT 7 PM: Kingsley vs. Meridian, D6 regional final<br>• THRU SAT: Kalkaska Festival of Trees and TC Beer Week<br>• SAT 10 AM: Great Beerd Run 5K, Grand Traverse Resort<br>• SUN–MON: 72nd Mancelona Buck Pole (opens at daybreak, closes Mon 6:30 PM)<br>• FRI NOV 20: Light Up Downtown, tree lighting around 6:30<br>• SAT NOV 21: Light Parade, 6 to 8 PM",
+    "notes": "Credits: The Ticker calendar (Festival of Trees, Beer Week); UpNorthLive (Red Kettle, Beerd Run, Buck Pole, Light Up / Light Parade); MHSAA (Kingsley game).<br>Red Kettle: https://upnorthlive.com/news/local/salvation-army-red-kettle-campaign-kicks-off-in-traverse-city-friday-250000-goal-grand-traverse",
+    "custom": true
+  },
+  "fb": {
+    "id": "fb",
+    "title": "Facebook Drafts",
+    "category": "Social",
+    "type": "text",
+    "content": "FB DRAFTS (you post these)<br><br>1️⃣ EARLY SHOW (photo: buck pole)<br>🦌🧡 Firearm deer season opens SUNDAY, and the 72nd Mancelona Buck Pole opens at daybreak, with prizes for the first deer hung, the heaviest, the widest rack, and the most points! What's the biggest deer anybody in your family ever brought home? Tell us below or text 231-929-4487 👇<br>📸 Photo: UpNorthLive / WPBN<br><br>2️⃣ MID SHOW (photo: studio snap)<br>🏈🦌 BIG one tonight in Kingsley! The Stags (11-0) host Sanford Meridian (11-0) at 7 PM in the Division 6 regional final, and somebody's perfect season ends tonight. Heading out to the game or watching the stream? Drop a GO STAGS below or text 231-929-4487 👇<br><br>3️⃣ LATE SHOW (photo: studio snap)<br>🧸 KEEP IT or KICK IT: the FURBY. The 90s Christmas toy every kid begged for, or the creepy little guy that kept talking in the closet at 3 AM? Vote below or text 231-929-4487 👇",
+    "notes": "Drafts only — nothing gets posted without Truce's OK. Photo credits stay inside each draft. Official Z93 logo only if a graphic is made: /workspace/z93/logo/z93_official_from_truce.png<br>MEDIA: Post 1 uses the UpNorthLive buck pole photo (/workspace/morning-rush/2026-11-13-buckpole.jpg). Posts 2 and 3 use a studio snap, or the official Z93 logo if you make a graphic.",
+    "custom": true
+  },
+  "clips": {
+    "id": "clips",
+    "title": "Audio Clips",
+    "category": "buzz",
+    "type": "text",
+    "content": "AUDIO CLIPS · READY TO PLAY 🔊<br><br>1) THE DOBERMAN WHO KNEW (Buzz story 5)<br>• File: doberman-swns.mp3<br>• Runs 1:20<br>• IN: \"I'm Kim Reynolds. This is Saraya.\"<br>• OUT: \"Yeah, he looks happy. Yes.\"<br>• Clean, nothing bleeped<br><br>2) SPEED, BEST IRL STREAMER (Buzz story 6)<br>• File: speed-english.mp3<br>• Runs 0:46<br>• IN: \"And the winner is…\"<br>• OUT: \"Thank y'all so much.\"<br>• English. Clean, nothing bleeped<br><br>3) STABLE RONALDO, BEST REALITY STREAMER<br>• File: stable-ronaldo-speech.mp3<br>• Runs 1:27<br>• IN: \"When I got nominated for this award last year\"<br>• OUT: \"Thank y'all.\"<br>• English, emotional. Clean, nothing bleeped",
+    "notes": "Files are in /workspace/morning-rush/clips/2026-11-13/. Each is an MP3 at 320k, normalized to -16 LUFS. Credits: Doberman audio from SWNS. Speed Best IRL and Stable Ronaldo Best Reality audio from The Streamer Awards broadcast. Speed source: https://www.youtube.com/watch?v=7FQEqNiEP0U Stable source: https://x.com/StreamerAwards/status/2121098684691775988",
+    "custom": true
+  }
+}

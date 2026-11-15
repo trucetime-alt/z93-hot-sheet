@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0d10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Z93 Hot Sheet</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+:root{
+  --bg:#0b0d10; --panel:#151a20; --panel2:#1d242c; --line:#2c3640;
+  --text:#f2f4f6; --dim:#a9b4bf; --accent:#ffcc33; --accent2:#33d6ff;
+  --warn:#ff5a3c; --ok:#3ddc84; --fs:20px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);
+  font:var(--fs)/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:2px solid var(--line);background:var(--panel2);border-radius:14px;
+  min-height:52px;padding:8px 16px;font-weight:700}
+button:active{transform:scale(.97)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent2)}
+#top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:2px solid var(--line);
+  padding:max(8px,env(safe-area-inset-top)) 10px 8px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;margin-right:auto}
+#clock{font-variant-numeric:tabular-nums;font-weight:800;font-size:1.05em}
+/* weather bar */
+#wx{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:8px}
+#wx .temp{font-size:2.2em;font-weight:900;line-height:1;padding:6px 12px;background:var(--panel);
+  border-radius:14px;display:flex;align-items:center}
+#wx .meta{flex:1 1 220px;background:var(--panel);border-radius:14px;padding:6px 12px;min-width:0}
+#wx .cond{font-weight:800;font-size:1.1em}
+#wx .small{color:var(--dim);font-size:.8em}
+#adv{width:100%;border-radius:14px;padding:8px 12px;font-weight:800;display:none}
+#adv.on{display:block;background:var(--warn);color:#fff}
+#adv.past{display:block;background:transparent;color:var(--dim);border:1px dashed var(--line);font-size:.7em;font-weight:600;padding:4px 10px}
+#traffic{width:100%;border-radius:14px;padding:6px 12px;background:#2a2410;color:var(--accent);font-weight:700}
+#traffic:empty{display:none}
+/* controls */
+#controls{margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+#controls button{min-width:52px}
+#dateLabel{font-weight:800;min-width:9em;text-align:center}
+#datePick{background:var(--panel2);border:2px solid var(--line);border-radius:14px;min-height:52px;padding:4px 10px;
+  color-scheme:dark}
+/* tabs */
+#tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:thin}
+#tabs button{flex:0 0 auto;white-space:nowrap}
+#tabs button[aria-selected="true"]{background:var(--accent);color:#111;border-color:var(--accent)}
+#tabs button .cat{display:block;font-size:.6em;font-weight:600;opacity:.8;line-height:1}
+#tabs button.empty{opacity:.5}
+main{padding:12px 12px 120px;max-width:980px;margin:0 auto}
+#status{padding:10px 14px;border-radius:14px;background:var(--panel);margin-bottom:12px;display:none}
+#status.show{display:block}
+#status.err{background:#3a1410;border:2px solid var(--warn)}
+.sec h2{margin:.2em 0;font-size:1.35em;color:var(--accent)}
+.sec .catline{color:var(--dim);font-weight:700;font-size:.8em;text-transform:uppercase;letter-spacing:.08em}
+.content{white-space:pre-wrap;word-wrap:break-word;background:var(--panel);border-radius:16px;
+  padding:14px 16px;margin:10px 0;font-size:1.05em}
+.content.empty{color:var(--dim);font-style:italic}
+details.notes{background:var(--panel);border-radius:14px;margin:10px 0;border:1px solid var(--line)}
+details.notes summary{padding:12px 16px;font-weight:700;color:var(--dim);cursor:pointer;min-height:48px}
+details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;color:var(--dim);font-size:.85em}
+/* audio */
+.player{background:var(--panel2);border:2px solid var(--line);border-radius:16px;padding:12px;margin:10px 0}
+.player .ptitle{font-weight:800;margin-bottom:6px}
+.player .pnote{color:var(--dim);font-size:.75em;margin-top:6px}
+.player .prow{display:flex;gap:10px;align-items:center}
+.player .pp{width:72px;height:72px;border-radius:50%;font-size:1.8em;background:var(--ok);color:#06210f;border:none;flex:0 0 auto}
+.player.playing .pp{background:var(--warn);color:#fff}
+.player .bar{flex:1;min-width:0}
+.player input[type=range]{width:100%;height:36px;accent-color:var(--accent)}
+.player .time{font-variant-numeric:tabular-nums;color:var(--dim);font-size:.85em}
+.player .stop{min-width:60px}
+.loadclips{width:100%;background:var(--accent2);color:#04222b;border-color:var(--accent2);font-size:1.05em;min-height:64px}
+#drop{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;
+  font-size:1.6em;font-weight:900;color:var(--accent);z-index:50;border:6px dashed var(--accent)}
+#drop.on{display:flex}
+.hint{color:var(--dim);font-size:.8em}
+@media (max-width:520px){
+  :root{--fs:18px}
+  #wx{gap:6px;margin-top:4px}
+  #wx .temp{font-size:1.6em;padding:4px 10px}
+  #wx .meta{flex-basis:0;padding:4px 10px}
+  #wx .small{display:none}
+  #traffic{font-size:.85em;padding:4px 10px}
+  #tabs{padding-top:6px}
+  #tabs button{min-height:48px;padding:6px 12px}
+  #dateLabel{min-width:0;flex:1}
+}
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="row">
+    <div class="brand">Z93 HOT SHEET</div>
+    <div id="clock">--:--</div>
+  </div>
+  <div id="wx" aria-live="polite">
+    <div class="temp" id="wxTemp">--</div>
+    <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div class="small" id="wxMore"></div></div>
+    <div id="adv"></div>
+    <div id="traffic"></div>
+  </div>
+  <nav id="tabs" role="tablist"></nav>
+</header>
+<main>
+  <div id="controls" class="row">
+    <button id="prevDay" aria-label="Previous weekday">◀</button>
+    <div id="dateLabel">Latest</div>
+    <button id="nextDay" aria-label="Next weekday">▶</button>
+    <input type="date" id="datePick" aria-label="Pick a date" list="dateList"><datalist id="dateList"></datalist>
+    <button id="latestBtn">Latest</button>
+    <button id="refreshBtn" aria-label="Refresh">⟳ Refresh</button>
+    <button id="fontDown" aria-label="Smaller text">A−</button>
+    <button id="fontUp" aria-label="Bigger text">A+</button>
+    <button id="fileBtn" aria-label="Open a JSON file">📂 Open file</button>
+    <input type="file" id="fileIn" accept=".json,application/json" multiple hidden>
+  </div>
+  <div id="status" role="status"></div>
+  <section id="view" class="sec"></section>
+</main>
+<div id="drop">Drop a hot-sheet JSON here</div>
+<script>
+(() => {
+'use strict';
+const $ = s => document.querySelector(s);
+const LS = window.localStorage;
+const isHttp = /^https?:$/.test(location.protocol);
+const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const MONS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+let state = { sheet:null, date:null, mode:'latest', source:'', tab:null, clips:[], clipsLoaded:false, clipsText:null };
+let blobUrls = [];
+let sheetIndex = null; // from sheets.json when hosted: {latest, dates:[{date,main,br,audio,files}]}
+async function loadIndex(){
+  if(!isHttp) return;
+  try{ sheetIndex=await fetchJson('sheets.json'); LS.setItem('hs:index',JSON.stringify(sheetIndex)); }
+  catch(e){ try{ sheetIndex=JSON.parse(LS.getItem('hs:index')||'null'); }catch(_){ sheetIndex=null; } }
+  const dl=$('#dateList'); dl.innerHTML='';
+  if(sheetIndex && sheetIndex.dates) for(const d of sheetIndex.dates){ const o=document.createElement('option'); o.value=d.date; dl.append(o); }
+}
+function indexEntry(date){ return sheetIndex && sheetIndex.dates ? sheetIndex.dates.find(d=>d.date===date) : undefined; }
+function stepDate(from, dir){
+  const list = sheetIndex && sheetIndex.dates ? sheetIndex.dates.map(d=>d.date).sort() : null;
+  if(list && list.length){
+    const next = dir>0 ? list.find(d=>d>from) : [...list].reverse().find(d=>d<from);
+    if(next) return next;
+    setStatus(dir>0?'That\'s the newest sheet.':'No older sheets online.', false); return null;
+  }
+  return shiftWeekday(from, dir);
+}
+
+/* ---------- small helpers ---------- */
+function setStatus(msg, err){ const s=$('#status'); s.textContent=msg||''; s.className=msg?('show'+(err?' err':'')):''; }
+function ymd(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function parseYmd(s){ const [y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
+function nice(s){ if(!s) return 'Latest'; const d=parseYmd(s); return DAYS[d.getDay()]+' '+MONS[d.getMonth()]+' '+d.getDate(); }
+function shiftWeekday(s, dir){ const d=parseYmd(s); do{ d.setDate(d.getDate()+dir); }while(d.getDay()===0||d.getDay()===6); return ymd(d); }
+function cleanText(t){
+  if(t==null) return '';
+  t=String(t);
+  t=t.replace(/<audio[\s\S]*?(<\/audio>|\/?>)/gi,'');      // embedded players handled separately
+  t=t.replace(/<br\s*\/?>/gi,'\n');                         // -br variant
+  t=t.replace(/<\/?[a-z][^>]*>/gi,'');                      // any other stray tags
+  const ta=document.createElement('textarea'); ta.innerHTML=t; return ta.value; // decode entities
+}
+// text -> DOM with clickable links, line breaks preserved by CSS
+function richText(el, text){
+  const re=/(https?:\/\/[^\s<>"')]+)/g; let last=0, m;
+  while((m=re.exec(text))){ el.append(text.slice(last,m.index));
+    const a=document.createElement('a'); a.href=m[1]; a.textContent=m[1]; a.target='_blank'; a.rel='noopener'; el.append(a); last=m.index+m[1].length; }
+  el.append(text.slice(last));
+}
+function sheetDate(sheet){
+  const u = sheet && sheet.weather && sheet.weather.updated;
+  const m = u && String(u).match(/^(\d{4}-\d{2}-\d{2})/); return m?m[1]:null;
+}
+function isSection(v){ return v && typeof v==='object' && !Array.isArray(v) && ('content' in v || 'title' in v || 'audio' in v); }
+function isClipKey(k,v){ return /^clip-/.test(k) || (v && typeof v.audio==='string'); }
+
+/* ---------- clock ---------- */
+function tick(){ const d=new Date(); let h=d.getHours(), ap=h<12?'AM':'PM'; h=h%12||12;
+  $('#clock').textContent=h+':'+String(d.getMinutes()).padStart(2,'0')+' '+ap; }
+setInterval(tick,1000*15); tick();
+
+/* ---------- font size ---------- */
+let fs = Number(LS.getItem('hs:fs'))||0;
+function applyFs(){ if(fs) document.documentElement.style.setProperty('--fs',fs+'px'); }
+applyFs();
+$('#fontUp').onclick=()=>{ fs=Math.min(34,(fs||parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--fs'))||20)+2); LS.setItem('hs:fs',fs); applyFs(); };
+$('#fontDown').onclick=()=>{ fs=Math.max(14,(fs||parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--fs'))||20)-2); LS.setItem('hs:fs',fs); applyFs(); };
+
+/* ---------- IndexedDB for audio blobs ---------- */
+const idb = (() => {
+  let p=null;
+  function open(){ if(!('indexedDB' in window)) return Promise.reject('no idb');
+    if(!p) p=new Promise((res,rej)=>{ const r=indexedDB.open('z93-hot-sheet',1);
+      r.onupgradeneeded=()=>r.result.createObjectStore('clips');
+      r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); });
+    return p; }
+  function tx(mode, fn){ return open().then(db=>new Promise((res,rej)=>{ const t=db.transaction('clips',mode); const st=t.objectStore('clips');
+    const out=fn(st); t.oncomplete=()=>res(out && out.result); t.onerror=()=>rej(t.error); })); }
+  return {
+    get:(k)=>tx('readonly',st=>st.get(k)).catch(()=>null),
+    put:(k,v)=>tx('readwrite',st=>st.put(v,k)).catch(()=>null),
+    prune:(keepDates)=>open().then(db=>new Promise(res=>{ const t=db.transaction('clips','readwrite'); const st=t.objectStore('clips');
+      const r=st.openCursor(); r.onsuccess=()=>{ const c=r.result; if(!c) return; if(!keepDates.includes(String(c.key).split('|')[0])) c.delete(); c.continue(); };
+      t.oncomplete=res; t.onerror=res; })).catch(()=>{})
+  };
+})();
+
+function dataUriToBlob(uri){
+  const m=String(uri).match(/^data:([^;,]+)?(;base64)?,(.*)$/s); if(!m) return null;
+  const mime=m[1]||'audio/mpeg';
+  if(m[2]){ const bin=atob(m[3]); const u=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++) u[i]=bin.charCodeAt(i); return new Blob([u],{type:mime}); }
+  return new Blob([decodeURIComponent(m[3])],{type:mime});
+}
+function clipsFromSheet(sheet){
+  const out=[];
+  for(const [k,v] of Object.entries(sheet||{})){
+    if(!isSection(v)) continue;
+    let src=v.audio;
+    if(!src && typeof v.content==='string'){ const m=v.content.match(/<audio[^>]*\ssrc=["']([^"']+)["']/i); if(m) src=m[1]; }
+    if(src) out.push({key:k, title:v.title||k, notes:v.notes||'', src});
+  }
+  return out;
+}
+async function storeClips(date, sheet){
+  const list=clipsFromSheet(sheet); const res=[];
+  for(const c of list){
+    let blob=null, url=c.src;
+    if(/^data:/.test(c.src)){ blob=dataUriToBlob(c.src); url=null; }
+    const rec={title:c.title, notes:c.notes, blob, url};
+    if(date) await idb.put(date+'|'+c.key, rec);
+    res.push(Object.assign({key:c.key},rec));
+  }
+  if(date){
+    const clipsSec = sheet.clips && sheet.clips.content;
+    await idb.put(date+'|__index', {keys:list.map(c=>c.key), clipsText: clipsSec||null});
+    idb.prune(keepDatesFor(date));
+  }
+  return res;
+}
+function keepDatesFor(date){ // keep the newest few dates of audio only
+  const ks=JSON.parse(LS.getItem('hs:audioDates')||'[]').filter(d=>d!==date); ks.unshift(date);
+  const keep=ks.slice(0,3); LS.setItem('hs:audioDates',JSON.stringify(keep)); return keep;
+}
+async function cachedClips(date){
+  if(!date) return null;
+  const idx=await idb.get(date+'|__index'); if(!idx) return null;
+  const out=[]; for(const k of idx.keys){ const r=await idb.get(date+'|'+k); if(r) out.push(Object.assign({key:k},r)); }
+  return {clips:out, clipsText:idx.clipsText};
+}
+
+/* ---------- loading sheets ---------- */
+function fileFor(date, variant){ return date ? (date+'-hot-sheet'+(variant?'-'+variant:'')+'.json') : 'latest-hot-sheet.json'; }
+async function fetchJson(name){
+  const r=await fetch(name+(name.includes('?')?'':'?t='+Date.now()),{cache:'no-store'});
+  if(!r.ok){ const e=new Error('HTTP '+r.status); e.status=r.status; throw e; }
+  return r.json();
+}
+function cacheSheet(key, sheet){
+  try{ LS.setItem('hs:sheet:'+(key||'latest'), JSON.stringify(sheet)); }catch(e){}
+  const keys=Object.keys(LS).filter(k=>/^hs:sheet:\d{4}-/.test(k)).sort().reverse();
+  keys.slice(10).forEach(k=>LS.removeItem(k)); // keep the last 10 days
+}
+function cachedSheet(date){ try{ const s=LS.getItem('hs:sheet:'+(date||'latest')); return s?JSON.parse(s):null; }catch(e){ return null; } }
+
+async function load(date, opts={}){
+  state.mode = date ? 'date' : 'latest';
+  setStatus(isHttp?'Loading…':'');
+  let sheet=null, src='', err=null;
+  const known = date ? indexEntry(date) : true;
+  if(isHttp && known!==undefined && !(known && known.main===false)){
+    try{ sheet=await fetchJson(fileFor(date)); src='live'; }
+    catch(e){ err=e; }
+  } else if(isHttp && known===undefined){ err={status:404, message:'not published'}; }
+  if(!sheet){
+    const c=cachedSheet(date);
+    if(c){ sheet=c; src='saved'; }
+  }
+  if(!sheet){
+    showSheet(null, date);
+    if(err && err.status===404 && date){
+      const d=parseYmd(date).getDay();
+      const hint = sheetIndex && sheetIndex.dates && sheetIndex.dates.length ? ' Sheets online: '+sheetIndex.dates.slice(-5).map(x=>nice(x.date)).join(', ')+'.' : '';
+      setStatus('No sheet for '+nice(date)+'.'+((d===0||d===6)?' No show on weekends.':' Hot Sheet may not have written one yet.')+hint, true);
+    } else if(!isHttp){
+      setStatus('Opened straight from a file, so I can\'t fetch the sheet. Tap 📂 (or drag a file in) and pick latest-hot-sheet.json, and the -audio file too for clips.', true);
+    } else {
+      setStatus('Couldn\'t load the sheet ('+(err?err.message:'unknown')+') and nothing is saved for this day yet.', true);
+    }
+    return;
+  }
+  const d = date || sheetDate(sheet);
+  if(src==='live'){ cacheSheet(date, sheet); if(!date && d) cacheSheet(d, sheet); }
+  state.source=src;
+  await showSheet(sheet, d);
+  if(src==='saved') setStatus('Offline: showing the saved copy'+(d?' for '+nice(d):'')+'.', false);
+  else setStatus('');
+}
+
+async function showSheet(sheet, date){
+  blobUrls.forEach(u=>URL.revokeObjectURL(u)); blobUrls=[];
+  state.sheet=sheet; state.date=date||null; state.clips=[]; state.clipsLoaded=false; state.clipsText=null;
+  $('#dateLabel').textContent = state.mode==='latest' ? 'Latest'+(date?' · '+nice(date):'') : nice(date);
+  if(date) $('#datePick').value=date;
+  renderWeather(sheet && sheet.weather);
+  if(sheet){
+    const inline=clipsFromSheet(sheet);
+    if(inline.length){ state.clips=await storeClips(date, sheet); state.clipsLoaded=true; }
+    else { const c=await cachedClips(date); if(c && c.clips.length){ state.clips=c.clips; state.clipsLoaded=true; state.clipsText=c.clipsText; } }
+  }
+  renderTabs(); renderView();
+}
+
+async function loadAudioVariant(){
+  const date=state.date;
+  if(!isHttp){ $('#fileIn').click(); return; }
+  if(!date){ setStatus('Need a date to find the audio file.', true); return; }
+  setStatus('Loading clips (about 4–5 MB)…');
+  try{
+    const a=await fetchJson(fileFor(date,'audio'));
+    state.clips=await storeClips(date, a); state.clipsLoaded=true;
+    state.clipsText = a.clips && a.clips.content || null;
+    setStatus(state.clips.length? '' : 'The audio file has no clips in it.', !state.clips.length);
+  }catch(e){
+    setStatus(e.status===404?'No audio file for '+nice(date)+'.':'Couldn\'t load clips: '+e.message, true);
+  }
+  renderTabs(); renderView();
+}
+
+/* ---------- render ---------- */
+function renderWeather(w){
+  w=w||{};
+  $('#wxTemp').textContent=w.temp||'--';
+  $('#wxCond').textContent=w.cond||'No weather yet';
+  const more=[]; if(w.high||w.low) more.push('Hi '+(w.high||'–')+' / Lo '+(w.low||'–'));
+  if(w.tonight) more.push('Tonight: '+w.tonight);
+  if(w.updated){ const t=new Date(w.updated); if(!isNaN(t)) more.push('Updated '+t.toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'})); }
+  $('#wxMore').textContent=more.join(' · '); state.wxMore=more.join(' · ');
+  const adv=$('#adv'); const det=w.advisory_detail||{};
+  adv.className=''; adv.textContent='';
+  if(w.advisory){
+    let past=false; if(det.until){ const u=new Date(det.until); past=!isNaN(u)&&u<new Date(); }
+    if(det.active===false) past=true;
+    adv.textContent=(past?'Expired: ':'⚠ ')+w.advisory+(det.areas?' · '+det.areas:'');
+    adv.title=det.headline||'';
+    adv.className=past?'past':'on';
+  }
+  $('#traffic').textContent = w.traffic ? '🚗 '+w.traffic : '';
+}
+
+function sectionList(){
+  const s=state.sheet||{}; const out=[];
+  for(const [k,v] of Object.entries(s)){
+    if(k==='weather' || !isSection(v) || isClipKey(k,v)) continue;
+    out.push({key:k, v});
+  }
+  // a Clips tab even if the base sheet has no "clips" section but audio exists
+  if(!out.find(x=>x.key==='clips') && state.clips.length) out.push({key:'clips', v:{title:'Audio Clips', category:'', content:''}});
+  return out;
+}
+function renderTabs(){
+  const nav=$('#tabs'); nav.innerHTML='';
+  const list=sectionList();
+  if(!list.length) return;
+  const saved=LS.getItem('hs:tab');
+  if(!state.tab || !list.find(x=>x.key===state.tab)) state.tab = list.find(x=>x.key===saved) ? saved : list[0].key;
+  for(const {key,v} of list){
+    const b=document.createElement('button'); b.setAttribute('role','tab');
+    b.setAttribute('aria-selected', String(key===state.tab));
+    const empty=!cleanText(v.content).trim() && key!=='clips';
+    if(empty) b.classList.add('empty');
+    b.append(v.title||key);
+    if(v.category){ const c=document.createElement('span'); c.className='cat'; c.textContent=v.category; b.append(c); }
+    b.onclick=()=>{ state.tab=key; LS.setItem('hs:tab',key); renderTabs(); renderView(); window.scrollTo({top:0}); };
+    nav.append(b);
+    if(key===state.tab) setTimeout(()=>b.scrollIntoView({inline:'nearest',block:'nearest'}),0);
+  }
+}
+function renderView(){
+  const view=$('#view'); view.innerHTML='';
+  if(!state.sheet){
+    const p=document.createElement('p'); p.className='hint';
+    p.textContent='No sheet loaded. Use Latest, pick a date, or open a JSON file with 📂.'; view.append(p); return;
+  }
+  const item=sectionList().find(x=>x.key===state.tab); if(!item) return;
+  const v=item.v;
+  if(state.wxMore && matchMedia('(max-width:520px)').matches){ const w=document.createElement('div'); w.className='hint'; w.style.marginBottom='8px'; w.textContent='🌡 '+state.wxMore; view.append(w); }
+  if(v.category){ const c=document.createElement('div'); c.className='catline'; c.textContent=v.category; view.append(c); }
+  const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
+
+  if(item.key==='clips') renderClips(view, v);
+  else {
+    const txt=cleanText(v.content).trim();
+    const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
+    if(txt) richText(c, txt); else c.textContent='Nothing in this section today.';
+    view.append(c);
+  }
+  if(v.notes){
+    const d=document.createElement('details'); d.className='notes'; d.open = !cleanText(v.content).trim() && item.key!=='clips';
+    const s=document.createElement('summary'); s.textContent='Notes & credits'; d.append(s);
+    const div=document.createElement('div'); richText(div, cleanText(v.notes)); d.append(div); view.append(d);
+  }
+}
+function renderClips(view, v){
+  const text = cleanText(state.clipsText || v.content).trim();
+  const ie = indexEntry(state.date);
+  if(state.clipsLoaded && state.clips.length){
+    for(const c of state.clips) view.append(makePlayer(c.title, c.blob?blobUrl(c.blob):c.url, c.notes));
+  } else if(ie && !ie.audio){
+    const n=document.createElement('div'); n.className='content empty'; n.textContent='No app audio online for this day.'; view.append(n);
+  } else {
+    const b=document.createElement('button'); b.className='loadclips';
+    b.textContent = isHttp ? '🔊 Load today\'s clips (about 4–5 MB)' : '🔊 Open the -audio JSON file for clips';
+    b.onclick=loadAudioVariant; view.append(b);
+  }
+  // full-quality files named in the clip sheet, served from ./clips/<date>/
+  let files=[...new Set((text.match(/[\w.-]+\.(?:mp3|m4a|wav|aac|ogg)\b/gi)||[]))];
+  if(ie) files = ie.files || [];   // hosted: only files that were actually published
+  if(isHttp && state.date && files.length){
+    const d=document.createElement('details'); d.className='notes';
+    const s=document.createElement('summary'); s.textContent='Full-quality MP3s ('+files.length+')'; d.append(s);
+    const box=document.createElement('div'); box.style.whiteSpace='normal';
+    for(const f of files) box.append(makePlayer(f, 'clips/'+state.date+'/'+f, '', true));
+    d.append(box); view.append(d);
+  }
+  if(text){ const c=document.createElement('div'); c.className='content'; richText(c, text); view.append(c); }
+}
+function blobUrl(b){ const u=URL.createObjectURL(b); blobUrls.push(u); return u; }
+function fmt(t){ if(!isFinite(t)) return '--:--'; t=Math.floor(t); return Math.floor(t/60)+':'+String(t%60).padStart(2,'0'); }
+let current=null;
+function makePlayer(title, src, notes, lazy){
+  const w=document.createElement('div'); w.className='player';
+  const t=document.createElement('div'); t.className='ptitle'; t.textContent=title; w.append(t);
+  const a=document.createElement('audio'); a.preload=lazy?'none':'metadata'; a.src=src; w.append(a);
+  const row=document.createElement('div'); row.className='prow';
+  const pp=document.createElement('button'); pp.className='pp'; pp.textContent='▶'; pp.setAttribute('aria-label','Play '+title);
+  const bar=document.createElement('div'); bar.className='bar';
+  const rng=document.createElement('input'); rng.type='range'; rng.min=0; rng.max=1000; rng.value=0; rng.setAttribute('aria-label','Seek');
+  const tm=document.createElement('div'); tm.className='time'; tm.textContent='0:00 / --:--';
+  bar.append(rng,tm);
+  const stop=document.createElement('button'); stop.className='stop'; stop.textContent='■'; stop.setAttribute('aria-label','Stop and rewind');
+  row.append(pp,bar,stop); w.append(row);
+  if(notes){ const n=document.createElement('div'); n.className='pnote'; richText(n, cleanText(notes)); w.append(n); }
+  const upd=()=>{ tm.textContent=fmt(a.currentTime)+' / '+fmt(a.duration); if(a.duration) rng.value=Math.round(a.currentTime/a.duration*1000); };
+  a.addEventListener('timeupdate',upd); a.addEventListener('loadedmetadata',upd);
+  a.addEventListener('play',()=>{ if(current&&current!==a) current.pause(); current=a; w.classList.add('playing'); pp.textContent='❚❚'; });
+  a.addEventListener('pause',()=>{ w.classList.remove('playing'); pp.textContent='▶'; });
+  a.addEventListener('ended',()=>{ a.currentTime=0; upd(); });
+  a.addEventListener('error',()=>{ tm.textContent='Can\'t play this file here'; });
+  pp.onclick=()=>{ a.paused ? a.play().catch(e=>{ tm.textContent='Play blocked: '+e.message; }) : a.pause(); };
+  stop.onclick=()=>{ a.pause(); a.currentTime=0; upd(); };
+  rng.oninput=()=>{ if(a.duration) a.currentTime=rng.value/1000*a.duration; };
+  return w;
+}
+
+/* ---------- local files (picker + drag/drop) ---------- */
+async function openFiles(files){
+  const parsed=[];
+  for(const f of files){
+    try{ const j=JSON.parse(await f.text());
+      parsed.push({j, nameDate:(f.name.match(/(\d{4}-\d{2}-\d{2})/)||[])[1], hasAudio:clipsFromSheet(j).length>0}); }
+    catch(e){ setStatus('Couldn\'t read '+f.name+': '+e.message, true); return; }
+  }
+  const audio=parsed.find(x=>x.hasAudio); const plain=parsed.find(x=>!x.hasAudio);
+  const addAudio=async(date)=>{ state.clips=await storeClips(date, audio.j); state.clipsLoaded=true;
+    state.clipsText=audio.j.clips&&audio.j.clips.content||null; };
+  // only the audio file picked while a sheet is already showing: just add the clips
+  if(!plain && audio && state.sheet && (!audio.nameDate || audio.nameDate===state.date)){
+    await addAudio(state.date); state.tab='clips'; renderTabs(); renderView(); setStatus(''); return;
+  }
+  const base=plain||audio; if(!base) return;
+  const date=base.nameDate||sheetDate(base.j);
+  state.mode='date'; if(date) cacheSheet(date, base.j);
+  await showSheet(base.j, date);
+  if(audio && audio!==base){ await addAudio(date); renderTabs(); renderView(); }
+  setStatus('Loaded from file'+(date?' · '+nice(date):'')+'.');
+}
+$('#fileBtn').onclick=()=>$('#fileIn').click();
+$('#fileIn').onchange=e=>{ if(e.target.files.length) openFiles([...e.target.files]); e.target.value=''; };
+let dragN=0;
+addEventListener('dragenter',e=>{ e.preventDefault(); dragN++; $('#drop').classList.add('on'); });
+addEventListener('dragleave',e=>{ if(--dragN<=0){ dragN=0; $('#drop').classList.remove('on'); } });
+addEventListener('dragover',e=>e.preventDefault());
+addEventListener('drop',e=>{ e.preventDefault(); dragN=0; $('#drop').classList.remove('on'); if(e.dataTransfer.files.length) openFiles([...e.dataTransfer.files]); });
+
+/* ---------- date controls ---------- */
+function baseDate(){ return state.date || ymd(new Date()); }
+$('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
+$('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
+$('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
+$('#latestBtn').onclick=()=>load(null);
+$('#refreshBtn').onclick=async()=>{ await loadIndex(); load(state.mode==='latest'?null:state.date); };
+
+/* ---------- PWA ---------- */
+if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+
+loadIndex().then(()=>load(null));
+window.__hs = state; // for debugging
+})();
+</script>
+</body>
+</html>
