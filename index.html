@@ -110,24 +110,52 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #wx .temp{gap:6px}
 #wxIcon{display:inline-flex;width:1.25em;height:1.25em}
 #wxIcon svg,.wk svg{width:100%;height:100%}
-#wxPanel{display:flex;gap:8px;align-items:stretch;height:92px;margin-top:8px}
-#radarThumb{flex:0 0 auto;width:112px;min-height:0;padding:0;overflow:hidden;position:relative;background:#000;border-radius:12px}
-#radarThumb img{width:100%;height:100%;object-fit:cover;object-position:28% 45%;display:block;transform:scale(1.9);transform-origin:28% 45%}
-#radarThumb .lbl{position:absolute;left:4px;bottom:3px;font-size:.55em;font-weight:900;background:rgba(0,0,0,.7);padding:1px 5px;border-radius:5px;color:var(--accent2)}
-#radarThumb .off{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:.6em;color:var(--dim);text-align:center}
-#radarThumb.offline img{visibility:hidden}#radarThumb.offline .off{display:flex}
-#week{flex:1;min-width:0;display:flex;gap:4px;overflow-x:auto;background:var(--panel);border-radius:12px;padding:4px;scrollbar-width:none}
+#wxGrid{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin-top:6px}
+#wxCol{min-width:0}
+#todayWx{display:flex;margin-top:6px}
+#todayBtn{flex:1;min-height:48px;display:flex;align-items:center;gap:8px;padding:4px 10px;background:var(--panel);border:2px solid var(--line);border-radius:12px;text-align:left;font-size:.95em}
+#todayBtn .i{width:34px;height:34px;flex:0 0 auto;display:inline-flex}#todayBtn .i svg{width:100%;height:100%}
+#todayBtn .lbl{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#todayBtn .hl{font-weight:900}#todayBtn .hl .lo{color:#7fb6ff;font-weight:700}
+#todayBtn .sf{color:var(--dim);font-weight:700}
+#todayBtn .arr{flex:0 0 auto;font-size:1.25em;font-weight:900;color:var(--accent2);width:1.4em;text-align:center}
+#todayBtn[aria-expanded=true]{border-color:var(--accent2)}
+#radarThumb{display:block;width:100%;min-height:0;padding:0;overflow:hidden;position:relative;background:#111;border-radius:12px;border:2px solid var(--line)}
+.rmap{position:relative;overflow:hidden;width:100%;aspect-ratio:4/3;background:#1d1d20}
+.rin{position:absolute;left:0;width:100%;aspect-ratio:900/846;top:50%;transform:translateY(-50%)}
+.rin img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.rin img.rbase{filter:brightness(1.45) contrast(1.1)}
+.rin img.fr{visibility:hidden}.rin img.fr.on{visibility:visible}
+.tvc{position:absolute;left:64.84%;top:52.6%;transform:translate(-50%,-50%);pointer-events:none}
+.tvc i{display:block;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px rgba(0,0,0,.6)}
+.tvc b{position:absolute;left:14px;top:-5px;font-size:12px;font-weight:900;color:#fff;background:rgba(0,0,0,.7);padding:0 4px;border-radius:4px;white-space:nowrap}
+.rfb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:28% 45%;display:none}
+#radarThumb .lbl{position:absolute;left:6px;bottom:6px;font-size:.7em;font-weight:900;background:rgba(0,0,0,.78);padding:2px 8px;border-radius:6px;color:var(--accent2);max-width:calc(100% - 12px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#radarThumb .lbl.stale{color:var(--warn)}
+#radarThumb .exp{position:absolute;right:6px;top:6px;font-size:.7em;font-weight:900;background:rgba(0,0,0,.7);padding:2px 7px;border-radius:6px;color:#fff}
+#radarThumb .off{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:.8em;color:var(--dim);text-align:center}
+#radarThumb.fallback .rin{display:none}#radarThumb.fallback .rfb{display:block}
+#radarThumb.offline .rin,#radarThumb.offline .rfb{visibility:hidden}#radarThumb.offline .off{display:flex}
+@media (min-width:900px){ #wxGrid{grid-template-columns:minmax(0,1fr) 460px;align-items:start} }
+@media (min-width:521px) and (max-width:899px){ #radarThumb{max-width:620px;margin:0 auto} }
+@media (max-height:500px) and (orientation:landscape){ #wxGrid{grid-template-columns:minmax(0,1fr) 40vw;align-items:start} }
+#week{display:flex;gap:4px;overflow-x:auto;background:var(--panel);border-radius:12px;padding:4px;scrollbar-width:none;margin-top:6px}
+#week[hidden]{display:none}
 #week::-webkit-scrollbar{display:none}
-.wk{flex:1 0 58px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2px 2px;border-radius:9px;line-height:1.1}
+.wk{flex:1 0 58px;min-height:76px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2px 2px;border-radius:9px;line-height:1.1}
 .wk .d{font-size:.66em;font-weight:900;color:var(--dim);text-transform:uppercase}
 .wk .i{width:30px;height:30px;margin:2px 0}
 .wk .t{font-weight:900;font-size:.85em;white-space:nowrap}.wk .t .lo{color:#7fb6ff;font-weight:700}
 .wk .p{font-size:.55em;color:#7fb6ff;min-height:1em}
-.wk.today{background:var(--panel2);outline:2px solid var(--line)}
 #weekSrc{font-size:.6em;color:var(--dim);margin:2px 0 0}
+#weekSrc[hidden]{display:none}
 #radarModal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.92);display:none;flex-direction:column;align-items:center;justify-content:center;padding:12px}
 #radarModal.on{display:flex}
-#radarModal img{max-width:100%;max-height:78vh;border-radius:10px;background:#000}
+#radarModal .rmap{aspect-ratio:900/846;width:min(96vw,calc(78vh * 900 / 846));border-radius:10px}
+#radarModal .rin{top:0;transform:none}
+#radarModal .rfb{object-fit:contain}
+#radarModal .rmap.fallback .rin{display:none}#radarModal .rmap.fallback .rfb{display:block}
+#radarModal .rowb{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 #radarModal .cap{color:var(--dim);font-size:.75em;margin:8px 0;text-align:center}
 #radarModal button{min-width:160px}
 /* sponsors + countdowns */
@@ -179,7 +207,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:80;background:#fff;color:#000;font-weight:900;border-radius:14px;padding:8px 8px 8px 16px;display:none;align-items:center;gap:10px;box-shadow:0 6px 30px rgba(0,0,0,.6);max-width:94vw}
 #toast.on{display:flex}
 #toast button{background:#000;color:#fff;border-color:#000;min-height:48px}
-@media (max-height:500px) and (orientation:landscape){ #wxPanel{height:70px} #adv.past{display:none} }
+@media (max-height:500px) and (orientation:landscape){ #adv.past{display:none} }
 /* fly-away top block */
 #topFold{display:grid;grid-template-rows:1fr;transition:grid-template-rows .38s cubic-bezier(.4,0,.2,1),opacity .3s ease,transform .38s cubic-bezier(.4,0,.2,1);transform-origin:top}
 #topFoldIn{min-height:0;overflow:hidden}
@@ -217,8 +245,7 @@ body.flown #flyBtn{background:var(--accent2)}
 @keyframes flashhit{0%{background:var(--accent);color:#000}100%{background:transparent}}
 @media (prefers-reduced-motion:reduce){ #tickerTrack{animation:none} }
 @media (max-width:520px){
-  #wxPanel{height:80px;margin-top:6px}
-  #radarThumb{width:92px}
+  #todayBtn{min-height:44px;font-size:.9em}
   .wk{flex-basis:50px}
   .wk .i{width:24px;height:24px}
   #extras .cdchip,#extras .studiochip{min-height:40px;font-size:.78em;padding:2px 10px}
@@ -251,17 +278,19 @@ body.flown #flyBtn{background:var(--accent2)}
     <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
     <div id="clock">--:--</div>
   </div>
+  <div id="wxGrid"><div id="wxCol">
   <div id="wx" aria-live="polite">
     <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
     <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div id="wxSponsor"></div><div class="small" id="wxMore"></div></div>
     <div id="adv"></div>
     <div id="traffic"></div>
   </div>
-  <div id="wxPanel">
-    <button id="radarThumb" aria-label="Open live radar"><img id="radarImg" alt="Live radar, Gaylord NWS (KAPX)"><span class="lbl">RADAR</span><span class="off">Radar offline</span></button>
-    <div id="week" aria-label="7-day forecast"></div>
+  <div id="todayWx"><button id="todayBtn" type="button" aria-expanded="false" aria-controls="week" aria-label="Today's forecast. Tap for the rest of the week"><span class="i" aria-hidden="true"></span><span class="lbl"><b>Today</b> <span class="hl"></span> <span class="sf"></span></span><span class="arr" aria-hidden="true">▸</span></button></div>
+  <div id="week" aria-label="Rest of the week" hidden></div>
+  <div id="weekSrc" hidden></div>
   </div>
-  <div id="weekSrc"></div>
+  <button id="radarThumb" type="button" aria-label="Open live radar full screen"><div class="rmap"><div class="rin"><img class="rbase" alt=""><img id="radarImg" alt="Live radar, northern Lake Michigan"><img class="rref" alt=""><span class="tvc"><i></i><b>TVC</b></span></div><img class="rfb" id="radarFb" alt="NWS Gaylord radar loop (fallback)"></div><span class="lbl" id="radarLbl">RADAR</span><span class="exp">⤢</span><span class="off">Radar offline</span></button>
+  </div>
   <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
   <div id="tickerWrap" class="none">
     <div id="ticker" aria-label="Top talking points"><div id="tickerTrack"></div></div>
@@ -295,9 +324,9 @@ body.flown #flyBtn{background:var(--accent2)}
 <input type="file" id="importIn" accept=".json,application/json" hidden>
 <div id="dayModal" role="dialog" aria-label="Days of note"><div class="box"><h3 id="dayModalTitle"></h3><div id="dayCards"></div><button class="close" id="dayClose">Close</button></div></div>
 <div id="radarModal" role="dialog" aria-label="Live radar">
-  <img id="radarBig" alt="Live radar loop, NWS Gaylord (KAPX)">
-  <div class="cap">Live radar loop · NWS Gaylord (KAPX) · Traverse City is left of center · refreshes every 5 min</div>
-  <button id="radarClose">Close</button>
+  <div class="rmap" id="radarBigMap"><div class="rin" id="radarBigIn"><img class="rbase" alt=""><span id="radarFrames"></span><img class="rref" alt=""><span class="tvc"><i></i><b>TVC</b></span></div><img class="rfb" id="radarBigFb" alt="NWS Gaylord radar loop (fallback)"></div>
+  <div class="cap" id="radarCap">Live radar</div>
+  <div class="rowb"><button id="radarLoop">▶ Loop last hour</button><button id="radarClose">Close</button></div>
 </div>
 <button id="flyBtn" type="button" aria-label="Fly away the top" aria-pressed="false">⤒</button>
 <div id="drop">Drop a hot-sheet JSON here</div>
@@ -899,40 +928,120 @@ async function fetchLiveWeek(){
   }catch(e){ /* offline or blocked: fall back to saved/sheet week */ }
   renderWeek();
 }
+let weekOpen = LS.getItem('hs:weekOpen')==='1';
+function applyWeekOpen(){
+  $('#week').hidden=!weekOpen; $('#weekSrc').hidden=!weekOpen;
+  const b=$('#todayBtn'); b.setAttribute('aria-expanded', String(weekOpen)); b.querySelector('.arr').textContent = weekOpen?'▾':'▸';
+}
+$('#todayBtn').onclick=()=>{ weekOpen=!weekOpen; LS.setItem('hs:weekOpen', weekOpen?'1':'0'); applyWeekOpen(); };
+function hiLo(el,d){ el.textContent=''; const hi=d.high!=null?d.high+'°':'', lo=d.low!=null?d.low+'°':'';
+  if(hi) el.append(hi); if(lo){ const s=document.createElement('span'); s.className='lo'; s.textContent=(hi?' / ':'Low ')+lo; el.append(s); } }
 function renderWeek(){
-  const box=$('#week'), src=$('#weekSrc'); box.innerHTML='';
+  const box=$('#week'), src=$('#weekSrc'), tb=$('#todayBtn'); box.innerHTML='';
   const fresh = liveWeek && (Date.now()-liveWeek.at < 6*3600e3);
   const sheetWeek = state.sheet && state.sheet.weather && Array.isArray(state.sheet.weather.week) ? state.sheet.weather.week : null;
   let week=null, label='';
-  const t=at=>new Date(at).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'});
-  if(fresh){ week=liveWeek.week; label='7-day: live NWS forecast, Traverse City · fetched '+t(liveWeek.at); }
-  else if(sheetWeek && sheetWeek.length){ week=sheetWeek; label='7-day: from the sheet (NWS) · '+(state.sheet.weather.updated?t(state.sheet.weather.updated):''); }
-  else if(liveWeek){ week=liveWeek.week; label='7-day: saved NWS forecast from '+t(liveWeek.at)+' (offline)'; }
-  if(!week || !week.length){ box.innerHTML='<div class="hint" style="padding:6px">7-day forecast unavailable offline</div>'; src.textContent=''; return; }
-  const todayYmd=ymd(new Date());
-  for(const d of week){
-    const el=document.createElement('div'); el.className='wk'+(d.date===todayYmd?' today':''); el.title=d.short||'';
-    const hi = d.high!=null ? d.high+'°' : '';
-    const lo = d.low!=null ? d.low+'°' : '';
+  const t=at=>new Date(at).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ})+' ET';
+  if(fresh){ week=liveWeek.week; label='Forecast: live NWS, Traverse City · fetched '+t(liveWeek.at); }
+  else if(sheetWeek && sheetWeek.length){ week=sheetWeek; label='Forecast: from the sheet (NWS) · '+(state.sheet.weather.updated?t(state.sheet.weather.updated):''); }
+  else if(liveWeek){ week=liveWeek.week; label='Forecast: saved NWS from '+t(liveWeek.at)+' (offline)'; }
+  applyWeekOpen();
+  if(!week || !week.length){ tb.querySelector('.i').innerHTML=''; tb.querySelector('.hl').textContent=''; tb.querySelector('.sf').textContent='forecast unavailable offline'; src.textContent=''; return; }
+  // Today = first entry dated today (ET) or, failing that, the first entry
+  const todayYmd=etParts().date;
+  let ti=week.findIndex(d=>d.date===todayYmd); if(ti<0) ti=0;
+  const td=week[ti];
+  tb.querySelector('.i').innerHTML=svgIcon(td.icon||iconFor(td.short, td.high!=null), td.short);
+  tb.querySelector('b').textContent=td.day==='Tonight'?'Tonight':'Today';
+  hiLo(tb.querySelector('.hl'), td);
+  tb.querySelector('.sf').textContent=(td.short?'· '+td.short:'')+(td.pop?' · 💧'+td.pop+'%':'');
+  tb.title=td.short||'';
+  for(const d of week.slice(ti+1)){
+    const el=document.createElement('div'); el.className='wk'; el.title=d.short||'';
     el.innerHTML=`<span class="d"></span><span class="i">${svgIcon(d.icon||iconFor(d.short), d.short)}</span><span class="t"></span><span class="p"></span>`;
     el.querySelector('.d').textContent=d.day;
-    const tt=el.querySelector('.t'); if(hi) tt.append(hi); if(lo){ const s=document.createElement('span'); s.className='lo'; s.textContent=(hi?' ':'')+lo; tt.append(s); }
+    const tt=el.querySelector('.t'); const hi=d.high!=null?d.high+'°':'', lo=d.low!=null?d.low+'°':'';
+    if(hi) tt.append(hi); if(lo){ const s=document.createElement('span'); s.className='lo'; s.textContent=(hi?' ':'')+lo; tt.append(s); }
     el.querySelector('.p').textContent = d.pop ? '💧'+d.pop+'%' : '';
     box.append(el);
   }
   src.textContent=label;
 }
-function radarUrl(){ return RADAR+'?t='+Math.floor(Date.now()/300000); } // new image every 5 min
-function loadRadar(){
-  const th=$('#radarThumb'), img=$('#radarImg');
-  img.onload=()=>th.classList.remove('offline'); img.onerror=()=>th.classList.add('offline');
-  img.src=radarUrl();
-  if($('#radarModal').classList.contains('on')) $('#radarBig').src=img.src;
+
+/* Live radar: IEM NEXRAD composite (NWS Level III base reflectivity mosaic, new frame every 5 min)
+   over an Esri dark-gray basemap, both rendered in Web Mercator for the same box:
+   lon -88.5..-84.0, lat 43.3..46.3 (Green Bay/Door County to Mackinac, Ludington south). */
+const RBOX='-9851775,5357747,-9350837,5828555';           // EPSG:3857 metres, aspect 900:846
+const RSIZE={thumb:[480,451], big:[1000,940]};
+const ESRI='https://services.arcgisonline.com/arcgis/rest/services/Canvas/';
+const baseUrl=(k,[w,h])=>ESRI+'World_Dark_Gray_Base/MapServer/export?bbox='+RBOX+'&bboxSR=3857&imageSR=3857&size='+w+','+h+'&format=png&f=image';
+const refUrl=(k,[w,h])=>ESRI+'World_Dark_Gray_Reference/MapServer/export?bbox='+RBOX+'&bboxSR=3857&imageSR=3857&size='+w+','+h+'&format=png32&transparent=true&f=image';
+const IEM='https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/';
+function radarLayerUrl([w,h], when){
+  const q='SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG:3857&BBOX='+RBOX+'&WIDTH='+w+'&HEIGHT='+h+'&FORMAT=image/png&TRANSPARENT=TRUE';
+  return when ? IEM+'n0q-t.cgi?'+q+'&LAYERS=nexrad-n0q-wmst&TIME='+when.toISOString().slice(0,19)+'Z'
+              : IEM+'n0q.cgi?'+q+'&LAYERS=nexrad-n0q-900913&_='+Math.floor(Date.now()/300000);
 }
-$('#radarThumb').onclick=()=>{ $('#radarBig').src=$('#radarImg').src||radarUrl(); $('#radarModal').classList.add('on'); };
-$('#radarClose').onclick=()=>$('#radarModal').classList.remove('on');
-$('#radarModal').addEventListener('click',e=>{ if(e.target.id==='radarModal') $('#radarModal').classList.remove('on'); });
-addEventListener('keydown',e=>{ if(e.key==='Escape') $('#radarModal').classList.remove('on'); });
+const RADAR_VALID='https://mesonet.agron.iastate.edu/data/gis/images/4326/USCOMP/n0q_0.json';
+let radarValid=null; // Date of the latest composite
+const hm=d=>d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit',timeZone:TZ});
+function setRadarLabel(){
+  const l=$('#radarLbl'), th=$('#radarThumb');
+  if(th.classList.contains('fallback')){ l.textContent='RADAR · NWS Gaylord loop (backup)'; l.classList.remove('stale'); return; }
+  if(!radarValid){ l.textContent='RADAR · Live'; return; }
+  const age=(Date.now()-radarValid)/60000;
+  l.classList.toggle('stale', age>25);
+  l.textContent = age>25 ? 'RADAR · last frame '+hm(radarValid)+' ('+Math.round(age)+' min old)' : 'RADAR · Live · updated '+hm(radarValid);
+}
+function useFallback(on){
+  const th=$('#radarThumb'); th.classList.toggle('fallback', on);
+  if(on){ const fb=$('#radarFb'); fb.onerror=()=>th.classList.add('offline'); fb.onload=()=>th.classList.remove('offline'); fb.src=radarUrl(); }
+  setRadarLabel();
+}
+let radarSeq=0;
+async function loadRadar(){
+  const th=$('#radarThumb'), seq=++radarSeq;
+  try{ const r=await fetch(RADAR_VALID+'?_='+Math.floor(Date.now()/60000),{cache:'no-store'}); const j=await r.json();
+    const v=new Date(j.meta.valid); if(!isNaN(v)) radarValid=v; }catch(e){ /* keep last known */ }
+  if(seq!==radarSeq) return;
+  const base=th.querySelector('.rbase'), ref=th.querySelector('.rref'), img=$('#radarImg');
+  if(!base.src) { base.src=baseUrl('t',RSIZE.thumb); ref.src=refUrl('t',RSIZE.thumb); }
+  base.onerror=()=>useFallback(true);
+  const next=new Image();
+  next.onload=()=>{ if(seq!==radarSeq) return; img.src=next.src; th.classList.remove('offline'); useFallback(false); };
+  next.onerror=()=>{ if(seq!==radarSeq) return; if(!navigator.onLine && !img.src) th.classList.add('offline'); useFallback(true); };
+  next.src=radarLayerUrl(RSIZE.thumb, radarValid);
+  if($('#radarModal').classList.contains('on')) buildFrames();
+}
+function radarUrl(){ return RADAR+'?t='+Math.floor(Date.now()/300000); } // KAPX backup loop
+/* full-screen: latest frame, optional 1-hour loop (12 frames, 5 min apart) */
+let loopTimer=null, frames=[], fi=0;
+function stopLoop(){ clearInterval(loopTimer); loopTimer=null; $('#radarLoop').textContent='▶ Loop last hour'; }
+function showFrame(i){ frames.forEach((f,k)=>f.el.classList.toggle('on',k===i)); fi=i;
+  const f=frames[i]; $('#radarCap').textContent=(i===frames.length-1?'Live · ':'Loop · ')+hm(f.t)+' ET · NEXRAD composite (IEM, NWS radars) · TVC marked · refreshes every 5 min'; }
+function buildFrames(){
+  stopLoop();
+  const map=$('#radarBigMap'), box=$('#radarFrames'); box.innerHTML=''; frames=[];
+  map.querySelector('.rbase').src=baseUrl('b',RSIZE.big); map.querySelector('.rref').src=refUrl('b',RSIZE.big);
+  if($('#radarThumb').classList.contains('fallback')){ map.classList.add('fallback'); $('#radarBigFb').src=radarUrl(); $('#radarCap').textContent='NWS Gaylord (KAPX) loop · backup source · refreshes every 5 min'; return; }
+  map.classList.remove('fallback');
+  const last = radarValid || new Date(Math.floor((Date.now()-600000)/300000)*300000);
+  for(let k=11;k>=0;k--){ const t=new Date(last.getTime()-k*300000); const el=document.createElement('img'); el.className='fr'; el.alt='Radar '+hm(t); frames.push({t,el,ok:false}); box.append(el); }
+  frames.forEach((f,k)=>{ f.el.onload=()=>{ f.ok=true; }; if(k===frames.length-1) f.el.onerror=()=>{ map.classList.add('fallback'); $('#radarBigFb').src=radarUrl(); }; f.el.src=radarLayerUrl(RSIZE.big, f.t); });
+  showFrame(frames.length-1);
+}
+$('#radarLoop').onclick=()=>{
+  if(loopTimer){ stopLoop(); showFrame(frames.length-1); return; }
+  if(!frames.length) return;
+  $('#radarLoop').textContent='⏸ Stop loop'; let i=0;
+  loopTimer=setInterval(()=>{ let n=0; do{ i=(i+1)%frames.length; n++; }while(!frames[i].ok && n<frames.length); showFrame(i); if(i===frames.length-1){ clearInterval(loopTimer); setTimeout(()=>{ if(loopTimer){ loopTimer=null; $('#radarLoop').onclick(); } },1200); } }, 450);
+};
+function closeRadar(){ stopLoop(); $('#radarModal').classList.remove('on'); }
+$('#radarThumb').onclick=()=>{ $('#radarModal').classList.add('on'); buildFrames(); if(!reduceMotion.matches) setTimeout(()=>{ if($('#radarModal').classList.contains('on') && !loopTimer && !$('#radarBigMap').classList.contains('fallback')) $('#radarLoop').onclick(); },1500); };
+$('#radarClose').onclick=closeRadar;
+$('#radarModal').addEventListener('click',e=>{ if(e.target.id==='radarModal') closeRadar(); });
+addEventListener('keydown',e=>{ if(e.key==='Escape') closeRadar(); });
+setInterval(setRadarLabel,60000);
 setInterval(()=>{ if(!document.hidden){ loadRadar(); } },300000);
 setInterval(()=>{ if(!document.hidden) fetchLiveWeek(); },1800000);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ loadRadar(); if(!liveWeek || Date.now()-liveWeek.at>1800000) fetchLiveWeek(); } });
