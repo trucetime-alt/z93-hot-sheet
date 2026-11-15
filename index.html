@@ -70,6 +70,9 @@ body.flown #top{padding-top:0}
 #controls{margin:8px 0 2px}
 #controls button{min-width:52px}
 #dateLabel{font-weight:800;min-width:9em;text-align:center}
+.sheettag{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:8px;font-size:.75em;font-weight:800;color:var(--dim);border:1px solid var(--line);white-space:nowrap;vertical-align:middle}
+.sheettag.old{color:#1a1200;background:#ffb020;border-color:#ffb020}
+#dayChips .forday{font-size:.7em;color:var(--dim);font-weight:800;align-self:center;white-space:nowrap}
 #datePick{background:var(--panel2);border:2px solid var(--line);border-radius:14px;min-height:52px;padding:4px 10px;
   color-scheme:dark}
 /* tabs */
@@ -124,13 +127,12 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .rmap{position:relative;overflow:hidden;width:100%;aspect-ratio:4/3;background:#1d1d20}
 .rin{position:absolute;left:0;width:100%;aspect-ratio:900/846;top:50%;transform:translateY(-50%)}
 .rin img{position:absolute;inset:0;width:100%;height:100%;display:block}
-.rin img.rbase{filter:brightness(1.45) contrast(1.1)}
 .rin img.fr{visibility:hidden}.rin img.fr.on{visibility:visible}
 .tvc{position:absolute;left:64.84%;top:52.6%;transform:translate(-50%,-50%);pointer-events:none}
 .tvc i{display:block;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px rgba(0,0,0,.6)}
 .tvc b{position:absolute;left:14px;top:-5px;font-size:12px;font-weight:900;color:#fff;background:rgba(0,0,0,.7);padding:0 4px;border-radius:4px;white-space:nowrap}
 .rfb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:28% 45%;display:none}
-#radarThumb .lbl{position:absolute;left:6px;bottom:6px;font-size:.7em;font-weight:900;background:rgba(0,0,0,.78);padding:2px 8px;border-radius:6px;color:var(--accent2);max-width:calc(100% - 12px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#radarThumb .lbl{display:block;text-align:left;font-size:.7em;font-weight:900;background:#000;padding:3px 10px;color:var(--accent2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #radarThumb .lbl.stale{color:var(--warn)}
 #radarThumb .exp{position:absolute;right:6px;top:6px;font-size:.7em;font-weight:900;background:rgba(0,0,0,.7);padding:2px 7px;border-radius:6px;color:#fff}
 #radarThumb .off{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:.8em;color:var(--dim);text-align:center}
@@ -265,7 +267,8 @@ body.flown #flyBtn{background:var(--accent2)}
   #traffic{font-size:.85em;padding:4px 10px}
   #tabs{padding-top:6px}
   #tabs button{min-height:48px;padding:6px 12px}
-  #dateLabel{min-width:0;flex:1}
+  #dateLabel{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;line-height:1.1}
+  .sheettag{margin-left:0;white-space:normal}
 }
 </style>
 </head>
@@ -289,7 +292,7 @@ body.flown #flyBtn{background:var(--accent2)}
   <div id="week" aria-label="Rest of the week" hidden></div>
   <div id="weekSrc" hidden></div>
   </div>
-  <button id="radarThumb" type="button" aria-label="Open live radar full screen"><div class="rmap"><div class="rin"><img class="rbase" alt=""><img id="radarImg" alt="Live radar, northern Lake Michigan"><img class="rref" alt=""><span class="tvc"><i></i><b>TVC</b></span></div><img class="rfb" id="radarFb" alt="NWS Gaylord radar loop (fallback)"></div><span class="lbl" id="radarLbl">RADAR</span><span class="exp">⤢</span><span class="off">Radar offline</span></button>
+  <button id="radarThumb" type="button" aria-label="Open live radar full screen"><div class="rmap"><div class="rin"><img class="rbase" alt=""><img id="radarImg" alt="Live radar, northern Lake Michigan"><img class="rref" alt=""></div><img class="rfb" id="radarFb" alt="NWS Gaylord radar loop (fallback)"></div><span class="lbl" id="radarLbl">RADAR</span><span class="exp">⤢</span><span class="off">Radar offline</span></button>
   </div>
   <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
   <div id="tickerWrap" class="none">
@@ -324,7 +327,7 @@ body.flown #flyBtn{background:var(--accent2)}
 <input type="file" id="importIn" accept=".json,application/json" hidden>
 <div id="dayModal" role="dialog" aria-label="Days of note"><div class="box"><h3 id="dayModalTitle"></h3><div id="dayCards"></div><button class="close" id="dayClose">Close</button></div></div>
 <div id="radarModal" role="dialog" aria-label="Live radar">
-  <div class="rmap" id="radarBigMap"><div class="rin" id="radarBigIn"><img class="rbase" alt=""><span id="radarFrames"></span><img class="rref" alt=""><span class="tvc"><i></i><b>TVC</b></span></div><img class="rfb" id="radarBigFb" alt="NWS Gaylord radar loop (fallback)"></div>
+  <div class="rmap" id="radarBigMap"><div class="rin" id="radarBigIn"><img class="rbase" alt=""><span id="radarFrames"></span><img class="rref" alt=""></div><img class="rfb" id="radarBigFb" alt="NWS Gaylord radar loop (fallback)"></div>
   <div class="cap" id="radarCap">Live radar</div>
   <div class="rowb"><button id="radarLoop">▶ Loop last hour</button><button id="radarClose">Close</button></div>
 </div>
@@ -535,7 +538,7 @@ async function load(date, opts={}){
 async function showSheet(sheet, date){
   blobUrls.forEach(u=>URL.revokeObjectURL(u)); blobUrls=[];
   state.sheet=sheet; state.date=date||null; state.clips=[]; state.clipsLoaded=false; state.clipsText=null;
-  $('#dateLabel').textContent = state.mode==='latest' ? 'Latest'+(date?' · '+nice(date):'') : nice(date);
+  renderSheetTag();
   if(date) $('#datePick').value=date;
   renderWeather(sheet && sheet.weather);
   renderTicker();
@@ -679,7 +682,9 @@ function renderBanner(){ const due=overdueList(); const b=$('#spBanner');
 let lastEtDate=etParts().date;
 function refreshSponsorUI(withView){ renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
   if(withView){ renderTicker(); if(state.sheet){ const y=scrollY; renderView(); window.scrollTo(0,y); } } }
-setInterval(()=>{ const d=etParts().date; if(d!==lastEtDate){ lastEtDate=d; refreshSponsorUI(true); } else { renderBanner(); renderCountdowns(); } }, 30000);
+function onNewDay(){ refreshSponsorUI(true); renderDays(); renderSheetTag(); if(typeof renderWeek==='function') renderWeek(); }
+setInterval(()=>{ const d=etParts().date; if(d!==lastEtDate){ lastEtDate=d; onNewDay(); } else { renderBanner(); renderCountdowns(); } }, 30000);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ const d=etParts().date; if(d!==lastEtDate){ lastEtDate=d; onNewDay(); } } });
 
 /* --- sponsors editor --- */
 function openSpEditor(){
@@ -820,11 +825,28 @@ function daysFor(date){
   if(!daysData || !daysData.dates || !date) return [];
   return (daysData.dates[date]||[]).map(e=>Object.assign({}, e, (daysData.info||{})[e.key]||{}));
 }
+/* Live date: the header chip is always today's real date (device clock, Eastern time) and
+   ticks over at midnight on its own. Days of note follow today when viewing Latest, or the
+   picked date when he steps to another day (then they get a small date prefix). */
+function todayET(){ return etParts().date; }
+function renderSheetTag(){
+  const lab=$('#dateLabel'); lab.textContent = state.mode==='latest' ? 'Latest' : nice(state.date);
+  if(!state.date) return;
+  const old = state.date!==todayET();
+  const t=document.createElement('span'); t.className='sheettag'+(old?' old':'');
+  t.textContent = old ? 'Sheet: '+nice(state.date) : 'Sheet: today';
+  t.title = old ? 'The loaded sheet is from '+nice(state.date)+', not today' : 'Today\'s sheet';
+  lab.append(t);
+}
 function renderDays(){
-  const date = state.date || ymd(new Date());
-  const d=parseYmd(date); const wide=!matchMedia('(max-width:520px)').matches;
-  $('#dowLabel').textContent=(wide?FULLDAYS[d.getDay()]:DAYS[d.getDay()])+', '+MONS[d.getMonth()]+' '+d.getDate();
+  const today = todayET();
+  const date = (state.mode==='latest' || !state.date) ? today : state.date;
+  const wide=!matchMedia('(max-width:520px)').matches;
+  const td=parseYmd(today);
+  $('#dowLabel').textContent=(wide?FULLDAYS[td.getDay()]:DAYS[td.getDay()])+', '+MONS[td.getMonth()]+' '+td.getDate();
+  $('#dowLabel').title='Today (live clock)';
   const box=$('#dayChips'); box.innerHTML='';
+  if(date!==today && daysFor(date).length){ const f=document.createElement('span'); f.className='forday'; f.textContent=nice(date)+':'; box.append(f); }
   const list=daysFor(date);
   if(!wide && list.length>1){   // phone: one compact chip for several days, tap opens them all
     const b=document.createElement('button'); b.className='daychip';
@@ -973,9 +995,8 @@ function renderWeek(){
    lon -88.5..-84.0, lat 43.3..46.3 (Green Bay/Door County to Mackinac, Ludington south). */
 const RBOX='-9851775,5357747,-9350837,5828555';           // EPSG:3857 metres, aspect 900:846
 const RSIZE={thumb:[480,451], big:[1000,940]};
-const ESRI='https://services.arcgisonline.com/arcgis/rest/services/Canvas/';
-const baseUrl=(k,[w,h])=>ESRI+'World_Dark_Gray_Base/MapServer/export?bbox='+RBOX+'&bboxSR=3857&imageSR=3857&size='+w+','+h+'&format=png&f=image';
-const refUrl=(k,[w,h])=>ESRI+'World_Dark_Gray_Reference/MapServer/export?bbox='+RBOX+'&bboxSR=3857&imageSR=3857&size='+w+','+h+'&format=png32&transparent=true&f=image';
+const baseUrl=()=>'radar-base.svg';
+const refUrl=()=>'radar-overlay.svg';
 const IEM='https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/';
 function radarLayerUrl([w,h], when){
   const q='SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG:3857&BBOX='+RBOX+'&WIDTH='+w+'&HEIGHT='+h+'&FORMAT=image/png&TRANSPARENT=TRUE';
@@ -1018,7 +1039,7 @@ function radarUrl(){ return RADAR+'?t='+Math.floor(Date.now()/300000); } // KAPX
 let loopTimer=null, frames=[], fi=0;
 function stopLoop(){ clearInterval(loopTimer); loopTimer=null; $('#radarLoop').textContent='▶ Loop last hour'; }
 function showFrame(i){ frames.forEach((f,k)=>f.el.classList.toggle('on',k===i)); fi=i;
-  const f=frames[i]; $('#radarCap').textContent=(i===frames.length-1?'Live · ':'Loop · ')+hm(f.t)+' ET · NEXRAD composite (IEM, NWS radars) · TVC marked · refreshes every 5 min'; }
+  const f=frames[i]; $('#radarCap').textContent=(i===frames.length-1?'Live · ':'Loop · ')+hm(f.t)+' ET · NEXRAD composite (IEM, NWS radars) · refreshes every 5 min'; }
 function buildFrames(){
   stopLoop();
   const map=$('#radarBigMap'), box=$('#radarFrames'); box.innerHTML=''; frames=[];
