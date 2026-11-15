@@ -24,8 +24,11 @@ button{cursor:pointer;border:2px solid var(--line);background:var(--panel2);bord
 button:active{transform:scale(.97)}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 a{color:var(--accent2)}
-#top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:2px solid var(--line);
-  padding:max(8px,env(safe-area-inset-top)) 10px 8px}
+#top{position:relative;z-index:10;background:var(--bg);padding:max(8px,env(safe-area-inset-top)) 10px 0}
+#top.pinned{position:sticky;top:var(--bH,0px)}
+body.flown #top{padding-top:0}
+#tabsBar{position:sticky;top:calc(var(--bH,0px) + var(--pinH,0px));z-index:9;background:var(--bg);border-bottom:2px solid var(--line);padding:0 10px 6px}
+#spBanner{position:sticky;top:0;z-index:12}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;flex:0 0 auto}
 #top>.row:first-child{flex-wrap:nowrap}
@@ -64,7 +67,7 @@ a{color:var(--accent2)}
 #traffic{width:100%;border-radius:14px;padding:6px 12px;background:#2a2410;color:var(--accent);font-weight:700}
 #traffic:empty{display:none}
 /* controls */
-#controls{margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+#controls{margin:8px 0 2px}
 #controls button{min-width:52px}
 #dateLabel{font-weight:800;min-width:9em;text-align:center}
 #datePick{background:var(--panel2);border:2px solid var(--line);border-radius:14px;min-height:52px;padding:4px 10px;
@@ -107,7 +110,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #wx .temp{gap:6px}
 #wxIcon{display:inline-flex;width:1.25em;height:1.25em}
 #wxIcon svg,.wk svg{width:100%;height:100%}
-#wxPanel{display:flex;gap:8px;align-items:stretch;height:96px}
+#wxPanel{display:flex;gap:8px;align-items:stretch;height:92px;margin-top:8px}
 #radarThumb{flex:0 0 auto;width:112px;min-height:0;padding:0;overflow:hidden;position:relative;background:#000;border-radius:12px}
 #radarThumb img{width:100%;height:100%;object-fit:cover;object-position:28% 45%;display:block;transform:scale(1.9);transform-origin:28% 45%}
 #radarThumb .lbl{position:absolute;left:4px;bottom:3px;font-size:.55em;font-weight:900;background:rgba(0,0,0,.7);padding:1px 5px;border-radius:5px;color:var(--accent2)}
@@ -121,14 +124,14 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .wk .t{font-weight:900;font-size:.85em;white-space:nowrap}.wk .t .lo{color:#7fb6ff;font-weight:700}
 .wk .p{font-size:.55em;color:#7fb6ff;min-height:1em}
 .wk.today{background:var(--panel2);outline:2px solid var(--line)}
-#weekSrc{font-size:.6em;color:var(--dim);margin:3px 0 12px}
+#weekSrc{font-size:.6em;color:var(--dim);margin:2px 0 0}
 #radarModal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.92);display:none;flex-direction:column;align-items:center;justify-content:center;padding:12px}
 #radarModal.on{display:flex}
 #radarModal img{max-width:100%;max-height:78vh;border-radius:10px;background:#000}
 #radarModal .cap{color:var(--dim);font-size:.75em;margin:8px 0;text-align:center}
 #radarModal button{min-width:160px}
 /* sponsors + countdowns */
-#spBanner{display:none;margin:0 0 6px;border-radius:12px;background:#d0021b;color:#fff;font-weight:900;padding:6px 8px 6px 12px;
+#spBanner{display:none;margin:0;border-radius:0 0 12px 12px;border-radius:12px;background:#d0021b;color:#fff;font-weight:900;padding:6px 8px 6px 12px;
   align-items:center;gap:8px;animation:sppulse 1.2s ease-in-out infinite;border:3px solid #fff}
 #spBanner.on{display:flex}
 #spBanner .t{flex:1;min-width:0;font-size:.95em;line-height:1.2}
@@ -150,7 +153,8 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .tickbtn .tbox{width:34px;height:34px;border:3px solid #06210f;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:#fff;font-size:.9em}
 .tickbtn.done{background:var(--panel2);color:var(--text);border-color:var(--line)}
 .tickbtn.done .tbox{border-color:#2ecc71;color:#2ecc71;background:transparent}
-#extras{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+#extras{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 0}
+#extras:empty{display:none}
 .cdchip,.studiochip{min-height:48px;padding:4px 12px;border-radius:12px;font-weight:900;font-size:.85em;background:var(--panel2);border:2px solid var(--line);display:inline-flex;align-items:center;gap:8px}
 .cdchip .n{color:var(--accent)}
 .cdchip.today{background:var(--accent);color:#111;border-color:var(--accent)}.cdchip.today .n{color:#111}
@@ -175,6 +179,18 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:80;background:#fff;color:#000;font-weight:900;border-radius:14px;padding:8px 8px 8px 16px;display:none;align-items:center;gap:10px;box-shadow:0 6px 30px rgba(0,0,0,.6);max-width:94vw}
 #toast.on{display:flex}
 #toast button{background:#000;color:#fff;border-color:#000;min-height:48px}
+@media (max-height:500px) and (orientation:landscape){ #wxPanel{height:70px} #adv.past{display:none} }
+/* fly-away top block */
+#topFold{display:grid;grid-template-rows:1fr;transition:grid-template-rows .38s cubic-bezier(.4,0,.2,1),opacity .3s ease,transform .38s cubic-bezier(.4,0,.2,1);transform-origin:top}
+#topFoldIn{min-height:0;overflow:hidden}
+body.flown #topFold{grid-template-rows:0fr;opacity:0;transform:translateY(-24px);pointer-events:none}
+body.flown #tabs{padding-top:4px}
+body.flown #tabs button{min-height:40px;padding:4px 12px}
+body.flown #tabs button .cat{display:none}
+#flyBtn{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));z-index:55;width:68px;height:68px;min-height:0;padding:0;border-radius:50%;
+  font-size:2em;line-height:1;background:var(--accent);color:#111;border:3px solid #111;box-shadow:0 6px 24px rgba(0,0,0,.7)}
+body.flown #flyBtn{background:var(--accent2)}
+@media (prefers-reduced-motion:reduce){ #topFold{transition:none} }
 /* headline ticker */
 #tickerWrap{display:flex;align-items:stretch;gap:6px;margin-top:8px}
 #ticker{flex:1;min-width:0;overflow:hidden;background:#000;border:2px solid var(--line);border-radius:14px;position:relative;
@@ -201,6 +217,14 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 @keyframes flashhit{0%{background:var(--accent);color:#000}100%{background:transparent}}
 @media (prefers-reduced-motion:reduce){ #tickerTrack{animation:none} }
 @media (max-width:520px){
+  #wxPanel{height:80px;margin-top:6px}
+  #radarThumb{width:92px}
+  .wk{flex-basis:50px}
+  .wk .i{width:24px;height:24px}
+  #extras .cdchip,#extras .studiochip{min-height:40px;font-size:.78em;padding:2px 10px}
+  #extras{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  #extras::-webkit-scrollbar{display:none}
+  #extras>*>*{flex:0 0 auto}
   .brand .bx{display:none}
   .daychip{max-width:9.5em}
   #traffic{display:none}
@@ -219,8 +243,9 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 </style>
 </head>
 <body>
+<div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
 <header id="top">
-  <div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
+  <div id="topFold"><div id="topFoldIn">
   <div class="row">
     <div class="brand">Z93<span class="bx"> HOT SHEET</span></div>
     <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
@@ -232,19 +257,16 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
     <div id="adv"></div>
     <div id="traffic"></div>
   </div>
-  <div id="tickerWrap" class="none">
-    <div id="ticker" aria-label="Top talking points"><div id="tickerTrack"></div></div>
-    <button id="tickPause" aria-label="Pause ticker">⏸</button>
-  </div>
-  <nav id="tabs" role="tablist"></nav>
-</header>
-<main>
   <div id="wxPanel">
     <button id="radarThumb" aria-label="Open live radar"><img id="radarImg" alt="Live radar, Gaylord NWS (KAPX)"><span class="lbl">RADAR</span><span class="off">Radar offline</span></button>
     <div id="week" aria-label="7-day forecast"></div>
   </div>
   <div id="weekSrc"></div>
   <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
+  <div id="tickerWrap" class="none">
+    <div id="ticker" aria-label="Top talking points"><div id="tickerTrack"></div></div>
+    <button id="tickPause" aria-label="Pause ticker">⏸</button>
+  </div>
   <div id="controls" class="row">
     <button id="prevDay" aria-label="Previous weekday">◀</button>
     <div id="dateLabel">Latest</div>
@@ -257,8 +279,12 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
     <button id="fileBtn" aria-label="Open a JSON file">📂 Open file</button>
     <button id="spEditBtn" aria-label="Edit sponsors">⚙ Sponsors</button>
     <button id="cdEditBtn" aria-label="Edit countdowns">⏱ Countdowns</button>
-    <input type="file" id="fileIn" accept=".json,application/json" multiple hidden>
   </div>
+  </div></div>
+</header>
+<input type="file" id="fileIn" accept=".json,application/json" multiple hidden>
+<div id="tabsBar"><nav id="tabs" role="tablist"></nav></div>
+<main>
   <div id="status" role="status"></div>
   <section id="view" class="sec"></section>
 </main>
@@ -273,6 +299,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   <div class="cap">Live radar loop · NWS Gaylord (KAPX) · Traverse City is left of center · refreshes every 5 min</div>
   <button id="radarClose">Close</button>
 </div>
+<button id="flyBtn" type="button" aria-label="Fly away the top" aria-pressed="false">⤒</button>
 <div id="drop">Drop a hot-sheet JSON here</div>
 <script>
 (() => {
@@ -739,6 +766,17 @@ $('#cdModal').addEventListener('click',e=>{ if(e.target.id==='cdModal') $('#cdMo
 $('#readModal').addEventListener('click',e=>{ if(e.target.id==='readModal') $('#readModal').classList.remove('on'); });
 addEventListener('keydown',e=>{ if(e.key==='Escape') ['#readModal','#spModal','#cdModal'].forEach(m=>$(m).classList.remove('on')); });
 
+/* ---------- fly-away top ---------- */
+let flown = LS.getItem('hs:flown')==='1';
+function applyFly(){ document.body.classList.toggle('flown', flown); const b=$('#flyBtn');
+  b.textContent = flown ? '⤓' : '⤒'; b.setAttribute('aria-pressed', String(flown));
+  b.setAttribute('aria-label', flown ? 'Bring the top back' : 'Fly away the top');
+  b.title = flown ? 'Bring the top back' : 'Fly away the top (full screen)';
+  $('#topFold').setAttribute('aria-hidden', String(flown)); $('#topFold').inert = flown;
+  setTimeout(setHdr, 420); }
+$('#flyBtn').onclick=()=>{ flown=!flown; LS.setItem('hs:flown', flown?'1':'0'); applyFly(); };
+applyFly();
+
 /* ---------- days of note (notable observances) ---------- */
 let daysData=null; try{ daysData=JSON.parse(LS.getItem('hs:days')||'null'); }catch(e){}
 const FULLDAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -984,11 +1022,22 @@ $('#ticker').addEventListener('click',e=>{
 function jumpTo(section, story){
   if(section && sectionList().some(x=>x.key===section)){ state.tab=section; LS.setItem('hs:tab',section); renderTabs(); renderView(); }
   const el = story ? document.querySelector('#view .headline[data-story="'+story+'"]') : null;
-  if(el){ window.scrollTo({top: Math.max(0, el.getBoundingClientRect().top + scrollY - $('#top').offsetHeight - 10), behavior: reduceMotion.matches?'auto':'smooth'}); el.classList.remove('flashhit'); void el.offsetWidth; el.classList.add('flashhit'); }
-  else { const h=document.querySelector('#view h2'); if(h){ window.scrollTo({top: Math.max(0, h.getBoundingClientRect().top + scrollY - $('#top').offsetHeight - 8)}); } }
+  if(el){ window.scrollTo({top: Math.max(0, el.getBoundingClientRect().top + scrollY - stickyH() - 10), behavior: reduceMotion.matches?'auto':'smooth'}); el.classList.remove('flashhit'); void el.offsetWidth; el.classList.add('flashhit'); }
+  else { const h=document.querySelector('#view h2'); if(h){ window.scrollTo({top: Math.max(0, h.getBoundingClientRect().top + scrollY - stickyH() - 8)}); } }
 }
-function setHdr(){ document.documentElement.style.setProperty('--hdr', ($('#top').offsetHeight+10)+'px'); }
-addEventListener('resize', setHdr);
+// sticky stack: overdue banner (always) + top block (only while it fits in ~45% of the screen, or when flown) + tabs bar
+function setHdr(){
+  const root=document.documentElement.style, top=$('#top'), ban=$('#spBanner');
+  const bH = ban.classList.contains('on') ? ban.offsetHeight : 0;
+  const hH = top.offsetHeight;
+  const pinned = document.body.classList.contains('flown') || hH <= innerHeight*0.45;
+  top.classList.toggle('pinned', pinned);
+  root.setProperty('--bH', bH+'px'); root.setProperty('--pinH', (pinned?hH:0)+'px');
+  root.setProperty('--hdr', (stickyH()+10)+'px');
+}
+function stickyH(){ const ban=$('#spBanner'); return (ban.classList.contains('on')?ban.offsetHeight:0) + ($('#top').classList.contains('pinned')?$('#top').offsetHeight:0) + $('#tabsBar').offsetHeight; }
+addEventListener('resize', setHdr); addEventListener('orientationchange', ()=>setTimeout(setHdr,300));
+if('ResizeObserver' in window){ const ro=new ResizeObserver(()=>setHdr()); ro.observe($('#top')); ro.observe($('#spBanner')); }
 reduceMotion.addEventListener && reduceMotion.addEventListener('change', renderTicker);
 
 /* ---------- render ---------- */
@@ -1039,7 +1088,7 @@ function renderTabs(){
     if(v.category){ const c=document.createElement('span'); c.className='cat'; c.textContent=v.category; b.append(c); }
     b.onclick=()=>{ state.tab=key; LS.setItem('hs:tab',key); renderTabs(); renderView(); window.scrollTo({top:0}); };
     nav.append(b);
-    if(key===state.tab) setTimeout(()=>b.scrollIntoView({inline:'nearest',block:'nearest'}),0);
+    if(key===state.tab) setTimeout(()=>{ const l=b.offsetLeft, r=l+b.offsetWidth; if(l<nav.scrollLeft) nav.scrollLeft=l-8; else if(r>nav.scrollLeft+nav.clientWidth) nav.scrollLeft=r-nav.clientWidth+8; },0);
   }
 }
 function renderView(){
@@ -1050,7 +1099,7 @@ function renderView(){
   }
   const item=sectionList().find(x=>x.key===state.tab); if(!item) return;
   const v=item.v;
-  if(state.wxMore && matchMedia('(max-width:520px)').matches){ const w=document.createElement('div'); w.className='hint'; w.style.marginBottom='8px'; w.textContent='🌡 '+state.wxMore; view.append(w); }
+  if(state.wxMore && matchMedia('(max-width:520px)').matches && !document.body.classList.contains('flown')){ const w=document.createElement('div'); w.className='hint'; w.style.marginBottom='8px'; w.textContent='🌡 '+state.wxMore; view.append(w); }
   if(v.category){ const c=document.createElement('div'); c.className='catline'; c.textContent=v.category; view.append(c); }
   const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
 
