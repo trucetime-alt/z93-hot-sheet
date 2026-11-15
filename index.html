@@ -81,7 +81,35 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   font-size:1.6em;font-weight:900;color:var(--accent);z-index:50;border:6px dashed var(--accent)}
 #drop.on{display:flex}
 .hint{color:var(--dim);font-size:.8em}
+/* headline ticker */
+#tickerWrap{display:flex;align-items:stretch;gap:6px;margin-top:8px}
+#ticker{flex:1;min-width:0;overflow:hidden;background:#000;border:2px solid var(--line);border-radius:14px;position:relative;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14px,#000 calc(100% - 14px),transparent 100%);
+          mask-image:linear-gradient(90deg,transparent 0,#000 14px,#000 calc(100% - 14px),transparent 100%)}
+#tickerTrack{display:flex;width:max-content;animation:tick var(--tdur,60s) linear infinite;will-change:transform}
+#ticker.paused #tickerTrack{animation-play-state:paused}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tk{flex:0 0 auto;display:flex;align-items:center;gap:8px;min-height:48px;padding:4px 18px 4px 10px;border:none;border-radius:0;
+  background:transparent;font-weight:800;font-size:1em;white-space:nowrap;color:var(--text);border-right:2px solid #222}
+.tk .tag{font-size:.62em;font-weight:900;letter-spacing:.08em;padding:3px 7px;border-radius:6px;color:#000;background:#9aa}
+.tk.t-ADVISORY{color:#fff;background:#5a0f06}.tk.t-ADVISORY .tag{background:var(--warn);color:#fff}
+.t-WEATHER .tag{background:#5cc8ff}.t-SCHOOLS .tag{background:#c59bff}.t-TRAFFIC .tag,.t-ROADS .tag{background:var(--accent)}
+.t-LOCAL .tag{background:var(--ok)}.t-NATIONAL .tag{background:#33d6ff}.t-SPORTS .tag{background:#ff9f43}
+.t-EVENTS .tag{background:#ff7ab6}.t-FLASHBACK .tag{background:#cfd8dc}.t-WORLD .tag{background:#7ee0c3}
+#tickPause{min-width:52px;padding:4px 10px}
+#ticker.static{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-mask-image:none;mask-image:none}
+#ticker.static #tickerTrack{animation:none}
+#ticker.static .tk{scroll-snap-align:start}
+#tickerWrap.none{display:none}
+.headline{display:inline-block;font-weight:900;color:var(--accent);font-size:1.08em;scroll-margin-top:var(--hdr,200px)}
+.subhead{display:inline-block;font-weight:900;color:var(--accent2);letter-spacing:.06em}
+.flashhit{animation:flashhit 1.6s ease-out}
+@keyframes flashhit{0%{background:var(--accent);color:#000}100%{background:transparent}}
+@media (prefers-reduced-motion:reduce){ #tickerTrack{animation:none} }
 @media (max-width:520px){
+  #traffic{display:none}
+  #tickerWrap{margin-top:6px}
+  .tk{min-height:44px}
   :root{--fs:18px}
   #wx{gap:6px;margin-top:4px}
   #wx .temp{font-size:1.6em;padding:4px 10px}
@@ -105,6 +133,10 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
     <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div class="small" id="wxMore"></div></div>
     <div id="adv"></div>
     <div id="traffic"></div>
+  </div>
+  <div id="tickerWrap" class="none">
+    <div id="ticker" aria-label="Top talking points"><div id="tickerTrack"></div></div>
+    <button id="tickPause" aria-label="Pause ticker">⏸</button>
   </div>
   <nav id="tabs" role="tablist"></nav>
 </header>
@@ -175,6 +207,16 @@ function richText(el, text){
   while((m=re.exec(text))){ el.append(text.slice(last,m.index));
     const a=document.createElement('a'); a.href=m[1]; a.textContent=m[1]; a.target='_blank'; a.rel='noopener'; el.append(a); last=m.index+m[1].length; }
   el.append(text.slice(last));
+}
+// like richText, but marks numbered story headlines ("3) TITLE") and "━━ LOCAL ━━" dividers
+function richLines(el, text){
+  text.split('\n').forEach((ln,i,arr)=>{
+    const h=ln.match(/^\s*(\d+)\)\s+\S/); const sub=ln.match(/^\s*━+\s*(.+?)\s*━+\s*$/);
+    if(h){ const sp=document.createElement('span'); sp.className='headline'; sp.dataset.story=h[1]; richText(sp, ln); el.append(sp); }
+    else if(sub){ const sp=document.createElement('span'); sp.className='subhead'; sp.textContent=ln; el.append(sp); }
+    else richText(el, ln);
+    if(i<arr.length-1) el.append('\n');
+  });
 }
 function sheetDate(sheet){
   const u = sheet && sheet.weather && sheet.weather.updated;
@@ -311,6 +353,7 @@ async function showSheet(sheet, date){
   $('#dateLabel').textContent = state.mode==='latest' ? 'Latest'+(date?' · '+nice(date):'') : nice(date);
   if(date) $('#datePick').value=date;
   renderWeather(sheet && sheet.weather);
+  renderTicker();
   if(sheet){
     const inline=clipsFromSheet(sheet);
     if(inline.length){ state.clips=await storeClips(date, sheet); state.clipsLoaded=true; }
@@ -334,6 +377,95 @@ async function loadAudioVariant(){
   }
   renderTabs(); renderView();
 }
+
+/* ---------- headline ticker ---------- */
+const TAGS=['ADVISORY','WEATHER','SCHOOLS','TRAFFIC','ROADS','LOCAL','NATIONAL','WORLD','SPORTS','EVENTS','FLASHBACK'];
+function linesOf(sec){ return sec && typeof sec.content==='string' ? cleanText(sec.content).split('\n').map(l=>l.trim()) : []; }
+function stripLead(t){ return t.replace(/^[\s•➜\-–—]+/,'').replace(/^(?:[\p{Extended_Pictographic}\uFE0F\u200D]+\s*)+/u,'').trim(); }
+function advisoryLive(w){
+  const det=(w&&w.advisory_detail)||{}; if(!w||!w.advisory||det.active===false) return false;
+  if(det.until){ const u=new Date(det.until); if(!isNaN(u)&&u<new Date()) return false; } return true;
+}
+function buildTicker(sheet){
+  if(!sheet) return [];
+  if(Array.isArray(sheet.ticker) && sheet.ticker.length){   // curated by Hot Sheet: overrides auto items
+    return sheet.ticker.map(t=> typeof t==='string' ? {tag:'', text:t} :
+      {tag:String(t.tag||'').toUpperCase(), text:String(t.text||''), section:t.section, story:t.story})
+      .filter(t=>t.text.trim());
+  }
+  const out=[]; const w=sheet.weather||{}; const vibe=sheet.vibe;
+  const vl=linesOf(vibe);
+  // advisories first: live one from the weather block, else the one written in Vibe Check
+  if(advisoryLive(w)) out.push({tag:'ADVISORY', text:w.advisory, section:'vibe'});
+  else { const a=vl.find(l=>/\b(ADVISORY|WARNING|WATCH)\b/.test(l) && !/^(?:🏫|🚗)/u.test(l));
+         if(a) out.push({tag:'ADVISORY', text:stripLead(a), section:'vibe'}); }
+  if(w.temp||w.cond) out.push({tag:'WEATHER', text:[w.temp,w.cond].filter(Boolean).join(' ')+(w.high?' · High '+w.high:'')+(w.low?' · Low '+w.low:''), section:'vibe'});
+  for(const l of vl){
+    const m=l.match(/SCHOOLS?\s*:\s*(.+)/i); if(m && m[1].trim()) out.push({tag:'SCHOOLS', text:m[1].trim(), section:'vibe'});
+    const r=l.match(/(?:ROADS?|TRAFFIC)\s*:\s*(.+)/i); if(r && r[1].trim()) out.push({tag:'ROADS', text:r[1].trim(), section:'vibe'});
+  }
+  if(w.traffic && !out.some(o=>o.text===w.traffic)) out.push({tag:'TRAFFIC', text:w.traffic, section:'vibe'});
+  // Daily Buzz: numbered story headlines, tagged by the ━━ LOCAL / NATIONAL ━━ divider they sit under
+  let group='', sports=[];
+  for(const l of linesOf(sheet.buzz)){
+    const sub=l.match(/^━+\s*(.+?)\s*━+$/); if(sub){ group=sub[1].toUpperCase(); continue; }
+    const h=l.match(/^(\d+)\)\s+(.+)$/);
+    if(h){ out.push({tag: TAGS.includes(group)?group:(group||'BUZZ'), text:h[2].replace(/\s*🔊\s*$/u,'').trim(), section:'buzz', story:h[1], clip:/🔊/u.test(h[2])}); continue; }
+    if(group==='SPORTS' && /^•/.test(l)){ const t=stripLead(l); if(t) sports.push({tag:'SPORTS', text:t, section:'buzz'}); }
+  }
+  // Events happening today/tonight
+  for(const l of linesOf(sheet.events)){ if(/^•\s*(TODAY|TONIGHT)\b/i.test(l)){ const t=stripLead(l);
+    const key=x=>(x.split(/:\s+/)[1]||x).trim().toLowerCase().split(/[\s(,]+/)[0];  // first word after the time, e.g. "kingsley"
+    if(!sports.some(s=>key(s.text)===key(t))) out.push({tag:'EVENTS', text:t, section:'events'}); } }
+  out.push(...sports);
+  const fl=cleanText(sheet.flash&&sheet.flash.content).trim();
+  if(fl){ const first=fl.split(/(?<=\d{4}\.)\s|\n/)[0].trim(); out.push({tag:'FLASHBACK', text:first.replace(/\.$/,''), section:'flash'}); }
+  // de-dupe, drop empties
+  const seen=new Set(); return out.filter(o=>o.text && !seen.has(o.tag+o.text) && seen.add(o.tag+o.text));
+}
+let tickerPaused = LS.getItem('hs:tickPaused')==='1';
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+function renderTicker(){
+  const wrap=$('#tickerWrap'), tk=$('#ticker'), track=$('#tickerTrack');
+  const items=buildTicker(state.sheet); state.tickerItems=items;
+  track.innerHTML='';
+  if(!items.length){ wrap.classList.add('none'); return; }
+  wrap.classList.remove('none');
+  const still = reduceMotion.matches;
+  tk.classList.toggle('static', still);
+  $('#tickPause').style.display = still ? 'none' : '';
+  const make=(it,dup)=>{ const b=document.createElement('button'); b.className='tk t-'+(it.tag||'NONE');
+    if(dup){ b.tabIndex=-1; b.setAttribute('aria-hidden','true'); }
+    if(it.tag){ const g=document.createElement('span'); g.className='tag'; g.textContent=it.tag; b.append(g); }
+    b.append(it.text+(it.clip?' 🔊':'')); b.dataset.i=items.indexOf(it); return b; };
+  items.forEach(it=>track.append(make(it,false)));
+  if(!still){ items.forEach(it=>track.append(make(it,true)));
+    requestAnimationFrame(()=>{ const half=track.scrollWidth/2; track.style.setProperty('--tdur', Math.max(20, half/70)+'s'); }); } // ~70 px/s
+  setPaused(tickerPaused);
+  setHdr();
+}
+function setPaused(p){ tickerPaused=p; $('#ticker').classList.toggle('paused',p); const b=$('#tickPause');
+  b.textContent=p?'▶':'⏸'; b.setAttribute('aria-label',p?'Play ticker':'Pause ticker'); }
+$('#tickPause').onclick=()=>{ setPaused(!tickerPaused); LS.setItem('hs:tickPaused',tickerPaused?'1':'0'); };
+// press-and-hold pauses while held; a quick tap jumps to the story
+let holdT=null, held=false;
+$('#ticker').addEventListener('pointerdown',()=>{ held=false; holdT=setTimeout(()=>{ held=true; $('#ticker').classList.add('paused'); },350); });
+const release=()=>{ clearTimeout(holdT); if(held && !tickerPaused) setTimeout(()=>$('#ticker').classList.remove('paused'),50); };
+$('#ticker').addEventListener('pointerup',release); $('#ticker').addEventListener('pointercancel',release); $('#ticker').addEventListener('pointerleave',release);
+$('#ticker').addEventListener('contextmenu',e=>e.preventDefault());
+$('#ticker').addEventListener('click',e=>{
+  const b=e.target.closest('.tk'); if(!b || held){ held=false; return; }
+  const it=(state.tickerItems||[])[+b.dataset.i]; if(it) jumpTo(it.section, it.story);
+});
+function jumpTo(section, story){
+  if(section && sectionList().some(x=>x.key===section)){ state.tab=section; LS.setItem('hs:tab',section); renderTabs(); renderView(); }
+  const el = story ? document.querySelector('#view .headline[data-story="'+story+'"]') : null;
+  if(el){ window.scrollTo({top: Math.max(0, el.getBoundingClientRect().top + scrollY - $('#top').offsetHeight - 10), behavior: reduceMotion.matches?'auto':'smooth'}); el.classList.remove('flashhit'); void el.offsetWidth; el.classList.add('flashhit'); }
+  else { const h=document.querySelector('#view h2'); if(h){ window.scrollTo({top: Math.max(0, h.getBoundingClientRect().top + scrollY - $('#top').offsetHeight - 8)}); } }
+}
+function setHdr(){ document.documentElement.style.setProperty('--hdr', ($('#top').offsetHeight+10)+'px'); }
+addEventListener('resize', setHdr);
+reduceMotion.addEventListener && reduceMotion.addEventListener('change', renderTicker);
 
 /* ---------- render ---------- */
 function renderWeather(w){
@@ -400,7 +532,7 @@ function renderView(){
   else {
     const txt=cleanText(v.content).trim();
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
-    if(txt) richText(c, txt); else c.textContent='Nothing in this section today.';
+    if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
     view.append(c);
   }
   if(v.notes){
