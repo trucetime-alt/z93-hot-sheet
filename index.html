@@ -147,9 +147,9 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .spdone{display:flex;align-items:center;gap:8px;color:var(--dim);font-size:.8em;margin:8px 0;padding:6px 10px;border:1px dashed var(--line);border-radius:12px}
 .spdone button{min-height:40px;padding:2px 12px;font-size:.95em}
 .tickbtn{width:100%;min-height:64px;font-size:1.15em;background:#2ecc71;color:#06210f;border-color:#2ecc71;display:flex;align-items:center;justify-content:center;gap:10px}
-.tickbtn .box{width:34px;height:34px;border:3px solid #06210f;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:#fff;font-size:.9em}
+.tickbtn .tbox{width:34px;height:34px;border:3px solid #06210f;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:#fff;font-size:.9em}
 .tickbtn.done{background:var(--panel2);color:var(--text);border-color:var(--line)}
-.tickbtn.done .box{border-color:#2ecc71;color:#2ecc71;background:transparent}
+.tickbtn.done .tbox{border-color:#2ecc71;color:#2ecc71;background:transparent}
 #extras{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
 .cdchip,.studiochip{min-height:48px;padding:4px 12px;border-radius:12px;font-weight:900;font-size:.85em;background:var(--panel2);border:2px solid var(--line);display:inline-flex;align-items:center;gap:8px}
 .cdchip .n{color:var(--accent)}
@@ -581,7 +581,7 @@ function overdueList(){ const s=spSettings(); const p=etParts();
 function isDue(id){ return overdueList().some(s=>s.id===id); }
 function tickButton(sp, after){
   const done=isRead(sp.id);
-  const b=h('button',{className:'tickbtn'+(done?' done':''), type:'button'}, h('span',{className:'box'}, done?'✓':''),
+  const b=h('button',{className:'tickbtn'+(done?' done':''), type:'button'}, h('span',{className:'tbox'}, done?'✓':''),
     done ? 'Read today ✓ '+fmtTime(readAt(sp.id))+' · tap to undo' : 'Read today');
   b.setAttribute('aria-pressed', String(done));
   b.onclick=()=>{ setRead(sp.id, !isRead(sp.id)); if(after) after(); };
