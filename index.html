@@ -27,7 +27,29 @@ a{color:var(--accent2)}
 #top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:2px solid var(--line);
   padding:max(8px,env(safe-area-inset-top)) 10px 8px}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;margin-right:auto}
+.brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;flex:0 0 auto}
+#top>.row:first-child{flex-wrap:nowrap}
+#daysRow{flex:1;min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:6px}
+#dowLabel{flex:0 0 auto;font-weight:900;font-size:.8em;color:#fff;background:var(--panel2);border:2px solid var(--line);border-radius:10px;padding:4px 8px;white-space:nowrap}
+#dayChips{display:flex;gap:6px;overflow-x:auto;min-width:0;scrollbar-width:none}
+#dayChips::-webkit-scrollbar{display:none}
+.daychip{flex:0 0 auto;min-height:40px;max-width:24em;padding:4px 10px;border-radius:10px;font-size:.78em;font-weight:800;
+  background:#1b1430;border:2px solid #5b3fa8;color:#efe7ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.daychip.k-federal{background:#10213d;border-color:#3d7bd9}
+.daychip.k-un{background:#0b2a33;border-color:#2aa7c9}
+#dayModal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.9);display:none;align-items:flex-start;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 10px 10px;overflow-y:auto}
+#dayModal.on{display:flex}
+#dayModal .box{background:var(--panel);border:2px solid var(--line);border-radius:16px;max-width:640px;width:100%;padding:14px}
+#dayModal h3{margin:0 0 8px;color:var(--accent);font-size:1.15em}
+.daycard{border:2px solid var(--line);border-radius:14px;padding:12px;margin:10px 0;background:var(--bg)}
+.daycard.hit{border-color:var(--accent)}
+.daycard .nm{font-weight:900;font-size:1.1em}
+.daycard .kd{display:inline-block;font-size:.65em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:6px;background:var(--panel2);color:var(--dim);margin:4px 0}
+.daycard .lab{font-size:.7em;font-weight:900;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+.daycard p{margin:2px 0}
+.daycard .angle{color:var(--accent)}
+.daycard .src{font-size:.75em;color:var(--dim);margin-top:8px}
+#dayModal .close{width:100%;margin-top:6px}
 #clock{font-variant-numeric:tabular-nums;font-weight:800;font-size:1.05em}
 /* weather bar */
 #wx{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:8px}
@@ -131,6 +153,8 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 @keyframes flashhit{0%{background:var(--accent);color:#000}100%{background:transparent}}
 @media (prefers-reduced-motion:reduce){ #tickerTrack{animation:none} }
 @media (max-width:520px){
+  .brand .bx{display:none}
+  .daychip{max-width:9.5em}
   #traffic{display:none}
   #tickerWrap{margin-top:6px}
   .tk{min-height:44px}
@@ -149,7 +173,8 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 <body>
 <header id="top">
   <div class="row">
-    <div class="brand">Z93 HOT SHEET</div>
+    <div class="brand">Z93<span class="bx"> HOT SHEET</span></div>
+    <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
     <div id="clock">--:--</div>
   </div>
   <div id="wx" aria-live="polite">
@@ -185,6 +210,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   <div id="status" role="status"></div>
   <section id="view" class="sec"></section>
 </main>
+<div id="dayModal" role="dialog" aria-label="Days of note"><div class="box"><h3 id="dayModalTitle"></h3><div id="dayCards"></div><button class="close" id="dayClose">Close</button></div></div>
 <div id="radarModal" role="dialog" aria-label="Live radar">
   <img id="radarBig" alt="Live radar loop, NWS Gaylord (KAPX)">
   <div class="cap">Live radar loop · NWS Gaylord (KAPX) · Traverse City is left of center · refreshes every 5 min</div>
@@ -388,6 +414,7 @@ async function showSheet(sheet, date){
   if(date) $('#datePick').value=date;
   renderWeather(sheet && sheet.weather);
   renderTicker();
+  renderDays();
   if(sheet){
     const inline=clipsFromSheet(sheet);
     if(inline.length){ state.clips=await storeClips(date, sheet); state.clipsLoaded=true; }
@@ -411,6 +438,63 @@ async function loadAudioVariant(){
   }
   renderTabs(); renderView();
 }
+
+/* ---------- days of note (notable observances) ---------- */
+let daysData=null; try{ daysData=JSON.parse(LS.getItem('hs:days')||'null'); }catch(e){}
+const FULLDAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+async function loadDays(){
+  if(isHttp){ try{ const j=await fetchJson('days.json'); if(j && j.dates){ daysData=j; try{ LS.setItem('hs:days',JSON.stringify(j)); }catch(e){} } }catch(e){} }
+  renderDays();
+}
+function daysFor(date){
+  // a sheet may carry its own "days" list (strings or {name, what, why, angle, source, icon, kind}); it wins for that sheet's date
+  const sd = state.sheet && Array.isArray(state.sheet.days) ? state.sheet.days : null;
+  if(sd && sd.length) return sd.map(x=> typeof x==='string' ? {name:x} : x).filter(x=>x && x.name);
+  if(!daysData || !daysData.dates || !date) return [];
+  return (daysData.dates[date]||[]).map(e=>Object.assign({}, e, (daysData.info||{})[e.key]||{}));
+}
+function renderDays(){
+  const date = state.date || ymd(new Date());
+  const d=parseYmd(date); const wide=!matchMedia('(max-width:520px)').matches;
+  $('#dowLabel').textContent=(wide?FULLDAYS[d.getDay()]:DAYS[d.getDay()])+', '+MONS[d.getMonth()]+' '+d.getDate();
+  const box=$('#dayChips'); box.innerHTML='';
+  const list=daysFor(date);
+  if(!wide && list.length>1){   // phone: one compact chip for several days, tap opens them all
+    const b=document.createElement('button'); b.className='daychip';
+    b.textContent=list.map(x=>x.icon||'•').join('')+' '+list.length+' days'; b.title=list.map(x=>x.name).join(' · ');
+    b.setAttribute('aria-label',list.length+' days of note: '+list.map(x=>x.name).join(', '));
+    b.onclick=()=>openDay(date,-1); box.append(b); return;
+  }
+  list.forEach((x,i)=>{
+    const b=document.createElement('button'); b.className='daychip k-'+(/federal/i.test(x.kind||'')?'federal':/\bUN\b/.test(x.kind||'')?'un':'other');
+    b.textContent=(x.icon?x.icon+' ':'')+x.name; b.title=x.what||x.name; b.setAttribute('aria-label',x.name+', more info');
+    b.onclick=()=>openDay(date,i); box.append(b);
+  });
+}
+function openDay(date, idx){
+  const list=daysFor(date); const d=parseYmd(date);
+  $('#dayModalTitle').textContent='Days of note · '+FULLDAYS[d.getDay()]+', '+MONS[d.getMonth()]+' '+d.getDate();
+  const wrap=$('#dayCards'); wrap.innerHTML='';
+  list.forEach((x,i)=>{
+    const c=document.createElement('div'); c.className='daycard'+(i===idx?' hit':'');
+    const add=(cls,tag,txt)=>{ if(!txt) return; const e=document.createElement(tag); if(cls) e.className=cls; e.textContent=txt; c.append(e); };
+    add('nm','div',(x.icon?x.icon+' ':'')+x.name);
+    add('kd','span',x.kind);
+    if(x.what){ add('lab','div','What it is'); add('','p',x.what); }
+    if(x.why){ add('lab','div','Background'); add('','p',x.why); }
+    if(x.angle){ add('lab','div','On-air angle'); add('angle','p',x.angle); }
+    const links=[[x.source,'Wikipedia'],[x.un_list,'UN observances list'],[x.opm,'OPM federal holidays']].filter(l=>l[0]);
+    if(links.length){ const src=document.createElement('div'); src.className='src'; src.append('Source: ');
+      links.forEach(([u,t],j)=>{ if(j) src.append(' · '); const a=document.createElement('a'); a.href=u; a.target='_blank'; a.rel='noopener'; a.textContent=t; src.append(a); }); c.append(src); }
+    wrap.append(c);
+  });
+  $('#dayModal').classList.add('on');
+  const hit=wrap.querySelector('.hit'); if(hit) setTimeout(()=>hit.scrollIntoView({block:'nearest'}),0);
+}
+$('#dayClose').onclick=()=>$('#dayModal').classList.remove('on');
+$('#dayModal').addEventListener('click',e=>{ if(e.target.id==='dayModal') $('#dayModal').classList.remove('on'); });
+addEventListener('keydown',e=>{ if(e.key==='Escape') $('#dayModal').classList.remove('on'); });
+addEventListener('resize',()=>renderDays());
 
 /* ---------- weather icons, week strip, radar ---------- */
 function iconFor(text, daytime=true){
@@ -770,12 +854,12 @@ $('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
 $('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
 $('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
 $('#latestBtn').onclick=()=>load(null);
-$('#refreshBtn').onclick=async()=>{ await loadIndex(); load(state.mode==='latest'?null:state.date); };
+$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); load(state.mode==='latest'?null:state.date); };
 
 /* ---------- PWA ---------- */
 if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 
-loadIndex().then(()=>load(null));
+loadIndex().then(()=>load(null)); loadDays();
 window.__hs = state; // for debugging
 })();
 </script>

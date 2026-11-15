@@ -1,0 +1,360 @@
+{
+ "generated": "2026-11-15T14:06-05:00",
+ "rule": "Notable only: US federal holidays, major UN international days, and widely recognized US/cultural observances (curated allowlist in tools/national_days.py). No novelty days.",
+ "sources": {
+  "un": "https://www.un.org/en/observances/list-days-weeks",
+  "federal": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+  "blurbs": "Wikipedia article summaries",
+  "cross_check": "Wikipedia date pages, Holidays and observances"
+ },
+ "dates": {
+  "2026-11-08": [],
+  "2026-11-09": [],
+  "2026-11-10": [],
+  "2026-11-11": [
+   {
+    "key": "veterans",
+    "name": "Veterans Day",
+    "icon": "🎖️",
+    "kind": "Federal holiday",
+    "checks": {
+     "opm": true,
+     "wikipedia_date_page": true
+    },
+    "angle": "Shout out a veteran in your family.",
+    "opm": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+   }
+  ],
+  "2026-11-12": [],
+  "2026-11-13": [],
+  "2026-11-14": [
+   {
+    "key": "diabetes",
+    "name": "World Diabetes Day",
+    "icon": "🩸",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-11-15": [
+   {
+    "key": "recycles",
+    "name": "America Recycles Day",
+    "icon": "♻️",
+    "kind": "US observance",
+    "checks": {
+     "wikipedia_date_page": true
+    },
+    "angle": "What's the weirdest thing you've seen in a recycling bin?"
+   },
+   {
+    "key": "roadvictims",
+    "name": "World Day of Remembrance for Road Traffic Victims",
+    "icon": "🕯️",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": false
+    },
+    "angle": "A reminder to slow down on slick roads and drive sober.",
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-11-16": [
+   {
+    "key": "tolerance",
+    "name": "International Day for Tolerance",
+    "icon": "🤝",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-11-17": [],
+  "2026-11-18": [],
+  "2026-11-19": [
+   {
+    "key": "smokeout",
+    "name": "Great American Smokeout",
+    "icon": "🚭",
+    "kind": "US observance",
+    "checks": {
+     "wikipedia_date_page": false
+    },
+    "angle": "Quit smoking? How'd you do it?"
+   },
+   {
+    "key": "toilet",
+    "name": "World Toilet Day",
+    "icon": "🚽",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "angle": "Worst bathroom you've ever had to use on a road trip?",
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   },
+   {
+    "key": "mensday",
+    "name": "International Men's Day",
+    "icon": "👨",
+    "kind": "Widely celebrated",
+    "checks": {
+     "wikipedia_date_page": true
+    }
+   }
+  ],
+  "2026-11-20": [
+   {
+    "key": "children",
+    "name": "World Children's Day",
+    "icon": "🧒",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": false
+    },
+    "angle": "What did you want to be when you grew up?",
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   },
+   {
+    "key": "tdor",
+    "name": "Transgender Day of Remembrance",
+    "icon": "🕯️",
+    "kind": "US observance",
+    "checks": {
+     "wikipedia_date_page": true
+    }
+   }
+  ],
+  "2026-11-21": [
+   {
+    "key": "tv",
+    "name": "World Television Day",
+    "icon": "📺",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "angle": "What's the show you'd binge again right now?",
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-11-22": [],
+  "2026-11-23": [],
+  "2026-11-24": [],
+  "2026-11-25": [
+   {
+    "key": "evaw",
+    "name": "International Day for the Elimination of Violence against Women",
+    "icon": "🧡",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-11-26": [
+   {
+    "key": "thanksgiving",
+    "name": "Thanksgiving",
+    "icon": "🦃",
+    "kind": "Federal holiday",
+    "checks": {
+     "opm": true,
+     "wikipedia_date_page": false
+    },
+    "angle": "What's the one side dish that has to be on the table?",
+    "opm": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/"
+   }
+  ],
+  "2026-11-27": [
+   {
+    "key": "nativeheritage",
+    "name": "Native American Heritage Day",
+    "icon": "🪶",
+    "kind": "US observance",
+    "checks": {
+     "wikipedia_date_page": false
+    }
+   }
+  ],
+  "2026-11-28": [],
+  "2026-11-29": [],
+  "2026-11-30": [],
+  "2026-12-01": [
+   {
+    "key": "givingtuesday",
+    "name": "Giving Tuesday",
+    "icon": "🎁",
+    "kind": "US observance",
+    "checks": {
+     "wikipedia_date_page": false
+    },
+    "angle": "What local cause are you giving to this year?"
+   },
+   {
+    "key": "aids",
+    "name": "World AIDS Day",
+    "icon": "🎗️",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-12-02": [],
+  "2026-12-03": [
+   {
+    "key": "disabilities",
+    "name": "International Day of Persons with Disabilities",
+    "icon": "♿",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-12-04": [],
+  "2026-12-05": [
+   {
+    "key": "volunteer",
+    "name": "International Volunteer Day",
+    "icon": "🙋",
+    "kind": "UN international day",
+    "checks": {
+     "un": true,
+     "wikipedia_date_page": true
+    },
+    "angle": "Who's a volunteer that keeps our town running?",
+    "un_list": "https://www.un.org/en/observances/list-days-weeks"
+   }
+  ],
+  "2026-12-06": []
+ },
+ "info": {
+  "thanksgiving": {
+   "what": "Thanksgiving is a federal holiday in the United States celebrated during fall on the fourth Thursday of November.",
+   "why": "The earliest Thanksgiving can occur is November 22; the latest is November 28. Outside the United States, it is called American Thanksgiving to distinguish it from the Canadian holiday of the same name and related celebrations in other regions.",
+   "source": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)",
+   "fetched": "2026-11-15"
+  },
+  "volunteer": {
+   "what": "The International Volunteer Day for Economic and Social Development, more commonly referred to as International Volunteer Day (IVD), is an international observance mandated by the UN General Assembly in 1985.",
+   "why": "It offers an opportunity for volunteer-involving organizations and individual volunteers to promote volunteerism, encourage governments to support volunteer efforts, and recognize volunteer contributions to the achievement of the Sustainable Development Goals (SDGs) at local, national, and international levels. International Volunteer Day is marked and supported by the United Nations Volunteers (UNV).",
+   "source": "https://en.wikipedia.org/wiki/International_Volunteer_Day",
+   "fetched": "2026-11-15"
+  },
+  "aids": {
+   "what": "World AIDS Day, designated on 1 December every year since 1988, is an international day dedicated to raising awareness of the AIDS pandemic caused by the spread of HIV infection and mourning those who have died of the disease.",
+   "why": "The acquired immunodeficiency syndrome (AIDS) is a life-threatening condition caused by the human immunodeficiency virus (HIV). The HIV virus attacks the immune system of the patient and reduces its resistance to other diseases.",
+   "source": "https://en.wikipedia.org/wiki/World_AIDS_Day",
+   "fetched": "2026-11-15"
+  },
+  "tdor": {
+   "what": "The Transgender Day of Remembrance (TDoR), also known as the International Transgender Day of Remembrance, has been observed annually from its inception on November 20, 1999, to memorialize those who have been murdered as a result of transphobia.",
+   "why": "The day was founded to draw attention to the continued violence directed toward transgender people.",
+   "source": "https://en.wikipedia.org/wiki/Transgender_Day_of_Remembrance",
+   "fetched": "2026-11-15"
+  },
+  "mensday": {
+   "what": "International Men's Day (IMD) is a global awareness day for many issues that men face, including abuse, homelessness, suicide, and violence, celebrated annually on 19 November.",
+   "why": "The objectives of celebrating an International Men's Day are set out in \"All the Six Pillars of International Men's Day\". It is also an occasion to celebrate boys' and men's lives, achievements and contributions, in particular for their contributions to nation, union, society, community, family, marriage, and childcare.",
+   "source": "https://en.wikipedia.org/wiki/International_Men's_Day",
+   "fetched": "2026-11-15"
+  },
+  "disabilities": {
+   "what": "International Day of Persons with Disabilities (3 December) is an international observance promoted by the United Nations since 1992.",
+   "why": "It has been observed with varying degrees of success around the planet. The observance of the Day aims to promote an understanding of disability issues and mobilize support for the dignity, rights and well-being of persons with disabilities.",
+   "source": "https://en.wikipedia.org/wiki/United_Nations'_International_Day_of_Persons_with_Disabilities",
+   "fetched": "2026-11-15"
+  },
+  "children": {
+   "what": "Children's Day is a commemorative date celebrated annually in honour of children, whose date of observance varies by country.",
+   "why": "In 1925, International Children's Day was first proclaimed in Geneva during the World Conference on Child Welfare. Since 1950, it is celebrated on 1 June in many countries that were part of the Eastern Bloc and Non-Aligned Movement, which follow the suggestion from Women's International Democratic Federation.",
+   "source": "https://en.wikipedia.org/wiki/Children's_Day",
+   "fetched": "2026-11-15"
+  },
+  "evaw": {
+   "what": "The United Nations General Assembly has designated November 25 as the International Day for the Elimination of Violence Against Women.",
+   "why": "The premise of the day is to raise awareness around the world that women are subjected to rape, domestic violence and other forms of violence; furthermore, one of the aims of the day is to highlight that the scale and true nature of the issue is often hidden.",
+   "source": "https://en.wikipedia.org/wiki/International_Day_for_the_Elimination_of_Violence_Against_Women",
+   "fetched": "2026-11-15"
+  },
+  "tolerance": {
+   "what": "The International Day for Tolerance is an annual observance day declared by UNESCO in 1995 to generate public awareness of the dangers of intolerance.",
+   "why": "",
+   "source": "https://en.wikipedia.org/wiki/International_Day_for_Tolerance",
+   "fetched": "2026-11-15"
+  },
+  "recycles": {
+   "what": "America Recycles Day, also known as National Recycling Day, is a national observance in the United States dedicated to promoting recycling across the nation.",
+   "why": "Observed on November 15 every year, the observance is the signature recycling program of Keep America Beautiful (KAB), the managing and promoting organization for the holiday.",
+   "source": "https://en.wikipedia.org/wiki/America_Recycles_Day",
+   "fetched": "2026-11-15"
+  },
+  "toilet": {
+   "what": "World Toilet Day (WTD) is an official United Nations international observance day on 19 November to inspire action to tackle the global sanitation crisis.",
+   "why": "Worldwide, 3.4 billion people live without \"safely managed sanitation\" and around 354 million people practice open defecation. Sustainable Development Goal 6 aims to \"Ensure availability and sustainable management of water and sanitation for all\".",
+   "source": "https://en.wikipedia.org/wiki/World_Toilet_Day",
+   "fetched": "2026-11-15"
+  },
+  "veterans": {
+   "what": "Veterans Day is a federal holiday in the United States observed annually on November 11, for honoring military veterans of the United States Armed Forces.",
+   "why": "It coincides with holidays in several countries, including Armistice Day and Remembrance Day, which also occur on the anniversary of the end of World War I. Major hostilities of World War I were formally ended at the 11th hour of the 11th day of the 11th month of 1918 when the Armistice with Germany went into effect.",
+   "source": "https://en.wikipedia.org/wiki/Veterans_Day",
+   "fetched": "2026-11-15"
+  },
+  "givingtuesday": {
+   "what": "GivingTuesday is the Tuesday after Thanksgiving in the United States.",
+   "why": "It is touted as a \"global generosity movement unleashing the power of people and organizations to transform their communities and the world\". An organization of the same name is an independent 501(c)(3) nonprofit that supports the global movement.",
+   "source": "https://en.wikipedia.org/wiki/GivingTuesday",
+   "fetched": "2026-11-15"
+  },
+  "diabetes": {
+   "what": "World Diabetes Day (WDD) is the primary global awareness campaign focusing on diabetes mellitus and is held on 14 November each year.",
+   "why": "",
+   "source": "https://en.wikipedia.org/wiki/World_Diabetes_Day",
+   "fetched": "2026-11-15"
+  },
+  "nativeheritage": {
+   "what": "Native American Heritage Day is a civil holiday observed on the day after Thanksgiving in the United States.",
+   "why": "",
+   "source": "https://en.wikipedia.org/wiki/Native_American_Heritage_Day",
+   "fetched": "2026-11-15"
+  },
+  "tv": {
+   "what": "In December 1996 the United Nations proclaimed 21 November as World Television Day commemorating the date on which the first World Television Forum was held in 1996.",
+   "why": "This day was observed annually to recognize the increasing impact of television on decision making by bringing global attention to conflicts, threats to peace and security, and its potential role in focusing on other major issues, including economic and social matters.",
+   "source": "https://en.wikipedia.org/wiki/World_Television_Day",
+   "fetched": "2026-11-15"
+  },
+  "roadvictims": {
+   "what": "The World Day of Remembrance for Road Traffic Victims takes place on the third Sunday in November every year as the appropriate acknowledgment of victims of road traffic crashes and their families.",
+   "why": "It was started by the British road crash victim charity, RoadPeace, in 1993 and was adopted by the United Nations General Assembly in 2005.",
+   "source": "https://en.wikipedia.org/wiki/World_Day_of_Remembrance_for_Road_Traffic_Victims",
+   "fetched": "2026-11-15"
+  },
+  "smokeout": {
+   "what": "The Great American Smokeout is an annual intervention event on the third Thursday of November by the American Cancer Society.",
+   "why": "Approximately 40 million American adults still smoke, and tobacco use remains the single largest preventable cause of disease and premature death in the country. The event challenges people to quit on that day, or use the day to make a plan to quit.",
+   "source": "https://en.wikipedia.org/wiki/Great_American_Smokeout",
+   "fetched": "2026-11-15"
+  }
+ }
+}
