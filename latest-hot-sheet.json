@@ -1,32 +1,97 @@
 {
   "weather": {
     "temp": "37°",
-    "cond": "Light Rain",
-    "advisory": "Winter Weather Advisory until Sat 7am",
-    "traffic": "Advisory in effect, leave extra time",
-    "high": "38°",
-    "low": "36°",
-    "tonight": "Snow Showers then Rain And Snow Showers",
-    "updated": "2026-11-13T15:13-05:00",
+    "cond": "Mostly Clear",
+    "advisory": "No advisories",
+    "traffic": "Roads clear — Monday work not confirmed",
+    "high": "51°",
+    "low": "32°",
+    "tonight": "Patchy Fog",
+    "updated": "2026-11-16T06:30-05:00",
     "source": [
       "https://api.weather.gov/stations/KTVC/observations/latest",
       "https://api.weather.gov/gridpoints/APX/30,46/forecast",
       "https://api.weather.gov/alerts/active?zone=MIZ026"
     ],
     "advisory_detail": {
-      "active": true,
-      "headline": "Winter Weather Advisory issued November 13 at 12:36PM EST until November 14 at 7:00AM EST by NWS Gaylord MI",
-      "areas": "Grand Traverse",
-      "until": "2026-11-14T07:00:00-05:00"
-    }
+      "active": false
+    },
+    "today": "Mostly Sunny",
+    "icon": "sunny",
+    "week": [
+      {
+        "day": "Tonight",
+        "date": "2026-11-15",
+        "high": null,
+        "low": 32,
+        "short": "Patchy Fog",
+        "icon": "fog",
+        "pop": 0
+      },
+      {
+        "day": "Mon",
+        "date": "2026-11-16",
+        "high": 51,
+        "low": 41,
+        "short": "Mostly Sunny",
+        "icon": "sunny",
+        "pop": 0
+      },
+      {
+        "day": "Tue",
+        "date": "2026-11-17",
+        "high": 55,
+        "low": 43,
+        "short": "Sunny",
+        "icon": "sunny",
+        "pop": 0
+      },
+      {
+        "day": "Wed",
+        "date": "2026-11-18",
+        "high": 57,
+        "low": 48,
+        "short": "Mostly Sunny",
+        "icon": "sunny",
+        "pop": 0
+      },
+      {
+        "day": "Thu",
+        "date": "2026-11-19",
+        "high": 58,
+        "low": 43,
+        "short": "Partly Sunny then Slight Chance Rain Showers",
+        "icon": "rain",
+        "pop": 15
+      },
+      {
+        "day": "Fri",
+        "date": "2026-11-20",
+        "high": 55,
+        "low": 46,
+        "short": "Partly Sunny",
+        "icon": "partly",
+        "pop": 3
+      },
+      {
+        "day": "Sat",
+        "date": "2026-11-21",
+        "high": 61,
+        "low": 43,
+        "short": "Chance Rain Showers",
+        "icon": "rain",
+        "pop": 53
+      }
+    ],
+    "pulled": "2026-11-15T18:52-05:00"
   },
   "vibe": {
     "id": "vibe",
     "title": "Vibe Check",
     "category": "Daily",
     "type": "text",
-    "content": "VIBE CHECK · FRIDAY THE 13TH\n\n❄️ WINTER WEATHER ADVISORY until 1 PM\n• GT, Leelanau and Benzie counties\n• 1 to 2 more inches, mostly on the higher ground\n• Under an inch in eastern GT County\n• Slippery roads this morning\n\n🌡 TODAY\n• Snow showers this morning, then rain and snow this afternoon\n• High near 42, dropping to 38\n• North wind 5 to 10 mph\n\n🌙 TONIGHT: rain and snow, low 33\n☁️ SAT: high 44 · SUN: high 45\n\n🏫 SCHOOLS: not confirmed, so check before you call it\n🚗 ROADS: nothing verified overnight. Slow down and leave early.\n\nIt's Friday. Live, Local and Loud!\n📱 231-929-4487",
-    "notes": "Weather: NWS Gaylord, Traverse City point forecast, updated 4:11 AM ET. Forecast: https://api.weather.gov/gridpoints/APX/29,46/forecast Advisory: https://api.weather.gov/alerts/active?point=44.7631,-85.6206\nSchools PRODUCER FLAG: not confirmed. Breaker's 3:36 AM ET check of 9&10's closings page showed none. Backup check of UpNorthLive and TCAPS at 4:21 AM ET didn't load a list that could be confirmed. Recheck 9&10 or UpNorthLive before you air \"no closings.\"\nRoads: no verified closings, crashes, or outages overnight (GT County Road Commission, MDOT, TCPD, per Breaker's pulse).\nSponsor light: TVC Airport. Continuity: Courtney Rehmer.\nSource sheet: /workspace/morning-rush/hot-sheet-2026-11-13.md Drive: https://docs.google.com/document/d/1GsjTO_iYAbBAzIPY7buNm7wQWk4JUW9mog5I9GxJTYo/edit?usp=drivesdk",
+    "content": "MOCK RUN — test sheet, not for air\n\nVIBE CHECK · MONDAY NOV 16\n\n☀️ TODAY\n• Mostly sunny, high near 51\n• SW wind 10 to 15 mph\n• Almost no chance of rain\n• Sunrise 7:41 AM, sunset 5:13 PM\n\n🌙 OVERNIGHT INTO MONDAY: patchy fog, low around 32, then a Monday low near 41\n☁️ TUE: sunny, high 55 · WED: mostly sunny, high 57\n\n🏫 SCHOOLS: not confirmed, so check before you call it\n🚗 ROADS: a Grand Traverse County Road Commission work notice went up Friday. What's still active this morning is not confirmed — check before you air it.\n\n🤝 Today is also the International Day for Tolerance (UN)\n\nIt's Monday. Live, Local and Loud!\n📱 231-929-4487",
+    "notes": "MOCK RUN written Sun Nov 15 ~6:50 PM ET so Truce can test the live app. Not for air. The real Monday morning Hot Sheet run MUST overwrite /workspace/hot-sheet/2026-11-16-hot-sheet.json and latest-hot-sheet.json.\n\nWeather: NWS Gaylord / KTVC observation and APX gridpoint forecast, pulled Sun Nov 15 ~6:49 PM ET (current at pull: 37°, mostly clear, no advisories). Monday forecast from that pull: mostly sunny, high 51, low 41, 0% precip. Sunrise/sunset and SW wind 10–15 mph from the weekend stash / Wunderground hourly for Traverse City 49684 on 2026-11-16. Overnight patchy fog / low 32 is the Sunday-night NWS period from the same pull.\nSchools PRODUCER FLAG: not confirmed. Recheck 9&10 or UpNorthLive before you air closings or \"no closings.\"\nRoads PRODUCER FLAG: stash notes a GTCRC road-work notice dated Nov 13 (https://www.gtcrc.org/DocumentCenter/View/3485/RW-11132026). Do not invent which jobs are still active Monday.\nObservance: International Day for Tolerance is already in days.json (UN international day).\nThis is a test sheet, not a real Morning Rush rundown.",
     "custom": false
   },
   "mood": {
@@ -34,8 +99,8 @@
     "title": "Mood Boost",
     "category": "6AM",
     "type": "text",
-    "content": "Natalie Imbruglia, \"Torn,\" 1998. Stat: 11 weeks at No. 1 on Billboard's Hot 100 Airplay chart, and it never even made the Hot 100. It wasn't sold as a U.S. single, and back then you had to be a single to chart. Billboard changed that rule in December 1998.",
-    "notes": "Song pick, swapped live at 6:30 AM per Truce (replaced RHCP \"Snow (Hey Oh)\"). Source: Billboard chart history; rule change Dec 1998.",
+    "content": "MOCK RUN — test sheet, not for air\n\nOasis, \"Wonderwall,\" 1995. Stat: No. 1 on Billboard's Modern Rock chart, and No. 8 on the Hot 100 in 1996, where it spent 23 weeks. Oasis were inducted into the Rock Hall on Saturday.",
+    "notes": "MOCK RUN — not for air. Song pick tied to Saturday's Rock Hall ceremony. Chart facts: Billboard Hot 100 peak No. 8 (peak date Mar 9, 1996; 23 weeks; debut Jan 27, 1996). Modern Rock Tracks No. 1. UK release Oct 30, 1995. Induction: AP (Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden, Rick Rubin).",
     "custom": false
   },
   "buzz": {
@@ -43,8 +108,8 @@
     "title": "Daily Buzz",
     "category": "7AM",
     "type": "text",
-    "content": "DAILY BUZZ · FRI NOV 13\n\n━━ LOCAL ━━\n\n1) TC HOLIDAY KICKOFF SPLITS INTO TWO NIGHTS\n• Fri Nov 20: Light Up Downtown with cookies, cocoa and shopping\n• 5 PM stage show, tree lighting around 6:30\n• Sat Nov 21: Light Parade, 6 to 8 PM\n• Kids follow Santa down the route \"like he's Elvis\" (Sara Klebba, DDA)\n➜ TAKE: Yes, another tree story this week. Fort Worth got our spruce, but this one stays here, and nobody's putting it on a trailer.\n➜ BAIT: Tree lighting Friday or parade Saturday?\n\n2) 72ND MANCELONA BUCK POLE\n• Firearm deer season opens Sunday, Nov 15\n• The pole opens at daybreak Sunday and closes Mon Nov 16 at 6:30 PM\n• Prizes for first deer, heaviest, widest rack and most points\n• \"People take their kids out of school for it.\" (Kayla Moore)\n➜ TAKE: Some towns have a parade. Mancelona has a pole full of bucks.\n➜ BAIT: Biggest deer your family ever got, and how much has the story grown?\n\n3) NORTHPORT'S MILL POND IS GOING AWAY\n• The pond has been there since the 1930s\n• Voters said no to about $2 million to fix the dam\n• The plan is to take the dam down and let the creek run natural\n• No timeline yet, and some feelings are hurt over the fishing derby\n➜ TAKE: Ninety years of pond, gone with one vote.\n➜ BAIT: Got a Mill Pond or fishing derby memory?\n\n━━ NATIONAL ━━\n\n4) HUMPBACK WHALE IN THE HUDSON\n• It was breaching off the West Village yesterday, by Piers 40 to 45\n• Gotham Whale wants photos to ID it\n• It might still be in the harbor today\n• Not a first: 272 NYC whale sightings back in 2018\n➜ BAIT: Seen anything wild on Grand Traverse Bay?\n\n5) THE DOBERMAN WHO KNEW 🔊\n• Saraya the Doberman wouldn't leave baby Alexander's side\n• His heart was racing at 280 beats a minute\n• It's a treatable heart condition, and he's doing great now\n• Saraya isn't a trained service dog. She just wouldn't quit.\n🔊 CLIP: doberman-swns.mp3 (1:20)\n   IN: \"I'm Kim Reynolds. This is Saraya.\"\n   OUT: \"Yeah, he looks happy. Yes.\"\n➜ BAIT: Has your dog ever tried to tell you something?\n\n6) STREAMER AWARDS: SPEED THREE-PEATS 🔊\n• IShowSpeed won Streamer of the Year for the third straight year\n• He also won Best IRL and Best Series for his World Cup Tour\n• Kai Cenat won 3, including Best Collab with Tyla\n• Katie B also won 3\n• Jynxzi is Gamer of the Year\n• The show moved up from Nov 17 to get out of the way of GTA VI\n🔊 CLIP: speed-soty.mp3 (0:48)\n   IN: \"All right, so the streamer of the year…\"\n   OUT: \"Aku cinta kalian semuanya.\"\n   ⚠ His speech is in Indonesian. Set it up as a surprise.\n   Rough translation: \"I started from zero… you're my family. I love you all.\"\n➜ BAIT: Whose house was cheering for Speed or Kai?\n\n7) HOBOKEN: MOST WALKABLE CITY IN AMERICA\n• Walk Score 97 out of 100\n• Michigan's most walkable city is Hamtramck, at 82\n➜ BAIT: Could downtown TC take Hamtramck's crown?\n\n8) TEEN BUILDS A FREE APP FOR AUTISM CAREGIVERS\n• Shashank Madala started at 15, with just one computer science class\n• His app, Kora, helps caregivers read a child's emotions\n• It's free and used by 700+ families in 12 countries\n➜ BAIT: Know a caregiver or teacher who'd use this?\n\n━━ BITS ━━\n• First advisory of the year: who's driving like it's July, and who's crawling at 25?\n• Deer opener at daybreak and the Lions at 9:30 Sunday: blind with one earbud, or skip one?\n• The Petoskey jar: how many are in yours, and have you ever polished one?\n\n━━ SPORTS ━━\n• TONIGHT 7 PM: Kingsley (11-0) vs. Meridian (11-0), D6 regional final, streaming on NFHS\n• SAT 3:30: Michigan at No. 18 Oregon (FS1)\n• SAT 4:15: MSU (3-6) vs. Washington (5-4) (BTN)\n• SUN 9:30 AM: Lions (6-2) vs. Patriots (5-4) in Munich (FOX)\n\n📱 Text: 231-929-4487",
-    "notes": "CREDITS: Stories 1-3 photos and stories: UpNorthLive / WPBN. Whale: Gotham Whale, The Guardian, NY Post (photos: Erich Della Volpe, Classic Harbor Line, Ant Taboada). Doberman: Somerset Live, Good News Network, SWNS clip, Washington Post. Streamer Awards: The Streamer Awards, IBTimes UK. Hoboken: Walk Score data via Only In Your State, Travel & Leisure. Kora: Good News Network, Autism Spectrum News. Sports: MHSAA, Midland Daily News, NFHS, MGoBlue, MSU Athletics, Detroit Lions.\n\nCLIPS (cut, clean, leveled; no bleeps on either):\n- Doberman: /workspace/morning-rush/clips/2026-11-13/doberman-swns.mp3 (1:20). Credit SWNS. IN: \"I'm Kim Reynolds. This is Saraya.\" OUT: \"Yeah, he looks happy. Yes.\" Hospital ice-bath / IV detail was already cut. PRODUCER FLAG: do not lock baby Alexander's age in the talk-up (reports said 5, 6, or 7 months). The clip itself has dad John saying he's \"coming up seven months\" — live with that, or keep the talk-up as \"baby son Alexander.\" Prefer Somerset Live, Good News Network, and the SWNS clip on air.\n- Speed SOTY: /workspace/morning-rush/clips/2026-11-13/speed-soty.mp3 (0:48). Credit The Streamer Awards. IN: \"All right, so the streamer of the year…\" OUT: \"Aku cinta kalian semuanya.\" Give it one listen before air; the acceptance speech is in Indonesian and the translation is rough. Official source video: https://x.com/StreamerAwards/status/2121111550971027900\nPRODUCER FLAGS: Katie B won three awards, not two (Best Breakout Streamer, Best Minecraft Streamer, and Best Stream Duo with Vanilla Mace). Joe Bartolozzi won President of Chat, not Best Brand Partner (that was Red Bull). Don't cite a December date for the ceremony; it happened Nov 12 after moving up from Nov 17. Don't call Shashank Madala a current 15-year-old.\nOptional town buzz, if you have room: Mackinac ferries — Michigan AG Dana Nessel filed an antitrust lawsuit Thursday against the Hoffman Family of Companies, saying it bought up every Mackinac Island ferry line and nearly all the long-term parking lots. About 90% of island traffic rides a Hoffman-owned ferry. (UpNorthLive / WPBN) https://upnorthlive.com/news/local/theyve-raised-prices-limited-services-ag-sues-over-alleged-mackinac-ferry-monopoly-mackinac-island-hoffman-family-of-companies\nLocal sources: Light Up / Parade https://upnorthlive.com/news/local/traverse-city-gets-ready-for-holidays-with-nov-20-tree-lighting-and-nov-21-light-parade ; Buck Pole https://upnorthlive.com/news/local/hunters-to-gather-in-mancelona-for-northern-michigans-72nd-buck-pole-antrim-county ; Northport Mill Pond https://upnorthlive.com/news/local/leelanau-county-to-take-down-mill-pond-dam-after-millage-proposal-was-voted-down ; Kingsley-Meridian MHSAA / Midland Daily News / NFHS Network; Michigan at Oregon: MGoBlue; MSU vs. Washington: MSU Athletics; Lions: Detroit Lions.\nNational package: /workspace/morning-rush/national-headlines-2026-11-13.md Drive: https://docs.google.com/document/d/1eYr4KyZ-efmQSfUltpqxtltvZSeD5wOjdwOclNsscqA/edit?usp=drivesdk",
+    "content": "MOCK RUN — test sheet, not for air\n\nDAILY BUZZ · MON NOV 16\n\n━━ LOCAL ━━\n\n1) LAST DAY AT THE MANCELONA BUCK POLE\n• The 72nd Mancelona Buck Pole closes tonight at 6:30 PM\n• It opened at daybreak Sunday, when firearm deer season opened\n• Prizes for first deer, heaviest, widest rack and most points\n➜ TAKE: Some towns have a parade. Mancelona has a pole full of bucks, and you've got until 6:30 to get one on it.\n➜ BAIT: Biggest deer your family ever got, and how much has the story grown?\n\n2) BOARDMAN RIVER WALL REPAIRS COULD START WITHIN WEEKS\n• A local infrastructure story with possible downtown impact\n• Timing is \"within weeks,\" not a start date for this morning\n➜ TAKE: A wall along the river most of us walk past without thinking about, until the work starts.\n➜ BAIT: Does a repair like this change how you get around downtown?\n\n━━ NATIONAL ━━\n\n3) AIR TRAVEL STILL CATCHING UP\n• A nationwide ATC outage and ground stop hit over the weekend\n• The FAA says the system is stable\n• Airlines still expected to cancel 4,000 to 5,000 of about 41,000 flights on Sunday\n• Monday travelers may feel the spillover, with Thanksgiving travel already on the calendar\n➜ TAKE: If you're flying today, leave a wider window than the app says.\n➜ BAIT: Anyone in your family stuck in an airport yesterday?\n\n4) ROCK HALL CLASS OF THE WEEKEND\n• Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden and Rick Rubin were inducted Saturday\n• Phil Collins got emotional, and Billy Idol performed\n➜ TAKE: A pretty good Saturday night for a rock station.\n➜ BAIT: Who on that list was the most overdue, and who surprised you?\n\n5) SPACEX CATCHES STARSHIP WITH THE TOWER\n• SpaceX caught Starship with the tower arms after its 15th test flight\n➜ TAKE: They are catching a rocket with a pair of mechanical arms. That's a Monday kicker.\n➜ BAIT: Would you watch a launch in person, or is the couch close enough?\n\n6) A BIG MIDWEEK MEETING ON THE CALENDAR\n• The Kremlin says Putin, Xi and Trump will meet Thursday, Nov 19, in Shenzhen, on the sidelines of APEC\n➜ TAKE: A preview, not a recap. Thursday's a busy day in the world and in games, too.\n➜ BAIT: Save this one for later in the hour if you need a world beat.\n\n7) HORMUZ: CLAIMS OF MINES AND A DRONE ATTACK\n• Iran's IRGC says two tankers hit mines and caught fire near the Strait of Hormuz\n• Iran also claimed drone attacks on a U.S. base in Bahrain\n• Both are claims from a briefing synthesis, not facts we have independently confirmed\n➜ PRODUCER FLAG: check fresh sources before air, and do not treat the claims as confirmed. Possible gas-price angle only if you've got a number you can stand behind.\n➜ BAIT: Skip the bait unless the facts are locked.\n\n━━ BITS ━━\n• Last day at the Buck Pole: you going, or are you already telling the story of the one that got away?\n• Rock Hall: Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden, Rick Rubin — who belonged in there years ago?\n• GTA 6 is out Thursday. Who's taking the day, and who's waiting for the weekend?\n\n━━ SPORTS ━━\n• Lions 35, Patriots 10 on Sunday\n• Vikings 30, Packers 10\n• Mahomes threw 5 TDs as the Chiefs beat the Falcons 35–13\n• Bills 31, Jets 12 · Browns 27, Texans 24 · Colts 24, Dolphins 22\n• ⚠ NFL week number is not confirmed (sources said Week 10 or Week 11). Don't say the week number on air until it's checked.\n• Michigan fell to No. 18 Oregon, 31–7, in Eugene on Saturday, after losing to MSU 15–6 on Nov 7\n• Michigan State lost to Washington, 21–14, on Saturday\n• College upsets: Florida 21, No. 11 Kentucky 14; Arkansas 34, No. 17 South Carolina 6; Colorado 42, No. 14 Houston 32; Texas beat LSU; No. 2 Utah edged No. 23 Arizona to stay unbeaten\n\n📱 Text: 231-929-4487",
+    "notes": "MOCK RUN — not for air. Facts from /workspace/ops/weekend-stash/2026-11-15.md (lean sweep Sun Nov 15 ~6:20 PM ET). Check each item before any real show.\n\nCREDITS / SOURCES:\n- Buck Pole dates and prize lines carried forward from the Fri Nov 13 sheet (UpNorthLive / WPBN): opens daybreak Sunday, closes Mon Nov 16 at 6:30 PM. https://upnorthlive.com/news/local/hunters-to-gather-in-mancelona-for-northern-michigans-72nd-buck-pole-antrim-county\n- Boardman River wall: https://dailytraversecity.com/local-news/editions/11-15-2026\n- Air travel, Hormuz, Putin/Xi/Trump Nov 19, Starship: https://aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489 and Hormuz also https://english.news.cn/20261115/c47882c0dc794a48830bafce86d272e7/c.html\n- Rock Hall: https://apnews.com/article/rock-hall-fame-oasis-billy-idol-wutang-e3e0d8644d7c2a8cd0f73d60916dac11\n- Lions: https://www.cbssports.com/nfl/schedule/\n- Other NFL scores: https://www.skysports.com/nfl/live-blog/13612485/nfl-2026-results-and-highlights-patrick-mahomes-throws-five-touchdowns-while-minnesota-vikings-maul-green-bay-packers\n- NFL week number UNCONFIRMED: stash says searches labeled Sunday as Week 10, one source said Week 11. Do not air a week number until confirmed.\n- Michigan: https://mgoblue.com/news/2026/11/14/football-wolverines-fall-to-no-18-ducks-in-eugene\n- MSU: https://msuspartans.com/news/2026/11/14/football-washington-defeats-michigan-state-21-14\n- College upsets: https://www.sportingnews.com/us/ncaa-football/news/week-11-results-will-shape-cfp-rankings-wakes-42-point-smashing-smu-lsus-loss-texas/16a426d19fc5e9c89ad91d7e\n- GTA 6 Thursday Nov 19: weekend stash reminder / launch-week notes. No time or platform details were confirmed here, so don't invent them.\n\nPRODUCER FLAGS: Hormuz items are claims (IRGC / Iran, via a briefing synthesis). Midterm results (Peltola, Boebert) were in the stash and were left out of this mock on purpose. BioWare / Riot / other VGU items were also left out of the Z93 rundown. Texas beat LSU is in the stash without a score — don't invent one. Lions/Patriots records were not updated past Friday's 6-2 / 5-4 preview, so this sheet uses scores only.",
     "custom": false
   },
   "verse": {
@@ -52,8 +117,8 @@
     "title": "Verse Reverse",
     "category": "Optional",
     "type": "text",
-    "content": "",
-    "notes": "Optional / can revive. No obvious fun Verse Reverse for today, so this is left empty.",
+    "content": "MOCK RUN — test sheet, not for air\n\nNo Verse Reverse written for this mock.",
+    "notes": "MOCK RUN — not for air. Optional segment; left empty on purpose, same as the Fri Nov 13 sheet when there was no obvious pick.",
     "custom": false
   },
   "mental": {
@@ -61,8 +126,8 @@
     "title": "Mental Health Minute",
     "category": "8:05",
     "type": "text",
-    "content": "Give Yourself the Ten Minutes\n\nThis morning's the first real lake-effect snow of the year, and with an advisory up until one this afternoon, a lot of us are about to find out the roads are slicker than our brains are ready for. When we're running late on a morning like this, our shoulders creep up around our ears and every slow car in front of us turns into a personal enemy, so the stress is already riding shotgun before we even get out of the driveway. Here's your move for today. Leave ten minutes earlier than you normally would, and when you get in the car, before you put it in drive, take three slow breaths while the defroster does its thing. Because you've got those extra minutes in your pocket, the slow drive stops feeling like an emergency and goes back to being just a drive. Then you get where you're going a little calmer, and the people around you get the better version of you too. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me how long your drive in took this morning.",
-    "notes": "Full script from the Fri Nov 13 Morning Rush Hot Sheet. Aimed at the adult in the driver's seat. Advice already fits today's advisory / sloppy-road weather. Do not invent extra claims.",
+    "content": "MOCK RUN — test sheet, not for air\n\nGive the Soft Monday a Real Chance\n\nToday is the International Day for Tolerance, and the weather is actually on our side: mostly sunny, around 50, and no advisory hanging over the drive. After a weekend of delayed flights, tense sports living rooms, and a lot of leftover aggravation, it's easy to carry Sunday's mood into Monday and take it out on the first person who cuts you off or sends a sharp text. Here's your move for today. Pick one moment this morning — the walk from the car, the first cup of coffee, or the first song — and use it to reset your voice before you talk to anybody. Tolerance isn't a speech. It's leaving the person in front of you a little more room than you got this weekend. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me what your reset moment was.",
+    "notes": "MOCK RUN — not for air. Aimed at the adult in the driver's seat. Hooks are the UN International Day for Tolerance (already in days.json) and the mild, dry Monday forecast. No clinical claims. Advice is a practical reset, not a diagnosis.",
     "custom": false
   },
   "flash": {
@@ -70,8 +135,8 @@
     "title": "Flashback",
     "category": "Daily",
     "type": "text",
-    "content": "The Cure, \"Friday I'm in Love,\" 1992. It's Friday, it's November, and this is still the easiest way to shake off a sloppy commute.",
-    "notes": "Late 80s / early 90s pick. Year verified: single released May 1992 (The Cure official site / Wikipedia). Checked week-used.md; no Flashback song repeats logged this week. Not an Off the Charts pick, and not a repeat of earlier OTC suggestions (Jamiroquai, Coldplay, Sade, Pearl Jam, Bender).",
+    "content": "MOCK RUN — test sheet, not for air\n\nSade, \"Smooth Operator,\" 1985. It peaked at No. 5 on the Billboard Hot 100 and No. 1 on Adult Contemporary. Sade was inducted into the Rock Hall on Saturday.",
+    "notes": "MOCK RUN — not for air. Tied to Saturday's Rock Hall ceremony. Chart facts: Billboard Hot 100 peak No. 5 (two weeks, peak date May 18, 1985; 20 weeks on the chart); Adult Contemporary No. 1 for two weeks. Sources: Billboard chart history; Wikipedia Smooth Operator (citing Billboard).",
     "custom": false
   },
   "cross": {
@@ -79,8 +144,8 @@
     "title": "Cross Talk",
     "category": "Midday",
     "type": "text",
-    "content": "CROSS TALK with Courtney Rehmer\n\nTOPIC: The Petoskey jar 🪨\n• Everybody up here has a jar of unpolished Petoskeys\n• Northport Trading Post teaches polishing classes\n• Tip: you can't over-polish, but don't rush the sanding wheel\n\nASK:\n1. How many are in your jar right now?\n2. Ever actually polished one?\n3. Best beach for them, or is it a secret spot?",
-    "notes": "Spelling is Courtney Rehmer. Credit: UpNorthLive / WPBN. https://upnorthlive.com/news/local/exploring-michigan-leelanau-county-shop-offers-petoskey-stone-polishing-classes\nThe Sunday deer-opener vs. Lions-in-Munich bit is already in Daily Buzz BITS, so Cross Talk uses the lighter Petoskey jar topic instead of repeating it.",
+    "content": "MOCK RUN — test sheet, not for air\n\nCROSS TALK with Courtney Rehmer\n\nTOPIC: Rock Hall, the morning after\n• Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden and Rick Rubin were inducted Saturday\n• Phil Collins got emotional, and Billy Idol performed\n\nASK:\n1. Who on that list was the most overdue?\n2. Who surprised you?\n3. Who's still waiting outside?",
+    "notes": "MOCK RUN — not for air. Spelling is Courtney Rehmer, carried from the regular sheet. Topic and names from the AP Rock Hall story in the weekend stash. Sports talk (Lions 35-10) is already in Daily Buzz sports, so Cross Talk uses the music story instead of repeating it.",
     "custom": false
   },
   "offcharts": {
@@ -88,8 +153,8 @@
     "title": "Off the Charts",
     "category": "Fri 8:30",
     "type": "text",
-    "content": "SPONSOR (read first):\nZ93 OFF THE CHARTS is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort, where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com.\n\nOFF THE CHARTS · Gigi Perez, \"Sailor Song\" (2024)\n\n• Released July 26, 2024, on her own, after Interscope dropped her\n• She wrote it in her bedroom, and the hook \"kiss me on the mouth and love me like a sailor\" came to her in the shower\n• Recorded with one mic, stacking three vocals: left, right and center\n• It blew up on TikTok first, with 75,000+ videos using it within a month of release\n• No. 1 in the UK, Ireland and Latvia. In the UK it knocked off Sabrina Carpenter, who had held No. 1 for 21 weeks.\n• Here in the US it only got to No. 22 on the Hot 100\n➜ THE ANGLE: No. 1 overseas, and America left it at 22\n➜ BAIT: Did you find this one on TikTok or on the radio?\n📱 231-929-4487",
-    "notes": "Backup: Pearl Jam, \"Black\" (1991). The band refused to release it as a commercial single, even after Epic pushed them, because Eddie Vedder thought the song was too personal. It still reached No. 3 on Billboard's Mainstream Rock chart and No. 20 on Alternative Airplay — and it never hit the Hot 100. Official audio (5:46): https://www.youtube.com/watch?v=qgaRVvAKoqQ Optional live, MTV Unplugged (5:41): https://www.youtube.com/watch?v=pOM-h-bCHVA\nNot repeats: earlier Off the Charts used/suggested picks were The Paradox \"Bender\" (played Oct 23), plus Jamiroquai \"Virtual Insanity\" and Coldplay \"The Scientist\" (suggested Nov 6, play not confirmed).\nSource: /workspace/morning-rush/national-headlines-2026-11-13.md\nAlt sponsor read (older version): Z93 OFF THE CHARTS is brought to you by Shanty Creek Resorts. When it's time for you to enjoy the wide-open spaces of Northern Michigan, check out Shanty Creek Resort, with over 275 lodging options, 42 downhill ski and snowboard runs, and plenty of outdoor fun.\nTODAY'S PICK (Truce): Gigi Perez facts: Wikipedia (Sailor Song), Official Charts (UK No. 1, Nov 1 2024, ended Sabrina Carpenter's 21 weeks), Billboard (Hot 100 debut at No. 98; peak No. 22 per Chartify). ⚠ Lyric heads-up: \"I don't believe in God / But I believe that you're my savior.\" It touches the no-religion rule, so check your edit.\nEarlier pick, Sade \"King of Sorrow\", replaced.",
+    "content": "MOCK RUN — test sheet, not for air\n\nOFF THE CHARTS airs Friday at 8:30. No Monday pick in this mock. Do not treat this tab as a real Friday rundown.",
+    "notes": "MOCK RUN — not for air. Off the Charts is the Friday 8:30 feature. Left without a song pick so this test sheet doesn't pretend to be Friday.",
     "custom": false
   },
   "bit-trivia": {
@@ -97,8 +162,8 @@
     "title": "BIT: This Day",
     "category": "Bit",
     "type": "text",
-    "content": "THIS DAY · NOV 13\n\n• 1956 (70 yrs ago): the Supreme Court ends Montgomery bus segregation, in the Rosa Parks case\n• 1940 (86 yrs ago): Disney's Fantasia premieres. Disney invented a stereo system just to play it.\n• 🎂 Jimmy Kimmel turns 59\n• 🎂 Steve Zahn turns 59\n• 🎂 Whoopi Goldberg turns 71\n\n➜ BAIT: Which Fantasia scene still lives in your head?\n📱 231-929-4487",
-    "notes": "Credit: Supreme Court Historical Society (Browder v. Gayle); D23 / Disney Archives (Fantasia premiere, Nov 13, 1940); UPI's Nov 13, 2026 famous-birthdays list (Kimmel, Zahn, Goldberg).\nPRODUCER FLAGS: Fantasia premiered on this date; it was not a normal wide release (Fantasound meant it opened in only 14 theaters at first). The Court affirmed the ruling on Nov 13, 1956, in a short per curiam decision; the boycott ended Dec 20 after the city complied. No official, rights-clean Fantasia or Kimmel clip was confirmed — keep this as a talker.",
+    "content": "MOCK RUN — test sheet, not for air\n\nTHIS DAY · NOV 16\n\n• 1907 (119 yrs ago): Oklahoma becomes the 46th state\n• 1945 (81 yrs ago): UNESCO's constitution is signed in London\n• 2001 (25 yrs ago): Harry Potter and the Sorcerer's Stone opens in the U.S.\n• 🎂 Shigeru Miyamoto turns 74 (Mario, The Legend of Zelda)\n\n➜ BAIT: First Harry Potter memory, or the first Mario or Zelda game you played?\n📱 231-929-4487",
+    "notes": "MOCK RUN — not for air.\nCredits: Oklahoma statehood, Nov 16, 1907 (USA Today / Wikipedia November 16). UNESCO constitution signed in London, Nov 16, 1945 (UNESCO official constitution page; entered into force Nov 4, 1946). Do not lock a signatory count — official UNESCO pages disagree (37 vs. 41). Harry Potter and the Sorcerer's Stone U.S. theatrical release Nov 16, 2001 (Warner Bros.; AFI Catalog; Box Office Mojo). Shigeru Miyamoto born Nov 16, 1952 (timeanddate / History.com), so he turns 74 in 2026.",
     "custom": true
   },
   "events": {
@@ -106,8 +171,8 @@
     "title": "Events",
     "category": "Daily",
     "type": "text",
-    "content": "EVENTS\n\n• TODAY 9:30 AM: Red Kettle kickoff with Santa, Farm & Fleet, TC\n• TONIGHT 7 PM: Kingsley vs. Meridian, D6 regional final\n• THRU SAT: Kalkaska Festival of Trees and TC Beer Week\n• SAT 10 AM: Great Beerd Run 5K, Grand Traverse Resort\n• SUN–MON: 72nd Mancelona Buck Pole (opens at daybreak, closes Mon 6:30 PM)\n• FRI NOV 20: Light Up Downtown, tree lighting around 6:30\n• SAT NOV 21: Light Parade, 6 to 8 PM",
-    "notes": "Credits: The Ticker calendar (Festival of Trees, Beer Week); UpNorthLive (Red Kettle, Beerd Run, Buck Pole, Light Up / Light Parade); MHSAA (Kingsley game).\nRed Kettle: https://upnorthlive.com/news/local/salvation-army-red-kettle-campaign-kicks-off-in-traverse-city-friday-250000-goal-grand-traverse",
+    "content": "MOCK RUN — test sheet, not for air\n\nEVENTS\n\n• TODAY: 72nd Mancelona Buck Pole closes at 6:30 PM\n• THU NOV 19: GTA 6 launch day\n• FRI NOV 20: Light Up Downtown, tree lighting around 6:30\n• SAT NOV 21: Light Parade, 6 to 8 PM",
+    "notes": "MOCK RUN — not for air. Only items still ahead as of Sunday night, plus the Buck Pole close time already used on the Fri Nov 13 sheet.\nCredits: Buck Pole and Light Up / Light Parade from the Nov 13 sheet (UpNorthLive). GTA 6 Thursday Nov 19 from the weekend stash / launch-week notes — no launch-time or platform details confirmed, so none are listed. Friday's now-past items (Red Kettle kickoff, Kingsley game, Festival of Trees, Beerd Run) were left off.",
     "custom": true
   },
   "fb": {
@@ -115,8 +180,8 @@
     "title": "Facebook Drafts",
     "category": "Social",
     "type": "text",
-    "content": "FB DRAFTS (you post these)\n\n1️⃣ EARLY SHOW (photo: buck pole)\n🦌🧡 Firearm deer season opens SUNDAY, and the 72nd Mancelona Buck Pole opens at daybreak, with prizes for the first deer hung, the heaviest, the widest rack, and the most points! What's the biggest deer anybody in your family ever brought home? Tell us below or text 231-929-4487 👇\n📸 Photo: UpNorthLive / WPBN\n\n2️⃣ MID SHOW (photo: studio snap)\n🏈🦌 BIG one tonight in Kingsley! The Stags (11-0) host Sanford Meridian (11-0) at 7 PM in the Division 6 regional final, and somebody's perfect season ends tonight. Heading out to the game or watching the stream? Drop a GO STAGS below or text 231-929-4487 👇\n\n3️⃣ LATE SHOW (photo: studio snap)\n🧸 KEEP IT or KICK IT: the FURBY. The 90s Christmas toy every kid begged for, or the creepy little guy that kept talking in the closet at 3 AM? Vote below or text 231-929-4487 👇",
-    "notes": "Drafts only — nothing gets posted without Truce's OK. Photo credits stay inside each draft. Official Z93 logo only if a graphic is made: /workspace/z93/logo/z93_official_from_truce.png\nMEDIA: Post 1 uses the UpNorthLive buck pole photo (/workspace/morning-rush/2026-11-13-buckpole.jpg). Posts 2 and 3 use a studio snap, or the official Z93 logo if you make a graphic.",
+    "content": "MOCK RUN — test sheet, not for air\n\nFB DRAFTS — DO NOT POST. This is a test sheet only.\n\n1️⃣ EARLY SHOW\n🦌🧡 Last day to hang one at the 72nd Mancelona Buck Pole — it closes TONIGHT at 6:30. What's the biggest deer anybody in your family ever brought home? Tell us below or text 231-929-4487 👇\n\n2️⃣ MID SHOW\n🏈 The Lions took care of business in Munich: Detroit 35, New England 10. Best play you saw, or were you already half-asleep for a 9:30 AM kick? Drop it below or text 231-929-4487 👇\n\n3️⃣ LATE SHOW\n🎸 Rock Hall weekend: Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden, and Rick Rubin. Who was the most overdue? Vote below or text 231-929-4487 👇",
+    "notes": "MOCK RUN — drafts only, and even then nothing gets posted from this test sheet. Official Z93 logo only if a graphic is made: /workspace/z93/logo/z93_official_from_truce.png. No photo assets were attached for this mock.",
     "custom": true
   },
   "clips": {
@@ -124,8 +189,8 @@
     "title": "Audio Clips",
     "category": "buzz",
     "type": "text",
-    "content": "AUDIO CLIPS · READY TO PLAY 🔊\n\n1) THE DOBERMAN WHO KNEW (Buzz story 5)\n• File: doberman-swns.mp3\n• Runs 1:20\n• IN: \"I'm Kim Reynolds. This is Saraya.\"\n• OUT: \"Yeah, he looks happy. Yes.\"\n• Clean, nothing bleeped\n\n2) SPEED, STREAMER OF THE YEAR (Buzz story 6)\n• File: speed-soty.mp3\n• Runs 0:48\n• IN: \"All right, so the streamer of the year…\"\n• OUT: \"Aku cinta kalian semuanya.\"\n• ⚠ His speech is in Indonesian, so give it one listen first\n• Rough translation: \"I started from zero… you're my family. I love you all.\"",
-    "notes": "Files are in /workspace/morning-rush/clips/2026-11-13/. Each is an MP3 at 320k, normalized to -16 LUFS. Credits: Doberman audio from SWNS. Speed audio from The Streamer Awards broadcast.",
+    "content": "MOCK RUN — test sheet, not for air\n\nAUDIO CLIPS · NONE FOR THIS TEST\n\nNo new clips were cut for this mock show, and Friday's sample clips were not copied over, so this tab has nothing to load. On a real weekday, tap \"Load today's clips\" when an audio file is published.",
+    "notes": "MOCK RUN — not for air. Skipped reuse of 2026-11-13-hot-sheet-audio.json because those clips (Doberman / Speed) belong to Friday's stories and would be misleading on a Monday test sheet. No 2026-11-16-hot-sheet-audio.json was written, so the app should hide \"Load today's clips.\"",
     "custom": true
   }
 }
