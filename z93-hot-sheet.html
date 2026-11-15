@@ -81,6 +81,30 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   font-size:1.6em;font-weight:900;color:var(--accent);z-index:50;border:6px dashed var(--accent)}
 #drop.on{display:flex}
 .hint{color:var(--dim);font-size:.8em}
+/* weather icon, week strip, radar */
+#wx .temp{gap:6px}
+#wxIcon{display:inline-flex;width:1.25em;height:1.25em}
+#wxIcon svg,.wk svg{width:100%;height:100%}
+#wxPanel{display:flex;gap:8px;align-items:stretch;height:96px}
+#radarThumb{flex:0 0 auto;width:112px;min-height:0;padding:0;overflow:hidden;position:relative;background:#000;border-radius:12px}
+#radarThumb img{width:100%;height:100%;object-fit:cover;object-position:28% 45%;display:block;transform:scale(1.9);transform-origin:28% 45%}
+#radarThumb .lbl{position:absolute;left:4px;bottom:3px;font-size:.55em;font-weight:900;background:rgba(0,0,0,.7);padding:1px 5px;border-radius:5px;color:var(--accent2)}
+#radarThumb .off{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:.6em;color:var(--dim);text-align:center}
+#radarThumb.offline img{visibility:hidden}#radarThumb.offline .off{display:flex}
+#week{flex:1;min-width:0;display:flex;gap:4px;overflow-x:auto;background:var(--panel);border-radius:12px;padding:4px;scrollbar-width:none}
+#week::-webkit-scrollbar{display:none}
+.wk{flex:1 0 58px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2px 2px;border-radius:9px;line-height:1.1}
+.wk .d{font-size:.66em;font-weight:900;color:var(--dim);text-transform:uppercase}
+.wk .i{width:30px;height:30px;margin:2px 0}
+.wk .t{font-weight:900;font-size:.85em;white-space:nowrap}.wk .t .lo{color:#7fb6ff;font-weight:700}
+.wk .p{font-size:.55em;color:#7fb6ff;min-height:1em}
+.wk.today{background:var(--panel2);outline:2px solid var(--line)}
+#weekSrc{font-size:.6em;color:var(--dim);margin:3px 0 12px}
+#radarModal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.92);display:none;flex-direction:column;align-items:center;justify-content:center;padding:12px}
+#radarModal.on{display:flex}
+#radarModal img{max-width:100%;max-height:78vh;border-radius:10px;background:#000}
+#radarModal .cap{color:var(--dim);font-size:.75em;margin:8px 0;text-align:center}
+#radarModal button{min-width:160px}
 /* headline ticker */
 #tickerWrap{display:flex;align-items:stretch;gap:6px;margin-top:8px}
 #ticker{flex:1;min-width:0;overflow:hidden;background:#000;border:2px solid var(--line);border-radius:14px;position:relative;
@@ -129,7 +153,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
     <div id="clock">--:--</div>
   </div>
   <div id="wx" aria-live="polite">
-    <div class="temp" id="wxTemp">--</div>
+    <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
     <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div class="small" id="wxMore"></div></div>
     <div id="adv"></div>
     <div id="traffic"></div>
@@ -141,6 +165,11 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   <nav id="tabs" role="tablist"></nav>
 </header>
 <main>
+  <div id="wxPanel">
+    <button id="radarThumb" aria-label="Open live radar"><img id="radarImg" alt="Live radar, Gaylord NWS (KAPX)"><span class="lbl">RADAR</span><span class="off">Radar offline</span></button>
+    <div id="week" aria-label="7-day forecast"></div>
+  </div>
+  <div id="weekSrc"></div>
   <div id="controls" class="row">
     <button id="prevDay" aria-label="Previous weekday">◀</button>
     <div id="dateLabel">Latest</div>
@@ -156,6 +185,11 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   <div id="status" role="status"></div>
   <section id="view" class="sec"></section>
 </main>
+<div id="radarModal" role="dialog" aria-label="Live radar">
+  <img id="radarBig" alt="Live radar loop, NWS Gaylord (KAPX)">
+  <div class="cap">Live radar loop · NWS Gaylord (KAPX) · Traverse City is left of center · refreshes every 5 min</div>
+  <button id="radarClose">Close</button>
+</div>
 <div id="drop">Drop a hot-sheet JSON here</div>
 <script>
 (() => {
@@ -378,6 +412,111 @@ async function loadAudioVariant(){
   renderTabs(); renderView();
 }
 
+/* ---------- weather icons, week strip, radar ---------- */
+function iconFor(text, daytime=true){
+  const t=String(text||'').toLowerCase();
+  if(/thunder|t-storm|tstorm/.test(t)) return 'storm';
+  if(/snow|flurr|blizzard/.test(t) && /rain|sleet|freezing|drizzle/.test(t)) return 'mix';
+  if(/sleet|freezing|ice pellets|wintry/.test(t)) return 'mix';
+  if(/snow|flurr|blizzard/.test(t)) return 'snow';
+  if(/rain|shower|drizzle/.test(t)) return 'rain';
+  if(/fog|haze|smoke|mist/.test(t)) return 'fog';
+  if(/wind|breezy|blustery|gust/.test(t)) return 'wind';
+  if(/mostly cloudy|overcast|^cloudy|\bcloudy$/.test(t) && !/partly/.test(t)) return 'cloudy';
+  if(/mostly sunny|mostly clear/.test(t)) return daytime?'sunny':'clear-night';
+  if(/partly|few clouds/.test(t)) return 'partly';
+  if(/sunny|clear|fair/.test(t)) return daytime?'sunny':'clear-night';
+  return /cloud/.test(t)?'cloudy':(daytime?'sunny':'clear-night');
+}
+const CLOUD=(fill,dx=0,dy=0)=>`<g transform="translate(${dx} ${dy})" fill="${fill}"><circle cx="24" cy="34" r="11"/><circle cx="36" cy="28" r="14"/><circle cx="47" cy="36" r="9"/><rect x="13" y="34" width="43" height="12" rx="6"/></g>`;
+const SUN=(cx,cy,r)=>{ let rays=''; for(let i=0;i<8;i++){ const a=i*Math.PI/4, x1=cx+Math.cos(a)*(r+4), y1=cy+Math.sin(a)*(r+4), x2=cx+Math.cos(a)*(r+10), y2=cy+Math.sin(a)*(r+10);
+  rays+=`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`; }
+  return `<g stroke="#ffcc33" stroke-width="3.5" stroke-linecap="round">${rays}</g><circle cx="${cx}" cy="${cy}" r="${r}" fill="#ffcc33"/>`; };
+const DROPS=(n,col='#4fb3ff')=>[18,30,42].slice(0,n).map(x=>`<line x1="${x}" y1="50" x2="${x-4}" y2="60" stroke="${col}" stroke-width="3.5" stroke-linecap="round"/>`).join('');
+const FLAKES=xs=>xs.map(x=>`<g stroke="#fff" stroke-width="2.5" stroke-linecap="round"><line x1="${x}" y1="50" x2="${x}" y2="60"/><line x1="${x-5}" y1="55" x2="${x+5}" y2="55"/></g>`).join('');
+const ICONS={
+  sunny: SUN(32,32,12),
+  'clear-night': '<path d="M40 10a22 22 0 1 0 14 34A18 18 0 1 1 40 10z" fill="#f1e7a6"/>',
+  partly: SUN(22,22,9)+CLOUD('#d7dee3',4,6),
+  cloudy: CLOUD('#9aa7b1',-6,-6)+CLOUD('#d7dee3',2,2),
+  rain: CLOUD('#9aa7b1',0,-8)+DROPS(3),
+  snow: CLOUD('#c9d3da',0,-8)+FLAKES([20,34,48]),
+  mix: CLOUD('#9aa7b1',0,-8)+DROPS(1)+FLAKES([30,46]),
+  storm: CLOUD('#6f7d88',0,-8)+'<polygon points="34,40 24,54 32,54 28,64 42,48 34,48 38,40" fill="#ffcc33"/>',
+  wind: '<g fill="none" stroke="#cfe3ff" stroke-width="4" stroke-linecap="round"><path d="M8 24h30a7 7 0 1 0-7-7"/><path d="M8 34h42a7 7 0 1 1-7 7"/><path d="M8 44h22"/></g>',
+  fog: CLOUD('#9aa7b1',0,-10)+'<g stroke="#c0c8ce" stroke-width="3.5" stroke-linecap="round"><line x1="10" y1="46" x2="54" y2="46"/><line x1="14" y1="54" x2="50" y2="54"/><line x1="18" y1="62" x2="46" y2="62"/></g>'
+};
+function svgIcon(key, title){ return `<svg viewBox="0 0 64 64" role="img" aria-label="${(title||key).replace(/"/g,'')}">${ICONS[key]||ICONS.cloudy}</svg>`; }
+
+const NWS_FORECAST='https://api.weather.gov/gridpoints/APX/30,46/forecast';
+const NWS_POINT='https://api.weather.gov/points/44.7417,-85.5824';
+const RADAR='https://radar.weather.gov/ridge/standard/KAPX_loop.gif';
+function weekFromPeriods(periods){
+  const out=[]; let i=0;
+  const dayName=(p)=>{ const n=p.name.toLowerCase(); if(/^(today|this afternoon|this morning)$/.test(n)) return 'Today';
+    if(/^(tonight|overnight|this evening)$/.test(n)) return 'Tonight'; return DAYS[new Date(p.startTime).getDay()]; };
+  while(i<periods.length && out.length<7){
+    const p=periods[i]; const pop=(p.probabilityOfPrecipitation||{}).value;
+    if(p.isDaytime){ const n=periods[i+1] && !periods[i+1].isDaytime ? periods[i+1] : null;
+      out.push({day:dayName(p), date:p.startTime.slice(0,10), high:p.temperature, low:n?n.temperature:null, short:p.shortForecast, icon:iconFor(p.shortForecast,true), pop});
+      i+= n?2:1; }
+    else { out.push({day:dayName(p), date:p.startTime.slice(0,10), high:null, low:p.temperature, short:p.shortForecast, icon:iconFor(p.shortForecast,false), pop}); i++; }
+  }
+  return out;
+}
+let liveWeek=null; // {week, at, updated}
+try{ liveWeek=JSON.parse(LS.getItem('hs:liveWeek')||'null'); }catch(e){}
+async function fetchLiveWeek(){
+  if(!navigator.onLine && liveWeek) return;
+  try{
+    let r=await fetch(NWS_FORECAST,{headers:{'Accept':'application/geo+json'}});
+    if(!r.ok){ const pt=await (await fetch(NWS_POINT)).json(); r=await fetch(pt.properties.forecast); }
+    const j=await r.json(); const per=j.properties && j.properties.periods; if(!per||!per.length) return;
+    liveWeek={week:weekFromPeriods(per), at:Date.now(), updated:j.properties.updateTime||j.properties.generatedAt||null};
+    LS.setItem('hs:liveWeek', JSON.stringify(liveWeek));
+  }catch(e){ /* offline or blocked: fall back to saved/sheet week */ }
+  renderWeek();
+}
+function renderWeek(){
+  const box=$('#week'), src=$('#weekSrc'); box.innerHTML='';
+  const fresh = liveWeek && (Date.now()-liveWeek.at < 6*3600e3);
+  const sheetWeek = state.sheet && state.sheet.weather && Array.isArray(state.sheet.weather.week) ? state.sheet.weather.week : null;
+  let week=null, label='';
+  const t=at=>new Date(at).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'});
+  if(fresh){ week=liveWeek.week; label='7-day: live NWS forecast, Traverse City · fetched '+t(liveWeek.at); }
+  else if(sheetWeek && sheetWeek.length){ week=sheetWeek; label='7-day: from the sheet (NWS) · '+(state.sheet.weather.updated?t(state.sheet.weather.updated):''); }
+  else if(liveWeek){ week=liveWeek.week; label='7-day: saved NWS forecast from '+t(liveWeek.at)+' (offline)'; }
+  if(!week || !week.length){ box.innerHTML='<div class="hint" style="padding:6px">7-day forecast unavailable offline</div>'; src.textContent=''; return; }
+  const todayYmd=ymd(new Date());
+  for(const d of week){
+    const el=document.createElement('div'); el.className='wk'+(d.date===todayYmd?' today':''); el.title=d.short||'';
+    const hi = d.high!=null ? d.high+'°' : '';
+    const lo = d.low!=null ? d.low+'°' : '';
+    el.innerHTML=`<span class="d"></span><span class="i">${svgIcon(d.icon||iconFor(d.short), d.short)}</span><span class="t"></span><span class="p"></span>`;
+    el.querySelector('.d').textContent=d.day;
+    const tt=el.querySelector('.t'); if(hi) tt.append(hi); if(lo){ const s=document.createElement('span'); s.className='lo'; s.textContent=(hi?' ':'')+lo; tt.append(s); }
+    el.querySelector('.p').textContent = d.pop ? '💧'+d.pop+'%' : '';
+    box.append(el);
+  }
+  src.textContent=label;
+}
+function radarUrl(){ return RADAR+'?t='+Math.floor(Date.now()/300000); } // new image every 5 min
+function loadRadar(){
+  const th=$('#radarThumb'), img=$('#radarImg');
+  img.onload=()=>th.classList.remove('offline'); img.onerror=()=>th.classList.add('offline');
+  img.src=radarUrl();
+  if($('#radarModal').classList.contains('on')) $('#radarBig').src=img.src;
+}
+$('#radarThumb').onclick=()=>{ $('#radarBig').src=$('#radarImg').src||radarUrl(); $('#radarModal').classList.add('on'); };
+$('#radarClose').onclick=()=>$('#radarModal').classList.remove('on');
+$('#radarModal').addEventListener('click',e=>{ if(e.target.id==='radarModal') $('#radarModal').classList.remove('on'); });
+addEventListener('keydown',e=>{ if(e.key==='Escape') $('#radarModal').classList.remove('on'); });
+setInterval(()=>{ if(!document.hidden){ loadRadar(); } },300000);
+setInterval(()=>{ if(!document.hidden) fetchLiveWeek(); },1800000);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ loadRadar(); if(!liveWeek || Date.now()-liveWeek.at>1800000) fetchLiveWeek(); } });
+addEventListener('online',()=>{ loadRadar(); fetchLiveWeek(); });
+loadRadar(); renderWeek(); fetchLiveWeek();
+
 /* ---------- headline ticker ---------- */
 const TAGS=['ADVISORY','WEATHER','SCHOOLS','TRAFFIC','ROADS','LOCAL','NATIONAL','WORLD','SPORTS','EVENTS','FLASHBACK'];
 function linesOf(sec){ return sec && typeof sec.content==='string' ? cleanText(sec.content).split('\n').map(l=>l.trim()) : []; }
@@ -471,6 +610,8 @@ reduceMotion.addEventListener && reduceMotion.addEventListener('change', renderT
 function renderWeather(w){
   w=w||{};
   $('#wxTemp').textContent=w.temp||'--';
+  $('#wxIcon').innerHTML = (w.temp||w.cond) ? svgIcon(w.icon||iconFor(w.cond, true), w.cond) : '';
+  if(typeof renderWeek==='function') renderWeek();
   $('#wxCond').textContent=w.cond||'No weather yet';
   const more=[]; if(w.high||w.low) more.push('Hi '+(w.high||'–')+' / Lo '+(w.low||'–'));
   if(w.tonight) more.push('Tonight: '+w.tonight);
