@@ -127,6 +127,54 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #radarModal img{max-width:100%;max-height:78vh;border-radius:10px;background:#000}
 #radarModal .cap{color:var(--dim);font-size:.75em;margin:8px 0;text-align:center}
 #radarModal button{min-width:160px}
+/* sponsors + countdowns */
+#spBanner{display:none;margin:0 0 6px;border-radius:12px;background:#d0021b;color:#fff;font-weight:900;padding:6px 8px 6px 12px;
+  align-items:center;gap:8px;animation:sppulse 1.2s ease-in-out infinite;border:3px solid #fff}
+#spBanner.on{display:flex}
+#spBanner .t{flex:1;min-width:0;font-size:.95em;line-height:1.2}
+#spBanner button{background:#fff;color:#000;border-color:#fff;min-height:48px;white-space:nowrap}
+@keyframes sppulse{0%,100%{box-shadow:0 0 0 0 rgba(255,60,40,.9)}50%{box-shadow:0 0 0 7px rgba(255,60,40,0)}}
+@media (prefers-reduced-motion:reduce){#spBanner{animation:none}}
+.sptag{display:inline-flex;align-items:center;gap:6px;margin-top:4px;min-height:36px;padding:2px 10px;border-radius:9px;font-size:.72em;font-weight:900;
+  background:#123b2a;border:2px solid #2ecc71;color:#d8ffe9;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sptag.due{background:#5a0f06;border-color:var(--warn);color:#fff}
+.spinline{display:inline-block;margin-left:6px;padding:0 7px;border-radius:7px;font-size:.72em;font-weight:900;background:#123b2a;border:2px solid #2ecc71;color:#d8ffe9;min-height:0;vertical-align:middle;line-height:1.6}
+.studio{font-weight:900;color:#fff;background:#203a5c;border-radius:6px;padding:0 4px}
+.spcard{border:3px solid #2ecc71;background:#0e2a1e;border-radius:16px;padding:12px 14px;margin:10px 0}
+.spcard.due{border-color:var(--warn);background:#2e0d08}
+.spcard .who{font-size:.72em;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#9ff0c4}
+.spcard .copy{font-size:1.15em;font-weight:800;margin:4px 0 10px}
+.spdone{display:flex;align-items:center;gap:8px;color:var(--dim);font-size:.8em;margin:8px 0;padding:6px 10px;border:1px dashed var(--line);border-radius:12px}
+.spdone button{min-height:40px;padding:2px 12px;font-size:.95em}
+.tickbtn{width:100%;min-height:64px;font-size:1.15em;background:#2ecc71;color:#06210f;border-color:#2ecc71;display:flex;align-items:center;justify-content:center;gap:10px}
+.tickbtn .box{width:34px;height:34px;border:3px solid #06210f;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:#fff;font-size:.9em}
+.tickbtn.done{background:var(--panel2);color:var(--text);border-color:var(--line)}
+.tickbtn.done .box{border-color:#2ecc71;color:#2ecc71;background:transparent}
+#extras{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+.cdchip,.studiochip{min-height:48px;padding:4px 12px;border-radius:12px;font-weight:900;font-size:.85em;background:var(--panel2);border:2px solid var(--line);display:inline-flex;align-items:center;gap:8px}
+.cdchip .n{color:var(--accent)}
+.cdchip.today{background:var(--accent);color:#111;border-color:var(--accent)}.cdchip.today .n{color:#111}
+.cdchip.out{opacity:.8}
+.studiochip{background:#203a5c;border-color:#3d7bd9}
+.studiochip .sp{font-size:.8em;background:#123b2a;border:2px solid #2ecc71;border-radius:8px;padding:1px 7px;color:#d8ffe9}
+.modal{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.9);display:none;align-items:flex-start;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 10px 10px;overflow-y:auto}
+.modal.on{display:flex}
+.modal .box{background:var(--panel);border:2px solid var(--line);border-radius:16px;max-width:680px;width:100%;padding:14px}
+.modal h3{margin:0 0 8px;color:var(--accent)}
+.modal label{display:block;font-size:.75em;font-weight:900;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin:10px 0 3px}
+.modal input[type=text],.modal input[type=time],.modal input[type=date],.modal input[type=url],.modal textarea{width:100%;background:#000;color:var(--text);border:2px solid var(--line);border-radius:10px;padding:10px;min-height:48px;font-size:1em}
+.modal textarea{min-height:84px;resize:vertical;font-family:inherit}
+.modal .ed{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin:10px 0;background:var(--bg)}
+.modal .rowb{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.modal .rowb button{flex:1 1 auto}
+.modal .chk{display:flex;align-items:center;gap:10px;font-size:.9em;font-weight:800;min-height:44px;color:var(--text);text-transform:none;letter-spacing:0}
+.modal .chk input{width:28px;height:28px;accent-color:#2ecc71}
+.modal .danger{background:#3a1410;border-color:var(--warn)}
+.modal .log{font-size:.8em;color:var(--dim);max-height:220px;overflow-y:auto;border:1px solid var(--line);border-radius:10px;padding:6px 10px;white-space:pre-wrap}
+.modal .readcopy{font-size:1.35em;font-weight:900;line-height:1.35;margin:8px 0 14px}
+#toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:80;background:#fff;color:#000;font-weight:900;border-radius:14px;padding:8px 8px 8px 16px;display:none;align-items:center;gap:10px;box-shadow:0 6px 30px rgba(0,0,0,.6);max-width:94vw}
+#toast.on{display:flex}
+#toast button{background:#000;color:#fff;border-color:#000;min-height:48px}
 /* headline ticker */
 #tickerWrap{display:flex;align-items:stretch;gap:6px;margin-top:8px}
 #ticker{flex:1;min-width:0;overflow:hidden;background:#000;border:2px solid var(--line);border-radius:14px;position:relative;
@@ -172,6 +220,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 </head>
 <body>
 <header id="top">
+  <div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
   <div class="row">
     <div class="brand">Z93<span class="bx"> HOT SHEET</span></div>
     <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
@@ -179,7 +228,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
   </div>
   <div id="wx" aria-live="polite">
     <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
-    <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div class="small" id="wxMore"></div></div>
+    <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div id="wxSponsor"></div><div class="small" id="wxMore"></div></div>
     <div id="adv"></div>
     <div id="traffic"></div>
   </div>
@@ -195,6 +244,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
     <div id="week" aria-label="7-day forecast"></div>
   </div>
   <div id="weekSrc"></div>
+  <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
   <div id="controls" class="row">
     <button id="prevDay" aria-label="Previous weekday">◀</button>
     <div id="dateLabel">Latest</div>
@@ -205,11 +255,18 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
     <button id="fontDown" aria-label="Smaller text">A−</button>
     <button id="fontUp" aria-label="Bigger text">A+</button>
     <button id="fileBtn" aria-label="Open a JSON file">📂 Open file</button>
+    <button id="spEditBtn" aria-label="Edit sponsors">⚙ Sponsors</button>
+    <button id="cdEditBtn" aria-label="Edit countdowns">⏱ Countdowns</button>
     <input type="file" id="fileIn" accept=".json,application/json" multiple hidden>
   </div>
   <div id="status" role="status"></div>
   <section id="view" class="sec"></section>
 </main>
+<div id="readModal" class="modal" role="dialog" aria-label="Sponsor read"><div class="box"><h3 id="readTitle"></h3><div class="readcopy" id="readCopy"></div><div id="readTick"></div><div class="rowb"><button id="readClose">Close</button></div></div></div>
+<div id="spModal" class="modal" role="dialog" aria-label="Sponsors editor"><div class="box"><h3>Sponsors</h3><div id="spEditor"></div></div></div>
+<div id="cdModal" class="modal" role="dialog" aria-label="Countdowns editor"><div class="box"><h3>Countdowns</h3><div id="cdEditor"></div></div></div>
+<div id="toast" role="status"><span id="toastText"></span><button id="toastUndo">Undo</button></div>
+<input type="file" id="importIn" accept=".json,application/json" hidden>
 <div id="dayModal" role="dialog" aria-label="Days of note"><div class="box"><h3 id="dayModalTitle"></h3><div id="dayCards"></div><button class="close" id="dayClose">Close</button></div></div>
 <div id="radarModal" role="dialog" aria-label="Live radar">
   <img id="radarBig" alt="Live radar loop, NWS Gaylord (KAPX)">
@@ -264,9 +321,21 @@ function cleanText(t){
 // text -> DOM with clickable links, line breaks preserved by CSS
 function richText(el, text){
   const re=/(https?:\/\/[^\s<>"')]+)/g; let last=0, m;
-  while((m=re.exec(text))){ el.append(text.slice(last,m.index));
+  while((m=re.exec(text))){ studioText(el, text.slice(last,m.index));
     const a=document.createElement('a'); a.href=m[1]; a.textContent=m[1]; a.target='_blank'; a.rel='noopener'; el.append(a); last=m.index+m[1].length; }
-  el.append(text.slice(last));
+  studioText(el, text.slice(last));
+}
+// plain text, but every studio-line number gets highlighted + tagged with its (unread) sponsor
+function studioText(el, t){
+  const re = (typeof studioRe==='function') ? studioRe() : null;
+  if(!re){ el.append(t); return; }
+  let last=0, m;
+  while((m=re.exec(t))){ el.append(t.slice(last,m.index));
+    const n=document.createElement('span'); n.className='studio'; n.textContent=m[0]; el.append(n);
+    for(const sp of sponsorsFor('studio-line')){ if(isRead(sp.id)) continue;
+      const b=document.createElement('button'); b.className='spinline'; b.textContent=(sp.icon||'⭐')+' '+(sp.short||sp.name); b.title=sp.read; b.onclick=()=>openRead(sp.id); el.append(b); }
+    last=m.index+m[0].length; }
+  el.append(t.slice(last));
 }
 // like richText, but marks numbered story headlines ("3) TITLE") and "━━ LOCAL ━━" dividers
 function richLines(el, text){
@@ -415,6 +484,7 @@ async function showSheet(sheet, date){
   renderWeather(sheet && sheet.weather);
   renderTicker();
   renderDays();
+  refreshSponsorUI();
   if(sheet){
     const inline=clipsFromSheet(sheet);
     if(inline.length){ state.clips=await storeClips(date, sheet); state.clipsLoaded=true; }
@@ -438,6 +508,236 @@ async function loadAudioVariant(){
   }
   renderTabs(); renderView();
 }
+
+/* ---------- sponsors (trigger-based reads, one read per sponsor per show) + countdowns ---------- */
+const TZ='America/New_York';
+function etParts(d=new Date()){
+  const o={}; new Intl.DateTimeFormat('en-US',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23',weekday:'short'})
+    .formatToParts(d).forEach(p=>o[p.type]=p.value);
+  return {date:o.year+'-'+o.month+'-'+o.day, hm:(o.hour==='24'?'00':o.hour)+':'+o.minute, dow:DAYS.indexOf(o.weekday)};
+}
+const fmtTime=iso=>new Date(iso).toLocaleTimeString([], {hour:'numeric',minute:'2-digit',timeZone:TZ});
+const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZone:TZ})+' ET';
+const uid=()=>Math.random().toString(36).slice(2,9);
+const clone=o=>JSON.parse(JSON.stringify(o));
+function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
+function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} }
+function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
+  for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
+  kids.flat().forEach(c=>{ if(c!=null && c!==false) e.append(c); }); return e; }
+// local edits are an overlay on the published defaults: {items:{id: object | null(=removed)}, settings:{}}
+function mergeList(defs, ov){ const items=(ov&&ov.items)||{}; const out=[]; const seen=new Set();
+  for(const d of defs||[]){ seen.add(d.id); if(items[d.id]===null) continue; out.push(Object.assign({}, d, items[d.id]||{})); }
+  for(const [id,o] of Object.entries(items)) if(!seen.has(id) && o) out.push(Object.assign({id}, o));
+  return out; }
+function diffOverlay(defs, list){ const items={}; const by=Object.fromEntries((defs||[]).map(d=>[d.id,d]));
+  for(const o of list){ const d=by[o.id]; if(!d || JSON.stringify(Object.assign({},d,o))!==JSON.stringify(d)) items[o.id]=o; }
+  for(const d of defs||[]) if(!list.some(o=>o.id===d.id)) items[d.id]=null;
+  return items; }
+function download(name, obj){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(obj,null,1)],{type:'application/json'}));
+  a.download=name; document.body.append(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000); }
+let importHandler=null;
+$('#importIn').onchange=async e=>{ const f=e.target.files[0]; e.target.value=''; if(!f||!importHandler) return;
+  try{ importHandler(JSON.parse(await f.text()), f.name); }catch(err){ alert('Could not read '+f.name+': '+err.message); } };
+
+/* --- sponsor data --- */
+const SP_BUILTIN={deadline:'09:00', showDays:[1,2,3,4,5], studioLine:'231-929-4487', sponsors:[
+  {id:'forefront', name:'Forefront Credit Union', short:'Forefront', icon:'💳', read:"Whatever it is you're dreaming about starts with a question that's asked. Forefront.", triggers:['weather'], keywords:[], active:true, logo:''},
+  {id:'tvc-airport', name:'Traverse City Airport (TVC)', short:'TVC Airport', icon:'✈️', read:'tvcairport.com studio line', triggers:['studio-line'], keywords:[], active:true, logo:''}]};
+let spDefaults=lsGet('hs:spDefaults', SP_BUILTIN);
+let spOv=lsGet('hs:spLocal', {items:{}, settings:{}});
+let spLog=lsGet('hs:spLog', []);
+let reads=lsGet('hs:reads', {});
+async function loadSponsorDefaults(){
+  if(isHttp){ try{ const j=await fetchJson('sponsors.json'); if(j && Array.isArray(j.sponsors)){ spDefaults=j; lsSet('hs:spDefaults', j); } }catch(e){} }
+  refreshSponsorUI();
+}
+function spSettings(){ const d=spDefaults||{}; return Object.assign({deadline:'09:00', showDays:[1,2,3,4,5], studioLine:'231-929-4487'},
+  {deadline:d.deadline, showDays:d.showDays, studioLine:d.studioLine}, ...[spOv.settings||{}].map(o=>Object.fromEntries(Object.entries(o).filter(([,v])=>v!=null)))); }
+function allSponsors(){ return mergeList(spDefaults.sponsors, spOv); }
+function activeSponsors(){ return allSponsors().filter(s=>s.active!==false); }
+function sponsorsFor(trigger){ return activeSponsors().filter(s=>(s.triggers||[]).includes(trigger)); }
+function studioRe(){ const d=String(spSettings().studioLine||'').replace(/\D/g,''); if(d.length!==10) return null;
+  return new RegExp('\\(?'+d.slice(0,3)+'\\)?[-.\\s]?'+d.slice(3,6)+'[-.\\s]?'+d.slice(6)+'(?!\\d)','g'); }
+const WEATHER_RE=/\b(weather|forecast|snow\w*|rain\w*|temps?|temperature|advisory|wind ?chill|sleet|storms?|sunny|cloudy)\b/i;
+function logSp(what, note){ spLog.unshift({at:new Date().toISOString(), what, note:note||''}); spLog=spLog.slice(0,400); lsSet('hs:spLog', spLog); }
+function readKey(){ return etParts().date; }
+function readAt(id){ const r=reads[readKey()]; return r && r[id]; }
+function isRead(id){ return !!readAt(id); }
+function spById(id){ return allSponsors().find(s=>s.id===id); }
+function setRead(id, on, quiet){
+  const k=readKey(); const sp=spById(id)||{name:id};
+  reads[k]=reads[k]||{};
+  if(on){ reads[k][id]=new Date().toISOString(); logSp('✅ Read done: '+sp.name+' ('+fmtTime(reads[k][id])+')'); }
+  else { delete reads[k][id]; logSp('↩️ Read un-ticked: '+sp.name); }
+  const keep=Object.keys(reads).sort().slice(-14); reads=Object.fromEntries(keep.map(x=>[x,reads[x]]));
+  lsSet('hs:reads', reads);
+  if(on && !quiet) toast((sp.short||sp.name)+' read ✓ '+fmtTime(reads[k][id]), ()=>setRead(id,false,true));
+  refreshSponsorUI(true);
+}
+function overdueList(){ const s=spSettings(); const p=etParts();
+  if(!(s.showDays||[]).includes(p.dow) || p.hm < (s.deadline||'09:00')) return [];
+  return activeSponsors().filter(sp=>!isRead(sp.id)); }
+function isDue(id){ return overdueList().some(s=>s.id===id); }
+function tickButton(sp, after){
+  const done=isRead(sp.id);
+  const b=h('button',{className:'tickbtn'+(done?' done':''), type:'button'}, h('span',{className:'box'}, done?'✓':''),
+    done ? 'Read today ✓ '+fmtTime(readAt(sp.id))+' · tap to undo' : 'Read today');
+  b.setAttribute('aria-pressed', String(done));
+  b.onclick=()=>{ setRead(sp.id, !isRead(sp.id)); if(after) after(); };
+  return b;
+}
+function sponsorCardsFor(view, key, text){
+  const list=[]; const add=a=>a.forEach(s=>{ if(!list.some(x=>x.id===s.id)) list.push(s); });
+  if(key==='vibe' || WEATHER_RE.test(text)) add(sponsorsFor('weather'));
+  const re=studioRe(); if(re && re.test(text)) add(sponsorsFor('studio-line'));
+  const low=text.toLowerCase(); add(activeSponsors().filter(s=>(s.keywords||[]).some(k=>k && low.includes(String(k).toLowerCase()))));
+  for(const sp of list){
+    if(isRead(sp.id)){ view.append(h('div',{className:'spdone'}, '✓ '+(sp.short||sp.name)+' read at '+fmtTime(readAt(sp.id)), h('button',{type:'button', on:{click:()=>setRead(sp.id,false)}},'Undo'))); continue; }
+    view.append(h('div',{className:'spcard'+(isDue(sp.id)?' due':'')}, h('div',{className:'who'}, (sp.icon||'⭐')+' Sponsor read · '+sp.name+(isDue(sp.id)?' · OVERDUE':'')),
+      h('div',{className:'copy'}, sp.read), tickButton(sp)));
+  }
+}
+function openRead(id){ const sp=spById(id); if(!sp) return;
+  $('#readTitle').textContent=(sp.icon||'⭐')+' '+sp.name; $('#readCopy').textContent=sp.read;
+  const t=$('#readTick'); t.innerHTML=''; t.append(tickButton(sp, ()=>{ if(isRead(sp.id)) setTimeout(()=>$('#readModal').classList.remove('on'),500); else openRead(id); }));
+  $('#readModal').classList.add('on'); }
+$('#readClose').onclick=()=>$('#readModal').classList.remove('on');
+let toastT=null;
+function toast(text, undo){ $('#toastText').textContent=text; const u=$('#toastUndo'); u.style.display=undo?'':'none';
+  u.onclick=()=>{ $('#toast').classList.remove('on'); if(undo) undo(); }; $('#toast').classList.add('on');
+  clearTimeout(toastT); toastT=setTimeout(()=>$('#toast').classList.remove('on'), 10000); }
+function renderWxSponsor(){ const box=$('#wxSponsor'); box.innerHTML='';
+  if(!state.sheet || !state.sheet.weather) return;
+  for(const sp of sponsorsFor('weather')){ if(isRead(sp.id)) continue;
+    box.append(h('button',{className:'sptag'+(isDue(sp.id)?' due':''), type:'button', title:sp.read, on:{click:()=>openRead(sp.id)}}, (sp.icon||'⭐')+' '+(sp.short||sp.name)+' · read')); } }
+function renderStudio(){ const slot=$('#studioSlot'); slot.innerHTML=''; const line=spSettings().studioLine; if(!line) return;
+  const due=sponsorsFor('studio-line').filter(s=>!isRead(s.id));
+  slot.append(h('button',{className:'studiochip', type:'button', title:'Studio line', on:{click:()=>{ if(due[0]) openRead(due[0].id); }}},
+    '📞 '+line, ...due.map(s=>h('span',{className:'sp'}, (s.icon||'')+' '+s.read)))); }
+function renderBanner(){ const due=overdueList(); const b=$('#spBanner');
+  if(!due.length){ if(b.classList.contains('on')){ b.classList.remove('on'); setHdr(); } return; }
+  $('#spBannerText').textContent='⚠ Sponsor read still due: '+due.map(s=>s.short||s.name).join(', ');
+  $('#spBannerBtn').onclick=()=>openRead(due[0].id);
+  if(!b.classList.contains('on')){ b.classList.add('on'); setHdr(); } }
+let lastEtDate=etParts().date;
+function refreshSponsorUI(withView){ renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
+  if(withView){ renderTicker(); if(state.sheet){ const y=scrollY; renderView(); window.scrollTo(0,y); } } }
+setInterval(()=>{ const d=etParts().date; if(d!==lastEtDate){ lastEtDate=d; refreshSponsorUI(true); } else { renderBanner(); renderCountdowns(); } }, 30000);
+
+/* --- sponsors editor --- */
+function openSpEditor(){
+  let work=clone(allSponsors()); let set=clone(spSettings()); const before=JSON.stringify({work,set});
+  const box=$('#spEditor');
+  const draw=()=>{ box.innerHTML='';
+    // today's reads with undo
+    box.append(h('label',{},'Today\'s reads ('+etParts().date+')'));
+    for(const sp of activeSponsors()) box.append(h('div',{className:'ed'}, h('div',{style:'font-weight:900'}, (sp.icon||'')+' '+sp.name), tickButton(sp, ()=>draw())));
+    box.append(h('label',{},'Read deadline (ET, Mon–Fri). After this an unread sponsor pins a red banner.'),
+      h('input',{type:'time', value:set.deadline||'09:00', on:{input:e=>set.deadline=e.target.value}}),
+      h('label',{},'Studio line number'),
+      h('input',{type:'text', value:set.studioLine||'', on:{input:e=>set.studioLine=e.target.value}}));
+    work.forEach((sp,i)=>{
+      const trig=t=>h('label',{className:'chk'}, h('input',{type:'checkbox', checked:(sp.triggers||[]).includes(t), on:{change:e=>{ sp.triggers=(sp.triggers||[]).filter(x=>x!==t); if(e.target.checked) sp.triggers.push(t); }}}), t==='weather'?'Weather (weather bar + weather stories)':'Studio line (whenever the number shows)');
+      box.append(h('div',{className:'ed'},
+        h('label',{},'Sponsor name'), h('input',{type:'text', value:sp.name||'', on:{input:e=>sp.name=e.target.value}}),
+        h('label',{},'Short name + icon'), h('div',{className:'row', style:'flex-wrap:nowrap'},
+          h('input',{type:'text', value:sp.short||'', on:{input:e=>sp.short=e.target.value}}),
+          h('input',{type:'text', value:sp.icon||'', style:'max-width:80px', on:{input:e=>sp.icon=e.target.value}})),
+        h('label',{},'Read line'), h('textarea',{value:sp.read||'', on:{input:e=>sp.read=e.target.value}}),
+        h('label',{},'Triggers'), trig('weather'), trig('studio-line'),
+        h('label',{},'Keywords (comma separated, optional)'), h('input',{type:'text', value:(sp.keywords||[]).join(', '), on:{input:e=>sp.keywords=e.target.value.split(',').map(x=>x.trim()).filter(Boolean)}}),
+        h('label',{},'Logo URL (optional)'), h('input',{type:'url', value:sp.logo||'', on:{input:e=>sp.logo=e.target.value}}),
+        h('label',{className:'chk'}, h('input',{type:'checkbox', checked:sp.active!==false, on:{change:e=>sp.active=e.target.checked}}), 'Active'),
+        h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Remove '+(sp.name||'this sponsor')+'?')){ work.splice(i,1); draw(); } }}}, '🗑 Remove'))));
+    });
+    const note=h('input',{type:'text', placeholder:'Optional note for the change log'});
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ work.push({id:'sp-'+uid(), name:'New sponsor', short:'', icon:'⭐', read:'', triggers:[], keywords:[], active:true, logo:''}); draw(); }}}, '➕ Add sponsor')),
+      h('label',{},'Note'), note,
+      h('div',{className:'rowb'},
+        h('button',{type:'button', style:'background:#2ecc71;color:#06210f;border-color:#2ecc71', on:{click:()=>{ saveSp(work,set,note.value); $('#spModal').classList.remove('on'); }}}, '💾 Save'),
+        h('button',{type:'button', on:{click:()=>$('#spModal').classList.remove('on')}}, 'Cancel')),
+      h('div',{className:'rowb'},
+        h('button',{type:'button', on:{click:()=>download('sponsors.json', Object.assign({version:1, exported:new Date().toISOString(), timezone:TZ}, spSettings(), {sponsors:allSponsors(), log:spLog}))}}, '⬇ Export'),
+        h('button',{type:'button', on:{click:()=>{ importHandler=(j,name)=>{ if(!Array.isArray(j.sponsors)) throw new Error('no "sponsors" list');
+            spOv={items:diffOverlay(spDefaults.sponsors, j.sponsors), settings:{deadline:j.deadline, studioLine:j.studioLine, showDays:j.showDays}}; lsSet('hs:spLocal', spOv);
+            logSp('Imported sponsors from '+name); refreshSponsorUI(true); openSpEditor(); }; $('#importIn').click(); }}}, '⬆ Import'),
+        h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Drop local sponsor edits and go back to the published defaults? (Read ticks and the log are kept.)')){ spOv={items:{},settings:{}}; lsSet('hs:spLocal',spOv); logSp('Reset sponsors to published defaults'); refreshSponsorUI(true); openSpEditor(); } }}}, '↺ Defaults')),
+      h('label',{},'Change log'), h('div',{className:'log'}, spLog.length? spLog.map(l=>fmtStamp(l.at)+' · '+l.what+(l.note?' ('+l.note+')':'')).join('\n') : 'No changes yet.'));
+  };
+  const saveSp=(list,st,note)=>{ const old=allSponsors(); const oldS=spSettings(); const changes=[];
+    for(const o of list){ const p=old.find(x=>x.id===o.id); if(!p){ changes.push('Added sponsor '+o.name); continue; }
+      const f=['name','short','icon','read','triggers','keywords','active','logo'].filter(k=>JSON.stringify(p[k])!==JSON.stringify(o[k]));
+      if(f.length) changes.push('Edited '+o.name+': '+f.map(k=>k==='read'?'read line':k).join(', ')+(f.includes('read')?' → "'+o.read+'"':'')); }
+    for(const p of old) if(!list.some(o=>o.id===p.id)) changes.push('Removed sponsor '+p.name);
+    if(st.deadline!==oldS.deadline) changes.push('Deadline '+oldS.deadline+' → '+st.deadline);
+    if(st.studioLine!==oldS.studioLine) changes.push('Studio line '+oldS.studioLine+' → '+st.studioLine);
+    spOv={items:diffOverlay(spDefaults.sponsors, list), settings:{deadline:st.deadline, studioLine:st.studioLine}}; lsSet('hs:spLocal', spOv);
+    (changes.length?changes:['Saved (no changes)']).forEach(c=>logSp(c, note));
+    refreshSponsorUI(true); };
+  draw(); $('#spModal').classList.add('on');
+}
+$('#spEditBtn').onclick=openSpEditor;
+$('#spModal').addEventListener('click',e=>{ if(e.target.id==='spModal') $('#spModal').classList.remove('on'); });
+
+/* --- countdowns --- */
+const CD_BUILTIN={countdowns:[{id:'gta6', name:'GTA 6', emoji:'🎮', when:'2026-11-19T00:00', note:'Grand Theft Auto VI, PS5 and Xbox Series X|S, midnight local time', source:'https://www.rockstargames.com/VI/pre-load-now'}]};
+let cdDefaults=lsGet('hs:cdDefaults', CD_BUILTIN);
+let cdOv=lsGet('hs:cdLocal', {items:{}});
+let cdLog=lsGet('hs:cdLog', []);
+async function loadCountdownDefaults(){
+  if(isHttp){ try{ const j=await fetchJson('countdowns.json'); if(j && Array.isArray(j.countdowns)){ cdDefaults=j; lsSet('hs:cdDefaults', j); } }catch(e){} }
+  renderCountdowns(); }
+function allCountdowns(){ return mergeList(cdDefaults.countdowns, cdOv); }
+function daysBetween(a,b){ return Math.round((parseYmd(b)-parseYmd(a))/864e5); }
+function cdText(c){ const today=etParts().date; const d=String(c.when||'').slice(0,10); if(!/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
+  const n=daysBetween(today,d);
+  if(n>1) return {cls:'', t:[c.emoji, c.name, 'in'], n:n+' days'};
+  if(n===1) return {cls:'', t:[c.emoji, c.name], n:'TOMORROW'};
+  if(n===0) return {cls:'today', t:[c.emoji, c.name], n:'TODAY'};
+  if(n>=-7) return {cls:'out', t:[c.emoji, c.name], n:'Out now'};
+  return null; }
+function renderCountdowns(){ const box=$('#countdowns'); if(!box) return; box.innerHTML='';
+  for(const c of allCountdowns()){ const x=cdText(c); if(!x) continue;
+    box.append(h('button',{className:'cdchip '+x.cls, type:'button', title:(c.note||c.name)+(c.when?' · '+c.when.replace('T',' '):''), on:{click:openCdEditor}},
+      x.t.filter(Boolean).join(' ')+' ', h('span',{className:'n'}, x.n))); } }
+function logCd(what,note){ cdLog.unshift({at:new Date().toISOString(), what, note:note||''}); cdLog=cdLog.slice(0,300); lsSet('hs:cdLog', cdLog); }
+function openCdEditor(){
+  let work=clone(allCountdowns()); const box=$('#cdEditor');
+  const draw=()=>{ box.innerHTML='';
+    work.forEach((c,i)=>{ const [d,t]=String(c.when||'').split('T');
+      box.append(h('div',{className:'ed'},
+        h('label',{},'Name'), h('input',{type:'text', value:c.name||'', on:{input:e=>c.name=e.target.value}}),
+        h('label',{},'Date and time (time optional)'), h('div',{className:'row', style:'flex-wrap:nowrap'},
+          h('input',{type:'date', value:d||'', on:{input:e=>{ const tt=String(c.when||'').split('T')[1]; c.when=e.target.value+(tt?'T'+tt:''); }}}),
+          h('input',{type:'time', value:(t||'').slice(0,5), on:{input:e=>{ const dd=String(c.when||'').split('T')[0]; c.when=dd+(e.target.value?'T'+e.target.value:''); }}})),
+        h('label',{},'Emoji (optional)'), h('input',{type:'text', value:c.emoji||'', style:'max-width:120px', on:{input:e=>c.emoji=e.target.value}}),
+        h('label',{},'Note (optional)'), h('input',{type:'text', value:c.note||'', on:{input:e=>c.note=e.target.value}}),
+        h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Remove '+(c.name||'this countdown')+'?')){ work.splice(i,1); draw(); } }}}, '🗑 Remove'))));
+    });
+    const note=h('input',{type:'text', placeholder:'Optional note for the change log'});
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ work.push({id:'cd-'+uid(), name:'', emoji:'⏳', when:etParts().date}); draw(); }}}, '➕ Add countdown')),
+      h('label',{},'Note'), note,
+      h('div',{className:'rowb'},
+        h('button',{type:'button', style:'background:#2ecc71;color:#06210f;border-color:#2ecc71', on:{click:()=>{
+          const old=allCountdowns(); const ch=[];
+          for(const c of work){ const p=old.find(x=>x.id===c.id); if(!p) ch.push('Added '+(c.name||'countdown')+' ('+c.when+')'); else if(JSON.stringify(p)!==JSON.stringify(Object.assign({},p,c))) ch.push('Edited '+c.name+(p.when!==c.when?': '+p.when+' → '+c.when:'')); }
+          for(const p of old) if(!work.some(c=>c.id===p.id)) ch.push('Removed '+p.name);
+          cdOv={items:diffOverlay(cdDefaults.countdowns, work.filter(c=>c.name && c.when))}; lsSet('hs:cdLocal', cdOv);
+          (ch.length?ch:['Saved (no changes)']).forEach(c=>logCd(c, note.value)); renderCountdowns(); $('#cdModal').classList.remove('on'); }}}, '💾 Save'),
+        h('button',{type:'button', on:{click:()=>$('#cdModal').classList.remove('on')}}, 'Cancel')),
+      h('div',{className:'rowb'},
+        h('button',{type:'button', on:{click:()=>download('countdowns.json',{version:1, exported:new Date().toISOString(), countdowns:allCountdowns(), log:cdLog})}}, '⬇ Export'),
+        h('button',{type:'button', on:{click:()=>{ importHandler=(j,name)=>{ if(!Array.isArray(j.countdowns)) throw new Error('no "countdowns" list');
+            cdOv={items:diffOverlay(cdDefaults.countdowns, j.countdowns)}; lsSet('hs:cdLocal', cdOv); logCd('Imported countdowns from '+name); renderCountdowns(); openCdEditor(); }; $('#importIn').click(); }}}, '⬆ Import'),
+        h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Drop local countdown edits and go back to the published defaults?')){ cdOv={items:{}}; lsSet('hs:cdLocal',cdOv); logCd('Reset countdowns to defaults'); renderCountdowns(); openCdEditor(); } }}}, '↺ Defaults')),
+      h('label',{},'Change log'), h('div',{className:'log'}, cdLog.length? cdLog.map(l=>fmtStamp(l.at)+' · '+l.what+(l.note?' ('+l.note+')':'')).join('\n') : 'No changes yet.'));
+  };
+  draw(); $('#cdModal').classList.add('on'); }
+$('#cdEditBtn').onclick=openCdEditor;
+$('#cdModal').addEventListener('click',e=>{ if(e.target.id==='cdModal') $('#cdModal').classList.remove('on'); });
+$('#readModal').addEventListener('click',e=>{ if(e.target.id==='readModal') $('#readModal').classList.remove('on'); });
+addEventListener('keydown',e=>{ if(e.key==='Escape') ['#readModal','#spModal','#cdModal'].forEach(m=>$(m).classList.remove('on')); });
 
 /* ---------- days of note (notable observances) ---------- */
 let daysData=null; try{ daysData=JSON.parse(LS.getItem('hs:days')||'null'); }catch(e){}
@@ -622,7 +922,8 @@ function buildTicker(sheet){
   if(advisoryLive(w)) out.push({tag:'ADVISORY', text:w.advisory, section:'vibe'});
   else { const a=vl.find(l=>/\b(ADVISORY|WARNING|WATCH)\b/.test(l) && !/^(?:🏫|🚗)/u.test(l));
          if(a) out.push({tag:'ADVISORY', text:stripLead(a), section:'vibe'}); }
-  if(w.temp||w.cond) out.push({tag:'WEATHER', text:[w.temp,w.cond].filter(Boolean).join(' ')+(w.high?' · High '+w.high:'')+(w.low?' · Low '+w.low:''), section:'vibe'});
+  if(w.temp||w.cond){ const ws=(typeof sponsorsFor==='function'?sponsorsFor('weather'):[]).filter(x=>!isRead(x.id)).map(x=>(x.icon||'')+' '+(x.short||x.name));
+    out.push({tag:'WEATHER', text:[w.temp,w.cond].filter(Boolean).join(' ')+(w.high?' · High '+w.high:'')+(w.low?' · Low '+w.low:'')+(ws.length?' · '+ws.join(' · '):''), section:'vibe'}); }
   for(const l of vl){
     const m=l.match(/SCHOOLS?\s*:\s*(.+)/i); if(m && m[1].trim()) out.push({tag:'SCHOOLS', text:m[1].trim(), section:'vibe'});
     const r=l.match(/(?:ROADS?|TRAFFIC)\s*:\s*(.+)/i); if(r && r[1].trim()) out.push({tag:'ROADS', text:r[1].trim(), section:'vibe'});
@@ -753,6 +1054,7 @@ function renderView(){
   if(v.category){ const c=document.createElement('div'); c.className='catline'; c.textContent=v.category; view.append(c); }
   const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
 
+  sponsorCardsFor(view, item.key, cleanText(v.content));
   if(item.key==='clips') renderClips(view, v);
   else {
     const txt=cleanText(v.content).trim();
@@ -854,12 +1156,12 @@ $('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
 $('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
 $('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
 $('#latestBtn').onclick=()=>load(null);
-$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); load(state.mode==='latest'?null:state.date); };
+$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); load(state.mode==='latest'?null:state.date); };
 
 /* ---------- PWA ---------- */
 if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 
-loadIndex().then(()=>load(null)); loadDays();
+loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults();
 window.__hs = state; // for debugging
 })();
 </script>

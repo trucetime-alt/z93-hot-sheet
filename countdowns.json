@@ -1,0 +1,13 @@
+{
+ "version": 1,
+ "countdowns": [
+  {
+   "id": "gta6",
+   "name": "GTA 6",
+   "emoji": "🎮",
+   "when": "2026-11-19T00:00",
+   "note": "Grand Theft Auto VI, PS5 and Xbox Series X|S, midnight local time",
+   "source": "https://www.rockstargames.com/VI/pre-load-now"
+  }
+ ]
+}

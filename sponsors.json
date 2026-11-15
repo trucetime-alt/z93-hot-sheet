@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "deadline": "09:00",
+ "timezone": "America/New_York",
+ "showDays": [1, 2, 3, 4, 5],
+ "studioLine": "231-929-4487",
+ "sponsors": [
+  {
+   "id": "forefront",
+   "name": "Forefront Credit Union",
+   "short": "Forefront",
+   "icon": "💳",
+   "read": "Whatever it is you're dreaming about starts with a question that's asked. Forefront.",
+   "triggers": ["weather"],
+   "keywords": [],
+   "active": true,
+   "logo": ""
+  },
+  {
+   "id": "tvc-airport",
+   "name": "Traverse City Airport (TVC)",
+   "short": "TVC Airport",
+   "icon": "✈️",
+   "read": "tvcairport.com studio line",
+   "triggers": ["studio-line"],
+   "keywords": [],
+   "active": true,
+   "logo": ""
+  }
+ ]
+}
