@@ -5,10 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hot Sheet">
+<meta name="application-name" content="Hot Sheet">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Z93 Hot Sheet</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <style>
 :root{
   --bg:#0b0d10; --panel:#151a20; --panel2:#1d242c; --line:#2c3640;
@@ -27,7 +32,42 @@ a{color:var(--accent2)}
 #top{position:relative;z-index:10;background:var(--bg);padding:max(8px,env(safe-area-inset-top)) 10px 0}
 #top.pinned{position:sticky;top:var(--bH,0px)}
 body.flown #top{padding-top:0}
-#tabsBar{position:sticky;top:calc(var(--bH,0px) + var(--pinH,0px));z-index:9;background:var(--bg);border-bottom:2px solid var(--line);padding:0 10px 6px}
+#tabsBar{position:sticky;top:calc(var(--bH,0px) + var(--pinH,0px));z-index:9;background:var(--bg);border-bottom:2px solid var(--line);padding:0 10px 6px;display:flex;align-items:flex-end;gap:8px}
+#tabsBar #tabs{flex:1;min-width:0}
+#menuBtn{flex:0 0 auto;width:56px;min-height:56px;padding:4px 0 2px;margin-bottom:4px;border:none;border-right:2px solid var(--line);border-radius:0;padding-right:6px;background:transparent;color:var(--accent2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+#menuBtn .bars{display:flex;flex-direction:column;gap:5px}#menuBtn .bars i{display:block;width:24px;height:3px;border-radius:2px;background:currentColor}
+#menuBtn .mlab{font-size:.55em;font-weight:900;letter-spacing:.08em;text-transform:uppercase;line-height:1}
+#menuBtn[aria-expanded=true]{color:var(--accent)}
+body.flown #menuBtn{min-height:44px}body.flown #menuBtn .mlab{display:none}
+/* slide-out drawer */
+#scrim{position:fixed;inset:0;z-index:64;background:rgba(0,0,0,.6);opacity:0;transition:opacity .28s ease}
+body.drawer-open #scrim{opacity:1}
+body.drawer-open{overflow:hidden}
+#drawer{position:fixed;top:0;left:0;bottom:0;z-index:65;width:min(88vw,380px);background:var(--panel);border-right:2px solid var(--line);box-shadow:12px 0 40px rgba(0,0,0,.6);
+  transform:translateX(-105%);transition:transform .3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;
+  padding:max(10px,env(safe-area-inset-top)) 12px max(10px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));touch-action:pan-y}
+body.drawer-open #drawer{transform:translateX(0)}
+#drawer.dragging{transition:none}
+@media (prefers-reduced-motion:reduce){ #drawer,#scrim{transition:none} }
+.dhead{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:2px 0 10px;border-bottom:1px solid var(--line)}
+#drawerTitle{font-weight:900;color:var(--accent);font-size:1.1em;letter-spacing:.03em}
+.dnote{font-size:.72em;color:var(--dim);font-weight:700}
+#drawerClose{width:52px;min-height:52px;padding:0;border-radius:50%;font-size:1.2em}
+.dbody{overflow-y:auto;flex:1;padding-bottom:12px;overscroll-behavior:contain}
+.dgroup{padding:10px 0;border-bottom:1px solid var(--line)}.dgroup:last-child{border-bottom:none}
+.dlab{font-size:.68em;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:0 8px 4px}
+.drow{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:6px 8px;border:none;border-radius:12px;background:transparent;text-align:left;font-weight:800;color:var(--text);cursor:pointer}
+.drow.act:hover,.drow.act:active,label.drow:hover{background:var(--panel2)}
+.drow:active{transform:none}
+.drow .ic{width:32px;flex:0 0 32px;text-align:center;font-size:1.2em}
+.drow .tx{flex:1;min-width:0;display:flex;flex-direction:column;line-height:1.2;white-space:nowrap}
+.drow .tx small{font-size:.68em;color:var(--dim);font-weight:600;margin-top:2px}
+.drow input[type=date]{background:var(--panel2);border:2px solid var(--line);border-radius:12px;min-height:48px;padding:4px 8px;color-scheme:dark;max-width:10.5em;min-width:0;flex:0 1 auto}
+.stepper button{width:52px;min-height:48px;padding:0;border-radius:12px}
+.stepper output{min-width:2.6em;text-align:center;font-variant-numeric:tabular-nums;font-weight:900}
+.drow .sw{flex:0 0 auto;width:50px;height:30px;border-radius:15px;background:var(--line);position:relative;transition:background .2s}
+.drow .sw::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .2s}
+.drow[aria-checked=true] .sw{background:var(--accent2)}.drow[aria-checked=true] .sw::after{transform:translateX(20px)}
 #spBanner{position:sticky;top:0;z-index:12}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;flex:0 0 auto}
@@ -67,10 +107,11 @@ body.flown #top{padding-top:0}
 #traffic{width:100%;border-radius:14px;padding:6px 12px;background:#2a2410;color:var(--accent);font-weight:700}
 #traffic:empty{display:none}
 /* controls */
-#controls{margin:8px 0 2px}
-#controls button{min-width:52px}
-#dateLabel{font-weight:800;min-width:9em;text-align:center}
-.sheettag{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:8px;font-size:.75em;font-weight:800;color:var(--dim);border:1px solid var(--line);white-space:nowrap;vertical-align:middle}
+#controls{display:flex;align-items:center;margin:8px 0 4px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:3px;max-width:560px}
+#controls .navbtn{min-height:44px;min-width:56px;padding:0;border:none;background:transparent;border-radius:999px;color:var(--accent2);font-size:.95em}
+#controls .navbtn:active{background:var(--panel2)}
+#dateLabel{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:6px;font-weight:800;font-size:.9em;white-space:nowrap}
+.sheettag{display:inline-block;margin-left:0;padding:2px 8px;border-radius:8px;font-size:.75em;font-weight:800;color:var(--dim);border:1px solid var(--line);white-space:nowrap;vertical-align:middle}
 .sheettag.old{color:#1a1200;background:#ffb020;border-color:#ffb020}
 #dayChips .forday{font-size:.7em;color:var(--dim);font-weight:800;align-self:center;white-space:nowrap}
 #datePick{background:var(--panel2);border:2px solid var(--line);border-radius:14px;min-height:52px;padding:4px 10px;
@@ -267,8 +308,6 @@ body.flown #flyBtn{background:var(--accent2)}
   #traffic{font-size:.85em;padding:4px 10px}
   #tabs{padding-top:6px}
   #tabs button{min-height:48px;padding:6px 12px}
-  #dateLabel{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;line-height:1.1}
-  .sheettag{margin-left:0;white-space:normal}
 }
 </style>
 </head>
@@ -299,23 +338,35 @@ body.flown #flyBtn{background:var(--accent2)}
     <div id="ticker" aria-label="Top talking points"><div id="tickerTrack"></div></div>
     <button id="tickPause" aria-label="Pause ticker">⏸</button>
   </div>
-  <div id="controls" class="row">
-    <button id="prevDay" aria-label="Previous weekday">◀</button>
+  <div id="controls" role="group" aria-label="Sheet date">
+    <button id="prevDay" class="navbtn" type="button" aria-label="Previous weekday">◀</button>
     <div id="dateLabel">Latest</div>
-    <button id="nextDay" aria-label="Next weekday">▶</button>
-    <input type="date" id="datePick" aria-label="Pick a date" list="dateList"><datalist id="dateList"></datalist>
-    <button id="latestBtn">Latest</button>
-    <button id="refreshBtn" aria-label="Refresh">⟳ Refresh</button>
-    <button id="fontDown" aria-label="Smaller text">A−</button>
-    <button id="fontUp" aria-label="Bigger text">A+</button>
-    <button id="fileBtn" aria-label="Open a JSON file">📂 Open file</button>
-    <button id="spEditBtn" aria-label="Edit sponsors">⚙ Sponsors</button>
-    <button id="cdEditBtn" aria-label="Edit countdowns">⏱ Countdowns</button>
+    <button id="nextDay" class="navbtn" type="button" aria-label="Next weekday">▶</button>
   </div>
   </div></div>
 </header>
 <input type="file" id="fileIn" accept=".json,application/json" multiple hidden>
-<div id="tabsBar"><nav id="tabs" role="tablist"></nav></div>
+<div id="tabsBar"><button id="menuBtn" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false" aria-haspopup="dialog"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="mlab">Menu</span></button><nav id="tabs" role="tablist"></nav></div>
+<div id="scrim" hidden></div>
+<aside id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
+  <div class="dhead"><div><div id="drawerTitle">Hot Sheet</div><div class="dnote" id="drawerNote"></div></div><button id="drawerClose" type="button" aria-label="Close menu">✕</button></div>
+  <div class="dbody">
+    <div class="dgroup"><div class="dlab">Sheet</div>
+      <label class="drow" for="datePick"><span class="ic" aria-hidden="true">📅</span><span class="tx">Date</span><input type="date" id="datePick" list="dateList"><datalist id="dateList"></datalist></label>
+      <button class="drow act" id="latestBtn" type="button"><span class="ic" aria-hidden="true">⏭</span><span class="tx">Latest sheet</span></button>
+      <button class="drow act" id="refreshBtn" type="button"><span class="ic" aria-hidden="true">⟳</span><span class="tx">Refresh<small>Newest sheet, days, sponsors</small></span></button>
+      <button class="drow act" id="fileBtn" type="button"><span class="ic" aria-hidden="true">📂</span><span class="tx">Open file…<small>Load a sheet or -audio JSON</small></span></button>
+    </div>
+    <div class="dgroup"><div class="dlab">Display</div>
+      <div class="drow stepper" role="group" aria-label="Text size"><span class="ic" aria-hidden="true">🔠</span><span class="tx">Text size</span><button id="fontDown" type="button" aria-label="Smaller text">A−</button><output id="fsVal" aria-live="polite">20</output><button id="fontUp" type="button" aria-label="Bigger text">A+</button></div>
+      <button class="drow act" id="flyRow" type="button" role="switch" aria-checked="false"><span class="ic" aria-hidden="true">⤒</span><span class="tx">Full-screen sections<small>Fly away the top block</small></span><span class="sw" aria-hidden="true"></span></button>
+    </div>
+    <div class="dgroup"><div class="dlab">Station</div>
+      <button class="drow act" id="spEditBtn" type="button"><span class="ic" aria-hidden="true">⚙</span><span class="tx">Sponsors<small>Reads, triggers, deadline</small></span></button>
+      <button class="drow act" id="cdEditBtn" type="button"><span class="ic" aria-hidden="true">⏱</span><span class="tx">Countdowns<small>GTA 6 and more</small></span></button>
+    </div>
+  </div>
+</aside>
 <main>
   <div id="status" role="status"></div>
   <section id="view" class="sec"></section>
@@ -807,8 +858,10 @@ function applyFly(){ document.body.classList.toggle('flown', flown); const b=$('
   b.setAttribute('aria-label', flown ? 'Bring the top back' : 'Fly away the top');
   b.title = flown ? 'Bring the top back' : 'Fly away the top (full screen)';
   $('#topFold').setAttribute('aria-hidden', String(flown)); $('#topFold').inert = flown;
+  $('#flyRow').setAttribute('aria-checked', String(flown));
   setTimeout(setHdr, 420); }
 $('#flyBtn').onclick=()=>{ flown=!flown; LS.setItem('hs:flown', flown?'1':'0'); applyFly(); };
+$('#flyRow').onclick=()=>$('#flyBtn').onclick();
 applyFly();
 
 /* ---------- days of note (notable observances) ---------- */
@@ -1067,6 +1120,63 @@ setInterval(()=>{ if(!document.hidden){ loadRadar(); } },300000);
 setInterval(()=>{ if(!document.hidden) fetchLiveWeek(); },1800000);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ loadRadar(); if(!liveWeek || Date.now()-liveWeek.at>1800000) fetchLiveWeek(); } });
 addEventListener('online',()=>{ loadRadar(); fetchLiveWeek(); });
+
+/* ---------- slide-out menu drawer (modal: scrim, focus trap, Esc/Back/swipe/✕ close) ---------- */
+const drawer=$('#drawer'), scrim=$('#scrim'), menuBtn=$('#menuBtn');
+let drawerOpen=false, drawerReturn=null;
+function fsNow(){ return fs || parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--fs')) || 20; }
+function renderDrawerInfo(){
+  $('#fsVal').textContent=Math.round(fsNow());
+  const t=todayET(); const parts=[(state.mode==='latest'?'Latest':'Viewing '+nice(state.date))];
+  if(state.date) parts.push(state.date===t?'today\'s sheet':'sheet from '+nice(state.date));
+  $('#drawerNote').textContent=parts.join(' · ');
+}
+function openDrawer(){
+  if(drawerOpen) return; drawerOpen=true; drawerReturn=document.activeElement;
+  renderDrawerInfo(); scrim.hidden=false; drawer.inert=false; drawer.setAttribute('aria-hidden','false');
+  void drawer.offsetWidth; document.body.classList.add('drawer-open');
+  menuBtn.setAttribute('aria-expanded','true'); menuBtn.setAttribute('aria-label','Close menu');
+  try{ history.pushState({hsDrawer:1},''); }catch(e){}
+  setTimeout(()=>{ if(drawerOpen) $('#drawerClose').focus({preventScroll:true}); },60);
+}
+function closeDrawer(fromPop, keepFocus){
+  if(!drawerOpen) return; drawerOpen=false;
+  document.body.classList.remove('drawer-open'); drawer.style.transform=''; drawer.classList.remove('dragging');
+  drawer.inert=true; drawer.setAttribute('aria-hidden','true'); scrim.style.opacity='';
+  menuBtn.setAttribute('aria-expanded','false'); menuBtn.setAttribute('aria-label','Open menu');
+  setTimeout(()=>{ if(!drawerOpen) scrim.hidden=true; },320);
+  if(!fromPop && history.state && history.state.hsDrawer){ try{ history.back(); }catch(e){} }
+  if(!keepFocus){ const r=drawerReturn && document.contains(drawerReturn) ? drawerReturn : menuBtn; r.focus && r.focus({preventScroll:true}); }
+}
+menuBtn.onclick=()=>drawerOpen?closeDrawer():openDrawer();
+$('#drawerClose').onclick=()=>closeDrawer();
+scrim.addEventListener('click',()=>closeDrawer());
+addEventListener('popstate',()=>{ if(drawerOpen) closeDrawer(true); });
+addEventListener('keydown',e=>{
+  if(!drawerOpen) return;
+  if(e.key==='Escape'){ e.preventDefault(); closeDrawer(); return; }
+  if(e.key==='Tab'){ const f=[...drawer.querySelectorAll('button,input,[tabindex]:not([tabindex="-1"])')].filter(x=>!x.disabled && x.offsetParent!==null);
+    if(!f.length) return; const first=f[0], last=f[f.length-1];
+    if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); } }
+});
+// actions close the drawer (editors/file picker open on top); text size + date picker keep it open until used
+['#latestBtn','#refreshBtn','#fileBtn','#flyRow'].forEach(id=>$(id).addEventListener('click',()=>closeDrawer()));
+['#spEditBtn','#cdEditBtn'].forEach(id=>$(id).addEventListener('click',()=>closeDrawer(false,true)));
+$('#datePick').addEventListener('change',()=>closeDrawer());
+['#fontUp','#fontDown'].forEach(id=>$(id).addEventListener('click',()=>setTimeout(renderDrawerInfo,0)));
+// swipe left to close (follows the finger)
+(()=>{ let x0=null,y0=0,dx=0,horiz=null,t0=0;
+  drawer.addEventListener('touchstart',e=>{ if(e.touches.length!==1) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; dx=0; horiz=null; t0=Date.now(); },{passive:true});
+  drawer.addEventListener('touchmove',e=>{ if(x0===null) return; const mx=e.touches[0].clientX-x0, my=e.touches[0].clientY-y0;
+    if(horiz===null && (Math.abs(mx)>8||Math.abs(my)>8)) horiz=Math.abs(mx)>Math.abs(my);
+    if(!horiz) return; dx=Math.min(0,mx); drawer.classList.add('dragging'); drawer.style.transform='translateX('+dx+'px)';
+    scrim.style.opacity=String(Math.max(0,1+dx/drawer.offsetWidth)); },{passive:true});
+  drawer.addEventListener('touchend',()=>{ if(x0===null) return; const fast=dx<-40 && (Date.now()-t0)<250;
+    drawer.classList.remove('dragging'); drawer.style.transform=''; scrim.style.opacity='';
+    if(horiz && (-dx>drawer.offsetWidth*0.3 || fast)) closeDrawer(); x0=null; });
+})();
+
 loadRadar(); renderWeek(); fetchLiveWeek();
 
 /* ---------- headline ticker ---------- */
