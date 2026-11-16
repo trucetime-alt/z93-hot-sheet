@@ -585,6 +585,11 @@ button:active{transform:scale(.96)}
 #tabs button[aria-selected="true"] .cat{opacity:.85}
 @media (max-width:520px){ #tabs button{min-height:56px;padding:5px 15px;font-size:1em} }
 body.flown #tabs button{min-height:48px}
+.sclipw{display:inline-block;vertical-align:middle;margin-left:6px}
+.sclip{min-width:48px;min-height:48px;display:inline-flex;align-items:center;gap:6px;padding:0 14px;border-radius:24px;border:2px solid #f5b81a;background:linear-gradient(180deg,#ffd34d,#f5a90a);color:#1a1200;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.sclip .sci{font-size:16px;width:18px;text-align:center}
+.sclip.played:not(.playing){background:#2a2f3a;color:#ffd34d;opacity:.85}
+.sclip.playing{background:#2ecc71;border-color:#2ecc71;color:#06210f}
 </style>
 </head>
 <body>
@@ -743,9 +748,16 @@ function richLines(el, text){
     if(h){ const sp=document.createElement('span'); sp.className='headline'; sp.dataset.story=h[1]; richText(sp, ln); el.append(sp); }
     else if(sub){ const sp=document.createElement('span'); sp.className='subhead'; sp.textContent=ln; el.append(sp); }
     else richText(el, ln);
+    // inline ▶ for a story header whose block matches a published clip
+    if(!sub && typeof storyClipFor==='function' && (h || isStoryHead(ln, arr[i-1]))){
+      let j=i+1; const blk=[ln]; while(j<arr.length && arr[j].trim() && !isStoryHead(arr[j], arr[j-1]) && !/^\s*\d+\)\s/.test(arr[j])){ blk.push(arr[j]); j++; }
+      const m=storyClipFor(blk); if(m) el.append(' ', inlineClipBtn(m));
+    }
     if(i<arr.length-1) el.append('\n');
   });
 }
+function isStoryHead(ln, prev){ const t=String(ln||'').trim(); if(t.length<6 || /^[•➜━]/.test(t)) return false; if(prev!=null && String(prev).trim()) return false;
+  const L=t.replace(/[^A-Za-z]/g,''); return L.length>=5 && L.replace(/[^A-Z]/g,'').length/L.length>=0.8; }
 function sheetDate(sheet){
   const u = sheet && sheet.weather && sheet.weather.updated;
   const m = u && String(u).match(/^(\d{4}-\d{2}-\d{2})/); return m?m[1]:null;
@@ -2381,6 +2393,42 @@ addEventListener('online', ()=>syncNow()); document.addEventListener('visibility
 setInterval(()=>{ if(!document.hidden) syncNow(); }, 60000);
 renderSyncState(); setTimeout(syncNow, 2500);
 
+
+/* ---------- inline story ▶ (published clips matched to story blocks) ---------- */
+const CLIP_STOP=new Set('this that with from your they them their there have here what when were will just about into over more than then after before right first last today said says been also only like dont cant baby back show week weekend friday saturday sunday monday tuesday wednesday thursday morning night tonight play talk talkover over ready clip audio call calls listen hear heard text going year years time pairs'.split(' '));
+function clipToks(t){ return new Set(String(t||'').toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[’']/g,'').split(/[^a-z0-9]+/).filter(w=>w && !CLIP_STOP.has(w) && (w.length>=4 || /^\d{2,}$/.test(w) || /^(st|ra|nfl|snl|tvc)$/.test(w)))); }
+var storyClipCache={sheet:null, list:[]};
+function storyClips(){ if(storyClipCache.sheet===state.sheet) return storyClipCache.list;
+  const list=[]; for(const key of ['newsclips','clips']) for(const p of clipPicks(key)){ const url=clipAudioUrl(p.audio); if(!url) continue;
+    const raw=state.sheet[key] && Array.isArray(state.sheet[key].clips) ? (state.sheet[key].clips.find(x=>String(x.id)===p.id)||{}) : {};
+    const lines=String(p.body||'').split('\n'); const keep=lines.filter(l=>/^\s*(•|🎙)/.test(l)).join(' ');
+    const title=String(p.title||'').replace(/\(READY\)/i,'').trim();
+    const urls=(String(raw.source||raw.story||'')+' '+String(p.body||'')).match(/https?:\/\/[^\s<"')]+/g)||[];
+    list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:clipToks(title), tk:clipToks(title+' '+keep)}); }
+  storyClipCache={sheet:state.sheet, list}; return list; }
+function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
+  const head=String(blk[0]).replace(/^\s*\d+\)\s*/,''); const body=blk.filter(l=>!/^\s*➜/.test(l)).join(' ');
+  const urls=(body.match(/https?:\/\/[^\s<"')]+/g)||[]).map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,''));
+  const ht=clipToks(head), bt=clipToks(body); let best=null, bs=0;
+  for(const c of cl){
+    if(urls.some(u=>c.urls.includes(u))) return c;                          // 1) same source URL
+    const hn=head.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(), tn=c.title.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+    if(hn.length>=8 && (hn===tn || (tn.length>=8 && (hn.includes(tn)||tn.includes(hn))))) return c;   // 2) same headline
+    let shared=0, inHead=0; for(const w of c.tk){ if(bt.has(w)){ shared++; if(ht.has(w)) inHead++; } }
+    const sc=shared+inHead; if(shared>=3 && inHead>=1 && sc>bs){ bs=sc; best=c; }   // 3) strong overlap, anchored in the headline
+  }
+  return best; }
+let inlineCur=null;
+function inlineClipBtn(c){
+  const a=document.createElement('audio'); a.preload='none'; a.src=c.url; a.dataset.clip=c.id;
+  const b=h('button',{className:'sclip', type:'button', title:'Play clip: '+c.title, 'aria-label':'Play clip: '+c.title}, h('span',{className:'sci','aria-hidden':'true'},'▶'), h('span',{className:'scl'}, 'Clip'));
+  b.dataset.clip=c.id; if(cst(c.id).p) b.classList.add('played');
+  const ic=b.querySelector('.sci');
+  b.onclick=e=>{ e.stopPropagation(); tapHaptic(); if(a.paused){ a.play().catch(()=>{}); } else a.pause(); };
+  a.addEventListener('play',()=>{ if(inlineCur && inlineCur!==a) inlineCur.pause(); inlineCur=a; document.querySelectorAll('audio').forEach(x=>{ if(x!==a && !x.paused) x.pause(); }); ic.textContent='❚❚'; b.classList.add('playing','played'); });
+  a.addEventListener('pause',()=>{ ic.textContent='▶'; b.classList.remove('playing'); });
+  a.addEventListener('ended',()=>{ ic.textContent='▶'; b.classList.remove('playing'); });
+  const w=h('span',{className:'sclipw'}, b); w.append(a); return w; }
 /* ---------- PWA ---------- */
 if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 
