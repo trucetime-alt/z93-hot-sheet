@@ -277,8 +277,8 @@
         "slot": "NEWS AUDIO",
         "title": "KINGSLEY'S LAST-MINUTE WINNER",
         "body": "KINGSLEY'S LAST-MINUTE WINNER<br>• Radio call of Kingsley's final-minute touchdown in the 34-28 regional final win over Sanford Meridian<br>🔊 IN/OUT: AJ picks the go-ahead TD call from the station's audio highlights (timestamps not checked)<br>~20-30 s · TALK-OVER<br>➜ WHY: A Kingsley kid's state run always gets a mention, and this was the biggest moment in the area all weekend",
-        "audio": "https://www.1009themitt.com/post/hsfb-kingsley-34-meridian-28-regional-final-video-audio-highlights",
-        "ready": false
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c05-kingsley-td-call.mp3",
+        "ready": true
       },
       {
         "id": "2026-11-16-c06",
@@ -304,8 +304,8 @@
         "slot": "SUPER-CLIP 6 AM",
         "title": "THE GERMAN FOOTBALL KING",
         "body": "THE GERMAN FOOTBALL KING · SUPER-CLIP 6 AM<br>• FOX's call of Amon-Ra St. Brown's 56-yard TD on the Lions' first drive in Munich<br>🔊 IN: \"Third down and nine for Goff and the offense\" (0:07)<br>OUT: \"...the German Football King, a 56-yard touchdown!\" (0:25)<br>~18 s · PLAY<br>➜ WHY: It's the Lions' big Monday-morning moment, with a record crowd and a call that names the win",
-        "audio": "https://www.youtube.com/watch?v=fpWGgoCOYwg",
-        "ready": false
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c01-st-brown-56-td.mp3",
+        "ready": true
       },
       {
         "id": "2026-11-16-c02",
@@ -320,32 +320,32 @@
         "slot": "FIRST HALF HOUR: STAND-UP",
         "title": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS",
         "body": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS · FIRST HALF HOUR: STAND-UP<br>• Dry Bar Comedy: cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the pets buffer",
-        "audio": "https://www.youtube.com/watch?v=z02Yg9fAqCM",
-        "ready": false
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c03-bharoocha-cats.mp3",
+        "ready": true
       },
       {
         "id": "2026-11-16-c04",
         "slot": "FIRST HALF HOUR: STAND-UP",
         "title": "LEANNE MORGAN: THE THERMOSTAT WAR",
         "body": "LEANNE MORGAN: THE THERMOSTAT WAR · FIRST HALF HOUR: STAND-UP<br>• She sets the air to 68 in November, her husband turns it back to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY<br>➜ WHY: It's dead-center for women 25-55, and it sets up the thermostat-war bit",
-        "audio": "https://www.youtube.com/watch?v=Tp0TmcFbSzo",
-        "ready": false
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c04-leanne-morgan-thermostat.mp3",
+        "ready": true
       },
       {
         "id": "2026-11-16-c07",
         "slot": "BUFFER: PETS & FAMILY",
         "title": "MAMA DOG DROPS OFF HER PUPPIES FOR BABYSITTING",
         "body": "MAMA DOG DROPS OFF HER PUPPIES FOR BABYSITTING · BUFFER: PETS & FAMILY<br>• A stray mom drops four puppies with a family, then comes back at night with four MORE<br>🔊 IN: \"Ma'am, that mama dog really said, I can't handle these kids anymore\" (0:00)<br>OUT: \"...I felt really honored that she trusted us enough with the four.\" (0:47)<br>~47 s · PLAY (music bed under)<br>➜ WHY: Every tired parent relates to dropping the kids off, and it has a happy ending: all eight found homes",
-        "audio": "https://www.youtube.com/watch?v=5bwH4iclH4c",
-        "ready": false
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c07-dodo-mama-dog.mp3",
+        "ready": true
       },
       {
         "id": "2026-11-16-c08",
         "slot": "BUFFER: NEWSY VIRAL",
         "title": "\"BABY, SHE'S BACK!\" SPACEX CATCHES STARSHIP",
         "body": "\"BABY, SHE'S BACK!\" SPACEX CATCHES STARSHIP · BUFFER: NEWSY VIRAL<br>• SpaceX's launch tower caught a returning Starship for the first time, and the crowd lost it<br>🔊 IN: \"There's the sonic boom. Starship returning.\" (4:46) → \"Let's go Ship 42\" (4:57)<br>then: \"Mechazilla has caught the Starship...\" (6:43) OUT: \"...Baby, she's back.\" (6:55)<br>~25 s edited · PLAY<br>➜ WHY: A real 'you had to hear it' moment, a sonic boom plus a screaming crowd, and it works without the picture",
-        "audio": "https://www.youtube.com/watch?v=VEvzBhRyB94",
-        "ready": false
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c08-starship-catch.mp3",
+        "ready": true
       }
     ]
   },
