@@ -101,6 +101,23 @@ body.drawer-open #drawer{transform:translateX(0)}
 #wx .meta{flex:1 1 220px;background:var(--panel);border-radius:14px;padding:6px 12px;min-width:0}
 #wx .cond{font-weight:800;font-size:1.1em}
 #wx .small{color:var(--dim);font-size:.8em}
+.wxlive{font-size:.62em;font-weight:800;color:var(--dim);letter-spacing:.02em;margin-top:1px}
+.wxlive.on{color:var(--ok)}.wxlive.on::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:5px;vertical-align:1px;box-shadow:0 0 0 0 rgba(61,220,132,.7);animation:livepulse 2s infinite}
+@keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.7)}70%{box-shadow:0 0 0 6px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+@media (prefers-reduced-motion:reduce){.wxlive.on::before{animation:none}}
+#radarWrap{min-width:0}
+#radarBar{width:100%;min-height:48px;display:flex;align-items:center;gap:8px;padding:4px 12px;background:var(--panel);border:2px solid var(--line);border-radius:12px;text-align:left;font-size:.9em}
+#radarBar .ri{font-size:1.1em}#radarBar .rt{font-weight:900}
+#radarBar .rs{flex:1;min-width:0;color:var(--accent2);font-weight:800;font-size:.85em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#radarBar .rs.stale{color:var(--warn)}
+#radarBar .arr{font-weight:900;color:var(--accent2);transition:transform .3s ease}
+#radarBar[aria-expanded=true]{border-color:var(--accent2);border-bottom-left-radius:0;border-bottom-right-radius:0}
+#radarBar[aria-expanded=true] .arr{transform:rotate(180deg)}
+#radarFold{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s cubic-bezier(.4,0,.2,1)}
+#radarFold.open{grid-template-rows:1fr}
+#radarFold .rfIn{min-height:0;overflow:hidden}
+#radarFold.open #radarThumb{border-top-left-radius:0;border-top-right-radius:0;border-top:none}
+@media (prefers-reduced-motion:reduce){ #radarFold,#radarBar .arr{transition:none} }
 #adv{width:100%;border-radius:14px;padding:8px 12px;font-weight:800;display:none}
 #adv.on{display:block;background:var(--warn);color:#fff}
 #adv.past{display:block;background:transparent;color:var(--dim);border:1px dashed var(--line);font-size:.7em;font-weight:600;padding:4px 10px}
@@ -173,7 +190,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .tvc i{display:block;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid #fff;box-shadow:0 0 0 2px rgba(0,0,0,.6)}
 .tvc b{position:absolute;left:14px;top:-5px;font-size:12px;font-weight:900;color:#fff;background:rgba(0,0,0,.7);padding:0 4px;border-radius:4px;white-space:nowrap}
 .rfb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:28% 45%;display:none}
-#radarThumb .lbl{display:block;text-align:left;font-size:.7em;font-weight:900;background:#000;padding:3px 10px;color:var(--accent2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#radarThumb .lbl{display:none;text-align:left;font-size:.7em;font-weight:900;background:#000;padding:3px 10px;color:var(--accent2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #radarThumb .lbl.stale{color:var(--warn)}
 #radarThumb .exp{position:absolute;right:6px;top:6px;font-size:.7em;font-weight:900;background:rgba(0,0,0,.7);padding:2px 7px;border-radius:6px;color:#fff}
 #radarThumb .off{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:.8em;color:var(--dim);text-align:center}
@@ -323,7 +340,7 @@ body.flown #flyBtn{background:var(--accent2)}
   <div id="wxGrid"><div id="wxCol">
   <div id="wx" aria-live="polite">
     <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
-    <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div id="wxSponsor"></div><div class="small" id="wxMore"></div></div>
+    <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div id="wxLive" class="wxlive"></div><div id="wxSponsor"></div><div class="small" id="wxMore"></div></div>
     <div id="adv"></div>
     <div id="traffic"></div>
   </div>
@@ -331,7 +348,12 @@ body.flown #flyBtn{background:var(--accent2)}
   <div id="week" aria-label="Rest of the week" hidden></div>
   <div id="weekSrc" hidden></div>
   </div>
+  <div id="radarWrap">
+  <button id="radarBar" type="button" aria-expanded="false" aria-controls="radarFold"><span class="ri" aria-hidden="true">📡</span><span class="rt">Radar</span><span id="radarBarLbl" class="rs">tap to open</span><span class="arr" aria-hidden="true">▾</span></button>
+  <div id="radarFold"><div class="rfIn">
   <button id="radarThumb" type="button" aria-label="Open live radar full screen"><div class="rmap"><div class="rin"><img class="rbase" alt=""><img id="radarImg" alt="Live radar, northern Lake Michigan"><img class="rref" alt=""></div><img class="rfb" id="radarFb" alt="NWS Gaylord radar loop (fallback)"></div><span class="lbl" id="radarLbl">RADAR</span><span class="exp">⤢</span><span class="off">Radar offline</span></button>
+  </div></div>
+  </div>
   </div>
   <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
   <div id="tickerWrap" class="none">
@@ -591,7 +613,7 @@ async function showSheet(sheet, date){
   state.sheet=sheet; state.date=date||null; state.clips=[]; state.clipsLoaded=false; state.clipsText=null;
   renderSheetTag();
   if(date) $('#datePick').value=date;
-  renderWeather(sheet && sheet.weather);
+  renderWeather();
   renderTicker();
   renderDays();
   refreshSponsorUI();
@@ -718,7 +740,7 @@ function toast(text, undo){ $('#toastText').textContent=text; const u=$('#toastU
   u.onclick=()=>{ $('#toast').classList.remove('on'); if(undo) undo(); }; $('#toast').classList.add('on');
   clearTimeout(toastT); toastT=setTimeout(()=>$('#toast').classList.remove('on'), 10000); }
 function renderWxSponsor(){ const box=$('#wxSponsor'); box.innerHTML='';
-  if(!state.sheet || !state.sheet.weather) return;
+  if(!(state.sheet && state.sheet.weather) && !liveWx.obs) return;
   for(const sp of sponsorsFor('weather')){ if(isRead(sp.id)) continue;
     box.append(h('button',{className:'sptag'+(isDue(sp.id)?' due':''), type:'button', title:sp.read, on:{click:()=>openRead(sp.id)}}, (sp.icon||'⭐')+' '+(sp.short||sp.name)+' · read')); } }
 function renderStudio(){ const slot=$('#studioSlot'); slot.innerHTML=''; const line=spSettings().studioLine; if(!line) return;
@@ -984,11 +1006,58 @@ function weekFromPeriods(periods){
   while(i<periods.length && out.length<7){
     const p=periods[i]; const pop=(p.probabilityOfPrecipitation||{}).value;
     if(p.isDaytime){ const n=periods[i+1] && !periods[i+1].isDaytime ? periods[i+1] : null;
-      out.push({day:dayName(p), date:p.startTime.slice(0,10), high:p.temperature, low:n?n.temperature:null, short:p.shortForecast, icon:iconFor(p.shortForecast,true), pop});
+      out.push({day:dayName(p), date:p.startTime.slice(0,10), high:p.temperature, low:n?n.temperature:null, short:p.shortForecast, nshort:n?n.shortForecast:null, icon:iconFor(p.shortForecast,true), pop});
       i+= n?2:1; }
     else { out.push({day:dayName(p), date:p.startTime.slice(0,10), high:null, low:p.temperature, short:p.shortForecast, icon:iconFor(p.shortForecast,false), pop}); i++; }
   }
   return out;
+}
+/* Live NWS weather in the browser (api.weather.gov sends Access-Control-Allow-Origin: *).
+   Browsers don't let pages set User-Agent (Chrome ignores it), so we send the default UA
+   with an Accept header; NWS accepts that. Sheet weather is the fallback. */
+const NWS_OBS='https://api.weather.gov/stations/KTVC/observations/latest';
+const NWS_ALERTS='https://api.weather.gov/alerts/active?point=44.7417,-85.5824';
+let liveWx={obs:null, alerts:null, at:0, alertsAt:0};
+try{ const s=JSON.parse(LS.getItem('hs:liveWx')||'null'); if(s) liveWx=s; }catch(e){}
+async function nwsJson(u){ const r=await fetch(u,{headers:{'Accept':'application/geo+json'},cache:'no-cache'}); if(!r.ok) throw new Error('NWS '+r.status); return r.json(); }
+async function fetchLiveWx(){
+  if(!navigator.onLine) return;
+  const [o,a]=await Promise.allSettled([nwsJson(NWS_OBS), nwsJson(NWS_ALERTS)]);
+  if(o.status==='fulfilled'){ const p=o.value.properties||{}; const c=p.temperature&&p.temperature.value;
+    if(c!=null && p.textDescription!==undefined){
+      const day=!/\/night\//.test(p.icon||'');
+      liveWx.obs={tempF:Math.round(c*9/5+32), cond:p.textDescription||'', icon:iconFor(p.textDescription, day), time:p.timestamp};
+      liveWx.at=Date.now(); } }
+  if(a.status==='fulfilled'){ const now=new Date();
+    liveWx.alerts=(a.value.features||[]).map(f=>f.properties||{})
+      .filter(x=>x.status==='Actual' && x.messageType!=='Cancel' && (!x.ends || new Date(x.ends)>now) && (!x.expires || new Date(x.expires)>now))
+      .map(x=>({event:x.event, headline:x.headline||'', ends:x.ends||x.expires||null, areas:x.areaDesc||'', severity:x.severity||''}));
+    liveWx.alertsAt=Date.now(); }
+  try{ LS.setItem('hs:liveWx', JSON.stringify(liveWx)); }catch(e){}
+  renderWeather(); renderWxSponsor(); renderTicker();
+}
+// weather shown = sheet weather, overlaid with live NWS obs / forecast / alerts when fresh
+function effectiveWeather(){
+  const base = (state.sheet && state.sheet.weather) ? Object.assign({}, state.sheet.weather) : {};
+  const w=base; w.live={};
+  const o=liveWx.obs, obsFresh = o && liveWx.at && (Date.now()-liveWx.at < 90*60000) && (Date.now()-new Date(o.time) < 3*3600e3);
+  if(obsFresh){ w.temp=o.tempF+'°'; w.cond=o.cond||w.cond; w.icon=o.icon; w.updated=o.time; w.live.obs=o.time; }
+  const lw = liveWeek && (Date.now()-liveWeek.at < 6*3600e3) ? liveWeek.week : null;
+  if(lw && lw.length){ const t=etParts().date; const today=lw.find(d=>d.date===t)||lw[0];
+    if(today.high!=null) w.high=today.high+'°'; else delete w.high;
+    const nightLow = today.low!=null ? today.low : null; if(nightLow!=null) w.low=nightLow+'°';
+    const tn = today.day==='Tonight' ? today.short : today.nshort; if(tn) w.tonight=tn;
+    w.live.fc=liveWeek.at; }
+  if(liveWx.alerts && Date.now()-liveWx.alertsAt < 30*60000){
+    const al=liveWx.alerts;
+    if(al.length){ w.advisory=[...new Set(al.map(x=>x.event))].join(' · ');
+      const soon=al.map(x=>x.ends).filter(Boolean).sort()[0];
+      w.advisory_detail={active:true, until:soon||null, areas:soon?'until '+new Date(soon).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}):'', headline:al.map(x=>x.headline).filter(Boolean).join(' | ')}; }
+    else { delete w.advisory; w.advisory_detail={active:false}; }
+    w.live.alerts=liveWx.alertsAt;
+  } else if(w.advisory && !advisoryLive(w)) { delete w.advisory; }   // sheet fallback: never show an expired one
+  if(w.advisory && /^no (active )?advisor/i.test(w.advisory)) delete w.advisory;
+  return w;
 }
 let liveWeek=null; // {week, at, updated}
 try{ liveWeek=JSON.parse(LS.getItem('hs:liveWeek')||'null'); }catch(e){}
@@ -1001,7 +1070,7 @@ async function fetchLiveWeek(){
     liveWeek={week:weekFromPeriods(per), at:Date.now(), updated:j.properties.updateTime||j.properties.generatedAt||null};
     LS.setItem('hs:liveWeek', JSON.stringify(liveWeek));
   }catch(e){ /* offline or blocked: fall back to saved/sheet week */ }
-  renderWeek();
+  renderWeather();
 }
 let weekOpen = LS.getItem('hs:weekOpen')==='1';
 function applyWeekOpen(){
@@ -1059,8 +1128,22 @@ function radarLayerUrl([w,h], when){
 const RADAR_VALID='https://mesonet.agron.iastate.edu/data/gis/images/4326/USCOMP/n0q_0.json';
 let radarValid=null; // Date of the latest composite
 const hm=d=>d.toLocaleTimeString([], {hour:'numeric',minute:'2-digit',timeZone:TZ});
+let radarOpen = LS.getItem('hs:radarOpen')==='1';
+function applyRadarOpen(){
+  const b=$('#radarBar'), f=$('#radarFold');
+  f.classList.toggle('open', radarOpen); b.setAttribute('aria-expanded', String(radarOpen));
+  b.setAttribute('aria-label', radarOpen?'Hide radar':'Show live radar');
+  $('#radarThumb').tabIndex = radarOpen?0:-1; f.setAttribute('aria-hidden', String(!radarOpen));
+  setRadarLabel();
+}
+$('#radarBar').onclick=()=>{ radarOpen=!radarOpen; LS.setItem('hs:radarOpen', radarOpen?'1':'0'); applyRadarOpen(); if(radarOpen) loadRadar(); };
 function setRadarLabel(){
-  const l=$('#radarLbl'), th=$('#radarThumb');
+  const l=$('#radarLbl'), th=$('#radarThumb'), bl=$('#radarBarLbl');
+  if(!radarOpen){ bl.classList.remove('stale'); bl.textContent='Live NEXRAD · tap to open'; }
+  else if(th.classList.contains('fallback')){ bl.classList.remove('stale'); bl.textContent='NWS Gaylord loop (backup)'; }
+  else if(!radarValid){ bl.classList.remove('stale'); bl.textContent='Live · loading…'; }
+  else { const age=(Date.now()-radarValid)/60000; bl.classList.toggle('stale', age>25);
+    bl.textContent = age>25 ? 'last frame '+hm(radarValid)+' ('+Math.round(age)+' min old)' : 'Live · updated '+hm(radarValid); }
   if(th.classList.contains('fallback')){ l.textContent='RADAR · NWS Gaylord loop (backup)'; l.classList.remove('stale'); return; }
   if(!radarValid){ l.textContent='RADAR · Live'; return; }
   const age=(Date.now()-radarValid)/60000;
@@ -1074,6 +1157,7 @@ function useFallback(on){
 }
 let radarSeq=0;
 async function loadRadar(){
+  if(!radarOpen) return;   // collapsed: no radar traffic at all
   const th=$('#radarThumb'), seq=++radarSeq;
   try{ const r=await fetch(RADAR_VALID+'?_='+Math.floor(Date.now()/60000),{cache:'no-store'}); const j=await r.json();
     const v=new Date(j.meta.valid); if(!isNaN(v)) radarValid=v; }catch(e){ /* keep last known */ }
@@ -1117,9 +1201,10 @@ $('#radarModal').addEventListener('click',e=>{ if(e.target.id==='radarModal') cl
 addEventListener('keydown',e=>{ if(e.key==='Escape') closeRadar(); });
 setInterval(setRadarLabel,60000);
 setInterval(()=>{ if(!document.hidden){ loadRadar(); } },300000);
-setInterval(()=>{ if(!document.hidden) fetchLiveWeek(); },1800000);
-document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ loadRadar(); if(!liveWeek || Date.now()-liveWeek.at>1800000) fetchLiveWeek(); } });
-addEventListener('online',()=>{ loadRadar(); fetchLiveWeek(); });
+setInterval(()=>{ if(!document.hidden){ fetchLiveWeek(); fetchLiveWx(); } },600000);   // every 10 min
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ loadRadar(); if(!liveWeek || Date.now()-liveWeek.at>600000) fetchLiveWeek(); if(!liveWx.at || Date.now()-liveWx.at>120000) fetchLiveWx(); } });
+addEventListener('focus',()=>{ if(!liveWx.at || Date.now()-liveWx.at>120000) fetchLiveWx(); });
+addEventListener('online',()=>{ loadRadar(); fetchLiveWeek(); fetchLiveWx(); });
 
 /* ---------- slide-out menu drawer (modal: scrim, focus trap, Esc/Back/swipe/✕ close) ---------- */
 const drawer=$('#drawer'), scrim=$('#scrim'), menuBtn=$('#menuBtn');
@@ -1177,7 +1262,7 @@ $('#datePick').addEventListener('change',()=>closeDrawer());
     if(horiz && (-dx>drawer.offsetWidth*0.3 || fast)) closeDrawer(); x0=null; });
 })();
 
-loadRadar(); renderWeek(); fetchLiveWeek();
+applyRadarOpen(); loadRadar(); renderWeek(); fetchLiveWeek(); fetchLiveWx();
 
 /* ---------- headline ticker ---------- */
 const TAGS=['ADVISORY','WEATHER','SCHOOLS','TRAFFIC','ROADS','LOCAL','NATIONAL','WORLD','SPORTS','EVENTS','FLASHBACK'];
@@ -1187,6 +1272,7 @@ function advisoryLive(w){
   const det=(w&&w.advisory_detail)||{}; if(!w||!w.advisory||det.active===false) return false;
   if(det.until){ const u=new Date(det.until); if(!isNaN(u)&&u<new Date()) return false; } return true;
 }
+const liveAlertsKnown=()=>!!(liveWx.alerts && Date.now()-liveWx.alertsAt < 30*60000);
 function buildTicker(sheet){
   if(!sheet) return [];
   if(Array.isArray(sheet.ticker) && sheet.ticker.length){   // curated by Hot Sheet: overrides auto items
@@ -1194,11 +1280,11 @@ function buildTicker(sheet){
       {tag:String(t.tag||'').toUpperCase(), text:String(t.text||''), section:t.section, story:t.story})
       .filter(t=>t.text.trim());
   }
-  const out=[]; const w=sheet.weather||{}; const vibe=sheet.vibe;
+  const out=[]; const w=(sheet===state.sheet?effectiveWeather():sheet.weather)||{}; const vibe=sheet.vibe;
   const vl=linesOf(vibe);
   // advisories first: live one from the weather block, else the one written in Vibe Check
   if(advisoryLive(w)) out.push({tag:'ADVISORY', text:w.advisory, section:'vibe'});
-  else { const a=vl.find(l=>/\b(ADVISORY|WARNING|WATCH)\b/.test(l) && !/^(?:🏫|🚗)/u.test(l));
+  else if(!liveAlertsKnown()){ const a=vl.find(l=>/\b(ADVISORY|WARNING|WATCH)\b/.test(l) && !/^(?:🏫|🚗)/u.test(l));
          if(a) out.push({tag:'ADVISORY', text:stripLead(a), section:'vibe'}); }
   if(w.temp||w.cond){ const ws=(typeof sponsorsFor==='function'?sponsorsFor('weather'):[]).filter(x=>!isRead(x.id)).map(x=>(x.icon||'')+' '+(x.short||x.name));
     out.push({tag:'WEATHER', text:[w.temp,w.cond].filter(Boolean).join(' ')+(w.high?' · High '+w.high:'')+(w.low?' · Low '+w.low:'')+(ws.length?' · '+ws.join(' · '):''), section:'vibe'}); }
@@ -1281,13 +1367,13 @@ if('ResizeObserver' in window){ const ro=new ResizeObserver(()=>setHdr()); ro.ob
 reduceMotion.addEventListener && reduceMotion.addEventListener('change', renderTicker);
 
 /* ---------- render ---------- */
-function renderWeather(w){
-  w=w||{};
+function renderWeather(){
+  const w=effectiveWeather();
   $('#wxTemp').textContent=w.temp||'--';
   $('#wxIcon').innerHTML = (w.temp||w.cond) ? svgIcon(w.icon||iconFor(w.cond, true), w.cond) : '';
   if(typeof renderWeek==='function') renderWeek();
   $('#wxCond').textContent=w.cond||'No weather yet';
-  const more=[]; if(w.high||w.low) more.push('Hi '+(w.high||'–')+' / Lo '+(w.low||'–'));
+  const more=[]; if(w.high&&w.low) more.push('Hi '+w.high+' / Lo '+w.low); else if(w.high) more.push('Hi '+w.high); else if(w.low) more.push('Lo '+w.low);
   if(w.tonight) more.push('Tonight: '+w.tonight);
   if(w.updated){ const t=new Date(w.updated); if(!isNaN(t)) more.push('Updated '+t.toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'})); }
   $('#wxMore').textContent=more.join(' · '); state.wxMore=more.join(' · ');
@@ -1301,6 +1387,10 @@ function renderWeather(w){
     adv.className=past?'past':'on';
   }
   $('#traffic').textContent = w.traffic ? '🚗 '+w.traffic : '';
+  const lv=$('#wxLive'), sw=state.sheet&&state.sheet.weather;
+  if(w.live.obs){ lv.className='wxlive on'; lv.textContent='live · '+hm(new Date(w.live.obs)); lv.title='NWS KTVC observation at '+hm(new Date(w.live.obs))+' ET · checked '+hm(new Date(liveWx.at))+' · refreshes every 10 min'; }
+  else if(sw && sw.updated){ lv.className='wxlive'; lv.textContent='from sheet · '+new Date(sw.updated).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}); lv.title='Live NWS weather unavailable; showing the sheet'; }
+  else { lv.className='wxlive'; lv.textContent=''; }
 }
 
 function sectionList(){
