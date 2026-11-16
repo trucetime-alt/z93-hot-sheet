@@ -197,6 +197,18 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #radarThumb.fallback .rin{display:none}#radarThumb.fallback .rfb{display:block}
 #radarThumb.offline .rin,#radarThumb.offline .rfb{visibility:hidden}#radarThumb.offline .off{display:flex}
 #radarWrap{margin-top:6px}#radarWrap[hidden]{display:none}
+#wxWW{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}#wxWW:empty{display:none}
+.wwchip{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:3px 10px;border-radius:10px;background:var(--panel);border:1px solid var(--line);font-size:.78em;font-weight:800;line-height:1.2;max-width:100%}
+.wwchip .k{color:var(--dim);font-weight:900;font-size:.85em;letter-spacing:.06em;white-space:nowrap;flex:0 0 auto}
+.wwchip.warn{border-color:#ffb020;color:#ffd27a}
+#hourly{margin-top:6px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:4px 8px 2px}
+#hourly[hidden]{display:none}
+#hourly .hhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:.62em;font-weight:900;letter-spacing:.06em;color:var(--dim);text-transform:uppercase}
+#hourly .hs{font-weight:700;text-transform:none;letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#hourly .hs.live{color:var(--ok)}
+#hourlyGraph{height:96px;width:100%}
+#hourlyGraph svg{display:block;width:100%;height:100%}
+@media (min-width:900px){ #hourly{max-width:620px} #hourlyGraph{height:110px} }
 @media (min-width:900px){ #radarWrap{max-width:520px} }
 @media (min-width:521px) and (max-width:899px){ #radarThumb{max-width:620px;margin:0 auto} }
 @media (max-height:500px) and (orientation:landscape){ #radarWrap{max-width:60vw} }
@@ -346,6 +358,8 @@ body.flown #flyBtn{background:var(--accent2)}
     <div id="traffic"></div>
   </div>
   <div id="todayWx"><button id="todayBtn" type="button" aria-expanded="false" aria-controls="week" aria-label="Today's forecast. Tap for the rest of the week"><span class="i" aria-hidden="true"></span><span class="lbl"><b>Today</b> <span class="hl"></span> <span class="sf"></span></span><span class="arr" aria-hidden="true">▸</span></button></div>
+  <div id="wxWW"></div>
+  <div id="hourly" hidden><div class="hhead"><span class="ht">Temps today</span><span id="hourlySrc" class="hs"></span></div><div id="hourlyGraph" role="img" aria-label="Hourly temperatures"></div></div>
   <div id="week" aria-label="Rest of the week" hidden></div>
   <div id="weekSrc" hidden></div>
   <div id="radarWrap" hidden>
@@ -1019,16 +1033,24 @@ function weekFromPeriods(periods){
    with an Accept header; NWS accepts that. Sheet weather is the fallback. */
 const NWS_OBS='https://api.weather.gov/stations/KTVC/observations/latest';
 const NWS_ALERTS='https://api.weather.gov/alerts/active?point=44.7417,-85.5824';
+const NWS_HOURLY='https://api.weather.gov/gridpoints/APX/30,46/forecast/hourly';
 let liveWx={obs:null, alerts:null, at:0, alertsAt:0};
 try{ const s=JSON.parse(LS.getItem('hs:liveWx')||'null'); if(s) liveWx=s; }catch(e){}
 async function nwsJson(u){ const r=await fetch(u,{headers:{'Accept':'application/geo+json'},cache:'no-cache'}); if(!r.ok) throw new Error('NWS '+r.status); return r.json(); }
 async function fetchLiveWx(){
   if(!navigator.onLine) return;
-  const [o,a]=await Promise.allSettled([nwsJson(NWS_OBS), nwsJson(NWS_ALERTS)]);
+  const [o,a,hr]=await Promise.allSettled([nwsJson(NWS_OBS), nwsJson(NWS_ALERTS), nwsJson(NWS_HOURLY)]);
+  if(hr.status==='fulfilled'){ const per=(hr.value.properties||{}).periods||[];
+    if(per.length){ liveWx.hourly=per.slice(0,36).map(x=>({time:x.startTime, temp:x.temperature, wind:(x.windDirection?x.windDirection+' ':'')+(x.windSpeed||'')})); liveWx.hourlyAt=Date.now(); } }
   if(o.status==='fulfilled'){ const p=o.value.properties||{}; const c=p.temperature&&p.temperature.value;
     if(c!=null && p.textDescription!==undefined){
       const day=!/\/night\//.test(p.icon||'');
-      liveWx.obs={tempF:Math.round(c*9/5+32), cond:p.textDescription||'', icon:iconFor(p.textDescription, day), time:p.timestamp};
+      const kmh=v=>v&&v.value!=null?Math.round(v.value*0.621371):null;
+      const deg=p.windDirection&&p.windDirection.value;
+      const ws=kmh(p.windSpeed), wg=kmh(p.windGust);
+      const dir=deg!=null?['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'][Math.round(deg/22.5)%16]:'';
+      const wind = ws==null ? null : (ws===0 ? 'Calm' : (dir?dir+' ':'')+ws+' mph'+(wg&&wg>ws?', gusts '+wg:''));
+      liveWx.obs={tempF:Math.round(c*9/5+32), cond:p.textDescription||'', icon:iconFor(p.textDescription, day), time:p.timestamp, wind};
       liveWx.at=Date.now(); } }
   if(a.status==='fulfilled'){ const now=new Date();
     liveWx.alerts=(a.value.features||[]).map(f=>f.properties||{})
@@ -1044,6 +1066,8 @@ function effectiveWeather(){
   const w=base; w.live={};
   const o=liveWx.obs, obsFresh = o && liveWx.at && (Date.now()-liveWx.at < 90*60000) && (Date.now()-new Date(o.time) < 3*3600e3);
   if(obsFresh){ w.temp=o.tempF+'°'; w.cond=o.cond||w.cond; w.icon=o.icon; w.updated=o.time; w.live.obs=o.time; }
+  if(obsFresh && o.wind){ w.wind=o.wind; w.live.wind='obs'; }
+  else { const hs=hourlyLive(); if(hs && hs.length && hs[0].wind && !/^\s*0 mph/.test(hs[0].wind.replace(/^[A-Z]+ /,''))){ w.wind=hs[0].wind; w.live.wind='hourly'; } }
   const lw = liveWeek && (Date.now()-liveWeek.at < 6*3600e3) ? liveWeek.week : null;
   if(lw && lw.length){ const t=etParts().date; const today=lw.find(d=>d.date===t)||lw[0];
     if(today.high!=null) w.high=today.high+'°'; else delete w.high;
@@ -1289,7 +1313,7 @@ function buildTicker(sheet){
   else if(!liveAlertsKnown()){ const a=vl.find(l=>/\b(ADVISORY|WARNING|WATCH)\b/.test(l) && !/^(?:🏫|🚗)/u.test(l));
          if(a) out.push({tag:'ADVISORY', text:stripLead(a), section:'vibe'}); }
   if(w.temp||w.cond){ const ws=(typeof sponsorsFor==='function'?sponsorsFor('weather'):[]).filter(x=>!isRead(x.id)).map(x=>(x.icon||'')+' '+(x.short||x.name));
-    out.push({tag:'WEATHER', text:[w.temp,w.cond].filter(Boolean).join(' ')+(w.high?' · High '+w.high:'')+(w.low?' · Low '+w.low:'')+(ws.length?' · '+ws.join(' · '):''), section:'vibe'}); }
+    out.push({tag:'WEATHER', text:[w.temp,w.cond].filter(Boolean).join(' ')+(w.high?' · High '+w.high:'')+(w.low?' · Low '+w.low:'')+(w.wind?' · Wind '+w.wind:'')+(ws.length?' · '+ws.join(' · '):''), section:'vibe'}); }
   for(const l of vl){
     const m=l.match(/SCHOOLS?\s*:\s*(.+)/i); if(m && m[1].trim()) out.push({tag:'SCHOOLS', text:m[1].trim(), section:'vibe'});
     const r=l.match(/(?:ROADS?|TRAFFIC)\s*:\s*(.+)/i); if(r && r[1].trim()) out.push({tag:'ROADS', text:r[1].trim(), section:'vibe'});
@@ -1369,6 +1393,86 @@ if('ResizeObserver' in window){ const ro=new ResizeObserver(()=>setHdr()); ro.ob
 reduceMotion.addEventListener && reduceMotion.addEventListener('change', renderTicker);
 
 /* ---------- render ---------- */
+/* ---------- wind, waves, hourly temp graph ---------- */
+function hourlyLive(){   // live NWS hourly periods still in the future-ish (this hour on)
+  if(!liveWx.hourly || !liveWx.hourlyAt || Date.now()-liveWx.hourlyAt > 3*3600e3) return null;
+  const cut=Date.now()-3600e3; return liveWx.hourly.filter(x=>new Date(x.time).getTime()>cut);
+}
+function renderWindWaves(w){
+  const box=$('#wxWW'); box.innerHTML='';
+  const chip=(k,txt,warn,title)=>{ const c=h('span',{className:'wwchip'+(warn?' warn':''), title:title||''}, h('span',{className:'k'},k), txt); box.append(c); };
+  if(w.wind) chip('💨 WIND', w.wind, false, w.live&&w.live.wind?'Live NWS ('+(w.live.wind==='obs'?'KTVC observation':'hourly forecast')+')':'From the sheet');
+  if(w.waves) chip('🌊 WAVES', w.waves, /advisory|warning|gale|storm/i.test(w.waves), 'From the sheet');
+}
+// series of {h: hour of day (fractional ok, >24 = tomorrow), temp}
+function hourlySeries(){
+  const today=etParts().date, out=[];
+  const live=hourlyLive();
+  if(live && live.length){
+    for(const x of live){ const d=new Date(x.time), p=etParts(d); let hr=+p.hm.slice(0,2);
+      const dd=daysBetween(today,p.date); hr+=24*dd; out.push({h:hr, temp:x.temp}); }
+    let pts=out.filter(x=>x.h<=22 && x.h>=0);
+    if(pts.length<6) pts=out.slice(0,13);       // evening: show the next 12 hours instead
+    return {pts, src:'live', label: pts.length&&pts[pts.length-1].h>22?'next 12 hours':'through 10 PM'};
+  }
+  const sh=state.sheet&&state.sheet.weather&&state.sheet.weather.hourly;
+  if(Array.isArray(sh) && sh.length){
+    let prev=-1, add=0;
+    for(const x of sh){ const m=String(x.t||'').match(/(\d{1,2})(?::(\d\d))?\s*([AP])\.?M/i); if(!m || typeof x.temp!=='number') continue;
+      let hr=(+m[1]%12)+(/p/i.test(m[3])?12:0)+(m[2]?+m[2]/60:0); if(hr+add<prev) add+=24; hr+=add; prev=hr; out.push({h:hr, temp:x.temp}); }
+    return {pts:out, src:'sheet', label:'from the sheet'};
+  }
+  return {pts:[], src:null};
+}
+const hrLabel=hr=>{ const x=((Math.floor(hr)%24)+24)%24; return (x%12||12)+(x<12?'a':'p'); };
+function smoothPath(P){ if(P.length<2) return ''; let d='M'+P[0][0].toFixed(1)+','+P[0][1].toFixed(1);
+  for(let i=0;i<P.length-1;i++){ const p0=P[i-1]||P[i], p1=P[i], p2=P[i+1], p3=P[i+2]||p2;
+    const c1=[p1[0]+(p2[0]-p0[0])/6, p1[1]+(p2[1]-p0[1])/6], c2=[p2[0]-(p3[0]-p1[0])/6, p2[1]-(p3[1]-p1[1])/6];
+    d+=' C'+c1[0].toFixed(1)+','+c1[1].toFixed(1)+' '+c2[0].toFixed(1)+','+c2[1].toFixed(1)+' '+p2[0].toFixed(1)+','+p2[1].toFixed(1); }
+  return d; }
+function renderHourly(){
+  const wrap=$('#hourly'), g=$('#hourlyGraph'), src=$('#hourlySrc');
+  const {pts, src:from, label}=hourlySeries();
+  if(!pts || pts.length<2){ wrap.hidden=true; g.innerHTML=''; return; }
+  wrap.hidden=false;
+  const W=Math.max(240, Math.round(g.clientWidth||wrap.clientWidth||340)), H=Math.round(g.clientHeight||96);
+  const padL=10, padR=10, top=18, bot=18;
+  const h0=pts[0].h, h1=pts[pts.length-1].h, t=pts.map(p=>p.temp), lo=Math.min(...t), hi=Math.max(...t), span=Math.max(4, hi-lo);
+  const X=hh=>padL+(hh-h0)/Math.max(1,h1-h0)*(W-padL-padR);
+  const Y=v=>top+(1-(v-(lo-(span-(hi-lo))/2))/span)*(H-top-bot);
+  const P=pts.map(p=>[X(p.h),Y(p.temp)]);
+  const line=smoothPath(P), area=line+' L'+P[P.length-1][0].toFixed(1)+','+(H-bot)+' L'+P[0][0].toFixed(1)+','+(H-bot)+' Z';
+  // labels: ends, high, low (deduped, kept apart)
+  const iMax=t.indexOf(hi), iMin=t.lastIndexOf(lo); const want=[0,iMax,iMin,pts.length-1]; const lab=[];
+  for(const i of want){ if(lab.some(j=>j===i || Math.abs(P[j][0]-P[i][0])<30)) continue; lab.push(i); }
+  const fs=11;
+  let svg=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="hgf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcc33" stop-opacity=".35"/><stop offset="1" stop-color="#ffcc33" stop-opacity="0"/></linearGradient></defs>`;
+  // hour ticks every 3 h (every 2 h if short)
+  const step = (h1-h0)<=8 ? 2 : 3;
+  for(let hh=Math.ceil(h0/step)*step; hh<=h1; hh+=step){ const x=X(hh);
+    svg+=`<line x1="${x.toFixed(1)}" y1="${top-4}" x2="${x.toFixed(1)}" y2="${H-bot}" stroke="#2c3640" stroke-width="1"/>`;
+    svg+=`<text x="${x.toFixed(1)}" y="${H-5}" font-size="${fs}" fill="#a9b4bf" text-anchor="middle" font-weight="700">${hrLabel(hh)}</text>`; }
+  svg+=`<path d="${area}" fill="url(#hgf)"/><path d="${line}" fill="none" stroke="#ffcc33" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+  // now marker
+  const n=etParts(); let nh=+n.hm.slice(0,2)+(+n.hm.slice(3))/60; let nowX=null, nowT=null;
+  if(nh>=h0-0.01 && nh<=h1+0.01){ const x=X(nh); let k=0; while(k<pts.length-2 && pts[k+1].h<nh) k++;
+    const f=(nh-pts[k].h)/Math.max(.01,(pts[k+1].h-pts[k].h)); const y=P[k][1]+(P[k+1][1]-P[k][1])*Math.min(1,Math.max(0,f));
+    nowX=x; nowT=pts[k].temp+(pts[k+1].temp-pts[k].temp)*Math.min(1,Math.max(0,f));
+    svg+=`<line x1="${x.toFixed(1)}" y1="${top-6}" x2="${x.toFixed(1)}" y2="${H-bot}" stroke="#33d6ff" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="#33d6ff" stroke="#0b0d10" stroke-width="2"/>`;
+    svg+=`<text x="${Math.min(W-14,Math.max(14,x)).toFixed(1)}" y="${top-8}" font-size="10" fill="#33d6ff" text-anchor="middle" font-weight="900">NOW</text>`; }
+  for(const i of lab){ const [x,y]=P[i]; let above = !(i===iMin && i!==iMax && t[i]!==hi); if(nowX!=null && Math.abs(nowX-x)<34) above=false;
+    const ty = above ? y-7 : y+15; const anchor = i===0?'start':(i===pts.length-1?'end':'middle');
+    svg+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" fill="#ffcc33"/>`;
+    svg+=`<text x="${x.toFixed(1)}" y="${Math.max(fs,Math.min(H-bot-2,ty)).toFixed(1)}" font-size="${fs+2}" font-weight="900" fill="#f2f4f6" text-anchor="${anchor}" stroke="#151a20" stroke-width="3" paint-order="stroke">${pts[i].temp}°</text>`; }
+  svg+='</svg>';
+  g.innerHTML=svg;
+  const trend = pts[pts.length-1].temp - (nowT!=null ? nowT : pts[0].temp);   // from now on
+  g.setAttribute('aria-label','Hourly temperatures '+hrLabel(h0)+' to '+hrLabel(h1)+': '+pts[0].temp+'° to '+pts[pts.length-1].temp+'°, high '+hi+'°, low '+lo+'°');
+  $('#hourly .ht').textContent = (label==='next 12 hours'?'Next 12 hours':'Temps today')+(trend>=3?' · rising ↗':trend<=-3?' · falling ↘':' · steady →');
+  src.className='hs'+(from==='live'?' live':''); src.textContent = from==='live' ? 'live NWS hourly' : 'from the sheet';
+}
+if('ResizeObserver' in window){ let lastW=0; new ResizeObserver(en=>{ const w=Math.round(en[0].contentRect.width); if(w && Math.abs(w-lastW)>4){ lastW=w; renderHourly(); } }).observe($('#hourlyGraph')); }
+setInterval(()=>{ if(!document.hidden && !$('#hourly').hidden) renderHourly(); },300000);   // keep the NOW marker moving
 function renderWeather(){
   const w=effectiveWeather();
   $('#wxTemp').textContent=w.temp||'--';
@@ -1389,6 +1493,7 @@ function renderWeather(){
     adv.className=past?'past':'on';
   }
   $('#traffic').textContent = w.traffic ? '🚗 '+w.traffic : '';
+  renderWindWaves(w); renderHourly();
   const lv=$('#wxLive'), sw=state.sheet&&state.sheet.weather;
   if(w.live.obs){ lv.className='wxlive on'; lv.textContent='live · '+hm(new Date(w.live.obs)); lv.title='NWS KTVC observation at '+hm(new Date(w.live.obs))+' ET · checked '+hm(new Date(liveWx.at))+' · refreshes every 10 min'; }
   else if(sw && sw.updated){ lv.className='wxlive'; lv.textContent='from sheet · '+new Date(sw.updated).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}); lv.title='Live NWS weather unavailable; showing the sheet'; }
