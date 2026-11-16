@@ -830,7 +830,8 @@ async function cachedClips(date){
 /* ---------- loading sheets ---------- */
 function fileFor(date, variant){ return date ? (date+'-hot-sheet'+(variant?'-'+variant:'')+'.json') : 'latest-hot-sheet.json'; }
 async function fetchJson(name){
-  const r=await fetch(name+(name.includes('?')?'':'?t='+Date.now()),{cache:'no-store'});
+  const ac=('AbortController' in window)?new AbortController():null; const to=ac?setTimeout(()=>ac.abort(),15000):0;
+  let r; try{ r=await fetch(name+(name.includes('?')?'':'?t='+Date.now()),{cache:'no-store', signal:ac?ac.signal:undefined}); } finally{ clearTimeout(to); }
   if(!r.ok){ const e=new Error('HTTP '+r.status); e.status=r.status; throw e; }
   return r.json();
 }
@@ -950,6 +951,7 @@ let spOv=lsGet('hs:spLocal', {items:{}, settings:{}});
 let spLog=lsGet('hs:spLog', []);
 let reads=lsGet('hs:reads', {});
 async function loadSponsorDefaults(){
+  refreshSponsorUI(); // paint from cached defaults right away; a slow network must not hold back the strip/banner
   if(isHttp){ try{ const j=await fetchJson('sponsors.json'); if(j && Array.isArray(j.sponsors)){ spDefaults=j; lsSet('hs:spDefaults', j); } }catch(e){} }
   refreshSponsorUI();
 }
