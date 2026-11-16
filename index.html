@@ -197,6 +197,7 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #radarThumb.fallback .rin{display:none}#radarThumb.fallback .rfb{display:block}
 #radarThumb.offline .rin,#radarThumb.offline .rfb{visibility:hidden}#radarThumb.offline .off{display:flex}
 #radarWrap{margin-top:6px}#radarWrap[hidden]{display:none}
+#wxExtra[hidden]{display:none}
 #wxWW{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}#wxWW:empty{display:none}
 .wwchip{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:3px 10px;border-radius:10px;background:var(--panel);border:1px solid var(--line);font-size:.78em;font-weight:800;line-height:1.2;max-width:100%}
 .wwchip .k{color:var(--dim);font-weight:900;font-size:.85em;letter-spacing:.06em;white-space:nowrap;flex:0 0 auto}
@@ -262,10 +263,16 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .cdchip.out{opacity:.8}
 .studiochip{background:#203a5c;border-color:#3d7bd9}
 #studioSlot:empty{display:none}
-#studioSlot{margin:0 0 6px}
-#studioSlot .studiochip{width:100%;min-height:38px;padding:2px 10px;border-radius:10px;justify-content:center;font-size:.8em;white-space:nowrap;overflow:hidden;gap:8px}
-#studioSlot .studiochip .sp{overflow:hidden;text-overflow:ellipsis;min-width:0}
-#studioSlot .studiochip .done{font-size:.8em;color:#9fe3b9;font-weight:800}
+#wx .meta{display:grid;grid-template-columns:minmax(0,1fr) min(47%,250px);column-gap:8px;align-items:start}
+#wx .mcol{grid-column:1;grid-row:1;min-width:0}
+#studioSlot{grid-column:2;grid-row:1;min-width:0}
+#wx .meta #wxSponsor,#wx .meta #wxMore{grid-column:1 / -1}
+#wxSponsor:empty{display:none}
+#studioSlot .studiochip{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-height:48px;padding:5px 7px;border-radius:10px;font-size:.66em;line-height:1.15;text-align:left;width:100%}
+#studioSlot .studiochip .ph{font-size:1.02em;white-space:nowrap;letter-spacing:-.01em}
+#studioSlot .studiochip .sp{font-size:.95em;padding:1px 6px;border-radius:7px;white-space:normal}
+#studioSlot .studiochip .done{font-size:.95em;color:#9fe3b9;font-weight:800;white-space:nowrap}
+@media (min-width:900px){ #studioSlot .studiochip{font-size:.72em} }
 .newschip{background:#2a1f3d;border-color:#8a63d2;white-space:nowrap}
 @media (max-width:520px){ .newschip .nt{display:none} }.newschip .nt{font-size:.8em;color:var(--dim);font-weight:700}
 .newschip .nt:empty{display:none}
@@ -367,7 +374,6 @@ body.flown #flyBtn{background:var(--accent2)}
 <div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
 <header id="top">
   <div id="topFold"><div id="topFoldIn">
-  <div id="studioSlot"></div>
   <div class="row">
     <div class="brand">Z93<span class="bx"> HOT SHEET</span></div>
     <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
@@ -376,13 +382,13 @@ body.flown #flyBtn{background:var(--accent2)}
   <div id="wxGrid"><div id="wxCol">
   <div id="wx" aria-live="polite">
     <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
-    <div class="meta"><div class="cond" id="wxCond">No weather yet</div><div id="wxLive" class="wxlive"></div><div id="wxSponsor"></div><div class="small" id="wxMore"></div></div>
+    <div class="meta"><div class="mcol"><div class="cond" id="wxCond">No weather yet</div><div id="wxLive" class="wxlive"></div></div><div id="studioSlot"></div><div id="wxSponsor"></div><div class="small" id="wxMore"></div></div>
     <div id="adv"></div>
     <div id="traffic"></div>
   </div>
   <div id="todayWx"><button id="todayBtn" type="button" aria-expanded="false" aria-controls="week" aria-label="Today's forecast. Tap for the rest of the week"><span class="i" aria-hidden="true"></span><span class="lbl"><b>Today</b> <span class="hl"></span> <span class="sf"></span></span><span class="arr" aria-hidden="true">▸</span></button></div>
-  <div id="wxWW"></div>
-  <div id="hourly" hidden><div class="hhead"><span class="ht">Temps today</span><span id="hourlySrc" class="hs"></span></div><div id="hourlyGraph" role="img" aria-label="Hourly temperatures"></div></div>
+  <div id="wxExtra" hidden><div id="wxWW"></div>
+  <div id="hourly" hidden><div class="hhead"><span class="ht">Temps today</span><span id="hourlySrc" class="hs"></span></div><div id="hourlyGraph" role="img" aria-label="Hourly temperatures"></div></div></div>
   <div id="week" aria-label="Rest of the week" hidden></div>
   <div id="weekSrc" hidden></div>
   <div id="radarWrap" hidden>
@@ -786,7 +792,7 @@ function renderWxSponsor(){ const box=$('#wxSponsor'); box.innerHTML='';
 function renderStudio(){ const slot=$('#studioSlot'); slot.innerHTML=''; const line=spSettings().studioLine; if(!line) return;
   const all=sponsorsFor('studio-line'), due=all.filter(s=>!isRead(s.id));
   slot.append(h('button',{className:'studiochip', type:'button', title:due.length?'Studio line · tap for the sponsor read':'Studio line', on:{click:()=>{ if(due[0]) openRead(due[0].id); }}},
-    '📞 '+line, ...due.map(s=>h('span',{className:'sp'}, (s.icon||'')+' '+s.read)),
+    h('span',{className:'ph'}, '📞 '+line), ...due.map(s=>h('span',{className:'sp'}, (s.icon||'')+' '+s.read)),
     ...(!due.length && all.length ? [h('span',{className:'done'}, '✓ '+all.map(s=>s.short||s.name).join(', ')+' read')] : []))); }
 function renderBanner(){ const due=overdueList(); const b=$('#spBanner');
   if(!due.length){ if(b.classList.contains('on')){ b.classList.remove('on'); setHdr(); } return; }
@@ -1125,10 +1131,10 @@ async function fetchLiveWeek(){
 }
 let weekOpen = LS.getItem('hs:weekOpen')==='1';
 function applyWeekOpen(){
-  $('#week').hidden=!weekOpen; $('#weekSrc').hidden=!weekOpen; $('#radarWrap').hidden=!weekOpen;
+  $('#week').hidden=!weekOpen; $('#weekSrc').hidden=!weekOpen; $('#radarWrap').hidden=!weekOpen; $('#wxExtra').hidden=!weekOpen;
   const b=$('#todayBtn'); b.setAttribute('aria-expanded', String(weekOpen)); b.querySelector('.arr').textContent = weekOpen?'▾':'▸';
 }
-$('#todayBtn').onclick=()=>{ weekOpen=!weekOpen; LS.setItem('hs:weekOpen', weekOpen?'1':'0'); applyWeekOpen(); if(weekOpen && typeof loadRadar==='function') loadRadar(); };
+$('#todayBtn').onclick=()=>{ weekOpen=!weekOpen; LS.setItem('hs:weekOpen', weekOpen?'1':'0'); applyWeekOpen(); if(weekOpen){ renderHourly(); if(typeof loadRadar==='function') loadRadar(); } };
 function hiLo(el,d){ el.textContent=''; const hi=d.high!=null?d.high+'°':'', lo=d.low!=null?d.low+'°':'';
   if(hi) el.append(hi); if(lo){ const s=document.createElement('span'); s.className='lo'; s.textContent=(hi?' / ':'Low ')+lo; el.append(s); } }
 function renderWeek(){
