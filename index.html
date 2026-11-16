@@ -261,6 +261,28 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .cdchip.today{background:var(--accent);color:#111;border-color:var(--accent)}.cdchip.today .n{color:#111}
 .cdchip.out{opacity:.8}
 .studiochip{background:#203a5c;border-color:#3d7bd9}
+#studioSlot:empty{display:none}
+#studioSlot{margin:0 0 6px}
+#studioSlot .studiochip{width:100%;min-height:38px;padding:2px 10px;border-radius:10px;justify-content:center;font-size:.8em;white-space:nowrap;overflow:hidden;gap:8px}
+#studioSlot .studiochip .sp{overflow:hidden;text-overflow:ellipsis;min-width:0}
+#studioSlot .studiochip .done{font-size:.8em;color:#9fe3b9;font-weight:800}
+.newschip{background:#2a1f3d;border-color:#8a63d2;white-space:nowrap}
+@media (max-width:520px){ .newschip .nt{display:none} }.newschip .nt{font-size:.8em;color:var(--dim);font-weight:700}
+.newschip .nt:empty{display:none}
+#newsModal .nhead{display:flex;align-items:center;justify-content:space-between;gap:10px}
+#newsModal .nhead h3{margin:0}
+#newsClose{width:48px;min-height:48px;padding:0;border-radius:50%}
+#newsModal .nmeta{font-size:.72em;color:var(--dim);font-weight:700;margin:2px 0 6px}
+#newsList{list-style:none;margin:0;padding:0}
+#newsList li{border-top:1px solid var(--line)}
+#newsList a{display:block;padding:10px 4px;min-height:48px;color:var(--text);text-decoration:none}
+#newsList a:active,#newsList a:hover{background:var(--panel2)}
+#newsList .t{font-weight:800;line-height:1.25}
+#newsList .s{font-size:.72em;color:var(--dim);font-weight:700;margin-top:3px}
+#newsList .s b{color:var(--accent2)}
+details.natfold{margin-top:10px;border:1px dashed var(--line);border-radius:12px;padding:6px 10px}
+details.natfold summary{cursor:pointer;font-weight:800;color:var(--dim);min-height:40px;display:flex;align-items:center}
+details.natfold[open] summary{color:var(--text)}
 .studiochip .sp{font-size:.8em;background:#123b2a;border:2px solid #2ecc71;border-radius:8px;padding:1px 7px;color:#d8ffe9}
 .modal{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.9);display:none;align-items:flex-start;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 10px 10px;overflow-y:auto}
 .modal.on{display:flex}
@@ -345,6 +367,7 @@ body.flown #flyBtn{background:var(--accent2)}
 <div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
 <header id="top">
   <div id="topFold"><div id="topFoldIn">
+  <div id="studioSlot"></div>
   <div class="row">
     <div class="brand">Z93<span class="bx"> HOT SHEET</span></div>
     <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
@@ -371,7 +394,7 @@ body.flown #flyBtn{background:var(--accent2)}
   </div>
 
   </div>
-  <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
+  <div id="extras"><div id="countdowns" style="display:contents"></div><button id="newsChip" class="cdchip newschip" type="button" aria-haspopup="dialog">📰 National headlines<span class="nt" id="newsChipT"></span></button></div>
   <div id="tickerWrap" class="none">
     <div id="ticker" aria-label="Top talking points"><div id="tickerTrack"></div></div>
     <button id="tickPause" aria-label="Pause ticker">⏸</button>
@@ -412,6 +435,7 @@ body.flown #flyBtn{background:var(--accent2)}
 <div id="readModal" class="modal" role="dialog" aria-label="Sponsor read"><div class="box"><h3 id="readTitle"></h3><div class="readcopy" id="readCopy"></div><div id="readTick"></div><div class="rowb"><button id="readClose">Close</button></div></div></div>
 <div id="spModal" class="modal" role="dialog" aria-label="Sponsors editor"><div class="box"><h3>Sponsors</h3><div id="spEditor"></div></div></div>
 <div id="cdModal" class="modal" role="dialog" aria-label="Countdowns editor"><div class="box"><h3>Countdowns</h3><div id="cdEditor"></div></div></div>
+<div id="newsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="newsTitle"><div class="box"><div class="nhead"><h3 id="newsTitle">📰 National headlines</h3><button id="newsClose" type="button" aria-label="Close">✕</button></div><div class="nmeta" id="newsMeta"></div><ol id="newsList"></ol><div class="rowb"><button id="newsRefresh" type="button">⟳ Refresh</button><button id="newsDone" type="button">Close</button></div></div></div>
 <div id="toast" role="status"><span id="toastText"></span><button id="toastUndo">Undo</button></div>
 <input type="file" id="importIn" accept=".json,application/json" hidden>
 <div id="dayModal" role="dialog" aria-label="Days of note"><div class="box"><h3 id="dayModalTitle"></h3><div id="dayCards"></div><button class="close" id="dayClose">Close</button></div></div>
@@ -760,9 +784,10 @@ function renderWxSponsor(){ const box=$('#wxSponsor'); box.innerHTML='';
   for(const sp of sponsorsFor('weather')){ if(isRead(sp.id)) continue;
     box.append(h('button',{className:'sptag'+(isDue(sp.id)?' due':''), type:'button', title:sp.read, on:{click:()=>openRead(sp.id)}}, (sp.icon||'⭐')+' '+(sp.short||sp.name)+' · read')); } }
 function renderStudio(){ const slot=$('#studioSlot'); slot.innerHTML=''; const line=spSettings().studioLine; if(!line) return;
-  const due=sponsorsFor('studio-line').filter(s=>!isRead(s.id));
-  slot.append(h('button',{className:'studiochip', type:'button', title:'Studio line', on:{click:()=>{ if(due[0]) openRead(due[0].id); }}},
-    '📞 '+line, ...due.map(s=>h('span',{className:'sp'}, (s.icon||'')+' '+s.read)))); }
+  const all=sponsorsFor('studio-line'), due=all.filter(s=>!isRead(s.id));
+  slot.append(h('button',{className:'studiochip', type:'button', title:due.length?'Studio line · tap for the sponsor read':'Studio line', on:{click:()=>{ if(due[0]) openRead(due[0].id); }}},
+    '📞 '+line, ...due.map(s=>h('span',{className:'sp'}, (s.icon||'')+' '+s.read)),
+    ...(!due.length && all.length ? [h('span',{className:'done'}, '✓ '+all.map(s=>s.short||s.name).join(', ')+' read')] : []))); }
 function renderBanner(){ const due=overdueList(); const b=$('#spBanner');
   if(!due.length){ if(b.classList.contains('on')){ b.classList.remove('on'); setHdr(); } return; }
   $('#spBannerText').textContent='⚠ Sponsor read still due: '+due.map(s=>s.short||s.name).join(', ');
@@ -1374,6 +1399,7 @@ $('#ticker').addEventListener('click',e=>{
 function jumpTo(section, story){
   if(section && sectionList().some(x=>x.key===section)){ state.tab=section; LS.setItem('hs:tab',section); renderTabs(); renderView(); }
   const el = story ? document.querySelector('#view .headline[data-story="'+story+'"]') : null;
+  if(el){ const fold=el.closest('details'); if(fold) fold.open=true; }
   if(el){ window.scrollTo({top: Math.max(0, el.getBoundingClientRect().top + scrollY - stickyH() - 10), behavior: reduceMotion.matches?'auto':'smooth'}); el.classList.remove('flashhit'); void el.offsetWidth; el.classList.add('flashhit'); }
   else { const h=document.querySelector('#view h2'); if(h){ window.scrollTo({top: Math.max(0, h.getBoundingClientRect().top + scrollY - stickyH() - 8)}); } }
 }
@@ -1528,6 +1554,73 @@ function renderTabs(){
     if(key===state.tab) setTimeout(()=>{ const l=b.offsetLeft, r=l+b.offsetWidth; if(l<nav.scrollLeft) nav.scrollLeft=l-8; else if(r>nav.scrollLeft+nav.clientWidth) nav.scrollLeft=r-nav.clientWidth+8; },0);
   }
 }
+/* ---------- National headlines (client-side RSS; these send Access-Control-Allow-Origin: *) ---------- */
+const NEWS_FEEDS=[
+  {name:'ABC News', url:'https://abcnews.com/abcnews/usheadlines'},
+  {name:'NYT', url:'https://rss.nytimes.com/services/xml/rss/nyt/US.xml'},
+  {name:'Fox News', url:'https://moxie.foxnews.com/google-publisher/us.xml'},
+];
+let news=null; try{ news=JSON.parse(LS.getItem('hs:news')||'null'); }catch(e){}
+let newsBusy=false;
+async function fetchFeed(f){
+  const ctl=new AbortController(); const tm=setTimeout(()=>ctl.abort(),12000);
+  try{ const r=await fetch(f.url,{signal:ctl.signal, cache:'no-cache'}); if(!r.ok) throw new Error(r.status);
+    const x=new DOMParser().parseFromString(await r.text(),'text/xml');
+    return [...x.querySelectorAll('item')].map(it=>{ const g=n=>(it.querySelector(n)||{}).textContent||'';
+      return {title:g('title').replace(/\s+/g,' ').trim(), link:g('link').trim(), at:Date.parse(g('pubDate'))||0, src:f.name}; })
+      .filter(i=>i.title && /^https?:/.test(i.link)).sort((a,b)=>b.at-a.at);
+  } finally{ clearTimeout(tm); }
+}
+const newsKey=t=>t.toLowerCase().replace(/[^a-z0-9 ]/g,'').split(' ').filter(w=>w.length>3).slice(0,5).join(' ');
+async function fetchNews(force){
+  if(newsBusy || !navigator.onLine) return; if(!force && news && Date.now()-news.at<5*60000) return;
+  newsBusy=true; renderNewsMeta();
+  try{
+    const res=await Promise.allSettled(NEWS_FEEDS.map(fetchFeed));
+    const lists=res.map(r=>r.status==='fulfilled'?r.value.filter(i=>Date.now()-i.at<36*3600e3):[]);
+    const ok=res.filter(r=>r.status==='fulfilled').length;
+    if(ok){ const out=[], seen=new Set(); const idx=lists.map(()=>0);
+      // round-robin across outlets so no single source dominates, then newest first
+      while(out.length<10 && lists.some((l,i)=>idx[i]<l.length)){
+        lists.forEach((l,i)=>{ while(idx[i]<l.length && out.length<10){ const it=l[idx[i]++]; const k=newsKey(it.title); if(seen.has(k)) continue; seen.add(k); out.push(it); break; } }); }
+      out.sort((a,b)=>b.at-a.at);
+      news={at:Date.now(), items:out, sources:NEWS_FEEDS.filter((f,i)=>res[i].status==='fulfilled').map(f=>f.name)};
+      try{ LS.setItem('hs:news', JSON.stringify(news)); }catch(e){}
+    }
+  }catch(e){}
+  newsBusy=false; renderNewsChip(); if($('#newsModal').classList.contains('on')) renderNewsList();
+}
+const ago=t=>{ const m=Math.round((Date.now()-t)/60000); return m<1?'just now':m<60?m+' min ago':Math.round(m/60)+' hr ago'; };
+function renderNewsChip(){ $('#newsChipT').textContent = news&&news.items&&news.items.length ? '· '+hm(new Date(news.at)) : ''; }
+function renderNewsMeta(){ const m=$('#newsMeta'); if(!m) return;
+  m.textContent = newsBusy ? 'Updating…' : (news ? 'Updated '+hm(new Date(news.at))+' ET · '+(news.sources||[]).join(', ')+' · refreshes every 20 min' : 'Loading…'); }
+function renderNewsList(){ const ol=$('#newsList'); ol.innerHTML=''; renderNewsMeta();
+  if(!news || !news.items || !news.items.length){ const li=document.createElement('li'); li.className='hint'; li.style.padding='10px 4px'; li.textContent=navigator.onLine?'No headlines yet.':'Offline: no saved headlines.'; ol.append(li); return; }
+  for(const it of news.items){ const a=h('a',{href:it.link, target:'_blank', rel:'noopener'}, h('div',{className:'t'}, it.title), h('div',{className:'s'}, h('b',{}, it.src), ' · '+(it.at?ago(it.at)+' · '+hm(new Date(it.at)):'')));
+    ol.append(h('li',{}, a)); } }
+function openNews(){ renderNewsList(); $('#newsModal').classList.add('on'); fetchNews(false); setTimeout(()=>$('#newsClose').focus({preventScroll:true}),30); }
+function closeNews(){ $('#newsModal').classList.remove('on'); $('#newsChip').focus({preventScroll:true}); }
+$('#newsChip').onclick=openNews; $('#newsClose').onclick=closeNews; $('#newsDone').onclick=closeNews; $('#newsRefresh').onclick=()=>fetchNews(true);
+$('#newsModal').addEventListener('click',e=>{ if(e.target.id==='newsModal') closeNews(); });
+addEventListener('keydown',e=>{ if(e.key==='Escape' && $('#newsModal').classList.contains('on')) closeNews(); });
+setInterval(()=>{ if(!document.hidden) fetchNews(false); }, 20*60000);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden && (!news || Date.now()-news.at>20*60000)) fetchNews(false); });
+renderNewsChip(); fetchNews(false);
+// Daily Buzz reads local: stories under a ━━ NATIONAL ━━ divider go in a closed fold (nothing dropped)
+function renderBuzzLocal(c, txt){
+  const lines=txt.split('\n'); const parts=[]; let cur={name:'', lines:[]};
+  for(const l of lines){ const m=l.match(/^\s*━+\s*(.+?)\s*━+\s*$/); if(m){ parts.push(cur); cur={name:m[1].toUpperCase(), lines:[l]}; } else cur.lines.push(l); }
+  parts.push(cur);
+  for(const p of parts){ const t=p.lines.join('\n'); if(!t.trim()) continue;
+    if(p.name==='NATIONAL'){
+      const body=p.lines.slice(1).join('\n').trim(); const n=(body.match(/^\s*\d+\)\s/mg)||[]).length;
+      const d=document.createElement('details'); d.className='natfold';
+      const sm=document.createElement('summary'); sm.textContent='National stories'+(n?' ('+n+')':'')+' · tap to show'; d.append(sm);
+      d.addEventListener('toggle',()=>{ sm.textContent='National stories'+(n?' ('+n+')':'')+(d.open?'':' · tap to show'); });
+      const inner=document.createElement('div'); if(body) richLines(inner, body); d.append(inner); c.append(d);
+    } else { const div=document.createElement('div'); richLines(div, t.replace(/^\n+|\n+$/g,'')); c.append(div); }
+  }
+}
 function renderView(){
   const view=$('#view'); view.innerHTML='';
   if(!state.sheet){
@@ -1545,7 +1638,8 @@ function renderView(){
   else {
     const txt=cleanText(v.content).trim();
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
-    if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
+    if(txt && item.key==='buzz' && /^\s*━+\s*NATIONAL\s*━+\s*$/m.test(txt)) renderBuzzLocal(c, txt);
+    else if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
     view.append(c);
   }
   if(v.notes){
