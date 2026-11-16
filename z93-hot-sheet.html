@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v27-giveaways">
+<meta name="hs-build" content="v28-ticker-curate">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -418,6 +418,10 @@ body.flown #flyBtn{background:var(--accent2)}
 .nhd .sr{display:flex;flex-wrap:wrap;gap:2px 6px;margin-top:6px;font-size:.8em;color:var(--dim);font-weight:700}
 .nhd .sr b{color:var(--c1);font-weight:900}
 .nhd .sr .live{color:#7ee2a8}
+
+.ncard.pick{box-shadow:0 0 0 1px color-mix(in srgb,var(--c1) 40%,transparent)}
+.npill{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;font-size:.68em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;background:color-mix(in srgb,var(--c1) 28%,#0b0d10);color:var(--c1)}
+.t-SHOW .tag{background:#34d399}
 .nbody{padding:0 12px 12px 16px;font-size:.88em;line-height:1.4;color:#d6dde3}
 .nbody .content{background:none;padding:0;border-radius:0;font-size:1em;margin:0;border:0;box-shadow:none}
 .nopen{display:inline-flex;align-items:center;gap:6px;margin-top:8px;min-height:40px;padding:4px 14px;border-radius:12px;font-weight:800;font-size:.85em;text-decoration:none;color:#0b0d10;background:linear-gradient(150deg,var(--c1),var(--c2))}
@@ -1782,7 +1786,7 @@ function buildTicker(sheet){
       {tag:String(t.tag||'').toUpperCase(), text:String(t.text||''), section:t.section, story:t.story})
       .filter(t=>t.text.trim());
   }
-  const out=[]; const w=(sheet===state.sheet?effectiveWeather():sheet.weather)||{}; const vibe=sheet.vibe;
+  let out=[]; const w=(sheet===state.sheet?effectiveWeather():sheet.weather)||{}; const vibe=sheet.vibe;
   const vl=linesOf(vibe);
   // advisories first: live one from the weather block, else the one written in Vibe Check
   if(advisoryLive(w)) out.push({tag:'ADVISORY', text:w.advisory, section:'vibe'});
@@ -1810,9 +1814,24 @@ function buildTicker(sheet){
   out.push(...sports);
   const fl=cleanText(sheet.flash&&sheet.flash.content).trim();
   if(fl){ const first=fl.split(/(?<=\d{4}\.)\s|\n/)[0].trim(); out.push({tag:'FLASHBACK', text:first.replace(/\.$/,''), section:'flash'}); }
+  // curated live headlines (show picks first). Operational sheet items stay ahead of them.
+  if(typeof tickerPicks==='function'){
+    const seenT=new Set(out.map(o=>normTick(o.text)));
+    const loc=tickerPicks('local'), nat=tickerPicks('national');
+    const flash=out.filter(o=>o.tag==='FLASHBACK');
+    const rest=out.filter(o=>o.tag!=='FLASHBACK');
+    const add=[];
+    for(const it of [...loc, ...nat]){
+      const t=String(it.text||'').trim(); if(!t || seenT.has(normTick(t))) continue;
+      seenT.add(normTick(t)); add.push(it);
+    }
+    out=[...rest, ...add, ...flash];
+  }
   // de-dupe, drop empties
   const seen=new Set(); return out.filter(o=>o.text && !seen.has(o.tag+o.text) && seen.add(o.tag+o.text));
 }
+function normTick(t){ return String(t||'').toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim(); }
+
 let tickerPaused = LS.getItem('hs:tickPaused')==='1';
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 function renderTicker(){
@@ -1845,9 +1864,15 @@ $('#ticker').addEventListener('pointerup',release); $('#ticker').addEventListene
 $('#ticker').addEventListener('contextmenu',e=>e.preventDefault());
 $('#ticker').addEventListener('click',e=>{
   const b=e.target.closest('.tk'); if(!b || held){ held=false; return; }
-  const it=(state.tickerItems||[])[+b.dataset.i]; if(it) jumpTo(it.section, it.story);
+  const it=(state.tickerItems||[])[+b.dataset.i]; if(it) jumpTo(it.section, it.story, it);
 });
-function jumpTo(section, story){
+function jumpTo(section, story, extra){
+  if(section==='news'){ goNews((extra&&extra.newsCol)||'local');
+    setTimeout(()=>{ const id=extra&&extra.tid; const el=id?document.querySelector('#view [data-tid="'+CSS.escape(id)+'"]'):null;
+      if(!el) return; const hd=el.querySelector('.nhd'); if(hd && !el.classList.contains('open')) hd.click();
+      window.scrollTo({top:Math.max(0, el.getBoundingClientRect().top+scrollY-(typeof stickyH==='function'?stickyH():0)-10), behavior: reduceMotion.matches?'auto':'smooth'});
+      el.classList.remove('flashhit'); void el.offsetWidth; el.classList.add('flashhit'); }, 80);
+    return; }
   if(section && sectionList().some(x=>x.key===section)){ state.tab=section; LS.setItem('hs:tab',section); renderTabs(); renderView(); }
   const el = story ? document.querySelector('#view .headline[data-story="'+story+'"]') : null;
   if(el){ const fold=el.closest('details'); if(fold) fold.open=true; }
@@ -2019,6 +2044,13 @@ const NEWS_FEEDS=[
 ];
 let news=null; try{ news=JSON.parse(LS.getItem('hs:news')||'null'); }catch(e){}
 let newsBusy=false;
+let tickerCur=null; try{ tickerCur=JSON.parse(LS.getItem('hs:tickerCur')||'null'); }catch(e){}
+let tickerBusy=false;
+async function loadTicker(force){
+  if(!isHttp || tickerBusy) return; if(!force && tickerCur && tickerFresh() && Date.now()-(tickerCur.loadedAt||tickerCur.updatedMs||0)<10*60000) return;
+  tickerBusy=true; if(state.tab==='news') refreshNewsView();
+  try{ const j=await fetchJson('ticker.json'); if(j && (j.local||j.national)){ j.loadedAt=Date.now(); tickerCur=j; try{ LS.setItem('hs:tickerCur', JSON.stringify(j)); }catch(e){} } }
+  catch(e){} tickerBusy=false; renderTicker(); if(state.tab==='news') refreshNewsView(); }
 async function fetchFeed(f){
   const ctl=new AbortController(); const tm=setTimeout(()=>ctl.abort(),12000);
   try{ const r=await fetch(f.url,{signal:ctl.signal, cache:'no-cache'}); if(!r.ok) throw new Error(r.status);
@@ -2063,7 +2095,9 @@ $('#newsModal').addEventListener('click',e=>{ if(e.target.id==='newsModal') clos
 addEventListener('keydown',e=>{ if(e.key==='Escape' && $('#newsModal').classList.contains('on')) closeNews(); });
 setInterval(()=>{ if(!document.hidden) fetchNews(false); }, 20*60000);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden && (!news || Date.now()-news.at>20*60000)) fetchNews(false); });
-renderNewsChip(); fetchNews(false);
+renderNewsChip(); fetchNews(false); loadTicker(false);
+setInterval(()=>{ if(!document.hidden) loadTicker(false); }, 15*60000);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) loadTicker(false); });
 // Daily Buzz reads local: stories under a ━━ NATIONAL ━━ divider go in a closed fold (nothing dropped)
 function renderBuzzLocal(c, txt){
   const lines=txt.split('\n'); const parts=[]; let cur={name:'', lines:[]};
@@ -2131,18 +2165,39 @@ const NCOLS=[
   {id:'gossip', icon:'✨', label:'Gossip', full:'Gossip & Entertainment', cls:'nc-gossip'},
 ];
 let newsCol=LS.getItem('hs:newsCol')||'local';
+function tickerFresh(){ const t=tickerCur; if(!t||!(t.local||t.national)) return false;
+  const ms=t.updatedMs||Date.parse(t.updated||0)||0; return ms && (Date.now()-ms)<18*3600e3; }
+function tickerPicks(scope){ if(!tickerFresh()||!tickerCur||!tickerCur[scope]) return [];
+  return (tickerCur[scope].picks||[]).map(it=>({tag:it.tag||(scope==='local'?'LOCAL':'NATIONAL'), text:it.title, section:'news', newsCol:scope, tid:it.id, link:it.link, source:it.source})); }
+function curNews(scope){ if(!tickerFresh()||!tickerCur||!tickerCur[scope]) return null;
+  const as=(arr,pick)=>(arr||[]).map(it=>({title:it.title, src:it.source, sources:it.sources, votes:it.votes, at:it.atMs||Date.parse(it.at||0)||0, link:it.link, desc:it.desc, live:true, pick:!!pick, why:it.why, tid:it.id, tag:it.tag}));
+  return {picks:as(tickerCur[scope].picks,true), more:as(tickerCur[scope].more,false), updated:tickerCur.updatedMs||Date.parse(tickerCur.updated||0)||0}; }
 function newsData(){
   const buzz=state.sheet && state.sheet.buzz ? cleanText(state.sheet.buzz.content||'') : '';
   const P=buzzParts(buzz);
   const sheetSrc=state.date ? 'Sheet · '+nice(state.date) : 'Sheet';
   const asSheet=(arr,tag)=>(arr||[]).map(s=>({title:tcase(s.title), src:tag||'Daily Buzz', sub:sheetSrc, lines:s.lines}));
-  const local=[{head:'On today\'s sheet', items:asSheet(P.LOCAL)}];
+  const words=t=>new Set(t.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w.length>4));
+  const overlap=(a,b)=>{ const A=words(a), B=words(b); if(!A.size||!B.size) return false; const n=[...A].filter(x=>B.has(x)).length; return n>=3; };
+  const taken=list=>title=>{ const t=title||''; return list.some(s=>overlap(t,s.title)); };
+  const locCur=curNews('local'), natCur=curNews('national');
+  const local=[];
+  if(locCur){ if(locCur.picks.length) local.push({head:'Show picks', items:locCur.picks}); if(locCur.more.length) local.push({head:'More headlines', items:locCur.more}); }
+  const sheetLoc=asSheet(P.LOCAL);
+  const haveLoc=(locCur?locCur.picks.concat(locCur.more):[]).concat(sheetLoc);
+  const leftoverLoc=locCur?sheetLoc.filter(s=>!taken(locCur.picks.concat(locCur.more))(s.title)):sheetLoc;
+  if(leftoverLoc.length) local.push({head:"On today's sheet", items:leftoverLoc});
   if(P.SPORTS && P.SPORTS.length) local.push({head:'Sports', items:asSheet(P.SPORTS,'Sports')});
   const natSheet=asSheet(P.NATIONAL);
-  const words=t=>new Set(t.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(w=>w.length>4));
-  const sheetW=natSheet.map(s=>words(s.title+' '+s.lines.join(' ')));
-  const live=(news&&news.items||[]).filter(it=>{ const w=[...words(it.title)]; return !sheetW.some(S=>w.filter(x=>S.has(x)).length>=3); });
-  const national=[{head:'On today\'s sheet', items:natSheet},{head:'Live headlines', items:live.map(it=>({...it, live:true}))}];
+  const national=[];
+  if(natCur){ if(natCur.picks.length) national.push({head:'Show picks', items:natCur.picks}); if(natCur.more.length) national.push({head:'More headlines', items:natCur.more}); }
+  const leftoverNat=natCur?natSheet.filter(s=>!taken(natCur.picks.concat(natCur.more))(s.title)):natSheet;
+  if(leftoverNat.length) national.push({head:"On today's sheet", items:leftoverNat});
+  if(!natCur){
+    const sheetW=natSheet.map(s=>words(s.title+' '+(s.lines||[]).join(' ')));
+    const live=(news&&news.items||[]).filter(it=>{ const w=[...words(it.title)]; return !sheetW.some(S=>w.filter(x=>S.has(x)).length>=3); });
+    national.push({head:'Live headlines', items:live.map(it=>({...it, live:true}))});
+  }
   const gos=[{head:'Live entertainment', items:(gossip&&gossip.items||[]).map(it=>({...it, live:true}))}];
   const bits=asSheet(P.BITS||P.BIT,'Bits');
   if(bits.length) gos.push({head:'Sheet bits', items:bits});
@@ -2150,11 +2205,13 @@ function newsData(){
 }
 const ncount=g=>g.reduce((n,x)=>n+x.items.length,0);
 function newsCard(it){
-  const card=h('article',{className:'ncard'});
+  const card=h('article',{className:'ncard'+(it.pick?' pick':'')}); if(it.tid) card.dataset.tid=it.tid;
   const body=h('div',{className:'nbody', hidden:true});
+  const when=it.at ? (Date.now()-it.at<3600e3 ? ago(it.at) : hm(new Date(it.at))+' ET') : (it.sub||'');
+  const srcLine=(it.votes>1?it.src+' · '+it.votes+' sources':it.src)||'';
   const btn=h('button',{className:'nhd', type:'button', 'aria-expanded':'false'},
-    h('span',{className:'tt'}, it.title),
-    h('span',{className:'sr'}, h('b',{}, it.src||''), h('span',{}, '· '+(it.at ? (Date.now()-it.at<3600e3 ? ago(it.at) : hm(new Date(it.at))+' ET') : (it.sub||''))), it.live? h('span',{className:'live'}, '● live') : null));
+    h('span',{className:'tt'}, it.title, it.pick?h('span',{className:'npill'},'Show pick'):null),
+    h('span',{className:'sr'}, h('b',{}, srcLine), when?h('span',{}, '· '+when):null, it.live? h('span',{className:'live'}, '● live') : null));
   btn.onclick=()=>{ tapHaptic(); const o=body.hidden; body.hidden=!o; card.classList.toggle('open',o); btn.setAttribute('aria-expanded',String(o)); };
   if(it.link){ if(it.desc) body.append(h('div',{}, it.desc)); body.append(h('a',{className:'nopen', href:it.link, target:'_blank', rel:'noopener'}, 'Open article ↗')); }
   else if(it.lines && it.lines.length){ const c=h('div',{className:'content'}); richLines(c, it.lines.join('\n')); body.append(c); }
@@ -2166,10 +2223,10 @@ function newsCard(it){
 }
 function renderNewsView(view){
   const data=newsData();
-  const live=[news&&news.at, gossip&&gossip.at].filter(Boolean);
-  const meta=(newsBusy||gossipBusy)?'Updating…':(live.length?'Live · updated '+hm(new Date(Math.max(...live)))+' ET':(navigator.onLine?'Loading live feeds…':'Offline · sheet only'));
-  const ref=h('button',{className:'nvref', type:'button', 'aria-label':'Refresh live news'}, '↻ Refresh');
-  ref.onclick=()=>{ fetchNews(true); fetchGossip(true); };
+  const live=[news&&news.at, gossip&&gossip.at, tickerFresh()?tickerCur.updatedMs:0].filter(Boolean);
+  const meta=(newsBusy||gossipBusy||tickerBusy)?'Updating…':(tickerFresh()?'Curated · updated '+hm(new Date(tickerCur.updatedMs))+' ET · last 24 hours':(live.length?'Live · updated '+hm(new Date(Math.max(...live)))+' ET':(navigator.onLine?'Loading headlines…':'Offline · sheet only')));
+  const ref=h('button',{className:'nvref', type:'button', 'aria-label':'Refresh headlines'}, '↻ Refresh');
+  ref.onclick=()=>{ loadTicker(true); fetchNews(true); fetchGossip(true); };
   view.append(h('h2',{className:'nvh'}, '📰 News', ref), h('div',{className:'nvmeta', id:'nvMeta'}, meta));
   const seg=h('div',{className:'nseg', role:'tablist', 'aria-label':'News columns'});
   const cols=h('div',{className:'ncols', id:'nCols'});
@@ -2183,12 +2240,13 @@ function renderNewsView(view){
       h('div',{className:'nch'}, h('span',{className:'ic','aria-hidden':'true'}, c.icon), h('span',{className:'nl'}, c.full||c.label), h('span',{className:'ct'}, String(n))));
     let shown=0; const extra=[];
     for(const g of groups){ if(!g.items.length) continue; const head=h('div',{className:'nsub'}, g.head);
+      const fold=g.head==='More headlines';
       g.items.forEach((it,k)=>{ const card=newsCard(it); if(c.id==='local' && shown===0) card.classList.add('lead');
-        if(shown>=10){ card.hidden=true; extra.push(card); if(k===0){ head.hidden=true; extra.push(head); } }
+        if(fold && k>=12){ card.hidden=true; extra.push(card); }
         if(k===0) col.append(head); col.append(card); shown++; }); }
-    if(extra.length){ const more=h('button',{className:'nmore', type:'button'}, 'More '+c.label.toLowerCase()+' ('+extra.filter(x=>x.classList.contains('ncard')).length+')');
+    if(extra.length){ const more=h('button',{className:'nmore', type:'button'}, 'More headlines ('+extra.length+')');
       more.onclick=()=>{ tapHaptic(); extra.forEach(x=>x.hidden=false); more.remove(); }; col.append(more); }
-    if(!n) col.append(h('div',{className:'nempty'}, c.id==='local' ? 'No local stories on this sheet.' : (navigator.onLine ? 'Loading…' : 'Offline: nothing saved yet.')));
+    if(!n) col.append(h('div',{className:'nempty'}, c.id==='local' ? (navigator.onLine?'No local headlines yet.':'Offline: no local headlines saved.') : (navigator.onLine ? 'Loading…' : 'Offline: nothing saved yet.')));
     cols.append(col);
   });
   view.append(seg, cols);
@@ -2347,7 +2405,7 @@ $('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
 $('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
 $('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
 $('#latestBtn').onclick=()=>load(null);
-$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); load(state.mode==='latest'?null:state.date); };
+$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadTicker(true); load(state.mode==='latest'?null:state.date); };
 
 
 /* ================= pinned top ✕ on every overlay ================= */
@@ -3185,7 +3243,7 @@ function recapFor(e){ const k=e.key;
 /* ---------- PWA ---------- */
 if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 
-loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways();
+loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadTicker();
 window.__hs = state; // for debugging
 })();
 </script>
