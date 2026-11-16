@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v25-share-target">
+<meta name="hs-build" content="v26-holds">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -685,6 +685,9 @@ body.flown #tabs button{min-height:48px}
 .svacts{display:flex;gap:8px;flex-wrap:wrap}.svacts button{min-height:44px;border-radius:22px;padding:0 14px;font-weight:700}.svu.on{background:#2ecc71;color:#06210f;border-color:#2ecc71}
 .svcats{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 10px}.svcat{min-height:44px;border-radius:22px;padding:0 14px;font-weight:700}.svcat.on{background:#ffd23f;color:#1b1206;border-color:#ffd23f}
 #saveBody input,#saveBody textarea{width:100%;box-sizing:border-box;font-size:16px}.svsave{background:#2ecc71;color:#06210f;border-color:#2ecc71;font-weight:800}
+
+.airbtn.holdbtn{color:#ffe27a}.airbtn.holdbtn .ab{border-color:#ffd23f}.clc .airbtn.holdbtn.on,.airbtn.holdbtn.on{border-color:#ffd23f;background:#3a3206;color:#fff3b0}.clc .airbtn.holdbtn.on .ab,.airbtn.holdbtn.on .ab{background:#ffd23f;border-color:#ffd23f;color:#1b1206}
+.clc .ctags .ctk{display:flex;flex:1 0 100%;flex-wrap:wrap;gap:6px;justify-content:flex-start}.clc .ctags .ctk .airbtn{margin-left:0}
 </style>
 </head>
 <body>
@@ -1041,7 +1044,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -2403,7 +2406,7 @@ function clipAudioUrl(a){ if(!a) return null; a=String(a);
 function clipPicks(key){
   const v=state.sheet && state.sheet[key]; if(!isSection(v)) return [];
   const d=clipDate();
-  if(Array.isArray(v.clips)) return v.clips.map((x,i)=>({id:String(x.id||(d+'-'+key+'-'+i)), slot:x.slot||'', title:x.title||'Clip', body:cleanText(x.body||''), audio:x.audio||'', ready:!!x.ready,
+  if(Array.isArray(v.clips)) return v.clips.map((x,i)=>({id:String(x.id||(d+'-'+key+'-'+i)), sec:key, slot:x.slot||'', title:x.title||'Clip', body:cleanText(x.body||''), audio:x.audio||'', ready:!!x.ready,
     file:(String(x.audio||'').match(/([\w.-]+\.(?:mp3|m4a|wav|aac|ogg))$/i)||[])[1]||'', src:/^https?:/.test(x.audio||'') && !/\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(x.audio)?x.audio:''}));
   const raw=String(v.content||'').replace(/<audio[\s\S]*?(<\/audio>|\/?>)/gi,'');
   const out=[];
@@ -2420,7 +2423,7 @@ function cst(id){ const d=clipDate(); return (clipState[d]||{})[id]||{}; }
 function setClip(id, patch){ const d=clipDate(); clipState[d]=clipState[d]||{}; const o=Object.assign({}, clipState[d][id]||{}, patch);
   Object.keys(o).forEach(k=>{ if(o[k]==null) delete o[k]; }); if(Object.keys(o).length) clipState[d][id]=o; else delete clipState[d][id];
   const keep=Object.keys(clipState).sort().slice(-5); clipState=Object.fromEntries(keep.map(k=>[k,clipState[k]])); lsSet('hs:clipState', clipState); }
-function markPlayed(id){ if(typeof airAuto==='function') airAuto('clip:'+id, (clipPicks('clips').concat(clipPicks('newsclips')).find(x=>x.id===id)||{title:'Clip'}).title.replace(/\(READY\)/i,'').trim().replace(/^.*$/,t=>readable(t)), 'clips', (clipPicks('clips').concat(clipPicks('newsclips')).find(x=>x.id===id)||{}).body); if(cst(id).p) return; setClip(id,{p:Date.now()});
+function markPlayed(id){ if(typeof airAuto==='function') airAuto('clip:'+id, (clipPicks('clips').concat(clipPicks('newsclips'),(state.clipPicks||[]).filter(x=>x.heldFrom)).find(x=>x.id===id)||{title:'Clip'}).title.replace(/\(READY\)/i,'').trim().replace(/^.*$/,t=>readable(t)), 'clips', (clipPicks('clips').concat(clipPicks('newsclips'),(state.clipPicks||[]).filter(x=>x.heldFrom)).find(x=>x.id===id)||{}).body); if(cst(id).p) return; setClip(id,{p:Date.now()});
   document.querySelectorAll('.clc[data-id="'+CSS.escape(id)+'"]').forEach(c=>{ c.classList.add('played'); const t=c.querySelector('.ctags'); if(t && !t.querySelector('.cplayed')) t.append(h('span',{className:'cplayed'},'▶ played')); }); }
 document.addEventListener('play', e=>{ const a=e.target; if(!a || a.tagName!=='AUDIO') return;
   let id=a.dataset.clip; if(!id){ const name=decodeURIComponent(String(a.currentSrc||a.src||'').split('?')[0].split('/').pop()||'');
@@ -2428,16 +2431,17 @@ document.addEventListener('play', e=>{ const a=e.target; if(!a || a.tagName!=='A
   if(id) markPlayed(id); }, true);
 function renderClipTracker(view){
   const groups=[{key:'newsclips', label:'📰 News Audio'},{key:'clips', label:'🔥 Trending Audio'}].map(g=>({...g, picks:clipPicks(g.key)}));
-  const all=groups.flatMap(g=>g.picks); state.clipPicks=all; if(!all.length) return false;
-  const left=all.filter(p=>!cst(p.id).u).length;
+  const all=groups.flatMap(g=>g.picks); state.clipPicks=all; const heldIn=heldIncoming(all); if(!all.length && !heldIn.length) return false;
+  if(heldIn.length){ groups.unshift(...heldGroups(heldIn)); state.clipPicks=all.concat(heldIn); }
+  const allG=groups.flatMap(g=>g.picks); const left=allG.filter(p=>!cst(p.id).u).length;
   const wrap=h('div',{className:'cltrack'});
-  wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+all.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
+  wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
   const card=(p, used)=>{ const s=cst(p.id);
     const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id});
-    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body));
+    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
     const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
-    const url=clipAudioUrl(p.audio);
+    const url=p.heldFrom ? heldAudioUrl(p) : clipAudioUrl(p.audio);
     if(url){ const pl=makePlayer(p.title, url, '', true); const au=pl.querySelector('audio'); if(au) au.dataset.clip=p.id; main.append(pl); }
     else if(p.src) main.append(h('a',{className:'csrc', href:p.src, target:'_blank', rel:'noopener'}, 'Source ↗'));
     else if(p.ready && p.file) main.append(h('div',{className:'cfile'}, '🎧 '+p.file+' · not online yet'));
@@ -2452,12 +2456,40 @@ function renderClipTracker(view){
     wrap.append(h('div',{className:'clgh'}, g.label, h('span',{className:'cc'}, gl.length+' of '+g.picks.length+' left')));
     if(!gl.length) wrap.append(h('div',{className:'cldone'}, '✓ All used'));
     gl.forEach(p=>wrap.append(card(p,false))); }
-  const used=all.filter(p=>cst(p.id).u);
+  const used=allG.filter(p=>cst(p.id).u);
   if(used.length){ const t=h('button',{className:'clshow', type:'button', 'aria-expanded':String(showUsed)}, (showUsed?'Hide used':'Show used')+' ('+used.length+')');
     t.onclick=()=>{ showUsed=!showUsed; rerender(); }; wrap.append(t);
     if(showUsed) used.forEach(p=>wrap.append(card(p,true))); }
   view.append(wrap); return true; }
 function rerender(){ const y=scrollY; renderView(); window.scrollTo(0,y); }
+
+/* ================= ⏭ Hold for tomorrow (per clip id, per sheet date; synced as hd:<date>:<id>) ================= */
+var holds=lsGet('hs:holds', {}); if(!holds || typeof holds!=='object' || Array.isArray(holds)) holds={};
+function holdSave(){ const keep=Object.keys(holds).sort().slice(-21); holds=Object.fromEntries(keep.map(k=>[k,holds[k]])); lsSet('hs:holds', holds); }
+function isHeld(d,id){ return !!((holds[d]||{})[id]); }
+function holdSet(p, on){ const d=p.heldFrom||clipDate(); holds[d]=holds[d]||{};
+  if(on) holds[d][p.id]={t:new Date().toISOString(), title:String(p.title||'').slice(0,200), audio:p.audio||'', file:p.file||'', slot:p.slot||'', body:String(p.body||'').slice(0,1200), sec:p.sec||''};
+  else { delete holds[d][p.id]; if(!Object.keys(holds[d]).length) delete holds[d]; }
+  holdSave(); document.querySelectorAll('[data-hold="'+CSS.escape(d+'|'+p.id)+'"]').forEach(holdPaint); }
+function holdPaint(b){ const [d,id]=b.dataset.hold.split('|'); const on=isHeld(d,id); b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on));
+  b.querySelector('.ab').textContent=on?'✓':''; b.querySelector('.at').textContent=on?(b.dataset.from?'Holding':'Held ⏭'):'⏭ Hold'; b.title=on?'Held for tomorrow (tap to release)':'Hold for tomorrow'; }
+function holdBtn(p){ const d=p.heldFrom||clipDate();
+  const b=h('button',{className:'airbtn sm holdbtn', type:'button', title:'Keep this clip for the next show'}, h('span',{className:'ab','aria-hidden':'true'}), h('span',{className:'at'}));
+  b.dataset.hold=d+'|'+p.id; if(p.heldFrom) b.dataset.from='1'; holdPaint(b);
+  b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=isHeld(d,p.id); holdSet(p,!was);
+    if(!was) toast('⏭ Held for tomorrow: '+String(p.title).slice(0,40), ()=>holdSet(p,false)); else if(p.heldFrom) rerender(); };
+  return b; }
+function heldAudioUrl(p){ if(!p.file) return null; const ie=indexEntry(p.heldFrom); if(!isHttp || !ie || !Array.isArray(ie.files) || !ie.files.includes(p.file)) return null; return 'clips/'+p.heldFrom+'/'+p.file; }
+function airedSince(d, id, today){ return Object.keys(air||{}).some(x=>x>d && x<today && air[x] && air[x]['clip:'+id]) || Object.keys(clipState||{}).some(x=>x>d && x<today && clipState[x] && clipState[x][id] && clipState[x][id].p); }   // aired on a later show day (today's airing keeps it visible, ticked)
+// clips held on an earlier sheet (last 7 days) that today's sheet doesn't already include, and that haven't aired since
+function heldIncoming(todayPicks){ const today=clipDate(); const cut=new Date(new Date(today+'T12:00:00Z').getTime()-7*864e5).toISOString().slice(0,10);
+  const ids=new Set(todayPicks.map(p=>p.id)), files=new Set(todayPicks.map(p=>p.file).filter(Boolean)), out=[];
+  for(const d of Object.keys(holds).sort().reverse()){ if(d>=today || d<cut) continue;
+    for(const [id,o] of Object.entries(holds[d]||{})){ if(!o || ids.has(id) || (o.file && files.has(o.file)) || airedSince(d,id,etParts().date>today?etParts().date:today) || out.some(x=>x.id===id)) continue;
+      out.push({id, slot:o.slot||'', title:o.title||'Clip', body:o.body||'', audio:o.audio||'', file:o.file||'', ready:false, src:/^https?:/.test(o.audio||'') && !/\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(o.audio)?o.audio:'', heldFrom:d}); } }
+  return out; }
+function heldGroups(list){ const by={}; list.forEach(p=>{ (by[p.heldFrom]=by[p.heldFrom]||[]).push(p); });
+  return Object.keys(by).sort().reverse().map(d=>({key:'held:'+d, label:'⏭ Held from '+nice(d), picks:by[d]})); }
 
 /* ================= 📥 Saved for Show (Android share target → ./?title=&text=&url=) ================= */
 var savedMap=lsGet('hs:saved', {}); if(!savedMap || typeof savedMap!=='object' || Array.isArray(savedMap)) savedMap={};
@@ -2530,6 +2562,7 @@ function syncSnap(){ const m={};
   for(const [d,r] of Object.entries(linerUsed||{})) for(const [id,t] of Object.entries(r||{})) m['lu:'+d+':'+id]=t;
   for(const [d,r] of Object.entries(air||{})) for(const [id,o] of Object.entries(r||{})) m['ai:'+d+':'+id]=o;
   for(const [id,o] of Object.entries((typeof savedMap!=='undefined'&&savedMap)||{})) m['sv:'+id]=o;
+  for(const [d,r] of Object.entries((typeof holds!=='undefined'&&holds)||{})) for(const [id,o] of Object.entries(r||{})) m['hd:'+d+':'+id]=o;
   return m; }
 function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=key.indexOf(':'); const kind=key.slice(0,i), rest=key.slice(i+1);
   const two=()=>{ const j=rest.indexOf(':'); return [rest.slice(0,j), rest.slice(j+1)]; };
@@ -2543,7 +2576,8 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='st'){ stOv.settings=stOv.settings||{}; if(del) delete stOv.settings[rest]; else stOv.settings[rest]=val; }
   else if(kind==='lu'){ const [d,id]=two(); linerUsed[d]=linerUsed[d]||{}; if(del) delete linerUsed[d][id]; else linerUsed[d][id]=val; }
   else if(kind==='ai'){ const [d,id]=two(); air[d]=air[d]||{}; if(del) delete air[d][id]; else air[d][id]=val; }
-  else if(kind==='sv'){ if(del) delete savedMap[rest]; else savedMap[rest]=val; } }
+  else if(kind==='sv'){ if(del) delete savedMap[rest]; else savedMap[rest]=val; }
+  else if(kind==='hd'){ const [d,id]=two(); holds[d]=holds[d]||{}; if(del) delete holds[d][id]; else holds[d][id]=val; if(!Object.keys(holds[d]).length) delete holds[d]; } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
   for(const k of new Set([...Object.keys(snap), ...Object.keys(last)])){ const cur=k in snap ? JSON.stringify(snap[k]) : '"~"';
     if(cur!==(last[k]||'"~"')){ st[k]=now; last[k]=cur; } }
@@ -2557,7 +2591,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -2568,12 +2602,12 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); }
+    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
     syncCfg.lastOk=Date.now(); syncCfg.err=''; lsSet('hs:sync', syncCfg);
-    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved') rerender(); }
+    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips') rerender(); }
   }catch(e){ syncCfg.err=String(e.message||e); lsSet('hs:sync', syncCfg); }
   syncBusy=false; renderSyncState(); if(syncAgain){ syncAgain=false; syncNow(); } }
 window.__hsSyncSoon=()=>{ if(!syncCfg) return; syncMark(); clearTimeout(syncT); syncT=setTimeout(syncNow, 1500); };
