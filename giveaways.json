@@ -1,0 +1,47 @@
+{
+ "version": 1,
+ "giveaways": [
+  {
+   "id": "gv-jonas-brothers",
+   "name": "Jonas Brothers Ticket Giveaway",
+   "short": "Jonas Brothers",
+   "icon": "🎟",
+   "prize": "Three pairs of tickets to the Jonas Brothers show, Tuesday Dec 15",
+   "start": "2026-11-30",
+   "end": "2026-12-04",
+   "activationTimes": ["07:00", "11:00", "16:00"],
+   "keywords": {},
+   "announce": "2026-12-07",
+   "announceText": "Pick and announce the 3 Jonas Brothers winners.",
+   "event": "2026-12-15",
+   "eventName": "Jonas Brothers show",
+   "pairs": 3,
+   "studioLine": true,
+   "mention": "",
+   "tagSection": "",
+   "notes": "Listening appointments. Names are activated all week long on the studio line at 7am, 11am and 4pm. Give a keyword on air; listeners text it in, and a name is picked at random to activate. Truce picks and announces the 3 winners during his show Monday Dec 7. The Jonas Brothers show is Tuesday Dec 15.",
+   "active": true
+  },
+  {
+   "id": "gv-secret-santa",
+   "name": "Secret Santa",
+   "short": "Secret Santa",
+   "icon": "🎅",
+   "prize": "",
+   "start": "2026-12-07",
+   "end": "",
+   "activationTimes": [],
+   "keywords": {},
+   "announce": "",
+   "announceText": "",
+   "event": "",
+   "eventName": "",
+   "pairs": null,
+   "studioLine": false,
+   "mention": "🎅 Secret Santa (cross talk w/ Courtney): announce + call today's daily winner",
+   "tagSection": "cross",
+   "notes": "From Courtney Rehmer, Nov 16. Chris wants Truce and Courtney to use the Cross Talk segment to announce it and maybe call the daily winner. End date, prize, keyword and mechanics are TBD — set them here when you know.",
+   "active": true
+  }
+ ]
+}
