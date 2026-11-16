@@ -590,6 +590,8 @@ body.flown #tabs button{min-height:48px}
 .sclip .sci{font-size:16px;width:18px;text-align:center}
 .sclip.played:not(.playing){background:#2a2f3a;color:#ffd34d;opacity:.85}
 .sclip.playing{background:#2ecc71;border-color:#2ecc71;color:#06210f}
+.nclip{padding:0 12px 10px}
+.nclip .sclipw{margin-left:0}
 </style>
 </head>
 <body>
@@ -1978,7 +1980,9 @@ function newsCard(it){
   if(it.link){ if(it.desc) body.append(h('div',{}, it.desc)); body.append(h('a',{className:'nopen', href:it.link, target:'_blank', rel:'noopener'}, 'Open article ↗')); }
   else if(it.lines && it.lines.length){ const c=h('div',{className:'content'}); richLines(c, it.lines.join('\n')); body.append(c); }
   else body.append(h('div',{className:'nempty'}, 'Bit from today\'s sheet.'));
-  card.append(btn, body); return card;
+  let cm=null; try{ if(typeof storyClipFor==='function' && it.title) cm=storyClipFor([it.title, ...(it.lines||[]), it.desc||'', it.link||'']); }catch(e){}
+  if(cm){ card.append(btn, h('div',{className:'nclip'}, inlineClipBtn(cm)), body); card.classList.add('hasclip'); } else card.append(btn, body);
+  return card;
 }
 function renderNewsView(view){
   const data=newsData();
