@@ -1,196 +1,370 @@
 {
-  "weather": {
-    "temp": "37°",
-    "cond": "Mostly Clear",
-    "advisory": "No advisories",
-    "traffic": "Roads clear — Monday work not confirmed",
-    "high": "51°",
-    "low": "32°",
-    "tonight": "Patchy Fog",
-    "updated": "2026-11-16T06:30-05:00",
-    "source": [
-      "https://api.weather.gov/stations/KTVC/observations/latest",
-      "https://api.weather.gov/gridpoints/APX/30,46/forecast",
-      "https://api.weather.gov/alerts/active?zone=MIZ026"
-    ],
-    "advisory_detail": {
-      "active": false
-    },
-    "today": "Mostly Sunny",
+ "weather": {
+  "temp": "28°",
+  "cond": "Clear",
+  "advisory": "No advisories",
+  "traffic": "Beitner Rd closed Williams-River this week",
+  "high": "51°",
+  "low": "32°",
+  "tonight": "Partly Cloudy",
+  "updated": "2026-11-16T04:19-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Mostly Sunny",
+  "icon": "sunny",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-16",
+    "high": null,
+    "low": 32,
+    "short": "Partly Cloudy",
+    "icon": "partly",
+    "pop": 0
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-16",
+    "high": 51,
+    "low": 41,
+    "short": "Mostly Sunny",
     "icon": "sunny",
-    "week": [
-      {
-        "day": "Tonight",
-        "date": "2026-11-15",
-        "high": null,
-        "low": 32,
-        "short": "Patchy Fog",
-        "icon": "fog",
-        "pop": 0
-      },
-      {
-        "day": "Mon",
-        "date": "2026-11-16",
-        "high": 51,
-        "low": 41,
-        "short": "Mostly Sunny",
-        "icon": "sunny",
-        "pop": 0
-      },
-      {
-        "day": "Tue",
-        "date": "2026-11-17",
-        "high": 55,
-        "low": 43,
-        "short": "Sunny",
-        "icon": "sunny",
-        "pop": 0
-      },
-      {
-        "day": "Wed",
-        "date": "2026-11-18",
-        "high": 57,
-        "low": 48,
-        "short": "Mostly Sunny",
-        "icon": "sunny",
-        "pop": 0
-      },
-      {
-        "day": "Thu",
-        "date": "2026-11-19",
-        "high": 58,
-        "low": 43,
-        "short": "Partly Sunny then Slight Chance Rain Showers",
-        "icon": "rain",
-        "pop": 15
-      },
-      {
-        "day": "Fri",
-        "date": "2026-11-20",
-        "high": 55,
-        "low": 46,
-        "short": "Partly Sunny",
-        "icon": "partly",
-        "pop": 3
-      },
-      {
-        "day": "Sat",
-        "date": "2026-11-21",
-        "high": 61,
-        "low": 43,
-        "short": "Chance Rain Showers",
-        "icon": "rain",
-        "pop": 53
-      }
-    ],
-    "pulled": "2026-11-15T18:52-05:00"
-  },
-  "vibe": {
-    "id": "vibe",
-    "title": "Vibe Check",
-    "category": "Daily",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nVIBE CHECK · MONDAY NOV 16\n\n☀️ TODAY\n• Mostly sunny, high near 51\n• SW wind 10 to 15 mph\n• Almost no chance of rain\n• Sunrise 7:41 AM, sunset 5:13 PM\n\n🌙 OVERNIGHT INTO MONDAY: patchy fog, low around 32, then a Monday low near 41\n☁️ TUE: sunny, high 55 · WED: mostly sunny, high 57\n\n🏫 SCHOOLS: not confirmed, so check before you call it\n🚗 ROADS: a Grand Traverse County Road Commission work notice went up Friday. What's still active this morning is not confirmed — check before you air it.\n\n🤝 Today is also the International Day for Tolerance (UN)\n\nIt's Monday. Live, Local and Loud!\n📱 231-929-4487",
-    "notes": "MOCK RUN written Sun Nov 15 ~6:50 PM ET so Truce can test the live app. Not for air. The real Monday morning Hot Sheet run MUST overwrite /workspace/hot-sheet/2026-11-16-hot-sheet.json and latest-hot-sheet.json.\n\nWeather: NWS Gaylord / KTVC observation and APX gridpoint forecast, pulled Sun Nov 15 ~6:49 PM ET (current at pull: 37°, mostly clear, no advisories). Monday forecast from that pull: mostly sunny, high 51, low 41, 0% precip. Sunrise/sunset and SW wind 10–15 mph from the weekend stash / Wunderground hourly for Traverse City 49684 on 2026-11-16. Overnight patchy fog / low 32 is the Sunday-night NWS period from the same pull.\nSchools PRODUCER FLAG: not confirmed. Recheck 9&10 or UpNorthLive before you air closings or \"no closings.\"\nRoads PRODUCER FLAG: stash notes a GTCRC road-work notice dated Nov 13 (https://www.gtcrc.org/DocumentCenter/View/3485/RW-11132026). Do not invent which jobs are still active Monday.\nObservance: International Day for Tolerance is already in days.json (UN international day).\nThis is a test sheet, not a real Morning Rush rundown.",
-    "custom": false
-  },
-  "mood": {
-    "id": "mood",
-    "title": "Mood Boost",
-    "category": "6AM",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nOasis, \"Wonderwall,\" 1995. Stat: No. 1 on Billboard's Modern Rock chart, and No. 8 on the Hot 100 in 1996, where it spent 23 weeks. Oasis were inducted into the Rock Hall on Saturday.",
-    "notes": "MOCK RUN — not for air. Song pick tied to Saturday's Rock Hall ceremony. Chart facts: Billboard Hot 100 peak No. 8 (peak date Mar 9, 1996; 23 weeks; debut Jan 27, 1996). Modern Rock Tracks No. 1. UK release Oct 30, 1995. Induction: AP (Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden, Rick Rubin).",
-    "custom": false
-  },
-  "buzz": {
-    "id": "buzz",
-    "title": "Daily Buzz",
-    "category": "7AM",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nDAILY BUZZ · MON NOV 16\n\n━━ LOCAL ━━\n\n1) LAST DAY AT THE MANCELONA BUCK POLE\n• The 72nd Mancelona Buck Pole closes tonight at 6:30 PM\n• It opened at daybreak Sunday, when firearm deer season opened\n• Prizes for first deer, heaviest, widest rack and most points\n➜ TAKE: Some towns have a parade. Mancelona has a pole full of bucks, and you've got until 6:30 to get one on it.\n➜ BAIT: Biggest deer your family ever got, and how much has the story grown?\n\n2) BOARDMAN RIVER WALL REPAIRS COULD START WITHIN WEEKS\n• A local infrastructure story with possible downtown impact\n• Timing is \"within weeks,\" not a start date for this morning\n➜ TAKE: A wall along the river most of us walk past without thinking about, until the work starts.\n➜ BAIT: Does a repair like this change how you get around downtown?\n\n━━ NATIONAL ━━\n\n3) AIR TRAVEL STILL CATCHING UP\n• A nationwide ATC outage and ground stop hit over the weekend\n• The FAA says the system is stable\n• Airlines still expected to cancel 4,000 to 5,000 of about 41,000 flights on Sunday\n• Monday travelers may feel the spillover, with Thanksgiving travel already on the calendar\n➜ TAKE: If you're flying today, leave a wider window than the app says.\n➜ BAIT: Anyone in your family stuck in an airport yesterday?\n\n4) ROCK HALL CLASS OF THE WEEKEND\n• Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden and Rick Rubin were inducted Saturday\n• Phil Collins got emotional, and Billy Idol performed\n➜ TAKE: A pretty good Saturday night for a rock station.\n➜ BAIT: Who on that list was the most overdue, and who surprised you?\n\n5) SPACEX CATCHES STARSHIP WITH THE TOWER\n• SpaceX caught Starship with the tower arms after its 15th test flight\n➜ TAKE: They are catching a rocket with a pair of mechanical arms. That's a Monday kicker.\n➜ BAIT: Would you watch a launch in person, or is the couch close enough?\n\n6) A BIG MIDWEEK MEETING ON THE CALENDAR\n• The Kremlin says Putin, Xi and Trump will meet Thursday, Nov 19, in Shenzhen, on the sidelines of APEC\n➜ TAKE: A preview, not a recap. Thursday's a busy day in the world and in games, too.\n➜ BAIT: Save this one for later in the hour if you need a world beat.\n\n7) HORMUZ: CLAIMS OF MINES AND A DRONE ATTACK\n• Iran's IRGC says two tankers hit mines and caught fire near the Strait of Hormuz\n• Iran also claimed drone attacks on a U.S. base in Bahrain\n• Both are claims from a briefing synthesis, not facts we have independently confirmed\n➜ PRODUCER FLAG: check fresh sources before air, and do not treat the claims as confirmed. Possible gas-price angle only if you've got a number you can stand behind.\n➜ BAIT: Skip the bait unless the facts are locked.\n\n━━ BITS ━━\n• Last day at the Buck Pole: you going, or are you already telling the story of the one that got away?\n• Rock Hall: Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden, Rick Rubin — who belonged in there years ago?\n• GTA 6 is out Thursday. Who's taking the day, and who's waiting for the weekend?\n\n━━ SPORTS ━━\n• Lions 35, Patriots 10 on Sunday\n• Vikings 30, Packers 10\n• Mahomes threw 5 TDs as the Chiefs beat the Falcons 35–13\n• Bills 31, Jets 12 · Browns 27, Texans 24 · Colts 24, Dolphins 22\n• ⚠ NFL week number is not confirmed (sources said Week 10 or Week 11). Don't say the week number on air until it's checked.\n• Michigan fell to No. 18 Oregon, 31–7, in Eugene on Saturday, after losing to MSU 15–6 on Nov 7\n• Michigan State lost to Washington, 21–14, on Saturday\n• College upsets: Florida 21, No. 11 Kentucky 14; Arkansas 34, No. 17 South Carolina 6; Colorado 42, No. 14 Houston 32; Texas beat LSU; No. 2 Utah edged No. 23 Arizona to stay unbeaten\n\n📱 Text: 231-929-4487",
-    "notes": "MOCK RUN — not for air. Facts from /workspace/ops/weekend-stash/2026-11-15.md (lean sweep Sun Nov 15 ~6:20 PM ET). Check each item before any real show.\n\nCREDITS / SOURCES:\n- Buck Pole dates and prize lines carried forward from the Fri Nov 13 sheet (UpNorthLive / WPBN): opens daybreak Sunday, closes Mon Nov 16 at 6:30 PM. https://upnorthlive.com/news/local/hunters-to-gather-in-mancelona-for-northern-michigans-72nd-buck-pole-antrim-county\n- Boardman River wall: https://dailytraversecity.com/local-news/editions/11-15-2026\n- Air travel, Hormuz, Putin/Xi/Trump Nov 19, Starship: https://aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489 and Hormuz also https://english.news.cn/20261115/c47882c0dc794a48830bafce86d272e7/c.html\n- Rock Hall: https://apnews.com/article/rock-hall-fame-oasis-billy-idol-wutang-e3e0d8644d7c2a8cd0f73d60916dac11\n- Lions: https://www.cbssports.com/nfl/schedule/\n- Other NFL scores: https://www.skysports.com/nfl/live-blog/13612485/nfl-2026-results-and-highlights-patrick-mahomes-throws-five-touchdowns-while-minnesota-vikings-maul-green-bay-packers\n- NFL week number UNCONFIRMED: stash says searches labeled Sunday as Week 10, one source said Week 11. Do not air a week number until confirmed.\n- Michigan: https://mgoblue.com/news/2026/11/14/football-wolverines-fall-to-no-18-ducks-in-eugene\n- MSU: https://msuspartans.com/news/2026/11/14/football-washington-defeats-michigan-state-21-14\n- College upsets: https://www.sportingnews.com/us/ncaa-football/news/week-11-results-will-shape-cfp-rankings-wakes-42-point-smashing-smu-lsus-loss-texas/16a426d19fc5e9c89ad91d7e\n- GTA 6 Thursday Nov 19: weekend stash reminder / launch-week notes. No time or platform details were confirmed here, so don't invent them.\n\nPRODUCER FLAGS: Hormuz items are claims (IRGC / Iran, via a briefing synthesis). Midterm results (Peltola, Boebert) were in the stash and were left out of this mock on purpose. BioWare / Riot / other VGU items were also left out of the Z93 rundown. Texas beat LSU is in the stash without a score — don't invent one. Lions/Patriots records were not updated past Friday's 6-2 / 5-4 preview, so this sheet uses scores only.",
-    "custom": false
-  },
-  "verse": {
-    "id": "verse",
-    "title": "Verse Reverse",
-    "category": "Optional",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nNo Verse Reverse written for this mock.",
-    "notes": "MOCK RUN — not for air. Optional segment; left empty on purpose, same as the Fri Nov 13 sheet when there was no obvious pick.",
-    "custom": false
-  },
-  "mental": {
-    "id": "mental",
-    "title": "Mental Health Minute",
-    "category": "8:05",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nGive the Soft Monday a Real Chance\n\nToday is the International Day for Tolerance, and the weather is actually on our side: mostly sunny, around 50, and no advisory hanging over the drive. After a weekend of delayed flights, tense sports living rooms, and a lot of leftover aggravation, it's easy to carry Sunday's mood into Monday and take it out on the first person who cuts you off or sends a sharp text. Here's your move for today. Pick one moment this morning — the walk from the car, the first cup of coffee, or the first song — and use it to reset your voice before you talk to anybody. Tolerance isn't a speech. It's leaving the person in front of you a little more room than you got this weekend. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me what your reset moment was.",
-    "notes": "MOCK RUN — not for air. Aimed at the adult in the driver's seat. Hooks are the UN International Day for Tolerance (already in days.json) and the mild, dry Monday forecast. No clinical claims. Advice is a practical reset, not a diagnosis.",
-    "custom": false
-  },
-  "flash": {
-    "id": "flash",
-    "title": "Flashback",
-    "category": "Daily",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nSade, \"Smooth Operator,\" 1985. It peaked at No. 5 on the Billboard Hot 100 and No. 1 on Adult Contemporary. Sade was inducted into the Rock Hall on Saturday.",
-    "notes": "MOCK RUN — not for air. Tied to Saturday's Rock Hall ceremony. Chart facts: Billboard Hot 100 peak No. 5 (two weeks, peak date May 18, 1985; 20 weeks on the chart); Adult Contemporary No. 1 for two weeks. Sources: Billboard chart history; Wikipedia Smooth Operator (citing Billboard).",
-    "custom": false
-  },
-  "cross": {
-    "id": "cross",
-    "title": "Cross Talk",
-    "category": "Midday",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nCROSS TALK with Courtney Rehmer\n\nTOPIC: Rock Hall, the morning after\n• Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden and Rick Rubin were inducted Saturday\n• Phil Collins got emotional, and Billy Idol performed\n\nASK:\n1. Who on that list was the most overdue?\n2. Who surprised you?\n3. Who's still waiting outside?",
-    "notes": "MOCK RUN — not for air. Spelling is Courtney Rehmer, carried from the regular sheet. Topic and names from the AP Rock Hall story in the weekend stash. Sports talk (Lions 35-10) is already in Daily Buzz sports, so Cross Talk uses the music story instead of repeating it.",
-    "custom": false
-  },
-  "offcharts": {
-    "id": "offcharts",
-    "title": "Off the Charts",
-    "category": "Fri 8:30",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nOFF THE CHARTS airs Friday at 8:30. No Monday pick in this mock. Do not treat this tab as a real Friday rundown.",
-    "notes": "MOCK RUN — not for air. Off the Charts is the Friday 8:30 feature. Left without a song pick so this test sheet doesn't pretend to be Friday.",
-    "custom": false
-  },
-  "bit-trivia": {
-    "id": "bit-trivia",
-    "title": "BIT: This Day",
-    "category": "Bit",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nTHIS DAY · NOV 16\n\n• 1907 (119 yrs ago): Oklahoma becomes the 46th state\n• 1945 (81 yrs ago): UNESCO's constitution is signed in London\n• 2001 (25 yrs ago): Harry Potter and the Sorcerer's Stone opens in the U.S.\n• 🎂 Shigeru Miyamoto turns 74 (Mario, The Legend of Zelda)\n\n➜ BAIT: First Harry Potter memory, or the first Mario or Zelda game you played?\n📱 231-929-4487",
-    "notes": "MOCK RUN — not for air.\nCredits: Oklahoma statehood, Nov 16, 1907 (USA Today / Wikipedia November 16). UNESCO constitution signed in London, Nov 16, 1945 (UNESCO official constitution page; entered into force Nov 4, 1946). Do not lock a signatory count — official UNESCO pages disagree (37 vs. 41). Harry Potter and the Sorcerer's Stone U.S. theatrical release Nov 16, 2001 (Warner Bros.; AFI Catalog; Box Office Mojo). Shigeru Miyamoto born Nov 16, 1952 (timeanddate / History.com), so he turns 74 in 2026.",
-    "custom": true
-  },
-  "events": {
-    "id": "events",
-    "title": "Events",
-    "category": "Daily",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nEVENTS\n\n• TODAY: 72nd Mancelona Buck Pole closes at 6:30 PM\n• THU NOV 19: GTA 6 launch day\n• FRI NOV 20: Light Up Downtown, tree lighting around 6:30\n• SAT NOV 21: Light Parade, 6 to 8 PM",
-    "notes": "MOCK RUN — not for air. Only items still ahead as of Sunday night, plus the Buck Pole close time already used on the Fri Nov 13 sheet.\nCredits: Buck Pole and Light Up / Light Parade from the Nov 13 sheet (UpNorthLive). GTA 6 Thursday Nov 19 from the weekend stash / launch-week notes — no launch-time or platform details confirmed, so none are listed. Friday's now-past items (Red Kettle kickoff, Kingsley game, Festival of Trees, Beerd Run) were left off.",
-    "custom": true
-  },
-  "fb": {
-    "id": "fb",
-    "title": "Facebook Drafts",
-    "category": "Social",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nFB DRAFTS — DO NOT POST. This is a test sheet only.\n\n1️⃣ EARLY SHOW\n🦌🧡 Last day to hang one at the 72nd Mancelona Buck Pole — it closes TONIGHT at 6:30. What's the biggest deer anybody in your family ever brought home? Tell us below or text 231-929-4487 👇\n\n2️⃣ MID SHOW\n🏈 The Lions took care of business in Munich: Detroit 35, New England 10. Best play you saw, or were you already half-asleep for a 9:30 AM kick? Drop it below or text 231-929-4487 👇\n\n3️⃣ LATE SHOW\n🎸 Rock Hall weekend: Oasis, Queen Latifah, Sade, Joy Division/New Order, Iron Maiden, and Rick Rubin. Who was the most overdue? Vote below or text 231-929-4487 👇",
-    "notes": "MOCK RUN — drafts only, and even then nothing gets posted from this test sheet. Official Z93 logo only if a graphic is made: /workspace/z93/logo/z93_official_from_truce.png. No photo assets were attached for this mock.",
-    "custom": true
-  },
-  "clips": {
-    "id": "clips",
-    "title": "Audio Clips",
-    "category": "buzz",
-    "type": "text",
-    "content": "MOCK RUN — test sheet, not for air\n\nAUDIO CLIPS · NONE FOR THIS TEST\n\nNo new clips were cut for this mock show, and Friday's sample clips were not copied over, so this tab has nothing to load. On a real weekday, tap \"Load today's clips\" when an audio file is published.",
-    "notes": "MOCK RUN — not for air. Skipped reuse of 2026-11-13-hot-sheet-audio.json because those clips (Doberman / Speed) belong to Friday's stories and would be misleading on a Monday test sheet. No 2026-11-16-hot-sheet-audio.json was written, so the app should hide \"Load today's clips.\"",
-    "custom": true
-  }
+    "pop": 0
+   },
+   {
+    "day": "Tue",
+    "date": "2026-11-17",
+    "high": 55,
+    "low": 43,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 1
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-18",
+    "high": 58,
+    "low": 47,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 0
+   },
+   {
+    "day": "Thu",
+    "date": "2026-11-19",
+    "high": 59,
+    "low": 43,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 5
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-20",
+    "high": 57,
+    "low": 47,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 0
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-21",
+    "high": 64,
+    "low": 43,
+    "short": "Partly Sunny then Chance Rain Showers",
+    "icon": "rain",
+    "pop": 28
+   }
+  ],
+  "wind": "SW 5-10 mph",
+  "waves": "Bay 2 ft or less (2-3 ft tonight) · Lake MI 2-4 ft this afternoon, 4-6 ft tonight · Small Craft Advisory 10 AM Mon-Wed afternoon",
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 32
+   },
+   {
+    "t": "5 AM",
+    "temp": 33
+   },
+   {
+    "t": "6 AM",
+    "temp": 33
+   },
+   {
+    "t": "7 AM",
+    "temp": 33
+   },
+   {
+    "t": "8 AM",
+    "temp": 33
+   },
+   {
+    "t": "9 AM",
+    "temp": 36
+   },
+   {
+    "t": "10 AM",
+    "temp": 41
+   },
+   {
+    "t": "11 AM",
+    "temp": 45
+   },
+   {
+    "t": "12 PM",
+    "temp": 48
+   },
+   {
+    "t": "1 PM",
+    "temp": 50
+   },
+   {
+    "t": "2 PM",
+    "temp": 50
+   },
+   {
+    "t": "3 PM",
+    "temp": 50
+   },
+   {
+    "t": "4 PM",
+    "temp": 50
+   },
+   {
+    "t": "5 PM",
+    "temp": 47
+   },
+   {
+    "t": "6 PM",
+    "temp": 46
+   },
+   {
+    "t": "7 PM",
+    "temp": 45
+   },
+   {
+    "t": "8 PM",
+    "temp": 42
+   },
+   {
+    "t": "9 PM",
+    "temp": 42
+   },
+   {
+    "t": "10 PM",
+    "temp": 42
+   }
+  ]
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "🎵 SLOW JAM: Sade, \"By Your Side\" (2000)<br>• No. 75 on the Billboard Hot 100 and No. 18 on Adult Contemporary<br>• Why today: Sade went into the Rock & Roll Hall of Fame Saturday night, and it's a soft, sunny Monday<br><br>🚗 DRIVE TEASE: About 33 and sunny for the drive in, sunrise around 7:41, and near 50 by lunch.<br>📅 THIS DAY: 25 years ago today, Harry Potter and the Sorcerer's Stone hit U.S. theaters.<br>💡 FUN FACT: The Lions' win in Munich drew a record crowd of 70,225 at Allianz Arena.<br><br>☀️ 28 and clear right now, then mostly sunny, high near 51, SW wind 5 to 10, dry all week and near 60 by Thursday.<br>🌊 Small Craft Advisory on the bay and Lake Michigan from 10 AM through Wednesday afternoon, with Lake Michigan waves 4 to 6 feet tonight.<br>🏫 No school closings. 🚧 Beitner Road is closed between Williams and River this week.<br>⚡ Kingsley is 12-0 and headed to the semis, and the Lions are 7-2. Monday's got a pulse.",
+  "notes": "Slow jam chart stats: Billboard chart history https://www.billboard.com/artist/sade/chart-history/ (Hot 100 No. 75, AC No. 18). Sade inducted at the Rock Hall ceremony Sat 11/14 (AP; the band didn't attend, per Rolling Stone and Billboard). No lyric flags.<br>Drive tease: NWS hourly KTVC area 33° at 6-8 AM, 48° at noon, 50° 1-4 PM. Sunrise 7:41 per Breaker's weekend stash (Wunderground).<br>This day: History.com, 'First Harry Potter film opens, November 16, 2001' https://www.history.com/this-day-in-history/november-16/first-harry-potter-film-opens<br>Fun fact: Lions.com recap, Nov 15 https://www.detroitlions.com/news/recap-lions-vs-patriots-stbrown-goff-gibbs<br>Wind & waves: NWS Gaylord Nearshore Marine Forecast (NSHAPX) issued 1:51 AM EST Mon. LMZ323 Grand Traverse Bay: SW 15-25 kt easing to 10-15 kt late morning, waves 2 ft or less, 2-3 ft tonight. LMZ344-345 Lake Michigan (Pt Betsie to GT Light): SW 10-20 kt, waves 2-3 ft building to 2-4 ft this afternoon, 4-6 ft tonight. Small Craft Advisory 10 AM Mon to 4 PM Wed. TC land wind SW 5-10 mph (NWS point forecast), with no gusts listed.<br>Schools: UpNorthLive closings page showed none at 3:48 AM ET (Breaker's City Pulse). Roads: GTCRC road work for the week of Nov 16 (posted Fri 11/13), Beitner Rd closed between Williams Rd and River Rd, weather permitting.",
+  "custom": false
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "Vertical Horizon, \"Everything You Want\" (2000)<br>• No. 1 on the Billboard Hot 100 (July 15, 2000)",
+  "notes": "Billboard Hot 100 chart history: https://www.billboard.com/artist/vertical-horizon/chart-history/hot-100/",
+  "custom": false
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>1) CRYSTAL MOUNTAIN COULD SELL OR TAKE ON A PARTNER<br>• Family is exploring a sale OR a partner, and MacInnes says \"we don't have to really sell\"<br>• Benzie County's largest employer, running business as usual<br>• $200 million+ invested since 1989, 70 years old this year<br>• Any buyer needs deep pockets AND matching values<br>➜ TAKE: Crystal is where half of Northern Michigan learned to ski and the other half learned to fall down. Whoever buys it better keep the Buck in Buck Hills.<br>➜ BAIT: Text 231-929-4487: what's your best Crystal Mountain memory?<br><br>2) SANDHILL CRANES ARE PEAKING RIGHT NOW<br>• Migration peaks right about now, mid-November<br>• Hundreds to thousands roost in shallow wetlands and feed in harvested corn fields<br>• That bugling, \"prehistoric\" call is what you're hearing overhead<br>• Mild weather could keep them in Michigan into December<br>➜ TAKE: If you heard a pterodactyl over the Meijer parking lot this weekend, relax. It was a sandhill crane.<br>➜ BAIT: Text 231-929-4487: where have you seen the biggest flock of cranes up here?<br><br>3) FISHPASS IS GETTING A KAYAK SLIDE<br>• New aluminum kayak slide and launch at the Union Street Dam<br>• Paddle from Boardman Lake to Grand Traverse Bay without hauling your boat<br>• Still under construction, opening expected summer 2027<br>➜ TAKE: A water slide for grown-ups in the middle of downtown. I've never wanted summer 2027 more.<br>➜ BAIT: Text 231-929-4487: would you be first in line to ride the kayak slide, or is that a hard no?<br><br>━━ BITS ━━<br><br>50s IN NOVEMBER<br>• It's mid-November and we're near 60 all week. Are you putting the Christmas lights up NOW in the sunshine, or waiting until it's 20 and sleeting like a true Michigander?<br><br>THE THERMOSTAT WAR<br>• It's that time of year. What's the number in your house, 68 or 70, and who keeps sneaking over to change it?<br><br>THE GERMAN FOOTBALL KING<br>• The Lions played in Munich in front of a record crowd. If the Lions played overseas again, would you go? And what city?<br><br>━━ SPORTS ━━<br><br>KINGSLEY IS GOING TO THE SEMIS (12-0)<br>• Kingsley 34, Sanford Meridian 28, Division 6 regional final Friday at Kingsley, in the snow<br>• Down 22-14 at halftime, the Stags scored in the final minute, then a sack with 13 seconds left sealed it<br>• NEXT: Division 6 state semifinal vs. Almont (12-0), Saturday, Nov. 21, at Clare High School (time TBA)<br>• Going for a second straight trip to the state final<br><br>ST. FRANCIS VOLLEYBALL'S RUN ENDS<br>• Calumet beat St. Francis 3-0 (25-19, 25-8, 25-10) in Thursday's Division 3 regional final in Manistique<br>• The Gladiators finish 30-18-2<br><br>BAY REPS HOCKEY IS UNBEATEN<br>• Boys: beat Alpena 3-1 Saturday and Cranbrook 4-2 Thursday, now 2-0<br>• Girls: 3-0 to start, outscoring teams 22-2 over the weekend<br><br>UP NORTH STATE RUNS<br>• Gaylord St. Mary (12-0) beat Portland St. Patrick 39-36 and plays for the 8-player Division 2 title vs. Mendon (12-0), Saturday, Nov. 21, 2 PM at the Superior Dome in Marquette, its first final since 2002<br>• Roscommon volleyball plays Calumet in a Division 3 state quarterfinal Tuesday, 6 PM, in Gaylord<br>• Charlevoix's football season ended at Menominee Saturday<br>• Every other area team on our list is done for the season<br><br>LIONS 35, PATRIOTS 10 (7-2)<br>• Five straight wins, in Munich, in front of a record crowd of 70,225<br>• Amon-Ra St. Brown ran out with a German flag and scored twice, including a 56-yarder<br>• Jahmyr Gibbs: 252 total yards and two TDs<br>• Bad news: Aidan Hutchinson hurt his right knee celebrating a sack, and an AP source says it's season-ending<br><br>MICHIGAN AND MICHIGAN STATE<br>• Michigan lost at No. 18 Oregon, 31-7<br>• Michigan State lost to Washington, 21-14",
+  "notes": "Pulse: Breaker's City Pulse (Mon 3:50 AM) + 9&10 / UpNorthLive / Record-Eagle overnight. Overheard in TC skim found nothing recent and usable (no-sort group), so no Overheard items today.<br>Score log: Crystal Mountain 3/2/3/3/3 = 14 · Sandhill cranes 2/3/2/3/3 = 13 · FishPass kayak slide 2/2/2/3/3 = 12 · (TVC ground stop 10, Friday and stale; Boardman wall repair 12, last week's story, so it moved to Town buzz; Thanksgiving to-go meals 11, no details pulled)<br>No national items today (the Starship catch went to the audio buffer, and AAA is in Lifestyle).<br>1) 9&10 News, Nicholas Simon, 11/13 6:14 PM: https://www.9and10news.com/2026/11/13/crystal-mountain-family-weighs-sale-or-new-partner-with-no-rush-to-decide/<br>2) UpNorthLive / WPBN, Ethan Foreman, 11/15 7:49 PM (photo WSBT): https://upnorthlive.com/news/local/sandhill-cranes-fill-northern-michigan-skies-as-fall-migration-peaks-in-mid-november<br>3) 9&10 News 11/12: https://www.9and10news.com/2026/11/12/new-kayak-access-taking-shape-at-traverse-citys-fishpass-project/ · UpNorthLive: https://upnorthlive.com/news/local/fishpass-teams-work-friday-on-boardman-river-putting-in-new-kayak-launch-grand-traverse-county · Daily TC 11/13: https://dailytraversecity.com/mi/traverse-city/news/2026-11-13/fishpass-kayak-slide<br>Bits: NWS week outlook; Lions.com recap (record crowd 70,225).<br>Sports: Record-Eagle (Kingsley 34-28, comeback from 22-14 down, sack with 13 s left) https://www.record-eagle.com/sports/snow-globe-kingsley-primes-offense-past-meridian-34-28/article_9ea26036-fd7a-4746-94c7-7991d4ea4132.html · 1009 The Mitt (TD in the final minute) · Oakland Press pairings (Almont vs. Kingsley at Clare HS, Sat 11/21; kickoff time not listed): https://www.theoaklandpress.com/2026/11/14/statewide-pairings-for-2026-mhsaa-football-playoffs-11-player-semis-8-player-finals/ · MLive's headline calls it Division 7, but 9&10, Record-Eagle, UpNorthLive and the pairings say Division 6.<br>Volleyball: Daily Press (Escanaba), 11/14 https://www.dailypress.net/sports/local-sports/2026/11/copper-kings-advance-to-state-quarterfinals/ · Bay Reps: Record-Eagle prep roundup 11/15 · Gaylord St. Mary 39-36: UpNorthLive Hometown Highlights; 8-player final per Oakland Press · Charlevoix: Record-Eagle headline says 'falls in U.P. football trip' (score not verified, so don't give one).<br>Lions: Lions.com recap (Twentyman), ESPN final; Hutchinson: AP (source says season-ending, right knee, hurt celebrating a sack of Drake Maye). Next Lions game not checked.<br>UM/MSU: mgoblue.com, msuspartans.com (11/14). Not checked: girls swimming finals and other in-season sports for area state qualifiers.",
+  "custom": false
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH · LAUNCH WEEK, IT'S THURSDAY<br>• CONFIRMED: Grand Theft Auto VI unlocks at midnight local time Thursday, Nov. 19, on PS5 and Xbox Series X|S, and Xbox One players can stream it through Xbox Cloud Gaming<br>• CONFIRMED: Boxed copies are in stores now, but there's just a download code inside the box, no disc<br>• CONFIRMED: Twitch will drop free GTA 6 codes every day from launch through Nov. 30<br>• ESTIMATE: Sensor Tower puts preorders past 12 million<br>• RUMOR: Some players say their box came with no code, or a code already used, and Rockstar hasn't commented<br>➜ TAKE: Thirteen years we waited, and the box has no disc in it. Somewhere a 2013 version of me is crying into a strategy guide.",
+  "notes": "Midnight local unlock: Rockstar support page via TotalGTA weekly roundup (11/15) https://totalgta.com/gta-6-this-week-everything-that-happened-november-11-15/<br>Xbox Cloud Gaming on Nov 19: Xbox Wire 11/10 https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/ · PS5 preload: PlayStation Blog 11/10<br>Code-in-box and Twitch drops: TotalGTA roundup (Rockstar store; TwitchCon 11/13). Sensor Tower 12M+ preorders through 11/13: CNBC 11/14 https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html<br>RUMOR: missing/used codes, Kotaku 11/14 via TotalGTA. Kotaku itself urged caution. A leaked 34-song tracklist (GTA6 Daily) is unverified, so it's left off the air copy.",
+  "custom": true
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "1) THANKSGIVING TRAVEL DIPS FOR THE FIRST TIME IN YEARS<br>• AAA says 81.5 million of us will travel Nov. 24-30, a hair under last year and the end of a three-year record streak<br>• 72.9 million will drive, and domestic round-trip flights average about $800, up 17%<br>• Detroit is AAA's No. 8 Thanksgiving destination, thanks to the Lions game<br>➜ LOCAL ANGLE: Up here, that's the US-131 and I-75 crawl downstate to Grandma's. AAA says the worst traffic is Tuesday and Wednesday before the holiday.<br>➜ BAIT: Text 231-929-4487: are you hosting, or are you the one driving four hours with a pie on your lap?<br><br>2) GAS IS FINALLY FALLING<br>• Michigan's average dropped 38 cents in a week to about $4.12, per GasBuddy late last week<br>• The national average slid under $4 for the first time since early August<br>➜ LOCAL ANGLE: That's real money on a Traverse City-to-Detroit round trip, right before the big holiday drive.<br>➜ BAIT: Text 231-929-4487: what's the cheapest gas you've seen up north this week, and where?",
+  "notes": "AAA Thanksgiving forecast, released Mon 11/16: https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/ (peak road days Tue/Wed before and Sun/Mon after, per AAA's synthesis; Detroit No. 8 domestic)<br>GasBuddy Michigan weekly via The Mining Journal, 11/13: https://www.miningjournal.net/news/local/2026/11/gas-prices-drop-14/ ($4.12, down 38.1 cents; national $3.96). A newer Monday GasBuddy number may post later today, so check it before air.",
+  "custom": true
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "THE GTA 6 SICK DAY<br>• BambooHR says time-off requests for this Thursday, GTA 6 launch day, are nearly 13% higher than the same day the last two years, and nearly 1 in 5 workers plan to take time off for it<br>• Bit: Text 231-929-4487 if your coworker suddenly has a \"dentist appointment\" Thursday. We won't tell the boss.<br><br>TAKE YOUR PARENTS TO PE<br>• Elk Rapids' Cherryland Middle School just held Take Your Parents to PE Day, with moms and dads in the gym running the class alongside their kids<br>• Bit: Middle schoolers, be honest. Would you die of embarrassment if your mom showed up to gym class? Parents, what game are you dominating?",
+  "notes": "Office: BambooHR data via CNBC 11/14 'GTA PTO' section https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html<br>School: 9&10 News, Nicole Service, 11/13 https://www.9and10news.com/2026/11/13/elk-rapids-cherryland-middle-school-hosts-take-your-parents-to-pe-day/ (principal Josh Haggerty: middle schoolers 'push back a little bit' on parents joining)",
+  "custom": true
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "No good one today, so it's left empty.",
+  "custom": false
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "Park the List Before Bed<br><br>We've got a sunny, mild week ahead, which is great, but Thanksgiving is now ten days out, and if your brain is anything like mine, it's already running the grocery list and the guest list at two in the morning. That happens because when we leave things undone, our mind keeps them on a loop so we don't forget them, and the loop doesn't care that you're trying to sleep. So here's your move for today. Tonight, before you turn out the light, grab a piece of paper and write down tomorrow's to-do list, the pie, the phone call, the thing you keep forgetting at the store. Researchers at Baylor University found that people who wrote out tomorrow's to-do list before bed fell asleep faster than people who didn't, because once it's on paper, your brain can finally let go of it. So put the list on the nightstand and let it hold the worry for you until morning. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me the one thing that's at the top of your list.",
+  "notes": "Evidence: Scullin et al., 2018, Journal of Experimental Psychology: General (Baylor University). Writing a specific to-do list before bed was linked to falling asleep faster than writing about completed tasks. This is a sleep-onset finding, not a clinical claim.<br>Move is new this week (week-used reset). It's different from last week's 'Let the Phone Sleep in the Kitchen.' Indoor move, fine for any weather.",
+  "custom": false
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "Daily",
+  "type": "text",
+  "content": "Roxette, \"Joyride\" (1991)<br>• Their fourth and final No. 1 on the Billboard Hot 100 (May 11, 1991)<br>• Why today: AAA's Thanksgiving road-trip forecast came out this morning, and 72.9 million of us are driving",
+  "notes": "Billboard: https://www.billboard.com/pro/roxette-joyride-forever-no-1/ · AAA 11/16 release.",
+  "custom": false
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "CROSS TALK with Courtney Rehmer<br><br>TOPIC: WHAT'S YOUR CHRISTMAS MOVIE?<br>• The Record-Eagle asked Northern Michigan folks for their favorite, and the answers were A Christmas Story, Home Alone, White Christmas, The Polar Express, Christmas Vacation and It's a Wonderful Life<br>• Prompt 1: Which one is YOUR must-watch, and when does it go on, before or after Thanksgiving?<br>• Prompt 2: What's the famous one you've somehow never seen?<br>• Prompt 3: The movie you stop on every single time you flip past it on cable",
+  "notes": "Record-Eagle GT Scene: https://www.record-eagle.com/news/gt_scene/favorite-yuletide-movie-northern-michigan-residents-speak-out-on-which-festive-flick-they-enjoy-most/article_abf6e574-c54d-4931-9c99-5fda16cd3815.html",
+  "custom": false
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "Fridays only",
+  "notes": "",
+  "custom": false
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "KINGSLEY'S LAST-MINUTE WINNER<br>• Radio call of Kingsley's final-minute touchdown in the 34-28 regional final win over Sanford Meridian<br>🔊 IN/OUT: AJ picks the go-ahead TD call from the station's audio highlights (timestamps not checked)<br>~20-30 s · TALK-OVER<br>➜ WHY: A Kingsley kid's state run always gets a mention, and this was the biggest moment in the area all weekend<br><br>THE CRANES ARE CALLING<br>• Michigan Audubon's Chad Machinski on the peak sandhill crane migration (pairs with Buzz #2)<br>🔊 IN: \"Sandhill cranes, they are just a beautiful, large bird\"<br>OUT: \"...that is filling the skies right now.\"<br>~12-15 s · TALK-OVER (or PLAY with crane bugling under it if the video has natural sound)<br>➜ WHY: Listeners are hearing this sound overhead this week, and the clip tells them what it is",
+  "notes": "c05: 100.9 The Mitt audio highlights (John Vicari) https://www.1009themitt.com/post/hsfb-kingsley-34-meridian-28-regional-final-video-audio-highlights. This is ANOTHER station's broadcast, so credit it on air or talk over it, and confirm permission before playing it straight. Backup: UpNorthLive Hometown Highlights video https://upnorthlive.com/sports/hometown-highlights/kingsley-wins-snowy-battle-of-the-unbeatens-over-sanford-meridian-for-regional-title<br>c06: UpNorthLive / WPBN, Ethan Foreman, 11/15. The quote is in the article text, so confirm it's on the story video before cutting.<br>Only 2 news-audio picks today. No clean third, because the Lions/Hutchinson postgame audio is an injury story (not feel-good) and the AAA forecast has no audio.",
+  "custom": true,
+  "clips": [
+   {
+    "id": "2026-11-16-c05",
+    "slot": "NEWS AUDIO",
+    "title": "KINGSLEY'S LAST-MINUTE WINNER",
+    "body": "KINGSLEY'S LAST-MINUTE WINNER<br>• Radio call of Kingsley's final-minute touchdown in the 34-28 regional final win over Sanford Meridian<br>🔊 IN/OUT: AJ picks the go-ahead TD call from the station's audio highlights (timestamps not checked)<br>~20-30 s · TALK-OVER<br>➜ WHY: A Kingsley kid's state run always gets a mention, and this was the biggest moment in the area all weekend",
+    "audio": "https://www.1009themitt.com/post/hsfb-kingsley-34-meridian-28-regional-final-video-audio-highlights",
+    "ready": false
+   },
+   {
+    "id": "2026-11-16-c06",
+    "slot": "NEWS AUDIO",
+    "title": "THE CRANES ARE CALLING",
+    "body": "THE CRANES ARE CALLING<br>• Michigan Audubon's Chad Machinski on the peak sandhill crane migration (pairs with Buzz #2)<br>🔊 IN: \"Sandhill cranes, they are just a beautiful, large bird\"<br>OUT: \"...that is filling the skies right now.\"<br>~12-15 s · TALK-OVER (or PLAY with crane bugling under it if the video has natural sound)<br>➜ WHY: Listeners are hearing this sound overhead this week, and the clip tells them what it is",
+    "audio": "https://upnorthlive.com/news/local/sandhill-cranes-fill-northern-michigan-skies-as-fall-migration-peaks-in-mid-november",
+    "ready": false
+   }
+  ]
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "8 of 10 clips today (4 trending, 2 news audio, 2 buffer). The buffer was thin on clips that work without the picture.<br><br>THE GERMAN FOOTBALL KING · SUPER-CLIP 6 AM<br>• FOX's call of Amon-Ra St. Brown's 56-yard TD on the Lions' first drive in Munich<br>🔊 IN: \"Third down and nine for Goff and the offense\" (0:07)<br>OUT: \"...the German Football King, a 56-yard touchdown!\" (0:25)<br>~18 s · PLAY<br>➜ WHY: It's the Lions' big Monday-morning moment, with a record crowd and a call that names the win<br><br>SNL WEEKEND UPDATE: TOMMY BRENNAN'S THANKSGIVING SONG (READY) · FIRST HALF HOUR: LATE-NIGHT<br>• Tommy Brennan sings an \"original Thanksgiving tune\" about the people who make the holiday special<br>🔊 IN: \"Tonight is our last show before we break for Thanksgiving\"<br>OUT: \"...Happy turkey day.\"<br>~47 s · PLAY · READY (cut MP3)<br>➜ WHY: Mom's \"tragic health updates about people you've never met\" and Grandma's questions, and every family in the car knows both<br><br>AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS · FIRST HALF HOUR: STAND-UP<br>• Dry Bar Comedy: cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the pets buffer<br><br>LEANNE MORGAN: THE THERMOSTAT WAR · FIRST HALF HOUR: STAND-UP<br>• She sets the air to 68 in November, her husband turns it back to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY<br>➜ WHY: It's dead-center for women 25-55, and it sets up the thermostat-war bit<br><br>MAMA DOG DROPS OFF HER PUPPIES FOR BABYSITTING · BUFFER: PETS & FAMILY<br>• A stray mom drops four puppies with a family, then comes back at night with four MORE<br>🔊 IN: \"Ma'am, that mama dog really said, I can't handle these kids anymore\" (0:00)<br>OUT: \"...I felt really honored that she trusted us enough with the four.\" (0:47)<br>~47 s · PLAY (music bed under)<br>➜ WHY: Every tired parent relates to dropping the kids off, and it has a happy ending: all eight found homes<br><br>\"BABY, SHE'S BACK!\" SPACEX CATCHES STARSHIP · BUFFER: NEWSY VIRAL<br>• SpaceX's launch tower caught a returning Starship for the first time, and the crowd lost it<br>🔊 IN: \"There's the sonic boom. Starship returning.\" (4:46) → \"Let's go Ship 42\" (4:57)<br>then: \"Mechazilla has caught the Starship...\" (6:43) OUT: \"...Baby, she's back.\" (6:55)<br>~25 s edited · PLAY<br>➜ WHY: A real 'you had to hear it' moment, a sonic boom plus a screaming crowd, and it works without the picture",
+  "notes": "c01: NFL official YouTube, 'German Football King Amon-Ra St. Brown scores the first TD in Munich!' (1:08, 161K views at scan) https://www.youtube.com/watch?v=fpWGgoCOYwg. Start at 0:07, because the first 6 s are about Hutchinson's injury ('nightmare scenario'). FOX broadcast audio, play-by-play by Joe.<br>c02: SNL official: 'Weekend Update: Tommy Brennan Performs an Original Thanksgiving Song - SNL' (Sat 11/14, 3:35) https://www.youtube.com/watch?v=H7Q_wnltz0w. Cut file /workspace/morning-rush/clips/2026-11-16/weekend-update-2026-11-14.mp3 (47.5 s), verified by transcript. Line flag (mild): Grandma asks 'if I'll have kids before she dies'. It's clean but a little dark, so AJ's call.<br>c03: Dry Bar Comedy official, 'People Don't Respect My Fear of Cats | Ahmed Bharoocha' (uploaded ~11/14, 9:25) https://www.youtube.com/watch?v=z02Yg9fAqCM. Clean in the transcript.<br>c04: Dry Bar Comedy official, 'Nobody Warned Me About What Happens After 40 | Leanne Morgan' (~11/9, 8:42) https://www.youtube.com/watch?v=Tp0TmcFbSzo. Clean within IN/OUT (it mentions perimenopause and night sweats, which is fine for the demo). DO NOT run past 1:48, because the next beagle bit (~2:18 and 3:48) has a crude anatomical line.<br>c07: The Dodo official, 'Stray Mama Dog Keeps Dropping Off Her Puppies For Babysitting' (~11/14, 3:16, 100K views) https://www.youtube.com/watch?v=5bwH4iclH4c. Use the first story only (0:00-1:31). The second segment is a different rescue.<br>c08: SpaceX official, 'SpaceX Catches Starship for the First Time Ending Flight Test 15' (Sat 11/14) https://www.youtube.com/watch?v=VEvzBhRyB94. Two-piece edit. The 5:16-6:40 cheering stretch had garbled auto-captions, so listen through for stray words before airing.<br>Scan: SNL, Fallon, Kimmel (weekend monologues are political, so skipped), Dry Bar, Netflix Is A Joke (nothing fresh), The Dodo, ViralHog, NFL YouTube. YouTube Trending, TikTok Creative Center, Google Trends, Pop Crave/X, House of Highlights, Storyful, Bored Panda, KYM, Reddit and GoodNewsNetwork were NOT checked this run (the run was kept lean). Comedy Central Stand-Up channel lookup failed (404).",
+  "custom": true,
+  "clips": [
+   {
+    "id": "2026-11-16-c01",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "THE GERMAN FOOTBALL KING",
+    "body": "THE GERMAN FOOTBALL KING · SUPER-CLIP 6 AM<br>• FOX's call of Amon-Ra St. Brown's 56-yard TD on the Lions' first drive in Munich<br>🔊 IN: \"Third down and nine for Goff and the offense\" (0:07)<br>OUT: \"...the German Football King, a 56-yard touchdown!\" (0:25)<br>~18 s · PLAY<br>➜ WHY: It's the Lions' big Monday-morning moment, with a record crowd and a call that names the win",
+    "audio": "https://www.youtube.com/watch?v=fpWGgoCOYwg",
+    "ready": false
+   },
+   {
+    "id": "2026-11-16-c02",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "SNL WEEKEND UPDATE: TOMMY BRENNAN'S THANKSGIVING SONG (READY)",
+    "body": "SNL WEEKEND UPDATE: TOMMY BRENNAN'S THANKSGIVING SONG (READY) · FIRST HALF HOUR: LATE-NIGHT<br>• Tommy Brennan sings an \"original Thanksgiving tune\" about the people who make the holiday special<br>🔊 IN: \"Tonight is our last show before we break for Thanksgiving\"<br>OUT: \"...Happy turkey day.\"<br>~47 s · PLAY · READY (cut MP3)<br>➜ WHY: Mom's \"tragic health updates about people you've never met\" and Grandma's questions, and every family in the car knows both",
+    "audio": "/workspace/morning-rush/clips/2026-11-16/weekend-update-2026-11-14.mp3",
+    "ready": true
+   },
+   {
+    "id": "2026-11-16-c03",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS",
+    "body": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS · FIRST HALF HOUR: STAND-UP<br>• Dry Bar Comedy: cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the pets buffer",
+    "audio": "https://www.youtube.com/watch?v=z02Yg9fAqCM",
+    "ready": false
+   },
+   {
+    "id": "2026-11-16-c04",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "LEANNE MORGAN: THE THERMOSTAT WAR",
+    "body": "LEANNE MORGAN: THE THERMOSTAT WAR · FIRST HALF HOUR: STAND-UP<br>• She sets the air to 68 in November, her husband turns it back to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY<br>➜ WHY: It's dead-center for women 25-55, and it sets up the thermostat-war bit",
+    "audio": "https://www.youtube.com/watch?v=Tp0TmcFbSzo",
+    "ready": false
+   },
+   {
+    "id": "2026-11-16-c07",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "MAMA DOG DROPS OFF HER PUPPIES FOR BABYSITTING",
+    "body": "MAMA DOG DROPS OFF HER PUPPIES FOR BABYSITTING · BUFFER: PETS & FAMILY<br>• A stray mom drops four puppies with a family, then comes back at night with four MORE<br>🔊 IN: \"Ma'am, that mama dog really said, I can't handle these kids anymore\" (0:00)<br>OUT: \"...I felt really honored that she trusted us enough with the four.\" (0:47)<br>~47 s · PLAY (music bed under)<br>➜ WHY: Every tired parent relates to dropping the kids off, and it has a happy ending: all eight found homes",
+    "audio": "https://www.youtube.com/watch?v=5bwH4iclH4c",
+    "ready": false
+   },
+   {
+    "id": "2026-11-16-c08",
+    "slot": "BUFFER: NEWSY VIRAL",
+    "title": "\"BABY, SHE'S BACK!\" SPACEX CATCHES STARSHIP",
+    "body": "\"BABY, SHE'S BACK!\" SPACEX CATCHES STARSHIP · BUFFER: NEWSY VIRAL<br>• SpaceX's launch tower caught a returning Starship for the first time, and the crowd lost it<br>🔊 IN: \"There's the sonic boom. Starship returning.\" (4:46) → \"Let's go Ship 42\" (4:57)<br>then: \"Mechazilla has caught the Starship...\" (6:43) OUT: \"...Baby, she's back.\" (6:55)<br>~25 s edited · PLAY<br>➜ WHY: A real 'you had to hear it' moment, a sonic boom plus a screaming crowd, and it works without the picture",
+    "audio": "https://www.youtube.com/watch?v=VEvzBhRyB94",
+    "ready": false
+   }
+  ]
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "EVENTS<br>• TODAY: Last day of the 72nd Mancelona Buck Pole, hanging until 6:30 PM<br>• THU NOV 19: GTA 6 launch day, at midnight<br>• FRI NOV 20: Light Up Downtown TC, with the tree lighting around 6:30 PM<br>• SAT NOV 21: Light Parade downtown TC, 6-8 PM<br>• SAT NOV 21: Kingsley vs. Almont, D6 state semifinal at Clare High School (time TBA)<br>• SAT NOV 21: Gaylord St. Mary vs. Mendon, 8-player D2 final, 2 PM, Superior Dome<br>• TUE NOV 24 - MON NOV 30: AAA's Thanksgiving travel window",
+  "notes": "Buck Pole: 9&10 News 11/15, UpNorthLive. Light Up/Parade: UpNorthLive (last week) and the downtowntc.com events page. Semis/finals: Oakland Press pairings 11/14.<br>Town buzz (not carded): Boardman River wall emergency repairs could start within weeks, a $252,000 job the city commission still has to confirm next week (Record-Eagle via Daily Traverse City 11/15). That's the third week of river-wall news, so give it a self-aware nod if it's used.",
+  "custom": true
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "FB DRAFTS · AJ posts these himself during the show. These are drafts only.<br><br>1️⃣ EARLY SHOW<br>⛷️ Big news out of Benzie County: the family behind Crystal Mountain says they're weighing a sale or a new partner, but there's no rush and it's business as usual. Crystal turns 70 this year! What's YOUR best Crystal memory? First time on skis, a wipeout, a summer golf trip? Drop it below or text the studio at 231-929-4487. 💙 #Z93 #CrystalMountain #UpNorth<br>📷 MEDIA: the 9&10 News story photo from the article link (credit: 9&10 News)<br><br>2️⃣ MID SHOW<br>🎄✨ Mark the calendar, TC! Light Up Downtown is FRIDAY, Nov. 20, with the tree lighting around 6:30 PM, and the Light Parade rolls SATURDAY, Nov. 21, from 6 to 8 PM. Two nights this year! Which one are you hitting with the family? 👇 #Z93 #TraverseCity #LightUpDowntown<br>📷 MEDIA: the official Light Up Downtown image from the downtowntc.com event page (credit: Downtown TC)<br><br>3️⃣ LATE SHOW<br>⚡🪄 25 YEARS AGO TODAY, Harry Potter and the Sorcerer's Stone hit theaters! So be honest: the all-day Harry Potter movie marathon over Thanksgiving weekend... KEEP IT or KICK IT? 🧙‍♂️ Comment KEEP or KICK! #Z93 #HitsFrom90sToNow<br>📷 MEDIA: a studio snap of AJ with a mug or a scarf (house colors optional), or grab one from his prep service",
+  "notes": "Facts from the sheet: Crystal (9&10 11/13), Light Up/Parade (UpNorthLive; downtowntc.com), Harry Potter (History.com). Don't use an image URL that isn't on the source page itself.",
+  "custom": true
+ }
 }
