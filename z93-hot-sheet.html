@@ -1660,7 +1660,6 @@ $('#ticker').addEventListener('click',e=>{
   const it=(state.tickerItems||[])[+b.dataset.i]; if(it) jumpTo(it.section, it.story);
 });
 function jumpTo(section, story){
-  if(section==='vibe' && state.sheet && isSection(state.sheet.mood)) section='mood';
   if(section && sectionList().some(x=>x.key===section)){ state.tab=section; LS.setItem('hs:tab',section); renderTabs(); renderView(); }
   const el = story ? document.querySelector('#view .headline[data-story="'+story+'"]') : null;
   if(el){ const fold=el.closest('details'); if(fold) fold.open=true; }
@@ -1794,6 +1793,7 @@ function sectionList(){
   const s=state.sheet||{}; const out=[{key:'news', v:{title:'📰 News', category:'Local · National · Gossip', content:'x', virtual:true}}];
   for(const [k,v] of Object.entries(s)){
     if(k==='weather' || k==='newsclips' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v)) continue;
+    if(k==='mood' && isSection(s.vibe)) out.push({key:'vibe', v:s.vibe}); // Vibe Check: own tab, right before Mood Boost
     out.push({key:k, v});
   }
   // a Clips tab even if the base sheet has no "clips" section but audio exists
@@ -1804,7 +1804,7 @@ function sectionList(){
 function renderTabs(){
   const nav=$('#tabs'); nav.innerHTML='';
   const list=sectionList();
-  let saved=LS.getItem('hs:tab'); if(saved==='vibe') saved='mood'; if(state.tab==='vibe') state.tab='mood';
+  let saved=LS.getItem('hs:tab');
   if(!state.tab || !list.find(x=>x.key===state.tab)) state.tab = list.find(x=>x.key===saved) ? saved : list[0].key;
   for(const {key,v} of list){
     const b=document.createElement('button'); b.setAttribute('role','tab');
@@ -2032,16 +2032,9 @@ function renderView(){
   if(v.category){ const c=document.createElement('div'); c.className='catline'; c.textContent=v.category; view.append(c); }
   const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
 
-  const vibeIn = item.key==='mood' && state.sheet && isSection(state.sheet.vibe) ? state.sheet.vibe : null;
-  if(vibeIn) sponsorCardsFor(view, 'vibe', cleanText(vibeIn.content)+'\n'+cleanText(v.content)); else sponsorCardsFor(view, item.key, cleanText(v.content));
+  sponsorCardsFor(view, item.key, cleanText(v.content));
   if(item.key==='clips') renderClips(view, v);
   else {
-    const vb=item.key==='mood' && state.sheet && isSection(state.sheet.vibe) ? state.sheet.vibe : null;
-    if(vb){ const vt=cleanText(vb.content).trim();
-      view.append(mk('div',{className:'subsec'}, '☀ Vibe check'+(vb.category?' · '+vb.category:'')));
-      const vc=mk('div',{className:'content'+(vt?'':' empty')}); if(vt) richLines(vc, vt); else vc.textContent='Nothing in Vibe Check today.'; view.append(vc);
-      if(vb.notes){ const d=document.createElement('details'); d.className='notes'; const sm=document.createElement('summary'); sm.textContent='Vibe check notes & credits'; d.append(sm); const dv=document.createElement('div'); richText(dv, cleanText(vb.notes)); d.append(dv); view.append(d); }
-      view.append(mk('div',{className:'subsec'}, '💛 Mood boost'+(v.category?' · '+v.category:''))); }
     const txt=cleanText(v.content).trim();
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
     if(txt && item.key==='buzz' && /^\s*━+\s*NATIONAL\s*━+\s*$/m.test(txt)) renderBuzzLocal(c, txt);
