@@ -70,7 +70,9 @@ body.drawer-open #drawer{transform:translateX(0)}
 .drow[aria-checked=true] .sw{background:var(--accent2)}.drow[aria-checked=true] .sw::after{transform:translateX(20px)}
 #spBanner{position:sticky;top:0;z-index:12}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;flex:0 0 auto}
+.brand{font-weight:900;letter-spacing:.04em;color:var(--accent);font-size:1.05em;flex:0 0 auto;display:flex;align-items:center;gap:8px;line-height:1}
+.brand .blogo{height:34px;width:auto;display:block}
+.brand .bbr{display:none}
 #top>.row:first-child{flex-wrap:nowrap}
 #daysRow{flex:1;min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:6px}
 #dowLabel{flex:0 0 auto;font-weight:900;font-size:.8em;color:#fff;background:var(--panel2);border:2px solid var(--line);border-radius:10px;padding:4px 8px;white-space:nowrap}
@@ -354,7 +356,13 @@ body.flown #flyBtn{background:var(--accent2)}
   #extras{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
   #extras::-webkit-scrollbar{display:none}
   #extras>*>*{flex:0 0 auto}
-  .brand .bx{display:none}
+  .brand{gap:3px}
+  .brand .blogo{height:22px}
+  .brand .bx{font-size:.46em;letter-spacing:.04em;line-height:1.05}
+  #daysRow,#dayChips{gap:4px}
+  #dowLabel{padding:4px 6px;font-size:.74em}
+  .daychip{padding:4px 6px}
+  .brand .bbr{display:inline}
   .daychip{max-width:9.5em}
   #traffic{display:none}
   #tickerWrap{margin-top:6px}
@@ -375,7 +383,7 @@ body.flown #flyBtn{background:var(--accent2)}
 <header id="top">
   <div id="topFold"><div id="topFoldIn">
   <div class="row">
-    <div class="brand">Z93<span class="bx"> HOT SHEET</span></div>
+    <div class="brand"><img class="blogo" src="z93-logo.png" alt="Z93" width="166" height="72" decoding="async"><span class="bx">HOT<br class="bbr"> SHEET</span></div>
     <div id="daysRow"><span id="dowLabel"></span><div id="dayChips"></div></div>
     <div id="clock">--:--</div>
   </div>
