@@ -196,9 +196,10 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 #radarThumb .off{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:.8em;color:var(--dim);text-align:center}
 #radarThumb.fallback .rin{display:none}#radarThumb.fallback .rfb{display:block}
 #radarThumb.offline .rin,#radarThumb.offline .rfb{visibility:hidden}#radarThumb.offline .off{display:flex}
-@media (min-width:900px){ #wxGrid{grid-template-columns:minmax(0,1fr) 460px;align-items:start} }
+#radarWrap{margin-top:6px}#radarWrap[hidden]{display:none}
+@media (min-width:900px){ #radarWrap{max-width:520px} }
 @media (min-width:521px) and (max-width:899px){ #radarThumb{max-width:620px;margin:0 auto} }
-@media (max-height:500px) and (orientation:landscape){ #wxGrid{grid-template-columns:minmax(0,1fr) 40vw;align-items:start} }
+@media (max-height:500px) and (orientation:landscape){ #radarWrap{max-width:60vw} }
 #week{display:flex;gap:4px;overflow-x:auto;background:var(--panel);border-radius:12px;padding:4px;scrollbar-width:none;margin-top:6px}
 #week[hidden]{display:none}
 #week::-webkit-scrollbar{display:none}
@@ -347,13 +348,14 @@ body.flown #flyBtn{background:var(--accent2)}
   <div id="todayWx"><button id="todayBtn" type="button" aria-expanded="false" aria-controls="week" aria-label="Today's forecast. Tap for the rest of the week"><span class="i" aria-hidden="true"></span><span class="lbl"><b>Today</b> <span class="hl"></span> <span class="sf"></span></span><span class="arr" aria-hidden="true">▸</span></button></div>
   <div id="week" aria-label="Rest of the week" hidden></div>
   <div id="weekSrc" hidden></div>
-  </div>
-  <div id="radarWrap">
+  <div id="radarWrap" hidden>
   <button id="radarBar" type="button" aria-expanded="false" aria-controls="radarFold"><span class="ri" aria-hidden="true">📡</span><span class="rt">Radar</span><span id="radarBarLbl" class="rs">tap to open</span><span class="arr" aria-hidden="true">▾</span></button>
   <div id="radarFold"><div class="rfIn">
   <button id="radarThumb" type="button" aria-label="Open live radar full screen"><div class="rmap"><div class="rin"><img class="rbase" alt=""><img id="radarImg" alt="Live radar, northern Lake Michigan"><img class="rref" alt=""></div><img class="rfb" id="radarFb" alt="NWS Gaylord radar loop (fallback)"></div><span class="lbl" id="radarLbl">RADAR</span><span class="exp">⤢</span><span class="off">Radar offline</span></button>
   </div></div>
   </div>
+  </div>
+
   </div>
   <div id="extras"><div id="countdowns" style="display:contents"></div><div id="studioSlot" style="display:contents"></div></div>
   <div id="tickerWrap" class="none">
@@ -1074,10 +1076,10 @@ async function fetchLiveWeek(){
 }
 let weekOpen = LS.getItem('hs:weekOpen')==='1';
 function applyWeekOpen(){
-  $('#week').hidden=!weekOpen; $('#weekSrc').hidden=!weekOpen;
+  $('#week').hidden=!weekOpen; $('#weekSrc').hidden=!weekOpen; $('#radarWrap').hidden=!weekOpen;
   const b=$('#todayBtn'); b.setAttribute('aria-expanded', String(weekOpen)); b.querySelector('.arr').textContent = weekOpen?'▾':'▸';
 }
-$('#todayBtn').onclick=()=>{ weekOpen=!weekOpen; LS.setItem('hs:weekOpen', weekOpen?'1':'0'); applyWeekOpen(); };
+$('#todayBtn').onclick=()=>{ weekOpen=!weekOpen; LS.setItem('hs:weekOpen', weekOpen?'1':'0'); applyWeekOpen(); if(weekOpen && typeof loadRadar==='function') loadRadar(); };
 function hiLo(el,d){ el.textContent=''; const hi=d.high!=null?d.high+'°':'', lo=d.low!=null?d.low+'°':'';
   if(hi) el.append(hi); if(lo){ const s=document.createElement('span'); s.className='lo'; s.textContent=(hi?' / ':'Low ')+lo; el.append(s); } }
 function renderWeek(){
@@ -1157,7 +1159,7 @@ function useFallback(on){
 }
 let radarSeq=0;
 async function loadRadar(){
-  if(!radarOpen) return;   // collapsed: no radar traffic at all
+  if(!radarOpen || !weekOpen) return;   // radar not visible (its bar or the weather expander is closed): no radar traffic
   const th=$('#radarThumb'), seq=++radarSeq;
   try{ const r=await fetch(RADAR_VALID+'?_='+Math.floor(Date.now()/60000),{cache:'no-store'}); const j=await r.json();
     const v=new Date(j.meta.valid); if(!isNaN(v)) radarValid=v; }catch(e){ /* keep last known */ }
