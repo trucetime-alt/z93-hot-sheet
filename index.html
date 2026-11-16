@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v28-ticker-curate">
+<meta name="hs-build" content="v29-ticker-fresh">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -331,6 +331,9 @@ body.flown #flyBtn{background:var(--accent2)}
           mask-image:linear-gradient(90deg,transparent 0,#000 14px,#000 calc(100% - 14px),transparent 100%)}
 #tickerTrack{display:flex;width:max-content;animation:tick var(--tdur,60s) linear infinite;will-change:transform}
 #ticker.paused #tickerTrack{animation-play-state:paused}
+#tickPause[aria-label="Play ticker"]{background:var(--accent);color:#111;font-weight:900}
+#swBanner{display:none;position:sticky;top:0;z-index:90;width:100%;border:none;border-bottom:3px solid #111;background:var(--accent);color:#111;font-weight:900;font-size:1em;min-height:48px;padding:10px 14px;text-align:center}
+#swBanner.on{display:block}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .tk{flex:0 0 auto;display:flex;align-items:center;gap:8px;min-height:48px;padding:4px 18px 4px 10px;border:none;border-radius:0;
   background:transparent;font-weight:800;font-size:1em;white-space:nowrap;color:var(--text);border-right:2px solid #222}
@@ -714,6 +717,7 @@ body.flown #tabs button{min-height:48px}
 </style>
 </head>
 <body>
+<button id="swBanner" type="button">Update available — tap to reload</button>
 <div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
 <header id="top">
   <div id="readStrip" hidden></div>
@@ -765,7 +769,7 @@ body.flown #tabs button{min-height:48px}
     <div class="dgroup"><div class="dlab">Sheet</div>
       <label class="drow" for="datePick"><span class="ic" aria-hidden="true">📅</span><span class="tx">Date</span><input type="date" id="datePick" list="dateList"><datalist id="dateList"></datalist></label>
       <button class="drow act" id="latestBtn" type="button"><span class="ic" aria-hidden="true">⏭</span><span class="tx">Latest sheet</span></button>
-      <button class="drow act" id="refreshBtn" type="button"><span class="ic" aria-hidden="true">⟳</span><span class="tx">Refresh<small>Newest sheet, days, sponsors</small></span></button>
+      <button class="drow act" id="refreshBtn" type="button"><span class="ic" aria-hidden="true">⟳</span><span class="tx">Refresh<small>Newest sheet, headlines, days, sponsors</small></span></button>
       <button class="drow act" id="fileBtn" type="button"><span class="ic" aria-hidden="true">📂</span><span class="tx">Open file…<small>Load a sheet or -audio JSON</small></span></button>
     </div>
     <div class="dgroup"><div class="dlab">Display</div>
@@ -779,6 +783,7 @@ body.flown #tabs button{min-height:48px}
       <button class="drow act" id="gvEditBtn" type="button"><span class="ic" aria-hidden="true">🎟</span><span class="tx">Giveaways<small>Keywords, listening appointments, winners</small></span></button>
       <button class="drow act" id="syncBtn" type="button"><span class="ic" aria-hidden="true">🔄</span><span class="tx">Sync devices<small id="syncRowNote">Off · this device only</small></span></button>
     </div>
+    <div class="dnote" id="buildNote" style="padding:10px 16px 16px"></div>
   </div>
 </aside>
 <main>
@@ -1834,22 +1839,32 @@ function normTick(t){ return String(t||'').toLowerCase().replace(/[^a-z0-9 ]+/g,
 
 let tickerPaused = LS.getItem('hs:tickPaused')==='1';
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+let tickerSig='';
 function renderTicker(){
   const wrap=$('#tickerWrap'), tk=$('#ticker'), track=$('#tickerTrack');
   const items=buildTicker(state.sheet); state.tickerItems=items;
-  track.innerHTML='';
-  if(!items.length){ wrap.classList.add('none'); return; }
-  wrap.classList.remove('none');
   const still = reduceMotion.matches;
+  const sig=(still?'S':'M')+'|'+items.map(o=>(o.tag||'')+':'+(o.text||'')).join('\n');
+  if(!items.length){ tickerSig=''; track.innerHTML=''; wrap.classList.add('none'); setHdr(); return; }
+  wrap.classList.remove('none');
   tk.classList.toggle('static', still);
   $('#tickPause').style.display = still ? 'none' : '';
+  if(sig===tickerSig && track.childElementCount){ setPaused(tickerPaused); setHdr(); return; }
+  tickerSig=sig;
+  track.innerHTML='';
   const make=(it,dup)=>{ const b=document.createElement('button'); b.className='tk t-'+(it.tag||'NONE');
     if(dup){ b.tabIndex=-1; b.setAttribute('aria-hidden','true'); }
     if(it.tag){ const g=document.createElement('span'); g.className='tag'; g.textContent=it.tag; b.append(g); }
     b.append(it.text+(it.clip?' 🔊':'')); b.dataset.i=items.indexOf(it); return b; };
   items.forEach(it=>track.append(make(it,false)));
   if(!still){ items.forEach(it=>track.append(make(it,true)));
-    requestAnimationFrame(()=>{ const half=track.scrollWidth/2; track.style.setProperty('--tdur', Math.max(20, half/70)+'s'); }); } // ~70 px/s
+    const size=()=>{ const half=track.scrollWidth/2; if(half<20) return;
+      const dur=Math.max(20, half/70)+'s';
+      track.style.setProperty('--tdur', dur);
+      track.style.animationDuration=dur; };
+    requestAnimationFrame(()=>requestAnimationFrame(size));
+    if('ResizeObserver' in window && !track._hsRo){ track._hsRo=new ResizeObserver(()=>size()); track._hsRo.observe(track); }
+  }
   setPaused(tickerPaused);
   setHdr();
 }
@@ -2047,7 +2062,8 @@ let newsBusy=false;
 let tickerCur=null; try{ tickerCur=JSON.parse(LS.getItem('hs:tickerCur')||'null'); }catch(e){}
 let tickerBusy=false;
 async function loadTicker(force){
-  if(!isHttp || tickerBusy) return; if(!force && tickerCur && tickerFresh() && Date.now()-(tickerCur.loadedAt||tickerCur.updatedMs||0)<10*60000) return;
+  if(!isHttp || tickerBusy) return;
+  if(!force && tickerCur && tickerFresh() && Date.now()-(tickerCur.loadedAt||0)<60*1000) return;
   tickerBusy=true; if(state.tab==='news') refreshNewsView();
   try{ const j=await fetchJson('ticker.json'); if(j && (j.local||j.national)){ j.loadedAt=Date.now(); tickerCur=j; try{ LS.setItem('hs:tickerCur', JSON.stringify(j)); }catch(e){} } }
   catch(e){} tickerBusy=false; renderTicker(); if(state.tab==='news') refreshNewsView(); }
@@ -2096,7 +2112,7 @@ addEventListener('keydown',e=>{ if(e.key==='Escape' && $('#newsModal').classList
 setInterval(()=>{ if(!document.hidden) fetchNews(false); }, 20*60000);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden && (!news || Date.now()-news.at>20*60000)) fetchNews(false); });
 renderNewsChip(); fetchNews(false); loadTicker(false);
-setInterval(()=>{ if(!document.hidden) loadTicker(false); }, 15*60000);
+setInterval(()=>{ if(!document.hidden) loadTicker(false); }, 5*60000);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden) loadTicker(false); });
 // Daily Buzz reads local: stories under a ━━ NATIONAL ━━ divider go in a closed fold (nothing dropped)
 function renderBuzzLocal(c, txt){
@@ -2267,8 +2283,9 @@ function showNewsCol(id, smooth){
 }
 function refreshNewsView(){
   if(state.tab!=='news') return; const m=$('#nvMeta');
-  if(newsBusy||gossipBusy){ if(m) m.textContent='Updating…'; return; }
-  const open=document.querySelector('.ncard.open'); if(open) { if(m) m.textContent='Live · updated '+hm(new Date())+' ET'; return; } // don't yank an open story
+  if(tickerBusy||newsBusy||gossipBusy){ if(m) m.textContent='Updating…'; }
+  const open=document.querySelector('.ncard.open'); if(open){ if(m && !tickerBusy) m.textContent=(tickerFresh()?'Curated · updated '+hm(new Date(tickerCur.updatedMs))+' ET · last 24 hours':'Live · updated '+hm(new Date())+' ET'); return; }
+  if(tickerBusy && !tickerFresh()) return; // first paint waits for ticker.json so Local isn't stuck on the sheet
   const y=scrollY; renderView(); window.scrollTo({top:y});
 }
 function goNews(col){ state.tab='news'; LS.setItem('hs:tab','news'); newsCol=col; LS.setItem('hs:newsCol',col); renderTabs(); renderView();
@@ -2405,7 +2422,7 @@ $('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
 $('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
 $('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
 $('#latestBtn').onclick=()=>load(null);
-$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadTicker(true); load(state.mode==='latest'?null:state.date); };
+$('#refreshBtn').onclick=async()=>{ if(typeof hsCheckForUpdate==='function') hsCheckForUpdate(true); await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadTicker(true); load(state.mode==='latest'?null:state.date); };
 
 
 /* ================= pinned top ✕ on every overlay ================= */
@@ -3241,7 +3258,36 @@ function recapFor(e){ const k=e.key;
   }catch(_){}
   return e.body ? (summarize(e.body)||clip180(e.body)) : ''; }
 /* ---------- PWA ---------- */
-if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+function hsCheckForUpdate(fromUser){
+  if(!isHttp || !('serviceWorker' in navigator)) return;
+  navigator.serviceWorker.getRegistration().then(reg=>{
+    if(!reg) return;
+    if(reg.waiting){ try{ reg.waiting.postMessage({type:'SKIP_WAITING'}); }catch(e){} }
+    return reg.update();
+  }).catch(()=>{});
+}
+if(isHttp && 'serviceWorker' in navigator){
+  const build=(document.querySelector('meta[name=hs-build]')||{}).content||'';
+  const bn=$('#buildNote'); if(bn) bn.textContent='Build '+build;
+  const ban=$('#swBanner');
+  if(ban) ban.onclick=()=>{ ban.classList.remove('on'); location.reload(); };
+  if(navigator.serviceWorker.controller){
+    navigator.serviceWorker.addEventListener('controllerchange',()=>{
+      if(window.__hsReloading) return; window.__hsReloading=true; location.reload();
+    });
+  }
+  navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{
+    const kick=w=>{ try{ w.postMessage({type:'SKIP_WAITING'}); }catch(e){} };
+    const offer=()=>{ if(reg.waiting && ban){ ban.classList.add('on'); } };
+    if(reg.waiting){ kick(reg.waiting); setTimeout(offer,1500); }
+    reg.addEventListener('updatefound',()=>{
+      const w=reg.installing; if(!w) return;
+      w.addEventListener('statechange',()=>{ if(w.state==='installed' && navigator.serviceWorker.controller){ kick(w); setTimeout(offer,1500); } });
+    });
+    document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ try{ reg.update(); }catch(e){} } });
+    setInterval(()=>{ if(!document.hidden) try{ reg.update(); }catch(e){} }, 5*60*1000);
+  }).catch(()=>{});
+}
 
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadTicker();
 window.__hs = state; // for debugging
