@@ -7,7 +7,40 @@
    "emoji": "🎮",
    "when": "2026-11-19T00:00",
    "note": "Grand Theft Auto VI, PS5 and Xbox Series X|S, midnight local time",
-   "source": "https://www.rockstargames.com/VI/pre-load-now"
+   "source": "https://www.rockstargames.com/VI/pre-load-now",
+   "newsQuery": "GTA 6",
+   "facts": [
+    {
+     "text": "GTA V has sold nearly 235 million copies.",
+     "source": "Take-Two investor presentation",
+     "date": "2026-11",
+     "url": "https://ir.take2games.com/static-files/c4c4f7f0-6a7c-4159-b97f-089a76580c38"
+    },
+    {
+     "text": "GTA V hit $1 billion in retail sales faster than any entertainment release in history.",
+     "source": "Take-Two investor presentation",
+     "date": "2026-11",
+     "url": "https://ir.take2games.com/static-files/c4c4f7f0-6a7c-4159-b97f-089a76580c38"
+    },
+    {
+     "text": "The Grand Theft Auto series has sold nearly 480 million copies.",
+     "source": "Take-Two investor presentation",
+     "date": "2026-11",
+     "url": "https://ir.take2games.com/static-files/c4c4f7f0-6a7c-4159-b97f-089a76580c38"
+    },
+    {
+     "text": "GTA VI Trailer 1 pulled 90,421,491 YouTube views in 24 hours, a Guinness World Record for a non-music video.",
+     "source": "Guinness World Records",
+     "date": "2023-12-05",
+     "url": "https://www.guinnessworldrecords.com/world-records/758375-most-viewed-youtube-video-in-24-hours-non-music"
+    },
+    {
+     "text": "GTA 6 is the most-preordered game on the PlayStation and Xbox stores: about 12.1 million digital preorders, roughly $1.18 billion (Sensor Tower estimate, not official).",
+     "source": "Polygon, citing Sensor Tower",
+     "date": "2026-11-13",
+     "url": "https://www.polygon.com/gta-6-preorders-1-billion-dollars-ps5-xbox-series-x/"
+    }
+   ]
   }
  ]
 }

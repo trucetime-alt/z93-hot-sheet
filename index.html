@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<meta name="hs-build" content="v24-station-reads">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -592,6 +593,90 @@ body.flown #tabs button{min-height:48px}
 .sclip.playing{background:#2ecc71;border-color:#2ecc71;color:#06210f}
 .nclip{padding:0 12px 10px}
 .nclip .sclipw{margin-left:0}
+#readStrip .rtag{font-size:.7em;font-weight:800;padding:1px 6px;border-radius:9px;background:rgba(124,92,255,.25);color:#d9ccff;margin-left:4px}
+.rsb.st{border-color:#8c6cff;background:#1d1640}
+.rsb.st .rsk{border-left-color:#8c6cff;background:#2c2160;color:#d9ccff}
+#readStrip.warn .rsb.st{border-color:#8c6cff;background:#241a4d;animation:none}
+#readStrip.warn .rsb.st .rsk{background:#8c6cff;color:#0f0a26;border-left-color:#8c6cff}
+#readStrip.warn .rsn .rc.long{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;color:#e6dcff}
+.lnmeta{font-size:1.05em;margin:2px 0 10px;color:var(--dim)}
+.lnmeta b{font-size:1.6em;color:var(--txt,#fff)}
+.lnsd{font-size:.85em}
+.lnnote{font-size:.8em;color:var(--dim);margin:-4px 0 10px;font-style:italic}
+.lnnext{width:100%;min-height:64px;font-size:1.25em;font-weight:900;border-radius:32px;border:2px solid #f5b81a;background:linear-gradient(180deg,#ffd34d,#f5a90a);color:#1a1200;box-shadow:0 4px 14px rgba(0,0,0,.35);margin:0 0 12px;cursor:pointer}
+.lnpick{border:2px solid #2ecc71;background:#0e2a1e;border-radius:var(--r);padding:12px 14px;margin:0 0 14px}
+.lnpick .lng{font-size:.75em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#9ff0c4;margin-bottom:6px}
+.lnpick .lnt{font-size:1.2em;line-height:1.45;font-weight:600}
+.lnc{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--panel);margin:0 0 8px}
+.lnc .lnt{flex:1;line-height:1.45;font-size:1.02em}
+.lnc .lnu{flex:none;min-width:64px;min-height:48px;border-radius:24px;font-weight:900}
+.lnc.used{opacity:.5}
+.lnc.used .lnu{background:#16422e;color:#9ff0c4;border-color:#2ecc71}
+.lnc.cur{border-color:#2ecc71}
+.sth{margin:16px 0 6px;font-size:1em}
+.ed.expired{opacity:.6}
+.sts{font-size:.8em;font-weight:800;color:#ffb020}
+.airbtn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px 0 8px;border-radius:22px;border:2px solid var(--line2,#3a4150);background:var(--panel2,#1b2029);color:var(--dim,#b8c0cc);font-weight:800;font-size:.9em;cursor:pointer;vertical-align:middle}
+.airbtn .ab{width:24px;height:24px;border-radius:7px;border:2px solid currentColor;display:inline-flex;align-items:center;justify-content:center;font-weight:900;font-size:.95em}
+.airbtn.on{border-color:#e74c8b;background:#3a1028;color:#ffd0e4}
+.airbtn.on .ab{background:#e74c8b;border-color:#e74c8b;color:#fff}
+.airbtn.sm{min-height:40px;font-size:.78em;padding:0 10px 0 6px;margin-left:4px}
+.airbtn.sm .ab{width:20px;height:20px}
+.airsec{margin:-2px 0 10px}
+.clc .ctags .airbtn{margin-left:auto}
+.daycard .airbtn{margin-top:8px}
+.opener{border:2px solid #e74c8b;background:#22101a;border-radius:var(--r);padding:10px 12px;margin:0 0 12px}
+.opener .oplab{font-size:.75em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#ffb3d1;margin-bottom:6px}
+.opener .oprow{display:flex;gap:8px;flex-wrap:wrap}
+.opener .opin{flex:1 1 180px;min-height:48px;font-size:1em}
+.opener .opb{min-height:48px}
+.wrapcopy{width:100%;min-height:56px;font-size:1.1em;font-weight:900;border-radius:28px;border:2px solid #e74c8b;background:#e74c8b;color:#fff;margin:0 0 12px;cursor:pointer}
+.wraplist{list-style:none;margin:0;padding:0}
+.wraplist li{display:flex;gap:6px;align-items:stretch;margin:0 0 6px}
+.wrapline{flex:1;min-width:0;display:flex;gap:8px;align-items:center;min-height:52px;padding:6px 12px;border-radius:var(--r-sm);border:1px solid var(--line);background:var(--panel);text-align:left;cursor:pointer;font-size:.95em}
+.wrapline .wt{flex:none;font-weight:900;color:#ffb3d1;font-variant-numeric:tabular-nums;min-width:62px}
+.wrapline .ws{flex:none;font-size:.72em;font-weight:900;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:9px;background:var(--panel2);color:var(--dim)}
+.wrapline .wl{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700}
+@media (max-width:620px){ .wrapline{flex-wrap:wrap;row-gap:2px} .wrapline .wl{flex-basis:100%} .wrapline .wt{min-width:0} }
+.wrapx{flex:none;min-width:48px;min-height:52px;border-radius:var(--r-sm);font-weight:900}
+.airflash{outline:3px solid #e74c8b;outline-offset:2px;transition:outline-color 1.5s}
+.cdnlist{list-style:none;margin:6px 0 10px;padding:0}
+.cdnlist li{margin:0 0 6px}
+.cdnitem{display:flex;flex-direction:column;gap:3px;min-height:56px;padding:10px 12px;border-radius:var(--r-sm);border:1px solid var(--line);background:var(--panel);color:inherit;text-decoration:none}
+.cdnitem .tt{font-weight:800;line-height:1.3}
+.cdnitem .sr{font-size:.8em;color:var(--dim)}
+.cdnitem .sr b{color:var(--accent)}
+.cdnfail{padding:12px;border-radius:var(--r-sm);border:1px dashed #ffb020;color:#ffe2a8}
+#cdNewsMeta{font-size:.8em;color:var(--dim);margin:2px 0 6px}
+.cdrec{border:2px solid #2ecc71;background:#0e2a1e;border-radius:var(--r-sm);padding:10px 12px;margin:4px 0 10px}
+.cdrec .cdrh{font-weight:900;color:#9ff0c4;margin-bottom:4px}
+.cdrec .cdrh small{font-weight:700;color:var(--dim)}
+.cdrec ul{margin:0;padding-left:18px}
+.cdrec li{margin:6px 0;line-height:1.35}
+.cdrec .ft{font-weight:700;display:block}
+.cdrec .fs{font-size:.78em;color:var(--dim)}
+.cdrec .fs a{color:#9ff0c4}
+.cdnitem.hot{border-color:#ffb020;background:#2a2008;box-shadow:inset 4px 0 0 #ffb020}
+.cdnitem.hot .tt::before{content:'📈 ';}
+.cdrec li .airbtn{float:right;margin:0 0 4px 8px}
+.cdnrow{display:flex;flex-direction:column;gap:4px;align-items:stretch}
+.cdnrow .cdnitem{min-width:0}
+.cdnrow>.airbtn{order:2;align-self:flex-end;margin:0 0 4px}
+.rxbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
+.rxbtn{min-height:48px;padding:0 18px;border-radius:24px;border:2px solid #7c5cff;background:linear-gradient(180deg,#9b82ff,#6a4cf0);color:#fff;font-weight:900;font-size:1em;cursor:pointer}
+.rxback{min-height:48px;padding:0 14px;border-radius:24px;font-weight:800}
+.rxinfo{font-size:.8em;color:var(--dim);font-weight:700}
+.wrapline .wr{flex-basis:100%;font-size:.86em;font-weight:500;color:var(--dim);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}
+.wrapline{flex-wrap:wrap}
+#toast{width:max-content;min-width:min(320px,94vw)}
+#toastText{flex:1;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#toastUndo{flex:none}
+
+.fbban,.fbcard{border:2px solid #f59e0b;background:linear-gradient(135deg,#3a2306,#1b1206);border-radius:16px;padding:12px 14px;margin:0 0 12px}
+.fbk{font-size:12px;font-weight:800;letter-spacing:.08em;color:#fbbf24;text-transform:uppercase}
+.fbh{font-size:19px;font-weight:800;color:#fff;margin:4px 0 8px;line-height:1.25}.fbh.big{font-size:24px}
+.fbrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.fbgo{margin-left:auto;background:#f59e0b;color:#1b1206;border:0;border-radius:999px;padding:8px 14px;font-weight:800;font-size:15px}
+.fbreq{font-size:16px;color:#fde68a;margin:2px 0 8px}.fbrec{margin:4px 0 8px;padding-left:4px;list-style:none;font-size:17px;line-height:1.45}.fbo{font-size:17px;line-height:1.5;margin:6px 0}.fbblob{margin:4px 0 12px;font-size:16px}.fbblob summary{color:#9ca3af;cursor:pointer;padding:6px 0}.fbblob .content{white-space:pre-wrap}
 </style>
 </head>
 <body>
@@ -656,6 +741,7 @@ body.flown #tabs button{min-height:48px}
     <div class="dgroup"><div class="dlab">Station</div>
       <button class="drow act" id="spEditBtn" type="button"><span class="ic" aria-hidden="true">⚙</span><span class="tx">Sponsors<small>Reads, triggers, deadline</small></span></button>
       <button class="drow act" id="cdEditBtn" type="button"><span class="ic" aria-hidden="true">⏱</span><span class="tx">Countdowns<small>GTA 6 and more</small></span></button>
+      <button class="drow act" id="stEditBtn" type="button"><span class="ic" aria-hidden="true">📻</span><span class="tx">Station reads<small>Once-per-shift reads, liners, kill dates</small></span></button>
       <button class="drow act" id="syncBtn" type="button"><span class="ic" aria-hidden="true">🔄</span><span class="tx">Sync devices<small id="syncRowNote">Off · this device only</small></span></button>
     </div>
   </div>
@@ -665,6 +751,8 @@ body.flown #tabs button{min-height:48px}
   <section id="view" class="sec"></section>
 </main>
 <div id="readModal" class="modal" role="dialog" aria-label="Sponsor read"><div class="box"><h3 id="readTitle"></h3><div class="readcopy" id="readCopy"></div><div id="readTick"></div><button id="readClose" class="botclose" hidden>Close</button></div></div>
+<div id="cdNewsModal" class="modal" role="dialog" aria-label="Countdown news"><div class="box"><h3 id="cdNewsTitle">News</h3><div id="cdFacts"></div><div class="nmeta" id="cdNewsMeta"></div><ol class="cdnlist" id="cdNewsList"></ol><div class="rowb"><button type="button" id="cdNewsRefresh">↻ Refresh</button><button type="button" id="cdNewsEdit">✎ Edit countdowns</button></div></div></div>
+<div id="stModal" class="modal" role="dialog" aria-label="Station reads editor"><div class="box"><h3>Station reads</h3><div id="stEditor"></div></div></div>
 <div id="spModal" class="modal" role="dialog" aria-label="Sponsors editor"><div class="box"><h3>Sponsors</h3><div id="spEditor"></div></div></div>
 <div id="cdModal" class="modal" role="dialog" aria-label="Countdowns editor"><div class="box"><h3>Countdowns</h3><div id="cdEditor"></div></div></div>
 <div id="newsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="newsTitle"><div class="box"><div class="nhead"><h3 id="newsTitle">📰 National headlines</h3></div><div class="nmeta" id="newsMeta"></div><ol id="newsList"></ol><div class="rowb"><button id="newsRefresh" type="button">⟳ Refresh</button><button id="newsDone" type="button" hidden>Close</button></div></div></div>
@@ -755,6 +843,15 @@ function richLines(el, text){
       let j=i+1; const blk=[ln]; while(j<arr.length && arr[j].trim() && !isStoryHead(arr[j], arr[j-1]) && !/^\s*\d+\)\s/.test(arr[j])){ blk.push(arr[j]); j++; }
       const m=storyClipFor(blk); if(m) el.append(' ', inlineClipBtn(m));
     }
+    if(!sub && typeof airBtn==='function' && window.__airSec && (h || isStoryHead(ln, arr[i-1]))){ const t=ln.replace(/^\s*\d+\)\s*/,'').trim();
+      let j=i+1; const body=[]; while(j<arr.length && arr[j].trim() && !isStoryHead(arr[j], arr[j-1]) && !/^\s*\d+\)\s/.test(arr[j])){ body.push(arr[j]); j++; }
+      const it=storyItem(window.__airSec, t, window.__airN++); if(it) (window.__airUsed||(window.__airUsed=new Set())).add(it.id);
+      if(normT(t)!==window.__airTitleN) el.append(' ', airBtn(it?'it:'+it.id:'h:'+window.__airSec+':'+fnv(t), tcase(t), window.__airSec, true, body.join('\n'))); }
+    else if(!sub && !h && window.__airSec && typeof sheetItems==='function'){ const its=sheetItems(window.__airSec);
+      if(its.length){ const nl=normT(ln.replace(/^[^A-Za-z0-9]+/,'')); const used=window.__airUsed||(window.__airUsed=new Set());
+        const it=nl && its.find(x=>!used.has(x.id) && normT(x.title).length>=4 && (nl===normT(x.title) || nl.startsWith(normT(x.title)+' ') || (normT(x.title).startsWith(nl) && nl.length>=12)));
+        if(it){ used.add(it.id); let j=i+1; const body=[ln.replace(/^[^A-Za-z0-9]+/,'')]; while(j<arr.length && /^\s*[•\-]/.test(arr[j])){ body.push(arr[j]); j++; }
+          el.append(' ', airBtn('it:'+it.id, tcase(String(it.title).trim()), window.__airSec, true, body.join('\n'))); } } }
     if(i<arr.length-1) el.append('\n');
   });
 }
@@ -935,7 +1032,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -981,12 +1078,13 @@ function logSp(what, note){ spLog.unshift({at:new Date().toISOString(), what, no
 function readKey(){ return etParts().date; }
 function readAt(id){ const r=reads[readKey()]; return r && r[id]; }
 function isRead(id){ return !!readAt(id); }
-function spById(id){ return allSponsors().find(s=>s.id===id); }
+function spById(id){ return allSponsors().find(s=>s.id===id) || (typeof stAsSp==='function' ? stAsSp(id) : null); }
 function setRead(id, on, quiet){
   const k=readKey(); const sp=spById(id)||{name:id};
   reads[k]=reads[k]||{};
   if(on){ reads[k][id]=new Date().toISOString(); logSp('✅ Read done: '+sp.name+' ('+fmtTime(reads[k][id])+')'); }
   else { delete reads[k][id]; logSp('↩️ Read un-ticked: '+sp.name); }
+  if(typeof airSet==='function') airSet('rd:'+id, on, (sp.station?'Station read: ':'Sponsor read: ')+(sp.name||id), 'reads', true, sp.station?readable(sp.read):sp.read);
   const keep=Object.keys(reads).sort().slice(-14); reads=Object.fromEntries(keep.map(x=>[x,reads[x]]));
   lsSet('hs:reads', reads);
   if(on && !quiet) toast((sp.short||sp.name)+' read ✓ '+fmtTime(reads[k][id]), ()=>setRead(id,false,true));
@@ -1043,18 +1141,20 @@ function renderStudio(){ const slot=$('#studioSlot'); slot.innerHTML=''; const l
   slot.append(h('button',{className:'studiochip', type:'button', title:due.length?'Studio line · tap for the sponsor read':'Studio line', on:{click:()=>{ if(due[0]) openRead(due[0].id); }}},
     h('span',{className:'ph'}, '📞 '+line), ...due.map(s=>h('span',{className:'sp'}, s.icon?h('span',{'aria-hidden':'true'},s.icon):null, h('span',{}, s.read))),
     ...(!due.length && all.length ? [h('span',{className:'done'}, '✓ '+all.map(s=>s.short||s.name).join(', ')+' read')] : []))); }
-function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const ph=readPhase();
-  const list=(ph==='early'||ph==='warn') ? activeSponsors().filter(sp=>!isRead(sp.id)) : [];
+function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp=readPhase();
+  const stl=(rp!=='off' && typeof liveStationReads==='function') ? liveStationReads().filter(r=>!isRead(r.id)).map(r=>stAsSp(r.id)) : [];
+  const ph=(rp==='due' && stl.length) ? 'warn' : rp;   // station reads stop at the "bigger" stage; only sponsors get the 9:00 banner
+  const list=[...((rp==='early'||rp==='warn') ? activeSponsors().filter(sp=>!isRead(sp.id)) : []), ...stl];
   const was=box.hidden; const sig=ph+'|'+list.map(x=>x.id).join(',');
   if(box.dataset.sig===sig && !box.hidden===!!list.length) return;
   box.dataset.sig=sig; box.innerHTML=''; box.className=ph;
   if(!list.length){ box.hidden=true; if(!was) setHdr(); return; }
   const s=spSettings();
-  box.append(h('span',{className:'rsl'}, ph==='warn' ? '⏰ Ad reads due by '+fmt12(s.deadline||'09:00') : 'Ad reads today'));
+  box.append(h('span',{className:'rsl'}, rp==='due' ? '📻 Once-per-shift reads still open' : ph==='warn' ? '⏰ Ad reads due by '+fmt12(s.deadline||'09:00') : 'Ad reads today'));
   for(const sp of list){
-    box.append(h('div',{className:'rsb'},
+    box.append(h('div',{className:'rsb'+(sp.station?' st':'')},
       h('button',{className:'rsn', type:'button', title:'Open the read', on:{click:()=>openRead(sp.id)}},
-        h('span',{className:'ri','aria-hidden':'true'}, sp.icon||'⭐'), h('span',{className:'rn'}, sp.short||sp.name), ph==='warn' ? h('span',{className:'rc'}, sp.read) : null),
+        h('span',{className:'ri','aria-hidden':'true'}, sp.icon||'⭐'), h('span',{className:'rn'}, sp.short||sp.name), sp.station ? h('span',{className:'rtag'}, 'once/shift') : null, ph==='warn' ? h('span',{className:'rc'+(sp.station?' long':'')}, sp.station ? readable(sp.read) : sp.read) : null),
       h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓')));
   }
   box.hidden=false; setHdr(); }
@@ -1152,7 +1252,7 @@ function cdText(c){ const today=etParts().date; const d=String(c.when||'').slice
   return null; }
 function renderCountdowns(){ const box=$('#countdowns'); if(!box) return; box.innerHTML='';
   for(const c of allCountdowns()){ const x=cdText(c); if(!x) continue;
-    box.append(h('button',{className:'cdchip '+x.cls, type:'button', title:(c.note||c.name)+(c.when?' · '+c.when.replace('T',' '):''), on:{click:openCdEditor}},
+    box.append(h('button',{className:'cdchip '+x.cls, type:'button', title:(c.note||c.name)+(c.when?' · '+c.when.replace('T',' '):'')+(cdQuery(c)?' · tap for latest news':''), on:{click:()=>cdQuery(c)?openCdNews(c):openCdEditor()}},
       x.t.filter(Boolean).join(' ')+' ', h('span',{className:'n'}, x.n))); } }
 function logCd(what,note){ cdLog.unshift({at:new Date().toISOString(), what, note:note||''}); cdLog=cdLog.slice(0,300); lsSet('hs:cdLog', cdLog); }
 function openCdEditor(){
@@ -1166,6 +1266,9 @@ function openCdEditor(){
           h('input',{type:'time', value:(t||'').slice(0,5), on:{input:e=>{ const dd=String(c.when||'').split('T')[0]; c.when=dd+(e.target.value?'T'+e.target.value:''); }}})),
         h('label',{},'Emoji (optional)'), h('input',{type:'text', value:c.emoji||'', style:'max-width:120px', on:{input:e=>c.emoji=e.target.value}}),
         h('label',{},'Note (optional)'), h('input',{type:'text', value:c.note||'', on:{input:e=>c.note=e.target.value}}),
+        h('label',{},'News query (optional): tapping the chip shows the latest headlines for it'), h('input',{type:'text', value:cdQuery(c), placeholder:'e.g. GTA 6', on:{input:e=>c.newsQuery=e.target.value.trim()}}),
+        h('label',{},'📈 Records / facts for the news panel: one per line as  fact | source | date (YYYY-MM-DD) | link'),
+        h('textarea',{rows:5, value:(c.facts||[]).map(f=>[f.text,f.source||'',f.date||'',f.url||''].join(' | ')).join('\n'), on:{input:e=>{ c.facts=e.target.value.split('\n').map(l=>l.split('|').map(x=>x.trim())).filter(a=>a[0]).map(([text,source,date,url])=>({text, source:source||'', date:date||'', url:/^https?:/.test(url||'')?url:''})); }}}),
         h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Remove '+(c.name||'this countdown')+'?')){ work.splice(i,1); draw(); } }}}, '🗑 Remove'))));
     });
     const note=h('input',{type:'text', placeholder:'Optional note for the change log'});
@@ -1190,7 +1293,7 @@ function openCdEditor(){
 $('#cdEditBtn').onclick=openCdEditor;
 $('#cdModal').addEventListener('click',e=>{ if(e.target.id==='cdModal') $('#cdModal').classList.remove('on'); });
 $('#readModal').addEventListener('click',e=>{ if(e.target.id==='readModal') $('#readModal').classList.remove('on'); });
-addEventListener('keydown',e=>{ if(e.key==='Escape') ['#readModal','#spModal','#cdModal','#scoresModal','#syncModal'].forEach(m=>$(m).classList.remove('on')); });
+addEventListener('keydown',e=>{ if(e.key==='Escape') ['#readModal','#spModal','#cdModal','#scoresModal','#syncModal','#stModal','#cdNewsModal'].forEach(m=>$(m).classList.remove('on')); });
 
 /* ---------- fly-away top ---------- */
 let flown = LS.getItem('hs:flown')==='1';
@@ -1265,6 +1368,7 @@ function openDay(date, idx){
     if(x.what){ add('lab','div','What it is'); add('','p',x.what); }
     if(x.why){ add('lab','div','Background'); add('','p',x.why); }
     if(x.angle){ add('lab','div','On-air angle'); add('angle','p',x.angle); }
+    if(typeof airBtn==='function') c.append(airBtn('d:'+fnv(x.name), (x.icon?x.icon+' ':'')+x.name, 'days', false, x.angle||x.what||''));
     const links=[[x.source,'Wikipedia'],[x.un_list,'UN observances list'],[x.opm,'OPM federal holidays']].filter(l=>l[0]);
     if(links.length){ const src=document.createElement('div'); src.className='src'; src.append('Source: ');
       links.forEach(([u,t],j)=>{ if(j) src.append(' · '); const a=document.createElement('a'); a.href=u; a.target='_blank'; a.rel='noopener'; a.textContent=t; src.append(a); }); c.append(src); }
@@ -1338,22 +1442,41 @@ const NWS_ALERTS='https://api.weather.gov/alerts/active?point=44.7417,-85.5824';
 const NWS_HOURLY='https://api.weather.gov/gridpoints/APX/30,46/forecast/hourly';
 let liveWx={obs:null, alerts:null, at:0, alertsAt:0};
 try{ const s=JSON.parse(LS.getItem('hs:liveWx')||'null'); if(s) liveWx=s; }catch(e){}
-async function nwsJson(u){ const r=await fetch(u,{headers:{'Accept':'application/geo+json'},cache:'no-cache'}); if(!r.ok) throw new Error('NWS '+r.status); return r.json(); }
+async function nwsJson(u){ const r=await fetch(u,{headers:{'Accept':'application/geo+json'},cache:'no-store'}); if(!r.ok) throw new Error('NWS '+r.status); return r.json(); }
+/* Current temp: NWS /observations/latest lags (at 8:40 it still returned the 7:55 hourly report, rounded to whole °C),
+   so read KTVC's recent observation list (5–20 min reports, 0.1 °C) and use the newest valid one if it is ≤40 min old;
+   otherwise Open-Meteo "current" (15-min, CORS-open); otherwise an older KTVC report (≤3 h); otherwise the sheet. */
+const NWS_OBS_LIST='https://api.weather.gov/stations/KTVC/observations?limit=8';
+const OM_CURRENT='https://api.open-meteo.com/v1/forecast?latitude=44.7417&longitude=-85.5824&current=temperature_2m,weather_code,is_day,wind_speed_10m,wind_direction_10m,wind_gusts_10m&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=UTC';
+const WX_DIRS=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
+function wmoText(c){ c=+c; return c===0?'Clear':c===1?'Mostly Clear':c===2?'Partly Cloudy':c===3?'Cloudy':c<=48?'Fog':c<=57?'Drizzle':c<=67?'Rain':c<=77?'Snow':c<=82?'Showers':c<=86?'Snow Showers':'Thunderstorms'; }
+function obsFromNws(p){ const c=p.temperature&&p.temperature.value; if(c==null || !p.timestamp) return null;
+  const day=!/\/night\//.test(p.icon||''); const kmh=v=>v&&v.value!=null?Math.round(v.value*0.621371):null;
+  const deg=p.windDirection&&p.windDirection.value; const ws=kmh(p.windSpeed), wg=kmh(p.windGust); const dir=deg!=null?WX_DIRS[Math.round(deg/22.5)%16]:'';
+  const wind = ws==null ? null : (ws===0 ? 'Calm' : (dir?dir+' ':'')+ws+' mph'+(wg&&wg>ws?', gusts '+wg:''));
+  return {tempF:Math.round(c*9/5+32), cond:p.textDescription||'', icon:iconFor(p.textDescription||'', day), time:p.timestamp, wind, src:'KTVC'}; }
+async function fetchCurrentWx(){
+  const [lst,lat]=await Promise.allSettled([nwsJson(NWS_OBS_LIST), nwsJson(NWS_OBS)]);
+  let cands=[]; if(lst.status==='fulfilled') cands=(lst.value.features||[]).map(f=>obsFromNws(f.properties||{})).filter(Boolean);
+  if(lat.status==='fulfilled'){ const o=obsFromNws(lat.value.properties||{}); if(o) cands.push(o); }
+  cands.sort((a,b)=>new Date(b.time)-new Date(a.time)); const best=cands[0]||null;
+  // fill a blank condition from the newest report that has one
+  if(best && !best.cond){ const w=cands.find(x=>x.cond); if(w){ best.cond=w.cond; best.icon=w.icon; } }
+  const age=o=>o?(Date.now()-new Date(o.time))/60000:1e9;
+  if(best && age(best)<=40) return best;
+  try{ const r=await fetch(OM_CURRENT,{cache:'no-store'}); if(r.ok){ const j=await r.json(), c=j.current||{};
+      if(c.temperature_2m!=null && c.time){ const t=c.time.length===16?c.time+':00Z':c.time; const ws=c.wind_speed_10m!=null?Math.round(c.wind_speed_10m):null, wg=c.wind_gusts_10m!=null?Math.round(c.wind_gusts_10m):null;
+        const om={tempF:Math.round(c.temperature_2m), cond:wmoText(c.weather_code), icon:iconFor(wmoText(c.weather_code), c.is_day!==0), time:new Date(t).toISOString(),
+          wind: ws==null?null:(ws===0?'Calm':(c.wind_direction_10m!=null?WX_DIRS[Math.round(c.wind_direction_10m/22.5)%16]+' ':'')+ws+' mph'+(wg&&wg>ws+2?', gusts '+wg:'')), src:'Open-Meteo'};
+        if(best && best.cond && age(best)<=180) { om.cond=best.cond; om.icon=iconFor(best.cond, c.is_day!==0); }   // keep NWS wording for the sky
+        if(!best || age(om)<age(best)) return om; } } }catch(_){}
+  return best && age(best)<=180 ? best : null; }
 async function fetchLiveWx(){
   if(!navigator.onLine) return;
-  const [o,a,hr]=await Promise.allSettled([nwsJson(NWS_OBS), nwsJson(NWS_ALERTS), nwsJson(NWS_HOURLY)]);
+  const [o,a,hr]=await Promise.allSettled([fetchCurrentWx(), nwsJson(NWS_ALERTS), nwsJson(NWS_HOURLY)]);
   if(hr.status==='fulfilled'){ const per=(hr.value.properties||{}).periods||[];
     if(per.length){ liveWx.hourly=per.slice(0,36).map(x=>({time:x.startTime, temp:x.temperature, wind:(x.windDirection?x.windDirection+' ':'')+(x.windSpeed||'')})); liveWx.hourlyAt=Date.now(); } }
-  if(o.status==='fulfilled'){ const p=o.value.properties||{}; const c=p.temperature&&p.temperature.value;
-    if(c!=null && p.textDescription!==undefined){
-      const day=!/\/night\//.test(p.icon||'');
-      const kmh=v=>v&&v.value!=null?Math.round(v.value*0.621371):null;
-      const deg=p.windDirection&&p.windDirection.value;
-      const ws=kmh(p.windSpeed), wg=kmh(p.windGust);
-      const dir=deg!=null?['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'][Math.round(deg/22.5)%16]:'';
-      const wind = ws==null ? null : (ws===0 ? 'Calm' : (dir?dir+' ':'')+ws+' mph'+(wg&&wg>ws?', gusts '+wg:''));
-      liveWx.obs={tempF:Math.round(c*9/5+32), cond:p.textDescription||'', icon:iconFor(p.textDescription, day), time:p.timestamp, wind};
-      liveWx.at=Date.now(); } }
+  if(o.status==='fulfilled' && o.value){ liveWx.obs=o.value; liveWx.at=Date.now(); }
   if(a.status==='fulfilled'){ const now=new Date();
     liveWx.alerts=(a.value.features||[]).map(f=>f.properties||{})
       .filter(x=>x.status==='Actual' && x.messageType!=='Cancel' && (!x.ends || new Date(x.ends)>now) && (!x.expires || new Date(x.expires)>now))
@@ -1575,7 +1698,7 @@ addEventListener('keydown',e=>{
 });
 // actions close the drawer (editors/file picker open on top); text size + date picker keep it open until used
 ['#latestBtn','#refreshBtn','#fileBtn','#flyRow'].forEach(id=>$(id).addEventListener('click',()=>closeDrawer()));
-['#spEditBtn','#cdEditBtn'].forEach(id=>$(id).addEventListener('click',()=>closeDrawer(false,true)));
+['#spEditBtn','#cdEditBtn','#stEditBtn'].forEach(id=>$(id).addEventListener('click',()=>closeDrawer(false,true)));
 $('#datePick').addEventListener('change',()=>closeDrawer());
 ['#fontUp','#fontDown'].forEach(id=>$(id).addEventListener('click',()=>setTimeout(renderDrawerInfo,0)));
 // swipe left to close (follows the finger)
@@ -1798,7 +1921,7 @@ function renderWeather(){
   $('#traffic').textContent = w.traffic ? '🚗 '+w.traffic : '';
   renderWindWaves(w); renderHourly();
   const lv=$('#wxLive'), sw=state.sheet&&state.sheet.weather;
-  if(w.live.obs){ lv.className='wxlive on'; lv.textContent='live · '+hm(new Date(w.live.obs)); lv.title='NWS KTVC observation at '+hm(new Date(w.live.obs))+' ET · checked '+hm(new Date(liveWx.at))+' · refreshes every 10 min'; }
+  if(w.live.obs){ const src=(liveWx.obs&&liveWx.obs.src)||'KTVC'; lv.className='wxlive on'; lv.textContent='as of '+hm(new Date(w.live.obs))+(src==='KTVC'?'':' · '+src); lv.title=(src==='KTVC'?'NWS KTVC (Cherry Capital) observation':'Open-Meteo current conditions')+' at '+hm(new Date(w.live.obs))+' ET · checked '+hm(new Date(liveWx.at))+' · refreshes every 10 min'; }
   else if(sw && sw.updated){ lv.className='wxlive'; lv.textContent='from sheet · '+new Date(sw.updated).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}); lv.title='Live NWS weather unavailable; showing the sheet'; }
   else { lv.className='wxlive'; lv.textContent=''; }
 }
@@ -1807,12 +1930,16 @@ function sectionList(){
   const s=state.sheet||{}; const out=[{key:'news', v:{title:'📰 News', category:'Local · National · Gossip', content:'x', virtual:true}}];
   for(const [k,v] of Object.entries(s)){
     if(k==='weather' || k==='newsclips' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v)) continue;
+    if(k==='offcharts' && etParts().dow!==5) continue;   // Off the Charts: Fridays only (ET)
     if(k==='mood' && isSection(s.vibe)) out.push({key:'vibe', v:s.vibe}); // Vibe Check: own tab, right before Mood Boost
     out.push({key:k, v});
   }
   // a Clips tab even if the base sheet has no "clips" section but audio exists
   if(!out.find(x=>x.key==='clips') && isSection(s.newsclips)) out.push({key:'clips', v:{title:'Audio Clips', category:'', content:' '}});
   if(!out.find(x=>x.key==='clips') && state.clips.length) out.push({key:'clips', v:{title:'Audio Clips', category:'', content:''}});
+  { const hm=etParts().hm, i=out.findIndex(x=>x.key==='flash'); if(i>1 && hm>='08:30' && hm<'09:30') out.splice(1,0,out.splice(i,1)[0]); }   // 9AM Flashback up front around 9
+  if(typeof liveLiners==='function' && liveLiners().length) out.push({key:'liners', v:{title:'Liners', category:'Station', content:'x', virtual:true}});
+  out.push({key:'wrap', v:{title:'🎬 Show Wrap', category:'Recap', content:'x', virtual:true}});
   return out;
 }
 function renderTabs(){
@@ -1981,7 +2108,8 @@ function newsCard(it){
   else if(it.lines && it.lines.length){ const c=h('div',{className:'content'}); richLines(c, it.lines.join('\n')); body.append(c); }
   else body.append(h('div',{className:'nempty'}, 'Bit from today\'s sheet.'));
   let cm=null; try{ if(typeof storyClipFor==='function' && it.title) cm=storyClipFor([it.title, ...(it.lines||[]), it.desc||'', it.link||'']); }catch(e){}
-  if(cm){ card.append(btn, h('div',{className:'nclip'}, inlineClipBtn(cm)), body); card.classList.add('hasclip'); } else card.append(btn, body);
+  const nrow=h('div',{className:'nclip'}, cm?inlineClipBtn(cm):null, (()=>{ const si=storyItemAny(it.title); return airBtn(si?'it:'+si.id:'n:'+fnv(it.title), it.title, si?si.sec:'news', true, (it.lines||[]).join('\n')||it.desc||''); })()); if(cm) card.classList.add('hasclip');
+  card.append(btn, nrow, body);
   return card;
 }
 function renderNewsView(view){
@@ -2037,19 +2165,32 @@ function goNews(col){ state.tab='news'; LS.setItem('hs:tab','news'); newsCol=col
   const v=$('#view'); if(v) window.scrollTo({top:Math.max(0, v.getBoundingClientRect().top+scrollY-(typeof stickyH==='function'?stickyH():0)-8), behavior:'smooth'}); }
 function renderView(){
   const view=$('#view'); view.innerHTML=''; view.classList.toggle('newsmode', state.tab==='news');
-  if(state.tab==='news'){ renderNewsView(view); return; }
+  if(state.tab==='news'){ const fbb=fbBanner(); if(fbb) view.append(fbb); renderNewsView(view); return; }
   if(!state.sheet){
     const p=document.createElement('p'); p.className='hint';
     p.textContent='No sheet loaded. Use Latest, pick a date, or open a JSON file with 📂.'; view.append(p); return;
   }
   const item=sectionList().find(x=>x.key===state.tab); if(!item) return;
-  const v=item.v;
+  window.__airSec=null; window.__airUsed=new Set();
+  if(item.key==='liners'){ renderLiners(view); return; }
+  if(item.key==='wrap'){ renderWrap(view); return; }
+  const fbs=item.key==='flash' ? fbData() : null;   // structured 9AM Flashback fields → card; else the old blob
+  if(item.key!=='flash'){ const fbb=fbBanner(); if(fbb) view.append(fbb); }
+  let v=item.v; const rx=(typeof remixView==='function') ? remixView(item.key, v) : null; if(rx) v=rx;
   if(state.wxMore && matchMedia('(max-width:520px)').matches && !document.body.classList.contains('flown')){ const w=document.createElement('div'); w.className='hint'; w.style.marginBottom='8px'; w.textContent='🌡 '+state.wxMore; view.append(w); }
   if(v.category){ const c=document.createElement('div'); c.className='catline'; c.textContent=v.category; view.append(c); }
   const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
+  if(item.key===openerTab()) view.append(openerCard());
+  if(typeof poolFor==='function' && poolFor(item.key).length) view.append(remixBar(item.key, rx));
+  if(fbs) view.append(fbCard(fbs));
+  if(item.key!=='clips' && !fbs){ const fl=cleanText(v.content).trim().split('\n')[0]||''; const hasPool=typeof poolFor==='function' && poolFor(item.key).length;
+    const its1=sheetItems(item.key); const one=(!rx && its1.length===1 && normT(its1[0].title)===normT(fl)) ? its1[0] : null; if(one) window.__airUsed.add(one.id);
+    view.append(mk('div',{className:'airsec'}, airBtn(one?'it:'+one.id:'sec:'+item.key+(hasPool&&fl?':'+fnv(fl):''), (v.title||item.key)+(hasPool&&fl&&fl.length<80?': '+fl:''), item.key, false, cleanText(v.content).trim().split('\n').slice(fl&&fl.length<80?1:0).join('\n')))); }
+  window.__airSec=item.key==='clips'?null:item.key; window.__airN=0; window.__airTitleN=normT(v.title||''); window.__airHeads=item.key==='clips'?[]:storyHeads(cleanText(v.content));
 
   sponsorCardsFor(view, item.key, cleanText(v.content));
   if(item.key==='clips') renderClips(view, v);
+  else if(fbs){ const blob=cleanText(v.content||'').trim(); if(blob){ const d=mk('details',{className:'fbblob'}, mk('summary',{},'Full sheet text')); d.append(mk('div',{className:'content'}, blob)); view.append(d); } }
   else {
     const txt=cleanText(v.content).trim();
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
@@ -2152,13 +2293,13 @@ $('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
 $('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
 $('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
 $('#latestBtn').onclick=()=>load(null);
-$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); load(state.mode==='latest'?null:state.date); };
+$('#refreshBtn').onclick=async()=>{ await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); load(state.mode==='latest'?null:state.date); };
 
 
 /* ================= pinned top ✕ on every overlay ================= */
 (function(){
   const map=[['#readModal',()=>$('#readModal').classList.remove('on')],['#spModal',()=>$('#spModal').classList.remove('on')],['#cdModal',()=>$('#cdModal').classList.remove('on')],
-    ['#newsModal',()=>closeNews()],['#dayModal',()=>$('#dayModal').classList.remove('on')],['#scoresModal',()=>$('#scoresModal').classList.remove('on')],['#syncModal',()=>$('#syncModal').classList.remove('on')],
+    ['#newsModal',()=>closeNews()],['#dayModal',()=>$('#dayModal').classList.remove('on')],['#scoresModal',()=>$('#scoresModal').classList.remove('on')],['#syncModal',()=>$('#syncModal').classList.remove('on')],['#stModal',()=>$('#stModal').classList.remove('on')],['#cdNewsModal',()=>$('#cdNewsModal').classList.remove('on')],
     ['#radarModal',()=>closeRadar()]];
   for(const [sel,fn] of map){ const m=$(sel); if(!m) continue; const host=m.querySelector('.box')||m;
     const b=h('button',{className:'xclose', type:'button', 'aria-label':'Close'}, '✕'); b.onclick=()=>{ tapHaptic(); fn(); }; host.prepend(b); }
@@ -2268,7 +2409,7 @@ function cst(id){ const d=clipDate(); return (clipState[d]||{})[id]||{}; }
 function setClip(id, patch){ const d=clipDate(); clipState[d]=clipState[d]||{}; const o=Object.assign({}, clipState[d][id]||{}, patch);
   Object.keys(o).forEach(k=>{ if(o[k]==null) delete o[k]; }); if(Object.keys(o).length) clipState[d][id]=o; else delete clipState[d][id];
   const keep=Object.keys(clipState).sort().slice(-5); clipState=Object.fromEntries(keep.map(k=>[k,clipState[k]])); lsSet('hs:clipState', clipState); }
-function markPlayed(id){ if(cst(id).p) return; setClip(id,{p:Date.now()});
+function markPlayed(id){ if(typeof airAuto==='function') airAuto('clip:'+id, (clipPicks('clips').concat(clipPicks('newsclips')).find(x=>x.id===id)||{title:'Clip'}).title.replace(/\(READY\)/i,'').trim().replace(/^.*$/,t=>readable(t)), 'clips', (clipPicks('clips').concat(clipPicks('newsclips')).find(x=>x.id===id)||{}).body); if(cst(id).p) return; setClip(id,{p:Date.now()});
   document.querySelectorAll('.clc[data-id="'+CSS.escape(id)+'"]').forEach(c=>{ c.classList.add('played'); const t=c.querySelector('.ctags'); if(t && !t.querySelector('.cplayed')) t.append(h('span',{className:'cplayed'},'▶ played')); }); }
 document.addEventListener('play', e=>{ const a=e.target; if(!a || a.tagName!=='AUDIO') return;
   let id=a.dataset.clip; if(!id){ const name=decodeURIComponent(String(a.currentSrc||a.src||'').split('?')[0].split('/').pop()||'');
@@ -2282,7 +2423,7 @@ function renderClipTracker(view){
   wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+all.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
   const card=(p, used)=>{ const s=cst(p.id);
     const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id});
-    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null);
+    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body));
     const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
     const url=clipAudioUrl(p.audio);
@@ -2316,6 +2457,11 @@ function syncSnap(){ const m={};
   for(const [id,o] of Object.entries(cdOv.items||{})) m['cd:'+id]=o;
   for(const [d,r] of Object.entries(reads||{})) for(const [id,t] of Object.entries(r||{})) m['rd:'+d+':'+id]=t;
   for(const [d,r] of Object.entries(clipState||{})) for(const [id,o] of Object.entries(r||{})) m['cl:'+d+':'+id]=o;
+  for(const [id,o] of Object.entries(stOv.reads||{})) m['sr:'+id]=o;
+  for(const [id,o] of Object.entries(stOv.liners||{})) m['sl:'+id]=o;
+  for(const [k,v] of Object.entries(stOv.settings||{})) if(v!=null) m['st:'+k]=v;
+  for(const [d,r] of Object.entries(linerUsed||{})) for(const [id,t] of Object.entries(r||{})) m['lu:'+d+':'+id]=t;
+  for(const [d,r] of Object.entries(air||{})) for(const [id,o] of Object.entries(r||{})) m['ai:'+d+':'+id]=o;
   return m; }
 function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=key.indexOf(':'); const kind=key.slice(0,i), rest=key.slice(i+1);
   const two=()=>{ const j=rest.indexOf(':'); return [rest.slice(0,j), rest.slice(j+1)]; };
@@ -2323,7 +2469,12 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='ss'){ spOv.settings=spOv.settings||{}; if(del) delete spOv.settings[rest]; else spOv.settings[rest]=val; }
   else if(kind==='cd'){ cdOv.items=cdOv.items||{}; if(del) delete cdOv.items[rest]; else cdOv.items[rest]=val; }
   else if(kind==='rd'){ const [d,id]=two(); reads[d]=reads[d]||{}; if(del) delete reads[d][id]; else reads[d][id]=val; }
-  else if(kind==='cl'){ const [d,id]=two(); clipState[d]=clipState[d]||{}; if(del) delete clipState[d][id]; else clipState[d][id]=val; } }
+  else if(kind==='cl'){ const [d,id]=two(); clipState[d]=clipState[d]||{}; if(del) delete clipState[d][id]; else clipState[d][id]=val; }
+  else if(kind==='sr'){ stOv.reads=stOv.reads||{}; if(del) delete stOv.reads[rest]; else stOv.reads[rest]=val; }
+  else if(kind==='sl'){ stOv.liners=stOv.liners||{}; if(del) delete stOv.liners[rest]; else stOv.liners[rest]=val; }
+  else if(kind==='st'){ stOv.settings=stOv.settings||{}; if(del) delete stOv.settings[rest]; else stOv.settings[rest]=val; }
+  else if(kind==='lu'){ const [d,id]=two(); linerUsed[d]=linerUsed[d]||{}; if(del) delete linerUsed[d][id]; else linerUsed[d][id]=val; }
+  else if(kind==='ai'){ const [d,id]=two(); air[d]=air[d]||{}; if(del) delete air[d][id]; else air[d][id]=val; } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
   for(const k of new Set([...Object.keys(snap), ...Object.keys(last)])){ const cur=k in snap ? JSON.stringify(snap[k]) : '"~"';
     if(cur!==(last[k]||'"~"')){ st[k]=now; last[k]=cur; } }
@@ -2337,7 +2488,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -2348,12 +2499,12 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); }
+    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
     syncCfg.lastOk=Date.now(); syncCfg.err=''; lsSet('hs:sync', syncCfg);
-    if(pulled){ refreshSponsorUI(true); renderCountdowns(); }
+    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap') rerender(); }
   }catch(e){ syncCfg.err=String(e.message||e); lsSet('hs:sync', syncCfg); }
   syncBusy=false; renderSyncState(); if(syncAgain){ syncAgain=false; syncNow(); } }
 window.__hsSyncSoon=()=>{ if(!syncCfg) return; syncMark(); clearTimeout(syncT); syncT=setTimeout(syncNow, 1500); };
@@ -2401,15 +2552,15 @@ renderSyncState(); setTimeout(syncNow, 2500);
 /* ---------- inline story ▶ (published clips matched to story blocks) ---------- */
 const CLIP_STOP=new Set('this that with from your they them their there have here what when were will just about into over more than then after before right first last today said says been also only like dont cant baby back show week weekend friday saturday sunday monday tuesday wednesday thursday morning night tonight play talk talkover over ready clip audio call calls listen hear heard text going year years time pairs'.split(' '));
 function clipToks(t){ return new Set(String(t||'').toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[’']/g,'').split(/[^a-z0-9]+/).filter(w=>w && !CLIP_STOP.has(w) && (w.length>=4 || /^\d{2,}$/.test(w) || /^(st|ra|nfl|snl|tvc)$/.test(w)))); }
-var storyClipCache={sheet:null, list:[]};
-function storyClips(){ if(storyClipCache.sheet===state.sheet) return storyClipCache.list;
+var storyClipCache={sheet:null, idx:null, date:null, list:[]};
+function storyClips(){ const d=clipDate(); if(storyClipCache.sheet===state.sheet && storyClipCache.idx===sheetIndex && storyClipCache.date===d && storyClipCache.list.length) return storyClipCache.list;
   const list=[]; for(const key of ['newsclips','clips']) for(const p of clipPicks(key)){ const url=clipAudioUrl(p.audio); if(!url) continue;
     const raw=state.sheet[key] && Array.isArray(state.sheet[key].clips) ? (state.sheet[key].clips.find(x=>String(x.id)===p.id)||{}) : {};
     const lines=String(p.body||'').split('\n'); const keep=lines.filter(l=>/^\s*(•|🎙)/.test(l)).join(' ');
     const title=String(p.title||'').replace(/\(READY\)/i,'').trim();
     const urls=(String(raw.source||raw.story||'')+' '+String(p.body||'')).match(/https?:\/\/[^\s<"')]+/g)||[];
     list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:clipToks(title), tk:clipToks(title+' '+keep)}); }
-  storyClipCache={sheet:state.sheet, list}; return list; }
+  storyClipCache={sheet:state.sheet, idx:sheetIndex, date:d, list}; return list; }
 function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
   const head=String(blk[0]).replace(/^\s*\d+\)\s*/,''); const body=blk.filter(l=>!/^\s*➜/.test(l)).join(' ');
   const urls=(body.match(/https?:\/\/[^\s<"')]+/g)||[]).map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,''));
@@ -2433,10 +2584,329 @@ function inlineClipBtn(c){
   a.addEventListener('pause',()=>{ ic.textContent='▶'; b.classList.remove('playing'); });
   a.addEventListener('ended',()=>{ ic.textContent='▶'; b.classList.remove('playing'); });
   const w=h('span',{className:'sclipw'}, b); w.append(a); return w; }
+
+/* ================= station read sheet: once-per-shift reads + liners (station-reads.json + local overlay, synced) ================= */
+var stDefaults=lsGet('hs:stDefaults', {sheetDate:'', reads:[], liners:[]});
+var stOv=lsGet('hs:stLocal', {reads:{}, liners:{}, settings:{}});
+var linerUsed=lsGet('hs:linerUsed', {});
+async function loadStationReads(){
+  if(isHttp){ try{ const j=await fetchJson('station-reads.json'); if(j && Array.isArray(j.reads)){ stDefaults=j; lsSet('hs:stDefaults', j); } }catch(e){} }
+  refreshSponsorUI(); renderTabs(); if(state.tab==='liners') rerender(); }
+function stSheetDate(){ return ((stOv||{}).settings||{}).sheetDate || (stDefaults||{}).sheetDate || ''; }
+function stNote(){ const o=((stOv||{}).settings||{}).note; return o!=null ? o : ((stDefaults||{}).note||''); }
+function allStReads(){ return mergeList((stDefaults||{}).reads, {items:(stOv||{}).reads||{}}); }
+function allLiners(){ return mergeList((stDefaults||{}).liners, {items:(stOv||{}).liners||{}}); }
+// kill: 'YYYY-MM-DD' = shown through the end of that day (ET); TBD / TFN / blank = never expires
+function normKill(k, yearFrom){ const t=String(k||'').trim(); if(!t) return 'TBD'; if(/^(tbd|tfn)$/i.test(t)) return t.toUpperCase();
+  if(/^\d{4}-\d{2}-\d{2}$/.test(t)) return t;
+  const m=t.match(/^(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?$/); if(m){ let y=m[3]?+m[3]:+(String(yearFrom||stSheetDate()||etParts().date).slice(0,4)); if(y<100) y+=2000; return y+'-'+String(m[1]).padStart(2,'0')+'-'+String(m[2]).padStart(2,'0'); }
+  return t; }
+function killLive(k){ const t=normKill(k); return !/^\d{4}-\d{2}-\d{2}$/.test(t) || etParts().date<=t; }
+function killLabel(k){ const t=normKill(k); if(!/^\d{4}-\d{2}-\d{2}$/.test(t)) return t; const [y,m,d]=t.split('-'); return 'kill '+(+m)+'/'+(+d)+(killLive(t)?'':' · expired'); }
+function liveStationReads(){ return allStReads().filter(r=>r.active!==false && killLive(r.kill)); }
+function liveLiners(){ return allLiners().filter(l=>l.active!==false && killLive(l.kill)); }
+function stAsSp(id){ const r=allStReads().find(x=>x.id===id); if(!r) return null;
+  return {id:r.id, name:r.name, short:r.short||r.name, icon:r.icon||'📻', read:r.text||'', station:true}; }
+// readable type for ALL-CAPS station copy: original text kept, shown in sentence case with names restored
+const ST_CAPS=['Z93 Hits dot com','Z93hits.com','@Z93hits','Z93','AJ','TC','KAIR','Kurtz Car Stereo','Teacher of the Month','Kalkaska Festival of Trees','Kalkaska','Festival of Trees','Patriot Farms','Traverse City','Garfield','Highland','Facebook','Morning Rush','Courtney Rehmer','Courtney','Jimmy John\u2019s',"Jimmy John's",'Rihanna','Project Feed the Kids','Cali\u2019s Tea Party',"Cali's Tea Party",'Cali','Weekend Watchlist','This Day, Back in the Day','Random Fact of the Day','Off the Charts','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','November','December','October','90s','AM','PM','I','I\u2019m',"I'm"];
+function readable(t){ t=String(t||''); const L=t.replace(/[^A-Za-z]/g,''); if(!L || L.replace(/[^A-Z]/g,'').length/L.length<0.7) return t;
+  let o=t.toLowerCase().replace(/(^|[.!?]\s+|[—–]\s*|…\s*|\?\s*)([a-z])/g,(a,b,c)=>b+c.toUpperCase());
+  for(const w of [...ST_CAPS].sort((a,b)=>b.length-a.length)){ const re=new RegExp('(^|[^A-Za-z0-9@])('+w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![A-Za-z])','gi'); o=o.replace(re,(a,b)=>b+w); }
+  o=o.replace(/(\d)\s*(am|pm)\b/gi,(a,d,x)=>d+x.toUpperCase());
+  return o; }
+
+/* --- Liners tab --- */
+function lnUsedAt(id){ const r=(linerUsed||{})[etParts().date]; return r && r[id]; }
+function setLiner(id, on){ const d=etParts().date; linerUsed[d]=linerUsed[d]||{};
+  if(on) linerUsed[d][id]=new Date().toISOString(); else delete linerUsed[d][id];
+  { const l=allLiners().find(x=>x.id===id); airSet('ln:'+id, on, l?(l.group+': '+readable(l.text)):'Liner', 'liners', true, l?readable(l.text):''); }
+  const keep=Object.keys(linerUsed).sort().slice(-14); linerUsed=Object.fromEntries(keep.map(k=>[k,linerUsed[k]])); lsSet('hs:linerUsed', linerUsed); }
+var linerPick=null;
+function renderLiners(view){
+  const all=liveLiners(); const left=all.filter(l=>!lnUsedAt(l.id));
+  view.append(h('div',{className:'catline'}, 'Station · continuous, when time permits'), h('h2',{}, '🎙 Liners'));
+  view.append(h('div',{className:'lnmeta'}, h('b',{}, String(left.length)), ' of '+all.length+' left today', stSheetDate()?h('span',{className:'lnsd'}, ' · station sheet '+fmtSheetDate(stSheetDate())):null));
+  if(stNote()) view.append(h('div',{className:'lnnote'}, readable(stNote())));
+  const next=h('button',{className:'lnnext', type:'button', on:{click:()=>{ tapHaptic(); const pool=liveLiners().filter(l=>!lnUsedAt(l.id));
+      if(!pool.length){ toast('All liners used today'); return; }
+      const pk=pool[Math.floor(Math.random()*pool.length)]; linerPick=pk.id; setLiner(pk.id,true);
+      toast('Liner marked used: '+pk.group, ()=>{ setLiner(pk.id,false); linerPick=null; rerender(); }); rerender();
+      setTimeout(()=>{ const c=document.querySelector('#view .lnpick'); if(c) c.scrollIntoView({block:'nearest', behavior:'smooth'}); },30); }}}, '🎲 Next liner');
+  view.append(next);
+  const pk=linerPick && all.find(l=>l.id===linerPick);
+  if(pk) view.append(h('div',{className:'lnpick'}, h('div',{className:'lng'}, pk.group+' · picked '+fmtTime(lnUsedAt(pk.id)||new Date().toISOString())), h('div',{className:'lnt'}, readable(pk.text))));
+  const groups=[]; for(const l of all){ let g=groups.find(x=>x.name===l.group); if(!g){ g={name:l.group, items:[]}; groups.push(g); } g.items.push(l); }
+  for(const g of groups){ const gl=g.items.filter(l=>!lnUsedAt(l.id)).length;
+    view.append(h('div',{className:'subsec'}, g.name+' · '+gl+' of '+g.items.length+' left'));
+    for(const l of g.items){ const u=lnUsedAt(l.id);
+      view.append(h('div',{className:'lnc'+(u?' used':'')+(l.id===linerPick?' cur':'')},
+        h('div',{className:'lnt'}, readable(l.text)),
+        h('button',{className:'lnu', type:'button', 'aria-pressed':String(!!u), title:u?'Used today · tap to undo':'Mark used today', on:{click:()=>{ tapHaptic(); setLiner(l.id,!u); if(u && linerPick===l.id) linerPick=null; rerender(); }}}, u?'✓ '+fmtTime(u):'Use'))); } }
+  if(!all.length) view.append(h('p',{className:'hint'}, 'No live liners. Add some in ☰ Menu → Station reads.')); }
+function fmtSheetDate(d){ const m=String(d).match(/^(\d{4})-(\d{2})-(\d{2})$/); return m? (+m[2])+'/'+(+m[3])+'/'+m[1].slice(2) : d; }
+
+/* --- Station reads editor --- */
+function openStEditor(){
+  let rd=clone(allStReads()), ln=clone(allLiners()); let sd=stSheetDate(), note=stNote(); const box=$('#stEditor');
+  const kIn=(o)=>h('input',{type:'text', value:o.kill||'', placeholder:'12/1, 2026-12-01, TBD or TFN', on:{input:e=>o.kill=e.target.value}});
+  const draw=()=>{ box.innerHTML='';
+    box.append(h('label',{},'Station sheet date'), h('input',{type:'date', value:sd, on:{input:e=>sd=e.target.value}}),
+      h('label',{},'Header note'), h('input',{type:'text', value:note, on:{input:e=>note=e.target.value}}),
+      h('div',{className:'hint'},'Kill date: the read shows through the end of that day (ET), then hides itself. TBD / TFN never expire.'));
+    box.append(h('h4',{className:'sth'},'📻 Minimum once per shift'));
+    for(const r of liveStationReads()) box.append(h('div',{className:'ed'}, h('div',{style:'font-weight:900'}, (r.icon||'📻')+' '+r.name+' · today'), tickButton(stAsSp(r.id), ()=>draw())));
+    rd.forEach((r,i)=>box.append(h('div',{className:'ed'+(killLive(r.kill)?'':' expired')},
+      h('div',{className:'sts'}, killLive(normKill(r.kill))?'':'⌛ Expired, hidden ('+killLabel(r.kill)+')'),
+      h('label',{},'Name'), h('input',{type:'text', value:r.name||'', on:{input:e=>r.name=e.target.value}}),
+      h('label',{},'Short name + icon'), h('div',{className:'row', style:'flex-wrap:nowrap'},
+        h('input',{type:'text', value:r.short||'', on:{input:e=>r.short=e.target.value}}), h('input',{type:'text', value:r.icon||'', style:'max-width:80px', on:{input:e=>r.icon=e.target.value}})),
+      h('label',{},'Kill date'), kIn(r),
+      h('label',{},'Read (original text)'), h('textarea',{value:r.text||'', rows:4, on:{input:e=>r.text=e.target.value}}),
+      h('label',{className:'chk'}, h('input',{type:'checkbox', checked:r.active!==false, on:{change:e=>r.active=e.target.checked}}), 'Active'),
+      h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Delete '+(r.name||'this read')+'?')){ rd.splice(i,1); draw(); } }}}, '🗑 Delete read')))));
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ rd.push({id:'st-'+uid(), name:'New read', short:'', icon:'📻', kill:'TBD', text:'', active:true}); draw(); }}}, '➕ Add read')));
+    box.append(h('h4',{className:'sth'},'🎙 Liners (continuous, when time permits)'));
+    const gnames=[...new Set(ln.map(l=>l.group).filter(Boolean))];
+    ln.forEach((l,i)=>box.append(h('div',{className:'ed'+(killLive(l.kill)?'':' expired')},
+      h('label',{},'Group'), h('input',{type:'text', value:l.group||'', list:'stGroups', on:{input:e=>l.group=e.target.value}}),
+      h('label',{},'Kill date'), kIn(l),
+      h('label',{},'Liner (original text)'), h('textarea',{value:l.text||'', rows:3, on:{input:e=>l.text=e.target.value}}),
+      h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Delete this liner?')){ ln.splice(i,1); draw(); } }}}, '🗑 Delete liner')))));
+    const dl=h('datalist',{id:'stGroups'}); gnames.forEach(g=>dl.append(h('option',{value:g}))); box.append(dl);
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ ln.push({id:'ln-'+uid(), group:gnames[0]||'Website', kill:'TFN', text:''}); draw(); }}}, '➕ Add liner')));
+    const nt=h('input',{type:'text', placeholder:'Optional note for the change log'});
+    box.append(h('label',{},'Note'), nt,
+      h('div',{className:'rowb'},
+        h('button',{type:'button', style:'background:#2ecc71;color:#06210f;border-color:#2ecc71', on:{click:()=>{ saveSt(nt.value); $('#stModal').classList.remove('on'); }}}, '💾 Save'),
+        h('button',{type:'button', on:{click:()=>$('#stModal').classList.remove('on')}}, 'Cancel')),
+      h('div',{className:'rowb'},
+        h('button',{type:'button', on:{click:()=>download('station-reads.json', {version:1, exported:new Date().toISOString(), sheetDate:stSheetDate(), note:stNote(), reads:allStReads(), liners:allLiners()})}}, '⬇ Export'),
+        h('button',{type:'button', on:{click:()=>{ importHandler=(j,name)=>{ if(!Array.isArray(j.reads)) throw new Error('no "reads" list');
+            stOv={reads:diffOverlay(stDefaults.reads, j.reads), liners:diffOverlay(stDefaults.liners, j.liners||[]), settings:{sheetDate:j.sheetDate||null, note:j.note!=null?j.note:null}}; lsSet('hs:stLocal', stOv);
+            logSp('Station reads imported from '+name); refreshSponsorUI(true); openStEditor(); }; $('#importIn').click(); }}}, '⬆ Import'),
+        h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Drop local station-read edits and go back to the published sheet? (Ticks are kept.)')){ stOv={reads:{},liners:{},settings:{}}; lsSet('hs:stLocal',stOv); logSp('Station reads reset to published sheet'); refreshSponsorUI(true); openStEditor(); } }}}, '↺ Defaults')),
+      h('label',{},'Change log'), h('div',{className:'log'}, spLog.length? spLog.map(l=>fmtStamp(l.at)+' · '+l.what+(l.note?' ('+l.note+')':'')).join('\n') : 'No changes yet.')); };
+  const saveSt=(lognote)=>{ const yr=sd||stSheetDate(); rd.forEach(r=>r.kill=normKill(r.kill, yr)); ln.forEach(l=>l.kill=normKill(l.kill, yr));
+    const oR=allStReads(), oL=allLiners(), ch=[];
+    for(const r of rd){ const p=oR.find(x=>x.id===r.id); if(!p){ ch.push('Station read added: '+r.name+' ('+killLabel(r.kill)+')'); continue; }
+      const f=['name','short','icon','kill','text','active'].filter(k=>JSON.stringify(p[k])!==JSON.stringify(r[k]));
+      if(f.length) ch.push('Station read edited: '+r.name+': '+f.map(k=>k==='kill'?'kill '+p.kill+' → '+r.kill:k).join(', ')); }
+    for(const p of oR) if(!rd.some(r=>r.id===p.id)) ch.push('Station read deleted: '+p.name);
+    for(const l of ln){ const p=oL.find(x=>x.id===l.id); if(!p){ ch.push('Liner added ('+l.group+')'); continue; }
+      const f=['group','kill','text','active'].filter(k=>JSON.stringify(p[k])!==JSON.stringify(l[k])); if(f.length) ch.push('Liner edited ('+l.group+'): '+f.join(', ')); }
+    for(const p of oL) if(!ln.some(l=>l.id===p.id)) ch.push('Liner deleted ('+p.group+')');
+    if(sd!==stSheetDate()) ch.push('Station sheet date '+(stSheetDate()||'—')+' → '+(sd||'—'));
+    if(note!==stNote()) ch.push('Station sheet note edited');
+    stOv={reads:diffOverlay(stDefaults.reads, rd), liners:diffOverlay(stDefaults.liners, ln),
+      settings:{sheetDate:(sd && sd!==stDefaults.sheetDate)?sd:null, note:(note!==(stDefaults.note||''))?note:null}};
+    lsSet('hs:stLocal', stOv); (ch.length?ch:['Station reads saved (no changes)']).forEach(c=>logSp(c, lognote));
+    refreshSponsorUI(true); renderTabs(); };
+  draw(); $('#stModal').classList.add('on'); }
+$('#stEditBtn').onclick=openStEditor;
+$('#stModal').addEventListener('click',e=>{ if(e.target.id==='stModal') $('#stModal').classList.remove('on'); });
+
+/* ================= Show Wrap: "✓ Read on air" ticks per show date (synced) ================= */
+var air=lsGet('hs:air', {});
+function airDay(){ return (air||{})[etParts().date]||{}; }
+function airSave(){ const keep=Object.keys(air).sort().slice(-14); air=Object.fromEntries(keep.map(k=>[k,air[k]])); lsSet('hs:air', air); }
+function airSet(key, on, title, sec, quiet, body){ const d=etParts().date; air[d]=air[d]||{};
+  if(on){ if(!air[d][key]){ air[d][key]={t:new Date().toISOString(), title:String(title||'').slice(0,240), sec:sec||''}; const sm=summarize(body); if(sm) air[d][key].body=sm; } }
+  else delete air[d][key];
+  airSave(); document.querySelectorAll('[data-air="'+CSS.escape(key)+'"]').forEach(airPaint);
+  if(state.tab==='wrap' && !quiet) rerender(); }
+function airAuto(key, title, sec, body){ if(!airDay()[key]) airSet(key, true, title, sec, true, body); }
+function airPaint(b){ const e=airDay()[b.dataset.air]; b.classList.toggle('on', !!e); b.setAttribute('aria-pressed', String(!!e));
+  b.querySelector('.ab').textContent=e?'✓':''; b.querySelector('.at').textContent=e?(b.dataset.small?'Aired '+fmtTime(e.t):'Read on air · '+fmtTime(e.t)):(b.dataset.small?'On air':'Read on air'); }
+function airBtn(key, title, sec, small, body){
+  const b=h('button',{className:'airbtn'+(small?' sm':''), type:'button', title:'Mark as read on air (Show Wrap)'}, h('span',{className:'ab','aria-hidden':'true'}), h('span',{className:'at'}));
+  b.dataset.air=key; if(small) b.dataset.small='1'; airPaint(b);
+  b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=!!airDay()[key]; airSet(key, !was, title, sec, true, body);
+    if(!was) toast('On air ✓ '+String(title).slice(0,48), ()=>airSet(key,false,title,sec,true)); };
+  return b; }
+function openerTab(){ const l=sectionList().filter(x=>!['news','wrap','liners','clips','flash'].includes(x.key)); return l.length?l[0].key:(sectionList().some(x=>x.key==='flash')?'flash':null); }
+function openerCard(){ const e=airDay().opener; const dr=lsGet('hs:openerDraft',{});
+  const txt=e?e.title:(dr.date===etParts().date?dr.text:'');
+  const inp=h('input',{type:'text', className:'opin', placeholder:'What did you open with?', value:txt==='Opener'?'':txt, 'aria-label':'Opener'});
+  inp.addEventListener('input',()=>{ lsSet('hs:openerDraft',{date:etParts().date, text:inp.value}); const cur=airDay().opener; if(cur){ cur.title=inp.value.trim()||'Opener'; airSave(); } });
+  const b=h('button',{className:'airbtn opb'+(e?' on':''), type:'button'}, h('span',{className:'ab'}, e?'✓':''), h('span',{className:'at'}, e?'Opener done · '+fmtTime(e.t):'Opener done'));
+  b.onclick=()=>{ tapHaptic(); const on=!airDay().opener; airSet('opener', on, inp.value.trim()||'Opener', 'opener', true); const c=b.closest('.opener'); if(c) c.replaceWith(openerCard()); };
+  return h('div',{className:'opener'}, h('div',{className:'oplab'}, '🎤 Opener · starts the Show Wrap'), h('div',{className:'oprow'}, inp, b)); }
+const AIR_SEC={reads:'Read', liners:'Liner', clips:'Clip', news:'News', days:'Day of note', opener:'Opener'};
+function airSecLabel(sec){ if(AIR_SEC[sec]) return AIR_SEC[sec]; if(/^cdf:/.test(sec)) return 'Record'; if(/^cdh:/.test(sec)) return 'Headline'; const it=sectionList().find(x=>x.key===sec); return it?String(it.v.title||sec).replace(/^[^\w]+/,''):sec; }
+function wrapEntries(){ const d=airDay(); const list=Object.entries(d).map(([key,e])=>({key, ...e}));
+  list.sort((a,b)=>(a.key==='opener'?-1:b.key==='opener'?1:0) || String(a.t).localeCompare(String(b.t))); return list; }
+function oneLine(t){ t=String(t||'').replace(/\s+/g,' ').trim(); return t.length>90?t.slice(0,88).replace(/\s+\S*$/,'')+'…':t; }
+function wrapText(){ const d=etParts().date; const L=wrapEntries();
+  return ['🎬 Show Wrap · Morning Rush · '+fmtSheetDate(d), '', ...L.map(e=>{ const rc=recapFor(e); return fmtTime(e.t)+' · '+airSecLabel(e.sec)+' · '+oneLine(e.title)+(rc?'\n   '+rc:''); })].join('\n'); }
+function renderWrap(view){
+  const L=wrapEntries();
+  view.append(h('div',{className:'catline'}, 'Recap · resets each day'), h('h2',{}, '🎬 Show Wrap'));
+  view.append(h('div',{className:'lnmeta'}, h('b',{}, String(L.length)), ' item'+(L.length===1?'':'s')+' read on air · '+fmtSheetDate(etParts().date)));
+  const cp=h('button',{className:'wrapcopy', type:'button', on:{click:async()=>{ tapHaptic(); const t=wrapText(); let ok=false;
+      try{ await navigator.clipboard.writeText(t); ok=true; }catch(e){ const ta=h('textarea',{value:t}); document.body.append(ta); ta.select(); try{ ok=document.execCommand('copy'); }catch(_){} ta.remove(); }
+      toast(ok?'Show wrap copied ('+L.length+' lines)':'Copy failed: long-press the list to copy'); }}}, '📋 Copy wrap');
+  view.append(cp);
+  if(!airDay().opener) view.append(openerCard());
+  if(!L.length){ view.append(h('p',{className:'hint'}, 'Nothing yet. Tick "✓ Read on air" on any story, read, liner or clip, or play a clip, and it lands here in the order you aired it.')); return; }
+  const ol=h('ol',{className:'wraplist'});
+  for(const e of L){ const rc=recapFor(e); ol.append(h('li',{}, h('button',{className:'wrapline', type:'button', title:'Open', on:{click:()=>airGo(e)}},
+      h('span',{className:'wt'}, fmtTime(e.t)), h('span',{className:'ws'}, airSecLabel(e.sec)), h('span',{className:'wl'}, oneLine(e.title)), rc?h('span',{className:'wr'}, rc):null),
+    h('button',{className:'wrapx', type:'button', 'aria-label':'Remove from wrap', on:{click:()=>{ const keep=e; airSet(e.key,false,null,null,false); toast('Removed from wrap', ()=>{ const d=etParts().date; air[d]=air[d]||{}; air[d][keep.key]={t:keep.t,title:keep.title,sec:keep.sec}; airSave(); rerender(); }); }}}, '↩'))); }
+  view.append(ol); }
+function airGo(e){ const k=e.key;
+  if(k==='opener'){ const t=openerTab(); if(t){ state.tab=t; renderTabs(); renderView(); scrollTo({top:0,behavior:'smooth'}); } return; }
+  if(k.startsWith('rd:')){ openRead(k.slice(3)); return; }
+  if(/^c[fh]:/.test(k)){ const cid=k.split(':')[1]; const c=allCountdowns().find(x=>x.id===cid); if(!c) return; openCdNews(c);
+    setTimeout(()=>{ const el=document.querySelector('#cdNewsModal [data-air="'+CSS.escape(k)+'"]'); if(el){ el.scrollIntoView({block:'center',behavior:'smooth'}); const t=el.closest('li')||el; t.classList.add('airflash'); setTimeout(()=>t.classList.remove('airflash'),1800); } }, 400); return; }
+  if(k.startsWith('d:')){ const l=daysFor(todayET()); const i=l.findIndex(x=>'d:'+fnv(x.name)===k); openDay(todayET(), i); return; }
+  if(k.startsWith('it:')){ const f=findItemById(k.slice(3)); if(f){ e={...e, sec:f.sec}; } }
+  const tab=k.startsWith('n:')?'news':k.startsWith('clip:')?'clips':k.startsWith('ln:')?'liners':(e.sec||'');
+  if(!sectionList().some(x=>x.key===tab)) return;
+  state.tab=tab; LS.setItem('hs:tab',tab); renderTabs(); renderView();
+  setTimeout(()=>{ let el=document.querySelector('#view [data-air="'+CSS.escape(k)+'"]');
+    if(!el && k.startsWith('ln:')) el=document.querySelector('#view .lnc');
+    if(!el) return; const card=el.closest('.ncard'); if(card && !card.classList.contains('open')){ const hd=card.querySelector('.nhd'); if(hd) hd.click(); }
+    if(k.startsWith('n:')){ const col=el.closest('.ncol'); if(col && col.id) showNewsCol(col.id.replace('ncol-',''), false); }
+    el.scrollIntoView({block:'center', behavior:'smooth'}); const t=el.closest('.ncard,.clc,.lnc')||el; t.classList.add('airflash'); setTimeout(()=>t.classList.remove('airflash'),1800); }, 60); }
+// last half hour (9:30–10:00 ET, show days): bring the wrap up once
+function wrapAutoCheck(){ const p=etParts(); if(!isShowDay(p) || p.hm<'09:30' || p.hm>='10:00') return;
+  if(LS.getItem('hs:wrapAuto')===p.date) return;
+  if(document.querySelector('.modal.on')) return;   // try again next tick
+  LS.setItem('hs:wrapAuto', p.date);
+  state.tab='wrap'; renderTabs(); renderView(); toast('🎬 Last half hour: Show Wrap is up'); }
+setInterval(wrapAutoCheck, 30000); setTimeout(wrapAutoCheck, 6000);
+
+/* ================= countdown news (tap a countdown chip → latest headlines for its news query) ================= */
+function cdQuery(c){ if(!c) return ''; if(c.newsQuery!=null) return String(c.newsQuery).trim(); return c.id==='gta6' ? 'GTA 6' : ''; }
+var cdNewsCur=null, cdNewsBusy=false;
+function gnewsUrl(q){ return 'https://news.google.com/rss/search?q='+encodeURIComponent('"'+q+'" when:7d')+'&hl=en-US&gl=US&ceid=US:en'; }
+function splitSrc(t){ const i=t.lastIndexOf(' - '); return i>10 ? {title:t.slice(0,i).trim(), src:t.slice(i+3).trim()} : {title:t, src:''}; }
+async function fetchQueryNews(q){
+  const g=gnewsUrl(q); const tm=(ms)=>{ const c=new AbortController(); setTimeout(()=>c.abort(),ms); return c.signal; };
+  // 1) rss2json (CORS-enabled JSON wrapper around the Google News RSS search)
+  try{ const r=await fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(g),{signal:tm(12000), cache:'no-store'});
+    const j=await r.json(); if(j && j.status==='ok' && Array.isArray(j.items) && j.items.length)
+      return {via:'Google News', items:j.items.map(i=>({...splitSrc(String(i.title||'')), link:i.link, at:Date.parse(String(i.pubDate||'').replace(' ','T')+'Z')||0}))}; }catch(e){}
+  // 2) fallback: allorigins JSON wrapper, parse the RSS here
+  const r=await fetch('https://api.allorigins.win/get?url='+encodeURIComponent(g),{signal:tm(15000), cache:'no-store'}); const j=await r.json();
+  const x=new DOMParser().parseFromString(j.contents||'','text/xml');
+  const items=[...x.querySelectorAll('item')].map(it=>{ const v=n=>(it.querySelector(n)||{}).textContent||''; const s=(it.querySelector('source')||{}).textContent||'';
+    const st=splitSrc(v('title')); return {title:st.title, src:s||st.src, link:v('link').trim(), at:Date.parse(v('pubDate'))||0}; });
+  if(!items.length) throw new Error('empty'); return {via:'Google News', items}; }
+async function loadCdNews(force){ const c=cdNewsCur; if(!c) return; const q=cdQuery(c); const k='hs:cdNews:'+q.toLowerCase();
+  let cached=lsGet(k,null); if(cached && !force && Date.now()-cached.at<10*60000){ renderCdNews(cached); return; }
+  renderCdNews(cached, true); if(cdNewsBusy) return; cdNewsBusy=true;
+  try{ const r=await fetchQueryNews(q); const seen=new Set();
+    const items=r.items.filter(i=>i.title && /^https?:/.test(i.link||'')).sort((a,b)=>b.at-a.at).filter(i=>{ const kk=newsKey(i.title); if(seen.has(kk)) return false; seen.add(kk); return true; }).slice(0,10);
+    cached={at:Date.now(), q, via:r.via, items}; try{ LS.setItem(k, JSON.stringify(cached)); }catch(e){} cdNewsBusy=false; if(cdNewsCur===c) renderCdNews(cached); }
+  catch(e){ cdNewsBusy=false; if(cdNewsCur===c) renderCdNews(cached, false, true); } }
+function renderCdNews(d, loading, failed){ const c=cdNewsCur; if(!c) return; const q=cdQuery(c);
+  $('#cdNewsTitle').textContent=(c.emoji?c.emoji+' ':'')+c.name+' · latest news';
+  const fx=$('#cdFacts'); fx.innerHTML=''; const facts=(c.facts||[]).filter(f=>f && f.text);
+  if(facts.length){ const ul=h('ul',{});
+    for(const f of facts) ul.append(h('li',{}, airBtn('cf:'+c.id+':'+fnv(f.text), c.name+': '+f.text, 'cdf:'+c.id, true, f.text+(f.source?' ('+f.source+')':'')), h('span',{className:'ft'}, f.text), h('span',{className:'fs'}, f.url?h('a',{href:f.url, target:'_blank', rel:'noopener'}, f.source||'Source'):(f.source||''), f.date?' · '+fmtFactDate(f.date):'')));
+    fx.append(h('div',{className:'cdrec'}, h('div',{className:'cdrh'}, '📈 Records', h('small',{}, ' · verified, on-air ready · edit in Countdowns')), ul)); }
+  $('#cdNewsMeta').textContent= loading ? 'Loading "'+q+'" headlines…' : failed ? (d?'Could not refresh. Showing headlines saved '+hm(new Date(d.at))+' ET.':'') : d ? (d.via||'News')+' · "'+q+'" · updated '+hm(new Date(d.at))+' ET' : '';
+  const ol=$('#cdNewsList'); ol.innerHTML='';
+  if(!d || !d.items || !d.items.length){ if(loading) return;
+    ol.append(h('li',{className:'cdnfail'}, navigator.onLine ? 'Couldn\'t load "'+q+'" news right now. The news feed may be down or blocked. Try ↻ Refresh in a minute, or check it on your phone\'s browser.' : 'You\'re offline. "'+q+'" news will load when you\'re back online.')); return; }
+  for(const i of d.items) ol.append(h('li',{className:'cdnrow'}, airBtn('ch:'+c.id+':'+fnv(i.link||i.title), c.name+': '+i.title+(i.src?' ('+i.src+')':''), 'cdh:'+c.id, true), h('a',{className:'cdnitem'+(/\brecords?\b|record-|\bsales\b|\bsale\b|\bpre-?sales?\b/i.test(i.title)?' hot':''), href:i.link, target:'_blank', rel:'noopener'},
+    h('span',{className:'tt'}, i.title), h('span',{className:'sr'}, h('b',{}, i.src||'News'), i.at?' · '+(Date.now()-i.at>=48*3600e3?Math.floor((Date.now()-i.at)/864e5)+' days ago':ago(i.at)):'')))); }
+function fmtFactDate(d){ const m=String(d).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?$/); if(!m) return d; const M=MONS[+m[2]-1]; return m[3]?M+' '+(+m[3])+', '+m[1]:M+' '+m[1]; }
+function openCdNews(c){ cdNewsCur=c; $('#cdNewsModal').classList.add('on'); loadCdNews(false); }
+$('#cdNewsRefresh').onclick=()=>{ tapHaptic(); loadCdNews(true); };
+$('#cdNewsEdit').onclick=()=>{ $('#cdNewsModal').classList.remove('on'); openCdEditor(); };
+$('#cdNewsModal').addEventListener('click',e=>{ if(e.target.id==='cdNewsModal') $('#cdNewsModal').classList.remove('on'); });
+
+/* ================= remix: swap a card for a fresh one from its pool (sheet <key>_pool first, then pools.json) ================= */
+var poolData=lsGet('hs:pools', {pools:{}, phone:'231-929-4487'});
+var remixSt=lsGet('hs:remix', {});
+async function loadPools(){ if(isHttp){ try{ const j=await fetchJson('pools.json'); if(j && j.pools){ poolData=j; lsSet('hs:pools', j); } }catch(e){} } if(state.sheet && poolFor(state.tab).length) rerender(); }
+function normPoolItem(x){ if(!x) return null; if(typeof x==='string'){ const t=cleanText(x).trim(); const l=t.split('\n'); return {id:'p'+fnv(t), title:l[0], script:l.slice(1).join('\n').trim(), evidence:''}; }
+  const script=cleanText(String(x.script||x.content||x.body||'')).trim(); const title=String(x.title||script.split('\n')[0]||'').trim(); if(!script) return null;
+  return {id:String(x.id||('p'+fnv(title+script.slice(0,40)))), title, script, evidence:cleanText(String(x.evidence||x.notes||''))}; }
+function poolFor(key){ if(!key) return []; const sh=(state.sheet && Array.isArray(state.sheet[key+'_pool'])) ? state.sheet[key+'_pool'] : [];
+  const out=[], seen=new Set(); for(const x of [...sh, ...((((poolData||{}).pools)||{})[key]||[])]){ const n=normPoolItem(x); if(n && !seen.has(n.title.toLowerCase())){ seen.add(n.title.toLowerCase()); out.push(n); } } return out; }
+function rxDay(){ const d=etParts().date; remixSt[d]=remixSt[d]||{}; return remixSt[d]; }
+function rxSave(){ const keep=Object.keys(remixSt).sort().slice(-5); remixSt=Object.fromEntries(keep.map(k=>[k,remixSt[k]])); lsSet('hs:remix', remixSt); }
+function remixView(key, v){ const st=((remixSt||{})[etParts().date]||{})[key]; if(!st || !st.id) return null; const it=poolFor(key).find(x=>x.id===st.id); if(!it) return null;
+  const ph=(poolData||{}).phone||'231-929-4487'; let sc=it.script.trim(); const ends=new RegExp(ph.replace(/-/g,'[-.\\s]?')+'\\s*$').test(sc);
+  return Object.assign({}, v, {content:it.title+'\n\n'+sc+(ends?'':'\n\n'+ph), notes:(it.evidence?'Evidence: '+it.evidence+'\n':'')+'🔀 Remixed from the pool. Tap "Today\'s original" to go back to the sheet\'s version.'}); }
+function remixNext(key){ const pool=poolFor(key); if(!pool.length) return; const orig=(cleanText((state.sheet[key]||{}).content||'').trim().split('\n')[0]||'').toLowerCase();
+  const cands=pool.filter(x=>x.title.toLowerCase()!==orig); if(!cands.length) return; const st=rxDay()[key]||{seen:[]};
+  let nx=cands.find(x=>!(st.seen||[]).includes(x.id) && x.id!==st.id); if(!nx){ st.seen=[]; nx=cands.find(x=>x.id!==st.id)||cands[0]; }
+  st.seen=[...(st.seen||[]), nx.id]; st.id=nx.id; rxDay()[key]=st; rxSave(); rerender(); toast('🔀 Fresh '+((state.sheet[key]||{}).title||'card')+': '+nx.title, ()=>{ remixBack(key); }); }
+function remixBack(key){ const st=rxDay()[key]; if(st){ st.id=null; rxSave(); } rerender(); }
+function remixBar(key, rx){ const pool=poolFor(key); const st=(remixSt[etParts().date]||{})[key]; const i=rx&&st?pool.findIndex(x=>x.id===st.id):-1;
+  return h('div',{className:'rxbar'}, h('button',{className:'rxbtn', type:'button', title:'Swap in a fresh one from the pool', on:{click:()=>{ tapHaptic(); remixNext(key); }}}, '🔀 Remix'),
+    rx ? h('button',{className:'rxback', type:'button', on:{click:()=>{ tapHaptic(); remixBack(key); }}}, '↩ Today\'s original') : null,
+    h('span',{className:'rxinfo'}, rx ? 'Remix '+(i+1)+' of '+pool.length : pool.length+' in the pool')); }
+loadPools();
+
+/* --- Show Wrap recaps: Hot Sheet "items"/"recap" fields first, else the first 1–2 sentences (≤180 chars) --- */
+const normT=t=>String(t||'').toLowerCase().replace(/^\s*\d+\)\s*/,'').replace(/&amp;/g,'&').replace(/[^a-z0-9]+/g,' ').trim();
+function storyHeads(text){ const a=String(text||'').split('\n'); const out=[]; a.forEach((ln,i)=>{ if(/^\s*━+.*━+\s*$/.test(ln)) return; if(/^\s*\d+\)\s+\S/.test(ln) || isStoryHead(ln, a[i-1])) out.push(ln.replace(/^\s*\d+\)\s*/,'').trim()); }); return out; }
+/* ================= 9AM Flashback (structured fields on the "flash" card; optional — old blob otherwise) ================= */
+function fbStr(x){ if(x==null) return ''; if(Array.isArray(x)) return x.map(fbStr).filter(Boolean).join('\n'); if(typeof x==='object') return Object.values(x).map(fbStr).filter(Boolean).join(' · '); return cleanText(String(x)).trim(); }
+function fbData(){ const S=state.sheet && state.sheet.flash; if(!S || typeof S!=='object') return null;
+  if(!['requester','song','artist','single_year','chart_records','origin'].some(k=>S[k]!=null && fbStr(S[k]))) return null;   // no structured fields → old blob
+  try{ const o=S;
+    const g=(...ks)=>{ for(const k of ks){ const v=fbStr(o[k]); if(v) return v; } return ''; };
+    const f={ requester:g('requester','requested_by','requestedBy','request','listener'), title:g('song','track'), artist:g('artist','by'),
+      year:g('year','single_year','release_year'), records:[].concat(o.chart_records!=null?o.chart_records:o.records!=null?o.records:o.chart!=null?o.chart:[]).map(fbStr).filter(Boolean),
+      origin:g('origin','bit','story','origin_bit','why'), content:'', recap:g('recap'),
+      items:Array.isArray(o.items)?o.items.filter(x=>x&&x.id):[] };
+    if(!f.title && !f.artist && !f.content && !f.origin) return null;
+    if(!f.title && !f.artist){ const fl=(f.content||f.origin).split('\n')[0]; f.head=fl.length>110?fl.slice(0,108).replace(/\s+\S*$/,'')+'…':fl; if(f.content.split('\n')[0]===fl) f.content=f.content.split('\n').slice(1).join('\n').trim(); }
+    else f.head=(f.title?(/^["“]/.test(f.title)?f.title:'“'+f.title+'”'):'')+(f.artist?(f.title?' — ':'')+f.artist:'')+(f.year?' ('+f.year+')':'');
+    f.key=f.items[0] ? 'it:'+f.items[0].id : 'sec:flash';
+    f.body=[f.head, f.requester?'Requested by '+f.requester:'', ...f.records, f.origin, f.content].filter(Boolean).join('\n');
+    return f; }catch(_){ return null; } }
+function fbBanner(){ const f=fbData(); if(!f) return null; const p=etParts(); if(!isShowDay(p) || p.hm<'08:40' || p.hm>='09:20') return null;
+  const card=mk('div',{className:'fbban'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'+(f.requester?' · for '+f.requester:'')), mk('div',{className:'fbh'}, f.head||'Today’s Flashback'));
+  const row=mk('div',{className:'fbrow'}, airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', true, f.body));
+  const go=mk('button',{className:'fbgo',type:'button'},'Open ›'); go.onclick=()=>{ tapHaptic(); state.tab='flash'; LS.setItem('hs:tab','flash'); renderTabs(); renderView(); scrollTo({top:0,behavior:'smooth'}); };
+  row.append(go); card.append(row); return card; }
+function fbCard(f){
+  const c=mk('div',{className:'fbcard'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'), mk('div',{className:'fbh big'}, f.head||'Today’s Flashback'));
+  if(f.requester) c.append(mk('div',{className:'fbreq'},'🎧 Requested by '+f.requester));
+  if(f.records.length){ const ul=mk('ul',{className:'fbrec'}); f.records.forEach(r=>ul.append(mk('li',{},'📈 '+r))); c.append(ul); }
+  if(f.origin) c.append(mk('p',{className:'fbo'}, f.origin));
+  c.append(mk('div',{className:'airsec'}, airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', false, f.body)));
+  return c; }
+function sheetItems(sec){ const S=state.sheet && state.sheet[sec]; return (S && Array.isArray(S.items)) ? S.items.filter(x=>x && x.id) : []; }
+function storyItem(sec, title, n){ const its=sheetItems(sec); if(!its.length) return null; const nt=normT(title);
+  const m=its.find(x=>normT(x.title)===nt); if(m) return m;
+  const heads=window.__airHeads||[]; const matchedTitles=new Set(its.map(x=>normT(x.title)));
+  // NN-order fallback only when the counts line up (same parse as Hot Sheet)
+  if(heads.length===its.length && its[n] && !heads.some(hh=>normT(hh)===normT(its[n].title) && normT(hh)!==nt)) return its[n];
+  return null; }
+function storyItemAny(title){ const nt=normT(title); if(!state.sheet) return null;
+  for(const [k,v] of Object.entries(state.sheet)){ if(!v || !Array.isArray(v.items)) continue; const m=v.items.find(x=>x && x.id && normT(x.title)===nt); if(m) return {...m, sec:k}; } return null; }
+function findItemById(id){ if(!state.sheet) return null; for(const [k,v] of Object.entries(state.sheet)){ if(!v || !Array.isArray(v.items)) continue; const m=v.items.find(x=>x && String(x.id)===id); if(m) return {...m, sec:k}; } return null; }
+function summarize(t){ t=cleanText(String(t||'')); if(!t.trim()) return '';
+  const rl=t.match(/(?:^|\n)\s*(?:➜\s*)?RECAP:\s*(.+)/i); if(rl) return clip180(rl[1]);
+  const lines=t.split('\n').map(l=>l.trim()).filter(l=>l && !/^➜\s*(TAKE|BAIT|WHY)\b/i.test(l) && !/^🔊|^(IN|OUT)\s*:/i.test(l) && !/^~?\d+\s*s\b/.test(l))
+    .map(l=>l.replace(/^[•\-–]\s*/,'').replace(/^🎙️?\s*SET UP:\s*/i,'').replace(/https?:\/\/\S+/g,'').trim()).filter(Boolean)
+    .filter((l,i)=>{ const L=l.replace(/[^A-Za-z]/g,''); return !(i===0 && L.length>=4 && L.replace(/[^A-Z]/g,'').length/L.length>0.8); })   // drop an ALL-CAPS header line
+    .map(l=>/[.!?]["'”’)]*$/.test(l)?l:l+'.');                                                                                             // bullets become sentences
+  let txt=lines.join(' ').replace(/\s+/g,' ').trim(); if(!txt) return '';
+  txt=txt.replace(/\b(No|St|Mr|Mrs|Ms|Dr|vs|Jr|Sr|Mt|Ft|U\.S)\.(?=\s)/g,'$1\u2024');   // keep abbreviations from ending a sentence
+  const sents=(txt.match(/[^.!?]+[.!?]+["'”’)]*|[^.!?]+$/g)||[txt]).map(x=>x.replace(/\u2024/g,'.')); let out=sents[0].trim();
+  if(sents[1] && (out+' '+sents[1].trim()).length<=180) out+=' '+sents[1].trim();
+  return clip180(out); }
+function clip180(t){ t=String(t).replace(/\s+/g,' ').trim(); return t.length>180 ? t.slice(0,178).replace(/\s+\S*$/,'')+'…' : t; }
+function recapFor(e){ const k=e.key;
+  try{
+    if(k.startsWith('it:')){ const f=findItemById(k.slice(3)); if(f && f.recap) return clip180(f.recap); }
+    if(k.startsWith('clip:') && state.sheet){ const id=k.slice(5); for(const g of ['clips','newsclips']){ const a=state.sheet[g] && state.sheet[g].clips; const c=Array.isArray(a) && a.find(x=>String(x.id)===id); if(c && c.recap) return clip180(c.recap); } }
+    if(k.startsWith('sec:') && state.sheet){ const sec=k.split(':')[1]; const S=state.sheet[sec]; if(S && S.recap) return clip180(S.recap); const its=sheetItems(sec); const fl=cleanText((S&&S.content)||'').trim().split('\n')[0]||''; if(k.split(':').length===2 && its.length && its[0].recap && (normT(fl.replace(/^[^A-Za-z0-9]+/,'')).startsWith(normT(its[0].title)) || normT(its[0].title)===normT(fl))) return clip180(its[0].recap); }
+  }catch(_){}
+  return e.body ? (summarize(e.body)||clip180(e.body)) : ''; }
 /* ---------- PWA ---------- */
 if(isHttp && 'serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
 
-loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults();
+loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads();
 window.__hs = state; // for debugging
 })();
 </script>

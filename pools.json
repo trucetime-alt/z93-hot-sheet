@@ -1,0 +1,39 @@
+{
+ "version": 1,
+ "note": "Fallback remix pools. A sheet can supply <section>_pool (e.g. mental_pool) to add or override. Each item: title, script (~60 s), evidence. The card adds the text line 231-929-4487 at the end.",
+ "phone": "231-929-4487",
+ "pools": {
+  "mental": [
+   {
+    "id": "mh-name-it",
+    "title": "Name It to Tame It",
+    "script": "Here's a quick one for this Monday. When something's bugging you, a stressful email or a weird text or that knot in your stomach before a meeting, try this. Put the feeling into words. Not a whole speech, just one or two words. Frustrated. Nervous. Overwhelmed. Say it in your head, or say it out loud in the car. Researchers at UCLA put people in a brain scanner and found that when they put a name on a feeling, the brain's alarm center, the amygdala, calmed down. They call it affect labeling, and it works because naming a feeling gets the thinking part of your brain back in the game. It doesn't make the problem go away, but it turns the volume down so you can deal with it. So today, the next time you feel that knot, name it. That's your Mental Health Minute on Z93. Text me one word for how your morning's going.",
+    "evidence": "Lieberman et al., 2007, Psychological Science (UCLA): putting feelings into words (affect labeling) reduced amygdala response. Not a clinical treatment claim."
+   },
+   {
+    "id": "mh-nature-20",
+    "title": "Twenty Minutes Outside",
+    "script": "We've got some decent weather this week, so let's use it. Here's your move. Sometime today, give yourself about twenty minutes outside somewhere that feels like nature. It doesn't have to be a hike. A walk by the bay, a lap around the park, sitting on a bench under some trees on your lunch break. Researchers at the University of Michigan had people do just that, a short nature break a few times a week, and they measured their stress hormone, cortisol. Twenty to thirty minutes was the sweet spot where cortisol dropped the most. And here's the part I love: there were no rules. No phone-free challenge, no step count. Just be outside and let it do its thing. Up here we've got nature five minutes from anywhere, so take advantage. That's your Mental Health Minute on Z93. Text me your favorite spot to get outside in Traverse City.",
+    "evidence": "Hunter, Gillespie & Chen, 2019, Frontiers in Psychology (University of Michigan): a 20–30 minute 'nature pill' gave the largest drop in salivary cortisol. Stress-hormone finding, not a clinical claim."
+   },
+   {
+    "id": "mh-thank-you",
+    "title": "Send the Thank-You Text",
+    "script": "Here's something that takes two minutes and pays off big. Think of one person who did something nice for you that you never really thanked them for. A teacher, a coworker, the neighbor who plowed your driveway last winter. Now send them a quick message telling them what they did and why it mattered. Here's why. Researchers at the University of Chicago and the University of Texas had people write gratitude letters, then asked them to guess how the other person would feel. People consistently underestimated how happy the person would be, and overestimated how awkward it would be. The person getting it felt great, and so did the person sending it. So don't let awkward stop you. Send the text today. That's your Mental Health Minute on Z93. Text me and tell me who you're thanking.",
+    "evidence": "Kumar & Epley, 2018, Psychological Science: people underestimate how positive recipients feel getting a gratitude letter and overestimate the awkwardness. Well-being finding, not a clinical claim."
+   },
+   {
+    "id": "mh-long-exhale",
+    "title": "The Long Exhale",
+    "script": "Let's do something right now, even if you're driving, because this one's safe with your eyes open. Breathe in through your nose. Then take a second little sip of air on top of it. And now let it all out slowly through your mouth, longer than you breathed in. That's it. Researchers at Stanford tested a few different breathing exercises, about five minutes a day for a month. The one that boosted people's mood the most was this, a double inhale and a long, slow exhale. It even beat mindfulness meditation for mood in that study. The long exhale is like a brake pedal for your body. So when traffic on Division is crawling, or the kids are running late for school, two or three of these can take the edge off. That's your Mental Health Minute on Z93. Text me where you're going to try the long exhale today.",
+    "evidence": "Balban et al., 2023, Cell Reports Medicine (Stanford): 5 min/day of 'cyclic sighing' (double inhale, long exhale) improved positive mood more than mindfulness meditation over a month. Mood finding, not a clinical claim."
+   },
+   {
+    "id": "mh-reach-out",
+    "title": "Reach Out to an Old Friend",
+    "script": "Is there somebody you've been meaning to text for, like, a year? An old friend from school, a former coworker, a cousin you only see at Thanksgiving? Here's your nudge. Reach out today, even with something small like, hey, thought of you, hope you're doing well. We talk ourselves out of it because we figure they won't care that much. But researchers tested that, in a study published in the Journal of Personality and Social Psychology, and found people seriously underestimate how much a quick check-in means to the person getting it. And the more out of the blue it was, the more it was appreciated. So the fact that it's been a while is actually a reason to do it, not a reason to skip it. That's your Mental Health Minute on Z93. Text me and tell me who you're reaching out to today.",
+    "evidence": "Liu et al., 2022, Journal of Personality and Social Psychology: people underestimate how much others appreciate being reached out to, especially when it's a surprise. Social-connection finding, not a clinical claim."
+   }
+  ]
+ }
+}

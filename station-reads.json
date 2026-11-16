@@ -1,0 +1,155 @@
+{
+ "version": 1,
+ "sheetDate": "2026-10-29",
+ "title": "Z93 Hot Sheet (station reads)",
+ "note": "PARAPHRASING/CUSTOMIZING OK UNLESS OTHERWISE NOTED",
+ "source": "Station read sheet dated 10/29/26",
+ "reads": [
+  {
+   "id": "st-teacher-of-month",
+   "name": "Teacher of the Month",
+   "short": "Teacher of Month",
+   "icon": "🍎",
+   "kill": "TBD",
+   "text": "KNOW A TEACHER WHO DESERVES RECOGNITION? NOMINATE THEM FOR THE Z93 TEACHER OF THE MONTH AWARD AT Z93 HITS DOT COM. EACH MONTH WE’LL CHOOSE A WINNER, HIGHLIGHT THEM ON THE AIR AND AWARD THEM WITH A PRIZE PACKAGE. WE’LL ANNOUNCE A WINNER ON THE THIRD THURSDAY OF EACH MONTH.",
+   "active": true
+  },
+  {
+   "id": "st-kurtz-car-stereo",
+   "name": "Kurtz Car Stereo",
+   "short": "Kurtz",
+   "icon": "🔊",
+   "kill": "2026-12-01",
+   "text": "TUNE IN AND TURN IT UP WITH KURTZ CAR STEREO AND Z93’S 93-MINUTE COMMERCIAL FREE PLAYLIST AT 10:20, 2:20 AND 6:20 EVERY WEEKDAY.",
+   "active": true
+  },
+  {
+   "id": "st-kalkaska-trees",
+   "name": "Kalkaska Festival of Trees",
+   "short": "Festival of Trees",
+   "icon": "🎄",
+   "kill": "2026-11-14",
+   "text": "HELP FEED NEIGHBORS IN NEED AT THE KALKASKA FESTIVAL OF TREES NOVEMBER 6TH TROUGH 14TH. MANY DECORATED TREES, GIFT BASKETS, GIFT CARDS AND MORE ARE UP FOR RAFFLE WITH PROCEEDS GOING TO THE KAIR (CARE) FOOD PANTRY.",
+   "active": true
+  },
+  {
+   "id": "st-patriot-farms",
+   "name": "Patriot Farms",
+   "short": "Patriot Farms",
+   "icon": "🐄",
+   "kill": "2026-11-20",
+   "text": "READY FOR FALL FAMILY FUN? HEAD TO PATRIOT FARMS IN TRAVERSE CITY—NOW OPEN! CUDDLE HIGHLAND COWS, NAVIGATE THE CORN MAZE, AND SIP CIDER SLUSHIES. PATRIOT FARMS, ON GARFIELD IN TRAVERSE CITY- WHERE MEMORIES AND ADVENTURES AWAIT.",
+   "active": true
+  }
+ ],
+ "liners": [
+  {
+   "id": "ln-website-1",
+   "group": "Website",
+   "kill": "TFN",
+   "text": "DON’T JUST LISTEN—EXPERIENCE Z93 EVERYWHERE. HIT UP Z93HITS.COM FOR CONTESTS, CONCERTS, LIVE STREAMS, AND EVERYTHING YOU LOVE ABOUT Z93. IT’S ALL RIGHT THERE… JUST ONE CLICK AWAY."
+  },
+  {
+   "id": "ln-website-2",
+   "group": "Website",
+   "kill": "TFN",
+   "text": "HEY, QUICK QUESTION—HAVE YOU CHECKED OUT Z93HITS.COM YET? YOU’LL FIND SOCIAL FEEDS, GIVEAWAYS, AND EXCLUSIVE CONTENT YOU WON’T HEAR ON-AIR. GO TAKE A LOOK!"
+  },
+  {
+   "id": "ln-website-3",
+   "group": "Website",
+   "kill": "TFN",
+   "text": "IF YOU’RE NOT ON Z93HITS.COM… YOU’RE MISSING OUT. BIG CONTESTS, EXCLUSIVE CONTENT, AND YOUR FAVORITE MUSIC—WAITING FOR YOU RIGHT NOW. DON’T WAIT—CHECK IT OUT TODAY."
+  },
+  {
+   "id": "ln-website-4",
+   "group": "Website",
+   "kill": "TFN",
+   "text": "BORED? WE’VE GOT A FIX. JUMP OVER TO Z93HITS.COM FOR PRIZES, MUSIC, AND SURPRISES YOU DIDN’T KNOW YOU NEEDED. SERIOUSLY… GO NOW, THANK US LATER."
+  },
+  {
+   "id": "ln-social-media-1",
+   "group": "Social Media",
+   "kill": "TFN",
+   "text": "WANT MORE Z93 IN YOUR DAY? FOLLOW US ON FACEBOOK AT @Z93HITS FOR GIVEAWAYS, UPDATES, AND BEHIND-THE-SCENES FUN. JOIN THE CREW AND STAY CONNECTED!"
+  },
+  {
+   "id": "ln-social-media-2",
+   "group": "Social Media",
+   "kill": "TFN",
+   "text": "STOP SCROLLING—UNLESS IT’S TO FOLLOW @Z93HITS ON FACEBOOK. CONTESTS, LAUGHS, AND EXCLUSIVE CONTENT ARE WAITING. HIT FOLLOW AND DON’T MISS A THING!"
+  },
+  {
+   "id": "ln-social-media-3",
+   "group": "Social Media",
+   "kill": "TFN",
+   "text": "EVERYONE’S TALKING ABOUT IT—ARE YOU FOLLOWING @Z93HITS ON FACEBOOK YET? GIVEAWAYS, UPDATES, AND EXCLUSIVE CONTENT DROP ALL THE TIME. GET IN ON IT NOW."
+  },
+  {
+   "id": "ln-social-media-4",
+   "group": "Social Media",
+   "kill": "TFN",
+   "text": "SCROLLING FACEBOOK ANYWAY? MAKE IT WORTH YOUR TIME—FOLLOW @Z93HITS FOR EVENT UPDATES, CONTESTS, AND DAILY FUN FROM YOUR FAVORITE STATION. EASY WIN."
+  },
+  {
+   "id": "ln-morning-rush-1",
+   "group": "Morning Rush",
+   "kill": "TFN",
+   "text": "IT’S THE MORNING RUSH WITH AJ — HIGH ENERGY, LOW INHIBITIONS, AND ALL YOUR FAVORITE HITS FROM THE 90S TO NOW. TUNE IN WEEKDAYS FROM 6 TO 10AM."
+  },
+  {
+   "id": "ln-morning-rush-2",
+   "group": "Morning Rush",
+   "kill": "TFN",
+   "text": "Z93 GOES OFF THE CHARTS AT 8:30 EACH FRIDAY MORNING AJ AS HE HIGHLIGHTS NEW MUSIC FROM GREAT INDEPENDENT ARTISTS."
+  },
+  {
+   "id": "ln-morning-rush-3",
+   "group": "Morning Rush",
+   "kill": "TFN",
+   "text": "HE’S LOCAL, HE’S FUNNY, HE’S HIGH-ENERGY, AND HE KNOWS HOW TO NAVIGATE A ROUNDABOUT. CATCH THE MORNING RUSH WITH AJ WEEKDAYS FROM 6 TO 10AM."
+  },
+  {
+   "id": "ln-courtney-rehmer-1",
+   "group": "Courtney Rehmer",
+   "kill": "TFN",
+   "text": "COURTNEY IS FEEDING YOU EVERY WEEKDAY AT 12:30PM—NOT ONE BUT TWO FREE SUBS POWERED BY JIMMY JOHN’S IN TC---JUST A WAY FOR US TO SAY THANK YOU FOR CHOOSING Z93 TO SPEND YOUR DAY WITH."
+  },
+  {
+   "id": "ln-courtney-rehmer-2",
+   "group": "Courtney Rehmer",
+   "kill": "TFN",
+   "text": "YOU’RE WORKING – SHE’S WORKING – LET’S HAVE SOME FUN TODAY. COURTNEY REHMER GETS YOU THROUGH THE GRIND EVERY WEEKDAY FROM 10 TO 2."
+  },
+  {
+   "id": "ln-courtney-rehmer-3",
+   "group": "Courtney Rehmer",
+   "kill": "TFN",
+   "text": "WHO’S HEADING ON TOUR – WHO JUST BROKE UP – AND DID RIHANNA JUST HAVE ANOTHER BABY? COURTNEY KEEPS YOU IN THE KNOW, EVERY WEEKDAY AT 11 POWERED BY PROJECT FEED THE KIDS."
+  },
+  {
+   "id": "ln-cali-afternoons-1",
+   "group": "Cali (Afternoons)",
+   "kill": "TFN",
+   "text": "TUNE IN FOR CALI’S TEA PARTY. CALI IS SERVING UP THE HOTTEST SHOWBIZ BREW, ONE SIP AT A TIME. WEEKDAY AFTERNOONS AT 2:20"
+  },
+  {
+   "id": "ln-cali-afternoons-2",
+   "group": "Cali (Afternoons)",
+   "kill": "TFN",
+   "text": "LISTEN TO CALI IN THE AFTERNOONS FOR HER RANDOM FACT OF THE DAY.  IT MAY BE USELESS KNOWLEDGE, BUT IF YOU DON’T KNOW, NOW YOU KNOW. WEEKDAY AFTERNOONS AT 5:40"
+  },
+  {
+   "id": "ln-cali-afternoons-3",
+   "group": "Cali (Afternoons)",
+   "kill": "TFN",
+   "text": "EVER WONDER WHAT WAS HAPPENING ON THIS DAY IN HISTORY? CALI’S GOT THE SCOOP. TUNE IN AT 6:20PM FOR THIS DAY, BACK IN THE DAY."
+  },
+  {
+   "id": "ln-cali-afternoons-4",
+   "group": "Cali (Afternoons)",
+   "kill": "TFN",
+   "text": "TUNE IN EVERY FRIDAY AT 3:50   PM FOR THE WEEKEND WATCHLIST. CALI GIVES YOU A LOOK AT THE LATEST MOVIES AND SHOWS COMING TO THEATERS AND STREAMING SERVICES."
+  }
+ ]
+}
