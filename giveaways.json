@@ -9,7 +9,11 @@
    "prize": "Three pairs of tickets to the Jonas Brothers show, Tuesday Dec 15",
    "start": "2026-11-30",
    "end": "2026-12-04",
-   "activationTimes": ["07:00", "11:00", "16:00"],
+   "activationTimes": [
+    "07:00",
+    "11:00",
+    "16:00"
+   ],
    "keywords": {},
    "announce": "2026-12-07",
    "announceText": "Pick and announce the 3 Jonas Brothers winners.",
@@ -41,6 +45,30 @@
    "mention": "🎅 Secret Santa (cross talk w/ Courtney): announce + call today's daily winner",
    "tagSection": "cross",
    "notes": "From Courtney Rehmer, Nov 16. Chris wants Truce and Courtney to use the Cross Talk segment to announce it and maybe call the daily winner. End date, prize, keyword and mechanics are TBD — set them here when you know.",
+   "active": true
+  },
+  {
+   "id": "gv-shop-sip",
+   "name": "TC Shop & Sip ticket giveaway",
+   "short": "Shop & Sip",
+   "icon": "🎟",
+   "prize": "Five pairs of general admission tickets to Traverse City Shop and Sip on Saturday, Nov 21 at Grand Traverse Resort & Spa. Tickets are held at Will Call.",
+   "start": "2026-11-17",
+   "end": "2026-11-20",
+   "activationTimes": [],
+   "keywords": {},
+   "announce": "",
+   "announceText": "",
+   "event": "2026-11-21",
+   "eventName": "Traverse City Shop and Sip at Grand Traverse Resort & Spa",
+   "pairs": 5,
+   "studioLine": true,
+   "onlyShift": "truce",
+   "logWinners": true,
+   "mention": "🎟 TC Shop & Sip: This Saturday, November 21, Traverse City Shop and Sip is at Grand Traverse Resort & Spa in Acme — they call it Northern Michigan's premiere handmade market. Michigan makers are there with one-of-a-kind goods, from handmade jewelry to gourmet treats. Shop local, shop handmade, and sip while you support local artisans. We've got five pairs of general admission tickets to give away. They're waiting at Will Call. Text us at {line} — I need your name and a phone number to collect a pair.",
+   "tagSection": "",
+   "url": "https://app.gopassage.com/events/traverse-city-shop-and-sip-at-grand-traverse-resort-2026",
+   "notes": "From Linda Francomb (Senior Marketing Consultant, Midwestern Broadcasting), Oct 28 email: TC Shop & Sip's final show is 11/21 at Grand Traverse Resort and Spa; advertising on Z93 and WTCM; 5 pairs of GA tickets on each station; tickets held at Will Call; collect each winner's phone number. Truce, Nov 17 8:28 AM ET: he does all five Z93 pairs himself, one mention per day on his morning shift only, through Fri Nov 20 (the show is Sat Nov 21). Event page (https://app.gopassage.com/events/traverse-city-shop-and-sip-at-grand-traverse-resort-2026): “Northern Michigan's Premiere Handmade Market” at Grand Traverse Resort & Spa, 100 Grand Traverse Village Blvd., Acme, MI 49610, Saturday Nov 21, 2026. Makers with one-of-a-kind goods, from handmade jewelry to gourmet treats; shop local, shop handmade, and sip while supporting local artisans. The page header lists 12:00 PM EST; the page's JSON-LD lists 5:00 PM–11:00 PM ET. Those times disagree, so the on-air read does not give a clock time. Ticket price and the venue room were not listed on the page we fetched. Winner names and phone numbers are stored only on the device and in Hot Sheet sync — never in this file or the public repo.",
    "active": true
   }
  ]

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v36-buzz-remix">
+<meta name="hs-build" content="v37-shop-sip">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -612,6 +612,12 @@ body.flown #tabs button{min-height:48px}
 .nclip{padding:0 12px 10px}
 .nclip .sclipw{margin-left:0}
 #readStrip .rtag{font-size:.7em;font-weight:800;padding:1px 6px;border-radius:9px;background:rgba(124,92,255,.25);color:#d9ccff;margin-left:4px}
+.gvlog{margin-top:12px;padding:12px;border:2px solid var(--line);border-radius:14px;background:rgba(0,0,0,.18)}
+.gvlog h4{margin:0 0 6px;font-size:1.05em}
+.gvlog .hint{margin:0 0 10px}
+.gvwinrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 8px}
+.gvwinrow input{flex:1 1 140px;min-height:48px;font-size:16px}
+
 .rsb.st{border-color:#8c6cff;background:#1d1640}
 .rsb.st .rsk{border-left-color:#8c6cff;background:#2c2160;color:#d9ccff}
 #readStrip.warn .rsb.st{border-color:#8c6cff;background:#241a4d;animation:none}
@@ -1130,7 +1136,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:songPicks','hs:buzzRemix']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:gvWins','hs:songPicks','hs:buzzRemix']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -1291,6 +1297,11 @@ function openRead(id){ const sp=spById(id); if(!sp) return;
         h('div',{className:'copy'}, s.read), tickButton(s, ()=>openRead(id))));
     }
   }
+  let log=$('#readGvLog');
+  if(!log){ log=h('div',{id:'readGvLog'}); t.after(log); }
+  else if(log.previousElementSibling!==t) t.after(log);
+  if(sp.giveawayId && !sp.announce && typeof renderGvWinLog==='function') renderGvWinLog(sp.giveawayId, log);
+  else log.innerHTML='';
   $('#readModal').classList.add('on'); }
 $('#readClose').onclick=()=>$('#readModal').classList.remove('on');
 let toastT=null;
@@ -1332,7 +1343,7 @@ function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp
     box.append(h('div',{className:'rsb'+(sp.station?' st':'')+(sp.giveaway?' gv':'')+(sp.announce?' gvwin':'')},
       h('button',{className:'rsn', type:'button', title:'Open the read', on:{click:()=>openRead(sp.id)}},
         h('span',{className:'ri','aria-hidden':'true'}, sp.icon||'⭐'), h('span',{className:'rn'}, sp.short||sp.name),
-        sp.giveaway ? h('span',{className:'rtag'}, sp.announce?'winners':'1/day') : (sp.station || per ? h('span',{className:'rtag'}, per?'once/shift':'1/day') : null),
+        sp.giveaway ? h('span',{className:'rtag'}, typeof gvWinTag==='function'?gvWinTag(sp):(sp.announce?'winners':'1/day')) : (sp.station || per ? h('span',{className:'rtag'}, per?'once/shift':'1/day') : null),
         showCopy ? h('span',{className:'rc'+((sp.station||sp.giveaway)?' long':'')}, sp.giveaway ? (sp.shortLine||sp.read) : (sp.station ? readable(sp.read) : sp.read)) : null),
       h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:per?'Done: hide until the next shift':'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓')));
   }
@@ -3021,6 +3032,7 @@ function syncSnap(){ const m={};
   for(const [id,o] of Object.entries((typeof savedMap!=='undefined'&&savedMap)||{})) m['sv:'+id]=o;
   for(const [d,r] of Object.entries((typeof holds!=='undefined'&&holds)||{})) for(const [id,o] of Object.entries(r||{})) m['hd:'+d+':'+id]=o;
   for(const [id,o] of Object.entries((typeof gvOv!=='undefined'&&gvOv&&gvOv.items)||{})) m['gv:'+id]=o;
+  for(const [gid,wm] of Object.entries((typeof gvWins!=='undefined'&&gvWins)||{})) for(const [wid,o] of Object.entries(wm||{})) m['gw:'+gid+':'+wid]=o;
   for(const [d,r] of Object.entries((typeof songPicks!=='undefined'&&songPicks)||{})) for(const [id,o] of Object.entries(r||{})) m['sk:'+d+':'+id]=o;
   for(const [d,r] of Object.entries((typeof buzzRemix!=='undefined'&&buzzRemix)||{})) for(const [id,o] of Object.entries(r||{})) m['bx:'+d+':'+id]=o;
   return m; }
@@ -3039,6 +3051,7 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='sv'){ if(del) delete savedMap[rest]; else savedMap[rest]=val; }
   else if(kind==='hd'){ const [d,id]=two(); holds[d]=holds[d]||{}; if(del) delete holds[d][id]; else holds[d][id]=val; if(!Object.keys(holds[d]).length) delete holds[d]; }
   else if(kind==='gv'){ gvOv=gvOv||{items:{}}; gvOv.items=gvOv.items||{}; if(del) delete gvOv.items[rest]; else gvOv.items[rest]=val; }
+  else if(kind==='gw'){ const [gid,wid]=two(); gvWins=gvWins||{}; gvWins[gid]=gvWins[gid]||{}; if(del) delete gvWins[gid][wid]; else gvWins[gid][wid]=val; if(!Object.keys(gvWins[gid]).length) delete gvWins[gid]; }
   else if(kind==='sk'){ const [d,id]=two(); songPicks=songPicks||{}; songPicks[d]=songPicks[d]||{}; if(del) delete songPicks[d][id]; else songPicks[d][id]=val; if(!Object.keys(songPicks[d]).length) delete songPicks[d]; }
   else if(kind==='bx'){ const [d,id]=two(); buzzRemix=buzzRemix||{}; buzzRemix[d]=buzzRemix[d]||{}; if(del) delete buzzRemix[d][id]; else buzzRemix[d][id]=val; if(!Object.keys(buzzRemix[d]).length) delete buzzRemix[d]; } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
@@ -3065,7 +3078,7 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); }
+    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
@@ -3291,10 +3304,59 @@ $('#stModal').addEventListener('click',e=>{ if(e.target.id==='stModal') $('#stMo
 /* ================= giveaways: listening appointments + daily mentions (giveaways.json + local overlay, synced) ================= */
 var gvDefaults=lsGet('hs:gvDefaults', {giveaways:[]});
 var gvOv=lsGet('hs:gvLocal', {items:{}});
+var gvWins=lsGet('hs:gvWins', {});
 async function loadGiveaways(){
   if(isHttp){ try{ const j=await fetchJson('giveaways.json'); if(j && Array.isArray(j.giveaways)){ gvDefaults=j; lsSet('hs:gvDefaults', j); } }catch(e){} }
   refreshSponsorUI(); if(state.tab==='cross'||state.tab==='wrap') rerender(); }
 function allGiveaways(){ return mergeList((gvDefaults||{}).giveaways, gvOv); }
+function gvWinBucket(id){ const k=typeof id==='string'?id:(id&&id.id)||''; gvWins=gvWins||{}; gvWins[k]=gvWins[k]||{}; return gvWins[k]; }
+function gvWinList(id){ return Object.values(gvWinBucket(id)).sort((a,b)=>String(a.at||'').localeCompare(String(b.at||''))||String(a.id||'').localeCompare(String(b.id||''))); }
+function gvWinPersist(){ lsSet('hs:gvWins', gvWins); }
+function gvWinAdd(id, name, phone){
+  const g=allGiveaways().find(x=>x.id===id);
+  const cap=+((g&&g.pairs)||0);
+  if(cap && gvWinList(id).length>=cap){ toast('Already logged '+cap+' winners'); return null; }
+  const wid='w'+uid();
+  gvWinBucket(id)[wid]={id:wid, name:String(name||'').trim(), phone:String(phone||'').trim(), at:new Date().toISOString()};
+  gvWinPersist(); return wid; }
+function gvWinUpdate(id, w){ if(!w||!w.id) return; const cur=gvWinBucket(id)[w.id]; if(!cur) return; cur.name=String(w.name||'').trim(); cur.phone=String(w.phone||'').trim(); gvWinPersist(); }
+function gvWinRemove(id, wid){ delete gvWinBucket(id)[wid]; if(!Object.keys(gvWinBucket(id)).length) delete gvWins[id]; gvWinPersist(); }
+function gvLogsWinners(g){ return !!(g && (g.logWinners || +g.pairs)); }
+function gvWinTag(sp){
+  if(sp && sp.announce) return 'winners';
+  const g=allGiveaways().find(x=>x.id===(sp&&sp.giveawayId||sp&&sp.id));
+  const cap=+((g&&g.pairs)||0);
+  if(gvLogsWinners(g)){ const n=gvWinList(g).length; return cap ? (n+'/'+cap) : (n+' winner'+(n===1?'':'s')); }
+  return '1/day'; }
+function gvWinLogEl(gid, host){ const box=host||h('div',{className:'gvloghost'}); renderGvWinLog(gid, box); return box; }
+function renderGvWinLog(gid, host){
+  const g=allGiveaways().find(x=>x.id===gid);
+  if(!host) return;
+  host.innerHTML='';
+  if(!g || !gvLogsWinners(g)) return;
+  const list=gvWinList(g); const cap=+g.pairs||0;
+  const rows=h('div',{className:'gvlog'});
+  rows.append(h('h4',{},'Z93 winners: '+list.length+(cap?'/'+cap:'')));
+  rows.append(h('p',{className:'hint'},'Name and phone stay on this device and in Hot Sheet sync. They are not published.'));
+  for(const w of list){
+    rows.append(h('div',{className:'gvwinrow','data-win':w.id},
+      h('input',{type:'text', className:'gvwname', value:w.name||'', placeholder:'Winner name', 'aria-label':'Winner name', on:{change:e=>{ w.name=e.target.value.trim(); gvWinUpdate(g.id,w); if(typeof renderReadStrip==='function') renderReadStrip(); }}}),
+      h('input',{type:'tel', className:'gvwphone', value:w.phone||'', placeholder:'Phone', 'aria-label':'Winner phone', on:{change:e=>{ w.phone=e.target.value.trim(); gvWinUpdate(g.id,w); }}}),
+      h('button',{type:'button', className:'danger', on:{click:()=>{ gvWinRemove(g.id,w.id); renderGvWinLog(g.id, host); if(typeof renderReadStrip==='function') renderReadStrip(); }}}, 'Remove')));
+  }
+  if(!cap || list.length<cap){
+    const name=h('input',{type:'text', className:'gvwname', placeholder:'Winner name', 'aria-label':'New winner name'});
+    const phone=h('input',{type:'tel', className:'gvwphone', placeholder:'Phone', 'aria-label':'New winner phone'});
+    rows.append(h('div',{className:'gvwinrow','data-win-add':'1'},
+      name, phone,
+      h('button',{type:'button', on:{click:()=>{
+        const n=name.value.trim(), p=phone.value.trim();
+        if(!n && !p){ toast('Add a name or phone first'); return; }
+        gvWinAdd(g.id,n,p); renderGvWinLog(g.id, host); if(typeof renderReadStrip==='function') renderReadStrip();
+      }}}, 'Add winner')));
+  }
+  host.append(rows);
+}
 function ymdOrEmpty(k, yearFrom){ const t=String(k||'').trim(); if(!t || /^(tbd|tfn|-)$/i.test(t)) return '';
   const n=normKill(t, yearFrom); return /^\d{4}-\d{2}-\d{2}$/.test(n)?n:''; }
 function gvKeyword(g, date){ const t=String(((g&&g.keywords)||{})[date||etParts().date]||'').trim(); return t; }
@@ -3318,6 +3380,13 @@ function gvDailyDue(g, p=etParts()){ if(!gvLive(g,p) || !isShowDay(p)) return fa
   const end=ymdOrEmpty(g.end); if(end && p.date>end) return false;
   return true; }
 function gvAnnounceDue(g, p=etParts()){ const ann=ymdOrEmpty(g.announce); return !!(g && g.active!==false && ann && p.date===ann && isShowDay(p)); }
+function gvShiftOk(g, p=etParts()){
+  const only=String((g&&g.onlyShift)||'').trim().toLowerCase();
+  if(!only) return true;
+  const sh=currentShift(p);
+  if(!sh || sh.ended) return false;
+  if(only==='truce' || only==='first'){ const f=firstShift(p); return !!(f && sh.id===f.id); }
+  return sh.id===only; }
 function gvMention(g, date){ const d=date||etParts().date; const kw=gvKeywordLabel(g,d); const times=fmtActTimes(g.activationTimes);
   const line=spSettings().studioLine||'231-929-4487';
   const custom=String(g.mention||'').trim();
@@ -3334,7 +3403,7 @@ function gvAsSp(id){ const all=allGiveaways(); let kind='mention', g=all.find(x=
   const wrapTitle=kind==='announce'?gvAnnounceLine(g):(String(g.mention||'').trim()?gvMention(g).replace(/^[^A-Za-z0-9]+/,''):(g.short||g.name)+' — keyword '+gvKeywordLabel(g));
   return {id: kind==='announce'?g.id+'-announce':g.id, name:g.name+(kind==='announce'?' winners':''), short, icon:g.icon||'🎟', read, giveaway:true, announce:kind==='announce', giveawayId:g.id, wrapTitle, wrapBody:read, shortLine:read, station:false}; }
 function liveGiveawayTicks(p=etParts()){ const out=[];
-  for(const g of allGiveaways()){ if(gvDailyDue(g,p)) out.push(gvAsSp(g.id)); if(gvAnnounceDue(g,p)) out.push(gvAsSp(g.id+'-announce')); }
+  for(const g of allGiveaways()){ if(gvDailyDue(g,p) && gvShiftOk(g,p)) out.push(gvAsSp(g.id)); if(gvAnnounceDue(g,p) && gvShiftOk(g,p)) out.push(gvAsSp(g.id+'-announce')); }
   return out.filter(Boolean); }
 function gvIsHot(p=etParts()){ for(const g of allGiveaways()){ if(!gvDailyDue(g,p)) continue;
     for(const t of (g.activationTimes||[])){ const hm=parseActTimes(t)[0]; if(!hm) continue;
@@ -3361,7 +3430,7 @@ function gvWeekdays(g){ const start=ymdOrEmpty(g.start)||etParts().date; const e
 function openGvEditor(){
   let work=clone(allGiveaways()); const box=$('#gvEditor');
   const draw=()=>{ box.innerHTML='';
-    box.append(h('div',{className:'hint'},'One mention a day on show days, from the start date through the end date (leave the end blank to keep it up until you set one or delete it). A winners date shows a separate tick on that show day. Keywords start blank and show as “TBD” until you fill them in.'));
+    box.append(h('div',{className:'hint'},'One mention a day on show days, from the start date through the end date (leave the end blank to keep it up until you set one or delete it). You can limit a giveaway to Truce\'s morning shift only. A winners date shows a separate tick on that show day. Keywords start blank and show as “TBD” until you fill them in. Winner names and phones stay on this device and in sync — they are never exported or published.'));
     const todayTicks=liveGiveawayTicks();
     if(todayTicks.length){ box.append(h('label',{},'Today\'s giveaway ticks ('+etParts().date+')'));
       for(const sp of todayTicks) box.append(h('div',{className:'ed'}, h('div',{style:'font-weight:900'}, (sp.icon||'🎟')+' '+(sp.short||sp.name)), tickButton(sp, ()=>draw()))); }
@@ -3374,6 +3443,7 @@ function openGvEditor(){
           h('input',{type:'text', value:g.short||'', on:{input:e=>g.short=e.target.value}}),
           h('input',{type:'text', value:g.icon||'', style:'max-width:80px', on:{input:e=>g.icon=e.target.value}})),
         h('label',{},'Prize'), h('input',{type:'text', value:g.prize||'', placeholder:'TBD', on:{input:e=>g.prize=e.target.value}}),
+        h('label',{},'Pairs / winner cap'), h('input',{type:'number', min:'0', value:g.pairs||'', placeholder:'5', on:{input:e=>{ const n=parseInt(e.target.value,10); g.pairs=Number.isFinite(n)&&n>0?n:''; }}}),
         h('label',{},'Start date'), h('input',{type:'date', value:g.start||'', on:{input:e=>{ g.start=e.target.value; }}}),
         h('label',{},'End date (blank = keep showing on weekdays)'), h('input',{type:'date', value:g.end||'', on:{input:e=>g.end=e.target.value}}),
         h('label',{},'Activation times (e.g. 7am, 11am, 4pm)'), h('input',{type:'text', value:fmtActTimes(g.activationTimes)||'', placeholder:'7am, 11am, 4pm', on:{input:e=>g.activationTimes=parseActTimes(e.target.value)}}),
@@ -3383,6 +3453,8 @@ function openGvEditor(){
           h('input',{type:'date', value:g.event||'', on:{input:e=>g.event=e.target.value}}),
           h('input',{type:'text', value:g.eventName||'', placeholder:'Show name', on:{input:e=>g.eventName=e.target.value}})),
         h('label',{},'Custom daily mention (optional; use {keyword}, {times}, {line})'), h('textarea',{value:g.mention||'', rows:3, placeholder:'Leave blank for the listening-appointment wording', on:{input:e=>g.mention=e.target.value}}),
+        h('label',{},'Show this mention on'), (function(){ const sel=h('select',{on:{change:e=>{ g.onlyShift=e.target.value; }}}); sel.append(h('option',{value:''},'Every weekday shift'), h('option',{value:'truce'},"Truce's morning shift only")); sel.value=g.onlyShift||''; return sel; })(),
+        h('label',{className:'chk'}, h('input',{type:'checkbox', checked:!!g.logWinners || !!(+g.pairs), on:{change:e=>g.logWinners=e.target.checked}}), 'Log winner names and phones (device + sync only, never published)'),
         h('label',{},'Tag a sheet section (e.g. cross for Cross Talk)'), h('input',{type:'text', value:g.tagSection||'', placeholder:'cross', on:{input:e=>g.tagSection=e.target.value.trim()}}),
         h('label',{className:'chk'}, h('input',{type:'checkbox', checked:g.studioLine!==false, on:{change:e=>g.studioLine=e.target.checked}}), 'Mention the studio line (links the TVC Airport read)'),
         h('label',{},'Notes'), h('textarea',{value:g.notes||'', rows:3, on:{input:e=>g.notes=e.target.value}}),
@@ -3392,10 +3464,11 @@ function openGvEditor(){
             h('input',{type:'text', value:g.keywords[ds]||'', placeholder:'keyword TBD', on:{input:e=>{ g.keywords=g.keywords||{}; if(e.target.value.trim()) g.keywords[ds]=e.target.value.trim(); else delete g.keywords[ds]; }}})); }),
         h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ const ds=prompt('Add a keyword date (YYYY-MM-DD)'); if(!ds) return; const n=ymdOrEmpty(ds,g.start); if(!n){ alert('Use a real date.'); return; } g.keywords=g.keywords||{}; if(g.keywords[n]==null) g.keywords[n]=''; draw(); }}}, '➕ Add a keyword date')),
         h('label',{className:'chk'}, h('input',{type:'checkbox', checked:g.active!==false, on:{change:e=>g.active=e.target.checked}}), 'Active'),
+        (gvLogsWinners(g)?gvWinLogEl(g.id):null),
         h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Delete '+(g.name||'this giveaway')+'?')){ work.splice(i,1); draw(); } }}}, '🗑 Delete giveaway'))));
     });
     const nt=h('input',{type:'text', placeholder:'Optional note for the change log'});
-    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ work.push({id:'gv-'+uid(), name:'New giveaway', short:'', icon:'🎟', prize:'', start:etParts().date, end:'', activationTimes:[], keywords:{}, announce:'', announceText:'', event:'', eventName:'', studioLine:true, mention:'', tagSection:'', notes:'', active:true}); draw(); }}}, '➕ Add giveaway')),
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ work.push({id:'gv-'+uid(), name:'New giveaway', short:'', icon:'🎟', prize:'', pairs:'', start:etParts().date, end:'', activationTimes:[], keywords:{}, announce:'', announceText:'', event:'', eventName:'', studioLine:true, onlyShift:'', logWinners:false, mention:'', tagSection:'', notes:'', active:true}); draw(); }}}, '➕ Add giveaway')),
       h('label',{},'Note'), nt,
       h('div',{className:'rowb'},
         h('button',{type:'button', style:'background:#2ecc71;color:#06210f;border-color:#2ecc71', on:{click:()=>{ saveGv(nt.value); $('#gvModal').classList.remove('on'); }}}, '💾 Save'),
@@ -3408,10 +3481,11 @@ function openGvEditor(){
         h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Drop local giveaway edits and go back to the published list? (Ticks are kept.)')){ gvOv={items:{}}; lsSet('hs:gvLocal',gvOv); logSp('Giveaways reset to published list'); refreshSponsorUI(true); openGvEditor(); } }}}, '↺ Defaults'))); };
   const saveGv=(lognote)=>{
     work.forEach(g=>{ g.start=ymdOrEmpty(g.start,g.start)||g.start||''; g.end=ymdOrEmpty(g.end,g.start); g.announce=ymdOrEmpty(g.announce,g.start); g.event=ymdOrEmpty(g.event,g.start);
-      g.activationTimes=parseActTimes((g.activationTimes||[]).join(', ')); const kw={}; for(const [d,v] of Object.entries(g.keywords||{})){ const k=ymdOrEmpty(d,g.start), t=String(v||'').trim(); if(k&&t) kw[k]=t; } g.keywords=kw; });
+      g.activationTimes=parseActTimes((g.activationTimes||[]).join(', ')); const kw={}; for(const [d,v] of Object.entries(g.keywords||{})){ const k=ymdOrEmpty(d,g.start), t=String(v||'').trim(); if(k&&t) kw[k]=t; } g.keywords=kw;
+      const pn=parseInt(g.pairs,10); g.pairs=Number.isFinite(pn)&&pn>0?pn:''; g.onlyShift=String(g.onlyShift||'').trim(); g.logWinners=!!g.logWinners || !!g.pairs; });
     const old=allGiveaways(), ch=[];
     for(const g of work){ const p=old.find(x=>x.id===g.id); if(!p){ ch.push('Giveaway added: '+g.name); continue; }
-      const f=['name','short','icon','prize','start','end','activationTimes','keywords','announce','announceText','event','eventName','studioLine','mention','tagSection','notes','active'].filter(k=>JSON.stringify(p[k]??'')!==JSON.stringify(g[k]??''));
+      const f=['name','short','icon','prize','pairs','start','end','activationTimes','keywords','announce','announceText','event','eventName','studioLine','onlyShift','logWinners','mention','tagSection','notes','active','url'].filter(k=>JSON.stringify(p[k]??'')!==JSON.stringify(g[k]??''));
       if(f.length) ch.push('Giveaway edited: '+g.name+': '+f.join(', ')); }
     for(const p of old) if(!work.some(g=>g.id===p.id)) ch.push('Giveaway deleted: '+p.name);
     gvOv={items:diffOverlay((gvDefaults||{}).giveaways, work)}; lsSet('hs:gvLocal', gvOv);
@@ -3872,6 +3946,7 @@ if(isHttp && 'serviceWorker' in navigator){
 
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadTicker();
 window.__hs = state; // for debugging
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; } };
 })();
 </script>
 </body>
