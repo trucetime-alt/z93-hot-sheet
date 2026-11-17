@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updated": "2026-11-17T04:31:26-05:00",
- "updatedMs": 1794907886702,
+ "updated": "2026-11-17T06:25:37-05:00",
+ "updatedMs": 1794914737341,
  "windowHours": 24,
  "local": {
   "picks": [
@@ -34,12 +34,12 @@
      "WPBN"
     ],
     "votes": 3,
-    "at": "2026-11-16T21:34:45-05:00",
-    "atMs": 1794882885000,
+    "at": "2026-11-17T05:12:56-05:00",
+    "atMs": 1794910376000,
     "link": "https://upnorthlive.com/news/local/downtown-traverse-city-welcomes-official-holiday-tree-ahead-of-friday-lighting-grand-traverse-county",
     "tag": "LOCAL",
-    "score": 102.0,
-    "why": "3 sources · local · community",
+    "score": 108.0,
+    "why": "3 sources · fresh · local · community",
     "desc": "Tree Lighting, Cocoa Crawl, Light Parade: Traverse City has full holiday lineup MLive.com"
    },
    {
@@ -56,7 +56,7 @@
     "atMs": 1794880920000,
     "link": "https://upnorthlive.com/news/local/traverse-city-vigil-honors-lawrence-boyd-nearly-a-year-after-his-death",
     "tag": "LOCAL",
-    "score": 102.0,
+    "score": 96.0,
     "why": "3 sources · local · community",
     "desc": "TRAVERSE CITY — Family, friends and community members gathered Sunday to remember Lawrence Boyd IV, nearly one year after he was found dead in the State Street parking garage."
    },
@@ -73,7 +73,7 @@
     "atMs": 1794851122000,
     "link": "https://upnorthlive.com/news/local/thanksgiving-community-meals-served-around-northern-michigan-10-21-2026",
     "tag": "LOCAL",
-    "score": 68.0,
+    "score": 62.0,
     "why": "2 sources · local · community",
     "desc": "NORTHERN MICHIGAN,. (WPBN/WGTU) -- Volunteers will be gathering on Thanksgiving to make sure everyone has a warm meal.If you know of other places that will serv"
    },
@@ -178,22 +178,6 @@
     "desc": "New programs for young skiers, an expanded bar area inside a giant snow fort, and perks for zipliners round out the winter fun at Boyne Mountain Resort this year."
    },
    {
-    "id": "loc-a35437758e",
-    "title": "Northwest Michigan Works! celebrates record 77 apprenticeship graduates",
-    "source": "Manistee News Advocate",
-    "sources": [
-     "Manistee News Advocate"
-    ],
-    "votes": 1,
-    "at": "2026-11-16T13:25:24-05:00",
-    "atMs": 1794853524000,
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONGdXRGhkdnEtZHZEbEQtNGpGUjFtZDdiNFdaQms4S1lzdXp5ZzFCaDBEU1hHZ19VaUVPZnZDazQ0RDRsXzIwTDZqd3RWR0hFeTNDa1dxZTdYa0x3RTNMaGNLaGVKYWwweDMtbmRMRUxvUk52ZU5wTkFya2g3bURFSkNwUnl6aHhGTGVMb1p1V2dxOURtVWxzN0J1UHFxMDg?oc=5",
-    "tag": "LOCAL",
-    "score": 36.0,
-    "why": "local · viral",
-    "desc": "Northwest Michigan Works! celebrates record 77 apprenticeship graduates Manistee News Advocate"
-   },
-   {
     "id": "loc-e577b2fbaf",
     "title": "Education Newsmakers: 11/16/2026",
     "source": "Record-Eagle",
@@ -208,9 +192,41 @@
     "score": 36.0,
     "why": "local · schools",
     "desc": "The Kiwanis Club of Traverse City recognized the following seniors as “Student of the Month.”"
+   },
+   {
+    "id": "loc-1cbdc05166",
+    "title": "Ted Bodus Obituary (2026) - Traverse City, MI - Martinson Funeral Home",
+    "source": "Legacy | Obituary",
+    "sources": [
+     "Legacy | Obituary"
+    ],
+    "votes": 1,
+    "at": "2026-11-16T22:49:54-05:00",
+    "atMs": 1794887394000,
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4yRmdxazQ3UEtVWWNMS0NnQU9jU2lvUy16NGRkMlNqNFdIdVFZbnlkSXJxUHQweGlBLWJ3UFp1ZGR2VlZIc1praXdXdnVyRW5TR1dTNjZ5bTJ1ekpUOFVBamo2UDNUTFZrM3Zrc2VFdVJlV0VtNFowZTF5QzE?oc=5",
+    "tag": "LOCAL",
+    "score": 34.0,
+    "why": "local",
+    "desc": "Ted Bodus Obituary (2026) - Traverse City, MI - Martinson Funeral Home Legacy | Obituary"
    }
   ],
   "more": [
+   {
+    "id": "loc-a35437758e",
+    "title": "Northwest Michigan Works! celebrates record 77 apprenticeship graduates",
+    "source": "Manistee News Advocate",
+    "sources": [
+     "Manistee News Advocate"
+    ],
+    "votes": 1,
+    "at": "2026-11-16T13:25:24-05:00",
+    "atMs": 1794853524000,
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONGdXRGhkdnEtZHZEbEQtNGpGUjFtZDdiNFdaQms4S1lzdXp5ZzFCaDBEU1hHZ19VaUVPZnZDazQ0RDRsXzIwTDZqd3RWR0hFeTNDa1dxZTdYa0x3RTNMaGNLaGVKYWwweDMtbmRMRUxvUk52ZU5wTkFya2g3bURFSkNwUnl6aHhGTGVMb1p1V2dxOURtVWxzN0J1UHFxMDg?oc=5",
+    "tag": "LOCAL",
+    "score": 30.0,
+    "why": "local · viral",
+    "desc": "Northwest Michigan Works! celebrates record 77 apprenticeship graduates Manistee News Advocate"
+   },
    {
     "id": "loc-f97686898b",
     "title": "UNVEILING: Phase one of the Grand Traverse Greenway Trail now complete",
@@ -219,8 +235,8 @@
      "WSMH"
     ],
     "votes": 1,
-    "at": "2026-11-16T18:42:34-05:00",
-    "atMs": 1794872554000,
+    "at": "2026-11-16T21:41:47-05:00",
+    "atMs": 1794883307000,
     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdHJxMUhEb1lpeHlIVGNhRUhlYlZpaWVOcUpjWklwN2MxMEloR2U3MjJ5SnhBQ1hLendhWnN6TlpQOTZsZHhrejNxeTIxbW10WHB6VFNWZEU0U294bUxkbmlhZFl5Tm8tMmdGcEFHa0cyNDVZaExqZFY2OGtXR2VuZkVMS3ZTZ1d6dndFNmVTZjlZTVZUUkhvZkRJeUNiVW5xT2NNTGgzUzl0SGc?oc=5",
     "tag": "LOCAL",
     "score": 28.0,
@@ -308,22 +324,6 @@
     "desc": "Sleeping Bear Wildlife Fund starts 3-year bee research project Manistee News Advocate"
    },
    {
-    "id": "loc-22445bedb5",
-    "title": "This is the last week to give input on DNR’s 5-year plan for state parks, campgrounds and trails",
-    "source": "MLive",
-    "sources": [
-     "MLive"
-    ],
-    "votes": 1,
-    "at": "2026-11-16T14:04:08-05:00",
-    "atMs": 1794855848000,
-    "link": "https://www.mlive.com/life/2026/11/this-is-the-last-week-to-give-input-on-dnrs-5-year-plan-for-state-parks-campgrounds-and-trails.html",
-    "tag": "LOCAL",
-    "score": 28.0,
-    "why": "local",
-    "desc": "Current projects span Yankee Springs and Newaygo State Park in West Michigan to Traverse City State Park and boating access off Old Mission Peninsula."
-   },
-   {
     "id": "loc-c543b5409b",
     "title": "Michigan Lottery Joins Good Day Northern Michigan",
     "source": "9&10",
@@ -341,20 +341,20 @@
     "desc": "Michigan Lottery Joins Good Day Northern Michigan 9and10News.com"
    },
    {
-    "id": "loc-e4dd4f20c6",
-    "title": "A Northern Michigan VC firm that saw an $835M sale is now second-largest in the state",
-    "source": "Crain's Detroit",
+    "id": "loc-22445bedb5",
+    "title": "This is the last week to give input on DNR’s 5-year plan for state parks, campgrounds and trails",
+    "source": "MLive",
     "sources": [
-     "Crain's Detroit"
+     "MLive"
     ],
     "votes": 1,
-    "at": "2026-11-16T06:00:00-05:00",
-    "atMs": 1794826800000,
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWWlkUWc2UU9fLUNhcFNCTk0yV1hjbFotN2wzUlZHTGttNjBHbHpPUUdtNkJRQlhrZ2k3cjB6NEcxVm1wcXBBX2VKdE1ReFV3WHRCNjhoMUdSUS1qeGZIeXdOal9OeXd4VHNxWENzVXZPT0xVMnNjcHE5emF6UjNzWQ?oc=5",
+    "at": "2026-11-16T14:04:08-05:00",
+    "atMs": 1794855848000,
+    "link": "https://www.mlive.com/life/2026/11/this-is-the-last-week-to-give-input-on-dnrs-5-year-plan-for-state-parks-campgrounds-and-trails.html",
     "tag": "LOCAL",
     "score": 22.0,
     "why": "local",
-    "desc": "A Northern Michigan VC firm that saw an $835M sale is now second-largest in the state Crain's Detroit"
+    "desc": "Current projects span Yankee Springs and Newaygo State Park in West Michigan to Traverse City State Park and boating access off Old Mission Peninsula."
    },
    {
     "id": "loc-7ec45e4a86",
@@ -585,7 +585,6 @@
    "UpNorthLive",
    "IPR",
    "9&10",
-   "Record-Eagle",
    "MLive",
    "Google News Local"
   ],
@@ -593,11 +592,13 @@
    "UpNorthLive": 41,
    "IPR": 10,
    "9&10": 25,
-   "Record-Eagle": 50,
+   "Record-Eagle": 0,
    "MLive": 1,
    "Google News Local": 71
   },
-  "errors": {}
+  "errors": {
+   "Record-Eagle": "HTTP 429"
+  }
  },
  "national": {
   "picks": [
@@ -654,7 +655,7 @@
     "tag": "NATIONAL",
     "score": 72.0,
     "why": "3 sources",
-    "desc": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz CNBC Third US aircraft carrier brings thousands more troops to Middle East The Guardian Watch What U.S. Aircraft Carriers Bring to the Iran War WSJ"
+    "desc": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz CNBC Third US aircraft carrier brings thousands more troops to Middle East The Guardian USS Theodore Roosevelt Now in the Middle East, Lincoln’s La"
    },
    {
     "id": "nat-97f575b5b2",
@@ -688,7 +689,7 @@
     "tag": "SCHOOLS",
     "score": 52.0,
     "why": "2 sources · schools",
-    "desc": "Omaha Police arrest 4 teens in bus assault, seek additional suspects WOWT See more headlines & perspectives on Google News"
+    "desc": "Four teens arrested after MAT bus assault, Omaha police say KETV Police investigating two more incidents possibly related to Omaha bus attack WOWT Assault on Metro bus injures two KETV Omaha Police arrest 4 teens in bus assault, seek additi"
    },
    {
     "id": "nat-4828e6a6e0",
@@ -716,30 +717,13 @@
      "BBC"
     ],
     "votes": 2,
-    "at": "2026-11-17T03:12:00-05:00",
-    "atMs": 1794903120000,
+    "at": "2026-11-17T06:24:27-05:00",
+    "atMs": 1794914667000,
     "link": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
     "tag": "NATIONAL",
     "score": 50.0,
     "why": "2 sources · fresh",
     "desc": "Customers at Bank of America, JPMorgan Chase and other major financial institutions are reporting difficulty accessing their accounts."
-   },
-   {
-    "id": "nat-6d67001b56",
-    "title": "Sergio Pérez (Cadillac): What matters at the Formula 1 Grand Prix in Las Vegas",
-    "source": "Pitpass",
-    "sources": [
-     "Pitpass",
-     "SPEEDWEEK.com"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T01:38:00-05:00",
-    "atMs": 1794897480000,
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE42UGFBbFFlYWxZZzRNQUU0ODJsYlNRUjJLc05HeVkyQV92Q3F2cVV1X3JacGdWTm81ZXRIakk0d2hUQXJaZjhmOWk5cVhKYXNlNUFlZG5ZdmNINEZDQmcxVDhOb1pIbU1PempCVkFjakpkRF9NM3c?oc=5",
-    "tag": "NATIONAL",
-    "score": 50.0,
-    "why": "2 sources · fresh",
-    "desc": "Sergio Pérez (Cadillac): What matters at the Formula 1 Grand Prix in Las Vegas SPEEDWEEK.com"
    },
    {
     "id": "nat-278223c1c1",
@@ -793,20 +777,38 @@
     "desc": "First Words of 21-Year-Old College Senior Who Survived 8-Story Fall from Apartment Revealed in New Bodycam Footage AOL.com New body camera footage reveals details of UGA student’s fall from apartment window Atlanta News First Police body ca"
    },
    {
-    "id": "nat-389ddb6a2f",
-    "title": "Live storm updates: Waterspouts spotted over San Francisco Bay amid severe weather",
-    "source": "ABC7 Bay Area",
+    "id": "nat-6d67001b56",
+    "title": "Sergio Pérez (Cadillac): What matters at the Formula 1 Grand Prix in Las Vegas",
+    "source": "Pitpass",
     "sources": [
-     "ABC7 Bay Area"
+     "Pitpass",
+     "SPEEDWEEK.com"
     ],
-    "votes": 1,
-    "at": "2026-11-17T02:40:00-05:00",
-    "atMs": 1794901200000,
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWi1oS0ZUckdndUdZdXgxSWVhWEczNnc2R0FKazBUbW45b2h4ckU1Y0VDa2R2S2FuMXU4ZV9jTVV3WmlpV3RXSDZFNXNQQXR2Ulk5TUJKZkhEdzk4aEI3N3g4V1U0VTB6SHNZN0VmeHRqeng5Y1oxSHAzRV9vQldteWN3empCN3U0Sm1SdXIybDF4WHhsQ0ozYTdTbERuMXFXY0ZWNzIzVmtLYVM0NGVPZW1YdUVkTmNIVWN5M2dRbTlsR19mLXZOVlNlOXcyMzB5Yk1EN1ZudWtVRHQ1aTRB?oc=5",
-    "tag": "WEATHER",
+    "votes": 2,
+    "at": "2026-11-17T01:38:00-05:00",
+    "atMs": 1794897480000,
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE42UGFBbFFlYWxZZzRNQUU0ODJsYlNRUjJLc05HeVkyQV92Q3F2cVV1X3JacGdWTm81ZXRIakk0d2hUQXJaZjhmOWk5cVhKYXNlNUFlZG5ZdmNINEZDQmcxVDhOb1pIbU1PempCVkFjakpkRF9NM3c?oc=5",
+    "tag": "NATIONAL",
+    "score": 44.0,
+    "why": "2 sources",
+    "desc": "Sergio Pérez (Cadillac): What matters at the Formula 1 Grand Prix in Las Vegas SPEEDWEEK.com"
+   },
+   {
+    "id": "nat-10b1fdd830",
+    "title": "Robert Pattinson lands coveted James Bond role",
+    "source": "NBC",
+    "sources": [
+     "NBC",
+     "CBS"
+    ],
+    "votes": 2,
+    "at": "2026-11-16T19:53:23-05:00",
+    "atMs": 1794876803000,
+    "link": "https://www.nbcnews.com/pop-culture/movies/robert-pattinson-named-newest-james-bond-rcna607085",
+    "tag": "NATIONAL",
     "score": 38.0,
-    "why": "fresh · weather",
-    "desc": "Live storm updates: Waterspouts spotted over San Francisco Bay amid severe weather ABC7 Bay Area Bay Area storm: Santa Cruz County tornado warning, twin waterspouts spotted in SF NBC Bay Area Bay Area storms bring waterspouts near SFO, hund"
+    "why": "2 sources",
+    "desc": "Going back more than 60 years, only six actors have played James Bond, the British secret agent code-named 007. After years of speculation, Amazon MGM Studios cast 40-year-old Robert Pattinson as the leading man. Tom Hanson has the story."
    }
   ],
   "more": [
@@ -825,9 +827,9 @@
     "atMs": 1794879960000,
     "link": "https://www.nytimes.com/2026/11/16/us/jeffrey-epstein-autopsy-michael-freeman.html",
     "tag": "NATIONAL",
-    "score": 58.0,
+    "score": 52.0,
     "why": "4 sources · downranked: graphic crime",
-    "desc": "Forensic expert says Epstein was likely killed, but NYC medical examiner stands by suicide ruling CNN Forensic expert says his analysis of autopsy photos suggests Epstein was killed BBC Challenging Consensus, Scientist Says Photos Show Epst"
+    "desc": "Forensic expert says Epstein was likely killed, but NYC medical examiner stands by suicide ruling CNN Challenging Consensus, Scientist Says Photos Show Epstein Was Killed The New York Times Forensic expert says his analysis of autopsy photo"
    },
    {
     "id": "nat-cb1a496e7e",
@@ -836,8 +838,8 @@
     "sources": [
      "NPR",
      "BBC",
-     "NBC",
-     "WCVB"
+     "WCVB",
+     "NBC"
     ],
     "votes": 4,
     "at": "2026-11-16T17:10:00-05:00",
@@ -863,26 +865,9 @@
     "atMs": 1794855060000,
     "link": "https://www.foxnews.com/us/fbi-investigates-who-placed-bomb-near-illinois-ethanol-plant",
     "tag": "NATIONAL",
-    "score": 52.0,
+    "score": 46.0,
     "why": "4 sources · downranked: graphic crime",
     "desc": "UPDATED: Peoria Mayor Rita Ali praised responding agencies after ‘suspect’ in custody CIProud.com Suspect arrested in investigation into explosive device found at Illinois ethanol plant, official says CNN Person of interest in custody in bo"
-   },
-   {
-    "id": "nat-10b1fdd830",
-    "title": "Robert Pattinson lands coveted James Bond role",
-    "source": "NBC",
-    "sources": [
-     "NBC",
-     "CBS"
-    ],
-    "votes": 2,
-    "at": "2026-11-16T19:53:23-05:00",
-    "atMs": 1794876803000,
-    "link": "https://www.nbcnews.com/pop-culture/movies/robert-pattinson-named-newest-james-bond-rcna607085",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "Going back more than 60 years, only six actors have played James Bond, the British secret agent code-named 007. After years of speculation, Amazon MGM Studios cast 40-year-old Robert Pattinson as the leading man. Tom Hanson has the story."
    },
    {
     "id": "nat-89a9bbedab",
@@ -936,23 +921,6 @@
     "desc": "Donald Greer Hollandswoth Obituary (2026) - Cadillac, MI - Hitesman-Holdship Funeral Home Legacy | Obituary"
    },
    {
-    "id": "nat-6d6b5298fb",
-    "title": "One of the victims of the Washington, D.C., gym shooting is a gun control activist",
-    "source": "NBC",
-    "sources": [
-     "NBC",
-     "NBC News"
-    ],
-    "votes": 2,
-    "at": "2026-11-16T18:47:54-05:00",
-    "atMs": 1794872874000,
-    "link": "https://www.nbcnews.com/news/us-news/victim-washington-dc-gym-shooting-gun-control-activist-rcna609705",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "One of the victims of the Washington, D.C., gym shooting is a gun control activist NBC News ‘Gun control is a public health crisis': Logan Circle shooting survivor shares warning NBC4 Washington D.C. gunman attributed attack to frustrations"
-   },
-   {
     "id": "nat-767a79eb0c",
     "title": "California sues OpenAI over hacking risks",
     "source": "NBC",
@@ -1004,89 +972,52 @@
     "desc": "WASHINGTON — The Supreme Court on Monday declined to hear a broad challenge to Maryland’s restrictions on people carrying firearms in a broad range of public areas."
    },
    {
-    "id": "nat-4605efaf26",
-    "title": "Exclusive: Mamdani, Tisch on disbanding NYPD SRG protest unit",
-    "source": "WSJ",
-    "sources": [
-     "WSJ",
-     "ABC7 New York"
-    ],
-    "votes": 2,
-    "at": "2026-11-16T13:55:00-05:00",
-    "atMs": 1794855300000,
-    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNXzRveVl1LUFDVFliMm9NU2huenhiQlRTbS1NQ2t1eTRPN0czZUJHZDNVNksyWldCZ3hwdDByS1U4c04yOTJNbG9FamJKblg0MHdfdXBRR0lQLTZRUFYzQVNWQnMwWEVCZ3FUR2lsZjFBeFVPQmpmMkJDdXdteDJrN3c3QW92VUxCcVJocmh4aw?oc=5",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "NYPD SRG disbanded: Mamdani, Tisch on NYC protest unit ABC7 New York SRG: Mamdani disbands controversial NYPD unit, fulfilling campaign promise CNN New York Mayor Mamdani disbands divisive NYPD unit NBC News New York Mayor Mamdani disbands "
-   },
-   {
-    "id": "nat-1c5be9bf49",
-    "title": "‘Harry Potter’ ice sculpture attraction open at Grapevine’s Gaylord Texan Resort",
-    "source": "Fort Worth Star-Telegram",
-    "sources": [
-     "Fort Worth Star-Telegram",
-     "Yahoo"
-    ],
-    "votes": 2,
-    "at": "2026-11-16T13:35:56-05:00",
-    "atMs": 1794854156000,
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5OX3p4aTkzY1ExSXBhSGhnUTltYzk4YjZGTXY3Q25ZNm5EUzZPVlNMcEU0UmU4WTR3VlZ3YnhfR2NrSV9qZVlGZnlrejFvSmJDVkhhOXYzSHpGS1BmRWV1VWJYN3RXMF9LRDVKbENBaHA?oc=5",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "‘Harry Potter’ ice sculpture attraction open at Grapevine’s Gaylord Texan Resort Fort Worth Star-Telegram"
-   },
-   {
-    "id": "nat-3346c9b9de",
-    "title": "Handwritten draft of MLK's 'I Have a Dream' speech on display before sold at auction",
+    "id": "nat-29a99f9ce4",
+    "title": "Do school phone bans help students learn? So far, gains are 'modest'",
     "source": "ABC News",
     "sources": [
-     "ABC News",
-     "AP News"
+     "ABC News"
     ],
-    "votes": 2,
-    "at": "2026-11-16T13:04:13-05:00",
-    "atMs": 1794852253000,
-    "link": "https://abcnews.com/US/wireStory/handwritten-draft-mlks-dream-speech-display-sold-auction-138170091",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "'I Have a Dream' speech draft displayed before it's sold AP News Handwritten draft of MLK's 'I Have a Dream' speech to go on display before it's sold at auction ABC News - Breaking News, Latest News and Videos Rare King speech manuscript go"
+    "votes": 1,
+    "at": "2026-11-17T05:21:23-05:00",
+    "atMs": 1794910883000,
+    "link": "https://abcnews.com/US/wireStory/school-phone-bans-students-learn-gains-modest-138203187",
+    "tag": "SCHOOLS",
+    "score": 36.0,
+    "why": "fresh · schools",
+    "desc": "Phone bans have now become common at U.S. schools"
    },
    {
-    "id": "nat-aec1f2bd6f",
-    "title": "Bodycam shows party with hundreds of teens, leading to charges for parents",
-    "source": "CBS",
+    "id": "nat-a13185f85a",
+    "title": "Do school cellphone bans work? New study says yes – but it's complicated",
+    "source": "NPR",
     "sources": [
-     "CBS",
-     "CBS News"
+     "NPR"
     ],
-    "votes": 2,
-    "at": "2026-11-16T13:03:50-05:00",
-    "atMs": 1794852230000,
-    "link": "https://www.cbsnews.com/news/bodycam-party-hundreds-teens-charges-parents/",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "Bodycam shows party with hundreds of teens, leading to charges for parents CBS News McLean Homeowners Charged Following Large Underage Drinking Party Fairfax County Police Department News Virginia parents charged after house party draws hun"
+    "votes": 1,
+    "at": "2026-11-17T05:00:00-05:00",
+    "atMs": 1794909600000,
+    "link": "https://www.npr.org/2026/11/17/nx-s1-6035684/school-cellphone-ban-learning-loss-yondr-research",
+    "tag": "SCHOOLS",
+    "score": 36.0,
+    "why": "fresh · schools",
+    "desc": "A new study of school cellphone bans finds they may help students make up for some of the learning they've lost since 2013 – a divergence from earlier study results."
    },
    {
-    "id": "nat-9819646654",
-    "title": "Cadillac signs Viatris as pharmaceutical partner from 2027",
-    "source": "Viatris",
+    "id": "nat-051e49ad41",
+    "title": "Russia downs over 1,400 Ukrainian drones as Kyiv hits a key bridge in Crimea",
+    "source": "NPR",
     "sources": [
-     "Viatris",
-     "Grandprix.com"
+     "NPR"
     ],
-    "votes": 2,
-    "at": "2026-11-16T13:03:00-05:00",
-    "atMs": 1794852180000,
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYU04NnNNZ2s4ZlQ4SjZvaGE4R01jbG1TVjNNbDJ2TGpIbWV3ZUNyOVBRZHZfTXY0TU1uRXRzS201X3dwcXBtUnA1dEFPb0gxM21Mc3Bpc1ZlZXRqNFFBbGpyemR1X1JnX1p1ZDNvbS1hX0wtQWE5cFF5MTNRRVRHZTVxYkxBdVhkRXM1QmlSUXdOUjIzMTRpdi02Q24tN2FhRlhvSnpHbXlUUUZITVg3SFBNWGNya3hFeGlhVUR3VFZ2Zw?oc=5",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "CADILLAC FORMULA 1® TEAM WELCOMES VIATRIS AS OFFICIAL GLOBAL PHARMACEUTICAL PARTNER Viatris"
+    "votes": 1,
+    "at": "2026-11-17T04:50:45-05:00",
+    "atMs": 1794909045000,
+    "link": "https://www.npr.org/2026/11/17/g-s1-153946/russia-ukraine-war",
+    "tag": "ROADS",
+    "score": 36.0,
+    "why": "fresh · roads",
+    "desc": "Ukraine's forces targeted a key rail and road bridge between Russia and the Crimean Peninsula for a second day. Moscow's forces, meanwhile, fired ballistic missiles and drones at Kyiv."
    },
    {
     "id": "nat-59284cf1de",
@@ -1121,6 +1052,22 @@
     "desc": "JL's Hailey Bober is the Gaylord-area Volleyball Player of the Year, All-Area Petoskey News-Review"
    },
    {
+    "id": "nat-a0ca5f32e7",
+    "title": "Fewer international students, billions at stake",
+    "source": "Axios",
+    "sources": [
+     "Axios"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T03:34:05-05:00",
+    "atMs": 1794904445000,
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdTRsWkNLVjRtZU0wUVI4MGo3QWF3cVFTSFF4cXkxQ2RnRWtpRWhrV1Y0X1g4ZWt5VHVLMmhZWWZXdk1obGR2dEpWMS03THk2eHRaVElZNFBfN0xCdV96ZFA0M045UFhISUxNNTFQVVVtNW44eEtlbnc3UUw1RmZSTGVhbFBfbF9HUnFDMWtyRHZOUDQ?oc=5",
+    "tag": "SCHOOLS",
+    "score": 36.0,
+    "why": "fresh · schools",
+    "desc": "Fewer international students, billions at stake Axios International Students Are Turning Away From U.S. Universities The New York Times International student enrollment drops sharply, putting more U.S. colleges in financial jeopardy CNBC Pi"
+   },
+   {
     "id": "nat-3c329c2509",
     "title": "Supreme Court rebuffs Trump administration appeal over DEI funding cuts",
     "source": "ABC News",
@@ -1139,55 +1086,153 @@
     "desc": "The justices left in place a lower-court decision to block the administration from cutting millions in grants to University of California researchers over perceived ties to diversity initiatives."
    },
    {
-    "id": "nat-099c60fd24",
-    "title": "Trump says he \"would not mind\" if Nvidia reinstated Jensen Huang",
-    "source": "NYT",
+    "id": "nat-326fdd7b4f",
+    "title": "\"Some of the horrible advice people have told me they got was from pastors\" - Kingsley Okonkwo makes a case against pastors being counsellors (Video)",
+    "source": "Kemi Filani News",
     "sources": [
-     "NYT",
-     "CBS",
-     "NBC"
-    ],
-    "votes": 3,
-    "at": "2026-11-16T13:25:11-05:00",
-    "atMs": 1794853511000,
-    "link": "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
-    "tag": "NATIONAL",
-    "score": 36.0,
-    "why": "3 sources · downranked: political fight",
-    "desc": "President Trump said he “wouldn’t mind” if Jensen Huang were reinstated as CEO of Nvidia after he was ousted following allegations of multiple extramarital affairs, including one with a suspected Chinese spy. NBC News’ Garrett Haake details"
-   },
-   {
-    "id": "nat-74dc7d322a",
-    "title": "Updated Michigan High School Football Playoff Brackets: Scores, Matchups for Nov. 21",
-    "source": "Sports Illustrated",
-    "sources": [
-     "Sports Illustrated"
+     "Kemi Filani News"
     ],
     "votes": 1,
-    "at": "2026-11-16T13:34:23-05:00",
-    "atMs": 1794854063000,
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQX21UMkNLWkNDQVRxUmhRMEpTd0x5clIyYVEwNG4zNm93ajJ4ZFpTYVUtOEhZQ1JuU2c5WU5WQ1QtWjNITW9VZ1IzdmxhUzZvRjRpR2RJd2c3ZEtqM3BONGJ0dDR3U0NybUoxT1NBeEI4WnppTGJDQlFwbXNwYUo4cTd0MDhPbEwyX0FfSk9ha0pGeHo4ZmQyZjd2Rm4wb1l4UEJnQ0huNjJHbTVCOTBLS2VtQlZlOGtiTm5IcDlrTllMMmZoT3N5RnZ6Mno3LUU?oc=5",
-    "tag": "SCHOOLS",
-    "score": 32.0,
-    "why": "Michigan · schools",
-    "desc": "Updated Michigan High School Football Playoff Brackets: Scores, Matchups for Nov. 21 Sports Illustrated"
+    "at": "2026-11-17T06:00:00-05:00",
+    "atMs": 1794913200000,
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWnJDZnFHTTFHQndrVTltbU9jMkJtdURGLWllQ3JkT0V6SWMtZHBmRHhnY0xPV081OW03aFdFcmxhTEQwVmVaX19lWTJ0cGpQVjgyamZYa1VCeHhPRG1mc0FPaldIQk10N1JjcFhvS2NqNzhuZFJyR1dMbGlGRW44aDg2VUpieFZYYmdwZU9YZURFcDNSenNnUTVfZko?oc=5",
+    "tag": "SPORTS",
+    "score": 34.0,
+    "why": "fresh · sports",
+    "desc": "\"Some of the horrible advice people have told me they got was from pastors\" - Kingsley Okonkwo makes a case against pastors being counsellors (Video) Kemi Filani News"
    },
    {
-    "id": "nat-09e2700708",
-    "title": "Democrats Will Wield Enormous Power in Statehouses. What Will They Do?",
-    "source": "NYT",
+    "id": "nat-169cd08ba3",
+    "title": "‘Dating is not commitment,’ Pastor Kingsley Okonkwo shares bold relationship advice",
+    "source": "PM News Nigeria",
     "sources": [
-     "NYT",
-     "The New York Times"
+     "PM News Nigeria"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T05:25:08-05:00",
+    "atMs": 1794911108000,
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb0dETVEyM0JUTDlDYjZjOU5rVm5PRTY3RFItR1BiN1YtX1hMY0R0ZWtQb2JyVkRNRU1NZVZDRGVBWm1GMER0UnBSS3VPUjZiX3dsdHZ0LV9ycWNDc21IUFdyWWdYVzN2ZTAyYzQwaFFKVzhPdm1aU04tSDgyWVcwenk4aUFtb3gzZEt6aFY3TS1xSi1NT3Bld0ptSFRTYnlDSWpPVXZXV3BHR1FMLXBONUxpSVB4MVl4RFE?oc=5",
+    "tag": "SPORTS",
+    "score": 34.0,
+    "why": "fresh · sports",
+    "desc": "‘Dating is not commitment,’ Pastor Kingsley Okonkwo shares bold relationship advice PM News Nigeria"
+   },
+   {
+    "id": "nat-fee79fab55",
+    "title": "More people are getting the flu. Should you get a flu shot before you travel?",
+    "source": "NPR",
+    "sources": [
+     "NPR"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T05:00:00-05:00",
+    "atMs": 1794909600000,
+    "link": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
+    "tag": "NATIONAL",
+    "score": 34.0,
+    "why": "fresh · community",
+    "desc": "Thanksgiving is just around the corner, just as millions of Americans are expected to travel for the holidays. Another thing that's upon us? Cold and flu season."
+   },
+   {
+    "id": "nat-389ddb6a2f",
+    "title": "Live storm updates: Waterspouts spotted over San Francisco Bay amid severe weather",
+    "source": "ABC7 Bay Area",
+    "sources": [
+     "ABC7 Bay Area"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T02:40:00-05:00",
+    "atMs": 1794901200000,
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWi1oS0ZUckdndUdZdXgxSWVhWEczNnc2R0FKazBUbW45b2h4ckU1Y0VDa2R2S2FuMXU4ZV9jTVV3WmlpV3RXSDZFNXNQQXR2Ulk5TUJKZkhEdzk4aEI3N3g4V1U0VTB6SHNZN0VmeHRqeng5Y1oxSHAzRV9vQldteWN3empCN3U0Sm1SdXIybDF4WHhsQ0ozYTdTbERuMXFXY0ZWNzIzVmtLYVM0NGVPZW1YdUVkTmNIVWN5M2dRbTlsR19mLXZOVlNlOXcyMzB5Yk1EN1ZudWtVRHQ1aTRB?oc=5",
+    "tag": "WEATHER",
+    "score": 32.0,
+    "why": "weather",
+    "desc": "Live storm updates: Waterspouts spotted over San Francisco Bay amid severe weather ABC7 Bay Area Bay Area storm: Santa Cruz County tornado warning, twin waterspouts spotted in SF NBC Bay Area Bay Area storms bring waterspouts near SFO, hund"
+   },
+   {
+    "id": "nat-4605efaf26",
+    "title": "Exclusive: Mamdani, Tisch on disbanding NYPD SRG protest unit",
+    "source": "WSJ",
+    "sources": [
+     "WSJ",
+     "ABC7 New York"
     ],
     "votes": 2,
-    "at": "2026-11-16T10:16:11-05:00",
-    "atMs": 1794842171000,
-    "link": "https://www.nytimes.com/2026/11/16/us/politics/democrats-state-government-control-priorities.html",
+    "at": "2026-11-16T13:55:00-05:00",
+    "atMs": 1794855300000,
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNXzRveVl1LUFDVFliMm9NU2huenhiQlRTbS1NQ2t1eTRPN0czZUJHZDNVNksyWldCZ3hwdDByS1U4c04yOTJNbG9FamJKblg0MHdfdXBRR0lQLTZRUFYzQVNWQnMwWEVCZ3FUR2lsZjFBeFVPQmpmMkJDdXdteDJrN3c3QW92VUxCcVJocmh4aw?oc=5",
     "tag": "NATIONAL",
     "score": 32.0,
     "why": "2 sources",
-    "desc": "Democrats Will Wield Enormous Power in Statehouses. What Will They Do? The New York Times Midterm voters ended the long-running GOP dominance in state legislatures NPR After blue wave, three-quarters of Americans will be governed by Democra"
+    "desc": "Mamdani Disbands Controversial NYPD Protest Unit WSJ SRG: Mamdani disbands controversial NYPD unit, fulfilling campaign promise CNN Mayor Mamdani and Police Commissioner Tisch Disband NYPD’s Strategic Response Group NYC.gov Mamdani disbands"
+   },
+   {
+    "id": "nat-1c5be9bf49",
+    "title": "‘Harry Potter’ ice sculpture attraction open at Grapevine’s Gaylord Texan Resort",
+    "source": "Fort Worth Star-Telegram",
+    "sources": [
+     "Fort Worth Star-Telegram",
+     "Yahoo"
+    ],
+    "votes": 2,
+    "at": "2026-11-16T13:35:56-05:00",
+    "atMs": 1794854156000,
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5OX3p4aTkzY1ExSXBhSGhnUTltYzk4YjZGTXY3Q25ZNm5EUzZPVlNMcEU0UmU4WTR3VlZ3YnhfR2NrSV9qZVlGZnlrejFvSmJDVkhhOXYzSHpGS1BmRWV1VWJYN3RXMF9LRDVKbENBaHA?oc=5",
+    "tag": "NATIONAL",
+    "score": 32.0,
+    "why": "2 sources",
+    "desc": "‘Harry Potter’ ice sculpture attraction open at Grapevine’s Gaylord Texan Resort Fort Worth Star-Telegram"
+   },
+   {
+    "id": "nat-3346c9b9de",
+    "title": "Handwritten draft of MLK's 'I Have a Dream' speech on display before sold at auction",
+    "source": "ABC News",
+    "sources": [
+     "ABC News",
+     "AP News"
+    ],
+    "votes": 2,
+    "at": "2026-11-16T13:04:13-05:00",
+    "atMs": 1794852253000,
+    "link": "https://abcnews.com/US/wireStory/handwritten-draft-mlks-dream-speech-display-sold-auction-138170091",
+    "tag": "NATIONAL",
+    "score": 32.0,
+    "why": "2 sources",
+    "desc": "'I Have a Dream' speech draft displayed before it's sold AP News Handwritten draft of MLK's 'I Have a Dream' speech to go on display before it's sold at auction ABC News - Breaking News, Latest News and Videos Rare King speech manuscript go"
+   },
+   {
+    "id": "nat-aec1f2bd6f",
+    "title": "Bodycam shows party with hundreds of teens, leading to charges for parents",
+    "source": "CBS",
+    "sources": [
+     "CBS",
+     "CBS News"
+    ],
+    "votes": 2,
+    "at": "2026-11-16T13:03:50-05:00",
+    "atMs": 1794852230000,
+    "link": "https://www.cbsnews.com/news/bodycam-party-hundreds-teens-charges-parents/",
+    "tag": "NATIONAL",
+    "score": 32.0,
+    "why": "2 sources",
+    "desc": "Bodycam shows party with hundreds of teens, leading to charges for parents CBS News Virginia parents charged after house party draws hundreds of teens, fireworks and alleged underage drinking Fox News 'It reeks like liquor': Police confront"
+   },
+   {
+    "id": "nat-9819646654",
+    "title": "Cadillac signs Viatris as pharmaceutical partner from 2027",
+    "source": "Viatris",
+    "sources": [
+     "Viatris",
+     "Grandprix.com"
+    ],
+    "votes": 2,
+    "at": "2026-11-16T13:03:00-05:00",
+    "atMs": 1794852180000,
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYU04NnNNZ2s4ZlQ4SjZvaGE4R01jbG1TVjNNbDJ2TGpIbWV3ZUNyOVBRZHZfTXY0TU1uRXRzS201X3dwcXBtUnA1dEFPb0gxM21Mc3Bpc1ZlZXRqNFFBbGpyemR1X1JnX1p1ZDNvbS1hX0wtQWE5cFF5MTNRRVRHZTVxYkxBdVhkRXM1QmlSUXdOUjIzMTRpdi02Q24tN2FhRlhvSnpHbXlUUUZITVg3SFBNWGNya3hFeGlhVUR3VFZ2Zw?oc=5",
+    "tag": "NATIONAL",
+    "score": 32.0,
+    "why": "2 sources",
+    "desc": "CADILLAC FORMULA 1® TEAM WELCOMES VIATRIS AS OFFICIAL GLOBAL PHARMACEUTICAL PARTNER Viatris"
    },
    {
     "id": "nat-fd8ec9984f",
@@ -1240,20 +1285,22 @@
     "desc": "Crews put final touches on Beitner Bridge before Tuesday ribbon cutting WPBN"
    },
    {
-    "id": "nat-d816040644",
-    "title": "Can We Still Trust American Air Travel?",
-    "source": "CBS",
+    "id": "nat-099c60fd24",
+    "title": "Trump says he \"would not mind\" if Nvidia reinstated Jensen Huang",
+    "source": "NYT",
     "sources": [
-     "CBS"
+     "NYT",
+     "CBS",
+     "NBC"
     ],
-    "votes": 1,
-    "at": "2026-11-16T21:11:03-05:00",
-    "atMs": 1794881463000,
-    "link": "https://www.cbsnews.com/video/can-we-still-trust-american-air-travel/",
-    "tag": "ROADS",
+    "votes": 3,
+    "at": "2026-11-16T13:25:11-05:00",
+    "atMs": 1794853511000,
+    "link": "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
+    "tag": "NATIONAL",
     "score": 30.0,
-    "why": "roads",
-    "desc": "The FAA grounded every departing flight in the U.S. on Friday, only the second nationwide ground stop since 9/11. CBS News senior transportation correspondent Kris Van Cleave on why anyone would swap out equipment at 4 p.m. on a Friday, wha"
+    "why": "3 sources · downranked: political fight",
+    "desc": "President Trump said he “wouldn’t mind” if Jensen Huang were reinstated as CEO of Nvidia after he was ousted following allegations of multiple extramarital affairs, including one with a suspected Chinese spy. NBC News’ Garrett Haake details"
    },
    {
     "id": "nat-5880cf1051",
@@ -1301,40 +1348,23 @@
     "tag": "WEATHER",
     "score": 26.0,
     "why": "weather",
-    "desc": "SoCal’s first atmospheric river storm of the season arrives this week: Here’s what it will bring Los Angeles Times Atmospheric river takes aim at Southern California with heavy rain, coastal flooding and mountain snow KTLA California faces "
+    "desc": "SoCal’s first atmospheric river storm of the season arrives this week: Here’s what it will bring Los Angeles Times Atmospheric river takes aim at Southern California with heavy rain, coastal flooding and mountain snow KTLA WEATHER FORECAST:"
    },
    {
-    "id": "nat-330c934007",
-    "title": "California braces for its most widespread atmospheric river of the season",
-    "source": "CNN",
+    "id": "nat-74dc7d322a",
+    "title": "Updated Michigan High School Football Playoff Brackets: Scores, Matchups for Nov. 21",
+    "source": "Sports Illustrated",
     "sources": [
-     "CNN"
+     "Sports Illustrated"
     ],
     "votes": 1,
-    "at": "2026-11-16T14:14:00-05:00",
-    "atMs": 1794856440000,
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMmREXzhtQ1FIVTJNSWRKNGhIWWU4M1lIQ2Qtd2hYaFZSRF8wQnJ0eGhTU0NtalhHT3NuVU1FNjRvbTFtY053VXl1dGlxV2ViX2tTVFJwdTZtaGJyVUVlN2syVXpHc0hDVDZuVkRSV2drZzRHQWxFNEFkSWhMQzR2dE9Db01fb2M0eGhfSkxxRGVMMGx0bWc?oc=5",
-    "tag": "WEATHER",
+    "at": "2026-11-16T13:34:23-05:00",
+    "atMs": 1794854063000,
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQX21UMkNLWkNDQVRxUmhRMEpTd0x5clIyYVEwNG4zNm93ajJ4ZFpTYVUtOEhZQ1JuU2c5WU5WQ1QtWjNITW9VZ1IzdmxhUzZvRjRpR2RJd2c3ZEtqM3BONGJ0dDR3U0NybUoxT1NBeEI4WnppTGJDQlFwbXNwYUo4cTd0MDhPbEwyX0FfSk9ha0pGeHo4ZmQyZjd2Rm4wb1l4UEJnQ0huNjJHbTVCOTBLS2VtQlZlOGtiTm5IcDlrTllMMmZoT3N5RnZ6Mno3LUU?oc=5",
+    "tag": "SCHOOLS",
     "score": 26.0,
-    "why": "weather",
-    "desc": "California braces for its most widespread atmospheric river of the season CNN Storms to batter West Coast with mountain snow, rain, waves The Weather Channel ‘The door is open’: Next in conveyor belt of Bay Area storms appears bigger than l"
-   },
-   {
-    "id": "nat-912207a713",
-    "title": "Make Room for a Little Christmas Mischief at Gaylord National Resort",
-    "source": "ALXnow",
-    "sources": [
-     "ALXnow",
-     "ARLnow"
-    ],
-    "votes": 2,
-    "at": "2026-11-16T12:45:00-05:00",
-    "atMs": 1794851100000,
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWm5peF9pN0xKdUJHMjFrWWc0bjI4cXh6M3NBS0czYjFlRkt1czhDMmhJN0hKY1dXVDlzbVhmZTd5dXhZbTdkNW9hMGhpNlI3UUJLYXB4MDN2eUhfekNCZ1lxcDZ2bWtWNTNrS1RqSDQ3ZmwzdUhKY053dDY3UmtWdXd3X2JrTkdnd3BMTldYZFh0bzhBMGh3Vjk3M3dVSmZPWGExSkg5Z1l1aXFZ?oc=5",
-    "tag": "NATIONAL",
-    "score": 26.0,
-    "why": "2 sources · community · promo",
-    "desc": "Make Room for a Little Christmas Mischief at Gaylord National Resort ALXnow"
+    "why": "Michigan · schools",
+    "desc": "Updated Michigan High School Football Playoff Brackets: Scores, Matchups for Nov. 21 Sports Illustrated"
    },
    {
     "id": "nat-f9da08829f",
@@ -1351,6 +1381,22 @@
     "score": 24.0,
     "why": "entertainment",
     "desc": "The Grand Theft Auto video game franchise is returning to Miami-inspired Vice City"
+   },
+   {
+    "id": "nat-d816040644",
+    "title": "Can We Still Trust American Air Travel?",
+    "source": "CBS",
+    "sources": [
+     "CBS"
+    ],
+    "votes": 1,
+    "at": "2026-11-16T21:11:03-05:00",
+    "atMs": 1794881463000,
+    "link": "https://www.cbsnews.com/video/can-we-still-trust-american-air-travel/",
+    "tag": "ROADS",
+    "score": 24.0,
+    "why": "roads",
+    "desc": "The FAA grounded every departing flight in the U.S. on Friday, only the second nationwide ground stop since 9/11. CBS News senior transportation correspondent Kris Van Cleave on why anyone would swap out equipment at 4 p.m. on a Friday, wha"
    },
    {
     "id": "nat-c4ca702347",
@@ -1383,6 +1429,22 @@
     "score": 24.0,
     "why": "roads",
     "desc": "Police in Phoenix, Arizona, are investigating a four-vehicle crash that included two driverless Waymo vehicles. Three people were rushed to the hospital, including one who is fighting for their life. Jason Allen reports."
+   },
+   {
+    "id": "nat-703f3f8ba1",
+    "title": "Judge tosses DHS rule limiting how long foreign students can study in US",
+    "source": "Politico",
+    "sources": [
+     "Politico"
+    ],
+    "votes": 1,
+    "at": "2026-11-16T19:03:00-05:00",
+    "atMs": 1794873780000,
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRUVuczlnS3FJTVpTelpIX25xSTNySFQ5WTZnS2M0SFdXQmVNUHNnUldpUEFJX0I4TE1KSHJPVkZRdlo1Znh2S0I2WHpkUHpJNGliY1hnV1FIcUVNSGlNZkhPN1M4OHB0a1NFNUxZdVk2bWxIRnVZR1NJMDBUV2hpa3dIS2FIdU1GUUdnRjBSc002OTZtLTlxTnV0Yw?oc=5",
+    "tag": "SCHOOLS",
+    "score": 24.0,
+    "why": "schools",
+    "desc": "Judge tosses DHS rule limiting how long foreign students can study in US Politico Federal judge issues final ruling blocking U.S. plan to limit visa length for grad students, postdocs STAT United States: Federal Court Vacates Fixed Terms of"
    },
    {
     "id": "nat-6d7458e91b",
@@ -1430,23 +1492,7 @@
     "tag": "ROADS",
     "score": 24.0,
     "why": "roads",
-    "desc": "4 remain hospitalized as NTSB investigation into tanker, cruise ship crash continues WDSU Lawsuits filed after tanker hits docked cruise ship on New Orleans riverfront WWLTV.com New Orleans port sues owners of tanker involved in Mississippi"
-   },
-   {
-    "id": "nat-a0ca5f32e7",
-    "title": "Fewer international students, billions at stake",
-    "source": "Axios",
-    "sources": [
-     "Axios"
-    ],
-    "votes": 1,
-    "at": "2026-11-16T17:30:41-05:00",
-    "atMs": 1794868241000,
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdTRsWkNLVjRtZU0wUVI4MGo3QWF3cVFTSFF4cXkxQ2RnRWtpRWhrV1Y0X1g4ZWt5VHVLMmhZWWZXdk1obGR2dEpWMS03THk2eHRaVElZNFBfN0xCdV96ZFA0M045UFhISUxNNTFQVVVtNW44eEtlbnc3UUw1RmZSTGVhbFBfbF9HUnFDMWtyRHZOUDQ?oc=5",
-    "tag": "SCHOOLS",
-    "score": 24.0,
-    "why": "schools",
-    "desc": "Fewer international students, billions at stake Axios International Students Are Turning Away From U.S. Universities The New York Times International student enrollment drops sharply, putting more U.S. colleges in financial jeopardy CNBC Pi"
+    "desc": "4 remain hospitalized as NTSB investigation into tanker, cruise ship crash continues WDSU Lawsuits filed after tanker hits docked cruise ship on New Orleans riverfront WWLTV.com What we know about the Mississippi River collision that caused"
    },
    {
     "id": "nat-1600a08363",
@@ -1531,84 +1577,36 @@
     "desc": "American basketball player arrested in Nigeria with 75 lbs of cannabis USA Today US basketball player arrested with 75lb of marijuana at Nigerian airport, say authorities The Guardian US basketball player Greene Da'monte Khiree arrested in "
    },
    {
-    "id": "nat-472c3ab3b4",
-    "title": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
-    "source": "NPR",
+    "id": "nat-a5dbaafb7a",
+    "title": "SAIC-GM Celebrates 500,000th Cadillac CT5 Delivered In China",
+    "source": "GM Authority",
     "sources": [
-     "NPR"
+     "GM Authority"
     ],
     "votes": 1,
-    "at": "2026-11-16T13:04:50-05:00",
-    "atMs": 1794852290000,
-    "link": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
-    "tag": "SCHOOLS",
-    "score": 24.0,
-    "why": "schools",
-    "desc": "Countries are meeting in Geneva to negotiate rules on weapons that can select and kill targets without human intervention. But with the U.S., Russia and Israel resisting legally binding controls, campaigners fear the window to act is closin"
-   },
-   {
-    "id": "nat-967d829335",
-    "title": "US flights returning to normal levels after weekend of disruption",
-    "source": "BBC",
-    "sources": [
-     "BBC"
-    ],
-    "votes": 1,
-    "at": "2026-11-16T12:34:22-05:00",
-    "atMs": 1794850462000,
-    "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
-    "tag": "ROADS",
-    "score": 24.0,
-    "why": "roads",
-    "desc": "Every US airline was affected by Friday's ground stop, as the national air-traffic control system recovered from a technical failure."
-   },
-   {
-    "id": "nat-fe47361763",
-    "title": "Nigerians among 12 suspects arrested in $4.5m Canada luxury car theft syndicate",
-    "source": "BBC",
-    "sources": [
-     "BBC"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T03:11:20-05:00",
-    "atMs": 1794903080000,
-    "link": "https://www.bbc.co.uk/news/articles/cm5y1wr1535ko?at_medium=RSS&at_campaign=rss",
+    "at": "2026-11-17T06:09:41-05:00",
+    "atMs": 1794913781000,
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS2xnOUxFVTdobWUyV2VVbFRqMVNRcW5zNDJPU0Y4SUdjdHJjX2RaZTllb3BDT0NqcDBjc21SQ0pMTU52U05acF9PWmRqaGREcmo0SFg5U09YOGl3a21xT21tdE9WMHE4TTE2cVphV055Z1FTczE4S2hiWU1OcDlMdlBwOHhXdzJud1J2OERQRzJIR0RuUDFIQ3NqZWMyQQ?oc=5",
     "tag": "NATIONAL",
     "score": 22.0,
     "why": "fresh",
-    "desc": "Canadian authorities say they have recovered 96 luxury vehicles destined for West Africa."
+    "desc": "SAIC-GM Celebrates 500,000th Cadillac CT5 Delivered In China GM Authority"
    },
    {
-    "id": "nat-6cbe3f21e5",
-    "title": "Shock as man chooses prison instead of returning Ksh129M accidentally sent to his account",
-    "source": "K24 Digital",
+    "id": "nat-96d8431000",
+    "title": "Live Updates: Iran claims new attack on U.S. radar system in Bahrain and says tanker hit near Strait of Hormuz",
+    "source": "CBS News",
     "sources": [
-     "K24 Digital"
+     "CBS News"
     ],
     "votes": 1,
-    "at": "2026-11-17T03:08:39-05:00",
-    "atMs": 1794902919000,
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZG5sQmhCYnRISzZ0NGxCVWRNN25iemdPbGRWMC04emtManBzOER1clhYN28zaUtjSzJOTEMtelZ6NW51UnpaelFPbWMwSlI4S2JkV2x2X2ZhMG85akVkTTg2QnNkYzJzNTloNFdWS0pEd3FyVHh2UVlWQUJkel9NQl9xVWxIN3dWMWp0dXktTzRVWWNZOG9BU052dV93SnE1WV9iUWgtTW5tNEZCWGt1UE9ycXRYY013X3ZCeUoyTnRCYWs?oc=5",
+    "at": "2026-11-17T06:04:00-05:00",
+    "atMs": 1794913440000,
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbEJURjBQYXVkNTJSWEMyUlRrbFJ3NjJETGptNjYxX1JSS3lob1NOekp3WkZYcDdWVUtEaFRHYlpzUGg5d1FlNDE0QWdhMmtoUzBJb2piaWZFZWF3OFBaNjY1dTJMMldkdTVtNE1lWFJadlhpRFdFeWZYam5zN3RwWmFiSUw?oc=5",
     "tag": "NATIONAL",
     "score": 22.0,
     "why": "fresh",
-    "desc": "Shock as man chooses prison instead of returning Ksh129M accidentally sent to his account K24 Digital"
-   },
-   {
-    "id": "nat-de85eeac34",
-    "title": "El Niño Draws Sea Turtles to California’s Coast for the First Time",
-    "source": "NYT",
-    "sources": [
-     "NYT"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T03:06:57-05:00",
-    "atMs": 1794902817000,
-    "link": "https://www.nytimes.com/2026/11/16/us/sea-turtles-california.html",
-    "tag": "NATIONAL",
-    "score": 22.0,
-    "why": "fresh",
-    "desc": "The California coast has seen an influx of olive ridley sea turtles, which are the smallest such reptiles and are normally found in tropical waters."
+    "desc": "Live Updates: Iran claims new attack on U.S. radar system in Bahrain and says tanker hit near Strait of Hormuz CBS News Iran war live: Bahrain targeted by drones; Qatar in talks with Iranians Al Jazeera A 2-month lull ends with Iran’s third"
    }
   ],
   "sources": [
@@ -1628,8 +1626,8 @@
    "NPR": 10,
    "CBS": 30,
    "NBC": 25,
-   "BBC": 26,
-   "Google News US": 63
+   "BBC": 22,
+   "Google News US": 70
   },
   "errors": {}
  }
