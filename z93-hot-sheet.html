@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v41-clip-audio">
+<meta name="hs-build" content="v42-shift-reset">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -107,6 +107,9 @@ body.drawer-open #drawer{transform:translateX(0)}
 .daycard .src{font-size:.75em;color:var(--dim);margin-top:8px}
 #dayModal .close{width:100%;margin-top:6px}
 #clock{font-variant-numeric:tabular-nums;font-weight:800;font-size:1.05em}
+#whoShift{font-weight:800;font-size:.95em;margin:6px 0 2px;color:var(--accent);letter-spacing:.01em}
+#whoShift[hidden]{display:none!important}
+.wrapshift{list-style:none;margin:10px 0 4px;padding:6px 0 0;font-weight:900;color:var(--accent);border-top:2px solid var(--line)}
 /* weather bar */
 #wx{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:8px}
 #wx .temp{font-size:2.2em;font-weight:900;line-height:1;padding:6px 12px;background:var(--panel);
@@ -796,6 +799,7 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
     <div id="daysRow"><span id="dowLabel"></span><div id="guestChips"></div><div id="dayChips"></div></div>
     <div id="clock">--:--</div>
   </div>
+  <div id="whoShift" hidden></div>
   <div id="wxGrid"><div id="wxCol">
   <div id="wx" aria-live="polite">
     <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
@@ -992,9 +996,15 @@ function isSection(v){ return v && typeof v==='object' && !Array.isArray(v) && (
 function isClipKey(k,v){ return /^clip-/.test(k) || (v && typeof v.audio==='string'); }
 
 /* ---------- clock ---------- */
-function tick(){ const d=nowDate(); let h=d.getHours(), ap=h<12?'AM':'PM'; h=h%12||12;
-  $('#clock').textContent=h+':'+String(d.getMinutes()).padStart(2,'0')+' '+ap; }
-setInterval(tick,1000*15); tick();
+function tick(){
+  if(typeof etParts!=='function') return;
+  try{ var p=etParts(); }catch(e){ return; }
+  const [H,M]=String(p.hm||'00:00').split(':').map(Number);
+  const ap=H>=12?'PM':'AM'; const h=H%12||12;
+  const el=$('#clock'); if(el) el.textContent=h+':'+String(M).padStart(2,'0')+' '+ap;
+  if(typeof renderShiftLabel==='function') renderShiftLabel();
+}
+setInterval(tick,1000*15);
 
 /* ---------- font size ---------- */
 let fs = Number(LS.getItem('hs:fs'))||0;
@@ -1231,6 +1241,75 @@ function currentShift(p=etParts()){
 function firstShift(p=etParts()){ return weekdayShifts(p)[0]||null; }
 function isTruceShift(p=etParts()){ const sh=currentShift(p), f=firstShift(p); return !!(sh && f && sh.id===f.id && !sh.ended); }
 function shiftPossessive(n){ n=String(n||'Shift'); return /s$/i.test(n)?n+"'":n+"'s"; }
+function parseBucketDate(k){ const m=String(k||'').match(/^(\d{4}-\d{2}-\d{2})(?:#([A-Za-z0-9_-]+))?$/); return m?{date:m[1], shift:m[2]||''}:{date:String(k||''), shift:''}; }
+function shiftBucket(date, shiftId){ return shiftId?String(date)+'#'+shiftId:String(date); }
+function currentShiftBucket(p=etParts()){ const sh=currentShift(p); return shiftBucket(p.date, sh&&sh.id); }
+function shiftIdAt(when){
+  try{
+    const d=when instanceof Date?when:(when?new Date(when):nowDate());
+    if(isNaN(d.getTime())) return (currentShift()||{}).id||'';
+    const sh=currentShift(etParts(d));
+    return (sh&&sh.id)||'';
+  }catch(e){ return ''; }
+}
+function fmtHmPretty(hm){
+  const [H,M]=normHm(hm,'00:00').split(':').map(Number);
+  const ap=H>=12?'PM':'AM'; const h=H%12||12;
+  return M?h+':'+String(M).padStart(2,'0')+' '+ap:h+' '+ap;
+}
+function fmtShiftHours(sh){
+  if(!sh) return '';
+  if(sh.start==='00:00') return 'until '+fmtHmPretty(sh.end);
+  return fmtHmPretty(sh.start)+'–'+fmtHmPretty(sh.end);
+}
+function shiftLabel(sh){
+  if(!sh) return '';
+  const who=shiftPossessive(sh.name)+' shift';
+  const hrs=fmtShiftHours(sh);
+  return sh.ended?(who+' · ended'):(hrs?who+' · '+hrs:who);
+}
+function shiftById(id, p=etParts()){ return weekdayShifts(p).find(s=>s.id===id)||null; }
+function renderShiftLabel(){
+  const el=document.getElementById('whoShift'); if(!el) return;
+  const p=etParts();
+  if(typeof isShowDay==='function' && !isShowDay(p)){ el.hidden=true; el.textContent=''; return; }
+  const sh=currentShift(p);
+  if(!sh){ el.hidden=true; el.textContent=''; return; }
+  el.hidden=false; el.textContent=shiftLabel(sh);
+}
+function pruneByDate(obj, n=14){
+  const dates=[...new Set(Object.keys(obj||{}).map(k=>String(k).slice(0,10)))].filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort().slice(-n);
+  return Object.fromEntries(Object.entries(obj||{}).filter(([k])=>dates.includes(String(k).slice(0,10))));
+}
+function normalizeShiftKey(bucket, when){
+  const b=parseBucketDate(bucket);
+  if(!b.date) return String(bucket||'');
+  if(b.shift) return bucket;
+  const sid=shiftIdAt(when)||((typeof firstShift==='function'&&firstShift())||{}).id||'truce';
+  return shiftBucket(b.date, sid);
+}
+function migrateShiftMap(obj, timeOf){
+  if(!obj||typeof obj!=='object') return obj;
+  for(const k of Object.keys(obj)){
+    const b=parseBucketDate(k);
+    if(!b.date || b.shift || !/^\d{4}-\d{2}-\d{2}$/.test(b.date)) continue;
+    const items=obj[k]||{};
+    for(const [id,val] of Object.entries(items)){
+      const nk=normalizeShiftKey(k, typeof timeOf==='function'?timeOf(val):val);
+      obj[nk]=obj[nk]||{};
+      if(obj[nk][id]==null){
+        obj[nk][id]=(val&&typeof val==='object'&&!Array.isArray(val))?Object.assign({},val,{sh:val.sh||parseBucketDate(nk).shift}):val;
+      }
+    }
+    delete obj[k];
+  }
+  return obj;
+}
+function migrateShiftBuckets(){
+  if(typeof reads!=='undefined') reads=migrateShiftMap(reads, v=>v);
+  if(typeof linerUsed!=='undefined') linerUsed=migrateShiftMap(linerUsed, v=>v);
+  if(typeof air!=='undefined') air=migrateShiftMap(air, e=>e&&e.t);
+}
 function shiftEscalation(sh, p=etParts()){
   const s=spSettings(); const early=s.earlyAt||'07:00', dead=s.deadline||'09:00';
   if(!sh) return {warnAt:early, dueAt:dead, by:dead};
@@ -1242,23 +1321,18 @@ function shiftEscalation(sh, p=etParts()){
   return {warnAt:minHm(Math.max(start, end-warnOff)), dueAt:minHm(Math.max(start, Math.min(end, end-dueOff))), by:sh.end};
 }
 function readFreq(id){
-  const sp=(typeof spById==='function')?spById(id):null; if(!sp) return 'day';
-  if(sp.giveaway) return 'day';
+  const sp=(typeof spById==='function')?spById(id):null; if(!sp) return 'shift';
   const f=String(sp.freq||sp.oncePer||'').toLowerCase();
   if(f==='day'||f==='daily'||f==='once-a-day'||f==='once per day') return 'day';
   if(f==='shift'||f==='once-per-shift'||f==='once per shift') return 'shift';
-  if(sp.station) return 'shift';
-  return 'day';
+  return 'shift';
 }
 function readKey(id){
   const p=etParts();
   if(id && readFreq(id)==='shift'){ const sh=currentShift(p); if(sh) return p.date+'#'+sh.id; }
   return p.date;
 }
-function pruneReads(obj){
-  const dates=[...new Set(Object.keys(obj).map(k=>k.slice(0,10)))].sort().slice(-14);
-  return Object.fromEntries(Object.entries(obj).filter(([k])=>dates.includes(k.slice(0,10))));
-}
+function pruneReads(obj){ return pruneByDate(obj, 14); }
 function readAt(id){ const r=reads[readKey(id)]; return r && r[id]; }
 function isRead(id){ return !!readAt(id); }
 function spById(id){ return allSponsors().find(s=>s.id===id) || (typeof stAsSp==='function' ? stAsSp(id) : null) || (typeof gvAsSp==='function' ? gvAsSp(id) : null); }
@@ -1360,8 +1434,8 @@ function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp
   box.dataset.sig=sig; box.innerHTML=''; box.className=(ph==='over'?'early':ph)+(hot?' gvhot':'');
   if(!list.length){ box.hidden=true; if(!was) setHdr(); return; }
   const onlyGv=gvl.length && !stl.length && !list.some(x=>!x.giveaway && !x.station);
-  const shiftLine=sh && !sh.ended ? (shiftPossessive(sh.name)+' shift · Read this shift by '+fmt12(sh.end)) : '';
-  box.append(h('span',{className:'rsl', id:'shiftLabel'}, hot && gvl.some(x=>!x.announce) ? '🎟 Listening appointment' : onlyGv && !stl.length ? '🎟 Giveaways today' : shiftLine || (ph==='warn' ? '⏰ Ad reads due by '+fmt12((spSettings().deadline||'09:00')) : 'Ad reads today')));
+  const shiftLine=sh && !sh.ended ? shiftLabel(sh) : '';
+  box.append(h('span',{className:'rsl', id:'rsShift'}, hot && gvl.some(x=>!x.announce) ? '🎟 Listening appointment' : onlyGv && !stl.length ? '🎟 Giveaways today' : shiftLine || (ph==='warn' ? '⏰ Ad reads due by '+fmt12((spSettings().deadline||'09:00')) : 'Ad reads today')));
   for(const sp of list){
     const showCopy=ph==='warn' || ph==='due' || !!sp.giveaway;
     const per=readFreq(sp.id)==='shift';
@@ -1380,7 +1454,7 @@ function renderBanner(){ renderReadStrip(); const due=overdueList(); const b=$('
   $('#spBannerBtn').onclick=()=>openRead(due[0].id);
   if(!b.classList.contains('on')){ b.classList.add('on'); setHdr(); } }
 let lastEtDate=etParts().date, lastShiftSig=(currentShift()||{}).id||'';
-function refreshSponsorUI(withView){ renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
+function refreshSponsorUI(withView){ if(typeof renderShiftLabel==='function') renderShiftLabel(); renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
   if(withView){ renderTicker(); if(state.sheet){ const y=scrollY; renderView(); window.scrollTo(0,y); } } }
 function onNewDay(){ refreshSponsorUI(true); if(typeof renderSun==='function') renderSun(); renderDays(); renderSheetTag(); if(typeof renderWeek==='function') renderWeek(); }
 function shiftSig(){ const sh=currentShift(); return etParts().date+'|'+(sh?sh.id+(sh.ended?':ended':''):'off')+'|'+readPhase(); }
@@ -3359,13 +3433,13 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   if(kind==='sp'){ spOv.items=spOv.items||{}; if(del) delete spOv.items[rest]; else spOv.items[rest]=val; }
   else if(kind==='ss'){ spOv.settings=spOv.settings||{}; if(del) delete spOv.settings[rest]; else spOv.settings[rest]=val; }
   else if(kind==='cd'){ cdOv.items=cdOv.items||{}; if(del) delete cdOv.items[rest]; else cdOv.items[rest]=val; }
-  else if(kind==='rd'){ const [d,id]=two(); reads[d]=reads[d]||{}; if(del) delete reads[d][id]; else reads[d][id]=val; }
+  else if(kind==='rd'){ const [d0,id]=two(); const d=typeof normalizeShiftKey==='function'?normalizeShiftKey(d0,val):d0; reads[d]=reads[d]||{}; if(del) delete reads[d][id]; else reads[d][id]=val; if(d!==d0 && reads[d0]) delete reads[d0][id]; }
   else if(kind==='cl'){ const [d,id]=two(); clipState[d]=clipState[d]||{}; if(del) delete clipState[d][id]; else clipState[d][id]=val; }
   else if(kind==='sr'){ stOv.reads=stOv.reads||{}; if(del) delete stOv.reads[rest]; else stOv.reads[rest]=val; }
   else if(kind==='sl'){ stOv.liners=stOv.liners||{}; if(del) delete stOv.liners[rest]; else stOv.liners[rest]=val; }
   else if(kind==='st'){ stOv.settings=stOv.settings||{}; if(del) delete stOv.settings[rest]; else stOv.settings[rest]=val; }
-  else if(kind==='lu'){ const [d,id]=two(); linerUsed[d]=linerUsed[d]||{}; if(del) delete linerUsed[d][id]; else linerUsed[d][id]=val; }
-  else if(kind==='ai'){ const [d,id]=two(); air[d]=air[d]||{}; if(del) delete air[d][id]; else air[d][id]=val; }
+  else if(kind==='lu'){ const [d0,id]=two(); const d=typeof normalizeShiftKey==='function'?normalizeShiftKey(d0,val):d0; linerUsed[d]=linerUsed[d]||{}; if(del) delete linerUsed[d][id]; else linerUsed[d][id]=val; if(d!==d0 && linerUsed[d0]) delete linerUsed[d0][id]; }
+  else if(kind==='ai'){ const [d0,id]=two(); const when=val&&typeof val==='object'?val.t:val; const d=typeof normalizeShiftKey==='function'?normalizeShiftKey(d0,when):d0; air[d]=air[d]||{}; if(del) delete air[d][id]; else { air[d][id]=(val&&typeof val==='object')?Object.assign({},val,{sh:val.sh||parseBucketDate(d).shift}):val; } if(d!==d0 && air[d0]) delete air[d0][id]; }
   else if(kind==='sv'){ if(del) delete savedMap[rest]; else savedMap[rest]=val; }
   else if(kind==='hd'){ const [d,id]=two(); holds[d]=holds[d]||{}; if(del) delete holds[d][id]; else holds[d][id]=val; if(!Object.keys(holds[d]).length) delete holds[d]; }
   else if(kind==='gv'){ gvOv=gvOv||{items:{}}; gvOv.items=gvOv.items||{}; if(del) delete gvOv.items[rest]; else gvOv.items[rest]=val; }
@@ -3386,7 +3460,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx):(\d{4}-\d{2}-\d{2})(?:#[^:]+)?:/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -3397,7 +3471,7 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); }
+    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
@@ -3509,11 +3583,18 @@ function readable(t){ t=String(t||''); const L=t.replace(/[^A-Za-z]/g,''); if(!L
   return o; }
 
 /* --- Liners tab --- */
-function lnUsedAt(id){ const r=(linerUsed||{})[etParts().date]; return r && r[id]; }
-function setLiner(id, on){ const d=etParts().date; linerUsed[d]=linerUsed[d]||{};
-  if(on) linerUsed[d][id]=new Date().toISOString(); else delete linerUsed[d][id];
+function lnUsedAt(id){ const r=(linerUsed||{})[currentShiftBucket()]; return r && r[id]; }
+function setLiner(id, on){ const d=currentShiftBucket(); linerUsed[d]=linerUsed[d]||{};
+  if(on) linerUsed[d][id]=new Date().toISOString(); else { const b=linerFindBucket(id); if(b!==d){ if(linerUsed[b]) delete linerUsed[b][id]; } else delete linerUsed[d][id]; }
   { const l=allLiners().find(x=>x.id===id); airSet('ln:'+id, on, l?(l.group+': '+readable(l.text)):'Liner', 'liners', true, l?readable(l.text):''); }
-  const keep=Object.keys(linerUsed).sort().slice(-14); linerUsed=Object.fromEntries(keep.map(k=>[k,linerUsed[k]])); lsSet('hs:linerUsed', linerUsed); }
+  linerUsed=pruneByDate(linerUsed, 14); lsSet('hs:linerUsed', linerUsed); }
+function linerFindBucket(id){
+  const prefer=currentShiftBucket();
+  if(linerUsed[prefer] && linerUsed[prefer][id]) return prefer;
+  const d=etParts().date;
+  for(const k of Object.keys(linerUsed||{})){ if(parseBucketDate(k).date===d && linerUsed[k] && linerUsed[k][id]) return k; }
+  return prefer;
+}
 var linerPick=null;
 function renderLiners(view){
   const all=liveLiners(); const left=all.filter(l=>!lnUsedAt(l.id));
@@ -3811,10 +3892,16 @@ $('#gvModal').addEventListener('click',e=>{ if(e.target.id==='gvModal') $('#gvMo
 
 /* ================= Show Wrap: "✓ Read on air" ticks per show date (synced) ================= */
 var air=lsGet('hs:air', {});
-function airDay(){ return (air||{})[etParts().date]||{}; }
-function airSave(){ const keep=Object.keys(air).sort().slice(-14); air=Object.fromEntries(keep.map(k=>[k,air[k]])); lsSet('hs:air', air); }
-function airSet(key, on, title, sec, quiet, body){ const d=etParts().date; air[d]=air[d]||{};
-  if(on){ if(!air[d][key]){ air[d][key]={t:new Date().toISOString(), title:String(title||'').slice(0,240), sec:sec||''}; const sm=summarize(body); if(sm) air[d][key].body=sm; } }
+function airDay(){ return (air||{})[currentShiftBucket()]||{}; }
+function airSave(){ air=pruneByDate(air, 14); lsSet('hs:air', air); }
+function airFindBucket(key, p=etParts()){
+  const prefer=currentShiftBucket(p);
+  if(air[prefer] && air[prefer][key]) return prefer;
+  for(const k of Object.keys(air||{})){ if(parseBucketDate(k).date===p.date && air[k] && air[k][key]) return k; }
+  return prefer;
+}
+function airSet(key, on, title, sec, quiet, body){ const d=on?currentShiftBucket():airFindBucket(key); air[d]=air[d]||{};
+  if(on){ const sh=currentShift(); if(!air[d][key]){ air[d][key]={t:new Date().toISOString(), title:String(title||'').slice(0,240), sec:sec||'', sh:sh&&sh.id}; const sm=summarize(body); if(sm) air[d][key].body=sm; } }
   else delete air[d][key];
   airSave(); document.querySelectorAll('[data-air="'+CSS.escape(key)+'"]').forEach(airPaint);
   if(state.tab==='wrap' && !quiet) rerender(); }
@@ -3837,14 +3924,31 @@ function openerCard(){ const e=airDay().opener; const dr=lsGet('hs:openerDraft',
   return h('div',{className:'opener'}, h('div',{className:'oplab'}, '🎤 Opener · starts the Show Wrap'), h('div',{className:'oprow'}, inp, b)); }
 const AIR_SEC={reads:'Read', liners:'Liner', clips:'Clip', news:'News', days:'Day of note', opener:'Opener'};
 function airSecLabel(sec){ if(AIR_SEC[sec]) return AIR_SEC[sec]; if(/^cdf:/.test(sec)) return 'Record'; if(/^cdh:/.test(sec)) return 'Headline'; const it=sectionList().find(x=>x.key===sec); return it?String(it.v.title||sec).replace(/^[^\w]+/,''):sec; }
-function wrapEntries(){ const d=airDay(); const list=Object.entries(d).map(([key,e])=>({key, ...e}));
-  list.sort((a,b)=>(a.key==='opener'?-1:b.key==='opener'?1:0) || String(a.t).localeCompare(String(b.t))); return list; }
+function wrapEntries(){ const p=etParts(); const list=[];
+  for(const [bucket,items] of Object.entries(air||{})){
+    const b=parseBucketDate(bucket); if(b.date!==p.date) continue;
+    for(const [key,e] of Object.entries(items||{})){
+      const sid=e.sh||b.shift||shiftIdAt(e.t);
+      list.push({key, ...e, bucket, sh:sid});
+    }
+  }
+  list.sort((a,b)=>String(a.t).localeCompare(String(b.t)) || String(a.key).localeCompare(String(b.key)));
+  return list; }
+function wrapShiftLabel(e, p=etParts()){
+  if(!e||!e.sh) return '';
+  const sh=shiftById(e.sh, p);
+  return sh?shiftLabel(Object.assign({},sh,{ended:false})):(shiftPossessive(e.sh)+' shift');
+}
 function oneLine(t){ t=String(t||'').replace(/\s+/g,' ').trim(); return t.length>90?t.slice(0,88).replace(/\s+\S*$/,'')+'…':t; }
 function wrapText(){ const d=etParts().date; const L=wrapEntries();
-  return ['🎬 Show Wrap · Morning Rush · '+fmtSheetDate(d), '', ...L.map(e=>{ const rc=recapFor(e); return fmtTime(e.t)+' · '+airSecLabel(e.sec)+' · '+oneLine(e.title)+(rc?'\n   '+rc:''); })].join('\n'); }
+  const lines=['🎬 Show Wrap · Morning Rush · '+fmtSheetDate(d), ''];
+  let last='';
+  for(const e of L){ const lab=wrapShiftLabel(e); if(lab && lab!==last){ lines.push(lab); last=lab; }
+    const rc=recapFor(e); lines.push(fmtTime(e.t)+' · '+airSecLabel(e.sec)+' · '+oneLine(e.title)+(rc?'\n   '+rc:'')); }
+  return lines.join('\n'); }
 function renderWrap(view){
   const L=wrapEntries();
-  view.append(h('div',{className:'catline'}, 'Recap · resets each day'), h('h2',{}, '🎬 Show Wrap'));
+  view.append(h('div',{className:'catline'}, 'Recap · kept by shift all day'), h('h2',{}, '🎬 Show Wrap'));
   view.append(h('div',{className:'lnmeta'}, h('b',{}, String(L.length)), ' item'+(L.length===1?'':'s')+' read on air · '+fmtSheetDate(etParts().date)));
   const cp=h('button',{className:'wrapcopy', type:'button', on:{click:async()=>{ tapHaptic(); const t=wrapText(); let ok=false;
       try{ await navigator.clipboard.writeText(t); ok=true; }catch(e){ const ta=h('textarea',{value:t}); document.body.append(ta); ta.select(); try{ ok=document.execCommand('copy'); }catch(_){} ta.remove(); }
@@ -3853,9 +3957,11 @@ function renderWrap(view){
   if(!airDay().opener) view.append(openerCard());
   if(!L.length){ view.append(h('p',{className:'hint'}, 'Nothing yet. Tick "✓ Read on air" on any story, read, liner or clip, or play a clip, and it lands here in the order you aired it.')); return; }
   const ol=h('ol',{className:'wraplist'});
-  for(const e of L){ const rc=recapFor(e); ol.append(h('li',{}, h('button',{className:'wrapline', type:'button', title:'Open', on:{click:()=>airGo(e)}},
+  let lastSh='';
+  for(const e of L){ const lab=wrapShiftLabel(e); if(lab && lab!==lastSh){ ol.append(h('li',{className:'wrapshift'}, lab)); lastSh=lab; }
+    const rc=recapFor(e); ol.append(h('li',{}, h('button',{className:'wrapline', type:'button', title:'Open', on:{click:()=>airGo(e)}},
       h('span',{className:'wt'}, fmtTime(e.t)), h('span',{className:'ws'}, airSecLabel(e.sec)), h('span',{className:'wl'}, oneLine(e.title)), rc?h('span',{className:'wr'}, rc):null),
-    h('button',{className:'wrapx', type:'button', 'aria-label':'Remove from wrap', on:{click:()=>{ const keep=e; airSet(e.key,false,null,null,false); toast('Removed from wrap', ()=>{ const d=etParts().date; air[d]=air[d]||{}; air[d][keep.key]={t:keep.t,title:keep.title,sec:keep.sec}; airSave(); rerender(); }); }}}, '↩'))); }
+    h('button',{className:'wrapx', type:'button', 'aria-label':'Remove from wrap', on:{click:()=>{ const keep=e; airSet(e.key,false,null,null,false); toast('Removed from wrap', ()=>{ const b=keep.bucket||currentShiftBucket(); air[b]=air[b]||{}; air[b][keep.key]={t:keep.t,title:keep.title,sec:keep.sec,sh:keep.sh}; if(keep.body) air[b][keep.key].body=keep.body; airSave(); rerender(); }); }}}, '↩'))); }
   view.append(ol); }
 function airGo(e){ const k=e.key;
   if(k==='opener'){ const t=openerTab(); if(t){ state.tab=t; renderTabs(); renderView(); scrollTo({top:0,behavior:'smooth'}); } return; }
@@ -4391,9 +4497,11 @@ if(isHttp && 'serviceWorker' in navigator){
   }).catch(()=>{});
 }
 
+if(typeof migrateShiftBuckets==='function'){ migrateShiftBuckets(); if(typeof lsSet==='function'){ try{ lsSet('hs:reads', reads); lsSet('hs:linerUsed', linerUsed); lsSet('hs:air', air); }catch(e){} } }
+if(typeof tick==='function') tick();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, currentShift, currentShiftBucket, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, renderShiftLabel, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); } };
 })();
 </script>
 </body>
