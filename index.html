@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v38-studio-guests">
+<meta name="hs-build" content="v39-song-story">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -712,6 +712,13 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 .songcard .smeta b{color:var(--dim);font-weight:800;margin-right:.35em}
 .songcard .ssrc{font-size:.78em;margin-top:8px;color:var(--dim)}
 .songcard .ssrc a{color:var(--accent2)}
+.sstory{margin:10px 0 0;padding:8px 10px;border-left:3px solid var(--accent);background:rgba(255,255,255,.04);border-radius:0 10px 10px 0}
+.sstorylab{font-size:.72em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
+.sstory p{font-size:.92em;line-height:1.45;margin:0 0 6px;color:var(--text)}
+.sstory p:last-child{margin:0}
+.sstory a{color:var(--accent2);font-weight:800}
+.sstorysrc{color:var(--dim);font-size:.85em;font-weight:700}
+.fbcard .sstory{margin-top:10px}
 .songcard .sempty,.songcard .slook{font-size:.92em;color:var(--dim);font-weight:700}
 .opener .opb{min-height:48px}
 .wrapcopy{width:100%;min-height:56px;font-size:1.1em;font-weight:900;border-radius:28px;border:2px solid #e74c8b;background:#e74c8b;color:#fff;margin:0 0 12px;cursor:pointer}
@@ -3842,8 +3849,9 @@ function parseSongLine(line){
 function sheetSong(key){
   if(key==='flash'){ const f=typeof fbData==='function'?fbData():null;
     if(f && (f.title||f.artist)){ const known=findSongInPools(f.title, f.artist);
-      if(known) return Object.assign({}, known, {from:'sheet', sheetOrigin:f.origin, sheetRequester:f.requester});
-      return {title:f.title||'', artist:f.artist||'', year:f.year?String(f.year).replace(/\D+/g,'')||undefined:undefined, charts:f.records||[], fact:f.origin||'', from:'sheet'}; } }
+      const storyBits={from:'sheet', sheetOrigin:f.origin, sheetRequester:f.requester, sheetStory:f.songStory||'', sheetStorySrc:f.songStorySrc||'', sheetStorySrcName:f.songStorySrcName||''};
+      if(known) return Object.assign({}, known, storyBits);
+      return Object.assign({title:f.title||'', artist:f.artist||'', year:f.year?String(f.year).replace(/\D+/g,'')||undefined:undefined, charts:f.records||[], fact:f.origin&&f.origin!==f.songStory?f.origin:'', lookup:true}, storyBits); } }
   const raw=cleanText(((state.sheet&&state.sheet[key])||{}).content||'');
   const lines=raw.split('\n').map(l=>l.trim()).filter(Boolean);
   let line=lines[0]||'';
@@ -3888,9 +3896,48 @@ function songLabel(key){ return key==='vibe'?'Today’s slow jam':key==='mood'?'
 function fmtYmd(iso){ const m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/); if(!m) return iso;
   const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
   return months[+m[2]-1]+' '+(+m[3])+', '+m[1]; }
+
+function wikiSongStory(extract){
+  if(!extract) return '';
+  const chunks=String(extract).split(/\n={2,}\s*([^=\n].*?)\s*={2,}\s*\n/);
+  const secs=[];
+  for(let i=1;i<chunks.length;i+=2){ const h=String(chunks[i]||'').replace(/=+$/,'').trim(); const b=String(chunks[i+1]||'').trim(); if(h) secs.push({h,b}); }
+  const rank=h=>{
+    const s=h.toLowerCase();
+    if(/see also|references|external links?|notes|charts?|personnel|credits|track listing|critical|commercial|reception|music video|legacy|awards?|certif|live perform|cover|formats?|release history|accordion|synopsis/.test(s)) return 0;
+    if(/writing and recording|background and writing|background and recording|writing and production|writing and inspiration/.test(s)) return 6;
+    if(/^(writing|background and history)\b/.test(s) || /\band writing\b/.test(s)) return 5;
+    if(/background|inspiration|development|concept/.test(s)) return 4;
+    if(/recording|production/.test(s)) return 3;
+    if(/composition/.test(s)) return 2;
+    return 0;
+  };
+  const ranked=secs.map(s=>({s,r:rank(s.h)})).filter(x=>x.r>0).sort((a,b)=>b.r-a.r);
+  if(!ranked.length) return '';
+  const raw=ranked[0].s.b.replace(/\s+/g,' ').trim();
+  const sents=raw.split(/(?<=[.!?])\s+(?=["“‘A-Z])/).map(x=>x.trim()).filter(x=>x.length>40 && !/beats per minute|chord progression|vocal range|sheet music|Musicnotes|key of [A-G♭♯]|time signature of common time/.test(x));
+  if(!sents.length) return '';
+  let out=sents.slice(0,3).join(' ');
+  if(out.length>420) out=out.slice(0,417).replace(/\s+\S*$/,'')+'…';
+  return out;
+}
+async function lookupWikiStory(pageTitle, pageUrl, out){
+  if(!pageTitle || (out&&out.story)) return;
+  try{
+    const u='https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&exsectionformat=wiki&redirects=1&format=json&formatversion=2&origin=*&titles='+encodeURIComponent(pageTitle);
+    const r=await fetch(u, {headers:{'Accept':'application/json'}, cache:'no-store'});
+    if(!r.ok) return;
+    const j=await r.json();
+    const ex=(((j.query||{}).pages||[])[0]||{}).extract||'';
+    const story=wikiSongStory(ex);
+    if(story){ out.story=story; out.storySrc=pageUrl||('https://en.wikipedia.org/wiki/'+encodeURIComponent(String(pageTitle).replace(/ /g,'_'))); out.storySrcName='Wikipedia'; }
+    else { out.storyLooked=true; }
+  }catch(e){}
+}
+
 async function lookupSong(title, artist){
   const q=[title,artist].filter(Boolean).join(' ').trim();
-  const ck=normT(q); if(ck && songLookupCache[ck] && Date.now()-songLookupCache[ck].at<864e5) return songLookupCache[ck].data;
+  const ck=normT(q); if(ck && songLookupCache[ck] && Date.now()-songLookupCache[ck].at<864e5 && (songLookupCache[ck].data.story || songLookupCache[ck].data.storyLooked)) return songLookupCache[ck].data;
   const out={title:title, artist:artist||'', sources:[]};
   try{
     const r=await fetch('https://itunes.apple.com/search?term='+encodeURIComponent(q)+'&media=music&entity=song&limit=5', {cache:'no-store'});
@@ -3915,8 +3962,11 @@ async function lookupSong(title, artist){
       const j=await r.json();
       if(j.type==='disambiguation' || !j.extract) continue;
       if(!out.about){ const parts=String(j.extract).split(/(?<=[.!?])\s+/); out.about=parts.slice(0,2).join(' '); if(out.about.length>320) out.about=out.about.slice(0,317).replace(/\s+\S*$/,'')+'…'; }
-      if(j.content_urls && j.content_urls.desktop && j.content_urls.desktop.page) out.sources.push({name:'Wikipedia', url:j.content_urls.desktop.page});
-      else if(j.title) out.sources.push({name:'Wikipedia', url:'https://en.wikipedia.org/wiki/'+encodeURIComponent(j.title.replace(/ /g,'_'))});
+      let wikiUrl='';
+      if(j.content_urls && j.content_urls.desktop && j.content_urls.desktop.page) wikiUrl=j.content_urls.desktop.page;
+      else if(j.title) wikiUrl='https://en.wikipedia.org/wiki/'+encodeURIComponent(j.title.replace(/ /g,'_'));
+      if(wikiUrl) out.sources.push({name:'Wikipedia', url:wikiUrl});
+      await lookupWikiStory(j.title||t, wikiUrl, out);
       break;
     }catch(e){}
   }
@@ -3935,15 +3985,25 @@ function renderSongFacts(card, pick){
   titles.append(h('div',{className:'stag'}, tag));
   head.append(titles); card.append(head);
   if(pick.about) card.append(h('p',{className:'sabout'}, pick.about));
+  const sheetSt=String(pick.sheetStory||'').trim();
+  const poolSt=String(pick.story||'').trim();
+  const sameStory=(a,b)=>{ const n=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(); const A=n(a), B=n(b); return !!(A&&B)&&(A===B||A.includes(B)||B.includes(A)); };
+  const stories=[];
+  if(sheetSt && !(typeof fbBlankStory==='function' && fbBlankStory(sheetSt))) stories.push({text:sheetSt, name:pick.sheetStorySrcName||(pick.sheetStorySrc?'Source':"Today's sheet"), url:pick.sheetStorySrc||''});
+  if(poolSt && !(typeof fbBlankStory==='function' && fbBlankStory(poolSt)) && !stories.some(s=>sameStory(s.text, poolSt))) stories.push({text:poolSt, name:pick.storySrcName||(pick.storySrc&&/wikipedia/i.test(pick.storySrc)?'Wikipedia':'Source'), url:pick.storySrc||''});
+  if(stories.length){ const box=h('div',{className:'sstory'}); box.append(h('div',{className:'sstorylab'},'Song story'));
+    for(const s of stories){ const p=h('p',{}, s.text+(s.url||s.name?' ':'')); if(s.url) p.append(h('a',{href:s.url, target:'_blank', rel:'noopener'}, s.name||'Source')); else if(s.name) p.append(h('span',{className:'sstorysrc'}, s.name)); box.append(p); }
+    card.append(box); }
   const meta=h('ul',{className:'smeta'});
   if(pick.released) meta.append(h('li',{}, h('b',{},'Released '), pick.released+(pick.year && !String(pick.released).includes(String(pick.year))?' ('+pick.year+')':'')));
   else if(pick.year) meta.append(h('li',{}, h('b',{},'Released '), String(pick.year)));
   const charts=pick.charts||[];
   if(charts.length){ const first=charts[0]; meta.append(h('li',{}, h('b',{},'Charts '), charts.join(' · '))); }
-  if(pick.fact) meta.append(h('li',{}, h('b',{},'Fun fact '), pick.fact));
+  if(pick.fact && !stories.some(s=>sameStory(s.text, pick.fact))) meta.append(h('li',{}, h('b',{},'Fun fact '), pick.fact));
   if(meta.childNodes.length) card.append(meta);
   const srcs=[];
   if(pick.source) srcs.push({name:pick.sourceName||'Source', url:pick.source});
+  if(pick.storySrc && !srcs.some(x=>x.url===pick.storySrc)) srcs.push({name:pick.storySrcName||(/wikipedia/i.test(pick.storySrc)?'Wikipedia':'Source'), url:pick.storySrc});
   (pick.sources||[]).forEach(s=>{ if(s&&s.url && !srcs.some(x=>x.url===s.url)) srcs.push(s); });
   if(srcs.length){ const p=h('div',{className:'ssrc'}, 'Source: ');
     srcs.forEach((s,i)=>{ if(i) p.append(document.createTextNode(' · ')); p.append(h('a',{href:s.url, target:'_blank', rel:'noopener'}, s.name||'Link')); });
@@ -3951,7 +4011,7 @@ function renderSongFacts(card, pick){
 }
 function fillSongCard(card, pick, key){
   renderSongFacts(card, pick);
-  const need=pick && (pick.lookup || ((pick.from==='custom'||pick.from==='sheet') && !pick.id && !((pick.charts||[]).length) && !pick.released && !pick.about));
+  const need=pick && (pick.lookup || ((pick.from==='custom'||pick.from==='sheet') && !pick.id && (!pick.story || (!((pick.charts||[]).length) && !pick.released && !pick.about))));
   if(!need || !pick) return;
   const box=h('div',{className:'slook'},'Looking up “'+pick.title+'”…');
   card.append(box);
@@ -3996,19 +4056,56 @@ loadSongs();
 function storyHeads(text){ const a=String(text||'').split('\n'); const out=[]; a.forEach((ln,i)=>{ if(/^\s*━+.*━+\s*$/.test(ln)) return; if(/^\s*\d+\)\s+\S/.test(ln) || isStoryHead(ln, a[i-1])) out.push(ln.replace(/^\s*\d+\)\s*/,'').trim()); }); return out; }
 /* ================= 9AM Flashback (structured fields on the "flash" card; optional — old blob otherwise) ================= */
 function fbStr(x){ if(x==null) return ''; if(Array.isArray(x)) return x.map(fbStr).filter(Boolean).join('\n'); if(typeof x==='object') return Object.values(x).map(fbStr).filter(Boolean).join(' · '); return cleanText(String(x)).trim(); }
+
+function fbBlankStory(s){
+  const t=String(s||'').replace(/^🎤\s*/,'').replace(/^•\s*/,'').trim();
+  return !t || /^song story:\s*none verified\.?$/i.test(t) || /^none verified\.?$/i.test(t);
+}
+function fbParseStorySource(s){
+  const t=String(s||'').trim(); if(!t) return {name:'', url:''};
+  const m=t.match(/https?:\/\/[^\s)\]>"]+/);
+  const url=m?m[0].replace(/[).,;]+$/,''):'';
+  let name=url?t.replace(url,'').replace(/^[\s:–—|\-()]+|[\s:–—|\-()]+$/g,'').trim():t;
+  if(/^https?:\/\//i.test(name)) name='';
+  if(!name && url) name=/wikipedia/i.test(url)?'Wikipedia':'Source';
+  return {name, url};
+}
+function fbContentStoryLine(content){
+  const raw=String(content||'').replace(/<br\s*\/?>/gi,'\n');
+  for(const line of raw.split('\n')){
+    const t=(typeof cleanText==='function'?cleanText(line):line).trim().replace(/^•\s*/,'');
+    const m=t.match(/^🎤\s*SONG STORY:\s*(.*)$/i) || t.match(/^SONG STORY:\s*(.*)$/i);
+    if(m) return String(m[1]||'').trim();
+  }
+  return '';
+}
+function fbPickStory(S){
+  if(!S || typeof S!=='object') return {text:'', sourceName:'', sourceUrl:''};
+  const item=(Array.isArray(S.items)&&S.items[0]&&typeof S.items[0]==='object')?S.items[0]:{};
+  const take=(...ks)=>{ for(const o of [S,item]){ if(!o) continue; for(const k of ks){ const v=fbStr(o[k]); if(v) return v; } } return ''; };
+  let text=take('song_story'), src=take('song_story_source');
+  if(fbBlankStory(text)){ text=''; src=''; }
+  if(!text){ text=fbContentStoryLine(S.content)||fbContentStoryLine(item.content); src=''; if(fbBlankStory(text)) text=''; }
+  if(!text){ text=take('origin'); if(fbBlankStory(text)) text=''; }
+  if(fbBlankStory(text)) return {text:'', sourceName:'', sourceUrl:''};
+  const p=fbParseStorySource(src);
+  return {text, sourceName:p.name, sourceUrl:p.url};
+}
+
 function fbData(){ const S=state.sheet && state.sheet.flash; if(!S || typeof S!=='object') return null;
-  if(!['requester','song','artist','single_year','chart_records','origin'].some(k=>S[k]!=null && fbStr(S[k]))) return null;   // no structured fields → old blob
+  if(!['requester','song','artist','single_year','chart_records','origin','song_story'].some(k=>S[k]!=null && fbStr(S[k]))) return null;   // no structured fields → old blob
   try{ const o=S;
     const g=(...ks)=>{ for(const k of ks){ const v=fbStr(o[k]); if(v) return v; } return ''; };
+    const picked=fbPickStory(o);
     const f={ requester:g('requester','requested_by','requestedBy','request','listener'), title:g('song','track'), artist:g('artist','by'),
       year:g('year','single_year','release_year'), records:[].concat(o.chart_records!=null?o.chart_records:o.records!=null?o.records:o.chart!=null?o.chart:[]).map(fbStr).filter(Boolean),
-      origin:g('origin','bit','story','origin_bit','why'), content:'', recap:g('recap'),
+      origin:g('origin','bit','origin_bit','why'), songStory:picked.text, songStorySrc:picked.sourceUrl, songStorySrcName:picked.sourceName, content:'', recap:g('recap'),
       items:Array.isArray(o.items)?o.items.filter(x=>x&&x.id):[] };
     if(!f.title && !f.artist && !f.content && !f.origin) return null;
     if(!f.title && !f.artist){ const fl=(f.content||f.origin).split('\n')[0]; f.head=fl.length>110?fl.slice(0,108).replace(/\s+\S*$/,'')+'…':fl; if(f.content.split('\n')[0]===fl) f.content=f.content.split('\n').slice(1).join('\n').trim(); }
     else f.head=(f.title?(/^["“]/.test(f.title)?f.title:'“'+f.title+'”'):'')+(f.artist?(f.title?' — ':'')+f.artist:'')+(f.year?' ('+f.year+')':'');
     f.key=f.items[0] ? 'it:'+f.items[0].id : 'sec:flash';
-    f.body=[f.head, f.requester?'Requested by '+f.requester:'', ...f.records, f.origin, f.content].filter(Boolean).join('\n');
+    f.body=[f.head, f.requester?'Requested by '+f.requester:'', ...f.records, f.songStory||f.origin, f.content].filter(Boolean).join('\n');
     return f; }catch(_){ return null; } }
 function fbBanner(){ const f=fbData(); if(!f) return null; const p=etParts(); if(!isShowDay(p) || p.hm<'08:40' || p.hm>='09:20') return null;
   const card=mk('div',{className:'fbban'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'+(f.requester?' · for '+f.requester:'')), mk('div',{className:'fbh'}, f.head||'Today’s Flashback'));
@@ -4019,7 +4116,8 @@ function fbCard(f){
   const c=mk('div',{className:'fbcard'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'), mk('div',{className:'fbh big'}, f.head||'Today’s Flashback'));
   if(f.requester) c.append(mk('div',{className:'fbreq'},'🎧 Requested by '+f.requester));
   if(f.records.length){ const ul=mk('ul',{className:'fbrec'}); f.records.forEach(r=>ul.append(mk('li',{},'📈 '+r))); c.append(ul); }
-  if(f.origin) c.append(mk('p',{className:'fbo'}, f.origin));
+  if(f.songStory){ const box=mk('div',{className:'sstory'}); box.append(mk('div',{className:'sstorylab'},'Song story')); const p=mk('p',{}, f.songStory+(f.songStorySrc||f.songStorySrcName?' ':'')); if(f.songStorySrc) p.append(mk('a',{href:f.songStorySrc, target:'_blank', rel:'noopener'}, f.songStorySrcName||'Source')); else if(f.songStorySrcName) p.append(mk('span',{className:'sstorysrc'}, f.songStorySrcName)); box.append(p); c.append(box); }
+  if(f.origin && !(f.songStory && f.origin.replace(/\s+/g,' ').trim().toLowerCase()===f.songStory.replace(/\s+/g,' ').trim().toLowerCase()) && !fbBlankStory(f.origin)) c.append(mk('p',{className:'fbo'}, f.origin));
   c.append(mk('div',{className:'airsec'}, airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', false, f.body)));
   return c; }
 function sheetItems(sec){ const S=state.sheet && state.sheet[sec]; return (S && Array.isArray(S.items)) ? S.items.filter(x=>x && x.id) : []; }
@@ -4091,7 +4189,7 @@ if(isHttp && 'serviceWorker' in navigator){
 
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick };
 })();
 </script>
 </body>

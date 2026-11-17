@@ -1,1895 +1,1981 @@
 {
-  "version": 1,
-  "updated": "2026-11-17",
-  "note": "Release dates and chart peaks are taken from Wikipedia song pages ({{single chart}} templates, and a few verified facts cited on those pages). Fields are omitted when not verified. Billboard Hot 100 numbers use only the exact Billboardhot100 template, not Japan/Global/year-end charts. Later catalog or revival chart rows (date more than 3 years after the original release, or Canadian Hot 100 before that chart launched in 2007) are omitted. Do not invent missing peaks or dates.",
-  "pools": {
-    "vibe": [
-      {
-        "id": "fields-of-gold-sting",
-        "title": "Fields of Gold",
-        "artist": "Sting",
-        "released": "June 7, 1993",
-        "year": 1993,
-        "charts": [
-          "Billboard Hot 100: No. 23",
-          "Billboard Pop Airplay: No. 24",
-          "Billboard Adult Contemporary: No. 2",
-          "UK Singles: No. 16"
-        ],
-        "about": "\"Fields of Gold\" is a song written and performed by the English musician Sting. It first appeared on his fourth studio album, Ten Summoner's Tales (1993).",
-        "source": "https://en.wikipedia.org/wiki/Fields_of_Gold",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "wonderwall-oasis",
-        "title": "Wonderwall",
-        "artist": "Oasis",
-        "released": "1995",
-        "year": 1995,
-        "charts": [
-          "Billboard Hot 100: No. 8",
-          "Billboard Pop Airplay: No. 10",
-          "Billboard Adult Contemporary: No. 36",
-          "Billboard Adult Pop Airplay: No. 30",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Wonderwall\" is a song by English rock band Oasis, released by Creation Records on 30 October 1995 as the fourth single from the band's second studio album (What's the Story) Morning Glory?. Described by lead guitarist and songwriter Noel Gallagher, who wrote the song and co-produced it with Owen Morris, as being…",
-        "source": "https://en.wikipedia.org/wiki/Wonderwall",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "fast-car-tracy-chapman",
-        "title": "Fast Car",
-        "artist": "Tracy Chapman",
-        "released": "April 6, 1988",
-        "year": 1988,
-        "charts": [
-          "Australia (ARIA): No. 4"
-        ],
-        "about": "\"Fast Car\" is a song by American singer-songwriter Tracy Chapman, released as her debut single on April 6, 1988, by Elektra Records. It served as the lead single from her 1988 self-titled debut studio album.",
-        "source": "https://en.wikipedia.org/wiki/Fast_Car",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "someone-like-you-adele",
-        "title": "Someone Like You",
-        "artist": "Adele",
-        "released": "January 24, 2011",
-        "year": 2011,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 2",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Someone like You\" is a song recorded by English singer-songwriter Adele. She and Dan Wilson wrote and produced the track for her second studio album, 21 (2011).",
-        "source": "https://en.wikipedia.org/wiki/Someone_like_You_(Adele_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "easy-on-me-adele",
-        "title": "Easy on Me",
-        "artist": "Adele",
-        "released": "2021",
-        "year": 2021,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Easy on Me\" is a song by the English singer Adele from her fourth studio album, 30 (2021). Adele wrote the song with its producer, Greg Kurstin.",
-        "source": "https://en.wikipedia.org/wiki/Easy_on_Me",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "all-of-me-john-legend",
-        "title": "All of Me",
-        "artist": "John Legend",
-        "released": "August 12, 2013",
-        "year": 2013,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"All of Me\" is a song by American singer John Legend from his fourth studio album Love in the Future (2013). It is dedicated to Legend's wife Chrissy Teigen.",
-        "source": "https://en.wikipedia.org/wiki/All_of_Me_(John_Legend_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "stay-with-me-sam-smith",
-        "title": "Stay with Me",
-        "artist": "Sam Smith",
-        "released": "2014",
-        "year": 2014,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 5"
-        ],
-        "about": "\"Stay with Me\" is a song by the English singer Sam Smith from their debut studio album In the Lonely Hour (2014). It was released in the United States on 14 April 2014 and in the United Kingdom on 18 May 2014.",
-        "source": "https://en.wikipedia.org/wiki/Stay_with_Me_(Sam_Smith_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "i-m-yours-jason-mraz",
-        "title": "I'm Yours",
-        "artist": "Jason Mraz",
-        "released": "February 12, 2008",
-        "year": 2008,
-        "charts": [
-          "Billboard Hot 100: No. 6",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 3",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"I'm Yours\" is a song written and recorded by American singer-songwriter Jason Mraz, released in 2008 as the first single from his third studio album We Sing. We Dance.",
-        "source": "https://en.wikipedia.org/wiki/I'm_Yours_(Jason_Mraz_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "thinking-out-loud-ed-sheeran",
-        "title": "Thinking Out Loud",
-        "artist": "Ed Sheeran",
-        "released": "2014",
-        "year": 2014,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 2",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Thinking Out Loud\" is a song by English singer-songwriter Ed Sheeran recorded for his second studio album, × (2014). It was written by Sheeran and Amy Wadge, and produced by frequent collaborator Jake Gosling.",
-        "source": "https://en.wikipedia.org/wiki/Thinking_Out_Loud",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "perfect-ed-sheeran",
-        "title": "Perfect",
-        "artist": "Ed Sheeran",
-        "released": "September 26, 2017",
-        "year": 2017,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Perfect\" is a song by English singer-songwriter Ed Sheeran from his third studio album, ÷ (2017). After the album's release, it charted at number four on the UK Singles Chart.",
-        "source": "https://en.wikipedia.org/wiki/Perfect_(Ed_Sheeran_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "photograph-ed-sheeran",
-        "title": "Photograph",
-        "artist": "Ed Sheeran",
-        "released": "May 11, 2015",
-        "year": 2015,
-        "charts": [
-          "Billboard Hot 100: No. 10",
-          "Billboard Pop Airplay: No. 5",
-          "Billboard Adult Contemporary: No. 3",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 4",
-          "Australia (ARIA): No. 9"
-        ],
-        "about": "\"Photograph\" is a song by English singer-songwriter Ed Sheeran from his second studio album, × (2014). Sheeran wrote the song with Snow Patrol member Johnny McDaid, who had a piano loop from which the composition developed.",
-        "source": "https://en.wikipedia.org/wiki/Photograph_(Ed_Sheeran_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "let-her-go-passenger",
-        "title": "Let Her Go",
-        "artist": "Passenger",
-        "released": "July 24, 2012",
-        "year": 2012,
-        "charts": [
-          "Billboard Hot 100: No. 5",
-          "Billboard Pop Airplay: No. 8",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 5",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Let Her Go\" is a song recorded by English singer-songwriter Passenger. It was recorded at Sydney's Linear Recording and co-produced by Passenger and Chris Vallejo.",
-        "source": "https://en.wikipedia.org/wiki/Let_Her_Go",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "the-scientist-coldplay",
-        "title": "The Scientist",
-        "artist": "Coldplay",
-        "released": "November 11, 2002",
-        "year": 2002,
-        "charts": [
-          "Billboard Adult Pop Airplay: No. 34",
-          "UK Singles: No. 10",
-          "Australia (ARIA): No. 40"
-        ],
-        "about": "\"The Scientist\" is a song by British rock band Coldplay. The song is credited to all the band members on their second album, A Rush of Blood to the Head.",
-        "source": "https://en.wikipedia.org/wiki/The_Scientist_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "yellow-coldplay",
-        "title": "Yellow",
-        "artist": "Coldplay",
-        "released": "June 26, 2000",
-        "year": 2000,
-        "charts": [
-          "Billboard Hot 100: No. 48",
-          "Billboard Pop Airplay: No. 22",
-          "Billboard Adult Pop Airplay: No. 11",
-          "UK Singles: No. 4",
-          "Australia (ARIA): No. 5"
-        ],
-        "about": "\"Yellow\" is a song by the British rock band Coldplay from their debut studio album, Parachutes (2000). The song was written by band members Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion, and co-produced it with British record producer Ken Nelson.",
-        "source": "https://en.wikipedia.org/wiki/Yellow_(Coldplay_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "halo-beyonc",
-        "title": "Halo",
-        "artist": "Beyoncé",
-        "released": "January 20, 2009",
-        "year": 2009,
-        "charts": [
-          "Billboard Hot 100: No. 5",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Contemporary: No. 27",
-          "Billboard Adult Pop Airplay: No. 22",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 4",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Halo\" is a song recorded by American singer Beyoncé for her third studio album, I Am... Sasha Fierce (2008).",
-        "source": "https://en.wikipedia.org/wiki/Halo_(Beyoncé_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "if-i-ain-t-got-you-alicia-keys",
-        "title": "If I Ain't Got You",
-        "artist": "Alicia Keys",
-        "released": "February 17, 2004",
-        "year": 2004,
-        "charts": [
-          "Billboard Hot 100: No. 4",
-          "Billboard Pop Airplay: No. 9",
-          "Billboard Adult Contemporary: No. 12"
-        ],
-        "about": "\"If I Ain't Got You\" is a song recorded by American singer-songwriter Alicia Keys for her second studio album, The Diary of Alicia Keys (2003). It was written and produced by Keys.",
-        "source": "https://en.wikipedia.org/wiki/If_I_Ain't_Got_You",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "no-one-alicia-keys",
-        "title": "No One",
-        "artist": "Alicia Keys",
-        "released": "September 10, 2007",
-        "year": 2007,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 9",
-          "Billboard Adult Pop Airplay: No. 9",
-          "Canadian Hot 100: No. 2",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"No One\" is a song recorded by American singer-songwriter Alicia Keys for her third studio album As I Am (2007). It was written and produced by Keys and Kerry Brothers Jr., with additional writing by DJ Dirty Harry.",
-        "source": "https://en.wikipedia.org/wiki/No_One_(Alicia_Keys_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "dreams-fleetwood-mac",
-        "title": "Dreams",
-        "artist": "Fleetwood Mac",
-        "released": "1977",
-        "year": 1977,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 11"
-        ],
-        "about": "\"Dreams\" is a song by the British-American rock band Fleetwood Mac, written and sung by Stevie Nicks for the band's eleventh studio album, Rumours (1977). In the United States, \"Dreams\" was released as the second single from Rumours in March 1977, by Warner Bros., while in the United Kingdom, the song was released…",
-        "source": "https://en.wikipedia.org/wiki/Dreams_(Fleetwood_Mac_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "iris-goo-goo-dolls",
-        "title": "Iris",
-        "artist": "Goo Goo Dolls",
-        "released": "April 1, 1998",
-        "year": 1998,
-        "charts": [
-          "Billboard Hot 100: No. 9",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 22",
-          "Billboard Adult Pop Airplay: No. 1",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Iris\" is a song by the American alternative rock band Goo Goo Dolls. Written for the soundtrack of the 1998 film City of Angels, it was included on the sixth Goo Goo Dolls album, Dizzy Up the Girl, and released as the album's lead single on April 1, 1998.",
-        "source": "https://en.wikipedia.org/wiki/Iris_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "drops-of-jupiter-tell-me-train",
-        "title": "Drops of Jupiter (Tell Me)",
-        "artist": "Train",
-        "released": "January 29, 2001",
-        "year": 2001,
-        "charts": [
-          "Billboard Hot 100: No. 5",
-          "Billboard Pop Airplay: No. 4",
-          "Billboard Adult Contemporary: No. 8",
-          "Billboard Adult Pop Airplay: No. 1",
-          "UK Singles: No. 10",
-          "Australia (ARIA): No. 5"
-        ],
-        "about": "\"Drops of Jupiter\", initially released and sometimes still listed as \"Drops of Jupiter (Tell Me)\", is a song written and recorded by American rock band Train. The power ballad was released on January 29, 2001, as the lead single from their second studio album, Drops of Jupiter (2001).",
-        "source": "https://en.wikipedia.org/wiki/Drops_of_Jupiter_(Tell_Me)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "put-your-records-on-corinne-bailey-rae",
-        "title": "Put Your Records On",
-        "artist": "Corinne Bailey Rae",
-        "released": "February 20, 2006",
-        "year": 2006,
-        "charts": [
-          "Billboard Hot 100: No. 64",
-          "Billboard Adult Contemporary: No. 6",
-          "Billboard Adult Pop Airplay: No. 11",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 30"
-        ],
-        "about": "\"Put Your Records On\" is a song by the English singer Corinne Bailey Rae from her self-titled debut studio album (2006). Written by Bailey Rae, John Beck, and Steve Chrisanthou, it was released as the album's second single in February 2006; in North America, it served as the album's lead single.",
-        "source": "https://en.wikipedia.org/wiki/Put_Your_Records_On",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "better-together-jack-johnson",
-        "title": "Better Together",
-        "artist": "Jack Johnson",
-        "released": "February 27, 2006",
-        "year": 2006,
-        "about": "\"Better Together\" is a song written and performed by American singer-songwriter Jack Johnson. The first track on Johnson's third studio album, In Between Dreams (2005), it was released as a single in February 2006.",
-        "source": "https://en.wikipedia.org/wiki/Better_Together_(Jack_Johnson_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "a-thousand-years-christina-perri",
-        "title": "A Thousand Years",
-        "artist": "Christina Perri",
-        "released": "October 18, 2011",
-        "year": 2011,
-        "charts": [
-          "Billboard Hot 100: No. 31",
-          "Billboard Pop Airplay: No. 22",
-          "Billboard Adult Contemporary: No. 11",
-          "Billboard Adult Pop Airplay: No. 7",
-          "Canadian Hot 100: No. 40",
-          "UK Singles: No. 11",
-          "Australia (ARIA): No. 13"
-        ],
-        "about": "\"A Thousand Years\" is a ballad recorded by American singer and songwriter Christina Perri, written by Perri and her producer David Hodges, for The Twilight Saga: Breaking Dawn – Part 1. The song was released worldwide as a digital download on October 18, 2011 and serves as the second single by Atlantic Records from…",
-        "source": "https://en.wikipedia.org/wiki/A_Thousand_Years",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "when-i-was-your-man-bruno-mars",
-        "title": "When I Was Your Man",
-        "artist": "Bruno Mars",
-        "released": "January 15, 2013",
-        "year": 2013,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 6"
-        ],
-        "about": "\"When I Was Your Man\" is a song by American singer and songwriter Bruno Mars from his second studio album, Unorthodox Jukebox (2012). Atlantic Records released the song as the third promotional single and as the second official single, taken from the album, to mainstream radio in the United States on January 15, 2013.",
-        "source": "https://en.wikipedia.org/wiki/When_I_Was_Your_Man",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "lovely-billie-eilish-khalid",
-        "title": "lovely",
-        "artist": "Billie Eilish & Khalid",
-        "released": "April 20, 2018",
-        "year": 2018,
-        "charts": [
-          "Billboard Hot 100: No. 64",
-          "Canadian Hot 100: No. 46",
-          "UK Singles: No. 47",
-          "Australia (ARIA): No. 5"
-        ],
-        "about": "\"Lovely\" is a song by American singers Billie Eilish and Khalid. Darkroom and Interscope Records released it as the lead single from the Netflix drama series 13 Reasons Why's second season soundtrack.",
-        "source": "https://en.wikipedia.org/wiki/Lovely_(Billie_Eilish_and_Khalid_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "cardigan-taylor-swift",
-        "title": "cardigan",
-        "artist": "Taylor Swift",
-        "released": "July 24, 2020",
-        "year": 2020,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 17",
-          "Billboard Adult Contemporary: No. 12",
-          "Billboard Adult Pop Airplay: No. 8",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 6",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 77"
-        ],
-        "about": "\"Cardigan\" is a song by the American singer-songwriter Taylor Swift and the lead single from her eighth studio album, Folklore (2020). Republic Records released the song on July 24, 2020.",
-        "source": "https://en.wikipedia.org/wiki/Cardigan_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "say-you-won-t-let-go-james-arthur",
-        "title": "Say You Won't Let Go",
-        "artist": "James Arthur",
-        "released": "September 9, 2016",
-        "year": 2016,
-        "charts": [
-          "Billboard Hot 100: No. 11",
-          "Billboard Pop Airplay: No. 6",
-          "Billboard Adult Contemporary: No. 3",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 9",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Say You Won't Let Go\" is a song by English singer and songwriter James Arthur. The song was released as a digital download on 9 September 2016 in the United Kingdom by Columbia Records as the lead single from his second studio album Back from the Edge (2016).",
-        "source": "https://en.wikipedia.org/wiki/Say_You_Won't_Let_Go",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "bubbly-colbie-caillat",
-        "title": "Bubbly",
-        "artist": "Colbie Caillat",
-        "released": "May 15, 2007",
-        "year": 2007,
-        "charts": [
-          "Billboard Hot 100: No. 5",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 2",
-          "UK Singles: No. 58",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Bubbly\" is the debut single of American singer-songwriter Colbie Caillat from her first album, Coco (2007). Written by Caillat and Jason Reeves and produced by Mikal Blue, the song was released as the album's lead single on May 15, 2007.",
-        "source": "https://en.wikipedia.org/wiki/Bubbly",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "ocean-eyes-billie-eilish",
-        "title": "ocean eyes",
-        "artist": "Billie Eilish",
-        "released": "November 18, 2015",
-        "year": 2015,
-        "charts": [
-          "Billboard Hot 100: No. 84",
-          "Canadian Hot 100: No. 68",
-          "Australia (ARIA): No. 58"
-        ],
-        "about": "\"Ocean Eyes\" is the debut single by American singer-songwriter Billie Eilish. It was initially released on SoundCloud on November 18, 2015, and then temporarily released as a promotional recording on January 8, 2016, with Drup Music.",
-        "source": "https://en.wikipedia.org/wiki/Ocean_Eyes_(song)",
-        "sourceName": "Wikipedia"
-      }
+ "version": 1,
+ "updated": "2026-11-17",
+ "note": "Release dates and chart peaks are taken from Wikipedia song pages ({{single chart}} templates, and a few verified facts cited on those pages). Fields are omitted when not verified. Billboard Hot 100 numbers use only the exact Billboardhot100 template, not Japan/Global/year-end charts. Later catalog or revival chart rows (date more than 3 years after the original release, or Canadian Hot 100 before that chart launched in 2007) are omitted. Do not invent missing peaks or dates.",
+ "pools": {
+  "vibe": [
+   {
+    "id": "fields-of-gold-sting",
+    "title": "Fields of Gold",
+    "artist": "Sting",
+    "released": "June 7, 1993",
+    "year": 1993,
+    "charts": [
+     "Billboard Hot 100: No. 23",
+     "Billboard Pop Airplay: No. 24",
+     "Billboard Adult Contemporary: No. 2",
+     "UK Singles: No. 16"
     ],
-    "mood": [
-      {
-        "id": "bad-guy-billie-eilish",
-        "title": "bad guy",
-        "artist": "Billie Eilish",
-        "released": "March 29, 2019",
-        "year": 2019,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 6",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Bad Guy\" is a song by American singer-songwriter Billie Eilish and the fifth single from her debut studio album, When We All Fall Asleep, Where Do We Go? (2019).",
-        "fact": "Spent 1 week at No. 1 on the Billboard Hot 100 (chart dated August 24, 2019), ending Lil Nas X’s 19-week run with “Old Town Road.” At 17, Eilish was the first artist born in the 2000s to top the Hot 100.",
-        "source": "https://en.wikipedia.org/wiki/Bad_Guy_(Billie_Eilish_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "someday-sugar-ray",
-        "title": "Someday",
-        "artist": "Sugar Ray",
-        "released": "September 7, 1999",
-        "year": 1999,
-        "charts": [
-          "Billboard Hot 100: No. 7",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Contemporary: No. 29",
-          "Billboard Adult Pop Airplay: No. 3",
-          "UK Singles: No. 88"
-        ],
-        "about": "\"Someday\" is a song by American rock band Sugar Ray. First serviced to American radio in June 1999, the song was released on September 7, 1999, as the second US single and third single overall from the band's third album, 14:59 (1999).",
-        "source": "https://en.wikipedia.org/wiki/Someday_(Sugar_Ray_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "happy-pharrell-williams",
-        "title": "Happy",
-        "artist": "Pharrell Williams",
-        "released": "November 21, 2013",
-        "year": 2013,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Happy\" is a song written, produced, and performed by American musician Pharrell Williams, released as the only single from the soundtrack album for the film Despicable Me 2 (2013). The song was first released on July 2, 2013 with the soundtrack, and it was released as a single on November 21, 2013, alongside a…",
-        "source": "https://en.wikipedia.org/wiki/Happy_(Pharrell_Williams_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "uptown-funk-mark-ronson",
-        "title": "Uptown Funk",
-        "artist": "Mark Ronson ft. Bruno Mars",
-        "released": "November 10, 2014",
-        "year": 2014,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 5",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Uptown Funk\" is a song by British-American DJ and record producer Mark Ronson featuring American singer Bruno Mars. It was released on 10 November 2014, as the lead single from Ronson's fourth studio album, Uptown Special (2015).",
-        "source": "https://en.wikipedia.org/wiki/Uptown_Funk",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "flowers-miley-cyrus",
-        "title": "Flowers",
-        "artist": "Miley Cyrus",
-        "released": "January 12, 2023",
-        "year": 2023,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Flowers\" is a song by American singer Miley Cyrus from her eighth studio album Endless Summer Vacation (2023). Columbia Records released it as the album's lead single on January 12, 2023, in some countries and on January 13 worldwide.",
-        "source": "https://en.wikipedia.org/wiki/Flowers_(Miley_Cyrus_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "shake-it-off-taylor-swift",
-        "title": "Shake It Off",
-        "artist": "Taylor Swift",
-        "released": "August 18, 2014",
-        "year": 2014,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Shake It Off\" is a song by the American singer-songwriter Taylor Swift and the lead single from her fifth studio album, 1989 (2014). She wrote the lyrics by herself and composed the melody with the song's producers, Max Martin and Shellback.",
-        "source": "https://en.wikipedia.org/wiki/Shake_It_Off",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "blinding-lights-the-weeknd",
-        "title": "Blinding Lights",
-        "artist": "The Weeknd",
-        "released": "November 29, 2019",
-        "year": 2019,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 2"
-        ],
-        "about": "\"Blinding Lights\" is a song by Canadian singer-songwriter the Weeknd, from his fourth studio album, After Hours (2020). The song was released through XO and Republic Records on November 29, 2019, as the album's second single.",
-        "source": "https://en.wikipedia.org/wiki/Blinding_Lights",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "levitating-dua-lipa",
-        "title": "Levitating",
-        "artist": "Dua Lipa",
-        "released": "2020",
-        "year": 2020,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 5",
-          "Australia (ARIA): No. 4",
-          "Billboard Global 200: No. 2"
-        ],
-        "about": "\"Levitating\" is a song by English singer Dua Lipa from her second studio album, Future Nostalgia (2020). The song was written by Lipa, Clarence Coffee Jr., Sarah Hudson, and Koz, who produced the song with Stuart Price, and stemmed from a Roland VP-330 synthesiser sample played by Koz.",
-        "source": "https://en.wikipedia.org/wiki/Levitating_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "can-t-stop-the-feeling-justin-timberlake",
-        "title": "Can't Stop the Feeling!",
-        "artist": "Justin Timberlake",
-        "released": "May 6, 2016",
-        "year": 2016,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Can't Stop the Feeling!\" is a song by American singer Justin Timberlake. It was released on May 6, 2016, as the lead single of the soundtrack to the film Trolls (2016), in which Timberlake voiced the character \"Branch\" and served as the executive music producer.",
-        "source": "https://en.wikipedia.org/wiki/Can't_Stop_the_Feeling!",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "good-as-hell-lizzo",
-        "title": "Good as Hell",
-        "artist": "Lizzo",
-        "released": "March 8, 2016",
-        "year": 2016,
-        "charts": [
-          "Billboard Hot 100: No. 3",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 14",
-          "Billboard Adult Pop Airplay: No. 3",
-          "Canadian Hot 100: No. 10",
-          "UK Singles: No. 7",
-          "Australia (ARIA): No. 6"
-        ],
-        "about": "\"Good as Hell\" is a song recorded by American rapper and singer Lizzo. Written by Lizzo and producer Ricky Reed, it was released on March 8, 2016, by Atlantic Records and Nice Life Recording Company as the lead single from her first extended play, Coconut Oil, and subsequently was the namesake for her 2017 Good as…",
-        "source": "https://en.wikipedia.org/wiki/Good_as_Hell",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "walking-on-sunshine-katrina-and-the-waves",
-        "title": "Walking on Sunshine",
-        "artist": "Katrina and the Waves",
-        "released": "April 15, 1985",
-        "year": 1985,
-        "charts": [
-          "UK Singles: No. 8"
-        ],
-        "about": "\"Walking on Sunshine\" is a song written by Kimberley Rew for the English rock band Katrina and the Waves' 1983 album Walking on Sunshine. A rerecorded version was included on the band's 1985 album Katrina and the Waves and was released as its second single in April 1985.",
-        "source": "https://en.wikipedia.org/wiki/Walking_on_Sunshine_(Katrina_and_the_Waves_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "i-gotta-feeling-the-black-eyed-peas",
-        "title": "I Gotta Feeling",
-        "artist": "The Black Eyed Peas",
-        "released": "June 15, 2009",
-        "year": 2009,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 16",
-          "Billboard Adult Pop Airplay: No. 4",
-          "Canadian Hot 100: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"I Gotta [sic] Feeling\" is a song by American group the Black Eyed Peas from their fifth studio album The E.N.D. (2009).",
-        "source": "https://en.wikipedia.org/wiki/I_Gotta_Feeling",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "don-t-start-now-dua-lipa",
-        "title": "Don't Start Now",
-        "artist": "Dua Lipa",
-        "released": "2019",
-        "year": 2019,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 5",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 2",
-          "Billboard Global 200: No. 30"
-        ],
-        "about": "\"Don't Start Now\" is a song by English singer Dua Lipa. Lipa wrote the song with Caroline Ailin, Emily Warren, and its producer Ian Kirkpatrick.",
-        "source": "https://en.wikipedia.org/wiki/Don't_Start_Now",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "about-damn-time-lizzo",
-        "title": "About Damn Time",
-        "artist": "Lizzo",
-        "released": "April 14, 2022",
-        "year": 2022,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 13",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 2",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 3",
-          "Billboard Global 200: No. 6"
-        ],
-        "about": "\"About Damn Time\" is a song by American singer and rapper Lizzo, released on April 14, 2022, by Nice Life Recordings and Atlantic Records as the lead single from her fourth studio album Special (2022). The song reached number one in the United States, becoming her second number one single there, while reaching the…",
-        "source": "https://en.wikipedia.org/wiki/About_Damn_Time",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "as-it-was-harry-styles",
-        "title": "As It Was",
-        "artist": "Harry Styles",
-        "released": "April 1, 2022",
-        "year": 2022,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"As It Was\" is a song by English singer-songwriter Harry Styles, released through Erskine and Columbia on 1 April 2022 as the lead single from his third studio album, Harry's House (2022). The song was written by Styles alongside his producers Kid Harpoon and Tyler Johnson.",
-        "source": "https://en.wikipedia.org/wiki/As_It_Was",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "anti-hero-taylor-swift",
-        "title": "Anti-Hero",
-        "artist": "Taylor Swift",
-        "released": "October 21, 2022",
-        "year": 2022,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Anti-Hero\" is a song by the American singer-songwriter Taylor Swift and the lead single from her tenth studio album, Midnights (2022). It was released on October 21, 2022, through Republic Records.",
-        "source": "https://en.wikipedia.org/wiki/Anti-Hero_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "watermelon-sugar-harry-styles",
-        "title": "Watermelon Sugar",
-        "artist": "Harry Styles",
-        "released": "November 16, 2019",
-        "year": 2019,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 7",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 4",
-          "Australia (ARIA): No. 5",
-          "Billboard Global 200: No. 9"
-        ],
-        "about": "\"Watermelon Sugar\" is a song by English singer-songwriter Harry Styles from his second studio album, Fine Line (2019), included as the album's second track. Styles wrote the song with Mitch Rowland and the song's producers, Tyler Johnson and Kid Harpoon.",
-        "source": "https://en.wikipedia.org/wiki/Watermelon_Sugar",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "cruel-summer-taylor-swift",
-        "title": "Cruel Summer",
-        "artist": "Taylor Swift",
-        "released": "June 20, 2023",
-        "year": 2023,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Cruel Summer\" is a song by the American singer-songwriter Taylor Swift from her seventh studio album, Lover (2019). Swift and Jack Antonoff produced the song, and they wrote it with St.",
-        "source": "https://en.wikipedia.org/wiki/Cruel_Summer_(Taylor_Swift_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "espresso-sabrina-carpenter",
-        "title": "Espresso",
-        "artist": "Sabrina Carpenter",
-        "released": "April 11, 2024",
-        "year": 2024,
-        "charts": [
-          "Billboard Hot 100: No. 3",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 2",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Espresso\" is a song by American singer Sabrina Carpenter from her sixth studio album, Short n' Sweet (2024). Island Records released it on April 11, 2024, as the album's lead single.",
-        "source": "https://en.wikipedia.org/wiki/Espresso_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "birds-of-a-feather-billie-eilish",
-        "title": "Birds of a Feather",
-        "artist": "Billie Eilish",
-        "released": "June 18, 2024",
-        "year": 2024,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 7",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Birds of a Feather\" is a song by American singer-songwriter Billie Eilish from her third studio album, Hit Me Hard and Soft (2024). It was released with the album on May 17, 2024, and was made the second official single on June 18, 2024, through Darkroom and Interscope Records.",
-        "source": "https://en.wikipedia.org/wiki/Birds_of_a_Feather_(Billie_Eilish_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "party-in-the-u-s-a-miley-cyrus",
-        "title": "Party in the U.S.A.",
-        "artist": "Miley Cyrus",
-        "released": "August 4, 2009",
-        "year": 2009,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 13",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 11",
-          "Australia (ARIA): No. 6"
-        ],
-        "about": "\"Party in the U.S.A.\" is a song by American singer Miley Cyrus from her first extended play (EP), The Time of Our Lives (2009). It was released on August 4, 2009, by Hollywood Records as the lead single from the project.",
-        "source": "https://en.wikipedia.org/wiki/Party_in_the_U.S.A.",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "roar-katy-perry",
-        "title": "Roar",
-        "artist": "Katy Perry",
-        "released": "August 10, 2013",
-        "year": 2013,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Roar\" is a song by American singer-songwriter Katy Perry. It was released on August 10, 2013, by Capitol Records as the lead single from her fourth studio album, Prism (2013).",
-        "source": "https://en.wikipedia.org/wiki/Roar_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "stay-the-kid-laroi-justin-bieber",
-        "title": "Stay",
-        "artist": "The Kid LAROI & Justin Bieber",
-        "released": "July 9, 2021",
-        "year": 2021,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 2",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Stay\" is a song by Australian rapper and singer the Kid Laroi and Canadian singer Justin Bieber. It was released through Grade A Productions and Columbia Records on 9 July 2021, as the lead single from Laroi's reloaded mixtape, F*ck Love 3: Over You.",
-        "source": "https://en.wikipedia.org/wiki/Stay_(The_Kid_Laroi_and_Justin_Bieber_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "heat-waves-glass-animals",
-        "title": "Heat Waves",
-        "artist": "Glass Animals",
-        "released": "June 29, 2020",
-        "year": 2020,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 5",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 5",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Heat Waves\" is a song by British indie rock band Glass Animals released as a single from their third studio album Dreamland on 29 June 2020.",
-        "source": "https://en.wikipedia.org/wiki/Heat_Waves",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "sunflower-post-malone-swae-lee",
-        "title": "Sunflower",
-        "artist": "Post Malone & Swae Lee",
-        "released": "October 18, 2018",
-        "year": 2018,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 4",
-          "Billboard Adult Pop Airplay: No. 29",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 20"
-        ],
-        "about": "\"Sunflower\" is a song by American musicians Post Malone and Swae Lee. It was released on October 18, 2018, as a single from the soundtrack to the 2018 animated film Spider-Man: Into the Spider-Verse, and was later included on Post Malone's third studio album Hollywood's Bleeding (2019).",
-        "source": "https://en.wikipedia.org/wiki/Sunflower_(Post_Malone_and_Swae_Lee_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "die-with-a-smile-lady-gaga-bruno-mars",
-        "title": "Die With a Smile",
-        "artist": "Lady Gaga & Bruno Mars",
-        "released": "August 16, 2024",
-        "year": 2024,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 2",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 2",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Die with a Smile\" is a song by American singer-songwriters Lady Gaga and Bruno Mars. It was released as a standalone single on August 16, 2024, through Interscope Records.",
-        "source": "https://en.wikipedia.org/wiki/Die_with_a_Smile",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "please-please-please-sabrina-carpenter",
-        "title": "Please Please Please",
-        "artist": "Sabrina Carpenter",
-        "released": "June 6, 2024",
-        "year": 2024,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 20",
-          "Billboard Adult Pop Airplay: No. 9",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Please Please Please\" is a song by American singer Sabrina Carpenter from her sixth studio album, Short n' Sweet (2024). It was released through Island Records on June 6, 2024, as the second single from the album.",
-        "source": "https://en.wikipedia.org/wiki/Please_Please_Please_(Sabrina_Carpenter_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "good-4-u-olivia-rodrigo",
-        "title": "good 4 u",
-        "artist": "Olivia Rodrigo",
-        "released": "May 14, 2021",
-        "year": 2021,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 12",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1",
-          "Billboard Global 200: No. 1"
-        ],
-        "about": "\"Good 4 U\" is a song by American singer-songwriter Olivia Rodrigo. It was released on May 14, 2021, through Geffen and Interscope Records, as the third single from Rodrigo's debut studio album, Sour (2021).",
-        "source": "https://en.wikipedia.org/wiki/Good_4_U",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "i-wanna-dance-with-somebody-who-loves-me-whitney-houston",
-        "title": "I Wanna Dance with Somebody (Who Loves Me)",
-        "artist": "Whitney Houston",
-        "released": "April 27, 1987",
-        "year": 1987,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 1"
-        ],
-        "about": "\"I Wanna Dance with Somebody (Who Loves Me)\" is a song recorded by American singer Whitney Houston, the lead single from her second studio album, Whitney (1987). The song was aimed to bring Houston a more accessible pop sound to compete with her contemporaries after enjoying hits with ballads on her debut album…",
-        "source": "https://en.wikipedia.org/wiki/I_Wanna_Dance_with_Somebody_(Who_Loves_Me)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "can-t-feel-my-face-the-weeknd",
-        "title": "Can't Feel My Face",
-        "artist": "The Weeknd",
-        "released": "June 8, 2015",
-        "year": 2015,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 13",
-          "Billboard Adult Pop Airplay: No. 2",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 2"
-        ],
-        "about": "\"Can't Feel My Face\" is a song by the Canadian singer-songwriter the Weeknd from his second studio album, Beauty Behind the Madness (2015). The song was released on June 8, 2015, as the album's third single.",
-        "source": "https://en.wikipedia.org/wiki/Can't_Feel_My_Face",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "just-the-way-you-are-bruno-mars",
-        "title": "Just the Way You Are",
-        "artist": "Bruno Mars",
-        "released": "July 20, 2010",
-        "year": 2010,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Just the Way You Are\" is the debut solo single by American singer-songwriter Bruno Mars. It is the lead single from his debut studio album, Doo-Wops & Hooligans (2010).",
-        "source": "https://en.wikipedia.org/wiki/Just_the_Way_You_Are_(Bruno_Mars_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "treasure-bruno-mars",
-        "title": "Treasure",
-        "artist": "Bruno Mars",
-        "released": "May 10, 2013",
-        "year": 2013,
-        "charts": [
-          "Billboard Hot 100: No. 5",
-          "Billboard Pop Airplay: No. 5",
-          "Billboard Adult Contemporary: No. 11",
-          "Billboard Adult Pop Airplay: No. 6",
-          "Canadian Hot 100: No. 4",
-          "UK Singles: No. 12",
-          "Australia (ARIA): No. 10"
-        ],
-        "about": "\"Treasure\" is a song by American singer and songwriter Bruno Mars from his second studio album, Unorthodox Jukebox (2012). It was written by Mars, Philip Lawrence, Ari Levine, and Phredley Brown, while production was handled by Mars, Lawrence and Levine under the name of the Smeezingtons.",
-        "source": "https://en.wikipedia.org/wiki/Treasure_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "24k-magic-bruno-mars",
-        "title": "24K Magic",
-        "artist": "Bruno Mars",
-        "released": "October 7, 2016",
-        "year": 2016,
-        "charts": [
-          "Billboard Hot 100: No. 4",
-          "Billboard Pop Airplay: No. 5",
-          "Billboard Adult Contemporary: No. 13",
-          "Billboard Adult Pop Airplay: No. 3",
-          "Canadian Hot 100: No. 3",
-          "UK Singles: No. 5",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"24K Magic\" is a song by the American singer-songwriter Bruno Mars from his third album 24K Magic (2016). Atlantic Records released it as the album's lead single on October 7, 2016, for digital download and streaming.",
-        "source": "https://en.wikipedia.org/wiki/24K_Magic_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "break-my-soul-beyonc",
-        "title": "Break My Soul",
-        "artist": "Beyoncé",
-        "released": "June 20, 2022",
-        "year": 2022,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 8",
-          "Billboard Adult Pop Airplay: No. 11",
-          "Canadian Hot 100: No. 4",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 6",
-          "Billboard Global 200: No. 6"
-        ],
-        "about": "\"Break My Soul\" is a song by American singer Beyoncé. It was released on June 20, 2022, through Parkwood Entertainment and Columbia Records as the lead single from her seventh studio album, Renaissance (2022).",
-        "source": "https://en.wikipedia.org/wiki/Break_My_Soul",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "cuff-it-beyonc",
-        "title": "Cuff It",
-        "artist": "Beyoncé",
-        "released": "September 30, 2022",
-        "year": 2022,
-        "charts": [
-          "Billboard Hot 100: No. 6",
-          "Billboard Pop Airplay: No. 8",
-          "Billboard Adult Contemporary: No. 29",
-          "Billboard Adult Pop Airplay: No. 19",
-          "Canadian Hot 100: No. 16",
-          "UK Singles: No. 5",
-          "Australia (ARIA): No. 8",
-          "Billboard Global 200: No. 12"
-        ],
-        "about": "\"Cuff It\" is a song by American singer Beyoncé from her seventh studio album, Renaissance (2022). It was released as the album's second single on September 30, 2022, through Parkwood Entertainment and Columbia Records.",
-        "source": "https://en.wikipedia.org/wiki/Cuff_It",
-        "sourceName": "Wikipedia"
-      }
+    "about": "\"Fields of Gold\" is a song written and performed by the English musician Sting. It first appeared on his fourth studio album, Ten Summoner's Tales (1993).",
+    "source": "https://en.wikipedia.org/wiki/Fields_of_Gold",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "wonderwall-oasis",
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "released": "1995",
+    "year": 1995,
+    "charts": [
+     "Billboard Hot 100: No. 8",
+     "Billboard Pop Airplay: No. 10",
+     "Billboard Adult Contemporary: No. 36",
+     "Billboard Adult Pop Airplay: No. 30",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1"
     ],
-    "flash": [
-      {
-        "id": "firework-katy-perry",
-        "title": "Firework",
-        "artist": "Katy Perry",
-        "released": "October 26, 2010",
-        "year": 2010,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Firework\" is a song by American singer Katy Perry from her third studio album, Teenage Dream (2010). She co-wrote the song with Ester Dean and the song's producers Stargate and Sandy Vee.",
-        "source": "https://en.wikipedia.org/wiki/Firework_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "heaven-is-a-place-on-earth-belinda-carlisle",
-        "title": "Heaven Is a Place on Earth",
-        "artist": "Belinda Carlisle",
-        "released": "September 14, 1987",
-        "year": 1987,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 7"
-        ],
-        "about": "\"Heaven Is a Place on Earth\" is a single by American singer Belinda Carlisle from her second studio album, Heaven on Earth (1987). Written by Rick Nowels and Ellen Shipley, the song was released as the lead single from the album on September 14, 1987, and it reached number one on the US Billboard Hot 100 on…",
-        "fact": "The music video was directed by actress Diane Keaton, and features kids holding glowing globes.",
-        "source": "https://en.wikipedia.org/wiki/Heaven_Is_a_Place_on_Earth",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "like-a-prayer-madonna",
-        "title": "Like a Prayer",
-        "artist": "Madonna",
-        "released": "March 3, 1989",
-        "year": 1989,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 3",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Like a Prayer\" is a song by American singer Madonna from her fourth studio album, Like a Prayer (1989). It was released as the album's lead single on March 3, 1989, by Sire Records.",
-        "source": "https://en.wikipedia.org/wiki/Like_a_Prayer_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "baby-one-more-time-britney-spears",
-        "title": "...Baby One More Time",
-        "artist": "Britney Spears",
-        "released": "September 29, 1998",
-        "year": 1998,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 25",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"...Baby One More Time\" is the debut single by the American singer Britney Spears, from her 1999 debut album of the same name. It was written by Max Martin and produced by Martin and Rami Yacoub.",
-        "source": "https://en.wikipedia.org/wiki/...Baby_One_More_Time",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "i-want-it-that-way-backstreet-boys",
-        "title": "I Want It That Way",
-        "artist": "Backstreet Boys",
-        "released": "April 12, 1999",
-        "year": 1999,
-        "charts": [
-          "Billboard Hot 100: No. 6",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 11",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 2"
-        ],
-        "about": "\"I Want It That Way\" is a song by American boy band Backstreet Boys. It was released on April 12, 1999, as the lead single from their third studio album, Millennium.",
-        "source": "https://en.wikipedia.org/wiki/I_Want_It_That_Way",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "wannabe-spice-girls",
-        "title": "Wannabe",
-        "artist": "Spice Girls",
-        "released": "June 26, 1996",
-        "year": 1996,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 4",
-          "Billboard Adult Pop Airplay: No. 27",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Wannabe\" is the debut single by the British girl group the Spice Girls, released on 26 June 1996. It was written by the Spice Girls, Matt Rowe and Richard \"Biff\" Stannard and produced by Rowe and Stannard for the group's debut album, Spice.",
-        "source": "https://en.wikipedia.org/wiki/Wannabe",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "toxic-britney-spears",
-        "title": "Toxic",
-        "artist": "Britney Spears",
-        "released": "January 13, 2004",
-        "year": 2004,
-        "charts": [
-          "Billboard Hot 100: No. 9",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 37",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Toxic\" is a song by American singer Britney Spears, released as the second single from her fourth studio album, In the Zone (2003). It was written and produced by Bloodshy & Avant, with additional writing from Cathy Dennis and Henrik Jonback.",
-        "source": "https://en.wikipedia.org/wiki/Toxic_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "since-u-been-gone-kelly-clarkson",
-        "title": "Since U Been Gone",
-        "artist": "Kelly Clarkson",
-        "released": "November 16, 2004",
-        "year": 2004,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 22",
-          "Billboard Adult Pop Airplay: No. 2",
-          "UK Singles: No. 5",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Since U Been Gone\" is a song recorded by American singer Kelly Clarkson from her second studio album, Breakaway (2004). The song, written and produced by Max Martin and Lukasz \"Dr.",
-        "source": "https://en.wikipedia.org/wiki/Since_U_Been_Gone",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "mr-brightside-the-killers",
-        "title": "Mr. Brightside",
-        "artist": "The Killers",
-        "released": "September 29, 2003",
-        "year": 2003,
-        "charts": [
-          "Billboard Hot 100: No. 10",
-          "Billboard Pop Airplay: No. 10",
-          "Billboard Adult Pop Airplay: No. 11",
-          "UK Singles: No. 10",
-          "Australia (ARIA): No. 19"
-        ],
-        "about": "\"Mr. Brightside\" is a song by American rock band the Killers.",
-        "source": "https://en.wikipedia.org/wiki/Mr._Brightside",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "crazy-in-love-beyonc",
-        "title": "Crazy in Love",
-        "artist": "Beyoncé ft. Jay-Z",
-        "released": "May 18, 2003",
-        "year": 2003,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 29",
-          "Australia (ARIA): No. 2"
-        ],
-        "about": "\"Crazy in Love\" is a song by American singer and songwriter Beyoncé featuring rapper Jay-Z. She wrote the song with him and Rich Harrison, and co-produced it with Harrison.",
-        "source": "https://en.wikipedia.org/wiki/Crazy_in_Love",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "hey-ya-outkast",
-        "title": "Hey Ya!",
-        "artist": "Outkast",
-        "released": "August 25, 2003",
-        "year": 2003,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 13",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Hey Ya!\" is a song by American hip hop duo Outkast, performed by its member André 3000, who wrote and produced the song. Along with \"The Way You Move\", which was recorded by Outkast's other member Big Boi and featured Sleepy Brown, \"Hey Ya!\" was released by Arista Records as the second single from the duo's fifth…",
-        "source": "https://en.wikipedia.org/wiki/Hey_Ya!",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "yeah-usher",
-        "title": "Yeah!",
-        "artist": "Usher ft. Lil Jon & Ludacris",
-        "released": "January 10, 2004",
-        "year": 2004,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Yeah!\" is a song by American singer Usher featuring American rappers Lil Jon and Ludacris. The song is written by the featured artists alongside Sean Garrett, J.",
-        "source": "https://en.wikipedia.org/wiki/Yeah!_(Usher_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "hollaback-girl-gwen-stefani",
-        "title": "Hollaback Girl",
-        "artist": "Gwen Stefani",
-        "released": "March 22, 2005",
-        "year": 2005,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 18",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Hollaback Girl\" is a song by American singer Gwen Stefani from her debut solo studio album, Love. Angel.",
-        "source": "https://en.wikipedia.org/wiki/Hollaback_Girl",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "bye-bye-bye-nsync",
-        "title": "Bye Bye Bye",
-        "artist": "NSYNC",
-        "released": "January 17, 2000",
-        "year": 2000,
-        "charts": [
-          "Billboard Hot 100: No. 4",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 25",
-          "Billboard Adult Pop Airplay: No. 19",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Bye Bye Bye\" is a song by American boy band NSYNC from their third studio album, No Strings Attached. It was written and produced by Kristian Lundin and Jake Schulze, with Andreas Carlsson providing additional songwriting.",
-        "source": "https://en.wikipedia.org/wiki/Bye_Bye_Bye",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "no-scrubs-tlc",
-        "title": "No Scrubs",
-        "artist": "TLC",
-        "released": "February 2, 1999",
-        "year": 1999,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 39",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"No Scrubs\" is a song recorded by American girl group TLC as the lead single from their third studio album, FanMail, released on February 2, 1999, by LaFace Records and Arista Records. The song was written by producer Kevin \"She'kspere\" Briggs and former Xscape members Kandi Burruss and Tameka \"Tiny\" Cottle, with…",
-        "source": "https://en.wikipedia.org/wiki/No_Scrubs",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "un-break-my-heart-toni-braxton",
-        "title": "Un-Break My Heart",
-        "artist": "Toni Braxton",
-        "released": "October 7, 1996",
-        "year": 1996,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 4",
-          "Australia (ARIA): No. 6"
-        ],
-        "about": "\"Un-Break My Heart\" is a song by American singer Toni Braxton for her second studio album, Secrets (1996). The song was written by Diane Warren and produced by David Foster.",
-        "source": "https://en.wikipedia.org/wiki/Un-Break_My_Heart",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "the-sign-ace-of-base",
-        "title": "The Sign",
-        "artist": "Ace of Base",
-        "released": "1993",
-        "year": 1993,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 2",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"The Sign\" is a song by Swedish group Ace of Base from their first North American studio album, The Sign (1993), and their re-released debut studio album, Happy Nation (1992), titled Happy Nation . The song was released by Arista and Mega Records as a single in Europe on 1 November 1993 and the US on 14 December 1993.",
-        "source": "https://en.wikipedia.org/wiki/The_Sign_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "complicated-avril-lavigne",
-        "title": "Complicated",
-        "artist": "Avril Lavigne",
-        "released": "March 11, 2002",
-        "year": 2002,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 13",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Complicated\" is the debut single by Canadian singer-songwriter Avril Lavigne from her debut album, Let Go (2002). It was released as her debut single on 11 March 2002 by Arista Records.",
-        "source": "https://en.wikipedia.org/wiki/Complicated_(Avril_Lavigne_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "sk8er-boi-avril-lavigne",
-        "title": "Sk8er Boi",
-        "artist": "Avril Lavigne",
-        "released": "September 9, 2002",
-        "year": 2002,
-        "charts": [
-          "Billboard Hot 100: No. 10",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 23",
-          "UK Singles: No. 8",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Sk8er Boi\" is a song by Canadian singer-songwriter Avril Lavigne, released as the second single from her debut album, Let Go (2002). It was written by Lavigne and the Matrix, and produced by the Matrix.",
-        "source": "https://en.wikipedia.org/wiki/Sk8er_Boi",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "poker-face-lady-gaga",
-        "title": "Poker Face",
-        "artist": "Lady Gaga",
-        "released": "September 23, 2008",
-        "year": 2008,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 12",
-          "Canadian Hot 100: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Poker Face\" is a song by American singer Lady Gaga from her debut studio album, The Fame (2008). The track was released on September 23, 2008, as the album's second single, through Streamline Records, KonLive, Cherrytree Records, and Interscope Records.",
-        "source": "https://en.wikipedia.org/wiki/Poker_Face_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "bad-romance-lady-gaga",
-        "title": "Bad Romance",
-        "artist": "Lady Gaga",
-        "released": "October 19, 2009",
-        "year": 2009,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 20",
-          "Billboard Adult Pop Airplay: No. 7",
-          "Canadian Hot 100: No. 1",
-          "Australia (ARIA): No. 2"
-        ],
-        "about": "\"Bad Romance\" is a song by American singer-songwriter Lady Gaga from her third extended play (EP), The Fame Monster (2009)—the reissue of her debut studio album, The Fame (2008). Following an unauthorized demo leak, Gaga premiered the final version of the song during Alexander McQueen's 2010 Paris Fashion Week show…",
-        "source": "https://en.wikipedia.org/wiki/Bad_Romance",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "just-dance-lady-gaga",
-        "title": "Just Dance",
-        "artist": "Lady Gaga",
-        "released": "April 8, 2008",
-        "year": 2008,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 28",
-          "Billboard Adult Pop Airplay: No. 7",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Just Dance\" is the debut single by the American singer Lady Gaga. It was released on April 8, 2008, as the lead single from Gaga's debut studio album, The Fame (2008), through Streamline Records, KonLive, Cherrytree Records, and Interscope Records.",
-        "source": "https://en.wikipedia.org/wiki/Just_Dance_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "umbrella-rihanna",
-        "title": "Umbrella",
-        "artist": "Rihanna ft. Jay-Z",
-        "released": "March 29, 2007",
-        "year": 2007,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Pop Airplay: No. 28",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Umbrella\" is a song by Barbadian singer Rihanna, released worldwide on March 29, 2007, by Def Jam Recordings, as the lead single and opening track from her third studio album, Good Girl Gone Bad (2007). It features a guest performance from the singer's mentor and Def Jam-label boss Jay-Z, who co-wrote the song…",
-        "source": "https://en.wikipedia.org/wiki/Umbrella_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "single-ladies-put-a-ring-on-it-beyonc",
-        "title": "Single Ladies (Put a Ring on It)",
-        "artist": "Beyoncé",
-        "released": "October 8, 2008",
-        "year": 2008,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "UK Singles: No. 7"
-        ],
-        "about": "\"Single Ladies (Put a Ring on It)\" is a song by American singer Beyoncé from her third studio album, I Am... Sasha Fierce (2008).",
-        "source": "https://en.wikipedia.org/wiki/Single_Ladies_(Put_a_Ring_on_It)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "call-me-maybe-carly-rae-jepsen",
-        "title": "Call Me Maybe",
-        "artist": "Carly Rae Jepsen",
-        "released": "September 20, 2011",
-        "year": 2011,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 4",
-          "Billboard Adult Pop Airplay: No. 2",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Call Me Maybe\" is a song by Canadian singer-songwriter Carly Rae Jepsen from her extended play Curiosity (2012) and later appeared on her second studio album and international debut album Kiss (2012). The song was written by Jepsen and Tavish Crowe as a folk song, but its genre was modified to pop following the…",
-        "source": "https://en.wikipedia.org/wiki/Call_Me_Maybe",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "rolling-in-the-deep-adele",
-        "title": "Rolling in the Deep",
-        "artist": "Adele",
-        "released": "November 29, 2010",
-        "year": 2010,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Rolling in the Deep\" is a song by English singer-songwriter Adele from her second studio album, 21 (2011). It is the lead single and opening track on the album.",
-        "source": "https://en.wikipedia.org/wiki/Rolling_in_the_Deep",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "tik-tok-kesha",
-        "title": "TiK ToK",
-        "artist": "Kesha",
-        "released": "August 7, 2009",
-        "year": 2009,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 14",
-          "Canadian Hot 100: No. 1",
-          "UK Singles: No. 4",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Tik Tok\" is the debut solo single by American singer Kesha, who co-wrote the song with its producers Dr. Luke and Benny Blanco.",
-        "source": "https://en.wikipedia.org/wiki/Tik_Tok_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "california-gurls-katy-perry",
-        "title": "California Gurls",
-        "artist": "Katy Perry ft. Snoop Dogg",
-        "released": "May 7, 2010",
-        "year": 2010,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 7",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"California Gurls\" is a song by American singer Katy Perry from her third studio album, Teenage Dream (2010). It was released as the album's lead single on May 7, 2010, through Capitol Records.",
-        "source": "https://en.wikipedia.org/wiki/California_Gurls",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "teenage-dream-katy-perry",
-        "title": "Teenage Dream",
-        "artist": "Katy Perry",
-        "released": "July 23, 2010",
-        "year": 2010,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 8",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Canadian Hot 100: No. 2",
-          "UK Singles: No. 2",
-          "Australia (ARIA): No. 2"
-        ],
-        "about": "\"Teenage Dream\" is a song by American singer Katy Perry. It was released as the second single from her third studio album of the same name on July 23, 2010.",
-        "source": "https://en.wikipedia.org/wiki/Teenage_Dream_(Katy_Perry_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "take-on-me-a-ha",
-        "title": "Take On Me",
-        "artist": "a-ha",
-        "released": "October 19, 1984",
-        "year": 1984,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 4"
-        ],
-        "about": "\"Take On Me\" is a song by the Norwegian synth-pop band a-ha. The original version, recorded in 1984 and released in October of that year, was produced by Tony Mansfield and remixed by John Ratcliff.",
-        "source": "https://en.wikipedia.org/wiki/Take_On_Me",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "girls-just-want-to-have-fun-cyndi-lauper",
-        "title": "Girls Just Want to Have Fun",
-        "artist": "Cyndi Lauper",
-        "released": "October 17, 1983",
-        "year": 1983,
-        "charts": [
-          "Billboard Hot 100: No. 2"
-        ],
-        "about": "\"Girls Just Want to Have Fun\" is a song written in 1979 by Robert Hazard and made famous in 1983 by the American singer-songwriter Cyndi Lauper, who changed some of the lyrics. It was released by Portrait Records as Lauper's debut single from her first solo album, She's So Unusual (1983), which was released four…",
-        "source": "https://en.wikipedia.org/wiki/Girls_Just_Want_to_Have_Fun",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "time-after-time-cyndi-lauper",
-        "title": "Time After Time",
-        "artist": "Cyndi Lauper",
-        "released": "March 10, 1984",
-        "year": 1984,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 1",
-          "UK Singles: No. 3"
-        ],
-        "about": "\"Time After Time\" is a song by the American pop singer Cyndi Lauper from her debut album, She's So Unusual (1983). It was released as the album's second single in March 1984, by Epic and Portrait Records.",
-        "source": "https://en.wikipedia.org/wiki/Time_After_Time_(Cyndi_Lauper_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "wake-me-up-before-you-go-go-wham",
-        "title": "Wake Me Up Before You Go-Go",
-        "artist": "Wham!",
-        "released": "1984",
-        "year": 1984,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 4",
-          "UK Singles: No. 1"
-        ],
-        "about": "\"Wake Me Up Before You Go-Go\" is a song by British pop duo Wham!, first released as a single in the UK on 14 May 1984. It became their first UK and US number one hit.",
-        "source": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "billie-jean-michael-jackson",
-        "title": "Billie Jean",
-        "artist": "Michael Jackson",
-        "released": "January 2, 1983",
-        "year": 1983,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 7"
-        ],
-        "about": "\"Billie Jean\" is a song by the American singer Michael Jackson, released by Epic Records on January 2, 1983, as the second single from Jackson's sixth studio album, Thriller (1982). It was written by Jackson and produced by Jackson and Quincy Jones.",
-        "source": "https://en.wikipedia.org/wiki/Billie_Jean",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "livin-la-vida-loca-ricky-martin",
-        "title": "Livin' la Vida Loca",
-        "artist": "Ricky Martin",
-        "released": "March 23, 1999",
-        "year": 1999,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 18",
-          "Billboard Adult Pop Airplay: No. 1",
-          "Australia (ARIA): No. 4"
-        ],
-        "about": "\"Livin' la Vida Loca\" is a song recorded by Puerto Rican singer Ricky Martin for his fifth studio album and English-language debut, Ricky Martin (1999). The song was written by Draco Rosa and Desmond Child, while the production was handled by the latter.",
-        "source": "https://en.wikipedia.org/wiki/Livin'_la_Vida_Loca",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "smooth-santana",
-        "title": "Smooth",
-        "artist": "Santana ft. Rob Thomas",
-        "released": "June 15, 1999",
-        "year": 1999,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Contemporary: No. 11",
-          "Billboard Adult Pop Airplay: No. 1",
-          "UK Singles: No. 3",
-          "Australia (ARIA): No. 4"
-        ],
-        "about": "\"Smooth\" is a song performed by American rock band Santana and Rob Thomas of Matchbox Twenty, who sings the lead vocals. It was released to radio on June 15, 1999, as the lead single from Santana's 1999 studio album, Supernatural, and was physically released as a single in August.",
-        "source": "https://en.wikipedia.org/wiki/Smooth_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "hanging-by-a-moment-lifehouse",
-        "title": "Hanging by a Moment",
-        "artist": "Lifehouse",
-        "released": "September 25, 2000",
-        "year": 2000,
-        "charts": [
-          "Billboard Hot 100: No. 2",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Pop Airplay: No. 1",
-          "UK Singles: No. 25",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Hanging by a Moment\" is a song by American alternative rock band Lifehouse. It was the first single released from their debut studio album, No Name Face (2000), issued through DreamWorks Records.",
-        "source": "https://en.wikipedia.org/wiki/Hanging_by_a_Moment",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "promiscuous-nelly-furtado",
-        "title": "Promiscuous",
-        "artist": "Nelly Furtado ft. Timbaland",
-        "released": "April 25, 2006",
-        "year": 2006,
-        "charts": [
-          "Australia (ARIA): No. 2"
-        ],
-        "about": "\"Promiscuous\" is a song by the Canadian singer Nelly Furtado, and the American record producer and musician Timbaland, and written by Furtado, Timbaland, Timothy \"Attitude\" Clayton, and Nate \"Danja\" Hills. The song was included on Furtado's third studio album, Loose (2006), and was released as the second single…",
-        "source": "https://en.wikipedia.org/wiki/Promiscuous_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "everybody-backstreet-s-back-backstreet-boys",
-        "title": "Everybody (Backstreet's Back)",
-        "artist": "Backstreet Boys",
-        "released": "July 14, 1997",
-        "year": 1997,
-        "charts": [
-          "Billboard Hot 100: No. 4",
-          "Billboard Pop Airplay: No. 11",
-          "Australia (ARIA): No. 3"
-        ],
-        "about": "\"Everybody (Backstreet's Back)\" is a song by American boy band Backstreet Boys, written and produced by Denniz Pop and Max Martin. It was released as the first single from the band's second international studio album Backstreet's Back in July 1997 by Jive Records, and the third single from their self-titled debut…",
-        "source": "https://en.wikipedia.org/wiki/Everybody_(Backstreet's_Back)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "waterfalls-tlc",
-        "title": "Waterfalls",
-        "artist": "TLC",
-        "released": "May 29, 1995",
-        "year": 1995,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Pop Airplay: No. 2",
-          "Billboard Adult Contemporary: No. 24",
-          "Billboard Adult Pop Airplay: No. 24",
-          "UK Singles: No. 4",
-          "Australia (ARIA): No. 4"
-        ],
-        "about": "\"Waterfalls\" is a song by American girl group TLC, released on May 29, 1995, by LaFace and Arista as the third single from the group's second album, CrazySexyCool (1994). The song addresses the illegal drug trade, promiscuity, and HIV/AIDS.",
-        "source": "https://en.wikipedia.org/wiki/Waterfalls_(TLC_song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "vogue-madonna",
-        "title": "Vogue",
-        "artist": "Madonna",
-        "released": "March 20, 1990",
-        "year": 1990,
-        "charts": [
-          "Billboard Hot 100: No. 1",
-          "Billboard Adult Contemporary: No. 23",
-          "UK Singles: No. 1",
-          "Australia (ARIA): No. 1"
-        ],
-        "about": "\"Vogue\" is a song by American singer Madonna from her soundtrack album I'm Breathless (1990). Written and produced by herself and Shep Pettibone, it was inspired by voguing, a dance popularized in New York City in the late 1980s.",
-        "source": "https://en.wikipedia.org/wiki/Vogue_(song)",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "into-the-groove-madonna",
-        "title": "Into the Groove",
-        "artist": "Madonna",
-        "released": "July 15, 1985",
-        "year": 1985,
-        "about": "\"Into the Groove\" is a song by American singer Madonna, featured in the 1985 film Desperately Seeking Susan. Written by Madonna and Stephen Bray, it was originally intended for singer Cheyne before Madonna offered the recording to the film's director, Susan Seidelman, for a nightclub scene.",
-        "source": "https://en.wikipedia.org/wiki/Into_the_Groove",
-        "sourceName": "Wikipedia"
-      },
-      {
-        "id": "all-star-smash-mouth",
-        "title": "All Star",
-        "artist": "Smash Mouth",
-        "released": "May 4, 1999",
-        "year": 1999,
-        "charts": [
-          "Billboard Hot 100: No. 4",
-          "Billboard Pop Airplay: No. 1",
-          "Billboard Adult Pop Airplay: No. 1",
-          "UK Singles: No. 24",
-          "Australia (ARIA): No. 4"
-        ],
-        "about": "\"All Star\" is a song by the American rock band Smash Mouth from their second studio album, Astro Lounge (1999). Written by Smash Mouth guitarist Greg Camp and produced by Eric Valentine, the song was released on May 4, 1999, as the first single from Astro Lounge.",
-        "source": "https://en.wikipedia.org/wiki/All_Star_(song)",
-        "sourceName": "Wikipedia"
-      }
-    ]
-  }
+    "about": "\"Wonderwall\" is a song by English rock band Oasis, released by Creation Records on 30 October 1995 as the fourth single from the band's second studio album (What's the Story) Morning Glory?. Described by lead guitarist and songwriter Noel Gallagher, who wrote the song and co-produced it with Owen Morris, as being…",
+    "source": "https://en.wikipedia.org/wiki/Wonderwall",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "fast-car-tracy-chapman",
+    "title": "Fast Car",
+    "artist": "Tracy Chapman",
+    "released": "April 6, 1988",
+    "year": 1988,
+    "charts": [
+     "Australia (ARIA): No. 4"
+    ],
+    "about": "\"Fast Car\" is a song by American singer-songwriter Tracy Chapman, released as her debut single on April 6, 1988, by Elektra Records. It served as the lead single from her 1988 self-titled debut studio album.",
+    "source": "https://en.wikipedia.org/wiki/Fast_Car",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "someone-like-you-adele",
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "released": "January 24, 2011",
+    "year": 2011,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 2",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Someone like You\" is a song recorded by English singer-songwriter Adele. She and Dan Wilson wrote and produced the track for her second studio album, 21 (2011).",
+    "source": "https://en.wikipedia.org/wiki/Someone_like_You_(Adele_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "easy-on-me-adele",
+    "title": "Easy on Me",
+    "artist": "Adele",
+    "released": "2021",
+    "year": 2021,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Easy on Me\" is a song by the English singer Adele from her fourth studio album, 30 (2021). Adele wrote the song with its producer, Greg Kurstin.",
+    "source": "https://en.wikipedia.org/wiki/Easy_on_Me",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "all-of-me-john-legend",
+    "title": "All of Me",
+    "artist": "John Legend",
+    "released": "August 12, 2013",
+    "year": 2013,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"All of Me\" is a song by American singer John Legend from his fourth studio album Love in the Future (2013). It is dedicated to Legend's wife Chrissy Teigen.",
+    "source": "https://en.wikipedia.org/wiki/All_of_Me_(John_Legend_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "stay-with-me-sam-smith",
+    "title": "Stay with Me",
+    "artist": "Sam Smith",
+    "released": "2014",
+    "year": 2014,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 5"
+    ],
+    "about": "\"Stay with Me\" is a song by the English singer Sam Smith from their debut studio album In the Lonely Hour (2014). It was released in the United States on 14 April 2014 and in the United Kingdom on 18 May 2014.",
+    "source": "https://en.wikipedia.org/wiki/Stay_with_Me_(Sam_Smith_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "i-m-yours-jason-mraz",
+    "title": "I'm Yours",
+    "artist": "Jason Mraz",
+    "released": "February 12, 2008",
+    "year": 2008,
+    "charts": [
+     "Billboard Hot 100: No. 6",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 3",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"I'm Yours\" is a song written and recorded by American singer-songwriter Jason Mraz, released in 2008 as the first single from his third studio album We Sing. We Dance.",
+    "source": "https://en.wikipedia.org/wiki/I'm_Yours_(Jason_Mraz_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "thinking-out-loud-ed-sheeran",
+    "title": "Thinking Out Loud",
+    "artist": "Ed Sheeran",
+    "released": "2014",
+    "year": 2014,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 2",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Thinking Out Loud\" is a song by English singer-songwriter Ed Sheeran recorded for his second studio album, × (2014). It was written by Sheeran and Amy Wadge, and produced by frequent collaborator Jake Gosling.",
+    "source": "https://en.wikipedia.org/wiki/Thinking_Out_Loud",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "perfect-ed-sheeran",
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "released": "September 26, 2017",
+    "year": 2017,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Perfect\" is a song by English singer-songwriter Ed Sheeran from his third studio album, ÷ (2017). After the album's release, it charted at number four on the UK Singles Chart.",
+    "source": "https://en.wikipedia.org/wiki/Perfect_(Ed_Sheeran_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "photograph-ed-sheeran",
+    "title": "Photograph",
+    "artist": "Ed Sheeran",
+    "released": "May 11, 2015",
+    "year": 2015,
+    "charts": [
+     "Billboard Hot 100: No. 10",
+     "Billboard Pop Airplay: No. 5",
+     "Billboard Adult Contemporary: No. 3",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 4",
+     "Australia (ARIA): No. 9"
+    ],
+    "about": "\"Photograph\" is a song by English singer-songwriter Ed Sheeran from his second studio album, × (2014). Sheeran wrote the song with Snow Patrol member Johnny McDaid, who had a piano loop from which the composition developed.",
+    "source": "https://en.wikipedia.org/wiki/Photograph_(Ed_Sheeran_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "let-her-go-passenger",
+    "title": "Let Her Go",
+    "artist": "Passenger",
+    "released": "July 24, 2012",
+    "year": 2012,
+    "charts": [
+     "Billboard Hot 100: No. 5",
+     "Billboard Pop Airplay: No. 8",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 5",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Let Her Go\" is a song recorded by English singer-songwriter Passenger. It was recorded at Sydney's Linear Recording and co-produced by Passenger and Chris Vallejo.",
+    "source": "https://en.wikipedia.org/wiki/Let_Her_Go",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "the-scientist-coldplay",
+    "title": "The Scientist",
+    "artist": "Coldplay",
+    "released": "November 11, 2002",
+    "year": 2002,
+    "charts": [
+     "Billboard Adult Pop Airplay: No. 34",
+     "UK Singles: No. 10",
+     "Australia (ARIA): No. 40"
+    ],
+    "about": "\"The Scientist\" is a song by British rock band Coldplay. The song is credited to all the band members on their second album, A Rush of Blood to the Head.",
+    "source": "https://en.wikipedia.org/wiki/The_Scientist_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "yellow-coldplay",
+    "title": "Yellow",
+    "artist": "Coldplay",
+    "released": "June 26, 2000",
+    "year": 2000,
+    "charts": [
+     "Billboard Hot 100: No. 48",
+     "Billboard Pop Airplay: No. 22",
+     "Billboard Adult Pop Airplay: No. 11",
+     "UK Singles: No. 4",
+     "Australia (ARIA): No. 5"
+    ],
+    "about": "\"Yellow\" is a song by the British rock band Coldplay from their debut studio album, Parachutes (2000). The song was written by band members Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion, and co-produced it with British record producer Ken Nelson.",
+    "source": "https://en.wikipedia.org/wiki/Yellow_(Coldplay_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "halo-beyonc",
+    "title": "Halo",
+    "artist": "Beyoncé",
+    "released": "January 20, 2009",
+    "year": 2009,
+    "charts": [
+     "Billboard Hot 100: No. 5",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Contemporary: No. 27",
+     "Billboard Adult Pop Airplay: No. 22",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 4",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Halo\" is a song recorded by American singer Beyoncé for her third studio album, I Am... Sasha Fierce (2008).",
+    "source": "https://en.wikipedia.org/wiki/Halo_(Beyoncé_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "if-i-ain-t-got-you-alicia-keys",
+    "title": "If I Ain't Got You",
+    "artist": "Alicia Keys",
+    "released": "February 17, 2004",
+    "year": 2004,
+    "charts": [
+     "Billboard Hot 100: No. 4",
+     "Billboard Pop Airplay: No. 9",
+     "Billboard Adult Contemporary: No. 12"
+    ],
+    "about": "\"If I Ain't Got You\" is a song recorded by American singer-songwriter Alicia Keys for her second studio album, The Diary of Alicia Keys (2003). It was written and produced by Keys.",
+    "source": "https://en.wikipedia.org/wiki/If_I_Ain't_Got_You",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "no-one-alicia-keys",
+    "title": "No One",
+    "artist": "Alicia Keys",
+    "released": "September 10, 2007",
+    "year": 2007,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 9",
+     "Billboard Adult Pop Airplay: No. 9",
+     "Canadian Hot 100: No. 2",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"No One\" is a song recorded by American singer-songwriter Alicia Keys for her third studio album As I Am (2007). It was written and produced by Keys and Kerry Brothers Jr., with additional writing by DJ Dirty Harry.",
+    "source": "https://en.wikipedia.org/wiki/No_One_(Alicia_Keys_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "dreams-fleetwood-mac",
+    "title": "Dreams",
+    "artist": "Fleetwood Mac",
+    "released": "1977",
+    "year": 1977,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 11"
+    ],
+    "about": "\"Dreams\" is a song by the British-American rock band Fleetwood Mac, written and sung by Stevie Nicks for the band's eleventh studio album, Rumours (1977). In the United States, \"Dreams\" was released as the second single from Rumours in March 1977, by Warner Bros., while in the United Kingdom, the song was released…",
+    "source": "https://en.wikipedia.org/wiki/Dreams_(Fleetwood_Mac_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "iris-goo-goo-dolls",
+    "title": "Iris",
+    "artist": "Goo Goo Dolls",
+    "released": "April 1, 1998",
+    "year": 1998,
+    "charts": [
+     "Billboard Hot 100: No. 9",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 22",
+     "Billboard Adult Pop Airplay: No. 1",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Iris\" is a song by the American alternative rock band Goo Goo Dolls. Written for the soundtrack of the 1998 film City of Angels, it was included on the sixth Goo Goo Dolls album, Dizzy Up the Girl, and released as the album's lead single on April 1, 1998.",
+    "source": "https://en.wikipedia.org/wiki/Iris_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "drops-of-jupiter-tell-me-train",
+    "title": "Drops of Jupiter (Tell Me)",
+    "artist": "Train",
+    "released": "January 29, 2001",
+    "year": 2001,
+    "charts": [
+     "Billboard Hot 100: No. 5",
+     "Billboard Pop Airplay: No. 4",
+     "Billboard Adult Contemporary: No. 8",
+     "Billboard Adult Pop Airplay: No. 1",
+     "UK Singles: No. 10",
+     "Australia (ARIA): No. 5"
+    ],
+    "about": "\"Drops of Jupiter\", initially released and sometimes still listed as \"Drops of Jupiter (Tell Me)\", is a song written and recorded by American rock band Train. The power ballad was released on January 29, 2001, as the lead single from their second studio album, Drops of Jupiter (2001).",
+    "source": "https://en.wikipedia.org/wiki/Drops_of_Jupiter_(Tell_Me)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "put-your-records-on-corinne-bailey-rae",
+    "title": "Put Your Records On",
+    "artist": "Corinne Bailey Rae",
+    "released": "February 20, 2006",
+    "year": 2006,
+    "charts": [
+     "Billboard Hot 100: No. 64",
+     "Billboard Adult Contemporary: No. 6",
+     "Billboard Adult Pop Airplay: No. 11",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 30"
+    ],
+    "about": "\"Put Your Records On\" is a song by the English singer Corinne Bailey Rae from her self-titled debut studio album (2006). Written by Bailey Rae, John Beck, and Steve Chrisanthou, it was released as the album's second single in February 2006; in North America, it served as the album's lead single.",
+    "source": "https://en.wikipedia.org/wiki/Put_Your_Records_On",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "better-together-jack-johnson",
+    "title": "Better Together",
+    "artist": "Jack Johnson",
+    "released": "February 27, 2006",
+    "year": 2006,
+    "about": "\"Better Together\" is a song written and performed by American singer-songwriter Jack Johnson. The first track on Johnson's third studio album, In Between Dreams (2005), it was released as a single in February 2006.",
+    "source": "https://en.wikipedia.org/wiki/Better_Together_(Jack_Johnson_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "a-thousand-years-christina-perri",
+    "title": "A Thousand Years",
+    "artist": "Christina Perri",
+    "released": "October 18, 2011",
+    "year": 2011,
+    "charts": [
+     "Billboard Hot 100: No. 31",
+     "Billboard Pop Airplay: No. 22",
+     "Billboard Adult Contemporary: No. 11",
+     "Billboard Adult Pop Airplay: No. 7",
+     "Canadian Hot 100: No. 40",
+     "UK Singles: No. 11",
+     "Australia (ARIA): No. 13"
+    ],
+    "about": "\"A Thousand Years\" is a ballad recorded by American singer and songwriter Christina Perri, written by Perri and her producer David Hodges, for The Twilight Saga: Breaking Dawn – Part 1. The song was released worldwide as a digital download on October 18, 2011 and serves as the second single by Atlantic Records from…",
+    "source": "https://en.wikipedia.org/wiki/A_Thousand_Years",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "when-i-was-your-man-bruno-mars",
+    "title": "When I Was Your Man",
+    "artist": "Bruno Mars",
+    "released": "January 15, 2013",
+    "year": 2013,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 6"
+    ],
+    "about": "\"When I Was Your Man\" is a song by American singer and songwriter Bruno Mars from his second studio album, Unorthodox Jukebox (2012). Atlantic Records released the song as the third promotional single and as the second official single, taken from the album, to mainstream radio in the United States on January 15, 2013.",
+    "source": "https://en.wikipedia.org/wiki/When_I_Was_Your_Man",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "lovely-billie-eilish-khalid",
+    "title": "lovely",
+    "artist": "Billie Eilish & Khalid",
+    "released": "April 20, 2018",
+    "year": 2018,
+    "charts": [
+     "Billboard Hot 100: No. 64",
+     "Canadian Hot 100: No. 46",
+     "UK Singles: No. 47",
+     "Australia (ARIA): No. 5"
+    ],
+    "about": "\"Lovely\" is a song by American singers Billie Eilish and Khalid. Darkroom and Interscope Records released it as the lead single from the Netflix drama series 13 Reasons Why's second season soundtrack.",
+    "source": "https://en.wikipedia.org/wiki/Lovely_(Billie_Eilish_and_Khalid_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "cardigan-taylor-swift",
+    "title": "cardigan",
+    "artist": "Taylor Swift",
+    "released": "July 24, 2020",
+    "year": 2020,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 17",
+     "Billboard Adult Contemporary: No. 12",
+     "Billboard Adult Pop Airplay: No. 8",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 6",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 77"
+    ],
+    "about": "\"Cardigan\" is a song by the American singer-songwriter Taylor Swift and the lead single from her eighth studio album, Folklore (2020). Republic Records released the song on July 24, 2020.",
+    "source": "https://en.wikipedia.org/wiki/Cardigan_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "say-you-won-t-let-go-james-arthur",
+    "title": "Say You Won't Let Go",
+    "artist": "James Arthur",
+    "released": "September 9, 2016",
+    "year": 2016,
+    "charts": [
+     "Billboard Hot 100: No. 11",
+     "Billboard Pop Airplay: No. 6",
+     "Billboard Adult Contemporary: No. 3",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 9",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Say You Won't Let Go\" is a song by English singer and songwriter James Arthur. The song was released as a digital download on 9 September 2016 in the United Kingdom by Columbia Records as the lead single from his second studio album Back from the Edge (2016).",
+    "source": "https://en.wikipedia.org/wiki/Say_You_Won't_Let_Go",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "bubbly-colbie-caillat",
+    "title": "Bubbly",
+    "artist": "Colbie Caillat",
+    "released": "May 15, 2007",
+    "year": 2007,
+    "charts": [
+     "Billboard Hot 100: No. 5",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 2",
+     "UK Singles: No. 58",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Bubbly\" is the debut single of American singer-songwriter Colbie Caillat from her first album, Coco (2007). Written by Caillat and Jason Reeves and produced by Mikal Blue, the song was released as the album's lead single on May 15, 2007.",
+    "source": "https://en.wikipedia.org/wiki/Bubbly",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "ocean-eyes-billie-eilish",
+    "title": "ocean eyes",
+    "artist": "Billie Eilish",
+    "released": "November 18, 2015",
+    "year": 2015,
+    "charts": [
+     "Billboard Hot 100: No. 84",
+     "Canadian Hot 100: No. 68",
+     "Australia (ARIA): No. 58"
+    ],
+    "about": "\"Ocean Eyes\" is the debut single by American singer-songwriter Billie Eilish. It was initially released on SoundCloud on November 18, 2015, and then temporarily released as a promotional recording on January 8, 2016, with Drup Music.",
+    "source": "https://en.wikipedia.org/wiki/Ocean_Eyes_(song)",
+    "sourceName": "Wikipedia"
+   }
+  ],
+  "mood": [
+   {
+    "id": "bad-guy-billie-eilish",
+    "title": "bad guy",
+    "artist": "Billie Eilish",
+    "released": "March 29, 2019",
+    "year": 2019,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 6",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Bad Guy\" is a song by American singer-songwriter Billie Eilish and the fifth single from her debut studio album, When We All Fall Asleep, Where Do We Go? (2019).",
+    "fact": "Spent 1 week at No. 1 on the Billboard Hot 100 (chart dated August 24, 2019), ending Lil Nas X’s 19-week run with “Old Town Road.” At 17, Eilish was the first artist born in the 2000s to top the Hot 100.",
+    "source": "https://en.wikipedia.org/wiki/Bad_Guy_(Billie_Eilish_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "someday-sugar-ray",
+    "title": "Someday",
+    "artist": "Sugar Ray",
+    "released": "September 7, 1999",
+    "year": 1999,
+    "charts": [
+     "Billboard Hot 100: No. 7",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Contemporary: No. 29",
+     "Billboard Adult Pop Airplay: No. 3",
+     "UK Singles: No. 88"
+    ],
+    "about": "\"Someday\" is a song by American rock band Sugar Ray. First serviced to American radio in June 1999, the song was released on September 7, 1999, as the second US single and third single overall from the band's third album, 14:59 (1999).",
+    "source": "https://en.wikipedia.org/wiki/Someday_(Sugar_Ray_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "happy-pharrell-williams",
+    "title": "Happy",
+    "artist": "Pharrell Williams",
+    "released": "November 21, 2013",
+    "year": 2013,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Happy\" is a song written, produced, and performed by American musician Pharrell Williams, released as the only single from the soundtrack album for the film Despicable Me 2 (2013). The song was first released on July 2, 2013 with the soundtrack, and it was released as a single on November 21, 2013, alongside a…",
+    "source": "https://en.wikipedia.org/wiki/Happy_(Pharrell_Williams_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "uptown-funk-mark-ronson",
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson ft. Bruno Mars",
+    "released": "November 10, 2014",
+    "year": 2014,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 5",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Uptown Funk\" is a song by British-American DJ and record producer Mark Ronson featuring American singer Bruno Mars. It was released on 10 November 2014, as the lead single from Ronson's fourth studio album, Uptown Special (2015).",
+    "source": "https://en.wikipedia.org/wiki/Uptown_Funk",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "flowers-miley-cyrus",
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "released": "January 12, 2023",
+    "year": 2023,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Flowers\" is a song by American singer Miley Cyrus from her eighth studio album Endless Summer Vacation (2023). Columbia Records released it as the album's lead single on January 12, 2023, in some countries and on January 13 worldwide.",
+    "source": "https://en.wikipedia.org/wiki/Flowers_(Miley_Cyrus_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "shake-it-off-taylor-swift",
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "released": "August 18, 2014",
+    "year": 2014,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Shake It Off\" is a song by the American singer-songwriter Taylor Swift and the lead single from her fifth studio album, 1989 (2014). She wrote the lyrics by herself and composed the melody with the song's producers, Max Martin and Shellback.",
+    "source": "https://en.wikipedia.org/wiki/Shake_It_Off",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "blinding-lights-the-weeknd",
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "released": "November 29, 2019",
+    "year": 2019,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 2"
+    ],
+    "about": "\"Blinding Lights\" is a song by Canadian singer-songwriter the Weeknd, from his fourth studio album, After Hours (2020). The song was released through XO and Republic Records on November 29, 2019, as the album's second single.",
+    "source": "https://en.wikipedia.org/wiki/Blinding_Lights",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "levitating-dua-lipa",
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "released": "2020",
+    "year": 2020,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 5",
+     "Australia (ARIA): No. 4",
+     "Billboard Global 200: No. 2"
+    ],
+    "about": "\"Levitating\" is a song by English singer Dua Lipa from her second studio album, Future Nostalgia (2020). The song was written by Lipa, Clarence Coffee Jr., Sarah Hudson, and Koz, who produced the song with Stuart Price, and stemmed from a Roland VP-330 synthesiser sample played by Koz.",
+    "source": "https://en.wikipedia.org/wiki/Levitating_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "can-t-stop-the-feeling-justin-timberlake",
+    "title": "Can't Stop the Feeling!",
+    "artist": "Justin Timberlake",
+    "released": "May 6, 2016",
+    "year": 2016,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Can't Stop the Feeling!\" is a song by American singer Justin Timberlake. It was released on May 6, 2016, as the lead single of the soundtrack to the film Trolls (2016), in which Timberlake voiced the character \"Branch\" and served as the executive music producer.",
+    "source": "https://en.wikipedia.org/wiki/Can't_Stop_the_Feeling!",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "good-as-hell-lizzo",
+    "title": "Good as Hell",
+    "artist": "Lizzo",
+    "released": "March 8, 2016",
+    "year": 2016,
+    "charts": [
+     "Billboard Hot 100: No. 3",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 14",
+     "Billboard Adult Pop Airplay: No. 3",
+     "Canadian Hot 100: No. 10",
+     "UK Singles: No. 7",
+     "Australia (ARIA): No. 6"
+    ],
+    "about": "\"Good as Hell\" is a song recorded by American rapper and singer Lizzo. Written by Lizzo and producer Ricky Reed, it was released on March 8, 2016, by Atlantic Records and Nice Life Recording Company as the lead single from her first extended play, Coconut Oil, and subsequently was the namesake for her 2017 Good as…",
+    "source": "https://en.wikipedia.org/wiki/Good_as_Hell",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "walking-on-sunshine-katrina-and-the-waves",
+    "title": "Walking on Sunshine",
+    "artist": "Katrina and the Waves",
+    "released": "April 15, 1985",
+    "year": 1985,
+    "charts": [
+     "UK Singles: No. 8"
+    ],
+    "about": "\"Walking on Sunshine\" is a song written by Kimberley Rew for the English rock band Katrina and the Waves' 1983 album Walking on Sunshine. A rerecorded version was included on the band's 1985 album Katrina and the Waves and was released as its second single in April 1985.",
+    "source": "https://en.wikipedia.org/wiki/Walking_on_Sunshine_(Katrina_and_the_Waves_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "i-gotta-feeling-the-black-eyed-peas",
+    "title": "I Gotta Feeling",
+    "artist": "The Black Eyed Peas",
+    "released": "June 15, 2009",
+    "year": 2009,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 16",
+     "Billboard Adult Pop Airplay: No. 4",
+     "Canadian Hot 100: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"I Gotta [sic] Feeling\" is a song by American group the Black Eyed Peas from their fifth studio album The E.N.D. (2009).",
+    "source": "https://en.wikipedia.org/wiki/I_Gotta_Feeling",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "don-t-start-now-dua-lipa",
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "released": "2019",
+    "year": 2019,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 5",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 2",
+     "Billboard Global 200: No. 30"
+    ],
+    "about": "\"Don't Start Now\" is a song by English singer Dua Lipa. Lipa wrote the song with Caroline Ailin, Emily Warren, and its producer Ian Kirkpatrick.",
+    "source": "https://en.wikipedia.org/wiki/Don't_Start_Now",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "about-damn-time-lizzo",
+    "title": "About Damn Time",
+    "artist": "Lizzo",
+    "released": "April 14, 2022",
+    "year": 2022,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 13",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 2",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 3",
+     "Billboard Global 200: No. 6"
+    ],
+    "about": "\"About Damn Time\" is a song by American singer and rapper Lizzo, released on April 14, 2022, by Nice Life Recordings and Atlantic Records as the lead single from her fourth studio album Special (2022). The song reached number one in the United States, becoming her second number one single there, while reaching the…",
+    "source": "https://en.wikipedia.org/wiki/About_Damn_Time",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "as-it-was-harry-styles",
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "released": "April 1, 2022",
+    "year": 2022,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"As It Was\" is a song by English singer-songwriter Harry Styles, released through Erskine and Columbia on 1 April 2022 as the lead single from his third studio album, Harry's House (2022). The song was written by Styles alongside his producers Kid Harpoon and Tyler Johnson.",
+    "source": "https://en.wikipedia.org/wiki/As_It_Was",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "anti-hero-taylor-swift",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "released": "October 21, 2022",
+    "year": 2022,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Anti-Hero\" is a song by the American singer-songwriter Taylor Swift and the lead single from her tenth studio album, Midnights (2022). It was released on October 21, 2022, through Republic Records.",
+    "source": "https://en.wikipedia.org/wiki/Anti-Hero_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "watermelon-sugar-harry-styles",
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "released": "November 16, 2019",
+    "year": 2019,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 7",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 4",
+     "Australia (ARIA): No. 5",
+     "Billboard Global 200: No. 9"
+    ],
+    "about": "\"Watermelon Sugar\" is a song by English singer-songwriter Harry Styles from his second studio album, Fine Line (2019), included as the album's second track. Styles wrote the song with Mitch Rowland and the song's producers, Tyler Johnson and Kid Harpoon.",
+    "source": "https://en.wikipedia.org/wiki/Watermelon_Sugar",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "cruel-summer-taylor-swift",
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "released": "June 20, 2023",
+    "year": 2023,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Cruel Summer\" is a song by the American singer-songwriter Taylor Swift from her seventh studio album, Lover (2019). Swift and Jack Antonoff produced the song, and they wrote it with St.",
+    "source": "https://en.wikipedia.org/wiki/Cruel_Summer_(Taylor_Swift_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "espresso-sabrina-carpenter",
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "released": "April 11, 2024",
+    "year": 2024,
+    "charts": [
+     "Billboard Hot 100: No. 3",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 2",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Espresso\" is a song by American singer Sabrina Carpenter from her sixth studio album, Short n' Sweet (2024). Island Records released it on April 11, 2024, as the album's lead single.",
+    "source": "https://en.wikipedia.org/wiki/Espresso_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "birds-of-a-feather-billie-eilish",
+    "title": "Birds of a Feather",
+    "artist": "Billie Eilish",
+    "released": "June 18, 2024",
+    "year": 2024,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 7",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Birds of a Feather\" is a song by American singer-songwriter Billie Eilish from her third studio album, Hit Me Hard and Soft (2024). It was released with the album on May 17, 2024, and was made the second official single on June 18, 2024, through Darkroom and Interscope Records.",
+    "source": "https://en.wikipedia.org/wiki/Birds_of_a_Feather_(Billie_Eilish_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "party-in-the-u-s-a-miley-cyrus",
+    "title": "Party in the U.S.A.",
+    "artist": "Miley Cyrus",
+    "released": "August 4, 2009",
+    "year": 2009,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 13",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 11",
+     "Australia (ARIA): No. 6"
+    ],
+    "about": "\"Party in the U.S.A.\" is a song by American singer Miley Cyrus from her first extended play (EP), The Time of Our Lives (2009). It was released on August 4, 2009, by Hollywood Records as the lead single from the project.",
+    "source": "https://en.wikipedia.org/wiki/Party_in_the_U.S.A.",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "roar-katy-perry",
+    "title": "Roar",
+    "artist": "Katy Perry",
+    "released": "August 10, 2013",
+    "year": 2013,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Roar\" is a song by American singer-songwriter Katy Perry. It was released on August 10, 2013, by Capitol Records as the lead single from her fourth studio album, Prism (2013).",
+    "source": "https://en.wikipedia.org/wiki/Roar_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "stay-the-kid-laroi-justin-bieber",
+    "title": "Stay",
+    "artist": "The Kid LAROI & Justin Bieber",
+    "released": "July 9, 2021",
+    "year": 2021,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 2",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Stay\" is a song by Australian rapper and singer the Kid Laroi and Canadian singer Justin Bieber. It was released through Grade A Productions and Columbia Records on 9 July 2021, as the lead single from Laroi's reloaded mixtape, F*ck Love 3: Over You.",
+    "source": "https://en.wikipedia.org/wiki/Stay_(The_Kid_Laroi_and_Justin_Bieber_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "heat-waves-glass-animals",
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "released": "June 29, 2020",
+    "year": 2020,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 5",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 5",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Heat Waves\" is a song by British indie rock band Glass Animals released as a single from their third studio album Dreamland on 29 June 2020.",
+    "source": "https://en.wikipedia.org/wiki/Heat_Waves",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "sunflower-post-malone-swae-lee",
+    "title": "Sunflower",
+    "artist": "Post Malone & Swae Lee",
+    "released": "October 18, 2018",
+    "year": 2018,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 4",
+     "Billboard Adult Pop Airplay: No. 29",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 20"
+    ],
+    "about": "\"Sunflower\" is a song by American musicians Post Malone and Swae Lee. It was released on October 18, 2018, as a single from the soundtrack to the 2018 animated film Spider-Man: Into the Spider-Verse, and was later included on Post Malone's third studio album Hollywood's Bleeding (2019).",
+    "source": "https://en.wikipedia.org/wiki/Sunflower_(Post_Malone_and_Swae_Lee_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "die-with-a-smile-lady-gaga-bruno-mars",
+    "title": "Die With a Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "released": "August 16, 2024",
+    "year": 2024,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 2",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 2",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Die with a Smile\" is a song by American singer-songwriters Lady Gaga and Bruno Mars. It was released as a standalone single on August 16, 2024, through Interscope Records.",
+    "source": "https://en.wikipedia.org/wiki/Die_with_a_Smile",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "please-please-please-sabrina-carpenter",
+    "title": "Please Please Please",
+    "artist": "Sabrina Carpenter",
+    "released": "June 6, 2024",
+    "year": 2024,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 20",
+     "Billboard Adult Pop Airplay: No. 9",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Please Please Please\" is a song by American singer Sabrina Carpenter from her sixth studio album, Short n' Sweet (2024). It was released through Island Records on June 6, 2024, as the second single from the album.",
+    "source": "https://en.wikipedia.org/wiki/Please_Please_Please_(Sabrina_Carpenter_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "good-4-u-olivia-rodrigo",
+    "title": "good 4 u",
+    "artist": "Olivia Rodrigo",
+    "released": "May 14, 2021",
+    "year": 2021,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 12",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1",
+     "Billboard Global 200: No. 1"
+    ],
+    "about": "\"Good 4 U\" is a song by American singer-songwriter Olivia Rodrigo. It was released on May 14, 2021, through Geffen and Interscope Records, as the third single from Rodrigo's debut studio album, Sour (2021).",
+    "source": "https://en.wikipedia.org/wiki/Good_4_U",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "i-wanna-dance-with-somebody-who-loves-me-whitney-houston",
+    "title": "I Wanna Dance with Somebody (Who Loves Me)",
+    "artist": "Whitney Houston",
+    "released": "April 27, 1987",
+    "year": 1987,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 1"
+    ],
+    "about": "\"I Wanna Dance with Somebody (Who Loves Me)\" is a song recorded by American singer Whitney Houston, the lead single from her second studio album, Whitney (1987). The song was aimed to bring Houston a more accessible pop sound to compete with her contemporaries after enjoying hits with ballads on her debut album…",
+    "source": "https://en.wikipedia.org/wiki/I_Wanna_Dance_with_Somebody_(Who_Loves_Me)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "can-t-feel-my-face-the-weeknd",
+    "title": "Can't Feel My Face",
+    "artist": "The Weeknd",
+    "released": "June 8, 2015",
+    "year": 2015,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 13",
+     "Billboard Adult Pop Airplay: No. 2",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 2"
+    ],
+    "about": "\"Can't Feel My Face\" is a song by the Canadian singer-songwriter the Weeknd from his second studio album, Beauty Behind the Madness (2015). The song was released on June 8, 2015, as the album's third single.",
+    "source": "https://en.wikipedia.org/wiki/Can't_Feel_My_Face",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "just-the-way-you-are-bruno-mars",
+    "title": "Just the Way You Are",
+    "artist": "Bruno Mars",
+    "released": "July 20, 2010",
+    "year": 2010,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Just the Way You Are\" is the debut solo single by American singer-songwriter Bruno Mars. It is the lead single from his debut studio album, Doo-Wops & Hooligans (2010).",
+    "source": "https://en.wikipedia.org/wiki/Just_the_Way_You_Are_(Bruno_Mars_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "treasure-bruno-mars",
+    "title": "Treasure",
+    "artist": "Bruno Mars",
+    "released": "May 10, 2013",
+    "year": 2013,
+    "charts": [
+     "Billboard Hot 100: No. 5",
+     "Billboard Pop Airplay: No. 5",
+     "Billboard Adult Contemporary: No. 11",
+     "Billboard Adult Pop Airplay: No. 6",
+     "Canadian Hot 100: No. 4",
+     "UK Singles: No. 12",
+     "Australia (ARIA): No. 10"
+    ],
+    "about": "\"Treasure\" is a song by American singer and songwriter Bruno Mars from his second studio album, Unorthodox Jukebox (2012). It was written by Mars, Philip Lawrence, Ari Levine, and Phredley Brown, while production was handled by Mars, Lawrence and Levine under the name of the Smeezingtons.",
+    "source": "https://en.wikipedia.org/wiki/Treasure_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "24k-magic-bruno-mars",
+    "title": "24K Magic",
+    "artist": "Bruno Mars",
+    "released": "October 7, 2016",
+    "year": 2016,
+    "charts": [
+     "Billboard Hot 100: No. 4",
+     "Billboard Pop Airplay: No. 5",
+     "Billboard Adult Contemporary: No. 13",
+     "Billboard Adult Pop Airplay: No. 3",
+     "Canadian Hot 100: No. 3",
+     "UK Singles: No. 5",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"24K Magic\" is a song by the American singer-songwriter Bruno Mars from his third album 24K Magic (2016). Atlantic Records released it as the album's lead single on October 7, 2016, for digital download and streaming.",
+    "source": "https://en.wikipedia.org/wiki/24K_Magic_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "break-my-soul-beyonc",
+    "title": "Break My Soul",
+    "artist": "Beyoncé",
+    "released": "June 20, 2022",
+    "year": 2022,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 8",
+     "Billboard Adult Pop Airplay: No. 11",
+     "Canadian Hot 100: No. 4",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 6",
+     "Billboard Global 200: No. 6"
+    ],
+    "about": "\"Break My Soul\" is a song by American singer Beyoncé. It was released on June 20, 2022, through Parkwood Entertainment and Columbia Records as the lead single from her seventh studio album, Renaissance (2022).",
+    "source": "https://en.wikipedia.org/wiki/Break_My_Soul",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "cuff-it-beyonc",
+    "title": "Cuff It",
+    "artist": "Beyoncé",
+    "released": "September 30, 2022",
+    "year": 2022,
+    "charts": [
+     "Billboard Hot 100: No. 6",
+     "Billboard Pop Airplay: No. 8",
+     "Billboard Adult Contemporary: No. 29",
+     "Billboard Adult Pop Airplay: No. 19",
+     "Canadian Hot 100: No. 16",
+     "UK Singles: No. 5",
+     "Australia (ARIA): No. 8",
+     "Billboard Global 200: No. 12"
+    ],
+    "about": "\"Cuff It\" is a song by American singer Beyoncé from her seventh studio album, Renaissance (2022). It was released as the album's second single on September 30, 2022, through Parkwood Entertainment and Columbia Records.",
+    "source": "https://en.wikipedia.org/wiki/Cuff_It",
+    "sourceName": "Wikipedia"
+   }
+  ],
+  "flash": [
+   {
+    "id": "firework-katy-perry",
+    "title": "Firework",
+    "artist": "Katy Perry",
+    "released": "October 26, 2010",
+    "year": 2010,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Firework\" is a song by American singer Katy Perry from her third studio album, Teenage Dream (2010). She co-wrote the song with Ester Dean and the song's producers Stargate and Sandy Vee.",
+    "story": "Katy Perry has said “Firework” was influenced by Jack Kerouac’s novel On the Road. The “baby, you’re a firework” hook — and the crowd going “awe” — comes from Kerouac’s line about roman candles exploding “and everybody goes ‘Awww!’”",
+    "storySrc": "https://en.wikipedia.org/wiki/Firework_(song)",
+    "source": "https://en.wikipedia.org/wiki/Firework_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "heaven-is-a-place-on-earth-belinda-carlisle",
+    "title": "Heaven Is a Place on Earth",
+    "artist": "Belinda Carlisle",
+    "released": "September 14, 1987",
+    "year": 1987,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 7"
+    ],
+    "about": "\"Heaven Is a Place on Earth\" is a single by American singer Belinda Carlisle from her second studio album, Heaven on Earth (1987). Written by Rick Nowels and Ellen Shipley, the song was released as the lead single from the album on September 14, 1987, and it reached number one on the US Billboard Hot 100 on…",
+    "story": "Rick Nowels and Ellen Shipley wrote it and also sing backup, joined by Michelle Phillips of the Mamas & the Papas, Chynna Phillips, and songwriter Diane Warren, with Thomas Dolby on synthesizers. Actress Diane Keaton directed the video, which features kids in black capes holding glowing globes.",
+    "storySrc": "https://en.wikipedia.org/wiki/Heaven_Is_a_Place_on_Earth",
+    "fact": "The music video was directed by actress Diane Keaton, and features kids holding glowing globes.",
+    "source": "https://en.wikipedia.org/wiki/Heaven_Is_a_Place_on_Earth",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "like-a-prayer-madonna",
+    "title": "Like a Prayer",
+    "artist": "Madonna",
+    "released": "March 3, 1989",
+    "year": 1989,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 3",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Like a Prayer\" is a song by American singer Madonna from her fourth studio album, Like a Prayer (1989). It was released as the album's lead single on March 3, 1989, by Sire Records.",
+    "story": "Madonna wrote “Like a Prayer” in about three hours with producer Patrick Leonard, and it became the first song they developed for the album. She wanted a gospel feel with almost no instruments at first, and they recorded it with Andraé Crouch’s choir in September 1988.",
+    "storySrc": "https://en.wikipedia.org/wiki/Like_a_Prayer_(song)",
+    "source": "https://en.wikipedia.org/wiki/Like_a_Prayer_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "baby-one-more-time-britney-spears",
+    "title": "...Baby One More Time",
+    "artist": "Britney Spears",
+    "released": "September 29, 1998",
+    "year": 1998,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 25",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"...Baby One More Time\" is the debut single by the American singer Britney Spears, from her 1999 debut album of the same name. It was written by Max Martin and produced by Martin and Rami Yacoub.",
+    "story": "After months in the studio without hearing a hit, Britney Spears started working with Max Martin in Sweden and knew from the first listen that his demo of “Baby One More Time” was the one. She cut her own version with a little more attitude — and in 10 days she never even saw Sweden, they were that busy.",
+    "storySrc": "https://en.wikipedia.org/wiki/...Baby_One_More_Time",
+    "source": "https://en.wikipedia.org/wiki/...Baby_One_More_Time",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "i-want-it-that-way-backstreet-boys",
+    "title": "I Want It That Way",
+    "artist": "Backstreet Boys",
+    "released": "April 12, 1999",
+    "year": 1999,
+    "charts": [
+     "Billboard Hot 100: No. 6",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 11",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 2"
+    ],
+    "about": "\"I Want It That Way\" is a song by American boy band Backstreet Boys. It was released on April 12, 1999, as the lead single from their third studio album, Millennium.",
+    "story": "The Backstreet Boys finished their vocals in two days in Stockholm in November 1998. The acoustic-guitar riff that opens the song was added at the very end of the sessions and, co-writer Andreas Carlsson said, was inspired by Metallica’s “Nothing Else Matters.”",
+    "storySrc": "https://en.wikipedia.org/wiki/I_Want_It_That_Way",
+    "source": "https://en.wikipedia.org/wiki/I_Want_It_That_Way",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "wannabe-spice-girls",
+    "title": "Wannabe",
+    "artist": "Spice Girls",
+    "released": "June 26, 1996",
+    "year": 1996,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 4",
+     "Billboard Adult Pop Airplay: No. 27",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Wannabe\" is the debut single by the British girl group the Spice Girls, released on 26 June 1996. It was written by the Spice Girls, Matt Rowe and Richard \"Biff\" Stannard and produced by Rowe and Stannard for the group's debut album, Spice.",
+    "story": "The Spice Girls recorded “Wannabe” with Matt Rowe and Richard “Biff” Stannard in less than an hour — most of the other Spice album tracks took two or three days. Victoria Adams missed most of the writing session and stayed on the phone with the rest of the group.",
+    "storySrc": "https://en.wikipedia.org/wiki/Wannabe",
+    "source": "https://en.wikipedia.org/wiki/Wannabe",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "toxic-britney-spears",
+    "title": "Toxic",
+    "artist": "Britney Spears",
+    "released": "January 13, 2004",
+    "year": 2004,
+    "charts": [
+     "Billboard Hot 100: No. 9",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 37",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Toxic\" is a song by American singer Britney Spears, released as the second single from her fourth studio album, In the Zone (2003). It was written and produced by Bloodshy & Avant, with additional writing from Cathy Dennis and Henrik Jonback.",
+    "story": "Bloodshy & Avant wrote “Toxic” with Cathy Dennis and Henrik Jonback, originally with Janet Jackson in mind, then offered it to Kylie Minogue, who turned it down after hearing a snippet. The hook samples a portion of “Tere Mere Beech Mein” from the 1981 Bollywood film Ek Duuje Ke Liye.",
+    "storySrc": "https://en.wikipedia.org/wiki/Toxic_(song)",
+    "source": "https://en.wikipedia.org/wiki/Toxic_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "since-u-been-gone-kelly-clarkson",
+    "title": "Since U Been Gone",
+    "artist": "Kelly Clarkson",
+    "released": "November 16, 2004",
+    "year": 2004,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 22",
+     "Billboard Adult Pop Airplay: No. 2",
+     "UK Singles: No. 5",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Since U Been Gone\" is a song recorded by American singer Kelly Clarkson from her second studio album, Breakaway (2004). The song, written and produced by Max Martin and Lukasz \"Dr.",
+    "story": "Max Martin and Dr. Luke first intended Pink to sing “Since U Been Gone,” and she turned it down. Hilary Duff’s camp was interested but passed because she couldn’t reach the higher notes. Clive Davis then convinced the writers to give it to Kelly Clarkson, even though they were reluctant at first.",
+    "storySrc": "https://en.wikipedia.org/wiki/Since_U_Been_Gone",
+    "source": "https://en.wikipedia.org/wiki/Since_U_Been_Gone",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "mr-brightside-the-killers",
+    "title": "Mr. Brightside",
+    "artist": "The Killers",
+    "released": "September 29, 2003",
+    "year": 2003,
+    "charts": [
+     "Billboard Hot 100: No. 10",
+     "Billboard Pop Airplay: No. 10",
+     "Billboard Adult Pop Airplay: No. 11",
+     "UK Singles: No. 10",
+     "Australia (ARIA): No. 19"
+    ],
+    "about": "\"Mr. Brightside\" is a song by American rock band the Killers.",
+    "story": "Brandon Flowers has said “Mr. Brightside” is a true story: he woke up in Las Vegas sensing something was wrong, went to the Crown and Anchor, and found his girlfriend there with another guy. Guitarist Dave Keuning had already composed the music before the two met.",
+    "storySrc": "https://en.wikipedia.org/wiki/Mr._Brightside",
+    "source": "https://en.wikipedia.org/wiki/Mr._Brightside",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "crazy-in-love-beyonc",
+    "title": "Crazy in Love",
+    "artist": "Beyoncé ft. Jay-Z",
+    "released": "May 18, 2003",
+    "year": 2003,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 29",
+     "Australia (ARIA): No. 2"
+    ],
+    "about": "\"Crazy in Love\" is a song by American singer and songwriter Beyoncé featuring rapper Jay-Z. She wrote the song with him and Rich Harrison, and co-produced it with Harrison.",
+    "story": "Producer Rich Harrison already had the beat before he met Beyoncé, built around a sample of the Chi-Lites’ 1970 track “Are You My Woman? (Tell Me So).” Delays to her solo album after Kelly Rowland’s “Dilemma” took off gave Beyoncé extra time to record more songs, including this one.",
+    "storySrc": "https://en.wikipedia.org/wiki/Crazy_in_Love",
+    "source": "https://en.wikipedia.org/wiki/Crazy_in_Love",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "hey-ya-outkast",
+    "title": "Hey Ya!",
+    "artist": "Outkast",
+    "released": "August 25, 2003",
+    "year": 2003,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 13",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Hey Ya!\" is a song by American hip hop duo Outkast, performed by its member André 3000, who wrote and produced the song. Along with \"The Way You Move\", which was recorded by Outkast's other member Big Boi and featured Sleepy Brown, \"Hey Ya!\" was released by Arista Records as the second single from the duo's fifth…",
+    "story": "André 3000 wrote “Hey Ya!” in 2000 and started recording it in December 2002 at Stankonia in Atlanta, accompanying himself on acoustic guitar. He has said the song wouldn’t exist without seeing the Hives live, and he needed several dozen takes to get the intro, first verse, and hook.",
+    "storySrc": "https://en.wikipedia.org/wiki/Hey_Ya!",
+    "source": "https://en.wikipedia.org/wiki/Hey_Ya!",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "yeah-usher",
+    "title": "Yeah!",
+    "artist": "Usher ft. Lil Jon & Ludacris",
+    "released": "January 10, 2004",
+    "year": 2004,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Yeah!\" is a song by American singer Usher featuring American rappers Lil Jon and Ludacris. The song is written by the featured artists alongside Sean Garrett, J.",
+    "story": "When Usher turned in Confessions, label president L.A. Reid felt it didn’t have a lead single, so Usher called in Lil Jon. A leftover Lil Jon beat had already been used for Petey Pablo’s “Freek-a-Leek,” so Lil Jon jumped back in the studio and built a replacement that became “Yeah!”",
+    "storySrc": "https://en.wikipedia.org/wiki/Yeah!_(Usher_song)",
+    "source": "https://en.wikipedia.org/wiki/Yeah!_(Usher_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "hollaback-girl-gwen-stefani",
+    "title": "Hollaback Girl",
+    "artist": "Gwen Stefani",
+    "released": "March 22, 2005",
+    "year": 2005,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 18",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Hollaback Girl\" is a song by American singer Gwen Stefani from her debut solo studio album, Love. Angel.",
+    "story": "Gwen Stefani flew to New York to write with Pharrell, finished two songs in a week, and was headed home when he called her back into the studio a few minutes later to write one more. That last-minute session became “Hollaback Girl.”",
+    "storySrc": "https://en.wikipedia.org/wiki/Hollaback_Girl",
+    "source": "https://en.wikipedia.org/wiki/Hollaback_Girl",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "bye-bye-bye-nsync",
+    "title": "Bye Bye Bye",
+    "artist": "NSYNC",
+    "released": "January 17, 2000",
+    "year": 2000,
+    "charts": [
+     "Billboard Hot 100: No. 4",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 25",
+     "Billboard Adult Pop Airplay: No. 19",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Bye Bye Bye\" is a song by American boy band NSYNC from their third studio album, No Strings Attached. It was written and produced by Kristian Lundin and Jake Schulze, with Andreas Carlsson providing additional songwriting.",
+    "story": "Andreas Carlsson wrote the lyrics to “Bye Bye Bye” while taking a driver’s test in Stockholm. The song was first offered to British boy band 5ive, who turned it down because they wanted to become a rap group.",
+    "storySrc": "https://en.wikipedia.org/wiki/Bye_Bye_Bye",
+    "source": "https://en.wikipedia.org/wiki/Bye_Bye_Bye",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "no-scrubs-tlc",
+    "title": "No Scrubs",
+    "artist": "TLC",
+    "released": "February 2, 1999",
+    "year": 1999,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 39",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"No Scrubs\" is a song recorded by American girl group TLC as the lead single from their third studio album, FanMail, released on February 2, 1999, by LaFace Records and Arista Records. The song was written by producer Kevin \"She'kspere\" Briggs and former Xscape members Kandi Burruss and Tameka \"Tiny\" Cottle, with…",
+    "story": "Kandi Burruss started writing “No Scrubs” on an envelope in her car, then finished it with Tameka “Tiny” Cottle, who drew on a relationship she later called a “screw-up.” They meant to keep the demo for themselves, but Dallas Austin gave the song to TLC, with Chilli on lead.",
+    "storySrc": "https://en.wikipedia.org/wiki/No_Scrubs",
+    "source": "https://en.wikipedia.org/wiki/No_Scrubs",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "un-break-my-heart-toni-braxton",
+    "title": "Un-Break My Heart",
+    "artist": "Toni Braxton",
+    "released": "October 7, 1996",
+    "year": 1996,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 4",
+     "Australia (ARIA): No. 6"
+    ],
+    "about": "\"Un-Break My Heart\" is a song by American singer Toni Braxton for her second studio album, Secrets (1996). The song was written by Diane Warren and produced by David Foster.",
+    "story": "Diane Warren said the title “Un-Break My Heart” just popped into her head — she didn’t think she’d heard it before — then sat at the piano, found the chords and a key change, and thought, “OK, this is magic.” When she played it for L.A. Reid, he thought it would fit Toni Braxton’s next album.",
+    "storySrc": "https://en.wikipedia.org/wiki/Un-Break_My_Heart",
+    "source": "https://en.wikipedia.org/wiki/Un-Break_My_Heart",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "the-sign-ace-of-base",
+    "title": "The Sign",
+    "artist": "Ace of Base",
+    "released": "1993",
+    "year": 1993,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 2",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"The Sign\" is a song by Swedish group Ace of Base from their first North American studio album, The Sign (1993), and their re-released debut studio album, Happy Nation (1992), titled Happy Nation . The song was released by Arista and Mega Records as a single in Europe on 1 November 1993 and the US on 14 December 1993.",
+    "story": "During recording, Jonas Berggren added hums between the melody lines so the song wouldn’t sound “too merry,” mixing major and minor colors. He has said the lyrics are about looking back on an old relationship, left a little open so listeners can find their own meaning.",
+    "storySrc": "https://en.wikipedia.org/wiki/The_Sign_(song)",
+    "source": "https://en.wikipedia.org/wiki/The_Sign_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "complicated-avril-lavigne",
+    "title": "Complicated",
+    "artist": "Avril Lavigne",
+    "released": "March 11, 2002",
+    "year": 2002,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 13",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Complicated\" is the debut single by Canadian singer-songwriter Avril Lavigne from her debut album, Let Go (2002). It was released as her debut single on 11 March 2002 by Arista Records.",
+    "story": "After a year of false starts, Avril Lavigne told the Matrix she wanted songs with a punk-rock lean. They asked her back the next afternoon and wrote what became “Complicated,” with Lavigne and Lauren Christy finishing most of the lyrics under a tree, captured on a RadioShack microcassette.",
+    "storySrc": "https://en.wikipedia.org/wiki/Complicated_(Avril_Lavigne_song)",
+    "source": "https://en.wikipedia.org/wiki/Complicated_(Avril_Lavigne_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "sk8er-boi-avril-lavigne",
+    "title": "Sk8er Boi",
+    "artist": "Avril Lavigne",
+    "released": "September 9, 2002",
+    "year": 2002,
+    "charts": [
+     "Billboard Hot 100: No. 10",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 23",
+     "UK Singles: No. 8",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Sk8er Boi\" is a song by Canadian singer-songwriter Avril Lavigne, released as the second single from her debut album, Let Go (2002). It was written by Lavigne and the Matrix, and produced by the Matrix.",
+    "story": "After “Complicated” clicked, L.A. Reid sent Avril Lavigne back to the Matrix for more songs. Lauren Christy has said they tried to invent “the most stupid opening line,” and she claims “he was a punk, she did ballet,” drawn from her own life.",
+    "storySrc": "https://en.wikipedia.org/wiki/Sk8er_Boi",
+    "source": "https://en.wikipedia.org/wiki/Sk8er_Boi",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "poker-face-lady-gaga",
+    "title": "Poker Face",
+    "artist": "Lady Gaga",
+    "released": "September 23, 2008",
+    "year": 2008,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 12",
+     "Canadian Hot 100: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Poker Face\" is a song by American singer Lady Gaga from her debut studio album, The Fame (2008). The track was released on September 23, 2008, as the album's second single, through Streamline Records, KonLive, Cherrytree Records, and Interscope Records.",
+    "story": "Lady Gaga has said she wrote “Poker Face” as a pop song and a tribute to her “rock ’n’ roll boyfriends,” with sex and gambling at the center of the idea. She wrote it with RedOne, who also produced the track.",
+    "storySrc": "https://en.wikipedia.org/wiki/Poker_Face_(song)",
+    "source": "https://en.wikipedia.org/wiki/Poker_Face_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "bad-romance-lady-gaga",
+    "title": "Bad Romance",
+    "artist": "Lady Gaga",
+    "released": "October 19, 2009",
+    "year": 2009,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 20",
+     "Billboard Adult Pop Airplay: No. 7",
+     "Canadian Hot 100: No. 1",
+     "Australia (ARIA): No. 2"
+    ],
+    "about": "\"Bad Romance\" is a song by American singer-songwriter Lady Gaga from her third extended play (EP), The Fame Monster (2009)—the reissue of her debut studio album, The Fame (2008). Following an unauthorized demo leak, Gaga premiered the final version of the song during Alexander McQueen's 2010 Paris Fashion Week show…",
+    "story": "Lady Gaga and RedOne wrote and arranged “Bad Romance,” and she recorded it at the Record Plant in Los Angeles and FC Walvisch in Amsterdam. RedOne produced the track, with Gaga co-producing.",
+    "storySrc": "https://en.wikipedia.org/wiki/Bad_Romance",
+    "source": "https://en.wikipedia.org/wiki/Bad_Romance",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "just-dance-lady-gaga",
+    "title": "Just Dance",
+    "artist": "Lady Gaga",
+    "released": "April 8, 2008",
+    "year": 2008,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 28",
+     "Billboard Adult Pop Airplay: No. 7",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Just Dance\" is the debut single by the American singer Lady Gaga. It was released on April 8, 2008, as the lead single from Gaga's debut studio album, The Fame (2008), through Streamline Records, KonLive, Cherrytree Records, and Interscope Records.",
+    "story": "Lady Gaga has said she wrote “Just Dance” in about 10 minutes with producer RedOne, very hungover, the first time she was in a Hollywood studio.",
+    "storySrc": "https://en.wikipedia.org/wiki/Just_Dance_(song)",
+    "source": "https://en.wikipedia.org/wiki/Just_Dance_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "umbrella-rihanna",
+    "title": "Umbrella",
+    "artist": "Rihanna ft. Jay-Z",
+    "released": "March 29, 2007",
+    "year": 2007,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Pop Airplay: No. 28",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Umbrella\" is a song by Barbadian singer Rihanna, released worldwide on March 29, 2007, by Def Jam Recordings, as the lead single and opening track from her third studio album, Good Girl Gone Bad (2007). It features a guest performance from the singer's mentor and Def Jam-label boss Jay-Z, who co-wrote the song…",
+    "story": "In an Atlanta studio, Tricky Stewart stumbled on a walloping GarageBand hi-hat, The-Dream asked what that beat was, and the word “umbrella” popped into his head; he wrote the first two verses and the chorus over that skeleton track. Rihanna cut it at Westlake in Los Angeles, and after the “ella, ella” hook, Stewart felt they were onto something.",
+    "storySrc": "https://en.wikipedia.org/wiki/Umbrella_(song)",
+    "source": "https://en.wikipedia.org/wiki/Umbrella_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "single-ladies-put-a-ring-on-it-beyonc",
+    "title": "Single Ladies (Put a Ring on It)",
+    "artist": "Beyoncé",
+    "released": "October 8, 2008",
+    "year": 2008,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "UK Singles: No. 7"
+    ],
+    "about": "\"Single Ladies (Put a Ring on It)\" is a song by American singer Beyoncé from her third studio album, I Am... Sasha Fierce (2008).",
+    "story": "The-Dream came up with “Single Ladies” after Beyoncé’s secret April 2008 marriage to Jay-Z. She recorded it that May at the Boom Boom Room in Burbank and stayed tight-lipped in the studio, even taking off her wedding band. Producer Tricky Stewart later called it the only public statement the couple had made about getting married.",
+    "storySrc": "https://en.wikipedia.org/wiki/Single_Ladies_(Put_a_Ring_on_It)",
+    "source": "https://en.wikipedia.org/wiki/Single_Ladies_(Put_a_Ring_on_It)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "call-me-maybe-carly-rae-jepsen",
+    "title": "Call Me Maybe",
+    "artist": "Carly Rae Jepsen",
+    "released": "September 20, 2011",
+    "year": 2011,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 4",
+     "Billboard Adult Pop Airplay: No. 2",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Call Me Maybe\" is a song by Canadian singer-songwriter Carly Rae Jepsen from her extended play Curiosity (2012) and later appeared on her second studio album and international debut album Kiss (2012). The song was written by Jepsen and Tavish Crowe as a folk song, but its genre was modified to pop following the…",
+    "story": "Carly Rae Jepsen and Tavish Crowe first wrote “Call Me Maybe” as a folk song while they were on tour, without overthinking it. Josh Ramsay helped them “pop-ify” it, and she recorded the track at Umbrella Studios in Richmond, British Columbia.",
+    "storySrc": "https://en.wikipedia.org/wiki/Call_Me_Maybe",
+    "source": "https://en.wikipedia.org/wiki/Call_Me_Maybe",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "rolling-in-the-deep-adele",
+    "title": "Rolling in the Deep",
+    "artist": "Adele",
+    "released": "November 29, 2010",
+    "year": 2010,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Rolling in the Deep\" is a song by English singer-songwriter Adele from her second studio album, 21 (2011). It is the lead single and opening track on the album.",
+    "story": "Adele was nervous to work with Paul Epworth because their styles seemed so different, but she later called the pairing “a match made in heaven.” She credited him with pulling notes out of her on “Rolling in the Deep” that she didn’t even know she could hit.",
+    "storySrc": "https://en.wikipedia.org/wiki/Rolling_in_the_Deep",
+    "source": "https://en.wikipedia.org/wiki/Rolling_in_the_Deep",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "tik-tok-kesha",
+    "title": "TiK ToK",
+    "artist": "Kesha",
+    "released": "August 7, 2009",
+    "year": 2009,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 14",
+     "Canadian Hot 100: No. 1",
+     "UK Singles: No. 4",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Tik Tok\" is the debut solo single by American singer Kesha, who co-wrote the song with its producers Dr. Luke and Benny Blanco.",
+    "story": "Kesha has said the idea for “Tik Tok” came from coming home half-drunk after a night out, jotting a few words, and finding the story waiting in the morning. The opening line grew out of waking up surrounded by “beautiful women,” which made her picture Sean Combs — who ended up with a couple of spoken lines on the record.",
+    "storySrc": "https://en.wikipedia.org/wiki/Tik_Tok_(song)",
+    "source": "https://en.wikipedia.org/wiki/Tik_Tok_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "california-gurls-katy-perry",
+    "title": "California Gurls",
+    "artist": "Katy Perry ft. Snoop Dogg",
+    "released": "May 7, 2010",
+    "year": 2010,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 7",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"California Gurls\" is a song by American singer Katy Perry from her third studio album, Teenage Dream (2010). It was released as the album's lead single on May 7, 2010, through Capitol Records.",
+    "story": "After an Oscars party, Katy Perry texted her A&R that the album wasn’t finished and she wanted a California girls song — in part as a West Coast answer to Jay-Z’s “Empire State of Mind.” She used Wikipedia to browse West Coast rappers before picking Snoop Dogg.",
+    "storySrc": "https://en.wikipedia.org/wiki/California_Gurls",
+    "source": "https://en.wikipedia.org/wiki/California_Gurls",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "teenage-dream-katy-perry",
+    "title": "Teenage Dream",
+    "artist": "Katy Perry",
+    "released": "July 23, 2010",
+    "year": 2010,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 8",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Canadian Hot 100: No. 2",
+     "UK Singles: No. 2",
+     "Australia (ARIA): No. 2"
+    ],
+    "about": "\"Teenage Dream\" is a song by American singer Katy Perry. It was released as the second single from her third studio album of the same name on July 23, 2010.",
+    "story": "Katy Perry and Bonnie McKee started “Teenage Dream” with a “forever young” idea. An early Peter Pan lyric felt “too young,” and another draft with “You’re a mom in a minivan” made them laugh for an hour. A later “trying me on” clothes-and-sex metaphor was rejected; the producers wanted everything “Benny Proof.”",
+    "storySrc": "https://en.wikipedia.org/wiki/Teenage_Dream_(Katy_Perry_song)",
+    "source": "https://en.wikipedia.org/wiki/Teenage_Dream_(Katy_Perry_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "take-on-me-a-ha",
+    "title": "Take On Me",
+    "artist": "a-ha",
+    "released": "October 19, 1984",
+    "year": 1984,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 4"
+    ],
+    "about": "\"Take On Me\" is a song by the Norwegian synth-pop band a-ha. The original version, recorded in 1984 and released in October of that year, was produced by Tony Mansfield and remixed by John Ratcliff.",
+    "story": "The riff started when Pål Waaktaar and Magne Furuholmen were teens in the band Bridges, in a song they first called “Miss Eerie.” They thought it felt too pop for their darker style and tried a punkier take, then later reshaped it as a-ha’s “Take On Me.”",
+    "storySrc": "https://en.wikipedia.org/wiki/Take_On_Me",
+    "source": "https://en.wikipedia.org/wiki/Take_On_Me",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "girls-just-want-to-have-fun-cyndi-lauper",
+    "title": "Girls Just Want to Have Fun",
+    "artist": "Cyndi Lauper",
+    "released": "October 17, 1983",
+    "year": 1983,
+    "charts": [
+     "Billboard Hot 100: No. 2"
+    ],
+    "about": "\"Girls Just Want to Have Fun\" is a song written in 1979 by Robert Hazard and made famous in 1983 by the American singer-songwriter Cyndi Lauper, who changed some of the lyrics. It was released by Portrait Records as Lauper's debut single from her first solo album, She's So Unusual (1983), which was released four…",
+    "story": "Robert Hazard wrote “Girls Just Want to Have Fun” in 1979 from a male point of view and played it around Philadelphia. Producer Rick Chertoff brought it to Cyndi Lauper, who flipped the perspective and changed some of the lyrics, with Hooters members Rob Hyman and Eric Bazilian on the sessions.",
+    "storySrc": "https://en.wikipedia.org/wiki/Girls_Just_Want_to_Have_Fun",
+    "source": "https://en.wikipedia.org/wiki/Girls_Just_Want_to_Have_Fun",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "time-after-time-cyndi-lauper",
+    "title": "Time After Time",
+    "artist": "Cyndi Lauper",
+    "released": "March 10, 1984",
+    "year": 1984,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 1",
+     "UK Singles: No. 3"
+    ],
+    "about": "\"Time After Time\" is a song by the American pop singer Cyndi Lauper from her debut album, She's So Unusual (1983). It was released as the album's second single in March 1984, by Epic and Portrait Records.",
+    "story": "“Time After Time” was one of the last songs recorded for She’s So Unusual. Producer Rick Chertoff introduced Cyndi Lauper to Rob Hyman and insisted they needed “one more song,” so they sat at a piano and wrote it, both going through rough patches in their own relationships.",
+    "storySrc": "https://en.wikipedia.org/wiki/Time_After_Time_(Cyndi_Lauper_song)",
+    "source": "https://en.wikipedia.org/wiki/Time_After_Time_(Cyndi_Lauper_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "wake-me-up-before-you-go-go-wham",
+    "title": "Wake Me Up Before You Go-Go",
+    "artist": "Wham!",
+    "released": "1984",
+    "year": 1984,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 4",
+     "UK Singles: No. 1"
+    ],
+    "about": "\"Wake Me Up Before You Go-Go\" is a song by British pop duo Wham!, first released as a single in the UK on 14 May 1984. It became their first UK and US number one hit.",
+    "story": "George Michael got the title from a note Andrew Ridgeley left for his parents, meant to say “wake me up before you go” — but he’d written “up” twice, so he wrote “go” twice on purpose. Michael wanted a high-energy pop record that mixed the best of ’50s and ’60s records with their own younger attitude.",
+    "storySrc": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
+    "source": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "billie-jean-michael-jackson",
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "released": "January 2, 1983",
+    "year": 1983,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 7"
+    ],
+    "about": "\"Billie Jean\" is a song by the American singer Michael Jackson, released by Epic Records on January 2, 1983, as the second single from Jackson's sixth studio album, Thriller (1982). It was written by Jackson and produced by Jackson and Quincy Jones.",
+    "story": "Michael Jackson said “Billie Jean” grew out of the groupies he and his brothers met on the Jackson 5 road — “there were a lot of Billie Jeans out there.” He was so locked into the song in his car that he didn’t notice the car had caught fire until a passing motorcyclist told him.",
+    "storySrc": "https://en.wikipedia.org/wiki/Billie_Jean",
+    "source": "https://en.wikipedia.org/wiki/Billie_Jean",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "livin-la-vida-loca-ricky-martin",
+    "title": "Livin' la Vida Loca",
+    "artist": "Ricky Martin",
+    "released": "March 23, 1999",
+    "year": 1999,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 18",
+     "Billboard Adult Pop Airplay: No. 1",
+     "Australia (ARIA): No. 4"
+    ],
+    "about": "\"Livin' la Vida Loca\" is a song recorded by Puerto Rican singer Ricky Martin for his fifth studio album and English-language debut, Ricky Martin (1999). The song was written by Draco Rosa and Desmond Child, while the production was handled by the latter.",
+    "story": "Ricky Martin later wrote that recording “Livin’ la Vida Loca” with Draco Rosa and Desmond Child felt like “we actually made magic,” and that working with Child was “an entirely new level.” He also said the album was almost going to come out without the song.",
+    "storySrc": "https://en.wikipedia.org/wiki/Livin'_la_Vida_Loca",
+    "source": "https://en.wikipedia.org/wiki/Livin'_la_Vida_Loca",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "smooth-santana",
+    "title": "Smooth",
+    "artist": "Santana ft. Rob Thomas",
+    "released": "June 15, 1999",
+    "year": 1999,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Contemporary: No. 11",
+     "Billboard Adult Pop Airplay: No. 1",
+     "UK Singles: No. 3",
+     "Australia (ARIA): No. 4"
+    ],
+    "about": "\"Smooth\" is a song performed by American rock band Santana and Rob Thomas of Matchbox Twenty, who sings the lead vocals. It was released to radio on June 15, 1999, as the lead single from Santana's 1999 studio album, Supernatural, and was physically released as a single in August.",
+    "story": "Itaal Shur first wrote it as “Room 17,” but EMI stripped the original lyrics for being too sexual. Rob Thomas rewrote the words and melody in a few hours and hadn’t even planned to sing it — George Michael was among the names floated — until Clive Davis, Matt Serletic, and Carlos Santana himself signed off on Thomas’s demo vocal.",
+    "storySrc": "https://en.wikipedia.org/wiki/Smooth_(song)",
+    "source": "https://en.wikipedia.org/wiki/Smooth_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "hanging-by-a-moment-lifehouse",
+    "title": "Hanging by a Moment",
+    "artist": "Lifehouse",
+    "released": "September 25, 2000",
+    "year": 2000,
+    "charts": [
+     "Billboard Hot 100: No. 2",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Pop Airplay: No. 1",
+     "UK Singles: No. 25",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Hanging by a Moment\" is a song by American alternative rock band Lifehouse. It was the first single released from their debut studio album, No Name Face (2000), issued through DreamWorks Records.",
+    "story": "Lifehouse singer Jason Wade has said he wrote “Hanging by a Moment” in about five minutes, without thinking about what would happen to it. The band released it as the first single because, Wade told Billboard, it was the most uptempo, radio-friendly song they had.",
+    "storySrc": "https://en.wikipedia.org/wiki/Hanging_by_a_Moment",
+    "source": "https://en.wikipedia.org/wiki/Hanging_by_a_Moment",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "promiscuous-nelly-furtado",
+    "title": "Promiscuous",
+    "artist": "Nelly Furtado ft. Timbaland",
+    "released": "April 25, 2006",
+    "year": 2006,
+    "charts": [
+     "Australia (ARIA): No. 2"
+    ],
+    "about": "\"Promiscuous\" is a song by the Canadian singer Nelly Furtado, and the American record producer and musician Timbaland, and written by Furtado, Timbaland, Timothy \"Attitude\" Clayton, and Nate \"Danja\" Hills. The song was included on Furtado's third studio album, Loose (2006), and was released as the second single…",
+    "story": "“Promiscuous” was one of the first songs Nelly Furtado wrote with Timothy “Attitude” Clayton; she called the process “extremely freeing” and said they were actually flirting as they wrote, which is why the song feels so playful. They nicknamed it “The BlackBerry Song,” because everything in the lyric is something you could text to somebody.",
+    "storySrc": "https://en.wikipedia.org/wiki/Promiscuous_(song)",
+    "source": "https://en.wikipedia.org/wiki/Promiscuous_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "everybody-backstreet-s-back-backstreet-boys",
+    "title": "Everybody (Backstreet's Back)",
+    "artist": "Backstreet Boys",
+    "released": "July 14, 1997",
+    "year": 1997,
+    "charts": [
+     "Billboard Hot 100: No. 4",
+     "Billboard Pop Airplay: No. 11",
+     "Australia (ARIA): No. 3"
+    ],
+    "about": "\"Everybody (Backstreet's Back)\" is a song by American boy band Backstreet Boys, written and produced by Denniz Pop and Max Martin. It was released as the first single from the band's second international studio album Backstreet's Back in July 1997 by Jive Records, and the third single from their self-titled debut…",
+    "story": "Jive president Barry Weiss resisted putting a song called “Backstreet’s Back” on the group’s first U.S. album; the band said it could just mean they were back home. After Canadian radio started playing it, they had it added to the U.S. album after the first million copies had already been pressed.",
+    "storySrc": "https://en.wikipedia.org/wiki/Everybody_(Backstreet's_Back)",
+    "source": "https://en.wikipedia.org/wiki/Everybody_(Backstreet's_Back)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "waterfalls-tlc",
+    "title": "Waterfalls",
+    "artist": "TLC",
+    "released": "May 29, 1995",
+    "year": 1995,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Pop Airplay: No. 2",
+     "Billboard Adult Contemporary: No. 24",
+     "Billboard Adult Pop Airplay: No. 24",
+     "UK Singles: No. 4",
+     "Australia (ARIA): No. 4"
+    ],
+    "about": "\"Waterfalls\" is a song by American girl group TLC, released on May 29, 1995, by LaFace and Arista as the third single from the group's second album, CrazySexyCool (1994). The song addresses the illegal drug trade, promiscuity, and HIV/AIDS.",
+    "story": "Lisa “Left Eye” Lopes wrote “Waterfalls” with Marqueze Etheridge and Organized Noize, who also produced it, and she delivers the rap verse. Chilli and T-Boz sing the track, with background vocals from the group, Debra Killings, and CeeLo Green.",
+    "storySrc": "https://en.wikipedia.org/wiki/Waterfalls_(TLC_song)",
+    "source": "https://en.wikipedia.org/wiki/Waterfalls_(TLC_song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "vogue-madonna",
+    "title": "Vogue",
+    "artist": "Madonna",
+    "released": "March 20, 1990",
+    "year": 1990,
+    "charts": [
+     "Billboard Hot 100: No. 1",
+     "Billboard Adult Contemporary: No. 23",
+     "UK Singles: No. 1",
+     "Australia (ARIA): No. 1"
+    ],
+    "about": "\"Vogue\" is a song by American singer Madonna from her soundtrack album I'm Breathless (1990). Written and produced by herself and Shep Pettibone, it was inspired by voguing, a dance popularized in New York City in the late 1980s.",
+    "story": "Warner Bros. asked Shep Pettibone to cut a new B-side on a $5,000 budget; he sent Madonna the track, and she wrote most of the lyrics on the plane to New York, then recorded her vocals in a closet-turned-booth, often in single takes. After seeing dancers voguing at The Sound Factory, she named the song “Vogue,” which surprised Pettibone because the dance was already “semi-passé” underground.",
+    "storySrc": "https://en.wikipedia.org/wiki/Vogue_(song)",
+    "source": "https://en.wikipedia.org/wiki/Vogue_(song)",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "into-the-groove-madonna",
+    "title": "Into the Groove",
+    "artist": "Madonna",
+    "released": "July 15, 1985",
+    "year": 1985,
+    "about": "\"Into the Groove\" is a song by American singer Madonna, featured in the 1985 film Desperately Seeking Susan. Written by Madonna and Stephen Bray, it was originally intended for singer Cheyne before Madonna offered the recording to the film's director, Susan Seidelman, for a nightclub scene.",
+    "story": "Madonna and Stephen Bray first wrote it as “Get Into the Groove” in her Lower East Side apartment, on a Tascam eight-track, after a friend asked her to write a song for another singer. She later brought that demo to the Desperately Seeking Susan set when director Susan Seidelman needed music for a nightclub scene, and the song ended up in the film.",
+    "storySrc": "https://en.wikipedia.org/wiki/Into_the_Groove",
+    "source": "https://en.wikipedia.org/wiki/Into_the_Groove",
+    "sourceName": "Wikipedia"
+   },
+   {
+    "id": "all-star-smash-mouth",
+    "title": "All Star",
+    "artist": "Smash Mouth",
+    "released": "May 4, 1999",
+    "year": 1999,
+    "charts": [
+     "Billboard Hot 100: No. 4",
+     "Billboard Pop Airplay: No. 1",
+     "Billboard Adult Pop Airplay: No. 1",
+     "UK Singles: No. 24",
+     "Australia (ARIA): No. 4"
+    ],
+    "about": "\"All Star\" is a song by the American rock band Smash Mouth from their second studio album, Astro Lounge (1999). Written by Smash Mouth guitarist Greg Camp and produced by Eric Valentine, the song was released on May 4, 1999, as the first single from Astro Lounge.",
+    "story": "“All Star” was the last song recorded for Astro Lounge, after the label said the album still didn’t have a single. It starts with vocals before any instruments — radio and the label hated that — but the band kept it that way; guitarist Greg Camp said DJs “should shut up when our song plays.”",
+    "storySrc": "https://en.wikipedia.org/wiki/All_Star_(song)",
+    "source": "https://en.wikipedia.org/wiki/All_Star_(song)",
+    "sourceName": "Wikipedia"
+   }
+  ]
+ }
 }
