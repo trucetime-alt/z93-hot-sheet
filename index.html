@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v30-shifts">
+<meta name="hs-build" content="v31-carried-audio">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -2584,9 +2584,11 @@ function clipDate(){ return state.date || (state.sheet && sheetDate(state.sheet)
 function clipAudioUrl(a){ if(!a) return null; a=String(a);
   if(/^(data:|blob:)/.test(a) || /^https?:\/\/.+\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(a)) return a;
   if(/^https?:/.test(a)) return null;   // a source page, not playable audio
-  const name=a.split('/').pop(); const d=clipDate(); const ie=indexEntry(d);
-  if(!isHttp || !name || !ie || !Array.isArray(ie.files) || !ie.files.includes(name)) return null;   // only files actually published to the site
-  return 'clips/'+d+'/'+name; }
+  const name=a.split('/').pop(); if(!isHttp || !name) return null;
+  const pm=a.match(/(\d{4}-\d{2}-\d{2})\/[^\/]+$/);   // carried clips keep their own date folder
+  for(const d of [...new Set([pm&&pm[1], clipDate()].filter(Boolean))]){ const ie=indexEntry(d);
+    if(ie && Array.isArray(ie.files) && ie.files.includes(name)) return 'clips/'+d+'/'+name; }   // only files actually published to the site
+  return null; }
 function clipPicks(key){
   const v=state.sheet && state.sheet[key]; if(!isSection(v)) return [];
   const d=clipDate();
@@ -2599,8 +2601,8 @@ function clipPicks(key){
     const head=lines[0].replace(/^\d+\)\s*/,''); const letters=head.replace(/[^A-Za-z]/g,''); if(!letters) continue;
     if(letters.replace(/[^A-Z]/g,'').length/letters.length<0.75) continue;
     const ci=head.indexOf(':'); const slot=ci>0?head.slice(0,ci).trim():''; const title=ci>0?head.slice(ci+1).trim():head;
-    const file=(chunk.match(/([\w.-]+\.(?:mp3|m4a|wav|aac|ogg))\b/i)||[])[1]||'';
-    out.push({id:'p'+fnv(d+'|'+lines[0]), slot, title:tcase(title), body:lines.slice(1).join('\n'), audio:file, file, ready:/\bREADY\b/.test(cleanText(chunk)), src:''});
+    const fm=chunk.match(/((?:\d{4}-\d{2}-\d{2}\/)?([\w.-]+\.(?:mp3|m4a|wav|aac|ogg)))\b/i)||[]; const file=fm[2]||'';
+    out.push({id:'p'+fnv(d+'|'+lines[0]), slot, title:tcase(title), body:lines.slice(1).join('\n'), audio:fm[1]||'', file, ready:/\bREADY\b/.test(cleanText(chunk)), src:''});
   }
   return out; }
 function cst(id){ const d=clipDate(); return (clipState[d]||{})[id]||{}; }
