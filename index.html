@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v44-courtney-archive">
+<meta name="hs-build" content="v45-saved-holds">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -118,6 +118,7 @@ body.drawer-open #drawer{transform:translateX(0)}
 details.clarch{margin:14px 0 8px;border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:rgba(0,0,0,.15)}
 details.clarch>summary{font-weight:800;cursor:pointer;list-style:none}
 details.clarch>summary::-webkit-details-marker{display:none}
+.clc .cheld{display:inline-block;margin:0 6px 0 0;padding:2px 7px;border-radius:999px;font-size:.72em;font-weight:800;letter-spacing:.02em;background:#3a3206;color:#ffe27a;border:1px solid #ffd23f}
 details.clarch .clgh{margin-top:10px}
 .nsug{margin:10px 0 16px;padding:8px 0 4px;border-bottom:1px solid var(--line)}
 .nsugh,.mvh{font-size:1.02em;margin:10px 0 6px}
@@ -1323,13 +1324,44 @@ function clipFirstDate(p){
   if(p.heldFrom) return p.heldFrom;
   return clipDate();
 }
-function clipIsCarryover(p){
-  const today=clipDate();
-  if(p.heldFrom && p.heldFrom<today) return true;
-  const first=clipFirstDate(p);
-  return !!(first && first<today);
+function holdDateOf(bucket){ return String(bucket||'').slice(0,10); }
+function holdProfileOf(bucket){ const s=String(bucket||''); const i=s.indexOf('#'); return i>0?s.slice(i+1):'truce'; }
+function holdBucket(date, p){ return (date||clipDate())+'#'+((typeof profileId==='function'&&profileId(p))||'truce'); }
+function holdBucketsOn(date, p){ const id=(typeof profileId==='function'&&profileId(p))||'truce'; const list=[(date||clipDate())+'#'+id]; if(id==='truce' && list[0]!==date) list.push(date||clipDate()); return list; }
+function holdMatches(p, id, o){ if(!p) return false; if(id && p.id===id) return true; const f=(o&&o.file)||''; return !!(f && p.file && f===p.file); }
+function findHoldOrigin(p, today){
+  if(!p) return null;
+  today=today||clipDate();
+  const cut=new Date(new Date(today+'T12:00:00Z').getTime()-7*864e5).toISOString().slice(0,10);
+  const me=(typeof profileId==='function'&&profileId())||'truce';
+  let found=null, foundBucket=null;
+  for(const bucket of Object.keys(holds||{})){
+    const d=holdDateOf(bucket); if(d>=today || d<cut) continue;
+    if(holdProfileOf(bucket)!==me) continue;
+    const recs=holds[bucket]||{};
+    let id=null, o=null;
+    if(p.id && recs[p.id]){ id=p.id; o=recs[p.id]; }
+    else { const hit=Object.entries(recs).find(([hid,ho])=>holdMatches(p,hid,ho)); if(!hit) continue; id=hit[0]; o=hit[1]; }
+    if(typeof airedSince==='function' && airedSince(d, id, today)) continue;
+    if(!found || d>found){ found=d; foundBucket=bucket; }
+  }
+  if(found && p){ p.heldFrom=found; p.heldBucket=foundBucket; }
+  return found;
 }
-function clipArchiveDate(p){ return p.heldFrom || clipFirstDate(p) || clipDate(); }
+function clipIsSavedHold(p){
+  if(p && p.heldFrom && p.heldFrom<clipDate()){
+    const me=(typeof profileId==='function'&&profileId())||'truce';
+    if(p.heldBucket && holdProfileOf(p.heldBucket)!==me) return false;
+    return true;
+  }
+  return !!findHoldOrigin(p);
+}
+function clipIsCarryover(p){
+  if(typeof clipIsSavedHold==='function' && clipIsSavedHold(p)) return false;
+  const first=clipFirstDate(p);
+  return !!(first && first<clipDate());
+}
+function clipArchiveDate(p){ return (p && !clipIsSavedHold(p) && p.heldFrom) || clipFirstDate(p) || clipDate(); }
 
 function sxDay(){ const d=profileBucket(); storyRemix[d]=storyRemix[d]||{}; return storyRemix[d]; }
 function sxSave(){ const dates=[...new Set(Object.keys(storyRemix).map(k=>k.slice(0,10)))].sort().slice(-14);
@@ -3590,16 +3622,21 @@ const OPENER_RE=/SUPER|OPENER|STAND-?\s?UP|LATE-?\s?NIGHT|COMEDY/i;
 function openerRank(p){ const t=(p.slot||'')+' '+p.title; return /SUPER|OPENER/i.test(t)?0:/STAND-?\s?UP|COMEDY/i.test(t)?1:2; }
 function renderClipTracker(view, opts){ opts=opts||{};
   let groups=[{key:'newsclips', label:'📰 News Audio'},{key:'clips', label:'🔥 Trending Audio'}].map(g=>({...g, picks:clipPicks(g.key)}));
-  const all=groups.flatMap(g=>g.picks); state.clipPicks=all; const heldIn=heldIncoming(all);
+  const all=groups.flatMap(g=>g.picks);
+  if(typeof findHoldOrigin==='function') all.forEach(p=>findHoldOrigin(p));
+  const heldIn=heldIncoming(all);
   if(!all.length && !heldIn.length) return false;
   const isArch=p=>typeof clipIsCarryover==='function' && clipIsCarryover(p);
   const freshOf=list=>(list||[]).filter(p=>!isArch(p));
   const archOf=list=>(list||[]).filter(p=>isArch(p));
-  const heldArch=heldIn.filter(p=>isArch(p) || (p.heldFrom && p.heldFrom<clipDate()));
-  const heldFresh=heldIn.filter(p=>!heldArch.includes(p));
-  // Held-from-earlier clips belong in Archive, not a main-list group
-  if(heldFresh.length){ groups.unshift(...heldGroups(heldFresh)); }
-  state.clipPicks=all.concat(heldIn);
+  // Saved/held clips belong on the next day's main list (Tagged "Saved from"), not Archive
+  for(const p of heldIn){
+    const key=p.sec==='newsclips'?'newsclips':'clips';
+    let g=groups.find(x=>x.key===key);
+    if(!g){ g={key, label:key==='newsclips'?'📰 News Audio':'🔥 Trending Audio', picks:[]}; groups.push(g); }
+    if(!g.picks.some(x=>x.id===p.id || (p.file && x.file===p.file))) g.picks.push(p);
+  }
+  state.clipPicks=groups.flatMap(g=>g.picks);
   if(opts.opener){ const op=state.clipPicks.filter(p=>!isArch(p) && OPENER_RE.test((p.slot||'')+' '+p.title)).sort((a,b)=>openerRank(a)-openerRank(b));
     if(!op.length) return false; groups=[{key:'opener', label:'🎬 Show opener audio · supercut and comedy', picks:op}]; }
   else {
@@ -3607,13 +3644,13 @@ function renderClipTracker(view, opts){ opts=opts||{};
   }
   const allG=groups.flatMap(g=>g.picks); const left=allG.filter(p=>!cst(p.id).u).length;
   const wrap=h('div',{className:'cltrack'});
-  wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate())+' · new today')));
+  wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
   const card=(p, used)=>{ const s=cst(p.id);
-    const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id, 'data-arch':isArch(p)?'1':''});
-    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
+    const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id, 'data-arch':isArch(p)?'1':'', 'data-saved':p.heldFrom||''});
+    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.heldFrom?h('span',{className:'cheld'}, 'Saved from '+nice(p.heldFrom)):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
     const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
-    const url=p.heldFrom ? heldAudioUrl(p) : clipAudioUrl(p.audio);
+    const url=(p.heldFrom && typeof heldAudioUrl==='function' && heldAudioUrl(p)) || clipAudioUrl(p.audio);
     if(url){ main.append(makePlayer(p.title, url, '', true, p.id)); }
     else if(p.src) main.append(h('a',{className:'csrc', href:p.src, target:'_blank', rel:'noopener'}, 'Source ↗'));
     else if(p.ready && p.file) main.append(h('div',{className:'cfile'}, '🎧 '+p.file+' · not online yet'));
@@ -3629,7 +3666,7 @@ function renderClipTracker(view, opts){ opts=opts||{};
     if(!gl.length) wrap.append(h('div',{className:'cldone'}, '✓ All used'));
     gl.forEach(p=>wrap.append(card(p,false))); }
   if(!opts.opener){
-    const archived=archOf(all).concat(heldArch);
+    const archived=archOf(all);
     if(archived.length){
       const by={};
       archived.forEach(p=>{ const d=typeof clipArchiveDate==='function'?clipArchiveDate(p):clipDate(); (by[d]=by[d]||[]).push(p); });
@@ -3653,28 +3690,34 @@ function rerender(){ const y=scrollY; renderView(); window.scrollTo(0,y); }
 
 /* ================= ⏭ Hold for tomorrow (per clip id, per sheet date; synced as hd:<date>:<id>) ================= */
 var holds=lsGet('hs:holds', {}); if(!holds || typeof holds!=='object' || Array.isArray(holds)) holds={};
-function holdSave(){ const keep=Object.keys(holds).sort().slice(-21); holds=Object.fromEntries(keep.map(k=>[k,holds[k]])); lsSet('hs:holds', holds); }
-function isHeld(d,id){ return !!((holds[d]||{})[id]); }
-function holdSet(p, on){ const d=p.heldFrom||clipDate(); holds[d]=holds[d]||{};
+function holdSave(){ const dates=[...new Set(Object.keys(holds).map(k=>k.slice(0,10)))].sort().slice(-21); holds=Object.fromEntries(Object.entries(holds).filter(([k])=>dates.includes(k.slice(0,10)))); lsSet('hs:holds', holds); }
+function isHeld(d,id){ if(!d||!id) return false; if((holds[d]||{})[id]) return true; if(d.indexOf('#')<0) return holdBucketsOn(d).some(b=>!!((holds[b]||{})[id])); return false; }
+function holdSet(p, on){ const d=p.heldBucket || (p.heldFrom?holdBucket(p.heldFrom):null) || holdBucketsOn(clipDate()).find(b=>(holds[b]||{})[p.id]) || holdBucket(clipDate());
+  holds[d]=holds[d]||{};
   if(on) holds[d][p.id]={t:new Date().toISOString(), title:String(p.title||'').slice(0,200), audio:p.audio||'', file:p.file||'', slot:p.slot||'', body:String(p.body||'').slice(0,1200), sec:p.sec||''};
   else { delete holds[d][p.id]; if(!Object.keys(holds[d]).length) delete holds[d]; }
   holdSave(); document.querySelectorAll('[data-hold="'+CSS.escape(d+'|'+p.id)+'"]').forEach(holdPaint); }
 function holdPaint(b){ const [d,id]=b.dataset.hold.split('|'); const on=isHeld(d,id); b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on));
   b.querySelector('.ab').textContent=on?'✓':''; b.querySelector('.at').textContent=on?(b.dataset.from?'Holding':'Held ⏭'):'⏭ Hold'; b.title=on?'Held for tomorrow (tap to release)':'Hold for tomorrow'; }
-function holdBtn(p){ const d=p.heldFrom||clipDate();
+function holdBtn(p){ const d=p.heldBucket || (p.heldFrom?holdBucket(p.heldFrom):holdBucket(clipDate()));
   const b=h('button',{className:'airbtn sm holdbtn', type:'button', title:'Keep this clip for the next show'}, h('span',{className:'ab','aria-hidden':'true'}), h('span',{className:'at'}));
   b.dataset.hold=d+'|'+p.id; if(p.heldFrom) b.dataset.from='1'; holdPaint(b);
   b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=isHeld(d,p.id); holdSet(p,!was);
     if(!was) toast('⏭ Held for tomorrow: '+String(p.title).slice(0,40), ()=>holdSet(p,false)); else if(p.heldFrom) rerender(); };
   return b; }
 function heldAudioUrl(p){ if(!p.file) return null; const ie=indexEntry(p.heldFrom); if(!isHttp || !ie || !Array.isArray(ie.files) || !ie.files.includes(p.file)) return null; return 'clips/'+p.heldFrom+'/'+p.file; }
-function airedSince(d, id, today){ return Object.keys(air||{}).some(x=>x>d && x<today && air[x] && air[x]['clip:'+id]) || Object.keys(clipState||{}).some(x=>x>d && x<today && clipState[x] && clipState[x][id] && clipState[x][id].p); }   // aired on a later show day (today's airing keeps it visible, ticked)
+function airedSince(d, id, today){ const from=holdDateOf(d), to=holdDateOf(today||clipDate()); return Object.keys(air||{}).some(x=>{ const dx=holdDateOf(x); return dx>from && dx<to && air[x] && air[x]['clip:'+id]; }) || Object.keys(clipState||{}).some(x=>{ const dx=holdDateOf(x); return dx>from && dx<to && clipState[x] && clipState[x][id] && clipState[x][id].p; }); }   // aired on a later show day (today's airing keeps it visible, ticked)
 // clips held on an earlier sheet (last 7 days) that today's sheet doesn't already include, and that haven't aired since
 function heldIncoming(todayPicks){ const today=clipDate(); const cut=new Date(new Date(today+'T12:00:00Z').getTime()-7*864e5).toISOString().slice(0,10);
-  const ids=new Set(todayPicks.map(p=>p.id)), files=new Set(todayPicks.map(p=>p.file).filter(Boolean)), out=[];
-  for(const d of Object.keys(holds).sort().reverse()){ if(d>=today || d<cut) continue;
-    for(const [id,o] of Object.entries(holds[d]||{})){ if(!o || ids.has(id) || (o.file && files.has(o.file)) || airedSince(d,id,etParts().date>today?etParts().date:today) || out.some(x=>x.id===id)) continue;
-      out.push({id, slot:o.slot||'', title:o.title||'Clip', body:o.body||'', audio:o.audio||'', file:o.file||'', ready:false, src:/^https?:/.test(o.audio||'') && !/\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(o.audio)?o.audio:'', heldFrom:d}); } }
+  const me=(typeof profileId==='function'&&profileId())||'truce';
+  const ids=new Set((todayPicks||[]).map(p=>p.id)), files=new Set((todayPicks||[]).map(p=>p.file).filter(Boolean)), out=[];
+  const until=etParts().date>today?etParts().date:today;
+  for(const bucket of Object.keys(holds||{}).sort().reverse()){
+    const d=holdDateOf(bucket); if(d>=today || d<cut) continue;
+    if(holdProfileOf(bucket)!==me) continue;
+    for(const [id,o] of Object.entries(holds[bucket]||{})){
+      if(!o || ids.has(id) || (o.file && files.has(o.file)) || airedSince(d,id,until) || out.some(x=>x.id===id || (o.file && x.file===o.file))) continue;
+      out.push({id, slot:o.slot||'', title:o.title||'Clip', body:o.body||'', audio:o.audio||'', file:o.file||'', ready:false, src:/^https?:/.test(o.audio||'') && !/\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(o.audio)?o.audio:'', heldFrom:d, heldBucket:bucket, sec:o.sec||''}); } }
   return out; }
 function heldGroups(list){ const by={}; list.forEach(p=>{ (by[p.heldFrom]=by[p.heldFrom]||[]).push(p); });
   return Object.keys(by).sort().reverse().map(d=>({key:'held:'+d, label:'⏭ Held from '+nice(d), picks:by[d]})); }
@@ -4834,7 +4877,7 @@ if(typeof migrateShiftBuckets==='function'){ migrateShiftBuckets(); if(typeof ls
 if(typeof tick==='function') tick();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadSchedules(); loadMovies(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipFirstDate, clipArchiveDate, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
