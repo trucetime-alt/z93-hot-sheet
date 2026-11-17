@@ -2,29 +2,126 @@
  "version": 1,
  "deadline": "09:00",
  "timezone": "America/New_York",
- "showDays": [1, 2, 3, 4, 5],
+ "showDays": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
  "studioLine": "231-929-4487",
  "sponsors": [
   {
    "id": "forefront",
    "name": "Forefront Credit Union",
    "short": "Forefront",
-   "icon": "💳",
+   "icon": "\ud83d\udcb3",
    "read": "Whatever it is you're dreaming about starts with a question that's asked. Forefront.",
-   "triggers": ["weather"],
+   "triggers": [
+    "weather"
+   ],
    "keywords": [],
    "active": true,
-   "logo": ""
+   "logo": "",
+   "shifts": [
+    "truce"
+   ]
   },
   {
    "id": "tvc-airport",
    "name": "Traverse City Airport (TVC)",
    "short": "TVC Airport",
-   "icon": "✈️",
+   "icon": "\u2708\ufe0f",
    "read": "tvcairport.com studio line",
-   "triggers": ["studio-line"],
+   "triggers": [
+    "studio-line"
+   ],
    "keywords": [],
    "active": true,
+   "logo": ""
+  },
+  {
+   "id": "devette-ford",
+   "name": "Devette & Ford Insurance Agency",
+   "short": "Devette & Ford",
+   "icon": "\ud83c\udfac",
+   "read": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    1
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "jimmy-johns-lunchbox",
+   "name": "Jimmy John's",
+   "short": "Jimmy John's",
+   "icon": "\ud83e\udd6a",
+   "read": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "pawsd-in-time",
+   "name": "Paws'd in Time",
+   "short": "Paws'd in Time",
+   "icon": "\ud83d\udc3e",
+   "read": "Cherryland Humane Society Pet of the Week, presented by Paws'd in Time. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    3
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "mi-health-wellness",
+   "name": "MI Health & Wellness Center",
+   "short": "MI Health & Wellness",
+   "icon": "\ud83d\udc9b",
+   "read": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    5
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
    "logo": ""
   }
  ]

@@ -9,9 +9,9 @@
    "id": "st-teacher-of-month",
    "name": "Teacher of the Month",
    "short": "Teacher of Month",
-   "icon": "🍎",
+   "icon": "\ud83c\udf4e",
    "kill": "TBD",
-   "text": "KNOW A TEACHER WHO DESERVES RECOGNITION? NOMINATE THEM FOR THE Z93 TEACHER OF THE MONTH AWARD AT Z93 HITS DOT COM. EACH MONTH WE’LL CHOOSE A WINNER, HIGHLIGHT THEM ON THE AIR AND AWARD THEM WITH A PRIZE PACKAGE. WE’LL ANNOUNCE A WINNER ON THE THIRD THURSDAY OF EACH MONTH.",
+   "text": "KNOW A TEACHER WHO DESERVES RECOGNITION? NOMINATE THEM FOR THE Z93 TEACHER OF THE MONTH AWARD AT Z93 HITS DOT COM. EACH MONTH WE\u2019LL CHOOSE A WINNER, HIGHLIGHT THEM ON THE AIR AND AWARD THEM WITH A PRIZE PACKAGE. WE\u2019LL ANNOUNCE A WINNER ON THE THIRD THURSDAY OF EACH MONTH.",
    "active": true,
    "freq": "shift"
   },
@@ -19,17 +19,18 @@
    "id": "st-kurtz-car-stereo",
    "name": "Kurtz Car Stereo",
    "short": "Kurtz",
-   "icon": "🔊",
+   "icon": "\ud83d\udd0a",
    "kill": "2026-12-01",
-   "text": "TUNE IN AND TURN IT UP WITH KURTZ CAR STEREO AND Z93’S 93-MINUTE COMMERCIAL FREE PLAYLIST AT 10:20, 2:20 AND 6:20 EVERY WEEKDAY.",
-   "active": true,
-   "freq": "shift"
+   "text": "TUNE IN AND TURN IT UP WITH KURTZ CAR STEREO AND Z93\u2019S 93-MINUTE COMMERCIAL FREE PLAYLIST AT 10:20, 2:20 AND 6:20 EVERY WEEKDAY.",
+   "active": false,
+   "freq": "shift",
+   "note": "Split in v44: 10:20 Courtney, 2:20 and 6:20 Callie. Kept for history."
   },
   {
    "id": "st-kalkaska-trees",
    "name": "Kalkaska Festival of Trees",
    "short": "Festival of Trees",
-   "icon": "🎄",
+   "icon": "\ud83c\udf84",
    "kill": "2026-11-14",
    "text": "HELP FEED NEIGHBORS IN NEED AT THE KALKASKA FESTIVAL OF TREES NOVEMBER 6TH TROUGH 14TH. MANY DECORATED TREES, GIFT BASKETS, GIFT CARDS AND MORE ARE UP FOR RAFFLE WITH PROCEEDS GOING TO THE KAIR (CARE) FOOD PANTRY.",
    "active": true,
@@ -39,11 +40,74 @@
    "id": "st-patriot-farms",
    "name": "Patriot Farms",
    "short": "Patriot Farms",
-   "icon": "🐄",
+   "icon": "\ud83d\udc04",
    "kill": "2026-11-20",
-   "text": "READY FOR FALL FAMILY FUN? HEAD TO PATRIOT FARMS IN TRAVERSE CITY—NOW OPEN! CUDDLE HIGHLAND COWS, NAVIGATE THE CORN MAZE, AND SIP CIDER SLUSHIES. PATRIOT FARMS, ON GARFIELD IN TRAVERSE CITY- WHERE MEMORIES AND ADVENTURES AWAIT.",
+   "text": "READY FOR FALL FAMILY FUN? HEAD TO PATRIOT FARMS IN TRAVERSE CITY\u2014NOW OPEN! CUDDLE HIGHLAND COWS, NAVIGATE THE CORN MAZE, AND SIP CIDER SLUSHIES. PATRIOT FARMS, ON GARFIELD IN TRAVERSE CITY- WHERE MEMORIES AND ADVENTURES AWAIT.",
    "active": true,
    "freq": "shift"
+  },
+  {
+   "id": "st-kurtz-1020",
+   "name": "Kurtz Car Stereo",
+   "short": "Kurtz 10:20",
+   "icon": "\ud83d\udd0a",
+   "kill": "2026-12-01",
+   "text": "Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20 every weekday. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "active": true,
+   "freq": "shift",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "st-kurtz-1420",
+   "name": "Kurtz Car Stereo",
+   "short": "Kurtz 2:20",
+   "icon": "\ud83d\udd0a",
+   "kill": "2026-12-01",
+   "text": "Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 2:20 every weekday. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "active": true,
+   "freq": "shift",
+   "shifts": [
+    "callie"
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "st-kurtz-1820",
+   "name": "Kurtz Car Stereo",
+   "short": "Kurtz 6:20",
+   "icon": "\ud83d\udd0a",
+   "kill": "2026-12-01",
+   "text": "Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 6:20 every weekday. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "active": true,
+   "freq": "shift",
+   "shifts": [
+    "callie"
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
   }
  ],
  "liners": [
@@ -51,25 +115,25 @@
    "id": "ln-website-1",
    "group": "Website",
    "kill": "TFN",
-   "text": "DON’T JUST LISTEN—EXPERIENCE Z93 EVERYWHERE. HIT UP Z93HITS.COM FOR CONTESTS, CONCERTS, LIVE STREAMS, AND EVERYTHING YOU LOVE ABOUT Z93. IT’S ALL RIGHT THERE… JUST ONE CLICK AWAY."
+   "text": "DON\u2019T JUST LISTEN\u2014EXPERIENCE Z93 EVERYWHERE. HIT UP Z93HITS.COM FOR CONTESTS, CONCERTS, LIVE STREAMS, AND EVERYTHING YOU LOVE ABOUT Z93. IT\u2019S ALL RIGHT THERE\u2026 JUST ONE CLICK AWAY."
   },
   {
    "id": "ln-website-2",
    "group": "Website",
    "kill": "TFN",
-   "text": "HEY, QUICK QUESTION—HAVE YOU CHECKED OUT Z93HITS.COM YET? YOU’LL FIND SOCIAL FEEDS, GIVEAWAYS, AND EXCLUSIVE CONTENT YOU WON’T HEAR ON-AIR. GO TAKE A LOOK!"
+   "text": "HEY, QUICK QUESTION\u2014HAVE YOU CHECKED OUT Z93HITS.COM YET? YOU\u2019LL FIND SOCIAL FEEDS, GIVEAWAYS, AND EXCLUSIVE CONTENT YOU WON\u2019T HEAR ON-AIR. GO TAKE A LOOK!"
   },
   {
    "id": "ln-website-3",
    "group": "Website",
    "kill": "TFN",
-   "text": "IF YOU’RE NOT ON Z93HITS.COM… YOU’RE MISSING OUT. BIG CONTESTS, EXCLUSIVE CONTENT, AND YOUR FAVORITE MUSIC—WAITING FOR YOU RIGHT NOW. DON’T WAIT—CHECK IT OUT TODAY."
+   "text": "IF YOU\u2019RE NOT ON Z93HITS.COM\u2026 YOU\u2019RE MISSING OUT. BIG CONTESTS, EXCLUSIVE CONTENT, AND YOUR FAVORITE MUSIC\u2014WAITING FOR YOU RIGHT NOW. DON\u2019T WAIT\u2014CHECK IT OUT TODAY."
   },
   {
    "id": "ln-website-4",
    "group": "Website",
    "kill": "TFN",
-   "text": "BORED? WE’VE GOT A FIX. JUMP OVER TO Z93HITS.COM FOR PRIZES, MUSIC, AND SURPRISES YOU DIDN’T KNOW YOU NEEDED. SERIOUSLY… GO NOW, THANK US LATER."
+   "text": "BORED? WE\u2019VE GOT A FIX. JUMP OVER TO Z93HITS.COM FOR PRIZES, MUSIC, AND SURPRISES YOU DIDN\u2019T KNOW YOU NEEDED. SERIOUSLY\u2026 GO NOW, THANK US LATER."
   },
   {
    "id": "ln-social-media-1",
@@ -81,25 +145,25 @@
    "id": "ln-social-media-2",
    "group": "Social Media",
    "kill": "TFN",
-   "text": "STOP SCROLLING—UNLESS IT’S TO FOLLOW @Z93HITS ON FACEBOOK. CONTESTS, LAUGHS, AND EXCLUSIVE CONTENT ARE WAITING. HIT FOLLOW AND DON’T MISS A THING!"
+   "text": "STOP SCROLLING\u2014UNLESS IT\u2019S TO FOLLOW @Z93HITS ON FACEBOOK. CONTESTS, LAUGHS, AND EXCLUSIVE CONTENT ARE WAITING. HIT FOLLOW AND DON\u2019T MISS A THING!"
   },
   {
    "id": "ln-social-media-3",
    "group": "Social Media",
    "kill": "TFN",
-   "text": "EVERYONE’S TALKING ABOUT IT—ARE YOU FOLLOWING @Z93HITS ON FACEBOOK YET? GIVEAWAYS, UPDATES, AND EXCLUSIVE CONTENT DROP ALL THE TIME. GET IN ON IT NOW."
+   "text": "EVERYONE\u2019S TALKING ABOUT IT\u2014ARE YOU FOLLOWING @Z93HITS ON FACEBOOK YET? GIVEAWAYS, UPDATES, AND EXCLUSIVE CONTENT DROP ALL THE TIME. GET IN ON IT NOW."
   },
   {
    "id": "ln-social-media-4",
    "group": "Social Media",
    "kill": "TFN",
-   "text": "SCROLLING FACEBOOK ANYWAY? MAKE IT WORTH YOUR TIME—FOLLOW @Z93HITS FOR EVENT UPDATES, CONTESTS, AND DAILY FUN FROM YOUR FAVORITE STATION. EASY WIN."
+   "text": "SCROLLING FACEBOOK ANYWAY? MAKE IT WORTH YOUR TIME\u2014FOLLOW @Z93HITS FOR EVENT UPDATES, CONTESTS, AND DAILY FUN FROM YOUR FAVORITE STATION. EASY WIN."
   },
   {
    "id": "ln-morning-rush-1",
    "group": "Morning Rush",
    "kill": "TFN",
-   "text": "IT’S THE MORNING RUSH WITH AJ — HIGH ENERGY, LOW INHIBITIONS, AND ALL YOUR FAVORITE HITS FROM THE 90S TO NOW. TUNE IN WEEKDAYS FROM 6 TO 10AM."
+   "text": "IT\u2019S THE MORNING RUSH WITH AJ \u2014 HIGH ENERGY, LOW INHIBITIONS, AND ALL YOUR FAVORITE HITS FROM THE 90S TO NOW. TUNE IN WEEKDAYS FROM 6 TO 10AM."
   },
   {
    "id": "ln-morning-rush-2",
@@ -111,43 +175,43 @@
    "id": "ln-morning-rush-3",
    "group": "Morning Rush",
    "kill": "TFN",
-   "text": "HE’S LOCAL, HE’S FUNNY, HE’S HIGH-ENERGY, AND HE KNOWS HOW TO NAVIGATE A ROUNDABOUT. CATCH THE MORNING RUSH WITH AJ WEEKDAYS FROM 6 TO 10AM."
+   "text": "HE\u2019S LOCAL, HE\u2019S FUNNY, HE\u2019S HIGH-ENERGY, AND HE KNOWS HOW TO NAVIGATE A ROUNDABOUT. CATCH THE MORNING RUSH WITH AJ WEEKDAYS FROM 6 TO 10AM."
   },
   {
    "id": "ln-courtney-rehmer-1",
    "group": "Courtney Rehmer",
    "kill": "TFN",
-   "text": "COURTNEY IS FEEDING YOU EVERY WEEKDAY AT 12:30PM—NOT ONE BUT TWO FREE SUBS POWERED BY JIMMY JOHN’S IN TC---JUST A WAY FOR US TO SAY THANK YOU FOR CHOOSING Z93 TO SPEND YOUR DAY WITH."
+   "text": "COURTNEY IS FEEDING YOU EVERY WEEKDAY AT 12:30PM\u2014NOT ONE BUT TWO FREE SUBS POWERED BY JIMMY JOHN\u2019S IN TC---JUST A WAY FOR US TO SAY THANK YOU FOR CHOOSING Z93 TO SPEND YOUR DAY WITH."
   },
   {
    "id": "ln-courtney-rehmer-2",
    "group": "Courtney Rehmer",
    "kill": "TFN",
-   "text": "YOU’RE WORKING – SHE’S WORKING – LET’S HAVE SOME FUN TODAY. COURTNEY REHMER GETS YOU THROUGH THE GRIND EVERY WEEKDAY FROM 10 TO 2."
+   "text": "YOU\u2019RE WORKING \u2013 SHE\u2019S WORKING \u2013 LET\u2019S HAVE SOME FUN TODAY. COURTNEY REHMER GETS YOU THROUGH THE GRIND EVERY WEEKDAY FROM 10 TO 2."
   },
   {
    "id": "ln-courtney-rehmer-3",
    "group": "Courtney Rehmer",
    "kill": "TFN",
-   "text": "WHO’S HEADING ON TOUR – WHO JUST BROKE UP – AND DID RIHANNA JUST HAVE ANOTHER BABY? COURTNEY KEEPS YOU IN THE KNOW, EVERY WEEKDAY AT 11 POWERED BY PROJECT FEED THE KIDS."
+   "text": "WHO\u2019S HEADING ON TOUR \u2013 WHO JUST BROKE UP \u2013 AND DID RIHANNA JUST HAVE ANOTHER BABY? COURTNEY KEEPS YOU IN THE KNOW, EVERY WEEKDAY AT 11 POWERED BY PROJECT FEED THE KIDS."
   },
   {
    "id": "ln-cali-afternoons-1",
    "group": "Cali (Afternoons)",
    "kill": "TFN",
-   "text": "TUNE IN FOR CALI’S TEA PARTY. CALI IS SERVING UP THE HOTTEST SHOWBIZ BREW, ONE SIP AT A TIME. WEEKDAY AFTERNOONS AT 2:20"
+   "text": "TUNE IN FOR CALI\u2019S TEA PARTY. CALI IS SERVING UP THE HOTTEST SHOWBIZ BREW, ONE SIP AT A TIME. WEEKDAY AFTERNOONS AT 2:20"
   },
   {
    "id": "ln-cali-afternoons-2",
    "group": "Cali (Afternoons)",
    "kill": "TFN",
-   "text": "LISTEN TO CALI IN THE AFTERNOONS FOR HER RANDOM FACT OF THE DAY.  IT MAY BE USELESS KNOWLEDGE, BUT IF YOU DON’T KNOW, NOW YOU KNOW. WEEKDAY AFTERNOONS AT 5:40"
+   "text": "LISTEN TO CALI IN THE AFTERNOONS FOR HER RANDOM FACT OF THE DAY.  IT MAY BE USELESS KNOWLEDGE, BUT IF YOU DON\u2019T KNOW, NOW YOU KNOW. WEEKDAY AFTERNOONS AT 5:40"
   },
   {
    "id": "ln-cali-afternoons-3",
    "group": "Cali (Afternoons)",
    "kill": "TFN",
-   "text": "EVER WONDER WHAT WAS HAPPENING ON THIS DAY IN HISTORY? CALI’S GOT THE SCOOP. TUNE IN AT 6:20PM FOR THIS DAY, BACK IN THE DAY."
+   "text": "EVER WONDER WHAT WAS HAPPENING ON THIS DAY IN HISTORY? CALI\u2019S GOT THE SCOOP. TUNE IN AT 6:20PM FOR THIS DAY, BACK IN THE DAY."
   },
   {
    "id": "ln-cali-afternoons-4",

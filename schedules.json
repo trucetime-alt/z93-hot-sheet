@@ -1,0 +1,120 @@
+{
+ "version": 1,
+ "source": "https://www.z93hits.com/courtney",
+ "sourceNote": "from website, confirm with hourly log",
+ "segments": [
+  {
+   "id": "movies",
+   "shift": "courtney",
+   "days": [
+    1
+   ],
+   "time": "Monday recap",
+   "title": "Weekend movies / must-see",
+   "presentedBy": "Devette & Ford Insurance Agency"
+  },
+  {
+   "id": "kurtz-1020",
+   "shift": "courtney",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "10:20 AM",
+   "title": "93 Minutes commercial-free",
+   "presentedBy": "Kurtz Car Stereo"
+  },
+  {
+   "id": "hollywood",
+   "shift": "courtney",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "11:00 AM",
+   "title": "Hollywood / entertainment report"
+  },
+  {
+   "id": "lunchbox",
+   "shift": "courtney",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "Noon\u20131 PM",
+   "title": "Courtney's Lunchbox (all-request hour)",
+   "presentedBy": "Jimmy John's",
+   "note": "Chance to win Jimmy John's subs"
+  },
+  {
+   "id": "song-battle",
+   "shift": "courtney",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "Midday",
+   "title": "Midday Song Battle"
+  },
+  {
+   "id": "pet",
+   "shift": "courtney",
+   "days": [
+    3
+   ],
+   "time": "Wednesday",
+   "title": "Pet of the Week (Cherryland Humane Society)",
+   "presentedBy": "Paws'd in Time"
+  },
+  {
+   "id": "uplift",
+   "shift": "courtney",
+   "days": [
+    5
+   ],
+   "time": "Friday",
+   "title": "Uplifting story to start the weekend",
+   "presentedBy": "MI Health & Wellness Center"
+  },
+  {
+   "id": "kurtz-1420",
+   "shift": "callie",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "2:20 PM",
+   "title": "93 Minutes commercial-free",
+   "presentedBy": "Kurtz Car Stereo"
+  },
+  {
+   "id": "kurtz-1820",
+   "shift": "callie",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "time": "6:20 PM",
+   "title": "93 Minutes commercial-free",
+   "presentedBy": "Kurtz Car Stereo"
+  }
+ ]
+}

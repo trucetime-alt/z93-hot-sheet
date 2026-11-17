@@ -48,5 +48,78 @@
    ],
    "main": true
   }
- ]
+ ],
+ "clipFirst": {
+  "file:stable-ronaldo-speech.mp3": "2026-11-13",
+  "file:doberman-swns.mp3": "2026-11-13",
+  "file:speed-english.mp3": "2026-11-13",
+  "file:speed-soty.mp3": "2026-11-13",
+  "file:c01-st-brown-56-td.mp3": "2026-11-16",
+  "id:2026-11-16-c01": "2026-11-16",
+  "file:c02-snl-thanksgiving-song-v2.mp3": "2026-11-16",
+  "id:2026-11-16-c02": "2026-11-16",
+  "file:c03-bharoocha-cats.mp3": "2026-11-16",
+  "id:2026-11-16-c03": "2026-11-16",
+  "file:c04-leanne-morgan-thermostat.mp3": "2026-11-16",
+  "id:2026-11-16-c04": "2026-11-16",
+  "file:c07-dodo-mama-dog.mp3": "2026-11-16",
+  "id:2026-11-16-c07": "2026-11-16",
+  "file:c08-starship-catch.mp3": "2026-11-16",
+  "id:2026-11-16-c08": "2026-11-16",
+  "file:c05-kingsley-td-call.mp3": "2026-11-16",
+  "id:2026-11-16-c05": "2026-11-16",
+  "id:2026-11-16-c06": "2026-11-16",
+  "file:c00-opener-supercut.mp3": "2026-11-17",
+  "id:2026-11-17-c00": "2026-11-17",
+  "file:c01-golden-girls-road-trip.mp3": "2026-11-17",
+  "id:2026-11-17-c01": "2026-11-17",
+  "file:c02-fallon-mccartney.mp3": "2026-11-17",
+  "id:2026-11-17-c02": "2026-11-17",
+  "file:c08-dodo-emma.mp3": "2026-11-17",
+  "id:2026-11-17-c08": "2026-11-17",
+  "file:c09-yr-kate-linder.mp3": "2026-11-17",
+  "id:2026-11-17-c09": "2026-11-17",
+  "file:c05-hutch-hurt.mp3": "2026-11-17",
+  "id:2026-11-17-c05": "2026-11-17",
+  "file:c06-headstart-save.mp3": "2026-11-17",
+  "id:2026-11-17-c06": "2026-11-17",
+  "file:c07-fairy-trails.mp3": "2026-11-17",
+  "id:2026-11-17-c07": "2026-11-17"
+ },
+ "clipHistory": {
+  "2026-11-13": {
+   "repeats": []
+  },
+  "2026-11-16": {
+   "repeats": []
+  },
+  "2026-11-17": {
+   "repeats": [
+    {
+     "name": "c03-bharoocha-cats.mp3",
+     "first": "2026-11-16"
+    },
+    {
+     "name": "2026-11-16-c03",
+     "first": "2026-11-16"
+    },
+    {
+     "name": "c04-leanne-morgan-thermostat.mp3",
+     "first": "2026-11-16"
+    },
+    {
+     "name": "2026-11-16-c04",
+     "first": "2026-11-16"
+    },
+    {
+     "name": "c02-snl-thanksgiving-song-v2.mp3",
+     "first": "2026-11-16"
+    },
+    {
+     "name": "2026-11-16-c02",
+     "first": "2026-11-16"
+    }
+   ]
+  }
+ }
 }

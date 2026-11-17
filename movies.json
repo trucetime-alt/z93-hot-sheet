@@ -1,0 +1,91 @@
+{
+ "version": 1,
+ "weekend": "2026-11-13",
+ "weekendEnd": "2026-11-15",
+ "weekendLabel": "November 13\u201315, 2026",
+ "source": "Box Office Mojo",
+ "sourceUrl": "https://www.boxofficemojo.com/weekend/2026W46/",
+ "chart": "Domestic 2026 Weekend 46",
+ "fetched": "2026-11-17",
+ "note": "Domestic weekend grosses. Confirm before you go on air.",
+ "top5": [
+  {
+   "rank": 1,
+   "title": "Ebenezer",
+   "gross": "$19,012,017",
+   "change": "new",
+   "weeks": 1,
+   "theaters": 3535,
+   "distributor": "Paramount Pictures",
+   "new": true
+  },
+  {
+   "rank": 2,
+   "title": "The Cat in the Hat",
+   "gross": "$11,300,531",
+   "change": "-43.5%",
+   "weeks": 2,
+   "theaters": 4003,
+   "distributor": "Warner Bros."
+  },
+  {
+   "rank": 3,
+   "title": "Godzilla Minus Zero",
+   "gross": "$8,509,392",
+   "change": "-72.2%",
+   "weeks": 2,
+   "theaters": 3246,
+   "distributor": "GKIDS"
+  },
+  {
+   "rank": 4,
+   "title": "Ramayana",
+   "gross": "$5,802,929",
+   "change": "-35.1%",
+   "weeks": 2,
+   "theaters": 1112,
+   "distributor": "Sony Pictures Releasing"
+  },
+  {
+   "rank": 5,
+   "title": "You Can See Everything",
+   "gross": "$5,470,790",
+   "change": "-35.2%",
+   "weeks": 5,
+   "theaters": 1845,
+   "distributor": "A24"
+  }
+ ],
+ "newReleases": [
+  {
+   "title": "Ebenezer",
+   "gross": "$19,012,017",
+   "theaters": 3535,
+   "distributor": "Paramount Pictures"
+  },
+  {
+   "title": "How to Rob a Bank",
+   "gross": "$5,186,118",
+   "theaters": 2810,
+   "distributor": "Amazon MGM Studios"
+  },
+  {
+   "title": "Ghost Soldier",
+   "gross": "$5,103,780",
+   "theaters": 2558,
+   "distributor": ""
+  },
+  {
+   "title": "Victorian Psycho",
+   "gross": "$1,081,419",
+   "theaters": 1206,
+   "distributor": "Bleecker Street Media"
+  },
+  {
+   "title": "God with Us",
+   "gross": "$860,488",
+   "theaters": 432,
+   "distributor": "Variance Films"
+  }
+ ]
+}

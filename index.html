@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v43-clip-carry">
+<meta name="hs-build" content="v44-courtney-archive">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -109,6 +109,23 @@ body.drawer-open #drawer{transform:translateX(0)}
 #clock{font-variant-numeric:tabular-nums;font-weight:800;font-size:1.05em}
 #whoShift{font-weight:800;font-size:.95em;margin:6px 0 2px;color:var(--accent);letter-spacing:.01em}
 #whoShift[hidden]{display:none!important}
+#shiftSched{margin:2px 0 8px;display:flex;flex-wrap:wrap;gap:6px}
+#shiftSched[hidden]{display:none!important}
+#shiftSched .sch{background:var(--card,rgba(255,255,255,.06));border:1px solid var(--line);border-radius:10px;padding:6px 8px;font-size:.78em;line-height:1.25;flex:1 1 140px}
+#shiftSched .scht{font-weight:800;color:var(--accent)}
+#shiftSched .schn{font-weight:700}
+#shiftSched .schp,#shiftSched .schnote{color:var(--dim);font-size:.95em}
+details.clarch{margin:14px 0 8px;border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:rgba(0,0,0,.15)}
+details.clarch>summary{font-weight:800;cursor:pointer;list-style:none}
+details.clarch>summary::-webkit-details-marker{display:none}
+details.clarch .clgh{margin-top:10px}
+.nsug{margin:10px 0 16px;padding:8px 0 4px;border-bottom:1px solid var(--line)}
+.nsugh,.mvh{font-size:1.02em;margin:10px 0 6px}
+.nsugnote,.mvsrc{font-size:.85em;color:var(--dim);margin:0 0 8px}
+.nsugcol{font-weight:800;font-size:.75em;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
+.mvlist{margin:0 0 12px;padding-left:1.3em}
+.mvpick{margin:16px 0;padding:12px;border:1px solid var(--line);border-radius:12px}
+.mvsaved{margin-top:8px;font-weight:700}
 .wrapshift{list-style:none;margin:10px 0 4px;padding:6px 0 0;font-weight:900;color:var(--accent);border-top:2px solid var(--line)}
 /* weather bar */
 #wx{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:8px}
@@ -800,6 +817,7 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
     <div id="clock">--:--</div>
   </div>
   <div id="whoShift" hidden></div>
+  <div id="shiftSched" hidden></div>
   <div id="wxGrid"><div id="wxCol">
   <div id="wx" aria-live="polite">
     <div class="temp"><span id="wxIcon" aria-hidden="true"></span><span id="wxTemp">--</span></div>
@@ -1171,7 +1189,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:gvWins','hs:guLocal','hs:songPicks','hs:buzzRemix']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:gvWins','hs:guLocal','hs:songPicks','hs:buzzRemix','hs:storyRemix','hs:moviePicks']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -1208,7 +1226,7 @@ async function loadSponsorDefaults(){
 function spSettings(){ const d=spDefaults||{}; return Object.assign({deadline:'09:00', earlyAt:'07:00', showDays:[1,2,3,4,5], studioLine:'231-929-4487', offDays:null},
   ...[{deadline:d.deadline, earlyAt:d.earlyAt, showDays:d.showDays, studioLine:d.studioLine, offDays:d.offDays}].map(o=>Object.fromEntries(Object.entries(o).filter(([,v])=>v!=null))), ...[spOv.settings||{}].map(o=>Object.fromEntries(Object.entries(o).filter(([,v])=>v!=null)))); }
 function allSponsors(){ return mergeList(spDefaults.sponsors, spOv); }
-function activeSponsors(){ return allSponsors().filter(s=>s.active!==false); }
+function activeSponsors(){ return allSponsors().filter(s=>s.active!==false && (typeof itemFitsNow!=='function' || itemFitsNow(s))); }
 function sponsorsFor(trigger){ return activeSponsors().filter(s=>(s.triggers||[]).includes(trigger)); }
 function studioRe(){ const d=String(spSettings().studioLine||'').replace(/\D/g,''); if(d.length!==10) return null;
   return new RegExp('\\(?'+d.slice(0,3)+'\\)?[-.\\s]?'+d.slice(3,6)+'[-.\\s]?'+d.slice(6)+'(?!\\d)','g'); }
@@ -1238,6 +1256,245 @@ function currentShift(p=etParts()){
   if(p.hm<list[0].start) return Object.assign({ended:false}, list[0]);
   return null;
 }
+/* --- v44: per-profile buckets, clip archive, schedules, story remix, song battle, weekend movies --- */
+function profileId(p=etParts()){ const sh=currentShift(p); return (sh && sh.id) || 'truce'; }
+function profileBucket(p=etParts()){ const d=(p||etParts()).date; const id=profileId(p); return (!id || id==='truce') ? d : d+'#'+id; }
+function onAirProfile(id){ const sh=currentShift(); return !!(sh && !sh.ended && sh.id===id); }
+function normItemDays(days){
+  if(!Array.isArray(days)) return [];
+  const map={sun:0,mon:1,tue:2,wed:3,thu:4,fri:5,sat:6};
+  return days.map(d=>{ if(typeof d==='number' && d>=0 && d<=6) return d; const k=map[String(d).slice(0,3).toLowerCase()]; return k; }).filter(x=>x!=null);
+}
+function itemFitsNow(it, p=etParts()){
+  if(!it) return false;
+  const sh=currentShift(p);
+  const shifts=Array.isArray(it.shifts)?it.shifts.filter(Boolean):[];
+  if(shifts.length && (!sh || !shifts.includes(sh.id))) return false;
+  const days=normItemDays(it.days);
+  if(days.length && !days.includes(p.dow)) return false;
+  return true;
+}
+var schedData=lsGet('hs:schedules', {segments:[]});
+var moviesData=lsGet('hs:movies', null);
+var moviePicks=lsGet('hs:moviePicks', {});
+var storyRemix=lsGet('hs:storyRemix', {});
+function shiftSegments(p=etParts(), sh=currentShift(p)){
+  if(!sh || sh.ended) return [];
+  const list=((schedData||{}).segments)||[];
+  return list.filter(s=>s && s.shift===sh.id && itemFitsNow(Object.assign({shifts:[s.shift]}, s), p));
+}
+function renderShiftSched(p, sh){
+  const el=document.getElementById('shiftSched'); if(!el) return;
+  const segs=shiftSegments(p, sh);
+  if(!sh || sh.ended || !segs.length){ el.hidden=true; el.innerHTML=''; return; }
+  el.hidden=false; el.innerHTML='';
+  for(const s of segs){
+    el.append(h('div',{className:'sch','data-sched':s.id||''},
+      s.time?h('div',{className:'scht'}, s.time):null,
+      h('div',{className:'schn'}, s.title||''),
+      s.presentedBy?h('div',{className:'schp'}, 'presented by '+s.presentedBy):null,
+      s.note?h('div',{className:'schnote'}, s.note):null));
+  }
+}
+async function loadSchedules(){
+  if(isHttp){ try{ const j=await fetchJson('schedules.json'); if(j && Array.isArray(j.segments)){ schedData=j; lsSet('hs:schedules', j); } }catch(e){} }
+  if(typeof renderShiftLabel==='function') renderShiftLabel();
+}
+async function loadMovies(){
+  if(isHttp){ try{ const j=await fetchJson('movies.json'); if(j && (Array.isArray(j.top5)||Array.isArray(j.newReleases))){ moviesData=j; lsSet('hs:movies', j); } }catch(e){} }
+  if(state.tab==='movies') rerender();
+}
+function clipToks(p){
+  const toks=[];
+  const file=String(p.file||(String(p.audio||'').match(/([\w.-]+\.(?:mp3|m4a|wav|aac|ogg))$/i)||[])[1]||'').toLowerCase();
+  if(file) toks.push('file:'+file);
+  if(p.id) toks.push('id:'+String(p.id).toLowerCase());
+  return toks;
+}
+function clipFirstMap(){ return (sheetIndex && sheetIndex.clipFirst) || {}; }
+function clipFirstDate(p){
+  const map=clipFirstMap();
+  let first=null;
+  for(const t of clipToks(p)){ const d=map[t]; if(d && (!first || d<first)) first=d; }
+  if(first) return first;
+  const blob=String(p.id||'')+' '+String(p.audio||'')+' '+String(p.heldFrom||'');
+  const ds=[...blob.matchAll(/(\d{4}-\d{2}-\d{2})/g)].map(x=>x[1]);
+  if(ds.length) return ds.sort()[0];
+  if(p.heldFrom) return p.heldFrom;
+  return clipDate();
+}
+function clipIsCarryover(p){
+  const today=clipDate();
+  if(p.heldFrom && p.heldFrom<today) return true;
+  const first=clipFirstDate(p);
+  return !!(first && first<today);
+}
+function clipArchiveDate(p){ return p.heldFrom || clipFirstDate(p) || clipDate(); }
+
+function sxDay(){ const d=profileBucket(); storyRemix[d]=storyRemix[d]||{}; return storyRemix[d]; }
+function sxSave(){ const dates=[...new Set(Object.keys(storyRemix).map(k=>k.slice(0,10)))].sort().slice(-14);
+  storyRemix=Object.fromEntries(Object.entries(storyRemix).filter(([k])=>dates.includes(k.slice(0,10))));
+  lsSet('hs:storyRemix', storyRemix); }
+function storyBench(kind){
+  const out=[], seen=new Set();
+  const add=(it, src)=>{
+    if(!it) return;
+    const title=String(it.title||it.headline||'').trim(); if(!title) return;
+    const id=String(it.id||it.tid||it.link||it.url||('t:'+fnv(normT(title))));
+    const k=id.toLowerCase()+'|'+normT(title); if(seen.has(k)) return; seen.add(k);
+    out.push({id, title, source:it.source||it.src||src||'', link:it.link||it.url||'', recap:it.recap||it.desc||it.body||'', desc:it.desc||'', body:it.body||it.recap||'', take:it.take||'', bait:it.bait||'', kind:src||it.kind||'bench'});
+  };
+  const sh=state.sheet||{};
+  if(kind==='lifestyle'){
+    const sec=sh.lifestyle||{};
+    (sec.localBench||sec.bench||[]).forEach(x=>add(x,'bench'));
+    if(typeof poolFor==='function') poolFor('lifestyle').forEach(x=>add(x,'pool'));
+    if(typeof newsData==='function'){ const d=newsData();
+      (d.national||[]).forEach(g=>(g.items||[]).forEach(x=>add(x, x.src||'National')));
+      (d.gossip||[]).forEach(g=>(g.items||[]).forEach(x=>add(x, x.src||'Entertainment')));
+    }
+  } else if(kind && kind.indexOf('news:')===0){
+    const col=kind.slice(5);
+    if(typeof newsData==='function'){ const d=newsData();
+      (d[col]||[]).forEach(g=>(g.items||[]).forEach(x=>add(x, x.src||col)));
+    }
+  }
+  return out;
+}
+function storyNext(kind, slot, orig){
+  const taken=new Set();
+  for(const [k,st] of Object.entries(sxDay())){ if(k!==slot && st && st.id) taken.add(String(st.id)); if(k!==slot && st && st.title) taken.add(normT(st.title)); }
+  if(orig && orig.title) taken.add(normT(orig.title));
+  if(orig && orig.id) taken.add(String(orig.id));
+  const seen=new Set(((sxDay()[slot]||{}).seen)||[]);
+  const list=storyBench(kind);
+  const fresh=list.filter(it=>!taken.has(String(it.id)) && !taken.has(normT(it.title)) && !seen.has(String(it.id)));
+  const rest=list.filter(it=>!taken.has(String(it.id)) && !taken.has(normT(it.title)));
+  return fresh[0] || rest.find(it=>String(it.id)!==String((sxDay()[slot]||{}).id)) || null;
+}
+function storyRemixTo(kind, slot, pick){
+  const prev=sxDay()[slot]||{seen:[]};
+  const seen=[...new Set([...(prev.seen||[]), String(pick.id)])];
+  sxDay()[slot]={id:String(pick.id), kind:pick.kind||'bench', title:pick.title||'', source:pick.source||'', link:pick.link||'', recap:pick.recap||'', desc:pick.desc||'', body:pick.body||'', take:pick.take||'', bait:pick.bait||'', seen};
+  sxSave(); rerender(); toast('🔀 Remixed: '+tcase(pick.title||'story'), ()=>{ sxDay()[slot]={id:null, seen}; sxSave(); rerender(); });
+}
+function storyResolve(slot, orig){
+  const st=sxDay()[slot];
+  if(!st || !st.id) return Object.assign({}, orig, {kind:'sheet'});
+  return Object.assign({}, orig, st, {kind:st.kind||'bench', remixed:true});
+}
+function storyCard(orig, kind){
+  const shown=storyResolve(orig.slot, orig);
+  const remixed=!!shown.remixed;
+  const card=h('article',{className:'buzzcard'+(remixed?' remixed':''), 'data-story-slot':orig.slot, 'data-story-kind':shown.kind||'sheet'});
+  const top=h('div',{className:'buzztop rxbar'});
+  top.append(h('button',{className:'rxbtn', type:'button', title:'Swap in a fresh story from the bench', on:{click:()=>{ tapHaptic(); const pick=storyNext(kind, orig.slot, orig); if(pick) storyRemixTo(kind, orig.slot, pick); else toast('No more stories on the bench'); }}}, '🔀 Remix'));
+  if(remixed) top.append(h('button',{className:'rxback', type:'button', on:{click:()=>{ tapHaptic(); sxDay()[orig.slot]={id:null, seen:(sxDay()[orig.slot]||{}).seen||[]}; sxSave(); rerender(); }}}, '↩ Back to original'));
+  top.append(h('span',{className:'rxinfo'}, remixed ? (shown.source||'Bench backup') : 'On the sheet'));
+  card.append(top);
+  card.append(h('div',{className:'headline buzzhd'}, tcase(shown.title||orig.title||'')));
+  const bodyTxt=remixed ? (shown.body||shown.recap||shown.desc||'') : (orig.lines||[]).join('\n');
+  if(bodyTxt){ const body=h('div',{className:'buzzbody'}); richLines(body, bodyTxt); card.append(body); }
+  if(shown.source) card.append(h('div',{className:'buzzsrc'}, h('b',{}, shown.source)));
+  if(shown.link) card.append(h('div',{className:'buzzsrc'}, h('a',{href:shown.link, target:'_blank', rel:'noopener'}, 'Open article ↗')));
+  const airId='sx:'+kind+':'+orig.slot+':'+(shown.id||normT(shown.title||orig.title||''));
+  const host=h('div',{className:'airhost'});
+  host.append(airBtn(airId, readable(shown.title||orig.title||'Story'), kind==='lifestyle'?'lifestyle':'news', false, bodyTxt));
+  card.append(host);
+  return card;
+}
+function renderStorySec(c, kind, txt){
+  const parts=typeof buzzParse==='function' ? buzzParse(txt) : [];
+  const stories=[];
+  for(const p of parts){ for(const s of (p.stories||[])) stories.push(s); }
+  if(!stories.length){ if(txt) richLines(c, txt); return; }
+  stories.forEach((s,i)=>{
+    const orig={slot:kind+':'+(i+1), title:s.title, lines:s.lines||[], item:null};
+    c.append(storyCard(orig, kind));
+  });
+}
+function renderNewsSuggest(view){
+  if(!onAirProfile('courtney')) return;
+  const cols=[{id:'local', label:'Local'},{id:'national', label:'National'},{id:'gossip', label:'Entertainment'}];
+  const wrap=h('div',{className:'nsug', id:'newsSuggest'});
+  wrap.append(h('h3',{className:'nsugh'}, 'Story suggestions'), h('div',{className:'nsugnote'}, 'Remix swaps in a fresh headline from the bench. Confirm before you go on air.'));
+  let any=false;
+  for(const col of cols){
+    const kind='news:'+col.id;
+    const slot='news:'+col.id;
+    const bench=storyBench(kind);
+    const st=sxDay()[slot];
+    const orig=st && st.id ? {slot, title:'', lines:[]} : (bench[0] ? {slot, title:bench[0].title, lines:[], id:bench[0].id, source:bench[0].source, link:bench[0].link, recap:bench[0].recap} : null);
+    if(!orig && !(st && st.id)) continue;
+    any=true;
+    const seed=orig || {slot, title:'', lines:[]};
+    if(!st && bench[0]){ /* show first bench item as the starting suggestion without saving */ seed.title=bench[0].title; seed.id=bench[0].id; seed.source=bench[0].source; seed.link=bench[0].link; seed.recap=bench[0].recap; seed.lines=[bench[0].recap||bench[0].desc||'']; }
+    const card=storyCard(seed, kind);
+    card.prepend(h('div',{className:'nsugcol'}, col.label));
+    wrap.append(card);
+  }
+  if(any) view.append(wrap);
+}
+function mvPick(){ const d=profileBucket(); moviePicks[d]=moviePicks[d]||{title:'', why:''}; return moviePicks[d]; }
+function mvSave(){ const dates=[...new Set(Object.keys(moviePicks).map(k=>k.slice(0,10)))].sort().slice(-14);
+  moviePicks=Object.fromEntries(Object.entries(moviePicks).filter(([k])=>dates.includes(k.slice(0,10))));
+  lsSet('hs:moviePicks', moviePicks); }
+function renderWeekendMovies(view){
+  view.append(h('div',{className:'catline'}, 'Monday recap · presented by Devette & Ford Insurance Agency'));
+  view.append(h('h2',{}, '🎬 Weekend movies'));
+  view.append(h('p',{className:'hint'}, 'From the website, confirm with the hourly log. Box-office figures are from Box Office Mojo — confirm before you go on air.'));
+  const data=moviesData;
+  if(!data || !((data.top5||[]).length || (data.newReleases||[]).length)){
+    view.append(h('p',{className:'hint'}, 'No weekend box-office list is loaded yet.'));
+  } else {
+    const stale=data.weekendEnd && (function(){ const p=etParts(); const end=data.weekendEnd; return end < ymdAdd(p.date, -8) || end > p.date; })();
+    view.append(h('div',{className:'mvsrc'}, (data.chart?data.chart+' · ':'')+(data.weekendLabel||''), data.sourceUrl?h('a',{href:data.sourceUrl, target:'_blank', rel:'noopener'}, ' '+ (data.source||'Source')+' ↗'):null, stale?h('div',{className:'hint'}, 'This list is for '+data.weekendLabel+' — confirm it still matches last weekend.'):null));
+    if((data.top5||[]).length){
+      view.append(h('h3',{className:'mvh'}, 'Box office top 5'));
+      const ol=h('ol',{className:'mvlist'});
+      data.top5.forEach(m=>{
+        ol.append(h('li',{}, h('b',{}, m.title||''), ' · '+(m.gross||'')+(m.change && m.change!=='new'?' ('+m.change+')': m.new?' (new)':'' )+(m.weeks? ' · week '+m.weeks:'')));
+      });
+      view.append(ol);
+    }
+    if((data.newReleases||[]).length){
+      view.append(h('h3',{className:'mvh'}, 'New releases'));
+      const ul=h('ul',{className:'mvlist'});
+      data.newReleases.forEach(m=>{
+        ul.append(h('li',{}, h('b',{}, m.title||''), ' · '+(m.gross||'')+(m.theaters? ' · '+String(m.theaters)+' theaters':'')+(m.distributor? ' · '+m.distributor:'')));
+      });
+      view.append(ul);
+    }
+  }
+  const st=mvPick();
+  const box=h('div',{className:'mvpick', id:'mustSeePick'});
+  box.append(h('h3',{className:'mvh'}, 'Your must-see pick'));
+  const title=h('input',{type:'text', className:'songin', value:st.title||'', placeholder:'Movie title', 'aria-label':'Must-see movie title'});
+  const why=h('textarea',{rows:3, value:st.why||'', placeholder:'Why they should see it (optional)', 'aria-label':'Must-see note'});
+  const save=()=>{ const cur=mvPick(); cur.title=title.value.trim(); cur.why=why.value.trim(); mvSave(); toast('Must-see pick saved'); };
+  box.append(h('label',{}, 'Title'), title, h('label',{}, 'Why it is a must-see'), why,
+    h('button',{type:'button', className:'songgo', on:{click:()=>{ tapHaptic(); save(); }}}, 'Save pick'));
+  if(st.title) box.append(h('div',{className:'mvsaved'}, 'On air: '+st.title+(st.why?' — '+st.why:'')));
+  view.append(box);
+}
+function allSongList(){
+  const pools=((songsData||{}).pools)||{};
+  const out=[], seen=new Set();
+  for(const arr of Object.values(pools)){
+    for(const s of (arr||[])){
+      const k=normT((s.title||'')+'|'+(s.artist||''));
+      if(k && k!=='|' && !seen.has(k)){ seen.add(k); out.push(s); }
+    }
+  }
+  return out;
+}
+function renderSongBattle(view){
+  view.append(h('div',{className:'catline'}, 'Head to head · listeners pick the winner'));
+  view.append(h('h2',{}, '⚔ Midday Song Battle'));
+  view.append(h('p',{className:'hint'}, 'Two songs go head to head. Remix or type one in — each has an info card. From the website, confirm with the hourly log.'));
+  if(typeof songPanel==='function'){ view.append(songPanel('battleA')); view.append(songPanel('battleB')); }
+}
+
 function firstShift(p=etParts()){ return weekdayShifts(p)[0]||null; }
 function isTruceShift(p=etParts()){ const sh=currentShift(p), f=firstShift(p); return !!(sh && f && sh.id===f.id && !sh.ended); }
 function shiftPossessive(n){ n=String(n||'Shift'); return /s$/i.test(n)?n+"'":n+"'s"; }
@@ -1272,10 +1529,11 @@ function shiftById(id, p=etParts()){ return weekdayShifts(p).find(s=>s.id===id)|
 function renderShiftLabel(){
   const el=document.getElementById('whoShift'); if(!el) return;
   const p=etParts();
-  if(typeof isShowDay==='function' && !isShowDay(p)){ el.hidden=true; el.textContent=''; return; }
+  if(typeof isShowDay==='function' && !isShowDay(p)){ el.hidden=true; el.textContent=''; const sc=document.getElementById('shiftSched'); if(sc){ sc.hidden=true; sc.innerHTML=''; } return; }
   const sh=currentShift(p);
-  if(!sh){ el.hidden=true; el.textContent=''; return; }
+  if(!sh){ el.hidden=true; el.textContent=''; if(typeof renderShiftSched==='function') renderShiftSched(p, sh); return; }
   el.hidden=false; el.textContent=shiftLabel(sh);
+  if(typeof renderShiftSched==='function') renderShiftSched(p, sh);
 }
 function pruneByDate(obj, n=14){
   const dates=[...new Set(Object.keys(obj||{}).map(k=>String(k).slice(0,10)))].filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort().slice(-n);
@@ -1492,11 +1750,16 @@ function openSpEditor(){
         h('label',{},'How often'),
         h('label',{className:'chk'}, h('input',{type:'radio', name:'sfreq-'+sp.id, checked:(sp.freq||'day')!=='shift', on:{change:()=>{ sp.freq='day'; }}}), 'Once per day'),
         h('label',{className:'chk'}, h('input',{type:'radio', name:'sfreq-'+sp.id, checked:sp.freq==='shift', on:{change:()=>{ sp.freq='shift'; }}}), 'Once per shift'),
+        h('label',{},'Shifts (blank = every shift)'),
+        h('div',{className:'row'}, ...['truce','courtney','callie'].map(id=>h('label',{className:'chk'}, h('input',{type:'checkbox', checked:(sp.shifts||[]).includes(id), on:{change:e=>{ sp.shifts=(sp.shifts||[]).filter(x=>x!==id); if(e.target.checked) sp.shifts.push(id); }}}), id[0].toUpperCase()+id.slice(1)))),
+        h('label',{},'Days (blank = every show day)'),
+        h('div',{className:'row'}, ...[[1,'Mon'],[2,'Tue'],[3,'Wed'],[4,'Thu'],[5,'Fri']].map(([d,lab])=>h('label',{className:'chk'}, h('input',{type:'checkbox', checked:(sp.days||[]).includes(d), on:{change:e=>{ sp.days=(sp.days||[]).filter(x=>x!==d); if(e.target.checked) sp.days.push(d); }}}), lab))),
+        h('label',{},'Source note'), h('input',{type:'text', value:sp.sourceNote||'', placeholder:'from website, confirm with hourly log', on:{input:e=>sp.sourceNote=e.target.value}}),
         h('label',{className:'chk'}, h('input',{type:'checkbox', checked:sp.active!==false, on:{change:e=>sp.active=e.target.checked}}), 'Active'),
         h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Remove '+(sp.name||'this sponsor')+'?')){ work.splice(i,1); draw(); } }}}, '🗑 Remove'))));
     });
     const note=h('input',{type:'text', placeholder:'Optional note for the change log'});
-    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ work.push({id:'sp-'+uid(), name:'New sponsor', short:'', icon:'⭐', read:'', triggers:[], keywords:[], active:true, logo:''}); draw(); }}}, '➕ Add sponsor')),
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ work.push({id:'sp-'+uid(), name:'New sponsor', short:'', icon:'⭐', read:'', triggers:[], keywords:[], active:true, logo:'', shifts:[], days:[], sourceNote:''}); draw(); }}}, '➕ Add sponsor')),
       h('label',{},'Note'), note,
       h('div',{className:'rowb'},
         h('button',{type:'button', style:'background:#2ecc71;color:#06210f;border-color:#2ecc71', on:{click:()=>{ saveSp(work,set,note.value); $('#spModal').classList.remove('on'); }}}, '💾 Save'),
@@ -1511,7 +1774,7 @@ function openSpEditor(){
   };
   const saveSp=(list,st,note)=>{ const old=allSponsors(); const oldS=spSettings(); const changes=[];
     for(const o of list){ const p=old.find(x=>x.id===o.id); if(!p){ changes.push('Added sponsor '+o.name); continue; }
-      const f=['name','short','icon','read','triggers','keywords','active','logo'].filter(k=>JSON.stringify(p[k])!==JSON.stringify(o[k]));
+      const f=['name','short','icon','read','triggers','keywords','active','logo','shifts','days','sourceNote'].filter(k=>JSON.stringify(p[k]||null)!==JSON.stringify(o[k]||null));
       if(f.length) changes.push('Edited '+o.name+': '+f.map(k=>k==='read'?'read line':k).join(', ')+(f.includes('read')?' → "'+o.read+'"':'')); }
     for(const p of old) if(!list.some(o=>o.id===p.id)) changes.push('Removed sponsor '+p.name);
     if(st.deadline!==oldS.deadline) changes.push('Banner time '+oldS.deadline+' → '+st.deadline);
@@ -2396,6 +2659,10 @@ function renderWeather(){
 
 function sectionList(){
   const s=state.sheet||{}; const out=[{key:'news', v:{title:'📰 News', category:'Local · National · Gossip', content:'x', virtual:true}}];
+  if(typeof onAirProfile==='function' && onAirProfile('courtney') && etParts().dow>=1 && etParts().dow<=5){
+    out.push({key:'battle', v:{title:'⚔ Midday Song Battle', category:'Head to head', content:'x', virtual:true}});
+    if(etParts().dow===1) out.push({key:'movies', v:{title:'🎬 Weekend movies', category:'Monday recap · Devette & Ford', content:'x', virtual:true}});
+  }
   for(const [k,v] of Object.entries(s)){
     if(k==='weather' || k==='newsclips' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v)) continue;
     if(k==='offcharts' && etParts().dow!==5) continue;   // Off the Charts: Fridays only (ET)
@@ -2539,7 +2806,7 @@ document.addEventListener('visibilitychange',()=>{ if(!document.hidden && state.
 
 /* ================= Daily Buzz: remix a weak local story from localBench, else a curated local ticker pick ================= */
 var buzzRemix=lsGet('hs:buzzRemix', {});
-function bzDay(){ const d=etParts().date; buzzRemix[d]=buzzRemix[d]||{}; return buzzRemix[d]; }
+function bzDay(){ const d=typeof profileBucket==='function'?profileBucket():etParts().date; buzzRemix[d]=buzzRemix[d]||{}; return buzzRemix[d]; }
 function bzSave(){ const dates=[...new Set(Object.keys(buzzRemix).map(k=>k.slice(0,10)))].sort().slice(-14);
   buzzRemix=Object.fromEntries(Object.entries(buzzRemix).filter(([k])=>dates.includes(k.slice(0,10))));
   lsSet('hs:buzzRemix', buzzRemix); }
@@ -2818,6 +3085,7 @@ function renderNewsView(view){
   const ref=h('button',{className:'nvref', type:'button', 'aria-label':'Refresh headlines'}, '↻ Refresh');
   ref.onclick=()=>{ loadTicker(true); fetchNews(true); fetchGossip(true); };
   view.append(h('h2',{className:'nvh'}, '📰 News', ref), h('div',{className:'nvmeta', id:'nvMeta'}, meta));
+  if(typeof renderNewsSuggest==='function') renderNewsSuggest(view);
   const seg=h('div',{className:'nseg', role:'tablist', 'aria-label':'News columns'});
   const cols=h('div',{className:'ncols', id:'nCols'});
   NCOLS.forEach((c,i)=>{
@@ -2876,6 +3144,8 @@ function renderView(){
   if(item.key==='liners'){ renderLiners(view); return; }
   if(item.key==='wrap'){ renderWrap(view); return; }
   if(item.key==='saved'){ renderSaved(view); return; }
+  if(item.key==='battle'){ renderSongBattle(view); return; }
+  if(item.key==='movies'){ renderWeekendMovies(view); return; }
   const fbs=item.key==='flash' ? fbData() : null;   // structured 9AM Flashback fields → card; else the old blob
   if(item.key!=='flash'){ const fbb=fbBanner(); if(fbb) view.append(fbb); }
   let v=item.v; const rx=(typeof isSongSec==='function' && isSongSec(item.key)) ? null : ((typeof remixView==='function') ? remixView(item.key, v) : null); if(rx) v=rx;
@@ -2901,6 +3171,7 @@ function renderView(){
     const txt=cleanText(v.content).trim();
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
     if(txt && item.key==='buzz' && typeof renderBuzz==='function') renderBuzz(c, txt);
+    else if(txt && item.key==='lifestyle' && typeof renderStorySec==='function' && typeof onAirProfile==='function' && onAirProfile('courtney')) renderStorySec(c, 'lifestyle', txt);
     else if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
     view.append(c);
   }
@@ -3168,7 +3439,7 @@ $('#prevDay').onclick=()=>{ const d=stepDate(baseDate(),-1); if(d) load(d); };
 $('#nextDay').onclick=()=>{ const d=stepDate(baseDate(),+1); if(d) load(d); };
 $('#datePick').onchange=e=>{ if(e.target.value) load(e.target.value); };
 $('#latestBtn').onclick=()=>load(null);
-$('#refreshBtn').onclick=async()=>{ if(typeof hsCheckForUpdate==='function') hsCheckForUpdate(true); await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker(true); load(state.mode==='latest'?null:state.date); };
+$('#refreshBtn').onclick=async()=>{ if(typeof hsCheckForUpdate==='function') hsCheckForUpdate(true); await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadSchedules(); loadMovies(); loadTicker(true); load(state.mode==='latest'?null:state.date); };
 
 
 /* ================= pinned top ✕ on every overlay ================= */
@@ -3319,15 +3590,26 @@ const OPENER_RE=/SUPER|OPENER|STAND-?\s?UP|LATE-?\s?NIGHT|COMEDY/i;
 function openerRank(p){ const t=(p.slot||'')+' '+p.title; return /SUPER|OPENER/i.test(t)?0:/STAND-?\s?UP|COMEDY/i.test(t)?1:2; }
 function renderClipTracker(view, opts){ opts=opts||{};
   let groups=[{key:'newsclips', label:'📰 News Audio'},{key:'clips', label:'🔥 Trending Audio'}].map(g=>({...g, picks:clipPicks(g.key)}));
-  const all=groups.flatMap(g=>g.picks); state.clipPicks=all; const heldIn=heldIncoming(all); if(!all.length && !heldIn.length) return false;
-  if(heldIn.length){ groups.unshift(...heldGroups(heldIn)); state.clipPicks=all.concat(heldIn); }
-  if(opts.opener){ const op=state.clipPicks.filter(p=>OPENER_RE.test((p.slot||'')+' '+p.title)).sort((a,b)=>openerRank(a)-openerRank(b));
+  const all=groups.flatMap(g=>g.picks); state.clipPicks=all; const heldIn=heldIncoming(all);
+  if(!all.length && !heldIn.length) return false;
+  const isArch=p=>typeof clipIsCarryover==='function' && clipIsCarryover(p);
+  const freshOf=list=>(list||[]).filter(p=>!isArch(p));
+  const archOf=list=>(list||[]).filter(p=>isArch(p));
+  const heldArch=heldIn.filter(p=>isArch(p) || (p.heldFrom && p.heldFrom<clipDate()));
+  const heldFresh=heldIn.filter(p=>!heldArch.includes(p));
+  // Held-from-earlier clips belong in Archive, not a main-list group
+  if(heldFresh.length){ groups.unshift(...heldGroups(heldFresh)); }
+  state.clipPicks=all.concat(heldIn);
+  if(opts.opener){ const op=state.clipPicks.filter(p=>!isArch(p) && OPENER_RE.test((p.slot||'')+' '+p.title)).sort((a,b)=>openerRank(a)-openerRank(b));
     if(!op.length) return false; groups=[{key:'opener', label:'🎬 Show opener audio · supercut and comedy', picks:op}]; }
+  else {
+    groups=groups.map(g=>({...g, picks:freshOf(g.picks)})).filter(g=>g.picks.length);
+  }
   const allG=groups.flatMap(g=>g.picks); const left=allG.filter(p=>!cst(p.id).u).length;
   const wrap=h('div',{className:'cltrack'});
-  wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
+  wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate())+' · new today')));
   const card=(p, used)=>{ const s=cst(p.id);
-    const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id});
+    const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id, 'data-arch':isArch(p)?'1':''});
     const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
     const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
@@ -3346,6 +3628,22 @@ function renderClipTracker(view, opts){ opts=opts||{};
     wrap.append(h('div',{className:'clgh'}, g.label, h('span',{className:'cc'}, gl.length+' of '+g.picks.length+' left')));
     if(!gl.length) wrap.append(h('div',{className:'cldone'}, '✓ All used'));
     gl.forEach(p=>wrap.append(card(p,false))); }
+  if(!opts.opener){
+    const archived=archOf(all).concat(heldArch);
+    if(archived.length){
+      const by={};
+      archived.forEach(p=>{ const d=typeof clipArchiveDate==='function'?clipArchiveDate(p):clipDate(); (by[d]=by[d]||[]).push(p); });
+      const dates=Object.keys(by).sort().reverse();
+      const det=h('details',{className:'clarch', id:'clipArchive'});
+      det.append(h('summary',{}, 'Archive ('+archived.length+' clip'+(archived.length===1?'':'s')+' from earlier days)'));
+      det.append(h('div',{className:'hint'}, 'These already ran on an earlier sheet. Still playable, just not in today’s main list.'));
+      for(const d of dates){
+        det.append(h('div',{className:'clgh'}, 'Archive · '+nice(d), h('span',{className:'cc'}, String(by[d].length))));
+        by[d].forEach(p=>det.append(card(p, !!cst(p.id).u)));
+      }
+      wrap.append(det);
+    }
+  }
   const used=allG.filter(p=>cst(p.id).u);
   if(used.length && !opts.opener){ const t=h('button',{className:'clshow', type:'button', 'aria-expanded':String(showUsed)}, (showUsed?'Hide used':'Show used')+' ('+used.length+')');
     t.onclick=()=>{ showUsed=!showUsed; rerender(); }; wrap.append(t);
@@ -3458,6 +3756,8 @@ function syncSnap(){ const m={};
   for(const [id,o] of Object.entries((typeof guOv!=='undefined'&&guOv&&guOv.items)||{})) m['gu:'+id]=o;
   for(const [d,r] of Object.entries((typeof songPicks!=='undefined'&&songPicks)||{})) for(const [id,o] of Object.entries(r||{})) m['sk:'+d+':'+id]=o;
   for(const [d,r] of Object.entries((typeof buzzRemix!=='undefined'&&buzzRemix)||{})) for(const [id,o] of Object.entries(r||{})) m['bx:'+d+':'+id]=o;
+  for(const [d,r] of Object.entries((typeof storyRemix!=='undefined'&&storyRemix)||{})) for(const [id,o] of Object.entries(r||{})) m['sx:'+d+':'+id]=o;
+  for(const [d,r] of Object.entries((typeof moviePicks!=='undefined'&&moviePicks)||{})) m['mp:'+d]=r;
   return m; }
 function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=key.indexOf(':'); const kind=key.slice(0,i), rest=key.slice(i+1);
   const two=()=>{ const j=rest.indexOf(':'); return [rest.slice(0,j), rest.slice(j+1)]; };
@@ -3477,7 +3777,9 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='gw'){ const [gid,wid]=two(); gvWins=gvWins||{}; gvWins[gid]=gvWins[gid]||{}; if(del) delete gvWins[gid][wid]; else gvWins[gid][wid]=val; if(!Object.keys(gvWins[gid]).length) delete gvWins[gid]; }
   else if(kind==='gu'){ guOv=guOv||{items:{}}; guOv.items=guOv.items||{}; if(del) delete guOv.items[rest]; else guOv.items[rest]=val; }
   else if(kind==='sk'){ const [d,id]=two(); songPicks=songPicks||{}; songPicks[d]=songPicks[d]||{}; if(del) delete songPicks[d][id]; else songPicks[d][id]=val; if(!Object.keys(songPicks[d]).length) delete songPicks[d]; }
-  else if(kind==='bx'){ const [d,id]=two(); buzzRemix=buzzRemix||{}; buzzRemix[d]=buzzRemix[d]||{}; if(del) delete buzzRemix[d][id]; else buzzRemix[d][id]=val; if(!Object.keys(buzzRemix[d]).length) delete buzzRemix[d]; } }
+  else if(kind==='bx'){ const [d,id]=two(); buzzRemix=buzzRemix||{}; buzzRemix[d]=buzzRemix[d]||{}; if(del) delete buzzRemix[d][id]; else buzzRemix[d][id]=val; if(!Object.keys(buzzRemix[d]).length) delete buzzRemix[d]; }
+  else if(kind==='sx'){ const [d,id]=two(); storyRemix=storyRemix||{}; storyRemix[d]=storyRemix[d]||{}; if(del) delete storyRemix[d][id]; else storyRemix[d][id]=val; if(!Object.keys(storyRemix[d]).length) delete storyRemix[d]; }
+  else if(kind==='mp'){ moviePicks=moviePicks||{}; if(del) delete moviePicks[rest]; else moviePicks[rest]=val; } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
   for(const k of new Set([...Object.keys(snap), ...Object.keys(last)])){ const cur=k in snap ? JSON.stringify(snap[k]) : '"~"';
     if(cur!==(last[k]||'"~"')){ st[k]=now; last[k]=cur; } }
@@ -3491,7 +3793,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx):(\d{4}-\d{2}-\d{2})(?:#[^:]+)?:/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx|sx|mp):(\d{4}-\d{2}-\d{2})(?:#[^:]+)?(?::|$)/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -3502,12 +3804,12 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); }
+    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); LS.setItem('hs:storyRemix', JSON.stringify(storyRemix||{})); LS.setItem('hs:moviePicks', JSON.stringify(moviePicks||{})); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
     syncCfg.lastOk=Date.now(); syncCfg.err=''; lsSet('hs:sync', syncCfg);
-    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips'||state.tab==='cross'||state.tab==='vibe'||state.tab==='mood'||state.tab==='flash'||state.tab==='buzz') rerender(); }
+    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips'||state.tab==='cross'||state.tab==='vibe'||state.tab==='mood'||state.tab==='flash'||state.tab==='buzz'||state.tab==='lifestyle'||state.tab==='battle'||state.tab==='movies'||state.tab==='news') rerender(); }
   }catch(e){ syncCfg.err=String(e.message||e); lsSet('hs:sync', syncCfg); }
   syncBusy=false; renderSyncState(); if(syncAgain){ syncAgain=false; syncNow(); } }
 window.__hsSyncSoon=()=>{ if(!syncCfg) return; syncMark(); clearTimeout(syncT); syncT=setTimeout(syncNow, 1500); };
@@ -3601,7 +3903,7 @@ function normKill(k, yearFrom){ const t=String(k||'').trim(); if(!t) return 'TBD
   return t; }
 function killLive(k){ const t=normKill(k); return !/^\d{4}-\d{2}-\d{2}$/.test(t) || etParts().date<=t; }
 function killLabel(k){ const t=normKill(k); if(!/^\d{4}-\d{2}-\d{2}$/.test(t)) return t; const [y,m,d]=t.split('-'); return 'kill '+(+m)+'/'+(+d)+(killLive(t)?'':' · expired'); }
-function liveStationReads(){ return allStReads().filter(r=>r.active!==false && killLive(r.kill)); }
+function liveStationReads(){ return allStReads().filter(r=>r.active!==false && killLive(r.kill) && (typeof itemFitsNow!=='function' || itemFitsNow(r))); }
 function liveLiners(){ return allLiners().filter(l=>l.active!==false && killLive(l.kill)); }
 function stAsSp(id){ const r=allStReads().find(x=>x.id===id); if(!r) return null;
   return {id:r.id, name:r.name, short:r.short||r.name, icon:r.icon||'📻', read:r.text||'', station:true, freq:(r.freq==='day'?'day':'shift')}; }
@@ -4069,9 +4371,9 @@ function normPoolItem(x){ if(!x) return null; if(typeof x==='string'){ const t=c
   return {id:String(x.id||('p'+fnv(title+script.slice(0,40)))), title, script, evidence:cleanText(String(x.evidence||x.notes||''))}; }
 function poolFor(key){ if(!key) return []; const sh=(state.sheet && Array.isArray(state.sheet[key+'_pool'])) ? state.sheet[key+'_pool'] : [];
   const out=[], seen=new Set(); for(const x of [...sh, ...((((poolData||{}).pools)||{})[key]||[])]){ const n=normPoolItem(x); if(n && !seen.has(n.title.toLowerCase())){ seen.add(n.title.toLowerCase()); out.push(n); } } return out; }
-function rxDay(){ const d=etParts().date; remixSt[d]=remixSt[d]||{}; return remixSt[d]; }
-function rxSave(){ const keep=Object.keys(remixSt).sort().slice(-5); remixSt=Object.fromEntries(keep.map(k=>[k,remixSt[k]])); lsSet('hs:remix', remixSt); }
-function remixView(key, v){ const st=((remixSt||{})[etParts().date]||{})[key]; if(!st || !st.id) return null; const it=poolFor(key).find(x=>x.id===st.id); if(!it) return null;
+function rxDay(){ const d=typeof profileBucket==='function'?profileBucket():etParts().date; remixSt[d]=remixSt[d]||{}; return remixSt[d]; }
+function rxSave(){ const dates=[...new Set(Object.keys(remixSt).map(k=>k.slice(0,10)))].sort().slice(-5); remixSt=Object.fromEntries(Object.entries(remixSt).filter(([k])=>dates.includes(k.slice(0,10)))); lsSet('hs:remix', remixSt); }
+function remixView(key, v){ const st=((remixSt||{})[(typeof profileBucket==='function'?profileBucket():etParts().date)]||{})[key]; if(!st || !st.id) return null; const it=poolFor(key).find(x=>x.id===st.id); if(!it) return null;
   const ph=(poolData||{}).phone||'231-929-4487'; let sc=it.script.trim(); const ends=new RegExp(ph.replace(/-/g,'[-.\\s]?')+'\\s*$').test(sc);
   return Object.assign({}, v, {content:it.title+'\n\n'+sc+(ends?'':'\n\n'+ph), notes:(it.evidence?'Evidence: '+it.evidence+'\n':'')+'🔀 Remixed from the pool. Tap "Today\'s original" to go back to the sheet\'s version.'}); }
 function remixNext(key){ const pool=poolFor(key); if(!pool.length) return; const orig=(cleanText((state.sheet[key]||{}).content||'').trim().split('\n')[0]||'').toLowerCase();
@@ -4079,7 +4381,7 @@ function remixNext(key){ const pool=poolFor(key); if(!pool.length) return; const
   let nx=cands.find(x=>!(st.seen||[]).includes(x.id) && x.id!==st.id); if(!nx){ st.seen=[]; nx=cands.find(x=>x.id!==st.id)||cands[0]; }
   st.seen=[...(st.seen||[]), nx.id]; st.id=nx.id; rxDay()[key]=st; rxSave(); rerender(); toast('🔀 Fresh '+((state.sheet[key]||{}).title||'card')+': '+nx.title, ()=>{ remixBack(key); }); }
 function remixBack(key){ const st=rxDay()[key]; if(st){ st.id=null; rxSave(); } rerender(); }
-function remixBar(key, rx){ const pool=poolFor(key); const st=(remixSt[etParts().date]||{})[key]; const i=rx&&st?pool.findIndex(x=>x.id===st.id):-1;
+function remixBar(key, rx){ const pool=poolFor(key); const st=(remixSt[typeof profileBucket==='function'?profileBucket():etParts().date]||{})[key]; const i=rx&&st?pool.findIndex(x=>x.id===st.id):-1;
   return h('div',{className:'rxbar'}, h('button',{className:'rxbtn', type:'button', title:'Swap in a fresh one from the pool', on:{click:()=>{ tapHaptic(); remixNext(key); }}}, '🔀 Remix'),
     rx ? h('button',{className:'rxback', type:'button', on:{click:()=>{ tapHaptic(); remixBack(key); }}}, '↩ Today\'s original') : null,
     h('span',{className:'rxinfo'}, rx ? 'Remix '+(i+1)+' of '+pool.length : pool.length+' in the pool')); }
@@ -4093,11 +4395,11 @@ function isSongSec(k){ return SONG_SECS.includes(k); }
 var songsData=lsGet('hs:songs', {pools:{}});
 var songPicks=lsGet('hs:songPicks', {});
 var songLookupCache=lsGet('hs:songLookup', {});
-async function loadSongs(){ if(isHttp){ try{ const j=await fetchJson('songs.json'); if(j && j.pools){ songsData=j; lsSet('hs:songs', j); } }catch(e){} } if(state.sheet && isSongSec(state.tab)) rerender(); }
+async function loadSongs(){ if(isHttp){ try{ const j=await fetchJson('songs.json'); if(j && j.pools){ songsData=j; lsSet('hs:songs', j); } }catch(e){} } if(state.sheet && (isSongSec(state.tab)||state.tab==='battle')) rerender(); }
 function allSongList(){ const p=(songsData&&songsData.pools)||{}; return [].concat(p.vibe||[], p.mood||[], p.flash||[]); }
-function songPool(key){ return ((((songsData||{}).pools)||{})[key]||[]).slice(); }
+function songPool(key){ if(key==='battleA'||key==='battleB') return (typeof allSongList==='function'?allSongList():((((songsData||{}).pools)||{})[key]||[])).slice(); return ((((songsData||{}).pools)||{})[key]||[]).slice(); }
 function songById(id){ return allSongList().find(s=>s.id===id); }
-function skDay(){ const d=etParts().date; songPicks[d]=songPicks[d]||{}; return songPicks[d]; }
+function skDay(){ const d=typeof profileBucket==='function'?profileBucket():etParts().date; songPicks[d]=songPicks[d]||{}; return songPicks[d]; }
 function skSave(){ const dates=[...new Set(Object.keys(songPicks).map(k=>k.slice(0,10)))].sort().slice(-14);
   songPicks=Object.fromEntries(Object.entries(songPicks).filter(([k])=>dates.includes(k.slice(0,10))));
   lsSet('hs:songPicks', songPicks); }
@@ -4202,7 +4504,7 @@ function songRemix(key){
   toast('🔀 Fresh '+(key==='vibe'?'slow jam':key==='mood'?'Mood Booster':'Flashback')+': “'+nx.title+'” — '+nx.artist, ()=>{ songBack(key); });
 }
 function songBack(key){ const d=skDay(); delete d[key]; skSave(); rerender(); }
-function songLabel(key){ return key==='vibe'?'Today’s slow jam':key==='mood'?'Mood Booster':key==='flash'?'9 AM Flashback':'Today’s song'; }
+function songLabel(key){ return key==='vibe'?'Today’s slow jam':key==='mood'?'Mood Booster':key==='flash'?'9 AM Flashback':key==='battleA'?'Battle song 1':key==='battleB'?'Battle song 2':'Today’s song'; }
 function fmtYmd(iso){ const m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/); if(!m) return iso;
   const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
   return months[+m[2]-1]+' '+(+m[3])+', '+m[1]; }
@@ -4530,9 +4832,9 @@ if(isHttp && 'serviceWorker' in navigator){
 
 if(typeof migrateShiftBuckets==='function'){ migrateShiftBuckets(); if(typeof lsSet==='function'){ try{ lsSet('hs:reads', reads); lsSet('hs:linerUsed', linerUsed); lsSet('hs:air', air); }catch(e){} } }
 if(typeof tick==='function') tick();
-loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker();
+loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadSchedules(); loadMovies(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, currentShift, currentShiftBucket, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, renderShiftLabel, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipFirstDate, clipArchiveDate, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
