@@ -1,0 +1,15 @@
+{
+ "version": 1,
+ "guests": [
+  {
+   "id": "gu-zach-tate-2026-11-19",
+   "date": "2026-11-19",
+   "time": "07:30",
+   "name": "SSgt Zach Tate",
+   "role": "U.S. Marine Corps recruiter",
+   "note": "Canvassing recruiter. In studio Thursday, Nov 19 at 7:30 AM during the Morning Rush.",
+   "icon": "🎙",
+   "active": true
+  }
+ ]
+}
