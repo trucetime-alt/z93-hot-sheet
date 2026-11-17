@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v35-fb-art">
+<meta name="hs-build" content="v36-buzz-remix">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -293,6 +293,15 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 details.natfold{margin-top:10px;border:1px dashed var(--line);border-radius:12px;padding:6px 10px}
 details.natfold summary{cursor:pointer;font-weight:800;color:var(--dim);min-height:40px;display:flex;align-items:center}
 details.natfold[open] summary{color:var(--text)}
+.buzzcard{border:2px solid var(--line);background:var(--panel);border-radius:16px;padding:12px;margin:0 0 14px}
+.buzzcard.remixed{border-color:#7c5cff;box-shadow:inset 4px 0 0 #7c5cff}
+.buzzcard .buzztop{margin:0 0 8px}
+.buzzcard .buzzhd{display:block;font-size:1.15em;font-weight:900;line-height:1.25;margin:0 0 8px;color:var(--accent)}
+.buzzcard .buzzbody{white-space:pre-wrap;word-wrap:break-word}
+.buzzcard .buzzsrc{font-size:.9em;font-weight:700;margin:0 0 6px;color:var(--dim)}
+.buzzcard .buzzsrc b{color:var(--accent2)}
+.buzzcard .buzznote{font-size:.82em;color:var(--dim);font-weight:700;margin:0 0 8px}
+.buzzcard .airsec{margin:8px 0 0}
 .studiochip .sp{font-size:.8em;background:#123b2a;border:2px solid #2ecc71;border-radius:8px;padding:1px 7px;color:#d8ffe9}
 .modal{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.9);display:none;align-items:flex-start;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 10px 10px;overflow-y:auto}
 .modal.on{display:flex}
@@ -1121,7 +1130,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:songPicks']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:songPicks','hs:buzzRemix']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -2287,20 +2296,217 @@ async function fetchGossip(force){
 setInterval(()=>{ if(!document.hidden && state.tab==='news') fetchGossip(false); }, 20*60000);
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden && state.tab==='news' && (!gossip || Date.now()-gossip.at>20*60000)) fetchGossip(false); });
 
-// split the Daily Buzz into ━━ PART ━━ groups of "N) TITLE" stories (BITS = bullet lines)
-function buzzParts(txt){
-  const parts={}; let cur=null, story=null;
-  for(const l of (txt||'').split('\n')){
+/* ================= Daily Buzz: remix a weak local story from localBench, else a curated local ticker pick ================= */
+var buzzRemix=lsGet('hs:buzzRemix', {});
+function bzDay(){ const d=etParts().date; buzzRemix[d]=buzzRemix[d]||{}; return buzzRemix[d]; }
+function bzSave(){ const dates=[...new Set(Object.keys(buzzRemix).map(k=>k.slice(0,10)))].sort().slice(-14);
+  buzzRemix=Object.fromEntries(Object.entries(buzzRemix).filter(([k])=>dates.includes(k.slice(0,10))));
+  lsSet('hs:buzzRemix', buzzRemix); }
+function buzzParse(txt){
+  const parts=[]; let cur=null, prev='';
+  const start=name=>{ cur={name:String(name||'').toUpperCase().trim(), stories:[], lines:[]}; parts.push(cur); prev=''; };
+  for(const l of String(txt||'').split('\n')){
     const m=l.match(/^\s*━+\s*(.+?)\s*━+\s*$/);
-    if(m){ cur=m[1].toUpperCase().trim(); parts[cur]=parts[cur]||[]; story=null; continue; }
-    if(!cur) continue;
+    if(m){ start(m[1].toUpperCase().trim()); cur.lines.push(l); continue; }
+    if(!cur) start('');
+    cur.lines.push(l);
     const st=l.match(/^\s*\d+\)\s+(.+)$/);
-    if(st){ story={title:st[1].trim(), lines:[]}; parts[cur].push(story); continue; }
-    if(/^BITS?$/.test(cur)){ const b=l.match(/^\s*[•\-]\s+(.+)$/); if(b) parts[cur].push({title:b[1].trim(), lines:[]}); continue; }
-    if(story && l.trim()) story.lines.push(l);
+    if(st){ cur.stories.push({title:st[1].replace(/\s*🔊\s*$/u,'').trim(), lines:[]}); prev=l; continue; }
+    if(typeof isStoryHead==='function' && isStoryHead(l, prev)){ cur.stories.push({title:l.trim(), lines:[]}); prev=l; continue; }
+    if(cur.stories.length && String(l).trim()) cur.stories[cur.stories.length-1].lines.push(l);
+    prev=l;
   }
   return parts;
 }
+function buzzParts(txt){
+  const parts={};
+  for(const p of buzzParse(txt)){ const k=p.name||''; parts[k]=(parts[k]||[]).concat(p.stories); }
+  return parts;
+}
+function buzzSecLocal(name){ const n=String(name||'').toUpperCase().replace(/\s+/g,' ').trim(); return n==='LOCAL' || n==='LOCAL NEWS' || n==='NORTHERN MICHIGAN' || n==='UP NORTH' || /^LOCAL\b/.test(n); }
+function buzzSecClosed(name){ const n=String(name||'').toUpperCase().replace(/\s+/g,' ').trim(); return n==='NATIONAL' || n==='WORLD' || n==='NATION' || n==='INTERNATIONAL'; }
+function buzzSecOther(name){ const n=String(name||'').toUpperCase().replace(/\s+/g,' ').trim(); return /^(BITS?|SPORTS|EVENTS|NATIONAL|WORLD|NATION|INTERNATIONAL)\b/.test(n); }
+const NM_PLACE=/\b(traverse city|\btc\b|grand traverse|leelanau|benzie|antrim|kalkaska|kingsley|suttons bay|elk rapids|charlevoix|petoskey|cadillac|manistee|interlochen|acme township|garfield township|east bay|old mission|northport|leland|glen arbor|empire|frankfort|beulah|bellaire|mancelona|fife lake|buckley|grawn|chums corner|beitner|boardman|barns park|clinch park|west end|northwestern michigan|northern michigan|northwest michigan|up north|record-eagle|upnorthlive|9\s*&\s*10)\b/i;
+function buzzLooksLocal(title, lines){ return NM_PLACE.test(String(title||'')+' '+((lines||[]).join(' '))); }
+function buzzSheetText(){ return state.sheet && state.sheet.buzz ? cleanText(state.sheet.buzz.content||'') : ''; }
+function buzzBench(){ const b=state.sheet && state.sheet.buzz && state.sheet.buzz.localBench; return Array.isArray(b) ? b.filter(x=>x && (x.id||x.title)) : []; }
+function buzzOrigLocals(){
+  const parts=buzzParse(buzzSheetText());
+  const named=parts.filter(p=>buzzSecLocal(p.name));
+  const pool=named.length ? named.flatMap(p=>p.stories.map(s=>({...s, section:p.name||'LOCAL'})))
+    : parts.filter(p=>!buzzSecOther(p.name)).flatMap(p=>p.stories.filter(s=>buzzLooksLocal(s.title,s.lines)).map(s=>({...s, section:p.name||''})));
+  return pool.map((s,i)=>{
+    const it=(typeof storyItem==='function') ? storyItem('buzz', s.title, storyHeads(buzzSheetText()).findIndex(h=>normT(h)===normT(s.title))) : null;
+    const id=it&&it.id ? String(it.id) : ('h'+fnv(normT(s.title)||s.title||String(i)));
+    return {slot:id, item:it||null, title:s.title, lines:s.lines||[], section:s.section||'LOCAL', orig:true};
+  });
+}
+function buzzWords(t){ return new Set(String(t||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').split(/\s+/).filter(w=>w.length>3)); }
+function buzzOverlap(a,b){ const A=buzzWords(a), B=buzzWords(b); if(!A.size||!B.size) return false; return [...A].filter(x=>B.has(x)).length>=3; }
+function buzzBlob(s){ return [s&&s.title, s&&s.source, ...((s&&s.lines)||[]), s&&s.body, s&&s.take, s&&s.desc].filter(Boolean).join(' '); }
+function buzzTickerLocals(){
+  const t=(typeof tickerFresh==='function' && tickerFresh() && tickerCur && tickerCur.local) ? tickerCur.local : null;
+  return ((t && t.picks)||[]).filter(p=>p && p.title);
+}
+function buzzTaken(exceptSlot){
+  const titles=[], ids=new Set();
+  for(const s of buzzOrigLocals()){ titles.push(buzzBlob(s)); if(s.slot) ids.add(String(s.slot)); if(s.item&&s.item.id) ids.add(String(s.item.id)); }
+  const day=bzDay();
+  for(const [slot,st] of Object.entries(day)){
+    if(!st || !st.id || slot===exceptSlot) continue;
+    ids.add(String(st.id));
+    titles.push(buzzBlob(st));
+  }
+  return {ids, titles};
+}
+function buzzIsTaken(it, taken){
+  const id=it&&it.id!=null ? String(it.id) : '';
+  if(id && taken.ids.has(id)) return true;
+  const blob=buzzBlob(it);
+  return taken.titles.some(t=>buzzOverlap(t, blob));
+}
+function buzzFormatItem(it){
+  if(!it) return '';
+  const lines=[];
+  if(it.body) lines.push(String(it.body).trim());
+  const take=it.take && !/➜\s*TAKE/i.test(lines.join('\n')) ? '➜ TAKE: '+String(it.take).replace(/^\s*➜\s*TAKE:\s*/i,'') : '';
+  const bait=it.bait && !/➜\s*BAIT/i.test(lines.join('\n')) ? '➜ BAIT: '+String(it.bait).replace(/^\s*➜\s*BAIT:\s*/i,'') : '';
+  if(take) lines.push(take); if(bait) lines.push(bait);
+  return lines.filter(Boolean).join('\n').trim();
+}
+function buzzResolve(slot, orig){
+  const st=bzDay()[slot];
+  if(!st || !st.id) return Object.assign({}, orig, {kind:'sheet', id:orig.item&&orig.item.id, recap:orig.item&&orig.item.recap});
+  if(st.kind==='bench'){
+    const live=buzzBench().find(x=>String(x.id)===String(st.id));
+    const it=live||st;
+    return {kind:'bench', id:it.id, title:it.title, lines:(it.lines||[]), body:it.body, take:it.take, bait:it.bait, source:it.source, recap:it.recap, link:it.link||it.url, slot};
+  }
+  return {kind:st.kind||'ticker', id:st.id, title:st.title, source:st.source, link:st.link||st.url, recap:st.recap||'', desc:st.desc||'', slot};
+}
+function buzzNext(slot, orig){
+  if(window.__hsEmptyBuzzBackups) return null;
+  const taken=buzzTaken(slot);
+  const seen=new Set(((bzDay()[slot]||{}).seen)||[]);
+  const tryList=(list, kind, wrap)=>{
+    const fresh=list.filter(it=>!buzzIsTaken(it, taken) && !seen.has(String(it.id)));
+    const all=list.filter(it=>!buzzIsTaken(it, taken));
+    const pick=(wrap?fresh.concat(all.filter(it=>!fresh.includes(it))):fresh)[0];
+    return pick ? {it:pick, kind} : null;
+  };
+  return tryList(buzzBench(), 'bench', false) || tryList(buzzTickerLocals(), 'ticker', false);
+}
+function buzzRemixTo(slot, orig, pick){
+  const prev=bzDay()[slot]||{seen:[]};
+  const seen=[...new Set([...(prev.seen||[]), String(pick.it.id)])];
+  const it=pick.it;
+  const st={id:String(it.id), kind:pick.kind, title:it.title||'', source:it.source||'', link:it.link||it.url||'', recap:it.recap||'', desc:it.desc||'', body:it.body||'', take:it.take||'', bait:it.bait||'', seen};
+  bzDay()[slot]=st; bzSave();
+  rerender();
+  toast('🔀 Remixed: '+tcase(it.title||'story'), ()=>buzzRemixBack(slot));
+}
+function buzzRemixNext(slot, orig){
+  const pick=buzzNext(slot, orig);
+  if(!pick){ toast('No backups left'); return false; }
+  buzzRemixTo(slot, orig, pick); return true;
+}
+function buzzRemixBack(slot){ const d=bzDay(); delete d[slot]; bzSave(); rerender(); }
+function buzzAirKey(shown){ return shown&&shown.id ? 'it:'+shown.id : 'h:buzz:'+fnv(normT(shown&&shown.title||'')); }
+function buzzAirBody(shown){
+  if(shown.kind==='ticker') return [shown.title, shown.source?('Source: '+shown.source):'', shown.link||''].filter(Boolean).join('\n');
+  if(shown.kind==='bench') return buzzFormatItem(shown) || String(shown.title||'');
+  return (shown.lines||[]).join('\n') || String(shown.title||'');
+}
+function buzzCard(orig){
+  const shown=buzzResolve(orig.slot, orig);
+  const remixed=shown.kind && shown.kind!=='sheet';
+  const card=h('article',{className:'buzzcard'+(remixed?' remixed':''), 'data-buzz-slot':orig.slot, 'data-buzz-kind':shown.kind||'sheet'});
+  const top=h('div',{className:'buzztop rxbar'});
+  top.append(h('button',{className:'rxbtn', type:'button', title:'Swap this local story for a backup', on:{click:()=>{ tapHaptic(); if(!buzzRemixNext(orig.slot, orig) && !remixed){ /* toast already */ } }}}, '🔀 Remix'));
+  if(remixed) top.append(h('button',{className:'rxback', type:'button', on:{click:()=>{ tapHaptic(); buzzRemixBack(orig.slot); }}}, '↩ Back to original'));
+  const info=remixed ? (shown.kind==='ticker'?'Ticker backup':'Bench backup') : 'Local';
+  top.append(h('span',{className:'rxinfo', 'data-buzz-info':'1'}, info));
+  card.append(top);
+  const head=h('div',{className:'headline buzzhd'}, tcase(shown.title||orig.title||''));
+  card.append(head);
+  if(shown.kind==='ticker'){
+    const src=h('div',{className:'buzzsrc'});
+    if(shown.source) src.append(h('b',{}, shown.source));
+    if(shown.link){ if(shown.source) src.append(document.createTextNode(' · ')); src.append(h('a',{href:shown.link, target:'_blank', rel:'noopener'}, 'Open article ↗')); }
+    card.append(src);
+    card.append(h('p',{className:'buzznote'}, 'From the local ticker · no extra write-up on this backup.'));
+  } else {
+    const bodyTxt=shown.kind==='bench' ? buzzFormatItem(shown) : (orig.lines||[]).join('\n');
+    if(bodyTxt){ const body=h('div',{className:'buzzbody'}); richLines(body, bodyTxt); card.append(body); }
+    if(shown.source) card.append(h('div',{className:'buzzsrc'}, h('b',{}, shown.source)));
+    if(shown.link) card.append(h('div',{className:'buzzsrc'}, h('a',{href:shown.link, target:'_blank', rel:'noopener'}, 'Open article ↗')));
+  }
+  const airId=buzzAirKey(shown.kind==='sheet'?{id:orig.item&&orig.item.id, title:orig.title}:shown);
+  if(shown.kind==='sheet' && orig.item && orig.item.id) (window.__airUsed||(window.__airUsed=new Set())).add(orig.item.id);
+  if(shown.id) (window.__airUsed||(window.__airUsed=new Set())).add(shown.id);
+  const airBody=shown.kind==='sheet' ? (orig.lines||[]).join('\n') : buzzAirBody(shown);
+  card.append(h('div',{className:'airsec'}, airBtn(airId, tcase(shown.title||orig.title||''), 'buzz', true, airBody)));
+  return card;
+}
+function renderBuzzLocal(c, txt){ renderBuzz(c, txt); }
+function renderBuzz(c, txt){
+  const parts=buzzParse(txt);
+  const locals=buzzOrigLocals();
+  const byTitle=new Map(locals.map(s=>[normT(s.title), s]));
+  const used=new Set();
+  const renderPart=(p)=>{
+    if(buzzSecLocal(p.name) || (!p.name && locals.some(s=>!s.section))){
+      if(p.name) c.append(h('div',{className:'subhead'}, '━━ '+p.name+' ━━'));
+      const list=(p.stories&&p.stories.length)?p.stories: [];
+      for(const s of list){
+        const orig=byTitle.get(normT(s.title)) || locals.find(x=>!used.has(x.slot) && buzzOverlap(x.title,s.title));
+        if(orig && !used.has(orig.slot)){ used.add(orig.slot); c.append(buzzCard(orig)); }
+        else {
+          const fallback={slot:'h'+fnv(normT(s.title)||s.title), item:null, title:s.title, lines:s.lines||[], section:p.name||'LOCAL', orig:true};
+          c.append(buzzCard(fallback));
+        }
+      }
+      // any named-local orig that didn't appear in this part (shouldn't happen)
+      return;
+    }
+    const t=p.lines.join('\n'); if(!t.trim()) return;
+    if(buzzSecClosed(p.name)){
+      const body=p.lines[0] && /^\s*━+/.test(p.lines[0]) ? p.lines.slice(1).join('\n').trim() : t.trim();
+      const n=(p.stories||[]).length;
+      const d=document.createElement('details'); d.className='natfold';
+      const sm=document.createElement('summary'); sm.textContent='National stories'+(n?' ('+n+')':'')+' · tap to show'; d.append(sm);
+      d.addEventListener('toggle',()=>{ sm.textContent='National stories'+(n?' ('+n+')':'')+(d.open?'':' · tap to show'); });
+      const inner=document.createElement('div'); if(body) richLines(inner, body); d.append(inner); c.append(d);
+    } else {
+      const div=document.createElement('div'); richLines(div, t.replace(/^\n+|\n+$/g,'')); c.append(div);
+    }
+  };
+  if(!parts.length){ richLines(c, txt); return; }
+  // If there is no LOCAL divider, render unmatched local-looking stories as cards in place
+  const hasLocal=parts.some(p=>buzzSecLocal(p.name));
+  if(!hasLocal){
+    for(const p of parts){
+      if(buzzSecOther(p.name) || buzzSecClosed(p.name)){ renderPart(p); continue; }
+      const buf=[];
+      const flush=()=>{ if(!buf.length) return; const div=document.createElement('div'); richLines(div, buf.join('\n')); c.append(div); buf.length=0; };
+      // walk original lines, swap local stories for cards
+      let i=0; const lines=p.lines;
+      while(i<lines.length){
+        const l=lines[i];
+        const st=l.match(/^\s*\d+\)\s+(.+)$/);
+        const head=st ? st[1].replace(/\s*🔊\s*$/u,'').trim() : ((i===0 || !String(lines[i-1]).trim()) && isStoryHead(l, i?lines[i-1]:'') ? l.trim() : '');
+        const orig=head ? byTitle.get(normT(head)) : null;
+        if(orig){ flush(); let j=i+1; while(j<lines.length && String(lines[j]).trim() && !isStoryHead(lines[j], lines[j-1]) && !/^\s*\d+\)\s/.test(lines[j]) && !/^\s*━+/.test(lines[j])) j++;
+          used.add(orig.slot); c.append(buzzCard(orig)); i=j; continue; }
+        buf.push(l); i++;
+      }
+      flush();
+    }
+    return;
+  }
+  for(const p of parts) renderPart(p);
+}
+
 const tcase=t=> t===t.toUpperCase() && /[A-Z]/.test(t) ? t.toLowerCase().replace(/(^|[\s(“"'/-])([a-z])/g,(a,b,c)=>b+c.toUpperCase()).replace(/\b(Atc|Faa|Gta|Spacex|Apec|Irgc|Nfl|Nba|Nhl|Mlb|Ncaa|Msu|Um|Tv|Us|U\.s\.)\b/g,w=>({Spacex:'SpaceX',Atc:'ATC',Faa:'FAA',Gta:'GTA',Apec:'APEC',Irgc:'IRGC',Nfl:'NFL',Nba:'NBA',Nhl:'NHL',Mlb:'MLB',Ncaa:'NCAA',Msu:'MSU',Um:'UM',Tv:'TV',Us:'US','U.s.':'U.S.'})[w]||w) : t;
 const NCOLS=[
   {id:'local', icon:'📍', label:'Local', cls:'nc-local'},
@@ -2453,7 +2659,7 @@ function renderView(){
   else {
     const txt=cleanText(v.content).trim();
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
-    if(txt && item.key==='buzz' && /^\s*━+\s*NATIONAL\s*━+\s*$/m.test(txt)) renderBuzzLocal(c, txt);
+    if(txt && item.key==='buzz' && typeof renderBuzz==='function') renderBuzz(c, txt);
     else if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
     view.append(c);
   }
@@ -2816,6 +3022,7 @@ function syncSnap(){ const m={};
   for(const [d,r] of Object.entries((typeof holds!=='undefined'&&holds)||{})) for(const [id,o] of Object.entries(r||{})) m['hd:'+d+':'+id]=o;
   for(const [id,o] of Object.entries((typeof gvOv!=='undefined'&&gvOv&&gvOv.items)||{})) m['gv:'+id]=o;
   for(const [d,r] of Object.entries((typeof songPicks!=='undefined'&&songPicks)||{})) for(const [id,o] of Object.entries(r||{})) m['sk:'+d+':'+id]=o;
+  for(const [d,r] of Object.entries((typeof buzzRemix!=='undefined'&&buzzRemix)||{})) for(const [id,o] of Object.entries(r||{})) m['bx:'+d+':'+id]=o;
   return m; }
 function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=key.indexOf(':'); const kind=key.slice(0,i), rest=key.slice(i+1);
   const two=()=>{ const j=rest.indexOf(':'); return [rest.slice(0,j), rest.slice(j+1)]; };
@@ -2832,7 +3039,8 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='sv'){ if(del) delete savedMap[rest]; else savedMap[rest]=val; }
   else if(kind==='hd'){ const [d,id]=two(); holds[d]=holds[d]||{}; if(del) delete holds[d][id]; else holds[d][id]=val; if(!Object.keys(holds[d]).length) delete holds[d]; }
   else if(kind==='gv'){ gvOv=gvOv||{items:{}}; gvOv.items=gvOv.items||{}; if(del) delete gvOv.items[rest]; else gvOv.items[rest]=val; }
-  else if(kind==='sk'){ const [d,id]=two(); songPicks=songPicks||{}; songPicks[d]=songPicks[d]||{}; if(del) delete songPicks[d][id]; else songPicks[d][id]=val; if(!Object.keys(songPicks[d]).length) delete songPicks[d]; } }
+  else if(kind==='sk'){ const [d,id]=two(); songPicks=songPicks||{}; songPicks[d]=songPicks[d]||{}; if(del) delete songPicks[d][id]; else songPicks[d][id]=val; if(!Object.keys(songPicks[d]).length) delete songPicks[d]; }
+  else if(kind==='bx'){ const [d,id]=two(); buzzRemix=buzzRemix||{}; buzzRemix[d]=buzzRemix[d]||{}; if(del) delete buzzRemix[d][id]; else buzzRemix[d][id]=val; if(!Object.keys(buzzRemix[d]).length) delete buzzRemix[d]; } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
   for(const k of new Set([...Object.keys(snap), ...Object.keys(last)])){ const cur=k in snap ? JSON.stringify(snap[k]) : '"~"';
     if(cur!==(last[k]||'"~"')){ st[k]=now; last[k]=cur; } }
@@ -2846,7 +3054,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -2857,12 +3065,12 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); }
+    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
     syncCfg.lastOk=Date.now(); syncCfg.err=''; lsSet('hs:sync', syncCfg);
-    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips'||state.tab==='cross'||state.tab==='vibe'||state.tab==='mood'||state.tab==='flash') rerender(); }
+    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips'||state.tab==='cross'||state.tab==='vibe'||state.tab==='mood'||state.tab==='flash'||state.tab==='buzz') rerender(); }
   }catch(e){ syncCfg.err=String(e.message||e); lsSet('hs:sync', syncCfg); }
   syncBusy=false; renderSyncState(); if(syncAgain){ syncAgain=false; syncNow(); } }
 window.__hsSyncSoon=()=>{ if(!syncCfg) return; syncMark(); clearTimeout(syncT); syncT=setTimeout(syncNow, 1500); };
@@ -3275,7 +3483,7 @@ function airGo(e){ const k=e.key;
     if(!el && k.startsWith('ln:')) el=document.querySelector('#view .lnc');
     if(!el) return; const card=el.closest('.ncard'); if(card && !card.classList.contains('open')){ const hd=card.querySelector('.nhd'); if(hd) hd.click(); }
     if(k.startsWith('n:')){ const col=el.closest('.ncol'); if(col && col.id) showNewsCol(col.id.replace('ncol-',''), false); }
-    el.scrollIntoView({block:'center', behavior:'smooth'}); const t=el.closest('.ncard,.clc,.lnc')||el; t.classList.add('airflash'); setTimeout(()=>t.classList.remove('airflash'),1800); }, 60); }
+    el.scrollIntoView({block:'center', behavior:'smooth'}); const t=el.closest('.ncard,.clc,.lnc,.buzzcard')||el; t.classList.add('airflash'); setTimeout(()=>t.classList.remove('airflash'),1800); }, 60); }
 // last half hour (9:30–10:00 ET, show days): bring the wrap up once
 function wrapAutoCheck(){ const p=etParts(); if(!isShowDay(p) || p.hm<'09:30' || p.hm>='10:00') return;
   if(LS.getItem('hs:wrapAuto')===p.date) return;
@@ -3604,7 +3812,13 @@ function storyItem(sec, title, n){ const its=sheetItems(sec); if(!its.length) re
   return null; }
 function storyItemAny(title){ const nt=normT(title); if(!state.sheet) return null;
   for(const [k,v] of Object.entries(state.sheet)){ if(!v || !Array.isArray(v.items)) continue; const m=v.items.find(x=>x && x.id && normT(x.title)===nt); if(m) return {...m, sec:k}; } return null; }
-function findItemById(id){ if(!state.sheet) return null; for(const [k,v] of Object.entries(state.sheet)){ if(!v || !Array.isArray(v.items)) continue; const m=v.items.find(x=>x && String(x.id)===id); if(m) return {...m, sec:k}; } return null; }
+function findItemById(id){ if(!id) return null;
+  if(state.sheet){ for(const [k,v] of Object.entries(state.sheet)){ if(!v || !Array.isArray(v.items)) continue; const m=v.items.find(x=>x && String(x.id)===id); if(m) return {...m, sec:k}; }
+    const bench=(state.sheet.buzz && Array.isArray(state.sheet.buzz.localBench)) ? state.sheet.buzz.localBench : [];
+    const b=bench.find(x=>x && String(x.id)===String(id)); if(b) return Object.assign({}, b, {sec:'buzz'}); }
+  if(typeof buzzTickerLocals==='function'){ const t=buzzTickerLocals().find(x=>x && String(x.id)===String(id)); if(t) return {id:t.id, title:t.title, source:t.source, link:t.link, recap:'', sec:'buzz'}; }
+  if(typeof buzzRemix==='object' && buzzRemix){ for(const r of Object.values(buzzRemix)){ for(const st of Object.values(r||{})){ if(st && String(st.id)===String(id)) return Object.assign({}, st, {sec:'buzz'}); } } }
+  return null; }
 function summarize(t){ t=cleanText(String(t||'')); if(!t.trim()) return '';
   const rl=t.match(/(?:^|\n)\s*(?:➜\s*)?RECAP:\s*(.+)/i); if(rl) return clip180(rl[1]);
   const lines=t.split('\n').map(l=>l.trim()).filter(l=>l && !/^➜\s*(TAKE|BAIT|WHY)\b/i.test(l) && !/^🔊|^(IN|OUT)\s*:/i.test(l) && !/^~?\d+\s*s\b/.test(l))
