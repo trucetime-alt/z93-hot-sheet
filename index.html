@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v45-saved-holds">
+<meta name="hs-build" content="v46-article-links">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -119,6 +119,14 @@ details.clarch{margin:14px 0 8px;border:1px solid var(--line);border-radius:12px
 details.clarch>summary{font-weight:800;cursor:pointer;list-style:none}
 details.clarch>summary::-webkit-details-marker{display:none}
 .clc .cheld{display:inline-block;margin:0 6px 0 0;padding:2px 7px;border-radius:999px;font-size:.72em;font-weight:800;letter-spacing:.02em;background:#3a3206;color:#ffe27a;border:1px solid #ffd23f}
+.artrow{margin:8px 0 4px;font-weight:800;line-height:1.35}
+.artlink{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.artrow.nolink{font-weight:600}
+.nolink{display:inline-block;font-size:.72em;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:2px 7px;vertical-align:middle}
+.nolinkwhy{color:var(--dim);font-size:.85em;font-weight:600}
+.jokeline{margin:6px 0 2px;font-size:.95em;line-height:1.4}
+.jokeline b{color:var(--accent)}
+.buzzbody,.bitcard .buzzbody,.sabout{white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere}
 details.clarch .clgh{margin-top:10px}
 .nsug{margin:10px 0 16px;padding:8px 0 4px;border-bottom:1px solid var(--line)}
 .nsugh,.mvh{font-size:1.02em;margin:10px 0 6px}
@@ -1007,6 +1015,230 @@ function richLines(el, text){
 }
 function isStoryHead(ln, prev){ const t=String(ln||'').trim(); if(t.length<6 || /^[•➜━]/.test(t)) return false; if(prev!=null && String(prev).trim()) return false;
   const L=t.replace(/[^A-Za-z]/g,''); return L.length>=5 && L.replace(/[^A-Z]/g,'').length/L.length>=0.8; }
+/* --- v46: article links, full descriptions, jokes on every story/bit card --- */
+function firstHttpUrl(text){
+  const m=String(text||'').match(/https?:\/\/[^\s<>"'\)\]]+/i);
+  if(!m) return '';
+  return m[0].replace(/[.,);:]+$/,'');
+}
+function sourceLineUrl(text){
+  for(const ln of String(text||'').split(/\n/)){
+    const s=ln.trim();
+    const m=s.match(/^(?:SOURCE|Source|source)\s*[:\-–]\s*(.+)$/);
+    if(!m) continue;
+    return firstHttpUrl(m[1]) || (/^https?:\/\//i.test(m[1].trim()) ? m[1].trim() : '');
+  }
+  return firstHttpUrl(String(text||'').split(/\n/).filter(l=>/\bSOURCE\b/i.test(l)).join('\n'));
+}
+function hasArticleField(o){ return !!(o && Object.prototype.hasOwnProperty.call(o,'article_url')); }
+function sectionCard(sec){ return (state.sheet && sec && state.sheet[sec]) || null; }
+function jokeSecsSkip(){ return {mental:1, weather:1, fb:1}; }
+function notesEntries(sec){
+  const notes=cleanText(((sectionCard(sec)||{}).notes)||'');
+  const out=[];
+  notes.split(/\n/).forEach(ln=>{
+    const raw=ln.trim(); if(!raw) return;
+    const n=(raw.match(/^\s*(\d+)\)/)||raw.match(/^\s*(?:buzz|lifestyle|story|item)\s*(\d+)\s*:/i)||[])[1];
+    out.push({raw, url:firstHttpUrl(raw), n:n?+n:null});
+  });
+  return out;
+}
+function notesMatch(sec, title, index, total){
+  const ents=notesEntries(sec);
+  if(!ents.length) return null;
+  const nt=normT(title||'');
+  const byTitle=ents.find(e=>{
+    if(!nt) return false;
+    const r=normT(e.raw);
+    if(r.includes(nt) || (nt.length>=8 && r.includes(nt.slice(0,12)))) return true;
+    const lab=(e.raw.match(/^\s*([^:]{2,40}):/)||[])[1];
+    if(lab){ const nl=normT(lab); if(nl && (nt===nl || nt.startsWith(nl+' ') || nt.includes(' '+nl+' ') || nt.startsWith(nl)|| nl.startsWith(nt.split(' ')[0]||'xxxx'))) return true; }
+    const words=nt.split(' ').filter(w=>w.length>3);
+    return words.length>=2 && words.filter(w=>r.includes(w)).length>=2;
+  });
+  if(byTitle) return byTitle;
+  const byN=ents.find(e=>e.n===index+1);
+  if(byN) return byN;
+  if(total===1 && ents.some(e=>e.url)) return ents.find(e=>e.url);
+  return null;
+}
+function noLinkReason(it, sec, title, index, total){
+  const keys=['no_link_reason','link_notes','link_note','noLink','reason'];
+  for(const k of keys){ const v=it && typeof it[k]==='string' ? it[k].trim() : ''; if(v) return v; }
+  if(it && typeof it.notes==='string' && it.notes.trim()) return it.notes.trim();
+  const hit=notesMatch(sec, title, index, total);
+  if(hit && hit.raw){
+    return hit.raw.replace(/https?:\/\/\S+/ig,'').replace(/^\s*\d+\)\s*/,'').replace(/^\s*(?:buzz|lifestyle|story|item)\s*\d+\s*:\s*/i,'').replace(/\s+/g,' ').trim();
+  }
+  return '';
+}
+function storyArticle(opts){
+  opts=opts||{};
+  const it=opts.item||null, sec=opts.sec, title=opts.title||'', index=opts.index||0, total=opts.total||1;
+  const card=opts.card || sectionCard(sec);
+  const blob=[opts.text, title, (opts.lines||[]).join('\n')].filter(Boolean).join('\n');
+  let url='', ttl='', explicit=false;
+  if(hasArticleField(it)){ url=String(it.article_url||'').trim(); ttl=String(it.article_title||'').trim(); explicit=true; }
+  else if(index===0 && hasArticleField(card)){ url=String(card.article_url||'').trim(); ttl=String(card.article_title||'').trim(); explicit=true; }
+  else {
+    url=firstHttpUrl(blob) || sourceLineUrl(blob) || '';
+    if(!url){ const hit=notesMatch(sec, title, index, total); if(hit && hit.url) url=hit.url; }
+  }
+  if(!url) return {url:'', title:'', reason:noLinkReason(it, sec, title, index, total), explicit};
+  if(!ttl){ try{ ttl=new URL(url).hostname.replace(/^www\./,''); }catch(e){ ttl=''; } }
+  return {url, title:ttl, reason:'', explicit};
+}
+function collectJokes(it, card, index, text){
+  const out=[];
+  const add=s=>{ const t=String(s||'').replace(/^(?:😂+\s*)?(?:JOKES?\s*[:\-–]\s*)?/i,'').replace(/^😂+\s*/,'').trim(); if(t && !out.some(x=>normT(x)===normT(t))) out.push(t); };
+  const from=v=>{ if(Array.isArray(v)) v.forEach(add); else if(typeof v==='string' && v.trim()) add(v); };
+  if(it && it.jokes!=null) from(it.jokes);
+  else if(index===0 && card && card.jokes!=null) from(card.jokes);
+  String(text||'').split(/\n/).forEach(ln=>{
+    const s=ln.trim();
+    if(/^😂/.test(s) || /^JOKES?\b/i.test(s)) add(s);
+  });
+  return out;
+}
+function stripJokeLines(text){
+  const lines=String(text||'').split('\n'); const out=[]; let skip=false;
+  for(const ln of lines){
+    const s=ln.trim();
+    if(/^(?:😂+\s*)?JOKES?\s*:/i.test(s) || /^😂\s*JOKES?\s*:/i.test(s)){ skip=true; continue; }
+    if(/^😂/.test(s) || /^JOKES?\b/i.test(s)){ skip=true; continue; }
+    if(skip){
+      if(!s){ skip=false; continue; }
+      if(/^[•\-–😂]/.test(s) || /^JOKES?\b/i.test(s)) continue;
+      skip=false;
+    }
+    out.push(ln);
+  }
+  return out.join('\n').replace(/\n{3,}/g,'\n\n').trim();
+}
+function articleRow(art){
+  if(art && art.url){
+    const label=art.title ? ('Read article · '+art.title) : 'Read article';
+    return h('div',{className:'artrow', 'data-article':'1'}, h('a',{className:'artlink', href:art.url, target:'_blank', rel:'noopener'}, label));
+  }
+  const row=h('div',{className:'artrow nolink', 'data-article':'0'}, h('span',{className:'nolink'}, 'no link'));
+  if(art && art.reason) row.append(h('span',{className:'nolinkwhy'}, ' · '+art.reason));
+  return row;
+}
+function jokesRow(jokes){
+  if(!jokes || !jokes.length) return null;
+  const row=h('div',{className:'jokeline', 'data-jokes':'1'}, h('b',{}, 'Jokes'), ': ');
+  jokes.forEach((j,i)=>{ if(i) row.append(document.createTextNode(' · ')); row.append(document.createTextNode(j)); });
+  return row;
+}
+function appendArticleAndJokes(card, opts){
+  opts=opts||{};
+  const sec=opts.sec||'';
+  const art=storyArticle(opts);
+  card.append(articleRow(art));
+  if(!jokeSecsSkip()[sec]){
+    const jk=jokesRow(opts.jokes || collectJokes(opts.item, opts.card||sectionCard(sec), opts.index||0, opts.text||(opts.lines||[]).join('\n')));
+    if(jk) card.append(jk);
+  }
+  return art;
+}
+function parseBits(sec, txt){
+  const text=cleanText(txt||'').trim();
+  const its=(typeof sheetItems==='function'?sheetItems(sec):[])||[];
+  const hits=[];
+  its.forEach((it,i)=>{
+    const title=String(it.title||'').trim(); if(!title) return;
+    const re=new RegExp('(?:^|\n)([^\n]*'+title.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'[^\n]*)','i');
+    const m=re.exec(text);
+    let at=-1, head=title;
+    if(m){ at=m.index+(m[0].charAt(0)==='\n'?1:0); head=m[1]; }
+    else {
+      const lines=text.split('\n');
+      const nt=normT(title); const words=nt.split(' ').filter(w=>w.length>3);
+      for(let li=0; li<lines.length; li++){
+        const L=normT(lines[li]);
+        if(L.includes(nt) || (nt.length>=8 && L.includes(nt.slice(0,12))) || (words.length>=2 && words.filter(w=>L.includes(w)).length>=2)){
+          at=lines.slice(0,li).join('\n').length+(li?1:0); head=lines[li]; break;
+        }
+      }
+    }
+    hits.push({it, title, at, head, i});
+  });
+  const found=hits.filter(x=>x.at>=0).sort((a,b)=>a.at-b.at || a.i-b.i);
+  if(found.length){
+    const used=new Set(found.map(x=>x.it));
+    const bits=found.map((h,i,arr)=>{
+      const end=i+1<arr.length?arr[i+1].at:text.length;
+      const chunk=text.slice(h.at,end).trim();
+      const lines=chunk.split('\n');
+      return {title:h.title, lines:lines.slice(1), item:h.it};
+    });
+    hits.filter(x=>x.at<0).forEach(h=>{
+      const extra=[h.it.body||h.it.recap||h.it.desc||''].filter(Boolean);
+      bits.push({title:h.title, lines:extra, item:h.it});
+    });
+    return bits;
+  }
+  if(sec==='events' && text){
+    const lines=text.split('\n').map(s=>s.trim()).filter(Boolean);
+    return lines.map((l,i)=>({title:l, lines:[], item:its[i]||null}));
+  }
+  const stories=[];
+  if(typeof buzzParse==='function'){
+    (buzzParse(text)||[]).forEach(p=> (p.stories||[]).forEach(s=>stories.push(s)));
+  }
+  if(stories.length){
+    return stories.map((s,i)=>{
+      const nt=normT(s.title);
+      const it=its.find(x=>normT(x.title)===nt || nt.startsWith(normT(x.title)) || normT(x.title).startsWith(nt)) || (its.length===stories.length?its[i]:null);
+      return {title:s.title, lines:s.lines||[], item:it||null};
+    });
+  }
+  if(its.length && !text) return its.map(it=>({title:it.title||'', lines:[it.body||it.recap||it.desc||''].filter(Boolean), item:it}));
+  if(text) return [{title:(its[0]&&its[0].title)||'', lines:text.split('\n'), item:its[0]||null}];
+  return [];
+}
+function bitCard(opts){
+  const sec=opts.sec||'', index=opts.index||0, total=opts.total||1;
+  const item=opts.item||null;
+  const rawLines=opts.lines||[];
+  const rawText=rawLines.join('\n');
+  const jokes=jokeSecsSkip()[sec]?[]:collectJokes(item, sectionCard(sec), index, rawText);
+  const bodyTxt=stripJokeLines(rawText);
+  const card=h('article',{className:'buzzcard bitcard', 'data-bit-sec':sec, 'data-bit-index':String(index)});
+  if(opts.title) card.append(h('div',{className:'headline buzzhd'}, tcase(opts.title)));
+  if(bodyTxt){ const body=h('div',{className:'buzzbody'}); richLines(body, bodyTxt); card.append(body); }
+  appendArticleAndJokes(card, {sec, item, title:opts.title, lines:rawLines, text:rawText, index, total, jokes, card:sectionCard(sec)});
+  const airId=item&&item.id ? 'it:'+item.id : 'h:'+sec+':'+fnv(opts.title||bodyTxt||String(index));
+  if(item&&item.id && window.__airUsed) window.__airUsed.add(item.id);
+  card.append(h('div',{className:'airsec'}, airBtn(airId, tcase(opts.title||'Bit'), sec, true, bodyTxt)));
+  return card;
+}
+function renderBitSec(c, sec, txt){
+  const bits=parseBits(sec, txt);
+  if(!bits.length){ if(txt) richLines(c, txt); return; }
+  bits.forEach((b,i)=> c.append(bitCard({sec, index:i, total:bits.length, title:b.title, lines:b.lines, item:b.item})));
+}
+function isBitSec(sec){ return /^(buzz|vibe|mood|lifestyle|officeschool|events|gta6|mental|cross|offcharts|verse|fb)$/.test(sec||''); }
+function auditSheetLinks(){
+  const secs=['vibe','mood','buzz','gta6','lifestyle','officeschool','mental','flash','cross','events'];
+  const out={total:0, missing:0, cards:[]};
+  secs.forEach(sec=>{
+    const v=(state.sheet||{})[sec]; if(!v) return;
+    let bits=[];
+    if(sec==='flash'){
+      const it=(sheetItems('flash')||[])[0]||null;
+      bits=[{title:(it&&it.title)||v.song||v.title||'Flashback', lines:[cleanText(v.content||v.origin||'')], item:it, card:v}];
+    } else bits=parseBits(sec, cleanText(v.content||''));
+    bits.forEach((b,i)=>{
+      const art=storyArticle({item:b.item, sec, title:b.title, lines:b.lines, text:(b.lines||[]).join('\n'), index:i, total:bits.length, card:v});
+      out.total++;
+      if(!art.url) out.missing++;
+      out.cards.push({sec, title:b.title, url:art.url||'', reason:art.reason||''});
+    });
+  });
+  return out;
+}
+
 function sheetDate(sheet){
   const u = sheet && sheet.weather && sheet.weather.updated;
   const m = u && String(u).match(/^(\d{4}-\d{2}-\d{2})/); return m?m[1]:null;
@@ -1425,26 +1657,31 @@ function storyCard(orig, kind){
   top.append(h('span',{className:'rxinfo'}, remixed ? (shown.source||'Bench backup') : 'On the sheet'));
   card.append(top);
   card.append(h('div',{className:'headline buzzhd'}, tcase(shown.title||orig.title||'')));
-  const bodyTxt=remixed ? (shown.body||shown.recap||shown.desc||'') : (orig.lines||[]).join('\n');
+  const rawBody=remixed ? (shown.body||shown.recap||shown.desc||'') : (orig.lines||[]).join('\n');
+  const bodyTxt=typeof stripJokeLines==='function' ? stripJokeLines(rawBody) : rawBody;
   if(bodyTxt){ const body=h('div',{className:'buzzbody'}); richLines(body, bodyTxt); card.append(body); }
   if(shown.source) card.append(h('div',{className:'buzzsrc'}, h('b',{}, shown.source)));
-  if(shown.link) card.append(h('div',{className:'buzzsrc'}, h('a',{href:shown.link, target:'_blank', rel:'noopener'}, 'Open article ↗')));
+  if(typeof appendArticleAndJokes==='function'){
+    const it=remixed?shown:(orig.item||shown);
+    const merged=Object.assign({}, it||{}, (it && it.article_url==null && shown.link) ? {article_url:shown.link, article_title:(it&&it.article_title)||''} : {});
+    appendArticleAndJokes(card, {sec:kind, item:(typeof hasArticleField==='function'&&hasArticleField(it))?it:merged, title:shown.title||orig.title, lines:orig.lines||[], text:rawBody, index:orig.index||0, total:orig.total||1, card:(state.sheet||{})[kind]});
+  }
   const airId='sx:'+kind+':'+orig.slot+':'+(shown.id||normT(shown.title||orig.title||''));
+
   const host=h('div',{className:'airhost'});
   host.append(airBtn(airId, readable(shown.title||orig.title||'Story'), kind==='lifestyle'?'lifestyle':'news', false, bodyTxt));
   card.append(host);
   return card;
 }
 function renderStorySec(c, kind, txt){
-  const parts=typeof buzzParse==='function' ? buzzParse(txt) : [];
-  const stories=[];
-  for(const p of parts){ for(const s of (p.stories||[])) stories.push(s); }
-  if(!stories.length){ if(txt) richLines(c, txt); return; }
-  stories.forEach((s,i)=>{
-    const orig={slot:kind+':'+(i+1), title:s.title, lines:s.lines||[], item:null};
+  const bits=typeof parseBits==='function' ? parseBits(kind, txt) : [];
+  if(!bits.length){ if(txt) richLines(c, txt); return; }
+  bits.forEach((s,i)=>{
+    const orig={slot:kind+':'+(i+1), title:s.title, lines:s.lines||[], item:s.item||null, index:i, total:bits.length};
     c.append(storyCard(orig, kind));
   });
 }
+
 function renderNewsSuggest(view){
   if(!onAirProfile('courtney')) return;
   const cols=[{id:'local', label:'Local'},{id:'national', label:'National'},{id:'gossip', label:'Entertainment'}];
@@ -2748,7 +2985,7 @@ async function fetchFeed(f){
   try{ const r=await fetch(f.url,{signal:ctl.signal, cache:'no-cache'}); if(!r.ok) throw new Error(r.status);
     const x=new DOMParser().parseFromString(await r.text(),'text/xml');
     return [...x.querySelectorAll('item')].map(it=>{ const g=n=>(it.querySelector(n)||{}).textContent||'';
-      const dd=g('description'); let desc=''; if(dd){ try{ desc=(new DOMParser().parseFromString(dd,'text/html').body.textContent||''); }catch(e){} } desc=desc.replace(/\s+/g,' ').trim(); if(desc.length>240) desc=desc.slice(0,236).replace(/\s\S*$/,'')+'…';
+      const dd=g('description'); let desc=''; if(dd){ try{ desc=(new DOMParser().parseFromString(dd,'text/html').body.textContent||''); }catch(e){} } desc=desc.replace(/\s+/g,' ').trim();
       return {title:g('title').replace(/\s+/g,' ').trim(), link:g('link').trim(), at:Date.parse(g('pubDate'))||0, src:f.name, desc}; })
       .filter(i=>i.title && /^https?:/.test(i.link)).sort((a,b)=>b.at-a.at);
   } finally{ clearTimeout(tm); }
@@ -2801,7 +3038,10 @@ function renderBuzzLocal(c, txt){
       const d=document.createElement('details'); d.className='natfold';
       const sm=document.createElement('summary'); sm.textContent='National stories'+(n?' ('+n+')':'')+' · tap to show'; d.append(sm);
       d.addEventListener('toggle',()=>{ sm.textContent='National stories'+(n?' ('+n+')':'')+(d.open?'':' · tap to show'); });
-      const inner=document.createElement('div'); if(body) richLines(inner, body); d.append(inner); c.append(d);
+      const inner=document.createElement('div');
+      if((p.stories||[]).length && typeof bitCard==='function'){ p.stories.forEach((s,i)=> inner.append(bitCard({sec:'buzz', index:i, total:p.stories.length, title:s.title, lines:s.lines||[], item:null}))); }
+      else if(body) richLines(inner, body);
+      d.append(inner); c.append(d);
     } else { const div=document.createElement('div'); richLines(div, t.replace(/^\n+|\n+$/g,'')); c.append(div); }
   }
 }
@@ -2878,7 +3118,7 @@ function buzzOrigLocals(){
   return pool.map((s,i)=>{
     const it=(typeof storyItem==='function') ? storyItem('buzz', s.title, storyHeads(buzzSheetText()).findIndex(h=>normT(h)===normT(s.title))) : null;
     const id=it&&it.id ? String(it.id) : ('h'+fnv(normT(s.title)||s.title||String(i)));
-    return {slot:id, item:it||null, title:s.title, lines:s.lines||[], section:s.section||'LOCAL', orig:true};
+    return {slot:id, item:it||null, title:s.title, lines:s.lines||[], section:s.section||'LOCAL', orig:true, index:i, total:pool.length};
   });
 }
 function buzzWords(t){ return new Set(String(t||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').split(/\s+/).filter(w=>w.length>3)); }
@@ -2920,9 +3160,9 @@ function buzzResolve(slot, orig){
   if(st.kind==='bench'){
     const live=buzzBench().find(x=>String(x.id)===String(st.id));
     const it=live||st;
-    return {kind:'bench', id:it.id, title:it.title, lines:(it.lines||[]), body:it.body, take:it.take, bait:it.bait, source:it.source, recap:it.recap, link:it.link||it.url, slot};
+    return {kind:'bench', id:it.id, title:it.title, lines:(it.lines||[]), body:it.body, take:it.take, bait:it.bait, source:it.source, recap:it.recap, link:it.link||it.url||it.article_url, article_url:it.article_url, article_title:it.article_title||'', jokes:it.jokes, slot};
   }
-  return {kind:st.kind||'ticker', id:st.id, title:st.title, source:st.source, link:st.link||st.url, recap:st.recap||'', desc:st.desc||'', slot};
+  return {kind:st.kind||'ticker', id:st.id, title:st.title, source:st.source, link:st.link||st.url||st.article_url, recap:st.recap||'', desc:st.desc||'', article_url:st.article_url, article_title:st.article_title||'', jokes:st.jokes, slot};
 }
 function buzzNext(slot, orig){
   if(window.__hsEmptyBuzzBackups) return null;
@@ -2940,7 +3180,7 @@ function buzzRemixTo(slot, orig, pick){
   const prev=bzDay()[slot]||{seen:[]};
   const seen=[...new Set([...(prev.seen||[]), String(pick.it.id)])];
   const it=pick.it;
-  const st={id:String(it.id), kind:pick.kind, title:it.title||'', source:it.source||'', link:it.link||it.url||'', recap:it.recap||'', desc:it.desc||'', body:it.body||'', take:it.take||'', bait:it.bait||'', seen};
+  const st={id:String(it.id), kind:pick.kind, title:it.title||'', source:it.source||'', link:it.link||it.url||it.article_url||'', recap:it.recap||'', desc:it.desc||'', body:it.body||'', take:it.take||'', bait:it.bait||'', article_url:it.article_url, article_title:it.article_title||'', jokes:it.jokes, seen};
   bzDay()[slot]=st; bzSave();
   rerender();
   toast('🔀 Remixed: '+tcase(it.title||'story'), ()=>buzzRemixBack(slot));
@@ -2969,25 +3209,31 @@ function buzzCard(orig){
   card.append(top);
   const head=h('div',{className:'headline buzzhd'}, tcase(shown.title||orig.title||''));
   card.append(head);
+  const it=shown.kind==='sheet' ? (orig.item||null) : shown;
+  let rawBody=shown.kind==='ticker' ? (shown.desc||shown.recap||'') : (shown.kind==='bench' ? buzzFormatItem(shown) : (orig.lines||[]).join('\n'));
+  const bodyTxt=typeof stripJokeLines==='function' ? stripJokeLines(rawBody) : rawBody;
   if(shown.kind==='ticker'){
     const src=h('div',{className:'buzzsrc'});
     if(shown.source) src.append(h('b',{}, shown.source));
-    if(shown.link){ if(shown.source) src.append(document.createTextNode(' · ')); src.append(h('a',{href:shown.link, target:'_blank', rel:'noopener'}, 'Open article ↗')); }
     card.append(src);
-    card.append(h('p',{className:'buzznote'}, 'From the local ticker · no extra write-up on this backup.'));
+    if(bodyTxt) card.append(h('div',{className:'buzzbody'}, bodyTxt));
+    else card.append(h('p',{className:'buzznote'}, 'From the local ticker · no extra write-up on this backup.'));
   } else {
-    const bodyTxt=shown.kind==='bench' ? buzzFormatItem(shown) : (orig.lines||[]).join('\n');
     if(bodyTxt){ const body=h('div',{className:'buzzbody'}); richLines(body, bodyTxt); card.append(body); }
     if(shown.source) card.append(h('div',{className:'buzzsrc'}, h('b',{}, shown.source)));
-    if(shown.link) card.append(h('div',{className:'buzzsrc'}, h('a',{href:shown.link, target:'_blank', rel:'noopener'}, 'Open article ↗')));
+  }
+  if(typeof appendArticleAndJokes==='function'){
+    const merged=Object.assign({}, it||{}, (it && it.article_url==null && shown.link) ? {article_url:shown.link, article_title:(it&&it.article_title)||shown.article_title||''} : {});
+    appendArticleAndJokes(card, {sec:'buzz', item:(typeof hasArticleField==='function'&&hasArticleField(it))?it:merged, title:shown.title||orig.title, lines:orig.lines||[], text:rawBody, index:orig.index||0, total:orig.total||1, card:(state.sheet||{}).buzz});
   }
   const airId=buzzAirKey(shown.kind==='sheet'?{id:orig.item&&orig.item.id, title:orig.title}:shown);
   if(shown.kind==='sheet' && orig.item && orig.item.id) (window.__airUsed||(window.__airUsed=new Set())).add(orig.item.id);
   if(shown.id) (window.__airUsed||(window.__airUsed=new Set())).add(shown.id);
-  const airBody=shown.kind==='sheet' ? (orig.lines||[]).join('\n') : buzzAirBody(shown);
+  const airBody=shown.kind==='sheet' ? bodyTxt : buzzAirBody(shown);
   card.append(h('div',{className:'airsec'}, airBtn(airId, tcase(shown.title||orig.title||''), 'buzz', true, airBody)));
   return card;
 }
+
 function renderBuzzLocal(c, txt){ renderBuzz(c, txt); }
 function renderBuzz(c, txt){
   const parts=buzzParse(txt);
@@ -3102,9 +3348,14 @@ function newsCard(it){
     h('span',{className:'tt'}, it.title, it.pick?h('span',{className:'npill'},'Show pick'):null),
     h('span',{className:'sr'}, h('b',{}, srcLine), when?h('span',{}, '· '+when):null, it.live? h('span',{className:'live'}, '● live') : null));
   btn.onclick=()=>{ tapHaptic(); const o=body.hidden; body.hidden=!o; card.classList.toggle('open',o); btn.setAttribute('aria-expanded',String(o)); };
-  if(it.link){ if(it.desc) body.append(h('div',{}, it.desc)); body.append(h('a',{className:'nopen', href:it.link, target:'_blank', rel:'noopener'}, 'Open article ↗')); }
-  else if(it.lines && it.lines.length){ const c=h('div',{className:'content'}); richLines(c, it.lines.join('\n')); body.append(c); }
-  else body.append(h('div',{className:'nempty'}, 'Bit from today\'s sheet.'));
+  if(it.desc) body.append(h('div',{className:'buzzbody'}, it.desc));
+  if(it.lines && it.lines.length){ const c=h('div',{className:'content'}); richLines(c, typeof stripJokeLines==='function'?stripJokeLines(it.lines.join('\n')):it.lines.join('\n')); body.append(c); }
+  else if(!it.desc && !it.link) body.append(h('div',{className:'nempty'}, 'Bit from today\'s sheet.'));
+  if(typeof appendArticleAndJokes==='function'){
+    const newsIt=Object.assign({}, it, it.article_url==null && it.link ? {article_url:it.link, article_title:it.article_title||it.title||''} : {});
+    appendArticleAndJokes(card, {sec:'news', item:it.article_url!=null?it:newsIt, title:it.title, text:(it.desc||'')+'\n'+(it.lines||[]).join('\n'), index:0, total:1});
+  } else if(it.link){ body.append(h('a',{className:'nopen', href:it.link, target:'_blank', rel:'noopener'}, 'Read article')); }
+
   let cm=null; try{ if(typeof storyClipFor==='function' && it.title) cm=storyClipFor([it.title, ...(it.lines||[]), it.desc||'', it.link||'']); }catch(e){}
   const nrow=h('div',{className:'nclip'}, cm?inlineClipBtn(cm):null, (()=>{ const si=storyItemAny(it.title); return airBtn(si?'it:'+si.id:'n:'+fnv(it.title), it.title, si?si.sec:'news', true, (it.lines||[]).join('\n')||it.desc||''); })()); if(cm) card.classList.add('hasclip');
   card.append(btn, nrow, body);
@@ -3204,6 +3455,7 @@ function renderView(){
     const c=document.createElement('div'); c.className='content'+(txt?'':' empty');
     if(txt && item.key==='buzz' && typeof renderBuzz==='function') renderBuzz(c, txt);
     else if(txt && item.key==='lifestyle' && typeof renderStorySec==='function' && typeof onAirProfile==='function' && onAirProfile('courtney')) renderStorySec(c, 'lifestyle', txt);
+    else if(txt && typeof renderBitSec==='function' && typeof isBitSec==='function' && isBitSec(item.key)) renderBitSec(c, item.key, txt);
     else if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
     view.append(c);
   }
@@ -4616,7 +4868,7 @@ async function lookupSong(title, artist){
       if(!r.ok) continue;
       const j=await r.json();
       if(j.type==='disambiguation' || !j.extract) continue;
-      if(!out.about){ const parts=String(j.extract).split(/(?<=[.!?])\s+/); out.about=parts.slice(0,2).join(' '); if(out.about.length>320) out.about=out.about.slice(0,317).replace(/\s+\S*$/,'')+'…'; }
+      if(!out.about){ out.about=String(j.extract||'').trim(); }
       let wikiUrl='';
       if(j.content_urls && j.content_urls.desktop && j.content_urls.desktop.page) wikiUrl=j.content_urls.desktop.page;
       else if(j.title) wikiUrl='https://en.wikipedia.org/wiki/'+encodeURIComponent(j.title.replace(/ /g,'_'));
@@ -4804,6 +5056,11 @@ function fbCard(f){
   if(f.records.length){ const ul=mk('ul',{className:'fbrec'}); f.records.forEach(r=>ul.append(mk('li',{},'📈 '+r))); c.append(ul); }
   if(f.songStory){ const box=mk('div',{className:'sstory'}); box.append(mk('div',{className:'sstorylab'},'Song story')); const p=mk('p',{}, f.songStory+(f.songStorySrc||f.songStorySrcName?' ':'')); if(f.songStorySrc) p.append(mk('a',{href:f.songStorySrc, target:'_blank', rel:'noopener'}, f.songStorySrcName||'Source')); else if(f.songStorySrcName) p.append(mk('span',{className:'sstorysrc'}, f.songStorySrcName)); box.append(p); c.append(box); }
   if(f.origin && !(f.songStory && f.origin.replace(/\s+/g,' ').trim().toLowerCase()===f.songStory.replace(/\s+/g,' ').trim().toLowerCase()) && !fbBlankStory(f.origin)) c.append(mk('p',{className:'fbo'}, f.origin));
+  if(typeof appendArticleAndJokes==='function'){
+    const S=state.sheet && state.sheet.flash;
+    const it=(typeof sheetItems==='function' && (sheetItems('flash')[0]||null)) || S || {};
+    appendArticleAndJokes(c, {sec:'flash', item:it, title:f.head||it.title||'', text:(f.origin||f.songStory||f.body||'')+'\n'+cleanText((S&&S.notes)||''), index:0, total:1, card:S});
+  }
   c.append(mk('div',{className:'airsec'}, (typeof songAirBtn==='function' && typeof songPick==='function' && songPick('flash')) ? songAirBtn('flash', songPick('flash')) : airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', false, f.body)));
   return c; }
 function sheetItems(sec){ const S=state.sheet && state.sheet[sec]; return (S && Array.isArray(S.items)) ? S.items.filter(x=>x && x.id) : []; }
@@ -4877,7 +5134,7 @@ if(typeof migrateShiftBuckets==='function'){ migrateShiftBuckets(); if(typeof ls
 if(typeof tick==='function') tick();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadSchedules(); loadMovies(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
