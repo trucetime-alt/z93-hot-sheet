@@ -1,584 +1,584 @@
 {
- "weather": {
-  "temp": "39°",
-  "cond": "Clear",
-  "advisory": "No advisories",
-  "traffic": "Dry roads; Beitner Bridge still closed",
-  "high": "55°",
-  "low": "40°",
-  "tonight": "Mostly Clear",
-  "updated": "2026-11-17T03:54-05:00",
-  "source": [
-   "https://api.weather.gov/stations/KTVC/observations/latest",
-   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
-   "https://api.weather.gov/alerts/active?zone=MIZ026"
-  ],
-  "advisory_detail": {
-   "active": false
+  "weather": {
+    "temp": "39°",
+    "cond": "Clear",
+    "advisory": "No advisories",
+    "traffic": "Dry roads; Beitner Bridge still closed",
+    "high": "55°",
+    "low": "40°",
+    "tonight": "Mostly Clear",
+    "updated": "2026-11-17T03:54-05:00",
+    "source": [
+      "https://api.weather.gov/stations/KTVC/observations/latest",
+      "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+      "https://api.weather.gov/alerts/active?zone=MIZ026"
+    ],
+    "advisory_detail": {
+      "active": false
+    },
+    "today": "Sunny",
+    "icon": "sunny",
+    "week": [
+      {
+        "day": "Tonight",
+        "date": "2026-11-17",
+        "high": null,
+        "low": 40,
+        "short": "Mostly Clear",
+        "icon": "clear-night",
+        "pop": 0
+      },
+      {
+        "day": "Tue",
+        "date": "2026-11-17",
+        "high": 55,
+        "low": 41,
+        "short": "Sunny",
+        "icon": "sunny",
+        "pop": 1
+      },
+      {
+        "day": "Wed",
+        "date": "2026-11-18",
+        "high": 57,
+        "low": 47,
+        "short": "Mostly Sunny",
+        "icon": "sunny",
+        "pop": 0
+      },
+      {
+        "day": "Thu",
+        "date": "2026-11-19",
+        "high": 60,
+        "low": 43,
+        "short": "Sunny",
+        "icon": "sunny",
+        "pop": 0
+      },
+      {
+        "day": "Fri",
+        "date": "2026-11-20",
+        "high": 59,
+        "low": 48,
+        "short": "Mostly Sunny",
+        "icon": "sunny",
+        "pop": 1
+      },
+      {
+        "day": "Sat",
+        "date": "2026-11-21",
+        "high": 65,
+        "low": 44,
+        "short": "Mostly Sunny then Slight Chance Rain Showers",
+        "icon": "rain",
+        "pop": 17
+      },
+      {
+        "day": "Sun",
+        "date": "2026-11-22",
+        "high": 48,
+        "low": 32,
+        "short": "Rain Showers Likely",
+        "icon": "rain",
+        "pop": 66
+      }
+    ],
+    "wind": "SW 5-10 mph today; gusts to 30 Wed, 35 Wed night",
+    "waves": "Bay 2-3 ft · Lake MI 3-5 ft, Small Craft Advisory through Wed afternoon",
+    "hourly": [
+      {
+        "t": "3 AM",
+        "temp": 43
+      },
+      {
+        "t": "4 AM",
+        "temp": 42
+      },
+      {
+        "t": "5 AM",
+        "temp": 42
+      },
+      {
+        "t": "6 AM",
+        "temp": 41
+      },
+      {
+        "t": "7 AM",
+        "temp": 40
+      },
+      {
+        "t": "8 AM",
+        "temp": 41
+      },
+      {
+        "t": "9 AM",
+        "temp": 43
+      },
+      {
+        "t": "10 AM",
+        "temp": 46
+      },
+      {
+        "t": "11 AM",
+        "temp": 50
+      },
+      {
+        "t": "12 PM",
+        "temp": 52
+      },
+      {
+        "t": "1 PM",
+        "temp": 54
+      },
+      {
+        "t": "2 PM",
+        "temp": 54
+      },
+      {
+        "t": "3 PM",
+        "temp": 54
+      },
+      {
+        "t": "4 PM",
+        "temp": 55
+      },
+      {
+        "t": "5 PM",
+        "temp": 52
+      },
+      {
+        "t": "6 PM",
+        "temp": 50
+      },
+      {
+        "t": "7 PM",
+        "temp": 48
+      },
+      {
+        "t": "8 PM",
+        "temp": 45
+      },
+      {
+        "t": "9 PM",
+        "temp": 44
+      },
+      {
+        "t": "10 PM",
+        "temp": 44
+      }
+    ]
   },
-  "today": "Sunny",
-  "icon": "sunny",
-  "week": [
-   {
-    "day": "Tonight",
-    "date": "2026-11-17",
-    "high": null,
-    "low": 40,
-    "short": "Mostly Clear",
-    "icon": "clear-night",
-    "pop": 0
-   },
-   {
-    "day": "Tue",
-    "date": "2026-11-17",
-    "high": 55,
-    "low": 41,
-    "short": "Sunny",
-    "icon": "sunny",
-    "pop": 1
-   },
-   {
-    "day": "Wed",
-    "date": "2026-11-18",
-    "high": 57,
-    "low": 47,
-    "short": "Mostly Sunny",
-    "icon": "sunny",
-    "pop": 0
-   },
-   {
-    "day": "Thu",
-    "date": "2026-11-19",
-    "high": 60,
-    "low": 43,
-    "short": "Sunny",
-    "icon": "sunny",
-    "pop": 0
-   },
-   {
-    "day": "Fri",
-    "date": "2026-11-20",
-    "high": 59,
-    "low": 48,
-    "short": "Mostly Sunny",
-    "icon": "sunny",
-    "pop": 1
-   },
-   {
-    "day": "Sat",
-    "date": "2026-11-21",
-    "high": 65,
-    "low": 44,
-    "short": "Mostly Sunny then Slight Chance Rain Showers",
-    "icon": "rain",
-    "pop": 17
-   },
-   {
-    "day": "Sun",
-    "date": "2026-11-22",
-    "high": 48,
-    "low": 32,
-    "short": "Rain Showers Likely",
-    "icon": "rain",
-    "pop": 66
-   }
-  ],
-  "wind": "SW 5-10 mph today; gusts to 30 Wed, 35 Wed night",
-  "waves": "Bay 2-3 ft · Lake MI 3-5 ft, Small Craft Advisory through Wed afternoon",
-  "hourly": [
-   {
-    "t": "3 AM",
-    "temp": 43
-   },
-   {
-    "t": "4 AM",
-    "temp": 42
-   },
-   {
-    "t": "5 AM",
-    "temp": 42
-   },
-   {
-    "t": "6 AM",
-    "temp": 41
-   },
-   {
-    "t": "7 AM",
-    "temp": 40
-   },
-   {
-    "t": "8 AM",
-    "temp": 41
-   },
-   {
-    "t": "9 AM",
-    "temp": 43
-   },
-   {
-    "t": "10 AM",
-    "temp": 46
-   },
-   {
-    "t": "11 AM",
-    "temp": 50
-   },
-   {
-    "t": "12 PM",
-    "temp": 52
-   },
-   {
-    "t": "1 PM",
-    "temp": 54
-   },
-   {
-    "t": "2 PM",
-    "temp": 54
-   },
-   {
-    "t": "3 PM",
-    "temp": 54
-   },
-   {
-    "t": "4 PM",
-    "temp": 55
-   },
-   {
-    "t": "5 PM",
-    "temp": 52
-   },
-   {
-    "t": "6 PM",
-    "temp": 50
-   },
-   {
-    "t": "7 PM",
-    "temp": 48
-   },
-   {
-    "t": "8 PM",
-    "temp": 45
-   },
-   {
-    "t": "9 PM",
-    "temp": 44
-   },
-   {
-    "t": "10 PM",
-    "temp": 44
-   }
-  ]
- },
- "vibe": {
-  "id": "vibe",
-  "title": "Vibe Check",
-  "category": "Daily",
-  "type": "text",
-  "content": "🎵 SLOW JAM: Sting, \"Fields of Gold\" (1993)<br>• No. 23 on the Billboard Hot 100<br>• Why today: sunny and mid-50s in the middle of November, the last golden fields before the snow<br><br>🚗 DRIVE TEASE: About 40 and sunny for the drive in, dry roads, and up to 55 by late afternoon.<br>📅 THIS DAY: On this day in 1989, Disney's The Little Mermaid hit theaters.<br>💡 FUN FACT: GTA 6 is the most pre-ordered game in PlayStation Store history, and it unlocks Thursday at midnight.<br>🎉 NATIONAL DAYS: National Homemade Bread Day, National Butter Day, National Take A Hike Day and National Baklava Day<br><br>☀️ 39 and clear right now, then sunny with a high near 55, SW wind 5 to 10, low around 41 tonight, and near 60 Thursday.<br>🌊 Small Craft Advisory on the bay and Lake Michigan through Wednesday afternoon, Lake Michigan waves 3 to 5 feet, and gusts to 30-35 mph Wednesday.<br>🏫 No school closings. 🚧 Beitner Bridge gets its ribbon cutting today, but it is NOT open to traffic yet.<br>⚡ Hutchinson news is in, Kingsley has a kickoff time, and Roscommon plays for a final four spot tonight. Tuesday's got something to say.",
-  "notes": "Slow jam: Billboard chart history https://www.billboard.com/artist/sting/chart-history/ (Fields of Gold, Hot 100 No. 23, peak July 24, 1993).<br>Weather: NWS Gaylord TC point forecast and hourly (api.weather.gov 44.7631,-85.6206), KTVC obs. Hourly peaks at 55 (4 PM), matching the point forecast high near 55.<br>Wind & waves: NWS Gaylord Nearshore Marine Forecast (NSHAPX) 1:47 AM EST Tue 11/17: SCA through Wed afternoon. LMZ323 Grand Traverse Bay: SW 15-25 kt easing to 10-15 kt late morning, waves 2-3 ft. LMZ344 Sleeping Bear Pt-GT Light and LMZ345 Pt Betsie-Sleeping Bear Pt: SW 10-20 kt, waves 3-5 ft. TC Wed gusts 30, Wed night 35 mph (point forecast).<br>This day: The Little Mermaid general release Nov. 17, 1989 (Disney Animation / D23 / Box Office Mojo).<br>Fun fact: PlayStation Blog 11/10/2026: GTA VI is \"the most pre-ordered game in the history of PlayStation Store.\"<br>National days: https://nationaldaycalendar.com/what-day-is-it (fetched ~3:50 AM ET 11/17).<br>Schools: UpNorthLive closings page showed no listings ~3:55 AM ET. No Breaker City Pulse file today.<br>Roads: UpNorthLive 11/16 5:22 PM (GTCRC): ribbon cutting Tue, bridge not open to traffic yet; reopening date to be announced at the ceremony.",
-  "custom": false,
-  "items": [
-   {
-    "id": "2026-11-17-vibe-01",
-    "title": "SLOW JAM",
-    "recap": "We opened the Vibe Check with Sting's \"Fields of Gold\" for a golden, sunny November Tuesday."
-   },
-   {
-    "id": "2026-11-17-vibe-02",
-    "title": "DRIVE TEASE",
-    "recap": "We teased a dry, sunny drive around 40 degrees, headed to the mid-50s."
-   },
-   {
-    "id": "2026-11-17-vibe-03",
-    "title": "THIS DAY",
-    "recap": "We remembered Disney's The Little Mermaid hitting theaters on this day in 1989."
-   },
-   {
-    "id": "2026-11-17-vibe-04",
-    "title": "FUN FACT",
-    "recap": "We shared that GTA 6 is the most pre-ordered game in PlayStation Store history."
-   },
-   {
-    "id": "2026-11-17-vibe-05",
-    "title": "NATIONAL DAYS",
-    "recap": "We celebrated National Homemade Bread Day, Butter Day, Take a Hike Day and Baklava Day."
-   }
-  ]
- },
- "mood": {
-  "id": "mood",
-  "title": "Mood Boost",
-  "category": "6AM",
-  "type": "text",
-  "content": "Sugar Ray, \"Someday\" (1999)<br>• Peaked at No. 7 on the Billboard Hot 100 (Oct. 2, 1999)",
-  "notes": "Billboard chart history https://www.billboard.com/artist/sugar-ray/chart-history/ . Laid-back late-90s pick in the 'Every Morning' lane; not on the never list.",
-  "custom": false,
-  "items": [
-   {
-    "id": "2026-11-17-mood-01",
-    "title": "MOOD BOOST",
-    "recap": "We played Sugar Ray's \"Someday\" to kick off the 6 o'clock hour."
-   }
-  ]
- },
- "buzz": {
-  "id": "buzz",
-  "title": "Daily Buzz",
-  "category": "7AM",
-  "type": "text",
-  "content": "━━ LOCAL ━━<br><br>THE TREE HAS LANDED DOWNTOWN<br>• Downtown Traverse City's official 2026 Christmas tree arrived Monday, and crews worked from the air and on the ground to stick the landing.<br>• The tree lighting is Friday at 6:30 PM, and the Light Parade is Saturday night.<br>➜ TAKE: That tree had a smoother landing than half the flights in America this week.<br>➜ BAIT: Text 231-929-4487: real tree or fake tree at your house, and when does it go up?<br><br>FAIRY HOUSES BEHIND THE BARNS<br>• Tucked behind the Botanic Garden at Historic Barns Park, the Fairy Trails let anybody build a tiny fairy house out of sticks, bark and stones, all year long, for free.<br>• Heather Harrington of Life and Whim Studio started it about ten years ago, and her June fairy house contest draws 50 to 75 builders.<br>• Natural materials only, so the houses melt back into the woods.<br>➜ TAKE: Somewhere in Traverse City there's a fairy with better real estate than I have.<br>➜ BAIT: Text 231-929-4487: have you ever built a fairy house, and be honest, who REALLY built it, you or the kids?<br><br>BEITNER BRIDGE: RIBBON TODAY, CARS LATER<br>• The Beitner Road bridge that April's flooding washed out gets its ribbon cutting today.<br>• But don't drive over it yet: the Road Commission says crews still need final touches before it's safe for traffic, and they'll announce the opening date at the ceremony.<br>➜ TAKE: Seven months of detours, and we're one pair of giant scissors away.<br>➜ BAIT: Text 231-929-4487: what's your Beitner detour story? How much extra time has it cost you?<br><br>━━ BITS ━━<br><br>BREAD AND BUTTER DAY<br>• It's National Homemade Bread Day AND National Butter Day. Thanksgiving is nine days out: is it real butter on the table, or does somebody in your family still put out the margarine tub?<br><br>WOULD YOU ROAD TRIP WITH STRANGERS?<br>• Five strangers stuck at Chicago Midway during the ground stop drove eight hours home to Nashville together. Would you get in the car? And who's the one person you'd NEVER road trip with?<br><br>UNDER THE SEA<br>• The Little Mermaid came out on this day in 1989. What's the Disney song you can still sing every single word of, whether you want to or not?<br><br>━━ SPORTS ━━<br><br>HUTCHINSON: TORN ACL, OUT FOR THE SEASON<br>• Follow-up tests confirmed Aidan Hutchinson tore the ACL in his right knee celebrating Sunday's sack in Munich<br>• The good news: no other major damage, so he can focus on being ready for 2027<br>• Dan Campbell is expected to talk about it at his press conference today<br><br>KINGSLEY HAS A KICKOFF TIME<br>• Kingsley (12-0) vs. Almont (12-0), Division 6 state semifinal<br>• Saturday, 1 PM, at Clare High School<br><br>ROSCOMMON VOLLEYBALL TONIGHT<br>• Roscommon vs. Calumet, Division 3 state quarterfinal<br>• Tonight, 6 PM, at Gaylord High School, and a win sends them to the final four in Battle Creek",
-  "notes": "Pulse: no Breaker City Pulse today; Overheard in TC web skim found nothing indexed for the last day. Pulse from UpNorthLive / 9&10 overnight.<br>Buzz 1: UpNorthLive / WPBN newsroom, Mon 11/16 5:24 PM; photo: WPBN.<br>Buzz 2: 9&10 News 'Hidden Northern Michigan', Megan Huiskens / Josh Monroe, Mon 11/16 4:22 PM.<br>Buzz 3: UpNorthLive / WPBN, Mon 11/16 5:22 PM, updated 6:43 PM (Grand Traverse County Road Commission). Earlier: 9&10 News 10/7 and 10/14, MLive. Today's delta: ribbon cutting + opening date coming.<br>Score log: Tree 13 · Fairy Trails 13 · Beitner 12 · (West End parking talks 9, dry civic → Town buzz; Thanksgiving to-go meals 11 → Lifestyle; elk-shot-instead-of-deer 8, legal/hunting, cut)<br>Bits: nationaldaycalendar.com (bread/butter); Inside Edition 'Golden Girls' road trip (YouTube vtSQLbOgZCA); Little Mermaid 11/17/1989 (D23).<br>Sports: Hutchinson torn ACL, no additional damage: NBC Sports/PFT and NFL Network (11/16); Campbell presser Tue per Detroit Sports Nation/Yahoo. Kingsley-Almont Sat 1 PM, Clare HS: The D Zone schedule + Detroit Sports Forum pairings (Brookwood Athletic Complex), confirm on MHSAA.com. Roscommon-Calumet D3 QF Tue 6 PM, Gaylord HS: GoFan MHSAA ticket page + Prep Dig.<br>No national items today (live National button covers it).",
-  "custom": false,
-  "items": [
-   {
-    "id": "2026-11-17-buzz-01",
-    "title": "THE TREE HAS LANDED DOWNTOWN",
-    "recap": "We talked about downtown TC's official Christmas tree landing Monday ahead of Friday's 6:30 lighting."
-   },
-   {
-    "id": "2026-11-17-buzz-02",
-    "title": "FAIRY HOUSES BEHIND THE BARNS",
-    "recap": "We talked about the free Fairy Trails behind Historic Barns Park, where anyone can build a tiny fairy house."
-   },
-   {
-    "id": "2026-11-17-buzz-03",
-    "title": "BEITNER BRIDGE: RIBBON TODAY, CARS LATER",
-    "recap": "We talked about the Beitner Bridge ribbon cutting, with the road still closed until the Road Commission sets an opening date."
-   },
-   {
-    "id": "2026-11-17-buzz-04",
-    "title": "BREAD AND BUTTER DAY",
-    "recap": "We asked whether it's real butter or the margarine tub on the Thanksgiving table."
-   },
-   {
-    "id": "2026-11-17-buzz-05",
-    "title": "WOULD YOU ROAD TRIP WITH STRANGERS?",
-    "recap": "We asked if listeners would road trip with total strangers like the stranded \"Golden Girls.\""
-   },
-   {
-    "id": "2026-11-17-buzz-06",
-    "title": "UNDER THE SEA",
-    "recap": "We asked which Disney song listeners still know every word of."
-   },
-   {
-    "id": "2026-11-17-buzz-07",
-    "title": "HUTCHINSON: TORN ACL, OUT FOR THE SEASON",
-    "recap": "We updated Aidan Hutchinson's torn ACL, with no other major damage found."
-   },
-   {
-    "id": "2026-11-17-buzz-08",
-    "title": "KINGSLEY HAS A KICKOFF TIME",
-    "recap": "We gave Kingsley's semifinal kickoff: Saturday at 1 PM in Clare against Almont."
-   },
-   {
-    "id": "2026-11-17-buzz-09",
-    "title": "ROSCOMMON VOLLEYBALL TONIGHT",
-    "recap": "We wished Roscommon volleyball luck in tonight's state quarterfinal against Calumet in Gaylord."
-   }
-  ]
- },
- "gta6": {
-  "id": "gta6",
-  "title": "GTA 6 Watch",
-  "category": "Daily",
-  "type": "text",
-  "content": "GTA 6 WATCH: TWO DAYS OUT<br>• CONFIRMED: Grand Theft Auto VI unlocks at midnight Thursday, Nov. 19, on PS5 and Xbox Series X|S, and pre-loading is open now<br>• NEW: a second pre-launch update just dropped, about 602 MB on PS5 and 1.6 GB on Xbox, still with no patch notes<br>• NEW: a first look with The Weather Channel shows storms, fog and mist that roll through just part of the map, so it can pour downtown and be sunny on the beach<br>➜ TAKE: GTA 6 has more realistic weather than our forecast apps, and it STILL can't predict a Michigan November.",
-  "notes": "Release/pre-load: Rockstar Newswire 'Pre-Load Now' 11/10 https://www.rockstargames.com/VI/pre-load-now ; PlayStation Blog 11/10.<br>Update 01.002.001 sizes: Tech Times 11/17 https://www.techtimes.com/articles/330886/20261117/gta-6-gets-second-pre-launch-update-602-mb-ps5-16-gb-xbox-still-no-patch-notes.htm (no patch notes; not official Rockstar text).<br>Weather first look: TweakTown 11/17 (Weather Channel feature) https://www.tweaktown.com/news/114724/ ; Rockstar Report. Monday's box-code rumor not re-run; no Rockstar statement found.",
-  "custom": true,
-  "items": [
-   {
-    "id": "2026-11-17-gta6-01",
-    "title": "GTA 6 WATCH",
-    "recap": "We counted down to GTA 6's Thursday midnight launch and its new local-storm weather."
-   }
-  ]
- },
- "lifestyle": {
-  "id": "lifestyle",
-  "title": "Lifestyle & Trends",
-  "category": "Daily",
-  "type": "text",
-  "content": "1) SHOPPERS ARE WAITING FOR THANKSGIVING WEEKEND<br>• The National Retail Federation's holiday survey says 64% of us plan to wait until Thanksgiving weekend to do most of our shopping<br>• Online is still the top spot at 53%, and 56% say the economy is changing what they'll spend<br>➜ LOCAL ANGLE: Thanksgiving weekend means Black Friday at the big boxes and Small Business Saturday downtown, so expect packed lots and make the list early.<br>➜ BAIT: Text 231-929-4487: are you a Black Friday line person or a couch-and-laptop person?<br><br>2) LET SOMEBODY ELSE COOK THE SIDES<br>• Businesses across Northern Michigan are taking orders for Thanksgiving meals, pies, rolls and sides to go<br>• Most need you to order ahead, with pickup mostly Nov. 24 and 25<br>➜ LOCAL ANGLE: From Suttons Bay to Kalkaska to Petoskey, you can outsource the pie and still take the credit.<br>➜ BAIT: Text 231-929-4487: what's the one dish you'd happily let somebody else make?",
-  "notes": "1) NRF holiday survey (Prosper Insights, 8,094 adults, Oct. 1-7, 2026) https://nrf.com/media-center/press-releases/affordability-shapes-winter-holiday-shopping-according-to-nrf-holiday-survey .<br>2) 9&10 News 11/13 https://www.9and10news.com/2026/11/13/northern-michigan-businesses-offer-thanksgiving-meals-pies-and-sides-to-go/ (Bay Harbor, Cadillac, Kalkaska, Petoskey, Suttons Bay, Thompsonville, TC).",
-  "custom": true,
-  "items": [
-   {
-    "id": "2026-11-17-lifestyle-01",
-    "title": "SHOPPERS ARE WAITING FOR THANKSGIVING WEEKEND",
-    "recap": "We talked about the NRF survey: 64% of shoppers are waiting until Thanksgiving weekend."
-   },
-   {
-    "id": "2026-11-17-lifestyle-02",
-    "title": "LET SOMEBODY ELSE COOK THE SIDES",
-    "recap": "We talked about Up North spots doing Thanksgiving meals and pies to go, most with pickup Nov. 24-25."
-   }
-  ]
- },
- "officeschool": {
-  "id": "officeschool",
-  "title": "Office & School Bits",
-  "category": "Bit",
-  "type": "text",
-  "content": "THE OFFICE: GIFT SHOPPING ON THE CLOCK<br>• Monster's new holiday survey says 41% of workers have shopped online for holiday gifts during the workday, and 59% of people who took holiday time off worked anyway. So, bosses, if you hear a lot of clicking right now, that's not the spreadsheet. Text 231-929-4487: what's the sneakiest thing you've done on the work computer?<br><br>SCHOOL: THE HOMEWORK EXCUSE HALL OF FAME<br>• Listener-question bit: Thanksgiving break is close, and the homework excuses are getting creative. Parents and teachers, what's the best excuse you've ever heard for missing homework? Kids, we won't tell. Text 231-929-4487.",
-  "notes": "Office: Monster 2026 Holiday Work Habits Report (1,000 U.S. adults, Oct. 5-8, 2026), via Film Daily https://filmdaily.co/news/monster-survey-shows-59-working-during-vacation/<br>School: framed as a listener-question bit, no stat.",
-  "custom": true,
-  "items": [
-   {
-    "id": "2026-11-17-officeschool-01",
-    "title": "THE OFFICE: GIFT SHOPPING ON THE CLOCK",
-    "recap": "We talked about Monster's survey: 41% of workers shop for holiday gifts on the clock."
-   },
-   {
-    "id": "2026-11-17-officeschool-02",
-    "title": "SCHOOL: THE HOMEWORK EXCUSE HALL OF FAME",
-    "recap": "We collected the best homework excuses from parents, teachers and kids."
-   }
-  ]
- },
- "verse": {
-  "id": "verse",
-  "title": "Verse Reverse",
-  "category": "Optional",
-  "type": "text",
-  "content": "",
-  "notes": "",
-  "custom": false,
-  "items": []
- },
- "mental": {
-  "id": "mental",
-  "title": "Mental Health Minute",
-  "category": "8:05",
-  "type": "text",
-  "content": "\"Send the Text You Keep Meaning to Send\"<br><br>We've got a sunny Tuesday and Thanksgiving is nine days away, which means a lot of us are thinking about the people we'll see, and maybe a few we won't. There's probably somebody who popped into your head just now, an old friend, a cousin, a neighbor who moved, and you've been meaning to reach out for months, but you don't, because you figure it'd be weird or they're busy. Here's the thing, though. Researchers who studied this found that people consistently underestimate how much the other person appreciates hearing from them, and the more out of the blue the message, the more it means. So here's your move for today. Before lunch, send one short text to that person, something like, \"Saw this and thought of you,\" or \"Hey, I miss our talks, how are you?\" You don't need a reason, and you don't need to plan a get-together. The text does the work, and nine times out of ten, you'll get a reply that makes your whole afternoon. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me who you reached out to.",
-  "notes": "Evidence: Liu, Rim, Min & Min (2022), 'The Surprise of Reaching Out,' Journal of Personality and Social Psychology (people underestimate how much others appreciate being reached out to, more so when the contact is a surprise). Move not used this week (week-used: park the list; catch the sun).",
-  "custom": false,
-  "items": [
-   {
-    "id": "2026-11-17-mental-01",
-    "title": "SEND THE TEXT",
-    "recap": "We suggested sending one out-of-the-blue text to someone you miss, because people love hearing from you more than you think."
-   }
-  ]
- },
- "flash": {
-  "id": "flash",
-  "title": "Flashback",
-  "category": "9AM",
-  "type": "text",
-  "content": "HEAVEN IS A PLACE ON EARTH — BELINDA CARLISLE<br>• Single: 1987, the lead single from \"Heaven on Earth\"<br>• No. 1 on the Billboard Hot 100 on Dec. 5, 1987, her only Hot 100 No. 1<br>• Origin: written by Rick Nowels and Ellen Shipley, and the music video was directed by actress Diane Keaton, with kids holding glowing globes<br>• Why today: a sunny \"heaven on earth\" day in the middle of November",
-  "notes": "Backup pick (requester blank until a listener request lands). No flashback-request-2026-11-17.md file.<br>No. 1 Dec. 5, 1987: Billboard 'Chart Rewind' https://www.billboard.com/pro/belinda-carlisle-heaven-is-a-place-on-earth-rewinding-the-charts-1987/ ; Diane Keaton directed the video: Wikipedia / IMVDb / Ultimate Classic Rock.<br>Writers Nowels/Shipley and 'only solo Hot 100 No. 1' from Wikipedia; UK chart run not re-verified this morning, so it is left off the card.",
-  "custom": false,
-  "items": [
-   {
-    "id": "2026-11-17-flash-01",
-    "title": "HEAVEN IS A PLACE ON EARTH — BELINDA CARLISLE",
-    "recap": "We flashed back to Belinda Carlisle's \"Heaven Is a Place on Earth,\" a Hot 100 No. 1 in December 1987."
-   }
-  ],
-  "requester": "",
-  "song": "Heaven Is a Place on Earth",
-  "artist": "Belinda Carlisle",
-  "single_year": "1987",
-  "chart_records": [
-   "No. 1 Billboard Hot 100 (Dec. 5, 1987)",
-   "Her only solo Hot 100 No. 1"
-  ],
-  "origin": "Written by Rick Nowels and Ellen Shipley; the music video was directed by actress Diane Keaton, with kids holding glowing globes."
- },
- "cross": {
-  "id": "cross",
-  "title": "Cross Talk",
-  "category": "Midday",
-  "type": "text",
-  "content": "TOPIC: THE GREAT THANKSGIVING ROLL DEBATE<br>• It's National Homemade Bread Day AND National Butter Day, nine days before Thanksgiving<br>• Prompt 1: Homemade rolls, frozen dough you bake yourself, or a bag of Hawaiian rolls? Defend it.<br>• Prompt 2: Real butter, whipped butter, or the margarine tub. Is there a wrong answer?<br>• Prompt 3: Who in your family is in charge of the bread, and are they qualified?",
-  "notes": "Hook from nationaldaycalendar.com (11/17). Light food-holiday debate per buzz-rubric STYLE NORTH STAR.",
-  "custom": false,
-  "items": [
-   {
-    "id": "2026-11-17-cross-01",
-    "title": "THANKSGIVING ROLL DEBATE",
-    "recap": "Courtney asked about homemade rolls versus Hawaiian rolls and real butter versus margarine."
-   }
-  ]
- },
- "offcharts": {
-  "id": "offcharts",
-  "title": "Off the Charts",
-  "category": "Fri 8:30",
-  "type": "text",
-  "content": "Fridays only",
-  "notes": "",
-  "custom": false,
-  "items": []
- },
- "newsclips": {
-  "id": "newsclips",
-  "title": "News Audio",
-  "category": "Clips",
-  "type": "text",
-  "content": "HUTCH HURT CELEBRATING THE SACK · NEWS AUDIO<br>🎙️ SET UP: Sunday in Munich, Aidan Hutchinson sacked Drake Maye, hurt his right knee celebrating, and tests now confirm a torn ACL. \"Here's how NBC's Football Night in America told it Sunday night.\"<br>🔈 AUDIO SOURCE: NBC Sports, NFL on NBC official YouTube (Football Night in America). On-air credit: \"courtesy of NBC Sports.\"<br>• NBC's studio open: the sack, the celebration, the knee, and 'neither one returns'<br>🔊 IN: \"Now today, the morning started in Germany\" (0:17)<br>OUT: \"...Neither one returns.\" (0:38)<br>~21 s · TALK-OVER (or PLAY with credit)<br>➜ WHY: It's the biggest Lions story of the week, and today's update makes it fresh<br>⚠️ FLAG: Another network's broadcast: get their OK before playing it straight, or talk over it. Injury talk, no graphic detail. Music bed under the open.<br><br>HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD · NEWS AUDIO<br>🎙️ SET UP: A Head Start director in Georgia saved a 2-year-old boy who was choking. \"Inside Edition has the moment and what she did.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A feel-good save at a Georgia Head Start<br>🔊 IN: not checked (captions unavailable, download blocked)<br>OUT: not checked<br>~51 s (full package) · PLAY after a listen<br>➜ WHY: A quick hero story every parent in the car will feel<br>⚠️ FLAG: Child medical emergency (happy ending per the headline). Content NOT verified: listen through before airing.<br><br>THE FAIRY TRAIL LADY · NEWS AUDIO<br>🎙️ SET UP: Pairs with the Fairy Trails story: Heather Harrington started the free fairy house trail behind Historic Barns Park about ten years ago. \"Here's why she did it, courtesy of 9&10 News.\"<br>🔈 AUDIO SOURCE: 9&10 News \"Hidden Northern Michigan\" video. On-air credit: \"courtesy of 9&10 News.\"<br>• Harrington on art outdoors that everyone can join<br>🔊 IN: \"I'm an artist and designer and I love everything outdoors\"<br>OUT: \"...and I love creating with other people.\"<br>~8 s · TALK-OVER<br>➜ WHY: A warm local voice on a quirky local story<br>⚠️ FLAG: Another station's audio: get their OK before playing it straight, or talk over it. Quote is from the article text; confirm it's on the video.",
-  "notes": "HUTCH HURT CELEBRATING THE SACK: https://www.youtube.com/watch?v=HQYY09nn72I · NOT CUT: YouTube download blocked by a bot check this morning · ⚠️ FLAG: Another network's broadcast: get their OK before playing it straight, or talk over it. Injury talk, no graphic detail. Music bed under the open.<br>HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD: https://www.youtube.com/watch?v=suZbSJMQqRo · NOT CUT: YouTube download blocked by a bot check this morning · ⚠️ FLAG: Child medical emergency (happy ending per the headline). Content NOT verified: listen through before airing.<br>THE FAIRY TRAIL LADY: https://www.9and10news.com/video/2026/11/16/hidden-northern-michigan-fairy-trails/ · NOT CUT: site video not downloadable · ⚠️ FLAG: Another station's audio: get their OK before playing it straight, or talk over it. Quote is from the article text; confirm it's on the video.",
-  "custom": true,
-  "items": [],
-  "clips": [
-   {
-    "id": "2026-11-17-c05",
-    "slot": "NEWS AUDIO",
-    "title": "HUTCH HURT CELEBRATING THE SACK",
-    "body": "HUTCH HURT CELEBRATING THE SACK · NEWS AUDIO<br>🎙️ SET UP: Sunday in Munich, Aidan Hutchinson sacked Drake Maye, hurt his right knee celebrating, and tests now confirm a torn ACL. \"Here's how NBC's Football Night in America told it Sunday night.\"<br>🔈 AUDIO SOURCE: NBC Sports, NFL on NBC official YouTube (Football Night in America). On-air credit: \"courtesy of NBC Sports.\"<br>• NBC's studio open: the sack, the celebration, the knee, and 'neither one returns'<br>🔊 IN: \"Now today, the morning started in Germany\" (0:17)<br>OUT: \"...Neither one returns.\" (0:38)<br>~21 s · TALK-OVER (or PLAY with credit)<br>➜ WHY: It's the biggest Lions story of the week, and today's update makes it fresh<br>⚠️ FLAG: Another network's broadcast: get their OK before playing it straight, or talk over it. Injury talk, no graphic detail. Music bed under the open.",
-    "audio": "https://www.youtube.com/watch?v=HQYY09nn72I",
-    "ready": false,
-    "recap": "We heard NBC describe Aidan Hutchinson's knee injury in Munich, now confirmed as a torn ACL."
-   },
-   {
-    "id": "2026-11-17-c06",
-    "slot": "NEWS AUDIO",
-    "title": "HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD",
-    "body": "HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD · NEWS AUDIO<br>🎙️ SET UP: A Head Start director in Georgia saved a 2-year-old boy who was choking. \"Inside Edition has the moment and what she did.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A feel-good save at a Georgia Head Start<br>🔊 IN: not checked (captions unavailable, download blocked)<br>OUT: not checked<br>~51 s (full package) · PLAY after a listen<br>➜ WHY: A quick hero story every parent in the car will feel<br>⚠️ FLAG: Child medical emergency (happy ending per the headline). Content NOT verified: listen through before airing.",
-    "audio": "https://www.youtube.com/watch?v=suZbSJMQqRo",
-    "ready": false,
-    "recap": "We heard the story of a Georgia Head Start director who saved a choking 2-year-old."
-   },
-   {
-    "id": "2026-11-17-c07",
-    "slot": "NEWS AUDIO",
-    "title": "THE FAIRY TRAIL LADY",
-    "body": "THE FAIRY TRAIL LADY · NEWS AUDIO<br>🎙️ SET UP: Pairs with the Fairy Trails story: Heather Harrington started the free fairy house trail behind Historic Barns Park about ten years ago. \"Here's why she did it, courtesy of 9&10 News.\"<br>🔈 AUDIO SOURCE: 9&10 News \"Hidden Northern Michigan\" video. On-air credit: \"courtesy of 9&10 News.\"<br>• Harrington on art outdoors that everyone can join<br>🔊 IN: \"I'm an artist and designer and I love everything outdoors\"<br>OUT: \"...and I love creating with other people.\"<br>~8 s · TALK-OVER<br>➜ WHY: A warm local voice on a quirky local story<br>⚠️ FLAG: Another station's audio: get their OK before playing it straight, or talk over it. Quote is from the article text; confirm it's on the video.",
-    "audio": "https://www.9and10news.com/video/2026/11/16/hidden-northern-michigan-fairy-trails/",
-    "ready": false,
-    "recap": "We heard Heather Harrington on why she started TC's Fairy Trails."
-   }
-  ]
- },
- "clips": {
-  "id": "clips",
-  "title": "Trending Audio",
-  "category": "Clips",
-  "type": "text",
-  "content": "7 of 10 clips today (2 trending, 3 news audio, 2 buffer) +3 held/carried. Both stand-up slots are filled by the held/carried READY clips. New picks are links only: YouTube blocked downloads this morning.<br><br>AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS (HELD FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Dry Bar comic Ahmed Bharoocha is genuinely scared of cats, and every cat owner he tells answers by shoving the cat in his face. \"Cat people, this is you. Be honest.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• Cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY · READY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the Dodo dog in the buffer<br>⚠️ FLAG: Clean<br><br>LEANNE MORGAN: THE THERMOSTAT WAR (CARRIED FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Tennessee mom comic Leanne Morgan on hitting your mid-40s: she wants the house at 68 and her husband keeps cranking it to 70. \"Who wins the thermostat war at your house?\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• She sets it to 68, he turns it to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY · READY<br>➜ WHY: Dead-center for women 25-55; unaired Monday, so it rolls forward<br>⚠️ FLAG: Mild: mentions perimenopause and night sweats (fine for the demo). The cut stops at 1:48, before the beagle bit's crude line.<br><br>SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG (EXTRA, CARRIED FROM 11/16) · EXTRA: LATE-NIGHT<br>🎙️ SET UP: SNL's last show before Thanksgiving, and comic Tommy Brennan sang an \"original Thanksgiving song\" about the family members who make the holiday. \"If you've got THAT relative coming for Thanksgiving, this one's for you.\"<br>🔈 AUDIO SOURCE: SNL / NBC official YouTube. On-air credit: \"courtesy of Saturday Night Live on NBC.\"<br>• The full song, start to finish, about the relatives who make Thanksgiving<br>🔊 IN: \"I've been home for 20 seconds\"<br>OUT: \"...Happy turkey day, to you.\"<br>~2:34 · PLAY · READY<br>➜ WHY: Truce asked for the full song as Tuesday's extra<br>⚠️ FLAG: SPICY: the full song has an uncle-naked verse, a Columbus/Kaepernick line and a coming-out verse. Truce's call. (The app also shows the short version marked aired 11/16.)<br><br>THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP · SUPER-CLIP 6 AM<br>🎙️ SET UP: When the nationwide ground stop hit, five strangers stuck at Chicago's Midway Airport teamed up and drove eight hours home to Nashville together, and now people are calling them the new Golden Girls. \"Inside Edition caught up with the road trip crew. Listen.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• Five stranded strangers, one car, ice cream stops and stretch breaks, and an 8-hour ride to Nashville<br>🔊 IN: \"What do you do when every plane in America is grounded\" (0:00)<br>OUT: \"...And they weren't.\" (1:04)<br>~64 s · PLAY<br>➜ WHY: Everybody's talking about the ground stop, and this is the feel-good, funny side of it<br>⚠️ FLAG: Mild: one joke line, \"How can we be sure they're not serial killers?\" (played for laughs, ~0:58). Clip has no politics, but the ground stop is a political story nationally.<br><br>AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Amy Poehler was on Fallon last night. She told Jimmy she asked Paul McCartney on her podcast who does the best impression of him, and McCartney said Jimmy. \"So Jimmy did it, right there. Here's Jimmy Fallon as Paul McCartney.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon, NBC official YouTube. On-air credit: \"courtesy of The Tonight Show on NBC.\"<br>• Jimmy breaks into his McCartney voice and 'remembers' writing She Loves You<br>🔊 IN: \"You had Paul McCartney on.\" (3:30)<br>OUT: \"...He's the best.\" (4:12)<br>~42 s · PLAY<br>➜ WHY: Beatles plus Fallon's impression works with no picture, and it's fresh from last night<br>⚠️ FLAG: Clean within IN/OUT per the official captions. Do not run past 4:12; \"Oh, my God\" comes at ~4:32.<br><br>THE MYSTERY DOG WHO PICKED HER PERSON · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A 26-year-old guy who'd never had a dog found a little dog with no tags following him in his building. He tracked down the owner, who said keep her, and now his mom calls the dog her granddaughter. \"Here's how Emma picked her person.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube. On-air credit: \"courtesy of The Dodo.\"<br>• Stray dog Emma shows up, gets a bath and a haircut, and becomes family<br>🔊 IN: \"When I first saw her, she seemed pretty chill\" (0:12) to \"...She wasn't chipped or anything.\" (0:27)<br>OUT: then \"We found the owner\" (0:48) to \"...She just makes everybody happy.\" (1:27)<br>~54 s edited · PLAY (music bed under)<br>➜ WHY: Happy ending, a mom-turned-grandma line, and it works without the picture<br>⚠️ FLAG: Clean in the auto-captions.<br><br>SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: A longtime actor from The Young and the Restless has a side gig: flight attendant. \"Inside Edition went along for the ride.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A veteran soap actor moonlighting in the aisle<br>🔊 IN: not checked (captions unavailable, download blocked)<br>OUT: not checked<br>~1:43 (full package) · PLAY after a listen<br>➜ WHY: Soap fans in the 25-55 demo, plus a nod to the ground stop week<br>⚠️ FLAG: Content NOT verified (actor's name not confirmed): listen through before airing.",
-  "notes": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS: https://www.youtube.com/watch?v=z02Yg9fAqCM · cut file /workspace/morning-rush/clips/2026-11-16/c03-bharoocha-cats.mp3 · ⚠️ FLAG: Clean<br>LEANNE MORGAN: THE THERMOSTAT WAR: https://www.youtube.com/watch?v=Tp0TmcFbSzo · cut file /workspace/morning-rush/clips/2026-11-16/c04-leanne-morgan-thermostat.mp3 · ⚠️ FLAG: Mild: mentions perimenopause and night sweats (fine for the demo). The cut stops at 1:48, before the beagle bit's crude line.<br>SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG: https://www.youtube.com/watch?v=H7Q_wnltz0w · cut file /workspace/morning-rush/clips/2026-11-16/c02-snl-thanksgiving-song-v2.mp3 · ⚠️ FLAG: SPICY: the full song has an uncle-naked verse, a Columbus/Kaepernick line and a coming-out verse. Truce's call. (The app also shows the short version marked aired 11/16.)<br>THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP: https://www.youtube.com/watch?v=vtSQLbOgZCA · NOT CUT: YouTube download blocked by a bot check this morning · ⚠️ FLAG: Mild: one joke line, \"How can we be sure they're not serial killers?\" (played for laughs, ~0:58). Clip has no politics, but the ground stop is a political story nationally.<br>AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL: https://www.youtube.com/watch?v=fWx6-3NDJO4 · NOT CUT: YouTube download blocked by a bot check this morning · ⚠️ FLAG: Clean within IN/OUT per the official captions. Do not run past 4:12; \"Oh, my God\" comes at ~4:32.<br>THE MYSTERY DOG WHO PICKED HER PERSON: https://www.youtube.com/watch?v=FvWsi_GjXSA · NOT CUT: YouTube download blocked by a bot check this morning · ⚠️ FLAG: Clean in the auto-captions.<br>SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT: https://www.youtube.com/watch?v=25zzzrcFdrI · NOT CUT: YouTube download blocked by a bot check this morning · ⚠️ FLAG: Content NOT verified (actor's name not confirmed): listen through before airing.<br>Scan note: YouTube Trending/Shorts, TikTok Creative Center and Google Trends not reached this morning; picks came from official channel searches.",
-  "custom": true,
-  "items": [],
-  "clips": [
-   {
-    "id": "2026-11-16-c03",
-    "slot": "FIRST HALF HOUR: STAND-UP",
-    "title": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS (HELD FROM 11/16)",
-    "body": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS (HELD FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Dry Bar comic Ahmed Bharoocha is genuinely scared of cats, and every cat owner he tells answers by shoving the cat in his face. \"Cat people, this is you. Be honest.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• Cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY · READY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the Dodo dog in the buffer<br>⚠️ FLAG: Clean",
-    "audio": "/workspace/morning-rush/clips/2026-11-16/c03-bharoocha-cats.mp3",
-    "ready": true,
-    "recap": "We heard Dry Bar comic Ahmed Bharoocha on cat owners who ignore his fear of cats."
-   },
-   {
-    "id": "2026-11-16-c04",
-    "slot": "FIRST HALF HOUR: STAND-UP",
-    "title": "LEANNE MORGAN: THE THERMOSTAT WAR (CARRIED FROM 11/16)",
-    "body": "LEANNE MORGAN: THE THERMOSTAT WAR (CARRIED FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Tennessee mom comic Leanne Morgan on hitting your mid-40s: she wants the house at 68 and her husband keeps cranking it to 70. \"Who wins the thermostat war at your house?\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• She sets it to 68, he turns it to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY · READY<br>➜ WHY: Dead-center for women 25-55; unaired Monday, so it rolls forward<br>⚠️ FLAG: Mild: mentions perimenopause and night sweats (fine for the demo). The cut stops at 1:48, before the beagle bit's crude line.",
-    "audio": "/workspace/morning-rush/clips/2026-11-16/c04-leanne-morgan-thermostat.mp3",
-    "ready": true,
-    "recap": "We heard Leanne Morgan on the 68-versus-70 thermostat war with her husband."
-   },
-   {
-    "id": "2026-11-16-c02",
-    "slot": "EXTRA: LATE-NIGHT",
-    "title": "SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG (EXTRA, CARRIED FROM 11/16)",
-    "body": "SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG (EXTRA, CARRIED FROM 11/16) · EXTRA: LATE-NIGHT<br>🎙️ SET UP: SNL's last show before Thanksgiving, and comic Tommy Brennan sang an \"original Thanksgiving song\" about the family members who make the holiday. \"If you've got THAT relative coming for Thanksgiving, this one's for you.\"<br>🔈 AUDIO SOURCE: SNL / NBC official YouTube. On-air credit: \"courtesy of Saturday Night Live on NBC.\"<br>• The full song, start to finish, about the relatives who make Thanksgiving<br>🔊 IN: \"I've been home for 20 seconds\"<br>OUT: \"...Happy turkey day, to you.\"<br>~2:34 · PLAY · READY<br>➜ WHY: Truce asked for the full song as Tuesday's extra<br>⚠️ FLAG: SPICY: the full song has an uncle-naked verse, a Columbus/Kaepernick line and a coming-out verse. Truce's call. (The app also shows the short version marked aired 11/16.)",
-    "audio": "/workspace/morning-rush/clips/2026-11-16/c02-snl-thanksgiving-song-v2.mp3",
-    "ready": true,
-    "recap": "We played SNL Weekend Update's full Tommy Brennan Thanksgiving song."
-   },
-   {
-    "id": "2026-11-17-c01",
-    "slot": "SUPER-CLIP 6 AM",
-    "title": "THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP",
-    "body": "THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP · SUPER-CLIP 6 AM<br>🎙️ SET UP: When the nationwide ground stop hit, five strangers stuck at Chicago's Midway Airport teamed up and drove eight hours home to Nashville together, and now people are calling them the new Golden Girls. \"Inside Edition caught up with the road trip crew. Listen.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• Five stranded strangers, one car, ice cream stops and stretch breaks, and an 8-hour ride to Nashville<br>🔊 IN: \"What do you do when every plane in America is grounded\" (0:00)<br>OUT: \"...And they weren't.\" (1:04)<br>~64 s · PLAY<br>➜ WHY: Everybody's talking about the ground stop, and this is the feel-good, funny side of it<br>⚠️ FLAG: Mild: one joke line, \"How can we be sure they're not serial killers?\" (played for laughs, ~0:58). Clip has no politics, but the ground stop is a political story nationally.",
-    "audio": "https://www.youtube.com/watch?v=vtSQLbOgZCA",
-    "ready": false,
-    "recap": "We heard the five stranded strangers who road-tripped from Chicago to Nashville during the ground stop."
-   },
-   {
-    "id": "2026-11-17-c02",
-    "slot": "FIRST HALF HOUR: LATE-NIGHT",
-    "title": "AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL",
-    "body": "AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Amy Poehler was on Fallon last night. She told Jimmy she asked Paul McCartney on her podcast who does the best impression of him, and McCartney said Jimmy. \"So Jimmy did it, right there. Here's Jimmy Fallon as Paul McCartney.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon, NBC official YouTube. On-air credit: \"courtesy of The Tonight Show on NBC.\"<br>• Jimmy breaks into his McCartney voice and 'remembers' writing She Loves You<br>🔊 IN: \"You had Paul McCartney on.\" (3:30)<br>OUT: \"...He's the best.\" (4:12)<br>~42 s · PLAY<br>➜ WHY: Beatles plus Fallon's impression works with no picture, and it's fresh from last night<br>⚠️ FLAG: Clean within IN/OUT per the official captions. Do not run past 4:12; \"Oh, my God\" comes at ~4:32.",
-    "audio": "https://www.youtube.com/watch?v=fWx6-3NDJO4",
-    "ready": false,
-    "recap": "We heard Jimmy Fallon do his Paul McCartney impression after Amy Poehler said Paul picked him as the best."
-   },
-   {
-    "id": "2026-11-17-c08",
-    "slot": "BUFFER: PETS & FAMILY",
-    "title": "THE MYSTERY DOG WHO PICKED HER PERSON",
-    "body": "THE MYSTERY DOG WHO PICKED HER PERSON · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A 26-year-old guy who'd never had a dog found a little dog with no tags following him in his building. He tracked down the owner, who said keep her, and now his mom calls the dog her granddaughter. \"Here's how Emma picked her person.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube. On-air credit: \"courtesy of The Dodo.\"<br>• Stray dog Emma shows up, gets a bath and a haircut, and becomes family<br>🔊 IN: \"When I first saw her, she seemed pretty chill\" (0:12) to \"...She wasn't chipped or anything.\" (0:27)<br>OUT: then \"We found the owner\" (0:48) to \"...She just makes everybody happy.\" (1:27)<br>~54 s edited · PLAY (music bed under)<br>➜ WHY: Happy ending, a mom-turned-grandma line, and it works without the picture<br>⚠️ FLAG: Clean in the auto-captions.",
-    "audio": "https://www.youtube.com/watch?v=FvWsi_GjXSA",
-    "ready": false,
-    "recap": "We heard how a stray dog named Emma showed up in a guy's building and became family."
-   },
-   {
-    "id": "2026-11-17-c09",
-    "slot": "BUFFER: NEWSY VIRAL",
-    "title": "SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT",
-    "body": "SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: A longtime actor from The Young and the Restless has a side gig: flight attendant. \"Inside Edition went along for the ride.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A veteran soap actor moonlighting in the aisle<br>🔊 IN: not checked (captions unavailable, download blocked)<br>OUT: not checked<br>~1:43 (full package) · PLAY after a listen<br>➜ WHY: Soap fans in the 25-55 demo, plus a nod to the ground stop week<br>⚠️ FLAG: Content NOT verified (actor's name not confirmed): listen through before airing.",
-    "audio": "https://www.youtube.com/watch?v=25zzzrcFdrI",
-    "ready": false,
-    "recap": "We heard about a Young and the Restless actor who moonlights as a flight attendant."
-   }
-  ]
- },
- "events": {
-  "id": "events",
-  "title": "Events",
-  "category": "Daily",
-  "type": "text",
-  "content": "TODAY: Beitner Bridge ribbon cutting (road still closed to traffic)<br>TODAY: Roscommon vs. Calumet, D3 volleyball quarterfinal, 6 PM, Gaylord HS<br>THU NOV 19: GTA 6 unlocks at midnight<br>FRI NOV 20: Light Up Downtown TC, tree lighting 6:30 PM<br>SAT NOV 21: Kingsley vs. Almont, D6 semifinal, 1 PM, Clare HS<br>SAT NOV 21: Gaylord St. Mary vs. Mendon, 8-player D2 final, 2 PM, Superior Dome<br>SAT NOV 21: Light Parade, downtown TC, 6-8 PM",
-  "notes": "UpNorthLive (Beitner, tree, Light Parade 11/21); GoFan/MHSAA (Roscommon); The D Zone (Kingsley 1 PM); Monday's sheet (St. Mary 2 PM Superior Dome); Rockstar (GTA).",
-  "custom": true,
-  "items": [
-   {
-    "id": "2026-11-17-events-01",
-    "title": "BEITNER RIBBON CUTTING",
-    "recap": "We noted the Beitner Bridge ribbon cutting today, with the road still closed."
-   },
-   {
-    "id": "2026-11-17-events-02",
-    "title": "ROSCOMMON VOLLEYBALL",
-    "recap": "We plugged Roscommon's state quarterfinal tonight at 6 in Gaylord."
-   },
-   {
-    "id": "2026-11-17-events-03",
-    "title": "GTA 6 LAUNCH",
-    "recap": "We counted down to GTA 6 unlocking Thursday at midnight."
-   },
-   {
-    "id": "2026-11-17-events-04",
-    "title": "LIGHT UP DOWNTOWN",
-    "recap": "We plugged Friday's downtown TC tree lighting at 6:30."
-   },
-   {
-    "id": "2026-11-17-events-05",
-    "title": "KINGSLEY SEMIFINAL",
-    "recap": "We plugged Kingsley vs. Almont Saturday at 1 in Clare."
-   },
-   {
-    "id": "2026-11-17-events-06",
-    "title": "ST. MARY FINAL",
-    "recap": "We plugged Gaylord St. Mary's 8-player final Saturday at 2 at the Superior Dome."
-   },
-   {
-    "id": "2026-11-17-events-07",
-    "title": "LIGHT PARADE",
-    "recap": "We plugged Saturday's Light Parade downtown, 6 to 8."
-   }
-  ]
- },
- "fb": {
-  "id": "fb",
-  "title": "Z93 Facebook Drafts",
-  "category": "Social",
-  "type": "text",
-  "content": "1️⃣ EARLY SHOW<br>🧚 Did you know there's a FREE fairy trail tucked behind the Botanic Garden at Historic Barns Park? Anyone can build a tiny fairy house out of sticks, bark and stones, all year long. So be honest: have you ever built one, and who REALLY did the building, you or the kids? 😄 Tell us below or text the studio at 231-929-4487. #Z93 #TraverseCity #UpNorth<br>📷 MEDIA: the 9&10 News 'Hidden Northern Michigan: Traverse City Fairy Trails' story photo from the article link (credit: 9&10 News)<br><br>2️⃣ MID SHOW<br>🏈💛 KINGSLEY IS 12-0 and two wins from a state title! The Stags take on Almont (also 12-0) in the Division 6 semifinal THIS SATURDAY at 1 PM at Clare High School. Who's making the drive? Drop some love for the Stags! #Z93 #KingsleyStags #UpNorth<br>📷 MEDIA: a studio snap of AJ in Kingsley colors, or grab one from his prep service<br><br>3️⃣ LATE SHOW<br>🧜‍♀️🎶 On this day in 1989, Disney's The Little Mermaid hit theaters! So here's the real question: what's the Disney song you can STILL sing every single word of? Mine might be 'Under the Sea'... #Z93 #HitsFrom90sToNow<br>📷 MEDIA: a studio snap of AJ holding a fork like a dinglehopper, or grab one from his prep service",
-  "notes": "Drafts only. AJ posts these himself during the show. Facts from the sheet's sourced items.",
-  "custom": true,
-  "items": []
- }
+  "vibe": {
+    "id": "vibe",
+    "title": "Vibe Check",
+    "category": "Daily",
+    "type": "text",
+    "content": "🎵 SLOW JAM: Sting, \"Fields of Gold\" (1993)<br>• No. 23 on the Billboard Hot 100<br>• Why today: sunny and mid-50s in the middle of November, the last golden fields before the snow<br><br>🚗 DRIVE TEASE: About 40 and sunny for the drive in, dry roads, and up to 55 by late afternoon.<br>📅 THIS DAY: On this day in 1989, Disney's The Little Mermaid hit theaters.<br>💡 FUN FACT: GTA 6 is the most pre-ordered game in PlayStation Store history, and it unlocks Thursday at midnight.<br>🎉 NATIONAL DAYS: National Homemade Bread Day, National Butter Day, National Take A Hike Day and National Baklava Day<br><br>☀️ 39 and clear right now, then sunny with a high near 55, SW wind 5 to 10, low around 41 tonight, and near 60 Thursday.<br>🌊 Small Craft Advisory on the bay and Lake Michigan through Wednesday afternoon, Lake Michigan waves 3 to 5 feet, and gusts to 30-35 mph Wednesday.<br>🏫 No school closings. 🚧 Beitner Bridge gets its ribbon cutting today, but it is NOT open to traffic yet.<br>⚡ Hutchinson news is in, Kingsley has a kickoff time, and Roscommon plays for a final four spot tonight. Tuesday's got something to say.",
+    "notes": "Slow jam: Billboard chart history https://www.billboard.com/artist/sting/chart-history/ (Fields of Gold, Hot 100 No. 23, peak July 24, 1993).<br>Weather: NWS Gaylord TC point forecast and hourly (api.weather.gov 44.7631,-85.6206), KTVC obs. Hourly peaks at 55 (4 PM), matching the point forecast high near 55.<br>Wind & waves: NWS Gaylord Nearshore Marine Forecast (NSHAPX) 1:47 AM EST Tue 11/17: SCA through Wed afternoon. LMZ323 Grand Traverse Bay: SW 15-25 kt easing to 10-15 kt late morning, waves 2-3 ft. LMZ344 Sleeping Bear Pt-GT Light and LMZ345 Pt Betsie-Sleeping Bear Pt: SW 10-20 kt, waves 3-5 ft. TC Wed gusts 30, Wed night 35 mph (point forecast).<br>This day: The Little Mermaid general release Nov. 17, 1989 (Disney Animation / D23 / Box Office Mojo).<br>Fun fact: PlayStation Blog 11/10/2026: GTA VI is \"the most pre-ordered game in the history of PlayStation Store.\"<br>National days: https://nationaldaycalendar.com/what-day-is-it (fetched ~3:50 AM ET 11/17).<br>Schools: UpNorthLive closings page showed no listings ~3:55 AM ET. No Breaker City Pulse file today.<br>Roads: UpNorthLive 11/16 5:22 PM (GTCRC): ribbon cutting Tue, bridge not open to traffic yet; reopening date to be announced at the ceremony.",
+    "custom": false,
+    "items": [
+      {
+        "id": "2026-11-17-vibe-01",
+        "title": "SLOW JAM",
+        "recap": "We opened the Vibe Check with Sting's \"Fields of Gold\" for a golden, sunny November Tuesday."
+      },
+      {
+        "id": "2026-11-17-vibe-02",
+        "title": "DRIVE TEASE",
+        "recap": "We teased a dry, sunny drive around 40 degrees, headed to the mid-50s."
+      },
+      {
+        "id": "2026-11-17-vibe-03",
+        "title": "THIS DAY",
+        "recap": "We remembered Disney's The Little Mermaid hitting theaters on this day in 1989."
+      },
+      {
+        "id": "2026-11-17-vibe-04",
+        "title": "FUN FACT",
+        "recap": "We shared that GTA 6 is the most pre-ordered game in PlayStation Store history."
+      },
+      {
+        "id": "2026-11-17-vibe-05",
+        "title": "NATIONAL DAYS",
+        "recap": "We celebrated National Homemade Bread Day, Butter Day, Take a Hike Day and Baklava Day."
+      }
+    ]
+  },
+  "mood": {
+    "id": "mood",
+    "title": "Mood Boost",
+    "category": "6AM",
+    "type": "text",
+    "content": "Sugar Ray, \"Someday\" (1999)<br>• Peaked at No. 7 on the Billboard Hot 100 (Oct. 2, 1999)",
+    "notes": "Billboard chart history https://www.billboard.com/artist/sugar-ray/chart-history/ . Laid-back late-90s pick in the 'Every Morning' lane; not on the never list.",
+    "custom": false,
+    "items": [
+      {
+        "id": "2026-11-17-mood-01",
+        "title": "MOOD BOOST",
+        "recap": "We played Sugar Ray's \"Someday\" to kick off the 6 o'clock hour."
+      }
+    ]
+  },
+  "buzz": {
+    "id": "buzz",
+    "title": "Daily Buzz",
+    "category": "7AM",
+    "type": "text",
+    "content": "━━ LOCAL ━━<br><br>THE TREE HAS LANDED DOWNTOWN<br>• Downtown Traverse City's official 2026 Christmas tree arrived Monday, and crews worked from the air and on the ground to stick the landing.<br>• The tree lighting is Friday at 6:30 PM, and the Light Parade is Saturday night.<br>➜ TAKE: That tree had a smoother landing than half the flights in America this week.<br>➜ BAIT: Text 231-929-4487: real tree or fake tree at your house, and when does it go up?<br><br>FAIRY HOUSES BEHIND THE BARNS<br>• Tucked behind the Botanic Garden at Historic Barns Park, the Fairy Trails let anybody build a tiny fairy house out of sticks, bark and stones, all year long, for free.<br>• Heather Harrington of Life and Whim Studio started it about ten years ago, and her June fairy house contest draws 50 to 75 builders.<br>• Natural materials only, so the houses melt back into the woods.<br>➜ TAKE: Somewhere in Traverse City there's a fairy with better real estate than I have.<br>➜ BAIT: Text 231-929-4487: have you ever built a fairy house, and be honest, who REALLY built it, you or the kids?<br><br>BEITNER BRIDGE: RIBBON TODAY, CARS LATER<br>• The Beitner Road bridge that April's flooding washed out gets its ribbon cutting today.<br>• But don't drive over it yet: the Road Commission says crews still need final touches before it's safe for traffic, and they'll announce the opening date at the ceremony.<br>➜ TAKE: Seven months of detours, and we're one pair of giant scissors away.<br>➜ BAIT: Text 231-929-4487: what's your Beitner detour story? How much extra time has it cost you?<br><br>━━ BITS ━━<br><br>BREAD AND BUTTER DAY<br>• It's National Homemade Bread Day AND National Butter Day. Thanksgiving is nine days out: is it real butter on the table, or does somebody in your family still put out the margarine tub?<br><br>WOULD YOU ROAD TRIP WITH STRANGERS?<br>• Five strangers stuck at Chicago Midway during the ground stop drove eight hours home to Nashville together. Would you get in the car? And who's the one person you'd NEVER road trip with?<br><br>UNDER THE SEA<br>• The Little Mermaid came out on this day in 1989. What's the Disney song you can still sing every single word of, whether you want to or not?<br><br>━━ SPORTS ━━<br><br>HUTCHINSON: TORN ACL, OUT FOR THE SEASON<br>• Follow-up tests confirmed Aidan Hutchinson tore the ACL in his right knee celebrating Sunday's sack in Munich<br>• The good news: no other major damage, so he can focus on being ready for 2027<br>• Dan Campbell is expected to talk about it at his press conference today<br><br>KINGSLEY HAS A KICKOFF TIME<br>• Kingsley (12-0) vs. Almont (12-0), Division 6 state semifinal<br>• Saturday, 1 PM, at Clare High School<br><br>ROSCOMMON VOLLEYBALL TONIGHT<br>• Roscommon vs. Calumet, Division 3 state quarterfinal<br>• Tonight, 6 PM, at Gaylord High School, and a win sends them to the final four in Battle Creek",
+    "notes": "Pulse: no Breaker City Pulse today; Overheard in TC web skim found nothing indexed for the last day. Pulse from UpNorthLive / 9&10 overnight.<br>Buzz 1: UpNorthLive / WPBN newsroom, Mon 11/16 5:24 PM; photo: WPBN.<br>Buzz 2: 9&10 News 'Hidden Northern Michigan', Megan Huiskens / Josh Monroe, Mon 11/16 4:22 PM.<br>Buzz 3: UpNorthLive / WPBN, Mon 11/16 5:22 PM, updated 6:43 PM (Grand Traverse County Road Commission). Earlier: 9&10 News 10/7 and 10/14, MLive. Today's delta: ribbon cutting + opening date coming.<br>Score log: Tree 13 · Fairy Trails 13 · Beitner 12 · (West End parking talks 9, dry civic → Town buzz; Thanksgiving to-go meals 11 → Lifestyle; elk-shot-instead-of-deer 8, legal/hunting, cut)<br>Bits: nationaldaycalendar.com (bread/butter); Inside Edition 'Golden Girls' road trip (YouTube vtSQLbOgZCA); Little Mermaid 11/17/1989 (D23).<br>Sports: Hutchinson torn ACL, no additional damage: NBC Sports/PFT and NFL Network (11/16); Campbell presser Tue per Detroit Sports Nation/Yahoo. Kingsley-Almont Sat 1 PM, Clare HS: The D Zone schedule + Detroit Sports Forum pairings (Brookwood Athletic Complex), confirm on MHSAA.com. Roscommon-Calumet D3 QF Tue 6 PM, Gaylord HS: GoFan MHSAA ticket page + Prep Dig.<br>No national items today (live National button covers it).",
+    "custom": false,
+    "items": [
+      {
+        "id": "2026-11-17-buzz-01",
+        "title": "THE TREE HAS LANDED DOWNTOWN",
+        "recap": "We talked about downtown TC's official Christmas tree landing Monday ahead of Friday's 6:30 lighting."
+      },
+      {
+        "id": "2026-11-17-buzz-02",
+        "title": "FAIRY HOUSES BEHIND THE BARNS",
+        "recap": "We talked about the free Fairy Trails behind Historic Barns Park, where anyone can build a tiny fairy house."
+      },
+      {
+        "id": "2026-11-17-buzz-03",
+        "title": "BEITNER BRIDGE: RIBBON TODAY, CARS LATER",
+        "recap": "We talked about the Beitner Bridge ribbon cutting, with the road still closed until the Road Commission sets an opening date."
+      },
+      {
+        "id": "2026-11-17-buzz-04",
+        "title": "BREAD AND BUTTER DAY",
+        "recap": "We asked whether it's real butter or the margarine tub on the Thanksgiving table."
+      },
+      {
+        "id": "2026-11-17-buzz-05",
+        "title": "WOULD YOU ROAD TRIP WITH STRANGERS?",
+        "recap": "We asked if listeners would road trip with total strangers like the stranded \"Golden Girls.\""
+      },
+      {
+        "id": "2026-11-17-buzz-06",
+        "title": "UNDER THE SEA",
+        "recap": "We asked which Disney song listeners still know every word of."
+      },
+      {
+        "id": "2026-11-17-buzz-07",
+        "title": "HUTCHINSON: TORN ACL, OUT FOR THE SEASON",
+        "recap": "We updated Aidan Hutchinson's torn ACL, with no other major damage found."
+      },
+      {
+        "id": "2026-11-17-buzz-08",
+        "title": "KINGSLEY HAS A KICKOFF TIME",
+        "recap": "We gave Kingsley's semifinal kickoff: Saturday at 1 PM in Clare against Almont."
+      },
+      {
+        "id": "2026-11-17-buzz-09",
+        "title": "ROSCOMMON VOLLEYBALL TONIGHT",
+        "recap": "We wished Roscommon volleyball luck in tonight's state quarterfinal against Calumet in Gaylord."
+      }
+    ]
+  },
+  "gta6": {
+    "id": "gta6",
+    "title": "GTA 6 Watch",
+    "category": "Daily",
+    "type": "text",
+    "content": "GTA 6 WATCH: TWO DAYS OUT<br>• CONFIRMED: Grand Theft Auto VI unlocks at midnight Thursday, Nov. 19, on PS5 and Xbox Series X|S, and pre-loading is open now<br>• NEW: a second pre-launch update just dropped, about 602 MB on PS5 and 1.6 GB on Xbox, still with no patch notes<br>• NEW: a first look with The Weather Channel shows storms, fog and mist that roll through just part of the map, so it can pour downtown and be sunny on the beach<br>➜ TAKE: GTA 6 has more realistic weather than our forecast apps, and it STILL can't predict a Michigan November.",
+    "notes": "Release/pre-load: Rockstar Newswire 'Pre-Load Now' 11/10 https://www.rockstargames.com/VI/pre-load-now ; PlayStation Blog 11/10.<br>Update 01.002.001 sizes: Tech Times 11/17 https://www.techtimes.com/articles/330886/20261117/gta-6-gets-second-pre-launch-update-602-mb-ps5-16-gb-xbox-still-no-patch-notes.htm (no patch notes; not official Rockstar text).<br>Weather first look: TweakTown 11/17 (Weather Channel feature) https://www.tweaktown.com/news/114724/ ; Rockstar Report. Monday's box-code rumor not re-run; no Rockstar statement found.",
+    "custom": true,
+    "items": [
+      {
+        "id": "2026-11-17-gta6-01",
+        "title": "GTA 6 WATCH",
+        "recap": "We counted down to GTA 6's Thursday midnight launch and its new local-storm weather."
+      }
+    ]
+  },
+  "lifestyle": {
+    "id": "lifestyle",
+    "title": "Lifestyle & Trends",
+    "category": "Daily",
+    "type": "text",
+    "content": "1) SHOPPERS ARE WAITING FOR THANKSGIVING WEEKEND<br>• The National Retail Federation's holiday survey says 64% of us plan to wait until Thanksgiving weekend to do most of our shopping<br>• Online is still the top spot at 53%, and 56% say the economy is changing what they'll spend<br>➜ LOCAL ANGLE: Thanksgiving weekend means Black Friday at the big boxes and Small Business Saturday downtown, so expect packed lots and make the list early.<br>➜ BAIT: Text 231-929-4487: are you a Black Friday line person or a couch-and-laptop person?<br><br>2) LET SOMEBODY ELSE COOK THE SIDES<br>• Businesses across Northern Michigan are taking orders for Thanksgiving meals, pies, rolls and sides to go<br>• Most need you to order ahead, with pickup mostly Nov. 24 and 25<br>➜ LOCAL ANGLE: From Suttons Bay to Kalkaska to Petoskey, you can outsource the pie and still take the credit.<br>➜ BAIT: Text 231-929-4487: what's the one dish you'd happily let somebody else make?",
+    "notes": "1) NRF holiday survey (Prosper Insights, 8,094 adults, Oct. 1-7, 2026) https://nrf.com/media-center/press-releases/affordability-shapes-winter-holiday-shopping-according-to-nrf-holiday-survey .<br>2) 9&10 News 11/13 https://www.9and10news.com/2026/11/13/northern-michigan-businesses-offer-thanksgiving-meals-pies-and-sides-to-go/ (Bay Harbor, Cadillac, Kalkaska, Petoskey, Suttons Bay, Thompsonville, TC).",
+    "custom": true,
+    "items": [
+      {
+        "id": "2026-11-17-lifestyle-01",
+        "title": "SHOPPERS ARE WAITING FOR THANKSGIVING WEEKEND",
+        "recap": "We talked about the NRF survey: 64% of shoppers are waiting until Thanksgiving weekend."
+      },
+      {
+        "id": "2026-11-17-lifestyle-02",
+        "title": "LET SOMEBODY ELSE COOK THE SIDES",
+        "recap": "We talked about Up North spots doing Thanksgiving meals and pies to go, most with pickup Nov. 24-25."
+      }
+    ]
+  },
+  "officeschool": {
+    "id": "officeschool",
+    "title": "Office & School Bits",
+    "category": "Bit",
+    "type": "text",
+    "content": "THE OFFICE: GIFT SHOPPING ON THE CLOCK<br>• Monster's new holiday survey says 41% of workers have shopped online for holiday gifts during the workday, and 59% of people who took holiday time off worked anyway. So, bosses, if you hear a lot of clicking right now, that's not the spreadsheet. Text 231-929-4487: what's the sneakiest thing you've done on the work computer?<br><br>SCHOOL: THE HOMEWORK EXCUSE HALL OF FAME<br>• Listener-question bit: Thanksgiving break is close, and the homework excuses are getting creative. Parents and teachers, what's the best excuse you've ever heard for missing homework? Kids, we won't tell. Text 231-929-4487.",
+    "notes": "Office: Monster 2026 Holiday Work Habits Report (1,000 U.S. adults, Oct. 5-8, 2026), via Film Daily https://filmdaily.co/news/monster-survey-shows-59-working-during-vacation/<br>School: framed as a listener-question bit, no stat.",
+    "custom": true,
+    "items": [
+      {
+        "id": "2026-11-17-officeschool-01",
+        "title": "THE OFFICE: GIFT SHOPPING ON THE CLOCK",
+        "recap": "We talked about Monster's survey: 41% of workers shop for holiday gifts on the clock."
+      },
+      {
+        "id": "2026-11-17-officeschool-02",
+        "title": "SCHOOL: THE HOMEWORK EXCUSE HALL OF FAME",
+        "recap": "We collected the best homework excuses from parents, teachers and kids."
+      }
+    ]
+  },
+  "verse": {
+    "id": "verse",
+    "title": "Verse Reverse",
+    "category": "Optional",
+    "type": "text",
+    "content": "",
+    "notes": "",
+    "custom": false,
+    "items": []
+  },
+  "mental": {
+    "id": "mental",
+    "title": "Mental Health Minute",
+    "category": "8:05",
+    "type": "text",
+    "content": "\"Send the Text You Keep Meaning to Send\"<br><br>We've got a sunny Tuesday and Thanksgiving is nine days away, which means a lot of us are thinking about the people we'll see, and maybe a few we won't. There's probably somebody who popped into your head just now, an old friend, a cousin, a neighbor who moved, and you've been meaning to reach out for months, but you don't, because you figure it'd be weird or they're busy. Here's the thing, though. Researchers who studied this found that people consistently underestimate how much the other person appreciates hearing from them, and the more out of the blue the message, the more it means. So here's your move for today. Before lunch, send one short text to that person, something like, \"Saw this and thought of you,\" or \"Hey, I miss our talks, how are you?\" You don't need a reason, and you don't need to plan a get-together. The text does the work, and nine times out of ten, you'll get a reply that makes your whole afternoon. That's your Mental Health Minute on Z93. Text me at 231-929-4487 and tell me who you reached out to.",
+    "notes": "Evidence: Liu, Rim, Min & Min (2022), 'The Surprise of Reaching Out,' Journal of Personality and Social Psychology (people underestimate how much others appreciate being reached out to, more so when the contact is a surprise). Move not used this week (week-used: park the list; catch the sun).",
+    "custom": false,
+    "items": [
+      {
+        "id": "2026-11-17-mental-01",
+        "title": "SEND THE TEXT",
+        "recap": "We suggested sending one out-of-the-blue text to someone you miss, because people love hearing from you more than you think."
+      }
+    ]
+  },
+  "flash": {
+    "id": "flash",
+    "title": "Flashback",
+    "category": "9AM",
+    "type": "text",
+    "content": "HEAVEN IS A PLACE ON EARTH — BELINDA CARLISLE<br>• Single: 1987, the lead single from \"Heaven on Earth\"<br>• No. 1 on the Billboard Hot 100 on Dec. 5, 1987, her only Hot 100 No. 1<br>• Origin: written by Rick Nowels and Ellen Shipley, and the music video was directed by actress Diane Keaton, with kids holding glowing globes<br>• Why today: a sunny \"heaven on earth\" day in the middle of November",
+    "notes": "Backup pick (requester blank until a listener request lands). No flashback-request-2026-11-17.md file.<br>No. 1 Dec. 5, 1987: Billboard 'Chart Rewind' https://www.billboard.com/pro/belinda-carlisle-heaven-is-a-place-on-earth-rewinding-the-charts-1987/ ; Diane Keaton directed the video: Wikipedia / IMVDb / Ultimate Classic Rock.<br>Writers Nowels/Shipley and 'only solo Hot 100 No. 1' from Wikipedia; UK chart run not re-verified this morning, so it is left off the card.",
+    "custom": false,
+    "items": [
+      {
+        "id": "2026-11-17-flash-01",
+        "title": "HEAVEN IS A PLACE ON EARTH — BELINDA CARLISLE",
+        "recap": "We flashed back to Belinda Carlisle's \"Heaven Is a Place on Earth,\" a Hot 100 No. 1 in December 1987."
+      }
+    ],
+    "requester": "",
+    "song": "Heaven Is a Place on Earth",
+    "artist": "Belinda Carlisle",
+    "single_year": "1987",
+    "chart_records": [
+      "No. 1 Billboard Hot 100 (Dec. 5, 1987)",
+      "Her only solo Hot 100 No. 1"
+    ],
+    "origin": "Written by Rick Nowels and Ellen Shipley; the music video was directed by actress Diane Keaton, with kids holding glowing globes."
+  },
+  "cross": {
+    "id": "cross",
+    "title": "Cross Talk",
+    "category": "Midday",
+    "type": "text",
+    "content": "TOPIC: THE GREAT THANKSGIVING ROLL DEBATE<br>• It's National Homemade Bread Day AND National Butter Day, nine days before Thanksgiving<br>• Prompt 1: Homemade rolls, frozen dough you bake yourself, or a bag of Hawaiian rolls? Defend it.<br>• Prompt 2: Real butter, whipped butter, or the margarine tub. Is there a wrong answer?<br>• Prompt 3: Who in your family is in charge of the bread, and are they qualified?",
+    "notes": "Hook from nationaldaycalendar.com (11/17). Light food-holiday debate per buzz-rubric STYLE NORTH STAR.",
+    "custom": false,
+    "items": [
+      {
+        "id": "2026-11-17-cross-01",
+        "title": "THANKSGIVING ROLL DEBATE",
+        "recap": "Courtney asked about homemade rolls versus Hawaiian rolls and real butter versus margarine."
+      }
+    ]
+  },
+  "offcharts": {
+    "id": "offcharts",
+    "title": "Off the Charts",
+    "category": "Fri 8:30",
+    "type": "text",
+    "content": "Fridays only",
+    "notes": "",
+    "custom": false,
+    "items": []
+  },
+  "newsclips": {
+    "id": "newsclips",
+    "title": "News Audio",
+    "category": "Clips",
+    "type": "text",
+    "content": "HUTCH HURT CELEBRATING THE SACK · NEWS AUDIO<br>🎙️ SET UP: Sunday in Munich, Aidan Hutchinson sacked Drake Maye, hurt his right knee celebrating, and tests now confirm a torn ACL. \"Here's how NBC's Football Night in America told it Sunday night.\"<br>🔈 AUDIO SOURCE: NBC Sports, NFL on NBC official YouTube (Football Night in America). On-air credit: \"courtesy of NBC Sports.\"<br>• NBC's studio open: the sack, the celebration, the knee, and 'neither one returns'<br>🔊 IN: \"Now today, the morning started in Germany\" (0:19)<br>OUT: \"...Neither one returns.\" (0:38)<br>~21 s · TALK-OVER (or PLAY with credit)<br>➜ WHY: It's the biggest Lions story of the week, and today's update makes it fresh<br>⚠️ FLAG: Another network's broadcast: get their OK before playing it straight, or talk over it. Injury talk, no graphic detail. Music bed under the open.<br><br>HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD · NEWS AUDIO<br>🎙️ SET UP: A Head Start director in Georgia saved a 2-year-old boy who was choking. \"Inside Edition has the moment and what she did.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A feel-good save at a Georgia Head Start<br>🔊 IN: \"It's panic at the preschool, a two-year-old boy is choking on candy\"<br>OUT: \"...he might have not made it back home with me.\"<br>~51 s (full package) · PLAY after a listen<br>➜ WHY: A quick hero story every parent in the car will feel<br>⚠️ FLAG: Child medical emergency (happy ending). Director Yolanda Willis saves the boy; mom Felicia Freeman is in the cut. Heimlich described, not graphic. Clean language.<br><br>THE FAIRY TRAIL LADY · NEWS AUDIO<br>🎙️ SET UP: Pairs with the Fairy Trails story: Heather Harrington started the free fairy house trail behind Historic Barns Park about ten years ago. \"Here's why she did it, courtesy of 9&10 News.\"<br>🔈 AUDIO SOURCE: 9&10 News \"Hidden Northern Michigan\" video. On-air credit: \"courtesy of 9&10 News.\"<br>• Harrington on art outdoors that everyone can join<br>🔊 IN: \"I'm an artist and designer and I love everything outdoors\"<br>OUT: \"...and I love creating with other people.\"<br>~8 s · TALK-OVER<br>➜ WHY: A warm local voice on a quirky local story<br>⚠️ FLAG: Another station's audio: get their OK before playing it straight, or talk over it. Quote confirmed on the video.",
+    "notes": "HUTCH HURT CELEBRATING THE SACK: https://www.youtube.com/watch?v=HQYY09nn72I · cut file /workspace/morning-rush/clips/2026-11-17/c05-hutch-hurt.mp3 · ⚠️ FLAG: Another network's broadcast: get their OK before playing it straight, or talk over it. Injury talk, no graphic detail. Music bed under the open.<br>HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD: https://www.youtube.com/watch?v=suZbSJMQqRo · cut file /workspace/morning-rush/clips/2026-11-17/c06-headstart-save.mp3 · ⚠️ FLAG: Child medical emergency (happy ending). Director Yolanda Willis saves the boy; mom Felicia Freeman is in the cut. Heimlich described, not graphic. Clean language.<br>THE FAIRY TRAIL LADY: https://www.9and10news.com/video/2026/11/16/hidden-northern-michigan-fairy-trails/ · cut file /workspace/morning-rush/clips/2026-11-17/c07-fairy-trails.mp3 · ⚠️ FLAG: Another station's audio: get their OK before playing it straight, or talk over it. Quote confirmed on the video.",
+    "custom": true,
+    "items": [],
+    "clips": [
+      {
+        "id": "2026-11-17-c05",
+        "slot": "NEWS AUDIO",
+        "title": "HUTCH HURT CELEBRATING THE SACK",
+        "body": "HUTCH HURT CELEBRATING THE SACK · NEWS AUDIO<br>🎙️ SET UP: Sunday in Munich, Aidan Hutchinson sacked Drake Maye, hurt his right knee celebrating, and tests now confirm a torn ACL. \"Here's how NBC's Football Night in America told it Sunday night.\"<br>🔈 AUDIO SOURCE: NBC Sports, NFL on NBC official YouTube (Football Night in America). On-air credit: \"courtesy of NBC Sports.\"<br>• NBC's studio open: the sack, the celebration, the knee, and 'neither one returns'<br>🔊 IN: \"Now today, the morning started in Germany\" (0:19)<br>OUT: \"...Neither one returns.\" (0:38)<br>~21 s · TALK-OVER (or PLAY with credit)<br>➜ WHY: It's the biggest Lions story of the week, and today's update makes it fresh<br>⚠️ FLAG: Another network's broadcast: get their OK before playing it straight, or talk over it. Injury talk, no graphic detail. Music bed under the open.",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c05-hutch-hurt.mp3",
+        "ready": true,
+        "recap": "We heard NBC describe Aidan Hutchinson's knee injury in Munich, now confirmed as a torn ACL."
+      },
+      {
+        "id": "2026-11-17-c06",
+        "slot": "NEWS AUDIO",
+        "title": "HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD",
+        "body": "HEAD START DIRECTOR SAVES A CHOKING 2-YEAR-OLD · NEWS AUDIO<br>🎙️ SET UP: A Head Start director in Georgia saved a 2-year-old boy who was choking. \"Inside Edition has the moment and what she did.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A feel-good save at a Georgia Head Start<br>🔊 IN: \"It's panic at the preschool, a two-year-old boy is choking on candy\"<br>OUT: \"...he might have not made it back home with me.\"<br>~51 s (full package) · PLAY after a listen<br>➜ WHY: A quick hero story every parent in the car will feel<br>⚠️ FLAG: Child medical emergency (happy ending). Director Yolanda Willis saves the boy; mom Felicia Freeman is in the cut. Heimlich described, not graphic. Clean language.",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c06-headstart-save.mp3",
+        "ready": true,
+        "recap": "We heard the story of a Georgia Head Start director who saved a choking 2-year-old."
+      },
+      {
+        "id": "2026-11-17-c07",
+        "slot": "NEWS AUDIO",
+        "title": "THE FAIRY TRAIL LADY",
+        "body": "THE FAIRY TRAIL LADY · NEWS AUDIO<br>🎙️ SET UP: Pairs with the Fairy Trails story: Heather Harrington started the free fairy house trail behind Historic Barns Park about ten years ago. \"Here's why she did it, courtesy of 9&10 News.\"<br>🔈 AUDIO SOURCE: 9&10 News \"Hidden Northern Michigan\" video. On-air credit: \"courtesy of 9&10 News.\"<br>• Harrington on art outdoors that everyone can join<br>🔊 IN: \"I'm an artist and designer and I love everything outdoors\"<br>OUT: \"...and I love creating with other people.\"<br>~8 s · TALK-OVER<br>➜ WHY: A warm local voice on a quirky local story<br>⚠️ FLAG: Another station's audio: get their OK before playing it straight, or talk over it. Quote confirmed on the video.",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c07-fairy-trails.mp3",
+        "ready": true,
+        "recap": "We heard Heather Harrington on why she started TC's Fairy Trails."
+      }
+    ]
+  },
+  "clips": {
+    "id": "clips",
+    "title": "Trending Audio",
+    "category": "Clips",
+    "type": "text",
+    "content": "7 of 10 clips today (2 trending, 3 news audio, 2 buffer) +3 held/carried. Both stand-up slots are filled by the held/carried READY clips. All 7 new picks are cut and READY.<br><br>AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS (HELD FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Dry Bar comic Ahmed Bharoocha is genuinely scared of cats, and every cat owner he tells answers by shoving the cat in his face. \"Cat people, this is you. Be honest.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• Cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY · READY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the Dodo dog in the buffer<br>⚠️ FLAG: Clean<br><br>LEANNE MORGAN: THE THERMOSTAT WAR (CARRIED FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Tennessee mom comic Leanne Morgan on hitting your mid-40s: she wants the house at 68 and her husband keeps cranking it to 70. \"Who wins the thermostat war at your house?\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• She sets it to 68, he turns it to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY · READY<br>➜ WHY: Dead-center for women 25-55; unaired Monday, so it rolls forward<br>⚠️ FLAG: Mild: mentions perimenopause and night sweats (fine for the demo). The cut stops at 1:48, before the beagle bit's crude line.<br><br>SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG (EXTRA, CARRIED FROM 11/16) · EXTRA: LATE-NIGHT<br>🎙️ SET UP: SNL's last show before Thanksgiving, and comic Tommy Brennan sang an \"original Thanksgiving song\" about the family members who make the holiday. \"If you've got THAT relative coming for Thanksgiving, this one's for you.\"<br>🔈 AUDIO SOURCE: SNL / NBC official YouTube. On-air credit: \"courtesy of Saturday Night Live on NBC.\"<br>• The full song, start to finish, about the relatives who make Thanksgiving<br>🔊 IN: \"I've been home for 20 seconds\"<br>OUT: \"...Happy turkey day, to you.\"<br>~2:34 · PLAY · READY<br>➜ WHY: Truce asked for the full song as Tuesday's extra<br>⚠️ FLAG: SPICY: the full song has an uncle-naked verse, a Columbus/Kaepernick line and a coming-out verse. Truce's call. (The app also shows the short version marked aired 11/16.)<br><br>THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP · SUPER-CLIP 6 AM<br>🎙️ SET UP: When the nationwide ground stop hit, five strangers stuck at Chicago's Midway Airport teamed up and drove eight hours home to Nashville together, and now people are calling them the new Golden Girls. \"Inside Edition caught up with the road trip crew. Listen.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• Five stranded strangers, one car, ice cream stops and stretch breaks, and an 8-hour ride to Nashville<br>🔊 IN: \"What do you do when every plane in America is grounded\" (0:00)<br>OUT: \"...And they weren't.\" (1:06)<br>~64 s · PLAY<br>➜ WHY: Everybody's talking about the ground stop, and this is the feel-good, funny side of it<br>⚠️ FLAG: Mild: one joke line, \"How can we be sure they're not serial killers?\" (played for laughs, ~0:59). Clip has no politics, but the ground stop is a political story nationally.<br><br>AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Amy Poehler was on Fallon last night. She told Jimmy she asked Paul McCartney on her podcast who does the best impression of him, and McCartney said Jimmy. \"So Jimmy did it, right there. Here's Jimmy Fallon as Paul McCartney.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon, NBC official YouTube. On-air credit: \"courtesy of The Tonight Show on NBC.\"<br>• Jimmy breaks into his McCartney voice and 'remembers' writing She Loves You<br>🔊 IN: \"You had Paul McCartney on.\" (3:32)<br>OUT: \"...He's the best.\" (4:12)<br>~42 s · PLAY<br>➜ WHY: Beatles plus Fallon's impression works with no picture, and it's fresh from last night<br>⚠️ FLAG: Clean. Cut stops at \"He's the best\" (4:12), before \"Oh, my God\" at ~4:32.<br><br>THE MYSTERY DOG WHO PICKED HER PERSON · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A 26-year-old guy who'd never had a dog found a little dog with no tags following him in his building. He tracked down the owner, who said keep her, and now his mom calls the dog her granddaughter. \"Here's how Emma picked her person.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube. On-air credit: \"courtesy of The Dodo.\"<br>• Stray dog Emma shows up, gets a bath and a haircut, and becomes family<br>🔊 IN: \"When I first saw her, she seemed pretty chill\" (0:12) to \"...She wasn't chipped or anything.\" (0:27)<br>OUT: then \"We found the owner\" (0:48) to \"...She just makes everybody happy.\" (1:27)<br>~54 s edited · PLAY (music bed under)<br>➜ WHY: Happy ending, a mom-turned-grandma line, and it works without the picture<br>⚠️ FLAG: Music bed under. Cut at the published auto-caption times (0:12–0:27 + 0:48–1:27). Whisper could not reliably transcribe this package because of the music bed; give it a listen before air. Auto-captions previously read clean.<br><br>SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: A longtime actor from The Young and the Restless has a side gig: flight attendant. \"Inside Edition went along for the ride.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A veteran soap actor moonlighting in the aisle<br>🔊 IN: \"It's panic at the preschool, a two-year-old boy is choking on candy\"<br>OUT: \"...he might have not made it back home with me.\"<br>~1:43 (full package) · PLAY after a listen<br>➜ WHY: Soap fans in the 25-55 demo, plus a nod to the ground stop week<br>⚠️ FLAG: Clean. Actor is Kate Linder (44 years on The Young and the Restless; also a United flight attendant for nearly 50 years).",
+    "notes": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS: https://www.youtube.com/watch?v=z02Yg9fAqCM · cut file /workspace/morning-rush/clips/2026-11-16/c03-bharoocha-cats.mp3 · ⚠️ FLAG: Clean<br>LEANNE MORGAN: THE THERMOSTAT WAR: https://www.youtube.com/watch?v=Tp0TmcFbSzo · cut file /workspace/morning-rush/clips/2026-11-16/c04-leanne-morgan-thermostat.mp3 · ⚠️ FLAG: Mild: mentions perimenopause and night sweats (fine for the demo). The cut stops at 1:48, before the beagle bit's crude line.<br>SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG: https://www.youtube.com/watch?v=H7Q_wnltz0w · cut file /workspace/morning-rush/clips/2026-11-16/c02-snl-thanksgiving-song-v2.mp3 · ⚠️ FLAG: SPICY: the full song has an uncle-naked verse, a Columbus/Kaepernick line and a coming-out verse. Truce's call. (The app also shows the short version marked aired 11/16.)<br>THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP: https://www.youtube.com/watch?v=vtSQLbOgZCA · cut file /workspace/morning-rush/clips/2026-11-17/c01-golden-girls-road-trip.mp3 · ⚠️ FLAG: Mild: one joke line, \"How can we be sure they're not serial killers?\" (played for laughs, ~0:59). Clip has no politics, but the ground stop is a political story nationally.<br>AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL: https://www.youtube.com/watch?v=fWx6-3NDJO4 · cut file /workspace/morning-rush/clips/2026-11-17/c02-fallon-mccartney.mp3 · ⚠️ FLAG: Clean. Cut stops at \"He's the best\" (4:12), before \"Oh, my God\" at ~4:32.<br>THE MYSTERY DOG WHO PICKED HER PERSON: https://www.youtube.com/watch?v=FvWsi_GjXSA · cut file /workspace/morning-rush/clips/2026-11-17/c08-dodo-emma.mp3 · ⚠️ FLAG: Music bed under. Cut at the published auto-caption times (0:12–0:27 + 0:48–1:27). Whisper could not reliably transcribe this package because of the music bed; give it a listen before air. Auto-captions previously read clean.<br>SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT: https://www.youtube.com/watch?v=25zzzrcFdrI · cut file /workspace/morning-rush/clips/2026-11-17/c09-yr-kate-linder.mp3 · ⚠️ FLAG: Clean. Actor is Kate Linder (44 years on The Young and the Restless; also a United flight attendant for nearly 50 years).<br>Scan note: YouTube Trending/Shorts, TikTok Creative Center and Google Trends not reached this morning; picks came from official channel searches.",
+    "custom": true,
+    "items": [],
+    "clips": [
+      {
+        "id": "2026-11-16-c03",
+        "slot": "FIRST HALF HOUR: STAND-UP",
+        "title": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS (HELD FROM 11/16)",
+        "body": "AHMED BHAROOCHA: NOBODY RESPECTS MY FEAR OF CATS (HELD FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Dry Bar comic Ahmed Bharoocha is genuinely scared of cats, and every cat owner he tells answers by shoving the cat in his face. \"Cat people, this is you. Be honest.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• Cat owners answer his cat phobia by handing him the cat<br>🔊 IN: \"Faced one of my biggest life fears recently. I have a fear of cats.\" (0:15)<br>OUT: \"...My closet's different. It's like a field. Get in. Get in.\" (0:54)<br>~40 s · PLAY · READY<br>➜ WHY: Every pet owner has done exactly this, and it pairs with the Dodo dog in the buffer<br>⚠️ FLAG: Clean",
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c03-bharoocha-cats.mp3",
+        "ready": true,
+        "recap": "We heard Dry Bar comic Ahmed Bharoocha on cat owners who ignore his fear of cats."
+      },
+      {
+        "id": "2026-11-16-c04",
+        "slot": "FIRST HALF HOUR: STAND-UP",
+        "title": "LEANNE MORGAN: THE THERMOSTAT WAR (CARRIED FROM 11/16)",
+        "body": "LEANNE MORGAN: THE THERMOSTAT WAR (CARRIED FROM 11/16) · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Tennessee mom comic Leanne Morgan on hitting your mid-40s: she wants the house at 68 and her husband keeps cranking it to 70. \"Who wins the thermostat war at your house?\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube. On-air credit: \"courtesy of Dry Bar Comedy.\"<br>• She sets it to 68, he turns it to 70, and now he's wearing pajamas for the first time in their marriage<br>🔊 IN: \"When you get to be about your mid-40s...\" (1:01)<br>OUT: \"...one time he had to wear a toboggan.\" (1:48)<br>~47 s · PLAY · READY<br>➜ WHY: Dead-center for women 25-55; unaired Monday, so it rolls forward<br>⚠️ FLAG: Mild: mentions perimenopause and night sweats (fine for the demo). The cut stops at 1:48, before the beagle bit's crude line.",
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c04-leanne-morgan-thermostat.mp3",
+        "ready": true,
+        "recap": "We heard Leanne Morgan on the 68-versus-70 thermostat war with her husband."
+      },
+      {
+        "id": "2026-11-16-c02",
+        "slot": "EXTRA: LATE-NIGHT",
+        "title": "SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG (EXTRA, CARRIED FROM 11/16)",
+        "body": "SNL WEEKEND UPDATE: TOMMY BRENNAN'S FULL THANKSGIVING SONG (EXTRA, CARRIED FROM 11/16) · EXTRA: LATE-NIGHT<br>🎙️ SET UP: SNL's last show before Thanksgiving, and comic Tommy Brennan sang an \"original Thanksgiving song\" about the family members who make the holiday. \"If you've got THAT relative coming for Thanksgiving, this one's for you.\"<br>🔈 AUDIO SOURCE: SNL / NBC official YouTube. On-air credit: \"courtesy of Saturday Night Live on NBC.\"<br>• The full song, start to finish, about the relatives who make Thanksgiving<br>🔊 IN: \"I've been home for 20 seconds\"<br>OUT: \"...Happy turkey day, to you.\"<br>~2:34 · PLAY · READY<br>➜ WHY: Truce asked for the full song as Tuesday's extra<br>⚠️ FLAG: SPICY: the full song has an uncle-naked verse, a Columbus/Kaepernick line and a coming-out verse. Truce's call. (The app also shows the short version marked aired 11/16.)",
+        "audio": "/workspace/morning-rush/clips/2026-11-16/c02-snl-thanksgiving-song-v2.mp3",
+        "ready": true,
+        "recap": "We played SNL Weekend Update's full Tommy Brennan Thanksgiving song."
+      },
+      {
+        "id": "2026-11-17-c01",
+        "slot": "SUPER-CLIP 6 AM",
+        "title": "THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP",
+        "body": "THE NEW GOLDEN GIRLS: STRANGERS ROAD TRIP THE GROUND STOP · SUPER-CLIP 6 AM<br>🎙️ SET UP: When the nationwide ground stop hit, five strangers stuck at Chicago's Midway Airport teamed up and drove eight hours home to Nashville together, and now people are calling them the new Golden Girls. \"Inside Edition caught up with the road trip crew. Listen.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• Five stranded strangers, one car, ice cream stops and stretch breaks, and an 8-hour ride to Nashville<br>🔊 IN: \"What do you do when every plane in America is grounded\" (0:00)<br>OUT: \"...And they weren't.\" (1:06)<br>~64 s · PLAY<br>➜ WHY: Everybody's talking about the ground stop, and this is the feel-good, funny side of it<br>⚠️ FLAG: Mild: one joke line, \"How can we be sure they're not serial killers?\" (played for laughs, ~0:59). Clip has no politics, but the ground stop is a political story nationally.",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c01-golden-girls-road-trip.mp3",
+        "ready": true,
+        "recap": "We heard the five stranded strangers who road-tripped from Chicago to Nashville during the ground stop."
+      },
+      {
+        "id": "2026-11-17-c02",
+        "slot": "FIRST HALF HOUR: LATE-NIGHT",
+        "title": "AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL",
+        "body": "AMY POEHLER: PAUL McCARTNEY SAYS JIMMY DOES THE BEST PAUL · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Amy Poehler was on Fallon last night. She told Jimmy she asked Paul McCartney on her podcast who does the best impression of him, and McCartney said Jimmy. \"So Jimmy did it, right there. Here's Jimmy Fallon as Paul McCartney.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon, NBC official YouTube. On-air credit: \"courtesy of The Tonight Show on NBC.\"<br>• Jimmy breaks into his McCartney voice and 'remembers' writing She Loves You<br>🔊 IN: \"You had Paul McCartney on.\" (3:32)<br>OUT: \"...He's the best.\" (4:12)<br>~42 s · PLAY<br>➜ WHY: Beatles plus Fallon's impression works with no picture, and it's fresh from last night<br>⚠️ FLAG: Clean. Cut stops at \"He's the best\" (4:12), before \"Oh, my God\" at ~4:32.",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c02-fallon-mccartney.mp3",
+        "ready": true,
+        "recap": "We heard Jimmy Fallon do his Paul McCartney impression after Amy Poehler said Paul picked him as the best."
+      },
+      {
+        "id": "2026-11-17-c08",
+        "slot": "BUFFER: PETS & FAMILY",
+        "title": "THE MYSTERY DOG WHO PICKED HER PERSON",
+        "body": "THE MYSTERY DOG WHO PICKED HER PERSON · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A 26-year-old guy who'd never had a dog found a little dog with no tags following him in his building. He tracked down the owner, who said keep her, and now his mom calls the dog her granddaughter. \"Here's how Emma picked her person.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube. On-air credit: \"courtesy of The Dodo.\"<br>• Stray dog Emma shows up, gets a bath and a haircut, and becomes family<br>🔊 IN: \"When I first saw her, she seemed pretty chill\" (0:12) to \"...She wasn't chipped or anything.\" (0:27)<br>OUT: then \"We found the owner\" (0:48) to \"...She just makes everybody happy.\" (1:27)<br>~54 s edited · PLAY (music bed under)<br>➜ WHY: Happy ending, a mom-turned-grandma line, and it works without the picture<br>⚠️ FLAG: Music bed under. Cut at the published auto-caption times (0:12–0:27 + 0:48–1:27). Whisper could not reliably transcribe this package because of the music bed; give it a listen before air. Auto-captions previously read clean.",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c08-dodo-emma.mp3",
+        "ready": true,
+        "recap": "We heard how a stray dog named Emma showed up in a guy's building and became family."
+      },
+      {
+        "id": "2026-11-17-c09",
+        "slot": "BUFFER: NEWSY VIRAL",
+        "title": "SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT",
+        "body": "SOAP STAR BY DAY, FLIGHT ATTENDANT BY NIGHT · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: A longtime actor from The Young and the Restless has a side gig: flight attendant. \"Inside Edition went along for the ride.\"<br>🔈 AUDIO SOURCE: Inside Edition official YouTube. On-air credit: \"courtesy of Inside Edition.\"<br>• A veteran soap actor moonlighting in the aisle<br>🔊 IN: \"Does Kate Linder look familiar?\"<br>OUT: \"...it's nothing but clear skies ahead.\"<br>~1:43 (full package) · PLAY after a listen<br>➜ WHY: Soap fans in the 25-55 demo, plus a nod to the ground stop week<br>⚠️ FLAG: Clean. Actor is Kate Linder (44 years on The Young and the Restless; also a United flight attendant for nearly 50 years).",
+        "audio": "/workspace/morning-rush/clips/2026-11-17/c09-yr-kate-linder.mp3",
+        "ready": true,
+        "recap": "We heard about a Young and the Restless actor who moonlights as a flight attendant."
+      }
+    ]
+  },
+  "events": {
+    "id": "events",
+    "title": "Events",
+    "category": "Daily",
+    "type": "text",
+    "content": "TODAY: Beitner Bridge ribbon cutting (road still closed to traffic)<br>TODAY: Roscommon vs. Calumet, D3 volleyball quarterfinal, 6 PM, Gaylord HS<br>THU NOV 19: GTA 6 unlocks at midnight<br>FRI NOV 20: Light Up Downtown TC, tree lighting 6:30 PM<br>SAT NOV 21: Kingsley vs. Almont, D6 semifinal, 1 PM, Clare HS<br>SAT NOV 21: Gaylord St. Mary vs. Mendon, 8-player D2 final, 2 PM, Superior Dome<br>SAT NOV 21: Light Parade, downtown TC, 6-8 PM",
+    "notes": "UpNorthLive (Beitner, tree, Light Parade 11/21); GoFan/MHSAA (Roscommon); The D Zone (Kingsley 1 PM); Monday's sheet (St. Mary 2 PM Superior Dome); Rockstar (GTA).",
+    "custom": true,
+    "items": [
+      {
+        "id": "2026-11-17-events-01",
+        "title": "BEITNER RIBBON CUTTING",
+        "recap": "We noted the Beitner Bridge ribbon cutting today, with the road still closed."
+      },
+      {
+        "id": "2026-11-17-events-02",
+        "title": "ROSCOMMON VOLLEYBALL",
+        "recap": "We plugged Roscommon's state quarterfinal tonight at 6 in Gaylord."
+      },
+      {
+        "id": "2026-11-17-events-03",
+        "title": "GTA 6 LAUNCH",
+        "recap": "We counted down to GTA 6 unlocking Thursday at midnight."
+      },
+      {
+        "id": "2026-11-17-events-04",
+        "title": "LIGHT UP DOWNTOWN",
+        "recap": "We plugged Friday's downtown TC tree lighting at 6:30."
+      },
+      {
+        "id": "2026-11-17-events-05",
+        "title": "KINGSLEY SEMIFINAL",
+        "recap": "We plugged Kingsley vs. Almont Saturday at 1 in Clare."
+      },
+      {
+        "id": "2026-11-17-events-06",
+        "title": "ST. MARY FINAL",
+        "recap": "We plugged Gaylord St. Mary's 8-player final Saturday at 2 at the Superior Dome."
+      },
+      {
+        "id": "2026-11-17-events-07",
+        "title": "LIGHT PARADE",
+        "recap": "We plugged Saturday's Light Parade downtown, 6 to 8."
+      }
+    ]
+  },
+  "fb": {
+    "id": "fb",
+    "title": "Z93 Facebook Drafts",
+    "category": "Social",
+    "type": "text",
+    "content": "1️⃣ EARLY SHOW<br>🧚 Did you know there's a FREE fairy trail tucked behind the Botanic Garden at Historic Barns Park? Anyone can build a tiny fairy house out of sticks, bark and stones, all year long. So be honest: have you ever built one, and who REALLY did the building, you or the kids? 😄 Tell us below or text the studio at 231-929-4487. #Z93 #TraverseCity #UpNorth<br>📷 MEDIA: the 9&10 News 'Hidden Northern Michigan: Traverse City Fairy Trails' story photo from the article link (credit: 9&10 News)<br><br>2️⃣ MID SHOW<br>🏈💛 KINGSLEY IS 12-0 and two wins from a state title! The Stags take on Almont (also 12-0) in the Division 6 semifinal THIS SATURDAY at 1 PM at Clare High School. Who's making the drive? Drop some love for the Stags! #Z93 #KingsleyStags #UpNorth<br>📷 MEDIA: a studio snap of AJ in Kingsley colors, or grab one from his prep service<br><br>3️⃣ LATE SHOW<br>🧜‍♀️🎶 On this day in 1989, Disney's The Little Mermaid hit theaters! So here's the real question: what's the Disney song you can STILL sing every single word of? Mine might be 'Under the Sea'... #Z93 #HitsFrom90sToNow<br>📷 MEDIA: a studio snap of AJ holding a fork like a dinglehopper, or grab one from his prep service",
+    "notes": "Drafts only. AJ posts these himself during the show. Facts from the sheet's sourced items.",
+    "custom": true,
+    "items": []
+  }
 }
