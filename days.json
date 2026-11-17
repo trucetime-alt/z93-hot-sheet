@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T17:27-05:00",
+ "generated": "2026-11-17T17:51-05:00",
  "rule": "Notable only: US federal holidays, major UN international days, and widely recognized US/cultural observances (curated allowlist in tools/national_days.py). No novelty days.",
  "sources": {
   "un": "https://www.un.org/en/observances/list-days-weeks",

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v42-shift-reset">
+<meta name="hs-build" content="v43-clip-carry">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -2988,15 +2988,25 @@ async function hsEnsure(url){
         if(hit && hit.ok && hit.status===200){ blob=await hit.blob(); type=hit.headers.get('content-type')||blob.type||type; }
       }catch(e){}
       if(!blob || !blob.size){
-        const r=await fetch(abs, {cache:'no-store', credentials:'same-origin'});
-        if(!r.ok || r.status===206) throw new Error('audio HTTP '+r.status);
-        const buf=await r.arrayBuffer();
-        type=r.headers.get('content-type')||type;
-        blob=new Blob([buf], {type});
-        try{
-          const cache=await caches.open(HS_AUDIO_CACHE);
-          await cache.put(abs, new Response(blob, {status:200, headers:{'Content-Type':type,'Content-Length':String(blob.size),'Cache-Control':'max-age=31536000'}}));
-        }catch(e){}
+        const tryUrls=[abs, ...(typeof clipAltUrls==='function'?clipAltUrls(url).map(u=>hsAbs(u)):[])];
+        let lastErr=null;
+        for(const u of [...new Set(tryUrls)]){
+          try{
+            const r=await fetch(u, {cache:'no-store', credentials:'same-origin'});
+            if(!r.ok || r.status===206){ lastErr=new Error('audio HTTP '+r.status); continue; }
+            const buf=await r.arrayBuffer();
+            type=r.headers.get('content-type')||type;
+            blob=new Blob([buf], {type});
+            try{
+              const cache=await caches.open(HS_AUDIO_CACHE);
+              const res=new Response(blob, {status:200, headers:{'Content-Type':type,'Content-Length':String(blob.size),'Cache-Control':'max-age=31536000'}});
+              await cache.put(abs, res.clone());
+              if(u!==abs) await cache.put(u, res);
+            }catch(e){}
+            lastErr=null; break;
+          }catch(e){ lastErr=e; }
+        }
+        if(!blob || !blob.size) throw lastErr||new Error('audio missing');
       }
     }
     if(!blob || !blob.size) throw new Error('empty audio');
@@ -3248,15 +3258,36 @@ setInterval(()=>{ if(!document.hidden) fetchScores(false); }, 5*60000);
 var clipState=lsGet('hs:clipState', {}); var showUsed=false;
 const fnv=t=>{ let x=0x811c9dc5; for(let i=0;i<t.length;i++){ x^=t.charCodeAt(i); x=Math.imul(x,16777619)>>>0; } return x.toString(36); };
 function clipDate(){ return state.date || (state.sheet && sheetDate(state.sheet)) || etParts().date; }
+function ymdAdd(s, days){
+  if(typeof parseYmd==='function' && typeof ymd==='function'){ const d=parseYmd(s); if(d && !isNaN(d.getTime())){ d.setDate(d.getDate()+days); return ymd(d); } }
+  return s;
+}
+function clipLookupDates(preferred){
+  const today=(typeof clipDate==='function' && clipDate()) || (state && state.date) || '';
+  const out=[]; const add=d=>{ if(d && /^\d{4}-\d{2}-\d{2}$/.test(d) && !out.includes(d)) out.push(d); };
+  add(preferred); add(today);
+  const cut=today?ymdAdd(today,-7):'';
+  const idx=((typeof sheetIndex!=='undefined' && sheetIndex && sheetIndex.dates)||[]).map(x=>x&&x.date).filter(Boolean).sort().reverse();
+  for(const d of idx){ if(today && (d>today || (cut && d<cut))) continue; add(d); }
+  if(today){ for(let i=0;i<=7;i++) add(ymdAdd(today,-i)); }
+  return out;
+}
+function clipNameOf(url){ const n=decodeURIComponent(String(url||'').split('?')[0].split('/').pop()||''); return /\.(mp3|m4a|wav|aac|ogg)$/i.test(n)?n:''; }
+function clipAltUrls(url){
+  const name=clipNameOf(url); if(!name) return [];
+  const here=hsAbs?hsAbs(url):String(url||'');
+  return clipLookupDates().map(d=>'clips/'+d+'/'+name).filter(u=>(hsAbs?hsAbs(u):u)!==here);
+}
 function clipAudioUrl(a){ if(!a) return null; a=String(a);
   if(/^(data:|blob:)/.test(a) || /^https?:\/\/.+\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(a)) return a;
   if(/^https?:/.test(a)) return null;   // a source page, not playable audio
   const name=a.split('/').pop(); if(!isHttp || !name) return null;
   const pm=a.match(/(\d{4}-\d{2}-\d{2})\/[^\/]+$/);   // carried clips keep their own date folder
-  let sawIndex=false;
-  for(const d of [...new Set([pm&&pm[1], clipDate()].filter(Boolean))]){ const ie=indexEntry(d);
-    if(ie && Array.isArray(ie.files)){ sawIndex=true; if(ie.files.includes(name)) return 'clips/'+d+'/'+name; } }
-  if(!sawIndex){ const d=(pm&&pm[1])||(typeof clipDate==='function'&&clipDate()); if(d) return 'clips/'+d+'/'+name; }  // index not loaded yet
+  const dates=clipLookupDates(pm&&pm[1]);
+  for(const d of dates){ const ie=typeof indexEntry==='function'?indexEntry(d):null;
+    if(ie && Array.isArray(ie.files) && ie.files.includes(name)) return 'clips/'+d+'/'+name; }
+  if(pm&&pm[1]) return 'clips/'+pm[1]+'/'+name;
+  if(typeof clipDate==='function' && clipDate()) return 'clips/'+clipDate()+'/'+name;
   return null; }
 function clipPicks(key){
   const v=state.sheet && state.sheet[key]; if(!isSection(v)) return [];
@@ -4501,7 +4532,7 @@ if(typeof migrateShiftBuckets==='function'){ migrateShiftBuckets(); if(typeof ls
 if(typeof tick==='function') tick();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, currentShift, currentShiftBucket, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, renderShiftLabel, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, currentShift, currentShiftBucket, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, renderShiftLabel, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); } };
 })();
 </script>
 </body>
