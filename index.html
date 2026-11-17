@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v34-gta-midnight">
+<meta name="hs-build" content="v35-song-remix">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -654,7 +654,38 @@ body.flown #tabs button{min-height:48px}
 .opener{border:2px solid #e74c8b;background:#22101a;border-radius:var(--r);padding:10px 12px;margin:0 0 12px}
 .opener .oplab{font-size:.75em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#ffb3d1;margin-bottom:6px}
 .opener .oprow{display:flex;gap:8px;flex-wrap:wrap}
+/* v35: typed text on opener/song fields must not inherit --text onto a light UA input */
+input.opin, input.songin, textarea.songin{
+  background:#f3f5f7; color:#111; border:2px solid var(--line); border-radius:12px;
+  padding:8px 12px; font-weight:700; caret-color:#111; -webkit-text-fill-color:#111;
+}
+input.opin::placeholder, input.songin::placeholder, textarea.songin::placeholder{
+  color:#5a6570; opacity:1; -webkit-text-fill-color:#5a6570; font-weight:600;
+}
+input.opin:-webkit-autofill, input.songin:-webkit-autofill{
+  -webkit-text-fill-color:#111; caret-color:#111;
+  box-shadow:0 0 0 1000px #f3f5f7 inset; transition:background-color 9999s ease-out;
+}
 .opener .opin{flex:1 1 180px;min-height:48px;font-size:1em}
+.songpanel{border:2px solid var(--line);background:var(--panel);border-radius:16px;padding:12px;margin:0 0 12px}
+.songpanel .splab{font-size:.75em;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.songrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 8px}
+.songin{flex:1 1 200px;min-height:48px;font-size:1em}
+.songgo{min-height:48px;font-weight:900;white-space:nowrap}
+.songcard{margin-top:8px;background:var(--panel2);border-radius:14px;padding:12px}
+.songcard .shead{display:flex;gap:10px;align-items:flex-start}
+.songcard .sart{width:64px;height:64px;border-radius:10px;object-fit:cover;background:#000;flex:none}
+.songcard .stxt{min-width:0;flex:1}
+.songcard .stitle{font-size:1.25em;font-weight:900;line-height:1.2;color:var(--text)}
+.songcard .sartist{font-size:1em;font-weight:800;color:var(--accent);margin:2px 0 4px}
+.songcard .stag{font-size:.72em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.songcard .sabout{font-size:.92em;line-height:1.45;margin:8px 0 0;color:var(--text)}
+.songcard .smeta{list-style:none;margin:8px 0 0;padding:0;font-size:.92em;line-height:1.45;color:var(--text)}
+.songcard .smeta li{margin:0 0 4px}
+.songcard .smeta b{color:var(--dim);font-weight:800;margin-right:.35em}
+.songcard .ssrc{font-size:.78em;margin-top:8px;color:var(--dim)}
+.songcard .ssrc a{color:var(--accent2)}
+.songcard .sempty,.songcard .slook{font-size:.92em;color:var(--dim);font-weight:700}
 .opener .opb{min-height:48px}
 .wrapcopy{width:100%;min-height:56px;font-size:1.1em;font-weight:900;border-radius:28px;border:2px solid #e74c8b;background:#e74c8b;color:#fff;margin:0 0 12px;cursor:pointer}
 .wraplist{list-style:none;margin:0;padding:0}
@@ -1076,7 +1107,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:songPicks']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -2386,15 +2417,17 @@ function renderView(){
   if(item.key==='saved'){ renderSaved(view); return; }
   const fbs=item.key==='flash' ? fbData() : null;   // structured 9AM Flashback fields → card; else the old blob
   if(item.key!=='flash'){ const fbb=fbBanner(); if(fbb) view.append(fbb); }
-  let v=item.v; const rx=(typeof remixView==='function') ? remixView(item.key, v) : null; if(rx) v=rx;
+  let v=item.v; const rx=(typeof isSongSec==='function' && isSongSec(item.key)) ? null : ((typeof remixView==='function') ? remixView(item.key, v) : null); if(rx) v=rx;
   if(state.wxMore && matchMedia('(max-width:520px)').matches && !document.body.classList.contains('flown')){ const w=document.createElement('div'); w.className='hint'; w.style.marginBottom='8px'; w.textContent='🌡 '+state.wxMore; view.append(w); }
   if(v.category){ const c=document.createElement('div'); c.className='catline'; c.textContent=v.category; view.append(c); }
   const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
   if(typeof gvSectionCard==='function'){ const gc=gvSectionCard(item.key); if(gc) view.append(gc); }
   if(item.key===openerTab()) view.append(openerCard());
   if(item.key==='vibe'){ try{ const ow=mk('div',{className:'openerclips'}); if(renderClipTracker(ow,{opener:true})) view.append(ow); }catch(e){ console.warn('opener clips', e); } }
-  if(typeof poolFor==='function' && poolFor(item.key).length) view.append(remixBar(item.key, rx));
-  if(fbs) view.append(fbCard(fbs));
+  if(typeof isSongSec==='function' && isSongSec(item.key) && typeof songPanel==='function') view.append(songPanel(item.key));
+  else if(typeof poolFor==='function' && poolFor(item.key).length) view.append(remixBar(item.key, rx));
+  const songNow=(typeof isSongSec==='function' && isSongSec(item.key) && typeof songPick==='function') ? songPick(item.key) : null;
+  if(fbs && !(songNow && songNow.from && songNow.from!=='sheet')) view.append(fbCard(fbs));
   if(item.key!=='clips' && !fbs){ const fl=cleanText(v.content).trim().split('\n')[0]||''; const hasPool=typeof poolFor==='function' && poolFor(item.key).length;
     const its1=sheetItems(item.key); const one=(!rx && its1.length===1 && normT(its1[0].title)===normT(fl)) ? its1[0] : null; if(one) window.__airUsed.add(one.id);
     view.append(mk('div',{className:'airsec'}, airBtn(one?'it:'+one.id:'sec:'+item.key+(hasPool&&fl?':'+fnv(fl):''), (v.title||item.key)+(hasPool&&fl&&fl.length<80?': '+fl:''), item.key, false, cleanText(v.content).trim().split('\n').slice(fl&&fl.length<80?1:0).join('\n')))); }
@@ -2768,6 +2801,7 @@ function syncSnap(){ const m={};
   for(const [id,o] of Object.entries((typeof savedMap!=='undefined'&&savedMap)||{})) m['sv:'+id]=o;
   for(const [d,r] of Object.entries((typeof holds!=='undefined'&&holds)||{})) for(const [id,o] of Object.entries(r||{})) m['hd:'+d+':'+id]=o;
   for(const [id,o] of Object.entries((typeof gvOv!=='undefined'&&gvOv&&gvOv.items)||{})) m['gv:'+id]=o;
+  for(const [d,r] of Object.entries((typeof songPicks!=='undefined'&&songPicks)||{})) for(const [id,o] of Object.entries(r||{})) m['sk:'+d+':'+id]=o;
   return m; }
 function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=key.indexOf(':'); const kind=key.slice(0,i), rest=key.slice(i+1);
   const two=()=>{ const j=rest.indexOf(':'); return [rest.slice(0,j), rest.slice(j+1)]; };
@@ -2783,7 +2817,8 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='ai'){ const [d,id]=two(); air[d]=air[d]||{}; if(del) delete air[d][id]; else air[d][id]=val; }
   else if(kind==='sv'){ if(del) delete savedMap[rest]; else savedMap[rest]=val; }
   else if(kind==='hd'){ const [d,id]=two(); holds[d]=holds[d]||{}; if(del) delete holds[d][id]; else holds[d][id]=val; if(!Object.keys(holds[d]).length) delete holds[d]; }
-  else if(kind==='gv'){ gvOv=gvOv||{items:{}}; gvOv.items=gvOv.items||{}; if(del) delete gvOv.items[rest]; else gvOv.items[rest]=val; } }
+  else if(kind==='gv'){ gvOv=gvOv||{items:{}}; gvOv.items=gvOv.items||{}; if(del) delete gvOv.items[rest]; else gvOv.items[rest]=val; }
+  else if(kind==='sk'){ const [d,id]=two(); songPicks=songPicks||{}; songPicks[d]=songPicks[d]||{}; if(del) delete songPicks[d][id]; else songPicks[d][id]=val; if(!Object.keys(songPicks[d]).length) delete songPicks[d]; } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
   for(const k of new Set([...Object.keys(snap), ...Object.keys(last)])){ const cur=k in snap ? JSON.stringify(snap[k]) : '"~"';
     if(cur!==(last[k]||'"~"')){ st[k]=now; last[k]=cur; } }
@@ -2797,7 +2832,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk):(\d{4}-\d{2}-\d{2}):/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -2808,12 +2843,12 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); }
+    if(pulled){ LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
     syncCfg.lastOk=Date.now(); syncCfg.err=''; lsSet('hs:sync', syncCfg);
-    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips'||state.tab==='cross') rerender(); }
+    if(pulled){ refreshSponsorUI(true); renderCountdowns(); if(state.tab==='liners'||state.tab==='wrap'||state.tab==='saved'||state.tab==='clips'||state.tab==='cross'||state.tab==='vibe'||state.tab==='mood'||state.tab==='flash') rerender(); }
   }catch(e){ syncCfg.err=String(e.message||e); lsSet('hs:sync', syncCfg); }
   syncBusy=false; renderSyncState(); if(syncAgain){ syncAgain=false; syncNow(); } }
 window.__hsSyncSoon=()=>{ if(!syncCfg) return; syncMark(); clearTimeout(syncT); syncT=setTimeout(syncNow, 1500); };
@@ -3304,6 +3339,219 @@ loadPools();
 
 /* --- Show Wrap recaps: Hot Sheet "items"/"recap" fields first, else the first 1–2 sentences (≤180 chars) --- */
 const normT=t=>String(t||'').toLowerCase().replace(/^\s*\d+\)\s*/,'').replace(/&amp;/g,'&').replace(/[^a-z0-9]+/g,' ').trim();
+/* ================= song picks: vibe / mood / flash (write-your-own + remix + facts) ================= */
+const SONG_SECS=['vibe','mood','flash'];
+function isSongSec(k){ return SONG_SECS.includes(k); }
+var songsData=lsGet('hs:songs', {pools:{}});
+var songPicks=lsGet('hs:songPicks', {});
+var songLookupCache=lsGet('hs:songLookup', {});
+async function loadSongs(){ if(isHttp){ try{ const j=await fetchJson('songs.json'); if(j && j.pools){ songsData=j; lsSet('hs:songs', j); } }catch(e){} } if(state.sheet && isSongSec(state.tab)) rerender(); }
+function allSongList(){ const p=(songsData&&songsData.pools)||{}; return [].concat(p.vibe||[], p.mood||[], p.flash||[]); }
+function songPool(key){ return ((((songsData||{}).pools)||{})[key]||[]).slice(); }
+function songById(id){ return allSongList().find(s=>s.id===id); }
+function skDay(){ const d=etParts().date; songPicks[d]=songPicks[d]||{}; return songPicks[d]; }
+function skSave(){ const dates=[...new Set(Object.keys(songPicks).map(k=>k.slice(0,10)))].sort().slice(-14);
+  songPicks=Object.fromEntries(Object.entries(songPicks).filter(([k])=>dates.includes(k.slice(0,10))));
+  lsSet('hs:songPicks', songPicks); }
+function findSongInPools(title, artist){
+  const nt=normT(title), na=normT(artist||''); if(!nt) return null;
+  const all=allSongList();
+  const exact=all.find(s=>normT(s.title)===nt && (!na || normT(s.artist)===na || normT(s.artist).includes(na) || na.includes(normT(s.artist))));
+  if(exact) return exact;
+  return all.find(s=>normT(s.title)===nt) || null;
+}
+function matchTyped(s){
+  const raw=String(s||'').trim(); if(!raw) return null;
+  const n=normT(raw); if(!n) return null;
+  const all=allSongList();
+  const score=x=>{
+    const t=normT(x.title), a=normT(x.artist);
+    if(!t || !n.includes(t)) return 0;
+    const artistHit=a && (n.includes(a) || a.split(' ').filter(w=>w.length>2).some(w=>n.includes(w)));
+    return t.length*10 + (artistHit?100:0) + (n===t || n===t+' '+a || n===a+' '+t ? 50:0);
+  };
+  const ranked=all.map(x=>({x,s:score(x)})).filter(o=>o.s>0).sort((A,B)=>B.s-A.s);
+  if(ranked.length && ranked[0].s>=normT(ranked[0].x.title).length*10) return ranked[0].x;
+  let m=raw.match(/^(.+?)\s*[—–\-]\s+(.+)$/) || raw.match(/^(.+?),\s*[“"'](.+?)[”"'](?:\s*\((\d{4})\))?$/) || raw.match(/^[“"'](.+?)[”"']\s*(?:by\s+)?(.+?)(?:\s*\((\d{4})\))?$/i);
+  if(m){
+    const comma=raw.includes(',"') || /,\s*[“"']/.test(raw);
+    const title=comma?m[2]:m[1], artist=comma?m[1]:m[2];
+    const known=findSongInPools(title, artist);
+    if(known) return known;
+    const o={title:String(title).replace(/^["“]|["”]$/g,'').trim(), artist:String(artist||'').trim(), lookup:true};
+    if(m[3]) o.year=+m[3];
+    return o;
+  }
+  return {title:raw, artist:'', lookup:true};
+}
+function parseSongLine(line){
+  if(!line) return null;
+  let s=cleanText(line).replace(/^\s*🎵\s*/,'').replace(/^\s*SLOW JAM:\s*/i,'').trim();
+  if(!s) return null;
+  const known=matchTyped(s);
+  if(known && known.id) return known;
+  let m=s.match(/^(.+?),\s*[“"'](.+?)[”"'](?:\s*\((\d{4})\))?/);
+  if(m){ const o={title:m[2].trim(), artist:m[1].trim()}; if(m[3]) o.year=+m[3]; const k=findSongInPools(o.title,o.artist); return k||o; }
+  m=s.match(/^[“"'](.+?)[”"']\s*(?:by\s+|—\s*|-\s*)(.+?)(?:\s*\((\d{4})\))?$/i);
+  if(m){ const o={title:m[1].trim(), artist:m[2].trim()}; if(m[3]) o.year=+m[3]; const k=findSongInPools(o.title,o.artist); return k||o; }
+  m=s.match(/^(.+?)\s+[—–]\s+(.+?)(?:\s*\((\d{4})\))?$/);
+  if(m){ const o={title:m[1].trim(), artist:m[2].trim()}; if(m[3]) o.year=+m[3]; const k=findSongInPools(o.title,o.artist); return k||Object.assign(o,{lookup:true}); }
+  return known;
+}
+function sheetSong(key){
+  if(key==='flash'){ const f=typeof fbData==='function'?fbData():null;
+    if(f && (f.title||f.artist)){ const known=findSongInPools(f.title, f.artist);
+      if(known) return Object.assign({}, known, {from:'sheet', sheetOrigin:f.origin, sheetRequester:f.requester});
+      return {title:f.title||'', artist:f.artist||'', year:f.year?String(f.year).replace(/\D+/g,'')||undefined:undefined, charts:f.records||[], fact:f.origin||'', from:'sheet'}; } }
+  const raw=cleanText(((state.sheet&&state.sheet[key])||{}).content||'');
+  const lines=raw.split('\n').map(l=>l.trim()).filter(Boolean);
+  let line=lines[0]||'';
+  if(key==='vibe'){ const jam=lines.find(l=>/SLOW JAM|🎵/.test(l)); if(jam) line=jam; }
+  const parsed=parseSongLine(line);
+  if(!parsed) return null;
+  if(parsed.id) return Object.assign({}, parsed, {from:'sheet'});
+  return Object.assign({}, parsed, {from:'sheet'});
+}
+function songPick(key){
+  const st=(skDay()[key])||{};
+  if(st.custom && String(st.custom).trim()){
+    const parsed=matchTyped(st.custom) || {title:st.custom.trim(), artist:st.artist||'', lookup:true};
+    if(parsed.id) return Object.assign({}, parsed, {from:'custom'});
+    return Object.assign({}, parsed, {from:'custom', lookup:true});
+  }
+  if(st.id){ const it=songById(st.id) || songPool(key).find(x=>x.id===st.id);
+    if(it) return Object.assign({}, it, {from:'remix'}); }
+  return sheetSong(key);
+}
+function songSetCustom(key, text, opts){
+  const t=String(text||'').trim();
+  if(!t){ const d=skDay(); delete d[key]; skSave(); if(!(opts&&opts.quiet)) rerender(); return; }
+  skDay()[key]={custom:t}; skSave(); if(!(opts&&opts.quiet)) rerender();
+}
+function songRemix(key){
+  const pool=songPool(key); if(!pool.length) return;
+  const cur=songPick(key); const curId=cur&&cur.id, curT=normT(cur&&cur.title);
+  const sh=sheetSong(key); const skip=new Set([curId, sh&&sh.id].filter(Boolean));
+  const skipT=new Set([curT, normT(sh&&sh.title)].filter(Boolean));
+  const cands=pool.filter(x=>!skip.has(x.id) && !skipT.has(normT(x.title)));
+  const use=cands.length?cands:pool;
+  const st=skDay()[key]||{seen:[]};
+  let nx=use.find(x=>!(st.seen||[]).includes(x.id));
+  if(!nx){ st.seen=[]; nx=use.find(x=>x.id!==curId)||use[0]; }
+  st.seen=[...(st.seen||[]), nx.id]; st.id=nx.id; delete st.custom;
+  skDay()[key]=st; skSave(); rerender();
+  toast('🔀 Fresh '+(key==='vibe'?'slow jam':key==='mood'?'Mood Booster':'Flashback')+': “'+nx.title+'” — '+nx.artist, ()=>{ songBack(key); });
+}
+function songBack(key){ const d=skDay(); delete d[key]; skSave(); rerender(); }
+function songLabel(key){ return key==='vibe'?'Today’s slow jam':key==='mood'?'Mood Booster':key==='flash'?'9 AM Flashback':'Today’s song'; }
+function fmtYmd(iso){ const m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/); if(!m) return iso;
+  const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return months[+m[2]-1]+' '+(+m[3])+', '+m[1]; }
+async function lookupSong(title, artist){
+  const q=[title,artist].filter(Boolean).join(' ').trim();
+  const ck=normT(q); if(ck && songLookupCache[ck] && Date.now()-songLookupCache[ck].at<864e5) return songLookupCache[ck].data;
+  const out={title:title, artist:artist||'', sources:[]};
+  try{
+    const r=await fetch('https://itunes.apple.com/search?term='+encodeURIComponent(q)+'&media=music&entity=song&limit=5', {cache:'no-store'});
+    const j=await r.json();
+    const rows=j.results||[];
+    const it=rows.find(x=>normT(x.trackName)===normT(title) && (!artist || normT(x.artistName).includes(normT(artist).split(' ')[0]))) || rows.find(x=>normT(x.trackName)===normT(title)) || rows[0];
+    if(it){
+      if(it.trackName) out.title=it.trackName;
+      if(it.artistName) out.artist=it.artistName;
+      if(it.releaseDate) out.released=fmtYmd(it.releaseDate.slice(0,10));
+      if(it.artworkUrl100) out.art=it.artworkUrl100.replace('100x100bb','200x200bb').replace('100x100','200x200');
+      if(it.trackViewUrl) out.sources.push({name:'iTunes', url:it.trackViewUrl});
+    }
+  }catch(e){}
+  const tries=[];
+  if(title&&artist) tries.push(title+' ('+artist.split('&')[0].split('ft.')[0].trim()+' song)');
+  if(title) tries.push(title+' (song)', title);
+  for(const t of tries){
+    try{
+      const r=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(t.replace(/ /g,'_')), {headers:{'Accept':'application/json'}, cache:'no-store'});
+      if(!r.ok) continue;
+      const j=await r.json();
+      if(j.type==='disambiguation' || !j.extract) continue;
+      if(!out.about){ const parts=String(j.extract).split(/(?<=[.!?])\s+/); out.about=parts.slice(0,2).join(' '); if(out.about.length>320) out.about=out.about.slice(0,317).replace(/\s+\S*$/,'')+'…'; }
+      if(j.content_urls && j.content_urls.desktop && j.content_urls.desktop.page) out.sources.push({name:'Wikipedia', url:j.content_urls.desktop.page});
+      else if(j.title) out.sources.push({name:'Wikipedia', url:'https://en.wikipedia.org/wiki/'+encodeURIComponent(j.title.replace(/ /g,'_'))});
+      break;
+    }catch(e){}
+  }
+  if(ck){ songLookupCache[ck]={at:Date.now(), data:out}; try{ LS.setItem('hs:songLookup', JSON.stringify(songLookupCache)); }catch(e){} }
+  return out;
+}
+function renderSongFacts(card, pick){
+  card.innerHTML='';
+  if(!pick || !(pick.title||pick.artist)){ card.append(h('div',{className:'sempty'},'No song on the sheet yet. Type one in or hit Remix.')); return; }
+  const head=h('div',{className:'shead'});
+  if(pick.art) head.append(h('img',{className:'sart', src:pick.art, alt:'', width:64, height:64}));
+  const titles=h('div',{className:'stxt'});
+  titles.append(h('div',{className:'stitle'}, pick.title));
+  if(pick.artist) titles.append(h('div',{className:'sartist'}, pick.artist));
+  const tag=pick.from==='custom'?'Your pick':pick.from==='remix'?'Remix':'Today’s sheet';
+  titles.append(h('div',{className:'stag'}, tag));
+  head.append(titles); card.append(head);
+  if(pick.about) card.append(h('p',{className:'sabout'}, pick.about));
+  const meta=h('ul',{className:'smeta'});
+  if(pick.released) meta.append(h('li',{}, h('b',{},'Released '), pick.released+(pick.year && !String(pick.released).includes(String(pick.year))?' ('+pick.year+')':'')));
+  else if(pick.year) meta.append(h('li',{}, h('b',{},'Released '), String(pick.year)));
+  const charts=pick.charts||[];
+  if(charts.length){ const first=charts[0]; meta.append(h('li',{}, h('b',{},'Charts '), charts.join(' · '))); }
+  if(pick.fact) meta.append(h('li',{}, h('b',{},'Fun fact '), pick.fact));
+  if(meta.childNodes.length) card.append(meta);
+  const srcs=[];
+  if(pick.source) srcs.push({name:pick.sourceName||'Source', url:pick.source});
+  (pick.sources||[]).forEach(s=>{ if(s&&s.url && !srcs.some(x=>x.url===s.url)) srcs.push(s); });
+  if(srcs.length){ const p=h('div',{className:'ssrc'}, 'Source: ');
+    srcs.forEach((s,i)=>{ if(i) p.append(document.createTextNode(' · ')); p.append(h('a',{href:s.url, target:'_blank', rel:'noopener'}, s.name||'Link')); });
+    card.append(p); }
+}
+function fillSongCard(card, pick, key){
+  renderSongFacts(card, pick);
+  const need=pick && (pick.lookup || ((pick.from==='custom'||pick.from==='sheet') && !pick.id && !((pick.charts||[]).length) && !pick.released && !pick.about));
+  if(!need || !pick) return;
+  const box=h('div',{className:'slook'},'Looking up “'+pick.title+'”…');
+  card.append(box);
+  const tok=++fillSongCard._tok; fillSongCard._tok=tok;
+  lookupSong(pick.title, pick.artist||'').then(got=>{
+    if(tok!==fillSongCard._tok || !card.isConnected) return;
+    const merged=Object.assign({}, pick, got, {lookup:false});
+    if(!merged.charts) merged.charts=pick.charts;
+    renderSongFacts(card, merged);
+  }).catch(()=>{ if(box.isConnected) box.remove(); });
+}
+fillSongCard._tok=0;
+function songPanel(key){
+  const wrap=h('div',{className:'songpanel', id:'songpanel-'+key});
+  wrap.append(h('div',{className:'splab'}, songLabel(key)+' · write your own or remix'));
+  const pick=songPick(key);
+  const st=(skDay()[key])||{};
+  const row=h('div',{className:'songrow'});
+  const inp=h('input',{type:'text', className:'songin', placeholder:'Title — Artist, like bad guy — Billie Eilish', value:st.custom||'', 'aria-label':'Write your own song for '+songLabel(key)});
+  const go=h('button',{type:'button', className:'songgo'}, 'Use this');
+  const card=h('div',{className:'songcard', id:'songcard-'+key});
+  const apply=()=>{ songSetCustom(key, inp.value); };
+  go.onclick=()=>{ tapHaptic(); apply(); };
+  inp.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); apply(); } });
+  inp.addEventListener('input', ()=>{ songSetCustom(key, inp.value, {quiet:true}); fillSongCard(card, songPick(key), key); });
+  row.append(inp, go); wrap.append(row);
+  const pool=songPool(key);
+  if(pool.length){
+    const fromRemix=pick && pick.from==='remix';
+    const i=fromRemix?pool.findIndex(x=>x.id===pick.id):-1;
+    wrap.append(h('div',{className:'rxbar'},
+      h('button',{className:'rxbtn', type:'button', title:'Another song idea from the pool', on:{click:()=>{ tapHaptic(); songRemix(key); }}}, '🔀 Remix'),
+      (pick && pick.from && pick.from!=='sheet') ? h('button',{className:'rxback', type:'button', on:{click:()=>{ tapHaptic(); songBack(key); }}}, '↩ Today\'s original') : null,
+      h('span',{className:'rxinfo'}, fromRemix ? 'Remix '+(i+1)+' of '+pool.length : pool.length+' in the pool')));
+  }
+  wrap.append(card);
+  fillSongCard(card, pick, key);
+  return wrap;
+}
+loadSongs();
+
 function storyHeads(text){ const a=String(text||'').split('\n'); const out=[]; a.forEach((ln,i)=>{ if(/^\s*━+.*━+\s*$/.test(ln)) return; if(/^\s*\d+\)\s+\S/.test(ln) || isStoryHead(ln, a[i-1])) out.push(ln.replace(/^\s*\d+\)\s*/,'').trim()); }); return out; }
 /* ================= 9AM Flashback (structured fields on the "flash" card; optional — old blob otherwise) ================= */
 function fbStr(x){ if(x==null) return ''; if(Array.isArray(x)) return x.map(fbStr).filter(Boolean).join('\n'); if(typeof x==='object') return Object.values(x).map(fbStr).filter(Boolean).join(' · '); return cleanText(String(x)).trim(); }
