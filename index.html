@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v40-song-air">
+<meta name="hs-build" content="v41-clip-audio">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -175,6 +175,10 @@ details.notes div{white-space:pre-wrap;word-wrap:break-word;padding:0 16px 14px;
 .player input[type=range]{width:100%;height:36px;accent-color:var(--accent)}
 .player .time{font-variant-numeric:tabular-nums;color:var(--dim);font-size:.85em}
 .player .stop{min-width:60px}
+.player .hsclipst{font-size:.8em;font-weight:800;color:var(--dim);margin:0 0 6px}
+.player.loading .hsclipst,.sclip.loading{color:var(--warn)}
+.player.ready .hsclipst{color:var(--ok)}
+.sclip .scl.hsst{font-weight:800}
 .loadclips{width:100%;background:var(--accent2);color:#04222b;border-color:var(--accent2);font-size:1.05em;min-height:64px}
 #drop{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;
   font-size:1.6em;font-weight:900;color:var(--accent);z-index:50;border:6px dashed var(--accent)}
@@ -1125,6 +1129,7 @@ async function showSheet(sheet, date){
     else { const c=await cachedClips(date); if(c && c.clips.length){ state.clips=c.clips; state.clipsLoaded=true; state.clipsText=c.clipsText; } }
   }
   renderTabs(); renderView();
+  if(typeof hsPreloadToday==='function') hsPreloadToday();
 }
 
 async function loadAudioVariant(){
@@ -1141,6 +1146,7 @@ async function loadAudioVariant(){
     setStatus(e.status===404?'No audio file for '+nice(date)+'.':'Couldn\'t load clips: '+e.message, true);
   }
   renderTabs(); renderView();
+  if(typeof hsPreloadToday==='function') hsPreloadToday();
 }
 
 /* ---------- sponsors (trigger-based reads, one read per sponsor per show) + countdowns ---------- */
@@ -2858,28 +2864,187 @@ function renderClips(view, v){
 function blobUrl(b){ const u=URL.createObjectURL(b); blobUrls.push(u); return u; }
 function fmt(t){ if(!isFinite(t)) return '--:--'; t=Math.floor(t); return Math.floor(t/60)+':'+String(t%60).padStart(2,'0'); }
 let current=null;
-function makePlayer(title, src, notes, lazy){
+
+/* ================= seamless on-air clip player: one Audio outside #view, full-file blob preload ================= */
+const HS_AUDIO_CACHE='z93-hot-sheet-audio-v1';
+let hsAudio=null, hsAudioCur=null, hsAudioLock=null;
+const hsAudioMap=Object.create(null);
+
+function hsAbs(url){ try{ return new URL(url, location.href).href; }catch(e){ return String(url||''); } }
+function hsPlayer(){
+  if(hsAudio) return hsAudio;
+  const a=new Audio(); a.preload='auto'; a.setAttribute('playsinline',''); a.setAttribute('webkit-playsinline','');
+  a.addEventListener('play',()=>{ hsWake(); if(hsAudioCur && hsAudioCur.id && typeof markPlayed==='function') markPlayed(hsAudioCur.id); hsPaintAudio(); });
+  a.addEventListener('pause',()=>{ if(a.ended) return; hsPaintAudio(); });
+  a.addEventListener('ended',()=>{ try{ a.currentTime=0; }catch(e){} hsWakeOff(); hsPaintAudio(); });
+  a.addEventListener('timeupdate',()=>hsPaintAudio(true));
+  a.addEventListener('loadedmetadata',()=>hsPaintAudio(true));
+  a.addEventListener('error',()=>hsPaintAudio());
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden && hsAudio && !hsAudio.paused) hsWake(); });
+  hsAudio=a; return a;
+}
+function hsIsPlaying(){ return !!(hsAudio && hsAudioCur && !hsAudio.paused && !hsAudio.ended); }
+async function hsWake(){
+  try{
+    if(!('wakeLock' in navigator) || hsAudioLock) return;
+    hsAudioLock=await navigator.wakeLock.request('screen');
+    hsAudioLock.addEventListener('release',()=>{ hsAudioLock=null; });
+  }catch(e){ hsAudioLock=null; }
+}
+function hsWakeOff(){ try{ if(hsAudioLock) hsAudioLock.release(); }catch(e){} hsAudioLock=null; }
+function hsStatus(abs){
+  const rec=hsAudioMap[abs];
+  if(rec && rec.ready) return 'ready';
+  if(rec && rec.pending) return 'loading';
+  return '';
+}
+async function hsEnsure(url){
+  const abs=hsAbs(url); if(!abs) return null;
+  const have=hsAudioMap[abs];
+  if(have && have.ready && have.objectUrl) return have;
+  if(have && have.pending) return have.pending;
+  const job=(async()=>{
+    let blob=null, type='audio/mpeg';
+    if(/^(blob:|data:)/i.test(abs)){
+      const r=await fetch(abs); blob=await r.blob(); type=blob.type||type;
+    }else{
+      try{
+        const cache=await caches.open(HS_AUDIO_CACHE);
+        const hit=await cache.match(abs);
+        if(hit && hit.ok && hit.status===200){ blob=await hit.blob(); type=hit.headers.get('content-type')||blob.type||type; }
+      }catch(e){}
+      if(!blob || !blob.size){
+        const r=await fetch(abs, {cache:'no-store', credentials:'same-origin'});
+        if(!r.ok || r.status===206) throw new Error('audio HTTP '+r.status);
+        const buf=await r.arrayBuffer();
+        type=r.headers.get('content-type')||type;
+        blob=new Blob([buf], {type});
+        try{
+          const cache=await caches.open(HS_AUDIO_CACHE);
+          await cache.put(abs, new Response(blob, {status:200, headers:{'Content-Type':type,'Content-Length':String(blob.size),'Cache-Control':'max-age=31536000'}}));
+        }catch(e){}
+      }
+    }
+    if(!blob || !blob.size) throw new Error('empty audio');
+    const prev=hsAudioMap[abs];
+    if(prev && prev.objectUrl && prev.objectUrl!==abs) try{ URL.revokeObjectURL(prev.objectUrl); }catch(e){}
+    const objectUrl=URL.createObjectURL(blob);
+    const rec={objectUrl, size:blob.size, ready:true};
+    hsAudioMap[abs]=rec;
+    hsPaintAudio();
+    return rec;
+  })();
+  hsAudioMap[abs]={ready:false, pending:job};
+  hsPaintAudio();
+  try{ return await job; }
+  catch(e){ if(hsAudioMap[abs] && !hsAudioMap[abs].ready) delete hsAudioMap[abs]; hsPaintAudio(); throw e; }
+}
+function hsPlay(url, meta){
+  const abs=hsAbs(url); const a=hsPlayer();
+  hsAudioCur={url:abs, raw:url, id:meta&&meta.id, title:meta&&(meta.title||'')};
+  const start=rec=>{
+    if(a.src!==rec.objectUrl){ a.src=rec.objectUrl; }
+    const p=a.play();
+    if(p && p.catch) p.catch(err=>{ hsPaintAudio(); console.warn('clip play', err); });
+    hsPaintAudio();
+  };
+  const have=hsAudioMap[abs];
+  if(have && have.ready && have.objectUrl){ start(have); return; }
+  hsPaintAudio();
+  hsEnsure(url).then(start).catch(err=>{ hsPaintAudio(); console.warn('clip load', err); });
+}
+function hsToggle(url, meta){
+  const abs=hsAbs(url); const a=hsPlayer();
+  if(hsAudioCur && hsAudioCur.url===abs && !a.paused && !a.ended){ a.pause(); hsPaintAudio(); return; }
+  hsPlay(url, meta);
+}
+function hsStopIf(url){
+  const abs=hsAbs(url); const a=hsPlayer();
+  if(!hsAudioCur || hsAudioCur.url!==abs) return;
+  a.pause(); try{ a.currentTime=0; }catch(e){} hsWakeOff(); hsPaintAudio();
+}
+function hsSeek(url, frac){
+  const abs=hsAbs(url); const a=hsPlayer();
+  if(!hsAudioCur || hsAudioCur.url!==abs || !a.duration) return;
+  a.currentTime=Math.max(0, Math.min(1, Number(frac)||0))*a.duration;
+}
+function hsPaintAudio(timesOnly){
+  const a=hsAudio;
+  const cur=hsAudioCur && a ? hsAudioCur.url : '';
+  const playing=!!(a && cur && !a.paused && !a.ended);
+  document.querySelectorAll('[data-hs-audio]').forEach(el=>{
+    const abs=hsAbs(el.dataset.hsAudio);
+    const st=hsStatus(abs);
+    const on=playing && abs===cur;
+    el.classList.toggle('playing', on);
+    el.classList.toggle('ready', st==='ready');
+    el.classList.toggle('loading', st==='loading');
+    const pp=el.querySelector('.pp');
+    if(pp) pp.textContent=on?'❚❚':'▶';
+    const ic=el.querySelector('.sci');
+    if(ic) ic.textContent=on?'❚❚':'▶';
+    const lab=el.querySelector('.hsclipst, .scl');
+    if(lab){
+      if(st==='loading') lab.textContent=on||abs===cur?'Loading… then play':'Loading…';
+      else if(el.classList.contains('sclip') && lab.classList.contains('scl')) lab.textContent=on?'Playing':'Clip';
+      else if(lab.classList.contains('hsclipst')) lab.textContent=st==='ready'?'Ready':'';
+    }
+    if(a && abs===cur){
+      const tm=el.querySelector('.time');
+      const rng=el.querySelector('input[type=range]');
+      if(tm && typeof fmt==='function') tm.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);
+      if(rng && a.duration) rng.value=Math.round(a.currentTime/a.duration*1000);
+    }
+  });
+}
+function hsTodayUrls(){
+  const urls=[];
+  const add=u=>{ if(u && !urls.includes(u)) urls.push(u); };
+  try{
+    for(const key of ['clips','newsclips']){
+      if(typeof clipPicks!=='function') continue;
+      for(const p of clipPicks(key)){
+        add(p.heldFrom && typeof heldAudioUrl==='function' ? heldAudioUrl(p) : (typeof clipAudioUrl==='function' ? clipAudioUrl(p.audio) : null));
+      }
+    }
+    const d=typeof clipDate==='function' ? clipDate() : (state&&state.date);
+    const ie=typeof indexEntry==='function' && d ? indexEntry(d) : null;
+    if(ie && Array.isArray(ie.files) && d) ie.files.forEach(f=>add('clips/'+d+'/'+f));
+  }catch(e){}
+  return urls.filter(Boolean);
+}
+function hsPreloadToday(){
+  const urls=hsTodayUrls();
+  let i=0, inflight=0;
+  const next=()=>{
+    if(i>=urls.length) return;
+    if(inflight>=2) return;
+    const u=urls[i++]; inflight++;
+    hsEnsure(u).catch(()=>{}).finally(()=>{ inflight--; next(); });
+    next();
+  };
+  next();
+}
+
+function makePlayer(title, src, notes, lazy, clipId){
   const w=document.createElement('div'); w.className='player';
+  w.dataset.hsAudio=src; if(clipId) w.dataset.clip=clipId;
   const t=document.createElement('div'); t.className='ptitle'; t.textContent=title; w.append(t);
-  const a=document.createElement('audio'); a.preload=lazy?'none':'metadata'; a.src=src; w.append(a);
+  const st=document.createElement('div'); st.className='hsclipst'; w.append(st);
   const row=document.createElement('div'); row.className='prow';
-  const pp=document.createElement('button'); pp.className='pp'; pp.textContent='▶'; pp.setAttribute('aria-label','Play '+title);
+  const pp=document.createElement('button'); pp.className='pp'; pp.type='button'; pp.textContent='▶'; pp.setAttribute('aria-label','Play '+title);
   const bar=document.createElement('div'); bar.className='bar';
   const rng=document.createElement('input'); rng.type='range'; rng.min=0; rng.max=1000; rng.value=0; rng.setAttribute('aria-label','Seek');
   const tm=document.createElement('div'); tm.className='time'; tm.textContent='0:00 / --:--';
   bar.append(rng,tm);
-  const stop=document.createElement('button'); stop.className='stop'; stop.textContent='■'; stop.setAttribute('aria-label','Stop and rewind');
+  const stop=document.createElement('button'); stop.className='stop'; stop.type='button'; stop.textContent='■'; stop.setAttribute('aria-label','Stop and rewind');
   row.append(pp,bar,stop); w.append(row);
   if(notes){ const n=document.createElement('div'); n.className='pnote'; richText(n, cleanText(notes)); w.append(n); }
-  const upd=()=>{ tm.textContent=fmt(a.currentTime)+' / '+fmt(a.duration); if(a.duration) rng.value=Math.round(a.currentTime/a.duration*1000); };
-  a.addEventListener('timeupdate',upd); a.addEventListener('loadedmetadata',upd);
-  a.addEventListener('play',()=>{ if(current&&current!==a) current.pause(); current=a; w.classList.add('playing'); pp.textContent='❚❚'; });
-  a.addEventListener('pause',()=>{ w.classList.remove('playing'); pp.textContent='▶'; });
-  a.addEventListener('ended',()=>{ a.currentTime=0; upd(); });
-  a.addEventListener('error',()=>{ tm.textContent='Can\'t play this file here'; });
-  pp.onclick=()=>{ a.paused ? a.play().catch(e=>{ tm.textContent='Play blocked: '+e.message; }) : a.pause(); };
-  stop.onclick=()=>{ a.pause(); a.currentTime=0; upd(); };
-  rng.oninput=()=>{ if(a.duration) a.currentTime=rng.value/1000*a.duration; };
+  pp.onclick=()=>{ if(typeof tapHaptic==='function') tapHaptic(); hsToggle(src, {title, id:clipId||w.dataset.clip}); };
+  stop.onclick=()=>{ hsStopIf(src); };
+  rng.oninput=()=>{ hsSeek(src, rng.value/1000); };
+  hsPaintAudio();
+  if(!lazy) hsEnsure(src).catch(()=>{});
   return w;
 }
 
@@ -3014,8 +3179,10 @@ function clipAudioUrl(a){ if(!a) return null; a=String(a);
   if(/^https?:/.test(a)) return null;   // a source page, not playable audio
   const name=a.split('/').pop(); if(!isHttp || !name) return null;
   const pm=a.match(/(\d{4}-\d{2}-\d{2})\/[^\/]+$/);   // carried clips keep their own date folder
+  let sawIndex=false;
   for(const d of [...new Set([pm&&pm[1], clipDate()].filter(Boolean))]){ const ie=indexEntry(d);
-    if(ie && Array.isArray(ie.files) && ie.files.includes(name)) return 'clips/'+d+'/'+name; }   // only files actually published to the site
+    if(ie && Array.isArray(ie.files)){ sawIndex=true; if(ie.files.includes(name)) return 'clips/'+d+'/'+name; } }
+  if(!sawIndex){ const d=(pm&&pm[1])||(typeof clipDate==='function'&&clipDate()); if(d) return 'clips/'+d+'/'+name; }  // index not loaded yet
   return null; }
 function clipPicks(key){
   const v=state.sheet && state.sheet[key]; if(!isSection(v)) return [];
@@ -3060,7 +3227,7 @@ function renderClipTracker(view, opts){ opts=opts||{};
     const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
     const url=p.heldFrom ? heldAudioUrl(p) : clipAudioUrl(p.audio);
-    if(url){ const pl=makePlayer(p.title, url, '', true); const au=pl.querySelector('audio'); if(au) au.dataset.clip=p.id; main.append(pl); }
+    if(url){ main.append(makePlayer(p.title, url, '', true, p.id)); }
     else if(p.src) main.append(h('a',{className:'csrc', href:p.src, target:'_blank', rel:'noopener'}, 'Source ↗'));
     else if(p.ready && p.file) main.append(h('div',{className:'cfile'}, '🎧 '+p.file+' · not online yet'));
     const btn=used ? h('button',{className:'cundo', type:'button', 'aria-label':'Put '+p.title+' back'}, '↩')
@@ -3306,15 +3473,10 @@ function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
   return best; }
 let inlineCur=null;
 function inlineClipBtn(c){
-  const a=document.createElement('audio'); a.preload='none'; a.src=c.url; a.dataset.clip=c.id;
   const b=h('button',{className:'sclip', type:'button', title:'Play clip: '+c.title, 'aria-label':'Play clip: '+c.title}, h('span',{className:'sci','aria-hidden':'true'},'▶'), h('span',{className:'scl'}, 'Clip'));
-  b.dataset.clip=c.id; if(cst(c.id).p) b.classList.add('played');
-  const ic=b.querySelector('.sci');
-  b.onclick=e=>{ e.stopPropagation(); tapHaptic(); if(a.paused){ a.play().catch(()=>{}); } else a.pause(); };
-  a.addEventListener('play',()=>{ if(inlineCur && inlineCur!==a) inlineCur.pause(); inlineCur=a; document.querySelectorAll('audio').forEach(x=>{ if(x!==a && !x.paused) x.pause(); }); ic.textContent='❚❚'; b.classList.add('playing','played'); });
-  a.addEventListener('pause',()=>{ ic.textContent='▶'; b.classList.remove('playing'); });
-  a.addEventListener('ended',()=>{ ic.textContent='▶'; b.classList.remove('playing'); });
-  const w=h('span',{className:'sclipw'}, b); w.append(a); return w; }
+  b.dataset.clip=c.id; b.dataset.hsAudio=c.url; if(cst(c.id).p) b.classList.add('played');
+  b.onclick=e=>{ e.stopPropagation(); tapHaptic(); hsToggle(c.url, {title:c.title, id:c.id}); };
+  const w=h('span',{className:'sclipw'}, b); hsPaintAudio(); return w; }
 
 /* ================= station read sheet: once-per-shift reads + liners (station-reads.json + local overlay, synced) ================= */
 var stDefaults=lsGet('hs:stDefaults', {sheetDate:'', reads:[], liners:[]});
@@ -3714,6 +3876,7 @@ function airGo(e){ const k=e.key;
 function wrapAutoCheck(){ const p=etParts(); if(!isShowDay(p) || p.hm<'09:30' || p.hm>='10:00') return;
   if(LS.getItem('hs:wrapAuto')===p.date) return;
   if(document.querySelector('.modal.on')) return;   // try again next tick
+  if(typeof hsIsPlaying==='function' && hsIsPlaying()) return;  // don't yank the tab mid-clip; retry next tick
   LS.setItem('hs:wrapAuto', p.date);
   state.tab='wrap'; renderTabs(); renderView(); toast('🎬 Last half hour: Show Wrap is up'); }
 setInterval(wrapAutoCheck, 30000); setTimeout(wrapAutoCheck, 6000);
@@ -4230,7 +4393,7 @@ if(isHttp && 'serviceWorker' in navigator){
 
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl };
 })();
 </script>
 </body>
