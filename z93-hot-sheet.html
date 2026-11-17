@@ -1330,7 +1330,7 @@ function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp
     return inFirst && (rp==='early'||rp==='warn');
   }) : [];
   const list=[...gvl, ...sps, ...stl];
-  const was=box.hidden; const sig=ph+'|'+(sh?sh.id+(sh.ended?':ended':''):'none')+'|'+(hot?'hot':'')+'|'+list.map(x=>x.id).join(',');
+  const was=box.hidden; const sig=ph+'|'+(sh?sh.id+(sh.ended?':ended':''):'none')+'|'+(hot?'hot':'')+'|'+list.map(x=>x.id+(x.giveaway&&typeof gvWinTag==='function'?':'+gvWinTag(x):'')).join(',');
   if(box.dataset.sig===sig && !box.hidden===!!list.length) return;
   box.dataset.sig=sig; box.innerHTML=''; box.className=(ph==='over'?'early':ph)+(hot?' gvhot':'');
   if(!list.length){ box.hidden=true; if(!was) setHdr(); return; }
