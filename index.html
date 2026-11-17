@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v31-carried-audio">
+<meta name="hs-build" content="v32-opener-audio">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -2379,6 +2379,7 @@ function renderView(){
   const h=document.createElement('h2'); h.textContent=v.title||item.key; view.append(h);
   if(typeof gvSectionCard==='function'){ const gc=gvSectionCard(item.key); if(gc) view.append(gc); }
   if(item.key===openerTab()) view.append(openerCard());
+  if(item.key==='vibe'){ try{ const ow=mk('div',{className:'openerclips'}); if(renderClipTracker(ow,{opener:true})) view.append(ow); }catch(e){ console.warn('opener clips', e); } }
   if(typeof poolFor==='function' && poolFor(item.key).length) view.append(remixBar(item.key, rx));
   if(fbs) view.append(fbCard(fbs));
   if(item.key!=='clips' && !fbs){ const fl=cleanText(v.content).trim().split('\n')[0]||''; const hasPool=typeof poolFor==='function' && poolFor(item.key).length;
@@ -2615,10 +2616,14 @@ document.addEventListener('play', e=>{ const a=e.target; if(!a || a.tagName!=='A
   let id=a.dataset.clip; if(!id){ const name=decodeURIComponent(String(a.currentSrc||a.src||'').split('?')[0].split('/').pop()||'');
     const p=(state.clipPicks||[]).find(x=>x.file && x.file===name); if(p) id=p.id; }
   if(id) markPlayed(id); }, true);
-function renderClipTracker(view){
-  const groups=[{key:'newsclips', label:'📰 News Audio'},{key:'clips', label:'🔥 Trending Audio'}].map(g=>({...g, picks:clipPicks(g.key)}));
+const OPENER_RE=/SUPER|OPENER|STAND-?\s?UP|LATE-?\s?NIGHT|COMEDY/i;
+function openerRank(p){ const t=(p.slot||'')+' '+p.title; return /SUPER|OPENER/i.test(t)?0:/STAND-?\s?UP|COMEDY/i.test(t)?1:2; }
+function renderClipTracker(view, opts){ opts=opts||{};
+  let groups=[{key:'newsclips', label:'📰 News Audio'},{key:'clips', label:'🔥 Trending Audio'}].map(g=>({...g, picks:clipPicks(g.key)}));
   const all=groups.flatMap(g=>g.picks); state.clipPicks=all; const heldIn=heldIncoming(all); if(!all.length && !heldIn.length) return false;
   if(heldIn.length){ groups.unshift(...heldGroups(heldIn)); state.clipPicks=all.concat(heldIn); }
+  if(opts.opener){ const op=state.clipPicks.filter(p=>OPENER_RE.test((p.slot||'')+' '+p.title)).sort((a,b)=>openerRank(a)-openerRank(b));
+    if(!op.length) return false; groups=[{key:'opener', label:'🎬 Show opener audio · supercut and comedy', picks:op}]; }
   const allG=groups.flatMap(g=>g.picks); const left=allG.filter(p=>!cst(p.id).u).length;
   const wrap=h('div',{className:'cltrack'});
   wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
@@ -2643,7 +2648,7 @@ function renderClipTracker(view){
     if(!gl.length) wrap.append(h('div',{className:'cldone'}, '✓ All used'));
     gl.forEach(p=>wrap.append(card(p,false))); }
   const used=allG.filter(p=>cst(p.id).u);
-  if(used.length){ const t=h('button',{className:'clshow', type:'button', 'aria-expanded':String(showUsed)}, (showUsed?'Hide used':'Show used')+' ('+used.length+')');
+  if(used.length && !opts.opener){ const t=h('button',{className:'clshow', type:'button', 'aria-expanded':String(showUsed)}, (showUsed?'Hide used':'Show used')+' ('+used.length+')');
     t.onclick=()=>{ showUsed=!showUsed; rerender(); }; wrap.append(t);
     if(showUsed) used.forEach(p=>wrap.append(card(p,true))); }
   view.append(wrap); return true; }
