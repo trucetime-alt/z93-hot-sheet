@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v35-song-remix">
+<meta name="hs-build" content="v35-fb-art">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -348,6 +348,8 @@ body.flown #flyBtn{background:var(--accent2)}
 #ticker.static .tk{scroll-snap-align:start}
 #tickerWrap.none{display:none}
 .headline{display:inline-block;font-weight:900;color:var(--accent);font-size:1.08em;scroll-margin-top:var(--hdr,200px)}
+img.fbart{display:block;width:100%;max-width:560px;height:auto;border-radius:14px;margin:8px 0 4px;border:2px solid var(--line);background:#111}
+.fbartcap{font-size:.8em;color:var(--dim);font-weight:700;margin:0 0 10px}
 .subhead{display:inline-block;font-weight:900;color:var(--accent2);letter-spacing:.06em}
 .flashhit{animation:flashhit 1.6s ease-out}
 @keyframes flashhit{0%{background:var(--accent);color:#000}100%{background:transparent}}
@@ -907,10 +909,22 @@ function studioText(el, t){
   el.append(t.slice(last));
 }
 // like richText, but marks numbered story headlines ("3) TITLE") and "━━ LOCAL ━━" dividers
+function fbArtUrl(s){
+  const m=String(s||'').match(/(?:\/workspace\/(?:z93|hot-sheet)\/fb\/|\bfb\/)(\d{4}-\d{2}-\d{2}\/[\w.-]+\.(?:png|jpe?g|webp))\b/i);
+  return m ? 'fb/'+m[1].replace(/\\/g,'/') : '';
+}
+function appendFbArt(el, ln){
+  const u=fbArtUrl(ln); if(!u) return false;
+  const img=document.createElement('img'); img.className='fbart'; img.src=u; img.alt='Facebook graphic'; el.append(img);
+  let cap=ln.replace(/^\s*(?:📷\s*)?MEDIA:\s*/i,'').replace(/\/workspace\/\S+\/fb\/\d{4}-\d{2}-\d{2}\/[\w.-]+\.(?:png|jpe?g|webp)/ig,'').replace(/\bfb\/\d{4}-\d{2}-\d{2}\/[\w.-]+\.(?:png|jpe?g|webp)/ig,'').replace(/^[\s(,–—-]+|[\s)]+$/g,'').trim();
+  const c=document.createElement('div'); c.className='fbartcap'; c.textContent=cap?('📷 '+cap.replace(/^📷\s*/,'')):'📷 Facebook graphic'; el.append(c);
+  return true;
+}
 function richLines(el, text){
   text.split('\n').forEach((ln,i,arr)=>{
     const h=ln.match(/^\s*(\d+)\)\s+\S/); const sub=ln.match(/^\s*━+\s*(.+?)\s*━+\s*$/);
-    if(h){ const sp=document.createElement('span'); sp.className='headline'; sp.dataset.story=h[1]; richText(sp, ln); el.append(sp); }
+    if(appendFbArt(el, ln)){ /* image; do not print the box path */ }
+    else if(h){ const sp=document.createElement('span'); sp.className='headline'; sp.dataset.story=h[1]; richText(sp, ln); el.append(sp); }
     else if(sub){ const sp=document.createElement('span'); sp.className='subhead'; sp.textContent=ln; el.append(sp); }
     else richText(el, ln);
     // inline ▶ for a story header whose block matches a published clip
