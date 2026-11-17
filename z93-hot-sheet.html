@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v33-national-days">
+<meta name="hs-build" content="v34-gta-midnight">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -1373,7 +1373,12 @@ async function loadCountdownDefaults(){
 function allCountdowns(){ return mergeList(cdDefaults.countdowns, cdOv); }
 function daysBetween(a,b){ return Math.round((parseYmd(b)-parseYmd(a))/864e5); }
 function cdText(c){ const today=etParts().date; const d=String(c.when||'').slice(0,10); if(!/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
-  const n=daysBetween(today,d);
+  const n=daysBetween(today,d); const mid=/T00:00/.test(String(c.when||''));   // 12 AM = the night before, on air
+  if(mid){ const eve=parseYmd(d); eve.setDate(eve.getDate()-1); const wd=DAYS[eve.getDay()];
+    if(n>2) return {cls:'', t:[c.emoji, c.name, 'in'], n:(n-1)+' days · '+wd+' midnight'};
+    if(n===2) return {cls:'', t:[c.emoji, c.name], n:'TOMORROW NIGHT · midnight'};
+    if(n===1) return {cls:'today', t:[c.emoji, c.name], n:'TONIGHT · midnight'};
+    if(n===0) return {cls:'out', t:[c.emoji, c.name], n:'Out now'}; }
   if(n>1) return {cls:'', t:[c.emoji, c.name, 'in'], n:n+' days'};
   if(n===1) return {cls:'', t:[c.emoji, c.name], n:'TOMORROW'};
   if(n===0) return {cls:'today', t:[c.emoji, c.name], n:'TODAY'};

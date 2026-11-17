@@ -539,7 +539,7 @@
     "title": "Events",
     "category": "Daily",
     "type": "text",
-    "content": "TODAY: Beitner Bridge ribbon cutting (road still closed to traffic)<br>TODAY: Roscommon vs. Calumet, D3 volleyball quarterfinal, 6 PM, Gaylord HS<br>THU NOV 19: GTA 6 unlocks at midnight<br>FRI NOV 20: Light Up Downtown TC, tree lighting 6:30 PM<br>SAT NOV 21: Kingsley vs. Almont, D6 semifinal, 1 PM, Clare HS<br>SAT NOV 21: Gaylord St. Mary vs. Mendon, 8-player D2 final, 2 PM, Superior Dome<br>SAT NOV 21: Light Parade, downtown TC, 6-8 PM",
+    "content": "TODAY: Beitner Bridge ribbon cutting (road still closed to traffic)<br>TODAY: Roscommon vs. Calumet, D3 volleyball quarterfinal, 6 PM, Gaylord HS<br>WED NOV 18: GTA 6 unlocks at midnight tonight (12 AM Thursday)<br>FRI NOV 20: Light Up Downtown TC, tree lighting 6:30 PM<br>SAT NOV 21: Kingsley vs. Almont, D6 semifinal, 1 PM, Clare HS<br>SAT NOV 21: Gaylord St. Mary vs. Mendon, 8-player D2 final, 2 PM, Superior Dome<br>SAT NOV 21: Light Parade, downtown TC, 6-8 PM",
     "notes": "UpNorthLive (Beitner, tree, Light Parade 11/21); GoFan/MHSAA (Roscommon); The D Zone (Kingsley 1 PM); Monday's sheet (St. Mary 2 PM Superior Dome); Rockstar (GTA).",
     "custom": true,
     "items": [
@@ -556,7 +556,7 @@
       {
         "id": "2026-11-17-events-03",
         "title": "GTA 6 LAUNCH",
-        "recap": "We counted down to GTA 6 unlocking Thursday at midnight."
+        "recap": "We counted down to GTA 6 unlocking at midnight Wednesday night."
       },
       {
         "id": "2026-11-17-events-04",
