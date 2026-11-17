@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v39-song-story">
+<meta name="hs-build" content="v40-song-air">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -2809,7 +2809,7 @@ function renderView(){
   else if(typeof poolFor==='function' && poolFor(item.key).length) view.append(remixBar(item.key, rx));
   const songNow=(typeof isSongSec==='function' && isSongSec(item.key) && typeof songPick==='function') ? songPick(item.key) : null;
   if(fbs && !(songNow && songNow.from && songNow.from!=='sheet')) view.append(fbCard(fbs));
-  if(item.key!=='clips' && !fbs){ const fl=cleanText(v.content).trim().split('\n')[0]||''; const hasPool=typeof poolFor==='function' && poolFor(item.key).length;
+  if(item.key!=='clips' && !fbs && !(typeof isSongSec==='function' && isSongSec(item.key))){ const fl=cleanText(v.content).trim().split('\n')[0]||''; const hasPool=typeof poolFor==='function' && poolFor(item.key).length;
     const its1=sheetItems(item.key); const one=(!rx && its1.length===1 && normT(its1[0].title)===normT(fl)) ? its1[0] : null; if(one) window.__airUsed.add(one.id);
     view.append(mk('div',{className:'airsec'}, airBtn(one?'it:'+one.id:'sec:'+item.key+(hasPool&&fl?':'+fnv(fl):''), (v.title||item.key)+(hasPool&&fl&&fl.length<80?': '+fl:''), item.key, false, cleanText(v.content).trim().split('\n').slice(fl&&fl.length<80?1:0).join('\n')))); }
   window.__airSec=item.key==='clips'?null:item.key; window.__airN=0; window.__airTitleN=normT(v.title||''); window.__airHeads=item.key==='clips'?[]:storyHeads(cleanText(v.content));
@@ -3801,6 +3801,14 @@ function skDay(){ const d=etParts().date; songPicks[d]=songPicks[d]||{}; return 
 function skSave(){ const dates=[...new Set(Object.keys(songPicks).map(k=>k.slice(0,10)))].sort().slice(-14);
   songPicks=Object.fromEntries(Object.entries(songPicks).filter(([k])=>dates.includes(k.slice(0,10))));
   lsSet('hs:songPicks', songPicks); }
+function typo1(a,b){
+  a=normT(a); b=normT(b); if(!a||!b) return false; if(a===b) return true;
+  const la=a.length, lb=b.length; if(Math.abs(la-lb)>1) return false;
+  if(la===lb){ let d=0; for(let i=0;i<la;i++) if(a[i]!==b[i] && ++d>1) return false; return true; }
+  const [s,l]=la<lb?[a,b]:[b,a]; let i=0,j=0,d=0;
+  while(j<l.length){ if(i<s.length && s[i]===l[j]){ i++; j++; } else { if(++d>1) return false; j++; } }
+  return i===s.length;
+}
 function findSongInPools(title, artist){
   const nt=normT(title), na=normT(artist||''); if(!nt) return null;
   const all=allSongList();
@@ -3820,6 +3828,8 @@ function matchTyped(s){
   };
   const ranked=all.map(x=>({x,s:score(x)})).filter(o=>o.s>0).sort((A,B)=>B.s-A.s);
   if(ranked.length && ranked[0].s>=normT(ranked[0].x.title).length*10) return ranked[0].x;
+  const artistHits=all.filter(x=>{ const a=normT(x.artist); return a && (n===a || typo1(n,a) || (a.length>=8 && n.includes(a))); });
+  if(artistHits.length===1) return artistHits[0];
   let m=raw.match(/^(.+?)\s*[—–\-]\s+(.+)$/) || raw.match(/^(.+?),\s*[“"'](.+?)[”"'](?:\s*\((\d{4})\))?$/) || raw.match(/^[“"'](.+?)[”"']\s*(?:by\s+)?(.+?)(?:\s*\((\d{4})\))?$/i);
   if(m){
     const comma=raw.includes(',"') || /,\s*[“"']/.test(raw);
@@ -4009,6 +4019,35 @@ function renderSongFacts(card, pick){
     srcs.forEach((s,i)=>{ if(i) p.append(document.createTextNode(' · ')); p.append(h('a',{href:s.url, target:'_blank', rel:'noopener'}, s.name||'Link')); });
     card.append(p); }
 }
+function songAirId(key, pick){
+  const st=(skDay()[key])||{};
+  const custom=String(st.custom||'').trim();
+  if(custom) return 'sk:'+key+':c:'+fnv(normT(custom));
+  if(st.id) return 'sk:'+key+':'+st.id;
+  if(pick && pick.id) return 'sk:'+key+':'+pick.id;
+  const t=normT((pick&&pick.title)||'')+'|'+normT((pick&&pick.artist)||'');
+  if(t!=='|') return 'sk:'+key+':t:'+fnv(t);
+  return 'sk:'+key+':none';
+}
+function songAirTitle(pick){
+  if(!pick) return 'Song';
+  const t=String(pick.title||'').trim();
+  const a=String(pick.artist||'').trim();
+  if(t && a) return t+' — '+a;
+  return t||a||'Song';
+}
+function songAirBtn(key, pick){
+  return airBtn(songAirId(key, pick), songAirTitle(pick), key, false, (pick&&(pick.story||pick.about||''))||'');
+}
+function songAirHost(key, pick){
+  return mk('div',{className:'airsec songair', id:'songair-'+key}, songAirBtn(key, pick));
+}
+function songAirRefresh(key, pick){
+  const host=document.getElementById('songair-'+key);
+  if(!host) return;
+  host.replaceChildren(songAirBtn(key, pick||songPick(key)));
+}
+
 function fillSongCard(card, pick, key){
   renderSongFacts(card, pick);
   const need=pick && (pick.lookup || ((pick.from==='custom'||pick.from==='sheet') && !pick.id && (!pick.story || (!((pick.charts||[]).length) && !pick.released && !pick.about))));
@@ -4021,6 +4060,7 @@ function fillSongCard(card, pick, key){
     const merged=Object.assign({}, pick, got, {lookup:false});
     if(!merged.charts) merged.charts=pick.charts;
     renderSongFacts(card, merged);
+    if(key) songAirRefresh(key, merged);
   }).catch(()=>{ if(box.isConnected) box.remove(); });
 }
 fillSongCard._tok=0;
@@ -4036,7 +4076,7 @@ function songPanel(key){
   const apply=()=>{ songSetCustom(key, inp.value); };
   go.onclick=()=>{ tapHaptic(); apply(); };
   inp.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); apply(); } });
-  inp.addEventListener('input', ()=>{ songSetCustom(key, inp.value, {quiet:true}); fillSongCard(card, songPick(key), key); });
+  inp.addEventListener('input', ()=>{ songSetCustom(key, inp.value, {quiet:true}); const p=songPick(key); fillSongCard(card, p, key); songAirRefresh(key, p); });
   row.append(inp, go); wrap.append(row);
   const pool=songPool(key);
   if(pool.length){
@@ -4048,6 +4088,7 @@ function songPanel(key){
       h('span',{className:'rxinfo'}, fromRemix ? 'Remix '+(i+1)+' of '+pool.length : pool.length+' in the pool')));
   }
   wrap.append(card);
+  wrap.append(songAirHost(key, pick));
   fillSongCard(card, pick, key);
   return wrap;
 }
@@ -4109,7 +4150,7 @@ function fbData(){ const S=state.sheet && state.sheet.flash; if(!S || typeof S!=
     return f; }catch(_){ return null; } }
 function fbBanner(){ const f=fbData(); if(!f) return null; const p=etParts(); if(!isShowDay(p) || p.hm<'08:40' || p.hm>='09:20') return null;
   const card=mk('div',{className:'fbban'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'+(f.requester?' · for '+f.requester:'')), mk('div',{className:'fbh'}, f.head||'Today’s Flashback'));
-  const row=mk('div',{className:'fbrow'}, airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', true, f.body));
+  const row=mk('div',{className:'fbrow'}, (typeof songAirBtn==='function' && typeof songPick==='function' && songPick('flash')) ? songAirBtn('flash', songPick('flash')) : airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', true, f.body));
   const go=mk('button',{className:'fbgo',type:'button'},'Open ›'); go.onclick=()=>{ tapHaptic(); state.tab='flash'; LS.setItem('hs:tab','flash'); renderTabs(); renderView(); scrollTo({top:0,behavior:'smooth'}); };
   row.append(go); card.append(row); return card; }
 function fbCard(f){
@@ -4118,7 +4159,7 @@ function fbCard(f){
   if(f.records.length){ const ul=mk('ul',{className:'fbrec'}); f.records.forEach(r=>ul.append(mk('li',{},'📈 '+r))); c.append(ul); }
   if(f.songStory){ const box=mk('div',{className:'sstory'}); box.append(mk('div',{className:'sstorylab'},'Song story')); const p=mk('p',{}, f.songStory+(f.songStorySrc||f.songStorySrcName?' ':'')); if(f.songStorySrc) p.append(mk('a',{href:f.songStorySrc, target:'_blank', rel:'noopener'}, f.songStorySrcName||'Source')); else if(f.songStorySrcName) p.append(mk('span',{className:'sstorysrc'}, f.songStorySrcName)); box.append(p); c.append(box); }
   if(f.origin && !(f.songStory && f.origin.replace(/\s+/g,' ').trim().toLowerCase()===f.songStory.replace(/\s+/g,' ').trim().toLowerCase()) && !fbBlankStory(f.origin)) c.append(mk('p',{className:'fbo'}, f.origin));
-  c.append(mk('div',{className:'airsec'}, airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', false, f.body)));
+  c.append(mk('div',{className:'airsec'}, (typeof songAirBtn==='function' && typeof songPick==='function' && songPick('flash')) ? songAirBtn('flash', songPick('flash')) : airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', false, f.body)));
   return c; }
 function sheetItems(sec){ const S=state.sheet && state.sheet[sec]; return (S && Array.isArray(S.items)) ? S.items.filter(x=>x && x.id) : []; }
 function storyItem(sec, title, n){ const its=sheetItems(sec); if(!its.length) return null; const nt=normT(title);
@@ -4189,7 +4230,7 @@ if(isHttp && 'serviceWorker' in navigator){
 
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped };
 })();
 </script>
 </body>
