@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v32-opener-audio">
+<meta name="hs-build" content="v33-national-days">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -1448,9 +1448,17 @@ function daysFor(date){
   // a sheet may carry its own "days" list (strings or {name, what, why, angle, source, icon, kind}); it wins for that sheet's date
   const sd = state.sheet && Array.isArray(state.sheet.days) ? state.sheet.days : null;
   if(sd && sd.length) return sd.map(x=> typeof x==='string' ? {name:x} : x).filter(x=>x && x.name);
-  if(!daysData || !daysData.dates || !date) return [];
-  return (daysData.dates[date]||[]).map(e=>Object.assign({}, e, (daysData.info||{})[e.key]||{}));
+  const base=(daysData && daysData.dates && date) ? (daysData.dates[date]||[]).map(e=>Object.assign({}, e, (daysData.info||{})[e.key]||{})) : [];
+  return base.concat(sheetNationalDays(date).filter(n=>!base.some(b=>String(b.name).toLowerCase()===n.name.toLowerCase())));
 }
+// "NATIONAL DAYS: A, B and C" line from today's sheet (prep's daily list), shown as chips too
+function sheetNationalDays(date){ try{
+  if(!state.sheet || (state.sheet.date && state.sheet.date!==date) || (state.date && state.date!==date)) return [];
+  const txt=Object.values(state.sheet).map(v=>v&&typeof v==='object'?String(v.content||''):'').join('\n').replace(/<br\s*\/?>/gi,'\n');
+  const m=txt.match(/NATIONAL DAYS?\s*:\s*([^\n]+)/i); if(!m) return [];
+  return m[1].replace(/<[^>]+>/g,'').split(/\s*(?:,|;|\band\b|&amp;)\s*/i).map(x=>x.trim().replace(/[.\s]+$/,'')).filter(x=>x && x.length<80)
+    .map(name=>({name, icon:'📅', kind:'National day', what:name+' is on today\'s calendar.'}));
+}catch(e){ return []; } }
 /* Live date: the header chip is always today's real date (device clock, Eastern time) and
    ticks over at midnight on its own. Days of note follow today when viewing Latest, or the
    picked date when he steps to another day (then they get a small date prefix). */
