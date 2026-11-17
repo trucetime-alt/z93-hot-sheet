@@ -12,7 +12,8 @@
    "icon": "🍎",
    "kill": "TBD",
    "text": "KNOW A TEACHER WHO DESERVES RECOGNITION? NOMINATE THEM FOR THE Z93 TEACHER OF THE MONTH AWARD AT Z93 HITS DOT COM. EACH MONTH WE’LL CHOOSE A WINNER, HIGHLIGHT THEM ON THE AIR AND AWARD THEM WITH A PRIZE PACKAGE. WE’LL ANNOUNCE A WINNER ON THE THIRD THURSDAY OF EACH MONTH.",
-   "active": true
+   "active": true,
+   "freq": "shift"
   },
   {
    "id": "st-kurtz-car-stereo",
@@ -21,7 +22,8 @@
    "icon": "🔊",
    "kill": "2026-12-01",
    "text": "TUNE IN AND TURN IT UP WITH KURTZ CAR STEREO AND Z93’S 93-MINUTE COMMERCIAL FREE PLAYLIST AT 10:20, 2:20 AND 6:20 EVERY WEEKDAY.",
-   "active": true
+   "active": true,
+   "freq": "shift"
   },
   {
    "id": "st-kalkaska-trees",
@@ -30,7 +32,8 @@
    "icon": "🎄",
    "kill": "2026-11-14",
    "text": "HELP FEED NEIGHBORS IN NEED AT THE KALKASKA FESTIVAL OF TREES NOVEMBER 6TH TROUGH 14TH. MANY DECORATED TREES, GIFT BASKETS, GIFT CARDS AND MORE ARE UP FOR RAFFLE WITH PROCEEDS GOING TO THE KAIR (CARE) FOOD PANTRY.",
-   "active": true
+   "active": true,
+   "freq": "shift"
   },
   {
    "id": "st-patriot-farms",
@@ -39,7 +42,8 @@
    "icon": "🐄",
    "kill": "2026-11-20",
    "text": "READY FOR FALL FAMILY FUN? HEAD TO PATRIOT FARMS IN TRAVERSE CITY—NOW OPEN! CUDDLE HIGHLAND COWS, NAVIGATE THE CORN MAZE, AND SIP CIDER SLUSHIES. PATRIOT FARMS, ON GARFIELD IN TRAVERSE CITY- WHERE MEMORIES AND ADVENTURES AWAIT.",
-   "active": true
+   "active": true,
+   "freq": "shift"
   }
  ],
  "liners": [
@@ -150,6 +154,26 @@
    "group": "Cali (Afternoons)",
    "kill": "TFN",
    "text": "TUNE IN EVERY FRIDAY AT 3:50   PM FOR THE WEEKEND WATCHLIST. CALI GIVES YOU A LOOK AT THE LATEST MOVIES AND SHOWS COMING TO THEATERS AND STREAMING SERVICES."
+  }
+ ],
+ "shifts": [
+  {
+   "id": "truce",
+   "name": "Truce",
+   "start": "00:00",
+   "end": "10:00"
+  },
+  {
+   "id": "courtney",
+   "name": "Courtney",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  {
+   "id": "callie",
+   "name": "Callie",
+   "start": "14:00",
+   "end": "19:00"
   }
  ]
 }

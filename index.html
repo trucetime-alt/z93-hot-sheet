@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v29-ticker-fresh">
+<meta name="hs-build" content="v30-shifts">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -1119,17 +1119,71 @@ function studioRe(){ const d=String(spSettings().studioLine||'').replace(/\D/g,'
   return new RegExp('\\(?'+d.slice(0,3)+'\\)?[-.\\s]?'+d.slice(3,6)+'[-.\\s]?'+d.slice(6)+'(?!\\d)','g'); }
 const WEATHER_RE=/\b(weather|forecast|snow\w*|rain\w*|temps?|temperature|advisory|wind ?chill|sleet|storms?|sunny|cloudy)\b/i;
 function logSp(what, note){ spLog.unshift({at:new Date().toISOString(), what, note:note||''}); spLog=spLog.slice(0,400); lsSet('hs:spLog', spLog); }
-function readKey(){ return etParts().date; }
-function readAt(id){ const r=reads[readKey()]; return r && r[id]; }
+const SHIFT_DEFAULTS=[{id:'truce',name:'Truce',start:'00:00',end:'10:00'},{id:'courtney',name:'Courtney',start:'10:00',end:'14:00'},{id:'callie',name:'Callie',start:'14:00',end:'19:00'}];
+function normHm(v, fb){ const m=String(v==null||v===''?(fb||''):v).trim().match(/^(\d{1,2}):(\d{2})/); if(!m) return fb||'00:00';
+  return String(Math.min(23,Math.max(0,+m[1]))).padStart(2,'0')+':'+m[2]; }
+function hmMin(hm){ const [H,M]=normHm(hm,'00:00').split(':').map(Number); return H*60+M; }
+function minHm(n){ n=Math.max(0,Math.min(24*60-1,n|0)); return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0'); }
+function defaultShifts(){
+  const pub=(typeof stDefaults!=='undefined' && stDefaults && Array.isArray(stDefaults.shifts) && stDefaults.shifts.length)?stDefaults.shifts:SHIFT_DEFAULTS;
+  const ov=(typeof stOv!=='undefined' && stOv && stOv.settings && Array.isArray(stOv.settings.shifts) && stOv.settings.shifts.length)?stOv.settings.shifts:null;
+  const src=ov||pub;
+  return src.map((s,i)=>({id:String(s.id||('shift-'+i)).replace(/[^a-z0-9_-]/gi,'')||('shift-'+i),
+    name:String(s.name||'Shift '+(i+1)).trim()||('Shift '+(i+1)),
+    start:normHm(s.start, i?'': '00:00'), end:normHm(s.end, i?'19:00':'10:00')}))
+    .map((s,i,a)=>{ if(!s.start) s.start=i?a[i-1].end:'00:00'; return s; })
+    .sort((a,b)=>hmMin(a.start)-hmMin(b.start));
+}
+function weekdayShifts(p=etParts()){ return isShowDay(p)?defaultShifts():[]; }
+function currentShift(p=etParts()){
+  const list=weekdayShifts(p); if(!list.length) return null;
+  for(const s of list){ if(p.hm>=s.start && p.hm<s.end) return Object.assign({ended:false},s); }
+  const last=list[list.length-1];
+  if(p.hm>=last.end) return Object.assign({ended:true}, last);
+  if(p.hm<list[0].start) return Object.assign({ended:false}, list[0]);
+  return null;
+}
+function firstShift(p=etParts()){ return weekdayShifts(p)[0]||null; }
+function isTruceShift(p=etParts()){ const sh=currentShift(p), f=firstShift(p); return !!(sh && f && sh.id===f.id && !sh.ended); }
+function shiftPossessive(n){ n=String(n||'Shift'); return /s$/i.test(n)?n+"'":n+"'s"; }
+function shiftEscalation(sh, p=etParts()){
+  const s=spSettings(); const early=s.earlyAt||'07:00', dead=s.deadline||'09:00';
+  if(!sh) return {warnAt:early, dueAt:dead, by:dead};
+  // Same pattern as Truce: bigger and banner sit the same distance before this shift's end
+  // as 7 AM and 9 AM sit before a 10 AM end (3 hours / 1 hour with the default times).
+  const first=firstShift(p); const firstEnd=hmMin(first?first.end:'10:00');
+  const warnOff=Math.max(0, firstEnd-hmMin(early)), dueOff=Math.max(0, firstEnd-hmMin(dead));
+  const start=hmMin(sh.start), end=hmMin(sh.end);
+  return {warnAt:minHm(Math.max(start, end-warnOff)), dueAt:minHm(Math.max(start, Math.min(end, end-dueOff))), by:sh.end};
+}
+function readFreq(id){
+  const sp=(typeof spById==='function')?spById(id):null; if(!sp) return 'day';
+  if(sp.giveaway) return 'day';
+  const f=String(sp.freq||sp.oncePer||'').toLowerCase();
+  if(f==='day'||f==='daily'||f==='once-a-day'||f==='once per day') return 'day';
+  if(f==='shift'||f==='once-per-shift'||f==='once per shift') return 'shift';
+  if(sp.station) return 'shift';
+  return 'day';
+}
+function readKey(id){
+  const p=etParts();
+  if(id && readFreq(id)==='shift'){ const sh=currentShift(p); if(sh) return p.date+'#'+sh.id; }
+  return p.date;
+}
+function pruneReads(obj){
+  const dates=[...new Set(Object.keys(obj).map(k=>k.slice(0,10)))].sort().slice(-14);
+  return Object.fromEntries(Object.entries(obj).filter(([k])=>dates.includes(k.slice(0,10))));
+}
+function readAt(id){ const r=reads[readKey(id)]; return r && r[id]; }
 function isRead(id){ return !!readAt(id); }
 function spById(id){ return allSponsors().find(s=>s.id===id) || (typeof stAsSp==='function' ? stAsSp(id) : null) || (typeof gvAsSp==='function' ? gvAsSp(id) : null); }
 function setRead(id, on, quiet){
-  const k=readKey(); const sp=spById(id)||{name:id};
+  const k=readKey(id); const sp=spById(id)||{name:id};
   reads[k]=reads[k]||{};
   if(on){ reads[k][id]=new Date().toISOString(); logSp('✅ Read done: '+sp.name+' ('+fmtTime(reads[k][id])+')'); }
   else { delete reads[k][id]; logSp('↩️ Read un-ticked: '+sp.name); }
-  if(typeof airSet==='function') airSet('rd:'+id, on, (sp.giveaway?'Giveaway: ':sp.station?'Station read: ':'Sponsor read: ')+(sp.wrapTitle||sp.name||id), 'reads', true, (sp.giveaway||sp.station)?(sp.wrapBody||(typeof readable==='function'?readable(sp.read):sp.read)):sp.read);
-  const keep=Object.keys(reads).sort().slice(-14); reads=Object.fromEntries(keep.map(x=>[x,reads[x]]));
+  if(typeof airSet==='function' && isTruceShift()) airSet('rd:'+id, on, (sp.giveaway?'Giveaway: ':sp.station?'Station read: ':'Sponsor read: ')+(sp.wrapTitle||sp.name||id), 'reads', true, (sp.giveaway||sp.station)?(sp.wrapBody||(typeof readable==='function'?readable(sp.read):sp.read)):sp.read);
+  reads=pruneReads(reads);
   lsSet('hs:reads', reads);
   if(on && !quiet) toast((sp.short||sp.name)+' read ✓ '+fmtTime(reads[k][id]), ()=>setRead(id,false,true));
   refreshSponsorUI(true);
@@ -1142,16 +1196,19 @@ function defaultOffDays(){ const y=+etParts().date.slice(0,4); const out=[];
 function offDayLines(){ const o=spSettings().offDays; return Array.isArray(o) ? o : defaultOffDays(); }
 function offDayMap(){ const m={}; for(const l of offDayLines()){ const x=String(l).match(/^(\d{4}-\d{2}-\d{2})\s*(.*)$/); if(x) m[x[1]]=x[2]||'Off day'; } return m; }
 function isShowDay(p=etParts()){ const s=spSettings(); return (s.showDays||[1,2,3,4,5]).includes(p.dow) && !offDayMap()[p.date]; }
-function readPhase(){ const s=spSettings(); const p=etParts(); if(!isShowDay(p)) return 'off';
-  if(p.hm < (s.earlyAt||'07:00')) return 'early'; if(p.hm < (s.deadline||'09:00')) return 'warn'; return 'due'; }
-function overdueList(){ const s=spSettings(); const p=etParts();
-  if(!isShowDay(p) || p.hm < (s.deadline||'09:00')) return [];
+function readPhase(){ const p=etParts(); if(!isShowDay(p)) return 'off';
+  const sh=currentShift(p); if(!sh || sh.ended) return 'over';
+  const e=shiftEscalation(sh,p);
+  if(p.hm < e.warnAt) return 'early'; if(p.hm < e.dueAt) return 'warn'; return 'due'; }
+function overdueList(){ const p=etParts(); const sh=currentShift(p);
+  if(!isTruceShift(p)) return [];
+  const e=shiftEscalation(sh,p); if(p.hm < e.dueAt) return [];
   return activeSponsors().filter(sp=>!isRead(sp.id)); }
 function isDue(id){ return overdueList().some(s=>s.id===id); }
 function tickButton(sp, after){
-  const done=isRead(sp.id);
+  const done=isRead(sp.id); const per=readFreq(sp.id)==='shift';
   const b=h('button',{className:'tickbtn'+(done?' done':''), type:'button'}, h('span',{className:'tbox'}, done?'✓':''),
-    done ? 'Read today ✓ '+fmtTime(readAt(sp.id))+' · tap to undo' : 'Read today');
+    done ? (per?'Read this shift ✓ ':'Read today ✓ ')+fmtTime(readAt(sp.id))+' · tap to undo' : (per?'Read this shift':'Read today'));
   b.setAttribute('aria-pressed', String(done));
   b.onclick=()=>{ setRead(sp.id, !isRead(sp.id)); if(after) after(); };
   return b;
@@ -1195,41 +1252,50 @@ function renderStudio(){ const slot=$('#studioSlot'); slot.innerHTML=''; const l
   slot.append(h('button',{className:'studiochip', type:'button', title:due.length?'Studio line · tap for the sponsor read':'Studio line', on:{click:()=>{ if(due[0]) openRead(due[0].id); }}},
     h('span',{className:'ph'}, '📞 '+line), ...due.map(s=>h('span',{className:'sp'}, s.icon?h('span',{'aria-hidden':'true'},s.icon):null, h('span',{}, s.read))),
     ...(!due.length && all.length ? [h('span',{className:'done'}, '✓ '+all.map(s=>s.short||s.name).join(', ')+' read')] : []))); }
-function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp=readPhase();
-  const stl=(rp!=='off' && typeof liveStationReads==='function') ? liveStationReads().filter(r=>!isRead(r.id)).map(r=>stAsSp(r.id)) : [];
-  const gvl=(rp!=='off' && typeof liveGiveawayTicks==='function') ? liveGiveawayTicks().filter(sp=>!isRead(sp.id)) : [];
+function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp=readPhase(); const sh=currentShift();
+  const live=(rp!=='off' && rp!=='over');
+  const stl=(live && typeof liveStationReads==='function') ? liveStationReads().filter(r=>!isRead(r.id)).map(r=>stAsSp(r.id)) : [];
+  const gvl=(live && typeof liveGiveawayTicks==='function') ? liveGiveawayTicks().filter(sp=>!isRead(sp.id)) : [];
   const hot=typeof gvIsHot==='function' && gvIsHot();
-  const ph=(rp==='due' && (stl.length||gvl.length)) ? 'warn' : rp;   // station reads / giveaways stop at the "bigger" stage; only sponsors get the 9:00 banner
-  const list=[...gvl, ...((rp==='early'||rp==='warn') ? activeSponsors().filter(sp=>!isRead(sp.id)) : []), ...stl];
-  const was=box.hidden; const sig=ph+'|'+(hot?'hot':'')+'|'+list.map(x=>x.id).join(',');
+  const ph=(rp==='due' && (stl.length||gvl.length)) ? 'warn' : rp;   // station reads / giveaways stop at the "bigger" stage; only sponsors get the banner
+  const inFirst=isTruceShift();
+  const sps=live ? activeSponsors().filter(sp=>{
+    if(isRead(sp.id)) return false;
+    if(readFreq(sp.id)==='shift') return rp==='early'||rp==='warn';
+    return inFirst && (rp==='early'||rp==='warn');
+  }) : [];
+  const list=[...gvl, ...sps, ...stl];
+  const was=box.hidden; const sig=ph+'|'+(sh?sh.id+(sh.ended?':ended':''):'none')+'|'+(hot?'hot':'')+'|'+list.map(x=>x.id).join(',');
   if(box.dataset.sig===sig && !box.hidden===!!list.length) return;
-  box.dataset.sig=sig; box.innerHTML=''; box.className=ph+(hot?' gvhot':'');
+  box.dataset.sig=sig; box.innerHTML=''; box.className=(ph==='over'?'early':ph)+(hot?' gvhot':'');
   if(!list.length){ box.hidden=true; if(!was) setHdr(); return; }
-  const s=spSettings();
   const onlyGv=gvl.length && !stl.length && !list.some(x=>!x.giveaway && !x.station);
-  box.append(h('span',{className:'rsl'}, hot && gvl.some(x=>!x.announce) ? '🎟 Listening appointment' : onlyGv ? '🎟 Giveaways today' : rp==='due' ? '📻 Once-per-shift reads still open' : ph==='warn' ? '⏰ Ad reads due by '+fmt12(s.deadline||'09:00') : 'Ad reads today'));
+  const shiftLine=sh && !sh.ended ? (shiftPossessive(sh.name)+' shift · Read this shift by '+fmt12(sh.end)) : '';
+  box.append(h('span',{className:'rsl', id:'shiftLabel'}, hot && gvl.some(x=>!x.announce) ? '🎟 Listening appointment' : onlyGv && !stl.length ? '🎟 Giveaways today' : shiftLine || (ph==='warn' ? '⏰ Ad reads due by '+fmt12((spSettings().deadline||'09:00')) : 'Ad reads today')));
   for(const sp of list){
-    const showCopy=ph==='warn' || !!sp.giveaway;
+    const showCopy=ph==='warn' || ph==='due' || !!sp.giveaway;
+    const per=readFreq(sp.id)==='shift';
     box.append(h('div',{className:'rsb'+(sp.station?' st':'')+(sp.giveaway?' gv':'')+(sp.announce?' gvwin':'')},
       h('button',{className:'rsn', type:'button', title:'Open the read', on:{click:()=>openRead(sp.id)}},
         h('span',{className:'ri','aria-hidden':'true'}, sp.icon||'⭐'), h('span',{className:'rn'}, sp.short||sp.name),
-        sp.giveaway ? h('span',{className:'rtag'}, sp.announce?'winners':'1/day') : (sp.station ? h('span',{className:'rtag'}, 'once/shift') : null),
+        sp.giveaway ? h('span',{className:'rtag'}, sp.announce?'winners':'1/day') : (sp.station || per ? h('span',{className:'rtag'}, per?'once/shift':'1/day') : null),
         showCopy ? h('span',{className:'rc'+((sp.station||sp.giveaway)?' long':'')}, sp.giveaway ? (sp.shortLine||sp.read) : (sp.station ? readable(sp.read) : sp.read)) : null),
-      h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓')));
+      h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:per?'Done: hide until the next shift':'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓')));
   }
   box.hidden=false; setHdr(); }
-function fmt12(hm){ const [H,M]=String(hm).split(':').map(Number); return ((H%12)||12)+':'+String(M||0).padStart(2,'0')+(H<12?' AM':' PM'); }
+function fmt12(hm){ const [H,M]=String(hm).split(':').map(Number); return ((H%12)||12)+(M?':'+String(M).padStart(2,'0'):'')+(H<12?' AM':' PM'); }
 function renderBanner(){ renderReadStrip(); const due=overdueList(); const b=$('#spBanner');
   if(!due.length){ if(b.classList.contains('on')){ b.classList.remove('on'); setHdr(); } return; }
   $('#spBannerText').textContent='⚠ Sponsor read still due: '+due.map(s=>s.short||s.name).join(', ');
   $('#spBannerBtn').onclick=()=>openRead(due[0].id);
   if(!b.classList.contains('on')){ b.classList.add('on'); setHdr(); } }
-let lastEtDate=etParts().date;
+let lastEtDate=etParts().date, lastShiftSig=(currentShift()||{}).id||'';
 function refreshSponsorUI(withView){ renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
   if(withView){ renderTicker(); if(state.sheet){ const y=scrollY; renderView(); window.scrollTo(0,y); } } }
 function onNewDay(){ refreshSponsorUI(true); if(typeof renderSun==='function') renderSun(); renderDays(); renderSheetTag(); if(typeof renderWeek==='function') renderWeek(); }
-setInterval(()=>{ const d=etParts().date; if(d!==lastEtDate){ lastEtDate=d; onNewDay(); } else { renderBanner(); renderCountdowns(); } }, 30000);
-document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ const d=etParts().date; if(d!==lastEtDate){ lastEtDate=d; onNewDay(); } } });
+function shiftSig(){ const sh=currentShift(); return etParts().date+'|'+(sh?sh.id+(sh.ended?':ended':''):'off')+'|'+readPhase(); }
+setInterval(()=>{ const d=etParts().date, sig=shiftSig(); if(d!==lastEtDate){ lastEtDate=d; lastShiftSig=sig; onNewDay(); } else if(sig!==lastShiftSig){ lastShiftSig=sig; refreshSponsorUI(true); } else { renderBanner(); renderCountdowns(); } }, 30000);
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden){ const d=etParts().date, sig=shiftSig(); if(d!==lastEtDate){ lastEtDate=d; lastShiftSig=sig; onNewDay(); } else if(sig!==lastShiftSig){ lastShiftSig=sig; refreshSponsorUI(true); } } });
 
 /* --- sponsors editor --- */
 function openSpEditor(){
@@ -1239,10 +1305,10 @@ function openSpEditor(){
     // today's reads with undo
     box.append(h('label',{},'Today\'s reads ('+etParts().date+')'));
     for(const sp of activeSponsors()) box.append(h('div',{className:'ed'}, h('div',{style:'font-weight:900'}, (sp.icon||'')+' '+sp.name), tickButton(sp, ()=>draw())));
-    box.append(h('label',{},'Reads grow bigger at (ET, show days)'),
+    box.append(h('label',{},'Reads grow bigger at (ET, first shift)'),
       h('input',{type:'time', value:set.earlyAt||'07:00', on:{input:e=>set.earlyAt=e.target.value}}),
-      h('div',{className:'hint'},'Before this, unread reads sit as small boxes up top. Tick ✓ to hide one until the next show day.'),
-      h('label',{},'Full flashing banner from (ET, show days)'),
+      h('div',{className:'hint'},'For the first weekday shift (Truce, ending 10 AM by default). Later shifts use the same pattern counting back from their end — with these defaults, bigger 3 hours before the end and a banner 1 hour before.'),
+      h('label',{},'Full flashing banner from (ET, first shift)'),
       h('input',{type:'time', value:set.deadline||'09:00', on:{input:e=>set.deadline=e.target.value}}),
       h('label',{},'Off days: no nagging (one per line: YYYY-MM-DD name). Weekends are always off.'),
       h('textarea',{value:(Array.isArray(set.offDays)?set.offDays:offDayLines()).join('\n'), rows:5, on:{input:e=>set.offDays=e.target.value.split('\n').map(x=>x.trim()).filter(Boolean)}}),
@@ -1259,6 +1325,9 @@ function openSpEditor(){
         h('label',{},'Triggers'), trig('weather'), trig('studio-line'),
         h('label',{},'Keywords (comma separated, optional)'), h('input',{type:'text', value:(sp.keywords||[]).join(', '), on:{input:e=>sp.keywords=e.target.value.split(',').map(x=>x.trim()).filter(Boolean)}}),
         h('label',{},'Logo URL (optional)'), h('input',{type:'url', value:sp.logo||'', on:{input:e=>sp.logo=e.target.value}}),
+        h('label',{},'How often'),
+        h('label',{className:'chk'}, h('input',{type:'radio', name:'sfreq-'+sp.id, checked:(sp.freq||'day')!=='shift', on:{change:()=>{ sp.freq='day'; }}}), 'Once per day'),
+        h('label',{className:'chk'}, h('input',{type:'radio', name:'sfreq-'+sp.id, checked:sp.freq==='shift', on:{change:()=>{ sp.freq='shift'; }}}), 'Once per shift'),
         h('label',{className:'chk'}, h('input',{type:'checkbox', checked:sp.active!==false, on:{change:e=>sp.active=e.target.checked}}), 'Active'),
         h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Remove '+(sp.name||'this sponsor')+'?')){ work.splice(i,1); draw(); } }}}, '🗑 Remove'))));
     });
@@ -2826,7 +2895,7 @@ function killLabel(k){ const t=normKill(k); if(!/^\d{4}-\d{2}-\d{2}$/.test(t)) r
 function liveStationReads(){ return allStReads().filter(r=>r.active!==false && killLive(r.kill)); }
 function liveLiners(){ return allLiners().filter(l=>l.active!==false && killLive(l.kill)); }
 function stAsSp(id){ const r=allStReads().find(x=>x.id===id); if(!r) return null;
-  return {id:r.id, name:r.name, short:r.short||r.name, icon:r.icon||'📻', read:r.text||'', station:true}; }
+  return {id:r.id, name:r.name, short:r.short||r.name, icon:r.icon||'📻', read:r.text||'', station:true, freq:(r.freq==='day'?'day':'shift')}; }
 // readable type for ALL-CAPS station copy: original text kept, shown in sentence case with names restored
 const ST_CAPS=['Z93 Hits dot com','Z93hits.com','@Z93hits','Z93','AJ','TC','KAIR','Kurtz Car Stereo','Teacher of the Month','Kalkaska Festival of Trees','Kalkaska','Festival of Trees','Patriot Farms','Traverse City','Garfield','Highland','Facebook','Morning Rush','Courtney Rehmer','Courtney','Jimmy John\u2019s',"Jimmy John's",'Rihanna','Project Feed the Kids','Cali\u2019s Tea Party',"Cali's Tea Party",'Cali','Weekend Watchlist','This Day, Back in the Day','Random Fact of the Day','Off the Charts','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','November','December','October','90s','AM','PM','I','I\u2019m',"I'm"];
 function readable(t){ t=String(t||''); const L=t.replace(/[^A-Za-z]/g,''); if(!L || L.replace(/[^A-Z]/g,'').length/L.length<0.7) return t;
@@ -2867,12 +2936,20 @@ function fmtSheetDate(d){ const m=String(d).match(/^(\d{4})-(\d{2})-(\d{2})$/); 
 
 /* --- Station reads editor --- */
 function openStEditor(){
-  let rd=clone(allStReads()), ln=clone(allLiners()); let sd=stSheetDate(), note=stNote(); const box=$('#stEditor');
+  let rd=clone(allStReads()), ln=clone(allLiners()), sh=clone(defaultShifts()); let sd=stSheetDate(), note=stNote(); const box=$('#stEditor');
   const kIn=(o)=>h('input',{type:'text', value:o.kill||'', placeholder:'12/1, 2026-12-01, TBD or TFN', on:{input:e=>o.kill=e.target.value}});
   const draw=()=>{ box.innerHTML='';
     box.append(h('label',{},'Station sheet date'), h('input',{type:'date', value:sd, on:{input:e=>sd=e.target.value}}),
       h('label',{},'Header note'), h('input',{type:'text', value:note, on:{input:e=>note=e.target.value}}),
       h('div',{className:'hint'},'Kill date: the read shows through the end of that day (ET), then hides itself. TBD / TFN never expire.'));
+    box.append(h('h4',{className:'sth'},'🕒 Weekday shifts (Mon–Fri)'),
+      h('div',{className:'hint'},'Once-per-shift reads reset when the next shift starts. After the last end they stay as they are until the next weekday.'));
+    sh.forEach((s,i)=>box.append(h('div',{className:'ed'},
+      h('label',{},'Name'), h('input',{type:'text', value:s.name||'', on:{input:e=>s.name=e.target.value}}),
+      h('label',{},'Starts'), h('input',{type:'time', value:s.start||'', on:{input:e=>s.start=e.target.value}}),
+      h('label',{},'Ends (read by)'), h('input',{type:'time', value:s.end||'', on:{input:e=>s.end=e.target.value}}),
+      h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(sh.length>1 && confirm('Remove '+(s.name||'this shift')+'?')){ sh.splice(i,1); draw(); } }}}, '🗑 Remove shift')))));
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ const last=sh[sh.length-1]; sh.push({id:'shift-'+uid(), name:'New shift', start:last?last.end:'00:00', end:'19:00'}); draw(); }}}, '➕ Add shift')));
     box.append(h('h4',{className:'sth'},'📻 Minimum once per shift'));
     for(const r of liveStationReads()) box.append(h('div',{className:'ed'}, h('div',{style:'font-weight:900'}, (r.icon||'📻')+' '+r.name+' · today'), tickButton(stAsSp(r.id), ()=>draw())));
     rd.forEach((r,i)=>box.append(h('div',{className:'ed'+(killLive(r.kill)?'':' expired')},
@@ -2882,9 +2959,12 @@ function openStEditor(){
         h('input',{type:'text', value:r.short||'', on:{input:e=>r.short=e.target.value}}), h('input',{type:'text', value:r.icon||'', style:'max-width:80px', on:{input:e=>r.icon=e.target.value}})),
       h('label',{},'Kill date'), kIn(r),
       h('label',{},'Read (original text)'), h('textarea',{value:r.text||'', rows:4, on:{input:e=>r.text=e.target.value}}),
+      h('label',{},'How often'),
+      h('label',{className:'chk'}, h('input',{type:'radio', name:'stfreq-'+r.id, checked:(r.freq||'shift')!=='day', on:{change:()=>{ r.freq='shift'; }}}), 'Once per shift'),
+      h('label',{className:'chk'}, h('input',{type:'radio', name:'stfreq-'+r.id, checked:r.freq==='day', on:{change:()=>{ r.freq='day'; }}}), 'Once per day'),
       h('label',{className:'chk'}, h('input',{type:'checkbox', checked:r.active!==false, on:{change:e=>r.active=e.target.checked}}), 'Active'),
       h('div',{className:'rowb'}, h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Delete '+(r.name||'this read')+'?')){ rd.splice(i,1); draw(); } }}}, '🗑 Delete read')))));
-    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ rd.push({id:'st-'+uid(), name:'New read', short:'', icon:'📻', kill:'TBD', text:'', active:true}); draw(); }}}, '➕ Add read')));
+    box.append(h('div',{className:'rowb'}, h('button',{type:'button', on:{click:()=>{ rd.push({id:'st-'+uid(), name:'New read', short:'', icon:'📻', kill:'TBD', text:'', active:true, freq:'shift'}); draw(); }}}, '➕ Add read')));
     box.append(h('h4',{className:'sth'},'🎙 Liners (continuous, when time permits)'));
     const gnames=[...new Set(ln.map(l=>l.group).filter(Boolean))];
     ln.forEach((l,i)=>box.append(h('div',{className:'ed'+(killLive(l.kill)?'':' expired')},
@@ -2900,16 +2980,16 @@ function openStEditor(){
         h('button',{type:'button', style:'background:#2ecc71;color:#06210f;border-color:#2ecc71', on:{click:()=>{ saveSt(nt.value); $('#stModal').classList.remove('on'); }}}, '💾 Save'),
         h('button',{type:'button', on:{click:()=>$('#stModal').classList.remove('on')}}, 'Cancel')),
       h('div',{className:'rowb'},
-        h('button',{type:'button', on:{click:()=>download('station-reads.json', {version:1, exported:new Date().toISOString(), sheetDate:stSheetDate(), note:stNote(), reads:allStReads(), liners:allLiners()})}}, '⬇ Export'),
+        h('button',{type:'button', on:{click:()=>download('station-reads.json', {version:1, exported:new Date().toISOString(), sheetDate:stSheetDate(), note:stNote(), shifts:defaultShifts(), reads:allStReads(), liners:allLiners()})}}, '⬇ Export'),
         h('button',{type:'button', on:{click:()=>{ importHandler=(j,name)=>{ if(!Array.isArray(j.reads)) throw new Error('no "reads" list');
-            stOv={reads:diffOverlay(stDefaults.reads, j.reads), liners:diffOverlay(stDefaults.liners, j.liners||[]), settings:{sheetDate:j.sheetDate||null, note:j.note!=null?j.note:null}}; lsSet('hs:stLocal', stOv);
+            stOv={reads:diffOverlay(stDefaults.reads, j.reads), liners:diffOverlay(stDefaults.liners, j.liners||[]), settings:{sheetDate:j.sheetDate||null, note:j.note!=null?j.note:null, shifts:Array.isArray(j.shifts)?j.shifts:null}}; lsSet('hs:stLocal', stOv);
             logSp('Station reads imported from '+name); refreshSponsorUI(true); openStEditor(); }; $('#importIn').click(); }}}, '⬆ Import'),
         h('button',{type:'button', className:'danger', on:{click:()=>{ if(confirm('Drop local station-read edits and go back to the published sheet? (Ticks are kept.)')){ stOv={reads:{},liners:{},settings:{}}; lsSet('hs:stLocal',stOv); logSp('Station reads reset to published sheet'); refreshSponsorUI(true); openStEditor(); } }}}, '↺ Defaults')),
       h('label',{},'Change log'), h('div',{className:'log'}, spLog.length? spLog.map(l=>fmtStamp(l.at)+' · '+l.what+(l.note?' ('+l.note+')':'')).join('\n') : 'No changes yet.')); };
   const saveSt=(lognote)=>{ const yr=sd||stSheetDate(); rd.forEach(r=>r.kill=normKill(r.kill, yr)); ln.forEach(l=>l.kill=normKill(l.kill, yr));
     const oR=allStReads(), oL=allLiners(), ch=[];
     for(const r of rd){ const p=oR.find(x=>x.id===r.id); if(!p){ ch.push('Station read added: '+r.name+' ('+killLabel(r.kill)+')'); continue; }
-      const f=['name','short','icon','kill','text','active'].filter(k=>JSON.stringify(p[k])!==JSON.stringify(r[k]));
+      const f=['name','short','icon','kill','text','active','freq'].filter(k=>JSON.stringify(p[k]||'')!==JSON.stringify(r[k]||''));
       if(f.length) ch.push('Station read edited: '+r.name+': '+f.map(k=>k==='kill'?'kill '+p.kill+' → '+r.kill:k).join(', ')); }
     for(const p of oR) if(!rd.some(r=>r.id===p.id)) ch.push('Station read deleted: '+p.name);
     for(const l of ln){ const p=oL.find(x=>x.id===l.id); if(!p){ ch.push('Liner added ('+l.group+')'); continue; }
@@ -2917,8 +2997,13 @@ function openStEditor(){
     for(const p of oL) if(!ln.some(l=>l.id===p.id)) ch.push('Liner deleted ('+p.group+')');
     if(sd!==stSheetDate()) ch.push('Station sheet date '+(stSheetDate()||'—')+' → '+(sd||'—'));
     if(note!==stNote()) ch.push('Station sheet note edited');
+    const pubSh=(stDefaults.shifts&&stDefaults.shifts.length)?stDefaults.shifts:SHIFT_DEFAULTS;
+    const normSh=sh.map((s,i)=>({id:s.id||('shift-'+i), name:String(s.name||'').trim()||('Shift '+(i+1)), start:normHm(s.start, i?'':'00:00'), end:normHm(s.end,'19:00')}));
+    const pack=a=>JSON.stringify((a||[]).map((s,i)=>({id:s.id||('shift-'+i),name:s.name,start:normHm(s.start,'00:00'),end:normHm(s.end,'19:00')})));
+    if(pack(normSh)!==pack(defaultShifts())) ch.push('Weekday shifts edited: '+normSh.map(s=>s.name+' '+fmt12(s.start)+'–'+fmt12(s.end)).join(', '));
+    const shiftsOv=pack(normSh)===pack(pubSh)?null:normSh;
     stOv={reads:diffOverlay(stDefaults.reads, rd), liners:diffOverlay(stDefaults.liners, ln),
-      settings:{sheetDate:(sd && sd!==stDefaults.sheetDate)?sd:null, note:(note!==(stDefaults.note||''))?note:null}};
+      settings:{sheetDate:(sd && sd!==stDefaults.sheetDate)?sd:null, note:(note!==(stDefaults.note||''))?note:null, shifts:shiftsOv}};
     lsSet('hs:stLocal', stOv); (ch.length?ch:['Station reads saved (no changes)']).forEach(c=>logSp(c, lognote));
     refreshSponsorUI(true); renderTabs(); };
   draw(); $('#stModal').classList.add('on'); }
