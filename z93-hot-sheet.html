@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v51-song-lock">
+<meta name="hs-build" content="v52-pins-hits">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -759,6 +759,13 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 .songcard .stitle{font-size:1.25em;font-weight:900;line-height:1.2;color:var(--text)}
 .songcard .sartist{font-size:1em;font-weight:800;color:var(--accent);margin:2px 0 4px}
 .songcard .stag{font-size:.72em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.skbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 2px}
+.skbar button{min-height:40px;padding:4px 10px;font-weight:800;font-size:.82em;border-radius:10px;border:2px solid var(--line);background:var(--panel2);color:var(--text)}
+.skbar button.on{border-color:#ffd23f;background:#3a3206;color:#ffe27a}
+.stag-saved,.stag-pin{display:inline-block;margin:0 6px 0 0;padding:2px 7px;border-radius:999px;font-size:.72em;font-weight:800;letter-spacing:.02em;background:#3a3206;color:#ffe27a;border:1px solid #ffd23f}
+.stag-pin{background:#1e2a14;color:#d4f5a6;border-color:#b6e06a}
+.ncard.pinned,.buzzcard.pinned{box-shadow:inset 4px 0 0 #ffd23f}
+.ncard.fromsave,.buzzcard.fromsave{box-shadow:inset 4px 0 0 #b6e06a}
 .songcard .sabout{font-size:.92em;line-height:1.45;margin:8px 0 0;color:var(--text)}
 .songcard .smeta{list-style:none;margin:8px 0 0;padding:0;font-size:.92em;line-height:1.45;color:var(--text)}
 .songcard .smeta li{margin:0 0 4px}
@@ -1508,7 +1515,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
-const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:gvWins','hs:guLocal','hs:guMentions','hs:weekCal','hs:songPicks','hs:buzzRemix','hs:storyRemix','hs:moviePicks']);
+const SYNC_KEYS=new Set(['hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:gvWins','hs:guLocal','hs:guMentions','hs:weekCal','hs:songPicks','hs:buzzRemix','hs:storyRemix','hs:moviePicks','hs:remix','hs:storyKeep','hs:tabByProfile','hs:openerDraft']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -1649,6 +1656,7 @@ function setViewProfile(id){
   if(id===autoProfile(p)){ viewOv=null; try{ LS.removeItem('hs:viewOv'); }catch(e){} }
   else { viewOv={id, until:nextAutoChange(p)}; try{ LS.setItem('hs:viewOv', JSON.stringify(viewOv)); }catch(e){} }
   window.__hsMorningPeek=false;
+  if(typeof tabPrefRead==='function'){ const t=tabPrefRead(); if(t) state.tab=t; }
   if(typeof renderShowTabs==='function') renderShowTabs();
   if(typeof renderShiftLabel==='function') renderShiftLabel();
   if(typeof renderTabs==='function') renderTabs();
@@ -1699,7 +1707,7 @@ function renderMorningFold(){
     b.className='mornBtn'+(state.tab===key?' on':'');
     b.setAttribute('data-sec', key);
     b.textContent=(item.v && item.v.title)||key;
-    b.onclick=()=>{ window.__hsMorningPeek=true; state.tab=key; try{ LS.setItem('hs:tab',key); }catch(e){} if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); };
+    b.onclick=()=>{ window.__hsMorningPeek=true; state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ LS.setItem('hs:tab',key); }catch(e){} if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); };
     box.append(b);
   }
   el.hidden=!n;
@@ -1711,6 +1719,16 @@ function renderBuildLabel(){
 }
 function profileId(p=etParts()){ return viewProfile(p); }
 function profileBucket(p=etParts()){ const d=(p||etParts()).date; const id=profileId(p); return (!id || id==='truce') ? d : d+'#'+id; }
+function tabPrefs(){ return lsGet('hs:tabByProfile', {}); }
+function tabPrefSave(key){
+  const o=tabPrefs(); o[(typeof profileId==='function'?profileId():null)||'truce']=key;
+  lsSet('hs:tabByProfile', o);
+  try{ LS.setItem('hs:tab', key); }catch(e){}
+}
+function tabPrefRead(){
+  const o=tabPrefs();
+  return o[(typeof profileId==='function'?profileId():null)||'truce'] || (typeof LS!=='undefined' && LS.getItem('hs:tab')) || '';
+}
 function onAirProfile(id){ return viewProfile()===id; }
 function normItemDays(days){
   if(!Array.isArray(days)) return [];
@@ -1866,6 +1884,83 @@ function storyResolve(slot, orig){
   if(!st || !st.id) return Object.assign({}, orig, {kind:'sheet'});
   return Object.assign({}, orig, st, {kind:st.kind||'bench', remixed:true});
 }
+
+/* ================= pin / save stories (per profile, synced) ================= */
+var storyKeep=lsGet('hs:storyKeep', {pins:{}, saves:{}});
+if(!storyKeep || typeof storyKeep!=='object') storyKeep={pins:{}, saves:{}};
+storyKeep.pins=storyKeep.pins||{}; storyKeep.saves=storyKeep.saves||{};
+function storyKeepProf(){ return (typeof profileId==='function'&&profileId())||'truce'; }
+function storyKeepSave(){ lsSet('hs:storyKeep', storyKeep); }
+function storyKeepId(it){
+  const t=normT((it&&(it.title||it.head))||'');
+  const u=String((it&&(it.link||it.url||it.article_url||it.tid))||'');
+  return 'k:'+fnv(t+'|'+(u||t));
+}
+function storyKeepSnap(it, sec, col){
+  it=it||{};
+  return {title:it.title||'', desc:it.desc||'', lines:Array.isArray(it.lines)?it.lines.slice():[], link:it.link||it.url||it.article_url||'', src:it.src||it.source||'', at:it.at||null, article_url:it.article_url||it.link||'', article_title:it.article_title||it.title||'', recap:it.recap||it.body||'', tid:it.tid||'', col:col||it.col||'', sec:sec||it.sec||'news'};
+}
+function storyPinned(id, prof){ const p=prof||storyKeepProf(); return !!(storyKeep.pins[p]&&storyKeep.pins[p][id]); }
+function storySavedRec(id, prof){ const p=prof||storyKeepProf(); return (storyKeep.saves[p]||{})[id]||null; }
+function pinStory(it, on, sec, col){
+  const p=storyKeepProf(); const id=it.id&&String(it.id).indexOf('k:')===0?it.id:storyKeepId(it);
+  storyKeep.pins[p]=storyKeep.pins[p]||{};
+  if(on===false || (on==null && storyKeep.pins[p][id])){ delete storyKeep.pins[p][id]; if(!Object.keys(storyKeep.pins[p]).length) delete storyKeep.pins[p]; storyKeepSave(); if(typeof rerender==='function') rerender(); toast('Unpinned'); return false; }
+  const snap=storyKeepSnap(it, sec, col); snap.id=id;
+  storyKeep.pins[p][id]={id, sec:snap.sec, col:snap.col, at:new Date().toISOString(), snap};
+  const ids=Object.keys(storyKeep.pins[p]); if(ids.length>40){ ids.slice(0,-40).forEach(k=>delete storyKeep.pins[p][k]); }
+  storyKeepSave(); if(typeof rerender==='function') rerender(); toast('📌 Pinned to the top'); return true;
+}
+function saveStory(it, on, sec, col){
+  const p=storyKeepProf(); const id=it.id&&String(it.id).indexOf('k:')===0?it.id:storyKeepId(it);
+  storyKeep.saves[p]=storyKeep.saves[p]||{};
+  if(on===false || (on==null && storyKeep.saves[p][id])){
+    const rec=storyKeep.saves[p][id]; delete storyKeep.saves[p][id];
+    if(rec && rec.savedId && typeof savedMap!=='undefined' && savedMap[rec.savedId] && savedMap[rec.savedId].src==='story'){ delete savedMap[rec.savedId]; if(typeof saveStore==='function') saveStore(); }
+    if(!Object.keys(storyKeep.saves[p]).length) delete storyKeep.saves[p];
+    storyKeepSave(); if(typeof rerender==='function') rerender(); toast('Removed from saved'); return false;
+  }
+  const today=(typeof etParts==='function'?etParts().date:new Date().toISOString().slice(0,10));
+  const appear=typeof dateAdd==='function'?dateAdd(today,1):today;
+  const snap=storyKeepSnap(it, sec, col); snap.id=id;
+  const sid='s'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  if(typeof savedMap!=='undefined'){
+    savedMap[sid]={at:new Date().toISOString(), src:'story', profile:p, title:(typeof tcase==='function'?tcase(snap.title||''):snap.title)||'Saved story', url:snap.link||snap.article_url||'', note:'Saved from '+(typeof nice==='function'?nice(today):today), cat:(sec==='buzz'?'buzz':'news'), used:false, fromDate:today, appearOn:appear};
+    if(typeof saveStore==='function') saveStore();
+  }
+  storyKeep.saves[p][id]={id, sec:snap.sec, col:snap.col, savedAt:new Date().toISOString(), fromDate:today, appearOn:appear, savedId:sid, snap};
+  storyKeepSave(); if(typeof rerender==='function') rerender(); toast('📥 Saved for tomorrow · also in the Saved tab'); return true;
+}
+function storyKeepBar(it, sec, col){
+  const id=storyKeepId(it);
+  const pinOn=storyPinned(id);
+  const sav=storySavedRec(id);
+  const bar=h('div',{className:'skbar'});
+  bar.append(h('button',{type:'button', className:pinOn?'on':'', 'aria-pressed':String(pinOn), title:pinOn?'Unpin this story':'Pin this story to the top of the section', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); pinStory(it, !pinOn, sec, col); }}}, pinOn?'📌 Pinned':'📌 Pin'));
+  bar.append(h('button',{type:'button', className:sav?'on':'', 'aria-pressed':String(!!sav), title:sav?'Remove from saved':'Save this story into tomorrow, like a held clip', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); saveStory(it, !sav, sec, col); }}}, sav?'📥 Saved':'📥 Save'));
+  if(it.savedFrom) bar.append(h('span',{className:'stag-saved'}, 'Saved from '+(typeof nice==='function'?nice(it.savedFrom):it.savedFrom)));
+  else if(it.pinned) bar.append(h('span',{className:'stag-pin'}, 'Pinned'));
+  return bar;
+}
+function newsItemsWithKeep(colId, groups){
+  const p=storyKeepProf(); const today=(typeof etParts==='function'?etParts().date:'');
+  const have=new Set(); const out=[];
+  const pinList=Object.values((storyKeep.pins[p]||{})).filter(x=>(x.sec||'news')==='news' && (!x.col || x.col===colId));
+  const saveList=Object.values((storyKeep.saves[p]||{})).filter(x=>(x.sec||'news')==='news' && (!x.col || x.col===colId) && x.appearOn===today);
+  const pack=(rec, flags)=>{ const it=Object.assign({}, rec.snap||rec, flags); if(!it.title && rec.snap) Object.assign(it, rec.snap); it._keepId=rec.id; return it; };
+  for(const rec of pinList){ out.push(pack(rec,{pinned:true, savedFrom:(saveList.find(s=>s.id===rec.id)||{}).fromDate||null, pick:false, _keep:true})); have.add(rec.id); }
+  for(const rec of saveList){ if(have.has(rec.id)) continue; out.push(pack(rec,{pinned:false, savedFrom:rec.fromDate, pick:false, _keep:true})); have.add(rec.id); }
+  for(const g of (groups||[])){
+    for(const it of (g.items||[])){
+      const id=storyKeepId(it); if(have.has(id)) continue;
+      const pin=storyPinned(id,p); const sav=storySavedRec(id,p);
+      const row=Object.assign({}, it, {pinned:pin, savedFrom:(sav&&sav.appearOn===today)?sav.fromDate:null});
+      out.push(row); have.add(id);
+    }
+  }
+  return out;
+}
+
 function storyCard(orig, kind){
   const shown=storyResolve(orig.slot, orig);
   const remixed=!!shown.remixed;
@@ -1890,6 +1985,13 @@ function storyCard(orig, kind){
   const host=h('div',{className:'airhost'});
   host.append(airBtn(airId, readable(shown.title||orig.title||'Story'), kind==='lifestyle'?'lifestyle':'news', false, bodyTxt));
   card.append(host);
+  const keepIt={title:shown.title||orig.title, link:shown.link||(orig.item&&(orig.item.article_url||orig.item.link))||shown.article_url||'', desc:bodyTxt, recap:bodyTxt, src:shown.source||'', article_url:shown.link||(orig.item&&orig.item.article_url)||''};
+  if(typeof storyKeepBar==='function'){
+    const id=storyKeepId(keepIt);
+    if(storyPinned(id)) card.classList.add('pinned');
+    const sav=storySavedRec(id); if(sav && sav.appearOn===(typeof etParts==='function'&&etParts().date)) { card.classList.add('fromsave'); keepIt.savedFrom=sav.fromDate; }
+    card.append(storyKeepBar(keepIt, kind, (kind||'').split(':')[1]||''));
+  }
   return card;
 }
 function renderStorySec(c, kind, txt){
@@ -2562,10 +2664,15 @@ function weekCalDates(p=etParts()){
   return out;
 }
 function weekCalAll(on){
-  const id=(typeof viewProfile==='function'?viewProfile():'truce');
-  const k='hs:weekCalAll:'+id;
-  if(on===undefined){ try{ return LS.getItem(k)==='1'; }catch(e){ return false; } }
-  try{ LS.setItem(k, on?'1':'0'); }catch(e){}
+  const id=(typeof viewProfile==='function'?viewProfile():'truce')||'truce';
+  weekCal=weekCal||{items:{},hidden:{},allByProfile:{}};
+  weekCal.allByProfile=weekCal.allByProfile||{};
+  if(weekCal.allByProfile[id]==null){
+    try{ if(LS.getItem('hs:weekCalAll:'+id)==='1') weekCal.allByProfile[id]=true; }catch(e){}
+  }
+  if(on===undefined) return !!weekCal.allByProfile[id];
+  weekCal.allByProfile[id]=!!on;
+  if(typeof weekCalSave==='function') weekCalSave();
   return !!on;
 }
 function weekCalShiftOf(it){
@@ -3393,7 +3500,7 @@ function renderTabs(){
   const morn=new Set(typeof morningKeys==='function'?morningKeys():[]);
   const hideM=typeof morningEnded==='function' && morningEnded();
   const main=hideM?list.filter(x=>!morn.has(x.key)):list;
-  let saved=LS.getItem('hs:tab');
+  let saved=(typeof tabPrefRead==='function'?tabPrefRead():null)||LS.getItem('hs:tab');
   if(hideM && morn.has(state.tab) && !window.__hsMorningPeek){
     state.tab = main.find(x=>x.key===saved && !morn.has(saved)) ? saved : ((main[0]&&main[0].key)||(list[0]&&list[0].key));
   }
@@ -3405,7 +3512,7 @@ function renderTabs(){
     if(empty) b.classList.add('empty');
     b.append(v.title||key);
     if(v.category){ const c=document.createElement('span'); c.className='cat'; c.textContent=v.category; b.append(c); }
-    b.onclick=()=>{ window.__hsMorningPeek=false; state.tab=key; LS.setItem('hs:tab',key); renderTabs(); renderView(); window.scrollTo({top:0}); };
+    b.onclick=()=>{ window.__hsMorningPeek=false; state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else LS.setItem('hs:tab',key); renderTabs(); renderView(); window.scrollTo({top:0}); };
     nav.append(b);
     if(key===state.tab) setTimeout(()=>{ const l=b.offsetLeft, r=l+b.offsetWidth; if(l<nav.scrollLeft) nav.scrollLeft=l-8; else if(r>nav.scrollLeft+nav.clientWidth) nav.scrollLeft=r-nav.clientWidth+8; },0);
   }
@@ -3678,10 +3785,47 @@ function buzzCard(orig){
   if(shown.id) (window.__airUsed||(window.__airUsed=new Set())).add(shown.id);
   const airBody=shown.kind==='sheet' ? bodyTxt : buzzAirBody(shown);
   card.append(h('div',{className:'airsec'}, airBtn(airId, tcase(shown.title||orig.title||''), 'buzz', true, airBody)));
+  if(typeof storyKeepBar==='function'){
+    const keepIt={title:shown.title||orig.title, link:shown.link||(it&&(it.article_url||it.link))||'', desc:bodyTxt, recap:bodyTxt, src:shown.source||'', article_url:(it&&it.article_url)||shown.link||''};
+    const id=storyKeepId(keepIt);
+    card.setAttribute('data-keep-id', id);
+    if(storyPinned(id)) card.classList.add('pinned');
+    const sav=storySavedRec(id); if(sav && sav.appearOn===(typeof etParts==='function'&&etParts().date)){ card.classList.add('fromsave'); keepIt.savedFrom=sav.fromDate; }
+    card.append(storyKeepBar(keepIt, 'buzz', ''));
+  }
   return card;
 }
 
-function renderBuzzLocal(c, txt){ renderBuzz(c, txt); }
+function storyKeepInject(c, sec, col){
+  if(!c || typeof storyKeepBar!=='function') return;
+  const p=storyKeepProf(); const today=(typeof etParts==='function'?etParts().date:'');
+  const shown=new Set([...c.querySelectorAll('[data-keep-id]')].map(el=>el.getAttribute('data-keep-id')));
+  const extras=[];
+  for(const rec of Object.values((storyKeep.pins[p]||{}))){
+    if((rec.sec||'')!==sec) continue; if(col && rec.col && rec.col!==col) continue;
+    if(shown.has(rec.id)) continue;
+    const it=Object.assign({}, rec.snap||{}, {pinned:true, title:(rec.snap||{}).title||'Pinned story'});
+    extras.push({it, pinned:true}); shown.add(rec.id);
+  }
+  for(const rec of Object.values((storyKeep.saves[p]||{}))){
+    if((rec.sec||'')!==sec || rec.appearOn!==today) continue;
+    if(col && rec.col && rec.col!==col) continue;
+    if(shown.has(rec.id)) continue;
+    extras.push({it:Object.assign({}, rec.snap||{}, {savedFrom:rec.fromDate, title:(rec.snap||{}).title||'Saved story'}), pinned:false});
+    shown.add(rec.id);
+  }
+  if(!extras.length) return;
+  const box=h('div',{className:'keepbox'});
+  for(const x of extras){
+    const card=h('article',{className:'buzzcard '+(x.pinned?'pinned':'fromsave'), 'data-keep-id':storyKeepId(x.it)});
+    card.append(h('div',{className:'headline buzzhd'}, tcase(x.it.title||'')));
+    if(x.it.desc||x.it.recap){ const body=h('div',{className:'buzzbody'}); richLines(body, x.it.desc||x.it.recap); card.append(body); }
+    card.append(storyKeepBar(x.it, sec, col||''));
+    box.append(card);
+  }
+  c.insertBefore(box, c.firstChild);
+}
+function renderBuzzLocal(c, txt){ renderBuzz(c, txt); if(typeof storyKeepInject==='function') storyKeepInject(c,'buzz',''); }
 function renderBuzz(c, txt){
   const parts=buzzParse(txt);
   const locals=buzzOrigLocals();
@@ -3786,8 +3930,9 @@ function newsData(){
   return {local, national, gossip:gos};
 }
 const ncount=g=>g.reduce((n,x)=>n+x.items.length,0);
-function newsCard(it){
-  const card=h('article',{className:'ncard'+(it.pick?' pick':'')}); if(it.tid) card.dataset.tid=it.tid;
+function newsCard(it, col){
+  const card=h('article',{className:'ncard'+(it.pick?' pick':'')+(it.pinned?' pinned':'')+(it.savedFrom?' fromsave':'')}); if(it.tid) card.dataset.tid=it.tid;
+  if(typeof storyKeepId==='function') card.setAttribute('data-keep-id', storyKeepId(it));
   const body=h('div',{className:'nbody', hidden:true});
   const when=it.at ? (Date.now()-it.at<3600e3 ? ago(it.at) : hm(new Date(it.at))+' ET') : (it.sub||'');
   const srcLine=(it.votes>1?it.src+' · '+it.votes+' sources':it.src)||'';
@@ -3805,6 +3950,7 @@ function newsCard(it){
     const newsIt=Object.assign({}, it, it.article_url==null && it.link ? {article_url:it.link, article_title:it.article_title||it.title||''} : {});
     appendArticleAndJokes(card, {sec:'news', item:it.article_url!=null?it:newsIt, title:it.title, text:(it.desc||'')+'\n'+(it.lines||[]).join('\n'), index:0, total:1});
   }
+  if(typeof storyKeepBar==='function') card.append(storyKeepBar(it, 'news', col||it.col||''));
   return card;
 }
 function renderNewsView(view){
@@ -3826,11 +3972,19 @@ function renderNewsView(view){
     const col=h('section',{className:'ncol '+c.cls, id:'ncol-'+c.id, role:'tabpanel', 'aria-labelledby':'nsb-'+c.id},
       h('div',{className:'nch'}, h('span',{className:'ic','aria-hidden':'true'}, c.icon), h('span',{className:'nl'}, c.full||c.label), h('span',{className:'ct'}, String(n))));
     let shown=0; const extra=[];
+    const keepItems=typeof newsItemsWithKeep==='function'?newsItemsWithKeep(c.id, groups):null;
+    if(keepItems){
+      const head=h('div',{className:'nsub'}, 'Headlines');
+      keepItems.forEach((it,k)=>{ const card=newsCard(it, c.id); if(c.id==='local' && shown===0) card.classList.add('lead');
+        if(k>=40){ card.hidden=true; extra.push(card); }
+        if(k===0) col.append(head); col.append(card); shown++; });
+    } else {
     for(const g of groups){ if(!g.items.length) continue; const head=h('div',{className:'nsub'}, g.head);
       const fold=g.head==='More headlines';
-      g.items.forEach((it,k)=>{ const card=newsCard(it); if(c.id==='local' && shown===0) card.classList.add('lead');
+      g.items.forEach((it,k)=>{ const card=newsCard(it, c.id); if(c.id==='local' && shown===0) card.classList.add('lead');
         if(fold && k>=12){ card.hidden=true; extra.push(card); }
         if(k===0) col.append(head); col.append(card); shown++; }); }
+    }
     if(extra.length){ const more=h('button',{className:'nmore', type:'button'}, 'More headlines ('+extra.length+')');
       more.onclick=()=>{ tapHaptic(); extra.forEach(x=>x.hidden=false); more.remove(); }; col.append(more); }
     if(!n) col.append(h('div',{className:'nempty'}, c.id==='local' ? (navigator.onLine?'No local headlines yet.':'Offline: no local headlines saved.') : (navigator.onLine ? 'Loading…' : 'Offline: nothing saved yet.')));
@@ -4306,8 +4460,9 @@ function clipPicks(key){
     out.push({id:'p'+fnv(d+'|'+lines[0]), slot, title:tcase(title), body:lines.slice(1).join('\n'), audio:fm[1]||'', file, ready:/\bREADY\b/.test(cleanText(chunk)), src:''});
   }
   return out; }
-function cst(id){ const d=clipDate(); return (clipState[d]||{})[id]||{}; }
-function setClip(id, patch){ const d=clipDate(); clipState[d]=clipState[d]||{}; const o=Object.assign({}, clipState[d][id]||{}, patch);
+function clipStateBucket(){ const d=clipDate(); const id=(typeof profileId==='function'&&profileId())||'truce'; return (!id||id==='truce')?d:d+'#'+id; }
+function cst(id){ const d=clipStateBucket(); const fallback=((typeof profileId==='function'?profileId():'truce')==='truce')?(clipState[clipDate()]||{})[id]:null; return (clipState[d]||{})[id]||fallback||{}; }
+function setClip(id, patch){ const d=clipStateBucket(); clipState[d]=clipState[d]||{}; const o=Object.assign({}, clipState[d][id]||{}, patch);
   Object.keys(o).forEach(k=>{ if(o[k]==null) delete o[k]; }); if(Object.keys(o).length) clipState[d][id]=o; else delete clipState[d][id];
   const keep=Object.keys(clipState).sort().slice(-5); clipState=Object.fromEntries(keep.map(k=>[k,clipState[k]])); lsSet('hs:clipState', clipState); }
 function markPlayed(id){ if(typeof airAuto==='function') airAuto('clip:'+id, (clipPicks('clips').concat(clipPicks('newsclips'),(state.clipPicks||[]).filter(x=>x.heldFrom)).find(x=>x.id===id)||{title:'Clip'}).title.replace(/\(READY\)/i,'').trim().replace(/^.*$/,t=>readable(t)), 'clips', (clipPicks('clips').concat(clipPicks('newsclips'),(state.clipPicks||[]).filter(x=>x.heldFrom)).find(x=>x.id===id)||{}).body); if(cst(id).p) return; setClip(id,{p:Date.now()});
@@ -4424,7 +4579,8 @@ function heldGroups(list){ const by={}; list.forEach(p=>{ (by[p.heldFrom]=by[p.h
 var savedMap=lsGet('hs:saved', {}); if(!savedMap || typeof savedMap!=='object' || Array.isArray(savedMap)) savedMap={};
 const SAVE_CATS=[['buzz','Buzz'],['news','News'],['clip','Clip/Audio'],['bit','Bit idea'],['flash','Flashback'],['other','Other']];
 const saveCatLabel=c=>(SAVE_CATS.find(x=>x[0]===c)||SAVE_CATS[5])[1];
-function savedList(){ return Object.entries(savedMap||{}).filter(([,o])=>o&&typeof o==='object').map(([id,o])=>({id,...o})).sort((a,b)=>String(b.at||'').localeCompare(String(a.at||''))); }
+function savedList(){ const prof=(typeof profileId==='function'&&profileId())||'truce';
+  return Object.entries(savedMap||{}).filter(([,o])=>o&&typeof o==='object' && (!o.profile || o.profile===prof)).map(([id,o])=>({id,...o})).sort((a,b)=>String(b.at||'').localeCompare(String(a.at||''))); }
 function saveStore(){ lsSet('hs:saved', savedMap); }
 function extractUrl(t){ const m=String(t||'').match(/https?:\/\/[^\s<>"'”’)\]]+/i); return m?m[0].replace(/[.,;:!?]+$/,''):''; }
 function parseShare(sp){ const title=(sp.get('title')||'').trim(), text=(sp.get('text')||'').trim(); let url=(sp.get('url')||'').trim();
@@ -4445,7 +4601,7 @@ function openSave(pre, id){ const b=$('#saveBody'); b.innerHTML=''; const o=id?s
   const save=h('button',{type:'button', className:'svsave'}, id?'💾 Save changes':'📥 Save');
   save.onclick=()=>{ const title=ti.value.trim(), url=ur.value.trim(); if(!title && !url){ ti.focus(); return; }
     const now=new Date().toISOString(); const k=id||('s'+Date.now().toString(36)+Math.random().toString(36).slice(2,6));
-    savedMap[k]=Object.assign({}, savedMap[k]||{at:now, src:pre&&pre.src||'manual'}, {title:title||url, url, note:nt.value.trim(), cat, upd:now}); if(!savedMap[k].used) savedMap[k].used=false;
+    savedMap[k]=Object.assign({}, savedMap[k]||{at:now, src:pre&&pre.src||'manual'}, {title:title||url, url, note:nt.value.trim(), cat, upd:now, profile:(typeof profileId==='function'&&profileId())||'truce'}); if(!savedMap[k].used) savedMap[k].used=false;
     saveStore(); $('#saveModal').classList.remove('on'); toast(id?'Saved changes':'📥 Saved for show'); if(state.tab==='saved') rerender(); else renderTabs(); };
   b.append(h('label',{},'Title'), ti, h('label',{},'Link'), ur, h('label',{},'Note'), nt, h('label',{},'Category'), cats,
     h('div',{className:'rowb'}, save, h('button',{type:'button', on:{click:()=>$('#saveModal').classList.remove('on')}}, 'Cancel')));
@@ -4502,6 +4658,14 @@ function syncSnap(){ const m={};
   for(const [b,r] of Object.entries((typeof guMentions!=='undefined'&&guMentions)||{})) for(const [id,t] of Object.entries(r||{})) m['gm:'+b+':'+id]=t;
   for(const [id,o] of Object.entries((typeof weekCal!=='undefined'&&weekCal&&weekCal.items)||{})) m['wc:'+id]=o;
   for(const [id,v] of Object.entries((typeof weekCal!=='undefined'&&weekCal&&weekCal.hidden)||{})) if(v) m['wh:'+id]=v;
+  for(const [id,v] of Object.entries((typeof weekCal!=='undefined'&&weekCal&&weekCal.allByProfile)||{})) if(v) m['wa:'+id]=v;
+  for(const [d,r] of Object.entries((typeof remixSt!=='undefined'&&remixSt)||{})) for(const [id,o] of Object.entries(r||{})) m['rx:'+d+':'+id]=o;
+  for(const [prof,r] of Object.entries((typeof storyKeep!=='undefined'&&storyKeep&&storyKeep.pins)||{})) for(const [id,o] of Object.entries(r||{})) m['kp:'+prof+':'+id]=o;
+  for(const [prof,r] of Object.entries((typeof storyKeep!=='undefined'&&storyKeep&&storyKeep.saves)||{})) for(const [id,o] of Object.entries(r||{})) m['ks:'+prof+':'+id]=o;
+  for(const [id,v] of Object.entries((typeof tabPrefs==='function'?tabPrefs():lsGet('hs:tabByProfile',{}))||{})) if(v) m['tb:'+id]=v;
+  const od=lsGet('hs:openerDraft',{})||{};
+  if(od.byProfile){ for(const [id,v] of Object.entries(od)) if(id!=='byProfile' && v) m['od:'+id]=v; }
+  else if(od.date||od.text) m['od:truce']=od;
   return m; }
 function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=key.indexOf(':'); const kind=key.slice(0,i), rest=key.slice(i+1);
   const two=()=>{ const j=rest.indexOf(':'); return [rest.slice(0,j), rest.slice(j+1)]; };
@@ -4526,7 +4690,13 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='mp'){ moviePicks=moviePicks||{}; if(del) delete moviePicks[rest]; else moviePicks[rest]=val; }
   else if(kind==='gm'){ const [b,id]=two(); guMentions=guMentions||{}; guMentions[b]=guMentions[b]||{}; if(del) delete guMentions[b][id]; else guMentions[b][id]=val; if(!Object.keys(guMentions[b]).length) delete guMentions[b]; }
   else if(kind==='wc'){ weekCal=weekCal||{items:{},hidden:{}}; weekCal.items=weekCal.items||{}; if(del) delete weekCal.items[rest]; else weekCal.items[rest]=val; }
-  else if(kind==='wh'){ weekCal=weekCal||{items:{},hidden:{}}; weekCal.hidden=weekCal.hidden||{}; if(del) delete weekCal.hidden[rest]; else weekCal.hidden[rest]=val; } }
+  else if(kind==='wh'){ weekCal=weekCal||{items:{},hidden:{}}; weekCal.hidden=weekCal.hidden||{}; if(del) delete weekCal.hidden[rest]; else weekCal.hidden[rest]=val; }
+  else if(kind==='wa'){ weekCal=weekCal||{items:{},hidden:{},allByProfile:{}}; weekCal.allByProfile=weekCal.allByProfile||{}; if(del) delete weekCal.allByProfile[rest]; else weekCal.allByProfile[rest]=val; }
+  else if(kind==='rx'){ const [d,id]=two(); remixSt=remixSt||{}; remixSt[d]=remixSt[d]||{}; if(del) delete remixSt[d][id]; else remixSt[d][id]=val; if(!Object.keys(remixSt[d]).length) delete remixSt[d]; }
+  else if(kind==='kp'){ const [prof,id]=two(); storyKeep=storyKeep||{pins:{},saves:{}}; storyKeep.pins=storyKeep.pins||{}; storyKeep.pins[prof]=storyKeep.pins[prof]||{}; if(del) delete storyKeep.pins[prof][id]; else storyKeep.pins[prof][id]=val; if(!Object.keys(storyKeep.pins[prof]).length) delete storyKeep.pins[prof]; }
+  else if(kind==='ks'){ const [prof,id]=two(); storyKeep=storyKeep||{pins:{},saves:{}}; storyKeep.saves=storyKeep.saves||{}; storyKeep.saves[prof]=storyKeep.saves[prof]||{}; if(del) delete storyKeep.saves[prof][id]; else storyKeep.saves[prof][id]=val; if(!Object.keys(storyKeep.saves[prof]).length) delete storyKeep.saves[prof]; }
+  else if(kind==='tb'){ const o=lsGet('hs:tabByProfile',{}); if(del) delete o[rest]; else o[rest]=val; lsSet('hs:tabByProfile', o); }
+  else if(kind==='od'){ const all=lsGet('hs:openerDraft',{})||{byProfile:true}; all.byProfile=true; if(del) delete all[rest]; else all[rest]=val; lsSet('hs:openerDraft', all); } }
 function syncMark(){ const snap=syncSnap(); const now=Date.now(); const st=syncMeta.stamps, last=syncMeta.last;
   for(const k of new Set([...Object.keys(snap), ...Object.keys(last)])){ const cur=k in snap ? JSON.stringify(snap[k]) : '"~"';
     if(cur!==(last[k]||'"~"')){ st[k]=now; last[k]=cur; } }
@@ -4540,7 +4710,7 @@ async function syncReq(method, body){ const ctl=new AbortController(); const tm=
       headers:Object.assign({'Security-key':syncCfg.key}, body?{'Content-Type':'application/json'}:{}, method==='POST'?{'Private':'true'}:{}), body:body?JSON.stringify(body):undefined});
     const txt=await r.text(); if(!r.ok) throw new Error('HTTP '+r.status); return txt?parseLoose(txt):null; } finally{ clearTimeout(tm); } }
 function syncPrune(items){ const cut=new Date(Date.now()-21*864e5).toISOString().slice(0,10);
-  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx|sx|mp|gm):(\d{4}-\d{2}-\d{2})(?:#[^:]+)?(?::|$)/); if(m && m[2]<cut) delete items[k]; } return items; }
+  for(const k of Object.keys(items)){ const m=k.match(/^(rd|cl|lu|ai|hd|sk|bx|sx|mp|gm|rx|od):(\d{4}-\d{2}-\d{2})(?:#[^:]+)?(?::|$)/); if(m && m[2]<cut) delete items[k]; } return items; }
 async function syncNow(){
   if(!syncCfg || !navigator.onLine) { renderSyncState(); return; }
   if(syncBusy){ syncAgain=true; return; } syncBusy=true; renderSyncState();
@@ -4551,7 +4721,7 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); LS.setItem('hs:storyRemix', JSON.stringify(storyRemix||{})); LS.setItem('hs:moviePicks', JSON.stringify(moviePicks||{})); }
+    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:gvWins', JSON.stringify(gvWins||{})); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); LS.setItem('hs:storyRemix', JSON.stringify(storyRemix||{})); LS.setItem('hs:moviePicks', JSON.stringify(moviePicks||{})); LS.setItem('hs:guMentions', JSON.stringify(guMentions||{})); LS.setItem('hs:weekCal', JSON.stringify(weekCal||{items:{},hidden:{}})); LS.setItem('hs:remix', JSON.stringify(remixSt||{})); LS.setItem('hs:storyKeep', JSON.stringify(storyKeep||{pins:{},saves:{}})); }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
     if(pushNeeded) await syncReq('PUT', {app:'z93-hot-sheet', v:1, at:new Date().toISOString(), items:merged});
@@ -4995,10 +5165,25 @@ function airBtn(key, title, sec, small, body){
     if(!was) toast('On air ✓ '+String(title).slice(0,48), ()=>airSet(key,false,title,sec,true)); };
   return b; }
 function openerTab(){ const l=sectionList().filter(x=>!['news','wrap','liners','clips','flash','saved'].includes(x.key)); return l.length?l[0].key:(sectionList().some(x=>x.key==='flash')?'flash':null); }
-function openerCard(){ const e=airDay().opener; const dr=lsGet('hs:openerDraft',{});
+function openerDraftRead(){
+  const all=lsGet('hs:openerDraft',{})||{};
+  const pid=(typeof profileId==='function'&&profileId())||'truce';
+  const rec=all.byProfile ? (all[pid]||{}) : ((all.date && !all.truce)?all:(all[pid]||all));
+  return (rec && rec.date===(typeof etParts==='function'?etParts().date:''))?rec:{};
+}
+function openerDraftWrite(text){
+  const pid=(typeof profileId==='function'&&profileId())||'truce';
+  const all=lsGet('hs:openerDraft',{})||{};
+  const next={byProfile:true};
+  if(all.byProfile){ Object.keys(all).forEach(k=>{ if(k!=='byProfile' && k!=='date' && k!=='text') next[k]=all[k]; }); }
+  else if(all.date||all.text){ next.truce={date:all.date, text:all.text}; }
+  next[pid]={date:(typeof etParts==='function'?etParts().date:''), text};
+  lsSet('hs:openerDraft', next);
+}
+function openerCard(){ const e=airDay().opener; const dr=openerDraftRead();
   const txt=e?e.title:(dr.date===etParts().date?dr.text:'');
   const inp=h('input',{type:'text', className:'opin', placeholder:'What did you open with?', value:txt==='Opener'?'':txt, 'aria-label':'Opener'});
-  inp.addEventListener('input',()=>{ lsSet('hs:openerDraft',{date:etParts().date, text:inp.value}); const cur=airDay().opener; if(cur){ cur.title=inp.value.trim()||'Opener'; airSave(); } });
+  inp.addEventListener('input',()=>{ openerDraftWrite(inp.value); const cur=airDay().opener; if(cur){ cur.title=inp.value.trim()||'Opener'; airSave(); } });
   const b=h('button',{className:'airbtn opb'+(e?' on':''), type:'button'}, h('span',{className:'ab'}, e?'✓':''), h('span',{className:'at'}, e?'Opener done · '+fmtTime(e.t):'Opener done'));
   b.onclick=()=>{ tapHaptic(); const on=!airDay().opener; airSet('opener', on, inp.value.trim()||'Opener', 'opener', true); const c=b.closest('.opener'); if(c) c.replaceWith(openerCard()); };
   return h('div',{className:'opener'}, h('div',{className:'oplab'}, '🎤 Opener · starts the Show Wrap'), h('div',{className:'oprow'}, inp, b)); }
@@ -5144,7 +5329,7 @@ var songPicks=lsGet('hs:songPicks', {});
 var songLookupCache=lsGet('hs:songLookup', {});
 async function loadSongs(){ if(isHttp){ try{ const j=await fetchJson('songs.json'); if(j && j.pools){ songsData=j; lsSet('hs:songs', j); } }catch(e){} } if(state.sheet && (isSongSec(state.tab)||state.tab==='battle')) rerender(); }
 function allSongList(){ const p=(songsData&&songsData.pools)||{}; return [].concat(p.vibe||[], p.mood||[], p.flash||[]); }
-function songPool(key){ if(key==='battleA'||key==='battleB') return (typeof allSongList==='function'?allSongList():((((songsData||{}).pools)||{})[key]||[])).slice(); return ((((songsData||{}).pools)||{})[key]||[]).slice(); }
+function songPool(key){ const all=(typeof allSongList==='function'?allSongList():[]); if(key==='battleA'||key==='battleB'||key==='vibe'||key==='mood'||key==='flash') return all.slice(); return ((((songsData||{}).pools)||{})[key]||[]).slice(); }
 function songById(id){ return allSongList().find(s=>s.id===id); }
 function skDay(){ const d=typeof profileBucket==='function'?profileBucket():etParts().date; songPicks[d]=songPicks[d]||{}; return songPicks[d]; }
 function skSave(){ const dates=[...new Set(Object.keys(songPicks).map(k=>k.slice(0,10)))].sort().slice(-14);
@@ -5319,16 +5504,17 @@ function songRemixPair(){
   const rest=(fresh.length?fresh:unused).filter(x=>x.id!==a.id && normT(x.title)!==normT(a.title));
   const fallback=pool.filter(x=>x.id!==a.id && normT(x.title)!==normT(a.title));
   const cand=rest.length?rest:(fallback.length?fallback:[]);
+  const decade=s=>{ const y=songYear(s); return y?Math.floor(y/10)*10:0; };
+  const genre=s=>String((s&&s.genre)||'').toLowerCase();
+  const score=s=>{
+    let n=0; const da=decade(a), ds=decade(s);
+    if(da && ds){ if(da===ds) n+=4; else if(Math.abs(da-ds)===10) n+=1; }
+    if(genre(a) && genre(s) && genre(a)===genre(s)) n+=5;
+    return n;
+  };
   let b=null;
-  const ya=songYear(a);
-  if(ya && cand.length){
-    b=cand.slice().sort((x,y)=>{
-      const dx=songYear(x)?Math.abs(songYear(x)-ya):999;
-      const dy=songYear(y)?Math.abs(songYear(y)-ya):999;
-      return dx-dy;
-    })[0];
-  }
-  b=b||cand[0]||fallback[0];
+  if(cand.length){ b=cand.slice().sort((x,y)=>score(y)-score(x) || Math.abs(songYear(x)-songYear(a))-Math.abs(songYear(y)-songYear(a)))[0]; }
+  b=b||fallback[0];
   if(!b){ songRemix('battleA'); return; }
   songApplyRemix('battleA', a, {quiet:true, silent:true});
   songApplyRemix('battleB', b, {quiet:true, silent:true});
@@ -5427,8 +5613,7 @@ function renderSongFacts(card, pick){
   const titles=h('div',{className:'stxt'});
   titles.append(h('div',{className:'stitle'}, pick.title));
   if(pick.artist) titles.append(h('div',{className:'sartist'}, pick.artist));
-  const tag=pick.locked?'Locked in':pick.from==='custom'?'Your pick':pick.from==='remix'?'Remix':pick.from==='lock'?'Locked in':'Today’s sheet';
-  titles.append(h('div',{className:'stag'}, tag));
+  if(pick.locked || pick.from==='custom' || pick.from==='lock') titles.append(h('div',{className:'stag'}, (pick.locked||pick.from==='lock')?'Locked in':'Your pick'));
   head.append(titles); card.append(head);
   if(pick.about) card.append(h('p',{className:'sabout'}, pick.about));
   const sheetSt=String(pick.sheetStory||'').trim();
@@ -5681,7 +5866,7 @@ if(typeof bindShowTabScrollFade==='function') bindShowTabScrollFade();
 if(typeof renderBuildLabel==='function') renderBuildLabel();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); if(typeof renderWeekCal==='function') renderWeekCal(); loadSchedules(); loadMovies(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
