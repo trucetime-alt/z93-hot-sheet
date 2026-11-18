@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v50-tabs-titles">
+<meta name="hs-build" content="v51-song-lock">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -84,7 +84,7 @@ body.drawer-open #drawer{transform:translateX(0)}
 #guestChips:empty{display:none}
 .guestchip{flex:0 1 auto;min-height:48px;max-width:100%;padding:4px 10px;border-radius:10px;font-size:.78em;font-weight:800;
   background:#3a1a14;border:2px solid #e07a3d;color:#ffe8d6;display:inline-flex;align-items:center;gap:8px;text-align:left;line-height:1.2}
-.guestchip .n{color:#ffd19a;font-weight:900;white-space:nowrap}
+.guestchip .n{color:#ffd19a;font-weight:900;white-space:nowrap;margin-left:.35em}
 .guestchip.today,.guestchip.now{background:#4a2014;border-color:#ff9a4a}
 .guestchip.upcoming{background:#2a2218;border-color:#b8864e;color:#f0e0c8}
 .guestchip.past{opacity:.85}
@@ -740,7 +740,7 @@ input.opin, input.songin, textarea.songin{
   padding:8px 12px; font-weight:700; caret-color:#111; -webkit-text-fill-color:#111;
 }
 input.opin::placeholder, input.songin::placeholder, textarea.songin::placeholder{
-  color:#5a6570; opacity:1; -webkit-text-fill-color:#5a6570; font-weight:600;
+  color:#9aa4ae; opacity:1; -webkit-text-fill-color:#9aa4ae; font-weight:500;
 }
 input.opin:-webkit-autofill, input.songin:-webkit-autofill{
   -webkit-text-fill-color:#111; caret-color:#111;
@@ -1979,7 +1979,17 @@ function allSongList(){
 function renderSongBattle(view){
   view.append(h('div',{className:'catline'}, 'Head to head · listeners pick the winner'));
   view.append(h('h2',{}, '⚔ Midday Song Battle'));
-  view.append(h('p',{className:'hint'}, 'Two songs go head to head. Remix or type one in — each has an info card. From the website, confirm with the hourly log.'));
+  view.append(h('p',{className:'hint'}, 'Two songs go head to head. One Remix swaps both as a fresh pair. Type either one in, then lock the displayed song with Use this one. From the website, confirm with the hourly log.'));
+  if(typeof songRemixPair==='function'){
+    const a=typeof songPick==='function'?songPick('battleA'):null;
+    const b=typeof songPick==='function'?songPick('battleB'):null;
+    const changed=!!((a&&a.from&&a.from!=='sheet')||(b&&b.from&&b.from!=='sheet'));
+    const bar=h('div',{className:'rxbar battle-rx'});
+    bar.append(h('button',{className:'rxbtn', type:'button', title:'Swap both songs for a fresh matched pair', on:{click:()=>{ if(typeof tapHaptic==='function') tapHaptic(); songRemixPair(); }}}, '🔀 Remix'));
+    if(changed) bar.append(h('button',{className:'rxback', type:'button', on:{click:()=>{ if(typeof tapHaptic==='function') tapHaptic(); if(typeof songBackPair==='function') songBackPair(); }}}, "↩ Today's originals"));
+    bar.append(h('span',{className:'rxinfo'}, 'Remixes both songs as a pair'));
+    view.append(bar);
+  }
   if(typeof songPanel==='function'){ view.append(songPanel('battleA')); view.append(songPanel('battleB')); }
 }
 
@@ -2523,7 +2533,7 @@ function renderGuests(){
     const count=guestCountLabel(g,p);
     const title=[line, count, g.note].filter(Boolean).join(' · ');
     box.append(h('button',{type:'button', className:'guestchip '+kind, title:title+' · Tap to mark mentioned for this shift', 'aria-label':title+'. Tap to mark mentioned for this shift', 'data-guest':g.id, on:{click:()=>{ if(typeof tapHaptic==='function') tapHaptic(); if(typeof markGuestMentioned==='function') markGuestMentioned(g.id); }}},
-      line, count?h('span',{className:'n'}, count):null));
+      line, count?h('span',{className:'n'}, '\xa0'+count):null));
   }
   if(typeof setHdr==='function') setHdr();
 }
@@ -5210,24 +5220,73 @@ function sheetSong(key){
   if(parsed.id) return Object.assign({}, parsed, {from:'sheet'});
   return Object.assign({}, parsed, {from:'sheet'});
 }
+function songSnapshot(pick){
+  if(!pick) return {};
+  const o={};
+  for(const k of ['id','title','artist','year','released','about','story','storySrc','storySrcName','art','charts','fact','source','sourceName','sources','sheetOrigin','sheetRequester','sheetStory','sheetStorySrc','sheetStorySrcName']){
+    if(pick[k]!=null && pick[k]!=='') o[k]=pick[k];
+  }
+  return o;
+}
 function songPick(key){
   const st=(skDay()[key])||{};
+  const locked=!!st.locked;
   if(st.custom && String(st.custom).trim()){
-    const parsed=matchTyped(st.custom) || {title:st.custom.trim(), artist:st.artist||'', lookup:true};
-    if(parsed.id) return Object.assign({}, parsed, {from:'custom'});
-    return Object.assign({}, parsed, {from:'custom', lookup:true});
+    const parsed=matchTyped(st.custom) || {title:st.custom.trim(), artist:st.artist||((st.snap||{}).artist)||'', lookup:true};
+    if(parsed.id) return Object.assign({}, parsed, {from:'custom', locked});
+    return Object.assign({}, parsed, {from:'custom', lookup:true, locked});
   }
   if(st.id){ const it=songById(st.id) || songPool(key).find(x=>x.id===st.id);
-    if(it) return Object.assign({}, it, {from:'remix'}); }
+    if(it) return Object.assign({}, it, st.snap||{}, {from:locked?'lock':'remix', locked, id:it.id}); }
+  if(st.snap && (st.snap.title||st.snap.artist||st.snap.id)){
+    return Object.assign({}, st.snap, {title:st.title||st.snap.title, artist:st.artist||st.snap.artist, from:locked?'lock':(st.snap.from||'remix'), locked});
+  }
+  if(locked && (st.title||st.artist)){
+    return {title:st.title||'', artist:st.artist||'', from:'lock', locked:true, lookup:true};
+  }
   return sheetSong(key);
 }
 function songSetCustom(key, text, opts){
   const t=String(text||'').trim();
-  if(!t){ const d=skDay(); delete d[key]; skSave(); if(!(opts&&opts.quiet)) rerender(); return; }
-  skDay()[key]={custom:t}; skSave(); if(!(opts&&opts.quiet)) rerender();
+  const prev=skDay()[key]||{};
+  if(!t){
+    if(prev.custom){ const st=Object.assign({}, prev); delete st.custom; delete st.locked;
+      if(!st.id && !st.snap && !st.title){ delete skDay()[key]; }
+      else skDay()[key]=st;
+      skSave();
+    }
+    if(!(opts&&opts.quiet)) rerender();
+    return;
+  }
+  skDay()[key]=Object.assign({}, prev, {custom:t, locked:false}); skSave(); if(!(opts&&opts.quiet)) rerender();
 }
-function songRemix(key){
-  const pool=songPool(key); if(!pool.length) return;
+function songLock(key, text){
+  const prev=skDay()[key]||{};
+  const typed=String(text!=null?text:(prev.custom||'')).trim();
+  if(typed){ skDay()[key]=Object.assign({}, prev, {custom:typed}); }
+  else { const tmp=Object.assign({}, prev); delete tmp.custom; skDay()[key]=tmp; }
+  const pick=songPick(key);
+  if(!pick || !(pick.title||pick.artist||pick.id)){
+    skDay()[key]=prev; skSave(); toast('Type a song or hit Remix first'); return;
+  }
+  const snap=songSnapshot(pick);
+  const st=Object.assign({}, prev, {locked:true, lockedAt:Date.now(), snap, title:pick.title||'', artist:pick.artist||'', seen:prev.seen||[]});
+  if(pick.id) st.id=pick.id; else if(!typed) delete st.id;
+  if(typed) st.custom=typed; else delete st.custom;
+  skDay()[key]=st; skSave(); rerender();
+  toast('Locked in: “'+(pick.title||'song')+'”'+(pick.artist?' — '+pick.artist:''));
+}
+function songApplyRemix(key, nx, opts){
+  if(!nx) return;
+  const st=skDay()[key]||{seen:[]};
+  st.seen=[...(st.seen||[]), nx.id].filter(Boolean);
+  st.id=nx.id; st.snap=songSnapshot(Object.assign({}, nx, {from:'remix'}));
+  st.title=nx.title||''; st.artist=nx.artist||'';
+  delete st.custom; delete st.locked; delete st.lockedAt;
+  skDay()[key]=st; if(!(opts&&opts.quiet)){ skSave(); rerender(); }
+}
+function songRemix(key, opts){
+  const pool=songPool(key); if(!pool.length) return null;
   const cur=songPick(key); const curId=cur&&cur.id, curT=normT(cur&&cur.title);
   const sh=sheetSong(key); const skip=new Set([curId, sh&&sh.id].filter(Boolean));
   const skipT=new Set([curT, normT(sh&&sh.title)].filter(Boolean));
@@ -5235,12 +5294,50 @@ function songRemix(key){
   const use=cands.length?cands:pool;
   const st=skDay()[key]||{seen:[]};
   let nx=use.find(x=>!(st.seen||[]).includes(x.id));
-  if(!nx){ st.seen=[]; nx=use.find(x=>x.id!==curId)||use[0]; }
-  st.seen=[...(st.seen||[]), nx.id]; st.id=nx.id; delete st.custom;
-  skDay()[key]=st; skSave(); rerender();
-  toast('🔀 Fresh '+(key==='vibe'?'slow jam':key==='mood'?'Mood Booster':'Flashback')+': “'+nx.title+'” — '+nx.artist, ()=>{ songBack(key); });
+  if(!nx){ st.seen=[]; skDay()[key]=st; nx=use.find(x=>x.id!==curId)||use[0]; }
+  songApplyRemix(key, nx, opts);
+  if(!(opts&&opts.silent)){
+    const label=key==='vibe'?'slow jam':key==='mood'?'Mood Booster':key==='flash'?'Flashback':key==='battleA'?'Battle song 1':key==='battleB'?'Battle song 2':'song';
+    toast('🔀 Fresh '+label+': “'+nx.title+'” — '+nx.artist, ()=>{ songBack(key); });
+  }
+  return nx;
 }
-function songBack(key){ const d=skDay(); delete d[key]; skSave(); rerender(); }
+function songYear(s){ const n=+(s&&s.year); return Number.isFinite(n)&&n>0?n:0; }
+function songRemixPair(){
+  const pool=songPool('battleA');
+  if(!pool.length){ toast('No songs in the pool'); return; }
+  const curA=songPick('battleA'), curB=songPick('battleB');
+  const skipIds=new Set([curA&&curA.id, curB&&curB.id].filter(Boolean));
+  const skipT=new Set([normT(curA&&curA.title), normT(curB&&curB.title)].filter(Boolean));
+  let unused=pool.filter(x=>x && x.id && !skipIds.has(x.id) && !skipT.has(normT(x.title)));
+  if(unused.length<2) unused=pool.filter(x=>x && x.id);
+  const seen=new Set([].concat((skDay().battleA||{}).seen||[], (skDay().battleB||{}).seen||[]));
+  let fresh=unused.filter(x=>!seen.has(x.id));
+  if(fresh.length<2) fresh=unused.length>=2?unused:pool.filter(x=>x && x.id);
+  const a=fresh[0]||unused[0]||pool[0];
+  if(!a) return;
+  const rest=(fresh.length?fresh:unused).filter(x=>x.id!==a.id && normT(x.title)!==normT(a.title));
+  const fallback=pool.filter(x=>x.id!==a.id && normT(x.title)!==normT(a.title));
+  const cand=rest.length?rest:(fallback.length?fallback:[]);
+  let b=null;
+  const ya=songYear(a);
+  if(ya && cand.length){
+    b=cand.slice().sort((x,y)=>{
+      const dx=songYear(x)?Math.abs(songYear(x)-ya):999;
+      const dy=songYear(y)?Math.abs(songYear(y)-ya):999;
+      return dx-dy;
+    })[0];
+  }
+  b=b||cand[0]||fallback[0];
+  if(!b){ songRemix('battleA'); return; }
+  songApplyRemix('battleA', a, {quiet:true, silent:true});
+  songApplyRemix('battleB', b, {quiet:true, silent:true});
+  skSave(); rerender();
+  toast('🔀 Fresh pair: “'+a.title+'” vs “'+b.title+'”', ()=>{ songBackPair(); });
+  return {a,b};
+}
+function songBack(key, opts){ const d=skDay(); delete d[key]; if(!(opts&&opts.quiet)){ skSave(); rerender(); } else skSave(); }
+function songBackPair(){ songBack('battleA',{quiet:true}); songBack('battleB'); }
 function songLabel(key){ return key==='vibe'?'Today’s slow jam':key==='mood'?'Mood Booster':key==='flash'?'9 AM Flashback':key==='battleA'?'Battle song 1':key==='battleB'?'Battle song 2':'Today’s song'; }
 function fmtYmd(iso){ const m=String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/); if(!m) return iso;
   const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -5330,7 +5427,7 @@ function renderSongFacts(card, pick){
   const titles=h('div',{className:'stxt'});
   titles.append(h('div',{className:'stitle'}, pick.title));
   if(pick.artist) titles.append(h('div',{className:'sartist'}, pick.artist));
-  const tag=pick.from==='custom'?'Your pick':pick.from==='remix'?'Remix':'Today’s sheet';
+  const tag=pick.locked?'Locked in':pick.from==='custom'?'Your pick':pick.from==='remix'?'Remix':pick.from==='lock'?'Locked in':'Today’s sheet';
   titles.append(h('div',{className:'stag'}, tag));
   head.append(titles); card.append(head);
   if(pick.about) card.append(h('p',{className:'sabout'}, pick.about));
@@ -5398,6 +5495,10 @@ function fillSongCard(card, pick, key){
     if(tok!==fillSongCard._tok || !card.isConnected) return;
     const merged=Object.assign({}, pick, got, {lookup:false});
     if(!merged.charts) merged.charts=pick.charts;
+    if(key){
+      const st=(skDay()[key])||{};
+      if(st.locked){ st.snap=songSnapshot(merged); if(merged.title) st.title=merged.title; if(merged.artist) st.artist=merged.artist; if(merged.id) st.id=merged.id; skDay()[key]=st; skSave(); }
+    }
     renderSongFacts(card, merged);
     if(key) songAirRefresh(key, merged);
   }).catch(()=>{ if(box.isConnected) box.remove(); });
@@ -5405,26 +5506,27 @@ function fillSongCard(card, pick, key){
 fillSongCard._tok=0;
 function songPanel(key){
   const wrap=h('div',{className:'songpanel', id:'songpanel-'+key});
-  wrap.append(h('div',{className:'splab'}, songLabel(key)+' · write your own or remix'));
+  const isBattle=key==='battleA'||key==='battleB';
+  wrap.append(h('div',{className:'splab'}, songLabel(key)+(isBattle?' · type one in or lock the pair':' · write your own or remix')));
   const pick=songPick(key);
   const st=(skDay()[key])||{};
   const row=h('div',{className:'songrow'});
-  const inp=h('input',{type:'text', className:'songin', placeholder:'Title — Artist, like bad guy — Billie Eilish', value:st.custom||'', 'aria-label':'Write your own song for '+songLabel(key)});
-  const go=h('button',{type:'button', className:'songgo'}, 'Use this');
+  const inp=h('input',{type:'text', className:'songin', placeholder:'Type artist – song', value:'', 'aria-label':'Write your own song for '+songLabel(key)});
+  const go=h('button',{type:'button', className:'songgo'}, 'Use this one');
   const card=h('div',{className:'songcard', id:'songcard-'+key});
-  const apply=()=>{ songSetCustom(key, inp.value); };
+  const apply=()=>{ songLock(key, inp.value); };
   go.onclick=()=>{ tapHaptic(); apply(); };
   inp.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); apply(); } });
   inp.addEventListener('input', ()=>{ songSetCustom(key, inp.value, {quiet:true}); const p=songPick(key); fillSongCard(card, p, key); songAirRefresh(key, p); });
   row.append(inp, go); wrap.append(row);
   const pool=songPool(key);
-  if(pool.length){
-    const fromRemix=pick && pick.from==='remix';
+  if(pool.length && !isBattle){
+    const fromRemix=pick && (pick.from==='remix'||pick.from==='lock');
     const i=fromRemix?pool.findIndex(x=>x.id===pick.id):-1;
     wrap.append(h('div',{className:'rxbar'},
       h('button',{className:'rxbtn', type:'button', title:'Another song idea from the pool', on:{click:()=>{ tapHaptic(); songRemix(key); }}}, '🔀 Remix'),
       (pick && pick.from && pick.from!=='sheet') ? h('button',{className:'rxback', type:'button', on:{click:()=>{ tapHaptic(); songBack(key); }}}, '↩ Today\'s original') : null,
-      h('span',{className:'rxinfo'}, fromRemix ? 'Remix '+(i+1)+' of '+pool.length : pool.length+' in the pool')));
+      h('span',{className:'rxinfo'}, fromRemix && i>=0 ? 'Remix '+(i+1)+' of '+pool.length : pool.length+' in the pool')));
   }
   wrap.append(card);
   wrap.append(songAirHost(key, pick));
@@ -5579,7 +5681,7 @@ if(typeof bindShowTabScrollFade==='function') bindShowTabScrollFade();
 if(typeof renderBuildLabel==='function') renderBuildLabel();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); if(typeof renderWeekCal==='function') renderWeekCal(); loadSchedules(); loadMovies(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
