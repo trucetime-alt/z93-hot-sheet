@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v46-article-links">
+<meta name="hs-build" content="v47-shift-tabs">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -812,6 +812,26 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 
 .airbtn.holdbtn{color:#ffe27a}.airbtn.holdbtn .ab{border-color:#ffd23f}.clc .airbtn.holdbtn.on,.airbtn.holdbtn.on{border-color:#ffd23f;background:#3a3206;color:#fff3b0}.clc .airbtn.holdbtn.on .ab,.airbtn.holdbtn.on .ab{background:#ffd23f;border-color:#ffd23f;color:#1b1206}
 .clc .ctags .ctk{display:flex;flex:1 0 100%;flex-wrap:wrap;gap:6px;justify-content:flex-start}.clc .ctags .ctk .airbtn{margin-left:0}
+
+:root{ --showTabsW:70px; }
+body{ padding-left:calc(var(--showTabsW) + env(safe-area-inset-left,0px)); }
+#showTabs{position:fixed;left:env(safe-area-inset-left,0px);top:max(8px,env(safe-area-inset-top,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));width:var(--showTabsW);z-index:40;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:8px 6px;box-sizing:border-box;pointer-events:none}
+#showTabs button{pointer-events:auto;width:100%;min-height:58px;padding:6px 4px;font-size:.68em;font-weight:900;letter-spacing:.02em;line-height:1.15;border-radius:14px;text-align:center}
+#showTabs .tab-aj{background:#3a2e0c;color:#ffe27a;border-color:#e8b84a}
+#showTabs .tab-courtney{background:#0d2444;color:#d6e6ff;border-color:#5b8cff}
+#showTabs .tab-cali{background:#3a1220;color:#ffd0da;border-color:#ff6b8a}
+#showTabs button.on{box-shadow:0 0 0 2px #fff,0 0 0 4px currentColor}
+#hsBuild{position:fixed;right:calc(6px + env(safe-area-inset-right,0px));bottom:calc(4px + env(safe-area-inset-bottom,0px));z-index:8;font-size:9px;line-height:1.2;letter-spacing:.03em;color:var(--dim);opacity:.65;pointer-events:none;user-select:none;max-width:42vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#morningFold{margin:6px 10px 8px;padding:0 8px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+#morningFold[hidden]{display:none}
+#morningFold>summary{cursor:pointer;font-size:.78em;font-weight:800;padding:8px 4px;list-style:none;color:var(--dim)}
+#morningFold>summary::-webkit-details-marker{display:none}
+#morningFold>summary::before{content:'▸ ';color:var(--accent)}
+#morningFold[open]>summary::before{content:'▾ '}
+#morningFoldBtns{display:flex;flex-wrap:wrap;gap:6px;padding:0 0 10px}
+#morningFoldBtns button{min-height:44px;padding:6px 10px;font-size:.78em;border-radius:12px}
+#morningFoldBtns button.on{border-color:var(--accent);color:var(--accent)}
+
 </style>
 </head>
 <body>
@@ -862,6 +882,7 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 </header>
 <input type="file" id="fileIn" accept=".json,application/json" multiple hidden>
 <div id="tabsBar"><button id="menuBtn" type="button" aria-label="Open menu" aria-controls="drawer" aria-expanded="false" aria-haspopup="dialog"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="mlab">Menu</span></button><nav id="tabs" role="tablist"></nav></div>
+<details id="morningFold" hidden><summary>Morning show cards (ended 10 AM)</summary><div id="morningFoldBtns"></div></details>
 <div id="scrim" hidden></div>
 <aside id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
   <div class="dhead"><div><div id="drawerTitle">Hot Sheet</div><div class="dnote" id="drawerNote"></div></div><button id="drawerClose" type="button" aria-label="Close menu">✕</button></div>
@@ -891,6 +912,8 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
   <div id="status" role="status"></div>
   <section id="view" class="sec"></section>
 </main>
+<nav id="showTabs" aria-label="Show profiles"></nav>
+<div id="hsBuild" aria-hidden="true"></div>
 <div id="readModal" class="modal" role="dialog" aria-label="Sponsor read"><div class="box"><h3 id="readTitle"></h3><div class="readcopy" id="readCopy"></div><div id="readTick"></div><button id="readClose" class="botclose" hidden>Close</button></div></div>
 <div id="cdNewsModal" class="modal" role="dialog" aria-label="Countdown news"><div class="box"><h3 id="cdNewsTitle">News</h3><div id="cdFacts"></div><div class="nmeta" id="cdNewsMeta"></div><ol class="cdnlist" id="cdNewsList"></ol><div class="rowb"><button type="button" id="cdNewsRefresh">↻ Refresh</button><button type="button" id="cdNewsEdit">✎ Edit countdowns</button></div></div></div>
 <div id="stModal" class="modal" role="dialog" aria-label="Station reads editor"><div class="box"><h3>Station reads</h3><div id="stEditor"></div></div></div>
@@ -1254,6 +1277,15 @@ function tick(){
   const ap=H>=12?'PM':'AM'; const h=H%12||12;
   const el=$('#clock'); if(el) el.textContent=h+':'+String(M).padStart(2,'0')+' '+ap;
   if(typeof renderShiftLabel==='function') renderShiftLabel();
+  if(typeof expireViewOv==='function') expireViewOv();
+  if(typeof renderShowTabs==='function') renderShowTabs();
+  if(typeof renderBuildLabel==='function') renderBuildLabel();
+  const nowv=(typeof viewProfile==='function'?viewProfile():'')+'|'+(typeof morningEnded==='function'&&morningEnded()?'m':'');
+  if(window.__hsViewSig!=null && window.__hsViewSig!==nowv){
+    if(typeof renderTabs==='function') renderTabs();
+    if(typeof renderView==='function') renderView();
+  }
+  window.__hsViewSig=nowv;
 }
 setInterval(tick,1000*15);
 
@@ -1490,9 +1522,129 @@ function currentShift(p=etParts()){
   return null;
 }
 /* --- v44: per-profile buckets, clip archive, schedules, story remix, song battle, weekend movies --- */
-function profileId(p=etParts()){ const sh=currentShift(p); return (sh && sh.id) || 'truce'; }
+function dateAdd(date, days){
+  const [Y,M,D]=String(date).split('-').map(Number);
+  const dt=new Date(Date.UTC(Y, (M||1)-1, (D||1)+days));
+  return dt.getUTCFullYear()+'-'+String(dt.getUTCMonth()+1).padStart(2,'0')+'-'+String(dt.getUTCDate()).padStart(2,'0');
+}
+function dowFromDate(date){
+  try{
+    const w=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short'}).format(new Date(date+'T17:00:00Z'));
+    return {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[w];
+  }catch(e){
+    const [Y,M,D]=String(date).split('-').map(Number);
+    return new Date(Y,(M||1)-1,D||1).getDay();
+  }
+}
+function etPartsAt(date, hm){
+  const [Y,M,D]=String(date).split('-').map(Number);
+  return {date, hm:hm||'00:00', dow:dowFromDate(date), y:Y, m:M, d:D};
+}
+const SHOW_TABS=[{id:'truce',label:'AJ',cls:'tab-aj'},{id:'courtney',label:'Courtney',cls:'tab-courtney'},{id:'callie',label:'Cali',cls:'tab-cali'}];
+function showTabLabel(id){ const t=SHOW_TABS.find(x=>x.id===id); return (t&&t.label)||id; }
+function morningKeys(){ return ['vibe','mood','buzz','verse','mental','flash','cross']; }
+function morningEnded(p=etParts()){
+  if(typeof isShowDay==='function' && !isShowDay(p)) return false;
+  const sh=(typeof defaultShifts==='function'?defaultShifts():[]).find(s=>s.id==='truce');
+  return p.hm>=((sh&&sh.end)||'10:00');
+}
+function autoProfile(p=etParts()){
+  if(typeof isShowDay==='function' && !isShowDay(p)) return 'truce';
+  const sh=currentShift(p);
+  return (sh && sh.id) || 'truce';
+}
+function nextAutoChange(p=etParts()){
+  const cur=autoProfile(p);
+  for(let i=0;i<=10;i++){
+    const date=i?dateAdd(p.date,i):p.date;
+    const q0=etPartsAt(date,'12:00');
+    const list=(typeof isShowDay==='function' && isShowDay(q0) && typeof defaultShifts==='function')?defaultShifts():[];
+    const marks=['00:00'];
+    for(const s of list){ if(s.start && !marks.includes(s.start)) marks.push(s.start); if(s.end && !marks.includes(s.end)) marks.push(s.end); }
+    marks.sort();
+    for(const hm of marks){
+      if(i===0 && hm<=p.hm) continue;
+      if(autoProfile(etPartsAt(date,hm))!==cur) return date+'T'+hm;
+    }
+  }
+  return null;
+}
+let viewOv=null;
+try{ viewOv=JSON.parse(LS.getItem('hs:viewOv')||'null'); }catch(e){ viewOv=null; }
+function expireViewOv(p=etParts()){
+  if(!viewOv || !viewOv.until) return;
+  if((p.date+'T'+p.hm)>=viewOv.until){ viewOv=null; try{ LS.removeItem('hs:viewOv'); }catch(e){} }
+}
+function viewProfile(p=etParts()){
+  expireViewOv(p);
+  if(viewOv && viewOv.id) return viewOv.id;
+  return autoProfile(p);
+}
+function viewedShift(p=etParts()){
+  const id=viewProfile(p);
+  const list=typeof defaultShifts==='function'?defaultShifts():[];
+  const s=list.find(x=>x.id===id);
+  if(!s) return null;
+  const ended=!!(typeof isShowDay==='function' && isShowDay(p) && p.hm>=s.end);
+  return Object.assign({},s,{ended});
+}
+function setViewProfile(id){
+  const p=etParts();
+  expireViewOv(p);
+  id=String(id||'truce');
+  if(id===autoProfile(p)){ viewOv=null; try{ LS.removeItem('hs:viewOv'); }catch(e){} }
+  else { viewOv={id, until:nextAutoChange(p)}; try{ LS.setItem('hs:viewOv', JSON.stringify(viewOv)); }catch(e){} }
+  window.__hsMorningPeek=false;
+  if(typeof renderShowTabs==='function') renderShowTabs();
+  if(typeof renderShiftLabel==='function') renderShiftLabel();
+  if(typeof renderTabs==='function') renderTabs();
+  if(typeof renderView==='function') renderView();
+}
+function renderShowTabs(){
+  const nav=document.getElementById('showTabs'); if(!nav) return;
+  const cur=viewProfile();
+  nav.innerHTML='';
+  for(const t of SHOW_TABS){
+    const b=document.createElement('button');
+    b.type='button';
+    b.className=t.cls+(t.id===cur?' on':'');
+    b.setAttribute('data-profile', t.id);
+    b.setAttribute('aria-current', t.id===cur?'true':'false');
+    b.setAttribute('aria-label', t.label+(t.id===cur?' (viewing)':''));
+    b.textContent=t.label;
+    b.onclick=()=>{ if(typeof tapHaptic==='function') tapHaptic(); setViewProfile(t.id); };
+    nav.append(b);
+  }
+}
+function renderMorningFold(){
+  const el=document.getElementById('morningFold'); if(!el) return;
+  if(!morningEnded()){ el.hidden=true; return; }
+  const list=typeof sectionList==='function'?sectionList():[];
+  const box=document.getElementById('morningFoldBtns'); if(!box){ el.hidden=true; return; }
+  box.innerHTML='';
+  let n=0;
+  for(const key of morningKeys()){
+    const item=list.find(x=>x.key===key);
+    if(!item) continue;
+    n++;
+    const b=document.createElement('button');
+    b.type='button';
+    b.className='mornBtn'+(state.tab===key?' on':'');
+    b.setAttribute('data-sec', key);
+    b.textContent=(item.v && item.v.title)||key;
+    b.onclick=()=>{ window.__hsMorningPeek=true; state.tab=key; try{ LS.setItem('hs:tab',key); }catch(e){} if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); };
+    box.append(b);
+  }
+  el.hidden=!n;
+}
+function renderBuildLabel(){
+  const build=(document.querySelector('meta[name=hs-build]')||{}).content||'';
+  const hb=document.getElementById('hsBuild'); if(hb) hb.textContent=build;
+  const bn=document.getElementById('buildNote'); if(bn && !bn.textContent) bn.textContent='Build '+build;
+}
+function profileId(p=etParts()){ return viewProfile(p); }
 function profileBucket(p=etParts()){ const d=(p||etParts()).date; const id=profileId(p); return (!id || id==='truce') ? d : d+'#'+id; }
-function onAirProfile(id){ const sh=currentShift(); return !!(sh && !sh.ended && sh.id===id); }
+function onAirProfile(id){ return viewProfile()===id; }
 function normItemDays(days){
   if(!Array.isArray(days)) return [];
   const map={sun:0,mon:1,tue:2,wed:3,thu:4,fri:5,sat:6};
@@ -1800,9 +1952,14 @@ function renderShiftLabel(){
   const p=etParts();
   if(typeof isShowDay==='function' && !isShowDay(p)){ el.hidden=true; el.textContent=''; const sc=document.getElementById('shiftSched'); if(sc){ sc.hidden=true; sc.innerHTML=''; } return; }
   const sh=currentShift(p);
-  if(!sh){ el.hidden=true; el.textContent=''; if(typeof renderShiftSched==='function') renderShiftSched(p, sh); return; }
-  el.hidden=false; el.textContent=shiftLabel(sh);
-  if(typeof renderShiftSched==='function') renderShiftSched(p, sh);
+  const view=typeof viewProfile==='function' ? viewProfile(p) : (sh && sh.id);
+  if(!sh && !view){ el.hidden=true; el.textContent=''; if(typeof renderShiftSched==='function') renderShiftSched(p, sh); return; }
+  el.hidden=false;
+  let t=sh?shiftLabel(sh):'';
+  if(view && sh && view!==sh.id){ t=(t?t+' · ':'')+'viewing '+(typeof showTabLabel==='function'?showTabLabel(view):view); }
+  el.textContent=t;
+  const viewSh=typeof viewedShift==='function'?viewedShift(p):sh;
+  if(typeof renderShiftSched==='function') renderShiftSched(p, viewSh||sh);
 }
 function pruneByDate(obj, n=14){
   const dates=[...new Set(Object.keys(obj||{}).map(k=>String(k).slice(0,10)))].filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x)).sort().slice(-n);
@@ -1981,8 +2138,8 @@ function renderBanner(){ renderReadStrip(); const due=overdueList(); const b=$('
   $('#spBannerBtn').onclick=()=>openRead(due[0].id);
   if(!b.classList.contains('on')){ b.classList.add('on'); setHdr(); } }
 let lastEtDate=etParts().date, lastShiftSig=(currentShift()||{}).id||'';
-function refreshSponsorUI(withView){ if(typeof renderShiftLabel==='function') renderShiftLabel(); renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
-  if(withView){ renderTicker(); if(state.sheet){ const y=scrollY; renderView(); window.scrollTo(0,y); } } }
+function refreshSponsorUI(withView){ if(typeof expireViewOv==='function') expireViewOv(); if(typeof renderShowTabs==='function') renderShowTabs(); if(typeof renderShiftLabel==='function') renderShiftLabel(); renderWxSponsor(); renderStudio(); renderBanner(); renderCountdowns();
+  if(withView){ renderTicker(); if(typeof renderTabs==='function') renderTabs(); if(state.sheet){ const y=scrollY; renderView(); window.scrollTo(0,y); } } }
 function onNewDay(){ refreshSponsorUI(true); if(typeof renderSun==='function') renderSun(); renderDays(); renderSheetTag(); if(typeof renderWeek==='function') renderWeek(); }
 function shiftSig(){ const sh=currentShift(); return etParts().date+'|'+(sh?sh.id+(sh.ended?':ended':''):'off')+'|'+readPhase(); }
 setInterval(()=>{ const d=etParts().date, sig=shiftSig(); if(d!==lastEtDate){ lastEtDate=d; lastShiftSig=sig; onNewDay(); } else if(sig!==lastShiftSig){ lastShiftSig=sig; refreshSponsorUI(true); } else { renderBanner(); renderCountdowns(); } }, 30000);
@@ -2950,19 +3107,26 @@ function sectionList(){
 function renderTabs(){
   const nav=$('#tabs'); nav.innerHTML='';
   const list=sectionList();
+  const morn=new Set(typeof morningKeys==='function'?morningKeys():[]);
+  const hideM=typeof morningEnded==='function' && morningEnded();
+  const main=hideM?list.filter(x=>!morn.has(x.key)):list;
   let saved=LS.getItem('hs:tab');
-  if(!state.tab || !list.find(x=>x.key===state.tab)) state.tab = list.find(x=>x.key===saved) ? saved : list[0].key;
-  for(const {key,v} of list){
+  if(hideM && morn.has(state.tab) && !window.__hsMorningPeek){
+    state.tab = main.find(x=>x.key===saved && !morn.has(saved)) ? saved : ((main[0]&&main[0].key)||(list[0]&&list[0].key));
+  }
+  if(!state.tab || !list.find(x=>x.key===state.tab)) state.tab = main.find(x=>x.key===saved) ? saved : ((main[0]||list[0]).key);
+  for(const {key,v} of main){
     const b=document.createElement('button'); b.setAttribute('role','tab');
     b.setAttribute('aria-selected', String(key===state.tab));
     const empty=!v.virtual && !cleanText(v.content).trim() && key!=='clips';
     if(empty) b.classList.add('empty');
     b.append(v.title||key);
     if(v.category){ const c=document.createElement('span'); c.className='cat'; c.textContent=v.category; b.append(c); }
-    b.onclick=()=>{ state.tab=key; LS.setItem('hs:tab',key); renderTabs(); renderView(); window.scrollTo({top:0}); };
+    b.onclick=()=>{ window.__hsMorningPeek=false; state.tab=key; LS.setItem('hs:tab',key); renderTabs(); renderView(); window.scrollTo({top:0}); };
     nav.append(b);
     if(key===state.tab) setTimeout(()=>{ const l=b.offsetLeft, r=l+b.offsetWidth; if(l<nav.scrollLeft) nav.scrollLeft=l-8; else if(r>nav.scrollLeft+nav.clientWidth) nav.scrollLeft=r-nav.clientWidth+8; },0);
   }
+  if(typeof renderMorningFold==='function') renderMorningFold();
 }
 /* ---------- National headlines (client-side RSS; these send Access-Control-Allow-Origin: *) ---------- */
 const NEWS_FEEDS=[
@@ -5109,7 +5273,7 @@ function hsCheckForUpdate(fromUser){
 }
 if(isHttp && 'serviceWorker' in navigator){
   const build=(document.querySelector('meta[name=hs-build]')||{}).content||'';
-  const bn=$('#buildNote'); if(bn) bn.textContent='Build '+build;
+  const bn=$('#buildNote'); if(bn) bn.textContent='Build '+build; const hb=$('#hsBuild'); if(hb) hb.textContent=build;
   const ban=$('#swBanner');
   if(ban) ban.onclick=()=>{ ban.classList.remove('on'); location.reload(); };
   if(navigator.serviceWorker.controller){
@@ -5132,9 +5296,11 @@ if(isHttp && 'serviceWorker' in navigator){
 
 if(typeof migrateShiftBuckets==='function'){ migrateShiftBuckets(); if(typeof lsSet==='function'){ try{ lsSet('hs:reads', reads); lsSet('hs:linerUsed', linerUsed); lsSet('hs:air', air); }catch(e){} } }
 if(typeof tick==='function') tick();
+if(typeof renderShowTabs==='function') renderShowTabs();
+if(typeof renderBuildLabel==='function') renderBuildLabel();
 loadIndex().then(()=>load(null)); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); loadSchedules(); loadMovies(); loadTicker();
 window.__hs = state; // for debugging
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>

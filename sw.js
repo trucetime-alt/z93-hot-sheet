@@ -1,7 +1,7 @@
 // Z93 Hot Sheet service worker. All paths are relative, so it works at / or under /z93-hot-sheet/.
 // HTML and JSON: network-first with no-store (bypass GitHub Pages max-age=600), cached copy only when offline.
 // Icons/manifest: cache-first. Big -audio.json and MP3s are left to the app (IndexedDB) / browser.
-const CACHE='z93-hot-sheet-v46';
+const CACHE='z93-hot-sheet-v47';
 const SHELL=['./','index.html','z93-hot-sheet.html','manifest.webmanifest','icon.svg','sheets.json','latest-hot-sheet.json','days.json','sponsors.json','countdowns.json','station-reads.json','giveaways.json','guests.json','ticker.json','pools.json','songs.json','radar-base.svg','z93-logo.png','radar-overlay.svg','apple-touch-icon.png','icon-192.png','icon-512.png','icon-maskable-192.png','icon-maskable-512.png','favicon-32.png'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>Promise.all(SHELL.map(u=>c.add(u).catch(()=>{})))).then(()=>self.skipWaiting()));
