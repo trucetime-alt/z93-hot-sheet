@@ -1,0 +1,932 @@
+{
+ "weather": {
+  "temp": "45°",
+  "cond": "Clear",
+  "advisory": "No advisories",
+  "traffic": "Dry roads; Beitner Bridge still closed",
+  "high": "59°",
+  "low": "43°",
+  "tonight": "Mostly Cloudy",
+  "updated": "2026-11-18T04:06-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Partly Sunny",
+  "icon": "sunny",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-18",
+    "high": null,
+    "low": 43,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 0
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-18",
+    "high": 59,
+    "low": 50,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 0
+   },
+   {
+    "day": "Thu",
+    "date": "2026-11-19",
+    "high": 61,
+    "low": 42,
+    "short": "Sunny",
+    "icon": "sunny",
+    "pop": 0
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-20",
+    "high": 62,
+    "low": 50,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 0
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-21",
+    "high": 64,
+    "low": 47,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 5
+   },
+   {
+    "day": "Sun",
+    "date": "2026-11-22",
+    "high": 52,
+    "low": 34,
+    "short": "Rain Showers Likely",
+    "icon": "rain",
+    "pop": 74
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-23",
+    "high": 38,
+    "low": 29,
+    "short": "Slight Chance Rain And Snow Showers",
+    "icon": "mix",
+    "pop": 15
+   }
+  ],
+  "wind": "SW 5-10 mph, gusts to 30 today and tonight; gusts to 35 Thu",
+  "waves": "Bay 2 ft or less · Lake MI 4-6 ft today, 5-8 ft tonight, Small Craft Advisory through Thu evening",
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 44
+   },
+   {
+    "t": "5 AM",
+    "temp": 44
+   },
+   {
+    "t": "6 AM",
+    "temp": 44
+   },
+   {
+    "t": "7 AM",
+    "temp": 44
+   },
+   {
+    "t": "8 AM",
+    "temp": 43
+   },
+   {
+    "t": "9 AM",
+    "temp": 46
+   },
+   {
+    "t": "10 AM",
+    "temp": 49
+   },
+   {
+    "t": "11 AM",
+    "temp": 53
+   },
+   {
+    "t": "12 PM",
+    "temp": 55
+   },
+   {
+    "t": "1 PM",
+    "temp": 57
+   },
+   {
+    "t": "2 PM",
+    "temp": 58
+   },
+   {
+    "t": "3 PM",
+    "temp": 58
+   },
+   {
+    "t": "4 PM",
+    "temp": 58
+   },
+   {
+    "t": "5 PM",
+    "temp": 56
+   },
+   {
+    "t": "6 PM",
+    "temp": 54
+   },
+   {
+    "t": "7 PM",
+    "temp": 52
+   },
+   {
+    "t": "8 PM",
+    "temp": 51
+   },
+   {
+    "t": "9 PM",
+    "temp": 51
+   },
+   {
+    "t": "10 PM",
+    "temp": 51
+   }
+  ]
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "🎵 SLOW JAM: Seal, \"Kiss from a Rose\" (1994)<br>• No. 1 on the Billboard Hot 100 (chart dated Aug. 26, 1995) after it landed on the Batman Forever soundtrack<br>• Why today: it's National Princess Day, and this is the most fairytale slow jam the 90s ever made, roses, towers and all. Seal first put it out in 1994; a year later a Batman movie turned it into a No. 1.<br>😂 JOKES: Thirty years later and I still sing 'a kiss from a rose on the gray' like I know what it means. / Nothing says Wednesday at 5:30 AM like a Batman Forever slow jam.<br><br>🚗 DRIVE TEASE: About 44 and mostly cloudy for the drive in, dry roads, then partly sunny and up near 59 this afternoon, with gusts to 30.<br>📅 THIS DAY: On this day in 1928, Steamboat Willie premiered at New York's Colony Theatre, Mickey Mouse's first public appearance and his official birthday. Mickey turns 98 today.<br>😂 JOKES: Ninety-eight years old and still wears the same red shorts every day. Icon. / Mickey's been working since 1928 and never once called in sick for a video game.<br>💡 FUN FACT: GTA V made $815.7 million in its first 24 hours back in 2013, the Guinness record for any entertainment product in a day. GTA 6 unlocks at midnight tonight, and that record is officially nervous.<br>😂 JOKES: $815 million in one day. My best lemonade stand day was $4.50 and a bee sting. / Somewhere tonight, a world record is sweating.<br>🎉 NATIONAL DAYS: National Princess Day, Mickey Mouse's Birthday, National Vichyssoise Day and National Education Support Professionals Day<br>😂 JOKES: National Vichyssoise Day: the only soup that's cold on purpose. / Education Support Professionals Day: the bus drivers, cooks and aides who actually run the building. Thank one today.<br><br>☀️ 45 and clear at the airport right now, then partly sunny with a high near 59, SW wind 5 to 10 with gusts to 30, a low near 50 tonight, and sunny and 61 Thursday.<br>🌊 Small Craft Advisory on the bay and Lake Michigan through Thursday evening: Lake Michigan waves 4 to 6 feet today, 5 to 8 feet tonight, gusts to 30.<br>🏫 Schools: no closings (9&10 checked 3:47 AM). 🚧 Beitner Bridge could reopen to traffic by week's end, no firm date yet.<br>⚡ It's 59 in November, Roscommon is headed to Battle Creek, and GTA 6 unlocks at midnight. Wednesday came to play.",
+  "notes": "Slow jam: Stereogum The Number Ones https://stereogum.com/2180821/the-number-ones-seals-kiss-from-a-rose/columns/the-number-ones ; Hot 100 No. 1 chart dated Aug. 26, 1995 (also Chartline/Hitstory). <br>Weather: NWS Gaylord point forecast + hourly (api.weather.gov 44.7631,-85.6206), KTVC obs 3:20 AM ET 45° clear. Forecast high near 59 (hourly peaks 58 at 2-4 PM), low near 50 tonight, Thu high near 61. No active alerts for the TC point.<br>Wind & waves: NWS Gaylord nearshore marine forecast (FZUS53 KAPX) 1:58 AM EST Wed 11/18: SCA through Thursday evening for LMZ323 (GT Bay south: SW 10-15 kt, waves 2 ft or less today), LMZ344 (Sleeping Bear Pt to GT Light: waves 3-5 ft today, 4-6 ft tonight), LMZ345 (Pt Betsie to Sleeping Bear: waves 4-6 ft today, 5-8 ft tonight). https://www.ndbc.noaa.gov/data/Forecasts/FZUS53.KAPX.html . TC gusts to 30 per point forecast.<br>This Day: Walt Disney Family Museum https://www.waltdisney.org/blog/happy-birthday-mickey . Fun fact: Guinness https://www.guinnessworldrecords.com/world-records/88321-highest-revenue-generated-by-an-entertainment-product-in-24-hours .<br>National days: https://nationaldaycalendar.com/what-day-is-it (fetched 3:50 AM ET; listed Princess Day, Mickey Mouse Birthday, Vichyssoise Day, GIS Day, Education Support Professionals Day).<br>Schools: tried UpNorthLive and 9&10 closings pages ~4:05 AM ET; neither returned a readable list, so not confirmed. Roads: Beitner per UpNorthLive 11/17 https://upnorthlive.com/news/local/beitner-bridge-area-could-reopen-to-traffic-by-weeks-end-officials-say-grand-traverse-northern-michigan-upnorthlive",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-18-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "We opened the Vibe Check with Seal's \"Kiss from a Rose,\" the most fairytale slow jam of the 90s, for National Princess Day.",
+    "article_url": "https://stereogum.com/2180821/the-number-ones-seals-kiss-from-a-rose/columns/the-number-ones",
+    "article_title": "The Number Ones: Seal's \"Kiss From A Rose\" (Stereogum)",
+    "jokes": [
+     "Thirty years later and I still sing 'a kiss from a rose on the gray' like I know what it means.",
+     "Nothing says Wednesday at 5:30 AM like a Batman Forever slow jam."
+    ]
+   },
+   {
+    "id": "2026-11-18-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a mild drive: mid-40s and dry early, up near 59 this afternoon with gusts to 30.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord point forecast, Traverse City",
+    "jokes": []
+   },
+   {
+    "id": "2026-11-18-vibe-03",
+    "title": "THIS DAY",
+    "recap": "On this day in 1928, Steamboat Willie premiered in New York, Mickey Mouse's official birthday. He's 98.",
+    "article_url": "https://www.waltdisney.org/blog/happy-birthday-mickey",
+    "article_title": "Happy Birthday, Mickey! (The Walt Disney Family Museum)",
+    "jokes": [
+     "Ninety-eight years old and still wears the same red shorts every day. Icon.",
+     "Mickey's been working since 1928 and never once called in sick for a video game."
+    ]
+   },
+   {
+    "id": "2026-11-18-vibe-04",
+    "title": "FUN FACT",
+    "recap": "Fun fact: GTA V made $815.7 million in its first 24 hours in 2013, a Guinness record, and GTA 6 unlocks at midnight tonight.",
+    "article_url": "https://www.guinnessworldrecords.com/world-records/88321-highest-revenue-generated-by-an-entertainment-product-in-24-hours",
+    "article_title": "Highest revenue generated by an entertainment product in 24 hours (Guinness World Records)",
+    "jokes": [
+     "$815 million in one day. My best lemonade stand day was $4.50 and a bee sting.",
+     "Somewhere tonight, a world record is sweating."
+    ]
+   },
+   {
+    "id": "2026-11-18-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "It was National Princess Day, Mickey Mouse's birthday, National Vichyssoise Day and National Education Support Professionals Day.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [
+     "National Vichyssoise Day: the only soup that's cold on purpose.",
+     "Education Support Professionals Day: the bus drivers, cooks and aides who actually run the building. Thank one today."
+    ]
+   }
+  ],
+  "article_url": "https://stereogum.com/2180821/the-number-ones-seals-kiss-from-a-rose/columns/the-number-ones",
+  "article_title": "The Number Ones: Seal's \"Kiss From A Rose\" (Stereogum)",
+  "jokes": [
+   "Thirty years later and I still sing 'a kiss from a rose on the gray' like I know what it means.",
+   "Nothing says Wednesday at 5:30 AM like a Batman Forever slow jam."
+  ]
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "Len, \"Steal My Sunshine\" (1999)<br>• Top 10 on the Billboard Hot 100 (peaked at No. 9) and No. 3 in Canada; certified platinum in the US<br>• The story: brother and sister Marc and Sharon Costanzo trade lead vocals, built on a loop of the 1976 disco hit \"More, More, More.\" Marc almost didn't release it; the master sat under his bed for months. It broke out on the soundtrack to the 1999 movie Go.<br>• Why today: sunny, 59 and a little windy in mid-November. This is the song for it.<br>😂 JOKES: It's 59 degrees in November. Nobody steal this sunshine, we're using it. / Len was a one-hit wonder, but what a hit. That's more than I can say for my cooking.",
+  "notes": "Wikipedia https://en.wikipedia.org/wiki/Steal_My_Sunshine (US top 10, RPM No. 3, RIAA platinum, sample, under-the-bed story, Go soundtrack). Hot 100 No. 9 peak: Billboard Len bio/chart https://www.billboard.com/artist/len/ . Not on the never-play list; not used this week.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-18-mood-01",
+    "title": "STEAL MY SUNSHINE",
+    "recap": "The 6 AM Mood Boost was Len's \"Steal My Sunshine,\" a top-10 summer song for a 59-degree November day.",
+    "article_url": "https://en.wikipedia.org/wiki/Steal_My_Sunshine",
+    "article_title": "\"Steal My Sunshine\" (Wikipedia)",
+    "jokes": [
+     "It's 59 degrees in November. Nobody steal this sunshine, we're using it.",
+     "Len was a one-hit wonder, but what a hit. That's more than I can say for my cooking."
+    ]
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Steal_My_Sunshine",
+  "article_title": "\"Steal My Sunshine\" (Wikipedia)",
+  "jokes": [
+   "It's 59 degrees in November. Nobody steal this sunshine, we're using it.",
+   "Len was a one-hit wonder, but what a hit. That's more than I can say for my cooking."
+  ]
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>NOVEMBER FORGOT IT'S NOVEMBER<br>• The Record-Eagle says the NWS and AccuWeather forecasts for Traverse City show partly to mostly sunny days through Saturday, with highs in the 50s and 60s and lows mostly in the 40s.<br>• Today: a high near 59. Thursday: sunny and 61.<br>• NWS Gaylord's Sean Christensen says a low-pressure system brings rain Sunday into Monday, with snow showers possible, then high pressure settles right back in to start Thanksgiving week.<br>➜ TAKE: Michigan weather is that friend who's extra nice right before asking to borrow your truck.<br>➜ BAIT: Text 231-929-4487: what are you doing with a 60-degree November day? Raking, golf, or hanging Christmas lights in a T-shirt?<br>😂 JOKES: Somewhere a snowblower is sitting in a garage feeling very unappreciated. / It's so warm the downtown Christmas tree asked for sunscreen.<br><br>THE BLUE ANGELS CAME TO SCOUT<br>• Two Blue Angels flew into the Coast Guard base in Traverse City Monday to plan next summer's air show at the 101st National Cherry Festival.<br>• They're visiting all 32 show sites in about three weeks and check everything: where the jets park, the route from the briefing room, even the hotel and the gym they work out in.<br>• Cherry Capital Airport CEO Kevin Klein says commercial flights get limited for a few hours around the jet flights.<br>• The Blue Angels fly July 3 and July 4, 2027. They last flew the Cherry Festival in 2024 and have done more than a dozen since 1988.<br>➜ TAKE: They inspect the hotel AND the gym. Nobody has ever inspected my gym, and honestly, it shows.<br>➜ BAIT: Text 231-929-4487: where's your spot to watch the Blue Angels? The beach, a boat, or stuck in traffic on Grandview?<br>😂 JOKES: They're checking out the gym. Pretty sure the gym is checking them out too. / Two fighter pilots landed in TC in November and the first question was, 'Where are the cherries?'<br><br>CHERRYLAND CATS GOT AN UPGRADE<br>• Cherryland Humane Society in Traverse City finished a 9,000-square-foot expansion, $3 million, paid for entirely by community donations.<br>• The cats got their own wing in a quieter part of the building, away from the dogs, with new two-story cat condos: litter box on one floor, bed on the other, big glass windows.<br>• A new in-house blood and urinalysis machine means lab work happens on site, so cats get to the adoption floor faster.<br>• The shelter says it sees more homeless animals every year and more families needing help because of the housing crisis.<br>➜ TAKE: These cats have two-story condos with a view. I have a one-bedroom with a view of a dumpster.<br>➜ BAIT: Text 231-929-4487: is your cat a Cherryland cat? Give us the name and the worst habit.<br>😂 JOKES: Two-story cat condos, and I guarantee the cat still sleeps in the Amazon box. / Cats finally got away from the dogs. That's the dream for every cat and half of us at Thanksgiving.<br><br>1,000 VENDORS AT TC WEST SATURDAY<br>• The 17th annual craft fair at Traverse City West High School is this Saturday, and UpNorthLive says more than 1,000 vendors are coming.<br>• It's free, 10 AM to 3 PM, and every vendor booth fee goes to the school's scholarships and teacher grants.<br>• Vendors come from all over the state, and the waitlist keeps growing.<br>➜ TAKE: One thousand vendors. That's not a craft fair, that's a small town that sells candles.<br>➜ BAIT: Text 231-929-4487: craft fair strategy. Do you go in with a list, or wander until your arms are full and your wallet is empty?<br>😂 JOKES: Somebody's grandma has had the same booth spot for 17 years and will defend it with a glue gun. / The real competition Saturday is the parking lot.<br><br>CROCHET DRAGONS AT THE MALL<br>• A new pop-up called Crafts by CICI is open in the Grand Traverse Mall, with local makers under one roof.<br>• One maker taught herself to crochet from YouTube during day-care nap time and now makes dragons from memory; another runs 16 3D printers, and a multi-color dragon can take more than 30 hours to print.<br>• There are also silicone squishies and hypoallergenic candles and soap made with beeswax from a farm about an hour away.<br>• It's open through Dec. 31, with hopes to reopen in the spring.<br>➜ TAKE: A dragon that takes 30 hours to print. That is longer than my last three diets combined.<br>➜ BAIT: Text 231-929-4487: what's the best handmade gift you ever got? And the worst one you still kept?<br>😂 JOKES: Silicone squishies are just stress balls that went to art school. / Crocheting dragons during nap time. Most of us can't fold laundry during nap time.<br><br>━━ BITS ━━<br><br>PRINCESS DAY: YOUR FIRST ROYAL DECREE<br>• It's National Princess Day, the day the folks at National Day Calendar say is for a little royal attention.<br>• Princess Diaries rules: you find out this morning you're secretly royalty. What's your first royal decree?<br>➜ TAKE: Mine: nobody talks to me before coffee, and the left lane is for passing only. Punishable by moat.<br>➜ BAIT: Text 231-929-4487: your first royal decree. Go.<br>😂 JOKES: Royal decree number two: Thanksgiving leftovers are a constitutional right. / You can tell who the real princess is in every house. It's the dog.<br><br>MICKEY TURNS 98: OLDEST THING YOU STILL USE<br>• Mickey Mouse turns 98 today; Steamboat Willie premiered Nov. 18, 1928.<br>• So what's the oldest thing in your house that still works and still gets used every day?<br>➜ TAKE: My grandma's cast iron pan has outlived three stoves, two marriages and a microwave.<br>➜ BAIT: Text 231-929-4487: the oldest thing you still use every day. Bonus points if it's held together with tape.<br>😂 JOKES: Every family has a Tupperware lid from 1987 that fits nothing and nobody throws out. / My car has a tape deck. It's not vintage. It's just old.<br><br>━━ SPORTS ━━<br><br>ROSCOMMON HEADED TO BATTLE CREEK<br>• Top-ranked Roscommon swept Calumet 25-15, 25-10, 25-20 in last night's Division 3 volleyball quarterfinal in Gaylord.<br>• The Bucks play Kalamazoo Christian in a noon semifinal Friday at Kellogg Arena in Battle Creek.<br>• Kingsley, Onekama and Atlanta also played volleyball quarterfinals last night, and all came up short.<br>➜ TAKE: Roscommon has been knocking on the door for years. Last night they kicked it in.<br>➜ BAIT: Text 231-929-4487 if you're making the drive to Battle Creek Friday.<br>😂 JOKES: Three sets, no drama. That's the most efficient thing to happen on a Tuesday night in Gaylord. / Kellogg Arena, here come the Bucks. Somebody pack the snacks.",
+  "notes": "Buzz score log (buzz-rubric): Warm streak 13 · Blue Angels 14 · Cherryland cats 13 · TC West craft fair 12 · Crafts by CICI 12 · (bench: Toys for Tots 12, B Thankful 5K 11, Traverse Connect internships 11, Northport dam removal 11; cut: TC homeowner/naked intruder (crime), West End parking/vacation rental caps (used Tue, politics-adjacent), Medicaid delay (politics), Mt. Pleasant shooting (crime), kidney donor search (private family)). National: none today (GTA 6 has its own card).<br>Sources: NOVEMBER FORGOT IT'S NOVEMBER: https://www.record-eagle.com/news/local_news/more-sunshine-warm-temps-expected-through-end-of-week/article_3f4ca4b1-eb22-44e9-8b10-4d3ddf6f517d.html (Record-Eagle (Andy Taylor), NWS Gaylord) · THE BLUE ANGELS CAME TO SCOUT: https://www.9and10news.com/2026/11/16/blue-angels-visit-traverse-city-ahead-of-2027-national-cherry-festival-air-show/ (9&10 News (Sheldon Krause); UpNorthLive also covered) · CHERRYLAND CATS GOT AN UPGRADE: https://www.9and10news.com/2026/11/17/cherryland-humane-society-upgrades-cat-facilities-in-3-million-expansion/ (9&10 News (Sheldon Krause); UpNorthLive also covered) · 1,000 VENDORS AT TC WEST SATURDAY: https://upnorthlive.com/news/local/get-holiday-shopping-done-at-the-tc-west-high-school-craft-fair-grand-traverse-county (UpNorthLive (Katrina Bailey)) · CROCHET DRAGONS AT THE MALL: https://www.9and10news.com/2026/11/17/local-artisans-showcase-custom-handmade-goods-at-new-crafts-by-cici-storefront/ (9&10 News (Megan Huiskens, Josh Monroe))<br>Bits: PRINCESS DAY: YOUR FIRST ROYAL DECREE: https://nationaldaycalendar.com/celebrations/national-princess-day-november-18 · MICKEY TURNS 98: OLDEST THING YOU STILL USE: https://www.waltdisney.org/blog/happy-birthday-mickey<br>Sports: https://upnorthlive.com/sports/hometown-highlights/top-ranked-roscommon-packing-their-bags-for-battle-creek-after-win-in-volleyball-quarters<br>Wider search checked: 9&10, UpNorthLive, Record-Eagle, MLive, IPR (Medicaid/El Niño, not used), The Ticker (Toys for Tots, Beitner, TCLP), Northern Express calendar, Petoskey/Cadillac/Manistee (no fresh business openings), Daily Traverse City (Blue Angels), Overheard not used.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-18-buzz-01",
+    "title": "NOVEMBER FORGOT IT'S NOVEMBER",
+    "recap": "We talked about the warm streak: 50s and 60s and sunshine through Saturday, then rain and maybe snow showers Sunday into Monday.",
+    "article_url": "https://www.record-eagle.com/news/local_news/more-sunshine-warm-temps-expected-through-end-of-week/article_3f4ca4b1-eb22-44e9-8b10-4d3ddf6f517d.html",
+    "article_title": "More sunshine, warm temps expected through end of week (Record-Eagle, Nov 17)",
+    "jokes": [
+     "Somewhere a snowblower is sitting in a garage feeling very unappreciated.",
+     "It's so warm the downtown Christmas tree asked for sunscreen."
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-02",
+    "title": "THE BLUE ANGELS CAME TO SCOUT",
+    "recap": "We talked about the Blue Angels scouting Traverse City Monday for their July 3 and 4, 2027 Cherry Festival shows.",
+    "article_url": "https://www.9and10news.com/2026/11/16/blue-angels-visit-traverse-city-ahead-of-2027-national-cherry-festival-air-show/",
+    "article_title": "Blue Angels visit Traverse City ahead of 2027 National Cherry Festival air show (9&10 News, Nov 16)",
+    "jokes": [
+     "They're checking out the gym. Pretty sure the gym is checking them out too.",
+     "Two fighter pilots landed in TC in November and the first question was, 'Where are the cherries?'"
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-03",
+    "title": "CHERRYLAND CATS GOT AN UPGRADE",
+    "recap": "We talked about Cherryland Humane Society's new $3 million, donor-funded cat wing with two-story cat condos.",
+    "article_url": "https://www.9and10news.com/2026/11/17/cherryland-humane-society-upgrades-cat-facilities-in-3-million-expansion/",
+    "article_title": "Cherryland Humane Society upgrades cat facilities in $3 million expansion (9&10 News, Nov 17)",
+    "jokes": [
+     "Two-story cat condos, and I guarantee the cat still sleeps in the Amazon box.",
+     "Cats finally got away from the dogs. That's the dream for every cat and half of us at Thanksgiving."
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-04",
+    "title": "1,000 VENDORS AT TC WEST SATURDAY",
+    "recap": "We talked about Saturday's 17th annual TC West craft fair: 1,000-plus vendors, free, with booth fees funding scholarships.",
+    "article_url": "https://upnorthlive.com/news/local/get-holiday-shopping-done-at-the-tc-west-high-school-craft-fair-grand-traverse-county",
+    "article_title": "Get holiday shopping done at the TC West High School Craft Fair (UpNorthLive, Nov 17)",
+    "jokes": [
+     "Somebody's grandma has had the same booth spot for 17 years and will defend it with a glue gun.",
+     "The real competition Saturday is the parking lot."
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-05",
+    "title": "CROCHET DRAGONS AT THE MALL",
+    "recap": "We talked about the new Crafts by CICI pop-up at the Grand Traverse Mall, with crocheted and 3D-printed dragons, open through Dec. 31.",
+    "article_url": "https://www.9and10news.com/2026/11/17/local-artisans-showcase-custom-handmade-goods-at-new-crafts-by-cici-storefront/",
+    "article_title": "Local artisans showcase custom handmade goods at new Crafts by CICI storefront (9&10 News, Nov 17)",
+    "jokes": [
+     "Silicone squishies are just stress balls that went to art school.",
+     "Crocheting dragons during nap time. Most of us can't fold laundry during nap time."
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-06",
+    "title": "PRINCESS DAY: YOUR FIRST ROYAL DECREE",
+    "recap": "For National Princess Day, listeners texted their first royal decree if they found out they were secretly royalty.",
+    "article_url": "https://nationaldaycalendar.com/celebrations/national-princess-day-november-18",
+    "article_title": "National Princess Day (National Day Calendar)",
+    "jokes": [
+     "Royal decree number two: Thanksgiving leftovers are a constitutional right.",
+     "You can tell who the real princess is in every house. It's the dog."
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-07",
+    "title": "MICKEY TURNS 98: OLDEST THING YOU STILL USE",
+    "recap": "For Mickey's 98th birthday, listeners told us the oldest thing they still use every day.",
+    "article_url": "https://www.waltdisney.org/blog/happy-birthday-mickey",
+    "article_title": "Happy Birthday, Mickey! (The Walt Disney Family Museum)",
+    "jokes": [
+     "Every family has a Tupperware lid from 1987 that fits nothing and nobody throws out.",
+     "My car has a tape deck. It's not vintage. It's just old."
+    ]
+   },
+   {
+    "id": "2026-11-18-buzz-08",
+    "title": "ROSCOMMON HEADED TO BATTLE CREEK",
+    "recap": "Roscommon swept Calumet 25-15, 25-10, 25-20 and plays Kalamazoo Christian in a noon D3 semifinal Friday in Battle Creek.",
+    "article_url": "https://upnorthlive.com/sports/hometown-highlights/top-ranked-roscommon-packing-their-bags-for-battle-creek-after-win-in-volleyball-quarters",
+    "article_title": "Top-ranked Roscommon packing their bags for Battle Creek after win in volleyball quarters (UpNorthLive, Nov 17)",
+    "jokes": [
+     "Three sets, no drama. That's the most efficient thing to happen on a Tuesday night in Gaylord.",
+     "Kellogg Arena, here come the Bucks. Somebody pack the snacks."
+    ]
+   }
+  ],
+  "article_url": "https://www.record-eagle.com/news/local_news/more-sunshine-warm-temps-expected-through-end-of-week/article_3f4ca4b1-eb22-44e9-8b10-4d3ddf6f517d.html",
+  "article_title": "More sunshine, warm temps expected through end of week (Record-Eagle, Nov 17)",
+  "jokes": [
+   "Somewhere a snowblower is sitting in a garage feeling very unappreciated.",
+   "It's so warm the downtown Christmas tree asked for sunscreen."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-18-bench-01",
+    "title": "TOYS FOR TOTS DRIVE-THRU SATURDAY",
+    "body": "TOYS FOR TOTS DRIVE-THRU SATURDAY<br>• Toys for Tots of Northwest Michigan kicks off this Saturday, Nov. 21, with a drive-through toy drop-off from noon to 2 PM at Fox Grand Traverse.<br>• Stay in your car; Santa greets donors, and a limited number of Great Wolf Lodge water park day passes go out with a toy donation.<br>• Last year the local campaign collected more than 26,000 toys for more than 6,000 kids, with over 100 drop-off spots across five counties.<br>➜ TAKE: Drive-thru generosity. You don't even have to find a parking spot. That's a Christmas miracle in itself.<br>➜ BAIT: Text 231-929-4487: what was the toy you wanted most as a kid and never got?<br>😂 JOKES: Santa's working the drive-thru window. Even he took a second job before the holidays. / Drop a toy, get a water park pass. Best trade since baseball cards.",
+    "recap": "Toys for Tots kicked off with a drive-through toy drop at Fox Grand Traverse, noon to 2 PM Saturday, Nov. 21.",
+    "notes": "The Ticker https://www.traverseticker.com/news/toys-for-tots-campaign-starts-with-drive-through-event/",
+    "article_url": "https://www.traverseticker.com/news/toys-for-tots-campaign-starts-with-drive-through-event/",
+    "article_title": "Toys For Tots Campaign Starts With Drive-Through Event (The Ticker, Nov 17)",
+    "jokes": [
+     "Santa's working the drive-thru window. Even he took a second job before the holidays.",
+     "Drop a toy, get a water park pass. Best trade since baseball cards."
+    ]
+   },
+   {
+    "id": "2026-11-18-bench-02",
+    "title": "THE 'B' THANKFUL 5K IN CADILLAC",
+    "body": "THE 'B' THANKFUL 5K IN CADILLAC<br>• Cadillac gets a brand-new Thanksgiving morning race: Baker College's inaugural 'B' Thankful 5K, a 3.1-mile run/walk on Thursday, Nov. 26.<br>• It's at Veterans Serving Veterans Park; registration opens at 8 AM and the race starts at 9.<br>• Entry is $30, and the money goes to Veterans Serving Veterans and Baker College.<br>➜ TAKE: Run three miles in the morning, eat three plates in the afternoon. That's called balance.<br>➜ BAIT: Text 231-929-4487: are you a Turkey Trot person, or is your Thanksgiving cardio carrying the folding chairs?<br>😂 JOKES: The only 5K I've ever done is walking to the fridge for pie, back and forth, all day. / Nothing says thankful like crossing a finish line before the parade even starts.",
+    "recap": "Cadillac got a new Thanksgiving morning race, the inaugural 'B' Thankful 5K at Veterans Serving Veterans Park.",
+    "notes": "9&10 News; details Baker College / RunSignup https://www.9and10news.com/sports/2026/11/16/inaugural-b-thankful-5k-to-launch-in-cadillac-this-thanksgiving/",
+    "article_url": "https://www.9and10news.com/sports/2026/11/16/inaugural-b-thankful-5k-to-launch-in-cadillac-this-thanksgiving/",
+    "article_title": "Inaugural 'B' Thankful 5K to launch in Cadillac this Thanksgiving (9&10 News, Nov 16)",
+    "jokes": [
+     "The only 5K I've ever done is walking to the fridge for pie, back and forth, all day.",
+     "Nothing says thankful like crossing a finish line before the parade even starts."
+    ]
+   },
+   {
+    "id": "2026-11-18-bench-03",
+    "title": "A JOB BOARD TO KEEP YOUNG TALENT UP NORTH",
+    "body": "A JOB BOARD TO KEEP YOUNG TALENT UP NORTH<br>• Traverse Connect launched an internship program under its Michigan's Creative Coast banner, linking college students and recent grads with Northern Michigan employers.<br>• President and CEO Warren Call says the region struggles to keep young people, especially new college grads, and an internship is often the first step into a career.<br>• Employers are being asked to post openings now, and the goal is a full list of regional internships by the end of the spring semester.<br>➜ TAKE: We keep losing our kids to Grand Rapids and Chicago. Turns out you can just ask them to stay, with a paycheck.<br>➜ BAIT: Text 231-929-4487: what was your first real job, and did it teach you anything besides how to work a fryer?<br>😂 JOKES: My first internship paid in free pizza and lifelong trauma from a copy machine. / An internship that pays? Back in my day we interned for the privilege of being yelled at.",
+    "recap": "Traverse Connect launched an internship job board to keep college students and new grads working in Northern Michigan.",
+    "notes": "9&10 News (Kyle Garrison) https://www.9and10news.com/2026/11/17/traverse-connect-launches-internship-program-to-help-keep-young-talent-in-northern-michigan/",
+    "article_url": "https://www.9and10news.com/2026/11/17/traverse-connect-launches-internship-program-to-help-keep-young-talent-in-northern-michigan/",
+    "article_title": "Traverse Connect launches internship program to help keep young talent in Northern Michigan (9&10 News, Nov 17)",
+    "jokes": [
+     "My first internship paid in free pizza and lifelong trauma from a copy machine.",
+     "An internship that pays? Back in my day we interned for the privilege of being yelled at."
+    ]
+   },
+   {
+    "id": "2026-11-18-bench-04",
+    "title": "NORTHPORT'S MILL POND DAM IS COMING OUT",
+    "body": "NORTHPORT'S MILL POND DAM IS COMING OUT<br>• After nearly 79% of voters rejected the money to fix it, the Village of Northport is moving ahead with removing the Mill Pond Dam and restoring the creek.<br>• No dam means no pond, and the village manager says that touches traditions like ice skating and the spring fishing derby.<br>• The upside is better fish passage, which grant funders look for; the job is expected to take three to five years, depending on funding.<br>➜ TAKE: Northport said no to the repair bill, so the pond is taking early retirement.<br>➜ BAIT: Text 231-929-4487: did you ever skate or fish on the Mill Pond? Tell us your memory.<br>😂 JOKES: The fish have been waiting at that culvert for decades. Somebody finally hit the door buzzer. / Three to five years. That's government speed for 'grab a lawn chair.'",
+    "recap": "Northport is moving forward with removing the Mill Pond Dam and restoring the creek after voters rejected repair funding.",
+    "notes": "9&10 News (Madison Carney). Follow-up: Mill Pond dam was Buzz Fri 11/13 (last week); new news = removal decision. https://www.9and10news.com/2026/11/17/northport-mill-pond-dam-removal-moves-forward-after-vote-rejection/",
+    "article_url": "https://www.9and10news.com/2026/11/17/northport-mill-pond-dam-removal-moves-forward-after-vote-rejection/",
+    "article_title": "Northport mill pond dam removal moves forward after vote rejection (9&10 News, Nov 17)",
+    "jokes": [
+     "The fish have been waiting at that culvert for decades. Somebody finally hit the door buzzer.",
+     "Three to five years. That's government speed for 'grab a lawn chair.'"
+    ]
+   }
+  ]
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: LAUNCH NIGHT<br>• WED NOV 18: GTA 6 unlocks at midnight tonight (12 AM Thursday) on PS5 and Xbox Series X|S. The worldwide rollout is staggered and started in the earliest time zones at 6 AM ET today.<br>• NEW OVERNIGHT: Sony pushed a PS5 system update last night that's REQUIRED to play GTA 6. Download it before midnight, on top of the 602 MB day-one patch.<br>• Space and price: clear up to 212 GB. Standard Edition is $80, Ultimate is $100.<br>• Reviews: Insider Gaming REPORTS the review embargo lifts at 6 AM ET today (not confirmed by Rockstar). Metacritic already pulled fake user reviews and locked user ratings until after launch.<br>• Midnight events: we found no announced midnight launch event at Northern Michigan stores. No server outages reported as of last night.<br>➜ TAKE: Tonight at midnight, half of Northern Michigan's productivity goes to Vice City. Bosses, plan accordingly.<br>😂 JOKES: Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation. / If your coworker 'has the flu' tomorrow, check if the flu is named Lucia.",
+  "notes": "Sources (10 checked): Kotaku 11/17 PS5 required update + 602 MB patch + staggered launch 6 AM ET https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868 · PlayStation Blog pre-download/212 GB https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/ · Engadget $80/$100, up to 212 GB https://www.engadget.com/2311841/gta-6-now-available-for-preload/ · Polygon preload/file size https://www.polygon.com/gta-6-preload-when-is-ps5-xbox-times-file-size-gb-poster-map-rockstar/ · VGC Metacritic fake reviews 11/17 https://www.videogameschronicle.com/news/metacritic-has-already-had-to-remove-fake-gta-6-user-reviews/ · VGTimes citing Insider Gaming embargo report (RUMOR/REPORT, unconfirmed) https://vgtimes.com/gaming-news/174913-gta-6-review-embargo-is-reportedly-set-for-november-18.html · Metacritic page (tbd, 0 reviews at 4 AM) https://www.metacritic.com/game/grand-theft-auto-vi/ · IGN day-one patch https://sea.ign.com/grand-theft-auto-vi-rumored-title/252007/gta-6-gets-another-day-one-patch-and-its-1gb-bigger-on-xbox · NBC News https://www.youtube.com/watch?v=gkOCrN4WTdQ · Fortune (Logitech Game Day) https://fortune.com/2026/11/10/logitech-gaming-day-off-ahead-of-grand-theft-auto-six-release-ceo-hanneke-faber-boost-productivity/ . Northern Michigan midnight events: none found in searches (GameStop Grand Traverse Mall has no announced midnight opening per web search; not confirmed by GameStop). Servers: no outage reported as of 11/17 (consolyte status page). Midnight wording per Truce rule.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-18-gta6-01",
+    "title": "UNLOCKS AT MIDNIGHT",
+    "recap": "GTA 6 unlocked at midnight (12 AM Thursday) after a staggered worldwide rollout that started at 6 AM ET Wednesday.",
+    "article_url": "https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868",
+    "article_title": "PS5 Gets Last-Minute Software Update That's Required To Play GTA 6 (Kotaku)",
+    "jokes": [
+     "Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation.",
+     "If your coworker 'has the flu' tomorrow, check if the flu is named Lucia."
+    ]
+   },
+   {
+    "id": "2026-11-18-gta6-02",
+    "title": "REQUIRED PS5 UPDATE",
+    "recap": "Sony pushed a required PS5 system update the night before launch, on top of the 602 MB day-one patch.",
+    "article_url": "https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868",
+    "article_title": "PS5 Gets Last-Minute Software Update That's Required To Play GTA 6 (Kotaku)",
+    "jokes": [
+     "Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation.",
+     "If your coworker 'has the flu' tomorrow, check if the flu is named Lucia."
+    ]
+   },
+   {
+    "id": "2026-11-18-gta6-03",
+    "title": "212 GB, $80/$100",
+    "recap": "Players needed up to 212 GB of space; the game is $80 standard and $100 Ultimate.",
+    "article_url": "https://www.engadget.com/2311841/gta-6-now-available-for-preload/",
+    "article_title": "GTA 6 is now available for preload if you have a spare 212GB (Engadget)",
+    "jokes": [
+     "Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation.",
+     "If your coworker 'has the flu' tomorrow, check if the flu is named Lucia."
+    ]
+   },
+   {
+    "id": "2026-11-18-gta6-04",
+    "title": "REVIEWS AND METACRITIC",
+    "recap": "Reviews were reported to drop at 6 AM ET Wednesday, and Metacritic pulled fake user reviews and locked ratings.",
+    "article_url": "https://www.videogameschronicle.com/news/metacritic-has-already-had-to-remove-fake-gta-6-user-reviews/",
+    "article_title": "Metacritic has already had to remove fake GTA 6 user reviews (VGC)",
+    "jokes": [
+     "Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation.",
+     "If your coworker 'has the flu' tomorrow, check if the flu is named Lucia."
+    ]
+   },
+   {
+    "id": "2026-11-18-gta6-05",
+    "title": "NO LOCAL MIDNIGHT EVENTS",
+    "recap": "We found no announced midnight launch events at Northern Michigan stores.",
+    "article_url": "https://www.polygon.com/gta-6-grand-theft-auto-release-time-pdt-edt/",
+    "article_title": "GTA 6 release time in your time zone (Polygon)",
+    "jokes": [
+     "Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation.",
+     "If your coworker 'has the flu' tomorrow, check if the flu is named Lucia."
+    ]
+   }
+  ],
+  "article_url": "https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868",
+  "article_title": "PS5 Gets Last-Minute Software Update That's Required To Play GTA 6 (Kotaku)",
+  "jokes": [
+   "Download a 212 GB game, a system update and a patch. That's not a video game, that's a home renovation.",
+   "If your coworker 'has the flu' tomorrow, check if the flu is named Lucia."
+  ]
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "THANKSGIVING IN A BOX: ARE THE BUNDLES WORTH IT?<br>• USA TODAY says this year's Farm Bureau Thanksgiving cost survey isn't out yet; last year a classic dinner for 10 averaged $55.18.<br>• This year's bundles: Walmart says its $35 bundle feeds 10, with a Butterball at 97 cents a pound; Amazon has a $25 meal with an 8-pound turkey; ALDI's is under $39; Costco has a $200 spread with free-range turkey breast and ready sides.<br>• The catch: most bundles still need butter, milk, pans and the other odds and ends, so price it out against your own list, and stock up on shelf-stable stuff early.<br>➜ LOCAL ANGLE: Eight days out. Up here that's also deer camp leftovers, cherry pie and a Meijer run nobody wants to make on Wednesday night.<br>➜ BAIT: Text 231-929-4487: are you a bundle-buyer or a from-scratch family? And what's the one dish you'd never let come out of a box?<br>😂 JOKES: A $25 Thanksgiving with an 8-pound turkey. That's not a feast, that's a large chicken with confidence. / Every family has one relative who 'brings the rolls.' Twelve rolls. For twenty people.",
+  "notes": "USA TODAY 11/10 https://www.usatoday.com/story/money/2026/11/10/are-thanksgiving-grocery-store-bundles-worth-it-more-holiday-savings/92705806007/ (AFBF 2025 $55.18; Walmart $35, Amazon $25, ALDI <$39, Costco $200). AFBF 2026 national survey not yet published as of 4 AM. Gas skipped: gas was Monday's lifestyle (no repeat). Deer camp/Meijer line is AJ color, not a fact claim.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-18-lifestyle-01",
+    "title": "THANKSGIVING IN A BOX",
+    "recap": "We asked if grocery-store Thanksgiving bundles are worth it: Walmart $35 feeds 10, Amazon $25, ALDI under $39, Costco $200.",
+    "article_url": "https://www.usatoday.com/story/money/2026/11/10/are-thanksgiving-grocery-store-bundles-worth-it-more-holiday-savings/92705806007/",
+    "article_title": "2026 Thanksgiving meal deals, are they worth it and what do you save? (USA TODAY)",
+    "jokes": [
+     "A $25 Thanksgiving with an 8-pound turkey. That's not a feast, that's a large chicken with confidence.",
+     "Every family has one relative who 'brings the rolls.' Twelve rolls. For twenty people."
+    ]
+   }
+  ],
+  "article_url": "https://www.usatoday.com/story/money/2026/11/10/are-thanksgiving-grocery-store-bundles-worth-it-more-holiday-savings/92705806007/",
+  "article_title": "2026 Thanksgiving meal deals, are they worth it and what do you save? (USA TODAY)",
+  "jokes": [
+   "A $25 Thanksgiving with an 8-pound turkey. That's not a feast, that's a large chicken with confidence.",
+   "Every family has one relative who 'brings the rolls.' Twelve rolls. For twenty people."
+  ]
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "THE OFFICE: THE GIFT EXCHANGE TAX<br>• A new Zety survey of 1,040 workers says 43% feel financial stress from workplace holiday gift expectations.<br>• 35% have bought or chipped in on a gift for their manager because they felt they had to.<br>• And the wish list gap: 77% would most like a cash bonus, but only 34% usually get one.<br>➜ BAIT: Text 231-929-4487: office gift exchange, love it or dread it? What's the worst gift you ever pulled?<br>😂 JOKES: Nothing says holiday spirit like Venmo-ing $20 for a boss who makes six figures. / Every office has one White Elephant gift that's been regifted since 2009. It's a candle. It's always a candle.<br><br>THE OFFICE: HOLIDAY PARTY BUDGETS ARE UP<br>• ezCater's 2026 Workplace Holiday Party Report says office party budgets are up 13% on average this year.<br>• 84% of employees plan to go, and 71% say the free food and drinks are the main reason.<br>• Gen Z now plans 24% of office holiday parties, up 69% from last year.<br>➜ BAIT: Text 231-929-4487: best office holiday party you've been to, or the one everybody still talks about (keep it clean)?<br>😂 JOKES: 71% go for the free food. The other 29% are lying. / Gen Z planning the party means it'll be a charcuterie board and a playlist nobody over 30 recognizes.<br><br>SCHOOL: THE AI BOOK REPORT<br>• A Fordham Institute survey of over 2,000 students and recent grads says just over three-quarters of high schoolers misuse tech during school hours.<br>• About 1 in 5 use AI without the teacher's permission; 48% of those use it on math problems and 36% to summarize books or skip reading them.<br>• 62% say they spend more than half of class time on school-issued devices.<br>➜ BAIT: Text 231-929-4487: parents, what did YOU do to get out of reading the book? (CliffsNotes counts.)<br>😂 JOKES: We had CliffsNotes. Same crime, smaller font. / Kids today ask AI to summarize the book. I asked my older cousin, and he made it up.<br><br>SCHOOL: KALKASKA KIDS LEARNED TO SAVE A LIFE<br>• Kalkaska High School students just finished a six-week first-aid course from the sheriff's office and The Lighthouse Rehabilitation, paid for by a community policing grant.<br>• They practiced CPR on adult, child and infant mannequins and learned AEDs, choking response, tourniquets and naloxone.<br>• About 60 students took part, and 26 made all six sessions to qualify for Red Cross certification.<br>➜ BAIT: Text 231-929-4487: what's the most useful thing you learned in high school that wasn't on any test?<br>😂 JOKES: These kids can do CPR. I still panic when the smoke detector chirps. / Most useful thing I learned in high school: how to fold a note into a tiny football.",
+  "notes": "Office: https://www.cpapracticeadvisor.com/2026/11/11/43-of-workers-says-holiday-workplace-gifting-causes-finance-stress/193705/ · https://www.ezcater.com/company/press-release/holiday-party-budgets-climb-13-as-employees-gather-for-year-end-workplace-celebrations/<br>School: https://www.k12dive.com/news/majority-of-students-report-misusing-tech-during-school-hours/874322/ · https://www.9and10news.com/2026/11/17/community-policing-grant-provides-life-saving-training-for-kalkaska-youth/<br>Split: 2 office, 2 school (addenda). Zety survey 1,040 US workers Oct 19, 2026 (Pollfish); ezCater survey July 2026; Fordham fielded Feb-Mar 2026 (report released this fall); Kalkaska 9&10 11/17 (article says ~60 students across two classes and 'out of 50 students' 26 completed; we say about 60 took part).",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-18-officeschool-01",
+    "title": "THE OFFICE: THE GIFT EXCHANGE TAX",
+    "recap": "We talked about the Zety survey: 43% of workers stress over office holiday gifts, and 77% just want a cash bonus.",
+    "article_url": "https://www.cpapracticeadvisor.com/2026/11/11/43-of-workers-says-holiday-workplace-gifting-causes-finance-stress/193705/",
+    "article_title": "43% of Workers Say Holiday Workplace Gifting Causes Finance Stress (CPA Practice Advisor, Nov 11)",
+    "jokes": [
+     "Nothing says holiday spirit like Venmo-ing $20 for a boss who makes six figures.",
+     "Every office has one White Elephant gift that's been regifted since 2009. It's a candle. It's always a candle."
+    ]
+   },
+   {
+    "id": "2026-11-18-officeschool-02",
+    "title": "THE OFFICE: HOLIDAY PARTY BUDGETS ARE UP",
+    "recap": "We talked about ezCater's report: office holiday party budgets up 13%, and 71% of workers go for the free food.",
+    "article_url": "https://www.ezcater.com/company/press-release/holiday-party-budgets-climb-13-as-employees-gather-for-year-end-workplace-celebrations/",
+    "article_title": "Holiday Party Budgets Climb 13% as Employees Gather for Year-End Workplace Celebrations (ezCater, Nov 12)",
+    "jokes": [
+     "71% go for the free food. The other 29% are lying.",
+     "Gen Z planning the party means it'll be a charcuterie board and a playlist nobody over 30 recognizes."
+    ]
+   },
+   {
+    "id": "2026-11-18-officeschool-03",
+    "title": "SCHOOL: THE AI BOOK REPORT",
+    "recap": "We talked about a Fordham survey: about 1 in 5 high schoolers use AI without permission, often to skip the reading.",
+    "article_url": "https://www.k12dive.com/news/majority-of-students-report-misusing-tech-during-school-hours/874322/",
+    "article_title": "Majority of students report misusing tech during school hours (K-12 Dive, Nov 11)",
+    "jokes": [
+     "We had CliffsNotes. Same crime, smaller font.",
+     "Kids today ask AI to summarize the book. I asked my older cousin, and he made it up."
+    ]
+   },
+   {
+    "id": "2026-11-18-officeschool-04",
+    "title": "SCHOOL: KALKASKA KIDS LEARNED TO SAVE A LIFE",
+    "recap": "We gave a shout to Kalkaska High students who finished a six-week CPR and first-aid course; 26 qualified for Red Cross certification.",
+    "article_url": "https://www.9and10news.com/2026/11/17/community-policing-grant-provides-life-saving-training-for-kalkaska-youth/",
+    "article_title": "Community policing grant provides life-saving training for Kalkaska youth (9&10 News, Nov 17)",
+    "jokes": [
+     "These kids can do CPR. I still panic when the smoke detector chirps.",
+     "Most useful thing I learned in high school: how to fold a note into a tiny football."
+    ]
+   }
+  ],
+  "article_url": "https://www.cpapracticeadvisor.com/2026/11/11/43-of-workers-says-holiday-workplace-gifting-causes-finance-stress/193705/",
+  "article_title": "43% of Workers Say Holiday Workplace Gifting Causes Finance Stress (CPA Practice Advisor, Nov 11)",
+  "jokes": [
+   "Nothing says holiday spirit like Venmo-ing $20 for a boss who makes six figures.",
+   "Every office has one White Elephant gift that's been regifted since 2009. It's a candle. It's always a candle."
+  ]
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": []
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "\"Three Good Things, Written Down\"<br><br>It's 59 in the middle of November, the sun's coming back out, and Thanksgiving is eight days away, which means a lot of us are about to spend a whole week thinking about what we're grateful for, usually while we're stressed about the turkey. So here's a way to get the good part early, and it takes about five minutes. Tonight, before bed, grab any piece of paper and write down three things that went well today, little ones count, the parking spot, the text from your sister, the kid who actually put shoes on the first time, and next to each one, write one line about why it happened. That's it, and the reason it works is that our brains are wired to replay what went wrong, so writing down what went right, and why, slowly teaches your attention to notice it on its own. Researchers at the University of Pennsylvania had people do exactly this every night for one week, and they found people were happier and less down, and the effect was still there six months later. So tonight, on this warm, weird November night, three good things and one 'why' each. And if you want to share one with me, text the studio at 231-929-4487. I'd love to hear what went right.",
+  "notes": "Evidence: Seligman, Steen, Park & Peterson (2005), Positive Psychology Progress, American Psychologist 60(5): Three Good Things nightly for one week increased happiness and decreased depressive symptoms, effects lasting six months. https://ppc.sas.upenn.edu/sites/default/files/ppprogressarticle.pdf ; practice summary https://ggia.berkeley.edu/practice/three-good-things . Not a clinical claim. Move not used this week (Mon: park the list before bed / 10 min daylight; Tue: send a text). Tie: November is National Gratitude Month (National Day Calendar). ~60 s.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-18-mental-01",
+    "title": "THREE GOOD THINGS, WRITTEN DOWN",
+    "recap": "The Mental Health Minute was 'Three Good Things': write down three things that went well today and why, before bed.",
+    "article_url": "https://ppc.sas.upenn.edu/sites/default/files/ppprogressarticle.pdf",
+    "article_title": "Positive Psychology Progress: Empirical Validation of Interventions (Seligman et al., 2005)",
+    "jokes": []
+   }
+  ],
+  "article_url": "https://ppc.sas.upenn.edu/sites/default/files/ppprogressarticle.pdf",
+  "article_title": "Positive Psychology Progress: Empirical Validation of Interventions (Seligman et al., 2005)",
+  "jokes": []
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "custom": false,
+  "requester": "",
+  "song": "Kokomo",
+  "artist": "The Beach Boys",
+  "single_year": "1988",
+  "chart_records": [
+   "No. 1 Billboard Hot 100 (Nov. 5, 1988), one week",
+   "The Beach Boys' fourth and last Hot 100 No. 1",
+   "UK peak: not verified this morning"
+  ],
+  "origin": "Written for the Tom Cruise movie Cocktail by Mike Love, Terry Melcher, John Phillips and Scott McKenzie; Love wrote the \"Aruba, Jamaica\" chorus. A soundtrack single, not an album cut; it later appeared on 1989's Still Cruisin'. Brian Wilson didn't sing on it.",
+  "song_story_source": "American Songwriter, 'On This Day in 1988: The Beach Boys' Scored Their Last No. 1 Hit with Kokomo' https://americansongwriter.com/on-this-day-in-1988-the-beach-boys-scored-their-last-no-1-hit-with-kokomo/",
+  "article_url": "https://americansongwriter.com/on-this-day-in-1988-the-beach-boys-scored-their-last-no-1-hit-with-kokomo/",
+  "article_title": "On This Day in 1988: The Beach Boys' Scored Their Last No. 1 Hit with \"Kokomo\" (American Songwriter)",
+  "jokes": [
+   "Aruba, Jamaica, ooh I wanna take ya... to Traverse City, where it's also 59 today. Close enough.",
+   "Fun fact: Kokomo isn't a real place. Neither is my beach body, but here we are."
+  ],
+  "song_story": "Written for the Tom Cruise movie Cocktail by Mike Love, Terry Melcher, John Phillips and Scott McKenzie; Love wrote the \"Aruba, Jamaica\" chorus. A soundtrack single, not an album cut; it later appeared on 1989's Still Cruisin'. Brian Wilson didn't sing on it.",
+  "content": "KOKOMO — THE BEACH BOYS<br>• Single: 1988, from the Cocktail soundtrack (not an album cut)<br>• No. 1 on the Billboard Hot 100 on Nov. 5, 1988, for one week, their fourth and last No. 1<br>• UK peak: not verified this morning<br>🎤 SONG STORY: Mike Love, producer Terry Melcher, John Phillips of the Mamas and the Papas and Scott McKenzie wrote it for Cocktail; Love wrote the \"Aruba, Jamaica\" chorus, and the video was shot at Disney World's Grand Floridian with John Stamos on percussion. (American Songwriter)<br>• Why today: 59 degrees in November is as close to Kokomo as we get, and it was the No. 1 song in America this very month in 1988.<br>😂 JOKES: Aruba, Jamaica, ooh I wanna take ya... to Traverse City, where it's also 59 today. Close enough. / Fun fact: Kokomo isn't a real place. Neither is my beach body, but here we are.",
+  "notes": "Backup pick (no flashback-request file today). Source: American Songwriter https://americansongwriter.com/on-this-day-in-1988-the-beach-boys-scored-their-last-no-1-hit-with-kokomo/ ; Billboard list https://www.billboard.com/lists/beach-boys-top-songs-billboard-hot-100/kokomo/ . Lyric check: clean.",
+  "items": [
+   {
+    "id": "2026-11-18-flash-01",
+    "title": "KOKOMO — THE BEACH BOYS",
+    "recap": "Our 9 AM Flashback was the Beach Boys' 'Kokomo,' No. 1 in America in November 1988.",
+    "article_url": "https://americansongwriter.com/on-this-day-in-1988-the-beach-boys-scored-their-last-no-1-hit-with-kokomo/",
+    "article_title": "On This Day in 1988: The Beach Boys' Scored Their Last No. 1 Hit with \"Kokomo\" (American Songwriter)",
+    "jokes": [
+     "Aruba, Jamaica, ooh I wanna take ya... to Traverse City, where it's also 59 today. Close enough.",
+     "Fun fact: Kokomo isn't a real place. Neither is my beach body, but here we are."
+    ]
+   }
+  ]
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "TOPIC: WHO'S THE GREATEST MOVIE PRINCESS EVER?<br>• It's National Princess Day, and Mickey turns 98 today<br>• Prompt 1: Rank 'em: Leia, Buttercup from The Princess Bride, Fiona from Shrek, Mia from The Princess Diaries, or a Disney classic. Who's No. 1?<br>• Prompt 2: Which movie princess would actually survive a Michigan winter?<br>• Prompt 3: Who's the real princess in your house? (Pets count.)<br>😂 JOKES: The real princess in every house is the cat. She has a throne, a staff, and zero responsibilities. / Buttercup waited five years for Westley. I won't wait five minutes for a drive-thru.",
+  "notes": "For Courtney Rehmer (middays). Peg: National Princess Day https://nationaldaycalendar.com/celebrations/national-princess-day-november-18 ; pairs with the supercut theme.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-18-cross-01",
+    "title": "GREATEST MOVIE PRINCESS",
+    "recap": "For National Princess Day, Courtney ranked the greatest movie princesses and asked who'd survive a Michigan winter.",
+    "article_url": "https://nationaldaycalendar.com/celebrations/national-princess-day-november-18",
+    "article_title": "National Princess Day (National Day Calendar)",
+    "jokes": [
+     "The real princess in every house is the cat. She has a throne, a staff, and zero responsibilities.",
+     "Buttercup waited five years for Westley. I won't wait five minutes for a drive-thru."
+    ]
+   }
+  ],
+  "article_url": "https://nationaldaycalendar.com/celebrations/national-princess-day-november-18",
+  "article_title": "National Princess Day (National Day Calendar)",
+  "jokes": [
+   "The real princess in every house is the cat. She has a throne, a staff, and zero responsibilities.",
+   "Buttercup waited five years for Westley. I won't wait five minutes for a drive-thru."
+  ]
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "Fridays only",
+  "notes": "",
+  "custom": false,
+  "items": []
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "GTA 6: BIGGEST ENTERTAINMENT LAUNCH EVER? · NEWS AUDIO<br>🎙️ SET UP: GTA 6 unlocks at midnight tonight, and NBC News says it may be the biggest entertainment launch of all time. \"Here's NBC News on the fans already taking the day off.\"<br>🔈 AUDIO SOURCE: NBC News, official YouTube, Nov 16, 2026. Credit: \"NBC News.\"<br>• A fan already took the day off; a PCMag survey says 8% of adult US gamers, more than 12 million people, plan to take time off; Logitech gave its 7,000 employees a day off; an Army unit in Georgia offered a four-day pass for re-enlisting; $1 billion in presales; IGN calls it the biggest entertainment launch.<br>🔊 IN: \"For 26-year-old Brian Carr, this week feels like a holiday.\"<br>OUT: \"...the biggest entertainment launch.\" (1:06)<br>~66 s · PLAY or TALK-OVER · READY<br>➜ WHY: GTA 6 is THE story tonight, and the numbers do the talking. Pairs with the GTA 6 Watch card.<br><br>HOTEL CARPETS: PACK YOUR SLIPPERS · NEWS AUDIO<br>🎙️ SET UP: Thanksgiving travel is next week, and Inside Edition took a wet-vac to two Times Square hotel carpets. \"Inside Edition sent what came out to a lab.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube, Nov 17, 2026. Credit: \"Inside Edition.\"<br>• A few passes with a wet-vac at a Sheraton and a Hilton in Times Square pulled up gray-brown sludge; a lab found five types of bacteria at each hotel; Hilton says cleanliness is a top priority; Sheraton didn't respond.<br>🔊 IN: \"You may want to rethink walking around a hotel room barefoot.\"<br>OUT: \"...think twice before going barefoot.\" (1:22)<br>~82 s · PLAY · READY<br>➜ WHY: Holiday travel peg, a great 'ew' reaction, and everybody listening has a slipper opinion.",
+  "notes": "GTA 6: BIGGEST ENTERTAINMENT LAUNCH EVER?: https://www.youtube.com/watch?v=gkOCrN4WTdQ · cut file /workspace/morning-rush/clips/2026-11-18/c05-nbc-gta6-biggest-launch.mp3 · ⚠️ FLAG: Network news audio: get their OK before playing it straight, or talk over it. Mentions an Army re-enlistment incentive (light, factual). Skipped NBC's line calling the game 'controversial' / stealing cars. Clean language.<br>HOTEL CARPETS: PACK YOUR SLIPPERS: https://www.youtube.com/watch?v=DeCRWfgZDR0 · cut file /workspace/morning-rush/clips/2026-11-18/c06-inside-edition-hotel-carpets.mp3 · ⚠️ FLAG: Syndicated TV audio: get their OK before playing it straight, or talk over it. Mild gross-out (sludge; bacteria that can cause pneumonia and skin infections). Names two hotel chains (factual, from the report). Clean language.<br>Local news audio: no 9&10/UpNorthLive/IPR video for today's Buzz stories found on official YouTube this morning, so none picked.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-18-c05",
+    "slot": "NEWS AUDIO",
+    "title": "GTA 6: BIGGEST ENTERTAINMENT LAUNCH EVER?",
+    "body": "GTA 6: BIGGEST ENTERTAINMENT LAUNCH EVER? · NEWS AUDIO<br>🎙️ SET UP: GTA 6 unlocks at midnight tonight, and NBC News says it may be the biggest entertainment launch of all time. \"Here's NBC News on the fans already taking the day off.\"<br>🔈 AUDIO SOURCE: NBC News, official YouTube, Nov 16, 2026. Credit: \"NBC News.\"<br>• A fan already took the day off; a PCMag survey says 8% of adult US gamers, more than 12 million people, plan to take time off; Logitech gave its 7,000 employees a day off; an Army unit in Georgia offered a four-day pass for re-enlisting; $1 billion in presales; IGN calls it the biggest entertainment launch.<br>🔊 IN: \"For 26-year-old Brian Carr, this week feels like a holiday.\"<br>OUT: \"...the biggest entertainment launch.\" (1:06)<br>~66 s · PLAY or TALK-OVER · READY<br>➜ WHY: GTA 6 is THE story tonight, and the numbers do the talking. Pairs with the GTA 6 Watch card.<br>⚠️ FLAG: Network news audio: get their OK before playing it straight, or talk over it. Mentions an Army re-enlistment incentive (light, factual). Skipped NBC's line calling the game 'controversial' / stealing cars. Clean language.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c05-nbc-gta6-biggest-launch.mp3",
+    "ready": true,
+    "recap": "NBC News on GTA 6 maybe being the biggest entertainment launch ever, with fans taking the day off."
+   },
+   {
+    "id": "2026-11-18-c06",
+    "slot": "NEWS AUDIO",
+    "title": "HOTEL CARPETS: PACK YOUR SLIPPERS",
+    "body": "HOTEL CARPETS: PACK YOUR SLIPPERS · NEWS AUDIO<br>🎙️ SET UP: Thanksgiving travel is next week, and Inside Edition took a wet-vac to two Times Square hotel carpets. \"Inside Edition sent what came out to a lab.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube, Nov 17, 2026. Credit: \"Inside Edition.\"<br>• A few passes with a wet-vac at a Sheraton and a Hilton in Times Square pulled up gray-brown sludge; a lab found five types of bacteria at each hotel; Hilton says cleanliness is a top priority; Sheraton didn't respond.<br>🔊 IN: \"You may want to rethink walking around a hotel room barefoot.\"<br>OUT: \"...think twice before going barefoot.\" (1:22)<br>~82 s · PLAY · READY<br>➜ WHY: Holiday travel peg, a great 'ew' reaction, and everybody listening has a slipper opinion.<br>⚠️ FLAG: Syndicated TV audio: get their OK before playing it straight, or talk over it. Mild gross-out (sludge; bacteria that can cause pneumonia and skin infections). Names two hotel chains (factual, from the report). Clean language.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c06-inside-edition-hotel-carpets.mp3",
+    "ready": true,
+    "recap": "Inside Edition vacuumed two Times Square hotel carpets and found bacteria. Pack your slippers."
+   }
+  ]
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "10 of 10 clips today + supercut, all new audio, 0 repeats (10 READY + supercut READY)<br><br>SHOW OPENER SUPERCUT: NATIONAL PRINCESS DAY · SHOW OPENER SUPERCUT<br>🎙️ SET UP: National Princess Day (and Mickey's 98th birthday). Eight quick movie-princess bites, then straight into the intro that ends on \"Showtime.\"<br>🔈 AUDIO SOURCE: Montage of movie bites (credits in order below).<br>• Shrek (2001): \"Are you Princess Fiona?\" — YouTube: Boxoffice ANIMATION Movie Scenes<br>• The Princess Diaries (2001): \"...Princess of Genovia.\" — YouTube: Nostalgic Disney<br>• The Princess Diaries (2001): \"Me? A... a princess? Shut up!\" — YouTube: Nostalgic Disney<br>• The Princess Bride (1987): \"As you wish.\" — YouTube: Movieclips<br>• Shrek (2001): \"You didn't slay the dragon?\" — YouTube: Boxoffice ANIMATION Movie Scenes<br>• The Princess and the Frog (2009): \"Princess! Princess! Do not panic!\" — YouTube: Disney Kids<br>• Star Wars (1977), Princess Leia: \"Help me, Obi-Wan Kenobi. You're my only hope.\" — YouTube: Empire Fan Productions<br>• The Princess Bride (1987): \"Inconceivable!\" — YouTube: Movieclips upload<br>🔊 IN: \"Are you Princess Fiona?\" (0:00)<br>OUT: \"...Inconceivable!\" (0:23)<br>~23 s · PLAY · READY<br>➜ WHY: It's National Princess Day, and these are the most recognizable princess lines in movie history, ending on the punchiest one.<br><br>VANNA WHITE: I HAD TO PHYSICALLY TURN THE LETTERS · SUPER-CLIP 6 AM<br>🎙️ SET UP: Vanna White, TV royalty on National Princess Day, stopped by The Tonight Show. Jimmy asks about her very first puzzle. \"Here's Vanna White with Jimmy Fallon, from The Tonight Show on NBC.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov 17, 2026. Credit: \"from The Tonight Show Starring Jimmy Fallon.\"<br>• Vanna's first puzzle was General Hospital and her first letter was a T; she was so nervous her teeth chattered; back then she had to physically turn the letters; fans treat her like the next-door neighbor because she's in their living room every night; Jimmy says people don't like him.<br>🔊 IN: \"Do you remember what your first puzzle was?\"<br>OUT: \"No, no. It's the best.\" (0:54)<br>~54 s · PLAY · READY<br>➜ WHY: Everybody knows Vanna, it works with no picture, and Jimmy's self-own at the end is the button.<br><br>ZAINAB JOHNSON: WHO NEEDS A POT FILLER? · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Comedian Zainab Johnson made her Tonight Show debut with stand-up about buying her first house. \"From The Tonight Show, here's Zainab Johnson.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov 18, 2026; her special Toxically Optimistic is on Netflix. Credit: \"Zainab Johnson on The Tonight Show.\"<br>• Her realtor finds a house with real hardwood floors and a pot filler, a faucet over the stove, and she cannot figure out what she would ever cook in a pot that big.<br>🔊 IN: \"My realtor was like, what do you want in the house?\"<br>OUT: \"...risk spilling water on your hardwood floors.\" (1:30)<br>~90 s · PLAY · READY<br>➜ WHY: Fresh from last night, clean, and every homeowner has stood in a kitchen asking 'who needs that?'<br><br>K-VON: REAL MEN WEAR CARGO PANTS · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Comedian K-Von has a problem with skinny jeans, and he is from the 90s. \"This is K-Von from Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube, Nov 14, 2026. Credit: \"K-Von, from Dry Bar Comedy.\"<br>• Fashion keeps moving on him; he's from the 90s, when men wore cargo pants; skinny jeans are painful; would you trust a plumber who showed up in skinny jeans?<br>🔊 IN: \"One thing I don't like about getting older...\"<br>OUT: \"...Be back with this toilet in no time.\" (0:57)<br>~57 s · PLAY · READY<br>➜ WHY: Z93 is hits from the 90s to now, and this is a 90s-to-now fashion fight. Clean family comedy.<br><br>TYLER BOEH: TECHNO NEEDS ONE DANCE MOVE · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Comedian Tyler Boeh loves techno because you only need one dance move for every song. \"Tyler Boeh, from Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube (2018 upload). Credit: \"Tyler Boeh, from Dry Bar Comedy.\"<br>• One dance move covers an entire genre, 'next song, next song'; every rap song wants its own dance (the Superman, the Stanky Leg, the Whip, the Nae Nae); techno is inclusive, even for Nana with one good hip.<br>🔊 IN: \"I learned to love all kinds of different music...\"<br>OUT: \"...You got one good hip. Still in the game.\" (1:22)<br>~82 s · PLAY · READY<br>➜ WHY: Works on the drive, everybody's been at that wedding, and the Nana button lands.<br><br>THE DOG WHO CAN BALANCE ANYTHING · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Meet Mendo, a dog so obsessed with his ball he can balance anything on his head. \"From The Dodo, here's Mendo's owner.\"<br>🔈 AUDIO SOURCE: The Dodo, official YouTube, Nov 11, 2026. Credit: \"The Dodo.\"<br>• Mendo balances big sticks, small sticks, a lightsaber, a broomstick; it started when they put flowers on his head for a picture; when a ball is present, he becomes a monk.<br>🔊 IN: \"He kind of like tiptoes like a ballerina.\"<br>OUT: \"...he's just so captivating.\" (1:26)<br>~86 s · PLAY · READY<br>➜ WHY: Pure joy, no sad parts, and 'he becomes a monk and meditates on the ball' is a great line.<br><br>TITAN: THE LAST DACHSHUND FINALLY GOES HOME · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A New York rescue took in more than 40 dachshunds at once, and one 14-year-old named Titan was the very last to get picked. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo, official YouTube, Nov 14, 2026. Credit: \"The Dodo.\"<br>• More than 40 mostly senior dachshunds from a retired breeder needed homes; the rescue organized over 42 foster homes; one by one they were adopted; Titan waited, and at 15 he finally went home.<br>🔊 IN: \"Titan watched almost 40 dachshunds find their forever homes...\"<br>OUT: \"...finally get their happy ending.\" (1:07)<br>~67 s · PLAY · READY<br>➜ WHY: Thanksgiving-week feel-good with a happy ending; every senior-dog person will text in.<br><br>PIPER THE OPOSSUM AND HER GROUNDHOG BFFS · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A stranger stopped to help an injured opossum, and now she lives with two rescued groundhogs. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo, official YouTube, Nov 17, 2026. Credit: \"The Dodo.\"<br>• Piper was found on the roadside after being hit by a car; a kind stranger put her on a heated passenger seat and called the rescue; she recovered and now lives with a crew of unreleasable opossums and groundhogs.<br>🔊 IN: \"This opossum was hit by a car and left on the side of the road...\"<br>OUT: \"...one small but beautiful life.\" (0:45)<br>~45 s · PLAY · READY<br>➜ WHY: Odd-couple animal friends, and the heated-seat detail is a perfect Michigan November touch.<br><br>GTA 6: CALLING IN 'SICK' THURSDAY · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: If your coworker is \"under the weather\" tomorrow, it might be GTA 6. \"Here's KGW News in Portland.\"<br>🔈 AUDIO SOURCE: KGW News (Portland, Ore.), official YouTube, Nov 16, 2026. Credit: \"KGW News.\"<br>• Fans say they'll call out Thursday and Friday; research found about 10% of employed gamers plan to skip work on launch day and another 30% are considering time off; $80 standard.<br>🔊 IN: \"If you are planning on calling out Thursday and Friday...\"<br>OUT: \"...for the Ultimate Edition.\" (0:37)<br>~37 s · TALK-OVER · READY<br>➜ WHY: Short, punchy, pairs with the GTA card and the office bits. Better as a talk-over bed.",
+  "notes": "SHOW OPENER SUPERCUT: NATIONAL PRINCESS DAY: https://www.youtube.com/watch?v=Y6jgIlqvOKk · https://www.youtube.com/watch?v=z5SluxprhnA · https://www.youtube.com/watch?v=z5SluxprhnA · https://www.youtube.com/watch?v=niul8Hy-3wk · https://www.youtube.com/watch?v=Y6jgIlqvOKk · https://www.youtube.com/watch?v=2VKy0IUpLa0 · https://www.youtube.com/watch?v=zGwszApFEcY · https://www.youtube.com/watch?v=D9MS2y2YU_o · cut file /workspace/morning-rush/clips/2026-11-18/c00-opener-supercut.mp3 · ⚠️ FLAG: \"Shut up!\" (The Princess Diaries, playful, not a curse) for Truce to OK. Leia and Shrek bites come from fan uploads of the films, not official studio channels. Otherwise clean.<br>VANNA WHITE: I HAD TO PHYSICALLY TURN THE LETTERS: https://www.youtube.com/watch?v=m62qYsKxAi8 · cut file /workspace/morning-rush/clips/2026-11-18/c01-vanna-white-teaches-jimmy.mp3 · ⚠️ FLAG: Clean. Two \"oh my gosh\" (fine). Cut out one line where she says she'd \"screw that up\" (mild). The \"teach me the Vanna\" part is visual and not in the cut.<br>ZAINAB JOHNSON: WHO NEEDS A POT FILLER?: https://www.youtube.com/watch?v=SYgAb7OEE3c · cut file /workspace/morning-rush/clips/2026-11-18/c02-zainab-johnson-pot-filler.mp3 · ⚠️ FLAG: Clean. Started after an earlier line about being 'one of those young white professionals' in a changing neighborhood (race-adjacent), not in the cut.<br>K-VON: REAL MEN WEAR CARGO PANTS: https://www.youtube.com/watch?v=qQgca_GGUbc · cut file /workspace/morning-rush/clips/2026-11-18/c03-kvon-cargo-pants.mp3 · ⚠️ FLAG: Clean. Plumber/toilet punchline (mild). Cut starts after an opening 'Netflix and chill' line (innuendo), not in the cut.<br>TYLER BOEH: TECHNO NEEDS ONE DANCE MOVE: https://www.youtube.com/watch?v=3DXoyWsdNHM · cut file /workspace/morning-rush/clips/2026-11-18/c04-tyler-boeh-techno.mp3 · ⚠️ FLAG: Clean. The 'next song' lines are partly visual (he's dancing) but the laughs carry; names dance crazes like the Stanky Leg (harmless).<br>THE DOG WHO CAN BALANCE ANYTHING: https://www.youtube.com/watch?v=AXCcC___RMI · cut file /workspace/morning-rush/clips/2026-11-18/c07-dodo-ball-balancing-dog.mp3 · ⚠️ FLAG: Clean. Music bed under the voice (Dodo style). A second rescue story later in the source video (neglected dog) is not in the cut.<br>TITAN: THE LAST DACHSHUND FINALLY GOES HOME: https://www.youtube.com/watch?v=D2kJr_bfN7g · cut file /workspace/morning-rush/clips/2026-11-18/c08-dodo-titan-last-dachshund.mp3 · ⚠️ FLAG: Clean. Mentions senior dogs needing medical care (not sad; ends happy). Music bed.<br>PIPER THE OPOSSUM AND HER GROUNDHOG BFFS: https://www.youtube.com/watch?v=tnlp_WWQMmw · cut file /workspace/morning-rush/clips/2026-11-18/c09-dodo-piper-opossum-groundhogs.mp3 · ⚠️ FLAG: Opens with the animal having been hit by a car (she recovers; happy ending). Cut out a line about lasting brain damage. Clean language.<br>GTA 6: CALLING IN 'SICK' THURSDAY: https://www.youtube.com/watch?v=USjSkAUwcyA · cut file /workspace/morning-rush/clips/2026-11-18/c10-kgw-gta6-calling-in-sick.mp3 · ⚠️ FLAG: Another US station's air (KGW, Portland): get their OK before playing it straight, or talk over it. Clean language.<br>Repeat check: built used-audio list from every earlier /workspace/hot-sheet/*-hot-sheet.json clips array + week-used.md (all weeks); 0 of today's 18 source videos appear. 0 repeats.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-18-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: NATIONAL PRINCESS DAY",
+    "body": "SHOW OPENER SUPERCUT: NATIONAL PRINCESS DAY · SHOW OPENER SUPERCUT<br>🎙️ SET UP: National Princess Day (and Mickey's 98th birthday). Eight quick movie-princess bites, then straight into the intro that ends on \"Showtime.\"<br>🔈 AUDIO SOURCE: Montage of movie bites (credits in order below).<br>• Shrek (2001): \"Are you Princess Fiona?\" — YouTube: Boxoffice ANIMATION Movie Scenes<br>• The Princess Diaries (2001): \"...Princess of Genovia.\" — YouTube: Nostalgic Disney<br>• The Princess Diaries (2001): \"Me? A... a princess? Shut up!\" — YouTube: Nostalgic Disney<br>• The Princess Bride (1987): \"As you wish.\" — YouTube: Movieclips<br>• Shrek (2001): \"You didn't slay the dragon?\" — YouTube: Boxoffice ANIMATION Movie Scenes<br>• The Princess and the Frog (2009): \"Princess! Princess! Do not panic!\" — YouTube: Disney Kids<br>• Star Wars (1977), Princess Leia: \"Help me, Obi-Wan Kenobi. You're my only hope.\" — YouTube: Empire Fan Productions<br>• The Princess Bride (1987): \"Inconceivable!\" — YouTube: Movieclips upload<br>🔊 IN: \"Are you Princess Fiona?\" (0:00)<br>OUT: \"...Inconceivable!\" (0:23)<br>~23 s · PLAY · READY<br>➜ WHY: It's National Princess Day, and these are the most recognizable princess lines in movie history, ending on the punchiest one.<br>⚠️ FLAG: \"Shut up!\" (The Princess Diaries, playful, not a curse) for Truce to OK. Leia and Shrek bites come from fan uploads of the films, not official studio channels. Otherwise clean.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c00-opener-supercut.mp3",
+    "ready": true,
+    "recap": "We opened with a National Princess Day supercut, from Shrek and The Princess Diaries to Leia and \"Inconceivable!\""
+   },
+   {
+    "id": "2026-11-18-c01",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "VANNA WHITE: I HAD TO PHYSICALLY TURN THE LETTERS",
+    "body": "VANNA WHITE: I HAD TO PHYSICALLY TURN THE LETTERS · SUPER-CLIP 6 AM<br>🎙️ SET UP: Vanna White, TV royalty on National Princess Day, stopped by The Tonight Show. Jimmy asks about her very first puzzle. \"Here's Vanna White with Jimmy Fallon, from The Tonight Show on NBC.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov 17, 2026. Credit: \"from The Tonight Show Starring Jimmy Fallon.\"<br>• Vanna's first puzzle was General Hospital and her first letter was a T; she was so nervous her teeth chattered; back then she had to physically turn the letters; fans treat her like the next-door neighbor because she's in their living room every night; Jimmy says people don't like him.<br>🔊 IN: \"Do you remember what your first puzzle was?\"<br>OUT: \"No, no. It's the best.\" (0:54)<br>~54 s · PLAY · READY<br>➜ WHY: Everybody knows Vanna, it works with no picture, and Jimmy's self-own at the end is the button.<br>⚠️ FLAG: Clean. Two \"oh my gosh\" (fine). Cut out one line where she says she'd \"screw that up\" (mild). The \"teach me the Vanna\" part is visual and not in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c01-vanna-white-teaches-jimmy.mp3",
+    "ready": true,
+    "recap": "Our 6 AM super-clip was Vanna White telling Jimmy Fallon she used to physically turn the letters on Wheel of Fortune."
+   },
+   {
+    "id": "2026-11-18-c02",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "ZAINAB JOHNSON: WHO NEEDS A POT FILLER?",
+    "body": "ZAINAB JOHNSON: WHO NEEDS A POT FILLER? · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Comedian Zainab Johnson made her Tonight Show debut with stand-up about buying her first house. \"From The Tonight Show, here's Zainab Johnson.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov 18, 2026; her special Toxically Optimistic is on Netflix. Credit: \"Zainab Johnson on The Tonight Show.\"<br>• Her realtor finds a house with real hardwood floors and a pot filler, a faucet over the stove, and she cannot figure out what she would ever cook in a pot that big.<br>🔊 IN: \"My realtor was like, what do you want in the house?\"<br>OUT: \"...risk spilling water on your hardwood floors.\" (1:30)<br>~90 s · PLAY · READY<br>➜ WHY: Fresh from last night, clean, and every homeowner has stood in a kitchen asking 'who needs that?'<br>⚠️ FLAG: Clean. Started after an earlier line about being 'one of those young white professionals' in a changing neighborhood (race-adjacent), not in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c02-zainab-johnson-pot-filler.mp3",
+    "ready": true,
+    "recap": "Comedian Zainab Johnson's Tonight Show stand-up about the pot filler in her first house."
+   },
+   {
+    "id": "2026-11-18-c03",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "K-VON: REAL MEN WEAR CARGO PANTS",
+    "body": "K-VON: REAL MEN WEAR CARGO PANTS · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Comedian K-Von has a problem with skinny jeans, and he is from the 90s. \"This is K-Von from Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube, Nov 14, 2026. Credit: \"K-Von, from Dry Bar Comedy.\"<br>• Fashion keeps moving on him; he's from the 90s, when men wore cargo pants; skinny jeans are painful; would you trust a plumber who showed up in skinny jeans?<br>🔊 IN: \"One thing I don't like about getting older...\"<br>OUT: \"...Be back with this toilet in no time.\" (0:57)<br>~57 s · PLAY · READY<br>➜ WHY: Z93 is hits from the 90s to now, and this is a 90s-to-now fashion fight. Clean family comedy.<br>⚠️ FLAG: Clean. Plumber/toilet punchline (mild). Cut starts after an opening 'Netflix and chill' line (innuendo), not in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c03-kvon-cargo-pants.mp3",
+    "ready": true,
+    "recap": "K-Von's Dry Bar bit: real men wear cargo pants, and nobody trusts a plumber in skinny jeans."
+   },
+   {
+    "id": "2026-11-18-c04",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "TYLER BOEH: TECHNO NEEDS ONE DANCE MOVE",
+    "body": "TYLER BOEH: TECHNO NEEDS ONE DANCE MOVE · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Comedian Tyler Boeh loves techno because you only need one dance move for every song. \"Tyler Boeh, from Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube (2018 upload). Credit: \"Tyler Boeh, from Dry Bar Comedy.\"<br>• One dance move covers an entire genre, 'next song, next song'; every rap song wants its own dance (the Superman, the Stanky Leg, the Whip, the Nae Nae); techno is inclusive, even for Nana with one good hip.<br>🔊 IN: \"I learned to love all kinds of different music...\"<br>OUT: \"...You got one good hip. Still in the game.\" (1:22)<br>~82 s · PLAY · READY<br>➜ WHY: Works on the drive, everybody's been at that wedding, and the Nana button lands.<br>⚠️ FLAG: Clean. The 'next song' lines are partly visual (he's dancing) but the laughs carry; names dance crazes like the Stanky Leg (harmless).",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c04-tyler-boeh-techno.mp3",
+    "ready": true,
+    "recap": "Tyler Boeh's Dry Bar bit on techno: one dance move for every song, even for Nana."
+   },
+   {
+    "id": "2026-11-18-c07",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "THE DOG WHO CAN BALANCE ANYTHING",
+    "body": "THE DOG WHO CAN BALANCE ANYTHING · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Meet Mendo, a dog so obsessed with his ball he can balance anything on his head. \"From The Dodo, here's Mendo's owner.\"<br>🔈 AUDIO SOURCE: The Dodo, official YouTube, Nov 11, 2026. Credit: \"The Dodo.\"<br>• Mendo balances big sticks, small sticks, a lightsaber, a broomstick; it started when they put flowers on his head for a picture; when a ball is present, he becomes a monk.<br>🔊 IN: \"He kind of like tiptoes like a ballerina.\"<br>OUT: \"...he's just so captivating.\" (1:26)<br>~86 s · PLAY · READY<br>➜ WHY: Pure joy, no sad parts, and 'he becomes a monk and meditates on the ball' is a great line.<br>⚠️ FLAG: Clean. Music bed under the voice (Dodo style). A second rescue story later in the source video (neglected dog) is not in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c07-dodo-ball-balancing-dog.mp3",
+    "ready": true,
+    "recap": "The Dodo's Mendo, a ball-obsessed dog who can balance anything on his head."
+   },
+   {
+    "id": "2026-11-18-c08",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "TITAN: THE LAST DACHSHUND FINALLY GOES HOME",
+    "body": "TITAN: THE LAST DACHSHUND FINALLY GOES HOME · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A New York rescue took in more than 40 dachshunds at once, and one 14-year-old named Titan was the very last to get picked. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo, official YouTube, Nov 14, 2026. Credit: \"The Dodo.\"<br>• More than 40 mostly senior dachshunds from a retired breeder needed homes; the rescue organized over 42 foster homes; one by one they were adopted; Titan waited, and at 15 he finally went home.<br>🔊 IN: \"Titan watched almost 40 dachshunds find their forever homes...\"<br>OUT: \"...finally get their happy ending.\" (1:07)<br>~67 s · PLAY · READY<br>➜ WHY: Thanksgiving-week feel-good with a happy ending; every senior-dog person will text in.<br>⚠️ FLAG: Clean. Mentions senior dogs needing medical care (not sad; ends happy). Music bed.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c08-dodo-titan-last-dachshund.mp3",
+    "ready": true,
+    "recap": "The Dodo's Titan, the last of 40 rescued dachshunds, finally found a family at 15."
+   },
+   {
+    "id": "2026-11-18-c09",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "PIPER THE OPOSSUM AND HER GROUNDHOG BFFS",
+    "body": "PIPER THE OPOSSUM AND HER GROUNDHOG BFFS · BUFFER: PETS & FAMILY<br>🎙️ SET UP: A stranger stopped to help an injured opossum, and now she lives with two rescued groundhogs. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo, official YouTube, Nov 17, 2026. Credit: \"The Dodo.\"<br>• Piper was found on the roadside after being hit by a car; a kind stranger put her on a heated passenger seat and called the rescue; she recovered and now lives with a crew of unreleasable opossums and groundhogs.<br>🔊 IN: \"This opossum was hit by a car and left on the side of the road...\"<br>OUT: \"...one small but beautiful life.\" (0:45)<br>~45 s · PLAY · READY<br>➜ WHY: Odd-couple animal friends, and the heated-seat detail is a perfect Michigan November touch.<br>⚠️ FLAG: Opens with the animal having been hit by a car (she recovers; happy ending). Cut out a line about lasting brain damage. Clean language.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c09-dodo-piper-opossum-groundhogs.mp3",
+    "ready": true,
+    "recap": "The Dodo's Piper, a rescued opossum who now lives with two groundhogs."
+   },
+   {
+    "id": "2026-11-18-c10",
+    "slot": "BUFFER: NEWSY VIRAL",
+    "title": "GTA 6: CALLING IN 'SICK' THURSDAY",
+    "body": "GTA 6: CALLING IN 'SICK' THURSDAY · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: If your coworker is \"under the weather\" tomorrow, it might be GTA 6. \"Here's KGW News in Portland.\"<br>🔈 AUDIO SOURCE: KGW News (Portland, Ore.), official YouTube, Nov 16, 2026. Credit: \"KGW News.\"<br>• Fans say they'll call out Thursday and Friday; research found about 10% of employed gamers plan to skip work on launch day and another 30% are considering time off; $80 standard.<br>🔊 IN: \"If you are planning on calling out Thursday and Friday...\"<br>OUT: \"...for the Ultimate Edition.\" (0:37)<br>~37 s · TALK-OVER · READY<br>➜ WHY: Short, punchy, pairs with the GTA card and the office bits. Better as a talk-over bed.<br>⚠️ FLAG: Another US station's air (KGW, Portland): get their OK before playing it straight, or talk over it. Clean language.",
+    "audio": "/workspace/morning-rush/clips/2026-11-18/c10-kgw-gta6-calling-in-sick.mp3",
+    "ready": true,
+    "recap": "KGW News on gamers planning to call in 'sick' for GTA 6 launch day."
+   }
+  ]
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "WED NOV 18: GTA 6 unlocks at midnight tonight (12 AM Thursday)<br>FRI NOV 20: Downtown TC tree lighting, 6:30 PM<br>FRI NOV 20: Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek<br>SAT NOV 21: TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM<br>SAT NOV 21: Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse<br>SAT NOV 21: Traverse City Light Parade (evening)<br>THU NOV 26: 'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac<br>THROUGH DEC 31: Crafts by CICI pop-up, Grand Traverse Mall<br>😂 JOKES: Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon. / GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range.",
+  "notes": "WED NOV 18: GTA 6 unlocks at midnight tonight (12 AM Thursday): https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868<br>FRI NOV 20: Downtown TC tree lighting, 6:30 PM: https://upnorthlive.com/news/local/downtown-traverse-city-welcomes-official-holiday-tree-ahead-of-friday-lighting-grand-traverse-county<br>FRI NOV 20: Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek: https://upnorthlive.com/sports/hometown-highlights/top-ranked-roscommon-packing-their-bags-for-battle-creek-after-win-in-volleyball-quarters<br>SAT NOV 21: TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM: https://upnorthlive.com/news/local/get-holiday-shopping-done-at-the-tc-west-high-school-craft-fair-grand-traverse-county<br>SAT NOV 21: Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse: https://www.traverseticker.com/news/toys-for-tots-campaign-starts-with-drive-through-event/<br>SAT NOV 21: Traverse City Light Parade (evening): https://upnorthlive.com/news/local/downtown-traverse-city-welcomes-official-holiday-tree-ahead-of-friday-lighting-grand-traverse-county<br>THU NOV 26: 'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac: https://www.9and10news.com/sports/2026/11/16/inaugural-b-thankful-5k-to-launch-in-cadillac-this-thanksgiving/<br>THROUGH DEC 31: Crafts by CICI pop-up, Grand Traverse Mall: https://www.9and10news.com/2026/11/17/local-artisans-showcase-custom-handmade-goods-at-new-crafts-by-cici-storefront/",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-18-events-01",
+    "title": "WED NOV 18: GTA 6 unlocks at midnight tonight (12 AM Thursday)",
+    "recap": "GTA 6 unlocks at midnight tonight (12 AM Thursday).",
+    "article_url": "https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868",
+    "article_title": "Kotaku listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-02",
+    "title": "FRI NOV 20: Downtown TC tree lighting, 6:30 PM",
+    "recap": "Downtown TC tree lighting, 6:30 PM.",
+    "article_url": "https://upnorthlive.com/news/local/downtown-traverse-city-welcomes-official-holiday-tree-ahead-of-friday-lighting-grand-traverse-county",
+    "article_title": "UpNorthLive listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-03",
+    "title": "FRI NOV 20: Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek",
+    "recap": "Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek.",
+    "article_url": "https://upnorthlive.com/sports/hometown-highlights/top-ranked-roscommon-packing-their-bags-for-battle-creek-after-win-in-volleyball-quarters",
+    "article_title": "UpNorthLive listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-04",
+    "title": "SAT NOV 21: TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM",
+    "recap": "TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM.",
+    "article_url": "https://upnorthlive.com/news/local/get-holiday-shopping-done-at-the-tc-west-high-school-craft-fair-grand-traverse-county",
+    "article_title": "UpNorthLive listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-05",
+    "title": "SAT NOV 21: Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse",
+    "recap": "Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse.",
+    "article_url": "https://www.traverseticker.com/news/toys-for-tots-campaign-starts-with-drive-through-event/",
+    "article_title": "The Ticker listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-06",
+    "title": "SAT NOV 21: Traverse City Light Parade (evening)",
+    "recap": "Traverse City Light Parade (evening).",
+    "article_url": "https://upnorthlive.com/news/local/downtown-traverse-city-welcomes-official-holiday-tree-ahead-of-friday-lighting-grand-traverse-county",
+    "article_title": "UpNorthLive listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-07",
+    "title": "THU NOV 26: 'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac",
+    "recap": "'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac.",
+    "article_url": "https://www.9and10news.com/sports/2026/11/16/inaugural-b-thankful-5k-to-launch-in-cadillac-this-thanksgiving/",
+    "article_title": "9&10 News listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-18-events-08",
+    "title": "THROUGH DEC 31: Crafts by CICI pop-up, Grand Traverse Mall",
+    "recap": "Crafts by CICI pop-up, Grand Traverse Mall.",
+    "article_url": "https://www.9and10news.com/2026/11/17/local-artisans-showcase-custom-handmade-goods-at-new-crafts-by-cici-storefront/",
+    "article_title": "9&10 News listing/article",
+    "jokes": [
+     "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+     "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+    ]
+   }
+  ],
+  "article_url": "https://kotaku.com/ps5-gets-last-minute-software-update-thats-required-to-play-gta-6-2000757868",
+  "article_title": "Kotaku listing/article",
+  "jokes": [
+   "Saturday's schedule: craft fair, toy drop, light parade. Pace yourself, it's a marathon.",
+   "GTA at midnight, tree lighting Friday, craft fair Saturday. This town has range."
+  ]
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · EARLY SHOW<br>✈️ The Blue Angels were in Traverse City this week, scouting for next summer's 101st National Cherry Festival. They'll fly July 3 and July 4, 2027, and they check everything, right down to where the jets park. So, where's YOUR spot to watch the Blue Angels? Beach, boat, or stuck in traffic on Grandview? Tell us below or text the studio at 231-929-4487. #Z93 #TraverseCity #CherryFestival<br>📷 MEDIA: /workspace/z93/fb/2026-11-18/fb1a-blue-angels.png (9&10 News photo, credit on image)<br><br>1B · EARLY SHOW<br>🐱 Cherryland Humane Society just finished a $3 million, 9,000-square-foot expansion, paid for entirely by donations, including a brand-new, quieter cat wing with two-story cat condos. Is your cat a Cherryland cat? Drop their name and a picture below, or text the studio at 231-929-4487. #Z93 #TraverseCity #AdoptDontShop<br>📷 MEDIA: /workspace/z93/fb/2026-11-18/fb1b-cherryland-cats.png (9&10 News photo, credit on image)<br><br>2A · MID SHOW<br>🛍️ More than 1,000 vendors, one Saturday. The 17th annual TC West High School Craft Fair is THIS Saturday, 10 AM to 3 PM, free to get in, and every booth fee goes to scholarships and teacher grants. What's the best thing you've ever found at a craft fair? #Z93 #TraverseCity #ShopLocal<br>📷 MEDIA: /workspace/z93/fb/2026-11-18/fb2a-tc-west-craft-fair.png (UpNorthLive photo (courtesy Melissa Dean, past fair), credit on image)<br><br>2B · MID SHOW<br>🧸 Toys for Tots of Northwest Michigan kicks off THIS Saturday with a drive-thru toy drop, noon to 2 PM at Fox Grand Traverse. Stay in your car, Santa will wave, and last year this area collected more than 26,000 toys. Who's dropping one off? #Z93 #ToysForTots #TraverseCity<br>📷 MEDIA: /workspace/z93/fb/2026-11-18/fb2b-toys-for-tots.png (original graphic)<br><br>3A · LATE SHOW<br>🎮 GTA 6 unlocks at midnight tonight, which has us thinking: what's the one video game that ate an entire weekend of your life? 90s, 2000s, or right now, we want the name. #Z93 #GTA6 #90sKid<br>📷 MEDIA: /workspace/z93/fb/2026-11-18/fb3a-game-that-ate-your-weekend.png (original graphic)<br><br>3B · LATE SHOW<br>📼 Mickey Mouse turns 98 today (Steamboat Willie premiered Nov. 18, 1928), so let's go back to the VHS days: which 90s Disney movie did your family play until the tape wore out? #Z93 #Disney #90sKid<br>📷 MEDIA: /workspace/z93/fb/2026-11-18/fb3b-disney-vhs.png (original graphic)",
+  "notes": "Drafts only, nothing posted. Facts from today's sheet: Blue Angels (9&10 11/16), Cherryland (9&10 11/17), TC West craft fair (UpNorthLive 11/17), Toys for Tots (The Ticker 11/17), GTA 6 midnight (Kotaku), Steamboat Willie (Walt Disney Family Museum). Art sources: /workspace/z93/fb/2026-11-18/SOURCES.md; build.py in same folder. No FB topic repeats this week.",
+  "custom": true,
+  "items": []
+ }
+}

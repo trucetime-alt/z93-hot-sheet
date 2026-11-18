@@ -1,5 +1,5 @@
 {
- "latest": "2026-11-17",
+ "latest": "2026-11-18",
  "dates": [
   {
    "date": "2026-11-13",
@@ -47,11 +47,30 @@
     "c09-yr-kate-linder.mp3"
    ],
    "main": true
+  },
+  {
+   "date": "2026-11-18",
+   "br": false,
+   "audio": true,
+   "files": [
+    "c00-opener-supercut.mp3",
+    "c01-vanna-white-teaches-jimmy.mp3",
+    "c02-zainab-johnson-pot-filler.mp3",
+    "c03-kvon-cargo-pants.mp3",
+    "c04-tyler-boeh-techno.mp3",
+    "c05-nbc-gta6-biggest-launch.mp3",
+    "c06-inside-edition-hotel-carpets.mp3",
+    "c07-dodo-ball-balancing-dog.mp3",
+    "c08-dodo-titan-last-dachshund.mp3",
+    "c09-dodo-piper-opossum-groundhogs.mp3",
+    "c10-kgw-gta6-calling-in-sick.mp3"
+   ],
+   "main": true
   }
  ],
  "clipFirst": {
-  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:speed-english.mp3": "2026-11-13",
+  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:doberman-swns.mp3": "2026-11-13",
   "file:speed-soty.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
@@ -84,7 +103,28 @@
   "file:c06-headstart-save.mp3": "2026-11-17",
   "id:2026-11-17-c06": "2026-11-17",
   "file:c07-fairy-trails.mp3": "2026-11-17",
-  "id:2026-11-17-c07": "2026-11-17"
+  "id:2026-11-17-c07": "2026-11-17",
+  "id:2026-11-18-c00": "2026-11-18",
+  "file:c01-vanna-white-teaches-jimmy.mp3": "2026-11-18",
+  "id:2026-11-18-c01": "2026-11-18",
+  "file:c02-zainab-johnson-pot-filler.mp3": "2026-11-18",
+  "id:2026-11-18-c02": "2026-11-18",
+  "file:c03-kvon-cargo-pants.mp3": "2026-11-18",
+  "id:2026-11-18-c03": "2026-11-18",
+  "file:c04-tyler-boeh-techno.mp3": "2026-11-18",
+  "id:2026-11-18-c04": "2026-11-18",
+  "file:c07-dodo-ball-balancing-dog.mp3": "2026-11-18",
+  "id:2026-11-18-c07": "2026-11-18",
+  "file:c08-dodo-titan-last-dachshund.mp3": "2026-11-18",
+  "id:2026-11-18-c08": "2026-11-18",
+  "file:c09-dodo-piper-opossum-groundhogs.mp3": "2026-11-18",
+  "id:2026-11-18-c09": "2026-11-18",
+  "file:c10-kgw-gta6-calling-in-sick.mp3": "2026-11-18",
+  "id:2026-11-18-c10": "2026-11-18",
+  "file:c05-nbc-gta6-biggest-launch.mp3": "2026-11-18",
+  "id:2026-11-18-c05": "2026-11-18",
+  "file:c06-inside-edition-hotel-carpets.mp3": "2026-11-18",
+  "id:2026-11-18-c06": "2026-11-18"
  },
  "clipHistory": {
   "2026-11-13": {
@@ -118,6 +158,14 @@
     {
      "name": "2026-11-16-c02",
      "first": "2026-11-16"
+    }
+   ]
+  },
+  "2026-11-18": {
+   "repeats": [
+    {
+     "name": "c00-opener-supercut.mp3",
+     "first": "2026-11-17"
     }
    ]
   }
