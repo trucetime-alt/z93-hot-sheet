@@ -1,28 +1,43 @@
 {
  "version": 1,
- "updated": "2026-11-18T06:32:51-05:00",
- "updatedMs": 1795001571043,
+ "updated": "2026-11-18T08:29:44-05:00",
+ "updatedMs": 1795008584096,
  "windowHours": 24,
  "local": {
   "picks": [
    {
-    "id": "loc-ef5717fb32",
-    "title": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps",
-    "source": "UpNorthLive",
+    "id": "loc-b01814ce69",
+    "title": "This hidden gem near Traverse City has ancient hemlocks and trails that feel miles from town",
+    "source": "MLive",
     "sources": [
-     "UpNorthLive",
-     "WPBN",
-     "9&10",
-     "9and10News.com"
+     "MLive",
+     "MLive.com"
     ],
-    "votes": 4,
-    "at": "2026-11-17T18:02:14-05:00",
-    "atMs": 1794956534000,
-    "link": "https://upnorthlive.com/news/local/traverse-city-commissioners-to-begin-west-end-parking-talks-on-six-city-owned-parcels",
+    "votes": 2,
+    "at": "2026-11-18T07:16:00-05:00",
+    "atMs": 1795004160000,
+    "link": "https://www.mlive.com/life/2026/11/this-hidden-gem-near-traverse-city-has-ancient-hemlocks-and-trails-that-feel-miles-from-town.html",
     "tag": "LOCAL",
-    "score": 112.0,
-    "why": "4 sources · local",
-    "desc": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps 9and10News.com"
+    "score": 68.0,
+    "why": "2 sources · fresh · local",
+    "desc": "The 62-acre preserve near Traverse City offers nearly 3 miles of trails through forests, former orchards and a rare Eastern hemlock grove."
+   },
+   {
+    "id": "loc-225c891ddc",
+    "title": "Up North town secures $653k state grant to update its 1950s housing stock",
+    "source": "MLive",
+    "sources": [
+     "MLive",
+     "MLive.com"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T07:00:00-05:00",
+    "atMs": 1795003200000,
+    "link": "https://www.mlive.com/news/2026/11/up-north-town-secures-653k-state-grant-to-update-its-1950s-housing-stock.html",
+    "tag": "LOCAL",
+    "score": 68.0,
+    "why": "2 sources · fresh · local",
+    "desc": "Homeowners can apply for $7 to $18k grants to update their home's electric, roofing or siding."
    },
    {
     "id": "loc-676ef0a7db",
@@ -40,6 +55,23 @@
     "score": 62.0,
     "why": "2 sources · local · community",
     "desc": "Blue Angels visit Traverse City ahead of 2027 National Cherry Festival air show 9and10News.com"
+   },
+   {
+    "id": "loc-ef5717fb32",
+    "title": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps",
+    "source": "9&10",
+    "sources": [
+     "9&10",
+     "9and10News.com"
+    ],
+    "votes": 2,
+    "at": "2026-11-17T18:02:14-05:00",
+    "atMs": 1794956534000,
+    "link": "https://www.9and10news.com/2026/11/17/traverse-city-weighs-76m-west-end-parking-question-advances-vacation-rental-caps/",
+    "tag": "LOCAL",
+    "score": 56.0,
+    "why": "2 sources · local",
+    "desc": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps 9and10News.com"
    },
    {
     "id": "loc-7d0fc5b62c",
@@ -71,7 +103,7 @@
     "atMs": 1794949797000,
     "link": "https://upnorthlive.com/news/local/naked-man-arrested-after-found-in-grand-traverse-county-home-faces-home-invasion-charges",
     "tag": "LOCAL",
-    "score": 56.0,
+    "score": 50.0,
     "why": "2 sources · local",
     "desc": "Naked man arrested after found in Grand Traverse County home, faces home invasion charges WPBN"
    },
@@ -127,23 +159,6 @@
     "desc": "Frankfort City Council approved a one-year deal to host Ironman 70.3 Michigan in 2027. For 2028 and beyond, the future is uncertain."
    },
    {
-    "id": "loc-2c15195a45",
-    "title": "Deering’s Meat Market in Traverse City sees busy start to firearm deer season",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive",
-     "WPBN"
-    ],
-    "votes": 2,
-    "at": "2026-11-16T18:55:06-05:00",
-    "atMs": 1794873306000,
-    "link": "https://upnorthlive.com/news/local/deerings-meat-market-in-traverse-city-sees-busy-start-to-firearm-deer-season",
-    "tag": "LOCAL",
-    "score": 50.0,
-    "why": "2 sources · local",
-    "desc": "Deering’s Meat Market in Traverse City sees busy start to firearm deer season WPBN"
-   },
-   {
     "id": "loc-6c8e94d488",
     "title": "Long bus routes from washed-out roads strain some Manistee County schools",
     "source": "IPR",
@@ -176,6 +191,58 @@
     "desc": "GRAND TRAVERSE COUNTY: Beitner bridge nears completion Traverse City Record-Eagle"
    },
    {
+    "id": "loc-48d684cb7f",
+    "title": "Traverse City’s Taproot Cider House Debuts Mushroom-Inspired Martini",
+    "source": "MyNorth.com",
+    "sources": [
+     "MyNorth.com"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T07:02:50-05:00",
+    "atMs": 1795003370000,
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4yZUp4YWNrX1NLbktIVFN5cWpZTnNTMTBCLW14eVYyNmlEbUcyODdmZVhuYjlOdVdxVUlSczAxaDF1Q1JOSl9TY1R2eDcwNUk3eVY2djFVVHJ1YXVxTVBBZ296WDlYeXFPaUZxTEUtRFdPUFJRRUgw?oc=5",
+    "tag": "LOCAL",
+    "score": 40.0,
+    "why": "fresh · local",
+    "desc": "Traverse City’s Taproot Cider House Debuts Mushroom-Inspired Martini MyNorth.com"
+   }
+  ],
+  "more": [
+   {
+    "id": "loc-3dd8776437",
+    "title": "Ex-Northern Michigan firefighter gets jail in fatal crash",
+    "source": "UpNorthLive",
+    "sources": [
+     "UpNorthLive",
+     "MLive",
+     "MLive.com"
+    ],
+    "votes": 3,
+    "at": "2026-11-17T20:27:11-05:00",
+    "atMs": 1794965231000,
+    "link": "https://upnorthlive.com/news/local/former-volunteer-firefighter-gets-45-days-in-jail-2-years-probation-in-fatal-crash-case",
+    "tag": "ROADS",
+    "score": 82.0,
+    "why": "3 sources · local · roads · downranked: fatality",
+    "desc": "Former volunteer firefighter gets 45 days in jail, 2 years probation in fatal crash case"
+   },
+   {
+    "id": "loc-d60a91dc1e",
+    "title": "Nov. 19-26 events guide for Benzie, Manistee and Mason counties",
+    "source": "Manistee News Advocate",
+    "sources": [
+     "Manistee News Advocate"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T06:49:41-05:00",
+    "atMs": 1795002581000,
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRkpyQ1VuSjltaUdCT3BqcHdUcmF5cFdDNlNQdXZpSkVGUUw5TFNtV2hHREk5YzV4THdzUHI5VWZvSkdMOVRUTmNuaTBWMXdvOWRjcFJXWHNGbGhvbVowMjYxZjVKamtwQ25kY3UxSXB2MURFZjhmUFNjdUxVNFlyaGxHQlR5MmtUc3pESV9OTlJSM013VGow?oc=5",
+    "tag": "LOCAL",
+    "score": 40.0,
+    "why": "fresh · local",
+    "desc": "Nov. 19-26 events guide for Benzie, Manistee and Mason counties Manistee News Advocate"
+   },
+   {
     "id": "loc-119a871a94",
     "title": "PHOTOS: Cheboygan vs. Burt Lake NMCA boys basketball scrimmage",
     "source": "Cheboygan Daily Tribune",
@@ -206,74 +273,6 @@
     "score": 40.0,
     "why": "local · sports",
     "desc": "Meet the Petoskey-area boys basketball players to watch in 2026-27 Petoskey News-Review"
-   }
-  ],
-  "more": [
-   {
-    "id": "loc-3dd8776437",
-    "title": "Ex-Northern Michigan firefighter gets jail in fatal crash",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive",
-     "MLive",
-     "MLive.com"
-    ],
-    "votes": 3,
-    "at": "2026-11-17T20:27:11-05:00",
-    "atMs": 1794965231000,
-    "link": "https://upnorthlive.com/news/local/former-volunteer-firefighter-gets-45-days-in-jail-2-years-probation-in-fatal-crash-case",
-    "tag": "ROADS",
-    "score": 82.0,
-    "why": "3 sources · local · roads · downranked: fatality",
-    "desc": "Former volunteer firefighter gets 45 days in jail, 2 years probation in fatal crash case"
-   },
-   {
-    "id": "loc-0c9078dcb8",
-    "title": "TCAPS Montessori middle schoolers’ field trip to Camp Greilick",
-    "source": "Traverse City Record-Eagle",
-    "sources": [
-     "Traverse City Record-Eagle"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T06:53:00-05:00",
-    "atMs": 1794916380000,
-    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQQW5TN3M1bFVmVDBIbmJ3cVh6TUI4Ri1nd3MwQzFlR0lycWt6VFJ4VDl3RUVYOEdsY1ZOMTlLQW0zaXhHckNtbkt1STR5S1lHaUI1cGZYTVoyaFFqeDVIXzlDQUxqOGxjQUtzNjdVSmp3cjNxb05BVTh5OG1vOTNvTHRhT3c5ZUIzYTk4V3ZKbmlSZ2xlUG5RV2hTV0tZcHRfek93aEI1cWVRcmtPV1VUVndJRjZSRTBHQ3F6ejNVbWczczd4ZmpmbUJONnBONTZNekZvajdyUzFQZFo3VnhMY1dETmlhWEhDbHc?oc=5",
-    "tag": "SCHOOLS",
-    "score": 36.0,
-    "why": "local · schools",
-    "desc": "TCAPS Montessori middle schoolers’ field trip to Camp Greilick Traverse City Record-Eagle"
-   },
-   {
-    "id": "loc-86a3868d86",
-    "title": "Former Finance Director Sues Leelanau County Board Chair",
-    "source": "Leelanau Ticker",
-    "sources": [
-     "Leelanau Ticker"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T00:24:43-05:00",
-    "atMs": 1794979483000,
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzdXd0tXTk1YUXFzcjFtUUkzanZ5eTBPVTFsOHhFc2s1SUE0ejRXMENfUHZCYU1NdTl2TU05aUlWQ255MWhrRVAwYW1aQTJ2RUJCWGxhRElEU0FVcHoxYTRWT1RicEotT2t6RTRQY293eEwzZXBET1FHZHEtbW83TUgzaHdXbUl5aW1xdG1POTQtWUFkREZ1Sw?oc=5",
-    "tag": "LOCAL",
-    "score": 34.0,
-    "why": "local",
-    "desc": "Former Finance Director Sues Leelanau County Board Chair Leelanau Ticker"
-   },
-   {
-    "id": "loc-751ca7b394",
-    "title": "The Latest Leelanau County Blotter & 911 Call Report",
-    "source": "Leelanau Ticker",
-    "sources": [
-     "Leelanau Ticker"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T00:20:39-05:00",
-    "atMs": 1794979239000,
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONV9VYTI3U0k3SC1sWmJseXdUdmp0amoxdkxxWHRCUmNqY0JoQk1hZFJBemNOSDcyS0pNTkxvUWplOS1tVXBQUFVRU1I4bURRUkJ5VE5rN28xekdJRnZSQ0ZnOW9GVHJLUndxcFg1QWE3TDNsLW5NTFlnMTNOdm5IbjBCWHA1bkpfbjNwNU84eEEtdzNPQXc?oc=5",
-    "tag": "LOCAL",
-    "score": 34.0,
-    "why": "local",
-    "desc": "The Latest Leelanau County Blotter & 911 Call Report Leelanau Ticker"
    },
    {
     "id": "loc-3c2ed19dd6",
@@ -324,6 +323,38 @@
     "desc": "See the Petoskey football players who claimed Big North honors in 2026 Petoskey News-Review"
    },
    {
+    "id": "loc-86a3868d86",
+    "title": "Former Finance Director Sues Leelanau County Board Chair",
+    "source": "Leelanau Ticker",
+    "sources": [
+     "Leelanau Ticker"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T00:24:43-05:00",
+    "atMs": 1794979483000,
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzdXd0tXTk1YUXFzcjFtUUkzanZ5eTBPVTFsOHhFc2s1SUE0ejRXMENfUHZCYU1NdTl2TU05aUlWQ255MWhrRVAwYW1aQTJ2RUJCWGxhRElEU0FVcHoxYTRWT1RicEotT2t6RTRQY293eEwzZXBET1FHZHEtbW83TUgzaHdXbUl5aW1xdG1POTQtWUFkREZ1Sw?oc=5",
+    "tag": "LOCAL",
+    "score": 28.0,
+    "why": "local",
+    "desc": "Former Finance Director Sues Leelanau County Board Chair Leelanau Ticker"
+   },
+   {
+    "id": "loc-751ca7b394",
+    "title": "The Latest Leelanau County Blotter & 911 Call Report",
+    "source": "Leelanau Ticker",
+    "sources": [
+     "Leelanau Ticker"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T00:20:39-05:00",
+    "atMs": 1794979239000,
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONV9VYTI3U0k3SC1sWmJseXdUdmp0amoxdkxxWHRCUmNqY0JoQk1hZFJBemNOSDcyS0pNTkxvUWplOS1tVXBQUFVRU1I4bURRUkJ5VE5rN28xekdJRnZSQ0ZnOW9GVHJLUndxcFg1QWE3TDNsLW5NTFlnMTNOdm5IbjBCWHA1bkpfbjNwNU84eEEtdzNPQXc?oc=5",
+    "tag": "LOCAL",
+    "score": 28.0,
+    "why": "local",
+    "desc": "The Latest Leelanau County Blotter & 911 Call Report Leelanau Ticker"
+   },
+   {
     "id": "loc-9ba75b9fec",
     "title": "Edward Floyd Bigsby Obituary (2026) - Petoskey, MI - Skradski Family Funeral Home - Gladstone",
     "source": "Legacy | Obituary",
@@ -335,7 +366,7 @@
     "atMs": 1794948170000,
     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4yRmdxazQ3UEtVWWNMS0NnQU9jU2lvUy16NGRkMlNqNFdIdVFZbnlkSXJxUHQweGlBLWJ3UFp1ZGR2VlZIc1praXdXdnVyRW5TR1dTNjZ5bTJ1ekpUOFVBamo2UDNUTFZrM3Zrc2VFdVJlV0VtNFowZTF5QzE?oc=5",
     "tag": "LOCAL",
-    "score": 28.0,
+    "score": 22.0,
     "why": "local",
     "desc": "Edward Floyd Bigsby Obituary (2026) - Petoskey, MI - Skradski Family Funeral Home - Gladstone Legacy | Obituary"
    },
@@ -388,68 +419,36 @@
     "desc": ""
    },
    {
-    "id": "loc-9545d89cb2",
-    "title": "Grand Traverse Greenway opens in Flint",
-    "source": "WJRT ABC12",
+    "id": "loc-2523b3b310",
+    "title": "74-year-old woman missing in Shelby; search set to resume",
+    "source": "UpNorthLive",
     "sources": [
-     "WJRT ABC12"
+     "UpNorthLive"
     ],
     "votes": 1,
-    "at": "2026-11-17T08:09:00-05:00",
-    "atMs": 1794920940000,
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbWpSMFJ6Vlg4R2FCbGVNYnRRMUg5LU9iUl83cUg3WG02Nm5YdS1HTldNc1dtT2tFSUotUFAyZ1d1T1FfejNnU2FCRUotN1RDZWRicEpsLUVrSzEwaUpJMDhLZXVzQ0ZGWlV0Mzd4N21heU5MbDBoM0V3Y0dMYVVWbHAwTTdXWXd1dk9vblpqZHQtdFFCbWFHcDNfOU0zTnhJS3BfY3RrdVJkbG5NV0FNNm8zSHpaRG9CSm4zeGln?oc=5",
+    "at": "2026-11-18T08:13:44-05:00",
+    "atMs": 1795007624000,
+    "link": "https://upnorthlive.com/news/local/74-year-old-woman-missing-in-shelby-search-set-to-resume-oceana-county-lewallen-northern-michigan-upnorthlive",
     "tag": "LOCAL",
-    "score": 22.0,
-    "why": "local",
-    "desc": "Grand Traverse Greenway opens in Flint WJRT ABC12"
+    "score": 14.0,
+    "why": "fresh",
+    "desc": "74-year-old woman missing in Shelby; search set to resume"
    },
    {
-    "id": "loc-8c56835f1f",
-    "title": "Doctors highlight dangers of kratom as bills to ban, regulate substance stall in Michigan",
+    "id": "loc-9164be698e",
+    "title": "MSP seeks help locating 12-year-old last seen near Lake Isabella",
     "source": "UpNorthLive",
     "sources": [
      "UpNorthLive"
     ],
     "votes": 1,
-    "at": "2026-11-17T16:08:53-05:00",
-    "atMs": 1794949733000,
-    "link": "https://upnorthlive.com/news/local/doctors-highlight-dangers-kratom-bills-ban-regulate-substance-stall-michigan-drugs-dea-addiction-cavitt",
+    "at": "2026-11-18T07:15:56-05:00",
+    "atMs": 1795004156000,
+    "link": "https://upnorthlive.com/news/local/msp-seeks-help-locating-12-year-old-last-seen-near-lake-isabella-county-northern-michigan-missing-child-teen-upnorthlive",
     "tag": "LOCAL",
-    "score": 16.0,
-    "why": "headline",
-    "desc": "Kratom is still easy to buy at Michigan gas stations and smoke shops, despite doctors warning of seizures, liver failure, overdose and addiction. The warning comes as bills to ban or regulate the substance stall."
-   },
-   {
-    "id": "loc-b07bff1ae7",
-    "title": "New agreement guarantees CMU admission for eligible NMC associate degree students",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T15:47:13-05:00",
-    "atMs": 1794948433000,
-    "link": "https://upnorthlive.com/news/local/new-agreement-guarantees-cmu-admission-for-eligible-nmc-associate-degree-students-grand-traverse-county-northwestern-michigan-college-central-michigan-university",
-    "tag": "SCHOOLS",
-    "score": 16.0,
-    "why": "schools",
-    "desc": "New agreement guarantees CMU admission for eligible NMC associate degree students"
-   },
-   {
-    "id": "loc-3af1ba6e02",
-    "title": "Poll: What grade would you give roads in your county?",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T15:11:57-05:00",
-    "atMs": 1794946317000,
-    "link": "https://upnorthlive.com/news/local/poll-what-grade-would-you-give-roads-in-your-county",
-    "tag": "ROADS",
-    "score": 16.0,
-    "why": "roads",
-    "desc": "Poll: What grade would you give roads in your county?"
+    "score": 14.0,
+    "why": "fresh",
+    "desc": "MSP seeks help locating 12-year-old last seen near Lake Isabella"
    },
    {
     "id": "loc-2220c7a34f",
@@ -466,6 +465,54 @@
     "score": 10.0,
     "why": "money",
     "desc": "New 'One step at a time' pilot program to house three households and link jobs, resources"
+   },
+   {
+    "id": "loc-8c56835f1f",
+    "title": "Doctors highlight dangers of kratom as bills to ban, regulate substance stall in Michigan",
+    "source": "UpNorthLive",
+    "sources": [
+     "UpNorthLive"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T16:08:53-05:00",
+    "atMs": 1794949733000,
+    "link": "https://upnorthlive.com/news/local/doctors-highlight-dangers-kratom-bills-ban-regulate-substance-stall-michigan-drugs-dea-addiction-cavitt",
+    "tag": "LOCAL",
+    "score": 10.0,
+    "why": "headline",
+    "desc": "Kratom is still easy to buy at Michigan gas stations and smoke shops, despite doctors warning of seizures, liver failure, overdose and addiction. The warning comes as bills to ban or regulate the substance stall."
+   },
+   {
+    "id": "loc-b07bff1ae7",
+    "title": "New agreement guarantees CMU admission for eligible NMC associate degree students",
+    "source": "UpNorthLive",
+    "sources": [
+     "UpNorthLive"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T15:47:13-05:00",
+    "atMs": 1794948433000,
+    "link": "https://upnorthlive.com/news/local/new-agreement-guarantees-cmu-admission-for-eligible-nmc-associate-degree-students-grand-traverse-county-northwestern-michigan-college-central-michigan-university",
+    "tag": "SCHOOLS",
+    "score": 10.0,
+    "why": "schools",
+    "desc": "New agreement guarantees CMU admission for eligible NMC associate degree students"
+   },
+   {
+    "id": "loc-3af1ba6e02",
+    "title": "Poll: What grade would you give roads in your county?",
+    "source": "UpNorthLive",
+    "sources": [
+     "UpNorthLive"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T15:11:57-05:00",
+    "atMs": 1794946317000,
+    "link": "https://upnorthlive.com/news/local/poll-what-grade-would-you-give-roads-in-your-county",
+    "tag": "ROADS",
+    "score": 10.0,
+    "why": "roads",
+    "desc": "Poll: What grade would you give roads in your county?"
    },
    {
     "id": "loc-24070fb34c",
@@ -644,22 +691,6 @@
     "desc": "Search underway for missing 83-year-old hunter in Alpena Township"
    },
    {
-    "id": "loc-955b5232c8",
-    "title": "Gaylord couple returns from grocery run to find home on fire",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T07:51:44-05:00",
-    "atMs": 1794919904000,
-    "link": "https://upnorthlive.com/news/local/gaylord-couple-returns-from-grocery-run-to-find-home-on-fire-otsego-shady-brooks-northern-michigan-upnorthlive",
-    "tag": "LOCAL",
-    "score": -4.0,
-    "why": "headline",
-    "desc": "Gaylord couple returns from grocery run to find home on fire"
-   },
-   {
     "id": "loc-f9e73ee655",
     "title": "Feds offer states option to delay Medicaid work requirements. Will Michigan take it?",
     "source": "IPR",
@@ -688,8 +719,8 @@
    "IPR": 10,
    "9&10": 25,
    "Record-Eagle": 0,
-   "MLive": 1,
-   "Google News Local": 74
+   "MLive": 3,
+   "Google News Local": 86
   },
   "errors": {
    "Record-Eagle": "HTTP 429"
@@ -698,8 +729,8 @@
  "national": {
   "picks": [
    {
-    "id": "nat-16cee1bc7b",
-    "title": "Cadillac F1 Team Going Translucent for 2026 Las Vegas Grand Prix With New Special Livery",
+    "id": "nat-1c240e4d68",
+    "title": "Cadillac Reveals Special Livery for F1 Las Vegas Grand Prix",
     "source": "RACER - Racing News",
     "sources": [
      "RACER - Racing News",
@@ -707,43 +738,20 @@
      "Joe's Daily",
      "autoevolution",
      "Formula 1",
-     "The Race",
-     "Yahoo Sports",
-     "RacingNews365",
-     "news.gp",
+     "PlanetF1",
      "Speedcafe.com",
-     "RaceFans"
+     "news.gp",
+     "RaceFans",
+     "roundtable.io"
     ],
-    "votes": 11,
-    "at": "2026-11-18T03:59:00-05:00",
-    "atMs": 1794992340000,
+    "votes": 10,
+    "at": "2026-11-18T08:02:16-05:00",
+    "atMs": 1795006936000,
     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPaG5MMHRhbl9KU09HUjN3ZXpiOTNQWGhrZkJxbzgzZ2EyWTRjQmxiUlZKTTBENmRfWmtQcGMtYnJrUlpVeGtiTlZDQXBrLTNyNWhoY0xVeG5BcWFieE1JUFVpYmNlVDVaUTlXYWZXSVdnREJtb2x5NzlZcGtZbDU2UEU3ejlpQjlMaDRHUHYyY0s0czFEb3BpcE1LQ3p6SmtLU3NXbw?oc=5",
     "tag": "NATIONAL",
-    "score": 302.0,
-    "why": "11 sources · fresh",
-    "desc": "‘Best One Yet': Fans Approve as Cadillac Hits It Out of the Park With Special Las Vegas GP Livery Yahoo Sports"
-   },
-   {
-    "id": "nat-4bd81ccf1f",
-    "title": "Mary Peltola flips Alaska seat, giving Democrats a 56-44 edge in Senate",
-    "source": "The Guardian",
-    "sources": [
-     "The Guardian",
-     "New York Daily News",
-     "NYT",
-     "NPR",
-     "CBS",
-     "NBC",
-     "The Washington Post"
-    ],
-    "votes": 7,
-    "at": "2026-11-18T05:52:34-05:00",
-    "atMs": 1794999154000,
-    "link": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
-    "tag": "NATIONAL",
-    "score": 190.0,
-    "why": "7 sources · fresh",
-    "desc": "Mary Peltola flips Alaska seat, giving Democrats a 56-44 edge in Senate The Washington Post Mary Peltola beats Republican Dan Sullivan in Alaska to give Democrats 56 Senate seats The Guardian Alaska Native strongholds push Peltola into Sena"
+    "score": 274.0,
+    "why": "10 sources · fresh",
+    "desc": "Cadillac F1 Team Going Translucent for 2026 Las Vegas Grand Prix With New Special Livery autoevolution"
    },
    {
     "id": "nat-4300246d03",
@@ -762,11 +770,11 @@
     "tag": "ROADS",
     "score": 108.0,
     "why": "4 sources · roads",
-    "desc": "Markwayne Mullin defends private-jet trip to football game as millions hit by flight delays The Guardian Markwayne Mullin Defends Flight to L.S.U.-Texas Game After Ground Stop The New York Times Mullin flew to a football game while American"
+    "desc": "Markwayne Mullin Defends Flight to L.S.U.-Texas Game After Ground Stop The New York Times Markwayne Mullin flew to a football game while Americans struggled with FAA ground stop CNN Mullin defends taking government plane to LSU-Texas game a"
    },
    {
-    "id": "nat-231eb8516e",
-    "title": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio",
+    "id": "nat-24de7a3d4a",
+    "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor",
     "source": "AP News",
     "sources": [
      "AP News",
@@ -775,13 +783,13 @@
      "The Guardian"
     ],
     "votes": 4,
-    "at": "2026-11-18T04:10:00-05:00",
-    "atMs": 1794993000000,
+    "at": "2026-11-18T03:27:50-05:00",
+    "atMs": 1794990470000,
     "link": "https://www.npr.org/2026/11/18/nx-s1-6045411/rubio-outages-malign-actor",
     "tag": "NATIONAL",
-    "score": 106.0,
-    "why": "4 sources · fresh",
-    "desc": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio The Guardian Rubio says there’s ‘zero’ information that US outages are linked or caused by a malign actor AP News Director of National Intelligence offers explanatio"
+    "score": 100.0,
+    "why": "4 sources",
+    "desc": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio The Guardian Rubio says tech outages are not part of 'systemic attack' against US BBC Rubio says there's 'zero' information that U.S. outages are caused by a malign "
    },
    {
     "id": "nat-148e9f452b",
@@ -803,23 +811,22 @@
     "desc": "A classified computer network used by the National Security Agency went down due to a technical problem Tuesday, but there was no indication that it was an attack, sources say"
    },
    {
-    "id": "nat-5c36d733aa",
-    "title": "Nvidia says it won't reinstate Huang as firm reports bumper results",
-    "source": "CBS",
+    "id": "nat-8f8894ee1a",
+    "title": "Judge orders release of some search warrant documents in Rep. Ilhan Omar case",
+    "source": "NBC",
     "sources": [
-     "CBS",
      "NBC",
-     "NPR",
-     "BBC"
+     "NBC News",
+     "The Washington Post"
     ],
-    "votes": 4,
-    "at": "2026-11-17T20:18:18-05:00",
-    "atMs": 1794964698000,
-    "link": "https://www.cbsnews.com/news/jensen-huang-nvidia-ceo-return-statement/",
+    "votes": 3,
+    "at": "2026-11-17T23:15:00-05:00",
+    "atMs": 1794975300000,
+    "link": "https://www.nbcnews.com/politics/justice-department/judge-order-release-records-federal-search-ilhan-omars-home-rcna609841",
     "tag": "NATIONAL",
-    "score": 94.0,
-    "why": "4 sources",
-    "desc": "The Nvidia board \"does not intend to reinstate\" Jensen Huang as CEO, the newly appointed board chair, Harvey Jones, said on their quarterly earnings call. NBC News' Allie Canal and Sahil Kapur discuss how Nvidia topped estimates despite Hua"
+    "score": 66.0,
+    "why": "3 sources",
+    "desc": "Judge orders release of some search warrant documents in Rep. Ilhan Omar case The Washington Post Judge to order release of some records in federal search of Ilhan Omar’s home Yahoo Judge agrees ‘vast majority’ of Omar investigation should "
    },
    {
     "id": "nat-c798ba5ebc",
@@ -840,23 +847,6 @@
     "desc": "F1 newsL Cadillac unveils unique new look for Las Vegas Grand Prix Speedcafe.com"
    },
    {
-    "id": "nat-b64b885aab",
-    "title": "Pastor Kingsley Okonkwo Shares Action He Took After Church Member Insulted Him For Having Tattoo",
-    "source": "Legit News",
-    "sources": [
-     "Legit News",
-     "Naija News"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T03:58:12-05:00",
-    "atMs": 1794992292000,
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTFEycnNoaWlVVE9JcVo5M0NTRXIzZmxEX0I0Qll6R19RMGVnR2d4SmpYWEhLRThyc3A3NllsS3JBa2VKel93QmtFT0FVYjhEUFFvYlhFS2w2eGY4YnBKV1cxRVpucXJIbnozVnB1Ni1uX05aMFBFQkRESXdOaERndjVnVmRHc09CTmFBVkdYY2RsZ1hnR1FETmRzV2E3QzlvVHFLVVloS2lzc3JBd1d0d2ZaYTBFMURYTmN2Y1ZWYVI?oc=5",
-    "tag": "SPORTS",
-    "score": 62.0,
-    "why": "2 sources · fresh · sports",
-    "desc": "Pastor Kingsley Okonkwo Shares Action He Took After Church Member Insulted Him For Having Tattoo Legit News"
-   },
-   {
     "id": "nat-cef48af3b0",
     "title": "All the special liveries for F1's Las Vegas Grand Prix",
     "source": "www.news.gp",
@@ -875,21 +865,21 @@
     "desc": "GALLERY: Cadillac reveal special livery for Las Vegas Grand Prix Formula 1"
    },
    {
-    "id": "nat-f19a13ac5f",
-    "title": "12+ inches of rain possible as Central Florida faces prolonged flooding threat",
-    "source": "FOX Weather",
+    "id": "nat-b64b885aab",
+    "title": "Pastor Kingsley Okonkwo Shares Action He Took After Church Member Insulted Him For Having Tattoo",
+    "source": "Legit News",
     "sources": [
-     "FOX Weather",
-     "WESH"
+     "Legit News",
+     "Naija News"
     ],
     "votes": 2,
-    "at": "2026-11-17T16:14:00-05:00",
-    "atMs": 1794950040000,
-    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVnlKLWh0TDYzaVJPZlllNHZBa0dsVDZhcWFjRk9ndnRHOWQxRXpYQ2E0MndkTGtsMXM5UUd4SGtiMTU1Ymx6ZU5JQWRwaEV1TU1Ic044TmhZUGVvZ2xjd1RFWW5lOGJCNjZZVjNsYklUTlFXamdfQjhpaUt5R1lOeXRDeUg3VHhxUFZ0ZVpOUENsQdIBlwFBVV95cUxPY2ZhMk9TaW0yalFUOU1zZ19NSWtqUnVpZFlVRzJLdjMwR3hhMkFCZjhSU0tvUnhjdUxoaFVyRzM3N3ItMnVyWVg5b0QyUmlzdFlOSmtDeHBjQ1hPMER2ODdudkpFN01QajFyOS1aa0k1NXd2QWVzQUY4WXZ1OW90N3hRSXUzeW9URzVSZnlKSjRhQkpyaGxn?oc=5",
-    "tag": "WEATHER",
-    "score": 54.0,
-    "why": "2 sources · weather",
-    "desc": "12+ inches of rain possible as Central Florida faces prolonged flooding threat WESH Why parts of Florida are flooding during the dry season The Weather Channel Live updates: 'Potentially catastrophic rainfall' targets Florida Yahoo Rounds o"
+    "at": "2026-11-18T03:58:12-05:00",
+    "atMs": 1794992292000,
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTFEycnNoaWlVVE9JcVo5M0NTRXIzZmxEX0I0Qll6R19RMGVnR2d4SmpYWEhLRThyc3A3NllsS3JBa2VKel93QmtFT0FVYjhEUFFvYlhFS2w2eGY4YnBKV1cxRVpucXJIbnozVnB1Ni1uX05aMFBFQkRESXdOaERndjVnVmRHc09CTmFBVkdYY2RsZ1hnR1FETmRzV2E3QzlvVHFLVVloS2lzc3JBd1d0d2ZaYTBFMURYTmN2Y1ZWYVI?oc=5",
+    "tag": "SPORTS",
+    "score": 56.0,
+    "why": "2 sources · sports",
+    "desc": "Pastor Kingsley Okonkwo Shares Action He Took After Church Member Insulted Him For Having Tattoo Legit News"
    },
    {
     "id": "nat-315be67a71",
@@ -909,21 +899,55 @@
     "desc": "Waymo says it has temporarily stopped offering driverless taxi rides on freeways after California banned the vehicles from state highways following recent traffic incidents"
    },
    {
-    "id": "nat-1a419efd5d",
-    "title": "Cruz announces partial deal on aviation safety overhaul",
+    "id": "nat-fdcd22f13e",
+    "title": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
+    "source": "NYT",
+    "sources": [
+     "NYT",
+     "The New York Times"
+    ],
+    "votes": 2,
+    "at": "2026-11-17T21:37:34-05:00",
+    "atMs": 1794969454000,
+    "link": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html",
+    "tag": "SCHOOLS",
+    "score": 52.0,
+    "why": "2 sources · schools",
+    "desc": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says The New York Times Lawyers’ Committee Files Lawsuit on Behalf of Black Students Detained and Searched Due to AI Alert Falsely Identifying a Bag of Chips as a Firearm Lawyers' Co"
+   },
+   {
+    "id": "nat-b263faa0b6",
+    "title": "Apple restores services after internal update caused outages",
     "source": "CBS",
     "sources": [
      "CBS",
-     "Politico"
+     "NBC"
     ],
     "votes": 2,
-    "at": "2026-11-17T19:37:38-05:00",
-    "atMs": 1794962258000,
-    "link": "https://www.cbsnews.com/news/airline-safety-bill-deal-ted-cruz/",
-    "tag": "ROADS",
-    "score": 52.0,
-    "why": "2 sources · roads",
-    "desc": "Cruz announces partial deal on aviation safety overhaul Politico Congress agrees on civilian plane locator mandate after deadly American Airlines-Black Hawk crash The Hill Families of victims of D.C.-area midair collision push for more safe"
+    "at": "2026-11-18T08:17:59-05:00",
+    "atMs": 1795007879000,
+    "link": "https://www.cbsnews.com/news/apple-outage-icloud-apple-pay-services/",
+    "tag": "NATIONAL",
+    "score": 50.0,
+    "why": "2 sources · fresh",
+    "desc": "The company's system status shows that all Apple services, including iCloud sign-in, have been restored after experiencing issues earlier Tuesday."
+   },
+   {
+    "id": "nat-0bf79bb677",
+    "title": "Jeff Bezos Says He Was ‘Heavily Involved’ in Bond Casting",
+    "source": "BBC",
+    "sources": [
+     "BBC",
+     "NBC"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T07:58:57-05:00",
+    "atMs": 1795006737000,
+    "link": "https://www.bbc.co.uk/news/articles/cm5y1eejk292o?at_medium=RSS&at_campaign=rss",
+    "tag": "NATIONAL",
+    "score": 50.0,
+    "why": "2 sources · fresh",
+    "desc": "Amazon founder and chairman Jeff Bezos says he was “heavily involved” in the casting of Robert Pattinson as Amazon MGM Studios’ next James Bond, though he says there was some hesitancy in the selection. “We were slightly biased against him "
    }
   ],
   "more": [
@@ -936,17 +960,76 @@
      "NBC",
      "The New York Times",
      "AP News",
+     "The Hill",
      "CBS",
-     "The Hill"
+     "NBC News"
     ],
-    "votes": 6,
+    "votes": 7,
     "at": "2026-11-18T00:49:00-05:00",
     "atMs": 1794980940000,
     "link": "https://www.nytimes.com/2026/11/17/us/overton-fda-nomination-withdrawn.html",
     "tag": "NATIONAL",
+    "score": 154.0,
+    "why": "7 sources · downranked: political fight",
+    "desc": "White House drops Heidi Overton’s FDA nomination after Republicans raise concerns NBC News White House Withdraws Nomination of Heidi Overton to Be F.D.A. Commissioner The New York Times White House withdraws nominee for FDA commissioner NPR"
+   },
+   {
+    "id": "nat-4bd81ccf1f",
+    "title": "Mary Peltola flips Alaska seat, giving Democrats a 56-44 edge in Senate",
+    "source": "New York Daily News",
+    "sources": [
+     "New York Daily News",
+     "NYT",
+     "NPR",
+     "CBS",
+     "NBC",
+     "The Washington Post"
+    ],
+    "votes": 6,
+    "at": "2026-11-18T04:22:34-05:00",
+    "atMs": 1794993754000,
+    "link": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
+    "tag": "NATIONAL",
     "score": 126.0,
     "why": "6 sources · downranked: political fight",
-    "desc": "White House pulls nomination of Heidi Overton to lead FDA The Hill White House Withdraws Nomination of Heidi Overton to Be F.D.A. Commissioner The New York Times White House pulls nomination of Heidi Overton to lead Food and Drug Administra"
+    "desc": "Democrat Mary Peltola on brink of wrapping up Alaska Senate race New York Daily News Why an Alaska win by Peltola is so important to Democrats The Hill Final 2026 midterm results: Every race that hasn't been called yet — and where things st"
+   },
+   {
+    "id": "nat-e02f169250",
+    "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
+    "source": "CBS",
+    "sources": [
+     "CBS",
+     "NBC",
+     "NPR",
+     "BBC",
+     "The Washington Post"
+    ],
+    "votes": 5,
+    "at": "2026-11-18T07:14:28-05:00",
+    "atMs": 1795004068000,
+    "link": "https://www.cbsnews.com/news/jensen-huang-nvidia-ceo-return-statement/",
+    "tag": "NATIONAL",
+    "score": 104.0,
+    "why": "5 sources · fresh · downranked: political fight",
+    "desc": "Mary Peltola flips Alaska seat, giving Democrats a 56-44 edge in Senate The Washington Post Democrat Mary Peltola unseats Republican in Alaska Senate race BBC Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang"
+   },
+   {
+    "id": "nat-18622f4d61",
+    "title": "Cadillac F1 Teams Up With New Global Pharmaceutical Partner",
+    "source": "Fierce Pharma",
+    "sources": [
+     "Fierce Pharma",
+     "GM Authority"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T07:05:23-05:00",
+    "atMs": 1795003523000,
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWExxa09zLXRNSVY3YlM3Z2h1UHR6b3FQc2ZTelpvUEN2cDlHaHE0RUNPcjNNZGU4SWJNbnQ1WGJoRnc5NkxLc1ZqUkdaNmJtcExBcGRFYTdKczRnZG14clByZ0pYNXFkT2w2Y1JxMEZXb2ZSSHN2WndUMkNMeGtHSEZwT2xNTG9IbkZ6dEhWR1N5ekM5YWRsVTRXbjFzT3JtRUIwcA?oc=5",
+    "tag": "NATIONAL",
+    "score": 50.0,
+    "why": "2 sources · fresh",
+    "desc": "Viatris takes the wheel as Cadillac F1 team's new global pharma partner Fierce Pharma"
    },
    {
     "id": "nat-e0d4fd2216",
@@ -963,7 +1046,7 @@
     "atMs": 1794948684000,
     "link": "https://www.foxnews.com/us/criminal-past-illinois-ethanol-plant-bomb-scare-suspect-includes-multiple-felonies-2-prison-stints",
     "tag": "NATIONAL",
-    "score": 52.0,
+    "score": 46.0,
     "why": "4 sources · downranked: graphic crime",
     "desc": "Illinois man charged in connection with bomb found at Peoria ethanol plant NBC News Suspect faces federal charges after explosive device found at Illinois ethanol plant CNN UPDATE: Andrew Kozak appears in court for BioUrja ethanol bomb thre"
    },
@@ -980,43 +1063,26 @@
     "atMs": 1794947753000,
     "link": "https://www.nytimes.com/2026/11/17/us/public-schools-closing-birth-rate-enrollment.html",
     "tag": "SCHOOLS",
-    "score": 52.0,
+    "score": 46.0,
     "why": "2 sources · schools",
     "desc": "With fewer babies being born and more school choice, districts across the country have concluded they must downsize. Families are trying to push back."
    },
    {
-    "id": "nat-5bf6fa6c6e",
-    "title": "City of New Orleans closes assistance center for capsized cruise ship passengers",
-    "source": "WDSU",
+    "id": "nat-f44d8eb052",
+    "title": "Cruz announces deal on stalled airline safety bill",
+    "source": "CBS",
     "sources": [
-     "WDSU",
-     "Fox Business"
+     "CBS",
+     "Politico"
     ],
     "votes": 2,
-    "at": "2026-11-17T15:31:00-05:00",
-    "atMs": 1794947460000,
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYzhIOGZrd094ZW43NWVhQzdmQkYwRTJ5T2RleHlyQlhZTFczbU83ZWRYX08wTHdZZzhfN3RTS0JfT2QxM2cxcGk3bkpyNGFYNzgxcTdYRUZ2MElCMzVTcVFQTHM5bDZuSXBIY090dEhiS0QwWU5VaFA4QUxfMEItOWJJQkpucHNWdl93NHhKcUVpRUNLWFktbE5yeExjLWNZZFlXbg?oc=5",
+    "at": "2026-11-17T14:34:54-05:00",
+    "atMs": 1794944094000,
+    "link": "https://www.cbsnews.com/news/airline-safety-bill-deal-ted-cruz/",
     "tag": "ROADS",
-    "score": 52.0,
+    "score": 46.0,
     "why": "2 sources · roads",
-    "desc": "Costly legal battle to play out after incident in New Orleans port left cruise ship capsized Fox Business City of New Orleans closes assistance center for capsized cruise ship passengers WDSU Gretna tug boat crew rescued 27 people in Missis"
-   },
-   {
-    "id": "nat-f4d7a6b8f5",
-    "title": "Jeff Bezos says he was ‘heavily involved’ in picking the new James Bond",
-    "source": "BBC",
-    "sources": [
-     "BBC",
-     "NBC"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T04:53:31-05:00",
-    "atMs": 1794995611000,
-    "link": "https://www.bbc.co.uk/news/articles/cm5y1eejk292o?at_medium=RSS&at_campaign=rss",
-    "tag": "NATIONAL",
-    "score": 50.0,
-    "why": "2 sources · fresh",
-    "desc": "Amazon founder Jeff Bezos told an audience that he was “heavily involved” with casting Robert Pattinson to play the new James Bond, saying that he displayed “something special.”"
+    "desc": "Cruz announces partial deal on aviation safety overhaul Politico Families push more air safety measures as FAA grapples with system improvements NPR Deal on stalled airline safety bill announced by Cruz with families of D.C. plane crash vic"
    },
    {
     "id": "nat-646aeb7e90",
@@ -1036,38 +1102,36 @@
     "desc": "“Some of the Worst Advice Came From Pastors”: Kingsley Okonkwo Speaks on Relationship Counselling Legit News"
    },
    {
-    "id": "nat-8d1e47a50e",
-    "title": "Kingsley's run ends in quarters",
-    "source": "Traverse City Record-Eagle",
+    "id": "nat-b35adb4f5e",
+    "title": "Flood threat grows across Central Florida as additional inches of rain move in",
+    "source": "WESH",
     "sources": [
-     "Traverse City Record-Eagle"
+     "WESH"
     ],
     "votes": 1,
-    "at": "2026-11-17T23:45:00-05:00",
-    "atMs": 1794977100000,
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVmRJQ3RjVXRVNjFkYjVTdU1YODUxd2Nvd182ZUpHNlR5eUtEc0M5Qnp5X2hGVUY5VnF6ZjBvRnFnSFVvMjJ1SnRMN0ZxWDYyVVhwUnJaVjZnTGp3dmh4NWdHMWt3NERybUVVQTVNM09fN2MyTFFHc2NudmM0ZUhIQlRDV0FtTEVHRm9EVUpQNk40c1ZGYzNXdGZrcTJKOWIzcVVQOE43MHNDaDdMTS1Ja3dycG9pYUk?oc=5",
-    "tag": "SPORTS",
-    "score": 42.0,
-    "why": "local angle · sports",
-    "desc": "Kingsley's run ends in quarters Traverse City Record-Eagle"
+    "at": "2026-11-18T06:23:00-05:00",
+    "atMs": 1795000980000,
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZUFZRUVvbGlGNWtPVjFlWER2OFRwT0ZRcE5EZDYwamJpQ1VpaFdWTXNWVjkzQ1UyMThPUy04QjhWa083YjBHMDhpVG1TUFhYcTlmVlMyZUFUSVpDTU0waFBTYTRZenllT2swNWFrei0zaTJqNHdHWjhXajVVVHJsVTk2ejJ1WnRvVUJ4ZndB?oc=5",
+    "tag": "WEATHER",
+    "score": 38.0,
+    "why": "fresh · weather",
+    "desc": "Flood threat grows across Central Florida as additional inches of rain move in WESH Why parts of Florida are flooding during the dry season The Weather Channel As we progress through a wet week, winds will also be a factor News4JAX RADAR: H"
    },
    {
-    "id": "nat-ec8be2b65a",
-    "title": "Democrats Assail RFK Jr. After U.S. Loses Measles Elimination Status",
-    "source": "CBS",
+    "id": "nat-a03f1b8a2a",
+    "title": "Another Storm Is Bearing Down on California",
+    "source": "The New York Times",
     "sources": [
-     "CBS",
-     "BBC",
-     "NYT"
+     "The New York Times"
     ],
-    "votes": 3,
-    "at": "2026-11-17T22:33:29-05:00",
-    "atMs": 1794972809000,
-    "link": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
-    "tag": "NATIONAL",
-    "score": 42.0,
-    "why": "3 sources · downranked: political fight",
-    "desc": "Incoming senators and prospective presidential candidates blamed the health secretary’s history of vaccine skepticism for the rise of measles in the country."
+    "votes": 1,
+    "at": "2026-11-18T05:58:00-05:00",
+    "atMs": 1794999480000,
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfTEVnYlEzVFE5ZGs3TjFYOWZxVUZrcFRHTHpFU18wZE1weUhGa2JicTlDU3M2WHlENDdGZ0pJVEJ2MW53MTBLTlRyYkgwakpBclVleGJtel9VM2E2UmtydFR1dzZDYmVTRm1EV2RvcW1wcW1KUFluY0VlazY1YlU?oc=5",
+    "tag": "WEATHER",
+    "score": 38.0,
+    "why": "fresh · weather",
+    "desc": "Another Storm Is Bearing Down on California The New York Times Atmospheric river to bring California heavy rain, wind, t-storms, snow. When it hits Sacramento Bee Big storm could make for Tahoe’s snowiest November since 2010 San Francisco C"
    },
    {
     "id": "nat-23ac7428a8",
@@ -1083,7 +1147,7 @@
     "tag": "WEATHER",
     "score": 38.0,
     "why": "fresh · weather",
-    "desc": "Thanksgiving travel forecast 2026: early weather outlook The Weather Channel Preparing for the holiday? An early look at the Thanksgiving week forecast. The Washington Post Will it snow in NY for Thanksgiving? Here's what the Almanac predic"
+    "desc": "Thanksgiving travel forecast 2026: early weather outlook The Weather Channel Thanksgiving outlook: Rain, possible snow to snarl holiday travel for millions as El Niño fuels storms FOX Weather Got Thanksgiving errands? Do them Saturday. Sund"
    },
    {
     "id": "nat-fece496089",
@@ -1120,69 +1184,86 @@
     "desc": "Explosive trash geyser heightens fear of health crisis around troubled L.A. area landfill Los Angeles Times Massive geyser of rotting trash prompts emergency health order in L.A. County KTLA Landfill geyser erupts at Chiquita Canyon in Cast"
    },
    {
-    "id": "nat-b263faa0b6",
-    "title": "Apple restores services after internal update caused outages",
-    "source": "CBS",
+    "id": "nat-2afbdb369b",
+    "title": "Judy Ann Gordon",
+    "source": "Petoskey News-Review",
     "sources": [
-     "CBS",
-     "NBC"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T17:59:00-05:00",
-    "atMs": 1794956340000,
-    "link": "https://www.cbsnews.com/news/apple-outage-icloud-apple-pay-services/",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "The company's system status shows that all Apple services, including iCloud sign-in, have been restored after experiencing issues earlier Tuesday."
-   },
-   {
-    "id": "nat-15eade8020",
-    "title": "Fans Flock to This Famous Sign. Neighbors Say, Get Off My Road.",
-    "source": "NYT",
-    "sources": [
-     "NYT"
+     "Petoskey News-Review"
     ],
     "votes": 1,
-    "at": "2026-11-18T05:03:36-05:00",
-    "atMs": 1794996216000,
-    "link": "https://www.nytimes.com/2026/11/18/us/fans-flock-to-this-famous-sign-neighbors-say-get-off-my-road.html",
+    "at": "2026-11-18T08:28:25-05:00",
+    "atMs": 1795008505000,
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhOGU1OTlLZDN5VXQ0RkRlbnZqelNVYVJyQmEzdFVTMXo2V18tY3pVQ19oQ0JZU2hJQlpnQlpSWWN4bm82Q3JQNGhmdVFQSi1DbERjbDJLR3o4UmdHeUd3Nw?oc=5",
+    "tag": "NATIONAL",
+    "score": 36.0,
+    "why": "fresh · local angle",
+    "desc": "Judy Ann Gordon Petoskey News-Review"
+   },
+   {
+    "id": "nat-1e215ec8ee",
+    "title": "Mullin heads to Congress to face questions over flight disruptions, football trip and immigration",
+    "source": "AP News",
+    "sources": [
+     "AP News"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T07:19:00-05:00",
+    "atMs": 1795004340000,
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRDEtcVdMZnJyYmFnRzhTLVJHcHZNYXZuTzZPM1JlQW5HTVVJSWdMZk54ajE1NjF2V0laVjhScWh3LURPNlBmTnVBd0VvTERPeFU4ZXNKN1UwZVVDcEN6MnU5VVBDTEluVUFrUWt6VHlCSHJHUjBWQ29GYm50ZUpWUmRGY3cycHp0d042YmtBV0Y3amFOaTdJX3VUSzhoalA2djJDMDczTWppaHYxVm5vYUliSQ?oc=5",
     "tag": "ROADS",
     "score": 36.0,
     "why": "fresh · roads",
-    "desc": "The residents of the Hollywood Hills have sued Los Angeles, saying the city has not done enough to address the dangerous conditions created by tourists vying for a glimpse of the iconic Hollywood sign."
+    "desc": "Mullin heads to Congress to face questions over flight disruptions, football trip and immigration AP News Markwayne Mullin Defends Flight to L.S.U.-Texas Game After Ground Stop The New York Times Mullin flew to a football game while America"
    },
    {
-    "id": "nat-a4a343d111",
-    "title": "Project Gryffindor: Meta's plan to get more school kids using Instagram",
-    "source": "NPR",
+    "id": "nat-559906c733",
+    "title": "School districts have fewer students, but some are delaying painful budget decisions",
+    "source": "ABC News",
     "sources": [
-     "NPR"
+     "ABC News"
     ],
     "votes": 1,
-    "at": "2026-11-18T05:00:00-05:00",
-    "atMs": 1794996000000,
-    "link": "https://www.npr.org/2026/11/18/nx-s1-6037808/meta-instagram-schools-teens-safety",
+    "at": "2026-11-18T07:10:22-05:00",
+    "atMs": 1795003822000,
+    "link": "https://abcnews.com/US/wireStory/school-districts-fewer-students-delaying-painful-budget-decisions-138238549",
     "tag": "SCHOOLS",
     "score": 36.0,
     "why": "fresh · schools",
-    "desc": "Meta said it launched its \"school partnership program\" to keep teens safe, but internal documents tell a different story."
+    "desc": "Seattle Public Schools faces a recurring budget crisis due to declining enrollment"
    },
    {
-    "id": "nat-eb5f6005de",
-    "title": "Special education teachers shared their stories. You told NPR you felt seen",
-    "source": "NPR",
+    "id": "nat-8d1e47a50e",
+    "title": "Kingsley's run ends in quarters",
+    "source": "Traverse City Record-Eagle",
     "sources": [
-     "NPR"
+     "Traverse City Record-Eagle"
     ],
     "votes": 1,
-    "at": "2026-11-18T05:00:00-05:00",
-    "atMs": 1794996000000,
-    "link": "https://www.npr.org/2026/11/18/nx-s1-6031176/special-education-teachers-audience-response",
-    "tag": "SCHOOLS",
+    "at": "2026-11-17T23:45:00-05:00",
+    "atMs": 1794977100000,
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVmRJQ3RjVXRVNjFkYjVTdU1YODUxd2Nvd182ZUpHNlR5eUtEc0M5Qnp5X2hGVUY5VnF6ZjBvRnFnSFVvMjJ1SnRMN0ZxWDYyVVhwUnJaVjZnTGp3dmh4NWdHMWt3NERybUVVQTVNM09fN2MyTFFHc2NudmM0ZUhIQlRDV0FtTEVHRm9EVUpQNk40c1ZGYzNXdGZrcTJKOWIzcVVQOE43MHNDaDdMTS1Ja3dycG9pYUk?oc=5",
+    "tag": "SPORTS",
     "score": 36.0,
-    "why": "fresh · schools",
-    "desc": "NPR is following along as about a dozen special education teachers navigate this school year and share their joys and challenges. Listeners say they're not alone."
+    "why": "local angle · sports",
+    "desc": "Kingsley's run ends in quarters Traverse City Record-Eagle"
+   },
+   {
+    "id": "nat-ec8be2b65a",
+    "title": "Democrats Assail RFK Jr. After U.S. Loses Measles Elimination Status",
+    "source": "CBS",
+    "sources": [
+     "CBS",
+     "BBC",
+     "NYT"
+    ],
+    "votes": 3,
+    "at": "2026-11-17T22:33:29-05:00",
+    "atMs": 1794972809000,
+    "link": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
+    "tag": "NATIONAL",
+    "score": 36.0,
+    "why": "3 sources · downranked: political fight",
+    "desc": "Incoming senators and prospective presidential candidates blamed the health secretary’s history of vaccine skepticism for the rise of measles in the country."
    },
    {
     "id": "nat-5746bc3e3b",
@@ -1201,6 +1282,22 @@
     "score": 36.0,
     "why": "3 sources · downranked: political fight",
     "desc": "Hakeem Jeffries shifts tactics ahead of House Democrats' internal speaker vote Axios Watch live: Jeffries speaks as Democrats prepare for leadership elections The Hill New Dems Statement on Speaker Election New Democrat Coalition (.gov) In "
+   },
+   {
+    "id": "nat-cd7c14790f",
+    "title": "Harrison Boys Varsity Basketball @ NMCHS",
+    "source": "MaxPreps",
+    "sources": [
+     "MaxPreps"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T08:02:10-05:00",
+    "atMs": 1795006930000,
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOc1VJSzBZT2poRVFDZXRuSmEtUVQ5eHFZTlpzNVB2SWNrRDZQUGswN0JUenBhYV8wV0w1cmhwbEpiMjVKVjRmU0psell6aEQxZWRUZl9RX19lWUkxSlZHWmMwTzdFd0M4S3gtdUZUTUwwMTM2V2ZuOGFES3JMb3JvV1dhSlhZMGhYMkV2WExMNERWOXdZcWZXMWNZYjdjd0Y3Y0J1blppWVhTdHR6cVo4SGM3TjVjRHJnN3otR21fVW9KbTBzdVdCYXlBS21WdzBPOW13ZzczR0w?oc=5",
+    "tag": "SPORTS",
+    "score": 34.0,
+    "why": "fresh · sports",
+    "desc": "Harrison Boys Varsity Basketball @ NMCHS MaxPreps"
    },
    {
     "id": "nat-78c30f4afa",
@@ -1235,20 +1332,38 @@
     "desc": "Presenting the 2026 Saginaw Valley League North football all-conference team MLive.com"
    },
    {
-    "id": "nat-ed8ab1f7f0",
-    "title": "Powerful Bay Area storm with heavy rain, wind and flood risk is arriving. Here’s the timeline",
-    "source": "San Francisco Chronicle",
+    "id": "nat-5bf6fa6c6e",
+    "title": "City of New Orleans closes assistance center for capsized cruise ship passengers",
+    "source": "WDSU",
     "sources": [
-     "San Francisco Chronicle"
+     "WDSU",
+     "Fox Business"
     ],
-    "votes": 1,
-    "at": "2026-11-18T00:07:05-05:00",
-    "atMs": 1794978425000,
-    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRXRhZXlWZldPYS1YWDg2UjFhZjg5ZUxQdjUwSGVnOTViVlhkMWs2a0RfY2ZYczZHdWhiSHZBT2dWRmNFRTRRUXBpUGM3SHRZR3N1VkFjTUVSa2Fka2ZWX1dpaW1sT2swZXVISWlzLWJoUlM5U3FkSU83WmlLZ2s0NENzWWpmVm9zNUZWQWg3eEZlQ2JWSkcxU1EwOTRtZGd5N2NBMmRmQQ?oc=5",
-    "tag": "WEATHER",
+    "votes": 2,
+    "at": "2026-11-17T15:31:00-05:00",
+    "atMs": 1794947460000,
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYzhIOGZrd094ZW43NWVhQzdmQkYwRTJ5T2RleHlyQlhZTFczbU83ZWRYX08wTHdZZzhfN3RTS0JfT2QxM2cxcGk3bkpyNGFYNzgxcTdYRUZ2MElCMzVTcVFQTHM5bDZuSXBIY090dEhiS0QwWU5VaFA4QUxfMEItOWJJQkpucHNWdl93NHhKcUVpRUNLWFktbE5yeExjLWNZZFlXbg?oc=5",
+    "tag": "NATIONAL",
     "score": 32.0,
-    "why": "weather",
-    "desc": "Powerful Bay Area storm with heavy rain, wind and flood risk is arriving. Here’s the timeline San Francisco Chronicle Bay Area rain timeline: Level 3 strong storm to bring flooding, damage to parts of Bay Area with powerful winds up to 70 m"
+    "why": "2 sources",
+    "desc": "Costly legal battle to play out after incident in New Orleans port left cruise ship capsized Fox Business City of New Orleans closes assistance center for capsized cruise ship passengers WDSU Salvage operation of American Heritage riverboat"
+   },
+   {
+    "id": "nat-cafd314dee",
+    "title": "Cadillac Turns Translucent for Its Final Special F1 Livery in Las Vegas",
+    "source": "RacingNews365",
+    "sources": [
+     "RacingNews365",
+     "MotorBiscuit"
+    ],
+    "votes": 2,
+    "at": "2026-11-17T14:37:47-05:00",
+    "atMs": 1794944267000,
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkc4V0FIYWpKbXpJOVJHMzllTWpVNXU2TkpjRGx5eUxaanFManNwRU0weXExYVBMblBHaFhwZGxfUUFUOUd4LVRqeldkUVhHZEhFemRLaE9od1lOa25kMkkxTWdZRUxKTmc1am9rWnVWb1BtSEcxU0UzN21fRG90d2t6Nl9XOEhmdGpqYkxtY2ZhRUNwYUt2MWNWVQ?oc=5",
+    "tag": "NATIONAL",
+    "score": 32.0,
+    "why": "2 sources",
+    "desc": "Cadillac Turns Translucent for Its Final Special F1 Livery in Las Vegas MotorBiscuit"
    },
    {
     "id": "nat-ffc19e0259",
@@ -1265,24 +1380,7 @@
     "tag": "NATIONAL",
     "score": 32.0,
     "why": "2 sources",
-    "desc": "Remains of Danielle Lopez, woman who vanished 2 years ago, found in New Jersey Pine Barrens NBC News After her daughter’s remains were found in the New Jersey Pinelands, a mother turns to grief and justice Inquirer.com ‘The terror is gone’:"
-   },
-   {
-    "id": "nat-bc7c60a08f",
-    "title": "Judge to order release of some records in federal search of Ilhan Omar’s home",
-    "source": "NBC",
-    "sources": [
-     "NBC",
-     "NBC News"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T13:05:22-05:00",
-    "atMs": 1794938722000,
-    "link": "https://www.nbcnews.com/politics/justice-department/judge-order-release-records-federal-search-ilhan-omars-home-rcna609841",
-    "tag": "NATIONAL",
-    "score": 32.0,
-    "why": "2 sources",
-    "desc": "Judge to order release of some records in federal search of Ilhan Omar’s home NBC News Judge orders release of some search warrant documents in Rep. Ilhan Omar case The Washington Post Judge agrees ‘vast majority’ of Omar investigation shou"
+    "desc": "Remains of Danielle Lopez, woman who vanished 2 years ago, found in New Jersey Pine Barrens NBC News ‘The terror is gone’: An N.J. mom’s emotional words after her missing daughter’s remains were identified NJ.com Woman, 37, Vanished While C"
    },
    {
     "id": "nat-45f6beff13",
@@ -1302,21 +1400,20 @@
     "desc": "8-year-old Haitian boy returns home after being detained by ICE in San Diego NBC News 8-year-old Haitian child taken by ICE reunites with family KPBS Eight-year-old Haitian boy returns home after release from ICE custody The Guardian San Di"
    },
    {
-    "id": "nat-955b5232c8",
-    "title": "Gaylord couple returns from grocery run to find home on fire",
-    "source": "WPBN",
+    "id": "nat-1e7a750fa3",
+    "title": "No Michigan cases are known, but health officials are urging residents in 10 northern counties to keep naloxone ready for the potent synthetic opioid cychlorphine",
+    "source": "Medical Daily",
     "sources": [
-     "WPBN",
-     "WSMH"
+     "Medical Daily"
     ],
-    "votes": 2,
-    "at": "2026-11-17T09:23:14-05:00",
-    "atMs": 1794925394000,
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPeE5wVjJRTmtxUnlfYmNsdUFFOEd0ODBCZWFUNUpNWUd2S1NOMzZoMXFCR1p3MzBlbThaY2VqVnB6YWNRemE0TXlBel9XcXZBVlhVU2ZnY3oyZlpIQmIwQnhoRHo5VTNJMkpNc0ZfOTh3dE95RmlKcHYwcDRteGY0b0VZNFhybldoM2Z0blBmV0ptTkV6VjJrcGdZQlY2NDRBazgxTENVOE5TOExSbG9Jdi1CeDlWeGRFRzlGTkJiVGN3SFFCa0NMVVVvU2hIUXpzeU9kbEVwdm03U0JSOWc?oc=5",
+    "votes": 1,
+    "at": "2026-11-18T08:17:45-05:00",
+    "atMs": 1795007865000,
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYmJfSmdTN01RT1l4ZkV5SEpYRnJ1MkdaZU9NX2hwUHJTVWRjWXZmNWRvWXJ6QlphSFdoWXlwR29HNDNsQllzOTJ0WWJscnlwT0llS3lxWHd4ZER1LXg5UmdVTzlsTU4xLXc2Q0dKZEtiV1IydFJWR1VJaU5makFYLW14YXV3Q25kZzYw?oc=5",
     "tag": "NATIONAL",
-    "score": 32.0,
-    "why": "2 sources",
-    "desc": "Gaylord couple returns from grocery run to find home on fire WPBN"
+    "score": 30.0,
+    "why": "fresh · Michigan",
+    "desc": "No Michigan cases are known, but health officials are urging residents in 10 northern counties to keep naloxone ready for the potent synthetic opioid cychlorphine Medical Daily"
    },
    {
     "id": "nat-4f19e7b77d",
@@ -1335,6 +1432,54 @@
     "desc": "An inspired synthesis of violent satire and contemplative storytelling, Grand Theft Auto VI is more mature and ambitious than any prior game in the record-breaking franchise."
    },
    {
+    "id": "nat-15eade8020",
+    "title": "Fans Flock to This Famous Sign. Neighbors Say, Get Off My Road.",
+    "source": "NYT",
+    "sources": [
+     "NYT"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T05:03:36-05:00",
+    "atMs": 1794996216000,
+    "link": "https://www.nytimes.com/2026/11/18/us/fans-flock-to-this-famous-sign-neighbors-say-get-off-my-road.html",
+    "tag": "ROADS",
+    "score": 30.0,
+    "why": "roads",
+    "desc": "The residents of the Hollywood Hills have sued Los Angeles, saying the city has not done enough to address the dangerous conditions created by tourists vying for a glimpse of the iconic Hollywood sign."
+   },
+   {
+    "id": "nat-a4a343d111",
+    "title": "Project Gryffindor: Meta's plan to get more school kids using Instagram",
+    "source": "NPR",
+    "sources": [
+     "NPR"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T05:00:00-05:00",
+    "atMs": 1794996000000,
+    "link": "https://www.npr.org/2026/11/18/nx-s1-6037808/meta-instagram-schools-teens-safety",
+    "tag": "SCHOOLS",
+    "score": 30.0,
+    "why": "schools",
+    "desc": "Meta said it launched its \"school partnership program\" to keep teens safe, but internal documents tell a different story."
+   },
+   {
+    "id": "nat-eb5f6005de",
+    "title": "Special education teachers shared their stories. You told NPR you felt seen",
+    "source": "NPR",
+    "sources": [
+     "NPR"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T05:00:00-05:00",
+    "atMs": 1794996000000,
+    "link": "https://www.npr.org/2026/11/18/nx-s1-6031176/special-education-teachers-audience-response",
+    "tag": "SCHOOLS",
+    "score": 30.0,
+    "why": "schools",
+    "desc": "NPR is following along as about a dozen special education teachers navigate this school year and share their joys and challenges. Listeners say they're not alone."
+   },
+   {
     "id": "nat-39a30cb107",
     "title": "CHS student council holds first of three school blood drives",
     "source": "Cadillac News",
@@ -1349,22 +1494,6 @@
     "score": 30.0,
     "why": "schools",
     "desc": "CHS student council holds first of three school blood drives Cadillac News"
-   },
-   {
-    "id": "nat-559906c733",
-    "title": "School districts have fewer students, but some are delaying painful budget decisions",
-    "source": "ABC News",
-    "sources": [
-     "ABC News"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T01:44:49-05:00",
-    "atMs": 1794984289000,
-    "link": "https://abcnews.com/US/wireStory/school-districts-fewer-students-delaying-painful-budget-decisions-138238549",
-    "tag": "SCHOOLS",
-    "score": 30.0,
-    "why": "schools",
-    "desc": "Seattle Public Schools faces a recurring budget crisis due to declining enrollment"
    },
    {
     "id": "nat-d37366b510",
@@ -1384,22 +1513,6 @@
     "desc": "Missing plane with 3 people on board found crashed in Grand Canyon CBS News Three people killed in plane crash in Arizona’s Grand Canyon national park The Guardian Missing Aircraft Located on the North Rim of Grand Canyon National Park Nati"
    },
    {
-    "id": "nat-cd7c14790f",
-    "title": "Harrison Boys Varsity Basketball @ NMCHS",
-    "source": "MaxPreps",
-    "sources": [
-     "MaxPreps"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T02:02:10-05:00",
-    "atMs": 1794985330000,
-    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOc1VJSzBZT2poRVFDZXRuSmEtUVQ5eHFZTlpzNVB2SWNrRDZQUGswN0JUenBhYV8wV0w1cmhwbEpiMjVKVjRmU0psell6aEQxZWRUZl9RX19lWUkxSlZHWmMwTzdFd0M4S3gtdUZUTUwwMTM2V2ZuOGFES3JMb3JvV1dhSlhZMGhYMkV2WExMNERWOXdZcWZXMWNZYjdjd0Y3Y0J1blppWVhTdHR6cVo4SGM3TjVjRHJnN3otR21fVW9KbTBzdVdCYXlBS21WdzBPOW13ZzczR0w?oc=5",
-    "tag": "SPORTS",
-    "score": 28.0,
-    "why": "sports",
-    "desc": "Harrison Boys Varsity Basketball @ NMCHS MaxPreps"
-   },
-   {
     "id": "nat-6e4e5524bf",
     "title": "ATP. Basavareddy, Colak, Johnson and Kingsley are the top American to play on Wednesday 18th of November",
     "source": "Tennis Tonic",
@@ -1407,13 +1520,29 @@
      "Tennis Tonic"
     ],
     "votes": 1,
-    "at": "2026-11-18T00:15:39-05:00",
-    "atMs": 1794978939000,
+    "at": "2026-11-18T02:01:22-05:00",
+    "atMs": 1794985282000,
     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTjBuR21vTEdGV2oxZWx1ajBETmNqYWJLRDFVNjZoVnRsaUtXVDV2RUpDMDdON2VVMDhRRmNVWkFFTDRDZ0ZJNVVseWZ1TG5DV24weXhOT2dOUks2QUFjZ3VEMkFPMnhrVU53WU9xUWtmVThkT1FmZUVib1VWQjRzQ2tXMGRLQUdUMHlIbFA5aGZXVEJyZlh1UWRWZks4bEYzdzFUelhwOFJCUHhjb0tnaEJIbG5SMFFMcURYdDBueTlDcDBoNWlibk5OamlmREgwa2lvODVURDJYNVI2N1NR?oc=5",
     "tag": "SPORTS",
     "score": 28.0,
     "why": "sports",
     "desc": "ATP. Basavareddy, Colak, Johnson and Kingsley are the top American to play on Wednesday 18th of November Tennis Tonic"
+   },
+   {
+    "id": "nat-ed8ab1f7f0",
+    "title": "Powerful Bay Area storm with heavy rain, wind and flood risk is arriving. Here’s the timeline",
+    "source": "San Francisco Chronicle",
+    "sources": [
+     "San Francisco Chronicle"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T00:07:05-05:00",
+    "atMs": 1794978425000,
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRXRhZXlWZldPYS1YWDg2UjFhZjg5ZUxQdjUwSGVnOTViVlhkMWs2a0RfY2ZYczZHdWhiSHZBT2dWRmNFRTRRUXBpUGM3SHRZR3N1VkFjTUVSa2Fka2ZWX1dpaW1sT2swZXVISWlzLWJoUlM5U3FkSU83WmlLZ2s0NENzWWpmVm9zNUZWQWg3eEZlQ2JWSkcxU1EwOTRtZGd5N2NBMmRmQQ?oc=5",
+    "tag": "WEATHER",
+    "score": 26.0,
+    "why": "weather",
+    "desc": "Powerful Bay Area storm with heavy rain, wind and flood risk is arriving. Here’s the timeline San Francisco Chronicle Bay Area rain timeline: Level 3 strong storm to bring flooding, damage to parts of Bay Area with powerful winds up to 70 m"
    },
    {
     "id": "nat-5b2d20c5ab",
@@ -1429,23 +1558,7 @@
     "tag": "WEATHER",
     "score": 26.0,
     "why": "weather",
-    "desc": "Atmospheric river could drop an inch of rain per hour across Los Angeles County, flood watch issued KTLA Flood watch issued for SLO County, people urged to avoid Big Sur as storm approaches San Luis Obispo Tribune Rain, Thunderstorms Foreca"
-   },
-   {
-    "id": "nat-a03f1b8a2a",
-    "title": "Another Storm Is Bearing Down on California",
-    "source": "The New York Times",
-    "sources": [
-     "The New York Times"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T17:28:36-05:00",
-    "atMs": 1794954516000,
-    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfTEVnYlEzVFE5ZGs3TjFYOWZxVUZrcFRHTHpFU18wZE1weUhGa2JicTlDU3M2WHlENDdGZ0pJVEJ2MW53MTBLTlRyYkgwakpBclVleGJtel9VM2E2UmtydFR1dzZDYmVTRm1EV2RvcW1wcW1KUFluY0VlazY1YlU?oc=5",
-    "tag": "WEATHER",
-    "score": 26.0,
-    "why": "weather",
-    "desc": "Another Storm Is Bearing Down on California The New York Times Storms to batter West Coast with mountain snow, rain, waves The Weather Channel Hyper local snow forecast for the Sierra and valley | Storm Watch Weather | 2news.com KTVN Rain, "
+    "desc": "Atmospheric river could drop an inch of rain per hour across Los Angeles County, flood watch issued KTLA SoCal’s first atmospheric river storm of the season arrives this week: Here’s what it will bring Los Angeles Times Southern California "
    },
    {
     "id": "nat-37a2fc7401",
@@ -1478,22 +1591,6 @@
     "score": 24.0,
     "why": "roads",
     "desc": "18 people hurt in northeast Columbia crash on Highway 63 ABC17NEWS Boone County officials detail regional response to U.S. 63 six-vehicle crash that injured 18 KOMU 8 Several people, including 10 inmates, hospitalized after 6-vehicle crash "
-   },
-   {
-    "id": "nat-fdcd22f13e",
-    "title": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
-    "source": "NYT",
-    "sources": [
-     "NYT"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T21:37:34-05:00",
-    "atMs": 1794969454000,
-    "link": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html",
-    "tag": "SCHOOLS",
-    "score": 24.0,
-    "why": "schools",
-    "desc": "Four students of a high school in Baltimore are suing after the police handcuffed and searched them because an artificial intelligence gun-detection system wrongly alerted a bag of Doritos."
    },
    {
     "id": "nat-535c08da84",
@@ -1558,6 +1655,22 @@
     "score": 24.0,
     "why": "roads",
     "desc": "Irishman charged with destroying US military aircraft with axe BBC Man accessed US military plane at Ireland airport and destroyed it, DOJ says CNN Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon "
+   },
+   {
+    "id": "nat-7f4044bf36",
+    "title": "Prosecutors allege man ‘destroyed’ US military plane at Irish airport",
+    "source": "Al Jazeera",
+    "sources": [
+     "Al Jazeera"
+    ],
+    "votes": 1,
+    "at": "2026-11-17T20:44:13-05:00",
+    "atMs": 1794966253000,
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaFNLRGt3T0F3b3M4ZGxyR0psMVJPVVliYUxLdF9mazRwYXJQOW5wbGR1WXd6SHRDbTY4SjcxVXRFNjRFMnNjVi1ndEl4a016LVoyUTVRdkRONGxTT05kTWxZUjhMSUNmS0FFUDl3Ny1JRVRBRGo3VnA2VWVHTFFYQ2hkX0xuWGJ5ZENXMzlPdTZFUXc4UV9McWozSzM0RGJ0U2Qya2lCQmdZandKQkHSAbMBQVVfeXFMTkJRMUVqaWh5Q2t5LTU0UG0tSkRoWGt0Z1Zya1ZCVmwxSEJfTXRiUjJlNXotOEJxS1l5Y3lBbzNEZXREVHNsUmFMb05LYXZLb1dHNmFEclYyZi1ZRDUwVEFqZllJYWtwQWRwOW42dloxWV9qZFg1U2tSN3YtMEhadHNFcmxDd0NXSllBVlJLODdWTGRJNTRndHZ1MkpOT1dQSlpqMTFkNDJHR0g4NEIzQ0liakk?oc=5",
+    "tag": "ROADS",
+    "score": 24.0,
+    "why": "roads",
+    "desc": "Prosecutors allege man ‘destroyed’ US military plane at Irish airport Al Jazeera Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon Airport, Ireland Department of Justice (.gov) Man accessed US milit"
    },
    {
     "id": "nat-78118d1a20",
@@ -1638,86 +1751,6 @@
     "score": 24.0,
     "why": "roads",
     "desc": "The Federal Aviation Administration has halted the system upgrade linked to Friday's national ground stop, but officials are not willing to promise that the problems are behind us. Kris Van Cleave reports."
-   },
-   {
-    "id": "nat-8722f16eff",
-    "title": "Congress agrees on civilian plane locator mandate after deadly 2025 Washington, DC, midair collision",
-    "source": "AP News",
-    "sources": [
-     "AP News"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T18:59:00-05:00",
-    "atMs": 1794959940000,
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaThINU1nYndITVJtZHBzMDlCVHYyV3lDdDhNQVZEc0J6cDRoWVV1Y1NRTl9qN3JyajBoSF81UW11a1JsbW1NUWp0T0NlUV82aEhzNmlFYUhrYUVmZGhmSTFmQjBuRnNJMGV4YVEwZWFyME10WWttVzZ1UkYzQVNMREptVnFrNkRBTnlud3luenMzekh0U29zUjlrN2lQY0JpTHQ3LVZYb1pGcWdfYno0a0dRRQ?oc=5",
-    "tag": "ROADS",
-    "score": 24.0,
-    "why": "roads",
-    "desc": "Congress agrees on civilian plane locator mandate after deadly 2025 Washington, DC, midair collision AP News Cruz announces partial deal on aviation safety overhaul Politico Families of Flight 5342 victims push Congress to pass aviation saf"
-   },
-   {
-    "id": "nat-fd487c9a75",
-    "title": "How 3 Northwestern University students rescued peer attacked inside dorm room",
-    "source": "NBC 5 Chicago",
-    "sources": [
-     "NBC 5 Chicago"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T18:31:42-05:00",
-    "atMs": 1794958302000,
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVTNTSXJXV0NIeVE0S3ppeEdEb1BBU0JZYnVKOFpkMGhMSk1aY1hlZVJSaVRKRmlpbGoxU0JZNlpvbWJzT2Y2TkY1UkJzWGk4c1RrdnV4Y2VCSjFTOHg2RW41cUlXNS1uN241ejFJWVlyREwxc2llQUljWGtrcHpmLVEzVXViOVN0Q21iOXdzWVA3T3dKX291T3NGRmVHd29yR0xmaTZ2M1hBeEl5NjhfOUgtYWJtQ3ZuTC15VHE3ZXRnVGk5UktR0gHPAUFVX3lxTE1lMGFnM2JIR3Y3blVuZDV6RS1iWHZJQ2JEVHlteTR1UjV3ZERKbFVlWHZZNGJZMEZva1NoVmQ5S0QtLXEtMDRua3dtRDI2RmZKWHBSdl9DemlSNnNhc2hMTHZHaXV0Y1h4Zl9YeUc3ZWZnVzdaM1I1ZWxCcHhkMTFFYnIxT1BnX1AyZjUyYm5aSXlyOXlJQkhIcTlhY0lta21CV0puOEZERmtCQUJ6aWM0UTJEbVlNMXN0YlFRUklGZDV5Y1gzRFh6VW04dTMwSQ?oc=5",
-    "tag": "SCHOOLS",
-    "score": 24.0,
-    "why": "schools",
-    "desc": "How 3 Northwestern University students rescued peer attacked inside dorm room NBC 5 Chicago Man bypasses security at Northwestern University dorm Elder Hall in Evanston, Illinois, grabs student by throat: officials ABC7 Chicago Man charged "
-   },
-   {
-    "id": "nat-e73efbd723",
-    "title": "11/17: CBS Evening News",
-    "source": "CBS",
-    "sources": [
-     "CBS"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T18:30:00-05:00",
-    "atMs": 1794958200000,
-    "link": "https://www.cbsnews.com/video/111726-cbs-evening-news/",
-    "tag": "ROADS",
-    "score": 24.0,
-    "why": "roads",
-    "desc": "At least eight major technology outages hit the U.S. in the last week; the FAA paused the installation of new routers after the ground stop."
-   },
-   {
-    "id": "nat-17e663121c",
-    "title": "Several schools cancel class in response to lead azide detonation",
-    "source": "KWQC",
-    "sources": [
-     "KWQC"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T18:30:00-05:00",
-    "atMs": 1794958200000,
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPT3V4eVYtVHhtdW92VnRCc2NHWWtEQkFrT3c5ZW5LZllQN1pyb2h5NE15RE05Wk1OVlotUWRtNEJsRDE2NkRGb3FDZkRxSXBoSXJvZ0p3aDRqaUsxT0k2d3NyaFF5djJwTTFfUHNDVEF4Zm9XRnNzSXV4dGU0WGsteWpCMk9pVU1PR20xQl9Ra0hJdGJjc3NB?oc=5",
-    "tag": "SCHOOLS",
-    "score": 24.0,
-    "why": "schools",
-    "desc": "Several schools cancel class in response to lead azide detonation KWQC Planned Friday blast could coat section of eastern Iowa in lead dust Radio Iowa Iowa Army Ammunition Plant to detonate lead azide; issues safety warning NPR Illinois Mid"
-   },
-   {
-    "id": "nat-a037e9b6a6",
-    "title": "Man with ax destroys $60M U.S. military plane, prosecutors say",
-    "source": "CBS",
-    "sources": [
-     "CBS"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T17:54:00-05:00",
-    "atMs": 1794956040000,
-    "link": "https://www.cbsnews.com/news/us-military-plane-irish-airport/",
-    "tag": "ROADS",
-    "score": 24.0,
-    "why": "roads",
-    "desc": "Daithi O'Corrain, 48, is charged in the U.S. with destruction of U.S. government property in connection with the April incident at Shannon Airport."
    }
   ],
   "sources": [
@@ -1732,7 +1765,7 @@
   ],
   "fetched": {
    "ABC News": 25,
-   "NYT": 30,
+   "NYT": 31,
    "Fox News": 25,
    "NPR": 10,
    "CBS": 30,
