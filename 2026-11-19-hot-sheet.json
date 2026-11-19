@@ -1,0 +1,94 @@
+{
+  "weather": {
+    "temp": "54°",
+    "cond": "Clear",
+    "advisory": "No advisories",
+    "traffic": "Roads clear",
+    "high": "63°",
+    "low": "41°",
+    "tonight": "Mostly Clear",
+    "updated": "2026-11-19T06:04-05:00",
+    "source": [
+      "https://api.weather.gov/stations/KTVC/observations/latest",
+      "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+      "https://api.weather.gov/alerts/active?zone=MIZ026"
+    ],
+    "advisory_detail": {
+      "active": false
+    },
+    "today": "Mostly Sunny",
+    "icon": "sunny",
+    "week": [
+      {
+        "day": "Today",
+        "date": "2026-11-19",
+        "high": 63,
+        "low": 41,
+        "short": "Mostly Sunny",
+        "icon": "sunny",
+        "pop": 0
+      },
+      {
+        "day": "Fri",
+        "date": "2026-11-20",
+        "high": 61,
+        "low": 51,
+        "short": "Partly Sunny",
+        "icon": "partly",
+        "pop": 0
+      },
+      {
+        "day": "Sat",
+        "date": "2026-11-21",
+        "high": 65,
+        "low": 49,
+        "short": "Mostly Sunny",
+        "icon": "sunny",
+        "pop": 1
+      },
+      {
+        "day": "Sun",
+        "date": "2026-11-22",
+        "high": 55,
+        "low": 34,
+        "short": "Rain Showers",
+        "icon": "rain",
+        "pop": 88
+      },
+      {
+        "day": "Mon",
+        "date": "2026-11-23",
+        "high": 39,
+        "low": 29,
+        "short": "Slight Chance Rain And Snow Showers then Mostly Cloudy",
+        "icon": "mix",
+        "pop": 15
+      },
+      {
+        "day": "Tue",
+        "date": "2026-11-24",
+        "high": 37,
+        "low": 28,
+        "short": "Partly Sunny",
+        "icon": "partly",
+        "pop": 7
+      },
+      {
+        "day": "Wed",
+        "date": "2026-11-25",
+        "high": 38,
+        "low": 29,
+        "short": "Partly Sunny",
+        "icon": "partly",
+        "pop": 4
+      }
+    ]
+  },
+  "clips": {
+    "id": "clips",
+    "title": "Trending Audio",
+    "category": "Clips",
+    "type": "text",
+    "content": "3 clips + supercut so far (all new, 0 repeats). Overnight run failed on usage; rebuilt live at 6 AM.<br><br>SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY (0:20)<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.<br><br>GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) (0:57)<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.<br><br>GTA 6: GRAND THEFT PTO (CNN) (0:19)<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.<br><br>GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) (0:30)<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio."
+  }
+}
