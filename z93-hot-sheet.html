@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v55-linked-audio">
+<meta name="hs-build" content="v56-aj-only-cards">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -1628,11 +1628,10 @@ function etPartsAt(date, hm){
 }
 const SHOW_TABS=[{id:'truce',label:'AJ',cls:'tab-aj'},{id:'courtney',label:'Courtney',cls:'tab-courtney'},{id:'callie',label:'Cali',cls:'tab-cali'}];
 function showTabLabel(id){ const t=SHOW_TABS.find(x=>x.id===id); return (t&&t.label)||id; }
-function morningKeys(){ return ['vibe','mood','buzz','verse','mental','flash','cross']; }
-function morningEnded(p=etParts()){
-  if(typeof isShowDay==='function' && !isShowDay(p)) return false;
-  const sh=(typeof defaultShifts==='function'?defaultShifts():[]).find(s=>s.id==='truce');
-  return p.hm>=((sh&&sh.end)||'10:00');
+function morningKeys(){ return ['vibe','mood','buzz','verse','cross']; }   // AJ-only show cards
+function morningEnded(p=etParts()){   // true when the viewed profile tab isn't AJ's: hide AJ-only cards from the slider
+  const id=typeof viewProfile==='function'?viewProfile(p):'truce';
+  return id!=='truce';
 }
 function autoProfile(p=etParts()){
   if(typeof isShowDay==='function' && !isShowDay(p)) return 'truce';
