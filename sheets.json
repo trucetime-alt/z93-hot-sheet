@@ -71,14 +71,21 @@
    "date": "2026-11-19",
    "br": false,
    "audio": true,
-   "files": [],
+   "files": [
+    "c00-opener-supercut.mp3",
+    "c01-abc-gta6-first-play.mp3",
+    "c02-cnn-grand-theft-pto.mp3",
+    "c03-kimmel-gordon-ramsay-shirtless-60.mp3",
+    "c04-brad-upton-thanksgiving-in-laws.mp3",
+    "c05-drybar-half-marathon-turkey-trot.mp3"
+   ],
    "main": true
   }
  ],
  "clipFirst": {
-  "file:doberman-swns.mp3": "2026-11-13",
-  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:speed-english.mp3": "2026-11-13",
+  "file:stable-ronaldo-speech.mp3": "2026-11-13",
+  "file:doberman-swns.mp3": "2026-11-13",
   "file:speed-soty.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
   "id:2026-11-16-c01": "2026-11-16",
@@ -130,7 +137,18 @@
   "file:c05-nbc-gta6-biggest-launch.mp3": "2026-11-18",
   "id:2026-11-18-c05": "2026-11-18",
   "file:c06-inside-edition-hotel-carpets.mp3": "2026-11-18",
-  "id:2026-11-18-c06": "2026-11-18"
+  "id:2026-11-18-c06": "2026-11-18",
+  "id:2026-11-19-c00": "2026-11-19",
+  "file:c01-abc-gta6-first-play.mp3": "2026-11-19",
+  "id:2026-11-19-c01": "2026-11-19",
+  "file:c02-cnn-grand-theft-pto.mp3": "2026-11-19",
+  "id:2026-11-19-c02": "2026-11-19",
+  "file:c03-kimmel-gordon-ramsay-shirtless-60.mp3": "2026-11-19",
+  "id:2026-11-19-c03": "2026-11-19",
+  "file:c04-brad-upton-thanksgiving-in-laws.mp3": "2026-11-19",
+  "id:2026-11-19-c04": "2026-11-19",
+  "file:c05-drybar-half-marathon-turkey-trot.mp3": "2026-11-19",
+  "id:2026-11-19-c05": "2026-11-19"
  },
  "clipHistory": {
   "2026-11-13": {

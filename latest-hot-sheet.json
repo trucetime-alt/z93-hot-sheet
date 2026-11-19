@@ -89,6 +89,63 @@
     "title": "Trending Audio",
     "category": "Clips",
     "type": "text",
-    "content": "5 clips + supercut so far (all new, 0 repeats). Overnight run failed on usage; rebuilt live at 6 AM.<br><br>SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY (0:20)<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.<br><br>GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) (0:57)<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.<br><br>GTA 6: GRAND THEFT PTO (CNN) (0:19)<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.<br><br>GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) (0:30)<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.<br><br>BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) (0:45)<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.<br><br>HALF MARATHON STICKER + TURKEY TROT (DRY BAR) (1:25)<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy."
+    "content": "5 clips + supercut so far (all new, 0 repeats). Overnight run failed on usage; rebuilt live at 6 AM.<br><br>SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY (0:20)<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.<br><br>GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) (0:57)<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.<br><br>GTA 6: GRAND THEFT PTO (CNN) (0:19)<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.<br><br>GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) (0:30)<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.<br><br>BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) (0:45)<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.<br><br>HALF MARATHON STICKER + TURKEY TROT (DRY BAR) (1:25)<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy.",
+    "clips": [
+      {
+        "id": "2026-11-19-c00",
+        "slot": "SHOW OPENER SUPERCUT",
+        "title": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY",
+        "body": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY · SHOW OPENER SUPERCUT<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.",
+        "audio": "/workspace/morning-rush/clips/2026-11-19/c00-opener-supercut.mp3",
+        "file": "c00-opener-supercut.mp3",
+        "ready": true
+      },
+      {
+        "id": "2026-11-19-c01",
+        "slot": "TRENDING AUDIO",
+        "title": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA)",
+        "body": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) · TRENDING AUDIO<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.",
+        "audio": "/workspace/morning-rush/clips/2026-11-19/c01-abc-gta6-first-play.mp3",
+        "file": "c01-abc-gta6-first-play.mp3",
+        "ready": true
+      },
+      {
+        "id": "2026-11-19-c02",
+        "slot": "TRENDING AUDIO",
+        "title": "GTA 6: GRAND THEFT PTO (CNN)",
+        "body": "GTA 6: GRAND THEFT PTO (CNN) · TRENDING AUDIO<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.",
+        "audio": "/workspace/morning-rush/clips/2026-11-19/c02-cnn-grand-theft-pto.mp3",
+        "file": "c02-cnn-grand-theft-pto.mp3",
+        "ready": true
+      },
+      {
+        "id": "2026-11-19-c03",
+        "slot": "LATE-NIGHT",
+        "title": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL)",
+        "body": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) · LATE-NIGHT<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.",
+        "audio": "/workspace/morning-rush/clips/2026-11-19/c03-kimmel-gordon-ramsay-shirtless-60.mp3",
+        "file": "c03-kimmel-gordon-ramsay-shirtless-60.mp3",
+        "ready": true
+      },
+      {
+        "id": "2026-11-19-c04",
+        "slot": "STAND-UP COMEDY",
+        "title": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR)",
+        "body": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.",
+        "audio": "/workspace/morning-rush/clips/2026-11-19/c04-brad-upton-thanksgiving-in-laws.mp3",
+        "file": "c04-brad-upton-thanksgiving-in-laws.mp3",
+        "ready": true
+      },
+      {
+        "id": "2026-11-19-c05",
+        "slot": "STAND-UP COMEDY",
+        "title": "HALF MARATHON STICKER + TURKEY TROT (DRY BAR)",
+        "body": "HALF MARATHON STICKER + TURKEY TROT (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy.",
+        "audio": "/workspace/morning-rush/clips/2026-11-19/c05-drybar-half-marathon-turkey-trot.mp3",
+        "file": "c05-drybar-half-marathon-turkey-trot.mp3",
+        "ready": true
+      }
+    ],
+    "items": []
   }
 }
