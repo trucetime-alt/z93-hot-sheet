@@ -76,9 +76,9 @@
   }
  ],
  "clipFirst": {
-  "file:speed-english.mp3": "2026-11-13",
   "file:doberman-swns.mp3": "2026-11-13",
   "file:stable-ronaldo-speech.mp3": "2026-11-13",
+  "file:speed-english.mp3": "2026-11-13",
   "file:speed-soty.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
   "id:2026-11-16-c01": "2026-11-16",
@@ -95,7 +95,6 @@
   "file:c05-kingsley-td-call.mp3": "2026-11-16",
   "id:2026-11-16-c05": "2026-11-16",
   "id:2026-11-16-c06": "2026-11-16",
-  "file:c00-opener-supercut.mp3": "2026-11-17",
   "id:2026-11-17-c00": "2026-11-17",
   "file:c01-golden-girls-road-trip.mp3": "2026-11-17",
   "id:2026-11-17-c01": "2026-11-17",
@@ -169,12 +168,7 @@
    ]
   },
   "2026-11-18": {
-   "repeats": [
-    {
-     "name": "c00-opener-supercut.mp3",
-     "first": "2026-11-17"
-    }
-   ]
+   "repeats": []
   },
   "2026-11-19": {
    "repeats": []

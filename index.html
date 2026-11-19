@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v52-pins-hits">
+<meta name="hs-build" content="v53-fresh-clips">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -1801,7 +1801,7 @@ function holdMatches(p, id, o){ if(!p) return false; if(id && p.id===id) return 
 function findHoldOrigin(p, today){
   if(!p) return null;
   today=today||clipDate();
-  const cut=new Date(new Date(today+'T12:00:00Z').getTime()-7*864e5).toISOString().slice(0,10);
+  const cut=(typeof shiftWeekday==='function')?shiftWeekday(today,-1):new Date(new Date(today+'T12:00:00Z').getTime()-864e5).toISOString().slice(0,10); /* saves carry to the next show day only */
   const me=(typeof profileId==='function'&&profileId())||'truce';
   let found=null, foundBucket=null;
   for(const bucket of Object.keys(holds||{})){
@@ -4561,7 +4561,7 @@ function holdBtn(p){ const d=p.heldBucket || (p.heldFrom?holdBucket(p.heldFrom):
 function heldAudioUrl(p){ if(!p.file) return null; const ie=indexEntry(p.heldFrom); if(!isHttp || !ie || !Array.isArray(ie.files) || !ie.files.includes(p.file)) return null; return 'clips/'+p.heldFrom+'/'+p.file; }
 function airedSince(d, id, today){ const from=holdDateOf(d), to=holdDateOf(today||clipDate()); return Object.keys(air||{}).some(x=>{ const dx=holdDateOf(x); return dx>from && dx<to && air[x] && air[x]['clip:'+id]; }) || Object.keys(clipState||{}).some(x=>{ const dx=holdDateOf(x); return dx>from && dx<to && clipState[x] && clipState[x][id] && clipState[x][id].p; }); }   // aired on a later show day (today's airing keeps it visible, ticked)
 // clips held on an earlier sheet (last 7 days) that today's sheet doesn't already include, and that haven't aired since
-function heldIncoming(todayPicks){ const today=clipDate(); const cut=new Date(new Date(today+'T12:00:00Z').getTime()-7*864e5).toISOString().slice(0,10);
+function heldIncoming(todayPicks){ const today=clipDate(); const cut=(typeof shiftWeekday==='function')?shiftWeekday(today,-1):new Date(new Date(today+'T12:00:00Z').getTime()-864e5).toISOString().slice(0,10); /* saves carry to the next show day only */
   const me=(typeof profileId==='function'&&profileId())||'truce';
   const ids=new Set((todayPicks||[]).map(p=>p.id)), files=new Set((todayPicks||[]).map(p=>p.file).filter(Boolean)), out=[];
   const until=etParts().date>today?etParts().date:today;
