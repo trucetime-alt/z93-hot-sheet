@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v54-autoload-clips">
+<meta name="hs-build" content="v55-linked-audio">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -146,6 +146,11 @@ details.clarch>summary::-webkit-details-marker{display:none}
 .nolinkwhy{color:var(--dim);font-size:.85em;font-weight:600}
 .jokeline{margin:6px 0 2px;font-size:.95em;line-height:1.4}
 .jokeline b{color:var(--accent)}
+.topstory{margin:8px 0;padding:8px 10px;border-left:3px solid var(--accent);background:rgba(255,255,255,.04);border-radius:8px;font-size:.95em;line-height:1.4}
+.topstory .tsum{margin-bottom:6px;font-weight:700}
+.topstory .trow{margin:3px 0}
+.topstory .trow b{color:var(--accent)}
+.topstory ul{margin:4px 0 0 18px;padding:0}
 .buzzbody,.bitcard .buzzbody,.sabout{white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere}
 details.clarch .clgh{margin-top:10px}
 .nsug{margin:10px 0 16px;padding:8px 0 4px;border-bottom:1px solid var(--line)}
@@ -1214,11 +1219,29 @@ function jokesRow(jokes){
   jokes.forEach((j,i)=>{ if(i) row.append(document.createTextNode(' · ')); row.append(document.createTextNode(j)); });
   return row;
 }
+const TOP_ROWS=[['take','Take'],['twist','Twist'],['who','Who'],['what','What'],['where','Where'],['when','When'],['why','Why']];
+function topStoryBlock(card, it){
+  if(!it || typeof it!=='object') return null;
+  const str=v=>String(v==null?'':v).replace(/\s+/g,' ').trim();
+  const kp=it.key_points;
+  const kpList=Array.isArray(kp)?kp.map(x=>[ '', str(x) ]):(kp && typeof kp==='object'?Object.entries(kp).map(([k,v])=>[k, Array.isArray(v)?v.map(str).join('; '):str(v)]):[]);
+  if(!str(it.summary) && !TOP_ROWS.some(r=>str(it[r[0]])) && !kpList.length) return null;
+  let hay=' '+normT(card.textContent)+' ';
+  const seen=t=>{ const n=normT(t); return !n || hay.indexOf(n)>=0; };
+  const box=h('div',{className:'topstory', 'data-topstory':'1'}); let n=0;
+  const take=t=>{ hay+=normT(t)+' '; n++; };
+  if(str(it.summary) && !seen(it.summary)){ box.append(h('div',{className:'tsum'}, str(it.summary))); take(it.summary); }
+  for(const [k,lab] of TOP_ROWS){ const v=str(it[k]); if(!v || seen(v)) continue; box.append(h('div',{className:'trow'}, h('b',{}, lab), ': ', v)); take(v); }
+  const lis=kpList.filter(([k,v])=>v && !seen(v));
+  if(lis.length){ const ul=h('ul',{className:'tkp'}); lis.forEach(([k,v])=>{ if(seen(v)) return; ul.append(h('li',{}, k?h('b',{}, k.replace(/^./,c=>c.toUpperCase())+': '):null, v)); take(v); }); if(ul.children.length) box.append(ul); }
+  return n?box:null;
+}
 function appendArticleAndJokes(card, opts){
   opts=opts||{};
   const sec=opts.sec||'';
   const art=storyArticle(opts);
   if(typeof linkifyCardTitle==='function') linkifyCardTitle(card, art, opts.title);
+  try{ const tb=topStoryBlock(card, opts.item); if(tb) card.append(tb); }catch(e){ console.warn('topStoryBlock', e); }
   if(!jokeSecsSkip()[sec]){
     const jk=jokesRow(opts.jokes || collectJokes(opts.item, opts.card||sectionCard(sec), opts.index||0, opts.text||(opts.lines||[]).join('\n')));
     if(jk) card.append(jk);
@@ -2170,7 +2193,19 @@ function migrateShiftMap(obj, timeOf){
   }
   return obj;
 }
+function migratePersonSaves(){ /* Truce 11/19: saves/holds belong to one person. Everything saved before this build was AJ's. */
+  try{
+    if(typeof holds==='object' && holds && !Array.isArray(holds)){ let ch=false;
+      for(const k of Object.keys(holds)){ if(k.indexOf('#')>=0) continue; const nk=k+'#truce'; holds[nk]=holds[nk]||{};
+        for(const [id,o] of Object.entries(holds[k]||{})) if(!holds[nk][id]) holds[nk][id]=o;
+        delete holds[k]; ch=true; }
+      if(ch) lsSet('hs:holds', holds); }
+    if(typeof savedMap==='object' && savedMap){ let ch=false;
+      for(const o of Object.values(savedMap)){ if(o && typeof o==='object' && !o.profile){ o.profile='truce'; ch=true; } }
+      if(ch) lsSet('hs:saved', savedMap); }
+  }catch(e){ console.warn('migratePersonSaves', e); } }
 function migrateShiftBuckets(){
+  if(typeof migratePersonSaves==='function') migratePersonSaves();
   if(typeof reads!=='undefined') reads=migrateShiftMap(reads, v=>v);
   if(typeof linerUsed!=='undefined') linerUsed=migrateShiftMap(linerUsed, v=>v);
   if(typeof air!=='undefined') air=migrateShiftMap(air, e=>e&&e.t);
@@ -4083,6 +4118,7 @@ function renderClips(view, v){
   // full-quality files named in the clip sheet, served from ./clips/<date>/
   let files=[...new Set((text.match(/[\w.-]+\.(?:mp3|m4a|wav|aac|ogg)\b/gi)||[]))];
   if(ie) files = ie.files || [];   // hosted: only files that were actually published
+  files = files.filter(fn=>{ const pk=audioPickByUrl(fn); return !(pk && audioDone(pk)); });   // aired clips drop out of every list
   if(isHttp && state.date && files.length){
     const d=document.createElement('details'); d.className='notes';
     const s=document.createElement('summary'); s.textContent='Full-quality MP3s ('+files.length+')'; d.append(s);
@@ -4105,7 +4141,7 @@ function hsAbs(url){ try{ return new URL(url, location.href).href; }catch(e){ re
 function hsPlayer(){
   if(hsAudio) return hsAudio;
   const a=new Audio(); a.preload='auto'; a.setAttribute('playsinline',''); a.setAttribute('webkit-playsinline','');
-  a.addEventListener('play',()=>{ hsWake(); if(hsAudioCur && hsAudioCur.id && typeof markPlayed==='function') markPlayed(hsAudioCur.id); hsPaintAudio(); });
+  a.addEventListener('play',()=>{ hsWake(); if(hsAudioCur && typeof markPlayed==='function'){ if(hsAudioCur.id) markPlayed(hsAudioCur.id); else { const pk=audioPickByUrl(hsAudioCur.raw||hsAudioCur.url); if(pk) markPlayed(pk.id); } } hsPaintAudio(); });
   a.addEventListener('pause',()=>{ if(a.ended) return; hsPaintAudio(); });
   a.addEventListener('ended',()=>{ try{ a.currentTime=0; }catch(e){} hsWakeOff(); hsPaintAudio(); });
   a.addEventListener('timeupdate',()=>hsPaintAudio(true));
@@ -4467,8 +4503,54 @@ function cst(id){ const d=clipStateBucket(); const fallback=((typeof profileId==
 function setClip(id, patch){ const d=clipStateBucket(); clipState[d]=clipState[d]||{}; const o=Object.assign({}, clipState[d][id]||{}, patch);
   Object.keys(o).forEach(k=>{ if(o[k]==null) delete o[k]; }); if(Object.keys(o).length) clipState[d][id]=o; else delete clipState[d][id];
   const keep=Object.keys(clipState).sort().slice(-5); clipState=Object.fromEntries(keep.map(k=>[k,clipState[k]])); lsSet('hs:clipState', clipState); }
-function markPlayed(id){ if(typeof airAuto==='function') airAuto('clip:'+id, (clipPicks('clips').concat(clipPicks('newsclips'),(state.clipPicks||[]).filter(x=>x.heldFrom)).find(x=>x.id===id)||{title:'Clip'}).title.replace(/\(READY\)/i,'').trim().replace(/^.*$/,t=>readable(t)), 'clips', (clipPicks('clips').concat(clipPicks('newsclips'),(state.clipPicks||[]).filter(x=>x.heldFrom)).find(x=>x.id===id)||{}).body); if(cst(id).p) return; setClip(id,{p:Date.now()});
-  document.querySelectorAll('.clc[data-id="'+CSS.escape(id)+'"]').forEach(c=>{ c.classList.add('played'); const t=c.querySelector('.ctags'); if(t && !t.querySelector('.cplayed')) t.append(h('span',{className:'cplayed'},'▶ played')); }); }
+/* ================= linked audio: one normalized audio file name = one clip, wherever it shows ================= */
+function audioKeyOf(x){ let n=String(x||'').split('#')[0].split('?')[0]; try{ n=decodeURIComponent(n); }catch(e){}
+  n=n.split('/').pop().trim().toLowerCase().replace(/^\d{4}-\d{2}-\d{2}[-_]/,'');
+  return /\.(mp3|m4a|wav|aac|ogg)$/.test(n)?n:''; }
+function audioKey(p){ return p ? (audioKeyOf(p.file)||audioKeyOf(p.audio)||audioKeyOf(p.url)||audioKeyOf(p.raw)||'') : ''; }
+var audioRegC={sheet:null, cp:null, list:null};
+function audioRegistry(){
+  if(audioRegC.list && audioRegC.sheet===state.sheet && audioRegC.cp===state.clipPicks) return audioRegC.list;
+  const seen=new Map(); const add=p=>{ if(p && p.id!=null && !seen.has(String(p.id))) seen.set(String(p.id), p); };
+  try{ clipPicks('newsclips').forEach(add); clipPicks('clips').forEach(add); }catch(e){}
+  (state.clipPicks||[]).forEach(add);
+  audioRegC={sheet:state.sheet, cp:state.clipPicks, list:[...seen.values()]}; return audioRegC.list; }
+function audioFamily(ref){
+  const isObj=!!ref && typeof ref==='object';
+  const id=isObj?String(ref.id==null?'':ref.id):String(ref==null?'':ref);
+  const reg=audioRegistry();
+  const self=isObj?ref:reg.find(x=>String(x.id)===id);
+  const key=audioKey(self);
+  const ids=new Set(); if(id) ids.add(id);
+  if(key) reg.forEach(x=>{ if(audioKey(x)===key) ids.add(String(x.id)); });
+  return {key, ids, pick:self||reg.find(x=>ids.has(String(x.id)))||null}; }
+function audioPickByUrl(u){ const k=audioKeyOf(u); return k?(audioRegistry().find(x=>audioKey(x)===k)||null):null; }
+function airTodayEntry(ids){ const d=etParts().date;
+  for(const [bucket,items] of Object.entries(air||{})){ if(parseBucketDate(bucket).date!==d || !items) continue;
+    for(const i of ids){ const e=items['clip:'+i]; if(e) return {bucket, key:'clip:'+i, e}; } }
+  return null; }
+function audioDone(ref){ const f=audioFamily(ref);
+  for(const i of f.ids){ const s=cst(i); if(s.u||s.p) return {at:s.u||s.p, fam:f}; }
+  const a=airTodayEntry(f.ids); return a?{at:a.e.t, fam:f}:null; }
+function clipUsed(p){ return !!audioDone(p); }
+function audioTitle(pk){ return readable(String((pk&&pk.title)||'Clip').replace(/\(READY\)/i,'').trim()); }
+var hsLastAudioEl=null;
+document.addEventListener('click', e=>{ const b=e.target && e.target.closest && e.target.closest('.clc .pp, .sclip'); if(b) hsLastAudioEl=b.closest('.clc,.sclipw'); }, true);
+function audioCollapse(f){
+  document.querySelectorAll('.clc[data-akey],.sclipw[data-akey]').forEach(el=>{
+    const hit=(f.key && el.dataset.akey===f.key) || f.ids.has(el.dataset.id||''); if(!hit) return;
+    if(el===hsLastAudioEl || (hsLastAudioEl && el.contains(hsLastAudioEl))){ if(el.classList.contains('clc')){ el.classList.add('played'); const t=el.querySelector('.ctags'); if(t && !t.querySelector('.cplayed')) t.append(h('span',{className:'cplayed'},'▶ played')); } return; }
+    el.style.display='none'; }); }
+function audioWrapOnce(f, key, body){ if(airTodayEntry(f.ids)) return; airSetRaw(key, true, audioTitle(f.pick), 'clips', true, body!=null?body:(f.pick&&f.pick.body)); document.querySelectorAll('[data-air^="clip:"]').forEach(airPaint); }
+function markPlayed(id){ const f=audioFamily(id);
+  audioWrapOnce(f, 'clip:'+id);
+  f.ids.forEach(i=>{ if(!cst(i).p) setClip(i,{p:Date.now()}); });
+  audioCollapse(f); }
+function audioUse(p){ const f=audioFamily(p); audioWrapOnce(f, 'clip:'+p.id, p.body); f.ids.forEach(i=>{ if(!cst(i).u) setClip(i,{u:Date.now()}); }); audioCollapse(f); }
+function audioReset(p){ const f=audioFamily(p);
+  for(let n=0;n<20;n++){ const a=airTodayEntry(f.ids); if(!a) break; delete air[a.bucket][a.key]; }
+  f.ids.forEach(i=>{ const s=cst(i); if(s.p||s.u) setClip(i,{p:null,u:null}); });
+  airSave(); document.querySelectorAll('[data-air^="clip:"]').forEach(airPaint); }
 document.addEventListener('play', e=>{ const a=e.target; if(!a || a.tagName!=='AUDIO') return;
   let id=a.dataset.clip; if(!id){ const name=decodeURIComponent(String(a.currentSrc||a.src||'').split('?')[0].split('/').pop()||'');
     const p=(state.clipPicks||[]).find(x=>x.file && x.file===name); if(p) id=p.id; }
@@ -4477,6 +4559,7 @@ const OPENER_RE=/SUPER|OPENER|STAND-?\s?UP|LATE-?\s?NIGHT|COMEDY/i;
 function openerRank(p){ const t=(p.slot||'')+' '+p.title; return /SUPER|OPENER/i.test(t)?0:/STAND-?\s?UP|COMEDY/i.test(t)?1:2; }
 function renderClipTracker(view, opts){ opts=opts||{};
   let groups=[{key:'newsclips', label:'📰 News Audio'},{key:'clips', label:'🔥 Trending Audio'}].map(g=>({...g, picks:clipPicks(g.key)}));
+  { const seenK=new Set(); groups.forEach(g=>{ g.picks=g.picks.filter(p=>{ const k=audioKey(p); if(!k) return true; if(seenK.has(k)) return false; seenK.add(k); return true; }); }); }   // same audio file in News + Trending: list it once
   const all=groups.flatMap(g=>g.picks);
   if(typeof findHoldOrigin==='function') all.forEach(p=>findHoldOrigin(p));
   const heldIn=heldIncoming(all);
@@ -4497,12 +4580,12 @@ function renderClipTracker(view, opts){ opts=opts||{};
   else {
     groups=groups.map(g=>({...g, picks:freshOf(g.picks)})).filter(g=>g.picks.length);
   }
-  const allG=groups.flatMap(g=>g.picks); const left=allG.filter(p=>!cst(p.id).u).length;
+  const allG=groups.flatMap(g=>g.picks); const left=allG.filter(p=>!clipUsed(p)).length;
   const wrap=h('div',{className:'cltrack'});
   wrap.append(h('div',{className:'cltop'}, h('span',{className:'n'}, String(left)), h('span',{}, ' of '+allG.length+' left'), h('span',{className:'d'}, ' · '+nice(clipDate()))));
-  const card=(p, used)=>{ const s=cst(p.id);
-    const c=h('article',{className:'clc'+(s.p?' played':'')+(used?' used':''), 'data-id':p.id, 'data-arch':isArch(p)?'1':'', 'data-saved':p.heldFrom||''});
-    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.heldFrom?h('span',{className:'cheld'}, 'Saved from '+nice(p.heldFrom)):null, p.ready?h('span',{className:'cready'},'READY'):null, s.p?h('span',{className:'cplayed'},'▶ played'):null, h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
+  const card=(p, used)=>{ const s=cst(p.id); const dn=audioDone(p);
+    const c=h('article',{className:'clc'+((s.p||dn)?' played':'')+(used?' used':''), 'data-id':p.id, 'data-akey':audioKey(p), 'data-arch':isArch(p)?'1':'', 'data-saved':p.heldFrom||''});
+    const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.heldFrom?h('span',{className:'cheld'}, 'Saved from '+nice(p.heldFrom)):null, p.ready?h('span',{className:'cready'},'READY'):null, (s.p||dn)?h('span',{className:'cplayed'},(s.p?'▶ played':'✓ aired')+(dn&&dn.at?' · '+fmtTime(new Date(dn.at).toISOString()):'')):null, h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
     const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
     const url=(p.heldFrom && typeof heldAudioUrl==='function' && heldAudioUrl(p)) || clipAudioUrl(p.audio);
@@ -4512,11 +4595,11 @@ function renderClipTracker(view, opts){ opts=opts||{};
     const btn=used ? h('button',{className:'cundo', type:'button', 'aria-label':'Put '+p.title+' back'}, '↩')
                    : h('button',{className:'ccheck', type:'button', 'aria-label':'Check off '+p.title}, '✓');
     btn.onclick=()=>{ tapHaptic();
-      if(used){ setClip(p.id,{u:null}); rerender(); return; }
-      c.classList.add('gone'); const done=()=>{ setClip(p.id,{u:Date.now()}); rerender(); toast('Clip checked off: '+p.title, ()=>{ setClip(p.id,{u:null}); rerender(); }); };
+      if(used){ audioReset(p); rerender(); return; }
+      c.classList.add('gone'); const done=()=>{ audioUse(p); rerender(); toast('Clip checked off: '+p.title, ()=>{ audioReset(p); rerender(); }); };
       matchMedia('(prefers-reduced-motion:reduce)').matches ? done() : setTimeout(done, 260); };
     c.append(main, btn); return c; };
-  for(const g of groups){ if(!g.picks.length) continue; const gl=g.picks.filter(p=>!cst(p.id).u);
+  for(const g of groups){ if(!g.picks.length) continue; const gl=g.picks.filter(p=>!clipUsed(p));
     wrap.append(h('div',{className:'clgh'}, g.label, h('span',{className:'cc'}, gl.length+' of '+g.picks.length+' left')));
     if(!gl.length) wrap.append(h('div',{className:'cldone'}, '✓ All used'));
     gl.forEach(p=>wrap.append(card(p,false))); }
@@ -4531,12 +4614,12 @@ function renderClipTracker(view, opts){ opts=opts||{};
       det.append(h('div',{className:'hint'}, 'These already ran on an earlier sheet. Still playable, just not in today’s main list.'));
       for(const d of dates){
         det.append(h('div',{className:'clgh'}, 'Archive · '+nice(d), h('span',{className:'cc'}, String(by[d].length))));
-        by[d].forEach(p=>det.append(card(p, !!cst(p.id).u)));
+        by[d].forEach(p=>det.append(card(p, clipUsed(p))));
       }
       wrap.append(det);
     }
   }
-  const used=allG.filter(p=>cst(p.id).u);
+  const used=allG.filter(p=>clipUsed(p));
   if(used.length && !opts.opener){ const t=h('button',{className:'clshow', type:'button', 'aria-expanded':String(showUsed)}, (showUsed?'Hide used':'Show used')+' ('+used.length+')');
     t.onclick=()=>{ showUsed=!showUsed; rerender(); }; wrap.append(t);
     if(showUsed) used.forEach(p=>wrap.append(card(p,true))); }
@@ -4546,12 +4629,12 @@ function rerender(){ const y=scrollY; renderView(); window.scrollTo(0,y); }
 /* ================= ⏭ Hold for tomorrow (per clip id, per sheet date; synced as hd:<date>:<id>) ================= */
 var holds=lsGet('hs:holds', {}); if(!holds || typeof holds!=='object' || Array.isArray(holds)) holds={};
 function holdSave(){ const dates=[...new Set(Object.keys(holds).map(k=>k.slice(0,10)))].sort().slice(-21); holds=Object.fromEntries(Object.entries(holds).filter(([k])=>dates.includes(k.slice(0,10)))); lsSet('hs:holds', holds); }
-function isHeld(d,id){ if(!d||!id) return false; if((holds[d]||{})[id]) return true; if(d.indexOf('#')<0) return holdBucketsOn(d).some(b=>!!((holds[b]||{})[id])); return false; }
+function isHeld(d,id){ if(!d||!id) return false; const ids=[...audioFamily(id).ids]; const chk=b=>ids.some(i=>!!((holds[b]||{})[i])); if(chk(d)) return true; if(d.indexOf('#')<0) return holdBucketsOn(d).some(chk); return false; }
 function holdSet(p, on){ const d=p.heldBucket || (p.heldFrom?holdBucket(p.heldFrom):null) || holdBucketsOn(clipDate()).find(b=>(holds[b]||{})[p.id]) || holdBucket(clipDate());
   holds[d]=holds[d]||{};
-  if(on) holds[d][p.id]={t:new Date().toISOString(), title:String(p.title||'').slice(0,200), audio:p.audio||'', file:p.file||'', slot:p.slot||'', body:String(p.body||'').slice(0,1200), sec:p.sec||''};
-  else { delete holds[d][p.id]; if(!Object.keys(holds[d]).length) delete holds[d]; }
-  holdSave(); document.querySelectorAll('[data-hold="'+CSS.escape(d+'|'+p.id)+'"]').forEach(holdPaint); }
+  if(on){ if(!audioFamily(p).ids.size || ![...audioFamily(p).ids].some(i=>holds[d][i])) holds[d][p.id]={t:new Date().toISOString(), title:String(p.title||'').slice(0,200), audio:p.audio||'', file:p.file||'', slot:p.slot||'', body:String(p.body||'').slice(0,1200), sec:p.sec||''}; }
+  else { audioFamily(p).ids.forEach(i=>{ delete holds[d][i]; }); delete holds[d][p.id]; if(!Object.keys(holds[d]).length) delete holds[d]; }
+  holdSave(); document.querySelectorAll('[data-hold]').forEach(holdPaint); }
 function holdPaint(b){ const [d,id]=b.dataset.hold.split('|'); const on=isHeld(d,id); b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on));
   b.querySelector('.ab').textContent=on?'✓':''; b.querySelector('.at').textContent=on?(b.dataset.from?'Holding':'Held ⏭'):'⏭ Hold'; b.title=on?'Held for tomorrow (tap to release)':'Hold for tomorrow'; }
 function holdBtn(p){ const d=p.heldBucket || (p.heldFrom?holdBucket(p.heldFrom):holdBucket(clipDate()));
@@ -4775,7 +4858,7 @@ renderSyncState(); setTimeout(syncNow, 2500);
 
 /* ---------- inline story ▶ (published clips matched to story blocks) ---------- */
 const CLIP_STOP=new Set('this that with from your they them their there have here what when were will just about into over more than then after before right first last today said says been also only like dont cant baby back show week weekend friday saturday sunday monday tuesday wednesday thursday morning night tonight play talk talkover over ready clip audio call calls listen hear heard text going year years time pairs'.split(' '));
-function clipToks(t){ return new Set(String(t||'').toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[’']/g,'').split(/[^a-z0-9]+/).filter(w=>w && !CLIP_STOP.has(w) && (w.length>=4 || /^\d{2,}$/.test(w) || /^(st|ra|nfl|snl|tvc)$/.test(w)))); }
+function storyTok(t){ return new Set(String(t||'').toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[’']/g,'').split(/[^a-z0-9]+/).filter(w=>w && !CLIP_STOP.has(w) && (w.length>=4 || /^\d{2,}$/.test(w) || /^(st|ra|nfl|snl|tvc)$/.test(w)))); }
 var storyClipCache={sheet:null, idx:null, date:null, list:[]};
 function storyClips(){ const d=clipDate(); if(storyClipCache.sheet===state.sheet && storyClipCache.idx===sheetIndex && storyClipCache.date===d && storyClipCache.list.length) return storyClipCache.list;
   const list=[]; for(const key of ['newsclips','clips']) for(const p of clipPicks(key)){ const url=clipAudioUrl(p.audio); if(!url) continue;
@@ -4783,12 +4866,12 @@ function storyClips(){ const d=clipDate(); if(storyClipCache.sheet===state.sheet
     const lines=String(p.body||'').split('\n'); const keep=lines.filter(l=>/^\s*(•|🎙)/.test(l)).join(' ');
     const title=String(p.title||'').replace(/\(READY\)/i,'').trim();
     const urls=(String(raw.source||raw.story||'')+' '+String(p.body||'')).match(/https?:\/\/[^\s<"')]+/g)||[];
-    list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:clipToks(title), tk:clipToks(title+' '+keep)}); }
+    list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:storyTok(title), tk:storyTok(title+' '+keep)}); }
   storyClipCache={sheet:state.sheet, idx:sheetIndex, date:d, list}; return list; }
 function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
   const head=String(blk[0]).replace(/^\s*\d+\)\s*/,''); const body=blk.filter(l=>!/^\s*➜/.test(l)).join(' ');
   const urls=(body.match(/https?:\/\/[^\s<"')]+/g)||[]).map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,''));
-  const ht=clipToks(head), bt=clipToks(body); let best=null, bs=0;
+  const ht=storyTok(head), bt=storyTok(body); let best=null, bs=0;
   for(const c of cl){
     if(urls.some(u=>c.urls.includes(u))) return c;                          // 1) same source URL
     const hn=head.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(), tn=c.title.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -4799,10 +4882,11 @@ function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
   return best; }
 let inlineCur=null;
 function inlineClipBtn(c){
+  if(audioDone(c)) return h('span',{className:'sclipw', style:'display:none', 'data-akey':audioKey(c), 'data-id':c.id});   // already aired somewhere: no second copy here
   const b=h('button',{className:'sclip', type:'button', title:'Play clip: '+c.title, 'aria-label':'Play clip: '+c.title}, h('span',{className:'sci','aria-hidden':'true'},'▶'), h('span',{className:'scl'}, 'Clip'));
   b.dataset.clip=c.id; b.dataset.hsAudio=c.url; if(cst(c.id).p) b.classList.add('played');
   b.onclick=e=>{ e.stopPropagation(); tapHaptic(); hsToggle(c.url, {title:c.title, id:c.id}); };
-  const w=h('span',{className:'sclipw'}, b); hsPaintAudio(); return w; }
+  const w=h('span',{className:'sclipw', 'data-akey':audioKey(c), 'data-id':c.id}, b); hsPaintAudio(); return w; }
 
 /* ================= station read sheet: once-per-shift reads + liners (station-reads.json + local overlay, synced) ================= */
 var stDefaults=lsGet('hs:stDefaults', {sheetDate:'', reads:[], liners:[]});
@@ -5152,18 +5236,28 @@ function airFindBucket(key, p=etParts()){
   for(const k of Object.keys(air||{})){ if(parseBucketDate(k).date===p.date && air[k] && air[k][key]) return k; }
   return prefer;
 }
-function airSet(key, on, title, sec, quiet, body){ const d=on?currentShiftBucket():airFindBucket(key); air[d]=air[d]||{};
+function airEntryFor(key){ if(/^clip:/.test(key)){ const a=airTodayEntry(audioFamily(key.slice(5)).ids); return a?a.e:null; } return airDay()[key]; }
+function airSet(key, on, title, sec, quiet, body){
+  if(/^clip:/.test(key)){
+    const id=key.slice(5), f=audioFamily(id);
+    if(on){ audioWrapOnce(f, key, body); f.ids.forEach(i=>{ if(!cst(i).u) setClip(i,{u:Date.now()}); }); airSave(); }
+    else audioReset(id);
+    document.querySelectorAll('[data-air^="clip:"]').forEach(airPaint);
+    rerender();
+    return; }
+  return airSetRaw(key, on, title, sec, quiet, body); }
+function airSetRaw(key, on, title, sec, quiet, body){ const d=on?currentShiftBucket():airFindBucket(key); air[d]=air[d]||{};
   if(on){ const sh=currentShift(); if(!air[d][key]){ air[d][key]={t:new Date().toISOString(), title:String(title||'').slice(0,240), sec:sec||'', sh:sh&&sh.id}; const sm=summarize(body); if(sm) air[d][key].body=sm; } }
   else delete air[d][key];
   airSave(); document.querySelectorAll('[data-air="'+CSS.escape(key)+'"]').forEach(airPaint);
   if(state.tab==='wrap' && !quiet) rerender(); }
 function airAuto(key, title, sec, body){ if(!airDay()[key]) airSet(key, true, title, sec, true, body); }
-function airPaint(b){ const e=airDay()[b.dataset.air]; b.classList.toggle('on', !!e); b.setAttribute('aria-pressed', String(!!e));
+function airPaint(b){ const e=airEntryFor(b.dataset.air); b.classList.toggle('on', !!e); b.setAttribute('aria-pressed', String(!!e));
   b.querySelector('.ab').textContent=e?'✓':''; b.querySelector('.at').textContent=e?(b.dataset.small?'Aired '+fmtTime(e.t):'Read on air · '+fmtTime(e.t)):(b.dataset.small?'On air':'Read on air'); }
 function airBtn(key, title, sec, small, body){
   const b=h('button',{className:'airbtn'+(small?' sm':''), type:'button', title:'Mark as read on air (Show Wrap)'}, h('span',{className:'ab','aria-hidden':'true'}), h('span',{className:'at'}));
   b.dataset.air=key; if(small) b.dataset.small='1'; airPaint(b);
-  b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=!!airDay()[key]; airSet(key, !was, title, sec, true, body);
+  b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=!!airEntryFor(key); airSet(key, !was, title, sec, true, body);
     if(!was) toast('On air ✓ '+String(title).slice(0,48), ()=>airSet(key,false,title,sec,true)); };
   return b; }
 function openerTab(){ const l=sectionList().filter(x=>!['news','wrap','liners','clips','flash','saved'].includes(x.key)); return l.length?l[0].key:(sectionList().some(x=>x.key==='flash')?'flash':null); }
@@ -5199,6 +5293,9 @@ function wrapEntries(){ const p=etParts(); const list=[];
       list.push({key, ...e, bucket, sh:sid});
     }
   }
+  { const seenA=new Set(); list.sort((a,b)=>String(a.t).localeCompare(String(b.t)));   // linked audio shows once in the wrap, at its first air time
+    for(let i=0;i<list.length;i++){ const e=list[i]; if(!/^clip:/.test(e.key)) continue; const fam=audioFamily(e.key.slice(5)); const k=fam.key||('id:'+e.key);
+      if(seenA.has(k)){ list.splice(i,1); i--; } else seenA.add(k); } }
   list.sort((a,b)=>String(a.t).localeCompare(String(b.t)) || String(a.key).localeCompare(String(b.key)));
   return list; }
 function wrapShiftLabel(e, p=etParts()){
