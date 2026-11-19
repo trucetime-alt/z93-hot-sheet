@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v53-fresh-clips">
+<meta name="hs-build" content="v54-autoload-clips">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -1484,6 +1484,8 @@ async function showSheet(sheet, date){
   }
   renderTabs(); renderView();
   if(typeof hsPreloadToday==='function') hsPreloadToday();
+  // auto-load the day's clips (no button tap needed) when the audio file is online
+  if(sheet && date && isHttp && !state.clipsLoaded){ const ie=indexEntry(date); if(!ie || ie.audio) loadAudioVariant(); }
 }
 
 async function loadAudioVariant(){
