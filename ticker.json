@@ -1,28 +1,28 @@
 {
  "version": 1,
- "updated": "2026-11-18T21:30:30-05:00",
- "updatedMs": 1795055430552,
+ "updated": "2026-11-19T04:26:32-05:00",
+ "updatedMs": 1795080392156,
  "windowHours": 24,
  "local": {
   "picks": [
    {
-    "id": "loc-8afce78769",
-    "title": "Missing 83-year-old hunter found alive in Northern Michigan",
+    "id": "loc-33291c3b31",
+    "title": "83-year-old hunter found alive after going missing in Northern Michigan",
     "source": "UpNorthLive",
     "sources": [
-     "UpNorthLive",
      "Audacy",
      "MLive",
      "WILX",
-     "MLive.com"
+     "MLive.com",
+     "UpNorthLive"
     ],
     "votes": 5,
-    "at": "2026-11-18T19:55:37-05:00",
-    "atMs": 1795049737000,
-    "link": "https://upnorthlive.com/news/local/search-underway-for-missing-83-year-old-hunter-in-alpena-township-northern-michigan",
+    "at": "2026-11-18T22:30:00-05:00",
+    "atMs": 1795059000000,
+    "link": "https://upnorthlive.com/news/local/83-year-old-missing-alpena-township-hunter-found-alive",
     "tag": "LOCAL",
-    "score": 152.0,
-    "why": "5 sources · fresh · local",
+    "score": 146.0,
+    "why": "5 sources · local",
     "desc": "Rescuers heard the man calling for help during a ground search two days after he went missing."
    },
    {
@@ -39,7 +39,7 @@
     "atMs": 1795044584000,
     "link": "https://upnorthlive.com/news/local/beitner-bridge-reopens-to-through-traffic-in-grand-traverse-county-wednesday-3-pm",
     "tag": "ROADS",
-    "score": 104.0,
+    "score": 98.0,
     "why": "3 sources · local · roads",
     "desc": "Beitner Bridge reopens to through traffic in Grand Traverse County Wednesday 3 p.m. WPBN"
    },
@@ -56,26 +56,9 @@
     "atMs": 1795029881000,
     "link": "https://upnorthlive.com/news/local/how-to-watch-traverse-city-light-parade-live-this-saturday-livestream-christmas-tree-northern-michigan-holidays-downtown-upnorthlive",
     "tag": "LOCAL",
-    "score": 74.0,
+    "score": 68.0,
     "why": "2 sources · local · community",
     "desc": "How to watch Traverse City’s Light Parade live this Saturday WPBN"
-   },
-   {
-    "id": "loc-10960a896f",
-    "title": "Grand Traverse County sets $1 million annual road funding program",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive",
-     "WPBN"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T09:26:59-05:00",
-    "atMs": 1795012019000,
-    "link": "https://upnorthlive.com/news/local/grand-traverse-county-sets-1-million-annual-road-funding-program",
-    "tag": "ROADS",
-    "score": 70.0,
-    "why": "2 sources · local · roads",
-    "desc": "Grand Traverse County sets $1 million annual road funding program WPBN"
    },
    {
     "id": "loc-814a4c2837",
@@ -95,6 +78,40 @@
     "desc": "Food Rescue Goodwill of Northern Michigan named Community Organization of the Year WPBN"
    },
    {
+    "id": "loc-10960a896f",
+    "title": "Grand Traverse County sets $1 million annual road funding program",
+    "source": "UpNorthLive",
+    "sources": [
+     "UpNorthLive",
+     "WPBN"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T09:26:59-05:00",
+    "atMs": 1795012019000,
+    "link": "https://upnorthlive.com/news/local/grand-traverse-county-sets-1-million-annual-road-funding-program",
+    "tag": "ROADS",
+    "score": 64.0,
+    "why": "2 sources · local · roads",
+    "desc": "Grand Traverse County sets $1 million annual road funding program WPBN"
+   },
+   {
+    "id": "loc-15fde69ea0",
+    "title": "TRAVERSE CITY: Commissioners ponder parking, investment on West End",
+    "source": "9and10News.com",
+    "sources": [
+     "9and10News.com",
+     "Traverse City Record-Eagle"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T21:58:00-05:00",
+    "atMs": 1795057080000,
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOFZrMFloQUw2dTVsN3hLYU1kdERIN0JLYXEtZ05JWlhyam41SDNLd0VxQkxad2FCQ25HTXhreGpLVlhCZ3VFYi1aMFZha3ByR09oUTJlOWI5WklrZHRoQXFBS3FublpCVjNXMDdybTJqZGtZeU1IYlNSc1BXSzdDbDJrWTJad010S0U1cjM2NXhQZFpCSkhDSGs4emJDUjQ4R2t1dTlXTVAwM1hfT1JFLTdnNnY3cExrQ2JuRXdINkd4RW8?oc=5",
+    "tag": "LOCAL",
+    "score": 62.0,
+    "why": "2 sources · local",
+    "desc": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps 9and10News.com"
+   },
+   {
     "id": "loc-7eba0f04a3",
     "title": "Traverse City installs three permanent Flock cameras at three public event areas",
     "source": "UpNorthLive",
@@ -103,30 +120,13 @@
      "WPBN"
     ],
     "votes": 2,
-    "at": "2026-11-18T18:14:51-05:00",
-    "atMs": 1795043691000,
+    "at": "2026-11-18T21:32:36-05:00",
+    "atMs": 1795055556000,
     "link": "https://upnorthlive.com/news/local/traverse-city-installs-three-permanent-flock-cameras-at-three-public-event-areas",
     "tag": "LOCAL",
     "score": 62.0,
     "why": "2 sources · local",
     "desc": "Traverse City installs three permanent Flock cameras at three public event areas WPBN"
-   },
-   {
-    "id": "loc-e41e02308b",
-    "title": "Northern Michigan teens learn beekeeping through youth apiary project",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive",
-     "WPBN"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T14:26:19-05:00",
-    "atMs": 1795029979000,
-    "link": "https://upnorthlive.com/news/local/northern-michigan-teens-learn-beekeeping-through-youth-apiary-project",
-    "tag": "LOCAL",
-    "score": 62.0,
-    "why": "2 sources · local",
-    "desc": "Northern Michigan teens learn beekeeping through youth apiary project WPBN"
    },
    {
     "id": "loc-063aeb3608",
@@ -141,9 +141,26 @@
     "atMs": 1795029186000,
     "link": "https://www.9and10news.com/2026/11/18/castle-farms-in-charlevoix-talks-upcoming-events/",
     "tag": "LOCAL",
-    "score": 62.0,
+    "score": 56.0,
     "why": "2 sources · local",
     "desc": "Castle Farms in Charlevoix Talks Upcoming Events 9and10News.com"
+   },
+   {
+    "id": "loc-e41e02308b",
+    "title": "Northern Michigan teens learn beekeeping through youth apiary project",
+    "source": "UpNorthLive",
+    "sources": [
+     "UpNorthLive",
+     "WPBN"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T14:04:39-05:00",
+    "atMs": 1795028679000,
+    "link": "https://upnorthlive.com/news/local/northern-michigan-teens-learn-beekeeping-through-youth-apiary-project",
+    "tag": "LOCAL",
+    "score": 56.0,
+    "why": "2 sources · local",
+    "desc": "Northern Michigan teens learn beekeeping through youth apiary project WPBN"
    },
    {
     "id": "loc-55e10cccd4",
@@ -175,7 +192,7 @@
     "atMs": 1795004160000,
     "link": "https://www.mlive.com/life/2026/11/this-hidden-gem-near-traverse-city-has-ancient-hemlocks-and-trails-that-feel-miles-from-town.html",
     "tag": "LOCAL",
-    "score": 56.0,
+    "score": 50.0,
     "why": "2 sources · local",
     "desc": "The 62-acre preserve near Traverse City offers nearly 3 miles of trails through forests, former orchards and a rare Eastern hemlock grove."
    },
@@ -192,26 +209,9 @@
     "atMs": 1795003200000,
     "link": "https://www.mlive.com/news/2026/11/up-north-town-secures-653k-state-grant-to-update-its-1950s-housing-stock.html",
     "tag": "LOCAL",
-    "score": 56.0,
-    "why": "2 sources · local",
-    "desc": "Homeowners can apply for $7 to $18k grants to update their home's electric, roofing or siding."
-   },
-   {
-    "id": "loc-ef5717fb32",
-    "title": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps",
-    "source": "9&10",
-    "sources": [
-     "9&10",
-     "9and10News.com"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T17:53:31-05:00",
-    "atMs": 1794956011000,
-    "link": "https://www.9and10news.com/2026/11/17/traverse-city-weighs-76m-west-end-parking-question-advances-vacation-rental-caps/",
-    "tag": "LOCAL",
     "score": 50.0,
     "why": "2 sources · local",
-    "desc": "Traverse City weighs $7.6M West End parking question, advances vacation rental caps 9and10News.com"
+    "desc": "Homeowners can apply for $7 to $18k grants to update their home's electric, roofing or siding."
    }
   ],
   "more": [
@@ -234,72 +234,20 @@
     "desc": "Former volunteer firefighter gets 45 days in jail, 2 years probation in fatal crash case"
    },
    {
-    "id": "loc-7d0fc5b62c",
-    "title": "Traverse Connect launches internship program to help keep young talent in Northern Michigan",
-    "source": "9&10",
+    "id": "loc-25f91d2c87",
+    "title": "Petoskey hockey opens home play, see the best photos vs. Alpena",
+    "source": "Petoskey News-Review",
     "sources": [
-     "9&10",
-     "9and10News.com"
+     "Petoskey News-Review"
     ],
-    "votes": 2,
-    "at": "2026-11-17T17:43:25-05:00",
-    "atMs": 1794955405000,
-    "link": "https://www.9and10news.com/2026/11/17/traverse-connect-launches-internship-program-to-help-keep-young-talent-in-northern-michigan/",
-    "tag": "LOCAL",
-    "score": 50.0,
-    "why": "2 sources · local",
-    "desc": "Traverse Connect launches internship program to help keep young talent in Northern Michigan 9and10News.com"
-   },
-   {
-    "id": "loc-e7f3d080c6",
-    "title": "Traverse City homeowner finds naked man meditating in bathtub",
-    "source": "MLive",
-    "sources": [
-     "MLive",
-     "MLive.com"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T13:59:45-05:00",
-    "atMs": 1794941985000,
-    "link": "https://www.mlive.com/news/2026/11/traverse-city-homeowner-finds-naked-man-meditating-in-bathtub.html",
-    "tag": "LOCAL",
-    "score": 50.0,
-    "why": "2 sources · local",
-    "desc": "Traverse City homeowner finds naked man meditating in bathtub MLive.com"
-   },
-   {
-    "id": "loc-f56dd1d776",
-    "title": "DNR searches for hunter missing overnight in Northern Michigan",
-    "source": "MLive",
-    "sources": [
-     "MLive",
-     "MLive.com"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T11:52:38-05:00",
-    "atMs": 1794934358000,
-    "link": "https://www.mlive.com/news/2026/11/dnr-searches-for-hunter-missing-overnight-in-northern-michigan.html",
-    "tag": "LOCAL",
-    "score": 50.0,
-    "why": "2 sources · local",
-    "desc": "The Michigan Department of Natural Resources is advising hunters use extreme in Alpena County, where rescuers are looking for a man who didn't return from deer hunting."
-   },
-   {
-    "id": "loc-18f9c987b9",
-    "title": "Naked man arrested after found in Grand Traverse County home, faces home invasion charges",
-    "source": "UpNorthLive",
-    "sources": [
-     "UpNorthLive",
-     "WPBN"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T11:52:30-05:00",
-    "atMs": 1794934350000,
-    "link": "https://upnorthlive.com/news/local/naked-man-arrested-after-found-in-grand-traverse-county-home-faces-home-invasion-charges",
-    "tag": "LOCAL",
-    "score": 50.0,
-    "why": "2 sources · local",
-    "desc": "Naked man arrested after found in Grand Traverse County home, faces home invasion charges WPBN"
+    "votes": 1,
+    "at": "2026-11-18T21:50:00-05:00",
+    "atMs": 1795056600000,
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOOUI1Zk1aSHdHeFJzR0dJNXh3VEMtOGFpalo0a2xDNW9ibEdCR1B3R2FRZF9FaVNVb2VxVlRBc2xSX1VpMnlRbDRnS1ZDZkVZMFFySHBfSTlZVHFFUElxeEtmRk5UenRqeUxfMy1pdi1tUFYtbWdxbURjeklBQVJQSW5lWjZNMkZHeFJxWHJfdkdieW5ITzlhc0xxSkEwOU1VZTVyLVJHVjM0SkMyT1lVRmk2YTBzUGVkdFN6NTJON2lmWU5SZEUtNnpVSFpmbk1KWGlMWGkteVJDa1d1bEtBcEMwZ3J0SVItRzdWdmpuSzZUWFVlakE?oc=5",
+    "tag": "SPORTS",
+    "score": 46.0,
+    "why": "local · sports",
+    "desc": "Petoskey hockey opens home play, see the best photos vs. Alpena Petoskey News-Review"
    },
    {
     "id": "loc-9d836e1214",
@@ -313,7 +261,7 @@
     "atMs": 1795036166000,
     "link": "https://upnorthlive.com/news/local/sault-ste-marie-international-bridge-inspection-the-focus-of-bridge-authority-meeting",
     "tag": "ROADS",
-    "score": 48.0,
+    "score": 42.0,
     "why": "local · roads",
     "desc": "A team of bridge engineering experts from the lead firms of Modjeski and Masters, Inc. (M&M) and COWI North America Ltd. inspected the bridge in August."
    },
@@ -329,7 +277,7 @@
     "atMs": 1795044118000,
     "link": "https://upnorthlive.com/news/local/main-street-gets-a-holiday-glow-as-harbor-springs-sets-up-its-community-christmas-tree",
     "tag": "LOCAL",
-    "score": 46.0,
+    "score": 40.0,
     "why": "local · community",
     "desc": "Main Street gets a holiday glow as Harbor Springs sets up its community Christmas tree"
    },
@@ -345,9 +293,41 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/2026/11/18/tcaps-educators-helping-students-use-ai-safely/",
     "tag": "SCHOOLS",
-    "score": 42.0,
+    "score": 36.0,
     "why": "local · schools",
     "desc": ""
+   },
+   {
+    "id": "loc-e5d3bce588",
+    "title": "Grand Traverse Greenway ribbon cutting marks ‘milestone’ in county effort to create trail network",
+    "source": "Genesee County View",
+    "sources": [
+     "Genesee County View"
+    ],
+    "votes": 1,
+    "at": "2026-11-19T00:04:00-05:00",
+    "atMs": 1795064640000,
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU2tyWkNfck5vYy1RckVCZHNkRmtMVXlCWjBqMnNpQVl1SWhRcTNiUlMyRUQ3MzhQNWRudU5Ma2hwRTFPRW1hQXQtOFBEQnpSemF1WnEtdXZ4VlpsMmxxX2FSdTR0OWdUNDkxRWY2ZGpBaVc4aHFveHppZ3piTDVuM3BuYjE3N2hzc3lfUWc3Tjh0dWgxeXc5dVVFZHo5c1IxckFUaVdkNDdNanJIVGlrbjhMNTQwalRtNGhGb1MzdTY0N1RJQWw1UFVSbUtiU0U2YUl1S2VSOA?oc=5",
+    "tag": "LOCAL",
+    "score": 34.0,
+    "why": "local",
+    "desc": "Grand Traverse Greenway ribbon cutting marks ‘milestone’ in county effort to create trail network Genesee County View"
+   },
+   {
+    "id": "loc-6d79ded060",
+    "title": "A sweet tradition at Grand Traverse Resort and Spa",
+    "source": "Traverse City Record-Eagle",
+    "sources": [
+     "Traverse City Record-Eagle"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T21:44:00-05:00",
+    "atMs": 1795056240000,
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbUFjcW5KTnNoenEwUU9HaXpPMC1Ya0VvMnlEVU41QzRiblh5cFF5cHY5TG5McExWUlV3T3B3d0l0TUtOZVNKZnp3RE9kZEhPc0tsWG9PcTE4bng0RE5kUEs4cThsTVZ5WGVvVzM3T21hWUZqVTR0WE5fNDBMSm51d09HTmNHMjhCcjd0bjZMZG9CRDJHQ1czekY4OWd2dkJhNFl5dWRISGFQV2M2VVFodVpOaFBTR1RZNDZIaXJxY3NqaGFobjAxYjM3bkRISmRodDJBRW13ZktMeDQ?oc=5",
+    "tag": "LOCAL",
+    "score": 34.0,
+    "why": "local",
+    "desc": "A sweet tradition at Grand Traverse Resort and Spa Traverse City Record-Eagle"
    },
    {
     "id": "loc-96fbd218e4",
@@ -361,8 +341,8 @@
     "atMs": 1795046400000,
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNN0dpUEstZk9vM3dYcDk4aUVmU2Y0RVU0Q3h6N3RDazdKeG50TmdTTHpxbEZKUGtWbHYxWjNKa3h6OTN3QjZnU3lINE1kc0QxdFpKVjg0RDQ3M2pBamNEb3lCVlRHeWM1Vi0xZFpkU3dTYUVKY2lxMldmZHo3UkotVDFzWDVIX2FBc2NNbGp6U3ZGdGkzdG54MkUtS21OT2RabDhoVjdpcVVRSmZlU1hCRW9jTlVaUldnbHc3VmxiN3psT0FqNlMwQUhjVQ?oc=5",
     "tag": "LOCAL",
-    "score": 40.0,
-    "why": "fresh · local",
+    "score": 28.0,
+    "why": "local",
     "desc": "Kratom overdose cited in at least two deaths in northern Michigan The Detroit News"
    },
    {
@@ -377,7 +357,7 @@
     "atMs": 1795044122000,
     "link": "https://upnorthlive.com/news/local/armory-youth-project-to-host-friendsgiving-dinner-friday-for-manistee-county-teens",
     "tag": "LOCAL",
-    "score": 34.0,
+    "score": 28.0,
     "why": "local",
     "desc": "Armory Youth Project to host Friendsgiving dinner Friday for Manistee County teens"
    },
@@ -393,7 +373,7 @@
     "atMs": 1795033767000,
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTUpSeVRFaUNjU05XRDUxWGZZSVJZV2RKOS1MQnNUTTJpUUs0WHRacnNiTzFnLTZJRGZoZVN5OEJjY2FQbUtiUlhZbFJBRm9aaFlLVnJCanZBYllSTmV4MEVCVEVFbWE0cXVicWtFUl9CYWpwWFZReWdhRFkzaDdTZnFnN1ZWMXBpNGRHa0V3?oc=5",
     "tag": "LOCAL",
-    "score": 34.0,
+    "score": 28.0,
     "why": "local",
     "desc": "Hidden Northern Michigan: Cadillac Sound Garden 9and10News.com"
    },
@@ -410,7 +390,7 @@
     "atMs": 1795021200000,
     "link": "https://upnorthlive.com/news/local/74-year-old-woman-missing-in-shelby-search-set-to-resume-oceana-county-lewallen-northern-michigan-upnorthlive",
     "tag": "LOCAL",
-    "score": 30.0,
+    "score": 24.0,
     "why": "2 sources",
     "desc": "74-year-old woman missing in Shelby; search set to resume"
    },
@@ -426,7 +406,7 @@
     "atMs": 1795021869000,
     "link": "https://upnorthlive.com/news/local/cheboygan-superintendent-arraigned-on-drunk-driving-charge-in-mackinac-county",
     "tag": "LOCAL",
-    "score": 28.0,
+    "score": 22.0,
     "why": "local",
     "desc": "Cheboygan superintendent arraigned on drunk driving charge in Mackinac County"
    },
@@ -442,7 +422,7 @@
     "atMs": 1795016403000,
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZjB3alFwTmhfRkkxUURyT1ZFM0J5cG81TmtSRlNFTVpaNy0zRVJuVHMyQ1N0VFJOOWZ1a1hwVHZlZTdyZnBnVWhmV3dGakN4dFNyVUhEUkNibmktU2hPWEQ2aERNSzZHV0JyZXNFLVp4amN0UFBqRjdQZ2FjMWxkUVBrOXRsTkphMWYwTUNaWFkyZy1oMWVQYTJnU1o4SEhEeGtwTDV1cFZhUk1KZVVrR2QzSFM?oc=5",
     "tag": "LOCAL",
-    "score": 28.0,
+    "score": 22.0,
     "why": "local",
     "desc": "How Northern Michigan may be spared from a historic El Niño Crawford County Avalanche"
    },
@@ -458,7 +438,7 @@
     "atMs": 1795010400000,
     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObk9fOFVXdnMtNm1YQkdGTTF5MG4ySzltMW5BYk1TZmlRanJEdFF5RjdLQkwwYnJfZG5Ba29Ib1VXc2hBeVNIczA2b3E4RGVmYWZQZ2xXOXg5R2pMZWMzNlpwMjg1RFlvOTN2Q0l2dkY5d01JWEdHYlJDOTBwSzZNbWVqajcyZw?oc=5",
     "tag": "LOCAL",
-    "score": 28.0,
+    "score": 22.0,
     "why": "local",
     "desc": "A Northern Michigan VC firm that saw an $835M sale is now second-largest in the state Crain's Grand Rapids Business"
    },
@@ -474,7 +454,7 @@
     "atMs": 1795003370000,
     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4yZUp4YWNrX1NLbktIVFN5cWpZTnNTMTBCLW14eVYyNmlEbUcyODdmZVhuYjlOdVdxVUlSczAxaDF1Q1JOSl9TY1R2eDcwNUk3eVY2djFVVHJ1YXVxTVBBZ296WDlYeXFPaUZxTEUtRFdPUFJRRUgw?oc=5",
     "tag": "LOCAL",
-    "score": 28.0,
+    "score": 22.0,
     "why": "local",
     "desc": "A Michigan Mushroom Martini? Find It at Traverse City’s Taproot Cider House MyNorth.com"
    },
@@ -490,7 +470,7 @@
     "atMs": 1795002581000,
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRkpyQ1VuSjltaUdCT3BqcHdUcmF5cFdDNlNQdXZpSkVGUUw5TFNtV2hHREk5YzV4THdzUHI5VWZvSkdMOVRUTmNuaTBWMXdvOWRjcFJXWHNGbGhvbVowMjYxZjVKamtwQ25kY3UxSXB2MURFZjhmUFNjdUxVNFlyaGxHQlR5MmtUc3pESV9OTlJSM013VGow?oc=5",
     "tag": "LOCAL",
-    "score": 28.0,
+    "score": 22.0,
     "why": "local",
     "desc": "Nov. 19-26 events guide for Benzie, Manistee and Mason counties Manistee News Advocate"
    },
@@ -506,41 +486,9 @@
     "atMs": 1795040865000,
     "link": "https://upnorthlive.com/news/local/the-ultimate-goal-is-the-childs-safety-inside-michigans-cybercrime-task-force",
     "tag": "LOCAL",
-    "score": 22.0,
+    "score": 16.0,
     "why": "headline",
     "desc": "‘The ultimate goal is the child’s safety’: Inside Michigan’s cybercrime task force"
-   },
-   {
-    "id": "loc-751ca7b394",
-    "title": "The Latest Leelanau County Blotter & 911 Call Report",
-    "source": "Leelanau Ticker",
-    "sources": [
-     "Leelanau Ticker"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T04:01:56-05:00",
-    "atMs": 1794992516000,
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONV9VYTI3U0k3SC1sWmJseXdUdmp0amoxdkxxWHRCUmNqY0JoQk1hZFJBemNOSDcyS0pNTkxvUWplOS1tVXBQUFVRU1I4bURRUkJ5VE5rN28xekdJRnZSQ0ZnOW9GVHJLUndxcFg1QWE3TDNsLW5NTFlnMTNOdm5IbjBCWHA1bkpfbjNwNU84eEEtdzNPQXc?oc=5",
-    "tag": "LOCAL",
-    "score": 22.0,
-    "why": "local",
-    "desc": "The Latest Leelanau County Blotter & 911 Call Report Leelanau Ticker"
-   },
-   {
-    "id": "loc-86a3868d86",
-    "title": "Former Finance Director Sues Leelanau County Board Chair",
-    "source": "Leelanau Ticker",
-    "sources": [
-     "Leelanau Ticker"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T04:01:56-05:00",
-    "atMs": 1794992516000,
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzdXd0tXTk1YUXFzcjFtUUkzanZ5eTBPVTFsOHhFc2s1SUE0ejRXMENfUHZCYU1NdTl2TU05aUlWQ255MWhrRVAwYW1aQTJ2RUJCWGxhRElEU0FVcHoxYTRWT1RicEotT2t6RTRQY293eEwzZXBET1FHZHEtbW83TUgzaHdXbUl5aW1xdG1POTQtWUFkREZ1Sw?oc=5",
-    "tag": "LOCAL",
-    "score": 22.0,
-    "why": "local",
-    "desc": "Former Finance Director Sues Leelanau County Board Chair Leelanau Ticker"
    },
    {
     "id": "loc-b50d625971",
@@ -554,7 +502,7 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/2026/11/18/michigan-attorney-general-urges-residents-to-guard-records-following-cyber-outages/",
     "tag": "LOCAL",
-    "score": 16.0,
+    "score": 10.0,
     "why": "headline",
     "desc": ""
    },
@@ -570,7 +518,7 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/2026/11/18/michigan-state-trooper-wife-recognized-for-saving-5-year-old-boy-from-drowning/",
     "tag": "LOCAL",
-    "score": 16.0,
+    "score": 10.0,
     "why": "headline",
     "desc": ""
    },
@@ -586,7 +534,7 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/2026/11/18/michigan-hunters-invited-to-donate-deer-to-feed-hungry-families-this-weekend/",
     "tag": "LOCAL",
-    "score": 16.0,
+    "score": 10.0,
     "why": "headline",
     "desc": ""
    },
@@ -602,7 +550,7 @@
     "atMs": 1795029106000,
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVmJ1aWhPeDVxZUJ2WXhWQnhHckJtVEJGTjlrX1dlZHBRMkV2XzJBZENTU3lNOEVJMU5IYUJSelpsUm9kYlRDS0M5b2xUM2FPSHhfQ1lxUG9aMTZHX21JTkM5b0F5MUczZno1U1htek1UdFBSZHdJVEVjanR4Vm5zeFp2X1VQQVB5WHFSQ1hTUkI5OXJuU1J4LUhHNjZ6UGFHeWxLQU9OSQ?oc=5",
     "tag": "LOCAL",
-    "score": 10.0,
+    "score": 4.0,
     "why": "local · promo",
     "desc": "Castle Farms in Charlevoix Joins Good Day Northern Michigan 9and10News.com"
    },
@@ -618,7 +566,7 @@
     "atMs": 1795044120000,
     "link": "https://upnorthlive.com/news/local/cadillac-secures-650k-plus-grant-for-home-rehab-for-low-and-moderate-income-residents",
     "tag": "LOCAL",
-    "score": 8.0,
+    "score": 2.0,
     "why": "headline",
     "desc": "Cadillac secures $650K-plus grant for home rehab for low- and moderate-income residents"
    },
@@ -634,7 +582,7 @@
     "atMs": 1795041360000,
     "link": "https://upnorthlive.com/news/local/two-recovering-from-serious-injuries-after-accidental-shooting-in-mecosta-county-chippewa-township",
     "tag": "LOCAL",
-    "score": 8.0,
+    "score": 2.0,
     "why": "headline",
     "desc": "Two recovering from serious injuries after accidental shooting in Mecosta County"
    },
@@ -650,7 +598,7 @@
     "atMs": 1795039478000,
     "link": "https://upnorthlive.com/news/local/msp-honors-st-ignace-couple-for-saving-5-year-old-from-drowning-at-hotel-pool-mackinac-county",
     "tag": "LOCAL",
-    "score": 8.0,
+    "score": 2.0,
     "why": "headline",
     "desc": "MSP honors St. Ignace couple for saving 5-year-old from drowning at hotel pool"
    },
@@ -666,7 +614,7 @@
     "atMs": 1795038667000,
     "link": "https://upnorthlive.com/news/local/83-year-old-missing-alpena-township-hunter-found-alive",
     "tag": "LOCAL",
-    "score": 8.0,
+    "score": 2.0,
     "why": "headline",
     "desc": "83-year-old missing Alpena Township hunter found alive"
    },
@@ -682,7 +630,7 @@
     "atMs": 1795036745000,
     "link": "https://upnorthlive.com/news/local/poll-have-you-done-your-own-research-on-data-centers",
     "tag": "LOCAL",
-    "score": 8.0,
+    "score": 2.0,
     "why": "headline",
     "desc": "Poll: Have you done your own research on data centers?"
    },
@@ -698,7 +646,7 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/2026/11/18/inland-seas-education-association-reaches-200000-participant-milestone/",
     "tag": "LOCAL",
-    "score": 2.0,
+    "score": -4.0,
     "why": "headline",
     "desc": ""
    },
@@ -714,7 +662,7 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/sports/2026/11/18/ferris-state-reflects-on-big-noon-kickoff-selection-historic-season/",
     "tag": "LOCAL",
-    "score": 2.0,
+    "score": -4.0,
     "why": "headline",
     "desc": ""
    },
@@ -730,7 +678,7 @@
     "atMs": 1795021200000,
     "link": "https://www.9and10news.com/sports/2026/11/18/detroit-tigers-win-three-silver-sluggers-a-first-for-the-franchise-since-1987/",
     "tag": "LOCAL",
-    "score": 2.0,
+    "score": -4.0,
     "why": "headline",
     "desc": ""
    },
@@ -746,7 +694,7 @@
     "atMs": 1795018969000,
     "link": "https://upnorthlive.com/news/local/poll-which-monopoly-token-is-your-go-to",
     "tag": "LOCAL",
-    "score": 2.0,
+    "score": -4.0,
     "why": "headline",
     "desc": "Poll: Which Monopoly token is your go-to?"
    },
@@ -762,7 +710,7 @@
     "atMs": 1795004156000,
     "link": "https://upnorthlive.com/news/local/msp-seeks-help-locating-12-year-old-last-seen-near-lake-isabella-county-northern-michigan-missing-child-teen-upnorthlive",
     "tag": "LOCAL",
-    "score": 2.0,
+    "score": -4.0,
     "why": "headline",
     "desc": "MSP seeks help locating 12-year-old last seen near Lake Isabella"
    }
@@ -789,11 +737,10 @@
  "national": {
   "picks": [
    {
-    "id": "nat-239f782363",
-    "title": "Cadillac locks in Valtteri Bottas for 2027 and passes on American Colton Herta ahead of Las Vegas GP",
-    "source": "autoevolution",
+    "id": "nat-989ed2adb6",
+    "title": "Final Valtteri Bottas decision as Cadillac makes F1 2027 driver announcement",
+    "source": "PlanetF1",
     "sources": [
-     "autoevolution",
      "PlanetF1",
      "roundtable.io",
      "Grandprix.com",
@@ -815,22 +762,27 @@
      "news.gp",
      "Mezha.net",
      "UA.NEWS",
-     "Formula 1",
      "Bozeman Daily Chronicle",
      "https://www.autohebdof1.com/",
      "Eagle-Tribune",
      "WV News",
      "Toronto Star",
      "F1i.com",
-     "The Straits Times"
+     "ESPN",
+     "Formula 1",
+     "IndyStar",
+     "The Race",
+     "BVM Sports",
+     "Oskaloosa Herald",
+     "MotorBiscuit"
     ],
-    "votes": 30,
-    "at": "2026-11-18T21:13:30-05:00",
-    "atMs": 1795054410000,
-    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZ0pNZFVLM2NLbU5DWmd0OTluTlA4X3JHQjVTN1dndUVyakFnTk1rbHVldW1HVnU2Q0ltTmttbUQ5WGpxbmFndy1Qd0hUS3JmdkdudWVvNjFCejlaWVhfQ0FwY3JZeERSY2JoWW5MWFJabjY0SHZBbWQtNVJTMXZHWTdEb2YwM3piSW1XdHRBajJXLXpWQ3lDQmRFVnY3QUtZOHk2a3ZPTk1JeFpIU2lCYWU3ZFFkV3pmNDQ2RzJiX0cwS0k1YmgyZlBvdHczVG1s?oc=5",
+    "votes": 34,
+    "at": "2026-11-19T02:23:01-05:00",
+    "atMs": 1795072981000,
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5jUllOVjRpajRPcXdSNkRIUFhwQmMtOVlYWUhKQ1BPaUdzTHNiRmhyakN2T1FLME1LWEk4QW9BZjA2cjNpMWtNU1dHZU1TcTRNRHBqQV9BU0dBb1hROGF4TUQ4bUZCdlY0RTIwVklTMlUzU2dtRExHY3NmWQ?oc=5",
     "tag": "WEATHER",
-    "score": 850.0,
-    "why": "30 sources · fresh · weather",
+    "score": 962.0,
+    "why": "34 sources · fresh · weather",
     "desc": "Cadillac Formula 1 Team Locks In Valtteri Bottas for 2027 in Las Vegas as Cool, Clear Weather Forecast Sets Stage for Strip Showdown Nevada Globe"
    },
    {
@@ -842,17 +794,35 @@
      "IndyStar",
      "Crash.net",
      "The Straits Times",
-     "Speedcafe.com",
-     "The Race"
+     "The Race",
+     "Grande Prêmio"
     ],
     "votes": 6,
     "at": "2026-11-18T16:45:00-05:00",
     "atMs": 1795038300000,
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOeWdGUHBCMS13UW1iNWQ5czA4c0c2SzhFNTc2c0dTeTZEU2JoMGFJbFVRWmxRWmMxTzV6V05ObVE5X3k0ZS13REhjMEp5RmFzaDZ2OHZkVElZZXBQX0VUeXpHNDNuXzZuenhTZmMxd01WUEdaRjFuTVJ2ZFRkRkxDQTZ6cWRCSlRHaVRuNENKM1g3RjFLeHJtczh2NkNRdDUtZkU3c05XcDg3dkRTMTB6ZGhBY1A3V0lfNkdOZU5BWUtxOXJiQUVzcnNJWm8?oc=5",
     "tag": "NATIONAL",
-    "score": 156.0,
+    "score": 150.0,
     "why": "6 sources",
     "desc": "Cadillac make 2027 F1 driver line-up decision as Valtteri Bottas and Colton Herta learn their fate F1 Oversteer"
+   },
+   {
+    "id": "nat-46aedd70b1",
+    "title": "High school valedictorians to get Nike shoes after request from Mississippi’s incoming senator",
+    "source": "The Washington Post",
+    "sources": [
+     "The Washington Post",
+     "NBC",
+     "NBC News"
+    ],
+    "votes": 3,
+    "at": "2026-11-18T19:17:24-05:00",
+    "atMs": 1795047444000,
+    "link": "https://www.nbcnews.com/politics/2026-election/high-school-valedictorians-get-nike-shoes-request-mississippis-incomin-rcna610116",
+    "tag": "SCHOOLS",
+    "score": 80.0,
+    "why": "3 sources · schools",
+    "desc": "High school valedictorians to get Nike shoes after request from Mississippi’s incoming senator NBC News Mississippi senator-elect turns historic win into nationwide Nike offer Axios High school valedictorians to get custom kicks after Sen.-"
    },
    {
     "id": "nat-1d88188ced",
@@ -861,16 +831,34 @@
     "sources": [
      "ktnv.com",
      "www.ktnv.com",
-     "Yahoo Sports"
+     "KTNV Las Vegas"
     ],
     "votes": 3,
-    "at": "2026-11-18T21:19:41-05:00",
-    "atMs": 1795054781000,
+    "at": "2026-11-19T03:03:45-05:00",
+    "atMs": 1795075425000,
     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNb0ZWS2hxWTRrcVo5VnJ5a1pZZ0poTFoxRERSTFpLNTRsVmVSTjBhSGFWRzZrQlZ1TkduTVF5RU9aZEhKMk9GQkwyUTM3MXk0RVNrQVl2MXpsSEh5M0lOTnFVX0VfN0pLa0RoNlhTRU1QRks2Ym9vNS1VcHE5ZThCQm93RWd2UVBMbzRKSVhkMDFYQ0pwQUpUVnJfUFB3TERmODZYQk5HanU3cFhJWXl0RHByb3gzV01oSmVUN1VWVQ?oc=5",
     "tag": "NATIONAL",
     "score": 78.0,
     "why": "3 sources · fresh",
-    "desc": "Las Vegas Grand Prix unveils expanded fan zones, Cadillac and WHOOP activations for 2026 www.ktnv.com"
+    "desc": "Las Vegas Grand Prix unveils expanded fan zones, Cadillac and WHOOP activations for 2026 KTNV Las Vegas"
+   },
+   {
+    "id": "nat-07c75bded9",
+    "title": "Cadillac confirms Bottas alongside Perez for 2027",
+    "source": "RaceFans",
+    "sources": [
+     "RaceFans",
+     "Grandprix.com",
+     "Yahoo Sports"
+    ],
+    "votes": 3,
+    "at": "2026-11-18T20:25:00-05:00",
+    "atMs": 1795051500000,
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbVE0OFZtNUliaVFIdE9QWDd1eVd6Wkltc3Bfc053WC1YVVVOSVFJQ1ZyRHZqemZHLW5oRnZKdnE0TWlDWU9iZ3lSM0ptTkE0STJOQXNQR0U3a1hnSzJxa3lVbDhlaGk1RTRDNUhCTE5uc1J6SzU0eVcwcTNySHhRVk9MRGNVUQ?oc=5",
+    "tag": "NATIONAL",
+    "score": 66.0,
+    "why": "3 sources",
+    "desc": "Cadillac Confirms Bottas For 2027: What Are The Repercussions? Yahoo Sports"
    },
    {
     "id": "nat-cc93fa6ddc",
@@ -891,41 +879,6 @@
     "desc": "Cincinnati Zoo says Fiona the hippo can’t undergo surgery after swallowing a hat AP News Cincinnati Zoo continues to monitor Fiona the hippo's health WVXU Cincinnati Zoo rules out surgery for Fiona the hippo Axios Fiona the hippo undergoing"
    },
    {
-    "id": "nat-46aedd70b1",
-    "title": "High school valedictorians to get Nike shoes after request from Mississippi’s incoming senator",
-    "source": "The Washington Post",
-    "sources": [
-     "The Washington Post",
-     "NBC"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T19:17:24-05:00",
-    "atMs": 1795047444000,
-    "link": "https://www.nbcnews.com/politics/2026-election/high-school-valedictorians-get-nike-shoes-request-mississippis-incomin-rcna610116",
-    "tag": "SCHOOLS",
-    "score": 64.0,
-    "why": "2 sources · fresh · schools",
-    "desc": "Nike to gift sneakers to all high school valedictorians at Scott Colom’s suggestion The Washington Post Mississippi Senate-elect turns historic win into nationwide Nike offer Axios High school valedictorians to get custom kicks after senato"
-   },
-   {
-    "id": "nat-24de7a3d4a",
-    "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor",
-    "source": "NPR",
-    "sources": [
-     "NPR",
-     "CBS",
-     "The Guardian"
-    ],
-    "votes": 3,
-    "at": "2026-11-18T03:27:50-05:00",
-    "atMs": 1794990470000,
-    "link": "https://www.npr.org/2026/11/18/nx-s1-6045411/rubio-outages-malign-actor",
-    "tag": "NATIONAL",
-    "score": 60.0,
-    "why": "3 sources",
-    "desc": "‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio The Guardian Rubio says tech outages are not part of 'systemic attack' against US BBC Rubio says there's 'zero' information that U.S. outages are caused by a malign "
-   },
-   {
     "id": "nat-fb702025ed",
     "title": "A Massachusetts Town Revolts Against Amazon’s Delivery Drones",
     "source": "NYT",
@@ -938,26 +891,9 @@
     "atMs": 1795054016000,
     "link": "https://www.nytimes.com/2026/11/18/us/politics/amazon-delivery-drones-massachusetts.html",
     "tag": "NATIONAL",
-    "score": 58.0,
-    "why": "2 sources · fresh · money",
+    "score": 52.0,
+    "why": "2 sources · money",
     "desc": "A Massachusetts Town Revolts Against Amazon’s Delivery Drones The New York Times Amazon wants to offer fast delivery. Residents want quiet skies. A Massachusetts suburb wages an epic battle over control of its airspace. https://nytimes.visi"
-   },
-   {
-    "id": "nat-fdcd22f13e",
-    "title": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
-    "source": "NYT",
-    "sources": [
-     "NYT",
-     "The New York Times"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T16:36:26-05:00",
-    "atMs": 1795037786000,
-    "link": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html",
-    "tag": "SCHOOLS",
-    "score": 58.0,
-    "why": "2 sources · schools",
-    "desc": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says The New York Times Lawyers’ Committee Files Lawsuit on Behalf of Black Students Detained and Searched Due to AI Alert Falsely Identifying a Bag of Chips as a Firearm Lawyers' Co"
    },
    {
     "id": "nat-2734c8d430",
@@ -972,7 +908,7 @@
     "atMs": 1795032298000,
     "link": "https://www.nbcnews.com/news/us-news/baltimore-police-handcuffed-teens-school-ai-mistook-potato-chips-gun-l-rcna610019",
     "tag": "SCHOOLS",
-    "score": 58.0,
+    "score": 52.0,
     "why": "2 sources · schools",
     "desc": "Teens say AI surveillance system at Baltimore school mistook Doritos bag for a gun NBC News A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says The New York Times Baltimore County schools, police sued for AI software ‘bag of chip"
    },
@@ -989,9 +925,9 @@
     "atMs": 1795027212000,
     "link": "https://www.nbcnews.com/news/us-news/doj-charges-former-penn-state-student-center-fraternity-drug-bust-rcna610046",
     "tag": "SCHOOLS",
-    "score": 58.0,
+    "score": 52.0,
     "why": "2 sources · schools",
-    "desc": "DOJ charges former Penn State student at center of fraternity drug bust NBC News Alleged kingpin of cocaine ring at Penn State facing new charges after indictment Centre Daily Times Former Penn State frat brother indicted by federal grand j"
+    "desc": "DOJ charges former Penn State student at center of fraternity drug bust NBC News Penn State shuts down Delta Upsilon after finding misconduct, ‘disturbing acts of hazing’ Centre Daily Times Justice Department charges alleged Penn State coca"
    },
    {
     "id": "nat-09d601fbc8",
@@ -1006,26 +942,42 @@
     "atMs": 1795018591000,
     "link": "https://www.nytimes.com/2026/11/18/us/anti-ai-protests-petitions-colleges.html",
     "tag": "SCHOOLS",
-    "score": 52.0,
+    "score": 46.0,
     "why": "2 sources · schools",
     "desc": "The Anti-A.I. Campus Movement Is Growing The New York Times When students conscientiously object to using AI Times Higher Education WSU students rally against AI The Lewiston Tribune Students Expand Campus Resistance to Artificial Intellige"
    },
    {
-    "id": "nat-07c75bded9",
-    "title": "Cadillac confirms Bottas alongside Perez for 2027",
-    "source": "RaceFans",
+    "id": "nat-3208af4a45",
+    "title": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader",
+    "source": "The Washington Post",
     "sources": [
-     "RaceFans",
-     "Grandprix.com"
+     "The Washington Post",
+     "Baltimore Sun"
     ],
     "votes": 2,
-    "at": "2026-11-18T20:25:00-05:00",
-    "atMs": 1795051500000,
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbVE0OFZtNUliaVFIdE9QWDd1eVd6Wkltc3Bfc053WC1YVVVOSVFJQ1ZyRHZqemZHLW5oRnZKdnE0TWlDWU9iZ3lSM0ptTkE0STJOQXNQR0U3a1hnSzJxa3lVbDhlaGk1RTRDNUhCTE5uc1J6SzU0eVcwcTNySHhRVk9MRGNVUQ?oc=5",
+    "at": "2026-11-19T00:08:22-05:00",
+    "atMs": 1795064902000,
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUWhjOUZaemU1cjV2Z1pBR0czWGxfaFpvdmVTdHlIcGRQOWMxVjlGT1JNQXQ0Q0R2WEVMNElPUG82U0xaQml4QWhnZGctajR4R2xuTnk5WnYwTk9HS3pEV09pVFhBNU1lbFdhZWdkcTRVZmJZY0NLNTFmZzUzRDdHa3I3eHFOOU52U0JjQ1BVNGNyNV9pOWpKc1g5T1VXOGpZX2FrZXFINUg0aldEekUxV05sczhOQQ?oc=5",
     "tag": "NATIONAL",
-    "score": 50.0,
-    "why": "2 sources · fresh",
-    "desc": "Official: Bottas to stay at Cadillac in 2027 alongside Perez RaceFans"
+    "score": 44.0,
+    "why": "2 sources",
+    "desc": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader The Washington Post Sanders backs Van Hollen over Schumer: Democrats need ‘the guts’ to stand up for voters MS NOW Can Van Hollen Chuck Schumer? New York Maga"
+   },
+   {
+    "id": "nat-f87128c0fd",
+    "title": "Gaylord hockey ends two-year, 38-game losing streak against Cadillac",
+    "source": "Petoskey News-Review",
+    "sources": [
+     "Petoskey News-Review"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T21:50:00-05:00",
+    "atMs": 1795056600000,
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOMVM5c1A1ckFQaGNrZUhNdXlyMm9UM25JS3l6UlpydExsX2t1S2JmbDRiaDF2enlSTnBmNHpWX0JxSjZWbUtSLUFVNmJpbHFKSjBMN3dWTjFJZFJoTGpsNmF0RlRhNFlFMlhja25Ma25HdlVIaXBTbEFVNUFrZUdMQ3pLd3VFQ0JKQm50Z01FcGhKejFzeUpadThBVjliaHBNbS1lSVdZczNXTGNkVk0ya04tcmVQaDBKaF96UjJNNnFCbm5odzFCM2o4bkRmTlhabmpBdWZXOW5rcnVDSlFaNEpGaEVYQjBVbmg2TDF3?oc=5",
+    "tag": "SPORTS",
+    "score": 42.0,
+    "why": "local angle · sports",
+    "desc": "Gaylord hockey ends two-year, 38-game losing streak against Cadillac Petoskey News-Review"
    }
   ],
   "more": [
@@ -1046,97 +998,61 @@
     "atMs": 1795053777000,
     "link": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
     "tag": "NATIONAL",
-    "score": 132.0,
-    "why": "6 sources · fresh · downranked: political fight",
-    "desc": "Democrat Hakeem Jeffries nominated to be first Black speaker of House next year The Washington Post Hakeem Jeffries overwhelmingly wins House speaker nomination despite threats from ultra-progressives CNN Democrats Nominate Hakeem Jeffries "
+    "score": 126.0,
+    "why": "6 sources · downranked: political fight",
+    "desc": "Democrats nominate Hakeem Jeffries to be US Speaker of the House BBC Hakeem Jeffries overwhelmingly wins House speaker nomination despite threats from ultra-progressives CNN Democrats Nominate Hakeem Jeffries for Speaker of the House, Makin"
    },
    {
-    "id": "nat-e02f169250",
-    "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
-    "source": "NYT",
+    "id": "nat-fc10f9762a",
+    "title": "Elon Musk says he regrets midterm spending",
+    "source": "NBC",
     "sources": [
-     "NYT",
-     "NPR",
-     "CBS",
      "NBC",
+     "BBC",
      "The Washington Post"
     ],
-    "votes": 5,
-    "at": "2026-11-18T07:14:28-05:00",
-    "atMs": 1795004068000,
-    "link": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
-    "tag": "NATIONAL",
-    "score": 92.0,
-    "why": "5 sources · downranked: political fight",
-    "desc": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang NPR Mary Peltola ousts incumbent Republican Dan Sullivan in Alaska Senate race, giving Democrats 56 seats CNN Democrats flipped 9 US Senate seats — the most i"
-   },
-   {
-    "id": "nat-3208af4a45",
-    "title": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader",
-    "source": "The Washington Post",
-    "sources": [
-     "The Washington Post",
-     "Baltimore Sun"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T20:02:35-05:00",
-    "atMs": 1795050155000,
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUWhjOUZaemU1cjV2Z1pBR0czWGxfaFpvdmVTdHlIcGRQOWMxVjlGT1JNQXQ0Q0R2WEVMNElPUG82U0xaQml4QWhnZGctajR4R2xuTnk5WnYwTk9HS3pEV09pVFhBNU1lbFdhZWdkcTRVZmJZY0NLNTFmZzUzRDdHa3I3eHFOOU52U0JjQ1BVNGNyNV9pOWpKc1g5T1VXOGpZX2FrZXFINUg0aldEekUxV05sczhOQQ?oc=5",
-    "tag": "NATIONAL",
-    "score": 50.0,
-    "why": "2 sources · fresh",
-    "desc": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader The Washington Post Maryland Sen. Angela Alsobrooks backs Schumer over Van Hollen in leadership race CBS News Sanders backs Van Hollen over Schumer: Democrats"
-   },
-   {
-    "id": "nat-be666944ff",
-    "title": "Gaylord hockey ends a 38-game losing streak. See the final moments.",
-    "source": "Petoskey News-Review",
-    "sources": [
-     "Petoskey News-Review"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T20:38:25-05:00",
-    "atMs": 1795052305000,
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOMVM5c1A1ckFQaGNrZUhNdXlyMm9UM25JS3l6UlpydExsX2t1S2JmbDRiaDF2enlSTnBmNHpWX0JxSjZWbUtSLUFVNmJpbHFKSjBMN3dWTjFJZFJoTGpsNmF0RlRhNFlFMlhja25Ma25HdlVIaXBTbEFVNUFrZUdMQ3pLd3VFQ0JKQm50Z01FcGhKejFzeUpadThBVjliaHBNbS1lSVdZczNXTGNkVk0ya04tcmVQaDBKaF96UjJNNnFCbm5odzFCM2o4bkRmTlhabmpBdWZXOW5rcnVDSlFaNEpGaEVYQjBVbmg2TDF3?oc=5",
-    "tag": "SPORTS",
-    "score": 48.0,
-    "why": "fresh · local angle · sports",
-    "desc": "Gaylord hockey ends a 38-game losing streak. See the final moments. Petoskey News-Review"
-   },
-   {
-    "id": "nat-407751e6df",
-    "title": "Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan",
-    "source": "CBS",
-    "sources": [
-     "CBS",
-     "CNN",
-     "The Hill"
-    ],
     "votes": 3,
-    "at": "2026-11-18T19:26:00-05:00",
-    "atMs": 1795047960000,
-    "link": "https://www.cbsnews.com/news/john-cornyn-trump-elliot-gaiser-justice-department-federal-judge/",
+    "at": "2026-11-18T22:42:00-05:00",
+    "atMs": 1795059720000,
+    "link": "https://www.nbcnews.com/video/elon-musk-says-he-feels-foolish-after-spending-hundreds-of-millions-backing-republicans-273776709737",
     "tag": "NATIONAL",
-    "score": 48.0,
-    "why": "3 sources · fresh · downranked: political fight",
-    "desc": "Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan The Hill Sen. Cornyn blocks judicial nominee because Trump didn’t choose Texas CNN Republican Senator Cornyn blocks Trump judicial nominee in Texas "
+    "score": 42.0,
+    "why": "3 sources · downranked: political fight",
+    "desc": "Elon Musk told the New York Times in a video interview at the Dealbook Summit that he feels \"foolish\" after spending nearly half a billion dollars backing Republicans in the midterm elections. As a new crop of Democrats prepare to enter Con"
    },
    {
-    "id": "nat-44e5a2229c",
-    "title": "St. Mary in first state title game since 2002, can it beat Mendon?",
-    "source": "Detroit Free Press",
+    "id": "nat-c78cd6350e",
+    "title": "Hochul unveils 5-gigawatt nuclear master plan for New York",
+    "source": "RochesterFirst",
     "sources": [
-     "Detroit Free Press",
-     "Petoskey News-Review"
+     "RochesterFirst",
+     "NEWS10 ABC"
     ],
     "votes": 2,
-    "at": "2026-11-18T04:03:00-05:00",
-    "atMs": 1794992580000,
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNakt1dlZaVW9zOUF4aFYxak8xQlgxZHd6S1VnRE9DX1g1T1J0ajZsaVJDY2ppdU9Ea25wd08waGFlRDVKN1ZJaFpkZEtUN3pwazRwQWNOMTdXNkpCUTYyR1lSQldrcXB3ZzVMUEVVT0lMZHpaT3RhY0pkQjlhXzBVdFZoYS1TMENud0hWUWZEWDM1bmI0YWozc1dxa2NBWkV1ei1CZ3hFTFpBeTg0eG5OOWZVQkRCV0xOWEZKWXQxeUlKMnB4N1RvdXI4UDBsNVRtVTN1TTdwN0o3VUhQdzV4aEs5TDIwREJHZWlN?oc=5",
+    "at": "2026-11-18T19:50:44-05:00",
+    "atMs": 1795049444000,
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObG8xdlI5VnJwMWd3NHlkbzFQanFGb2xKYjB5SXVGQkJidGZRZW02WVFxdjkyMElSaUh2dFdPd1FSMEFqSUtVYVk1bFBsVEFCV2FaUExDcEpWbFZTUlRrZ05HdVpBbHBZRi1jNFBkVUVsYmN4VlptdlkwNkdlS3BhYVBvU0dkSC0tMmRKUHd0dFBpd2U5T3lGbHdZVXRnam8tTXNNS3ZwRdIBrAFBVV95cUxNTTJrVHg5a3RKc1h0c3NmWjVoRExka2ZqSGNLOVg1aGJHVDZ0QXdfQnBLY29HYVdiVzM5ZFZibzhkWmF0TGFyUFhka01YaV9IamNBN3g3QmRRTE1rQ2x6MkNQSzhTUlh5RENreTB5emZfNHlTV2VUMTVwT1BzbW5rM09vUHM3Vm5LN0FmaHNadEh1NHFOd3p5Tno4TmZIZ3RGX3FDcmxNS0RWVDZL?oc=5",
     "tag": "NATIONAL",
-    "score": 46.0,
-    "why": "2 sources · local angle",
-    "desc": "St. Mary in first state title game since 2002, can it beat Mendon? Petoskey News-Review"
+    "score": 38.0,
+    "why": "2 sources",
+    "desc": "Hochul unveils 5-gigawatt nuclear master plan for New York NEWS10 ABC Hochul unveils nuclear master plan in Rochester RochesterFirst At a summit in Rochester, Hochul announces the release of a nuclear power plan for New York WXXI News Hochu"
+   },
+   {
+    "id": "nat-9c61fed768",
+    "title": "US and Venezuela sign a deal to reestablish military ties, Hegseth says in visit to Caracas",
+    "source": "WSJ",
+    "sources": [
+     "WSJ",
+     "AP News"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T18:39:00-05:00",
+    "atMs": 1795045140000,
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTlQtc0ZobkZaYXZoanl5Y2pMODJndHlKVDh5amVsTGY4TzA3Wmd1VklyeG5WWEpPbnk4bEl1WUF2VGxTejNmSE1xRkZhTHJWZ2dZZE95d2pzMThXUTBuMFlUZ2R5X3o3bVpzeW1JaTNtZ0xLLWFqcWMyUlN5dWs1ZmVQaFladmh5SEpSTHpMT2Fxc0Zra0c5a0ZOcjdZSW5W?oc=5",
+    "tag": "NATIONAL",
+    "score": 38.0,
+    "why": "2 sources",
+    "desc": "Hegseth Cements New Military Deal in Visit to Venezuela WSJ US and Venezuela sign a deal to reestablish military ties, Hegseth says in visit to Caracas AP News Hegseth, in Caracas, announces US-Venezuela military partnership agreement Reute"
    },
    {
     "id": "nat-1019cd76fc",
@@ -1151,9 +1067,43 @@
     "atMs": 1795044483000,
     "link": "https://www.foxnews.com/us/russian-national-accused-surveilling-us-tech-company",
     "tag": "NATIONAL",
-    "score": 44.0,
+    "score": 38.0,
     "why": "2 sources",
     "desc": "Russian man accused of spying on US tech defence company that assists Ukraine BBC Russian arrested on charges he spied on and harassed employees of defense tech company Palantir CNN Russian spy stalked, photographed Silicon Valley tech defe"
+   },
+   {
+    "id": "nat-b96baf5551",
+    "title": "Russian national who targeted Palantir workers charged as foreign agent, sources say",
+    "source": "NBC",
+    "sources": [
+     "NBC",
+     "NBC News"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T18:24:04-05:00",
+    "atMs": 1795044244000,
+    "link": "https://www.nbcnews.com/politics/justice-department/russian-national-igor-diu-targeted-palantir-workers-sources-say-rcna610112",
+    "tag": "NATIONAL",
+    "score": 38.0,
+    "why": "2 sources",
+    "desc": "Russian man accused of spying targeted Palantir workers, sources say NBC News Russian arrested on charges he spied on and harassed employees of defense tech company Palantir CNN Russian arrested for spying on US defence company Palantir ove"
+   },
+   {
+    "id": "nat-a15d9b9430",
+    "title": "Cincinnati Zoo trying 'new approach' to help Fiona pass swallowed hat",
+    "source": "AP News",
+    "sources": [
+     "AP News",
+     "WLWT"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T18:17:00-05:00",
+    "atMs": 1795043820000,
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQWZGc1M5VlU3LU01dEhuVXE2TXp6ekxhOXpob2p2ZzEtQnJQLW0xcGh4UVNRTm94Y3pYOWZldjd3cFFvZmJweDJNOW9Ic2Nad3ZqWXZGWUZQcFdIVFdPOWJ0RjNvRm1feTNHek5rQkhxLVZOZmp1OTc2NW9wWkxvRzJkcC1nUkFMTDl4ZjctY2hqNWd1?oc=5",
+    "tag": "NATIONAL",
+    "score": 38.0,
+    "why": "2 sources",
+    "desc": "Cincinnati Zoo trying 'new approach' to help Fiona pass swallowed hat WLWT Cincinnati Zoo continues to monitor Fiona the hippo's health WVXU Fiona the hippo undergoing care after swallowing a hat at Cincinnati Zoo BBC A Child Tossed a Hat, "
    },
    {
     "id": "nat-1fc319861c",
@@ -1168,9 +1118,9 @@
     "atMs": 1795042140000,
     "link": "https://abcnews.com/US/wireStory/florida-pastor-convicted-us-charges-related-assassination-haitian-138262965",
     "tag": "NATIONAL",
-    "score": 44.0,
+    "score": 38.0,
     "why": "2 sources",
-    "desc": "A Florida pastor with dual Haitian-American citizenship has been convicted of U.S. charges related to the 2021 assassination of Haitian President Jovenel Moïse"
+    "desc": "Florida pastor convicted on charges tied to 2021 assassination of Haitian President Jovenel Moïse CBS News Florida pastor found guilty over 2021 assassination of Haitian president The Guardian Florida pastor is convicted of charges related "
    },
    {
     "id": "nat-54c5028419",
@@ -1185,7 +1135,7 @@
     "atMs": 1795035480000,
     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaWctdzV1djhhLW5JN1lpMlJGR3J2ZlVoTEJSWWJETVVGQlVIX2NVa1BnS3RVSVExRklUSnRYOHR6Q2NEaFpxWk9PY2JQUWNtZDVLYkUtbE9aa2dXUXg4cEhIRzlIcGI5WVAxRDVEQmxDS3Y3YXpvbWJaalFCelRPV0dsT0pxd0ZqeERTWnFnSllCUnZZVEo1RTNtNzl2MWROLXc?oc=5",
     "tag": "NATIONAL",
-    "score": 44.0,
+    "score": 38.0,
     "why": "2 sources",
     "desc": "Cadillac To Go With Translucent Livery For Las Vegas F1 Event AutoSpies"
    },
@@ -1202,7 +1152,7 @@
     "atMs": 1795034731000,
     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNDZSN3YzQXRRMXhoZGRTc2ExVHRpbEd1dUJVenpGM0lVUXh0TGF1d0thQ1p3dGFYS2lpbTFSQ1ptTGVxdnZjcGg1X3FEa1RXXzM5YXRDNGhXM3VwRFpXY2lJbHJrNi1ET3dRazY3ZklqNjdYS1lmbWdTSGZvZWhVRzk5TEdoTlVNRFZJSHAyUGpBeW9uV2dIZHZSWjlqVHM?oc=5",
     "tag": "NATIONAL",
-    "score": 44.0,
+    "score": 38.0,
     "why": "2 sources",
     "desc": "Cadillac F1 confirms Bottas for 2027, leaving Herta’s future uncertain RACER - Racing News"
    },
@@ -1219,108 +1169,61 @@
     "atMs": 1795034400000,
     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObVNmYTVBVGFNSW54UjhoNEp0c2dBTEdJMDBqUlBoRTBiUm1ReVBMeDdxZERmaUZSTHk1Z01aanBTS2FhcUR5cHdMeGRqcmdhakhZeWFMd0JWYjFYMnZoMmZ4aGl3SUNJUlR6LWRGTTFEU1JVd2ktTE9UTlp3bUNGNDA4MnN0ZWtsVUtfQl9pNA?oc=5",
     "tag": "NATIONAL",
-    "score": 44.0,
+    "score": 38.0,
     "why": "2 sources",
     "desc": "Cadillac keeps Bottas in F1 for 2027 despite Herta rumours The Race"
    },
    {
-    "id": "nat-b64b885aab",
-    "title": "Pastor Kingsley Okonkwo Shares Action He Took After Church Member Insulted Him For Having Tattoo",
-    "source": "Legit News",
+    "id": "nat-2842696145",
+    "title": "‘GTA Flu’ Has Schools and Jobs Bracing for Sick Days",
+    "source": "NYT",
     "sources": [
-     "Legit News",
-     "Naija News"
+     "NYT"
     ],
-    "votes": 2,
-    "at": "2026-11-18T03:58:12-05:00",
-    "atMs": 1794992292000,
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTFEycnNoaWlVVE9JcVo5M0NTRXIzZmxEX0I0Qll6R19RMGVnR2d4SmpYWEhLRThyc3A3NllsS3JBa2VKel93QmtFT0FVYjhEUFFvYlhFS2w2eGY4YnBKV1cxRVpucXJIbnozVnB1Ni1uX05aMFBFQkRESXdOaERndjVnVmRHc09CTmFBVkdYY2RsZ1hnR1FETmRzV2E3QzlvVHFLVVloS2lzc3JBd1d0d2ZaYTBFMURYTmN2Y1ZWYVI?oc=5",
-    "tag": "SPORTS",
-    "score": 44.0,
-    "why": "2 sources · sports",
-    "desc": "Pastor Kingsley Okonkwo Shares Action He Took After Church Member Insulted Him For Having Tattoo Legit News"
+    "votes": 1,
+    "at": "2026-11-19T03:53:03-05:00",
+    "atMs": 1795078383000,
+    "link": "https://www.nytimes.com/2026/11/18/us/gta-6-sick-work-school.html",
+    "tag": "SCHOOLS",
+    "score": 36.0,
+    "why": "fresh · schools",
+    "desc": "The highly anticipated release of Grand Theft Auto VI is expected to prompt a wave of students and employees to stay home on Thursday."
    },
    {
-    "id": "nat-1bcc5588b7",
-    "title": "This Underrated Midwest Travel Destination With Hemingway History Is A Real Hidden Gem",
-    "source": "HuffPost",
-    "sources": [
-     "HuffPost",
-     "شبكة تواصل الإخبارية"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T09:03:49-05:00",
-    "atMs": 1795010629000,
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQc2V0Q0lmRXlEaWtMR3lsRWtUUVhqWmkzTDdfZjFaVVVPREZvaF90ekE0UWt1a2FZYmp4ajBwUVZLSG9xaU5YNHBaUEp4b3k5ZmxPb3RTODV5REZRVkY2SVZGYjk2VUUwNnZTcGwydktwMjBJRk1DWTNER1ZzcExQM0Itc0staFpaeExFa0lCckd4X3dyUzFtUWd3VzlLZHJuQmI4R9IBqgFBVV95cUxPQmhTOEhXc3dWY3NGamIyZ1hhaFFxWFhoZW1Bc0FGYjRsWTBOTC15UVliVm9UMUFaRS1ocDY4SHlVSWNST0ZaSWdRWFNWdk1jQjVlRTZPTXRrN0NDRXYwd3lCWUcyV1FKOGMxZF9kQ2hxTlpTZExvZXBaeVJvY3M5aVhQNWlnM2J3TDRpdVYyYm1iLU1GNFBlVWNUQ0pmaUJ4QTVNbU1IOE5nUQ?oc=5",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "This Underrated Midwest Travel Destination With Hemingway History Is A Real Hidden Gem شبكة تواصل الإخبارية"
-   },
-   {
-    "id": "nat-0bf79bb677",
-    "title": "Jeff Bezos Says He Was ‘Heavily Involved’ in Bond Casting",
-    "source": "BBC",
-    "sources": [
-     "BBC",
-     "NBC"
-    ],
-    "votes": 2,
-    "at": "2026-11-18T07:58:57-05:00",
-    "atMs": 1795006737000,
-    "link": "https://www.bbc.co.uk/news/articles/cm5y1eejk292o?at_medium=RSS&at_campaign=rss",
-    "tag": "NATIONAL",
-    "score": 38.0,
-    "why": "2 sources",
-    "desc": "Amazon founder and chairman Jeff Bezos says he was “heavily involved” in the casting of Robert Pattinson as Amazon MGM Studios’ next James Bond, though he says there was some hesitancy in the selection. “We were slightly biased against him "
-   },
-   {
-    "id": "nat-8dee0ee98e",
-    "title": "South Florida hit with over 15 inches of rain",
+    "id": "nat-407751e6df",
+    "title": "Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan",
     "source": "CBS",
     "sources": [
-     "CBS"
+     "CBS",
+     "CNN",
+     "The Hill"
     ],
-    "votes": 1,
-    "at": "2026-11-18T20:04:44-05:00",
-    "atMs": 1795050284000,
-    "link": "https://www.cbsnews.com/video/south-florida-hit-with-over-15-inches-of-rain/",
-    "tag": "ROADS",
+    "votes": 3,
+    "at": "2026-11-18T19:26:00-05:00",
+    "atMs": 1795047960000,
+    "link": "https://www.cbsnews.com/news/john-cornyn-trump-elliot-gaiser-justice-department-federal-judge/",
+    "tag": "NATIONAL",
     "score": 36.0,
-    "why": "fresh · roads",
-    "desc": "Heavy rainfall has swamped roads, cars and homes in South Florida over the past 24 hours. Rob Marciano has the story."
+    "why": "3 sources · downranked: political fight",
+    "desc": "Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan The Hill Sen. Cornyn blocks judicial nominee because Trump didn’t choose Texas CNN Republican Senator Cornyn blocks Trump judicial nominee in Texas "
    },
    {
-    "id": "nat-2f4e0d22f6",
-    "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
-    "source": "The Guardian",
+    "id": "nat-b5b52a67f2",
+    "title": "President Trump lands in China for critical talks with Xi and Putin",
+    "source": "NPR",
     "sources": [
-     "The Guardian"
+     "NPR",
+     "NBC",
+     "BBC"
     ],
-    "votes": 1,
-    "at": "2026-11-18T18:53:00-05:00",
-    "atMs": 1795045980000,
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSF91bW51a2g2SHNIZjBOd0lXSDEzNUtKRVBHNDFGSnZCNjlQWGpBbmZOTkJTcVliamhleExMaWJla1E0dWdMTTBLRmI5Q0NSSmZkU2RVMzlwYmpVd1FNT0ItTnJWbUY0alM2bnlaUVBxUUx5a214ZE44WjZhYkl0UGQ3ZXhGNHhIclFTelphMzJSc2Q5eFRaSkdKX3g?oc=5",
-    "tag": "SCHOOLS",
+    "votes": 3,
+    "at": "2026-11-18T14:08:04-05:00",
+    "atMs": 1795028884000,
+    "link": "https://www.npr.org/2026/11/18/nx-s1-6045518/trump-china-xi-putin",
+    "tag": "NATIONAL",
     "score": 36.0,
-    "why": "fresh · schools",
-    "desc": "Four Maryland high school students sue after AI mistakes Doritos bag for gun The Guardian Baltimore County students sue over AI system that mistook Doritos bag for gun CBS News A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says "
-   },
-   {
-    "id": "nat-ed13d47775",
-    "title": "Video from MTA Bus Captures Moments Before Fatal Brooklyn Building Collapse",
-    "source": "The New York Times",
-    "sources": [
-     "The New York Times"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T18:43:53-05:00",
-    "atMs": 1795045433000,
-    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNzZmVmZ3czZWY3pZc1ZRbVFHUjRmNnZ0Z0UzdWhWUlpjakx6SHBPcnpEd3BGcFZyd0N4MnpCTHZvSnN5ckFWek9rdXVyYWJoMUUzcW9MR2doMnVOYld3UUpHb3hlQkVqWjRlVk1xRGtHTTlLMUdoeTNyNnVUc1QyTTA1M0tlaWZ0?oc=5",
-    "tag": "SCHOOLS",
-    "score": 36.0,
-    "why": "fresh · schools",
-    "desc": "Video from MTA Bus Captures Moments Before Fatal Brooklyn Building Collapse The New York Times Immigrant community becomes epicenter of grief after deadly Brooklyn building collapse CNN Brooklyn Collapse Records Reveal Gap Between Plans and"
+    "why": "3 sources · downranked: political fight",
+    "desc": "President Donald Trump touched down in China Wednesday ahead of a historic three-way meeting with the presidents of China and Russia on Thursday, which Trump says will focus on denuclearization and global security along with the conflicts i"
    },
    {
     "id": "nat-cebe9106c9",
@@ -1339,6 +1242,135 @@
     "desc": "PREVIEW: Hockey carries momentum into critical Ferris State series Northern Michigan University Athletics"
    },
    {
+    "id": "nat-abf78be15c",
+    "title": "L.A. County issues evacuation warnings as storm nears; snow, flooding expected",
+    "source": "Los Angeles Times",
+    "sources": [
+     "Los Angeles Times"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T23:39:35-05:00",
+    "atMs": 1795063175000,
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVjdLRXlKbC1xa25oMHVFSkdiTTNOLU5Ua3VyNnVrY1pZWl94NlI1WnJfZUlEN2daeXlOMFM4OWR3M2ZJV0JKMUZsaWdnbGF3OGN2Q3JSU09EM0prQXRXM0Fwc0hNeGN5Sms2ZXIxclFqd2x1Z0JlWFpEVURxZVlYZnpGMk9sME56bDNTQzdUMks4N3lXZER2VTViaGdqODhYU09senExaWNqQWl1VGl4SUEtVzJMdTE4SlBhOVI0T29EN0Fu?oc=5",
+    "tag": "WEATHER",
+    "score": 32.0,
+    "why": "weather",
+    "desc": "L.A. County issues evacuation warnings as storm nears; snow, flooding expected Los Angeles Times Southern California is about to get drenched. Here’s when the heaviest rain arrives KTLA SoCal storm timeline: First atmospheric river brings r"
+   },
+   {
+    "id": "nat-356cfdc922",
+    "title": "Storm system pounds Bay Area with heavy rain, strong winds; record rainfall in San Francisco",
+    "source": "CBS News",
+    "sources": [
+     "CBS News"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T21:34:07-05:00",
+    "atMs": 1795055647000,
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSzMtMkZWRmRyb2c5bkhtMk9SblFORm1LMlMtYkREVmR4YW5PUzdEb1ZWMkpJc2lpZGxRODhXNmtlWVVuMF9UajUyVEgzQUV1c2xiWmVBQ0NpRU9VZ1ZqaFhhSlYtYTBHN2gyU0FWMGt3dGNPTWIxVHp3LUJvOTVLdkpHU3kwT1B3YmNxZXlPeGZEQU0weWR5RXZmMWlFWTdqY2lDQU9GekxTUFlobmM3R0R5NFV3WkxLNFk4OQ?oc=5",
+    "tag": "WEATHER",
+    "score": 32.0,
+    "why": "weather",
+    "desc": "Storm system pounds Bay Area with heavy rain, strong winds; record rainfall in San Francisco CBS News Live storm updates: Severe flooding inundates roadways leads to crashes, closures across Bay Area ABC7 Bay Area Storm Brings Torrential Ra"
+   },
+   {
+    "id": "nat-1bcc5588b7",
+    "title": "This Underrated Midwest Travel Destination With Hemingway History Is A Real Hidden Gem",
+    "source": "HuffPost",
+    "sources": [
+     "HuffPost",
+     "شبكة تواصل الإخبارية"
+    ],
+    "votes": 2,
+    "at": "2026-11-18T09:03:49-05:00",
+    "atMs": 1795010629000,
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQc2V0Q0lmRXlEaWtMR3lsRWtUUVhqWmkzTDdfZjFaVVVPREZvaF90ekE0UWt1a2FZYmp4ajBwUVZLSG9xaU5YNHBaUEp4b3k5ZmxPb3RTODV5REZRVkY2SVZGYjk2VUUwNnZTcGwydktwMjBJRk1DWTNER1ZzcExQM0Itc0staFpaeExFa0lCckd4X3dyUzFtUWd3VzlLZHJuQmI4R9IBqgFBVV95cUxPQmhTOEhXc3dWY3NGamIyZ1hhaFFxWFhoZW1Bc0FGYjRsWTBOTC15UVliVm9UMUFaRS1ocDY4SHlVSWNST0ZaSWdRWFNWdk1jQjVlRTZPTXRrN0NDRXYwd3lCWUcyV1FKOGMxZF9kQ2hxTlpTZExvZXBaeVJvY3M5aVhQNWlnM2J3TDRpdVYyYm1iLU1GNFBlVWNUQ0pmaUJ4QTVNbU1IOE5nUQ?oc=5",
+    "tag": "NATIONAL",
+    "score": 32.0,
+    "why": "2 sources",
+    "desc": "This Underrated Midwest Travel Destination With Hemingway History Is A Real Hidden Gem شبكة تواصل الإخبارية"
+   },
+   {
+    "id": "nat-4b38b63be3",
+    "title": "Soldiers sign up to play ‘Grand Theft Auto VI’ in exchange for reenlisting",
+    "source": "The Washington Post",
+    "sources": [
+     "The Washington Post"
+    ],
+    "votes": 1,
+    "at": "2026-11-19T02:00:00-05:00",
+    "atMs": 1795071600000,
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbGstLUJXanc0c0tYRVV2RWNvVnFjc2cycS1waWhENTdhYkNMY3NESTY5aDhCY0ZhN1NOUkxfaTd6UnhBVURhRC01cWF6aHpVczFfLVU0THJidWVXUlJXWnctVmQ0UTlFOGlOblNJT044Z0hPR0FNb2NTT3VuNzJoT2hHXy1TNzZyUk9UdjRMemFoOHRNMHR4dDF5WS15MGYtbGdTSHhmY2pneFhEekpxblNtMGtMX1dRQ0JxdDUwVTc?oc=5",
+    "tag": "NATIONAL",
+    "score": 30.0,
+    "why": "fresh · entertainment",
+    "desc": "Soldiers sign up to play ‘Grand Theft Auto VI’ in exchange for reenlisting The Washington Post 43 soldiers said yes to more Army if they could play ‘GTA VI’ Task & Purpose Dozens of Army soldiers sign up for unique reenlistment incentive to"
+   },
+   {
+    "id": "nat-7add1ba7c5",
+    "title": "Road Trippin': Harry Potter and holiday magic take over Gaylord Texan",
+    "source": "KEYE",
+    "sources": [
+     "KEYE"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T23:34:06-05:00",
+    "atMs": 1795062846000,
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2ZvNnJON3Rvd1hyWHd5aEt3b2RjTVdseFVnYlBJNG41MUV6anl4OHFuSk9sNjhaUVJuY0FsZmdyU0RkeW9ZNlF5dVdzZVZlUy1RM0E1UGxPeE1FZy1QQUd1Y216aFlVbDFQV3RwV1JOZ21jeEVUWTl3MFhFRlNJOUVXWmVqbVRLRVItaHB0SE84VUhzOTdINWY0SzVYb09peWFjZlRIQmE0ZFp2MzhSbjRLZC1WbnpJUHAwRktwekk?oc=5",
+    "tag": "ROADS",
+    "score": 30.0,
+    "why": "roads",
+    "desc": "Road Trippin': Harry Potter takes over ice! at Gaylord Texan's Lone Star Christmas KEYE"
+   },
+   {
+    "id": "nat-35b81c162e",
+    "title": "Obituary: Ted Bodus",
+    "source": "Leelanau News",
+    "sources": [
+     "Leelanau News"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T21:35:12-05:00",
+    "atMs": 1795055712000,
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMldMcms4VXAtamV2YkhHX2kzcUtLRmpJRDFGYkdSVGU1bjJvU0tjYlJhLUs1cERIUHlNNTh6ajNUNmdXWGxoV2VZd1UxYlRfenZsb2QzREdzeE1sSEs3QjAyRQ?oc=5",
+    "tag": "NATIONAL",
+    "score": 30.0,
+    "why": "local angle",
+    "desc": "Obituary: Ted Bodus Leelanau News"
+   },
+   {
+    "id": "nat-5d6b9d9fba",
+    "title": "Obituary: Dorothy A. Forton",
+    "source": "Leelanau News",
+    "sources": [
+     "Leelanau News"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T21:35:12-05:00",
+    "atMs": 1795055712000,
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzM09XeFNaQWJoWWxEN1hpQVprbkUxTHE4d0JraWpsYzNkQnIzM195UW4wbEpSZ2t1cGVnbkRoa3kwX2dDR1F1b1Axd0FKbUtibW5mdTdiRG0tUHBxM3ZjU1dob25qSEJSbmdFZQ?oc=5",
+    "tag": "NATIONAL",
+    "score": 30.0,
+    "why": "local angle",
+    "desc": "Obituary: Dorothy A. Forton Leelanau News"
+   },
+   {
+    "id": "nat-b55639c67b",
+    "title": "Virginia school district shutters after finding staff members weren’t screened for abuse",
+    "source": "NBC",
+    "sources": [
+     "NBC"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T21:33:56-05:00",
+    "atMs": 1795055636000,
+    "link": "https://www.nbcnews.com/news/us-news/virginia-school-district-shutters-finding-500-staff-members-werent-scr-rcna610140",
+    "tag": "SCHOOLS",
+    "score": 30.0,
+    "why": "schools",
+    "desc": "A Virginia public school district will be closed through Thanksgiving because it said hundreds of staff members were not screened to see if they had past child abuse or neglect complaints."
+   },
+   {
     "id": "nat-233e8775cc",
     "title": "PREVIEW: Women’s Basketball heads to Minnesota for two games",
     "source": "Northern Michigan University Athletics",
@@ -1350,43 +1382,57 @@
     "atMs": 1795022006000,
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXhiYlpNWS1xeEVub0o1QnNiUEsxRDcxT0lLOENvLVlJRldqaTEwblR5NG01Q0lHdzU3elZ0dHdqX3NLSTBDTXVHaEE0cy1kSk93cGRCV2NZOVlvdXZMaC1yTWFMRlZFZWJoRFdOc21kQ1FFUFZCazZlQzdEZ2JhcHFKZnZ1LU9zRDh6U0FaeW40RDBSRWE1cDBkcXZQcTVIdnNqNkVnYWpySVM2OVhJSTVTZnJOaXkzb2NPUS1R?oc=5",
     "tag": "SPORTS",
-    "score": 36.0,
+    "score": 30.0,
     "why": "local angle · sports",
     "desc": "PREVIEW: Women’s Basketball heads to Minnesota for two games Northern Michigan University Athletics"
    },
    {
-    "id": "nat-ad27ba3ab0",
-    "title": "Katherine Clark, Pete Aguilar, Joe Neguse elected to House majority posts",
-    "source": "CBS News",
+    "id": "nat-b09be3d2b9",
+    "title": "How Growing Numbers, Safety Concerns Led to First-Ever Two-Night Downtown Holiday Kickoff",
+    "source": "The Ticker",
     "sources": [
-     "CBS News",
-     "NBC",
-     "Politico"
-    ],
-    "votes": 3,
-    "at": "2026-11-18T11:49:43-05:00",
-    "atMs": 1795020583000,
-    "link": "https://www.nbcnews.com/politics/congress/democrats-formally-nominate-rep-hakeem-jeffries-paving-way-first-black-rcna609619",
-    "tag": "NATIONAL",
-    "score": 36.0,
-    "why": "3 sources · downranked: political fight",
-    "desc": "Katherine Clark, Pete Aguilar, Joe Neguse elected to House majority posts Politico Katherine Clark of Massachusetts elected as next House majority leader by Democrats in historic first CBS News Press Release: Betty McCollum Comments on Hous"
-   },
-   {
-    "id": "nat-abf78be15c",
-    "title": "L.A. County issues evacuation warnings as storm nears; snow, flooding expected",
-    "source": "Los Angeles Times",
-    "sources": [
-     "Los Angeles Times"
+     "The Ticker"
     ],
     "votes": 1,
-    "at": "2026-11-18T18:10:12-05:00",
-    "atMs": 1795043412000,
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVjdLRXlKbC1xa25oMHVFSkdiTTNOLU5Ua3VyNnVrY1pZWl94NlI1WnJfZUlEN2daeXlOMFM4OWR3M2ZJV0JKMUZsaWdnbGF3OGN2Q3JSU09EM0prQXRXM0Fwc0hNeGN5Sms2ZXIxclFqd2x1Z0JlWFpEVURxZVlYZnpGMk9sME56bDNTQzdUMks4N3lXZER2VTViaGdqODhYU09senExaWNqQWl1VGl4SUEtVzJMdTE4SlBhOVI0T29EN0Fu?oc=5",
-    "tag": "WEATHER",
-    "score": 32.0,
-    "why": "weather",
-    "desc": "L.A. County issues evacuation warnings as storm nears; snow, flooding expected Los Angeles Times Southern California is about to get drenched. Here’s when the heaviest rain arrives KTLA SoCal storm timeline: First atmospheric river of seaso"
+    "at": "2026-11-19T00:03:45-05:00",
+    "atMs": 1795064625000,
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN2dZS3ZNdTdjcHB5MmduOWp1cFNGcl9WdFBuX0g1Y051S1pvdkJxMFVKSlBlczlwR1hWTTlIbWYwRGhpOHNrYlVBcHVQWEpUYzFxOXNqRXlpTGxacjc5Mmx2c05HWU1IZjVZTDAwVUx2RUJ6Vk8xMnhWdmNDZ2puUVJEVmJBeHFyaWZ2cndmaGJYVzRWYk5OQm1LTVlENHdENzJGQW9HdnBwLVpKWWdpSThqSEwxdFhNTVhCOWRlX2NQWms?oc=5",
+    "tag": "NATIONAL",
+    "score": 28.0,
+    "why": "community",
+    "desc": "How Growing Numbers, Safety Concerns Led to First-Ever Two-Night Downtown Holiday Kickoff The Ticker"
+   },
+   {
+    "id": "nat-8ab196d36a",
+    "title": "Xavier Taylor, 12-year-old New Jersey boy hit by baseball in May, dies",
+    "source": "CBS News",
+    "sources": [
+     "CBS News"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T22:50:00-05:00",
+    "atMs": 1795060200000,
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZWV0amxydWIyVW90cjdBWGhDd3A2V1NrU0ZDeDhFWHFoVjNVVGMtOElHUGI4SGJmajdvaHZVY3JqYWY2ZW1uRTN4RnBxZ1VkQTFha3lVemNJYnE0enZaTFhIVW9fd0drZ3dTMjRZb0N0dlZabkx2UUVEVm5Xd1Ztczh2WGFSX05LeU56UWVn?oc=5",
+    "tag": "SPORTS",
+    "score": 28.0,
+    "why": "sports",
+    "desc": "Xavier Taylor, 12-year-old New Jersey boy hit by baseball in May, dies CBS News Xavier Taylor, a NJ boy hit by a baseball in May, has died, his family says NBC10 Philadelphia Remembering Xavier Taylor: 12-year-old NJ baseball player dies mo"
+   },
+   {
+    "id": "nat-58b266932b",
+    "title": "Holiday experience at Gaylord Rockies features \"Nightmare Before Christmas\" ice display",
+    "source": "CBS News",
+    "sources": [
+     "CBS News"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T22:11:00-05:00",
+    "atMs": 1795057860000,
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdnFtOVJKQ0xsVmxiRXVGWmktQmpMWWMxT1QwSUhXRzlvTXplZnhNMHVPbFdCN3pWS2QtNjVNZjM0ek51YVJ2LXEzTWFpdGxmMVlIdGpjemY0czZmZmdOcXc2ekRLS2RMeVNtQUVwVTdwYUd6VGhkVEZyemZsZl9RLTktTFZ0ZUtsam5INlYxMXdTOUNOTzJEc0dUZE9YcmQ4S2tqU3plNk1yNlN3RGo3X3JCSEN0NHFMSVJ3NF9ZdktjX2c?oc=5",
+    "tag": "NATIONAL",
+    "score": 28.0,
+    "why": "community",
+    "desc": "Holiday experience at Gaylord Rockies features \"Nightmare Before Christmas\" ice display CBS News"
    },
    {
     "id": "nat-247530d9b8",
@@ -1400,7 +1446,7 @@
     "atMs": 1795041575000,
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON3RraDhsMTRpSmxpM0t4b0FzelprbzIyX3ZXaWJkeXp6Q1JrdlRDU20xYjB0UUFwNnNOdEVaQkdtWGV1ZW5KdVNtSmFNaWh0eHUwWGREbTZmd3RtWG11SmFsYlh5Wk5uSllVblB4MkpncGdhZFdHM3RiU240cTJNTg?oc=5",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "Bay Area storm live updates: Floating manhole covers in S.F.; Waymo pauses service San Francisco Chronicle Live storm updates: Widespread flooding across Bay Area cities ABC7 Bay Area Bay Area storm problems: Flooding, trees and power lines"
    },
@@ -1416,7 +1462,7 @@
     "atMs": 1795039740000,
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcHhrVmlMRHBXWm9vcERDbmNqbmVLRVJQdlJiOG9nbjIxbDBPS3NnNU9FeXl1bEJNVUJpMzhEb3pPN0w3b25ZcV9EMlFkVDAyNUVhdFZXTnZRS2tES3BJb3c2NDlPV0ttSWk1OTFrQkhOQWFtc2FwYUNZQVo3UnoxY2EtM0ozRUE2ODRIMlZ5RTZyYzJ6VU5zdmFUVVFrblNVVGtVT09DTHlTamNpV0RPWEVveElvSmxDUUlKVkNLVUY3OTNCemZ3ZEVtMA?oc=5",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "Evacuation warnings issued for some SoCal burn scar areas ahead of storm ABC7 Los Angeles Atmospheric river could drop an inch of rain per hour across Los Angeles County, flood watch issued KTLA SoCal storm timeline: First atmospheric river"
    },
@@ -1432,9 +1478,25 @@
     "atMs": 1795039277000,
     "link": "https://www.npr.org/2026/11/18/nx-s1-6022034/flood-nepal-survival-climate-change",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "As the emergency response to the flood ends, aid workers turn to the hard work of rebuilding communities that lost everything. Many of those workers lost everything, too."
+   },
+   {
+    "id": "nat-0bff367e80",
+    "title": "How could Super El Niño affect this year's Christmas tree industry?",
+    "source": "FOX Weather",
+    "sources": [
+     "FOX Weather"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T16:56:00-05:00",
+    "atMs": 1795038960000,
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRmh6aXExUjEwcldTZno3SlZNbTNXVGlmQWdLenp3dzZHbVI1d0tGcmpnVWdteEpEWUdBNEdreEIyQ0thUnQxOVJYMWxQcnhIazJkRUJ2SjQzdlB5Nmc4QmFHODhSWXVINk1FcVhHcGZDYkJ2NTh4SlV3SGpGU0xBa1ZsRHd3Q3JLTVNNQWtoZVpQZ9IBlwFBVV95cUxNUWZIRFVJZXRaQm5uTnpVOHpEa09MRW9vTXg4alJZYWgwWEZpbWh3YXVBdDlFaW56V3oxZTUwbzdyV182SGQwX0pBM0djSzh5R2NaLXZHZ3RKbUFqYzhSVzlJaS11cTNoS3I3UTdjVjg2Y2xzMXhJMjdjcW41RjVTb3NmXzI2MUNlZkZ5YTREWlFBaEVUSi1V?oc=5",
+    "tag": "WEATHER",
+    "score": 26.0,
+    "why": "weather",
+    "desc": "How could Super El Niño affect this year's Christmas tree industry? FOX Weather The hidden side effects of Super El Niño that go far beyond the weather FOX Weather Not your parents’ El Niño: What this standout cycle means for you CNN 'Uncha"
    },
    {
     "id": "nat-5547048cdf",
@@ -1448,25 +1510,9 @@
     "atMs": 1795038480000,
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUVRMUDNtMUhzVnZRdWlyRnRUejFDd0VrRS1valBlU0JtXzgxbEpFQ0VLOF9mS21pZHZvRlA2eDhVeFFsaGVDb0M0ZnpFZGFXU0dmVFQ3d3hLbG92c01oYjczcjVqRWVZb1gwTEl5aGlFZFBxdi0yb1FYWlV3ZGJkeGRFamNtb2VFZmxuOUp3a2tNTUF2T1hOTQ?oc=5",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "East Coast storm possible this weekend into Monday The Weather Channel NHC tracking possible subtropical development near the southeastern U.S. coast WPEC All eyes on Future Subtropical Storm Kyle as coastal storm brews off Southeast this w"
-   },
-   {
-    "id": "nat-cdc04333f4",
-    "title": "Storms to batter West with mountain snow, rain, waves, wind",
-    "source": "The Weather Channel",
-    "sources": [
-     "The Weather Channel"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T16:38:00-05:00",
-    "atMs": 1795037880000,
-    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTld2TjZhWndlSU1wMndIYXQxcHlXa09VV3ZSSnNMOFhMUF9ESU5pazAyVFduNks2WGJuajJLVGNRRVNYSUh6REx6dDZsSW9VSHAzVFpjTTN0ZWVhQXNOZFFDZ1UxTlNzb0FXZ3Nqb2pUMTdaeWxhWmtWaUFqeWNZUGhKMllHb3E3SnRsendUTGsxWmlxTnVsSmRCTWVFNE9T?oc=5",
-    "tag": "WEATHER",
-    "score": 32.0,
-    "why": "weather",
-    "desc": "Storms to batter West with mountain snow, rain, waves, wind The Weather Channel West Coast community urged to evacuate as powerful storms fuel mudslide threat, flash flooding for 30 million FOX Weather NorCal forecast: Scattered strong thun"
    },
    {
     "id": "nat-af4ee155d5",
@@ -1480,7 +1526,7 @@
     "atMs": 1795035054000,
     "link": "https://abcnews.com/US/wireStory/rainfall-supercharged-el-nio-causes-road-flooding-collapsed-138258536",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "A slow-moving storm system has flooded portions of southern Florida"
    },
@@ -1496,7 +1542,7 @@
     "atMs": 1795033758000,
     "link": "https://www.bbc.co.uk/news/videos/crgj3205jv98o?at_medium=RSS&at_campaign=rss",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "Entire neighbourhoods remain under water as disruptions impact schools, roads, hospitals and airports."
    },
@@ -1512,9 +1558,9 @@
     "atMs": 1795031859000,
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSXo1b1lWQ0hpbE9TcmFtdFlCclZzbnlaV2hyQnJfTGNzaTdyWjYyTUxzX21VM09RSW5wVXllc2d6WVNfX09OYzJ5U0R0X2FMS3FpdWVrMXdjdkRhMmdnWlRxNnlfZi1SMXJFdzVQQnR6bklxZzMtNkdkOVlYV0k3Wld2Y2pvS0NWME9UT0VFV2p3LU1NQlV4dWhWaF9vZ0Q3ejY2UlFPVVZ4am1QdmFTcnlR?oc=5",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
-    "desc": "Holiday travel this weekend: Early forecast ahead of Thanksgiving The Weather Channel Thanksgiving outlook: Rain, possible snow to snarl holiday travel for millions as El Niño fuels storms FOX Weather Connecticut weather turns colder next w"
+    "desc": "Thanksgiving travel forecast 2026: early weather outlook The Weather Channel Preparing for the holiday? An early look at the Thanksgiving week forecast. The Washington Post Will it snow in NY for Thanksgiving? Here's what the Almanac predic"
    },
    {
     "id": "nat-89ab90d606",
@@ -1528,42 +1574,9 @@
     "atMs": 1795028400000,
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBLWFBzUURBN183NHIyNHFuODYyMU1vRUJGbXR6cHZ2QUx5ckhBbjZGQjFFbzRRdml6M1Q4b0U2ZnpwZU9Zc2pyaUhoUmJ1TlpoTEZwbFl1TkotdG5mOUVBbUJ1ZmxOMUtrcGllN1JmT1pqcE9jTnpweGM5WERFUdIBgwFBVV95cUxPeGIxdUZNVHA3RHF2MFFVQmNnVm83cm1tQjQ2WlFsM0tMdk9rblB3aU9rdExid0ZSVEFBOGVpV0NGT0ItZFk4NFNDR080MmFucTc2My1uNFR6QUNJbTdtQmgyMGZUbi15XzFOajFwQUw4aU01eEw2V2RjdDVESl93SVg4bw?oc=5",
     "tag": "WEATHER",
-    "score": 32.0,
+    "score": 26.0,
     "why": "weather",
     "desc": "The hidden side effects of Super El Niño that go far beyond the weather FOX Weather Not your parents’ El Niño: What this standout cycle means for you CNN 'Uncharted territory' | Unusually strong El Niño could bring warmer winter, spring sto"
-   },
-   {
-    "id": "nat-fece496089",
-    "title": "A Somali American Uber driver was strangled and run over by a passenger, authorities say",
-    "source": "ABC News",
-    "sources": [
-     "ABC News",
-     "AP News"
-    ],
-    "votes": 2,
-    "at": "2026-11-17T22:15:00-05:00",
-    "atMs": 1794971700000,
-    "link": "https://abcnews.com/US/wireStory/somali-american-uber-driver-strangled-run-passenger-authorities-138227411",
-    "tag": "NATIONAL",
-    "score": 32.0,
-    "why": "2 sources",
-    "desc": "A Somali American Uber driver was strangled and run over by a passenger, authorities say AP News See more headlines & perspectives on Google News"
-   },
-   {
-    "id": "nat-4b38b63be3",
-    "title": "Soldiers sign up to play ‘Grand Theft Auto VI’ in exchange for reenlisting",
-    "source": "The Washington Post",
-    "sources": [
-     "The Washington Post"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T20:23:31-05:00",
-    "atMs": 1795051411000,
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbGstLUJXanc0c0tYRVV2RWNvVnFjc2cycS1waWhENTdhYkNMY3NESTY5aDhCY0ZhN1NOUkxfaTd6UnhBVURhRC01cWF6aHpVczFfLVU0THJidWVXUlJXWnctVmQ0UTlFOGlOblNJT044Z0hPR0FNb2NTT3VuNzJoT2hHXy1TNzZyUk9UdjRMemFoOHRNMHR4dDF5WS15MGYtbGdTSHhmY2pneFhEekpxblNtMGtMX1dRQ0JxdDUwVTc?oc=5",
-    "tag": "NATIONAL",
-    "score": 30.0,
-    "why": "fresh · entertainment",
-    "desc": "Soldiers sign up to play ‘Grand Theft Auto VI’ in exchange for reenlisting The Washington Post 43 soldiers said yes to more Army if they could play ‘GTA VI’ Task & Purpose Dozens of Army soldiers sign up for unique reenlistment incentive to"
    },
    {
     "id": "nat-70fccc0198",
@@ -1573,13 +1586,61 @@
      "CBS"
     ],
     "votes": 1,
-    "at": "2026-11-18T19:00:00-05:00",
-    "atMs": 1795046400000,
+    "at": "2026-11-18T22:51:40-05:00",
+    "atMs": 1795060300000,
     "link": "https://www.cbsnews.com/news/gta-6-fans-take-pto-launch/",
     "tag": "NATIONAL",
-    "score": 30.0,
-    "why": "fresh · entertainment",
+    "score": 24.0,
+    "why": "entertainment",
     "desc": "Some employees locked in their time off months ago, so they're free to start playing Grand Theft Auto 6 as soon as it launches on Nov. 19."
+   },
+   {
+    "id": "nat-8dee0ee98e",
+    "title": "South Florida hit with over 15 inches of rain",
+    "source": "CBS",
+    "sources": [
+     "CBS"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T20:04:44-05:00",
+    "atMs": 1795050284000,
+    "link": "https://www.cbsnews.com/video/south-florida-hit-with-over-15-inches-of-rain/",
+    "tag": "ROADS",
+    "score": 24.0,
+    "why": "roads",
+    "desc": "Heavy rainfall has swamped roads, cars and homes in South Florida over the past 24 hours. Rob Marciano has the story."
+   },
+   {
+    "id": "nat-2f4e0d22f6",
+    "title": "Four Maryland high school students sue after AI mistakes Doritos bag for gun",
+    "source": "The Guardian",
+    "sources": [
+     "The Guardian"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T18:53:00-05:00",
+    "atMs": 1795045980000,
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSF91bW51a2g2SHNIZjBOd0lXSDEzNUtKRVBHNDFGSnZCNjlQWGpBbmZOTkJTcVliamhleExMaWJla1E0dWdMTTBLRmI5Q0NSSmZkU2RVMzlwYmpVd1FNT0ItTnJWbUY0alM2bnlaUVBxUUx5a214ZE44WjZhYkl0UGQ3ZXhGNHhIclFTelphMzJSc2Q5eFRaSkdKX3g?oc=5",
+    "tag": "SCHOOLS",
+    "score": 24.0,
+    "why": "schools",
+    "desc": "Four Maryland high school students sue after AI mistakes Doritos bag for gun The Guardian A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says The New York Times Teens say AI surveillance system at Baltimore school mistook Doritos"
+   },
+   {
+    "id": "nat-ed13d47775",
+    "title": "Video from MTA Bus Captures Moments Before Fatal Brooklyn Building Collapse",
+    "source": "The New York Times",
+    "sources": [
+     "The New York Times"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T18:43:53-05:00",
+    "atMs": 1795045433000,
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNzZmVmZ3czZWY3pZc1ZRbVFHUjRmNnZ0Z0UzdWhWUlpjakx6SHBPcnpEd3BGcFZyd0N4MnpCTHZvSnN5ckFWek9rdXVyYWJoMUUzcW9MR2doMnVOYld3UUpHb3hlQkVqWjRlVk1xRGtHTTlLMUdoeTNyNnVUc1QyTTA1M0tlaWZ0?oc=5",
+    "tag": "SCHOOLS",
+    "score": 24.0,
+    "why": "schools",
+    "desc": "Video from MTA Bus Captures Moments Before Fatal Brooklyn Building Collapse The New York Times Immigrant community becomes epicenter of grief after deadly Brooklyn building collapse CNN Building impacted by deadly Brooklyn collapse must dem"
    },
    {
     "id": "nat-ea520b4400",
@@ -1593,7 +1654,7 @@
     "atMs": 1795044571000,
     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JVEU5YlpKNWp6SDVnVTFWT3RnMUx6bUNJUFFnb0tNRDNJNExPMGJ1cTdkWHIzSWFHQlFfU3FZR1JYTUx1OUc3cEhETjBCdFI5QXRqdHJUYVYxWFR0a3VZMXRvOXJZODBaT3NlS2wyWFpFdURtNmNIUDhUcXctZw?oc=5",
     "tag": "SCHOOLS",
-    "score": 30.0,
+    "score": 24.0,
     "why": "schools",
     "desc": "Mississippi senator-elect turns historic win into nationwide Nike offer Axios High school valedictorians to get Nike shoes after request from Mississippi’s incoming senator NBC News High school valedictorians to get custom kicks after Sen.-"
    },
@@ -1610,25 +1671,9 @@
     "atMs": 1795043797000,
     "link": "https://www.nbcnews.com/weather/storms/intense-rain-flooding-hits-both-us-coasts-causing-major-issues-florida-rcna609975",
     "tag": "WEATHER",
-    "score": 30.0,
+    "score": 24.0,
     "why": "2 sources · weather · downranked: political fight",
     "desc": "Intense rain and flooding hits both U.S. coasts, causing major issues in Florida NBC News Intense flooding slams Florida from a developing storm that could snarl early Thanksgiving travel on the East Coast CNN Orlando weather: Flash floodin"
-   },
-   {
-    "id": "nat-7add1ba7c5",
-    "title": "Road Trippin': Harry Potter and holiday magic take over Gaylord Texan",
-    "source": "KEYE",
-    "sources": [
-     "KEYE"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T17:58:17-05:00",
-    "atMs": 1795042697000,
-    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2ZvNnJON3Rvd1hyWHd5aEt3b2RjTVdseFVnYlBJNG41MUV6anl4OHFuSk9sNjhaUVJuY0FsZmdyU0RkeW9ZNlF5dVdzZVZlUy1RM0E1UGxPeE1FZy1QQUd1Y216aFlVbDFQV3RwV1JOZ21jeEVUWTl3MFhFRlNJOUVXWmVqbVRLRVItaHB0SE84VUhzOTdINWY0SzVYb09peWFjZlRIQmE0ZFp2MzhSbjRLZC1WbnpJUHAwRktwekk?oc=5",
-    "tag": "ROADS",
-    "score": 30.0,
-    "why": "roads",
-    "desc": "Road Trippin': Harry Potter takes over ice! at Gaylord Texan's Lone Star Christmas KEYE"
    },
    {
     "id": "nat-48e3de4ba4",
@@ -1642,7 +1687,7 @@
     "atMs": 1795039936000,
     "link": "https://www.nbcnews.com/video/3-students-recount-how-they-saved-classmate-from-violent-attacker-at-northwestern-univ-273765445554",
     "tag": "SCHOOLS",
-    "score": 30.0,
+    "score": 24.0,
     "why": "schools",
     "desc": "A man who is accused of attempting to strangle a Northwestern University student in her dorm room got into the building after following two other students to the campus from the train, prosecutors said. NBC Chicago's Vi Nguyen reports on th"
    },
@@ -1658,7 +1703,7 @@
     "atMs": 1795039200000,
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSFc2WTQwV1RoX2gzQUh2VjJoeUxFOHNhR3lHcnFObEh1dDJ2Q1FGS21JN2h1VU1CeXBNNndqMk5SUVI5bk44dHI1TndYVDAtOEFMSDZWcFBfWkdrNW9KZDJwTGhNNHBhSlhwMXMzLWJvbnM5ZUJ3cldna09KMTNwbWRBUzEycnUwQkVqUmJnSWNxLUl3eGVjQ1ZkcnpScW1oeG9rVDhweHd5Y2JRNm84UWNzSDFWcmU4UUN0cklQR2c?oc=5",
     "tag": "SCHOOLS",
-    "score": 30.0,
+    "score": 24.0,
     "why": "schools",
     "desc": "When kids lock up cellphones in class, the achievement gap narrows, study finds The Washington Post School Phone Bans Are Gradually Improving Test Scores, New Evidence Shows The New York Times Does locking up a student's cellphone improve t"
    },
@@ -1670,13 +1715,45 @@
      "NYT"
     ],
     "votes": 1,
-    "at": "2026-11-18T16:43:13-05:00",
-    "atMs": 1795038193000,
+    "at": "2026-11-18T16:43:14-05:00",
+    "atMs": 1795038194000,
     "link": "https://www.nytimes.com/2026/11/18/us/fans-flock-to-this-famous-sign-neighbors-say-get-off-my-road.html",
     "tag": "ROADS",
-    "score": 30.0,
+    "score": 24.0,
     "why": "roads",
     "desc": "The residents of the Hollywood Hills have sued Los Angeles, saying the city has not done enough to address the dangerous conditions created by tourists vying for a glimpse of the iconic Hollywood sign."
+   },
+   {
+    "id": "nat-4c8669dc3f",
+    "title": "Mullin Says Skipping LSU Game Amid FAA Crisis Would Have Caused ‘Confusion’",
+    "source": "Rolling Stone",
+    "sources": [
+     "Rolling Stone"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T16:32:50-05:00",
+    "atMs": 1795037570000,
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb1hnYWl2bndSc0RFdVpfUWE3LVZBRUQ1a1Y0V20wUFJuZVdlUm44dVN2LThMLWV1bmJDYldPQ05VTy1HZTFITDRqdS1NVkdMYzZBei02TmROWVpKV1ZtcHFiaWlERVlwVldtdlV4NkRHTkNhdkgwV2hVMUVvRVVXUzhJX1NQV3lKN01Ka0VkajV1V1RubU9ybGVmaXh4bWtZ?oc=5",
+    "tag": "ROADS",
+    "score": 24.0,
+    "why": "roads",
+    "desc": "Mullin Says Skipping LSU Game Amid FAA Crisis Would Have Caused ‘Confusion’ Rolling Stone Mullin defends flight as he bears brunt of lawmakers’ ire during threats hearing CNN Takeaways from Mullin's House testimony on cyber outages, the Tex"
+   },
+   {
+    "id": "nat-53aeede52d",
+    "title": "Man destroyed $60 million U.S. military plane at Irish airport, DOJ says",
+    "source": "The Washington Post",
+    "sources": [
+     "The Washington Post"
+    ],
+    "votes": 1,
+    "at": "2026-11-18T16:30:00-05:00",
+    "atMs": 1795037400000,
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNY1lNTjAtd3poQ095WGpSYWxNcFhUbms2em1fQlhUcVB0RmlOak1mMkdpQ0xjR25BeTAwLUVvWTRnTFI3cUM0WnJrc1UwV1k1bkJVMGVxM2VXbzNjYmFGVnd5ZUhTdVhIb3FrWkE2N1ZVQmVQRWNtampkU29pMWJRaWswUk5TdnU0blhUU2lpUkpHU1ZkQTBqRDNiN0xtWUN0Rjk5YXFqN0lTQ0plYU5RcFNGcDlJRGREZk5fbGt1aWFjVzJn?oc=5",
+    "tag": "ROADS",
+    "score": 24.0,
+    "why": "roads",
+    "desc": "Man destroyed $60 million U.S. military plane at Irish airport, DOJ says The Washington Post Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon Airport, Ireland Department of Justice (.gov) Man acces"
    },
    {
     "id": "nat-c481d9bd5f",
@@ -1690,137 +1767,9 @@
     "atMs": 1795035837000,
     "link": "https://www.nbcnews.com/news/us-news/man-accused-attacking-northwestern-student-followed-others-train-dorms-rcna610091",
     "tag": "SCHOOLS",
-    "score": 30.0,
+    "score": 24.0,
     "why": "schools",
     "desc": "A man who is accused of attempting to strangle a Northwestern University student in her dorm room got into the building after following two other students to the campus from the train, prosecutors said."
-   },
-   {
-    "id": "nat-9659addeb8",
-    "title": "Cadillac finally confirms F1 2027 driver line-up after huge speculation",
-    "source": "Crash.net",
-    "sources": [
-     "Crash.net"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T15:53:30-05:00",
-    "atMs": 1795035210000,
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM3d3UnFXSE5rTFlFdm4tQzVTckJPMG5TR3ZsV3NkdWx1U1U3MlJlcUtmYXpUeUVpMmNGZHVWdkx0QTVlQm1mQnJYaDBlZlpTbUp0VDdYUzY5bzZsMk5YMjhIdEhBTXQtdi13THlhSDZGSEZsNlh6bWVZak8xal9wU1phYm81TXR0LUdmSnk3bGhySmdDTmkzODNiaXUwcmRaVnRNRHNn?oc=5",
-    "tag": "ROADS",
-    "score": 30.0,
-    "why": "roads",
-    "desc": "Cadillac finally confirms F1 2027 driver line-up after huge speculation Crash.net"
-   },
-   {
-    "id": "nat-c7f27a2e38",
-    "title": "‘Perfect storm’ caused major service impacts, Spartanburg Water spokesperson says",
-    "source": "FOX Carolina News",
-    "sources": [
-     "FOX Carolina News"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T15:49:00-05:00",
-    "atMs": 1795034940000,
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPd2hnRUFFWXlFZkduVlMyclZsc3U1RFBHdkZQM052VTNnNzJySU9sQW42SkxJZFRkWThNX2tqdUVSeDU3b0daV1drZ3VxT3VhdHdsellkWmtVbUt3Tk9HdFU1R2xHSGs5TWtDTnlMUm0wUEdCRWRETS1fQndtNFE3Q2YtaUVMZEYzQy1pTEtQdmg3QXBOTFEtT2lPRE45cHJ1c1ZQXzk1VXA3aWdEa1dDYnVQRDlheHMtV2c?oc=5",
-    "tag": "SCHOOLS",
-    "score": 30.0,
-    "why": "schools",
-    "desc": "‘Perfect storm’ caused major service impacts, Spartanburg Water spokesperson says FOX Carolina News Spartanburg Water system took ‘substantial damage,’ prompting boil notice for those with water Post and Courier Several Spartanburg County s"
-   },
-   {
-    "id": "nat-a430c9dd8e",
-    "title": "'RHOA' alum Kandi Burruss joins Keisha Lance Bottoms' transition team",
-    "source": "USA Today",
-    "sources": [
-     "USA Today"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T15:38:00-05:00",
-    "atMs": 1795034280000,
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTVhaTDNjbWtRQnowU21nV2lVVVFJUTBRRnRwTEtRbE1fUHVmWWN4R2dmVEoyY0FLemNmUW5SbXJZSG1TWXZaOFNhMzVtQl9jNWIzSW43VlhyWXF3OEdzSDlFb3lsQWI3YVNTMnhzTnVCcU5xN3N5YnJ3a1FNMlN6VUdybmZNR2h2VjBPeVBaaTBlUkVSemRLWmVxbm5IMGk5ZFRFSUVpN2FISGxFZHNZdkp6eG9DWjFtZDRsSEg2NXNaQ28?oc=5",
-    "tag": "SCHOOLS",
-    "score": 30.0,
-    "why": "schools",
-    "desc": "'RHOA' alum Kandi Burruss joins Keisha Lance Bottoms' transition team USA Today Former Decatur School Board chair joins Bottoms’ transition team decaturish.com Bottoms names Georgia governor transition policy teams FOX 5 Atlanta Keisha Lanc"
-   },
-   {
-    "id": "nat-ca763e0111",
-    "title": "Students at $90K-a-year college forced to fight off dorm intruder accused of grabbing woman by the throat",
-    "source": "Fox News",
-    "sources": [
-     "Fox News"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T15:09:30-05:00",
-    "atMs": 1795032570000,
-    "link": "https://www.foxnews.com/us/students-90k-year-college-forced-fight-dorm-intruder-accused-grabbing-woman-throat",
-    "tag": "SCHOOLS",
-    "score": 30.0,
-    "why": "schools",
-    "desc": "Students at $90K-a-year college forced to fight off dorm intruder accused of grabbing woman by the throat Fox News Man who allegedly strangled Northwestern student followed others from train to dorms NBC 5 Chicago Evanston news today: Stude"
-   },
-   {
-    "id": "nat-3c1c834e0d",
-    "title": "New Members Get a Congress Crash Course With Grade School Vibes",
-    "source": "NYT",
-    "sources": [
-     "NYT"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T15:04:41-05:00",
-    "atMs": 1795032281000,
-    "link": "https://www.nytimes.com/2026/11/18/us/politics/new-members-congress.html",
-    "tag": "ROADS",
-    "score": 30.0,
-    "why": "roads",
-    "desc": "Newly elected House members are attending freshman orientation on Capitol Hill, where their introduction to Congress feels a lot like the first days of school."
-   },
-   {
-    "id": "nat-9c767d092e",
-    "title": "FAA contractor struggled to find location of outage during ground stop",
-    "source": "CBS",
-    "sources": [
-     "CBS"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T13:36:00-05:00",
-    "atMs": 1795026960000,
-    "link": "https://www.cbsnews.com/news/ground-stop-l3harris-system-outage/",
-    "tag": "ROADS",
-    "score": 30.0,
-    "why": "roads",
-    "desc": "It took several hours for contractor L3Harris to pinpoint the source of an outage that caused last Friday's nationwide ground stop​."
-   },
-   {
-    "id": "nat-3b062233da",
-    "title": "PPS school closure plan faces a new round of scrutiny — and possible changes",
-    "source": "OregonLive.com",
-    "sources": [
-     "OregonLive.com"
-    ],
-    "votes": 1,
-    "at": "2026-11-18T13:36:00-05:00",
-    "atMs": 1795026960000,
-    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTHpiVjNJMVlGZ1ZUM1V3RXA0TF85TUNCOTBzbG8tM01nZ05MOEw4aW5tV3g0U2ZiMDVJVHdzVXdJZlRuTnBYMDVtb0czMnNKVlFJQXQ4dzQ2ZUdnWkZyMDZHZW5QcW02R2p6Z2lOYkF4eUhpcDdzZFVQdkppSDQwc2pGQXNnU21OUklMYUlSRTQzSEc4VjQ1dlM4RGdaSmlXNnBkX1ZYamk5VlQ3SEItRzgzUjgwbEIyNXdtbFFqclhzUQ?oc=5",
-    "tag": "ROADS",
-    "score": 30.0,
-    "why": "roads",
-    "desc": "PPS school closure plan faces a new round of scrutiny — and possible changes OregonLive.com Seismic Dollars Will Be Reallocated Under School Closure Plans Willamette Week Parents, teachers say Portland Public Schools closure plan uses outda"
-   },
-   {
-    "id": "nat-8d1e47a50e",
-    "title": "Kingsley's run ends in quarters",
-    "source": "Traverse City Record-Eagle",
-    "sources": [
-     "Traverse City Record-Eagle"
-    ],
-    "votes": 1,
-    "at": "2026-11-17T23:45:00-05:00",
-    "atMs": 1794977100000,
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVmRJQ3RjVXRVNjFkYjVTdU1YODUxd2Nvd182ZUpHNlR5eUtEc0M5Qnp5X2hGVUY5VnF6ZjBvRnFnSFVvMjJ1SnRMN0ZxWDYyVVhwUnJaVjZnTGp3dmh4NWdHMWt3NERybUVVQTVNM09fN2MyTFFHc2NudmM0ZUhIQlRDV0FtTEVHRm9EVUpQNk40c1ZGYzNXdGZrcTJKOWIzcVVQOE43MHNDaDdMTS1Ja3dycG9pYUk?oc=5",
-    "tag": "SPORTS",
-    "score": 30.0,
-    "why": "local angle · sports",
-    "desc": "Kingsley's run ends in quarters Traverse City Record-Eagle"
    }
   ],
   "sources": [
@@ -1840,8 +1789,8 @@
    "NPR": 10,
    "CBS": 30,
    "NBC": 25,
-   "BBC": 25,
-   "Google News US": 70
+   "BBC": 26,
+   "Google News US": 66
   },
   "errors": {}
  }
