@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v56-aj-only-cards">
+<meta name="hs-build" content="v57-clear-alerts">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -828,6 +828,10 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 #toastText{flex:1;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 #toastUndo{flex:none}
 
+.fbban{position:relative;padding-right:44px}
+.alertx{background:transparent!important;color:inherit!important;border:1px solid currentColor!important;border-radius:999px!important;min-width:36px;min-height:36px!important;padding:0 8px;font-weight:900;line-height:1;opacity:.85;cursor:pointer}
+.fbban>.alertx{position:absolute;top:8px;right:8px}
+#spBanner .alertx{margin-left:6px;min-height:48px!important}
 .fbban,.fbcard{border:2px solid #f59e0b;background:linear-gradient(135deg,#3a2306,#1b1206);border-radius:16px;padding:12px 14px;margin:0 0 12px}
 .fbk{font-size:12px;font-weight:800;letter-spacing:.08em;color:#fbbf24;text-transform:uppercase}
 .fbh{font-size:19px;font-weight:800;color:#fff;margin:4px 0 8px;line-height:1.25}.fbh.big{font-size:24px}
@@ -883,7 +887,7 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 </head>
 <body>
 <button id="swBanner" type="button">Update available — tap to reload</button>
-<div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button></div>
+<div id="spBanner" role="alert"><span class="t" id="spBannerText"></span><button id="spBannerBtn">Read it</button><button id="spBannerX" class="alertx" type="button" aria-label="Clear alert" title="Clear" onclick="this.parentNode.classList.remove('on')">✕</button></div>
 <header id="top">
   <div id="readStrip" hidden></div>
   <div id="topFold"><div id="topFoldIn">
@@ -5874,10 +5878,12 @@ function fbData(){ const S=state.sheet && state.sheet.flash; if(!S || typeof S!=
     f.body=[f.head, f.requester?'Requested by '+f.requester:'', ...f.records, f.songStory||f.origin, f.content].filter(Boolean).join('\n');
     return f; }catch(_){ return null; } }
 function fbBanner(){ const f=fbData(); if(!f) return null; const p=etParts(); if(!isShowDay(p) || p.hm<'08:40' || p.hm>='09:20') return null;
+  if(LS.getItem('hs:fbDismiss')===p.date) return null;
   const card=mk('div',{className:'fbban'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'+(f.requester?' · for '+f.requester:'')), mk('div',{className:'fbh'}, f.head||'Today’s Flashback'));
   const row=mk('div',{className:'fbrow'}, (typeof songAirBtn==='function' && typeof songPick==='function' && songPick('flash')) ? songAirBtn('flash', songPick('flash')) : airBtn(f.key, 'Flashback: '+(f.head||'9AM Flashback'), 'flash', true, f.body));
   const go=mk('button',{className:'fbgo',type:'button'},'Open ›'); go.onclick=()=>{ tapHaptic(); state.tab='flash'; LS.setItem('hs:tab','flash'); renderTabs(); renderView(); scrollTo({top:0,behavior:'smooth'}); };
-  row.append(go); card.append(row); return card; }
+  const x=mk('button',{className:'alertx',type:'button','aria-label':'Clear alert',title:'Clear'},'✕'); x.onclick=(e)=>{ e.stopPropagation(); LS.setItem('hs:fbDismiss', etParts().date); card.remove(); };
+  row.append(go); card.append(x); card.append(row); return card; }
 function fbCard(f){
   const c=mk('div',{className:'fbcard'}, mk('div',{className:'fbk'},'⏪ 9 AM FLASHBACK'), mk('div',{className:'fbh big'}, f.head||'Today’s Flashback'));
   if(f.requester) c.append(mk('div',{className:'fbreq'},'🎧 Requested by '+f.requester));
