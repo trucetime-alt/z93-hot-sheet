@@ -1,151 +1,827 @@
 {
-  "weather": {
-    "temp": "54°",
-    "cond": "Clear",
-    "advisory": "No advisories",
-    "traffic": "Roads clear",
-    "high": "63°",
-    "low": "41°",
-    "tonight": "Mostly Clear",
-    "updated": "2026-11-19T06:04-05:00",
-    "source": [
-      "https://api.weather.gov/stations/KTVC/observations/latest",
-      "https://api.weather.gov/gridpoints/APX/30,46/forecast",
-      "https://api.weather.gov/alerts/active?zone=MIZ026"
-    ],
-    "advisory_detail": {
-      "active": false
-    },
-    "today": "Mostly Sunny",
-    "icon": "sunny",
-    "week": [
-      {
-        "day": "Today",
-        "date": "2026-11-19",
-        "high": 63,
-        "low": 41,
-        "short": "Mostly Sunny",
-        "icon": "sunny",
-        "pop": 0
-      },
-      {
-        "day": "Fri",
-        "date": "2026-11-20",
-        "high": 61,
-        "low": 51,
-        "short": "Partly Sunny",
-        "icon": "partly",
-        "pop": 0
-      },
-      {
-        "day": "Sat",
-        "date": "2026-11-21",
-        "high": 65,
-        "low": 49,
-        "short": "Mostly Sunny",
-        "icon": "sunny",
-        "pop": 1
-      },
-      {
-        "day": "Sun",
-        "date": "2026-11-22",
-        "high": 55,
-        "low": 34,
-        "short": "Rain Showers",
-        "icon": "rain",
-        "pop": 88
-      },
-      {
-        "day": "Mon",
-        "date": "2026-11-23",
-        "high": 39,
-        "low": 29,
-        "short": "Slight Chance Rain And Snow Showers then Mostly Cloudy",
-        "icon": "mix",
-        "pop": 15
-      },
-      {
-        "day": "Tue",
-        "date": "2026-11-24",
-        "high": 37,
-        "low": 28,
-        "short": "Partly Sunny",
-        "icon": "partly",
-        "pop": 7
-      },
-      {
-        "day": "Wed",
-        "date": "2026-11-25",
-        "high": 38,
-        "low": 29,
-        "short": "Partly Sunny",
-        "icon": "partly",
-        "pop": 4
-      }
-    ]
+ "weather": {
+  "temp": "54°",
+  "cond": "Clear",
+  "advisory": "No advisories",
+  "traffic": "Roads clear",
+  "high": "63°",
+  "low": "41°",
+  "tonight": "Mostly Clear",
+  "updated": "2026-11-19T06:04-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
   },
-  "clips": {
-    "id": "clips",
-    "title": "Trending Audio",
-    "category": "Clips",
-    "type": "text",
-    "content": "5 clips + supercut so far (all new, 0 repeats). Overnight run failed on usage; rebuilt live at 6 AM.<br><br>SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY (0:20)<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.<br><br>GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) (0:57)<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.<br><br>GTA 6: GRAND THEFT PTO (CNN) (0:19)<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.<br><br>GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) (0:30)<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.<br><br>BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) (0:45)<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.<br><br>HALF MARATHON STICKER + TURKEY TROT (DRY BAR) (1:25)<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy.",
-    "clips": [
-      {
-        "id": "2026-11-19-c00",
-        "slot": "SHOW OPENER SUPERCUT",
-        "title": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY",
-        "body": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY · SHOW OPENER SUPERCUT<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.",
-        "audio": "/workspace/morning-rush/clips/2026-11-19/c00-opener-supercut.mp3",
-        "file": "c00-opener-supercut.mp3",
-        "ready": true
-      },
-      {
-        "id": "2026-11-19-c01",
-        "slot": "TRENDING AUDIO",
-        "title": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA)",
-        "body": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) · TRENDING AUDIO<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.",
-        "audio": "/workspace/morning-rush/clips/2026-11-19/c01-abc-gta6-first-play.mp3",
-        "file": "c01-abc-gta6-first-play.mp3",
-        "ready": true
-      },
-      {
-        "id": "2026-11-19-c02",
-        "slot": "TRENDING AUDIO",
-        "title": "GTA 6: GRAND THEFT PTO (CNN)",
-        "body": "GTA 6: GRAND THEFT PTO (CNN) · TRENDING AUDIO<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.",
-        "audio": "/workspace/morning-rush/clips/2026-11-19/c02-cnn-grand-theft-pto.mp3",
-        "file": "c02-cnn-grand-theft-pto.mp3",
-        "ready": true
-      },
-      {
-        "id": "2026-11-19-c03",
-        "slot": "LATE-NIGHT",
-        "title": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL)",
-        "body": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) · LATE-NIGHT<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.",
-        "audio": "/workspace/morning-rush/clips/2026-11-19/c03-kimmel-gordon-ramsay-shirtless-60.mp3",
-        "file": "c03-kimmel-gordon-ramsay-shirtless-60.mp3",
-        "ready": true
-      },
-      {
-        "id": "2026-11-19-c04",
-        "slot": "STAND-UP COMEDY",
-        "title": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR)",
-        "body": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.",
-        "audio": "/workspace/morning-rush/clips/2026-11-19/c04-brad-upton-thanksgiving-in-laws.mp3",
-        "file": "c04-brad-upton-thanksgiving-in-laws.mp3",
-        "ready": true
-      },
-      {
-        "id": "2026-11-19-c05",
-        "slot": "STAND-UP COMEDY",
-        "title": "HALF MARATHON STICKER + TURKEY TROT (DRY BAR)",
-        "body": "HALF MARATHON STICKER + TURKEY TROT (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy.",
-        "audio": "/workspace/morning-rush/clips/2026-11-19/c05-drybar-half-marathon-turkey-trot.mp3",
-        "file": "c05-drybar-half-marathon-turkey-trot.mp3",
-        "ready": true
-      }
-    ],
-    "items": []
-  }
+  "today": "Mostly Sunny",
+  "icon": "sunny",
+  "week": [
+   {
+    "day": "Today",
+    "date": "2026-11-19",
+    "high": 63,
+    "low": 41,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 0
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-20",
+    "high": 61,
+    "low": 51,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 0
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-21",
+    "high": 65,
+    "low": 49,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 1
+   },
+   {
+    "day": "Sun",
+    "date": "2026-11-22",
+    "high": 55,
+    "low": 34,
+    "short": "Rain Showers",
+    "icon": "rain",
+    "pop": 88
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-23",
+    "high": 39,
+    "low": 29,
+    "short": "Slight Chance Rain And Snow Showers then Mostly Cloudy",
+    "icon": "mix",
+    "pop": 15
+   },
+   {
+    "day": "Tue",
+    "date": "2026-11-24",
+    "high": 37,
+    "low": 28,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 7
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-25",
+    "high": 38,
+    "low": 29,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 4
+   }
+  ]
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "🎵 SLOW JAM: The Heights, \"How Do You Talk to an Angel\" (1992)<br>• No. 1 on the Billboard Hot 100 (Nov. 14, 1992 chart, two weeks); it ended Boyz II Men's record 13-week run at the top with \"End of the Road\" and was knocked off by Whitney Houston's \"I Will Always Love You\"<br>• The Heights was a fictional band on a Fox drama of the same name; actor Jamie Walters sang lead and Brandon Fields played the sax. The show was canceled about a week after the song fell from No. 1.<br>• Why today: it was the No. 1 song in America this very week 34 years ago, and it's the softest start to a Thursday we've got.<br>😂 JOKES: A No. 1 hit from a TV show nobody watched. That might be the most 90s sentence ever written. / Great sax solo. Honestly, the saxophone did more work than the TV show.<br><br>🚗 DRIVE TEASE: About 54 and clear for the drive in, dry roads, then mostly sunny and up near 63 this afternoon with a southwest wind 10 to 15 and gusts up to 35. Beitner Bridge reopened Wednesday afternoon, and MDOT retimes the Chums Corner light today.<br>😂 JOKES: It's 63 and sunny in November, with gusts to 35. Your hair has an opinion about it. / The Beitner Bridge is open and the Chums Corner light gets fixed today. For once the drive is the good news.<br>📅 THIS DAY: On this day in 1969, Apollo 12 landed in the Moon's Ocean of Storms. Pete Conrad and Alan Bean touched down within walking distance of Surveyor 3, a robotic probe that landed there in 1967.<br>😂 JOKES: Apollo 12 landed so close to its target that the astronauts could walk to a probe that had been sitting there since 1967. My GPS can't get me to Meijer that well. / They survived two lightning strikes on launch and still landed on the dime. And I get nervous when my phone is at 4 percent.<br>💡 FUN FACT: GTA 6 is at 99 out of 100 on Metacritic from 150 critic reviews, tying Zelda: Ocarina of Time for the highest score the site has listed.<br>😂 JOKES: A 99 on Metacritic. I've never gotten a 99 on anything, unless it's my age on a bad Monday. / Ocarina of Time held that 99 all by itself for 28 years. Vice City just walked in and sat down next to it.<br>🎉 NATIONAL DAYS: National Play Monopoly Day, National Carbonated Beverage with Caffeine Day, International Men's Day and National Rural Health Day<br>😂 JOKES: National Play Monopoly Day: the only day it's legal to bankrupt your family and still make it to Thanksgiving dinner. / Carbonated Beverage with Caffeine Day. The day after GTA 6, that's just called Thursday.<br><br>☀️ 54 and clear at the airport at 6 AM, then mostly sunny with a high near 63, SW wind 10-15 with gusts to 35, a low near 41 tonight, partly sunny and 61 Friday, 65 Saturday, then rain showers Sunday.<br>🚧 Beitner Bridge is open; MDOT retimes the Chums Corner light today and the temporary Hartman Road light comes out Friday morning.<br>⚡ It's 63 in November, GTA 6 is out, and a Marine recruiter is in the studio at 7:30. Thursday came to play.",
+  "notes": "Slow jam: Grunge Nov 19 2026 https://www.grunge.com/2315461/no-1-song-november-19-1992-how-do-you-talk-to-an-angel-the-heights/ ; Wikipedia https://en.wikipedia.org/wiki/How_Do_You_Talk_to_an_Angel (Hot 100 No. 1 Nov 14 1992, Walters lead, Brandon Fields sax, canceled one week after it left No. 1). Not used this week. Lyric check: clean.<br>Weather: NWS Gaylord via /workspace/morning-rush/hot-sheet-2026-11-19.md. Road: The Ticker Nov 18.<br>This day: Wikipedia https://en.wikipedia.org/wiki/Apollo_12 .<br>Fun fact: NBC News https://www.nbcnews.com/pop-culture/pop-culture-news/grand-theft-auto-six-release-rockstar-games-what-to-know-rcna609644 .<br>National days: National Day Calendar (Play Monopoly Day, Carbonated Beverage with Caffeine Day); International Men's Day and National Rural Health Day from holidayscalendar.com/dailydigest (second-source).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-19-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "We opened the Vibe Check with the Heights' \"How Do You Talk to an Angel,\" a fake band's sax ballad that went to No. 1 in 1992.",
+    "article_url": "https://www.grunge.com/2315461/no-1-song-november-19-1992-how-do-you-talk-to-an-angel-the-heights/",
+    "article_title": "1992 No. 1, From A Band That Didn't Exist, Hit The Top 34 Years Ago Today (Grunge, Nov 19)",
+    "jokes": [
+     "A No. 1 hit from a TV show nobody watched. That might be the most 90s sentence ever written.",
+     "Great sax solo. Honestly, the saxophone did more work than the TV show."
+    ]
+   },
+   {
+    "id": "2026-11-19-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a clear, mild drive with a stiff southwest wind, and flagged the Beitner Bridge reopening.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord point forecast, Traverse City",
+    "jokes": [
+     "It's 63 and sunny in November, with gusts to 35. Your hair has an opinion about it.",
+     "The Beitner Bridge is open and the Chums Corner light gets fixed today. For once the drive is the good news."
+    ]
+   },
+   {
+    "id": "2026-11-19-vibe-03",
+    "title": "THIS DAY",
+    "recap": "On this day in 1969, Apollo 12 landed on the Moon's Ocean of Storms, within walking distance of Surveyor 3.",
+    "article_url": "https://en.wikipedia.org/wiki/Apollo_12",
+    "article_title": "Apollo 12 (Wikipedia)",
+    "jokes": [
+     "Apollo 12 landed so close to its target that the astronauts could walk to a probe that had been sitting there since 1967. My GPS can't get me to Meijer that well.",
+     "They survived two lightning strikes on launch and still landed on the dime. And I get nervous when my phone is at 4 percent."
+    ]
+   },
+   {
+    "id": "2026-11-19-vibe-04",
+    "title": "FUN FACT",
+    "recap": "Fun fact: GTA 6 sits at 99 on Metacritic, tying Zelda: Ocarina of Time for the highest score on the site.",
+    "article_url": "https://www.nbcnews.com/pop-culture/pop-culture-news/grand-theft-auto-six-release-rockstar-games-what-to-know-rcna609644",
+    "article_title": "'Grand Theft Auto VI' release is coming: Why critics are thrilled as game makes $1.5 billion in prelaunch sales (NBC News)",
+    "jokes": [
+     "A 99 on Metacritic. I've never gotten a 99 on anything, unless it's my age on a bad Monday.",
+     "Ocarina of Time held that 99 all by itself for 28 years. Vice City just walked in and sat down next to it."
+    ]
+   },
+   {
+    "id": "2026-11-19-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "It was National Play Monopoly Day and National Carbonated Beverage with Caffeine Day.",
+    "article_url": "https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/",
+    "article_title": "National Play Monopoly Day (National Day Calendar)",
+    "jokes": [
+     "National Play Monopoly Day: the only day it's legal to bankrupt your family and still make it to Thanksgiving dinner.",
+     "Carbonated Beverage with Caffeine Day. The day after GTA 6, that's just called Thursday."
+    ]
+   }
+  ],
+  "article_url": "https://www.grunge.com/2315461/no-1-song-november-19-1992-how-do-you-talk-to-an-angel-the-heights/",
+  "article_title": "1992 No. 1, From A Band That Didn't Exist, Hit The Top 34 Years Ago Today (Grunge, Nov 19)",
+  "jokes": [
+   "A No. 1 hit from a TV show nobody watched. That might be the most 90s sentence ever written.",
+   "Great sax solo. Honestly, the saxophone did more work than the TV show."
+  ]
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "Wham!, \"Wake Me Up Before You Go-Go\" (1984)<br>• Wham!'s first UK and first US No. 1; three weeks at the top of the Billboard Hot 100 and platinum in the US<br>• The story: the title came from a note Andrew Ridgeley left for his parents that was meant to read \"wake me up before you go\" but had \"up\" written twice, so he made the \"go\" double on purpose. George Michael wrote and produced it, and the band recorded it in two days.<br>• Why today: it's Thursday, it's National Carbonated Beverage with Caffeine Day, and it's 63 and sunny. Perfect pick-me-up for after 6:30.<br>😂 JOKES: Wake Me Up Before You Go-Go and National Carbonated Beverage with Caffeine Day on the same morning. The universe is trying to tell us something. / I told my alarm 'wake me up before you go-go' and it just went-went without me.",
+  "notes": "Wikipedia https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go (first UK and US No. 1; three weeks at No. 1; platinum; Ridgeley note; recorded in two days). Lyric check: clean. Not used this week.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-19-mood-01",
+    "title": "WAKE ME UP BEFORE YOU GO-GO",
+    "recap": "The Mood Boost was Wham!'s \"Wake Me Up Before You Go-Go,\" a three-week No. 1 pick-me-up for a sunny Thursday.",
+    "article_url": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
+    "article_title": "\"Wake Me Up Before You Go-Go\" (Wikipedia)",
+    "jokes": [
+     "Wake Me Up Before You Go-Go and National Carbonated Beverage with Caffeine Day on the same morning. The universe is trying to tell us something.",
+     "I told my alarm 'wake me up before you go-go' and it just went-went without me."
+    ]
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
+  "article_title": "\"Wake Me Up Before You Go-Go\" (Wikipedia)",
+  "jokes": [
+   "Wake Me Up Before You Go-Go and National Carbonated Beverage with Caffeine Day on the same morning. The universe is trying to tell us something.",
+   "I told my alarm 'wake me up before you go-go' and it just went-went without me."
+  ]
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>BEITNER BRIDGE IS OPEN, AND TODAY THE CHUMS CORNER LIGHT GETS RETIMED<br>• The Beitner Bridge reopened to cars Wednesday afternoon; the Road Commission celebrated shortly before 3 PM.<br>• By rush hour, traffic snarled near Chums Corner: the light at US-31/M-37/Beitner hadn't been retimed, so only a few cars got through each green.<br>• MDOT's James Lake confirmed the plan is to change that signal timing Thursday (today).<br>• The temporary light at US-31/Hartman Road for the detour is expected to be removed Friday morning.<br>➜ TAKE: After all that waiting for a bridge, the first thing it got was a traffic jam. Welcome back, Beitner.<br>➜ BAIT: Text 231-929-4487: did you try the Beitner Bridge last night, and how bad was Chums Corner?<br>😂 JOKES: After all that waiting, the bridge reopened and the first thing it got was a traffic jam. Welcome back, Beitner. / Nothing says a fresh start like a green light that lasts four seconds.<br><br>A MOBILE ER DOCTOR IS RIDING TO 911 CALLS IN NORTHWEST MICHIGAN<br>• Dr. Shaun Ramsey, Northwest Regional Medical Control Authority, drives a Munson-backed EMS physician response vehicle.<br>• It brings an emergency physician to the scene, able to give medicines and do procedures an EMT or paramedic can't.<br>• Rural transport times can be long, so care starting on scene can save minutes.<br>• Ramsey says there are only a few EMS physicians in the field statewide, and he is the only one north of Saginaw. He became an EMT 20 years ago and has been in this role 11 months.<br>➜ TAKE: A doctor who makes house calls with lights and sirens. Finally.<br>➜ BAIT: Text 231-929-4487: have you ever needed 911 Up North, and how fast did help get there?<br>😂 JOKES: A doctor who makes house calls, with lights and sirens. My doctor can't even make a same-week appointment. / Finally, a doctor who comes to you, and he brings his own siren.<br><br>FRANKFORT SAYS YES TO IRONMAN IN 2027, WITH A MARCH CHECK-IN<br>• Frankfort City Council voted Monday night to keep Ironman Michigan for 2027; City Hall was standing room only.<br>• Most speakers backed it, pointing to tourism after Labor Day. Some council members raised parking and business-impact concerns.<br>• The race goes ahead with a few structural changes; the contingencies come back to council in March.<br>• In March the council also decides on a three-year contract, or whether 2027 is Ironman's last stop in Frankfort.<br>➜ TAKE: Standing room only to vote on a race where everyone else has to do the running.<br>➜ BAIT: Text 231-929-4487: would you do an Ironman, or just stand on the curb with a sign?<br>😂 JOKES: Frankfort filled City Hall to vote on Ironman. Meanwhile I can't get a family vote on where to eat. / Swim, bike, run a marathon. Or as my family calls it, Thanksgiving prep.<br><br>INLAND SEAS HITS 200,000 STUDENTS AND ADULTS ON THE GREAT LAKES<br>• The Suttons Bay nonprofit reached 200,000 total participants in its 37th year; it was founded in 1989.<br>• The first 100,000 took 25 years; the second 100,000 took 12.<br>• The milestone class was from Suttons Bay Public Schools, learning paper maps and compasses on shore.<br>• Two tall-ship schooners, the Inland Seas and the Alliance, carry students out to collect science data. Skyler Singleton: 'Once you know the lakes in this region, you end up falling in love with it.'<br>➜ TAKE: Two hundred thousand people and a compass. Somebody taught a generation to find north without a phone.<br>➜ BAIT: Text 231-929-4487: did you ever sail on a schooner or take a Great Lakes class as a kid?<br>😂 JOKES: Two hundred thousand students and they're still teaching paper maps. A paper map never says 'recalculating.' / Reading a compass: the original GPS, and it never needed a software update. Unlike some games I could mention.<br><br>GLEN ARBOR LIGHTS UP 20+ TREES FOR TEENS (YOU CAN SPONSOR ONE)<br>• The Strolling Lights Festival in downtown Glen Arbor has 20+ decorated trees; this year it benefits LIFT (Leelanau Investing for Teens).<br>• LIFT is a free out-of-school program for grades 6-12 in the Glen Lake, Suttons Bay, Leland and Northport schools, with daily mentoring and homework help; it has helped well over 1,000 teens since 2017.<br>• Sponsoring a tree is $150 (CrystalRiverOutfitters.com/strolling-lights-festival), and you can also donate to LIFT without decorating one.<br>• Decorating starts Saturday, Nov. 21; trees are up Thanksgiving weekend through New Year's.<br>➜ TAKE: A decorating committee where every tree gets to look different and nobody argues about the star.<br>➜ BAIT: Text 231-929-4487: what's the best Christmas tree you ever decorated, or the worst?<br>😂 JOKES: Twenty trees, twenty decorators, zero arguments about who puts on the star. Glen Arbor is doing the holidays right. / A hundred and fifty bucks buys a tree. At my house it buys the tree stand and an argument.",
+  "notes": "5 local stories landed (the standing target), 0 national. One road story (Beitner Bridge reopening, a follow-up to Tue's ribbon cutting, flagged because it's the same subject with new facts). Buzz score log: Beitner reopening and Chums Corner light 14 (today's drive) · Munson EMS physician 13 · Frankfort Ironman vote 13 · Inland Seas 200,000 12 · Glen Arbor Strolling Lights/LIFT 12. Bench 4 (counts as used): Hunters Feeding Michigan 12 · Deering's 11 · Old Town Playhouse 11 · St. Ignace rescue 10. Cut: Northport dam (bench Wed, used), Toys for Tots (used Wed), Petrichor Coffee/Tommy's Express (Ticker Nov 10, stale), Cadillac wastewater/PFAS ordinance (heavy), Mt. Pleasant shooting and naked-man arrest (crime), TCAPS gym demolition (Nov 9-11, stale), national ground stop (stale). Sources searched: 9&10, UpNorthLive, Record-Eagle (front page, no new fit), The Ticker, Glen Arbor Sun, Northern Express, Cadillac News, Manistee News Advocate home pages. Petoskey News-Review blocked; Benzie Record Patriot and Leelanau Enterprise unreachable. Sources: https://www.traverseticker.com/news/beitner-bridge-reopens-mdot-to-address-chums-corner-light-thursday/ · https://upnorthlive.com/news/local/munson-backed-ems-physician-response-vehicle-brings-er-level-care-to-rural-911-scenes · https://upnorthlive.com/news/local/frankfort-moves-forward-with-2027-ironman-race-future-beyond-that-uncertain-benzie-county-northern-michigan-upnorthlive · https://www.9and10news.com/2026/11/18/inland-seas-education-association-reaches-200000-participant-milestone/ · https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-19-buzz-01",
+    "title": "BEITNER BRIDGE IS OPEN, AND TODAY THE CHUMS CORNER LIGHT GETS RETIMED",
+    "recap": "We covered the Beitner Bridge reopening Wednesday and MDOT retiming the Chums Corner light today.",
+    "description": "The Beitner Road bridge officially reopened to vehicle traffic Wednesday afternoon, a day after Tuesday's ceremonial ribbon cutting. Rush-hour traffic then backed up near Chums Corner because the light at US-31/M-37/Beitner Road hadn't been adjusted for the reopening, and drivers said only a handful of cars got through each short green. MDOT says it will change that signal timing today, Thursday. The temporary light at US-31/Hartman Road, put in for the detour, is expected to come out Friday morning.",
+    "body": "BEITNER BRIDGE IS OPEN, AND TODAY THE CHUMS CORNER LIGHT GETS RETIMED<br>• The Beitner Bridge reopened to cars Wednesday afternoon; the Road Commission celebrated shortly before 3 PM.<br>• By rush hour, traffic snarled near Chums Corner: the light at US-31/M-37/Beitner hadn't been retimed, so only a few cars got through each green.<br>• MDOT's James Lake confirmed the plan is to change that signal timing Thursday (today).<br>• The temporary light at US-31/Hartman Road for the detour is expected to be removed Friday morning.<br>➜ TAKE: After all that waiting for a bridge, the first thing it got was a traffic jam. Welcome back, Beitner.<br>➜ BAIT: Text 231-929-4487: did you try the Beitner Bridge last night, and how bad was Chums Corner?<br>😂 JOKES: After all that waiting, the bridge reopened and the first thing it got was a traffic jam. Welcome back, Beitner. / Nothing says a fresh start like a green light that lasts four seconds.",
+    "notes": "The Ticker Nov 18 https://www.traverseticker.com/news/beitner-bridge-reopens-mdot-to-address-chums-corner-light-thursday/ . ROAD story (the one allowed). Follow-up to Tue 11/17's ribbon cutting 'not open yet': the reopening and light fix are new facts.",
+    "article_url": "https://www.traverseticker.com/news/beitner-bridge-reopens-mdot-to-address-chums-corner-light-thursday/",
+    "article_title": "Beitner Bridge Reopens, MDOT to Address Chums Corner Light Thursday (The Ticker, Nov 18)",
+    "jokes": [
+     "After all that waiting, the bridge reopened and the first thing it got was a traffic jam. Welcome back, Beitner.",
+     "Nothing says a fresh start like a green light that lasts four seconds."
+    ]
+   },
+   {
+    "id": "2026-11-19-buzz-02",
+    "title": "A MOBILE ER DOCTOR IS RIDING TO 911 CALLS IN NORTHWEST MICHIGAN",
+    "recap": "We covered the Munson-backed EMS physician response vehicle bringing ER-level care to rural 911 scenes.",
+    "description": "Dr. Shaun C. Ramsey, with the Northwest Regional Medical Control Authority, drives an EMS physician response vehicle supported by Munson Healthcare. It puts an emergency physician at the scene of a 911 call, with a wider scope than an EMT or paramedic, including medicines and procedures the others can't do. That matters in rural areas where transport times can be long. Ramsey says only a few EMS physicians work in the field statewide and he is the only one north of Saginaw. He's been in the role for 11 months.",
+    "body": "A MOBILE ER DOCTOR IS RIDING TO 911 CALLS IN NORTHWEST MICHIGAN<br>• Dr. Shaun Ramsey, Northwest Regional Medical Control Authority, drives a Munson-backed EMS physician response vehicle.<br>• It brings an emergency physician to the scene, able to give medicines and do procedures an EMT or paramedic can't.<br>• Rural transport times can be long, so care starting on scene can save minutes.<br>• Ramsey says there are only a few EMS physicians in the field statewide, and he is the only one north of Saginaw. He became an EMT 20 years ago and has been in this role 11 months.<br>➜ TAKE: A doctor who makes house calls with lights and sirens. Finally.<br>➜ BAIT: Text 231-929-4487: have you ever needed 911 Up North, and how fast did help get there?<br>😂 JOKES: A doctor who makes house calls, with lights and sirens. My doctor can't even make a same-week appointment. / Finally, a doctor who comes to you, and he brings his own siren.",
+    "notes": "https://upnorthlive.com/news/local/munson-backed-ems-physician-response-vehicle-brings-er-level-care-to-rural-911-scenes",
+    "article_url": "https://upnorthlive.com/news/local/munson-backed-ems-physician-response-vehicle-brings-er-level-care-to-rural-911-scenes",
+    "article_title": "Munson-backed EMS physician response vehicle brings ER-level care to rural 911 scenes (UpNorthLive, Nov 17)",
+    "jokes": [
+     "A doctor who makes house calls, with lights and sirens. My doctor can't even make a same-week appointment.",
+     "Finally, a doctor who comes to you, and he brings his own siren."
+    ]
+   },
+   {
+    "id": "2026-11-19-buzz-03",
+    "title": "FRANKFORT SAYS YES TO IRONMAN IN 2027, WITH A MARCH CHECK-IN",
+    "recap": "We covered Frankfort voting to bring Ironman Michigan back in 2027, with a March decision on a longer contract.",
+    "description": "Frankfort City Council voted Monday night to bring Ironman Michigan back in 2027, with City Hall standing-room-only for the meeting. Most public speakers backed the race, citing the tourism boost after Labor Day, while some council members raised parking and business concerns. The council will revisit key contingencies in March and vote then on a three-year contract or making 2027 the last year in Frankfort. Mayor JoAnn Holwerda said, \"This last year was just phenomenal.\"",
+    "body": "FRANKFORT SAYS YES TO IRONMAN IN 2027, WITH A MARCH CHECK-IN<br>• Frankfort City Council voted Monday night to keep Ironman Michigan for 2027; City Hall was standing room only.<br>• Most speakers backed it, pointing to tourism after Labor Day. Some council members raised parking and business-impact concerns.<br>• The race goes ahead with a few structural changes; the contingencies come back to council in March.<br>• In March the council also decides on a three-year contract, or whether 2027 is Ironman's last stop in Frankfort.<br>➜ TAKE: Standing room only to vote on a race where everyone else has to do the running.<br>➜ BAIT: Text 231-929-4487: would you do an Ironman, or just stand on the curb with a sign?<br>😂 JOKES: Frankfort filled City Hall to vote on Ironman. Meanwhile I can't get a family vote on where to eat. / Swim, bike, run a marathon. Or as my family calls it, Thanksgiving prep.",
+    "notes": "https://upnorthlive.com/news/local/frankfort-moves-forward-with-2027-ironman-race-future-beyond-that-uncertain-benzie-county-northern-michigan-upnorthlive",
+    "article_url": "https://upnorthlive.com/news/local/frankfort-moves-forward-with-2027-ironman-race-future-beyond-that-uncertain-benzie-county-northern-michigan-upnorthlive",
+    "article_title": "Frankfort moves forward with 2027 Ironman race; future beyond that uncertain (UpNorthLive, Nov 17)",
+    "jokes": [
+     "Frankfort filled City Hall to vote on Ironman. Meanwhile I can't get a family vote on where to eat.",
+     "Swim, bike, run a marathon. Or as my family calls it, Thanksgiving prep."
+    ]
+   },
+   {
+    "id": "2026-11-19-buzz-04",
+    "title": "INLAND SEAS HITS 200,000 STUDENTS AND ADULTS ON THE GREAT LAKES",
+    "recap": "We covered Inland Seas Education Association reaching 200,000 participants in 37 years.",
+    "description": "The Inland Seas Education Association in Suttons Bay has reached 200,000 total participants across its Great Lakes science and sailing programs, in its 37th year. It took 25 years to reach the first 100,000 and just 12 more to double it. The milestone group was a Suttons Bay Public Schools class doing an onshore watershed program, reading paper maps and using compasses. The nonprofit runs two traditionally rigged schooners, the Inland Seas and the Alliance, and its programs reach students from Suttons Bay, Elk Rapids, Petoskey and Cadillac to Grand Rapids and Detroit.",
+    "body": "INLAND SEAS HITS 200,000 STUDENTS AND ADULTS ON THE GREAT LAKES<br>• The Suttons Bay nonprofit reached 200,000 total participants in its 37th year; it was founded in 1989.<br>• The first 100,000 took 25 years; the second 100,000 took 12.<br>• The milestone class was from Suttons Bay Public Schools, learning paper maps and compasses on shore.<br>• Two tall-ship schooners, the Inland Seas and the Alliance, carry students out to collect science data. Skyler Singleton: 'Once you know the lakes in this region, you end up falling in love with it.'<br>➜ TAKE: Two hundred thousand people and a compass. Somebody taught a generation to find north without a phone.<br>➜ BAIT: Text 231-929-4487: did you ever sail on a schooner or take a Great Lakes class as a kid?<br>😂 JOKES: Two hundred thousand students and they're still teaching paper maps. A paper map never says 'recalculating.' / Reading a compass: the original GPS, and it never needed a software update. Unlike some games I could mention.",
+    "notes": "https://www.9and10news.com/2026/11/18/inland-seas-education-association-reaches-200000-participant-milestone/",
+    "article_url": "https://www.9and10news.com/2026/11/18/inland-seas-education-association-reaches-200000-participant-milestone/",
+    "article_title": "Inland Seas Education Association reaches 200,000 participant milestone (9&10 News, Nov 18)",
+    "jokes": [
+     "Two hundred thousand students and they're still teaching paper maps. A paper map never says 'recalculating.'",
+     "Reading a compass: the original GPS, and it never needed a software update. Unlike some games I could mention."
+    ]
+   },
+   {
+    "id": "2026-11-19-buzz-05",
+    "title": "GLEN ARBOR LIGHTS UP 20+ TREES FOR TEENS (YOU CAN SPONSOR ONE)",
+    "recap": "We covered the Glen Arbor Strolling Lights Festival benefiting LIFT, with trees up Thanksgiving weekend through New Year's.",
+    "description": "The Crystal River Outfitters Recreational District in downtown Glen Arbor is running its Strolling Lights Festival again, with more than 20 trees decorated by families, businesses, clubs and teams. This year's proceeds go to LIFT (Leelanau Investing for Teens), a free out-of-school program for 6th to 12th graders at Glen Lake, Suttons Bay, Leland and Northport that has helped well over 1,000 teens. Trees cost $150 to sponsor, decorating can start Saturday, Nov. 21, and the trees are on view from Thanksgiving weekend through New Year's.",
+    "body": "GLEN ARBOR LIGHTS UP 20+ TREES FOR TEENS (YOU CAN SPONSOR ONE)<br>• The Strolling Lights Festival in downtown Glen Arbor has 20+ decorated trees; this year it benefits LIFT (Leelanau Investing for Teens).<br>• LIFT is a free out-of-school program for grades 6-12 in the Glen Lake, Suttons Bay, Leland and Northport schools, with daily mentoring and homework help; it has helped well over 1,000 teens since 2017.<br>• Sponsoring a tree is $150 (CrystalRiverOutfitters.com/strolling-lights-festival), and you can also donate to LIFT without decorating one.<br>• Decorating starts Saturday, Nov. 21; trees are up Thanksgiving weekend through New Year's.<br>➜ TAKE: A decorating committee where every tree gets to look different and nobody argues about the star.<br>➜ BAIT: Text 231-929-4487: what's the best Christmas tree you ever decorated, or the worst?<br>😂 JOKES: Twenty trees, twenty decorators, zero arguments about who puts on the star. Glen Arbor is doing the holidays right. / A hundred and fifty bucks buys a tree. At my house it buys the tree stand and an argument.",
+    "notes": "https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/",
+    "article_url": "https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/",
+    "article_title": "Crystal River Outfitters Recreational District hosts Strolling Lights Festival (Glen Arbor Sun, Nov 17)",
+    "jokes": [
+     "Twenty trees, twenty decorators, zero arguments about who puts on the star. Glen Arbor is doing the holidays right.",
+     "A hundred and fifty bucks buys a tree. At my house it buys the tree stand and an argument."
+    ]
+   }
+  ],
+  "article_url": "https://www.traverseticker.com/news/beitner-bridge-reopens-mdot-to-address-chums-corner-light-thursday/",
+  "article_title": "Beitner Bridge Reopens, MDOT to Address Chums Corner Light Thursday (The Ticker, Nov 18)",
+  "jokes": [
+   "After all that waiting, the bridge reopened and the first thing it got was a traffic jam. Welcome back, Beitner.",
+   "Nothing says a fresh start like a green light that lasts four seconds."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-19-bench-01",
+    "title": "HUNTERS CAN DONATE DEER THIS WEEKEND, FRI-SUN IN CLARE, GAYLORD AND LINWOOD",
+    "recap": "Hunters can donate deer to Hunters Feeding Michigan Friday through Sunday in Clare, Gaylord and Linwood.",
+    "description": "With firearm deer season underway, the Michigan DNR is encouraging hunters to donate harvested deer to the Hunters Feeding Michigan program. Donation events run Friday, Nov. 20 through Sunday, Nov. 22, 10 AM to 3 PM each day, at Jay's Sporting Goods in Clare and Gaylord and Frank's Great Outdoors in Linwood. Deer must be whole with the head attached, legally harvested and tagged, reported through the harvest reporting system, and field-dressed. The program turns donated venison into meals for families in need around the state.",
+    "body": "HUNTERS CAN DONATE DEER THIS WEEKEND, FRI-SUN IN CLARE, GAYLORD AND LINWOOD<br>• DNR is encouraging hunters to donate deer to Hunters Feeding Michigan during firearm season.<br>• Donation events: Fri Nov. 20 to Sun Nov. 22, 10 AM-3 PM daily, Jay's Sporting Goods (8800 S. Clare Ave., Clare, and 1151 S. Otsego Ave., Gaylord) and Frank's Great Outdoors (1212 N. Huron Rd., Linwood).<br>• Deer must be whole, head attached, legally harvested and tagged, reported, and field-dressed.<br>• Donated venison becomes meals for families in need across Michigan.<br>➜ TAKE: Fill your freezer or fill somebody else's. Both make a good Thanksgiving.<br>➜ BAIT: Text 231-929-4487: do you hunt, and what's the best thing that comes out of deer camp?<br>😂 JOKES: Donate a deer, feed a family. It's the one 'bring your own' event where the host actually thanks you. / Whole deer, head attached. Finally, a donation rule I can follow.",
+    "notes": "https://www.9and10news.com/2026/11/18/michigan-hunters-invited-to-donate-deer-to-feed-hungry-families-this-weekend/",
+    "article_url": "https://www.9and10news.com/2026/11/18/michigan-hunters-invited-to-donate-deer-to-feed-hungry-families-this-weekend/",
+    "article_title": "Michigan hunters invited to donate deer to feed hungry families this weekend (9&10 News, Nov 18)",
+    "jokes": [
+     "Donate a deer, feed a family. It's the one 'bring your own' event where the host actually thanks you.",
+     "Whole deer, head attached. Finally, a donation rule I can follow."
+    ]
+   },
+   {
+    "id": "2026-11-19-bench-02",
+    "title": "DEERING'S MEAT MARKET SEES A BUSY START TO DEER SEASON",
+    "recap": "Deering's Meat Market in Traverse City reported a busy start to firearm deer season.",
+    "description": "Deering's Meat Market and Jerky Co. in Traverse City, which has been processing meat since the 1930s, says firearm deer season is already looking busier than past years. The owner says people were at the door by 9 AM Sunday, hours into opening day, eager to get their deer processed. Sausage orders mean a second trip back for pickup. With the warmer weather, he says it's better to get a deer processed as soon as possible.",
+    "body": "DEERING'S MEAT MARKET SEES A BUSY START TO DEER SEASON<br>• Deering's in Traverse City has been processing meat since the 1930s and says the season is looking busier than past years.<br>• Hunters were at the door by 9 AM Sunday, just hours into opening day.<br>• Sausage orders mean a second trip for pickup, and the owner says they spend a lot of time just talking with people so they do it right.<br>• With the warm weather, the advice is to get your deer processed as soon as you can.<br>➜ TAKE: Warm November: great for the hunt, tough on the cooler.<br>➜ BAIT: Text 231-929-4487: what's your deer camp tradition, the breakfast, the cards, or the one story that grows every year?<br>😂 JOKES: Processing since the 1930s. That's older than my deer camp stories and a little more reliable. / The only line busier than the grocery store the day before Thanksgiving is the deer processor the day after opening day.",
+    "notes": "UpNorthLive Nov 16 (a bit older, so bench only).",
+    "article_url": "https://upnorthlive.com/news/local/deerings-meat-market-in-traverse-city-sees-busy-start-to-firearm-deer-season",
+    "article_title": "Deering's Meat Market in Traverse City sees busy start to firearm deer season (UpNorthLive, Nov 16)",
+    "jokes": [
+     "Processing since the 1930s. That's older than my deer camp stories and a little more reliable.",
+     "The only line busier than the grocery store the day before Thanksgiving is the deer processor the day after opening day."
+    ]
+   },
+   {
+    "id": "2026-11-19-bench-03",
+    "title": "OLD TOWN PLAYHOUSE EXECUTIVE DIRECTOR DEB JACKSON WILL RETIRE IN SPRING",
+    "recap": "Old Town Playhouse announced executive director Deb Jackson will retire in spring 2027.",
+    "description": "Old Town Playhouse announced Wednesday that Deb Jackson, its executive director for the past eight years, will retire in spring 2027. The board will begin recruiting a successor. Jackson said the Playhouse came through the pandemic stronger, keeps welcoming new volunteers with every show, and has risen in the ranks of community theatres nationally. She cited the theater's 'strong position' as the reason the timing feels right.",
+    "body": "OLD TOWN PLAYHOUSE EXECUTIVE DIRECTOR DEB JACKSON WILL RETIRE IN SPRING<br>• Old Town Playhouse announced Wednesday that executive director Deb Jackson will retire in spring 2027 after eight years.<br>• The board of trustees will now begin recruiting a new leader.<br>• Jackson: 'We navigated the pandemic and came out stronger on the other side. We have new volunteers joining our ranks with every show.'<br>• Board chair Lindsay Raymond called OTP 'a place where community comes together.'<br>➜ TAKE: Eight years running a theater. That's a lot of curtain calls and a lot of folding chairs.<br>➜ BAIT: Text 231-929-4487: what's the best show you've seen at Old Town Playhouse?<br>😂 JOKES: Eight years running a theater, and she's leaving on her own terms. That's what we call a great final act. / Retiring from a theater job means she can finally say 'break a leg' and not worry about the 'ouch' part.",
+    "notes": "https://www.traverseticker.com/news/old-town-playhouse-executive-director-announces-retirement/",
+    "article_url": "https://www.traverseticker.com/news/old-town-playhouse-executive-director-announces-retirement/",
+    "article_title": "Old Town Playhouse Executive Director Announces Retirement (The Ticker, Nov 19)",
+    "jokes": [
+     "Eight years running a theater, and she's leaving on her own terms. That's what we call a great final act.",
+     "Retiring from a theater job means she can finally say 'break a leg' and not worry about the 'ouch' part."
+    ]
+   },
+   {
+    "id": "2026-11-19-bench-04",
+    "title": "A STATE TROOPER AND HIS NURSE PRACTITIONER WIFE ARE HONORED FOR A POOL RESCUE IN ST. IGNACE",
+    "recap": "A trooper and his pediatric nurse practitioner wife were honored for a St. Ignace pool rescue.",
+    "description": "Michigan State Police are recognizing Trooper Tyler Barthelemy and his wife, Savannah, for rescuing a 5-year-old boy who was struggling in a hotel pool in St. Ignace on Feb. 21. Tyler was off duty at a child's birthday party when a parent screamed for help, and he swam to the boy and brought him to the edge. Savannah, a licensed pediatric nurse practitioner with Mackinac Straits Health System, helped clear the boy's airway with back blows. The boy expelled water, began breathing normally and suffered no long-term effects.",
+    "body": "A STATE TROOPER AND HIS NURSE PRACTITIONER WIFE ARE HONORED FOR A POOL RESCUE IN ST. IGNACE<br>• MSP is recognizing Trooper Tyler Barthelemy and his wife Savannah for a Feb. 21 rescue at a St. Ignace hotel pool.<br>• Tyler was off duty at a child's birthday party; he reached the 5-year-old and brought him to the edge.<br>• Savannah, a pediatric nurse practitioner, helped clear the boy's airway with back blows.<br>• The boy is in good health with no long-term effects.<br>➜ TAKE: The best-trained guests a birthday party ever had.<br>➜ BAIT: Text 231-929-4487: who's your go-to calm person in a crisis?<br>😂 JOKES: A trooper and a pediatric nurse practitioner at a kid's birthday party. Best-trained guests that cake ever had. / Most of us go to a birthday party for the cake. These two went and saved the day.",
+    "notes": "9&10 Nov 18. Upper Peninsula (not TC area). Rescue was Feb. 21, recognized now; keep it light, no jokes about the child.",
+    "article_url": "https://www.9and10news.com/2026/11/18/michigan-state-trooper-wife-recognized-for-saving-5-year-old-boy-from-drowning/",
+    "article_title": "Michigan state trooper, wife recognized for saving 5-year-old boy from drowning (9&10 News, Nov 18)",
+    "jokes": [
+     "A trooper and a pediatric nurse practitioner at a kid's birthday party. Best-trained guests that cake ever had.",
+     "Most of us go to a birthday party for the cake. These two went and saved the day."
+    ]
+   }
+  ]
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: IT'S OUT NOW<br>• CONFIRMED: Grand Theft Auto VI unlocked at midnight local time on Nov. 19 on PS5 and Xbox Series X|S, country by country starting with New Zealand; in the US it was one moment, 12 AM ET. Single-player at launch; no PC version until 2027<br>• NEW: Reviews are near-perfect: 99 out of 100 on Metacritic from 150 critics, tying Zelda: Ocarina of Time for the highest ever. IGN and GameSpot gave 10/10, Eurogamer 5/5; the lowest is an 80. That confirms the fan's '99 on Metacritic' claim in the ABC clip (c01)<br>• NEW: About 16 million copies and $1.5 billion in prelaunch sales (Sensor Tower via NBC News). A later Sensor Tower estimate is about 17 million, roughly 75% on PlayStation (estimate)<br>• PRICE: $79.99 Standard, $99.99 Ultimate (digital only); the box is a download code, and the download is about 212 GB. PS5 needed system update 14.23.00 (about 1.2 GB) plus a 602 MB day-one patch<br>• PLAYER REPORTS (not Rockstar): early glitches and frame-rate dips on base PS5; PeakMetrics says posts about stutter jumped about 55 times a normal day. PSN had a brief outage Wednesday afternoon, fixed before the unlock. Streams Charts counted 7.18 million peak viewers across Twitch, YouTube and Kick<br>• LOCAL: no Northern Michigan midnight store lines. No major retailer announced a midnight opening, and with code-in-box and pre-load, most people played at home. CBS Detroit (citing an Amazon Slots estimate) says 28,000+ Michiganders could take time off<br>➜ TAKE: For the first time in 13 years the wait was the easy part. Now the hard part is explaining Thursday to your boss.<br>😂 JOKES: Thirteen years of waiting and the first score is a 99. Even my mom never gave me a 99. / A 212-gigabyte download, a firmware update and a day-one patch. That's not a video game, that's a lease.",
+  "notes": "Sources (10+, checked 6 AM Nov 19): NBC live blog https://www.nbcnews.com/pop-culture/pop-culture-news/live-blog/gta-6-release-grand-theft-reviews-live-updates-rcna610118 (99/100, 150 reviews); NBC prelaunch https://www.nbcnews.com/pop-culture/pop-culture-news/grand-theft-auto-six-release-rockstar-games-what-to-know-rcna609644 (ties Ocarina of Time, $79.99, ~16M, $1.5B); Take-Two/Rockstar release https://taketwointeractivesoftwareinc.gcs-web.com/news-releases/news-release-details/rockstar-games-announces-pre-orders-grand-theft-auto-vi/ ($79.99, $99.99 Ultimate, code-in-box); PlayStation Blog https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/ (rolling midnight, pre-load); GTA Boss https://www.gtaboss.gg/gta-6/news/gta-6-is-out (unlock times, no PC); Yahoo Tech https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html (single-player only); Engadget https://www.engadget.com/2320788/gta-vi-launch-day-live-blog/ (212 GB, PC in 2027); The Threshold https://thethreshold.media/blog/gta-6-out-now-reviews-editions-launch-day-2026 (score breakdown, lowest 80; secondary); Nerdism https://nerdism.com/gta-6-not-working-server-status-fixes/ (firmware 14.23.00, patch 602 MB); Indian Express https://indianexpress.com/article/technology/tech-news-technology/sony-playstation-network-restored-brief-outage-gta-6-launch-10969237/ (PSN outage Wed, fixed); PeakMetrics https://www.peakmetrics.com/insights/gta-6-launch-reaction and Business Standard https://www.business-standard.com/technology/tech-news/gta-6-vice-city-review-first-impressions-global-reception-launch-glitches-126111900726_1.html (player reports, 7.18M streams, preliminary); LeonidaNews https://leonidanews.com/news/gta-6-launch-night-events-worldwide/ (no midnight retail openings found); CBS Detroit https://www.cbsnews.com/detroit/news/gta-vi-release-brings-excitement-for-michigan-gamers/ (28,000+ is an Amazon Slots estimate); Sutato citing Reuters https://sutato.now/news/platform/playstation/gta-vi-estimated-day-one-sales-favor-playstation-three-to-one (17M, 75% PS; secondary, label as estimate). Not opened directly: Rockstar Newswire and X. Wren is gathering more GTA news. FLAG: c01's '99 on Metacritic' is now confirmed by NBC and Yahoo.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-19-gta6-01",
+    "title": "GTA 6 WATCH",
+    "recap": "We covered GTA 6 launch day: it's out now, the 99 Metacritic score, the $79.99 price and 212 GB download, early player glitches, and no Northern Michigan midnight lines.",
+    "article_url": "https://www.nbcnews.com/pop-culture/pop-culture-news/live-blog/gta-6-release-grand-theft-reviews-live-updates-rcna610118",
+    "article_title": "'Grand Theft Auto VI' release live updates: Gamers skip work to play after 13-year wait (NBC News, Nov 19)",
+    "jokes": [
+     "Thirteen years of waiting and the first score is a 99. Even my mom never gave me a 99.",
+     "A 212-gigabyte download, a firmware update and a day-one patch. That's not a video game, that's a lease."
+    ]
+   }
+  ]
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "THANKSGIVING DINNER FOR 10: $58.63, UP 6% (FARM BUREAU)<br>• The Farm Bureau's 41st annual survey says a classic dinner for 10 averages $58.63, or $5.86 a person, up more than 6% from last year and the first rise since the 2022 record of $64.05.<br>• The turkey is the big jump: a 16-pound frozen bird averages $23.68, $1.48 a pound, up 10%.<br>• Shoppers priced it the first week of November; stores often run whole turkeys cheaper right before Thanksgiving, so watch the ads.<br>➜ LOCAL ANGLE: Wednesday's bundle story had the boxes; this is what from-scratch costs. The Meijer run is still the Wednesday-night plot twist.<br>➜ BAIT: Text 231-929-4487: who's hosting, who's bringing the pie, and who got assigned the rolls again?<br>😂 JOKES: $5.86 a person for Thanksgiving. That's cheaper than a coffee at some places I won't name, and the turkey doesn't ask for my name. / Turkey is up 10 percent. The only thing at my table that's gone up more is my uncle's volume.",
+  "notes": "AFBF news release Nov 18 https://www.fb.org/news-release/cost-of-thanksgiving-dinner-increases-remains-below-2022-record-high ; AP Nov 18 https://apnews.com/article/thanksgiving-prices-turkey-costs-diesel-dinner-5c5f6f4fd28ce2ff3cbfb1398cf28fd0 . Follows Wed's bundle story as the actual survey (AAA forecast, gas, NRF, to-go meals, bundles already used).",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-19-lifestyle-01",
+    "title": "THANKSGIVING DINNER FOR 10: $58.63",
+    "recap": "We covered the Farm Bureau survey: a classic Thanksgiving dinner for 10 costs $58.63, up 6%, with turkey up 10%.",
+    "description": "The American Farm Bureau Federation's 41st annual Thanksgiving survey, out Wednesday, puts the average classic dinner for 10 at $58.63, or about $5.86 a person. That's up more than 6% from last year, the first overall increase since the record high in 2022, but still $5.42 below that $64.05 peak. The turkey drove most of the jump: a 16-pound frozen bird averages $23.68, or $1.48 a pound, up 10%. Volunteer shoppers checked prices the first week of November, and stores often feature whole turkeys at lower prices in the days before Thanksgiving.",
+    "article_url": "https://www.fb.org/news-release/cost-of-thanksgiving-dinner-increases-remains-below-2022-record-high",
+    "article_title": "Cost of Thanksgiving Dinner Increases, Remains Below 2022 Record High (American Farm Bureau Federation, Nov 18)",
+    "jokes": [
+     "$5.86 a person for Thanksgiving. That's cheaper than a coffee at some places I won't name, and the turkey doesn't ask for my name.",
+     "Turkey is up 10 percent. The only thing at my table that's gone up more is my uncle's volume."
+    ]
+   }
+  ],
+  "article_url": "https://www.fb.org/news-release/cost-of-thanksgiving-dinner-increases-remains-below-2022-record-high",
+  "article_title": "Cost of Thanksgiving Dinner Increases, Remains Below 2022 Record High (American Farm Bureau Federation, Nov 18)",
+  "jokes": [
+   "$5.86 a person for Thanksgiving. That's cheaper than a coffee at some places I won't name, and the turkey doesn't ask for my name.",
+   "Turkey is up 10 percent. The only thing at my table that's gone up more is my uncle's volume."
+  ]
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "THE OFFICE: THE GTA LAUNCH-AND-LEAVE NUMBERS<br>• Zety's GTA VI Launch and Leave Report (1,040 US workers): 11% planned to take time off or change their schedule for the launch.<br>• Gen Z leads at 22%.<br>• 9% have taken time off for a video game release before; 43% have watched, played or followed a big event during work hours.<br>• (Fielded Oct. 6, before launch; separate from Monday's BambooHR PTO numbers.)<br>➜ BAIT: Text 231-929-4487: did you or anybody at your office 'have the flu' today, and what's the most creative excuse you've heard?<br>😂 JOKES: 43% of workers have watched a big event on the clock. The other 57% are lying to the survey. / The best excuse I heard today: 'family emergency.' The family is on the couch, and the emergency is a 99 on Metacritic.<br><br>THE OFFICE: THE GEN Z MANAGER AND THE MISSING MENTOR<br>• Indeed and Glassdoor's 2027 Hiring and Worklife Trends Report came out Wednesday.<br>• Gen Z is nearly a quarter of the workforce and will likely outnumber Baby Boomers in management next year.<br>• 58% of Gen Z want a mentor; only 25% have one.<br>• The report calls 2027 an 'inflection year' after about three years of a low-hire, low-fire market.<br>➜ BAIT: Text 231-929-4487: who was your best boss or mentor, and what did they teach you?<br>😂 JOKES: 58% want a mentor, 25% have one. The rest are asking the guy in IT, and he's tired. / Gen Z is about to be your boss. Somebody should warn them the printer is always the problem.<br><br>SCHOOL: TCAPS TEACHES KIDS TO QUESTION THE ROBOT<br>• TCAPS is working with its curriculum department on which AI tools help learning while protecting student information.<br>• No AI access on school devices for younger students; it's introduced in secondary classrooms with teacher guidance.<br>• Top priority: students shouldn't accept AI answers as fact, they should question them.<br>• Danielle Brostrom: 'We've been really intentional with how we use technology in the classroom, and AI is no exception.'<br>➜ BAIT: Text 231-929-4487: parents: do your kids use AI for homework, and do you check their work?<br>😂 JOKES: TCAPS wants kids to question the AI. Great, now my kid will question everything I say too. / In my day we copied from the encyclopedia and changed a few words. Now the robot does it and changes none.<br><br>SCHOOL: NMC STUDENTS GET A GUARANTEED SPOT AT CMU<br>• NMC and CMU signed a Direct Connect agreement: eligible NMC associate-degree students are guaranteed admission to CMU.<br>• Advisors from both schools build a personalized plan so coursework counts toward both degrees.<br>• Signed Nov. 12 by Kaleb Patrick (CMU Online) and Jason Slade (NMC); celebrated this week.<br>• Patrick: 'For a student beginning at NMC, a bachelor's degree should feel within reach.'<br>➜ BAIT: Text 231-929-4487: did you start at a community college, and did it pay off?<br>😂 JOKES: A guaranteed spot and a plan so your credits count. That's the first college guarantee I've heard with no fine print. / Community college: where the parking is closer, the textbooks are lighter, and nobody asks you to pick a major before breakfast.",
+  "notes": "2 office + 2 school (standing). Office: https://www.prnewswire.com/news-releases/more-than-1-in-10-workers-plan-to-take-time-off-or-change-their-schedule-for-gta-vi-302942862.html · https://hiringlab.indeed.com/2026/11/18/indeed-glassdoor-2027-us-hiring-and-worklife-trends-report/<br>School: https://www.9and10news.com/2026/11/18/tcaps-educators-helping-students-use-ai-safely/ · https://upnorthlive.com/news/local/new-agreement-guarantees-cmu-admission-for-eligible-nmc-associate-degree-students-grand-traverse-county-northwestern-michigan-college-central-michigan-university<br>Flag: office bit 1 is GTA-related (new Zety numbers, not Monday's BambooHR stat). Skipped: ResumeBuilder 69% backstabbing (Nov 12), CaterCow Thanksgiving survey (2025, stale), Zety gifting and ezCater party budgets (used Wed).",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-19-officeschool-01",
+    "title": "THE OFFICE: THE GTA LAUNCH-AND-LEAVE NUMBERS",
+    "recap": "We talked about the Zety survey: 11% of workers planned time off or a schedule change for GTA 6, 22% of Gen Z.",
+    "description": "A Zety survey of 1,040 US workers, released Nov. 17, found 11% planned to take time off or adjust their schedule for GTA VI, and Gen Z leads at 22%. Nearly 1 in 10 (9%) have taken time off for a video game release before, and 43% say they've watched, played or followed a major sports or entertainment event during work hours. The survey was fielded Oct. 6, before launch. Today is the day, so look at who's suddenly working from home.",
+    "body": "THE OFFICE: THE GTA LAUNCH-AND-LEAVE NUMBERS<br>• Zety's GTA VI Launch and Leave Report (1,040 US workers): 11% planned to take time off or change their schedule for the launch.<br>• Gen Z leads at 22%.<br>• 9% have taken time off for a video game release before; 43% have watched, played or followed a big event during work hours.<br>• (Fielded Oct. 6, before launch; separate from Monday's BambooHR PTO numbers.)<br>➜ BAIT: Text 231-929-4487: did you or anybody at your office 'have the flu' today, and what's the most creative excuse you've heard?<br>😂 JOKES: 43% of workers have watched a big event on the clock. The other 57% are lying to the survey. / The best excuse I heard today: 'family emergency.' The family is on the couch, and the emergency is a 99 on Metacritic.",
+    "notes": "PR Newswire Nov 17. Overlap flag: GTA PTO ran Monday (BambooHR ~13%), but these are different numbers (Zety, Gen Z, past behavior). Swap if Truce wants zero GTA-PTO overlap.",
+    "article_url": "https://www.prnewswire.com/news-releases/more-than-1-in-10-workers-plan-to-take-time-off-or-change-their-schedule-for-gta-vi-302942862.html",
+    "article_title": "More Than 1 in 10 Workers Plan to Take Time Off or Change Their Schedule for GTA VI (Zety via PR Newswire, Nov 17)",
+    "jokes": [
+     "43% of workers have watched a big event on the clock. The other 57% are lying to the survey.",
+     "The best excuse I heard today: 'family emergency.' The family is on the couch, and the emergency is a 99 on Metacritic."
+    ]
+   },
+   {
+    "id": "2026-11-19-officeschool-02",
+    "title": "THE OFFICE: THE GEN Z MANAGER AND THE MISSING MENTOR",
+    "recap": "We talked about the Indeed and Glassdoor report: Gen Z moving into management and 58% wanting a mentor but only 25% having one.",
+    "description": "Indeed and Glassdoor's 2027 US Hiring and Worklife Trends Report, out Wednesday, says Gen Z is nearly a quarter of the labor force and will likely outnumber Baby Boomers in management next year. They're optimistic but restless: 58% want a mentor, but only 25% have one. The report calls 2027 an inflection year after about three years of a low-hire, low-fire market.",
+    "body": "THE OFFICE: THE GEN Z MANAGER AND THE MISSING MENTOR<br>• Indeed and Glassdoor's 2027 Hiring and Worklife Trends Report came out Wednesday.<br>• Gen Z is nearly a quarter of the workforce and will likely outnumber Baby Boomers in management next year.<br>• 58% of Gen Z want a mentor; only 25% have one.<br>• The report calls 2027 an 'inflection year' after about three years of a low-hire, low-fire market.<br>➜ BAIT: Text 231-929-4487: who was your best boss or mentor, and what did they teach you?<br>😂 JOKES: 58% want a mentor, 25% have one. The rest are asking the guy in IT, and he's tired. / Gen Z is about to be your boss. Somebody should warn them the printer is always the problem.",
+    "notes": "https://hiringlab.indeed.com/2026/11/18/indeed-glassdoor-2027-us-hiring-and-worklife-trends-report/",
+    "article_url": "https://hiringlab.indeed.com/2026/11/18/indeed-glassdoor-2027-us-hiring-and-worklife-trends-report/",
+    "article_title": "Indeed & Glassdoor's 2027 U.S. Hiring and Worklife Trends Report (Indeed Hiring Lab, Nov 18)",
+    "jokes": [
+     "58% want a mentor, 25% have one. The rest are asking the guy in IT, and he's tired.",
+     "Gen Z is about to be your boss. Somebody should warn them the printer is always the problem."
+    ]
+   },
+   {
+    "id": "2026-11-19-officeschool-03",
+    "title": "SCHOOL: TCAPS TEACHES KIDS TO QUESTION THE ROBOT",
+    "recap": "We talked about TCAPS helping students use AI safely and question what it tells them.",
+    "description": "Traverse City Area Public Schools says it is working with its curriculum department to decide which AI tools help teaching while protecting student information. Younger students don't have AI on their school devices because the district doesn't consider it developmentally appropriate; AI is introduced in secondary classrooms with teacher guidance. A top priority is making sure students don't simply accept AI answers as fact, and instead question what it produces. TCAPS technology leaders say AI is now built into many everyday tools, so understanding how it works matters.",
+    "body": "SCHOOL: TCAPS TEACHES KIDS TO QUESTION THE ROBOT<br>• TCAPS is working with its curriculum department on which AI tools help learning while protecting student information.<br>• No AI access on school devices for younger students; it's introduced in secondary classrooms with teacher guidance.<br>• Top priority: students shouldn't accept AI answers as fact, they should question them.<br>• Danielle Brostrom: 'We've been really intentional with how we use technology in the classroom, and AI is no exception.'<br>➜ BAIT: Text 231-929-4487: parents: do your kids use AI for homework, and do you check their work?<br>😂 JOKES: TCAPS wants kids to question the AI. Great, now my kid will question everything I say too. / In my day we copied from the encyclopedia and changed a few words. Now the robot does it and changes none.",
+    "notes": "9&10 Nov 18. Wed's school AI bit was the Fordham survey; this is the local district angle.",
+    "article_url": "https://www.9and10news.com/2026/11/18/tcaps-educators-helping-students-use-ai-safely/",
+    "article_title": "TCAPS educators helping students use AI safely (9&10 News, Nov 18)",
+    "jokes": [
+     "TCAPS wants kids to question the AI. Great, now my kid will question everything I say too.",
+     "In my day we copied from the encyclopedia and changed a few words. Now the robot does it and changes none."
+    ]
+   },
+   {
+    "id": "2026-11-19-officeschool-04",
+    "title": "SCHOOL: NMC STUDENTS GET A GUARANTEED SPOT AT CMU",
+    "recap": "We talked about the NMC and CMU Direct Connect agreement guaranteeing admission to CMU.",
+    "description": "Northwestern Michigan College and Central Michigan University signed a Direct Connect agreement that guarantees admission to CMU for eligible NMC associate-degree students who plan to earn a bachelor's. Advisors from both schools will build a personalized plan so coursework counts toward both degrees. The agreement was signed Nov. 12 by CMU Online's Kaleb Patrick and NMC's Jason Slade, and the schools celebrated it this week. Patrick said a bachelor's degree should feel within reach for a student beginning at NMC.",
+    "body": "SCHOOL: NMC STUDENTS GET A GUARANTEED SPOT AT CMU<br>• NMC and CMU signed a Direct Connect agreement: eligible NMC associate-degree students are guaranteed admission to CMU.<br>• Advisors from both schools build a personalized plan so coursework counts toward both degrees.<br>• Signed Nov. 12 by Kaleb Patrick (CMU Online) and Jason Slade (NMC); celebrated this week.<br>• Patrick: 'For a student beginning at NMC, a bachelor's degree should feel within reach.'<br>➜ BAIT: Text 231-929-4487: did you start at a community college, and did it pay off?<br>😂 JOKES: A guaranteed spot and a plan so your credits count. That's the first college guarantee I've heard with no fine print. / Community college: where the parking is closer, the textbooks are lighter, and nobody asks you to pick a major before breakfast.",
+    "notes": "UpNorthLive Nov 17; The Ticker also covered it https://www.traverseticker.com/news/nmc-inks-direct-connect-agreement-with-central-michigan-university/",
+    "article_url": "https://upnorthlive.com/news/local/new-agreement-guarantees-cmu-admission-for-eligible-nmc-associate-degree-students-grand-traverse-county-northwestern-michigan-college-central-michigan-university",
+    "article_title": "New agreement guarantees CMU admission for eligible NMC associate degree students (UpNorthLive, Nov 17)",
+    "jokes": [
+     "A guaranteed spot and a plan so your credits count. That's the first college guarantee I've heard with no fine print.",
+     "Community college: where the parking is closer, the textbooks are lighter, and nobody asks you to pick a major before breakfast."
+    ]
+   }
+  ],
+  "article_url": "https://www.prnewswire.com/news-releases/more-than-1-in-10-workers-plan-to-take-time-off-or-change-their-schedule-for-gta-vi-302942862.html",
+  "article_title": "More Than 1 in 10 Workers Plan to Take Time Off or Change Their Schedule for GTA VI (Zety via PR Newswire, Nov 17)",
+  "jokes": [
+   "43% of workers have watched a big event on the clock. The other 57% are lying to the survey.",
+   "The best excuse I heard today: 'family emergency.' The family is on the couch, and the emergency is a 99 on Metacritic."
+  ]
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": []
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "\"Name It to Tame It\"<br><br>It's the Thursday before Thanksgiving week, the sun is out, and a lot of us are already carrying the to-do list, the travel plans and the family math in our heads. So here's a thirty-second trick for when your stomach tightens. Stop and name the feeling in one or two words, out loud or on your phone, like 'I'm anxious,' or 'I'm frustrated,' or 'I'm overwhelmed.' That's it. Researchers at UCLA scanned people's brains while they looked at upsetting images, and when people put a word on the emotion, activity in the amygdala, the brain's alarm system, went down, and activity in a part of the prefrontal cortex that helps regulate emotion went up. In plain English: saying what you feel can turn the volume down. It's not a cure and it's not therapy, it's just a small move you can make in a parking lot, a grocery line or a hallway. So today, the next time the stress spikes, name it. And if you want to share what you named, text the studio at 231-929-4487.",
+  "notes": "Evidence: Lieberman, Eisenberger, Crockett, Tom, Pfeifer & Way (2007), Psychological Science 18(5): labeling emotion reduced amygdala/limbic response and increased right ventrolateral prefrontal activity. https://pubmed.ncbi.nlm.nih.gov/17576282/ ; full text https://sanlab.psych.ucla.edu/wp-content/uploads/sites/31/2016/03/Lieberman_2007_PsychScience.pdf . Not a clinical claim. Fresh this week. ~60 s.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-19-mental-01",
+    "title": "NAME IT TO TAME IT",
+    "recap": "The Mental Health Minute was \"Name It to Tame It\": put a one-word name on a stressful feeling to turn the volume down.",
+    "article_url": "https://pubmed.ncbi.nlm.nih.gov/17576282/",
+    "article_title": "Putting feelings into words: affect labeling disrupts amygdala activity in response to affective stimuli (Lieberman et al., 2007, PubMed)",
+    "jokes": []
+   }
+  ],
+  "article_url": "https://pubmed.ncbi.nlm.nih.gov/17576282/",
+  "article_title": "Putting feelings into words: affect labeling disrupts amygdala activity in response to affective stimuli (Lieberman et al., 2007, PubMed)",
+  "jokes": []
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "custom": false,
+  "requester": "",
+  "song": "Smooth",
+  "artist": "Santana featuring Rob Thomas",
+  "single_year": "1999",
+  "chart_records": [
+   "No. 1 on the Billboard Hot 100 for 12 consecutive weeks, starting with the week of Oct. 23, 1999, so it was No. 1 on this date in 1999",
+   "Last No. 1 of the 1990s and first of the 2000s",
+   "Won Record of the Year, Song of the Year and Best Pop Collaboration with Vocals at the 2000 Grammys"
+  ],
+  "origin": "From Santana's album Supernatural (June 15, 1999), written by Itaal Shur and Rob Thomas and produced by Matt Serletic.",
+  "song_story_source": "Wikipedia, 'Smooth (song)' https://en.wikipedia.org/wiki/Smooth_(song) ; Supernatural album page https://en.wikipedia.org/wiki/Supernatural_(Santana_album)",
+  "article_url": "https://en.wikipedia.org/wiki/Smooth_(song)",
+  "article_title": "\"Smooth\" (Santana song) (Wikipedia)",
+  "jokes": [
+   "Twelve weeks at No. 1. That's longer than any of my New Year's resolutions have lasted.",
+   "Santana, Rob Thomas and a smooth groove. The only thing smoother is the bridge once the Chums Corner light is fixed."
+  ],
+  "song_story": "Itaal Shur's original track was called 'Room 17.' The lyrics were stripped for the label, and Rob Thomas of Matchbox Twenty re-wrote the words and melody and retitled it 'Smooth.' Thomas has said he drew on his wife, 'a beautiful Latin woman,' for some of the lyrics, and the recording took two days. It was the last No. 1 of the 1990s and the first of the 2000s, and it won Record of the Year and Song of the Year at the 2000 Grammys.",
+  "content": "SMOOTH, SANTANA FEATURING ROB THOMAS<br>• Single: 1999, lead single from Supernatural (album out June 15, 1999)<br>• 12 straight weeks at No. 1 on the Billboard Hot 100 beginning the week of Oct. 23, 1999, so it was No. 1 on this date in 1999. The last No. 1 of the 1990s and the first of the 2000s<br>• Grammys: Record of the Year and Song of the Year at the 2000 awards<br>🎤 SONG STORY: Itaal Shur's original track was called 'Room 17.' The lyrics were stripped for the label, and Rob Thomas of Matchbox Twenty re-wrote the words and melody and retitled it 'Smooth.' Thomas has said he drew on his wife, 'a beautiful Latin woman,' for some of the lyrics, and the recording took two days. It was the last No. 1 of the 1990s and the first of the 2000s, and it won Record of the Year and Song of the Year at the 2000 Grammys.<br>• Why today: 27 years ago this week it was the No. 1 song in the country, and nothing says Thursday like Carlos Santana's guitar.<br>😂 JOKES: Twelve weeks at No. 1. That's longer than any of my New Year's resolutions have lasted. / Santana, Rob Thomas and a smooth groove. The only thing smoother is the bridge once the Chums Corner light is fixed.",
+  "notes": "Backup pick (no flashback-request file today). Wikipedia https://en.wikipedia.org/wiki/Smooth_(song) ; mybirthdayhit.com lists it as the No. 1 on 11/19/1999. Lyric check: radio edit clean; avoid quoting lines. Not used this week.",
+  "items": [
+   {
+    "id": "2026-11-19-flash-01",
+    "title": "SMOOTH — SANTANA FEATURING ROB THOMAS",
+    "recap": "Our 9 AM Flashback was Santana and Rob Thomas's \"Smooth,\" No. 1 for 12 weeks and the bridge between the 90s and 2000s.",
+    "article_url": "https://en.wikipedia.org/wiki/Smooth_(song)",
+    "article_title": "\"Smooth\" (Santana song) (Wikipedia)",
+    "jokes": [
+     "Twelve weeks at No. 1. That's longer than any of my New Year's resolutions have lasted.",
+     "Santana, Rob Thomas and a smooth groove. The only thing smoother is the bridge once the Chums Corner light is fixed."
+    ]
+   }
+  ]
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "TOPIC: WHICH BOARD GAME ENDED YOUR FRIENDSHIPS (OR YOUR FAMILY GAME NIGHT)?<br>• It's National Play Monopoly Day, and Thanksgiving week is board game season<br>• Prompt 1: Monopoly, Risk, Clue, Sorry, Scrabble or Uno. Which one has caused the most real-life arguments?<br>• Prompt 2: Do you play by the real rules, or do house rules rule the table? (Free Parking jackpot? Let's hear it.)<br>• Prompt 3: What was the game your family played the most when you were a kid?<br>😂 JOKES: The real winner of Monopoly is whoever flips the board. That's not a rule, that's family tradition. / Monopoly is the only game that can end a friendship and still make you ask for a rematch.",
+  "notes": "For Courtney Rehmer (middays). Peg: National Play Monopoly Day https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/ . Not used this week.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-19-cross-01",
+    "title": "BOARD GAME THAT ENDED THE FRIENDSHIP",
+    "recap": "For National Play Monopoly Day, Courtney asked which board game has caused the most arguments and what house rules rule the table.",
+    "article_url": "https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/",
+    "article_title": "National Play Monopoly Day (National Day Calendar)",
+    "jokes": [
+     "The real winner of Monopoly is whoever flips the board. That's not a rule, that's family tradition.",
+     "Monopoly is the only game that can end a friendship and still make you ask for a rematch."
+    ]
+   }
+  ],
+  "article_url": "https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/",
+  "article_title": "National Play Monopoly Day (National Day Calendar)",
+  "jokes": [
+   "The real winner of Monopoly is whoever flips the board. That's not a rule, that's family tradition.",
+   "Monopoly is the only game that can end a friendship and still make you ask for a rematch."
+  ]
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "Fridays only",
+  "notes": "",
+  "custom": false,
+  "items": []
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio Clips",
+  "category": "Bit",
+  "type": "text",
+  "custom": true,
+  "clips": [],
+  "items": [],
+  "content": "NO NEW NEWS AUDIO CUT TODAY (overnight run failed on usage; rebuilt live at 6 AM).<br>The GTA 6 news audio is in Trending Audio (the Clips section): c01 ABC News Australia fans' first play (0:57, network audio: get OK or talk over it; the fan's 99 Metacritic claim is now confirmed by NBC News) and c02 CNN 'Grand Theft PTO' (0:19). The opener supercut is c00. c05 is Tony Deyo (Dry Bar Comedy), the half-marathon sticker and turkey trot bit.<br>No local news audio was found for Beitner, Munson EMS, Frankfort Ironman or Inland Seas.",
+  "notes": "See the Clips section (clips[]) for all of today's audio. No local news audio cut."
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "5 clips + supercut so far (all new, 0 repeats). Overnight run failed on usage; rebuilt live at 6 AM.<br><br>SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY (0:20)<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.<br><br>GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) (0:57)<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.<br><br>GTA 6: GRAND THEFT PTO (CNN) (0:19)<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.<br><br>GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) (0:30)<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.<br><br>BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) (0:45)<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.<br><br>HALF MARATHON STICKER + TURKEY TROT (DRY BAR) (1:25)<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy.",
+  "clips": [
+   {
+    "id": "2026-11-19-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY",
+    "body": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY · SHOW OPENER SUPERCUT<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.",
+    "audio": "/workspace/morning-rush/clips/2026-11-19/c00-opener-supercut.mp3",
+    "file": "c00-opener-supercut.mp3",
+    "ready": true
+   },
+   {
+    "id": "2026-11-19-c01",
+    "slot": "TRENDING AUDIO",
+    "title": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA)",
+    "body": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) · TRENDING AUDIO<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.",
+    "audio": "/workspace/morning-rush/clips/2026-11-19/c01-abc-gta6-first-play.mp3",
+    "file": "c01-abc-gta6-first-play.mp3",
+    "ready": true
+   },
+   {
+    "id": "2026-11-19-c02",
+    "slot": "TRENDING AUDIO",
+    "title": "GTA 6: GRAND THEFT PTO (CNN)",
+    "body": "GTA 6: GRAND THEFT PTO (CNN) · TRENDING AUDIO<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.",
+    "audio": "/workspace/morning-rush/clips/2026-11-19/c02-cnn-grand-theft-pto.mp3",
+    "file": "c02-cnn-grand-theft-pto.mp3",
+    "ready": true
+   },
+   {
+    "id": "2026-11-19-c03",
+    "slot": "LATE-NIGHT",
+    "title": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL)",
+    "body": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) · LATE-NIGHT<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.",
+    "audio": "/workspace/morning-rush/clips/2026-11-19/c03-kimmel-gordon-ramsay-shirtless-60.mp3",
+    "file": "c03-kimmel-gordon-ramsay-shirtless-60.mp3",
+    "ready": true
+   },
+   {
+    "id": "2026-11-19-c04",
+    "slot": "STAND-UP COMEDY",
+    "title": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR)",
+    "body": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.",
+    "audio": "/workspace/morning-rush/clips/2026-11-19/c04-brad-upton-thanksgiving-in-laws.mp3",
+    "file": "c04-brad-upton-thanksgiving-in-laws.mp3",
+    "ready": true
+   },
+   {
+    "id": "2026-11-19-c05",
+    "slot": "STAND-UP COMEDY",
+    "title": "HALF MARATHON STICKER + TURKEY TROT (DRY BAR)",
+    "body": "HALF MARATHON STICKER + TURKEY TROT (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Comedian name not shown in compilation title; credit Dry Bar Comedy.",
+    "audio": "/workspace/morning-rush/clips/2026-11-19/c05-drybar-half-marathon-turkey-trot.mp3",
+    "file": "c05-drybar-half-marathon-turkey-trot.mp3",
+    "ready": true
+   }
+  ],
+  "items": []
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "custom": true,
+  "content": "THU NOV 19: GTA 6 is out now (unlocked at midnight)<br>FRI NOV 20: Downtown TC tree lighting, 4-6:30 PM, plus Cookies & Cocoa Crawl and Find the Grinch<br>FRI NOV 20: Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek<br>FRI-SUN NOV 20-22: Hunters Feeding Michigan deer donations, 10 AM-3 PM, Clare, Gaylord, Linwood<br>SAT NOV 21: TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM<br>SAT NOV 21: Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse<br>SAT NOV 21: Traverse City Light Parade, 6-8 PM along Front Street<br>SAT NOV 21: Glen Arbor Strolling Lights Festival tree decorating begins<br>THU NOV 26: 'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac<br>THROUGH DEC 31: Crafts by CICI pop-up, Grand Traverse Mall<br>😂 JOKES: Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands. / GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range.",
+  "notes": "THU NOV 19: GTA 6 is out now (unlocked at midnight): https://www.nbcnews.com/pop-culture/pop-culture-news/live-blog/gta-6-release-grand-theft-reviews-live-updates-rcna610118<br>FRI NOV 20: Downtown TC tree lighting, 4-6:30 PM, plus Cookies & Cocoa Crawl and Find the Grinch: https://www.northernexpress.com/news/feature/santa-claus-is-coming-to-town-2026/<br>FRI NOV 20: Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek: https://upnorthlive.com/sports/hometown-highlights/top-ranked-roscommon-packing-their-bags-for-battle-creek-after-win-in-volleyball-quarters<br>FRI-SUN NOV 20-22: Hunters Feeding Michigan deer donations, 10 AM-3 PM, Clare, Gaylord, Linwood: https://www.9and10news.com/2026/11/18/michigan-hunters-invited-to-donate-deer-to-feed-hungry-families-this-weekend/<br>SAT NOV 21: TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM: https://upnorthlive.com/news/local/get-holiday-shopping-done-at-the-tc-west-high-school-craft-fair-grand-traverse-county<br>SAT NOV 21: Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse: https://www.traverseticker.com/news/toys-for-tots-campaign-starts-with-drive-through-event/<br>SAT NOV 21: Traverse City Light Parade, 6-8 PM along Front Street: https://www.traverseticker.com/news/how-growing-numbers-safety-concerns-led-to-first-ever-two-night-downtown-holiday-kickoff/<br>SAT NOV 21: Glen Arbor Strolling Lights Festival tree decorating begins: https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/<br>THU NOV 26: 'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac: https://www.9and10news.com/sports/2026/11/16/inaugural-b-thankful-5k-to-launch-in-cadillac-this-thanksgiving/<br>THROUGH DEC 31: Crafts by CICI pop-up, Grand Traverse Mall: https://www.9and10news.com/2026/11/17/local-artisans-showcase-custom-handmade-goods-at-new-crafts-by-cici-storefront/<br>Tree lighting 4-6:30 PM and Light Parade 6-8 PM per Northern Express (Wed's sheet said 6:30 PM; Northern Express is the newer, fuller schedule). Hunters Feeding hours per 9&10 Nov 18. Football games (Kingsley, Gaylord St. Mary) not re-verified today, left off.",
+  "items": [
+   {
+    "id": "2026-11-19-events-01",
+    "title": "THU NOV 19: GTA 6 is out now (unlocked at midnight)",
+    "recap": "GTA 6 unlocked at midnight on PS5 and Xbox Series X|S.",
+    "article_url": "https://www.nbcnews.com/pop-culture/pop-culture-news/live-blog/gta-6-release-grand-theft-reviews-live-updates-rcna610118",
+    "article_title": "NBC News listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-02",
+    "title": "FRI NOV 20: Downtown TC tree lighting, 4-6:30 PM, plus Cookies & Cocoa Crawl and Find the Grinch",
+    "recap": "Tree lighting 4-6:30 PM, Santa arrives at Cass & State. Front Street closed 3-8 PM between Park and Union.",
+    "article_url": "https://www.northernexpress.com/news/feature/santa-claus-is-coming-to-town-2026/",
+    "article_title": "Northern Express listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-03",
+    "title": "FRI NOV 20: Roscommon vs. Kalamazoo Christian, D3 volleyball semifinal, noon, Kellogg Arena, Battle Creek",
+    "recap": "Roscommon plays Kalamazoo Christian in the D3 semifinal at noon at Kellogg Arena in Battle Creek.",
+    "article_url": "https://upnorthlive.com/sports/hometown-highlights/top-ranked-roscommon-packing-their-bags-for-battle-creek-after-win-in-volleyball-quarters",
+    "article_title": "UpNorthLive listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-04",
+    "title": "FRI-SUN NOV 20-22: Hunters Feeding Michigan deer donations, 10 AM-3 PM, Clare, Gaylord, Linwood",
+    "recap": "Donate harvested deer at Jay's Sporting Goods (Clare, Gaylord) and Frank's Great Outdoors (Linwood).",
+    "article_url": "https://www.9and10news.com/2026/11/18/michigan-hunters-invited-to-donate-deer-to-feed-hungry-families-this-weekend/",
+    "article_title": "9&10 News listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-05",
+    "title": "SAT NOV 21: TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM",
+    "recap": "TC West High School Craft Fair, 1,000+ vendors, free, 10 AM-3 PM.",
+    "article_url": "https://upnorthlive.com/news/local/get-holiday-shopping-done-at-the-tc-west-high-school-craft-fair-grand-traverse-county",
+    "article_title": "UpNorthLive listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-06",
+    "title": "SAT NOV 21: Toys for Tots drive-thru kickoff, noon-2 PM, Fox Grand Traverse",
+    "recap": "Toys for Tots of Northwest Michigan drive-through kickoff, noon-2 PM, Fox Grand Traverse.",
+    "article_url": "https://www.traverseticker.com/news/toys-for-tots-campaign-starts-with-drive-through-event/",
+    "article_title": "The Ticker listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-07",
+    "title": "SAT NOV 21: Traverse City Light Parade, 6-8 PM along Front Street",
+    "recap": "Light Parade runs 6-8 PM along Front Street; first-ever two-night holiday kickoff (tree lighting Friday, parade Saturday).",
+    "article_url": "https://www.traverseticker.com/news/how-growing-numbers-safety-concerns-led-to-first-ever-two-night-downtown-holiday-kickoff/",
+    "article_title": "The Ticker listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-08",
+    "title": "SAT NOV 21: Glen Arbor Strolling Lights Festival tree decorating begins",
+    "recap": "Tree sponsors can begin decorating Saturday; trees on view Thanksgiving weekend through New Year's, benefiting LIFT.",
+    "article_url": "https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/",
+    "article_title": "Glen Arbor Sun listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-09",
+    "title": "THU NOV 26: 'B' Thankful 5K, 9 AM, Veterans Serving Veterans Park, Cadillac",
+    "recap": "Inaugural 'B' Thankful 5K at 9 AM, Veterans Serving Veterans Park, Cadillac.",
+    "article_url": "https://www.9and10news.com/sports/2026/11/16/inaugural-b-thankful-5k-to-launch-in-cadillac-this-thanksgiving/",
+    "article_title": "9&10 News listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   },
+   {
+    "id": "2026-11-19-events-10",
+    "title": "THROUGH DEC 31: Crafts by CICI pop-up, Grand Traverse Mall",
+    "recap": "Crafts by CICI pop-up storefront, Grand Traverse Mall.",
+    "article_url": "https://www.9and10news.com/2026/11/17/local-artisans-showcase-custom-handmade-goods-at-new-crafts-by-cici-storefront/",
+    "article_title": "9&10 News listing/article",
+    "jokes": [
+     "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+     "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+    ]
+   }
+  ],
+  "article_url": "https://www.northernexpress.com/news/feature/santa-claus-is-coming-to-town-2026/",
+  "article_title": "Northern Express",
+  "jokes": [
+   "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
+   "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
+  ]
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · EARLY SHOW<br>⛵ Inland Seas Education Association in Suttons Bay just hit 200,000 total participants. The first 100,000 took 25 years, the second took 12. Did you ever sail on the Inland Seas or the Alliance, or take a Great Lakes class as a kid? Tell us below or text the studio at 231-929-4487. #Z93 #TraverseCity #GreatLakes<br>📷 MEDIA: /workspace/z93/fb/2026-11-19/fb1a-inland-seas-200k.png (TO BUILD: 9&10 News photo with credit on image, or an original graphic '200,000 students' with the Z93 logo /workspace/z93/logo/z93_official_from_truce.png)<br><br>1B · EARLY SHOW<br>🏁 Frankfort just voted to bring Ironman Michigan back in 2027, and in March they decide if it's a three-year deal. Would you swim, bike and run it, or stand on the curb with a sign and a cowbell? Tell us below or text the studio at 231-929-4487. #Z93 #Frankfort #Ironman<br>📷 MEDIA: /workspace/z93/fb/2026-11-19/fb1b-frankfort-ironman.png (TO BUILD: original graphic (swim/bike/run icons, 'Ironman Michigan returns to Frankfort in 2027') with the official Z93 logo)<br><br>2A · MID SHOW<br>🎄 Downtown Traverse City's holiday kickoff is now TWO nights for the first time ever. Friday: Cookies & Cocoa Crawl, Find the Grinch, and the tree lighting 4 to 6:30 PM with Santa. Saturday: the Light Parade, 6 to 8 PM along Front Street. Which night are you going? #Z93 #TraverseCity #LightParade<br>📷 MEDIA: /workspace/z93/fb/2026-11-19/fb2a-two-night-holiday-kickoff.png (TO BUILD: original graphic 'Friday: Tree Lighting 4-6:30 PM / Saturday: Light Parade 6-8 PM' with the official Z93 logo)<br><br>2B · MID SHOW<br>✨ Glen Arbor's Strolling Lights Festival has 20+ trees going up, and this year the money goes to LIFT, a free after-school program for Leelanau teens. Trees are $150 to sponsor, and decorating starts Saturday. What would YOU put on a tree for Glen Arbor? #Z93 #GlenArbor #Leelanau<br>📷 MEDIA: /workspace/z93/fb/2026-11-19/fb2b-glen-arbor-strolling-lights.png (TO BUILD: original graphic 'Strolling Lights, Glen Arbor' with the official Z93 logo, or a Crystal River Outfitters photo with credit)<br><br>3A · LATE SHOW<br>🎷 Today in 1992, the No. 1 song in America was \"How Do You Talk to an Angel\" by a band that didn't exist, from a TV show that was canceled days later. What's a 90s hit you loved from a show or movie nobody remembers? Tell us below or text the studio at 231-929-4487. #Z93 #90sKid #TBT<br>📷 MEDIA: /workspace/z93/fb/2026-11-19/fb3a-the-heights-sax-ballad.png (TO BUILD: original graphic (saxophone, 'No. 1 in 1992 from a fake band') with the official Z93 logo; no Fox or show art)<br><br>3B · LATE SHOW<br>🎲 It's National Play Monopoly Day. Be honest: did your family finish a whole game, or did somebody flip the board? And what's your house rule for Free Parking? #Z93 #Monopoly #FamilyGameNight<br>📷 MEDIA: /workspace/z93/fb/2026-11-19/fb3b-monopoly-day.png (TO BUILD: original graphic ('Free Parking jackpot: yes or no?') with the official Z93 logo; no Hasbro art or logos)",
+  "notes": "Drafts only, nothing posted. Art not built yet (TO BUILD, target filenames listed). Pegs: https://www.9and10news.com/2026/11/18/inland-seas-education-association-reaches-200000-participant-milestone/ · https://upnorthlive.com/news/local/frankfort-moves-forward-with-2027-ironman-race-future-beyond-that-uncertain-benzie-county-northern-michigan-upnorthlive · https://www.traverseticker.com/news/how-growing-numbers-safety-concerns-led-to-first-ever-two-night-downtown-holiday-kickoff/ · https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/ · https://www.grunge.com/2315461/no-1-song-november-19-1992-how-do-you-talk-to-an-angel-the-heights/ · https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/ . Only the official logo /workspace/z93/logo/z93_official_from_truce.png. Flag: 2A is the Light Parade again (Mon FB covered Light Up Downtown + Light Parade) but with the new two-night schedule; swap if too repeaty. No Toys for Tots draft (used Wed 2B).",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-19-fb-1a",
+    "title": "1A · EARLY SHOW",
+    "recap": "⛵ Inland Seas Education Association in Suttons Bay just hit 200,000 total participants. The first 100,000 took 25 years, the second took 12.",
+    "article_url": "https://www.9and10news.com/2026/11/18/inland-seas-education-association-reaches-200000-participant-milestone/",
+    "article_title": "Inland Seas reaches 200,000 participants (9&10 News, Nov 18)",
+    "jokes": []
+   },
+   {
+    "id": "2026-11-19-fb-1b",
+    "title": "1B · EARLY SHOW",
+    "recap": "🏁 Frankfort just voted to bring Ironman Michigan back in 2027, and in March they decide if it's a three-year deal. Would you swim, bike and ",
+    "article_url": "https://upnorthlive.com/news/local/frankfort-moves-forward-with-2027-ironman-race-future-beyond-that-uncertain-benzie-county-northern-michigan-upnorthlive",
+    "article_title": "Frankfort moves forward with 2027 Ironman (UpNorthLive, Nov 17)",
+    "jokes": []
+   },
+   {
+    "id": "2026-11-19-fb-2a",
+    "title": "2A · MID SHOW",
+    "recap": "🎄 Downtown Traverse City's holiday kickoff is now TWO nights for the first time ever. Friday: Cookies & Cocoa Crawl, Find the Grinch, and th",
+    "article_url": "https://www.traverseticker.com/news/how-growing-numbers-safety-concerns-led-to-first-ever-two-night-downtown-holiday-kickoff/",
+    "article_title": "Two-night downtown holiday kickoff (The Ticker, Nov 19)",
+    "jokes": []
+   },
+   {
+    "id": "2026-11-19-fb-2b",
+    "title": "2B · MID SHOW",
+    "recap": "✨ Glen Arbor's Strolling Lights Festival has 20+ trees going up, and this year the money goes to LIFT, a free after-school program for Leela",
+    "article_url": "https://glenarborsun.com/crystal-river-outfitters-recreational-district-hosts-strolling-lights-festival/",
+    "article_title": "Strolling Lights Festival (Glen Arbor Sun, Nov 17)",
+    "jokes": []
+   },
+   {
+    "id": "2026-11-19-fb-3a",
+    "title": "3A · LATE SHOW",
+    "recap": "🎷 Today in 1992, the No. 1 song in America was \"How Do You Talk to an Angel\" by a band that didn't exist, from a TV show that was canceled d",
+    "article_url": "https://www.grunge.com/2315461/no-1-song-november-19-1992-how-do-you-talk-to-an-angel-the-heights/",
+    "article_title": "1992 No. 1 from a band that didn't exist (Grunge, Nov 19)",
+    "jokes": []
+   },
+   {
+    "id": "2026-11-19-fb-3b",
+    "title": "3B · LATE SHOW",
+    "recap": "🎲 It's National Play Monopoly Day. Be honest: did your family finish a whole game, or did somebody flip the board? And what's your house rul",
+    "article_url": "https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/",
+    "article_title": "National Play Monopoly Day (National Day Calendar)",
+    "jokes": []
+   }
+  ]
+ }
 }
