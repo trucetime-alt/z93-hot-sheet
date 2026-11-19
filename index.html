@@ -1628,7 +1628,7 @@ function etPartsAt(date, hm){
 }
 const SHOW_TABS=[{id:'truce',label:'AJ',cls:'tab-aj'},{id:'courtney',label:'Courtney',cls:'tab-courtney'},{id:'callie',label:'Cali',cls:'tab-cali'}];
 function showTabLabel(id){ const t=SHOW_TABS.find(x=>x.id===id); return (t&&t.label)||id; }
-function morningKeys(){ return ['vibe','mood','buzz','verse','cross']; }   // AJ-only show cards
+function morningKeys(){ return ['vibe','mood','verse','cross']; }   // AJ-only show cards (Daily Buzz becomes Trending Local Buzz off AJ's tab)
 function morningEnded(p=etParts()){   // true when the viewed profile tab isn't AJ's: hide AJ-only cards from the slider
   const id=typeof viewProfile==='function'?viewProfile(p):'truce';
   return id!=='truce';
@@ -3519,6 +3519,7 @@ function sectionList(){
     if(k==='weather' || k==='newsclips' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v)) continue;
     if(k==='offcharts' && etParts().dow!==5) continue;   // Off the Charts: Fridays only (ET)
     if(k==='mood' && isSection(s.vibe)) out.push({key:'vibe', v:s.vibe}); // Vibe Check: own tab, right before Mood Boost
+    if(k==='buzz' && typeof morningEnded==='function' && morningEnded()){ out.push({key:k, v:Object.assign({}, v, {title:'🔥 Trending Local Buzz', category:'From the morning'})}); continue; }
     out.push({key:k, v});
   }
   // a Clips tab even if the base sheet has no "clips" section but audio exists
