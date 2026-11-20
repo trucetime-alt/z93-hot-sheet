@@ -1103,7 +1103,7 @@ main{padding-bottom:calc(200px + env(safe-area-inset-bottom,0px))}
 .b59flab{display:block;font-size:.72em;font-weight:800;color:var(--dim);margin:8px 0 2px}.b59lp .r1search{width:100%;min-height:44px;box-sizing:border-box}.b59segs{display:flex;gap:8px}.b59seg{flex:1;min-height:44px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:inherit;font-weight:800}.b59seg.on{border-color:var(--accent);color:var(--accent)}.b59lpgo{width:100%;min-height:48px;margin-top:10px;font-weight:900}.b59lprec{margin-top:12px;font-size:.72em;color:var(--dim)}
 .b59morebox{margin:10px 0}.b59morerow{display:flex;gap:8px;flex-wrap:wrap}.b59morerow .nmore{flex:1;min-height:44px}.b59crap{flex:0 0 auto}.b59extra{border-style:dashed}
 .b59ab,.b59aw{margin:8px 0 12px;border:1px solid var(--accent);border-radius:12px;padding:8px 10px;background:var(--panel)}.b59abh{font-weight:900;font-size:.9em;margin-bottom:6px}.b59abh small{font-weight:600;color:var(--dim)}
-.b59abrow{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-top:1px solid var(--line)}.b59abrow .n{font-weight:900;font-size:1.2em;color:var(--accent);width:1.2em}.b59abrow .tx{flex:1;font-size:.85em}.b59abrow .tx a{font-weight:800;color:inherit}.b59abrow small{display:block;color:var(--dim)}.b59abrow p{margin:4px 0 0;font-size:.9em;opacity:.9}.b59swap{min-height:44px;min-width:70px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:inherit;font-weight:800}
+.b59abrow{display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-top:1px solid var(--line)}.b59abrow .n{font-weight:900;font-size:1.2em;color:var(--accent);width:1.2em}.b59abrow .tx{flex:1;font-size:.85em}.b59abrow .tx a{font-weight:800;color:inherit}.b59abrow small{display:block;color:var(--dim)}.b59abrow p{margin:4px 0 0;font-size:.9em;opacity:.9}.b59air{margin-top:6px}.b59airread{font-size:1.05em;line-height:1.45;margin:4px 0;opacity:1}.b59airw{margin:4px 0 2px;padding-left:1.1em;font-size:.92em}.b59airw li{margin:2px 0}.b59airsrc{font-size:.85em;color:var(--dim);margin-top:4px}.b59abmore{border:0;background:none;color:var(--accent);font-weight:800;padding:6px 4px;min-height:32px;cursor:pointer}.b59swap{min-height:44px;min-width:70px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:inherit;font-weight:800}
 .b59aw ol{margin:4px 0 8px 1.2em;padding:0;font-size:.8em}
 #b59Tease{margin:2px 10px 6px;padding:6px 8px;border-radius:10px;background:var(--panel2);border:1px dashed var(--line);font-size:.74em;display:flex;gap:6px;align-items:center}#b59Tease[hidden]{display:none}#b59Tease .tx{flex:1}#b59Tease input{flex:1;min-height:36px}.b59ted{min-height:44px;min-width:44px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:inherit}
 #b59Brk{position:fixed;top:0;left:0;right:0;z-index:99999;background:#c4121b;color:#fff;padding:8px 12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:.85em;box-shadow:0 2px 10px #0008}#b59Brk a{color:#fff;font-weight:800;flex:1;min-width:160px}#b59Brk small{opacity:.9}#b59Brk button{min-height:44px;padding:4px 12px;border-radius:8px;border:1px solid #fff8;background:#0003;color:#fff;font-weight:800}html.b59brk body{padding-top:56px}
@@ -1396,7 +1396,7 @@ function collectJokes(it, card, index, text){
   const add=s=>{ const t=String(s||'').replace(/^(?:😂+\s*)?(?:JOKES?\s*[:\-–]\s*)?/i,'').replace(/^😂+\s*/,'').trim(); if(t && !out.some(x=>normT(x)===normT(t))) out.push(t); };
   const from=v=>{ if(Array.isArray(v)) v.forEach(add); else if(typeof v==='string' && v.trim()) add(v); };
   if(it && it.jokes!=null) from(it.jokes);
-  else if(index===0 && card && card.jokes!=null) from(card.jokes);
+  else if(index===0 && card && card.jokes!=null && !(it===null && Array.isArray(card.items) && card.items.length>1) && !(Array.isArray(card.items) && card.items.some(x=>x && x!==it && JSON.stringify(x.jokes)===JSON.stringify(card.jokes)))) from(card.jokes);
   String(text||'').split(/\n/).forEach(ln=>{
     const s=ln.trim();
     if(/^😂/.test(s) || /^JOKES?\b/i.test(s)) add(s);
@@ -5066,7 +5066,18 @@ function renderScores(){
     if(!x.live && !x.last && !x.next) row.append(h('div',{className:'scl dim'}, 'Off season'));
     L.append(row); }
   try{ b59CtxRows(L); }catch(e){}
-  L.append(h('div',{className:'scrow note'}, h('div',{className:'scn'}, '🦌 Kingsley Stags'), h('div',{className:'scl dim'}, 'No live public feed for high school scores. Covered in Hot Sheet\'s Monday sports recap.')));
+  try{ const now=Date.now(); const lg=((scoresCtx&&scoresCtx.local)||[]).filter(g=>g && g.atMs && (g.result ? now-g.atMs<3*864e5 : now-g.atMs<6*3600e3)).sort((a,b)=>a.atMs-b.atMs);
+    const dayWord=(ms)=>{ const d=new Date(ms), t=new Date(); const k=x=>x.toLocaleDateString('en-US',{timeZone:'America/New_York'}); if(k(d)===k(t)) return 'TONIGHT'; const tm=new Date(now+864e5); if(k(d)===k(tm)) return 'TOMORROW'; return d.toLocaleDateString('en-US',{timeZone:'America/New_York',weekday:'long'}).toUpperCase(); };
+    for(const g of lg){ const row=h('div',{className:'scrow lgrow'}, h('div',{className:'scn'}, h('span',{'aria-hidden':'true'}, (g.icon||'🏈')+' '), g.team||'Local'));
+      if(g.result) row.append(h('div',{className:'scl'+(/^W/i.test(g.result)?' w':/^L/i.test(g.result)?' l':'')}, h('b',{}, 'Final: '), g.result+' '+(g.home?'vs ':'at ')+g.vs));
+      else row.append(h('div',{className:'scl live'}, h('b',{}, (dayWord(g.atMs)==='TONIGHT'&&new Date(g.atMs).getHours()<17?'TODAY':dayWord(g.atMs))+': '), (g.home?'vs ':'at ')+g.vs+' · '+gtime(g.atMs)+' ET'+(g.where?' · '+g.where:'')));
+      if(g.stakes) row.append(h('div',{className:'scl rundown'}, '🏆 '+g.stakes));
+      if(g.line) row.append(h('div',{className:'scl rundown'}, '📝 '+g.line));
+      if(g.tickets && !g.result) row.append(h('div',{className:'scl dim'}, '🎟️ '+g.tickets));
+      if(g.link) row.append(h('div',{className:'scl dim'}, h('a',{href:g.link,target:'_blank',rel:'noopener'}, 'Read more ↗')));
+      L.insertBefore(row, L.firstChild); }
+    if(!lg.length) L.append(h('div',{className:'scrow note'}, h('div',{className:'scn'}, '🦌 Kingsley Stags'), h('div',{className:'scl dim'}, 'No game this week on file.')));
+  }catch(e){ console.warn('local games', e); }
 }
 function openScores(){ $('#scoresModal').classList.add('on'); renderScores(); fetchScores(false); fetchScoresCtx(); }
 $('#scoresChip').onclick=openScores; $('#scoresRefresh').onclick=()=>fetchScores(true);
@@ -7123,13 +7134,17 @@ function b59MoreBox(scope, filt, label){ const wrap=h('div',{className:'b59moreb
 /* ---------- item 24a: auto Daily Buzz ---------- */
 var b59AB=lsGet('hs:autoBuzz',{});
 function b59RT(it){ const w=String(it.desc||'').split(/\s+/).filter(Boolean).length||Math.round(String(it.title||'').split(/\s+/).length*3); const s=Math.max(15, Math.round(w/160*60/5)*5); return '~'+Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
-function b59BuzzCands(){ const c=curNews('local'); if(!c) return []; const pool=b59MapPool((tickerCur.local||{}).pool,'pool'); return c.picks.concat(c.more, pool).filter(i=>i.title && !(i.soft)); }
+var b59Air=lsGet('hs:onair',null); (async()=>{ if(!isHttp) return; try{ const j=await fetchJson('onair.json'); if(j && j.items){ b59Air=j; lsSet('hs:onair', j); if(typeof rerender==='function' && state.tab==='buzz') rerender(); } }catch(e){} })();
+function b59AirFor(it){ return (b59Air && b59Air.items && it && it.tid && b59Air.items[it.tid])||null; }
+function b59CleanDesc(s){ return String(s||'').replace(/^WPBN offers news.*?Manton, Michigan\.\s*/,'').replace(/^[A-Z][A-Z .,]+(, Mich\.)?,?\s*\(WPBN\/WGTU\)\s*--\s*/,'').replace(/^[A-Z][A-Z ]+\s*[—-]\s*/,''); }
+function b59BuzzCands(){ const c=curNews('local'); if(!c) return []; const pool=b59MapPool((tickerCur.local||{}).pool,'pool'); const all=c.picks.concat(c.more, pool).filter(i=>i.title && !(i.soft)); return all.filter(i=>b59AirFor(i)).concat(all.filter(i=>!b59AirFor(i))); }
 function b59AutoBuzz(){ const date=etParts().date; const C=b59BuzzCands(); if(!C.length) return null; const st=b59AB[date]=b59AB[date]||{ids:[]};
   const byId=id=>C.find(i=>(i.tid||normT(i.title))===id);
   const slots=[]; for(let k=0;k<3;k++){ let it=st.ids[k]?byId(st.ids[k]):null; if(!it){ it=C.find(i=>!slots.includes(i) && !st.ids.includes(i.tid||normT(i.title))) || C.find(i=>!slots.includes(i)); } if(it){ slots.push(it); st.ids[k]=it.tid||normT(it.title); } }
   const card=h('section',{className:'b59ab'}, h('div',{className:'b59abh'}, '⚡ Auto Daily Buzz', h('small',{}, ' top 3 local · by curation score')));
   slots.forEach((it,k)=>{ const row=h('div',{className:'b59abrow'}, h('span',{className:'n'}, String(k+1)),
-    h('div',{className:'tx'}, h('a',{href:it.link||'#', target:'_blank', rel:'noopener'}, it.title), h('small',{}, (it.src||'')+(it.at?' · '+b59Ago(it.at):'')+' · read '+b59RT(it)), it.desc?h('p',{}, it.desc.split(/\s+/).slice(0,45).join(' ')+'…'):null),
+    h('div',{className:'tx'}, h('a',{href:it.link||'#', target:'_blank', rel:'noopener'}, it.title), h('small',{}, (it.src||'')+(it.at?' · '+b59Ago(it.at):'')+' · read '+b59RT(it)), (()=>{ const A=b59AirFor(it); if(A){ const box=h('div',{className:'b59air'}); box.append(h('p',{className:'b59airread'}, '🎙️ '+A.read)); const ws=[['WHO',A.who],['WHAT',A.what],['WHEN',A.when],['WHERE',A.where],['WHY',A.why]].filter(x=>x[1]); if(ws.length) box.append(h('ul',{className:'b59airw'}, ...ws.map(x=>h('li',{}, h('b',{}, x[0]+': '), x[1])))); box.append(h('div',{className:'b59airsrc'}, 'Source: '+(A.src||it.src||'')+(it.link?' · ':''), it.link?h('a',{href:it.link,target:'_blank',rel:'noopener'}, 'article ↗'):'')); return box; }
+  const d=b59CleanDesc(it.desc); if(!d) return null; const w=d.split(/\s+/); const p=h('p',{className:'b59abd'}, '(No on-air copy yet · article notes) '+(w.length<=45?d:w.slice(0,45).join(' ')+'… ')); if(w.length>45){ const m=h('button',{type:'button',className:'b59abmore'}, 'Read full ▾'); m.onclick=()=>{ tapHaptic(); p.textContent='(Article notes) '+d+' '; }; p.append(m); } p.append(h('div',{className:'b59airsrc'}, 'Source: '+(it.src||''))); return p; })()),
     h('button',{type:'button', className:'b59swap', 'aria-label':'Swap story '+(k+1), on:{click:()=>{ tapHaptic(); const cur=st.ids[k]; const i0=Math.max(0,C.findIndex(i=>(i.tid||normT(i.title))===cur)); let nx=null; for(let s=1;s<=C.length;s++){ const c=C[(i0+s)%C.length]; const id=c.tid||normT(c.title); if(!st.ids.includes(id)){ nx=id; break; } } if(nx){ st.ids[k]=nx; try{ LS.setItem('hs:autoBuzz', JSON.stringify(b59AB)); }catch(e){} try{ b59LogAct(it,'news','local','crap',false); }catch(e){} rerender(); } }}}, '⟳ Swap'));
     card.append(row); });
   try{ LS.setItem('hs:autoBuzz', JSON.stringify(b59AB)); }catch(e){}

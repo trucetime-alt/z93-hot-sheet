@@ -67,5 +67,23 @@
    "weight": 10,
    "line": "Mercy Miller powers No. 8 Houston past No. 11 Kansas for Players Era 8 title"
   }
+ ],
+ "local": [
+  {
+   "id": "kingsley-almont-2026-d6-semi",
+   "team": "Kingsley Stags",
+   "icon": "🦌",
+   "sport": "football",
+   "atMs": 1795284000000,
+   "start": "2026-11-21T13:00-05:00",
+   "vs": "Almont",
+   "home": false,
+   "where": "Brookwood Athletic Complex, Clare",
+   "stakes": "MHSAA Division 6 state semifinal (both 12-0). Winner plays in the D6 final at Ford Field, Fri Nov 27, 4 PM.",
+   "line": "Rematch of Kingsley's 38-24 win over Almont in the 2023 D6 title game. Stags beat Sanford Meridian 34-28 for the regional; RB Perry Smith has 1,260 yards and 19 TDs.",
+   "tickets": "$12 on GoFan · streaming on NFHS Network",
+   "link": "https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html",
+   "result": null
+  }
  ]
 }
