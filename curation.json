@@ -1,0 +1,127 @@
+{
+ "version": 1,
+ "note": "Editable curation config for the Hot Sheet news rows. 'icons' is the at-a-glance icon map (lowest priority number wins; at most 'max' icons per row). 'rules' are case-insensitive regexes tested against a story's title and summary. 'tagMap' maps the curator's own tags (ticker.json tag/tags) to an icon key. 'hot' = how many sources make a story trending. 'new' = shown when the story wasn't on this device at your last visit and is at most newHours old. Change icons, wording or rules here; no code change needed. 'pinTopics' = stories matching 'match' get the 'boost' and a label chip and sit at the top (e.g. Stags day). 'suppressTopics' = stories matching 'match' are dropped from the feed (e.g. don't rehash Truce's own Ironman story). Both are regexes, case-insensitive.",
+ "max": 2,
+ "newHours": 12,
+ "hot": {
+  "minVotes": 4
+ },
+ "icons": {
+  "hot": {
+   "icon": "🔥",
+   "label": "Trending / hot (many outlets have it)",
+   "priority": 1
+  },
+  "new": {
+   "icon": "✨",
+   "label": "New (not here at your last visit, under ~12h old)",
+   "priority": 2
+  },
+  "gossip": {
+   "icon": "🫖",
+   "label": "Gossip / rumor (Cali's Tea Party)",
+   "priority": 3
+  },
+  "movies": {
+   "icon": "🎬",
+   "label": "Movies (Friday releases)",
+   "priority": 4
+  },
+  "music": {
+   "icon": "🎵",
+   "label": "Music / artist news",
+   "priority": 5
+  },
+  "nostalgia": {
+   "icon": "📼",
+   "label": "'90s-to-now nostalgia",
+   "priority": 6
+  },
+  "sighting": {
+   "icon": "👀",
+   "label": "Celebrity sighting / spotted",
+   "priority": 7
+  },
+  "funny": {
+   "icon": "😂",
+   "label": "Funny roundup",
+   "priority": 8
+  },
+  "family": {
+   "icon": "🏠",
+   "label": "Family / parenting / school",
+   "priority": 9
+  },
+  "gaming": {
+   "icon": "🎮",
+   "label": "GTA / gaming",
+   "priority": 10
+  },
+  "hottake": {
+   "icon": "📣",
+   "label": "Hot take",
+   "priority": 11
+  },
+  "sports": {
+   "icon": "🏈",
+   "label": "Sports / local high school (Kingsley Stags)",
+   "priority": 12
+  }
+ },
+ "tagMap": {
+  "music": "music",
+  "artist": "music",
+  "nostalgia": "nostalgia",
+  "sports": "sports",
+  "gossip": "gossip",
+  "movies": "movies",
+  "gaming": "gaming",
+  "family": "family",
+  "schools": "family"
+ },
+ "rules": {
+  "gossip": "\\b(rumou?rs?|rumou?red|reportedly|sources say|insider|dating|romance|feud|cheating|baby bump|engaged|engagement|breakup|split|divorce|spill(?:s|ed) the tea|secretly|affair)\\b",
+  "movies": "\\b(movie|movies|film|box office|trailer|premieres?|in theaters|opens friday|sequel|biopic|streaming debut|release date)\\b",
+  "music": "\\b(album|single|tour|concert|grammys?|billboard|hot 100|setlist|music video|songwriter|singer)\\b",
+  "nostalgia": "\\b(90s|'90s|1990s|2000s|y2k|throwback|reunion|reunite[sd]?|nostalgi\\w*|anniversary|boy band)\\b",
+  "sighting": "\\b(spotted|was seen|seen (?:at|with|in)|sighting|paparazzi|pictured|caught on camera)\\b",
+  "funny": "\\b(funny|hilarious|viral|roundup|memes?|prank|bloopers?|fails?|laugh|jokes?)\\b",
+  "family": "\\b(parent(?:s|ing)?|kids?|children|school|schools|students?|teachers?|daycare|family|moms?|dads?|toddlers?|teens?)\\b",
+  "gaming": "\\b(gta|grand theft auto|gaming|video games?|playstation|xbox|nintendo|rockstar|fortnite|minecraft)\\b",
+  "hottake": "\\b(hot take|opinion|unpopular opinion|debate|controversial|divisive|backlash|slams|fires back|calls out)\\b",
+  "sports": "\\b(kingsley|stags|mhsaa|high school|football|basketball|hockey|baseball|softball|playoffs?|lions|wolverines|spartans)\\b"
+ },
+ "pinTopics": [
+  {
+   "id": "stags",
+   "label": "Stags day",
+   "icon": "🏈",
+   "boost": 300,
+   "match": "\\b(kingsley (?:stags|high school|schools?|football|basketball|hockey|volleyball|wrestling|cross country|softball|baseball|meets|beats?|falls?|wins?|advances|semifinals?|playoffs?|vs\\.?)|stags (?:football|basketball|hockey|volleyball|wrestling|playoff\\w*|win|beat|fall|lose))\\b"
+  }
+ ],
+ "suppressTopics": [
+  {
+   "id": "ironman",
+   "label": "Ironman (Truce's own story; don't rehash)",
+   "match": "\\b(ironman|iron man (?:triathlon|race|finisher|world championship|competitor))\\b"
+  }
+ ],
+ "trending": {
+  "windowHours": 4,
+  "minSources": 3,
+  "spikeHours": 24,
+  "spikeSources": 6,
+  "localMinSources": 3,
+  "note": "A story is 'hot' (forced to the top with the fire icon) when at least minSources different outlets ran it inside windowHours, or spikeSources outlets inside spikeHours, or it's a big Detroit / Michigan / MSU result."
+ },
+ "scoresNote": "Scoreboard rundown lines come from ESPN's public scoreboard JSON via tools/curate_ticker.py (scores-context.json). Detroit teams (Lions, Tigers, Pistons, Red Wings, Michigan, MSU) sort first.",
+ "concerts": {
+  "note": "Concert watch (tools/concert_watch.py). boostArtists: extra artists to chase even if not in rotation. suppressArtists: never show. venuePages: extra venue pages to read ({name,url,kind: jsonld|ics,venue,region}). Shows 30-180 days out are flagged 'plan'.",
+  "boostArtists": [],
+  "suppressArtists": [],
+  "venuePages": [],
+  "max": 150,
+  "maxFiller": 25
+ }
+}

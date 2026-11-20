@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "note": "Calendar events for the week view. Fields: id, date (YYYY-MM-DD), time (HH:MM, optional), endTime (HH:MM, optional: shows as a range), title, icon, note, onlyShift (optional), url (optional).",
+  "events": [
+    {
+      "id": "toys-for-tots-2026",
+      "date": "2026-11-21",
+      "time": "12:00",
+      "endTime": "14:00",
+      "title": "Toys for Tots kickoff",
+      "icon": "🎁",
+      "note": "Drive-through toy drop-off with Santa at Fox Grand Traverse, noon to 2 PM",
+      "type": "event"
+    }
+  ]
+}
