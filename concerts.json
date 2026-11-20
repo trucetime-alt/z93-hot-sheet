@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-20T04:35:24-05:00",
+ "updated": "2026-11-20T04:54:51-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 205,
+ "artistsWatched": 212,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -73,7 +73,7 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 85
+   "count": 105
   }
  },
  "shows": [
@@ -170,22 +170,22 @@
    "priority": 60
   },
   {
+   "title": "Bad blood: Metro Detroit woman spent $212K on Taylor Swift tickets in scam - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQR3lPZ3pHQjBOQmJKeFg0YlBPaE9Ba1FmOU5OWS1acm53ZktXZFpCc2xXaF9rcXNkU1FpNzJYb3dWVVAzUE4zbWZRWEpmZUEwbWJramZvcV9ENzZCNjZzb1k3VkxubXp3eldtaktCS19nTGxDQUJCQnBuaFB3NVVxOGl6TmRXdFc5YVpjU3hfY0MxRE9ycDJuUWdpWFl3TktOc3hTUjJmNU1ab2hVbHc5ZzlmRWg4TzZLVC1xQVdKa19SSUtpcUNLOGtLTWVqSUstVHlVUmhrM0UwNUtXZ3Z5dlpNQkg?oc=5",
+   "at": "2026-09-22T07:00:00+00:00",
+   "src": "The Detroit News",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
    "title": "Detroit gets second Bruno Mars concert after record-breaking ticket sales - ClickOnDetroit | WDIV Local 4",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOTFuSnZCR01XYkJjTFE2Tmo0RU44SW9XaEdpNndwVTdVS2F2a0djZFRybzdWSmNkRldLSVRlM3RkaWpqS2Z1YzVjaEVzRDVDLUliS0hUQnpDMEhZZUVwczZEU1FReEN5NEFiYjgzb1BxaFk3VGxNR1pQT1NTS2VRM2YzYXhneldDT0hsV19sUVBxV3VYcDVZQWhhVkU0ZDZ2eDBKUzRnbWhLUHY5MEpuOFZrNlVvSzBYYUZBMld6RDRvNGhrNFE?oc=5",
    "at": "2026-01-16T08:00:00+00:00",
    "src": "ClickOnDetroit | WDIV Local 4",
    "artists": [
     "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Olivia Rodrigo is turning heads with her songs, concert attire - The Detroit News",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGw3N3ZXdnZac3gtaFRPdEdSRXcwa1VGejBiWnJIR0N1bk5DVklZbmh2MEpFWkd2ZTdZV3AxOWJZM1J2OGV6aGlzelNLVjd1cVJoSzJNVG1MamRSTmV1enlpazBvNW1BekZBVjlaNW8zUVI3S1RYRHZPanMyY3lWUWFhY3ZEMkFPc2l5VVFiS0ZHZHFlaGd2T0s5WjVvMUV4VDNhdER2aW83OTNIOTVwdjZKSk9MVjI0SlBfT0hLM2ZWRXRuMWQtTXBUTV9ZTWlZ?oc=5",
-   "at": "2026-05-13T07:00:00+00:00",
-   "src": "The Detroit News",
-   "artists": [
-    "Olivia Rodrigo"
    ],
    "priority": 60
   },
@@ -210,12 +210,12 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars announces massive Detroit stadium concert as part of new tour - The Detroit News",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVlY4SkRwOXZ2MFFOUEszcmxSLTEzZEY4YmlKNFZmQmFiWnBrUHByUUUybjRjQ3pfUGJncGt6eWxXMUJka1lHcU5HTUVVSGd5cy1XTnJ5MW93MEh3Sy04bVlPZHdvSjVLMmhCcmx4Vi1SX1BQal9LVUFBZS1QcXY2d3ViLUNmYlZQYV9yMExxS3N6TXdwaXBmbjh5TmItSnFSN1k3R081Q2twWnZMQzdWRjhvTXdzeEtxd0tFMng0eWV0QUZ4VVlOT0RtQXhDSklLOHVwTHk0MTFqSWc1OXpjTEc5Z2Q?oc=5",
-   "at": "2026-01-08T08:00:00+00:00",
+   "title": "Olivia Rodrigo is turning heads with her songs, concert attire - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGw3N3ZXdnZac3gtaFRPdEdSRXcwa1VGejBiWnJIR0N1bk5DVklZbmh2MEpFWkd2ZTdZV3AxOWJZM1J2OGV6aGlzelNLVjd1cVJoSzJNVG1MamRSTmV1enlpazBvNW1BekZBVjlaNW8zUVI3S1RYRHZPanMyY3lWUWFhY3ZEMkFPc2l5VVFiS0ZHZHFlaGd2T0s5WjVvMUV4VDNhdER2aW83OTNIOTVwdjZKSk9MVjI0SlBfT0hLM2ZWRXRuMWQtTXBUTV9ZTWlZ?oc=5",
+   "at": "2026-05-13T07:00:00+00:00",
    "src": "The Detroit News",
    "artists": [
-    "Bruno Mars"
+    "Olivia Rodrigo"
    ],
    "priority": 60
   },
@@ -224,6 +224,16 @@
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQXzl6QWNQeE5sTkFsd1dObUlWcnprN1lsUjVjWEUzc3ZNRDJZWmNCMWVhN3hKY1g3dldBdl9mdks2RF95ekh6TEZHd0FCd293RUVjV2xibUNIZFVjYTFsRzYySVE1WjJLQ3NPNW5DeEJITUJCMXRwNk9HS3JZaXRiTWJxRXEzcnB0LUxnWTBvaVhmVjlBVkRsb3FfdW9HX3U5Wnh0NXFrdVJZNEJhaEVsaXlyb0JRQ0lQMEQ3aHo0Q2s0b3ZkOE02dHY4anVnTk44bm43djNn?oc=5",
    "at": "2026-03-10T07:00:00+00:00",
    "src": "MLive.com",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars announces massive Detroit stadium concert as part of new tour - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVlY4SkRwOXZ2MFFOUEszcmxSLTEzZEY4YmlKNFZmQmFiWnBrUHByUUUybjRjQ3pfUGJncGt6eWxXMUJka1lHcU5HTUVVSGd5cy1XTnJ5MW93MEh3Sy04bVlPZHdvSjVLMmhCcmx4Vi1SX1BQal9LVUFBZS1QcXY2d3ViLUNmYlZQYV9yMExxS3N6TXdwaXBmbjh5TmItSnFSN1k3R081Q2twWnZMQzdWRjhvTXdzeEtxd0tFMng0eWV0QUZ4VVlOT0RtQXhDSklLOHVwTHk0MTFqSWc1OXpjTEc5Z2Q?oc=5",
+   "at": "2026-01-08T08:00:00+00:00",
+   "src": "The Detroit News",
    "artists": [
     "Bruno Mars"
    ],
@@ -260,20 +270,20 @@
    "priority": 60
   },
   {
-   "title": "The Eras Tour: Taylor Swift takes on Detroit for the 13th time. - The Michigan Daily",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenpxUFh0bld4c3ZTMGkxUFpJZExpUG1FWkRPN3pPM1NsbE9KaUczMllZSkIwbWx1Rm5ubjRJc1gyRWJUVWRva0NybU55WmFyOW4xRjM5cEx1dXZ1RUR6MGRjeU9PMXJIcF9BcTREMTl0UWtKYnZPMEhlSF9OM1VzZFJiZG5RV042S2xCS2hSaFl6UFNQV3FWWnlXS0FYNUc2djNIT3lxSWM4UmJubFM4?oc=5",
-   "at": "2023-06-10T07:00:00+00:00",
-   "src": "The Michigan Daily",
+   "title": "Zach Bryan’s Michigan Concert: Will It Join This List of Historic Shows by Taylor Swift, The Beatles & More? - Billboard",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWmJvWlYxWEZaS2RKWWVSQTFVRlhBYS1LRDFmanJPWHVRQ3NQTFU0azFOdkNtVmUtZUtwTXl4VlBIbUZaVG9UZk4xTmxrMWtwZENqamJoa3Q5aEZ1WmdBcGhhUUsxZ2VzY1F3ZEl3TE1KWFhzd1RBcFkzc19Jc3BCUWZNWVZWdHZjQWItejVTMmlGYXhhdVlz?oc=5",
+   "at": "2025-09-26T07:00:00+00:00",
+   "src": "Billboard",
    "artists": [
     "Taylor Swift"
    ],
    "priority": 60
   },
   {
-   "title": "Zach Bryan’s Michigan Concert: Will It Join This List of Historic Shows by Taylor Swift, The Beatles & More? - Billboard",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWmJvWlYxWEZaS2RKWWVSQTFVRlhBYS1LRDFmanJPWHVRQ3NQTFU0azFOdkNtVmUtZUtwTXl4VlBIbUZaVG9UZk4xTmxrMWtwZENqamJoa3Q5aEZ1WmdBcGhhUUsxZ2VzY1F3ZEl3TE1KWFhzd1RBcFkzc19Jc3BCUWZNWVZWdHZjQWItejVTMmlGYXhhdVlz?oc=5",
-   "at": "2025-09-26T07:00:00+00:00",
-   "src": "Billboard",
+   "title": "The Eras Tour: Taylor Swift takes on Detroit for the 13th time. - The Michigan Daily",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenpxUFh0bld4c3ZTMGkxUFpJZExpUG1FWkRPN3pPM1NsbE9KaUczMllZSkIwbWx1Rm5ubjRJc1gyRWJUVWRva0NybU55WmFyOW4xRjM5cEx1dXZ1RUR6MGRjeU9PMXJIcF9BcTREMTl0UWtKYnZPMEhlSF9OM1VzZFJiZG5RV042S2xCS2hSaFl6UFNQV3FWWnlXS0FYNUc2djNIT3lxSWM4UmJubFM4?oc=5",
+   "at": "2023-06-10T07:00:00+00:00",
+   "src": "The Michigan Daily",
    "artists": [
     "Taylor Swift"
    ],
@@ -338,17 +348,7 @@
     "Taylor Swift"
    ],
    "priority": 60
-  },
-  {
-   "title": "How to find Olivia Rodrigo tickets in Detroit for under $340 - MLive.com",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3JMNWRIT2xGbWVLZlZna18tQTN2SVF2RXI4Ym9FN3dKSzBjclVlbVNpVnFPcC1Vd29XdGlsTGlsRTd1R2VLRUtvOTZlY1pROEN1YTZWTTBjZnVfbFc5X1VOOUY5bnZ4cWpQVE5rSklfR2JvdXppb3lHR3F2Y2ZiQ0p2UEZDU0JmR2lERGVEdGNOWjM2U08tUTNWc0ZRdjZk?oc=5",
-   "at": "2024-03-05T08:00:00+00:00",
-   "src": "MLive.com",
-   "artists": [
-    "Olivia Rodrigo"
-   ],
-   "priority": 60
   }
  ],
- "tookSec": 27.8
+ "tookSec": 27.4
 }

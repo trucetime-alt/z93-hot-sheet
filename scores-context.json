@@ -1,87 +1,23 @@
 {
  "version": 1,
- "updated": "2026-11-19T22:50:18-05:00",
- "updatedMs": 1795146618767,
+ "updated": "2026-11-20T04:53:03-05:00",
+ "updatedMs": 1795168383567,
  "games": [
-  {
-   "id": "401910013",
-   "league": "nba",
-   "sport": "basketball",
-   "atMs": 1795050000000,
-   "state": "post",
-   "detail": "Final",
-   "home": {
-    "id": "3",
-    "abbr": "NO",
-    "name": "Pelicans",
-    "score": "109",
-    "winner": false,
-    "rank": null,
-    "record": "5-11"
-   },
-   "away": {
-    "id": "8",
-    "abbr": "DET",
-    "name": "Pistons",
-    "score": "122",
-    "winner": true,
-    "rank": null,
-    "record": "10-4"
-   },
-   "detroit": true,
-   "postseason": false,
-   "note": "",
-   "link": "https://www.espn.com/nba/game/_/gameId/401910013/pistons-pelicans",
-   "weight": 40,
-   "line": "John Collins scores 20 points and Pistons hit 17 3s in 122-109 win over Pelicans"
-  },
-  {
-   "id": "401892739",
-   "league": "nhl",
-   "sport": "hockey",
-   "atMs": 1795048200000,
-   "state": "post",
-   "detail": "Final",
-   "home": {
-    "id": "5",
-    "abbr": "DET",
-    "name": "Red Wings",
-    "score": "1",
-    "winner": false,
-    "rank": null,
-    "record": ""
-   },
-   "away": {
-    "id": "1",
-    "abbr": "BOS",
-    "name": "Bruins",
-    "score": "4",
-    "winner": true,
-    "rank": null,
-    "record": ""
-   },
-   "detroit": true,
-   "postseason": false,
-   "note": "",
-   "link": "https://www.espn.com/nhl/game/_/gameId/401892739/bruins-red-wings",
-   "weight": 40,
-   "line": "Bruins beat Red Wings 4-1, spoil Detroit's Centennial celebration game"
-  },
   {
    "id": "401873066",
    "league": "nfl",
    "sport": "football",
    "atMs": 1795137300000,
-   "state": "in",
-   "detail": "10:05 - 4th",
+   "state": "post",
+   "detail": "Final",
    "home": {
     "id": "34",
     "abbr": "HOU",
     "name": "Texans",
     "score": "26",
-    "winner": false,
+    "winner": true,
     "rank": null,
-    "record": "3-6"
+    "record": "4-6"
    },
    "away": {
     "id": "11",
@@ -90,78 +26,46 @@
     "score": "3",
     "winner": false,
     "rank": null,
-    "record": "3-7"
+    "record": "3-8"
    },
    "detroit": false,
    "postseason": false,
    "note": "",
-   "link": "",
+   "link": "https://www.espn.com/nfl/game/_/gameId/401873066/colts-texans",
    "weight": 15,
-   "line": ""
+   "line": "C.J. Stroud throws for 3 TDs as the Texans roll past the Colts 26-3"
   },
   {
-   "id": "401909742",
+   "id": "401920518",
    "league": "mens-college-basketball",
    "sport": "basketball",
-   "atMs": 1795053600000,
+   "atMs": 1795147200000,
    "state": "post",
    "detail": "Final",
    "home": {
-    "id": "12",
-    "abbr": "ARIZ",
-    "name": "Arizona",
-    "score": "85",
-    "winner": true,
-    "rank": 12,
-    "record": "4-1"
-   },
-   "away": {
-    "id": "41",
-    "abbr": "CONN",
-    "name": "UConn",
-    "score": "79",
+    "id": "2305",
+    "abbr": "KU",
+    "name": "Kansas",
+    "score": "83",
     "winner": false,
-    "rank": 3,
-    "record": "4-1"
-   },
-   "detroit": false,
-   "postseason": false,
-   "note": "",
-   "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909742/uconn-arizona",
-   "weight": 10,
-   "line": "Ivan Kharchenkov scores 20 points and No. 12 Arizona knocks off No. 3 UConn 85-79"
-  },
-  {
-   "id": "401920514",
-   "league": "mens-college-basketball",
-   "sport": "basketball",
-   "atMs": 1795038480000,
-   "state": "post",
-   "detail": "Final",
-   "home": {
-    "id": "57",
-    "abbr": "FLA",
-    "name": "Florida",
-    "score": "76",
-    "winner": false,
-    "rank": 1,
+    "rank": 11,
     "record": "5-1"
    },
    "away": {
     "id": "248",
     "abbr": "HOU",
     "name": "Houston",
-    "score": "86",
+    "score": "92",
     "winner": true,
     "rank": 8,
-    "record": "5-0"
+    "record": "6-0"
    },
    "detroit": false,
    "postseason": false,
-   "note": "Players Era 8",
-   "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920514/houston-florida",
+   "note": "Players Era 8 - Championship",
+   "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920518/houston-kansas",
    "weight": 10,
-   "line": "Dedan Thomas Jr. scores 30 as No. 8 Houston topples No. 1 Florida 86-76 in Players Era 8 semifinals"
+   "line": "Mercy Miller powers No. 8 Houston past No. 11 Kansas for Players Era 8 title"
   }
  ]
 }
