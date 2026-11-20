@@ -1,1 +1,396 @@
-{"version": 1, "station": "Z93", "market": "Traverse City, MI", "timezone": "America/New_York", "logo": "z93-logo.png", "studioLine": "231-929-4487", "showDays": [1, 2, 3, 4, 5], "sponsorDeadline": "09:00", "sponsorsNote": "Copy of sponsors.json at round-1 build (2026-11-19). The app still reads sponsors.json first; these are the fallback when it can't load.", "sponsors": [{"id": "forefront", "name": "Forefront Credit Union", "short": "Forefront", "icon": "💳", "read": "Whatever it is you're dreaming about starts with a question that's asked. Forefront.", "triggers": ["weather"], "keywords": [], "active": true, "logo": "", "shifts": ["truce"]}, {"id": "tvc-airport", "name": "Traverse City Airport (TVC)", "short": "TVC Airport", "icon": "✈️", "read": "tvcairport.com studio line", "triggers": ["studio-line"], "keywords": [], "active": true, "logo": ""}, {"id": "devette-ford", "name": "Devette & Ford Insurance Agency", "short": "Devette & Ford", "icon": "🎬", "read": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.", "sourceNote": "from website, confirm with hourly log", "source": "https://www.z93hits.com/courtney", "shifts": ["courtney"], "days": [1], "freq": "shift", "active": true, "triggers": [], "keywords": [], "logo": ""}, {"id": "jimmy-johns-lunchbox", "name": "Jimmy John's", "short": "Jimmy John's", "icon": "🥪", "read": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.", "sourceNote": "from website, confirm with hourly log", "source": "https://www.z93hits.com/courtney", "shifts": ["courtney"], "days": [1, 2, 3, 4, 5], "freq": "shift", "active": true, "triggers": [], "keywords": [], "logo": ""}, {"id": "pawsd-in-time", "name": "Paws'd in Time", "short": "Paws'd in Time", "icon": "🐾", "read": "Cherryland Humane Society Pet of the Week, presented by Paws'd in Time. From the website, confirm with the hourly log.", "sourceNote": "from website, confirm with hourly log", "source": "https://www.z93hits.com/courtney", "shifts": ["courtney"], "days": [3], "freq": "shift", "active": true, "triggers": [], "keywords": [], "logo": ""}, {"id": "mi-health-wellness", "name": "MI Health & Wellness Center", "short": "MI Health & Wellness", "icon": "💛", "read": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.", "sourceNote": "from website, confirm with hourly log", "source": "https://www.z93hits.com/courtney", "shifts": ["courtney"], "days": [5], "freq": "shift", "active": true, "triggers": [], "keywords": [], "logo": ""}], "triggerReads": [{"id": "jj-lunchbox-1230", "sponsor": "jimmy-johns-lunchbox", "host": "courtney", "days": [1, 2, 3, 4, 5], "at": "12:30", "windowMin": [-5, 20], "title": "Jimmy John's Lunchbox giveaway", "read": "Courtney's Lunchbox, presented by Jimmy John's: call the studio line at 231-929-4487 for your chance to win two free Jimmy John's subs. From the website, confirm with the hourly log."}], "shifts": [{"id": "truce", "name": "Truce", "label": "AJ", "start": "00:00", "end": "10:00"}, {"id": "courtney", "name": "Courtney", "label": "Courtney", "start": "10:00", "end": "14:00"}, {"id": "callie", "name": "Callie", "label": "Cali", "start": "14:00", "end": "19:00"}], "clocks": {"truce": [{"at": "05:30", "title": "Show opener supercut", "sec": "vibe", "note": "Quick-bites montage that plays right before AJ's intro"}, {"at": "06:00", "title": "Vibe Check", "sec": "vibe"}, {"at": "06:30", "title": "Mood Boost", "sec": "mood"}, {"at": "07:00", "title": "Daily Buzz", "sec": "buzz"}, {"at": "07:00", "title": "Verse Reverse", "sec": "verse"}, {"at": "07:30", "title": "Personal (on hold)", "sec": "", "note": "On hold, no giveaways right now"}, {"at": "08:00", "title": "Mental Health", "sec": "mental"}, {"at": "08:30", "title": "Main Character", "sec": "", "days": [1]}, {"at": "08:30", "title": "Guilty Pleasure", "sec": "", "days": [2]}, {"at": "08:30", "title": "Old vs New", "sec": "", "days": [3]}, {"at": "08:30", "title": "AJ's Mini Mix", "sec": "", "days": [4]}, {"at": "08:30", "title": "Off the Charts", "sec": "offcharts", "days": [5]}, {"at": "09:00", "title": "Flashback", "sec": "flash"}, {"at": "09:00", "title": "Sponsor reads due", "sec": "", "sponsorDeadline": true}, {"at": "09:30", "title": "Cross Talk", "sec": "cross"}], "courtney": [{"at": "10:08", "title": "Midday Song Battle intro", "sec": "battle"}, {"at": "10:20", "title": "93 Minutes commercial-free (Kurtz Car Stereo)", "sec": ""}, {"at": "11:03", "title": "Keeping Up With Courtney: Hollywood News", "sec": "kuwc"}, {"at": "11:20", "title": "Midday Song Battle re-intro", "sec": "battle"}, {"at": "11:30", "title": "All Request Hour starts", "sec": ""}, {"at": "12:00", "title": "Play the Midday Song Battle winner", "sec": "battle"}, {"at": "12:30", "title": "Lunchbox giveaway: Jimmy John's, two free subs, on the studio line", "sec": "", "trigger": "jj-lunchbox-1230"}, {"at": "13:30", "title": "Random engagement question on the studio line", "sec": "studioq"}], "callie": [{"at": "14:20", "title": "93 Minutes commercial-free (Kurtz Car Stereo)", "sec": ""}, {"at": "18:20", "title": "93 Minutes commercial-free (Kurtz Car Stereo)", "sec": ""}]}, "clocksNote": "AJ clock from Truce's printed sheet (Nov 19, 2026); opener 5:30 kept for the supercut.", "voices": {"truce": {"name": "AJ (Truce)", "draft": true, "style": "Morning-drive energy, quick and local. Short punchy sentences, one idea per line, ends on a joke or a call to the studio line.", "sentenceLength": "short (8-14 words)", "slang": ["up north", "the Stags"], "avoid": ["politics", "heavy crime detail", "'folks'", "'without further ado'"], "signoff": "Showtime."}, "courtney": {"name": "Courtney", "draft": true, "style": "Midday, warm and chatty, pop-culture first. Talks to one listener at work. Light celebrity snark, never mean.", "sentenceLength": "medium", "slang": [], "avoid": ["politics", "sex", "heavy crime", "gossip that's unconfirmed without saying 'reportedly'"], "signoff": ""}, "callie": {"name": "Cali", "draft": true, "style": "Afternoon drive, upbeat, quick hits, trending and social.", "sentenceLength": "short", "slang": [], "avoid": ["politics", "heavy crime"], "signoff": ""}}, "voicesNote": "Draft voice profiles. Hosts should edit these; every blurb Hot Sheet writes for a host should follow that host's profile.", "shiftsNote": "Same ids/names/times as the app's built-in shifts (labels on the tabs stay AJ / Courtney / Cali).", "syncBin": "babeeab", "syncBinNote": "Non-secret id of the station sync bin. Filled in at deploy by tools/make_station_sync.py. The key is NEVER stored: it is derived from the station password on each device.", "syncSetupDone": false, "syncSetupNote": "Set true (by make_station_sync.py --finish) once AJ, Courtney and Cali have all paired. True retires the first-run pop-up everywhere; pairing stays in Menu > Sync devices."}
+{
+ "version": 1,
+ "station": "Z93",
+ "market": "Traverse City, MI",
+ "timezone": "America/New_York",
+ "logo": "z93-logo.png",
+ "studioLine": "231-929-4487",
+ "showDays": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "sponsorDeadline": "09:00",
+ "sponsorsNote": "Copy of sponsors.json at round-1 build (2026-11-19). The app still reads sponsors.json first; these are the fallback when it can't load.",
+ "sponsors": [
+  {
+   "id": "forefront",
+   "name": "Forefront Credit Union",
+   "short": "Forefront",
+   "icon": "💳",
+   "read": "Whatever it is you're dreaming about starts with a question that's asked. Forefront.",
+   "triggers": [
+    "weather"
+   ],
+   "keywords": [],
+   "active": true,
+   "logo": "",
+   "shifts": [
+    "truce"
+   ]
+  },
+  {
+   "id": "tvc-airport",
+   "name": "Traverse City Airport (TVC)",
+   "short": "TVC Airport",
+   "icon": "✈️",
+   "read": "tvcairport.com studio line",
+   "triggers": [
+    "studio-line"
+   ],
+   "keywords": [],
+   "active": true,
+   "logo": ""
+  },
+  {
+   "id": "devette-ford",
+   "name": "Devette & Ford Insurance Agency",
+   "short": "Devette & Ford",
+   "icon": "🎬",
+   "read": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    1
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "jimmy-johns-lunchbox",
+   "name": "Jimmy John's",
+   "short": "Jimmy John's",
+   "icon": "🥪",
+   "read": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "pawsd-in-time",
+   "name": "Paws'd in Time",
+   "short": "Paws'd in Time",
+   "icon": "🐾",
+   "read": "Cherryland Humane Society Pet of the Week, presented by Paws'd in Time. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    3
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "mi-health-wellness",
+   "name": "MI Health & Wellness Center",
+   "short": "MI Health & Wellness",
+   "icon": "💛",
+   "read": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.",
+   "sourceNote": "from website, confirm with hourly log",
+   "source": "https://www.z93hits.com/courtney",
+   "shifts": [
+    "courtney"
+   ],
+   "days": [
+    5
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  }
+ ],
+ "triggerReads": [
+  {
+   "id": "jj-lunchbox-1230",
+   "sponsor": "jimmy-johns-lunchbox",
+   "host": "courtney",
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "at": "12:30",
+   "windowMin": [
+    -5,
+    20
+   ],
+   "title": "Jimmy John's Lunchbox giveaway",
+   "read": "Courtney's Lunchbox, presented by Jimmy John's: call the studio line at 231-929-4487 for your chance to win two free Jimmy John's subs. From the website, confirm with the hourly log."
+  },
+  {
+   "id": "shanty-offcharts-0830",
+   "sponsor": "shanty-creek",
+   "host": "truce",
+   "days": [
+    5
+   ],
+   "at": "08:30",
+   "windowMin": [
+    -10,
+    20
+   ],
+   "title": "Off the Charts sponsor: Shanty Creek",
+   "read": "Z93 Off the Charts is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com."
+  }
+ ],
+ "shifts": [
+  {
+   "id": "truce",
+   "name": "Truce",
+   "label": "AJ",
+   "start": "00:00",
+   "end": "10:00"
+  },
+  {
+   "id": "courtney",
+   "name": "Courtney",
+   "label": "Courtney",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  {
+   "id": "callie",
+   "name": "Callie",
+   "label": "Cali",
+   "start": "14:00",
+   "end": "19:00"
+  }
+ ],
+ "clocks": {
+  "truce": [
+   {
+    "at": "05:30",
+    "title": "Show opener supercut",
+    "sec": "vibe",
+    "note": "Quick-bites montage that plays right before AJ's intro"
+   },
+   {
+    "at": "06:00",
+    "title": "Vibe Check",
+    "sec": "vibe"
+   },
+   {
+    "at": "06:30",
+    "title": "Mood Boost",
+    "sec": "mood"
+   },
+   {
+    "at": "07:00",
+    "title": "Daily Buzz",
+    "sec": "buzz"
+   },
+   {
+    "at": "07:00",
+    "title": "Verse Reverse",
+    "sec": "verse"
+   },
+   {
+    "at": "07:30",
+    "title": "Personal (on hold)",
+    "sec": "",
+    "note": "On hold, no giveaways right now"
+   },
+   {
+    "at": "08:00",
+    "title": "Mental Health",
+    "sec": "mental"
+   },
+   {
+    "at": "08:30",
+    "title": "Main Character",
+    "sec": "",
+    "days": [
+     1
+    ]
+   },
+   {
+    "at": "08:30",
+    "title": "Guilty Pleasure",
+    "sec": "",
+    "days": [
+     2
+    ]
+   },
+   {
+    "at": "08:30",
+    "title": "Old vs New",
+    "sec": "",
+    "days": [
+     3
+    ]
+   },
+   {
+    "at": "08:30",
+    "title": "AJ's Mini Mix",
+    "sec": "",
+    "days": [
+     4
+    ]
+   },
+   {
+    "at": "08:30",
+    "title": "Off the Charts",
+    "sec": "offcharts",
+    "days": [
+     5
+    ],
+    "trigger": "shanty-offcharts-0830"
+   },
+   {
+    "at": "09:00",
+    "title": "Flashback",
+    "sec": "flash"
+   },
+   {
+    "at": "09:00",
+    "title": "Sponsor reads due",
+    "sec": "",
+    "sponsorDeadline": true
+   },
+   {
+    "at": "09:30",
+    "title": "Cross Talk",
+    "sec": "cross"
+   }
+  ],
+  "courtney": [
+   {
+    "at": "10:08",
+    "title": "Midday Song Battle intro",
+    "sec": "battle"
+   },
+   {
+    "at": "10:20",
+    "title": "93 Minutes commercial-free (Kurtz Car Stereo)",
+    "sec": ""
+   },
+   {
+    "at": "11:03",
+    "title": "Keeping Up With Courtney: Hollywood News",
+    "sec": "kuwc"
+   },
+   {
+    "at": "11:20",
+    "title": "Midday Song Battle re-intro",
+    "sec": "battle"
+   },
+   {
+    "at": "11:30",
+    "title": "All Request Hour starts",
+    "sec": ""
+   },
+   {
+    "at": "12:00",
+    "title": "Play the Midday Song Battle winner",
+    "sec": "battle"
+   },
+   {
+    "at": "12:30",
+    "title": "Lunchbox giveaway: Jimmy John's, two free subs, on the studio line",
+    "sec": "",
+    "trigger": "jj-lunchbox-1230"
+   },
+   {
+    "at": "13:30",
+    "title": "Random engagement question on the studio line",
+    "sec": "studioq"
+   }
+  ],
+  "callie": [
+   {
+    "at": "14:20",
+    "title": "93 Minutes commercial-free (Kurtz Car Stereo)",
+    "sec": ""
+   },
+   {
+    "at": "18:20",
+    "title": "93 Minutes commercial-free (Kurtz Car Stereo)",
+    "sec": ""
+   }
+  ]
+ },
+ "clocksNote": "AJ clock from Truce's printed sheet (Nov 19, 2026); opener 5:30 kept for the supercut.",
+ "voices": {
+  "truce": {
+   "name": "AJ (Truce)",
+   "draft": true,
+   "style": "Morning-drive energy, quick and local. Short punchy sentences, one idea per line, ends on a joke or a call to the studio line.",
+   "sentenceLength": "short (8-14 words)",
+   "slang": [
+    "up north",
+    "the Stags"
+   ],
+   "avoid": [
+    "politics",
+    "heavy crime detail",
+    "'folks'",
+    "'without further ado'"
+   ],
+   "signoff": "Showtime."
+  },
+  "courtney": {
+   "name": "Courtney",
+   "draft": true,
+   "style": "Midday, warm and chatty, pop-culture first. Talks to one listener at work. Light celebrity snark, never mean.",
+   "sentenceLength": "medium",
+   "slang": [],
+   "avoid": [
+    "politics",
+    "sex",
+    "heavy crime",
+    "gossip that's unconfirmed without saying 'reportedly'"
+   ],
+   "signoff": ""
+  },
+  "callie": {
+   "name": "Cali",
+   "draft": true,
+   "style": "Afternoon drive, upbeat, quick hits, trending and social.",
+   "sentenceLength": "short",
+   "slang": [],
+   "avoid": [
+    "politics",
+    "heavy crime"
+   ],
+   "signoff": ""
+  }
+ },
+ "voicesNote": "Draft voice profiles. Hosts should edit these; every blurb Hot Sheet writes for a host should follow that host's profile.",
+ "shiftsNote": "Same ids/names/times as the app's built-in shifts (labels on the tabs stay AJ / Courtney / Cali).",
+ "syncBin": "babeeab",
+ "syncBinNote": "Non-secret id of the station sync bin. Filled in at deploy by tools/make_station_sync.py. The key is NEVER stored: it is derived from the station password on each device.",
+ "syncSetupDone": false,
+ "syncSetupNote": "Set true (by make_station_sync.py --finish) once AJ, Courtney and Cali have all paired. True retires the first-run pop-up everywhere; pairing stays in Menu > Sync devices."
+}

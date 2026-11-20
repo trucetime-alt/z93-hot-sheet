@@ -15,7 +15,7 @@
    "id": "forefront",
    "name": "Forefront Credit Union",
    "short": "Forefront",
-   "icon": "\ud83d\udcb3",
+   "icon": "💳",
    "read": "Whatever it is you're dreaming about starts with a question that's asked. Forefront.",
    "triggers": [
     "weather"
@@ -31,7 +31,7 @@
    "id": "tvc-airport",
    "name": "Traverse City Airport (TVC)",
    "short": "TVC Airport",
-   "icon": "\u2708\ufe0f",
+   "icon": "✈️",
    "read": "tvcairport.com studio line",
    "triggers": [
     "studio-line"
@@ -44,7 +44,7 @@
    "id": "devette-ford",
    "name": "Devette & Ford Insurance Agency",
    "short": "Devette & Ford",
-   "icon": "\ud83c\udfac",
+   "icon": "🎬",
    "read": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.",
    "sourceNote": "from website, confirm with hourly log",
    "source": "https://www.z93hits.com/courtney",
@@ -64,7 +64,7 @@
    "id": "jimmy-johns-lunchbox",
    "name": "Jimmy John's",
    "short": "Jimmy John's",
-   "icon": "\ud83e\udd6a",
+   "icon": "🥪",
    "read": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
    "sourceNote": "from website, confirm with hourly log",
    "source": "https://www.z93hits.com/courtney",
@@ -88,7 +88,7 @@
    "id": "pawsd-in-time",
    "name": "Paws'd in Time",
    "short": "Paws'd in Time",
-   "icon": "\ud83d\udc3e",
+   "icon": "🐾",
    "read": "Cherryland Humane Society Pet of the Week, presented by Paws'd in Time. From the website, confirm with the hourly log.",
    "sourceNote": "from website, confirm with hourly log",
    "source": "https://www.z93hits.com/courtney",
@@ -108,12 +108,32 @@
    "id": "mi-health-wellness",
    "name": "MI Health & Wellness Center",
    "short": "MI Health & Wellness",
-   "icon": "\ud83d\udc9b",
+   "icon": "💛",
    "read": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.",
    "sourceNote": "from website, confirm with hourly log",
    "source": "https://www.z93hits.com/courtney",
    "shifts": [
     "courtney"
+   ],
+   "days": [
+    5
+   ],
+   "freq": "shift",
+   "active": true,
+   "triggers": [],
+   "keywords": [],
+   "logo": ""
+  },
+  {
+   "id": "shanty-creek",
+   "name": "Shanty Creek Resort (Schuss Mountain)",
+   "short": "Shanty Creek",
+   "icon": "⛷️",
+   "read": "Z93 Off the Charts is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com.",
+   "readAlt": "Z93 Off the Charts is brought to you by Shanty Creek Resorts. When it's time for you to enjoy the wide-open spaces of Northern Michigan, check out Shanty Creek Resort with over 275 lodging options, 42 downhill ski and snowboard runs, and plenty of outdoor fun.",
+   "sourceNote": "promo intro email; Schuss version is the newer copy",
+   "shifts": [
+    "truce"
    ],
    "days": [
     5
