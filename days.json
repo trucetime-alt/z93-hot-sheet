@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T21:11-05:00",
+ "generated": "2026-11-19T21:12-05:00",
  "rule": "Notable only: US federal holidays, major UN international days, and widely recognized US/cultural observances (curated allowlist in tools/national_days.py). No novelty days.",
  "sources": {
   "un": "https://www.un.org/en/observances/list-days-weeks",
@@ -299,8 +299,8 @@
    "fetched": "2026-11-19"
   },
   "mensday": {
-   "what": "International Men's Day (IMD) is a global awareness day for issues that men face, including abuse, homelessness, suicide, and violence, celebrated annually on 19 November.",
-   "why": "The day was inauguated in the early 1990s in Malta by Thomas Oaster, and has been recognized by groups in other countries around the world. The objectives of celebrating an International Men's Day are set out in \"All the Six Pillars of International Men's Day\".",
+   "what": "International Men's Day (IMD) is a global awareness day for many issues that men face, including abuse, homelessness, suicide, and violence, celebrated annually on 19 November.",
+   "why": "The objectives of celebrating an International Men's Day are set out in \"All the Six Pillars of International Men's Day\". It is also an occasion to celebrate boys' and men's lives, achievements and contributions, in particular for their contributions to nation, union, society, community, family, marriage, and childcare.",
    "source": "https://en.wikipedia.org/wiki/International_Men's_Day",
    "fetched": "2026-11-19"
   },
