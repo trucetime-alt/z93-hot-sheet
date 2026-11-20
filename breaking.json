@@ -1,17 +1,94 @@
 {
  "version": 1,
- "updated": "2026-11-20T04:53:03-05:00",
- "updatedMs": 1795168383567,
+ "updated": "2026-11-20T08:58:13-05:00",
+ "updatedMs": 1795183093771,
  "items": [
   {
-   "id": "nat-da1351e8ac",
-   "title": "Valtteri Bottas to race for Cadillac in 2027 after Colton Herta 'noise'",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdU9rLUJBMDYyUnZwc3o5VnZzLU1ZR1BPYmQ2eW1YNkl6MFZLMkJvNmQ2dURyeUdOaENIWFAteXJiRjEwU0IyRXd3XzRyRlFHUUNDNGNLM3JhdC1SaTJCNHBSLXVxOTRoUVZfN0xuMWZUYzFIYWFianI5YndqclAzd21ncVRrb1QwZlV2Nkw5ZHdMNUJodm80VjhpUHRoYUdmX3NXTmdrY0V4YkU?oc=5",
-   "source": "Crash.net",
-   "at": "2026-11-20T03:48:45-05:00",
-   "atMs": 1795164525000,
-   "score": 674.0,
-   "why": "trending · 10 outlets",
+   "id": "nat-ab43469bbd",
+   "title": "Cincinnati Zoo’s Fiona the Hippo Dies After Swallowing Visitor’s Hat",
+   "link": "https://www.nytimes.com/2026/11/19/us/fiona-hippo-dead-cincinnati-zoo.html",
+   "source": "NYT",
+   "at": "2026-11-20T07:37:51-05:00",
+   "atMs": 1795178271000,
+   "score": 562.0,
+   "why": "trending + breaking keyword",
+   "scope": "national"
+  },
+  {
+   "id": "nat-3f87922b7f",
+   "title": "Mayor Mamdani announces plan to shut down Rikers Island",
+   "link": "https://abcnews.com/US/wireStory/mamdani-sets-plan-close-nycs-notorious-rikers-island-138314719",
+   "source": "ABC News",
+   "at": "2026-11-20T08:38:05-05:00",
+   "atMs": 1795181885000,
+   "score": 520.0,
+   "why": "trending · 4 outlets",
+   "scope": "national"
+  },
+  {
+   "id": "nat-a44a066943",
+   "title": "Colton Herta offered Cadillac F1 reserve role with Bottas’ seat ‘open’ for 2028",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRDh1YnotRHNDTXB6TWF3S3JzZm5EdUdyR1dOQ2hMbFFuTkJLRGg5UlZjMFFOSUI3X0YtUTFReE5ZNTZURHpXakhWWGdsMFAzc01FdVdadERtWEZTYVdtbm8tbFhlY0Y0anEyUGlRcGY3ckZCdnZvOWhkODBZX1k0bEg1NDFqaDBDb011d3N3UE5lMkUzSkktSl9GRDB3UVdsWE00VDJQdFZXcW1UM1RvcUYyQjlaVThhMVcwQXB6QQ?oc=5",
+   "source": "Grande Prêmio",
+   "at": "2026-11-20T07:12:10-05:00",
+   "atMs": 1795176730000,
+   "score": 134.0,
+   "why": "5 outlets in 2h",
+   "scope": "national"
+  },
+  {
+   "id": "nat-8768455380",
+   "title": "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa",
+   "link": "https://www.foxnews.com/us/army-delays-controlled-detonation-unstable-bomb-making-chemical-iowa",
+   "source": "Fox News",
+   "at": "2026-11-20T07:04:57-05:00",
+   "atMs": 1795176297000,
+   "score": 106.0,
+   "why": "4 outlets in 2h",
+   "scope": "national"
+  },
+  {
+   "id": "nat-5d52e30b29",
+   "title": "White House removes cyber-security chief after series of tech outages",
+   "link": "https://www.nbcnews.com/nightly-news/video/national-cyber-director-to-leave-trump-administration-273861701758",
+   "source": "NBC",
+   "at": "2026-11-20T08:28:32-05:00",
+   "atMs": 1795181312000,
+   "score": 104.0,
+   "why": "5 outlets in 0h",
+   "scope": "national"
+  },
+  {
+   "id": "nat-5fddab914b",
+   "title": "Cadillac Will Stay a Ferrari Customer Through 2029 and Wait for F1’s V8 Engines",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcXNuMTk5UjVsbkRPdUo0ZFNZbGI5endZbnBvVXdrc0ZPQkhQZXpieDJzb2FIS29HRkJxc3hvV0tLVTBwLWRZY19QY05ocFhiTmZhc1FYNERwQkljazFSUjZUcHNrQzc3WlFWN3EzRExMTVZpYzczR3JKdldxMmxUOTlFS3FXb1NwR3BEUUFtN0dUQURyTS1vTEVyVDVHQk1EQnJHSU8wSzVoLWlTTDhCWEpucUZDaXFaRUVkaXFWYjk5a0o5enc?oc=5",
+   "source": "grandprix247",
+   "at": "2026-11-20T08:09:48-05:00",
+   "atMs": 1795180188000,
+   "score": 78.0,
+   "why": "3 outlets in 1h",
+   "scope": "national"
+  },
+  {
+   "id": "nat-e04ec945ec",
+   "title": "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
+   "link": "https://www.foxnews.com/us/texas-inmate-execution-takes-over-hour-prison-staff-struggle-find-suitable-veins",
+   "source": "Fox News",
+   "at": "2026-11-20T07:24:40-05:00",
+   "atMs": 1795177480000,
+   "score": 72.0,
+   "why": "4 outlets in 2h",
+   "scope": "national"
+  },
+  {
+   "id": "nat-3d0f69c591",
+   "title": "The Justice Department seeks dismissal of its lawsuit in the Alaska Senate race",
+   "link": "https://www.nytimes.com/2026/11/19/us/politics/justice-department-gives-up-on-alaska-senate-lawsuit.html",
+   "source": "NYT",
+   "at": "2026-11-20T08:20:22-05:00",
+   "atMs": 1795180822000,
+   "score": 48.0,
+   "why": "3 outlets in 1h",
    "scope": "national"
   }
  ]
