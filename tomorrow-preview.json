@@ -1,7 +1,7 @@
 {
  "version": 1,
- "for": "2026-11-20",
- "built_from": "2026-11-19",
+ "for": "2026-11-23",
+ "built_from": "2026-11-20",
  "note": "Built from schedules and data files only; no research.",
  "items": [
   {
@@ -57,7 +57,7 @@
    "kind": "clock",
    "time": "08:30",
    "host": "truce",
-   "title": "Off the Charts",
+   "title": "Main Character",
    "src": "station.json"
   },
   {
@@ -152,12 +152,6 @@
    "src": "station.json"
   },
   {
-   "kind": "giveaway",
-   "title": "TC Shop & Sip ticket giveaway: listening appointments ",
-   "note": "Five pairs of general admission tickets to Traverse City Shop and Sip on Saturday, Nov 21 at Grand Traverse Resort & Spa. Tickets are held at Will Call.",
-   "src": "giveaways.json"
-  },
-  {
    "kind": "sponsor",
    "host": "truce",
    "title": "💳 Forefront Credit Union read",
@@ -173,16 +167,24 @@
   {
    "kind": "sponsor",
    "host": "courtney",
-   "title": "🥪 Jimmy John's read",
-   "note": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
+   "title": "🎬 Devette & Ford Insurance Agency read",
+   "note": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.",
    "src": "sponsors.json"
   },
   {
    "kind": "sponsor",
    "host": "courtney",
-   "title": "💛 MI Health & Wellness Center read",
-   "note": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.",
+   "title": "🥪 Jimmy John's read",
+   "note": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
    "src": "sponsors.json"
+  },
+  {
+   "kind": "segment",
+   "time": "Monday recap",
+   "host": "courtney",
+   "title": "Weekend movies / must-see",
+   "note": "Devette & Ford Insurance Agency",
+   "src": "schedules.json"
   },
   {
    "kind": "segment",
@@ -216,14 +218,6 @@
   },
   {
    "kind": "segment",
-   "time": "Friday",
-   "host": "courtney",
-   "title": "Uplifting story to start the weekend",
-   "note": "MI Health & Wellness Center",
-   "src": "schedules.json"
-  },
-  {
-   "kind": "segment",
    "time": "2:20 PM",
    "host": "callie",
    "title": "93 Minutes commercial-free",
@@ -239,44 +233,34 @@
    "src": "schedules.json"
   },
   {
-   "kind": "day",
-   "title": "World Children's Day",
-   "src": "days.json"
-  },
-  {
-   "kind": "day",
-   "title": "Transgender Day of Remembrance",
-   "src": "days.json"
+   "kind": "birthday",
+   "title": "Alexis Ren, American social media personality, model, and actress (1996)",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Alexis_Ren"
   },
   {
    "kind": "birthday",
-   "title": "Madisyn Shipman, American actress (2002)",
+   "title": "Miley Cyrus, American singer-songwriter and actress (1992)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Madisyn_Shipman"
+   "src": "https://en.wikipedia.org/wiki/Miley_Cyrus"
   },
   {
    "kind": "birthday",
-   "title": "Caty McNally, American tennis player (2001)",
+   "title": "Gabriel Landeskog, Swedish ice hockey player (1992)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Caty_McNally"
-  },
-  {
-   "kind": "birthday",
-   "title": "Connie Talbot, English singer-songwriter (2000)",
-   "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Connie_Talbot"
+   "src": "https://en.wikipedia.org/wiki/Gabriel_Landeskog"
   },
   {
    "kind": "thisday",
-   "title": "1985: Windows 1.0, the first version of Microsoft Windows available to the public, was released.",
+   "title": "2011: Arab Spring: After months of protests in Yemen, President Ali Abdullah Saleh (pictured) agreed to step down; he subsequently ceded power to Vice President Abdrabbuh Mansour Hadi in February 2012.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Windows_1.0"
+   "src": "https://en.wikipedia.org/wiki/Arab_Spring"
   },
   {
    "kind": "thisday",
-   "title": "1969: A group of Native American activists began a 19-month occupation (graffiti pictured) of Alcatraz Island in San Francisco Bay.",
+   "title": "2007: MS Explorer became the first cruise ship to sink in the Southern Ocean.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States"
+   "src": "https://en.wikipedia.org/wiki/MV_Explorer_(1969)"
   },
   {
    "kind": "flashback",

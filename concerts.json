@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-19T23:02:27-05:00",
+ "updated": "2026-11-20T04:35:24-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 203,
+ "artistsWatched": 205,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -12,7 +12,7 @@
   "venues": {
    "Lansing Center (iCal)": {
     "status": "ok",
-    "count": 5
+    "count": 4
    },
    "Lansing Center (JSON-LD)": {
     "status": "ok",
@@ -73,7 +73,7 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 89
+   "count": 85
   }
  },
  "shows": [
@@ -88,7 +88,7 @@
    "region": "Northern Michigan",
    "date": "2026-12-06",
    "time": "19:30",
-   "daysOut": 17,
+   "daysOut": 16,
    "window": "soon",
    "onSale": "",
    "presale": [],
@@ -190,16 +190,6 @@
    "priority": 60
   },
   {
-   "title": "‘Taylor Swift’ bills would stop bots from hoarding concert tix in Michigan - Bridge Michigan",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQUswOVNvYnlUMVAxUEJBS3JxV3o2UmF1bHN5NmdZSXBJR3lMUUZvUDExREVPTVFVRkJMY1VySi02c1dOalAySWlkcnJ5RzZxRk1Edm96VF9uWmJTN0ZJTGhaY01nS0pKYkJRSmROQ1ZoLXB4cE1GUzB3ejRsRkxWNmZXQWQ5MTM4d0ZQSGktWDdIS1dEcldnbVE3ZGR4M0FKS0YzbFlhcw?oc=5",
-   "at": "2025-05-15T07:00:00+00:00",
-   "src": "Bridge Michigan",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
    "title": "Bruno Mars Detroit tickets May 9: Cheapest concert passes, coupon deals - Cleveland.com",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2l5TGRhc0tfVktHUzFZdjdPOTM1MHFfSzBhNTIwLXByUDFiWkNwYkdoWWt1TTBnNzQ1SkJfQ2ZRRDVsOGt6UHJIa0U3RUI5U1NLenFnQTVvZEk5OUdVVnRIckV0VkZ5T2xkaE83VmlzU1h3RklCbGVweDBPd2poQlBsSTZ5WlRyMTZFWkZsZnhoNl8zT09BSkhhQ2l1VjYwbTN3bnRXcGdua29PZTFqSTZTUjBLR3BYWEs1Nl91S3ByTTNfaUE?oc=5",
    "at": "2026-01-08T08:00:00+00:00",
@@ -260,6 +250,16 @@
    "priority": 60
   },
   {
+   "title": "‘Taylor Swift’ bills would stop bots from hoarding concert tix in Michigan - Bridge Michigan",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQUswOVNvYnlUMVAxUEJBS3JxV3o2UmF1bHN5NmdZSXBJR3lMUUZvUDExREVPTVFVRkJMY1VySi02c1dOalAySWlkcnJ5RzZxRk1Edm96VF9uWmJTN0ZJTGhaY01nS0pKYkJRSmROQ1ZoLXB4cE1GUzB3ejRsRkxWNmZXQWQ5MTM4d0ZQSGktWDdIS1dEcldnbVE3ZGR4M0FKS0YzbFlhcw?oc=5",
+   "at": "2025-05-15T07:00:00+00:00",
+   "src": "Bridge Michigan",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
    "title": "The Eras Tour: Taylor Swift takes on Detroit for the 13th time. - The Michigan Daily",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenpxUFh0bld4c3ZTMGkxUFpJZExpUG1FWkRPN3pPM1NsbE9KaUczMllZSkIwbWx1Rm5ubjRJc1gyRWJUVWRva0NybU55WmFyOW4xRjM5cEx1dXZ1RUR6MGRjeU9PMXJIcF9BcTREMTl0UWtKYnZPMEhlSF9OM1VzZFJiZG5RV042S2xCS2hSaFl6UFNQV3FWWnlXS0FYNUc2djNIT3lxSWM4UmJubFM4?oc=5",
    "at": "2023-06-10T07:00:00+00:00",
@@ -284,16 +284,6 @@
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbE9UMTBXWWQxTE9Md0hIbk9qTi1RWjUxTTVKWHFxQllhNF9XZDh2LWxPcmU1SXc3eEJRTEg1eHdXbU51WUxONlBSdjF1VjZjcWxCcjFfeFlGRGlCU2lsN2ZrVklGNWxGTTJjSmZlSFZrLWR0RzMyZFdpanJWdnRjTGo5QUN0RGNscFlGeDRBMDNPTUhocWc?oc=5",
    "at": "2023-06-05T07:00:00+00:00",
    "src": "New York Post",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Taylor Swift announces 'The Eras Tour' date for Detroit - FOX 2 Detroit",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPT2JlTXp0RGI5YzYxME5IQ19EcEMtX2VPd0VMTWRqeVFXT1cwUVZLWWExQXlva1JWT2FlV3ozeVF6MXdNbzZFeEZKVko3WDdhQzVkUi1KV0lCTW9DTkxTdU9RZVk1S3h4QkczeVhNMGVJM1dXMXdoOW5KQWpQa0JxZ2dTd0ktT2FDSmdVOW83Zw?oc=5",
-   "at": "2022-11-01T07:00:00+00:00",
-   "src": "FOX 2 Detroit",
    "artists": [
     "Taylor Swift"
    ],
@@ -348,7 +338,17 @@
     "Taylor Swift"
    ],
    "priority": 60
+  },
+  {
+   "title": "How to find Olivia Rodrigo tickets in Detroit for under $340 - MLive.com",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN3JMNWRIT2xGbWVLZlZna18tQTN2SVF2RXI4Ym9FN3dKSzBjclVlbVNpVnFPcC1Vd29XdGlsTGlsRTd1R2VLRUtvOTZlY1pROEN1YTZWTTBjZnVfbFc5X1VOOUY5bnZ4cWpQVE5rSklfR2JvdXppb3lHR3F2Y2ZiQ0p2UEZDU0JmR2lERGVEdGNOWjM2U08tUTNWc0ZRdjZk?oc=5",
+   "at": "2024-03-05T08:00:00+00:00",
+   "src": "MLive.com",
+   "artists": [
+    "Olivia Rodrigo"
+   ],
+   "priority": 60
   }
  ],
- "tookSec": 28.4
+ "tookSec": 27.8
 }

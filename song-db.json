@@ -1,7 +1,7 @@
 {
 "version": 1,
 "note": "Built by next/tools/build_song_db.py from songs.json + past sheets (+ app queue). background is filled by Hot Sheet's 4 AM pass for songs with needs_background.",
-"count": 126,
+"count": 129,
 "songs": [
 {
 "id": "california-love-2pac-ft-dr-dre",
@@ -490,6 +490,17 @@
 "pool": "mood"
 },
 {
+"id": "the-final-countdown-europe",
+"artist": "Europe",
+"title": "The Final Countdown",
+"year": 1986,
+"chart_peak": "Billboard Hot 100 No. 8",
+"background": "Joey Tempest wrote the famous keyboard riff around 1981 or 1982 on a Korg Polysix borrowed from keyboardist Mic Michaeli, and bassist John Levén pushed him in 1985 to build a song on it. The band wrote it as a concert opener and never thought it would be a hit; guitarist John Norum didn't like the synth intro at first.",
+"used": [
+"2026-11-20"
+]
+},
+{
 "id": "dreams-fleetwood-mac",
 "artist": "Fleetwood Mac",
 "title": "Dreams",
@@ -820,6 +831,17 @@
 "pool": "flash"
 },
 {
+"id": "hero-mariah-carey",
+"artist": "MARIAH CAREY",
+"title": "HERO",
+"year": 1993,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-20"
+]
+},
+{
 "id": "uptown-funk-mark-ronson-ft-bruno-mars",
 "artist": "Mark Ronson ft. Bruno Mars",
 "title": "Uptown Funk",
@@ -873,6 +895,17 @@
 "used": [],
 "source": "https://en.wikipedia.org/wiki/Work_It_(Missy_Elliott_song)",
 "pool": "mood"
+},
+{
+"id": "all-star-mood-boost-smash-mouth",
+"artist": "MOOD BOOST: SMASH MOUTH",
+"title": "ALL STAR",
+"year": 1999,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-20"
+]
 },
 {
 "id": "torn-natalie-imbruglia",

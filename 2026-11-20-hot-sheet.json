@@ -1,0 +1,1141 @@
+{
+ "weather": {
+  "temp": "43°",
+  "cond": "Clear",
+  "advisory": "Small Craft Advisory (marine) from this afternoon",
+  "traffic": "Dry roads, Front St closes Sat 3-8 PM for parade",
+  "high": "62°",
+  "low": "41°",
+  "tonight": "Mostly Clear",
+  "updated": "2026-11-20T04:05-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Mostly Sunny",
+  "icon": "sunny",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-20",
+    "high": null,
+    "low": 41,
+    "short": "Mostly Clear",
+    "icon": "clear-night",
+    "pop": 0
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-20",
+    "high": 62,
+    "low": 52,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 0
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-21",
+    "high": 66,
+    "low": 52,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 2
+   },
+   {
+    "day": "Sun",
+    "date": "2026-11-22",
+    "high": 58,
+    "low": 32,
+    "short": "Rain Showers",
+    "icon": "rain",
+    "pop": 100
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-23",
+    "high": 38,
+    "low": 27,
+    "short": "Chance Rain And Snow Showers",
+    "icon": "mix",
+    "pop": 32
+   },
+   {
+    "day": "Tue",
+    "date": "2026-11-24",
+    "high": 37,
+    "low": 26,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 9
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-25",
+    "high": 38,
+    "low": 28,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 1
+   }
+  ],
+  "wind": "S 0-5 today; S 5-10, gusts 30 tonight",
+  "waves": "Bay 2 ft or less today, 2-3 ft tonight · Lake MI 2 ft or less today, 3-5 ft tonight · Small Craft Advisory this afternoon through late Sat night",
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 43
+   },
+   {
+    "t": "5 AM",
+    "temp": 42
+   },
+   {
+    "t": "6 AM",
+    "temp": 41
+   },
+   {
+    "t": "7 AM",
+    "temp": 41
+   },
+   {
+    "t": "8 AM",
+    "temp": 41
+   },
+   {
+    "t": "9 AM",
+    "temp": 43
+   },
+   {
+    "t": "10 AM",
+    "temp": 47
+   },
+   {
+    "t": "11 AM",
+    "temp": 51
+   },
+   {
+    "t": "12 PM",
+    "temp": 55
+   },
+   {
+    "t": "1 PM",
+    "temp": 59
+   },
+   {
+    "t": "2 PM",
+    "temp": 61
+   },
+   {
+    "t": "3 PM",
+    "temp": 62
+   },
+   {
+    "t": "4 PM",
+    "temp": 62
+   },
+   {
+    "t": "5 PM",
+    "temp": 60
+   },
+   {
+    "t": "6 PM",
+    "temp": 57
+   },
+   {
+    "t": "7 PM",
+    "temp": 56
+   },
+   {
+    "t": "8 PM",
+    "temp": 54
+   },
+   {
+    "t": "9 PM",
+    "temp": 54
+   },
+   {
+    "t": "10 PM",
+    "temp": 55
+   }
+  ]
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "SLOW JAM: MARIAH CAREY, \"HERO\" (1993)<br>• No. 1 on the Billboard Hot 100 for four weeks, Christmas Day 1993 into January 1994.<br>• Mariah wrote it with Walter Afanasieff; it was first meant for Gloria Estefan and the movie Hero before Tommy Mottola convinced Mariah to keep it.<br>• Why today: it's game week for two area teams, and a soft song about finding the strength inside is the right way to wake up a town that's about to drive to Clare.<br>😂 JOKES: Every Stags parent is going to sing this in the bleachers Saturday. Off-key. Proudly. / Mariah almost gave this song away. That's like Kingsley giving away the Wing-T playbook.<br><br>🚗 DRIVE TEASE: Dry roads and clear skies early, about 41 at 6 AM with calm winds; sunny then clouds by midday, up to 62 this afternoon.<br><br>📅 THIS DAY: \"THE BAND IS OUT ON THE FIELD!\" (NOV. 20, 1982)<br>• Forty-four years ago today, Cal and Stanford played the Big Game. Stanford, with John Elway, kicked a field goal to lead 20-19 with four seconds left.<br>• On the kickoff, Cal threw five laterals while the Stanford band, thinking the game was over, marched onto the field.<br>• Cal's Kevin Moen ran through the band and scored, 25-20 Cal. KGO's Joe Starkey's call, \"The band is out on the field!\", is one of the most famous in sports.<br>😂 JOKES: The Stanford trombone player is still telling people he 'almost made the tackle.' / Moral of the story: never leave a football game early. Or a band practice.<br><br>💡 FUN FACT: GTA 6 VS. THE BOX OFFICE<br>• GTA 6's estimated $2.36 billion from pre-orders and day one is almost as much as the year's top movie, Spider-Man: Brand New Day, made in its entire theater run ($2.5 billion), per the BBC.<br>😂 JOKES: One day of GTA 6 nearly equals a whole summer of Spider-Man. Spidey's going to need a second job. / Movie theaters are offering free refills now. Rockstar's offering free sleep deprivation.<br><br>🎉 NATIONAL DAYS: National Absurdity Day · National Peanut Butter Fudge Day · National Child's Day · Substitute Educators Day<br><br>GOOD MORNING UP NORTH: 41 and clear at drive time, sunny turning cloudy midday, high 62. A breezy, mild night tonight at 52 with south gusts to 30. Small Craft Advisory on the Bay and Lake Michigan from this afternoon through late Saturday night (Bay waves 2-3 ft tonight, Lake MI 3-5 ft).<br><br>SCHOOLS: No closings or delays listed this morning.<br><br>ROADS: Dry. Saturday 3-8 PM Front Street closes Franklin to Pine for the Light Parade.<br><br>ENERGY: Game weekend. Stags Saturday, Snowbirds Saturday, Roscommon at noon today, and the tree lights up tonight.",
+  "notes": "SLOW JAM: MARIAH CAREY, \"HERO\" (1993): https://en.wikipedia.org/wiki/Hero_(Mariah_Carey_song) Chart: Billboard chart history https://www.billboard.com/artist/mariah-carey/chart-history/hot-100/ ; origin story via Wikipedia (sourced). Lyrics clean.<br>THIS DAY: \"THE BAND IS OUT ON THE FIELD!\" (NOV. 20, 1982): https://en.wikipedia.org/wiki/The_Play_(American_football) Wikipedia; Cal archive https://newsarchive.berkeley.edu/news/berkeleyan/2002/11/20_play.html .<br>FUN FACT: GTA 6 VS. THE BOX OFFICE: https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o BBC Nov 20; Sensor Tower estimates.<br>Weather: NWS Gaylord point forecast + hourly (44.7631,-85.6206); marine: NWS APX nearshore LMZ323 (GT Bay) / LMZ344-345 (Lake MI), issued 1:51 AM. National days: https://nationaldaycalendar.com/what-day-is-it . Schools: UpNorthLive closings page checked ~4 AM ET (empty); no Breaker city pulse file today.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "We woke up with Mariah Carey's \"Hero,\" a four-week No. 1 from 1993.",
+    "article_url": "https://en.wikipedia.org/wiki/Hero_(Mariah_Carey_song)",
+    "article_title": "Hero (Mariah Carey song) (Wikipedia, citing Billboard)",
+    "jokes": [
+     "Every Stags parent is going to sing this in the bleachers Saturday. Off-key. Proudly.",
+     "Mariah almost gave this song away. That's like Kingsley giving away the Wing-T playbook."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a dry, clear drive: 41 at 6 AM, high 62.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord forecast, Traverse City",
+    "jokes": [],
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-vibe-03",
+    "title": "THIS DAY",
+    "recap": "We remembered The Play, Nov. 20, 1982: Cal's five-lateral kickoff return through the Stanford band.",
+    "article_url": "https://en.wikipedia.org/wiki/The_Play_(American_football)",
+    "article_title": "The Play (American football) (Wikipedia)",
+    "jokes": [
+     "The Stanford trombone player is still telling people he 'almost made the tackle.'",
+     "Moral of the story: never leave a football game early. Or a band practice."
+    ],
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-vibe-04",
+    "title": "FUN FACT",
+    "recap": "We shared that GTA 6's $2.36 billion launch nearly matched Spider-Man: Brand New Day's whole box office run.",
+    "article_url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+    "article_title": "GTA 6 breaks records as estimated sales top $2.3bn (BBC News, Nov 20)",
+    "jokes": [
+     "One day of GTA 6 nearly equals a whole summer of Spider-Man. Spidey's going to need a second job.",
+     "Movie theaters are offering free refills now. Rockstar's offering free sleep deprivation."
+    ],
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "We noted National Absurdity Day, Peanut Butter Fudge Day, Child's Day and Substitute Educators Day.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [],
+    "rank": 5,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Hero_(Mariah_Carey_song)",
+  "article_title": "Hero (Mariah Carey song) (Wikipedia, citing Billboard)",
+  "jokes": [
+   "Every Stags parent is going to sing this in the bleachers Saturday. Off-key. Proudly.",
+   "Mariah almost gave this song away. That's like Kingsley giving away the Wing-T playbook."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2e97cde21bc7",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "MOOD BOOST: SMASH MOUTH, \"ALL STAR\" (1999)<br>• Peaked at No. 4 on the Billboard Hot 100 in August 1999.<br>• Guitarist Greg Camp wrote it late in the Astro Lounge sessions when the label asked for more singles, and he set out to write an anthem for outcasts, drawing on Sugar Ray and Third Eye Blind.<br>• Why today: 'Hey now, you're an all star' for every Stag, Snowbird and Roscommon volleyball player playing this weekend.<br>😂 JOKES: This song has been in Shrek, every 2000s roller rink, and every dad's car. It's earned its place. / Somebody, once, told me the Stags were going to Ford Field. I believed them.",
+  "notes": "MOOD BOOST: SMASH MOUTH, \"ALL STAR\" (1999): https://en.wikipedia.org/wiki/All_Star_(song) Billboard chart history list https://www.billboard.com/lists/smash-mouth-billboard-charts-history-walkin-on-the-sun-all-star/ ; writing story via Wikipedia. Lyrics clean.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-mood-01",
+    "title": "MOOD BOOST: SMASH MOUTH, \"ALL STAR\" (1999)",
+    "recap": "We kicked off 6 AM with Smash Mouth's \"All Star,\" a No. 4 hit in 1999.",
+    "article_url": "https://en.wikipedia.org/wiki/All_Star_(song)",
+    "article_title": "All Star (song) (Wikipedia, citing Billboard)",
+    "jokes": [
+     "This song has been in Shrek, every 2000s roller rink, and every dad's car. It's earned its place.",
+     "Somebody, once, told me the Stags were going to Ford Field. I believed them."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/All_Star_(song)",
+  "article_title": "All Star (song) (Wikipedia, citing Billboard)",
+  "jokes": [
+   "This song has been in Shrek, every 2000s roller rink, and every dad's car. It's earned its place.",
+   "Somebody, once, told me the Stags were going to Ford Field. I believed them."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "0f2e3345d04e",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>STAG IT UP: KINGSLEY VS. ALMONT, THE REMATCH<br>• SUMMARY: Kingsley (12-0) and Almont (12-0) meet tomorrow, Saturday, Nov. 21, at 1 PM in the Division 6 state semifinal at the Brookwood Athletic Complex in Clare. Winner goes to Ford Field for the D6 final, Friday, Nov. 27, at 4 PM.<br>• HOW WE GOT HERE: Last Friday the Stags beat Sanford Meridian 34-28 in a battle of unbeatens for the regional title. QB Barrett Bielas after the win: \"Anything for one more week.\"<br>• THE CATCH: It's a rematch. Kingsley beat Almont 38-24 for the 2023 D6 state title at Ford Field, and Almont has been a semifinal regular since (45-4 the last four years).<br>• WHO: Stags RB Perry Smith (1,260 yards, 19 TDs), Nolan Hodges (828 yards, 15 TDs), Eric Stark (591, 8 TDs), WR Andrew George (292 receiving, 3 TDs). Almont's Brody Corneau ran for 111 yards on 12 carries last week.<br>• WHAT: Two mirror images. Kingsley averages about 41 points and allows 15; Almont averages 40 and allows 16.5.<br>• WHERE/HOW: Tickets are $12 on GoFan. Streaming on the NFHS Network.<br>• WHY IT MATTERS: Kingsley lost the 2025 final to Lumen Christi 28-14. One more win and the Stags are back at Ford Field for a second straight year.<br>➜ TAKE: Two undefeated teams, one ticket to Ford Field. This is a two-hour drive and a lifetime memory. Wear your Stags gear, bring a blanket, and yell till Sunday.<br>➜ BAIT: Text 231-929-4487: your Stags score prediction, and who's driving down to Clare?<br>😂 JOKES: Almont's coming in 12-0. That's cute. So is Kingsley. Somebody's about to find out what 12-1 feels like. / If you see a long line of Stags flags on US-127 Saturday morning, that's not traffic. That's a parade with a GPS.<br><br>LIGHT UP DOWNTOWN: NIGHT ONE IS TONIGHT<br>• Traverse City's holiday kickoff is two nights for the first time. Tonight (Friday) is the tree lighting; the Light Parade is Saturday at 6 PM.<br>• Tonight from 4 to 6:30 PM: a cookies-and-cocoa crawl, a Find the Grinch scavenger hunt, carolers and vendors, plus a variety show at 5 PM. Santa lights the 4,500-pound blue spruce at Cass and Front at 6:30.<br>• The DDA's Sara Klebba says they split it up to manage the crowds and make it safer and more comfortable.<br>• Heads-up for Saturday: Front Street closes Franklin to Pine from 3 to 8 PM, and cars parked in the closure get towed to Thirlby Field.<br>➜ TAKE: Two nights of Christmas downtown. Finally, a way to see the parade without standing behind a guy who's seven feet tall.<br>➜ BAIT: Text 231-929-4487: tree lighting tonight or parade tomorrow? Which one is your family doing?<br>😂 JOKES: Find the Grinch scavenger hunt. Easy. He's the guy complaining about parking. / A 4,500-pound tree in a manhole. That's the most Traverse City sentence ever written.<br><br>ONE AUTHOR'S POST, PHONES RINGING ON FRONT STREET<br>• Horizon Books in downtown TC is getting orders from all over the country for signed books.<br>• New York Times bestselling romance author Abby Jimenez has a daughter at Interlochen Arts Academy. When she's in town she signs stacks at Horizon and posts about it.<br>• COO Juan Pineda says the phones start ringing right after, and signed copies have shipped as far as Texas and California. It's moving her backlist too.<br>➜ TAKE: One social post and a local bookstore turns into a national mail-order business. That's the most romantic plot twist in a romance-novel story.<br>➜ BAIT: Text 231-929-4487: what's the one book you'd drive across the country for a signed copy of?<br>😂 JOKES: Horizon Books is now shipping to Texas. Next up, a drive-thru window for book clubs. / Nothing says love story like a woman, a Sharpie and a bookstore phone that won't stop ringing.<br><br>GAYLORD WAVES THE SNOWBIRDS OFF TO MARQUETTE<br>• Gaylord St. Mary is in its first state football final since 2002: the 8-player Division 2 title game vs. Mendon, Saturday at 2 PM in the Superior Dome in Marquette.<br>• The school held a pep rally Thursday. This morning the team bus leaves at 10 AM, and the town is invited to line Petoskey and Main streets to wave them off.<br>• Coach Kevin O'Connell: \"For such a small community, you realize how big it actually is.\"<br>➜ TAKE: Nothing beats a small town lining Main Street for a school bus. Honk twice if you're stuck behind it. Honk proud.<br>➜ BAIT: Text 231-929-4487: shout out a Snowbird or a Stag, we'll read it on air.<br>😂 JOKES: The Snowbirds are heading north for the winter. That's the opposite of how snowbirds work. / Superior Dome. Even the stadium name is trash-talking.<br><br>DEER SEASON FASHION: ORANGE VESTS FOR THE DOG<br>• Alden Canvas, a family canvas shop near Rapid City in Kalkaska County, makes blaze-style safety vests for dogs so they stay visible on walks.<br>• The vests are free; they only ask for a donation, and every dollar goes to Antrim County Animal Control.<br>• So far 164 vests are out and about $680 has been donated. Owner Chris Dewald says demand got a lot bigger this year, and they want photos of the pups wearing them.<br>➜ TAKE: It's deer season. If the dog's out in the woods, the dog wears orange. Fashion and safety, and the shelter gets the money.<br>➜ BAIT: Text 231-929-4487: send us your dog's name and its most ridiculous outfit.<br>😂 JOKES: My dog in a safety vest looks like he's about to direct traffic at the Cherry Festival. / Free vest for the dog. Meanwhile, I'm still paying full price for my own hat.<br><br>━━ NATIONAL ━━<br><br>DUA LIPA, LANA AND CAMILA ON THE GTA 6 ALBUM, OUT TODAY<br>• Rockstar released Grand Theft Auto VI: The Album today, Nov. 20: 34 songs, a day after the game came out.<br>• New tracks include Dua Lipa's \"Go Easy,\" Lana Del Rey's \"Crazy for You,\" Camila Cabello's \"Sweet Like Candy\" and Zara Larsson's \"Fast Emotion.\"<br>• It also has Morgan Wallen, Travis Scott, JENNIE and Justice with Tame Impala and SZA. The tracklist leaked early when vinyl copies showed up at a store.<br>➜ TAKE: The biggest video game ever just turned into a pop album. Somewhere a teenager is saying 'I only play it for the soundtrack.'<br>➜ BAIT: Text 231-929-4487: what song would be on the soundtrack of YOUR life?<br>😂 JOKES: Dua Lipa's new song is called 'Go Easy.' Nobody playing GTA has ever gone easy. / Morgan Wallen and Dua Lipa on one album. That's the most Up North playlist I've ever seen.<br><br>THE HUNGER GAMES ARE BACK, AND THE ODDS LOOK GOOD<br>• The Hunger Games: Sunrise on the Reaping opens today in about 3,900 theaters. It's the sixth movie in the series.<br>• Thursday previews brought in more than $21 million, the franchise's second-best preview night ever (Deadline).<br>• Lionsgate is projecting about $85 million for the weekend, but theater owners think it could get close to $125 million. The last one, Ballad of Songbirds and Snakes, opened at $44 million.<br>➜ TAKE: Friday movie night just got serious. Bring snacks. Bring tissues. Do NOT volunteer as tribute for the popcorn run.<br>➜ BAIT: Text 231-929-4487: what's the one skill you'd bring to the Hunger Games? Be honest. Mine is napping.<br>😂 JOKES: May the odds be ever in your favor. And may the person in front of you not be on their phone. / I'd last about four minutes in the Hunger Games. Three if there's no Wi-Fi.<br><br>━━ BITS ━━<br><br>NATIONAL ABSURDITY DAY: THE WEIRDEST RULE IN YOUR HOUSE<br>• Today is National Absurdity Day, a day for the totally off-the-wall stuff.<br>• Example from National Day Calendar: when parcel post started in 1913, some kids were literally mailed to Grandma's house, some for as little as 15 cents plus insurance.<br>• So today: what's the most absurd rule in your house? No shoes upstairs? Nobody touches Dad's thermostat? The dog gets the good couch?<br>➜ TAKE: Every house has one rule that makes zero sense to company. Ours is: nobody eats the last pickle. Nobody. It's just there, living its life.<br>➜ BAIT: Text 231-929-4487: the most absurd rule in your house.<br>😂 JOKES: Mailing a kid for 15 cents? I'd pay that just for a quiet ride to school. / Absurdity Day in Michigan is called 'wearing shorts in November,' and we did it all week.<br><br>PREDICT THE STAGS SCORE<br>• Kingsley vs. Almont, Saturday 1 PM in Clare. Two 12-0 teams. Winner goes to Ford Field.<br>• Call or text your final score. Closest guess gets bragging rights on Monday's show.<br>➜ TAKE: I'm not saying I'll be right, but I'm saying I've already practiced my Monday victory voice.<br>➜ BAIT: Text 231-929-4487: your final score, Stags vs. Almont.<br>😂 JOKES: If you predict Almont wins, please text from an unlisted number for your own safety. / Last time these two met it was 38-24. I'm predicting a score with a lot of numbers in it.<br><br>━━ SPORTS ━━<br><br>KINGSLEY: D6 SEMIFINAL SATURDAY<br>Kingsley (12-0) vs. Almont (12-0) · Sat 1 PM · Brookwood Athletic Complex, Clare · $12 GoFan · NFHS Network stream.<br>Rundown: Stags beat Meridian 34-28 in the regional; Perry Smith has 1,260 yards and 19 TDs. Winner plays the D6 final at Ford Field, Fri Nov 27, 4 PM.<br><br>GAYLORD ST. MARY: 8-PLAYER D2 FINAL SATURDAY<br>Gaylord St. Mary vs. Mendon · Sat 2 PM · Superior Dome, Marquette. Team bus leaves Gaylord 10 AM today, send-off on Petoskey and Main.<br>Rundown: first title game for the Snowbirds since 2002; they won the semi 39-36.<br><br>ROSCOMMON VOLLEYBALL: D3 STATE SEMI TODAY<br>Roscommon vs. Kalamazoo Christian · today NOON · Kellogg Arena, Battle Creek. D3 final is Saturday at Kellogg.<br><br>FRIDAY NIGHT HS FOOTBALL<br>No Grand Traverse–area games tonight. TC Central, TC West, St. Francis, Elk Rapids, Glen Lake, Benzie Central, Suttons Bay, Leland, Buckley and Kalkaska are done for the year; Kingsley is the last area 11-player team standing (Saturday).<br><br>MSU TONIGHT: OREGON ON SENIOR NIGHT<br>Michigan State (3-7) vs. No. 13 Oregon (7-3) · tonight 8:05 PM · Spartan Stadium · FOX.<br>Rundown: senior night; Oregon won the last meeting 31-10 in 2024.<br><br>MICHIGAN SATURDAY: NO. 4 UCLA<br>Michigan vs. No. 4 UCLA · Sat 3:30 PM · Michigan Stadium · CBS · home finale. Ohio State is next Saturday at noon on FOX.<br><br>LIONS SUNDAY: BUCS AT FORD FIELD<br>Lions (7-2) vs. Tampa Bay · Sun 1 PM · Ford Field · FOX.<br>Rundown: the Bucs lead the league in interceptions (16) and takeaways (21); the Lions are third in sacks with 32.<br><br>DETROIT QUICK HITS<br>Tigers: three AL Silver Sluggers (Riley Greene, Dillon Dingler, Kevin McGonigle), first time since 1987.<br>Pistons beat New Orleans 122-109 Wednesday, 17 threes. Red Wings lost 4-1 to Boston on their Centennial night.",
+  "notes": "Buzz score log (buzz-rubric): Stags semifinal 15 · Light Up Downtown night one 14 · Horizon Books/Abby Jimenez 13 · Snowbirds send-off 13 · Alden Canvas dog vests 12 · (bench: Interlochen Centennial Collage 11, Old Mission baskets 11, TC vacation rental cap 10, NMC Thanks-for-Giving 10; cut: Mecosta hunting shootings (tragedy), Rebecca Park case (crime), Leelanau defamation suit (legal), Whitewater Twp infighting (politics), Frankfort Ironman (Truce: don't rehash))<br>STAG IT UP: KINGSLEY VS. ALMONT, THE REMATCH: https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html Record-Eagle (James Cook, Nov 19) https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html for Bielas quote, player stats, 2025 final, Almont 45-4. Tri-City Times (Nov 18) https://tri-citytimes.com/2026/11/18/almont-puts-undefeated-record-on-line/ for 1 PM Brookwood Athletic Complex, Ford Field Fri Nov 27 4 PM, 2023 final 38-24, points 489/481, 15/16.5 allowed. GoFan https://gofan.co/event/7076469 ($12 per search result; MHSAA standard semifinal price). NFHS stream per MaxPreps https://www.maxpreps.com/news/5EEZPsr8DE6RV_7PpFH64Q/football-preview-kingsley-rolling-at-home-meets-almont-rolling-on-the-road--how-to-watch.htm (MaxPreps auto-text says 7 PM; ignore, three sources say 1 PM). Regional 34-28 over Meridian: 9&10 https://www.9and10news.com/sports/2026/11/13/kingsley-moves-a-step-closer-to-second-consecutive-state-championship-appearance/. Who scored the regional winning TD (Perry Smith per Truce) NOT confirmed in fetched sources, so left off air copy.<br>LIGHT UP DOWNTOWN: NIGHT ONE IS TONIGHT: https://www.9and10news.com/2026/11/19/traverse-city-expands-holiday-festivities-to-two-day-celebration/ 9&10 News Nov 19 (Huiskens/Monroe). Road closures: 9&10 Nov 19 https://www.9and10news.com/2026/11/19/downtown-traverse-city-light-parade-will-bring-road-closures-this-saturday/ . 6:30 tree lighting also Downtown TC event page https://www.downtowntc.com/events/light-up-downtown-day-1-traverse-city-tree-lighting.html . Self-aware nod: FB drafts Mon/Thu mentioned the two nights; this is the day-of.<br>ONE AUTHOR'S POST, PHONES RINGING ON FRONT STREET: https://upnorthlive.com/news/local/bestselling-authors-posts-spark-nationwide-rush-for-signed-books-at-traverse-city-shop-abby-jimenez-horizon-books UpNorthLive (Roxanne Werly) Nov 19.<br>GAYLORD WAVES THE SNOWBIRDS OFF TO MARQUETTE: https://upnorthlive.com/news/local/gaylord-rallies-behind-st-marys-snowbirds-as-team-heads-to-state-title-game UpNorthLive (Maryjane Glynn) Nov 19. Mendon schools page https://mendonschools.org/2026/11/18/football-state-finals/ confirms Sat 2 PM NMU Superior Dome.<br>DEER SEASON FASHION: ORANGE VESTS FOR THE DOG: https://upnorthlive.com/news/local/small-business-owners-create-animal-shelter-fundraiser-by-making-dog-safety-vests-alden-canvas UpNorthLive (Roxanne Werly) Nov 19. 'blaze-style' is my description of a safety vest; article says 'dog safety vests'.<br>DUA LIPA, LANA AND CAMILA ON THE GTA 6 ALBUM, OUT TODAY: https://consequence.net/2026/11/gta-6-soundtrack-album-stream/ Consequence Nov 20 12:00 AM ET; Rolling Stone Nov 14 https://www.rollingstone.com/music/music-news/lana-del-rey-dua-lipa-zara-larsson-gta-vi-album-track-list-1235658416/ (leak, Morgan Wallen, Justice). Z93 rotation artists at top per curation rules.<br>THE HUNGER GAMES ARE BACK, AND THE ODDS LOOK GOOD: https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/ Deadline Nov 19 11:22 PM; Variety https://variety.com/2026/film/box-office/sunrise-on-reaping-box-office-hunger-games-opening-weekend-1236950225/ (3,900 theaters, $85M studio, up to $125M, sixth entry, Ballad $44M). Courtney/Friday movie boost.<br>NATIONAL ABSURDITY DAY: THE WEIRDEST RULE IN YOUR HOUSE: https://nationaldaycalendar.com/national-absurdity-day-november-20 National Day Calendar page (fetched).<br>PREDICT THE STAGS SCORE: https://tri-citytimes.com/2026/11/18/almont-puts-undefeated-record-on-line/ Facts from Tri-City Times. 'bragging rights' only; no prize offered.<br>SPORTS: Kingsley: Tri-City Times/Record-Eagle/GoFan. St. Mary: UpNorthLive Nov 19; 39-36 semi per UpNorthLive headline https://upnorthlive.com/sports/hometown-highlights/gaylord-st-mary-heading-to-8-player-state-finals-after-thrilling-39-36-win-in-semis . Roscommon: MHSAA volleyball page + Kalamazoo Christian athletics. HS football list: area teams not individually opened on MaxPreps this morning; status from the semifinal bracket (only 4 teams per division left; Kingsley is the lone GT-area 11-player team) and week-used sports log. MSU: msuspartans.com game notes. UM: mgoblue.com + mlive. Lions: buccaneers.com Week 11 guide; 7-2 record from Mon 11/16 log (35-10 over NE). Tigers: MLive Nov 17. Pistons: AP https://apnews.com/article/pistons-pelicans-score-cbc004977adfbb1f81feaaf63f23820f (NBA.com dates it Nov 18). Red Wings: AP https://apnews.com/article/bruins-red-wings-score-8a1c5ad0f3c54d456c71217f6e9aca41 (date not re-checked, so no day named).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-buzz-01",
+    "title": "STAG IT UP: KINGSLEY VS. ALMONT, THE REMATCH",
+    "recap": "We hyped Kingsley's D6 semifinal vs. Almont, Saturday 1 PM in Clare, a rematch of the Stags' 2023 state-title win.",
+    "article_url": "https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html",
+    "article_title": "Kingsley meets familiar foe Almont in semifinals (Record-Eagle, Nov 19)",
+    "jokes": [
+     "Almont's coming in 12-0. That's cute. So is Kingsley. Somebody's about to find out what 12-1 feels like.",
+     "If you see a long line of Stags flags on US-127 Saturday morning, that's not traffic. That's a parade with a GPS."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-02",
+    "title": "LIGHT UP DOWNTOWN: NIGHT ONE IS TONIGHT",
+    "recap": "We talked about Light Up Downtown night one: tree lighting at 6:30 PM Friday, Light Parade Saturday at 6.",
+    "article_url": "https://www.9and10news.com/2026/11/19/traverse-city-expands-holiday-festivities-to-two-day-celebration/",
+    "article_title": "Traverse City expands holiday festivities to two-day celebration (9&10 News, Nov 19)",
+    "jokes": [
+     "Find the Grinch scavenger hunt. Easy. He's the guy complaining about parking.",
+     "A 4,500-pound tree in a manhole. That's the most Traverse City sentence ever written."
+    ],
+    "rank": 7,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-buzz-03",
+    "title": "ONE AUTHOR'S POST, PHONES RINGING ON FRONT STREET",
+    "recap": "We talked about Abby Jimenez's posts sending signed-book orders to Horizon Books from as far as Texas and California.",
+    "article_url": "https://upnorthlive.com/news/local/bestselling-authors-posts-spark-nationwide-rush-for-signed-books-at-traverse-city-shop-abby-jimenez-horizon-books",
+    "article_title": "Bestselling author's posts spark nationwide rush for signed books at Traverse City shop (UpNorthLive, Nov 19)",
+    "jokes": [
+     "Horizon Books is now shipping to Texas. Next up, a drive-thru window for book clubs.",
+     "Nothing says love story like a woman, a Sharpie and a bookstore phone that won't stop ringing."
+    ],
+    "rank": 8,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-buzz-04",
+    "title": "GAYLORD WAVES THE SNOWBIRDS OFF TO MARQUETTE",
+    "recap": "We sent off Gaylord St. Mary: bus leaves 10 AM Friday, 8-player D2 final vs. Mendon Saturday 2 PM at the Superior Dome.",
+    "article_url": "https://upnorthlive.com/news/local/gaylord-rallies-behind-st-marys-snowbirds-as-team-heads-to-state-title-game",
+    "article_title": "Gaylord rallies behind St. Mary's Snowbirds as team heads to state title game (UpNorthLive, Nov 19)",
+    "jokes": [
+     "The Snowbirds are heading north for the winter. That's the opposite of how snowbirds work.",
+     "Superior Dome. Even the stadium name is trash-talking."
+    ],
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-buzz-05",
+    "title": "DEER SEASON FASHION: ORANGE VESTS FOR THE DOG",
+    "recap": "We talked about Alden Canvas giving away dog safety vests for donations to Antrim County Animal Control: 164 vests, about $680.",
+    "article_url": "https://upnorthlive.com/news/local/small-business-owners-create-animal-shelter-fundraiser-by-making-dog-safety-vests-alden-canvas",
+    "article_title": "Small business owners create animal shelter fundraiser by making dog safety vests (UpNorthLive, Nov 19)",
+    "jokes": [
+     "My dog in a safety vest looks like he's about to direct traffic at the Cherry Festival.",
+     "Free vest for the dog. Meanwhile, I'm still paying full price for my own hat."
+    ],
+    "rank": 3,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-buzz-06",
+    "title": "DUA LIPA, LANA AND CAMILA ON THE GTA 6 ALBUM, OUT TODAY",
+    "recap": "We talked about GTA VI: The Album dropping with new songs from Dua Lipa, Lana Del Rey, Camila Cabello and Zara Larsson.",
+    "article_url": "https://consequence.net/2026/11/gta-6-soundtrack-album-stream/",
+    "article_title": "Grand Theft Auto VI Releases Full 34-Song Soundtrack Album (Consequence, Nov 20)",
+    "jokes": [
+     "Dua Lipa's new song is called 'Go Easy.' Nobody playing GTA has ever gone easy.",
+     "Morgan Wallen and Dua Lipa on one album. That's the most Up North playlist I've ever seen."
+    ],
+    "rank": 9,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-07",
+    "title": "THE HUNGER GAMES ARE BACK, AND THE ODDS LOOK GOOD",
+    "recap": "We talked about Hunger Games: Sunrise on the Reaping opening with $21M+ in previews and eyeing $100M.",
+    "article_url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+    "article_title": "'Hunger Games: Sunrise On The Reaping' 2nd Best Franchise Previews With $21M+ (Deadline, Nov 19)",
+    "jokes": [
+     "May the odds be ever in your favor. And may the person in front of you not be on their phone.",
+     "I'd last about four minutes in the Hunger Games. Three if there's no Wi-Fi."
+    ],
+    "rank": 10,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-08",
+    "title": "NATIONAL ABSURDITY DAY: THE WEIRDEST RULE IN YOUR HOUSE",
+    "recap": "We asked for the most absurd rules in your house for National Absurdity Day, from the 1913 mailed-kids story.",
+    "article_url": "https://nationaldaycalendar.com/national-absurdity-day-november-20",
+    "article_title": "National Absurdity Day, November 20 (National Day Calendar)",
+    "jokes": [
+     "Mailing a kid for 15 cents? I'd pay that just for a quiet ride to school.",
+     "Absurdity Day in Michigan is called 'wearing shorts in November,' and we did it all week."
+    ],
+    "rank": 11,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-09",
+    "title": "PREDICT THE STAGS SCORE",
+    "recap": "We took your Kingsley-Almont score predictions for Saturday's semifinal.",
+    "article_url": "https://tri-citytimes.com/2026/11/18/almont-puts-undefeated-record-on-line/",
+    "article_title": "Almont puts undefeated record on line (Tri-City Times, Nov 18)",
+    "jokes": [
+     "If you predict Almont wins, please text from an unlisted number for your own safety.",
+     "Last time these two met it was 38-24. I'm predicting a score with a lot of numbers in it."
+    ],
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-12",
+    "title": "ROSCOMMON VOLLEYBALL: D3 STATE SEMI TODAY",
+    "recap": "We wished Roscommon volleyball luck in its D3 state semifinal at noon Friday.",
+    "article_url": "https://www.mhsaa.com/sports/girls-volleyball",
+    "article_title": "Roscommon Volleyball: D3 State Semi Today",
+    "jokes": [],
+    "rank": 5,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-buzz-13",
+    "title": "FRIDAY NIGHT HS FOOTBALL",
+    "recap": "We noted Kingsley is the last area 11-player football team still playing.",
+    "article_url": "https://www.si.com/high-school/michigan/updated-michigan-high-school-football-playoff-brackets-scores-matchups-for-nov-21-01m7jsb99ps3",
+    "article_title": "Friday Night Hs Football",
+    "jokes": [],
+    "rank": 6,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-14",
+    "title": "MSU TONIGHT: OREGON ON SENIOR NIGHT",
+    "recap": "We previewed MSU hosting No. 13 Oregon Friday night on FOX.",
+    "article_url": "https://msuspartans.com/news/2026/11/17/football-michigan-state-welcomes-no-14-oregon-on-senior-night-friday-in-spartan-spartan",
+    "article_title": "Msu Tonight: Oregon On Senior Night",
+    "jokes": [],
+    "rank": 12,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-15",
+    "title": "MICHIGAN SATURDAY: NO. 4 UCLA",
+    "recap": "We previewed Michigan hosting No. 4 UCLA Saturday at 3:30 on CBS.",
+    "article_url": "https://mgoblue.com/sports/2026/11/16/michigan-monday-game-11-vs-ucla",
+    "article_title": "Michigan Saturday: No. 4 Ucla",
+    "jokes": [],
+    "rank": 13,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-16",
+    "title": "LIONS SUNDAY: BUCS AT FORD FIELD",
+    "recap": "We previewed the Lions hosting Tampa Bay Sunday at 1 on FOX.",
+    "article_url": "https://www.buccaneers.com/news/how-to-watch-buccaneers-at-lions-week-11-2026",
+    "article_title": "Lions Sunday: Bucs At Ford Field",
+    "jokes": [],
+    "rank": 14,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-buzz-17",
+    "title": "DETROIT QUICK HITS",
+    "recap": "We ran Detroit quick hits: three Tigers Silver Sluggers, a Pistons win, a Red Wings loss.",
+    "article_url": "https://www.mlive.com/tigers/2026/11/tigers-win-3-silver-sluggers-for-first-time-since-1987.html",
+    "article_title": "Detroit Quick Hits",
+    "jokes": [],
+    "rank": 15,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html",
+  "article_title": "Kingsley meets familiar foe Almont in semifinals (Record-Eagle, Nov 19)",
+  "jokes": [
+   "Almont's coming in 12-0. That's cute. So is Kingsley. Somebody's about to find out what 12-1 feels like.",
+   "If you see a long line of Stags flags on US-127 Saturday morning, that's not traffic. That's a parade with a GPS."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-20-bench-01",
+    "title": "INTERLOCHEN'S 100TH: ALUMNI COME HOME FOR COLLAGE",
+    "body": "INTERLOCHEN'S 100TH: ALUMNI COME HOME FOR COLLAGE<br>• Interlochen announced a special Centennial Collage for its 100th camp season: July 11, 2027, 7:30 PM at Kresge Auditorium.<br>• Collage, running since 1993, is the fast-paced show with music, theatre, dance, writing, film and visual arts all in one night.<br>• For the centennial, distinguished alumni return to the stage alongside today's students. Tickets go on sale early spring, and Wynton Marsalis with the Jazz at Lincoln Center Orchestra is also part of the celebration.<br>➜ TAKE: A hundred years of Interlochen kids, and some of them are coming back famous. That's the best class reunion in Michigan.<br>➜ BAIT: Text 231-929-4487: did you or your kid ever go to Interlochen camp?<br>😂 JOKES: Interlochen alumni coming home. My high school reunion was eight people at Applebee's. / A hundred years of camp. Somewhere there's a kid still looking for the bunk he lost a sock in.",
+    "recap": "We talked about Interlochen's Centennial Collage on July 11, 2027, bringing alumni back to Kresge Auditorium.",
+    "notes": "https://www.traverseticker.com/news/interlochen-announces-special-centennial-edition-of-collage-for-summer-2027/ The Ticker Nov 20.",
+    "article_url": "https://www.traverseticker.com/news/interlochen-announces-special-centennial-edition-of-collage-for-summer-2027/",
+    "article_title": "Interlochen Announces Special Centennial Edition of Collage for Summer 2027 (The Ticker, Nov 20)",
+    "jokes": [
+     "Interlochen alumni coming home. My high school reunion was eight people at Applebee's.",
+     "A hundred years of camp. Somewhere there's a kid still looking for the bunk he lost a sock in."
+    ]
+   },
+   {
+    "id": "2026-11-20-bench-02",
+    "title": "33 YEARS OF THANKSGIVING BASKETS ON OLD MISSION",
+    "body": "33 YEARS OF THANKSGIVING BASKETS ON OLD MISSION<br>• The Old Mission Peninsula Women's Club packed Thanksgiving baskets Thursday for 12 local families, its 33rd year doing it.<br>• Families are submitted anonymously through Eastern Elementary and Old Mission Peninsula School, and the baskets go to the schools.<br>• Each has a full Thanksgiving meal plus paper towels, aluminum pans and breakfast items, donated this year by Olson Foods and The Butchers Block.<br>➜ TAKE: Thirty-three years. That's not a project, that's a tradition. And somebody remembered the aluminum pans, which is the real hero move.<br>➜ BAIT: Text 231-929-4487: who's a neighbor doing quiet good this Thanksgiving? Shout them out.<br>😂 JOKES: Paper towels in a Thanksgiving basket. Finally, someone who's been to a family dinner with toddlers. / They even packed breakfast. Because Friday morning leftovers deserve backup.",
+    "recap": "We talked about the Old Mission Peninsula Women's Club packing Thanksgiving baskets for 12 families, its 33rd year.",
+    "notes": "https://upnorthlive.com/news/local/old-mission-peninsula-womens-club-assembles-thanksgiving-baskets-for-families-in-need-grand-traverse-county UpNorthLive Nov 19.",
+    "article_url": "https://upnorthlive.com/news/local/old-mission-peninsula-womens-club-assembles-thanksgiving-baskets-for-families-in-need-grand-traverse-county",
+    "article_title": "Old Mission Peninsula Women's Club assembles Thanksgiving baskets for families in need (UpNorthLive, Nov 19)",
+    "jokes": [
+     "Paper towels in a Thanksgiving basket. Finally, someone who's been to a family dinner with toddlers.",
+     "They even packed breakfast. Because Friday morning leftovers deserve backup."
+    ]
+   },
+   {
+    "id": "2026-11-20-bench-03",
+    "title": "TC VACATION RENTAL CAP HEADS TO A DEC. 7 VOTE",
+    "body": "TC VACATION RENTAL CAP HEADS TO A DEC. 7 VOTE<br>• Traverse City commissioners voted Monday to send new short-term rental limits to a Dec. 7 enactment vote.<br>• Vacation rentals aren't allowed in neighborhoods but cluster in commercial districts. Since 2021 three districts cap them at 25 percent of units on a property.<br>• In other districts, 100 percent of units can be vacation rentals right now, and residents asked for tighter rules in the city's strategic plan. The proposal would cut those percentages.<br>➜ TAKE: Downtown wants neighbors, not just suitcases. December 7 is the vote, so if you've got an opinion, that's the night.<br>➜ BAIT: Text 231-929-4487: would you rather live next to a vacation rental or a neighbor with a leaf blower?<br>😂 JOKES: You know it's a vacation rental when the welcome mat says 'check-out is 10 AM.' / Some buildings downtown have more keypads than residents.",
+    "recap": "We talked about Traverse City's proposed vacation-rental cap heading to a Dec. 7 vote.",
+    "notes": "https://www.traverseticker.com/news/vacation-rental-cap-headed-to-december-vote/ The Ticker (Beth Milligan) Nov 20. Civic, not partisan.",
+    "article_url": "https://www.traverseticker.com/news/vacation-rental-cap-headed-to-december-vote/",
+    "article_title": "Vacation Rental Cap Headed to December Vote (The Ticker, Nov 20)",
+    "jokes": [
+     "You know it's a vacation rental when the welcome mat says 'check-out is 10 AM.'",
+     "Some buildings downtown have more keypads than residents."
+    ]
+   },
+   {
+    "id": "2026-11-20-bench-04",
+    "title": "NMC STUDENTS' THANKS-FOR-GIVING DRIVE IS ON",
+    "body": "NMC STUDENTS' THANKS-FOR-GIVING DRIVE IS ON<br>• Northwestern Michigan College students launched their annual Thanks-for-Giving fundraiser, a class project to put Thanksgiving dinner on the table for families who can't afford it.<br>• Student leaders Cassidy Weber and Natalie Laprad talked about it on 9&10's Good Day this week.<br>• It's a hands-on lesson: the class runs the fundraiser itself, right before the holiday.<br>➜ TAKE: College kids giving up their time the week before Thanksgiving break. That's the kind of homework I'd sign off on.<br>➜ BAIT: Text 231-929-4487: what's the best class project you ever did?<br>😂 JOKES: A class project that feeds families. My class project was a volcano that never erupted. / These students are planning Thanksgiving for strangers. Some of us can't plan Thanksgiving for our own family.",
+    "recap": "We talked about NMC students' annual Thanks-for-Giving fundraiser to feed families at Thanksgiving.",
+    "notes": "https://www.9and10news.com/2026/11/19/nmc-students-launch-annual-thanks-for-giving-campaign/ 9&10 News Nov 19 (short article). NMC's own page https://www.nmc.edu/news/2026/10/thanks-for-giving-2026.html not fetched, so box counts left out.",
+    "article_url": "https://www.9and10news.com/2026/11/19/nmc-students-launch-annual-thanks-for-giving-campaign/",
+    "article_title": "NMC students launch annual 'Thanks for Giving' campaign (9&10 News, Nov 19)",
+    "jokes": [
+     "A class project that feeds families. My class project was a volcano that never erupted.",
+     "These students are planning Thanksgiving for strangers. Some of us can't plan Thanksgiving for our own family."
+    ]
+   }
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "0831f9ce0907",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "bit-stags": {
+  "id": "bit-stags",
+  "title": "Stags Extras",
+  "category": "Bit",
+  "type": "text",
+  "content": "STAGS EXTRAS: KINGSLEY VS. ALMONT<br>• Kingsley 12-0, Almont 12-0. Somebody's perfect season ends Saturday in Clare.<br>• Rematch: Kingsley beat Almont 38-24 in the 2023 D6 state final at Ford Field.<br>• The Stags score about 41 a game and give up 15; Almont scores 40 and gives up 16.5.<br>• Kingsley has scored 31 or more in six straight games and won seven straight at home.<br>• Perry Smith: 1,260 rushing yards, 19 TDs. Nolan Hodges: 828 yards, 15 TDs. It's a Wing-T, so everybody gets the ball.<br>• QB Barrett Bielas after the regional: \"Anything for one more week.\"<br>• Kingsley has made the playoffs nine straight years and lost the 2025 final to Lumen Christi, 28-14.<br>• Win and it's Ford Field, Friday Nov. 27 at 4 PM. Tickets for Saturday: $12 on GoFan.<br>😂 STAGS ONE-LINERS: The Stags run the Wing-T. Almont's defense is about to learn it stands for 'Where'd they go?' / Clare's a two-hour drive. Kingsley fans will make it in an hour fifty with a stop for jerky. / Almont's coming up with 12 wins. Kingsley's bringing 12 wins and a whole town's worth of casseroles.<br>📞 Call or text 231-929-4487 with your Stags prediction: final score and who scores first.<br>📞 Shout-out line: Stags players, parents, grandparents, call in and tell us who you're cheering for by name.<br>🎯 PREDICTION BIT: AJ and the studio each lock a final score at 7:40; read the best listener texts at 8:40; Monday's show crowns the closest guess (bragging rights only).",
+  "notes": "https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html<br>Stats: Record-Eagle Nov 19, Tri-City Times Nov 18, MaxPreps Nov 17 (streaks). No birthday jokes. No prize promised.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-20-bit-stags-01",
+    "title": "STAGS EXTRAS: KINGSLEY VS. ALMONT",
+    "recap": "We ran Stags talking points, one-liners and took your score predictions for Saturday's semifinal.",
+    "article_url": "https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html",
+    "article_title": "Kingsley meets familiar foe Almont in semifinals (Record-Eagle, Nov 19)",
+    "jokes": [
+     "The Stags run the Wing-T. Almont's defense is about to learn it stands for 'Where'd they go?'",
+     "Clare's a two-hour drive. Kingsley fans will make it in an hour fifty with a stop for jerky."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.record-eagle.com/sports/local_sports/kingsley-meets-familiar-foe-almont-in-semifinals/article_ed8dcc15-e8fb-43d8-93ab-f15eadc0be34.html",
+  "article_title": "Kingsley meets familiar foe Almont in semifinals (Record-Eagle, Nov 19)",
+  "jokes": [
+   "The Stags run the Wing-T. Almont's defense is about to learn it stands for 'Where'd they go?'",
+   "Clare's a two-hour drive. Kingsley fans will make it in an hour fifty with a stop for jerky."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "a4e333ec5137",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: DAY TWO<br>• CONFIRMED: Sensor Tower estimates GTA 6 pre-orders plus first-day sales topped 24.5 million copies and about $2.36 billion. The BBC notes this year's top movie, Spider-Man: Brand New Day, made $2.5 billion in its whole theater run.<br>• CONFIRMED: Rockstar and Take-Two haven't released official sales numbers; they call demand \"unprecedented.\"<br>• CONFIRMED: GTA VI: The Album is out today, 34 songs including Dua Lipa, Lana Del Rey, Camila Cabello and Morgan Wallen. A one-off GTA 6 music festival hits Miami Saturday with Travis Scott, Cardi B and more.<br>• REPORTED, NOT CONFIRMED: no PC version or GTA Online date announced; reports point to 2027.<br>➜ TAKE: It made almost as much in one day as the biggest movie of the year made all year. My kid's going to use that stat to argue for a later bedtime.<br>➜ BAIT: Text 231-929-4487: did anybody in your house actually sleep this week?<br>😂 JOKES: $2.36 billion in a day. That's a lot of people telling their boss they had 'a family thing.' / GTA 6 has a soundtrack album now. Great, now the car rides AND the video game are loud.",
+  "notes": "GTA 6 WATCH: DAY TWO: https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o Sources checked: BBC Nov 20 (Sensor Tower numbers, Rockstar quote); Deadline https://deadline.com/2026/11/gta-6-sales-launch-day-surge-videogame-1237229514/ ; Consequence album Nov 20; Rolling Stone Nov 14 (Miami festival Nov 21); PC Gamer https://www.pcgamer.com/games/grand-theft-auto/gta-6-online-multiplayer/ (PC/Online no date, 2027 reports); GMA explainer; Rockstar Newswire not re-fetched this morning. Release status: out now on PS5 and Xbox Series X/S.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-20-gta6-01",
+    "title": "GTA 6 WATCH: DAY TWO",
+    "recap": "We talked about GTA 6's estimated $2.36 billion launch and its new soundtrack album.",
+    "article_url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+    "article_title": "GTA 6 breaks records as estimated sales top $2.3bn (BBC News, Nov 20)",
+    "jokes": [
+     "$2.36 billion in a day. That's a lot of people telling their boss they had 'a family thing.'",
+     "GTA 6 has a soundtrack album now. Great, now the car rides AND the video game are loud."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+  "article_title": "GTA 6 breaks records as estimated sales top $2.3bn (BBC News, Nov 20)",
+  "jokes": [
+   "$2.36 billion in a day. That's a lot of people telling their boss they had 'a family thing.'",
+   "GTA 6 has a soundtrack album now. Great, now the car rides AND the video game are loud."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2e15fad2c903",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "GAS IS FALLING, AND TWO-THIRDS OF US ARE DRIVING TO DINNER<br>• GasBuddy's Thanksgiving survey (Nov 19): 66% of Americans plan a road trip for Thanksgiving, up from 60% last year.<br>• GasBuddy forecasts a $3.62 national average on Thanksgiving Day, down more than 50 cents in a month but still about 60 cents above last year.<br>• Nearly one in five drivers (18%) say they're cutting other holiday spending to cover gas.<br>➜ LOCAL ANGLE: Up North, Thanksgiving is a driving holiday: Grandma's in Gaylord, the cousins in Grand Rapids. Cheaper gas on US-131 and I-75 is real money.<br>➜ TAKE: Prices are dropping just in time for the drive to Grandma's. Fill up early in the week before everybody else does.<br>➜ BAIT: Text 231-929-4487: how far are you driving for Thanksgiving dinner?<br>😂 JOKES: Two-thirds of us are road-tripping. The other third is hosting and quietly hoping the roads close. / Gas dropped 50 cents. I celebrated by buying 50 cents' worth of gas-station jerky.<br><br>THANKSGIVING IS STILL HOMEMADE<br>• YouGov's new poll (Nov 19): 84% plan to celebrate Thanksgiving, and 78% will do it at their home or a friend's or family member's home.<br>• 83% say their group will cook the meal; only 5% will order a premade dinner and 4% will go out to eat.<br>• Turkey, mashed potatoes and pie top the list of what people expect to eat.<br>➜ LOCAL ANGLE: Up North we cook at home and fight over whose pie it is. Local pie shops are already taking orders for people who'd rather not.<br>➜ TAKE: Ordering in is out. America still wants to be in the kitchen at 6 AM wrestling a turkey. Respect.<br>➜ BAIT: Text 231-929-4487: what's the one dish you're not allowed to skip at your Thanksgiving?<br>😂 JOKES: 83% cook at home. The other 17% have already been banned from the kitchen. / Pie made the top three. Correct. Pie should be top one, two and three.",
+  "notes": "GAS IS FALLING, AND TWO-THIRDS OF US ARE DRIVING TO DINNER: https://www.gasbuddy.com/newsroom/pressrelease/2026/11/19/two-thirds-of-americans-plan-thanksgiving-road-trips-as-gas-prices-drop-ahead-of-holidays-1175 GasBuddy press release Nov 19. Michigan-specific price not quoted (not fetched).<br>THANKSGIVING IS STILL HOMEMADE: https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving YouGov (Taylor Orth) Nov 19.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-20-lifestyle-01",
+    "title": "GAS IS FALLING, AND TWO-THIRDS OF US ARE DRIVING TO DINNER",
+    "recap": "We talked about GasBuddy's survey: 66% are road-tripping for Thanksgiving, with gas forecast at $3.62.",
+    "article_url": "https://www.gasbuddy.com/newsroom/pressrelease/2026/11/19/two-thirds-of-americans-plan-thanksgiving-road-trips-as-gas-prices-drop-ahead-of-holidays-1175",
+    "article_title": "Two-Thirds of Americans Plan Thanksgiving Road Trips as Gas Prices Drop Ahead of Holidays (GasBuddy, Nov 19)",
+    "jokes": [
+     "Two-thirds of us are road-tripping. The other third is hosting and quietly hoping the roads close.",
+     "Gas dropped 50 cents. I celebrated by buying 50 cents' worth of gas-station jerky."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-lifestyle-02",
+    "title": "THANKSGIVING IS STILL HOMEMADE",
+    "recap": "We talked about YouGov's poll: 83% are cooking Thanksgiving at home, with turkey, mashed potatoes and pie on top.",
+    "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+    "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+    "jokes": [
+     "83% cook at home. The other 17% have already been banned from the kitchen.",
+     "Pie made the top three. Correct. Pie should be top one, two and three."
+    ],
+    "rank": 2,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.gasbuddy.com/newsroom/pressrelease/2026/11/19/two-thirds-of-americans-plan-thanksgiving-road-trips-as-gas-prices-drop-ahead-of-holidays-1175",
+  "article_title": "Two-Thirds of Americans Plan Thanksgiving Road Trips as Gas Prices Drop Ahead of Holidays (GasBuddy, Nov 19)",
+  "jokes": [
+   "Two-thirds of us are road-tripping. The other third is hosting and quietly hoping the roads close.",
+   "Gas dropped 50 cents. I celebrated by buying 50 cents' worth of gas-station jerky."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "8497809b668c",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "OFFICE: FEWER OF US GET THANKSGIVING OFF<br>• YouGov: 58% of working Americans say they get Thanksgiving Day off, down from 68% last year.<br>• 19% say they'll work full or limited hours on the holiday.<br>➜ TAKE: If you're working Thursday, you're a hero. And you get first dibs on the leftovers in the break room.<br>➜ BAIT: Text 231-929-4487: working Thanksgiving? Tell us where, we'll give you a shout.<br>😂 JOKES: Working Thanksgiving means you get to skip the family argument. Some people call that a perk. / Somebody's bringing a turkey sandwich to the office Thursday and becoming a legend.<br><br>OFFICE: DROVE IN TO SIT ON ZOOM<br>• A New York Fed survey says about half of office-based workers describe in-office days full of Zoom calls and Slack threads, with little face time with coworkers.<br>• Reasons include remote teammates, teams spread across the map, and people not actually showing up on mandated days.<br>➜ TAKE: You scraped the windshield, fought traffic, found a parking spot, and then got on a video call with the guy sitting ten feet away.<br>➜ BAIT: Text 231-929-4487: what's the most pointless meeting you've ever been in?<br>😂 JOKES: I drove 20 minutes to join a Zoom. My laptop could've done that from the couch. / Office life now: you can hear your coworker in the room AND on the call. It's surround sound.<br><br>SCHOOL: AN 'EDUCATOR VILLAGE' FOR TEACHERS<br>• Garfield Township planners got a first look this week at the Grand Traverse Educator Village: 73 affordable apartments on the Oleson Foundation land off US-31.<br>• It's geared toward TCAPS staff and other school employees: 44 one-bedrooms and 29 two-bedrooms, a dog park, and about four acres of woods kept as open space.<br>• It's early: concept review only, from Woda Cooper Companies, the developer behind Ruth Park and Annika Place.<br>➜ TAKE: Teachers who can afford to live in the town they teach in? That's a lesson plan I can get behind.<br>➜ BAIT: Text 231-929-4487: which teacher changed your life? Say their name on air.<br>😂 JOKES: A neighborhood full of teachers. Imagine trying to sneak home late past THAT block. / There's a dog park, so even the dogs will have to raise a paw before speaking.<br><br>SCHOOL: IT'S SUBSTITUTE EDUCATORS DAY<br>• Today is Substitute Educators Day, always the Friday before Thanksgiving, closing out American Education Week.<br>• National Day Calendar cites more than 500,000 substitute teachers in 2020; some get the call only hours before class.<br>• Listener question: the best (or wildest) substitute teacher story from your school days.<br>➜ TAKE: Subs walk into a room of 28 kids they've never met with a lesson plan written on a napkin. Give them a raise and a coffee.<br>➜ BAIT: Text 231-929-4487: your best substitute-teacher story. Did your class switch names on the sub?<br>😂 JOKES: Every class had that kid who told the sub, 'Our teacher always lets us watch a movie.' Every class. / Subs are the bravest people in America. They don't know your name, the Wi-Fi password or where the bathroom is.",
+  "notes": "OFFICE: FEWER OF US GET THANKSGIVING OFF: https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving YouGov Nov 19.<br>OFFICE: DROVE IN TO SIT ON ZOOM: https://www.cnbc.com/2026/11/02/remote-work-in-office-mandate-new-york-fed.html CNBC Nov 2 (Eric Rosenbaum).<br>SCHOOL: AN 'EDUCATOR VILLAGE' FOR TEACHERS: https://www.traverseticker.com/news/educator-village-more-projects-on-garfield-agenda/ The Ticker (Beth Milligan) Nov 18; Record-Eagle follow-up https://www.record-eagle.com/news/local_news/blaze-a-trail-educator-housing-moves-forward-in-garfield-township/article_7ff589fa-be4f-4e83-923b-564c18f28a62.html (not opened).<br>SCHOOL: IT'S SUBSTITUTE EDUCATORS DAY: https://nationaldaycalendar.com/celebrations/substitute-educators-day-friday-before-thanksgiving National Day Calendar. A Stags game-week school bit was asked for, but no verified Kingsley spirit-week item was found this morning, so none was invented.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-20-officeschool-01",
+    "title": "OFFICE: FEWER OF US GET THANKSGIVING OFF",
+    "recap": "We talked about YouGov's finding that only 58% of workers get Thanksgiving off, down from 68%.",
+    "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+    "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+    "jokes": [
+     "Working Thanksgiving means you get to skip the family argument. Some people call that a perk.",
+     "Somebody's bringing a turkey sandwich to the office Thursday and becoming a legend."
+    ],
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-officeschool-02",
+    "title": "OFFICE: DROVE IN TO SIT ON ZOOM",
+    "recap": "We talked about the NY Fed survey where half of in-office workers say their days are mostly Zoom and Slack anyway.",
+    "article_url": "https://www.cnbc.com/2026/11/02/remote-work-in-office-mandate-new-york-fed.html",
+    "article_title": "Half of in-office workers describe their desk jobs as 'remote,' NY Fed survey finds (CNBC, Nov 2)",
+    "jokes": [
+     "I drove 20 minutes to join a Zoom. My laptop could've done that from the couch.",
+     "Office life now: you can hear your coworker in the room AND on the call. It's surround sound."
+    ],
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-officeschool-03",
+    "title": "SCHOOL: AN 'EDUCATOR VILLAGE' FOR TEACHERS",
+    "recap": "We talked about the proposed 73-unit Educator Village for TCAPS staff in Garfield Township.",
+    "article_url": "https://www.traverseticker.com/news/educator-village-more-projects-on-garfield-agenda/",
+    "article_title": "'Educator Village,' More Projects on Garfield Agenda (The Ticker, Nov 18)",
+    "jokes": [
+     "A neighborhood full of teachers. Imagine trying to sneak home late past THAT block.",
+     "There's a dog park, so even the dogs will have to raise a paw before speaking."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-officeschool-04",
+    "title": "SCHOOL: IT'S SUBSTITUTE EDUCATORS DAY",
+    "recap": "We celebrated Substitute Educators Day and took your best substitute-teacher stories.",
+    "article_url": "https://nationaldaycalendar.com/celebrations/substitute-educators-day-friday-before-thanksgiving",
+    "article_title": "Substitute Educators Day (National Day Calendar)",
+    "jokes": [
+     "Every class had that kid who told the sub, 'Our teacher always lets us watch a movie.' Every class.",
+     "Subs are the bravest people in America. They don't know your name, the Wi-Fi password or where the bathroom is."
+    ],
+    "rank": 4,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+  "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+  "jokes": [
+   "Working Thanksgiving means you get to skip the family argument. Some people call that a perk.",
+   "Somebody's bringing a turkey sandwich to the office Thursday and becoming a legend."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "7913e8e18078",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2ea0d62e0f6e",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "TWO SIGHS BEFORE THE BIG MOMENT<br><br>Big weekend Up North, isn't it? The Stags are headed to Clare, the Snowbirds are headed to Marquette, the tree lights up downtown tonight, and Thanksgiving is barreling at us like a semi on 31. So if your shoulders are up around your ears this morning, that makes sense. Here's one thing that actually helps, and it works sitting right there in your car. Researchers at Stanford had people do something called cyclic sighing for five minutes a day, and after a month those folks felt better and calmer than the group doing regular meditation. It goes like this: breathe in through your nose, then sneak in one more little sip of air on top of it, and then let it all out slow through your mouth, longer than you breathed in. Do that a few times at the red light, before you walk into work, or right before kickoff when your kid runs onto the field. You don't have to fix the whole weekend, you just have to get through the next breath, and then the next one. Try it today and text me how it went at 231-929-4487.",
+  "notes": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2822%2900474-8<br>Balban, Spiegel, Huberman et al. 2023, Cell Reports Medicine; Stanford Medicine summary https://med.stanford.edu/news/insights/2023/02/cyclic-sighing-can-help-breathe-away-anxiety.html . Move not in week-used. Indoor/car move, weather-proof.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-mental-01",
+    "title": "TWO SIGHS BEFORE THE BIG MOMENT",
+    "recap": "We tried cyclic sighing for the Mental Health Minute: a double inhale and a long exhale to settle big-weekend nerves.",
+    "article_url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2822%2900474-8",
+    "article_title": "Brief structured respiration practices enhance mood and reduce physiological arousal (Balban et al., Cell Reports Medicine, 2023)",
+    "jokes": [],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2822%2900474-8",
+  "article_title": "Brief structured respiration practices enhance mood and reduce physiological arousal (Balban et al., Cell Reports Medicine, 2023)",
+  "jokes": [],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "ceccc2e6c6f5",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "content": "THE FINAL COUNTDOWN — EUROPE<br>• Released as a single: 1986 (lead single from The Final Countdown album)<br>• Chart peaks: US Billboard Hot 100: No. 8; UK Singles Chart: No. 1; Europe's biggest hit<br>🎤 SONG STORY: Joey Tempest wrote the famous keyboard riff around 1981 or 1982 on a Korg Polysix borrowed from keyboardist Mic Michaeli, and bassist John Levén pushed him in 1985 to build a song on it. The band wrote it as a concert opener and never thought it would be a hit; guitarist John Norum didn't like the synth intro at first.<br>😂 JOKES: The official song of every middle-school basketball warm-up since 1986. / If you hear that synth riff and don't air-keyboard it, check your pulse.",
+  "notes": "Backup pick (no flashback-request file today). Song story + peaks: Wikipedia, The Final Countdown (song), citing band interviews: https://en.wikipedia.org/wiki/The_Final_Countdown_(song) (US No. 8 / UK No. 1 per Wikipedia citing Billboard and Official Charts; MusicRadar https://www.musicradar.com/how-to/the-40-greatest-synth-sounds-of-all-time-no-19-europe-the-final-countdown confirms the riff story).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-flash-01",
+    "title": "THE FINAL COUNTDOWN — EUROPE",
+    "recap": "We flashed back to Europe's \"The Final Countdown,\" a UK No. 1 and US No. 8 from 1986, for game weekend.",
+    "article_url": "https://en.wikipedia.org/wiki/The_Final_Countdown_(song)",
+    "article_title": "The Final Countdown (song) (Wikipedia)",
+    "jokes": [
+     "The official song of every middle-school basketball warm-up since 1986.",
+     "If you hear that synth riff and don't air-keyboard it, check your pulse."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/The_Final_Countdown_(song)",
+  "article_title": "The Final Countdown (song) (Wikipedia)",
+  "jokes": [
+   "The official song of every middle-school basketball warm-up since 1986.",
+   "If you hear that synth riff and don't air-keyboard it, check your pulse."
+  ],
+  "requester": "",
+  "song": "The Final Countdown",
+  "artist": "Europe",
+  "single_year": "1986",
+  "chart_records": [
+   "US Billboard Hot 100: No. 8",
+   "UK Singles Chart: No. 1",
+   "Europe's biggest hit"
+  ],
+  "origin": "Joey Tempest wrote the famous keyboard riff around 1981 or 1982 on a Korg Polysix borrowed from keyboardist Mic Michaeli, and bassist John Levén pushed him in 1985 to build a song on it. The band wrote it as a concert opener and never thought it would be a hit; guitarist John Norum didn't like the synth intro at first.",
+  "song_story": "Joey Tempest wrote the famous keyboard riff around 1981 or 1982 on a Korg Polysix borrowed from keyboardist Mic Michaeli, and bassist John Levén pushed him in 1985 to build a song on it. The band wrote it as a concert opener and never thought it would be a hit; guitarist John Norum didn't like the synth intro at first.",
+  "song_story_source": "Wikipedia, The Final Countdown (song), citing band interviews: https://en.wikipedia.org/wiki/The_Final_Countdown_(song)",
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "ba9a486f133f",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "CROSS TALK: THE THANKSGIVING PLATE DRAFT<br>• YouGov's new poll says turkey, mashed potatoes and pie are what America expects on the table, and 83% are cooking at home.<br>• So let's draft: Courtney and AJ each pick one Thanksgiving dish at a time. Last pick left on the board loses.<br>• Prompts: 1) Your first-round pick, and you can't say turkey. 2) The most overrated side dish. 3) Pie or seconds?<br>➜ TAKE: Stuffing goes first round. I will not be taking questions.<br>➜ BAIT: Text 231-929-4487: your first-round Thanksgiving draft pick.<br>😂 JOKES: Green bean casserole is the long snapper of Thanksgiving. Nobody drafts it, but you notice when it's gone. / Cranberry sauce from the can, ridges and all, is a first-round talent. Fight me.",
+  "notes": "CROSS TALK: THE THANKSGIVING PLATE DRAFT: https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving YouGov Nov 19.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-cross-01",
+    "title": "CROSS TALK: THE THANKSGIVING PLATE DRAFT",
+    "recap": "Courtney and AJ drafted their Thanksgiving plates, based on YouGov's poll of what America expects on the table.",
+    "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+    "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+    "jokes": [
+     "Green bean casserole is the long snapper of Thanksgiving. Nobody drafts it, but you notice when it's gone.",
+     "Cranberry sauce from the can, ridges and all, is a first-round talent. Fight me."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+  "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+  "jokes": [
+   "Green bean casserole is the long snapper of Thanksgiving. Nobody drafts it, but you notice when it's gone.",
+   "Cranberry sauce from the can, ridges and all, is a first-round talent. Fight me."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "85e69673d245",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "SPONSOR (read first): Z93 OFF THE CHARTS is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort, where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com.<br><br>THE REMBRANDTS, \"I'LL BE THERE FOR YOU\" (1995)<br>• RELEASE: The Friends theme, sent to US pop radio May 23, 1995.<br>• HOW IT HAPPENED: Producers wanted R.E.M.; when that fell through, they wrote their own theme, with music by Michael Skloff and lyrics by David Crane, Marta Kauffman and Allee Willis. The Rembrandts didn't want to record it, and the handclaps were a last-minute add they now call the best part.<br>• WHY BILLBOARD MISSED IT: a Nashville DJ looped the TV version into a full song, so the band re-recorded it. At its peak there was no commercial single, so it became the first song to top the Hot 100 Airplay chart (8 weeks) without being on the Hot 100.<br>• WHERE IT DID CHART: it later reached No. 17 on the Hot 100 as a double A-side with \"This House Is Not a Home.\" No. 1 in Canada for five weeks; UK No. 3 in 1995, top 10 again in 1997.<br>➜ TAKE: The most famous TV theme ever, and for its biggest summer you couldn't legally put it on the Hot 100. That's the most Friends thing ever: they were on a break.<br>➜ BAIT: Text 231-929-4487: Ross or Chandler? And yes, you have to pick.<br>😂 JOKES: You can't hear this song without clapping four times. It's the law. / The band didn't want to record it. Now it's paid for more than a few lake houses.<br>🎬 Official video on YouTube (link in notes)",
+  "notes": "Alt sponsor read: Z93 OFF THE CHARTS is brought to you by Shanty Creek Resorts. When it's time for you to enjoy the wide-open spaces of Northern Michigan, check out Shanty Creek Resort, with over 275 lodging options, 42 downhill ski and snowboard runs, and plenty of outdoor fun.<br>https://en.wikipedia.org/wiki/I'll_Be_There_for_You_(The_Rembrandts_song)<br>Official video: https://www.youtube.com/watch?v=CXnEgbDcITo (TheRembrandtsVevo). Billboard 1998 rule-change recap https://www.billboard.com/pro/hot-100-rule-change-1998-airplay-singles/ ; Official Charts https://www.officialcharts.com/songs/rembrandts-ill-be-there-for-you/ . Not a repeat (rg off-the-charts). Lyrics clean.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-20-offcharts-01",
+    "title": "THE REMBRANDTS, \"I'LL BE THERE FOR YOU\" (1995)",
+    "recap": "Off the Charts: The Rembrandts' Friends theme, the first Hot 100 Airplay No. 1 that wasn't on the Hot 100.",
+    "article_url": "https://en.wikipedia.org/wiki/I'll_Be_There_for_You_(The_Rembrandts_song)",
+    "article_title": "I'll Be There for You (The Rembrandts song) (Wikipedia, citing Billboard)",
+    "jokes": [
+     "You can't hear this song without clapping four times. It's the law.",
+     "The band didn't want to record it. Now it's paid for more than a few lake houses."
+    ],
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/I'll_Be_There_for_You_(The_Rembrandts_song)",
+  "article_title": "I'll Be There for You (The Rembrandts song) (Wikipedia, citing Billboard)",
+  "jokes": [
+   "You can't hear this song without clapping four times. It's the law.",
+   "The band didn't want to record it. Now it's paid for more than a few lake houses."
+  ],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "96ed3c1baf17",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "ABBY JIMENEZ: \"I MAKE YOU LAUGH AND I MAKE YOU CRY\" · NEWS AUDIO<br>🎙️ SET UP: That's the author whose posts have Horizon Books shipping signed copies to Texas and California. Here she is on Good Morning America this spring describing her books. \"Abby Jimenez on GMA.\"<br>🔈 AUDIO SOURCE: Good Morning America (ABC), official YouTube, April GMA Book Club segment. On-air credit: \"courtesy of Good Morning America.\"<br>• Pairs with Buzz story 3 (Horizon Books). Archival, not new this week.<br>🔊 IN: \"You know, I think you can laugh at a funeral\" (0:00)<br>OUT: \"...this book is no different.\" (0:17)<br>~0:17 · TALK-OVER or PLAY · READY<br>➜ WHY: Puts a voice to a local story; quick and clean.<br>⚠️ FLAG: Clean. Mentions a funeral in passing (\"you can laugh at a funeral\"). Another network's audio: get OK to play straight or talk over it. Archival (spring) segment.",
+  "notes": "ABBY JIMENEZ: \"I MAKE YOU LAUGH AND I MAKE YOU CRY\": https://www.youtube.com/watch?v=ib43L0r-3o4 ⚠️ FLAG: Clean. Mentions a funeral in passing (\"you can laugh at a funeral\"). Another network's audio: get OK to play straight or talk over it. Archival (spring) segment.<br>Only one clean news-audio pick today: GTA/Hunger Games news uploads were either older ($1.5B preorder stories), international, or premiere B-roll with no usable sound.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-20-c05",
+    "slot": "NEWS AUDIO",
+    "title": "ABBY JIMENEZ: \"I MAKE YOU LAUGH AND I MAKE YOU CRY\"",
+    "body": "ABBY JIMENEZ: \"I MAKE YOU LAUGH AND I MAKE YOU CRY\" · NEWS AUDIO<br>🎙️ SET UP: That's the author whose posts have Horizon Books shipping signed copies to Texas and California. Here she is on Good Morning America this spring describing her books. \"Abby Jimenez on GMA.\"<br>🔈 AUDIO SOURCE: Good Morning America (ABC), official YouTube, April GMA Book Club segment. On-air credit: \"courtesy of Good Morning America.\"<br>• Pairs with Buzz story 3 (Horizon Books). Archival, not new this week.<br>🔊 IN: \"You know, I think you can laugh at a funeral\" (0:00)<br>OUT: \"...this book is no different.\" (0:17)<br>~0:17 · TALK-OVER or PLAY · READY<br>➜ WHY: Puts a voice to a local story; quick and clean.<br>⚠️ FLAG: Clean. Mentions a funeral in passing (\"you can laugh at a funeral\"). Another network's audio: get OK to play straight or talk over it. Archival (spring) segment.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c05-abby-jimenez-gma.mp3",
+    "ready": true,
+    "recap": "We heard Abby Jimenez on GMA saying her books make you laugh and cry, tied to the Horizon Books rush.",
+    "duration": 16.8
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "10 of 10 clips today (1 news audio, 4 trending/comedy, 5 buffer) + supercut · all new audio, 0 repeats<br><br>SHOW OPENER SUPERCUT: STAGS GAME-WEEK HYPE · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Montage of movie and TV bites (credits in order below).<br>• Any Given Sunday (1999), Al Pacino: \"Either we heal as a team, or we're gonna crumble.\" (TNT clip upload)<br>• Any Given Sunday: \"Inch by inch, play by play, till we're finished.\"<br>• Remember the Titans (2000), Denzel Washington: \"You make sure they remember, forever, the night they played the Titans.\" (fan upload, Cameo 90's)<br>• Any Given Sunday: \"You got to look at the guy next to you. Look into his eyes.\"<br>• Remember the Titans: \"Leave no doubt!\"<br>• Friday Night Lights (TV): \"Clear eyes, full hearts, can't lose.\" (fan upload)<br>🔊 IN: \"Either we heal as a team\" (0:00)<br>OUT: \"...can't lose.\" (0:25)<br>~0:26 · PLAY · READY<br>➜ WHY: Six football pump-up bites for Stags game weekend, ending on the button line right into \"Showtime.\"<br>⚠️ FLAG: Clean. Any Given Sunday bites taken only from clean lines (the speech swears elsewhere). Titans and FNL bites are from fan uploads of the films/show. Each bite loudness-normalized, joined with 50 ms crossfades, re-transcribed whole: no clipped words. No music bed added.<br><br>\"THE BAND IS OUT ON THE FIELD!\" 44 YEARS AGO TODAY · SUPER-CLIP 6 AM<br>🎙️ SET UP: Forty-four years ago today, Cal vs. Stanford, four seconds left, Stanford up 20-19 with John Elway, and the Stanford band thinks it's over. \"Here's Joe Starkey on the Cal radio call, five laterals and a trombone section. Listen.\"<br>🔈 AUDIO SOURCE: KGO radio call by Joe Starkey (1982), via the SPORTS ODYSSEY YouTube upload. On-air credit: \"Joe Starkey's call on KGO Radio.\"<br>• The most famous radio call in college football: five laterals, the band on the field, and a touchdown through the trombones.<br>🔊 IN: \"All right, here we go with the kickoff\" (0:00)<br>OUT: \"...we don't know who won the game.\" (0:39)<br>~0:40 · PLAY · READY<br>➜ WHY: It's the anniversary today, it's pure football chaos for Stags weekend, and it works with no picture.<br>⚠️ FLAG: Clean. Archival radio call of another station (KGO, 1982), uploaded by a fan channel: talk over or get OK to play straight.<br><br>KIERAN CULKIN HEARD HE WAS IN THE HUNGER GAMES BEFORE ANYONE ASKED · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Hunger Games: Sunrise on the Reaping opens today, and Kieran Culkin plays a young Caesar Flickerman. He told Jimmy Fallon fans kept congratulating him before he'd been offered anything. \"Kieran Culkin on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube. On-air credit: \"from The Tonight Show.\"<br>• Interview bit (no clean new monologue jokes: this week's monologues were all politics).<br>🔊 IN: \"But you actually found out you were in the movie\" (0:00)<br>OUT: \"...So yeah, let's do it.\" (0:44)<br>~0:44 · PLAY · READY<br>➜ WHY: Ties to the Friday movie opener, A-list celebrity story, and it's a real laugh.<br>⚠️ FLAG: Clean. One quick audience heckle (\"You were great\") in the middle; harmless. Upload date not confirmed this week.<br><br>RAJ SHARMA: \"HOW MUCH IS THIS GONNA COST ME?\" · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Football week. Comedian Raj Sharma grew up with the cheapest dad in Texas, and he needed a signature to play high school football. \"Raj Sharma, on Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube. On-air credit: \"from Dry Bar Comedy.\"<br>• Cheap dad, permission slip, and one word that makes a grown man cry: free.<br>🔊 IN: \"And I open the door and there's my dad\" (0:00)<br>OUT: \"...you play your heart out.\" (0:43)<br>~0:44 · PLAY · READY<br>➜ WHY: Every parent who's paid for a football season will feel this one.<br>⚠️ FLAG: Clean.<br><br>JASON LOVE: THE SHORTEST FOOTBALL CAREER EVER · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Jason Love tried out for football because his dad played, and on day one they paired him up with a ninth-grader who already had a mustache. \"Jason Love, Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube. On-air credit: \"from Dry Bar Comedy.\"<br>• One collision and a sudden career change to track and field.<br>🔊 IN: \"My dad, he was a football player\" (0:00)<br>OUT: \"...I'm a track and field guy.\" (0:47)<br>~0:47 · PLAY · READY<br>➜ WHY: Short, clean, football-week relatable.<br>⚠️ FLAG: Clean. Brief silly sound-effect section near the end (his voice).<br><br>K-9 PICTURE DAY GOES OFF THE RAILS · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: South Carolina's DNR has K-9s that do search and rescue and wildlife work, and their official picture day went viral for all the wrong poses. \"Inside Edition has the story.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube. On-air credit: \"from Inside Edition.\"<br>• Serious working dogs, very unserious photo day.<br>🔊 IN: \"At the South Carolina Department of Natural Resources\" (0:00)<br>OUT: \"...recent picture day.\" (0:18)<br>~0:18 · TALK-OVER · READY<br>➜ WHY: Lead-in for a funny talk break about pet photos; text in your dog's worst picture.<br>⚠️ FLAG: Clean. Short; it's the setup, the laughs are visual, so talk over it.<br><br>RESCUE DOG LOSES IT WHEN DAD COMES HOME · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Patch is a rescue staffy who'd never been apart from his owner Mark, until Mark spent a week in the hospital. \"Here's the welcome home, from Inside Edition.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube. On-air credit: \"from Inside Edition.\"<br>• Owner home from the hospital; the dog's reaction (with Mark's \"I miss you too\").<br>🔊 IN: \"A rescue dog gave his owner\" (0:00)<br>OUT: \"...never quite reacted like that before.\" (0:57)<br>~0:57 · PLAY · READY<br>➜ WHY: Feel-good, happy ending, great for moms in the car.<br>⚠️ FLAG: Clean. Mentions a hospital stay (no details, he's home and fine).<br><br>KID WALKS OUT OF SCHOOL TO HIS LOST DOG · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Fourteen-year-old Carter's dog Piper went missing for almost three weeks. A shelter called, and Mom brought Piper to school pickup. \"Inside Edition.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube. On-air credit: \"from Inside Edition.\"<br>• Carter: \"I didn't really believe my eyes when I saw her.\"<br>🔊 IN: \"Fourteen-year-old Carter never thought\" (0:00)<br>OUT: \"...I didn't really believe it.\" (0:17)<br>~0:17 · PLAY · READY<br>➜ WHY: School-pickup surprise, short and sweet.<br>⚠️ FLAG: Clean as cut. The full video later mentions the family's earlier loss of a child (not in this cut; don't add details).<br><br>JIM GAFFIGAN: TRAINING FOR THANKSGIVING · BUFFER: COMEDY (THANKSGIVING)<br>🎙️ SET UP: Six days till Thanksgiving, and Jim Gaffigan has questions about a side dish named stuffing. \"Jim Gaffigan.\"<br>🔈 AUDIO SOURCE: Jim Gaffigan, official YouTube channel. On-air credit: \"Jim Gaffigan.\"<br>• \"What names did they turn down? Cram It In?\"<br>🔊 IN: \"I got big meal coming up\" (0:00)<br>OUT: \"...You did not want to know.\" (0:44)<br>~0:44 · PLAY · READY<br>➜ WHY: Thanksgiving week is next week; it's clean and quotable.<br>⚠️ FLAG: Mild: turkey-cavity stuffing gag (\"cooked inside a dead animal,\" \"shove a loaf of bread up there\"). Food humor, not sexual, but Truce's call.<br><br>MATT FOLEY: \"A VAN DOWN BY THE RIVER!\" · BUFFER: COMEDY (CLASSIC LATE-NIGHT)<br>🎙️ SET UP: Game-week motivational speech, classic edition: Chris Farley's Matt Foley crashing Late Night with Conan O'Brien. \"Matt Foley, everybody.\"<br>🔈 AUDIO SOURCE: Late Night with Conan O'Brien (NBC), official Conan O'Brien YouTube. On-air credit: \"from Late Night with Conan O'Brien.\"<br>• The one line everybody quotes, 11 seconds.<br>🔊 IN: \"And if you keep that up, young fella\" (0:00)<br>OUT: \"...in a van down by the river!\" (0:11)<br>~0:11 · PLAY · READY<br>➜ WHY: Short stinger for the Stags prediction bit.<br>⚠️ FLAG: Clean as cut. One garbled word mid-line on the transcript (\"sitting squat...\"); listen once before air. Rest of the segment has 'by God' and a bathroom joke, not included.",
+  "notes": "SHOW OPENER SUPERCUT: STAGS GAME-WEEK HYPE: https://www.youtube.com/watch?v=isr4-tsfhsg https://www.youtube.com/watch?v=VTS3I_kKwMY https://www.youtube.com/watch?v=_7TOHrppa_E ⚠️ FLAG: Clean. Any Given Sunday bites taken only from clean lines (the speech swears elsewhere). Titans and FNL bites are from fan uploads of the films/show. Each bite loudness-normalized, joined with 50 ms crossfades, re-transcribed whole: no clipped words. No music bed added.<br>\"THE BAND IS OUT ON THE FIELD!\" 44 YEARS AGO TODAY: https://www.youtube.com/watch?v=AK5vUhJcnng ⚠️ FLAG: Clean. Archival radio call of another station (KGO, 1982), uploaded by a fan channel: talk over or get OK to play straight.<br>KIERAN CULKIN HEARD HE WAS IN THE HUNGER GAMES BEFORE ANYONE ASKED: https://www.youtube.com/watch?v=XOBVvqHm7j0 ⚠️ FLAG: Clean. One quick audience heckle (\"You were great\") in the middle; harmless. Upload date not confirmed this week.<br>RAJ SHARMA: \"HOW MUCH IS THIS GONNA COST ME?\": https://www.youtube.com/watch?v=5Mj84ulc50c ⚠️ FLAG: Clean.<br>JASON LOVE: THE SHORTEST FOOTBALL CAREER EVER: https://www.youtube.com/watch?v=6vZ_x1zDhf8 ⚠️ FLAG: Clean. Brief silly sound-effect section near the end (his voice).<br>K-9 PICTURE DAY GOES OFF THE RAILS: https://www.youtube.com/watch?v=Esav18Axhwk ⚠️ FLAG: Clean. Short; it's the setup, the laughs are visual, so talk over it.<br>RESCUE DOG LOSES IT WHEN DAD COMES HOME: https://www.youtube.com/watch?v=67LMQzCxZko ⚠️ FLAG: Clean. Mentions a hospital stay (no details, he's home and fine).<br>KID WALKS OUT OF SCHOOL TO HIS LOST DOG: https://www.youtube.com/watch?v=mgEe3KbL3jA ⚠️ FLAG: Clean as cut. The full video later mentions the family's earlier loss of a child (not in this cut; don't add details).<br>JIM GAFFIGAN: TRAINING FOR THANKSGIVING: https://www.youtube.com/watch?v=e0VvUOMlobQ ⚠️ FLAG: Mild: turkey-cavity stuffing gag (\"cooked inside a dead animal,\" \"shove a loaf of bread up there\"). Food humor, not sexual, but Truce's call.<br>MATT FOLEY: \"A VAN DOWN BY THE RIVER!\": https://www.youtube.com/watch?v=8hjbQt372Ag ⚠️ FLAG: Clean as cut. One garbled word mid-line on the transcript (\"sitting squat...\"); listen once before air. Rest of the segment has 'by God' and a bathroom joke, not included.<br>Late-night: this week's Fallon/Kimmel/Colbert/Meyers monologues were all politics, so the late-night slot uses a Tonight Show interview (Culkin) and a classic Conan bit (Foley) per the no-new-late-night rule. Cut with cut.py (batches of 6 and 3, ~20 s wall) plus manual ffmpeg for c00/c01/c08; all re-transcribed.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-20-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: STAGS GAME-WEEK HYPE",
+    "body": "SHOW OPENER SUPERCUT: STAGS GAME-WEEK HYPE · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Montage of movie and TV bites (credits in order below).<br>• Any Given Sunday (1999), Al Pacino: \"Either we heal as a team, or we're gonna crumble.\" (TNT clip upload)<br>• Any Given Sunday: \"Inch by inch, play by play, till we're finished.\"<br>• Remember the Titans (2000), Denzel Washington: \"You make sure they remember, forever, the night they played the Titans.\" (fan upload, Cameo 90's)<br>• Any Given Sunday: \"You got to look at the guy next to you. Look into his eyes.\"<br>• Remember the Titans: \"Leave no doubt!\"<br>• Friday Night Lights (TV): \"Clear eyes, full hearts, can't lose.\" (fan upload)<br>🔊 IN: \"Either we heal as a team\" (0:00)<br>OUT: \"...can't lose.\" (0:25)<br>~0:26 · PLAY · READY<br>➜ WHY: Six football pump-up bites for Stags game weekend, ending on the button line right into \"Showtime.\"<br>⚠️ FLAG: Clean. Any Given Sunday bites taken only from clean lines (the speech swears elsewhere). Titans and FNL bites are from fan uploads of the films/show. Each bite loudness-normalized, joined with 50 ms crossfades, re-transcribed whole: no clipped words. No music bed added.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c00-opener-supercut.mp3",
+    "ready": true,
+    "recap": "We opened with a Stags game-week supercut: Any Given Sunday, Remember the Titans and \"Clear eyes, full hearts, can't lose.\"",
+    "duration": "0:26",
+    "file": "c00-opener-supercut.mp3",
+    "duration_sec": 25.7,
+    "kind": "opener"
+   },
+   {
+    "id": "2026-11-20-c01",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "\"THE BAND IS OUT ON THE FIELD!\" 44 YEARS AGO TODAY",
+    "body": "\"THE BAND IS OUT ON THE FIELD!\" 44 YEARS AGO TODAY · SUPER-CLIP 6 AM<br>🎙️ SET UP: Forty-four years ago today, Cal vs. Stanford, four seconds left, Stanford up 20-19 with John Elway, and the Stanford band thinks it's over. \"Here's Joe Starkey on the Cal radio call, five laterals and a trombone section. Listen.\"<br>🔈 AUDIO SOURCE: KGO radio call by Joe Starkey (1982), via the SPORTS ODYSSEY YouTube upload. On-air credit: \"Joe Starkey's call on KGO Radio.\"<br>• The most famous radio call in college football: five laterals, the band on the field, and a touchdown through the trombones.<br>🔊 IN: \"All right, here we go with the kickoff\" (0:00)<br>OUT: \"...we don't know who won the game.\" (0:39)<br>~0:40 · PLAY · READY<br>➜ WHY: It's the anniversary today, it's pure football chaos for Stags weekend, and it works with no picture.<br>⚠️ FLAG: Clean. Archival radio call of another station (KGO, 1982), uploaded by a fan channel: talk over or get OK to play straight.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c01-the-play-band-on-the-field.mp3",
+    "ready": true,
+    "recap": "We heard Joe Starkey's \"The band is out on the field!\" call from The Play, 44 years ago today.",
+    "duration": "0:40",
+    "file": "c01-the-play-band-on-the-field.mp3",
+    "duration_sec": 39.8,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-20-c02",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "KIERAN CULKIN HEARD HE WAS IN THE HUNGER GAMES BEFORE ANYONE ASKED",
+    "body": "KIERAN CULKIN HEARD HE WAS IN THE HUNGER GAMES BEFORE ANYONE ASKED · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Hunger Games: Sunrise on the Reaping opens today, and Kieran Culkin plays a young Caesar Flickerman. He told Jimmy Fallon fans kept congratulating him before he'd been offered anything. \"Kieran Culkin on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube. On-air credit: \"from The Tonight Show.\"<br>• Interview bit (no clean new monologue jokes: this week's monologues were all politics).<br>🔊 IN: \"But you actually found out you were in the movie\" (0:00)<br>OUT: \"...So yeah, let's do it.\" (0:44)<br>~0:44 · PLAY · READY<br>➜ WHY: Ties to the Friday movie opener, A-list celebrity story, and it's a real laugh.<br>⚠️ FLAG: Clean. One quick audience heckle (\"You were great\") in the middle; harmless. Upload date not confirmed this week.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c02-kieran-culkin-hunger-games.mp3",
+    "ready": true,
+    "recap": "We heard Kieran Culkin tell Fallon fans told him he was in The Hunger Games before the studio did.",
+    "duration": "0:44",
+    "file": "c02-kieran-culkin-hunger-games.mp3",
+    "duration_sec": 43.7,
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-20-c03",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "RAJ SHARMA: \"HOW MUCH IS THIS GONNA COST ME?\"",
+    "body": "RAJ SHARMA: \"HOW MUCH IS THIS GONNA COST ME?\" · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Football week. Comedian Raj Sharma grew up with the cheapest dad in Texas, and he needed a signature to play high school football. \"Raj Sharma, on Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube. On-air credit: \"from Dry Bar Comedy.\"<br>• Cheap dad, permission slip, and one word that makes a grown man cry: free.<br>🔊 IN: \"And I open the door and there's my dad\" (0:00)<br>OUT: \"...you play your heart out.\" (0:43)<br>~0:44 · PLAY · READY<br>➜ WHY: Every parent who's paid for a football season will feel this one.<br>⚠️ FLAG: Clean.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c03-raj-sharma-free-football.mp3",
+    "ready": true,
+    "recap": "We heard Raj Sharma's cheap dad find out high school football gear was free.",
+    "duration": "0:44",
+    "file": "c03-raj-sharma-free-football.mp3",
+    "duration_sec": 43.5,
+    "kind": "comedy"
+   },
+   {
+    "id": "2026-11-20-c04",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "JASON LOVE: THE SHORTEST FOOTBALL CAREER EVER",
+    "body": "JASON LOVE: THE SHORTEST FOOTBALL CAREER EVER · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Jason Love tried out for football because his dad played, and on day one they paired him up with a ninth-grader who already had a mustache. \"Jason Love, Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy, official YouTube. On-air credit: \"from Dry Bar Comedy.\"<br>• One collision and a sudden career change to track and field.<br>🔊 IN: \"My dad, he was a football player\" (0:00)<br>OUT: \"...I'm a track and field guy.\" (0:47)<br>~0:47 · PLAY · READY<br>➜ WHY: Short, clean, football-week relatable.<br>⚠️ FLAG: Clean. Brief silly sound-effect section near the end (his voice).",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c04-jason-love-football-tryouts.mp3",
+    "ready": true,
+    "recap": "We heard Jason Love's one-hit football tryout that turned him into a track guy.",
+    "duration": "0:47",
+    "file": "c04-jason-love-football-tryouts.mp3",
+    "duration_sec": 46.8,
+    "kind": "comedy"
+   },
+   {
+    "id": "2026-11-20-c05",
+    "slot": "TRENDING AUDIO",
+    "title": "C05 ABBY JIMENEZ GMA",
+    "body": "C05 ABBY JIMENEZ GMA · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c05-abby-jimenez-gma.mp3",
+    "file": "c05-abby-jimenez-gma.mp3",
+    "ready": true,
+    "duration_sec": 16.8,
+    "duration": "0:17",
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-20-c06",
+    "slot": "BUFFER: NEWSY VIRAL",
+    "title": "K-9 PICTURE DAY GOES OFF THE RAILS",
+    "body": "K-9 PICTURE DAY GOES OFF THE RAILS · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: South Carolina's DNR has K-9s that do search and rescue and wildlife work, and their official picture day went viral for all the wrong poses. \"Inside Edition has the story.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube. On-air credit: \"from Inside Edition.\"<br>• Serious working dogs, very unserious photo day.<br>🔊 IN: \"At the South Carolina Department of Natural Resources\" (0:00)<br>OUT: \"...recent picture day.\" (0:18)<br>~0:18 · TALK-OVER · READY<br>➜ WHY: Lead-in for a funny talk break about pet photos; text in your dog's worst picture.<br>⚠️ FLAG: Clean. Short; it's the setup, the laughs are visual, so talk over it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c06-k9-picture-day.mp3",
+    "ready": true,
+    "recap": "We heard about South Carolina DNR's K-9 picture day going hilariously off the rails.",
+    "duration": "0:18",
+    "file": "c06-k9-picture-day.mp3",
+    "duration_sec": 17.9,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-20-c07",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "RESCUE DOG LOSES IT WHEN DAD COMES HOME",
+    "body": "RESCUE DOG LOSES IT WHEN DAD COMES HOME · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Patch is a rescue staffy who'd never been apart from his owner Mark, until Mark spent a week in the hospital. \"Here's the welcome home, from Inside Edition.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube. On-air credit: \"from Inside Edition.\"<br>• Owner home from the hospital; the dog's reaction (with Mark's \"I miss you too\").<br>🔊 IN: \"A rescue dog gave his owner\" (0:00)<br>OUT: \"...never quite reacted like that before.\" (0:57)<br>~0:57 · PLAY · READY<br>➜ WHY: Feel-good, happy ending, great for moms in the car.<br>⚠️ FLAG: Clean. Mentions a hospital stay (no details, he's home and fine).",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c07-rescue-dog-welcome-home.mp3",
+    "ready": true,
+    "recap": "We heard Patch the rescue dog welcome his owner home from the hospital.",
+    "duration": "0:57",
+    "file": "c07-rescue-dog-welcome-home.mp3",
+    "duration_sec": 56.7,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-20-c08",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "KID WALKS OUT OF SCHOOL TO HIS LOST DOG",
+    "body": "KID WALKS OUT OF SCHOOL TO HIS LOST DOG · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Fourteen-year-old Carter's dog Piper went missing for almost three weeks. A shelter called, and Mom brought Piper to school pickup. \"Inside Edition.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube. On-air credit: \"from Inside Edition.\"<br>• Carter: \"I didn't really believe my eyes when I saw her.\"<br>🔊 IN: \"Fourteen-year-old Carter never thought\" (0:00)<br>OUT: \"...I didn't really believe it.\" (0:17)<br>~0:17 · PLAY · READY<br>➜ WHY: School-pickup surprise, short and sweet.<br>⚠️ FLAG: Clean as cut. The full video later mentions the family's earlier loss of a child (not in this cut; don't add details).",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c08-carter-and-piper-reunited.mp3",
+    "ready": true,
+    "recap": "We heard Carter's surprise reunion with his lost dog Piper at school pickup.",
+    "duration": "0:17",
+    "file": "c08-carter-and-piper-reunited.mp3",
+    "duration_sec": 17.2,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-20-c09",
+    "slot": "BUFFER: COMEDY (THANKSGIVING)",
+    "title": "JIM GAFFIGAN: TRAINING FOR THANKSGIVING",
+    "body": "JIM GAFFIGAN: TRAINING FOR THANKSGIVING · BUFFER: COMEDY (THANKSGIVING)<br>🎙️ SET UP: Six days till Thanksgiving, and Jim Gaffigan has questions about a side dish named stuffing. \"Jim Gaffigan.\"<br>🔈 AUDIO SOURCE: Jim Gaffigan, official YouTube channel. On-air credit: \"Jim Gaffigan.\"<br>• \"What names did they turn down? Cram It In?\"<br>🔊 IN: \"I got big meal coming up\" (0:00)<br>OUT: \"...You did not want to know.\" (0:44)<br>~0:44 · PLAY · READY<br>➜ WHY: Thanksgiving week is next week; it's clean and quotable.<br>⚠️ FLAG: Mild: turkey-cavity stuffing gag (\"cooked inside a dead animal,\" \"shove a loaf of bread up there\"). Food humor, not sexual, but Truce's call.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c09-jim-gaffigan-thanksgiving.mp3",
+    "ready": true,
+    "recap": "We heard Jim Gaffigan wonder what names they turned down before calling it stuffing.",
+    "duration": "0:44",
+    "file": "c09-jim-gaffigan-thanksgiving.mp3",
+    "duration_sec": 43.8,
+    "kind": "comedy"
+   },
+   {
+    "id": "2026-11-20-c10",
+    "slot": "BUFFER: COMEDY (CLASSIC LATE-NIGHT)",
+    "title": "MATT FOLEY: \"A VAN DOWN BY THE RIVER!\"",
+    "body": "MATT FOLEY: \"A VAN DOWN BY THE RIVER!\" · BUFFER: COMEDY (CLASSIC LATE-NIGHT)<br>🎙️ SET UP: Game-week motivational speech, classic edition: Chris Farley's Matt Foley crashing Late Night with Conan O'Brien. \"Matt Foley, everybody.\"<br>🔈 AUDIO SOURCE: Late Night with Conan O'Brien (NBC), official Conan O'Brien YouTube. On-air credit: \"from Late Night with Conan O'Brien.\"<br>• The one line everybody quotes, 11 seconds.<br>🔊 IN: \"And if you keep that up, young fella\" (0:00)<br>OUT: \"...in a van down by the river!\" (0:11)<br>~0:11 · PLAY · READY<br>➜ WHY: Short stinger for the Stags prediction bit.<br>⚠️ FLAG: Clean as cut. One garbled word mid-line on the transcript (\"sitting squat...\"); listen once before air. Rest of the segment has 'by God' and a bathroom joke, not included.",
+    "audio": "/workspace/morning-rush/clips/2026-11-20/c10-matt-foley-van-down-by-the-river.mp3",
+    "ready": true,
+    "recap": "We heard Chris Farley's Matt Foley warn about living in a van down by the river.",
+    "duration": "0:11",
+    "file": "c10-matt-foley-van-down-by-the-river.mp3",
+    "duration_sec": 11.2,
+    "kind": "late-night"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "a6b326867a80",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "TONIGHT: LIGHT UP DOWNTOWN, TREE LIGHTING<br>• Downtown TC, 4-6:30 PM activities, variety show 5 PM, Santa lights the tree at 6:30 at Cass & Front.<br><br>TODAY 10 AM: SNOWBIRDS SEND-OFF, GAYLORD<br>• Line Petoskey and Main streets as Gaylord St. Mary's bus leaves for the state final.<br><br>SAT 1 PM: KINGSLEY VS. ALMONT, CLARE<br>• D6 semifinal at Brookwood Athletic Complex. $12 on GoFan.<br><br>SAT 6 PM: TRAVERSE CITY LIGHT PARADE<br>• Front Street; closures Franklin to Pine 3-8 PM, towing to Thirlby Field.",
+  "notes": "TONIGHT: LIGHT UP DOWNTOWN, TREE LIGHTING: https://www.downtowntc.com/events/light-up-downtown-day-1-traverse-city-tree-lighting.html<br>TODAY 10 AM: SNOWBIRDS SEND-OFF, GAYLORD: https://upnorthlive.com/news/local/gaylord-rallies-behind-st-marys-snowbirds-as-team-heads-to-state-title-game<br>SAT 1 PM: KINGSLEY VS. ALMONT, CLARE: https://gofan.co/event/7076469<br>SAT 6 PM: TRAVERSE CITY LIGHT PARADE: https://www.downtowntc.com/events/light-up-downtown-day-2-traverse-city-light-parade.html",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-20-events-01",
+    "title": "TONIGHT: LIGHT UP DOWNTOWN, TREE LIGHTING",
+    "recap": "We plugged Light Up Downtown, Tree Lighting.",
+    "article_url": "https://www.downtowntc.com/events/light-up-downtown-day-1-traverse-city-tree-lighting.html",
+    "article_title": "Tonight: Light Up Downtown, Tree Lighting",
+    "jokes": [],
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-events-02",
+    "title": "TODAY 10 AM: SNOWBIRDS SEND-OFF, GAYLORD",
+    "recap": "We plugged Snowbirds Send-Off, Gaylord.",
+    "article_url": "https://upnorthlive.com/news/local/gaylord-rallies-behind-st-marys-snowbirds-as-team-heads-to-state-title-game",
+    "article_title": "Today 10 Am: Snowbirds Send-Off, Gaylord",
+    "jokes": [],
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-20-events-03",
+    "title": "SAT 1 PM: KINGSLEY VS. ALMONT, CLARE",
+    "recap": "We plugged Kingsley Vs. Almont, Clare.",
+    "article_url": "https://gofan.co/event/7076469",
+    "article_title": "Sat 1 Pm: Kingsley Vs. Almont, Clare",
+    "jokes": [],
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-20-events-04",
+    "title": "SAT 6 PM: TRAVERSE CITY LIGHT PARADE",
+    "recap": "We plugged Traverse City Light Parade.",
+    "article_url": "https://www.downtowntc.com/events/light-up-downtown-day-2-traverse-city-light-parade.html",
+    "article_title": "Sat 6 Pm: Traverse City Light Parade",
+    "jokes": [],
+    "rank": 3,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.downtowntc.com/events/light-up-downtown-day-1-traverse-city-tree-lighting.html",
+  "article_title": "Tonight: Light Up Downtown, Tree Lighting",
+  "jokes": [],
+  "as_of": "2026-11-20T04:06-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "e2ae3f6674c4",
+  "stale_after": "2026-11-20T16:06-05:00"
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · STAGS GAME DAY HYPE<br>Two undefeated teams. One trip to Ford Field. 🦌🏈<br>Kingsley (12-0) vs. Almont (12-0), Saturday 1 PM in Clare, a rematch of the 2023 state title game.<br>Who's making the drive? Drop your final-score prediction, or text the studio at 231-929-4487.<br>📷 MEDIA: /workspace/z93/fb/2026-11-20/fb1a-stags-semifinal.png<br><br>1B · SIGNED BOOKS FROM FRONT STREET<br>Horizon Books is shipping signed Abby Jimenez books from downtown TC to Texas and California after her posts went viral. 📚<br>What book would you drive across the country to get signed?<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>2A · LIGHT UP DOWNTOWN TONIGHT<br>Night one is TONIGHT! 🎄 Cookies-and-cocoa crawl, Find the Grinch, carolers and a 5 PM variety show downtown, then Santa lights the tree at 6:30 at Cass & Front.<br>The Light Parade is Saturday at 6. Which night is your crew doing?<br>📷 MEDIA: /workspace/z93/fb/2026-11-20/fb2a-light-up-downtown.png<br><br>2B · SEND OFF THE SNOWBIRDS<br>Gaylord, line the streets! 🏈 St. Mary's team bus leaves at 10 AM today, Petoskey and Main, headed to its first state final since 2002 (Saturday, 2 PM, Superior Dome).<br>Shout out your favorite Snowbird below.<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>3A · THE FRIENDS THEME BILLBOARD MISSED<br>Clap clap clap clap. 👏 \"I'll Be There for You\" topped radio for 8 weeks in 1995 but couldn't be on the Hot 100 because there was no single to buy.<br>What TV theme song can you still sing every word of?<br>📷 MEDIA: /workspace/z93/fb/2026-11-20/fb3a-friends-theme.png<br><br>3B · YOUR FIRST VIDEO GAME SOUNDTRACK<br>GTA 6 just dropped a 34-song album with Dua Lipa, Lana Del Rey and Camila Cabello. 🎮<br>What's the first video game song you knew by heart? Mario, Tony Hawk, Guitar Hero?<br>📷 MEDIA: text only (lean plan: art for A options only)",
+  "notes": "Drafts only, AJ posts during the show; never posted by Hot Sheet. Facts from sheet items above. 1A Stags (Tri-City Times/Record-Eagle), 1B Horizon Books (UpNorthLive), 2A Light Up Downtown (9&10), 2B Snowbirds (UpNorthLive), 3A Friends theme (Wikipedia/Billboard), 3B GTA album (Consequence).",
+  "custom": true,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "_normalized": {
+  "version": 1,
+  "stale_hours": 12
+ }
+}
