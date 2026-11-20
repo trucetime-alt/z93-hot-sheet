@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-20T09:00:01-05:00",
+ "updated": "2026-11-20T12:59:54-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 219,
+ "artistsWatched": 228,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -11,12 +11,14 @@
   },
   "venues": {
    "Lansing Center (iCal)": {
-    "status": "ok",
-    "count": 4
+    "status": "failed",
+    "error": "URLError",
+    "count": 0
    },
    "Lansing Center (JSON-LD)": {
-    "status": "ok",
-    "count": 15
+    "status": "failed",
+    "error": "URLError",
+    "count": 0
    },
    "Interlochen": {
     "status": "no-events-in-static-page",
@@ -73,7 +75,7 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 112
+   "count": 145
   }
  },
  "shows": [
@@ -310,6 +312,16 @@
    "priority": 60
   },
   {
+   "title": "Taylor Swift announces 'The Eras Tour' date for Detroit - FOX 2 Detroit",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPT2JlTXp0RGI5YzYxME5IQ19EcEMtX2VPd0VMTWRqeVFXT1cwUVZLWWExQXlva1JWT2FlV3ozeVF6MXdNbzZFeEZKVko3WDdhQzVkUi1KV0lCTW9DTkxTdU9RZVk1S3h4QkczeVhNMGVJM1dXMXdoOW5KQWpQa0JxZ2dTd0ktT2FDSmdVOW83Zw?oc=5",
+   "at": "2022-11-01T07:00:00+00:00",
+   "src": "FOX 2 Detroit",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
    "title": "Tickets to see Taylor Swift in Detroit are getting expensive - FOX 2 Detroit",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbGc5MlBqOW1FQ2FXeDBhWFJnR0ZTNlJucHhZNUp1OXl4blVMLTIyVUJSQUUwc0NnMEFwT3o2U0hEck45cW1EMV8wWXRWYTE3cVc3RkxuWGdiUk85dGkyaUpzaHd3dzVqZkhwQjBFdThOWG9iTWtvYkEyS1AzWVlpNEpZc0lYeVJtY09VU1R3?oc=5",
    "at": "2023-06-06T07:00:00+00:00",
@@ -338,17 +350,7 @@
     "Taylor Swift"
    ],
    "priority": 60
-  },
-  {
-   "title": "Taylor Swift plays Detroit's Ford Field this weekend. Here's what to know for the Eras Tour shows - CBS News",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX3VEM3Zxd3g5cXBPLTN3LVBzZTZqcDBtQmFvQ1Z5RHpyMm84VWU5NWdaUWFYRmFXRDVxcEZ2Yk1nR1dkWGtvc1FzWktsM1l2OUowX09tLWpDdjdFREZUdHY5R1NoRmx5ZVhvV2NlQVpCMWtWX3BSd1dzd1NQbURlNERCNE1ueTFCQ2NpdTJqU09zNHY3cU5KOUZQZFcxLVVIam1n?oc=5",
-   "at": "2023-06-09T07:00:00+00:00",
-   "src": "CBS News",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
   }
  ],
- "tookSec": 28.1
+ "tookSec": 40.4
 }
