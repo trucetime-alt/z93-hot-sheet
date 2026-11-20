@@ -6136,7 +6136,7 @@ async function loadCdNews(force){ const c=cdNewsCur; if(!c) return; const q=cdQu
   let cached=lsGet(k,null); if(cached && !force && Date.now()-cached.at<10*60000){ renderCdNews(cached); return; }
   renderCdNews(cached, true); if(cdNewsBusy) return; cdNewsBusy=true;
   try{ const r=await fetchQueryNews(q); const seen=new Set();
-    const items=r.items.filter(i=>i.title && /^https?:/.test(i.link||'')).sort((a,b)=>b.at-a.at).filter(i=>{ const kk=newsKey(i.title); if(seen.has(kk)) return false; seen.add(kk); return true; }).slice(0,10);
+    const items=r.items.filter(i=>i.title && /^https?:/.test(i.link||'')).sort((a,b)=>b.at-a.at).filter(i=>!/\bgta[ -]?(v|5|five)\b|grand theft auto (v|5)\b/i.test(i.title)).filter(i=>{ const kk=newsKey(i.title); if(seen.has(kk)) return false; seen.add(kk); return true; }).slice(0,10);
     cached={at:Date.now(), q, via:r.via, items}; try{ LS.setItem(k, JSON.stringify(cached)); }catch(e){} cdNewsBusy=false; if(cdNewsCur===c) renderCdNews(cached); }
   catch(e){ cdNewsBusy=false; if(cdNewsCur===c) renderCdNews(cached, false, true); } }
 function renderCdNews(d, loading, failed){ const c=cdNewsCur; if(!c) return; const q=cdQuery(c);
@@ -6149,7 +6149,7 @@ function renderCdNews(d, loading, failed){ const c=cdNewsCur; if(!c) return; con
   const ol=$('#cdNewsList'); ol.innerHTML='';
   if(!d || !d.items || !d.items.length){ if(loading) return;
     ol.append(h('li',{className:'cdnfail'}, navigator.onLine ? 'Couldn\'t load "'+q+'" news right now. The news feed may be down or blocked. Try ↻ Refresh in a minute, or check it on your phone\'s browser.' : 'You\'re offline. "'+q+'" news will load when you\'re back online.')); return; }
-  for(const i of d.items) ol.append(h('li',{className:'cdnrow'}, airBtn('ch:'+c.id+':'+fnv(i.link||i.title), c.name+': '+i.title+(i.src?' ('+i.src+')':''), 'cdh:'+c.id, true), h('a',{className:'cdnitem'+(/\brecords?\b|record-|\bsales\b|\bsale\b|\bpre-?sales?\b/i.test(i.title)?' hot':''), href:i.link, target:'_blank', rel:'noopener'},
+  for(const i of d.items.filter(i=>!/\bgta[ -]?(v|5|five)\b|grand theft auto (v|5)\b/i.test(i.title||''))) ol.append(h('li',{className:'cdnrow'}, airBtn('ch:'+c.id+':'+fnv(i.link||i.title), c.name+': '+i.title+(i.src?' ('+i.src+')':''), 'cdh:'+c.id, true), h('a',{className:'cdnitem'+(/\brecords?\b|record-|\bsales\b|\bsale\b|\bpre-?sales?\b/i.test(i.title)?' hot':''), href:i.link, target:'_blank', rel:'noopener'},
     h('span',{className:'tt'}, i.title), h('span',{className:'sr'}, h('b',{}, i.src||'News'), i.at?' · '+(Date.now()-i.at>=48*3600e3?Math.floor((Date.now()-i.at)/864e5)+' days ago':ago(i.at)):'')))); }
 function fmtFactDate(d){ const m=String(d).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?$/); if(!m) return d; const M=MONS[+m[2]-1]; return m[3]?M+' '+(+m[3])+', '+m[1]:M+' '+m[1]; }
 function openCdNews(c){ cdNewsCur=c; $('#cdNewsModal').classList.add('on'); loadCdNews(false); }

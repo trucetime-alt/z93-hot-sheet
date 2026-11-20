@@ -4,41 +4,53 @@
   {
    "id": "gta6",
    "name": "GTA 6",
-   "emoji": "🎮",
+   "emoji": "\ud83c\udfae",
    "when": "2026-11-19T00:00",
    "note": "Grand Theft Auto VI, PS5 and Xbox Series X|S, midnight local time",
    "source": "https://www.rockstargames.com/VI/pre-load-now",
    "newsQuery": "GTA 6",
    "facts": [
     {
-     "text": "GTA 6 broke the all-time livestream record before it even unlocked: over 6.38 million people watching at once across platforms, crushing the old record of about 1.74 million (preliminary, Streams Charts).",
-     "source": "Eurogamer, citing Streams Charts",
-     "date": "2026-11-18",
-     "url": "https://www.eurogamer.net/grand-theft-auto-6-streaming-record-broken"
+     "text": "GTA 6 sold an estimated 24.58 million copies and made about $2.36 billion through launch day, roughly 75% of it on PS5 (Sensor Tower estimate; Take-Two hasn't released official numbers).",
+     "source": "VGC, citing Sensor Tower",
+     "date": "2026-11-20",
+     "url": "https://www.videogameschronicle.com/news/gta-6-sold-around-25-million-copies-and-made-2-36-billion-in-its-first-day-estimates-suggest/"
     },
     {
-     "text": "GTA 6 hit a Twitch peak of about 3.06 million viewers at once (preliminary, Streams Charts).",
-     "source": "Eurogamer, citing Streams Charts",
-     "date": "2026-11-18",
-     "url": "https://www.eurogamer.net/grand-theft-auto-6-streaming-record-broken"
+     "text": "GTA 6 streams hit 125.47 million hours watched in the first 24 hours, peaking at 7.91 million viewers at once across Twitch, YouTube and Kick.",
+     "source": "CNN, citing Streams Charts",
+     "date": "2026-11-19",
+     "url": "https://www.cnn.com/2026/11/19/media/grand-theft-auto-gta-vi-twitch-youtube-livestream"
     },
     {
-     "text": "The Grand Theft Auto series has sold nearly 480 million copies.",
-     "source": "Take-Two investor presentation",
-     "date": "2026-11",
-     "url": "https://ir.take2games.com/static-files/c4c4f7f0-6a7c-4159-b97f-089a76580c38"
+     "text": "GTA 6's Twitch peak of 3.31 million viewers makes it the most-watched game ever on Twitch, passing League of Legends' 2022 World Championship final.",
+     "source": "CNN, citing Streams Charts",
+     "date": "2026-11-19",
+     "url": "https://www.cnn.com/2026/11/19/media/grand-theft-auto-gta-vi-twitch-youtube-livestream"
+    },
+    {
+     "text": "GTA 6 broke the internet download record twice in one week, peaking at 33.03 terabits per second through DE-CIX's global exchanges the night before launch.",
+     "source": "Kotaku, citing DE-CIX",
+     "date": "2026-11-20",
+     "url": "https://kotaku.com/gta-6-release-was-so-big-it-broke-internet-download-records-twice-in-one-week-2000758654"
+    },
+    {
+     "text": "GTA 6 holds a 99 on Metacritic across 147 critic reviews, tying the highest score the site has ever recorded.",
+     "source": "FOX 5 New York",
+     "date": "2026-11-20",
+     "url": "https://fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record"
+    },
+    {
+     "text": "More than 2.1 million players in the US and UK played GTA 6 early by switching their console region to New Zealand.",
+     "source": "Pure Xbox, citing Ampere Analysis",
+     "date": "2026-11-20",
+     "url": "https://www.purexbox.com/news/2026/11/report-xboxs-new-zealand-trick-has-been-used-by-crazy-numbers-of-people-this-week"
     },
     {
      "text": "GTA VI Trailer 1 pulled 90,421,491 YouTube views in 24 hours, a Guinness World Record for a non-music video.",
      "source": "Guinness World Records",
      "date": "2023-12-05",
      "url": "https://www.guinnessworldrecords.com/world-records/758375-most-viewed-youtube-video-in-24-hours-non-music"
-    },
-    {
-     "text": "GTA 6 is the most-preordered game on the PlayStation and Xbox stores: about 12.1 million digital preorders, roughly $1.18 billion (Sensor Tower estimate, not official).",
-     "source": "Polygon, citing Sensor Tower",
-     "date": "2026-11-13",
-     "url": "https://www.polygon.com/gta-6-preorders-1-billion-dollars-ps5-xbox-series-x/"
     }
    ]
   }
