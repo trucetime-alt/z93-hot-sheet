@@ -1,0 +1,1401 @@
+{
+"version": 1,
+"note": "Built by next/tools/build_song_db.py from songs.json + past sheets (+ app queue). background is filled by Hot Sheet's 4 AM pass for songs with needs_background.",
+"count": 126,
+"songs": [
+{
+"id": "california-love-2pac-ft-dr-dre",
+"artist": "2Pac ft. Dr. Dre",
+"title": "California Love",
+"year": 1995,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "This was 2Pac’s comeback single after he got out of prison in 1995 — his first release as a Death Row artist, with Dr. Dre on the track.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/California_Love",
+"pool": "flash"
+},
+{
+"id": "in-da-club-50-cent",
+"artist": "50 Cent",
+"title": "In da Club",
+"year": 2003,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Dr. Dre and Mike Elizondo produced it with an off-beat rhythm. It became 50 Cent’s first Billboard Hot 100 No. 1.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/In_da_Club",
+"pool": "mood"
+},
+{
+"id": "take-on-me-a-ha",
+"artist": "a-ha",
+"title": "Take On Me",
+"year": 1984,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "The riff started when Pål Waaktaar and Magne Furuholmen were teens in the band Bridges, in a song they first called “Miss Eerie.” They thought it felt too pop for their darker style and tried a punkier take, then later reshaped it as a-ha’s “Take On Me.”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Take_On_Me",
+"pool": "flash"
+},
+{
+"id": "the-sign-ace-of-base",
+"artist": "Ace of Base",
+"title": "The Sign",
+"year": 1993,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "During recording, Jonas Berggren added hums between the melody lines so the song wouldn’t sound “too merry,” mixing major and minor colors. He has said the lyrics are about looking back on an old relationship, left a little open so listeners can find their own meaning.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/The_Sign_(song)",
+"pool": "flash"
+},
+{
+"id": "easy-on-me-adele",
+"artist": "Adele",
+"title": "Easy on Me",
+"year": 2021,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Easy on Me\" is a song by the English singer Adele from her fourth studio album, 30 (2021). Adele wrote the song with its producer, Greg Kurstin.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Easy_on_Me",
+"pool": "vibe"
+},
+{
+"id": "rolling-in-the-deep-adele",
+"artist": "Adele",
+"title": "Rolling in the Deep",
+"year": 2010,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Adele was nervous to work with Paul Epworth because their styles seemed so different, but she later called the pairing “a match made in heaven.” She credited him with pulling notes out of her on “Rolling in the Deep” that she didn’t even know she could hit.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Rolling_in_the_Deep",
+"pool": "flash"
+},
+{
+"id": "someone-like-you-adele",
+"artist": "Adele",
+"title": "Someone Like You",
+"year": 2011,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Someone like You\" is a song recorded by English singer-songwriter Adele. She and Dan Wilson wrote and produced the track for her second studio album, 21 (2011).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Someone_like_You_(Adele_song)",
+"pool": "vibe"
+},
+{
+"id": "if-i-ain-t-got-you-alicia-keys",
+"artist": "Alicia Keys",
+"title": "If I Ain't Got You",
+"year": 2004,
+"chart_peak": "Billboard Hot 100 No. 4",
+"background": "\"If I Ain't Got You\" is a song recorded by American singer-songwriter Alicia Keys for her second studio album, The Diary of Alicia Keys (2003). It was written and produced by Keys.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/If_I_Ain't_Got_You",
+"pool": "vibe"
+},
+{
+"id": "no-one-alicia-keys",
+"artist": "Alicia Keys",
+"title": "No One",
+"year": 2007,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"No One\" is a song recorded by American singer-songwriter Alicia Keys for her third studio album As I Am (2007). It was written and produced by Keys and Kerry Brothers Jr., with additional writing by DJ Dirty Harry.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/No_One_(Alicia_Keys_song)",
+"pool": "vibe"
+},
+{
+"id": "complicated-avril-lavigne",
+"artist": "Avril Lavigne",
+"title": "Complicated",
+"year": 2002,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "After a year of false starts, Avril Lavigne told the Matrix she wanted songs with a punk-rock lean. They asked her back the next afternoon and wrote what became “Complicated,” with Lavigne and Lauren Christy finishing most of the lyrics under a tree, captured on a RadioShack microcassette.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Complicated_(Avril_Lavigne_song)",
+"pool": "flash"
+},
+{
+"id": "sk8er-boi-avril-lavigne",
+"artist": "Avril Lavigne",
+"title": "Sk8er Boi",
+"year": 2002,
+"chart_peak": "Billboard Hot 100 No. 10",
+"background": "After “Complicated” clicked, L.A. Reid sent Avril Lavigne back to the Matrix for more songs. Lauren Christy has said they tried to invent “the most stupid opening line,” and she claims “he was a punk, she did ballet,” drawn from her own life.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Sk8er_Boi",
+"pool": "flash"
+},
+{
+"id": "everybody-backstreet-s-back-backstreet-boys",
+"artist": "Backstreet Boys",
+"title": "Everybody (Backstreet's Back)",
+"year": 1997,
+"chart_peak": "Billboard Hot 100 No. 4",
+"background": "Jive president Barry Weiss resisted putting a song called “Backstreet’s Back” on the group’s first U.S. album; the band said it could just mean they were back home. After Canadian radio started playing it, they had it added to the U.S. album after the first million copies had already been pressed.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Everybody_(Backstreet's_Back)",
+"pool": "flash"
+},
+{
+"id": "i-want-it-that-way-backstreet-boys",
+"artist": "Backstreet Boys",
+"title": "I Want It That Way",
+"year": 1999,
+"chart_peak": "Billboard Hot 100 No. 6",
+"background": "The Backstreet Boys finished their vocals in two days in Stockholm in November 1998. The acoustic-guitar riff that opens the song was added at the very end of the sessions and, co-writer Andreas Carlsson said, was inspired by Metallica’s “Nothing Else Matters.”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/I_Want_It_That_Way",
+"pool": "flash"
+},
+{
+"id": "heaven-is-a-place-on-earth-belinda-carlisle",
+"artist": "Belinda Carlisle",
+"title": "Heaven Is a Place on Earth",
+"year": 1987,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Rick Nowels and Ellen Shipley wrote it and also sing backup, joined by Michelle Phillips of the Mamas & the Papas, Chynna Phillips, and songwriter Diane Warren, with Thomas Dolby on synthesizers. Actress Diane Keaton directed the video, which features kids in black capes holding glowing globes.",
+"used": [
+"2026-11-17"
+],
+"source": "https://en.wikipedia.org/wiki/Heaven_Is_a_Place_on_Earth",
+"pool": "flash"
+},
+{
+"id": "break-my-soul-beyonc",
+"artist": "Beyoncé",
+"title": "Break My Soul",
+"year": 2022,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Break My Soul\" is a song by American singer Beyoncé. It was released on June 20, 2022, through Parkwood Entertainment and Columbia Records as the lead single from her seventh studio album, Renaissance (2022).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Break_My_Soul",
+"pool": "mood"
+},
+{
+"id": "cuff-it-beyonc",
+"artist": "Beyoncé",
+"title": "Cuff It",
+"year": 2022,
+"chart_peak": "Billboard Hot 100 No. 6",
+"background": "\"Cuff It\" is a song by American singer Beyoncé from her seventh studio album, Renaissance (2022). It was released as the album's second single on September 30, 2022, through Parkwood Entertainment and Columbia Records.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Cuff_It",
+"pool": "mood"
+},
+{
+"id": "halo-beyonc",
+"artist": "Beyoncé",
+"title": "Halo",
+"year": 2009,
+"chart_peak": "Billboard Hot 100 No. 3",
+"background": "\"Halo\" is a song recorded by American singer Beyoncé for her third studio album, I Am... Sasha Fierce (2008).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Halo_(Beyoncé_song)",
+"pool": "vibe"
+},
+{
+"id": "single-ladies-put-a-ring-on-it-beyonc",
+"artist": "Beyoncé",
+"title": "Single Ladies (Put a Ring on It)",
+"year": 2008,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "The-Dream came up with “Single Ladies” after Beyoncé’s secret April 2008 marriage to Jay-Z. She recorded it that May at the Boom Boom Room in Burbank and stayed tight-lipped in the studio, even taking off her wedding band. Producer Tricky Stewart later called it the only public statement the couple had made about getting married.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Single_Ladies_(Put_a_Ring_on_It)",
+"pool": "flash"
+},
+{
+"id": "crazy-in-love-beyonc-ft-jay-z",
+"artist": "Beyoncé ft. Jay-Z",
+"title": "Crazy in Love",
+"year": 2003,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Producer Rich Harrison already had the beat before he met Beyoncé, built around a sample of the Chi-Lites’ 1970 track “Are You My Woman? (Tell Me So).” Delays to her solo album after Kelly Rowland’s “Dilemma” took off gave Beyoncé extra time to record more songs, including this one.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Crazy_in_Love",
+"pool": "flash"
+},
+{
+"id": "bad-guy-billie-eilish",
+"artist": "Billie Eilish",
+"title": "bad guy",
+"year": 2019,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Bad Guy\" is a song by American singer-songwriter Billie Eilish and the fifth single from her debut studio album, When We All Fall Asleep, Where Do We Go? (2019).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Bad_Guy_(Billie_Eilish_song)",
+"pool": "mood"
+},
+{
+"id": "birds-of-a-feather-billie-eilish",
+"artist": "Billie Eilish",
+"title": "Birds of a Feather",
+"year": 2024,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "\"Birds of a Feather\" is a song by American singer-songwriter Billie Eilish from her third studio album, Hit Me Hard and Soft (2024). It was released with the album on May 17, 2024, and was made the second official single on June 18, 2024, through Darkroom and Interscope Records.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Birds_of_a_Feather_(Billie_Eilish_song)",
+"pool": "mood"
+},
+{
+"id": "ocean-eyes-billie-eilish",
+"artist": "Billie Eilish",
+"title": "ocean eyes",
+"year": 2015,
+"chart_peak": "Billboard Hot 100 No. 68",
+"background": "\"Ocean Eyes\" is the debut single by American singer-songwriter Billie Eilish. It was initially released on SoundCloud on November 18, 2015, and then temporarily released as a promotional recording on January 8, 2016, with Drup Music.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Ocean_Eyes_(song)",
+"pool": "vibe"
+},
+{
+"id": "lovely-billie-eilish-khalid",
+"artist": "Billie Eilish & Khalid",
+"title": "lovely",
+"year": 2018,
+"chart_peak": "Billboard Hot 100 No. 46",
+"background": "\"Lovely\" is a song by American singers Billie Eilish and Khalid. Darkroom and Interscope Records released it as the lead single from the Netflix drama series 13 Reasons Why's second season soundtrack.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Lovely_(Billie_Eilish_and_Khalid_song)",
+"pool": "vibe"
+},
+{
+"id": "baby-one-more-time-britney-spears",
+"artist": "Britney Spears",
+"title": "...Baby One More Time",
+"year": 1998,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "After months in the studio without hearing a hit, Britney Spears started working with Max Martin in Sweden and knew from the first listen that his demo of “Baby One More Time” was the one. She cut her own version with a little more attitude — and in 10 days she never even saw Sweden, they were that busy.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/...Baby_One_More_Time",
+"pool": "flash"
+},
+{
+"id": "toxic-britney-spears",
+"artist": "Britney Spears",
+"title": "Toxic",
+"year": 2004,
+"chart_peak": "Billboard Hot 100 No. 9",
+"background": "Bloodshy & Avant wrote “Toxic” with Cathy Dennis and Henrik Jonback, originally with Janet Jackson in mind, then offered it to Kylie Minogue, who turned it down after hearing a snippet. The hook samples a portion of “Tere Mere Beech Mein” from the 1981 Bollywood film Ek Duuje Ke Liye.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Toxic_(song)",
+"pool": "flash"
+},
+{
+"id": "24k-magic-bruno-mars",
+"artist": "Bruno Mars",
+"title": "24K Magic",
+"year": 2016,
+"chart_peak": "Billboard Hot 100 No. 3",
+"background": "\"24K Magic\" is a song by the American singer-songwriter Bruno Mars from his third album 24K Magic (2016). Atlantic Records released it as the album's lead single on October 7, 2016, for digital download and streaming.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/24K_Magic_(song)",
+"pool": "mood"
+},
+{
+"id": "just-the-way-you-are-bruno-mars",
+"artist": "Bruno Mars",
+"title": "Just the Way You Are",
+"year": 2010,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Just the Way You Are\" is the debut solo single by American singer-songwriter Bruno Mars. It is the lead single from his debut studio album, Doo-Wops & Hooligans (2010).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Just_the_Way_You_Are_(Bruno_Mars_song)",
+"pool": "mood"
+},
+{
+"id": "treasure-bruno-mars",
+"artist": "Bruno Mars",
+"title": "Treasure",
+"year": 2013,
+"chart_peak": "Billboard Hot 100 No. 4",
+"background": "\"Treasure\" is a song by American singer and songwriter Bruno Mars from his second studio album, Unorthodox Jukebox (2012). It was written by Mars, Philip Lawrence, Ari Levine, and Phredley Brown, while production was handled by Mars, Lawrence and Levine under the name of the Smeezingtons.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Treasure_(song)",
+"pool": "mood"
+},
+{
+"id": "when-i-was-your-man-bruno-mars",
+"artist": "Bruno Mars",
+"title": "When I Was Your Man",
+"year": 2013,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"When I Was Your Man\" is a song by American singer and songwriter Bruno Mars from his second studio album, Unorthodox Jukebox (2012). Atlantic Records released the song as the third promotional single and as the second official single, taken from the album, to mainstream radio in the United States on January 15, 2013.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/When_I_Was_Your_Man",
+"pool": "vibe"
+},
+{
+"id": "call-me-maybe-carly-rae-jepsen",
+"artist": "Carly Rae Jepsen",
+"title": "Call Me Maybe",
+"year": 2011,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Carly Rae Jepsen and Tavish Crowe first wrote “Call Me Maybe” as a folk song while they were on tour, without overthinking it. Josh Ramsay helped them “pop-ify” it, and she recorded the track at Umbrella Studios in Richmond, British Columbia.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Call_Me_Maybe",
+"pool": "flash"
+},
+{
+"id": "a-thousand-years-christina-perri",
+"artist": "Christina Perri",
+"title": "A Thousand Years",
+"year": 2011,
+"chart_peak": "Billboard Hot 100 No. 31",
+"background": "\"A Thousand Years\" is a ballad recorded by American singer and songwriter Christina Perri, written by Perri and her producer David Hodges, for The Twilight Saga: Breaking Dawn – Part 1. The song was released worldwide as a digital download on October 18, 2011 and serves as the second single by Atlantic Records from…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/A_Thousand_Years",
+"pool": "vibe"
+},
+{
+"id": "bubbly-colbie-caillat",
+"artist": "Colbie Caillat",
+"title": "Bubbly",
+"year": 2007,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "\"Bubbly\" is the debut single of American singer-songwriter Colbie Caillat from her first album, Coco (2007). Written by Caillat and Jason Reeves and produced by Mikal Blue, the song was released as the album's lead single on May 15, 2007.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Bubbly",
+"pool": "vibe"
+},
+{
+"id": "the-scientist-coldplay",
+"artist": "Coldplay",
+"title": "The Scientist",
+"year": 2002,
+"chart_peak": "Billboard Adult Pop Airplay: No. 34",
+"background": "\"The Scientist\" is a song by British rock band Coldplay. The song is credited to all the band members on their second album, A Rush of Blood to the Head.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/The_Scientist_(song)",
+"pool": "vibe"
+},
+{
+"id": "yellow-coldplay",
+"artist": "Coldplay",
+"title": "Yellow",
+"year": 2000,
+"chart_peak": "Billboard Hot 100 No. 48",
+"background": "\"Yellow\" is a song by the British rock band Coldplay from their debut studio album, Parachutes (2000). The song was written by band members Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion, and co-produced it with British record producer Ken Nelson.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Yellow_(Coldplay_song)",
+"pool": "vibe"
+},
+{
+"id": "gangsta-s-paradise-coolio-ft-l-v",
+"artist": "Coolio ft. L.V.",
+"title": "Gangsta's Paradise",
+"year": 1995,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Coolio and L.V. interpolate Stevie Wonder’s “Pastime Paradise.” It was the lead single from the Dangerous Minds soundtrack; Antoine Fuqua’s video features Michelle Pfeiffer.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Gangsta%27s_Paradise",
+"pool": "flash"
+},
+{
+"id": "put-your-records-on-corinne-bailey-rae",
+"artist": "Corinne Bailey Rae",
+"title": "Put Your Records On",
+"year": 2006,
+"chart_peak": "Billboard Hot 100 No. 64",
+"background": "\"Put Your Records On\" is a song by the English singer Corinne Bailey Rae from her self-titled debut studio album (2006). Written by Bailey Rae, John Beck, and Steve Chrisanthou, it was released as the album's second single in February 2006; in North America, it served as the album's lead single.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Put_Your_Records_On",
+"pool": "vibe"
+},
+{
+"id": "girls-just-want-to-have-fun-cyndi-lauper",
+"artist": "Cyndi Lauper",
+"title": "Girls Just Want to Have Fun",
+"year": 1983,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "Robert Hazard wrote “Girls Just Want to Have Fun” in 1979 from a male point of view and played it around Philadelphia. Producer Rick Chertoff brought it to Cyndi Lauper, who flipped the perspective and changed some of the lyrics, with Hooters members Rob Hyman and Eric Bazilian on the sessions.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Girls_Just_Want_to_Have_Fun",
+"pool": "flash"
+},
+{
+"id": "time-after-time-cyndi-lauper",
+"artist": "Cyndi Lauper",
+"title": "Time After Time",
+"year": 1984,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "“Time After Time” was one of the last songs recorded for She’s So Unusual. Producer Rick Chertoff introduced Cyndi Lauper to Rob Hyman and insisted they needed “one more song,” so they sat at a piano and wrote it, both going through rough patches in their own relationships.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Time_After_Time_(Cyndi_Lauper_song)",
+"pool": "flash"
+},
+{
+"id": "don-t-start-now-dua-lipa",
+"artist": "Dua Lipa",
+"title": "Don't Start Now",
+"year": 2019,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "\"Don't Start Now\" is a song by English singer Dua Lipa. Lipa wrote the song with Caroline Ailin, Emily Warren, and its producer Ian Kirkpatrick.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Don't_Start_Now",
+"pool": "mood"
+},
+{
+"id": "levitating-dua-lipa",
+"artist": "Dua Lipa",
+"title": "Levitating",
+"year": 2020,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Levitating\" is a song by English singer Dua Lipa from her second studio album, Future Nostalgia (2020). The song was written by Lipa, Clarence Coffee Jr., Sarah Hudson, and Koz, who produced the song with Stuart Price, and stemmed from a Roland VP-330 synthesiser sample played by Koz.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Levitating_(song)",
+"pool": "mood"
+},
+{
+"id": "perfect-ed-sheeran",
+"artist": "Ed Sheeran",
+"title": "Perfect",
+"year": 2017,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Perfect\" is a song by English singer-songwriter Ed Sheeran from his third studio album, ÷ (2017). After the album's release, it charted at number four on the UK Singles Chart.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Perfect_(Ed_Sheeran_song)",
+"pool": "vibe"
+},
+{
+"id": "photograph-ed-sheeran",
+"artist": "Ed Sheeran",
+"title": "Photograph",
+"year": 2015,
+"chart_peak": "Billboard Hot 100 No. 4",
+"background": "\"Photograph\" is a song by English singer-songwriter Ed Sheeran from his second studio album, × (2014). Sheeran wrote the song with Snow Patrol member Johnny McDaid, who had a piano loop from which the composition developed.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Photograph_(Ed_Sheeran_song)",
+"pool": "vibe"
+},
+{
+"id": "thinking-out-loud-ed-sheeran",
+"artist": "Ed Sheeran",
+"title": "Thinking Out Loud",
+"year": 2014,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "\"Thinking Out Loud\" is a song by English singer-songwriter Ed Sheeran recorded for his second studio album, × (2014). It was written by Sheeran and Amy Wadge, and produced by frequent collaborator Jake Gosling.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Thinking_Out_Loud",
+"pool": "vibe"
+},
+{
+"id": "lose-yourself-eminem",
+"artist": "Eminem",
+"title": "Lose Yourself",
+"year": 2002,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Eminem wrote it for the 8 Mile soundtrack, as his character Rabbit steps into the battle-rap spotlight. It became a Billboard Hot 100 No. 1.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Lose_Yourself",
+"pool": "mood"
+},
+{
+"id": "dreams-fleetwood-mac",
+"artist": "Fleetwood Mac",
+"title": "Dreams",
+"year": 1977,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Dreams\" is a song by the British-American rock band Fleetwood Mac, written and sung by Stevie Nicks for the band's eleventh studio album, Rumours (1977). In the United States, \"Dreams\" was released as the second single from Rumours in March 1977, by Warner Bros., while in the United Kingdom, the song was released…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Dreams_(Fleetwood_Mac_song)",
+"pool": "vibe"
+},
+{
+"id": "heat-waves-glass-animals",
+"artist": "Glass Animals",
+"title": "Heat Waves",
+"year": 2020,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Heat Waves\" is a song by British indie rock band Glass Animals released as a single from their third studio album Dreamland on 29 June 2020.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Heat_Waves",
+"pool": "mood"
+},
+{
+"id": "iris-goo-goo-dolls",
+"artist": "Goo Goo Dolls",
+"title": "Iris",
+"year": 1998,
+"chart_peak": "Billboard Hot 100 No. 9",
+"background": "\"Iris\" is a song by the American alternative rock band Goo Goo Dolls. Written for the soundtrack of the 1998 film City of Angels, it was included on the sixth Goo Goo Dolls album, Dizzy Up the Girl, and released as the album's lead single on April 1, 1998.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Iris_(song)",
+"pool": "vibe"
+},
+{
+"id": "hollaback-girl-gwen-stefani",
+"artist": "Gwen Stefani",
+"title": "Hollaback Girl",
+"year": 2005,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Gwen Stefani flew to New York to write with Pharrell, finished two songs in a week, and was headed home when he called her back into the studio a few minutes later to write one more. That last-minute session became “Hollaback Girl.”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Hollaback_Girl",
+"pool": "flash"
+},
+{
+"id": "as-it-was-harry-styles",
+"artist": "Harry Styles",
+"title": "As It Was",
+"year": 2022,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"As It Was\" is a song by English singer-songwriter Harry Styles, released through Erskine and Columbia on 1 April 2022 as the lead single from his third studio album, Harry's House (2022). The song was written by Styles alongside his producers Kid Harpoon and Tyler Johnson.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/As_It_Was",
+"pool": "mood"
+},
+{
+"id": "watermelon-sugar-harry-styles",
+"artist": "Harry Styles",
+"title": "Watermelon Sugar",
+"year": 2019,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Watermelon Sugar\" is a song by English singer-songwriter Harry Styles from his second studio album, Fine Line (2019), included as the album's second track. Styles wrote the song with Mitch Rowland and the song's producers, Tyler Johnson and Kid Harpoon.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Watermelon_Sugar",
+"pool": "mood"
+},
+{
+"id": "jump-around-house-of-pain",
+"artist": "House of Pain",
+"title": "Jump Around",
+"year": 1992,
+"chart_peak": "",
+"background": "DJ Muggs of Cypress Hill produced it. The video was shot in New York and cuts in footage from the 1992 St. Patrick’s Day parade.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Jump_Around",
+"pool": "flash"
+},
+{
+"id": "better-together-jack-johnson",
+"artist": "Jack Johnson",
+"title": "Better Together",
+"year": 2006,
+"chart_peak": "",
+"background": "\"Better Together\" is a song written and performed by American singer-songwriter Jack Johnson. The first track on Johnson's third studio album, In Between Dreams (2005), it was released as a single in February 2006.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Better_Together_(Jack_Johnson_song)",
+"pool": "vibe"
+},
+{
+"id": "say-you-won-t-let-go-james-arthur",
+"artist": "James Arthur",
+"title": "Say You Won't Let Go",
+"year": 2016,
+"chart_peak": "Billboard Hot 100 No. 9",
+"background": "\"Say You Won't Let Go\" is a song by English singer and songwriter James Arthur. The song was released as a digital download on 9 September 2016 in the United Kingdom by Columbia Records as the lead single from his second studio album Back from the Edge (2016).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Say_You_Won't_Let_Go",
+"pool": "vibe"
+},
+{
+"id": "i-m-yours-jason-mraz",
+"artist": "Jason Mraz",
+"title": "I'm Yours",
+"year": 2008,
+"chart_peak": "Billboard Hot 100 No. 3",
+"background": "\"I'm Yours\" is a song written and recorded by American singer-songwriter Jason Mraz, released in 2008 as the first single from his third studio album We Sing. We Dance.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/I'm_Yours_(Jason_Mraz_song)",
+"pool": "vibe"
+},
+{
+"id": "all-of-me-john-legend",
+"artist": "John Legend",
+"title": "All of Me",
+"year": 2013,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"All of Me\" is a song by American singer John Legend from his fourth studio album Love in the Future (2013). It is dedicated to Legend's wife Chrissy Teigen.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/All_of_Me_(John_Legend_song)",
+"pool": "vibe"
+},
+{
+"id": "can-t-stop-the-feeling-justin-timberlake",
+"artist": "Justin Timberlake",
+"title": "Can't Stop the Feeling!",
+"year": 2016,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Can't Stop the Feeling!\" is a song by American singer Justin Timberlake. It was released on May 6, 2016, as the lead single of the soundtrack to the film Trolls (2016), in which Timberlake voiced the character \"Branch\" and served as the executive music producer.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Can't_Stop_the_Feeling!",
+"pool": "mood"
+},
+{
+"id": "walking-on-sunshine-katrina-and-the-waves",
+"artist": "Katrina and the Waves",
+"title": "Walking on Sunshine",
+"year": 1985,
+"chart_peak": "UK Singles: No. 8",
+"background": "\"Walking on Sunshine\" is a song written by Kimberley Rew for the English rock band Katrina and the Waves' 1983 album Walking on Sunshine. A rerecorded version was included on the band's 1985 album Katrina and the Waves and was released as its second single in April 1985.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Walking_on_Sunshine_(Katrina_and_the_Waves_song)",
+"pool": "mood"
+},
+{
+"id": "firework-katy-perry",
+"artist": "Katy Perry",
+"title": "Firework",
+"year": 2010,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Katy Perry has said “Firework” was influenced by Jack Kerouac’s novel On the Road. The “baby, you’re a firework” hook — and the crowd going “awe” — comes from Kerouac’s line about roman candles exploding “and everybody goes ‘Awww!’”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Firework_(song)",
+"pool": "flash"
+},
+{
+"id": "roar-katy-perry",
+"artist": "Katy Perry",
+"title": "Roar",
+"year": 2013,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Roar\" is a song by American singer-songwriter Katy Perry. It was released on August 10, 2013, by Capitol Records as the lead single from her fourth studio album, Prism (2013).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Roar_(song)",
+"pool": "mood"
+},
+{
+"id": "teenage-dream-katy-perry",
+"artist": "Katy Perry",
+"title": "Teenage Dream",
+"year": 2010,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Katy Perry and Bonnie McKee started “Teenage Dream” with a “forever young” idea. An early Peter Pan lyric felt “too young,” and another draft with “You’re a mom in a minivan” made them laugh for an hour. A later “trying me on” clothes-and-sex metaphor was rejected; the producers wanted everything “Benny Proof.”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Teenage_Dream_(Katy_Perry_song)",
+"pool": "flash"
+},
+{
+"id": "california-gurls-katy-perry-ft-snoop-dogg",
+"artist": "Katy Perry ft. Snoop Dogg",
+"title": "California Gurls",
+"year": 2010,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "After an Oscars party, Katy Perry texted her A&R that the album wasn’t finished and she wanted a California girls song — in part as a West Coast answer to Jay-Z’s “Empire State of Mind.” She used Wikipedia to browse West Coast rappers before picking Snoop Dogg.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/California_Gurls",
+"pool": "flash"
+},
+{
+"id": "since-u-been-gone-kelly-clarkson",
+"artist": "Kelly Clarkson",
+"title": "Since U Been Gone",
+"year": 2004,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "Max Martin and Dr. Luke first intended Pink to sing “Since U Been Gone,” and she turned it down. Hilary Duff’s camp was interested but passed because she couldn’t reach the higher notes. Clive Davis then convinced the writers to give it to Kelly Clarkson, even though they were reluctant at first.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Since_U_Been_Gone",
+"pool": "flash"
+},
+{
+"id": "tik-tok-kesha",
+"artist": "Kesha",
+"title": "TiK ToK",
+"year": 2009,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Kesha has said the idea for “Tik Tok” came from coming home half-drunk after a night out, jotting a few words, and finding the story waiting in the morning. The opening line grew out of waking up surrounded by “beautiful women,” which made her picture Sean Combs — who ended up with a couple of spoken lines on the record.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Tik_Tok_(song)",
+"pool": "flash"
+},
+{
+"id": "bad-romance-lady-gaga",
+"artist": "Lady Gaga",
+"title": "Bad Romance",
+"year": 2009,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Lady Gaga and RedOne wrote and arranged “Bad Romance,” and she recorded it at the Record Plant in Los Angeles and FC Walvisch in Amsterdam. RedOne produced the track, with Gaga co-producing.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Bad_Romance",
+"pool": "flash"
+},
+{
+"id": "just-dance-lady-gaga",
+"artist": "Lady Gaga",
+"title": "Just Dance",
+"year": 2008,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Lady Gaga has said she wrote “Just Dance” in about 10 minutes with producer RedOne, very hungover, the first time she was in a Hollywood studio.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Just_Dance_(song)",
+"pool": "flash"
+},
+{
+"id": "poker-face-lady-gaga",
+"artist": "Lady Gaga",
+"title": "Poker Face",
+"year": 2008,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Lady Gaga has said she wrote “Poker Face” as a pop song and a tribute to her “rock ’n’ roll boyfriends,” with sex and gambling at the center of the idea. She wrote it with RedOne, who also produced the track.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Poker_Face_(song)",
+"pool": "flash"
+},
+{
+"id": "die-with-a-smile-lady-gaga-bruno-mars",
+"artist": "Lady Gaga & Bruno Mars",
+"title": "Die With a Smile",
+"year": 2024,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Die with a Smile\" is a song by American singer-songwriters Lady Gaga and Bruno Mars. It was released as a standalone single on August 16, 2024, through Interscope Records.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Die_with_a_Smile",
+"pool": "mood"
+},
+{
+"id": "steal-my-sunshine-len",
+"artist": "Len",
+"title": "Steal My Sunshine",
+"year": 1999,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-18"
+]
+},
+{
+"id": "hanging-by-a-moment-lifehouse",
+"artist": "Lifehouse",
+"title": "Hanging by a Moment",
+"year": 2000,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "Lifehouse singer Jason Wade has said he wrote “Hanging by a Moment” in about five minutes, without thinking about what would happen to it. The band released it as the first single because, Wade told Billboard, it was the most uptempo, radio-friendly song they had.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Hanging_by_a_Moment",
+"pool": "flash"
+},
+{
+"id": "about-damn-time-lizzo",
+"artist": "Lizzo",
+"title": "About Damn Time",
+"year": 2022,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"About Damn Time\" is a song by American singer and rapper Lizzo, released on April 14, 2022, by Nice Life Recordings and Atlantic Records as the lead single from her fourth studio album Special (2022). The song reached number one in the United States, becoming her second number one single there, while reaching the…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/About_Damn_Time",
+"pool": "mood"
+},
+{
+"id": "good-as-hell-lizzo",
+"artist": "Lizzo",
+"title": "Good as Hell",
+"year": 2016,
+"chart_peak": "Billboard Hot 100 No. 3",
+"background": "\"Good as Hell\" is a song recorded by American rapper and singer Lizzo. Written by Lizzo and producer Ricky Reed, it was released on March 8, 2016, by Atlantic Records and Nice Life Recording Company as the lead single from her first extended play, Coconut Oil, and subsequently was the namesake for her 2017 Good as…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Good_as_Hell",
+"pool": "mood"
+},
+{
+"id": "into-the-groove-madonna",
+"artist": "Madonna",
+"title": "Into the Groove",
+"year": 1985,
+"chart_peak": "",
+"background": "Madonna and Stephen Bray first wrote it as “Get Into the Groove” in her Lower East Side apartment, on a Tascam eight-track, after a friend asked her to write a song for another singer. She later brought that demo to the Desperately Seeking Susan set when director Susan Seidelman needed music for a nightclub scene, and the song ended up in the film.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Into_the_Groove",
+"pool": "flash"
+},
+{
+"id": "like-a-prayer-madonna",
+"artist": "Madonna",
+"title": "Like a Prayer",
+"year": 1989,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Madonna wrote “Like a Prayer” in about three hours with producer Patrick Leonard, and it became the first song they developed for the album. She wanted a gospel feel with almost no instruments at first, and they recorded it with Andraé Crouch’s choir in September 1988.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Like_a_Prayer_(song)",
+"pool": "flash"
+},
+{
+"id": "vogue-madonna",
+"artist": "Madonna",
+"title": "Vogue",
+"year": 1990,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Warner Bros. asked Shep Pettibone to cut a new B-side on a $5,000 budget; he sent Madonna the track, and she wrote most of the lyrics on the plane to New York, then recorded her vocals in a closet-turned-booth, often in single takes. After seeing dancers voguing at The Sound Factory, she named the song “Vogue,” which surprised Pettibone because the dance was already “semi-passé” underground.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Vogue_(song)",
+"pool": "flash"
+},
+{
+"id": "uptown-funk-mark-ronson-ft-bruno-mars",
+"artist": "Mark Ronson ft. Bruno Mars",
+"title": "Uptown Funk",
+"year": 2014,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Uptown Funk\" is a song by British-American DJ and record producer Mark Ronson featuring American singer Bruno Mars. It was released on 10 November 2014, as the lead single from Ronson's fourth studio album, Uptown Special (2015).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Uptown_Funk",
+"pool": "mood"
+},
+{
+"id": "billie-jean-michael-jackson",
+"artist": "Michael Jackson",
+"title": "Billie Jean",
+"year": 1983,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Michael Jackson said “Billie Jean” grew out of the groupies he and his brothers met on the Jackson 5 road — “there were a lot of Billie Jeans out there.” He was so locked into the song in his car that he didn’t notice the car had caught fire until a passing motorcyclist told him.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Billie_Jean",
+"pool": "flash"
+},
+{
+"id": "flowers-miley-cyrus",
+"artist": "Miley Cyrus",
+"title": "Flowers",
+"year": 2023,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Flowers\" is a song by American singer Miley Cyrus from her eighth studio album Endless Summer Vacation (2023). Columbia Records released it as the album's lead single on January 12, 2023, in some countries and on January 13 worldwide.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Flowers_(Miley_Cyrus_song)",
+"pool": "mood"
+},
+{
+"id": "party-in-the-u-s-a-miley-cyrus",
+"artist": "Miley Cyrus",
+"title": "Party in the U.S.A.",
+"year": 2009,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "\"Party in the U.S.A.\" is a song by American singer Miley Cyrus from her first extended play (EP), The Time of Our Lives (2009). It was released on August 4, 2009, by Hollywood Records as the lead single from the project.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Party_in_the_U.S.A.",
+"pool": "mood"
+},
+{
+"id": "work-it-missy-elliott",
+"artist": "Missy Elliott",
+"title": "Work It",
+"year": 2002,
+"chart_peak": "Billboard Hot 100 No. 2",
+"background": "Missy and Timbaland built it as an old-school throwback, sampling Run-DMC’s “Peter Piper” and a synth lick from Blondie’s “Heart of Glass.”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Work_It_(Missy_Elliott_song)",
+"pool": "mood"
+},
+{
+"id": "torn-natalie-imbruglia",
+"artist": "Natalie Imbruglia",
+"title": "Torn,",
+"year": null,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-13"
+]
+},
+{
+"id": "hip-hop-hooray-naughty-by-nature",
+"artist": "Naughty by Nature",
+"title": "Hip Hop Hooray",
+"year": 1993,
+"chart_peak": "Billboard Hot 100 No. 8",
+"background": "It samples James Brown’s “Funky President,” among others. Spike Lee directed the video. It reached No. 8 on the Hot 100 and No. 1 on Hot R&B/Hip-Hop Songs.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Hip_Hop_Hooray",
+"pool": "flash"
+},
+{
+"id": "hot-in-herre-nelly",
+"artist": "Nelly",
+"title": "Hot in Herre",
+"year": 2002,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "The Neptunes produced it and folded in a bit of Chuck Brown’s “Bustin’ Loose.” It was the lead single from Nellyville and a Billboard Hot 100 No. 1.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Hot_in_Herre",
+"pool": "mood"
+},
+{
+"id": "promiscuous-nelly-furtado-ft-timbaland",
+"artist": "Nelly Furtado ft. Timbaland",
+"title": "Promiscuous",
+"year": 2006,
+"chart_peak": "Australia (ARIA): No. 2",
+"background": "“Promiscuous” was one of the first songs Nelly Furtado wrote with Timothy “Attitude” Clayton; she called the process “extremely freeing” and said they were actually flirting as they wrote, which is why the song feels so playful. They nicknamed it “The BlackBerry Song,” because everything in the lyric is something you could text to somebody.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Promiscuous_(song)",
+"pool": "flash"
+},
+{
+"id": "bye-bye-bye-nsync",
+"artist": "NSYNC",
+"title": "Bye Bye Bye",
+"year": 2000,
+"chart_peak": "Billboard Hot 100 No. 4",
+"background": "Andreas Carlsson wrote the lyrics to “Bye Bye Bye” while taking a driver’s test in Stockholm. The song was first offered to British boy band 5ive, who turned it down because they wanted to become a rap group.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Bye_Bye_Bye",
+"pool": "flash"
+},
+{
+"id": "wonderwall-oasis",
+"artist": "Oasis",
+"title": "Wonderwall",
+"year": 1995,
+"chart_peak": "Billboard Hot 100 No. 8",
+"background": "\"Wonderwall\" is a song by English rock band Oasis, released by Creation Records on 30 October 1995 as the fourth single from the band's second studio album (What's the Story) Morning Glory?. Described by lead guitarist and songwriter Noel Gallagher, who wrote the song and co-produced it with Owen Morris, as being…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Wonderwall",
+"pool": "vibe"
+},
+{
+"id": "good-4-u-olivia-rodrigo",
+"artist": "Olivia Rodrigo",
+"title": "good 4 u",
+"year": 2021,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Good 4 U\" is a song by American singer-songwriter Olivia Rodrigo. It was released on May 14, 2021, through Geffen and Interscope Records, as the third single from Rodrigo's debut studio album, Sour (2021).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Good_4_U",
+"pool": "mood"
+},
+{
+"id": "hey-ya-outkast",
+"artist": "Outkast",
+"title": "Hey Ya!",
+"year": 2003,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "André 3000 wrote “Hey Ya!” in 2000 and started recording it in December 2002 at Stankonia in Atlanta, accompanying himself on acoustic guitar. He has said the song wouldn’t exist without seeing the Hives live, and he needed several dozen takes to get the intro, first verse, and hook.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Hey_Ya!",
+"pool": "flash"
+},
+{
+"id": "ms-jackson-outkast",
+"artist": "Outkast",
+"title": "Ms. Jackson",
+"year": 2000,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "André 3000 and Big Boi released it as the second single from Stankonia. It topped the Hot 100 for one week in February 2001.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Ms._Jackson",
+"pool": "mood"
+},
+{
+"id": "let-her-go-passenger",
+"artist": "Passenger",
+"title": "Let Her Go",
+"year": 2012,
+"chart_peak": "Billboard Hot 100 No. 5",
+"background": "\"Let Her Go\" is a song recorded by English singer-songwriter Passenger. It was recorded at Sydney's Linear Recording and co-produced by Passenger and Chris Vallejo.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Let_Her_Go",
+"pool": "vibe"
+},
+{
+"id": "happy-pharrell-williams",
+"artist": "Pharrell Williams",
+"title": "Happy",
+"year": 2013,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Happy\" is a song written, produced, and performed by American musician Pharrell Williams, released as the only single from the soundtrack album for the film Despicable Me 2 (2013). The song was first released on July 2, 2013 with the soundtrack, and it was released as a single on November 21, 2013, alongside a…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Happy_(Pharrell_Williams_song)",
+"pool": "mood"
+},
+{
+"id": "sunflower-post-malone-swae-lee",
+"artist": "Post Malone & Swae Lee",
+"title": "Sunflower",
+"year": 2018,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Sunflower\" is a song by American musicians Post Malone and Swae Lee. It was released on October 18, 2018, as a single from the soundtrack to the 2018 animated film Spider-Man: Into the Spider-Verse, and was later included on Post Malone's third studio album Hollywood's Bleeding (2019).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Sunflower_(Post_Malone_and_Swae_Lee_song)",
+"pool": "mood"
+},
+{
+"id": "livin-la-vida-loca-ricky-martin",
+"artist": "Ricky Martin",
+"title": "Livin' la Vida Loca",
+"year": 1999,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Ricky Martin later wrote that recording “Livin’ la Vida Loca” with Draco Rosa and Desmond Child felt like “we actually made magic,” and that working with Child was “an entirely new level.” He also said the album was almost going to come out without the song.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Livin'_la_Vida_Loca",
+"pool": "flash"
+},
+{
+"id": "umbrella-rihanna-ft-jay-z",
+"artist": "Rihanna ft. Jay-Z",
+"title": "Umbrella",
+"year": 2007,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "In an Atlanta studio, Tricky Stewart stumbled on a walloping GarageBand hi-hat, The-Dream asked what that beat was, and the word “umbrella” popped into his head; he wrote the first two verses and the chorus over that skeleton track. Rihanna cut it at Westlake in Los Angeles, and after the “ella, ella” hook, Stewart felt they were onto something.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Umbrella_(song)",
+"pool": "flash"
+},
+{
+"id": "espresso-sabrina-carpenter",
+"artist": "Sabrina Carpenter",
+"title": "Espresso",
+"year": 2024,
+"chart_peak": "Billboard Hot 100 No. 3",
+"background": "\"Espresso\" is a song by American singer Sabrina Carpenter from her sixth studio album, Short n' Sweet (2024). Island Records released it on April 11, 2024, as the album's lead single.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Espresso_(song)",
+"pool": "mood"
+},
+{
+"id": "please-please-please-sabrina-carpenter",
+"artist": "Sabrina Carpenter",
+"title": "Please Please Please",
+"year": 2024,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Please Please Please\" is a song by American singer Sabrina Carpenter from her sixth studio album, Short n' Sweet (2024). It was released through Island Records on June 6, 2024, as the second single from the album.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Please_Please_Please_(Sabrina_Carpenter_song)",
+"pool": "mood"
+},
+{
+"id": "by-your-side-sade",
+"artist": "Sade",
+"title": "By Your Side",
+"year": 2000,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-16"
+]
+},
+{
+"id": "stay-with-me-sam-smith",
+"artist": "Sam Smith",
+"title": "Stay with Me",
+"year": 2014,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Stay with Me\" is a song by the English singer Sam Smith from their debut studio album In the Lonely Hour (2014). It was released in the United States on 14 April 2014 and in the United Kingdom on 18 May 2014.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Stay_with_Me_(Sam_Smith_song)",
+"pool": "vibe"
+},
+{
+"id": "smooth-santana-featuring-rob-thomas",
+"artist": "Santana featuring Rob Thomas",
+"title": "Smooth",
+"year": 1999,
+"chart_peak": "No. 1 on the Billboard Hot 100 for 12 consecutive weeks, starting with the week of Oct. 23, 1999, so it was No. 1 on this date in 1999",
+"background": "Itaal Shur's original track was called 'Room 17.' The lyrics were stripped for the label, and Rob Thomas of Matchbox Twenty re-wrote the words and melody and retitled it 'Smooth.' Thomas has said he drew on his wife, 'a beautiful Latin woman,' for some of the lyrics, and the recording took two days. It was the last No. 1 of the 1990s and the first of the 2000s, and it won Record of the Year and So",
+"used": [
+"2026-11-19"
+]
+},
+{
+"id": "smooth-santana-ft-rob-thomas",
+"artist": "Santana ft. Rob Thomas",
+"title": "Smooth",
+"year": 1999,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Itaal Shur first wrote it as “Room 17,” but EMI stripped the original lyrics for being too sexual. Rob Thomas rewrote the words and melody in a few hours and hadn’t even planned to sing it — George Michael was among the names floated — until Clive Davis, Matt Serletic, and Carlos Santana himself signed off on Thomas’s demo vocal.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Smooth_(song)",
+"pool": "flash"
+},
+{
+"id": "kiss-from-a-rose-seal",
+"artist": "Seal",
+"title": "Kiss from a Rose",
+"year": 1994,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-18"
+]
+},
+{
+"id": "all-star-smash-mouth",
+"artist": "Smash Mouth",
+"title": "All Star",
+"year": 1999,
+"chart_peak": "Billboard Hot 100 No. 4",
+"background": "“All Star” was the last song recorded for Astro Lounge, after the label said the album still didn’t have a single. It starts with vocals before any instruments — radio and the label hated that — but the band kept it that way; guitarist Greg Camp said DJs “should shut up when our song plays.”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/All_Star_(song)",
+"pool": "flash"
+},
+{
+"id": "wannabe-spice-girls",
+"artist": "Spice Girls",
+"title": "Wannabe",
+"year": 1996,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "The Spice Girls recorded “Wannabe” with Matt Rowe and Richard “Biff” Stannard in less than an hour — most of the other Spice album tracks took two or three days. Victoria Adams missed most of the writing session and stayed on the phone with the rest of the group.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Wannabe",
+"pool": "flash"
+},
+{
+"id": "fields-of-gold-sting",
+"artist": "Sting",
+"title": "Fields of Gold",
+"year": 1993,
+"chart_peak": "Billboard Hot 100 No. 23",
+"background": "\"Fields of Gold\" is a song written and performed by the English musician Sting. It first appeared on his fourth studio album, Ten Summoner's Tales (1993).",
+"used": [
+"2026-11-17"
+],
+"source": "https://en.wikipedia.org/wiki/Fields_of_Gold",
+"pool": "vibe"
+},
+{
+"id": "someday-sugar-ray",
+"artist": "Sugar Ray",
+"title": "Someday",
+"year": 1999,
+"chart_peak": "Billboard Hot 100 No. 7",
+"background": "\"Someday\" is a song by American rock band Sugar Ray. First serviced to American radio in June 1999, the song was released on September 7, 1999, as the second US single and third single overall from the band's third album, 14:59 (1999).",
+"used": [
+"2026-11-17"
+],
+"source": "https://en.wikipedia.org/wiki/Someday_(Sugar_Ray_song)",
+"pool": "mood"
+},
+{
+"id": "anti-hero-taylor-swift",
+"artist": "Taylor Swift",
+"title": "Anti-Hero",
+"year": 2022,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Anti-Hero\" is a song by the American singer-songwriter Taylor Swift and the lead single from her tenth studio album, Midnights (2022). It was released on October 21, 2022, through Republic Records.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Anti-Hero_(song)",
+"pool": "mood"
+},
+{
+"id": "cardigan-taylor-swift",
+"artist": "Taylor Swift",
+"title": "cardigan",
+"year": 2020,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Cardigan\" is a song by the American singer-songwriter Taylor Swift and the lead single from her eighth studio album, Folklore (2020). Republic Records released the song on July 24, 2020.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Cardigan_(song)",
+"pool": "vibe"
+},
+{
+"id": "cruel-summer-taylor-swift",
+"artist": "Taylor Swift",
+"title": "Cruel Summer",
+"year": 2023,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Cruel Summer\" is a song by the American singer-songwriter Taylor Swift from her seventh studio album, Lover (2019). Swift and Jack Antonoff produced the song, and they wrote it with St.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Cruel_Summer_(Taylor_Swift_song)",
+"pool": "mood"
+},
+{
+"id": "shake-it-off-taylor-swift",
+"artist": "Taylor Swift",
+"title": "Shake It Off",
+"year": 2014,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Shake It Off\" is a song by the American singer-songwriter Taylor Swift and the lead single from her fifth studio album, 1989 (2014). She wrote the lyrics by herself and composed the melody with the song's producers, Max Martin and Shellback.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Shake_It_Off",
+"pool": "mood"
+},
+{
+"id": "kokomo-the-beach-boys",
+"artist": "The Beach Boys",
+"title": "Kokomo",
+"year": 1988,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Written for the Tom Cruise movie Cocktail by Mike Love, Terry Melcher, John Phillips and Scott McKenzie; Love wrote the \"Aruba, Jamaica\" chorus. A soundtrack single, not an album cut; it later appeared on 1989's Still Cruisin'. Brian Wilson didn't sing on it.",
+"used": [
+"2026-11-18"
+]
+},
+{
+"id": "i-gotta-feeling-the-black-eyed-peas",
+"artist": "The Black Eyed Peas",
+"title": "I Gotta Feeling",
+"year": 2009,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"I Gotta [sic] Feeling\" is a song by American group the Black Eyed Peas from their fifth studio album The E.N.D. (2009).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/I_Gotta_Feeling",
+"pool": "mood"
+},
+{
+"id": "how-do-you-talk-to-an-angel-the-heights",
+"artist": "The Heights",
+"title": "How Do You Talk to an Angel",
+"year": 1992,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-19"
+]
+},
+{
+"id": "stay-the-kid-laroi-justin-bieber",
+"artist": "The Kid LAROI & Justin Bieber",
+"title": "Stay",
+"year": 2021,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Stay\" is a song by Australian rapper and singer the Kid Laroi and Canadian singer Justin Bieber. It was released through Grade A Productions and Columbia Records on 9 July 2021, as the lead single from Laroi's reloaded mixtape, F*ck Love 3: Over You.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Stay_(The_Kid_Laroi_and_Justin_Bieber_song)",
+"pool": "mood"
+},
+{
+"id": "mr-brightside-the-killers",
+"artist": "The Killers",
+"title": "Mr. Brightside",
+"year": 2003,
+"chart_peak": "Billboard Hot 100 No. 10",
+"background": "Brandon Flowers has said “Mr. Brightside” is a true story: he woke up in Las Vegas sensing something was wrong, went to the Crown and Anchor, and found his girlfriend there with another guy. Guitarist Dave Keuning had already composed the music before the two met.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Mr._Brightside",
+"pool": "flash"
+},
+{
+"id": "big-poppa-the-notorious-b-i-g",
+"artist": "The Notorious B.I.G.",
+"title": "Big Poppa",
+"year": 1994,
+"chart_peak": "Billboard Hot 100 No. 6",
+"background": "The beat samples the Isley Brothers’ “Between the Sheets.” Biggie named the song after one of his own nicknames.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Big_Poppa",
+"pool": "flash"
+},
+{
+"id": "blinding-lights-the-weeknd",
+"artist": "The Weeknd",
+"title": "Blinding Lights",
+"year": 2019,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Blinding Lights\" is a song by Canadian singer-songwriter the Weeknd, from his fourth studio album, After Hours (2020). The song was released through XO and Republic Records on November 29, 2019, as the album's second single.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Blinding_Lights",
+"pool": "mood"
+},
+{
+"id": "can-t-feel-my-face-the-weeknd",
+"artist": "The Weeknd",
+"title": "Can't Feel My Face",
+"year": 2015,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"Can't Feel My Face\" is a song by the Canadian singer-songwriter the Weeknd from his second studio album, Beauty Behind the Madness (2015). The song was released on June 8, 2015, as the album's third single.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Can't_Feel_My_Face",
+"pool": "mood"
+},
+{
+"id": "no-scrubs-tlc",
+"artist": "TLC",
+"title": "No Scrubs",
+"year": 1999,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Kandi Burruss started writing “No Scrubs” on an envelope in her car, then finished it with Tameka “Tiny” Cottle, who drew on a relationship she later called a “screw-up.” They meant to keep the demo for themselves, but Dallas Austin gave the song to TLC, with Chilli on lead.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/No_Scrubs",
+"pool": "flash"
+},
+{
+"id": "waterfalls-tlc",
+"artist": "TLC",
+"title": "Waterfalls",
+"year": 1995,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Lisa “Left Eye” Lopes wrote “Waterfalls” with Marqueze Etheridge and Organized Noize, who also produced it, and she delivers the rap verse. Chilli and T-Boz sing the track, with background vocals from the group, Debra Killings, and CeeLo Green.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Waterfalls_(TLC_song)",
+"pool": "flash"
+},
+{
+"id": "un-break-my-heart-toni-braxton",
+"artist": "Toni Braxton",
+"title": "Un-Break My Heart",
+"year": 1996,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Diane Warren said the title “Un-Break My Heart” just popped into her head — she didn’t think she’d heard it before — then sat at the piano, found the chords and a key change, and thought, “OK, this is magic.” When she played it for L.A. Reid, he thought it would fit Toni Braxton’s next album.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Un-Break_My_Heart",
+"pool": "flash"
+},
+{
+"id": "fast-car-tracy-chapman",
+"artist": "Tracy Chapman",
+"title": "Fast Car",
+"year": 1988,
+"chart_peak": "Australia (ARIA): No. 4",
+"background": "\"Fast Car\" is a song by American singer-songwriter Tracy Chapman, released as her debut single on April 6, 1988, by Elektra Records. It served as the lead single from her 1988 self-titled debut studio album.",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Fast_Car",
+"pool": "vibe"
+},
+{
+"id": "drops-of-jupiter-tell-me-train",
+"artist": "Train",
+"title": "Drops of Jupiter (Tell Me)",
+"year": 2001,
+"chart_peak": "Billboard Hot 100 No. 5",
+"background": "\"Drops of Jupiter\", initially released and sometimes still listed as \"Drops of Jupiter (Tell Me)\", is a song written and recorded by American rock band Train. The power ballad was released on January 29, 2001, as the lead single from their second studio album, Drops of Jupiter (2001).",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Drops_of_Jupiter_(Tell_Me)",
+"pool": "vibe"
+},
+{
+"id": "yeah-usher-ft-lil-jon-ludacris",
+"artist": "Usher ft. Lil Jon & Ludacris",
+"title": "Yeah!",
+"year": 2004,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "When Usher turned in Confessions, label president L.A. Reid felt it didn’t have a lead single, so Usher called in Lil Jon. A leftover Lil Jon beat had already been used for Petey Pablo’s “Freek-a-Leek,” so Lil Jon jumped back in the studio and built a replacement that became “Yeah!”",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/Yeah!_(Usher_song)",
+"pool": "flash"
+},
+{
+"id": "ice-ice-baby-vanilla-ice",
+"artist": "Vanilla Ice",
+"title": "Ice Ice Baby",
+"year": 1990,
+"chart_peak": "First hip-hop single to hit No. 1 on the Billboard Hot 100 (chart dated Nov. 3, 1990; one week at No. 1)",
+"background": "",
+"used": [
+"2026-11-16"
+]
+},
+{
+"id": "everything-you-want-vertical-horizon",
+"artist": "Vertical Horizon",
+"title": "Everything You Want",
+"year": 2000,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-16"
+]
+},
+{
+"id": "wake-me-up-before-you-go-go-wham",
+"artist": "Wham!",
+"title": "Wake Me Up Before You Go-Go",
+"year": 1984,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "George Michael got the title from a note Andrew Ridgeley left for his parents, meant to say “wake me up before you go” — but he’d written “up” twice, so he wrote “go” twice on purpose. Michael wanted a high-energy pop record that mixed the best of ’50s and ’60s records with their own younger attitude.",
+"used": [
+"2026-11-19"
+],
+"source": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
+"pool": "flash"
+},
+{
+"id": "i-wanna-dance-with-somebody-who-loves-me-whitney-houston",
+"artist": "Whitney Houston",
+"title": "I Wanna Dance with Somebody (Who Loves Me)",
+"year": 1987,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "\"I Wanna Dance with Somebody (Who Loves Me)\" is a song recorded by American singer Whitney Houston, the lead single from her second studio album, Whitney (1987). The song was aimed to bring Houston a more accessible pop sound to compete with her contemporaries after enjoying hits with ballads on her debut album…",
+"used": [],
+"source": "https://en.wikipedia.org/wiki/I_Wanna_Dance_with_Somebody_(Who_Loves_Me)",
+"pool": "mood"
+}
+]
+}

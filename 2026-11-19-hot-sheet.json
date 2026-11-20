@@ -102,7 +102,9 @@
     "jokes": [
      "A No. 1 hit from a TV show nobody watched. That might be the most 90s sentence ever written.",
      "Great sax solo. Honestly, the saxophone did more work than the TV show."
-    ]
+    ],
+    "rank": 2,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-vibe-02",
@@ -113,7 +115,9 @@
     "jokes": [
      "It's 63 and sunny in November, with gusts to 35. Your hair has an opinion about it.",
      "The Beitner Bridge is open and the Chums Corner light gets fixed today. For once the drive is the good news."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-vibe-03",
@@ -124,7 +128,9 @@
     "jokes": [
      "Apollo 12 landed so close to its target that the astronauts could walk to a probe that had been sitting there since 1967. My GPS can't get me to Meijer that well.",
      "They survived two lightning strikes on launch and still landed on the dime. And I get nervous when my phone is at 4 percent."
-    ]
+    ],
+    "rank": 3,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-vibe-04",
@@ -135,7 +141,9 @@
     "jokes": [
      "A 99 on Metacritic. I've never gotten a 99 on anything, unless it's my age on a bad Monday.",
      "Ocarina of Time held that 99 all by itself for 28 years. Vice City just walked in and sat down next to it."
-    ]
+    ],
+    "rank": 4,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-vibe-05",
@@ -146,7 +154,9 @@
     "jokes": [
      "National Play Monopoly Day: the only day it's legal to bankrupt your family and still make it to Thanksgiving dinner.",
      "Carbonated Beverage with Caffeine Day. The day after GTA 6, that's just called Thursday."
-    ]
+    ],
+    "rank": 5,
+    "verify": "Reported"
    }
   ],
   "article_url": "https://www.grunge.com/2315461/no-1-song-november-19-1992-how-do-you-talk-to-an-angel-the-heights/",
@@ -154,7 +164,11 @@
   "jokes": [
    "A No. 1 hit from a TV show nobody watched. That might be the most 90s sentence ever written.",
    "Great sax solo. Honestly, the saxophone did more work than the TV show."
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "81d654aee3a7",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "mood": {
   "id": "mood",
@@ -174,7 +188,9 @@
     "jokes": [
      "Wake Me Up Before You Go-Go and National Carbonated Beverage with Caffeine Day on the same morning. The universe is trying to tell us something.",
      "I told my alarm 'wake me up before you go-go' and it just went-went without me."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Reported"
    }
   ],
   "article_url": "https://en.wikipedia.org/wiki/Wake_Me_Up_Before_You_Go-Go",
@@ -182,7 +198,11 @@
   "jokes": [
    "Wake Me Up Before You Go-Go and National Carbonated Beverage with Caffeine Day on the same morning. The universe is trying to tell us something.",
    "I told my alarm 'wake me up before you go-go' and it just went-went without me."
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "c03c87f54e6d",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "buzz": {
   "id": "buzz",
@@ -222,7 +242,9 @@
      "where": "Brookwood Athletic Complex, Clare High School (final: Ford Field, Detroit)",
      "when": "Saturday, Nov. 21, 1 PM (final: Friday, Nov. 27, 4 PM)",
      "why": "Both won regional finals last Friday: Kingsley 34-28 over Sanford-Meridian in the snow (Perry Smith's 13-yard TD with 39 seconds left, per MLive) and Almont 41-14 over Marine City. The winner goes to Ford Field."
-    }
+    },
+    "rank": 1,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-buzz-01",
@@ -253,7 +275,9 @@
      "where": "Beitner Road bridge and Chums Corner (US-31/M-37/Beitner); temporary light at US-31/Hartman Road",
      "when": "Reopened Wednesday shortly before 3 PM; signal change Thursday (today); temporary light removed starting 9 AM Friday, finished by end of day, with delays expected at US-31/Hartman",
      "why": "The light hadn't been adjusted to reflect the bridge reopening, so a short green backed traffic up at rush hour."
-    }
+    },
+    "rank": 2,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-buzz-02",
@@ -284,7 +308,9 @@
      "where": "Rural northwest Michigan, at the scene of car accidents or in someone's home",
      "when": "Ramsey has been in the role for 11 months (UpNorthLive, Nov. 17)",
      "why": "Transport times are long in a rural setting, and minutes and sometimes seconds matter, so physician-level care starts on scene."
-    }
+    },
+    "rank": 3,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-buzz-03",
@@ -315,7 +341,9 @@
      "where": "Frankfort City Hall, Benzie County, standing room only",
      "when": "Vote Monday night (Nov. 16); next decision at the March council meeting",
      "why": "Most public speakers cited the tourism boost the race brings past Labor Day; some council members relayed concerns about parking and businesses hurt by the race. The mayor: 'This last year was just phenomenal.'"
-    }
+    },
+    "rank": 4,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-buzz-04",
@@ -330,7 +358,9 @@
      "Two hundred thousand students and they're still teaching paper maps. A paper map never says 'recalculating.'",
      "Reading a compass: the original GPS, and it never needed a software update. Unlike some games I could mention."
     ],
-    "top": false
+    "top": false,
+    "rank": 5,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-buzz-05",
@@ -345,7 +375,9 @@
      "Twenty trees, twenty decorators, zero arguments about who puts on the star. Glen Arbor is doing the holidays right.",
      "A hundred and fifty bucks buys a tree. At my house it buys the tree stand and an argument."
     ],
-    "top": false
+    "top": false,
+    "rank": 6,
+    "verify": "Reported"
    }
   ],
   "article_url": "https://www.traverseticker.com/news/beitner-bridge-reopens-mdot-to-address-chums-corner-light-thursday/",
@@ -445,7 +477,11 @@
    "2026-11-19-buzz-01",
    "2026-11-19-buzz-02",
    "2026-11-19-buzz-03"
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "f3c67e45d0a6",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "gta6": {
   "id": "gta6",
@@ -484,12 +520,18 @@
      "why": "It's the first main GTA game in 13 years, the longest gap in the series, and critics are calling it a 'masterpiece'."
     },
     "description": "Grand Theft Auto VI is out today after a 13-year wait, with 99 out of 100 on Metacritic from 150 critics. NBC says gamers are skipping work to play. WHO: Rockstar Games; players follow Jason Duval and Lucia Caminos, the first female lead in a GTA game, and you can toggle between them. WHAT: GTA VI released: 99/100 on Metacritic, about 16 million copies and $1.5 billion+ in prelaunch sales (Sensor Tower), and a field-leading 8 Game Awards nominations. WHERE: Vice City, in the fictional state of Leonida (inspired by Miami and Florida); New Zealand got it first, and Miami held a 'Vice City' night at the Heat-Bucks game. WHEN: Today, Nov. 19 (The Game Awards are Dec. 10). WHY: It's the first main GTA game in 13 years, the longest gap in the series, and critics are calling it a 'masterpiece'.. THE CATCH/TWIST: NBC's warning: finishing the game's 100 missions will take around 50 hours (per Insider Gaming), so don't be surprised if loved ones or employees are hard to reach today. THE TAKE: For the first time in 13 years the wait was the easy part. Now the hard part is explaining Thursday to your boss.",
-    "body": "⭐ TOP STORY: GTA 6 WATCH<br>SUMMARY: Grand Theft Auto VI is out today after a 13-year wait, with 99 out of 100 on Metacritic from 150 critics. NBC says gamers are skipping work to play.<br>KEY POINTS:<br>• WHO: Rockstar Games; players follow Jason Duval and Lucia Caminos, the first female lead in a GTA game, and you can toggle between them<br>• WHAT: GTA VI released: 99/100 on Metacritic, about 16 million copies and $1.5 billion+ in prelaunch sales (Sensor Tower), and a field-leading 8 Game Awards nominations<br>• WHERE: Vice City, in the fictional state of Leonida (inspired by Miami and Florida); New Zealand got it first, and Miami held a 'Vice City' night at the Heat-Bucks game<br>• WHEN: Today, Nov. 19 (The Game Awards are Dec. 10)<br>• WHY: It's the first main GTA game in 13 years, the longest gap in the series, and critics are calling it a 'masterpiece'.<br>➜ THE CATCH/TWIST: NBC's warning: finishing the game's 100 missions will take around 50 hours (per Insider Gaming), so don't be surprised if loved ones or employees are hard to reach today.<br>➜ THE TAKE: For the first time in 13 years the wait was the easy part. Now the hard part is explaining Thursday to your boss.<br>😂 JOKES: Thirteen years of waiting and the first score is a 99. Even my mom never gave me a 99. / A 212-gigabyte download, a firmware update and a day-one patch. That's not a video game, that's a lease."
+    "body": "⭐ TOP STORY: GTA 6 WATCH<br>SUMMARY: Grand Theft Auto VI is out today after a 13-year wait, with 99 out of 100 on Metacritic from 150 critics. NBC says gamers are skipping work to play.<br>KEY POINTS:<br>• WHO: Rockstar Games; players follow Jason Duval and Lucia Caminos, the first female lead in a GTA game, and you can toggle between them<br>• WHAT: GTA VI released: 99/100 on Metacritic, about 16 million copies and $1.5 billion+ in prelaunch sales (Sensor Tower), and a field-leading 8 Game Awards nominations<br>• WHERE: Vice City, in the fictional state of Leonida (inspired by Miami and Florida); New Zealand got it first, and Miami held a 'Vice City' night at the Heat-Bucks game<br>• WHEN: Today, Nov. 19 (The Game Awards are Dec. 10)<br>• WHY: It's the first main GTA game in 13 years, the longest gap in the series, and critics are calling it a 'masterpiece'.<br>➜ THE CATCH/TWIST: NBC's warning: finishing the game's 100 missions will take around 50 hours (per Insider Gaming), so don't be surprised if loved ones or employees are hard to reach today.<br>➜ THE TAKE: For the first time in 13 years the wait was the easy part. Now the hard part is explaining Thursday to your boss.<br>😂 JOKES: Thirteen years of waiting and the first score is a 99. Even my mom never gave me a 99. / A 212-gigabyte download, a firmware update and a day-one patch. That's not a video game, that's a lease.",
+    "rank": 1,
+    "verify": "Reported"
    }
   ],
   "top_ids": [
    "2026-11-19-gta6-01"
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "0f86fbae1286",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "lifestyle": {
   "id": "lifestyle",
@@ -510,7 +552,9 @@
     "jokes": [
      "$5.86 a person for Thanksgiving. That's cheaper than a coffee at some places I won't name, and the turkey doesn't ask for my name.",
      "Turkey is up 10 percent. The only thing at my table that's gone up more is my uncle's volume."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Reported"
    }
   ],
   "article_url": "https://www.fb.org/news-release/cost-of-thanksgiving-dinner-increases-remains-below-2022-record-high",
@@ -518,7 +562,11 @@
   "jokes": [
    "$5.86 a person for Thanksgiving. That's cheaper than a coffee at some places I won't name, and the turkey doesn't ask for my name.",
    "Turkey is up 10 percent. The only thing at my table that's gone up more is my uncle's volume."
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "9a8e717c4236",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "officeschool": {
   "id": "officeschool",
@@ -541,7 +589,9 @@
     "jokes": [
      "43% of workers have watched a big event on the clock. The other 57% are lying to the survey.",
      "The best excuse I heard today: 'family emergency.' The family is on the couch, and the emergency is a 99 on Metacritic."
-    ]
+    ],
+    "rank": 2,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-officeschool-02",
@@ -555,7 +605,9 @@
     "jokes": [
      "58% want a mentor, 25% have one. The rest are asking the guy in IT, and he's tired.",
      "Gen Z is about to be your boss. Somebody should warn them the printer is always the problem."
-    ]
+    ],
+    "rank": 3,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-officeschool-03",
@@ -569,7 +621,9 @@
     "jokes": [
      "TCAPS wants kids to question the AI. Great, now my kid will question everything I say too.",
      "In my day we copied from the encyclopedia and changed a few words. Now the robot does it and changes none."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-officeschool-04",
@@ -583,7 +637,9 @@
     "jokes": [
      "A guaranteed spot and a plan so your credits count. That's the first college guarantee I've heard with no fine print.",
      "Community college: where the parking is closer, the textbooks are lighter, and nobody asks you to pick a major before breakfast."
-    ]
+    ],
+    "rank": 4,
+    "verify": "Confirmed"
    }
   ],
   "article_url": "https://www.prnewswire.com/news-releases/more-than-1-in-10-workers-plan-to-take-time-off-or-change-their-schedule-for-gta-vi-302942862.html",
@@ -591,7 +647,11 @@
   "jokes": [
    "43% of workers have watched a big event on the clock. The other 57% are lying to the survey.",
    "The best excuse I heard today: 'family emergency.' The family is on the couch, and the emergency is a 99 on Metacritic."
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "0dd50e44351b",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "verse": {
   "id": "verse",
@@ -601,7 +661,11 @@
   "content": "",
   "notes": "",
   "custom": false,
-  "items": []
+  "items": [],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "61ab5c5c9fff",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "mental": {
   "id": "mental",
@@ -618,12 +682,18 @@
     "recap": "The Mental Health Minute was \"Name It to Tame It\": put a one-word name on a stressful feeling to turn the volume down.",
     "article_url": "https://pubmed.ncbi.nlm.nih.gov/17576282/",
     "article_title": "Putting feelings into words: affect labeling disrupts amygdala activity in response to affective stimuli (Lieberman et al., 2007, PubMed)",
-    "jokes": []
+    "jokes": [],
+    "rank": 1,
+    "verify": "Confirmed"
    }
   ],
   "article_url": "https://pubmed.ncbi.nlm.nih.gov/17576282/",
   "article_title": "Putting feelings into words: affect labeling disrupts amygdala activity in response to affective stimuli (Lieberman et al., 2007, PubMed)",
-  "jokes": []
+  "jokes": [],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "4ba4e9cb04bd",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "flash": {
   "id": "flash",
@@ -661,9 +731,15 @@
     "jokes": [
      "Twelve weeks at No. 1. That's longer than any of my New Year's resolutions have lasted.",
      "Santana, Rob Thomas and a smooth groove. The only thing smoother is the bridge once the Chums Corner light is fixed."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Reported"
    }
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "530dfc422a31",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "cross": {
   "id": "cross",
@@ -683,7 +759,9 @@
     "jokes": [
      "The real winner of Monopoly is whoever flips the board. That's not a rule, that's family tradition.",
      "Monopoly is the only game that can end a friendship and still make you ask for a rematch."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Reported"
    }
   ],
   "article_url": "https://nationaldaycalendar.com/celebrations/national-play-monopoly-day-november-19/",
@@ -691,7 +769,11 @@
   "jokes": [
    "The real winner of Monopoly is whoever flips the board. That's not a rule, that's family tradition.",
    "Monopoly is the only game that can end a friendship and still make you ask for a rematch."
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "bcec6046db6d",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "offcharts": {
   "id": "offcharts",
@@ -701,7 +783,11 @@
   "content": "Fridays only",
   "notes": "",
   "custom": false,
-  "items": []
+  "items": [],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "d5febf315871",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "newsclips": {
   "id": "newsclips",
@@ -728,7 +814,10 @@
     "body": "SHOW OPENER SUPERCUT: GTA 6 LAUNCH DAY · SHOW OPENER SUPERCUT<br>Global News: \"GTA 6 is expected to be the biggest video game release of all time\" / WarGames (1983, Movieclips): \"Shall we play a game?\" / Ready Player One (2018): \"You can do anything. Go anywhere... except for eating, sleeping and bathroom breaks, whatever people want to do, they do it in the Oasis.\" / Aliens (1986): \"Game over, man!\" Straight into AJ's intro ending on Showtime.<br>PLAY · READY · Clean. Aliens bite trimmed tight between swears; Aliens and Ready Player One from fan uploads.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c00-opener-supercut.mp3",
     "file": "c00-opener-supercut.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 20.1,
+    "duration": "0:20",
+    "kind": "opener"
    },
    {
     "id": "2026-11-19-c01",
@@ -737,7 +826,12 @@
     "body": "GTA 6: FANS' FIRST PLAY (ABC NEWS AUSTRALIA) · TRENDING AUDIO<br>SET UP: Australia and New Zealand got GTA 6 first. \"Here's ABC News Australia.\" IN: \"Well, gamers around the world are finally playing Grand Theft Auto 6...\" OUT: \"...let's just see what we can get up to.\" Source: https://www.youtube.com/watch?v=I5-aJTRstzM<br>PLAY or TALK-OVER · READY · FLAG: a fan claims a '99 on Metacritic' (not verified, don't repeat as fact). Network audio: station OK or talk over.<br>TIGHT CUT: Dropped the 10 s opening recap (13 years since GTA 5, 3 years since announcement); starts at the hook. Ending untouched. IN: \"After being plagued by delays and leaks, it's expected to become the biggest selling video game ever...\" OUT: \"...let's just see what we can get up to.\" Full version: c01-abc-gta6-first-play.mp3",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c01-abc-gta6-first-play-tight.mp3",
     "file": "c01-abc-gta6-first-play-tight.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 47.2,
+    "duration": "0:47",
+    "kind": "news",
+    "tight": true,
+    "replaces": "c01-abc-gta6-first-play.mp3"
    },
    {
     "id": "2026-11-19-c02",
@@ -746,7 +840,10 @@
     "body": "GTA 6: GRAND THEFT PTO (CNN) · TRENDING AUDIO<br>SET UP: \"CNN says your coworker may have the GTA flu.\" Gusto saw a 9% spike in PTO requests; an economist predicts half a million gamers call in sick. IN: \"This is also a grand theft PTO...\" OUT: \"...I enjoy my job.\" Source: https://www.youtube.com/watch?v=hDxIch5H7iE<br>TALK-OVER or quick PLAY · READY · Network audio: station OK or talk over. Clean.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c02-cnn-grand-theft-pto.mp3",
     "file": "c02-cnn-grand-theft-pto.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 19.0,
+    "duration": "0:19",
+    "kind": "news"
    },
    {
     "id": "2026-11-19-c03",
@@ -755,7 +852,10 @@
     "body": "GORDON RAMSAY'S SHIRTLESS 60TH (KIMMEL) · LATE-NIGHT<br>SET UP: \"Gordon Ramsay turned 60 and posted a shirtless pic. Here's how that happened, from Jimmy Kimmel Live.\" IN: \"By the way, congratulations and happy birthday to you...\" OUT: \"He was under the bed.\" (laughter) Source: https://www.youtube.com/watch?v=J7F_L3h5Osw<br>PLAY · READY · Clean. Partly references a photo on screen; the joke lands on audio.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c03-kimmel-gordon-ramsay-shirtless-60.mp3",
     "file": "c03-kimmel-gordon-ramsay-shirtless-60.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 30.4,
+    "duration": "0:30",
+    "kind": "late-night"
    },
    {
     "id": "2026-11-19-c04",
@@ -764,7 +864,10 @@
     "body": "BRAD UPTON: DIE AT THE IN-LAWS' ON THANKSGIVING (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Brad Upton from Dry Bar Comedy has Thanksgiving plans.\" IN: \"If I told you I was going to teach you how to fish...\" OUT: \"...He hated doing that.\" Source: https://www.youtube.com/watch?v=NlWZtCBjRZA<br>PLAY · READY · FLAG: dark joke about dying. Clean language.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c04-brad-upton-thanksgiving-in-laws.mp3",
     "file": "c04-brad-upton-thanksgiving-in-laws.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 45.0,
+    "duration": "0:45",
+    "kind": "comedy"
    },
    {
     "id": "2026-11-19-c05",
@@ -773,7 +876,12 @@
     "body": "TONY DEYO: HALF MARATHON STICKER + TURKEY TROT (DRY BAR) · STAND-UP COMEDY<br>SET UP: \"Thanksgiving morning runners, this one's for you, from Dry Bar Comedy.\" IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...throwing up in the bushes?\" Source: Dry Bar Comedy 'Thanksgiving Is Painful' https://www.youtube.com/watch?v=LPcFMf8x-S0<br>PLAY · READY · Clean. Pairs with the Cadillac 'B' Thankful 5K. Credit: Tony Deyo, Dry Bar Comedy.<br>TIGHT CUT: Cut the 'won't even drive 26 miles' middle (about 23 s) so it runs half-marathon sticker bit, then straight into the turkey trot. Both laughs kept; one clean splice at 0:34.5. IN: \"So, buddy of mine just ran a half marathon...\" OUT: \"...Why not spend the morning throwing up in the bushes? (laughter)\" Full version: c05-drybar-half-marathon-turkey-trot.mp3",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c05-drybar-half-marathon-turkey-trot-tight.mp3",
     "file": "c05-drybar-half-marathon-turkey-trot-tight.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 62.5,
+    "duration": "1:02",
+    "kind": "comedy",
+    "tight": true,
+    "replaces": "c05-drybar-half-marathon-turkey-trot.mp3"
    },
    {
     "id": "2026-11-19-c06",
@@ -782,7 +890,11 @@
     "body": "JOHN EVANS: VIDEO GAMES AREN'T THE PROBLEM (DRY BAR) · TRENDING AUDIO · 0:45<br>SET UP: GTA 6 day: comedian John Evans on whether video games make kids violent, from Dry Bar Comedy. IN: \"My dad, when I was a kid, worked for Atari, the video game company...\" OUT: \"...This airport is jinxed. (laughter)\" Source: https://www.youtube.com/watch?v=x0yfaOoNbKo<br>READY · FLAG: Clean language. Mild: toy-plane-crash 'no survivors' joke (cartoonish). Cut ends at the airport punchline, before the darker 'lives were lost' follow-up. Comedian: John Evans (Dry Bar Comedy).",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c06-john-evans-video-games-atari.mp3",
     "file": "c06-john-evans-video-games-atari.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 45.4,
+    "duration": "0:45",
+    "intro_sec": 6,
+    "kind": "comedy"
    },
    {
     "id": "2026-11-19-c07",
@@ -791,7 +903,11 @@
     "body": "THE SIMPSONS: MONOPOLY NIGHT (PLAY MONOPOLY DAY) · TRENDING AUDIO · 0:18<br>SET UP: It's National Play Monopoly Day. Here's the Simpsons family game night. IN: \"Why don't we play Monopoly? ... We've got Star Wars Monopoly, Crabopoly...\" OUT: \"...How can an iron be a landlord? (laughter)\" Source: https://www.youtube.com/watch?v=GeJA2qL8jB4<br>READY · FLAG: Clean. TV audio (The Simpsons, fan upload): station OK or talk over. Whisper garbles the first ~10s (cartoon voices + effects); words confirmed from the source transcript and by ear-level timestamps. Cut ends at the laugh where the source has an edit gap.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c07-simpsons-monopoly-night.mp3",
     "file": "c07-simpsons-monopoly-night.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 18.3,
+    "duration": "0:18",
+    "intro_sec": 4,
+    "kind": "trending"
    },
    {
     "id": "2026-11-19-c08",
@@ -800,7 +916,11 @@
     "body": "JEFF ALLEN: THE UNDERWEAR ON THE FLOOR (DRY BAR) · TRENDING AUDIO · 0:38<br>SET UP: It's International Men's Day. Jeff Allen on how a wife talks in code, from Dry Bar Comedy. IN: \"So I leave my underwear in the middle of the room...\" OUT: \"...I sure hope they are. Otherwise I've got a few questions... (laughter)\" Source: https://www.youtube.com/watch?v=ccTYpVUP4kA<br>READY · FLAG: Clean language. Mild: underwear reference; one passing 'God, the creator' phrase at ~0:18 (not religious content, flag if you want it out). Last words transcribe as 'a few questions in my mouth/eye', whisper is unsure, listen once before airing. Comedian: Jeff Allen (Dry Bar Comedy).",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c08-jeff-allen-underwear-wifes-code.mp3",
     "file": "c08-jeff-allen-underwear-wifes-code.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 38.3,
+    "duration": "0:38",
+    "intro_sec": 6,
+    "kind": "comedy"
    },
    {
     "id": "2026-11-19-c09",
@@ -809,7 +929,11 @@
     "body": "FOX 5 NEW YORK ANCHORS: \"I'M GOING TO VICE CITY\" (GTA 6) · TRENDING AUDIO · 0:34<br>SET UP: GTA 6 is out. Even the morning anchors can't stop talking about it, from FOX 5 New York. IN: \"I'm gonna read some of the comments. Someone said, 'I got my priorities right...'\" OUT: \"...And tonight it's better than Christmas. I'm telling you.\" Source: https://www.youtube.com/watch?v=3TZHrjbR0NI<br>READY · FLAG: Clean. Local-TV audio: station OK or talk over. Anchors not named on the video except 'Mike'. No applause (studio banter); ends on the anchor's button line.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c09-fox5-anchors-gta6-vice-city.mp3",
     "file": "c09-fox5-anchors-gta6-vice-city.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 33.7,
+    "duration": "0:34",
+    "intro_sec": 7,
+    "kind": "news"
    },
    {
     "id": "2026-11-19-c10",
@@ -818,7 +942,11 @@
     "body": "CHRIS PRATT: THE NEIGHBOR'S HALLOWEEN SKULLS ARE STILL UP (KIMMEL) · TRENDING AUDIO · 0:29<br>SET UP: Chris Pratt on Jimmy Kimmel Live: when do the holiday lights come down, and what about the neighbor who never took the skulls in. IN: \"...But we're not that family that's going to be like, 'It's March, bro, and your lights are still up.'\" OUT: \"...They're two huge plastic skulls. Dude, yes. Yes.\" Source: https://www.youtube.com/watch?v=Qo7G-yZfPwI<br>READY · FLAG: Clean language. Starts mid-conversation (Kimmel's earlier question 'when do the lights come down' is implied in Pratt's first words). 'Did you die on Christmas?' is a throwaway line. Cut ends before Kimmel's 'Straight to jail' follow-up. Network audio: station OK or talk over.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c10-chris-pratt-christmas-lights-skulls.mp3",
     "file": "c10-chris-pratt-christmas-lights-skulls.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 28.6,
+    "duration": "0:29",
+    "intro_sec": 9,
+    "kind": "late-night"
    },
    {
     "id": "2026-11-19-c11",
@@ -827,10 +955,18 @@
     "body": "THANKSGIVING: INSTANT MASHED POTATOES + MARGARINE-TUB LEFTOVERS (DRY BAR) · TRENDING AUDIO · 0:32<br>SET UP: Thanksgiving is a week away. Here's a Dry Bar Comedy bit about the mashed potatoes and the leftovers. IN: \"My mother made instant mashed potatoes this past Thanksgiving...\" OUT: \"...Batteries, what are batteries doing in here? (laughter)\" Source: https://www.youtube.com/watch?v=6mTbGVZYlKE<br>READY · FLAG: Clean language (cut starts after the comic's earlier mild 'my ass' line). COMEDIAN NOT NAMED in the upload, so credit it 'Dry Bar Comedy' only. Same set also appears on a 2024 podcast listing but no name found.",
     "audio": "/workspace/morning-rush/clips/2026-11-19/c11-drybar-thanksgiving-instant-mashed-potatoes.mp3",
     "file": "c11-drybar-thanksgiving-instant-mashed-potatoes.mp3",
-    "ready": true
+    "ready": true,
+    "duration_sec": 31.7,
+    "duration": "0:32",
+    "intro_sec": 7,
+    "kind": "comedy"
    }
   ],
-  "items": []
+  "items": [],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "0256805a2a75",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "events": {
   "id": "events",
@@ -850,7 +986,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 8,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-events-02",
@@ -861,7 +999,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 9,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-events-03",
@@ -872,7 +1012,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 1,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-events-04",
@@ -883,7 +1025,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 2,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-events-05",
@@ -894,7 +1038,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 10,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-events-06",
@@ -905,7 +1051,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 3,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-events-07",
@@ -916,7 +1064,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 4,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-events-08",
@@ -927,7 +1077,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 5,
+    "verify": "Reported"
    },
    {
     "id": "2026-11-19-events-09",
@@ -938,7 +1090,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 6,
+    "verify": "Confirmed"
    },
    {
     "id": "2026-11-19-events-10",
@@ -949,7 +1103,9 @@
     "jokes": [
      "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
      "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-    ]
+    ],
+    "rank": 7,
+    "verify": "Confirmed"
    }
   ],
   "article_url": "https://www.northernexpress.com/news/feature/santa-claus-is-coming-to-town-2026/",
@@ -957,7 +1113,11 @@
   "jokes": [
    "Tree lighting Friday, light parade Saturday, craft fair, toy drive and a volleyball semifinal. This weekend has more things than I have hands.",
    "GTA 6 this morning and a two-night Christmas kickoff this weekend. This town has range."
-  ]
+  ],
+  "as_of": "2026-11-19T08:15-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "c5fc9a413913",
+  "stale_after": "2026-11-19T20:15-05:00"
  },
  "fb": {
   "id": "fb",
@@ -1017,5 +1177,9 @@
     "jokes": []
    }
   ]
+ },
+ "_normalized": {
+  "version": 1,
+  "stale_hours": 12
  }
 }

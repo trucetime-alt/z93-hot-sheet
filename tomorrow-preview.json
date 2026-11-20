@@ -1,0 +1,281 @@
+{
+ "version": 1,
+ "for": "2026-11-20",
+ "built_from": "2026-11-19",
+ "note": "Built from schedules and data files only; no research.",
+ "items": [
+  {
+   "kind": "clock",
+   "time": "05:30",
+   "host": "truce",
+   "title": "Show opener supercut",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "06:00",
+   "host": "truce",
+   "title": "Vibe Check",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "06:00",
+   "host": "truce",
+   "title": "Mood Boost",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "07:00",
+   "host": "truce",
+   "title": "Daily Buzz",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "07:00",
+   "host": "truce",
+   "title": "Verse Reverse",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "08:00",
+   "host": "truce",
+   "title": "Mental Health",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "08:30",
+   "host": "truce",
+   "title": "Off the Charts",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "09:00",
+   "host": "truce",
+   "title": "Flashback",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "09:00",
+   "host": "truce",
+   "title": "Cross Talk",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "09:00",
+   "host": "truce",
+   "title": "Sponsor reads due",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "10:08",
+   "host": "courtney",
+   "title": "Midday Song Battle intro",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "10:20",
+   "host": "courtney",
+   "title": "93 Minutes commercial-free (Kurtz Car Stereo)",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "11:03",
+   "host": "courtney",
+   "title": "Keeping Up With Courtney: Hollywood News",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "11:20",
+   "host": "courtney",
+   "title": "Midday Song Battle re-intro",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "11:30",
+   "host": "courtney",
+   "title": "All Request Hour starts",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "12:00",
+   "host": "courtney",
+   "title": "Play the Midday Song Battle winner",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "12:30",
+   "host": "courtney",
+   "title": "Lunchbox giveaway: Jimmy John's, two free subs, on the studio line",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "13:30",
+   "host": "courtney",
+   "title": "Random engagement question on the studio line",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "14:20",
+   "host": "callie",
+   "title": "93 Minutes commercial-free (Kurtz Car Stereo)",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "18:20",
+   "host": "callie",
+   "title": "93 Minutes commercial-free (Kurtz Car Stereo)",
+   "src": "station.json"
+  },
+  {
+   "kind": "giveaway",
+   "title": "TC Shop & Sip ticket giveaway: listening appointments ",
+   "note": "Five pairs of general admission tickets to Traverse City Shop and Sip on Saturday, Nov 21 at Grand Traverse Resort & Spa. Tickets are held at Will Call.",
+   "src": "giveaways.json"
+  },
+  {
+   "kind": "sponsor",
+   "host": "truce",
+   "title": "💳 Forefront Credit Union read",
+   "note": "Whatever it is you're dreaming about starts with a question that's asked. Forefront.",
+   "src": "sponsors.json"
+  },
+  {
+   "kind": "sponsor",
+   "title": "✈️ Traverse City Airport (TVC) read",
+   "note": "tvcairport.com studio line",
+   "src": "sponsors.json"
+  },
+  {
+   "kind": "sponsor",
+   "host": "courtney",
+   "title": "🥪 Jimmy John's read",
+   "note": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
+   "src": "sponsors.json"
+  },
+  {
+   "kind": "sponsor",
+   "host": "courtney",
+   "title": "💛 MI Health & Wellness Center read",
+   "note": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.",
+   "src": "sponsors.json"
+  },
+  {
+   "kind": "segment",
+   "time": "10:20 AM",
+   "host": "courtney",
+   "title": "93 Minutes commercial-free",
+   "note": "Kurtz Car Stereo",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
+   "time": "11:00 AM",
+   "host": "courtney",
+   "title": "Hollywood / entertainment report",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
+   "time": "Noon–1 PM",
+   "host": "courtney",
+   "title": "Courtney's Lunchbox (all-request hour)",
+   "note": "Jimmy John's",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
+   "time": "Midday",
+   "host": "courtney",
+   "title": "Midday Song Battle",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
+   "time": "Friday",
+   "host": "courtney",
+   "title": "Uplifting story to start the weekend",
+   "note": "MI Health & Wellness Center",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
+   "time": "2:20 PM",
+   "host": "callie",
+   "title": "93 Minutes commercial-free",
+   "note": "Kurtz Car Stereo",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
+   "time": "6:20 PM",
+   "host": "callie",
+   "title": "93 Minutes commercial-free",
+   "note": "Kurtz Car Stereo",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "day",
+   "title": "World Children's Day",
+   "src": "days.json"
+  },
+  {
+   "kind": "day",
+   "title": "Transgender Day of Remembrance",
+   "src": "days.json"
+  },
+  {
+   "kind": "birthday",
+   "title": "Madisyn Shipman, American actress (2002)",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Madisyn_Shipman"
+  },
+  {
+   "kind": "birthday",
+   "title": "Caty McNally, American tennis player (2001)",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Caty_McNally"
+  },
+  {
+   "kind": "birthday",
+   "title": "Connie Talbot, English singer-songwriter (2000)",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Connie_Talbot"
+  },
+  {
+   "kind": "thisday",
+   "title": "1985: Windows 1.0, the first version of Microsoft Windows available to the public, was released.",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Windows_1.0"
+  },
+  {
+   "kind": "thisday",
+   "title": "1969: A group of Native American activists began a 19-month occupation (graffiti pictured) of Alcatraz Island in San Francisco Bay.",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States"
+  },
+  {
+   "kind": "flashback",
+   "time": "09:00",
+   "host": "truce",
+   "title": "9AM Flashback slot: Hot Sheet picks the song at 4 AM"
+  }
+ ]
+}
