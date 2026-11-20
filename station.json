@@ -179,7 +179,7 @@
     "at": "05:30",
     "title": "Show opener supercut",
     "sec": "vibe",
-    "note": "Opener supercut on the clips pad"
+    "note": "Quick-bites montage that plays right before AJ's intro"
    },
    {
     "at": "06:00",
@@ -187,7 +187,7 @@
     "sec": "vibe"
    },
    {
-    "at": "06:00",
+    "at": "06:30",
     "title": "Mood Boost",
     "sec": "mood"
    },
@@ -200,6 +200,12 @@
     "at": "07:00",
     "title": "Verse Reverse",
     "sec": "verse"
+   },
+   {
+    "at": "07:30",
+    "title": "Personal (on hold)",
+    "sec": "",
+    "note": "On hold, no giveaways right now"
    },
    {
     "at": "08:00",
@@ -253,14 +259,14 @@
    },
    {
     "at": "09:00",
-    "title": "Cross Talk",
-    "sec": "cross"
-   },
-   {
-    "at": "09:00",
     "title": "Sponsor reads due",
     "sec": "",
     "sponsorDeadline": true
+   },
+   {
+    "at": "09:30",
+    "title": "Cross Talk",
+    "sec": "cross"
    }
   ],
   "courtney": [

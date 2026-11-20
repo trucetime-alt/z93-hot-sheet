@@ -20,7 +20,7 @@
   },
   {
    "kind": "clock",
-   "time": "06:00",
+   "time": "06:30",
    "host": "truce",
    "title": "Mood Boost",
    "src": "station.json"
@@ -37,6 +37,13 @@
    "time": "07:00",
    "host": "truce",
    "title": "Verse Reverse",
+   "src": "station.json"
+  },
+  {
+   "kind": "clock",
+   "time": "07:30",
+   "host": "truce",
+   "title": "Personal (on hold)",
    "src": "station.json"
   },
   {
@@ -64,14 +71,14 @@
    "kind": "clock",
    "time": "09:00",
    "host": "truce",
-   "title": "Cross Talk",
+   "title": "Sponsor reads due",
    "src": "station.json"
   },
   {
    "kind": "clock",
-   "time": "09:00",
+   "time": "09:30",
    "host": "truce",
-   "title": "Sponsor reads due",
+   "title": "Cross Talk",
    "src": "station.json"
   },
   {
