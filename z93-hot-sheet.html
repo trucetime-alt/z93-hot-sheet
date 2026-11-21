@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59-batch">
+<meta name="hs-build" content="v59d-qa">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -776,6 +776,9 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 #syncDot[hidden]{display:none}
 #whoModal .box{max-width:460px}
 .whogrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 12px}
+#whoModal .whome{background:#2ecc71;color:#06210f;border-color:#2ecc71;font-weight:900}
+#whoModal .whome:disabled{opacity:.45}
+.modal,#dayModal{padding-bottom:max(16px,calc(12px + env(safe-area-inset-bottom,0px)))}
 .whobtn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:76px;padding:8px;border-radius:16px;border:2px solid var(--line);background:var(--panel2);color:var(--text);font-size:1.15em;cursor:pointer}
 .whobtn small{font-size:.62em;color:var(--dim);font-weight:700}
 .whobtn.who-truce{border-color:#4aa3ff}.whobtn.who-courtney{border-color:#ff7ad9}.whobtn.who-callie{border-color:#ffd23f}.whobtn.who-studio{border-color:#3ddc84}
@@ -1935,6 +1938,12 @@ function setViewProfile(id){
   const p=etParts();
   expireViewOv(p);
   id=String(id||'truce');
+  if(!deviceRole() && (id==='truce'||id==='courtney'||id==='callie')){
+    hsDevice=id;
+    try{ LS.setItem('hs:device', id); LS.setItem('hs:whoDone','1'); }catch(e){}
+    const nm=(typeof showTabLabel==='function'?showTabLabel(id):id);
+    if(typeof toast==='function') toast('This device is now '+nm+"'s. Change it anytime in Menu → Sync devices.");
+  }
   if(id===autoProfile(p)){ viewOv=null; try{ LS.removeItem('hs:viewOv'); }catch(e){} }
   else { viewOv={id, until:nextAutoChange(p)}; try{ LS.setItem('hs:viewOv', JSON.stringify(viewOv)); }catch(e){} }
   window.__hsMorningPeek=false;
@@ -2176,11 +2185,45 @@ storyKeep.pins=storyKeep.pins||{}; storyKeep.saves=storyKeep.saves||{};
 var b59Bricks=lsGet('hs:bricks',{}), b59Got=lsGet('hs:gotit',{}), b59Log=lsGet('hs:readlog',{}), b59Chase=lsGet('hs:chase',{});
 function storyKeepProf(){ return (typeof profileId==='function'&&profileId())||'truce'; }
 function storyKeepSave(){ lsSet('hs:storyKeep', storyKeep); }
+function storyHash(t){ t=String(t||''); let x=0x811c9dc5; for(let i=0;i<t.length;i++){ x^=t.charCodeAt(i); x=Math.imul(x,16777619)>>>0; } return x.toString(36); }
+function storyNormTitle(t){
+  return String(t||'').toLowerCase().replace(/&amp;/g,'&').replace(/^\s*\d+\)\s*/,'')
+    .replace(/^\s*(update|breaking|developing|exclusive|watch|opinion)[:\-–—\s]+/i,'')
+    .replace(/\s+[-–—|]\s+(cnn|bbc|reuters|ap|npr|fox(?:\s*\d+)?|nbc|abc|cbs|usa today|billboard|variety|rolling stone|pitchfork|tmz|people|deadline|hollywood reporter|espn|the athletic|associated press|washington post|new york times|nyt|wsj|wall street journal|nme|spin|consequence|vulture|forbes|bloomberg|axios|the hill|politico|usatoday|yahoo(?: news)?|google news|msn)\s*$/i,'')
+    .replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
+}
+function storyCanonUrl(u){
+  if(!u) return '';
+  try{
+    const url=new URL(String(u).trim());
+    if(!/^https?:$/i.test(url.protocol)) return '';
+    const host=url.hostname.toLowerCase().replace(/^www\./,'');
+    if(/^(news\.google\.com|news\.yahoo\.com|msn\.com|apple\.news)$/.test(host) || /\.news\.google\.com$/.test(host)) return '';
+    for(const k of [...url.searchParams.keys()]){ if(/^(utm_|fbclid$|gclid$|gclsrc$|dclid$|mc_|icid$|ocid$|cmpid$|ns_|ref$|referrer$|source$|smid$|igshid$|mkt_tok$|mc_cid$|mc_eid$|_hsenc$|_hsmi$)/i.test(k)) url.searchParams.delete(k); }
+    url.searchParams.sort();
+    const path=(url.pathname||'').replace(/\/+$/,'');
+    const q=url.searchParams.toString();
+    return host+path+(q?('?'+q):'');
+  }catch(e){ return String(u||'').trim().toLowerCase().replace(/\/+$/,''); }
+}
+function storyUrlOf(it){ return storyCanonUrl(it&&(it.link||it.url||it.article_url||it.href)||''); }
+function storyTitleOf(it){ return storyNormTitle(it&&(it.title||it.head||it.article_title||it.headline)||''); }
+function storyKey(it){
+  if(it && it._id) return String(it._id);
+  const u=storyUrlOf(it), t=storyTitleOf(it);
+  if(u) return 'k:u:'+storyHash(u);
+  return 'k:t:'+storyHash(t||'');
+}
+function storyKeepIdLegacy(it){
+  const norm=(typeof normT==='function')?normT:(x=>String(x||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim());
+  const t=norm((it&&(it.title||it.head))||'');
+  const u=String((it&&(it.link||it.url||it.article_url||it.tid))||'');
+  const h=(typeof fnv==='function')?fnv:storyHash;
+  return 'k:'+h(t+'|'+(u||t));
+}
 function storyKeepId(it){
   if(it && it._id) return String(it._id);
-  const t=normT((it&&(it.title||it.head))||'');
-  const u=String((it&&(it.link||it.url||it.article_url||it.tid))||'');
-  return 'k:'+fnv(t+'|'+(u||t));
+  return storyKey(it);
 }
 function storyKeepSnap(it, sec, col){
   it=it||{};
@@ -2269,23 +2312,38 @@ function b59Persist(){ b59Bricks=pruneByDate(b59Bricks,14); b59Got=pruneByDate(b
 function b59Rec(store, date, id, prof){ const b=store[b59Bk(date,prof)]; return (b&&b[id])||null; }
 function b59Put(store, date, id, rec, prof){ const k=b59Bk(date,prof); store[k]=store[k]||{}; store[k][id]=rec; }
 function b59Del(store, date, id, prof){ const k=b59Bk(date,prof); if(store[k]){ delete store[k][id]; if(!Object.keys(store[k]).length) delete store[k]; } }
-/* loose match: same id, same tid/link, or very similar title (a refreshed feed can retitle a story) */
+/* loose match: same canonical key/URL, same tid, normalized title, or high token similarity */
 function b59Same(a, b){ if(!a||!b) return false; if(a.id&&a.id===b.id) return true;
-  if(a.tid && b.tid && a.tid===b.tid) return true;
-  const la=a.link||'', lb=b.link||''; if(la && la===lb && !/news\.google\.com/.test(la)) return true;
-  const A=new Set(normT(a.title).split(' ').filter(w=>w.length>3)), B=new Set(normT(b.title).split(' ').filter(w=>w.length>3));
-  if(A.size<3||B.size<3) return normT(a.title)===normT(b.title);
-  let n=0; A.forEach(w=>{ if(B.has(w)) n++; }); return n/(A.size+B.size-n)>=0.72; }
+  if(a._id && b._id && a._id===b._id) return true;
+  if(a.tid && b.tid && String(a.tid)===String(b.tid)) return true;
+  const la=storyCanonUrl(a.link||a.url||a.article_url||''), lb=storyCanonUrl(b.link||b.url||b.article_url||'');
+  if(la && la===lb) return true;
+  const TA=storyNormTitle(a.title||a.article_title||a.head||''), TB=storyNormTitle(b.title||b.article_title||b.head||'');
+  if(TA && TA===TB) return true;
+  const tok=s=>new Set(String(s||'').split(' ').filter(w=>w.length>2));
+  const A=tok(TA), B=tok(TB);
+  if(A.size<2||B.size<2) return false;
+  let n=0; A.forEach(w=>{ if(B.has(w)) n++; });
+  const union=A.size+B.size-n, j=union?n/union:0, contain=n/Math.min(A.size,B.size);
+  return j>=0.62 || contain>=0.85; }
+function b59Lookup(store, date, it, prof){
+  const bk=store[b59Bk(date,prof)]; if(!bk||!it) return null;
+  const id=storyKeepId(it); if(bk[id]) return bk[id];
+  const legacy=(typeof storyKeepIdLegacy==='function')?storyKeepIdLegacy(it):'';
+  if(legacy && bk[legacy]) return bk[legacy];
+  const probe={id, title:it.title||it.head||it.article_title, tid:it.tid, link:it.link||it.url||it.article_url, url:it.url, article_url:it.article_url};
+  return Object.values(bk).find(r=>b59Same(probe, r.snap||r))||null;
+}
+function b59SearchDates(date){
+  const a=date||b59Date('news'), b=b59Date('news'), c=b59Date('sheet');
+  return [...new Set([a,b,c].filter(Boolean))];
+}
 function b59Info(it, sec, col){ const sn=storyKeepSnap(it, sec, col); sn.id=storyKeepId(it);
   sn.votes=it.votes||0; sn.tags=it.tags||[]; sn.artists=it.artists||[]; sn.top=!!it.top; sn.tag=it.tag||''; sn.srcs=(it.sources||[]).slice(0,6); return sn; }
 function b59BrickOf(id, date, sec){ return b59Rec(b59Bricks, date||b59Date('news'), id); }
 function b59GotOf(id, date){ return b59Rec(b59Got, date||b59Date('news'), id); }
-function b59IsBrick(it, date){ const bk=b59Bricks[b59Bk(date||b59Date('news'))]; if(!bk) return null; const id=storyKeepId(it);
-  if(bk[id]) return bk[id]; const probe={id, title:it.title, tid:it.tid, link:it.link||it.url||it.article_url};
-  return Object.values(bk).find(r=>b59Same(probe, r.snap||r))||null; }
-function b59IsGot(it, date){ const bk=b59Got[b59Bk(date||b59Date('news'))]; if(!bk) return null; const id=storyKeepId(it);
-  if(bk[id]) return bk[id]; const probe={id, title:it.title, tid:it.tid, link:it.link||it.url||it.article_url};
-  return Object.values(bk).find(r=>b59Same(probe, r.snap||r))||null; }
+function b59IsBrick(it, date){ for(const d of b59SearchDates(date)){ const r=b59Lookup(b59Bricks,d,it); if(r) return r; } return null; }
+function b59IsGot(it, date){ for(const d of b59SearchDates(date)){ const r=b59Lookup(b59Got,d,it); if(r) return r; } return null; }
 /* --- read / use / got-it log, one record per item, drives read marks and learning --- */
 function b59LogAct(it, sec, col, act, on, date){ if(!it||!it.title) return; const d=date||b59Date(sec==='news'?'news':'sheet'); const id=storyKeepId(it); const key=id+'~'+act;
   if(on===false){ if(b59Rec(b59Log,d,key)){ b59Del(b59Log,d,key); b59Persist(); } return; }
@@ -3060,7 +3118,7 @@ function openCdEditor(){
 $('#cdEditBtn').onclick=openCdEditor;
 $('#cdModal').addEventListener('click',e=>{ if(e.target.id==='cdModal') $('#cdModal').classList.remove('on'); });
 $('#readModal').addEventListener('click',e=>{ if(e.target.id==='readModal') $('#readModal').classList.remove('on'); });
-addEventListener('keydown',e=>{ if(e.key==='Escape') ['#readModal','#spModal','#cdModal','#scoresModal','#syncModal','#stModal','#gvModal','#guModal','#cdNewsModal','#saveModal'].forEach(m=>$(m).classList.remove('on')); });
+addEventListener('keydown',e=>{ if(e.key==='Escape'){ ['#readModal','#spModal','#cdModal','#scoresModal','#syncModal','#stModal','#gvModal','#guModal','#cdNewsModal','#saveModal','#newsModal','#r1Modal','#wcModal','#wcDetail','#dayModal'].forEach(m=>{ const el=$(m); if(el) el.classList.remove('on'); }); if(typeof closeRadar==='function') closeRadar(); const who=document.getElementById('whoModal'); if(who) who.remove(); } });
 
 /* ---------- fly-away top ---------- */
 let flown = LS.getItem('hs:flown')==='1';
@@ -4210,7 +4268,7 @@ function renderNewsList(){ const ol=$('#newsList'); ol.innerHTML=''; renderNewsM
   if(!news || !news.items || !news.items.length){ const li=document.createElement('li'); li.className='hint'; li.style.padding='10px 4px'; li.textContent=navigator.onLine?'No headlines yet.':'Offline: no saved headlines.'; ol.append(li); return; }
   for(const it of news.items){ const a=h('a',{href:it.link, target:'_blank', rel:'noopener'}, h('div',{className:'t'}, it.title), h('div',{className:'s'}, h('b',{}, it.src), ' · '+(it.at?ago(it.at)+' · '+hm(new Date(it.at)):'')));
     ol.append(h('li',{}, a)); } }
-function openNews(){ renderNewsList(); $('#newsModal').classList.add('on'); fetchNews(false); setTimeout(()=>$('#newsClose').focus({preventScroll:true}),30); }
+function openNews(){ renderNewsList(); $('#newsModal').classList.add('on'); fetchNews(false); setTimeout(()=>{ const el=$('#newsClose'); if(el&&el.focus) el.focus({preventScroll:true}); },30); }
 function closeNews(){ $('#newsModal').classList.remove('on'); $('#newsChip').focus({preventScroll:true}); }
 $('#newsChip').onclick=()=>goNews('national'); $('#newsDone').onclick=closeNews; $('#newsRefresh').onclick=()=>fetchNews(true);
 $('#newsModal').addEventListener('click',e=>{ if(e.target.id==='newsModal') closeNews(); });
@@ -4994,7 +5052,7 @@ $('#refreshBtn').onclick=async()=>{ if(typeof hsCheckForUpdate==='function') hsC
     ['#newsModal',()=>closeNews()],['#dayModal',()=>$('#dayModal').classList.remove('on')],['#scoresModal',()=>$('#scoresModal').classList.remove('on')],['#syncModal',()=>$('#syncModal').classList.remove('on')],['#stModal',()=>$('#stModal').classList.remove('on')],['#gvModal',()=>$('#gvModal').classList.remove('on')],['#guModal',()=>$('#guModal').classList.remove('on')],['#cdNewsModal',()=>$('#cdNewsModal').classList.remove('on')],['#saveModal',()=>$('#saveModal').classList.remove('on')],
     ['#radarModal',()=>closeRadar()]];
   for(const [sel,fn] of map){ const m=$(sel); if(!m) continue; const host=m.querySelector('.box')||m;
-    const b=h('button',{className:'xclose', type:'button', 'aria-label':'Close'}, '✕'); b.onclick=()=>{ tapHaptic(); fn(); }; host.prepend(b); }
+    const b=h('button',{className:'xclose', type:'button', 'aria-label':'Close'}, '✕'); if(sel==='#newsModal') b.id='newsClose'; b.onclick=()=>{ tapHaptic(); fn(); }; host.prepend(b); }
 })();
 
 /* ================= sunrise / sunset (computed on device, Traverse City) ================= */
@@ -5553,23 +5611,40 @@ async function hsStationJoin(role, pw){   // returns '' on success, else a frien
   try{ renderShowTabs(); renderShiftLabel&&renderShiftLabel(); renderTabs&&renderTabs(); renderView(); renderSyncState(); }catch(e){}
   const nm=(HS_WHO.find(x=>x[0]===role)||[])[1]||role; toast('Synced to '+nm); syncNow(); return ''; }
 function hsCloseWho(){ const m=document.getElementById('whoModal'); if(m) m.remove(); }
+function hsRememberWho(role){
+  role=String(role||'').toLowerCase();
+  if(['truce','courtney','callie','studio'].indexOf(role)<0) return false;
+  hsDevice=role; viewOv=null;
+  try{ LS.setItem('hs:device', role); LS.setItem('hs:whoDone','1'); LS.removeItem('hs:viewOv'); }catch(e){}
+  try{ renderShowTabs(); renderShiftLabel&&renderShiftLabel(); renderTabs&&renderTabs(); renderView(); renderSyncState&&renderSyncState(); }catch(e){}
+  const nm=(HS_WHO.find(x=>x[0]===role)||[])[1]||role;
+  const label=role==='studio'?'the Studio PC':nm+"'s";
+  if(typeof toast==='function') toast('This device is now '+label+'. Change it anytime in Menu → Sync devices.');
+  return true;
+}
 function hsOpenWho(){ if(document.getElementById('whoModal')) return; let pick=deviceRole()||'';
+  const hasBin=!!hsStationBin();
+  const already=!!syncCfg;
   const err=h('div',{className:'whoerr', role:'alert'}); const pw=h('input',{type:'password', placeholder:'Station password (one time)', autocomplete:'off', autocapitalize:'off', spellcheck:false, 'aria-label':'Station password'});
   const go=h('button',{type:'button', className:'whogo', disabled:true}, 'Join the station');
-  const btns=HS_WHO.map(([id,nm,sub])=>{ const b=h('button',{type:'button', className:'whobtn who-'+id, 'aria-pressed':'false', on:{click:()=>{ pick=id; sync(); }}}, h('b',{}, nm), sub!==nm?h('small',{}, sub.replace(nm+' · ','')):null); b.dataset.id=id; return b; });
-  const sync=()=>{ btns.forEach(b=>{ const on=b.dataset.id===pick; b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on)); }); go.disabled=!(pick && pw.value.length>=1); };
+  const me=h('button',{type:'button', className:'whome', disabled:true}, "That's me");
+  const btns=HS_WHO.map(([id,nm,sub])=>{ const b=h('button',{type:'button', className:'whobtn who-'+id, 'aria-pressed':'false', on:{click:()=>{ pick=id; sync(); }}}, h('b',{}, nm), sub!==nm?h('small',{}, ' '+sub.replace(nm+' · ','').trim()):null); b.dataset.id=id; return b; });
+  const sync=()=>{ btns.forEach(b=>{ const on=b.dataset.id===pick; b.classList.toggle('on',on); b.setAttribute('aria-pressed',String(on)); }); me.disabled=!pick; go.disabled=!(pick && pw.value.length>=1 && hasBin && !already); };
   pw.addEventListener('input', sync);
   const run=async()=>{ if(go.disabled) return; err.textContent=''; go.disabled=true; go.textContent='Joining…'; const msg=await hsStationJoin(pick, pw.value); pw.value=''; if(msg){ err.textContent=msg; go.textContent='Try again'; sync(); } else hsCloseWho(); };
-  go.onclick=run; pw.addEventListener('keydown', e=>{ if(e.key==='Enter') run(); });
+  go.onclick=run; pw.addEventListener('keydown', e=>{ if(e.key==='Enter'){ if(!go.disabled) run(); else if(!me.disabled) me.click(); } });
+  me.onclick=()=>{ if(!pick) return; hsRememberWho(pick); hsCloseWho(); b59PairBar(); };
   const notnow=h('button',{type:'button', className:'whoskip', on:{click:()=>{ try{ LS.setItem('hs:whoDone','1'); }catch(e){} hsCloseWho(); b59PairBar(); }}}, 'Not now');
   const alt=h('button',{type:'button', className:'whoalt', on:{click:()=>{ hsCloseWho(); openSync(); }}}, 'Use a link or code instead');
-  const m=h('div',{id:'whoModal', className:'modal on', role:'dialog', 'aria-modal':'true', 'aria-labelledby':'whoT'},
-    h('div',{className:'box'}, h('h3',{id:'whoT'}, 'Who\'s using this device?'), h('div',{className:'whogrid'}, ...btns),
-      h('label',{}, 'Station password'), pw, h('p',{className:'hint'}, 'Asked once. It is never saved: this device turns it into the sync key and keeps only that.'), err, h('div',{className:'rowb'}, go, notnow), alt));
+  const bits=[h('h3',{id:'whoT'}, "Who's using this device?"), h('div',{className:'whogrid'}, ...btns), h('p',{className:'hint'}, 'Pick your name so your saves, locks, notes and read marks stay on your profile — not someone else\'s.')];
+  if(!already){ bits.push(h('label',{}, 'Station password (optional)'), pw, h('p',{className:'hint'}, 'Only needed to join the station sync. It is never saved: this device turns it into the sync key and keeps only that.')); }
+  else bits.push(h('p',{className:'hint'}, 'This device is already paired. Just pick who uses it.'));
+  bits.push(err, h('div',{className:'rowb'}, me, already?null:go, notnow), already?null:alt);
+  const m=h('div',{id:'whoModal', className:'modal on', role:'dialog', 'aria-modal':'true', 'aria-labelledby':'whoT'}, h('div',{className:'box'}, ...bits.filter(Boolean)));
   document.body.append(m); sync(); }
 function hsSetupDone(){ const st=hsStationDoc(); const v=st.syncSetupDone; return typeof v==='string' ? /^(true|1|yes)$/i.test(v.trim()) : !!v; }
-/* once per device (paired or skipped = never auto-shown again), and never once the station flag syncSetupDone is true. Pairing then lives only in Menu > Sync devices. */
-function hsMaybeWho(){ if(syncCfg || !hsStationBin() || hsSetupDone() || LS.getItem('hs:whoDone')==='1') return; hsOpenWho(); }
+/* Show once until they pick a name or tap Not now. Identity does not require the station password. */
+function hsMaybeWho(){ if(deviceRole() || LS.getItem('hs:whoDone')==='1') return; hsOpenWho(); }
 function b59PairBar(){ let bar=$('#pairBar'); const unpaired=!syncCfg; const note=hsJoinedByLink && syncCfg && !hsStandalone() && !window.__hsNoteGone;
   if(unpaired && (LS.getItem('hs:pairDismiss')==='1' || hsSetupDone()) || (!unpaired && !note)){ if(bar) bar.remove(); return; }
   if(bar && bar.dataset.mode===(unpaired?'pair':'note')) return; if(bar) bar.remove();
@@ -7301,7 +7376,7 @@ function b59CompactRow(){ const row=$('#daysRow'); if(!row) return; const p=etPa
 
 window.__hs = state; // for debugging
 window.__b59={clip:{markPlayed:(id)=>markPlayed(id), cst:(id)=>cst(id), wrapEntries:()=>wrapEntries(), air:()=>air}, weekCal:()=>weekCal, brkPoll:b59BrkPoll, brkPush:b59BrkPush, brkPaint:b59BrkPaint, tease:b59PaintTease, autoBuzz:b59AutoBuzz, caliAdd:b59CaliAdd, caliOpen:b59CaliOpen, Bricks:()=>b59Bricks, Got:()=>b59Got, Log:()=>b59Log, lock:b59Lock, gotIt:b59GotIt, undo:b59Undo, icons:b59Icons, battleTitle:b59BattleTitle, rels:b59Rels, tabsSet:b59TabsSet, boost:b59Boost, newsItems:newsItemsWithKeep, newsData:newsData, cur:()=>b59Cur, ctx:()=>scoresCtx, events:()=>weekEvents, viewProfile, setViewProfile, curNews, loadTicker:()=>loadTicker(true), syncSnap, syncApply, ticker:()=>tickerCur};
-window.__hsTest = { liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
