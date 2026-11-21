@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updated": "2026-11-21T04:56:15-05:00",
- "updatedMs": 1795254975677,
+ "updated": "2026-11-21T08:55:57-05:00",
+ "updatedMs": 1795269357668,
  "games": [
   {
    "id": "401858529",
@@ -65,7 +65,7 @@
    "note": "NBA Cup - Group Play",
    "link": "https://www.espn.com/nba/game/_/gameId/401909308/raptors-pistons",
    "weight": 40,
-   "line": "Raptors 105-102 over Pistons (6-10) · C. Cunningham 23; P. Reed 7"
+   "line": "Scottie Barnes scores 29, including key layup, as Raptors end skid with 105-102 win over Pistons"
   }
  ],
  "local": [

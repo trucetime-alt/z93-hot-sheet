@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T04:57-05:00",
+ "generated": "2026-11-21T08:57-05:00",
  "rule": "Notable only: US federal holidays, major UN international days, and widely recognized US/cultural observances (curated allowlist in tools/national_days.py). No novelty days.",
  "sources": {
   "un": "https://www.un.org/en/observances/list-days-weeks",
@@ -199,7 +199,9 @@
     "name": "Giving Tuesday",
     "icon": "🎁",
     "kind": "US observance",
-    "checks": {},
+    "checks": {
+     "wikipedia_date_page": false
+    },
     "angle": "What local cause are you giving to this year?"
    },
    {
@@ -208,7 +210,8 @@
     "icon": "🎗️",
     "kind": "UN international day",
     "checks": {
-     "un": true
+     "un": true,
+     "wikipedia_date_page": true
     },
     "un_list": "https://www.un.org/en/observances/list-days-weeks"
    }
