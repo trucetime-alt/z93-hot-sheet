@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-21T11:09:44-05:00",
+ "updated": "2026-11-21T12:59:43-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 237,
+ "artistsWatched": 243,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -11,14 +11,12 @@
   },
   "venues": {
    "Lansing Center (iCal)": {
-    "status": "failed",
-    "error": "URLError",
-    "count": 0
+    "status": "ok",
+    "count": 3
    },
    "Lansing Center (JSON-LD)": {
-    "status": "failed",
-    "error": "URLError",
-    "count": 0
+    "status": "ok",
+    "count": 15
    },
    "Interlochen": {
     "status": "no-events-in-static-page",
@@ -75,7 +73,7 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 76
+   "count": 129
   }
  },
  "shows": [
@@ -352,5 +350,5 @@
    "priority": 60
   }
  ],
- "tookSec": 41.5
+ "tookSec": 27.3
 }

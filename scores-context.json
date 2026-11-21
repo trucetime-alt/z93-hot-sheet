@@ -1,8 +1,40 @@
 {
  "version": 1,
- "updated": "2026-11-21T08:55:57-05:00",
- "updatedMs": 1795269357668,
+ "updated": "2026-11-21T12:57:59-05:00",
+ "updatedMs": 1795283879987,
  "games": [
+  {
+   "id": "401925756",
+   "league": "mens-college-basketball",
+   "sport": "basketball",
+   "atMs": 1795280400000,
+   "state": "in",
+   "detail": "Halftime",
+   "home": {
+    "id": "127",
+    "abbr": "MSU",
+    "name": "Michigan St",
+    "score": "42",
+    "winner": false,
+    "rank": 2,
+    "record": "4-1"
+   },
+   "away": {
+    "id": "2174",
+    "abbr": "DETM",
+    "name": "Detroit Mercy",
+    "score": "27",
+    "winner": false,
+    "rank": null,
+    "record": "0-4"
+   },
+   "detroit": true,
+   "postseason": false,
+   "note": "",
+   "link": "",
+   "weight": 50,
+   "line": "K. Teng 12; C. Ward 9"
+  },
   {
    "id": "401858529",
    "league": "college-football",
@@ -66,6 +98,166 @@
    "link": "https://www.espn.com/nba/game/_/gameId/401909308/raptors-pistons",
    "weight": 40,
    "line": "Scottie Barnes scores 29, including key layup, as Raptors end skid with 105-102 win over Pistons"
+  },
+  {
+   "id": "401856866",
+   "league": "college-football",
+   "sport": "football",
+   "atMs": 1795280400000,
+   "state": "in",
+   "detail": "6:30 - 2nd",
+   "home": {
+    "id": "2305",
+    "abbr": "KU",
+    "name": "Kansas",
+    "score": "3",
+    "winner": false,
+    "rank": null,
+    "record": "4-6"
+   },
+   "away": {
+    "id": "252",
+    "abbr": "BYU",
+    "name": "BYU",
+    "score": "0",
+    "winner": false,
+    "rank": 10,
+    "record": "8-2"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "",
+   "weight": 10,
+   "line": ""
+  },
+  {
+   "id": "401858310",
+   "league": "college-football",
+   "sport": "football",
+   "atMs": 1795280400000,
+   "state": "in",
+   "detail": "14:40 - 2nd",
+   "home": {
+    "id": "59",
+    "abbr": "GT",
+    "name": "Georgia Tech",
+    "score": "0",
+    "winner": false,
+    "rank": null,
+    "record": "3-7"
+   },
+   "away": {
+    "id": "154",
+    "abbr": "WAKE",
+    "name": "Wake Forest",
+    "score": "22",
+    "winner": false,
+    "rank": 11,
+    "record": "9-1"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "",
+   "weight": 0,
+   "line": ""
+  },
+  {
+   "id": "401858531",
+   "league": "college-football",
+   "sport": "football",
+   "atMs": 1795280400000,
+   "state": "in",
+   "detail": "14:22 - 2nd",
+   "home": {
+    "id": "158",
+    "abbr": "NEB",
+    "name": "Nebraska",
+    "score": "7",
+    "winner": false,
+    "rank": null,
+    "record": "6-4"
+   },
+   "away": {
+    "id": "194",
+    "abbr": "OSU",
+    "name": "Ohio State",
+    "score": "7",
+    "winner": false,
+    "rank": 14,
+    "record": "7-3"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "",
+   "weight": 0,
+   "line": ""
+  },
+  {
+   "id": "401856748",
+   "league": "college-football",
+   "sport": "football",
+   "atMs": 1795280400000,
+   "state": "in",
+   "detail": "7:23 - 2nd",
+   "home": {
+    "id": "57",
+    "abbr": "FLA",
+    "name": "Florida",
+    "score": "10",
+    "winner": false,
+    "rank": 24,
+    "record": "6-4"
+   },
+   "away": {
+    "id": "238",
+    "abbr": "VAN",
+    "name": "Vanderbilt",
+    "score": "9",
+    "winner": false,
+    "rank": null,
+    "record": "4-6"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "",
+   "weight": 0,
+   "line": ""
+  },
+  {
+   "id": "401856749",
+   "league": "college-football",
+   "sport": "football",
+   "atMs": 1795280400000,
+   "state": "in",
+   "detail": "12:07 - 2nd",
+   "home": {
+    "id": "145",
+    "abbr": "MISS",
+    "name": "Ole Miss",
+    "score": "28",
+    "winner": false,
+    "rank": 25,
+    "record": "6-4"
+   },
+   "away": {
+    "id": "2747",
+    "abbr": "WOF",
+    "name": "Wofford",
+    "score": "3",
+    "winner": false,
+    "rank": null,
+    "record": "5-6"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "",
+   "weight": 0,
+   "line": ""
   }
  ],
  "local": [
