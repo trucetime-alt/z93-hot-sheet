@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T12:59-05:00",
+ "generated": "2026-11-22T04:54-05:00",
  "rule": "Notable only: US federal holidays, major UN international days, and widely recognized US/cultural observances (curated allowlist in tools/national_days.py). No novelty days.",
  "sources": {
   "un": "https://www.un.org/en/observances/list-days-weeks",
@@ -273,74 +273,75 @@
    }
   ],
   "2026-12-11": [],
-  "2026-12-12": []
+  "2026-12-12": [],
+  "2026-12-13": []
  },
  "info": {
   "thanksgiving": {
    "what": "Thanksgiving is a federal holiday in the United States celebrated during fall on the fourth Thursday of November.",
    "why": "The earliest Thanksgiving can occur is November 22; the latest is November 28. Outside the United States, it is called American Thanksgiving to distinguish it from the Canadian holiday of the same name and related celebrations in other regions.",
    "source": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "volunteer": {
    "what": "The International Volunteer Day for Economic and Social Development, more commonly referred to as International Volunteer Day (IVD), is an international observance mandated by the UN General Assembly in 1985.",
    "why": "It offers an opportunity for volunteer-involving organizations and individual volunteers to promote volunteerism, encourage governments to support volunteer efforts, and recognize volunteer contributions to the achievement of the Sustainable Development Goals (SDGs) at local, national, and international levels. International Volunteer Day is marked and supported by the United Nations Volunteers (UNV).",
    "source": "https://en.wikipedia.org/wiki/International_Volunteer_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "aids": {
    "what": "World AIDS Day, designated on 1 December every year since 1988, is an international day dedicated to raising awareness of the AIDS pandemic caused by the spread of HIV infection and mourning those who have died of the disease.",
    "why": "The acquired immunodeficiency syndrome (AIDS) is a life-threatening condition caused by the human immunodeficiency virus (HIV). The HIV virus attacks the immune system of the patient and reduces its resistance to other diseases.",
    "source": "https://en.wikipedia.org/wiki/World_AIDS_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "tdor": {
    "what": "The Transgender Day of Remembrance (TDoR), also known as the International Transgender Day of Remembrance, has been observed annually from its inception on November 20, 1999, to memorialize those who have been murdered as a result of transphobia.",
    "why": "The day was founded to draw attention to the continued violence directed toward transgender people. According to the Trans Murder Monitoring by Transgender Europe, 273 trans people were murdered worldwide from October 1, 2025 to September 30, 2026, with 95% of the victims being trans women.",
    "source": "https://en.wikipedia.org/wiki/Transgender_Day_of_Remembrance",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "mensday": {
    "what": "International Men's Day (IMD) is a global awareness day for issues that men face, including abuse, homelessness, suicide, and violence, celebrated annually on 19 November.",
    "why": "The day was inauguated in the early 1990s in Malta by Thomas Oaster, and has been recognized by groups in other countries around the world. The objectives of celebrating an International Men's Day are set out in \"All the Six Pillars of International Men's Day\".",
    "source": "https://en.wikipedia.org/wiki/International_Men's_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "disabilities": {
    "what": "International Day of Persons with Disabilities (3 December) is an international observance promoted by the United Nations since 1992.",
    "why": "It has been observed with varying degrees of success around the planet. The observance of the Day aims to promote an understanding of disability issues and mobilize support for the dignity, rights and well-being of persons with disabilities.",
    "source": "https://en.wikipedia.org/wiki/United_Nations'_International_Day_of_Persons_with_Disabilities",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "children": {
    "what": "Children's Day is a commemorative date celebrated annually in honour of children, whose date of observance varies by country.",
    "why": "In 1925, International Children's Day was first proclaimed in Geneva during the World Conference on Child Welfare. Since 1950, it is celebrated on 1 June in many countries that were part of the Eastern Bloc and Non-Aligned Movement, which follow the suggestion from Women's International Democratic Federation.",
    "source": "https://en.wikipedia.org/wiki/Children's_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "evaw": {
    "what": "The United Nations General Assembly has designated November 25 as the International Day for the Elimination of Violence Against Women.",
    "why": "The premise of the day is to raise awareness around the world that women are subjected to rape, domestic violence and other forms of violence; furthermore, one of the aims of the day is to highlight that the scale and true nature of the issue is often hidden.",
    "source": "https://en.wikipedia.org/wiki/International_Day_for_the_Elimination_of_Violence_Against_Women",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "tolerance": {
    "what": "The International Day for Tolerance is an annual observance day declared by UNESCO in 1995 to generate public awareness of the dangers of intolerance.",
    "why": "",
    "source": "https://en.wikipedia.org/wiki/International_Day_for_Tolerance",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "recycles": {
    "what": "America Recycles Day, also known as National Recycling Day, is a national observance in the United States dedicated to promoting recycling across the nation.",
    "why": "Observed on November 15 every year, the observance is the signature recycling program of Keep America Beautiful (KAB), the managing and promoting organization for the holiday.",
    "source": "https://en.wikipedia.org/wiki/America_Recycles_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "toilet": {
    "what": "World Toilet Day (WTD) is an official United Nations international observance day on 19 November to inspire action to tackle the global sanitation crisis.",
    "why": "Worldwide, 3.4 billion people live without \"safely managed sanitation\" and around 354 million people practice open defecation. Sustainable Development Goal 6 aims to \"Ensure availability and sustainable management of water and sanitation for all\".",
    "source": "https://en.wikipedia.org/wiki/World_Toilet_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "veterans": {
    "what": "Veterans Day is a federal holiday in the United States observed annually on November 11, for honoring military veterans of the United States Armed Forces.",
@@ -352,7 +353,7 @@
    "what": "GivingTuesday is the Tuesday after Thanksgiving in the United States.",
    "why": "It is touted as a \"global generosity movement unleashing the power of people and organizations to transform their communities and the world\". An organization of the same name is an independent 501(c)(3) nonprofit that supports the global movement.",
    "source": "https://en.wikipedia.org/wiki/GivingTuesday",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "diabetes": {
    "what": "World Diabetes Day (WDD) is the primary global awareness campaign focusing on diabetes mellitus and is held on 14 November each year.",
@@ -364,37 +365,37 @@
    "what": "Native American Heritage Day is a civil holiday observed on the day after Thanksgiving in the United States.",
    "why": "",
    "source": "https://en.wikipedia.org/wiki/Native_American_Heritage_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "tv": {
    "what": "In December 1996 the United Nations proclaimed 21 November as World Television Day commemorating the date on which the first World Television Forum was held in 1996.",
    "why": "This day was observed annually to recognize the increasing impact of television on decision making by bringing global attention to conflicts, threats to peace and security, and its potential role in focusing on other major issues, including economic and social matters.",
    "source": "https://en.wikipedia.org/wiki/World_Television_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "roadvictims": {
    "what": "The World Day of Remembrance for Road Traffic Victims takes place on the third Sunday in November every year as the appropriate acknowledgment of victims of road traffic crashes and their families.",
    "why": "It was started by the British road crash victim charity, RoadPeace, in 1993 and was adopted by the United Nations General Assembly in 2005.",
    "source": "https://en.wikipedia.org/wiki/World_Day_of_Remembrance_for_Road_Traffic_Victims",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "smokeout": {
    "what": "The Great American Smokeout is an annual intervention event on the third Thursday of November by the American Cancer Society.",
    "why": "Approximately 40 million American adults still smoke, and tobacco use remains the single largest preventable cause of disease and premature death in the country. The event challenges people to quit on that day, or use the day to make a plan to quit.",
    "source": "https://en.wikipedia.org/wiki/Great_American_Smokeout",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "pearlharbor": {
    "what": "National Pearl Harbor Remembrance Day, also referred to as Pearl Harbor Remembrance Day or Pearl Harbor Day, is observed annually in the United States on December 7, to remember and honor the 2,403 Americans who were killed in the Japanese surprise attack on Pearl Harbor in Hawaii on December 7, 1941, which led to the United States declaring war on Japan the next day and thus entering World War II.",
    "why": "",
    "source": "https://en.wikipedia.org/wiki/National_Pearl_Harbor_Remembrance_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   },
   "humanrights": {
    "what": "Human Rights Day (HRD) is celebrated annually around the world on 10 December.",
    "why": "",
    "source": "https://en.wikipedia.org/wiki/Human_Rights_Day",
-   "fetched": "2026-11-21"
+   "fetched": "2026-11-22"
   }
  }
 }
