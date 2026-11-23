@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-23T04:57:56-05:00",
+ "updated": "2026-11-23T05:28:21-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
  "artistsWatched": 273,
  "sources": {
@@ -47,7 +47,8 @@
     "count": 0
    },
    "Little River Casino": {
-    "status": "no-events-in-static-page",
+    "status": "failed",
+    "error": "URLError",
     "count": 0
    },
    "Soaring Eagle": {
@@ -63,8 +64,8 @@
     "count": 0
    },
    "313 Presents (Fox, Saint Andrew's, LCA)": {
-    "status": "ok",
-    "count": 7
+    "status": "no-events-in-static-page",
+    "count": 0
    },
    "Ford Field": {
     "status": "no-events-in-static-page",
@@ -73,30 +74,10 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 119
+   "count": 118
   }
  },
  "shows": [
-  {
-   "id": "cw-dr-seuss-how-the-grinch-stole-christma-2026-12-01-fox-theatre",
-   "artist": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "title": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "matched": [],
-   "inRotation": false,
-   "venue": "Fox Theatre",
-   "city": "Detroit",
-   "region": "Detroit",
-   "date": "2026-12-01",
-   "time": "19:30",
-   "daysOut": 8,
-   "window": "soon",
-   "onSale": "",
-   "presale": [],
-   "url": "https://www.313presents.com/events/detail/how-the-grinch-stole-christmas",
-   "source": "venue-jsonld",
-   "priority": 8.0,
-   "why": "big local venue"
-  },
   {
    "id": "cw-jazz-combo-holidays-showcase-2026-12-06-interlochen",
    "artist": "Jazz Combo Holidays Showcase",
@@ -130,20 +111,20 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars ‘Romantic Tour’ where to find last-minute tickets to sold out Detroit shows (May 2026) - MLive.com",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQX1pDVGNLZmJsb19JS2FoZGUxd2RLbmtIWE53Wk92YXpiOWxTZjZ5NW1lQlVwaEVkcTJ2VXNERWRlRHZHYUZQZmZWdF9uclBSMWFJQndrVE1SRF80RTBScEF1M3QtYzJadHhjVHJfTzE4WEc2eXo2RGJ5djY2RmV2TkdSUUZrSkFMQzR4eDMtcmp0Q0ZxQ1ZOTDF3ZHV5LW9IV1c0RGc1eDFVTkQ4MU1uaG5jS1RlN19jRk4tTkVHSVhiQXJnanJrdzQ5SnZ1X2FRTnBzVWdtdnZSdEp0ZDI3RA?oc=5",
-   "at": "2026-05-02T07:00:00+00:00",
-   "src": "MLive.com",
+   "title": "Bruno Mars x Hello Kitty Exclusive Merch Pop-Ups Rolling Out at Every Stop on “The Romantic Tour” …. Including Detroit! - EL CENTRAL Hispanic News",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ucHlaRlF6T1d4TTFmWWxDY3h4Y3o3T21zUU5TQ2tNMWFDSW5JcmdUWnlmMnpXb1Y4bHY2QnIzQk1jSk5wcHBoV1d3U0toRVdJd0pFbWp3RDdFS2Q0UUJrdV9nWWZiTlFQcy13TklJRnUxaF9QMHBFcGVjWmh4dw?oc=5",
+   "at": "2026-05-05T07:00:00+00:00",
+   "src": "EL CENTRAL Hispanic News",
    "artists": [
     "Bruno Mars"
    ],
    "priority": 60
   },
   {
-   "title": "Bruno Mars x Hello Kitty Exclusive Merch Pop-Ups Rolling Out at Every Stop on “The Romantic Tour” …. Including Detroit! - EL CENTRAL Hispanic News",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ucHlaRlF6T1d4TTFmWWxDY3h4Y3o3T21zUU5TQ2tNMWFDSW5JcmdUWnlmMnpXb1Y4bHY2QnIzQk1jSk5wcHBoV1d3U0toRVdJd0pFbWp3RDdFS2Q0UUJrdV9nWWZiTlFQcy13TklJRnUxaF9QMHBFcGVjWmh4dw?oc=5",
-   "at": "2026-05-05T07:00:00+00:00",
-   "src": "EL CENTRAL Hispanic News",
+   "title": "Bruno Mars ‘Romantic Tour’ where to find last-minute tickets to sold out Detroit shows (May 2026) - MLive.com",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQX1pDVGNLZmJsb19JS2FoZGUxd2RLbmtIWE53Wk92YXpiOWxTZjZ5NW1lQlVwaEVkcTJ2VXNERWRlRHZHYUZQZmZWdF9uclBSMWFJQndrVE1SRF80RTBScEF1M3QtYzJadHhjVHJfTzE4WEc2eXo2RGJ5djY2RmV2TkdSUUZrSkFMQzR4eDMtcmp0Q0ZxQ1ZOTDF3ZHV5LW9IV1c0RGc1eDFVTkQ4MU1uaG5jS1RlN19jRk4tTkVHSVhiQXJnanJrdzQ5SnZ1X2FRTnBzVWdtdnZSdEp0ZDI3RA?oc=5",
+   "at": "2026-05-02T07:00:00+00:00",
+   "src": "MLive.com",
    "artists": [
     "Bruno Mars"
    ],
@@ -160,20 +141,20 @@
    "priority": 60
   },
   {
-   "title": "Fraudster spent $212,000 on Taylor Swift tickets during criminal scheme - The Detroit News",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWGZZajRveHczYkxzdXFWTGZNVzRqWFRIU25MNF9zMVNZV3Ywd2Y1TVloUzFnOVdnVjZ5R3ZOdUpmNGwtWE1hTjVjQzUtTEg4UWVDMUVNU1VBa3ZKQzZkLTljc05kU1dYOXhsdVVxVUh5aklmcThERHFnX0pQdmxOajU2Tk9xVGRvM1VsMmpnTzFjelJoU0E2WU5aZ1M1Y0IzdnBDN05tWE1WVF8xOGVTNVhXYVAyZVduSHdQUkd5YlE5MXNRYU95Vk1uS3lhUzNSWVl4eUlvWldlUGlyVE1vaGhHZDZjdEk?oc=5",
+   "title": "Macomb Woman Gets 5 Years in $4.6 Million Child Modeling Fraud Scheme. She Used $200,000 for Taylor Swift Tickets. - Deadline Detroit",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSjdpTUNoNTl3Nm40LUVkSXo4MVlzdEVCbW1fWk5zWS1MaGZsSEZONk1UOEljZE5CZ1JDLWJoZXloZ2lhT0RsNzJBM25CRkdncXJCb3NuTmxzUUNoRVROdnFwSEpuNGUtem9lNjNnZUM3YjdLeTVYUXRwVThQSVhwRFZZcFNvdHNXVUdBWGNJLUFqNWFwM0NWWVVRcERMTG05dldYbllWXzA5N2Uwd0ZER0tzbjdXR0lWbGNNdXp1NENGMkIxaVBxSjVKbzdlUWJBR0kycWl4cENlTUhTb1FEZWhSR29xVGo1dHhfMDZ3?oc=5",
    "at": "2026-09-22T07:00:00+00:00",
-   "src": "The Detroit News",
+   "src": "Deadline Detroit",
    "artists": [
     "Taylor Swift"
    ],
    "priority": 60
   },
   {
-   "title": "Macomb Woman Gets 5 Years in $4.6 Million Child Modeling Fraud Scheme. She Used $200,000 for Taylor Swift Tickets. - Deadline Detroit",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSjdpTUNoNTl3Nm40LUVkSXo4MVlzdEVCbW1fWk5zWS1MaGZsSEZONk1UOEljZE5CZ1JDLWJoZXloZ2lhT0RsNzJBM25CRkdncXJCb3NuTmxzUUNoRVROdnFwSEpuNGUtem9lNjNnZUM3YjdLeTVYUXRwVThQSVhwRFZZcFNvdHNXVUdBWGNJLUFqNWFwM0NWWVVRcERMTG05dldYbllWXzA5N2Uwd0ZER0tzbjdXR0lWbGNNdXp1NENGMkIxaVBxSjVKbzdlUWJBR0kycWl4cENlTUhTb1FEZWhSR29xVGo1dHhfMDZ3?oc=5",
+   "title": "Fraudster spent $212,000 on Taylor Swift tickets during criminal scheme - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWGZZajRveHczYkxzdXFWTGZNVzRqWFRIU25MNF9zMVNZV3Ywd2Y1TVloUzFnOVdnVjZ5R3ZOdUpmNGwtWE1hTjVjQzUtTEg4UWVDMUVNU1VBa3ZKQzZkLTljc05kU1dYOXhsdVVxVUh5aklmcThERHFnX0pQdmxOajU2Tk9xVGRvM1VsMmpnTzFjelJoU0E2WU5aZ1M1Y0IzdnBDN05tWE1WVF8xOGVTNVhXYVAyZVduSHdQUkd5YlE5MXNRYU95Vk1uS3lhUzNSWVl4eUlvWldlUGlyVE1vaGhHZDZjdEk?oc=5",
    "at": "2026-09-22T07:00:00+00:00",
-   "src": "Deadline Detroit",
+   "src": "The Detroit News",
    "artists": [
     "Taylor Swift"
    ],
@@ -240,22 +221,22 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars' 'The Romantic Tour' breaks LiveNation record, prompts second Detroit show - WWMT",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQOFQ3QVRSZzkwcmgtY3V0VzVxaGpBQ2xGUjloSEhudjZGejdsMDV4Y0NGOGZYTEJKZUt1YnhJeDBhUXlYSVYyUnBvR1R0d1gyRWJZNHB0Q2VQb2JGUFdaTWZsLU9oUC1kdExfNENNVUFKSHYtYkpmdjYxZThoMEJqWDVJWlVfb2NkeDF2Q1Qzc05MdWdHaWxxWExJRTVCODVpc2JuSmVCeWtlRzVSMklVVHp2V0xkRERBcDBBcFFQT3RtUDVKdWJZZnRMY19kUlZtb21ITl9SYTkzR0ZmMDdrdEhramJPUmNw?oc=5",
-   "at": "2026-01-15T08:00:00+00:00",
-   "src": "WWMT",
-   "artists": [
-    "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
    "title": "Whitmer signs ‘Taylor Swift’ bills to crack down on ticket-buying bots - The Michigan Independent",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOEFFYzItTkZYOXhoMWpOTXpkQTN6LUhiWndDUTFWR0hSWmtHenJqWHBHNVJsQlA0TVdHNXQwR0hlbnM0anVJbG4xWTc3bkVWc1VqaHo1Z01MR0FTZm9Fal8yN3ZLZkdJSlkyWG9HcUZtQXZuMjJFbkFGcDBYbmV3bnRQQUZIMmdrS0taYmhBLU91UGxCOER0bTA3Ulp6LTh5Zk5vaGczZ1hub0wwdEE?oc=5",
    "at": "2026-01-07T08:00:00+00:00",
    "src": "The Michigan Independent",
    "artists": [
     "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars' 'The Romantic Tour' breaks LiveNation record, prompts second Detroit show - WWMT",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQOFQ3QVRSZzkwcmgtY3V0VzVxaGpBQ2xGUjloSEhudjZGejdsMDV4Y0NGOGZYTEJKZUt1YnhJeDBhUXlYSVYyUnBvR1R0d1gyRWJZNHB0Q2VQb2JGUFdaTWZsLU9oUC1kdExfNENNVUFKSHYtYkpmdjYxZThoMEJqWDVJWlVfb2NkeDF2Q1Qzc05MdWdHaWxxWExJRTVCODVpc2JuSmVCeWtlRzVSMklVVHp2V0xkRERBcDBBcFFQT3RtUDVKdWJZZnRMY19kUlZtb21ITl9SYTkzR0ZmMDdrdEhramJPUmNw?oc=5",
+   "at": "2026-01-15T08:00:00+00:00",
+   "src": "WWMT",
+   "artists": [
+    "Bruno Mars"
    ],
    "priority": 60
   },
@@ -274,16 +255,6 @@
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQXzl6QWNQeE5sTkFsd1dObUlWcnprN1lsUjVjWEUzc3ZNRDJZWmNCMWVhN3hKY1g3dldBdl9mdks2RF95ekh6TEZHd0FCd293RUVjV2xibUNIZFVjYTFsRzYySVE1WjJLQ3NPNW5DeEJITUJCMXRwNk9HS3JZaXRiTWJxRXEzcnB0LUxnWTBvaVhmVjlBVkRsb3FfdW9HX3U5Wnh0NXFrdVJZNEJhaEVsaXlyb0JRQ0lQMEQ3aHo0Q2s0b3ZkOE02dHY4anVnTk44bm43djNn?oc=5",
    "at": "2026-03-10T07:00:00+00:00",
    "src": "MLive.com",
-   "artists": [
-    "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Bruno Mars Detroit tickets May 9: Cheapest concert passes, coupon deals - Cleveland.com",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2l5TGRhc0tfVktHUzFZdjdPOTM1MHFfSzBhNTIwLXByUDFiWkNwYkdoWWt1TTBnNzQ1SkJfQ2ZRRDVsOGt6UHJIa0U3RUI5U1NLenFnQTVvZEk5OUdVVnRIckV0VkZ5T2xkaE83VmlzU1h3RklCbGVweDBPd2poQlBsSTZ5WlRyMTZFWkZsZnhoNl8zT09BSkhhQ2l1VjYwbTN3bnRXcGdua29PZTFqSTZTUjBLR3BYWEs1Nl91S3ByTTNfaUE?oc=5",
-   "at": "2026-01-08T08:00:00+00:00",
-   "src": "Cleveland.com",
    "artists": [
     "Bruno Mars"
    ],
@@ -310,10 +281,10 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars announces massive Detroit stadium concert as part of new tour - The Detroit News",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVlY4SkRwOXZ2MFFOUEszcmxSLTEzZEY4YmlKNFZmQmFiWnBrUHByUUUybjRjQ3pfUGJncGt6eWxXMUJka1lHcU5HTUVVSGd5cy1XTnJ5MW93MEh3Sy04bVlPZHdvSjVLMmhCcmx4Vi1SX1BQal9LVUFBZS1QcXY2d3ViLUNmYlZQYV9yMExxS3N6TXdwaXBmbjh5TmItSnFSN1k3R081Q2twWnZMQzdWRjhvTXdzeEtxd0tFMng0eWV0QUZ4VVlOT0RtQXhDSklLOHVwTHk0MTFqSWc1OXpjTEc5Z2Q?oc=5",
+   "title": "Bruno Mars Detroit tickets May 9: Cheapest concert passes, coupon deals - Cleveland.com",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2l5TGRhc0tfVktHUzFZdjdPOTM1MHFfSzBhNTIwLXByUDFiWkNwYkdoWWt1TTBnNzQ1SkJfQ2ZRRDVsOGt6UHJIa0U3RUI5U1NLenFnQTVvZEk5OUdVVnRIckV0VkZ5T2xkaE83VmlzU1h3RklCbGVweDBPd2poQlBsSTZ5WlRyMTZFWkZsZnhoNl8zT09BSkhhQ2l1VjYwbTN3bnRXcGdua29PZTFqSTZTUjBLR3BYWEs1Nl91S3ByTTNfaUE?oc=5",
    "at": "2026-01-08T08:00:00+00:00",
-   "src": "The Detroit News",
+   "src": "Cleveland.com",
    "artists": [
     "Bruno Mars"
    ],
@@ -323,6 +294,16 @@
    "title": "Bruno Mars adds second Ford Field concert to tour itinerary - The Detroit News",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNSWd2Y2kxSkJEbUM3ZEluSkVtUmJQeDFxMXFocnprSUdUT0VCVUZKV0FLQjl5emQ0Nmx0dkhFR3N6U3hDOGREQVJPR0I3aHRKSXdCQnFmWVEwRTkzUHJod0pnR2hYM1JRNkdSSTZ2TmxLd3VNcHo5V3NzZGZ6NTVnTkJpYU50QVg3aTVYbTdvQkxBbDhESGJOUG55b0c3M3RoZGxrSS1kdlBza0dNdGkwWWNJU0hncUxRUDdOX1dPQXJOVU9mNHhvVUFRY1RrcUdrYWxZ?oc=5",
    "at": "2026-01-14T08:00:00+00:00",
+   "src": "The Detroit News",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars announces massive Detroit stadium concert as part of new tour - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVlY4SkRwOXZ2MFFOUEszcmxSLTEzZEY4YmlKNFZmQmFiWnBrUHByUUUybjRjQ3pfUGJncGt6eWxXMUJka1lHcU5HTUVVSGd5cy1XTnJ5MW93MEh3Sy04bVlPZHdvSjVLMmhCcmx4Vi1SX1BQal9LVUFBZS1QcXY2d3ViLUNmYlZQYV9yMExxS3N6TXdwaXBmbjh5TmItSnFSN1k3R081Q2twWnZMQzdWRjhvTXdzeEtxd0tFMng0eWV0QUZ4VVlOT0RtQXhDSklLOHVwTHk0MTFqSWc1OXpjTEc5Z2Q?oc=5",
+   "at": "2026-01-08T08:00:00+00:00",
    "src": "The Detroit News",
    "artists": [
     "Bruno Mars"
@@ -350,16 +331,6 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars will play his first Detroit show in eight years when he hits Ford Field on May 9. - Facebook",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOOWZNZUJ4Y1RjdVhHZFQtbEU0NXhFOUVmeXNhSTdGaklZZWRKSGNVZllOUS01TmlkMjlLUXRqM3pzR3FPQzVNS0N5UDBtYjdfem9YVS01UnhlOHZvMUVJVVNybnpWS3FXV05qVG9SUUxmaHNvQVNScjFRcUdMdVFlRVp5NTFOQ0p3ZE9pQVNSeUlvZHFLNXVES0s5ZUJYSTJPMUI2SFV0RlFDdTgyeFZRSWJtTmZVMUo1LVYtU0wzaDU2ejNNVEpFM09HbUQ1eUYxaFh2YUJ1NXVtb1liWG5J?oc=5",
-   "at": "2026-01-08T08:00:00+00:00",
-   "src": "Facebook",
-   "artists": [
-    "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
    "title": "Bruno Mars expands ‘The Romantic’ 2026 tour to include another Detroit, MI date - MLive.com",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNGJBLWRfRE13QnFMTGRzMmNDdFliZml0RnFWb2VEYzBmUktuZG9VTzV4UkRfVFhUVjRxUG9TNXpncFZHOWZFVzJ3V3FvVHNQVjRMdk5HRFU4TldhcmNNYUNmNlZ1ZENlZGJaV0J3Z0pNdk5nVDcweVdQVEstcnJNY1V4c2Jub2YxbnVoUy12SWNrWVU1R0I3S05xdWVodnY5WjVwdUlMTV9jbmdBUzF2VVBaMGY2UU1HVGRFMGJCQjNaR2cxbTR2dUNn?oc=5",
    "at": "2026-01-15T08:00:00+00:00",
@@ -368,7 +339,17 @@
     "Bruno Mars"
    ],
    "priority": 60
+  },
+  {
+   "title": "Bruno Mars returns to raise the roof at first Ford Field concert - The Oakland Press",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1tUUlnQmlFOEd0RlMxcEN6SVFENXU3MEJzMlB1S01pMXdCYi1JVVFCODdHRGhNcXR5c1FyblY2VkEwTGg2WlVEWUZsNmNPUTFIX3d3Szc0bVF6d0RwYnJZZnFlczhDcWhQRzZOTnVieFUwMi1vS1kwb3l5TUZDZw?oc=5",
+   "at": "2026-05-10T07:00:00+00:00",
+   "src": "The Oakland Press",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
   }
  ],
- "tookSec": 31.1
+ "tookSec": 32.9
 }
