@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-23T06:21:01-05:00",
+ "updated": "2026-11-23T06:35:25-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
  "artistsWatched": 273,
  "sources": {
@@ -47,7 +47,8 @@
     "count": 0
    },
    "Little River Casino": {
-    "status": "no-events-in-static-page",
+    "status": "failed",
+    "error": "URLError",
     "count": 0
    },
    "Soaring Eagle": {
@@ -73,7 +74,7 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 102
+   "count": 101
   }
  },
  "shows": [
@@ -350,5 +351,5 @@
    "priority": 60
   }
  ],
- "tookSec": 30.4
+ "tookSec": 28.1
 }
