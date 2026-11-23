@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59d-qa">
+<meta name="hs-build" content="v59f-wx">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -188,6 +188,13 @@ details.clarch .clgh{margin-top:10px}
 #adv{width:100%;border-radius:14px;padding:8px 12px;font-weight:800;display:none}
 #adv.on{display:block;background:var(--warn);color:#fff}
 #adv.past{display:block;background:transparent;color:var(--dim);border:1px dashed var(--line);font-size:.7em;font-weight:600;padding:4px 10px}
+#adv.on,#adv.past[role="button"]{cursor:pointer;-webkit-tap-highlight-color:rgba(255,255,255,.28)}
+#adv.on:focus-visible,#adv.past[role="button"]:focus-visible{outline:2px solid #fff;outline-offset:2px}
+#wxAlertModal .box{max-width:560px}
+#wxAlertModal .wxahd{font-size:1.05em;font-weight:900;color:#fff;margin:0 48px 6px 0;line-height:1.25}
+#wxAlertModal .wxameta{font-size:.78em;font-weight:700;color:var(--dim);margin:0 0 10px;line-height:1.35}
+#wxAlertModal .wxabody{font-size:.98em;font-weight:600;line-height:1.45;white-space:pre-wrap}
+#wxAlertModal .wxahint{margin:12px 0 0;font-size:.72em;font-weight:700;color:var(--dim);text-align:center}
 #traffic{width:100%;border-radius:14px;padding:6px 12px;background:#2a2410;color:var(--accent);font-weight:700}
 #traffic:empty{display:none}
 /* controls */
@@ -1203,6 +1210,7 @@ main{padding-bottom:calc(200px + env(safe-area-inset-bottom,0px))}
 <div id="spModal" class="modal" role="dialog" aria-label="Sponsors editor"><div class="box"><h3>Sponsors</h3><div id="spEditor"></div></div></div>
 <div id="cdModal" class="modal" role="dialog" aria-label="Countdowns editor"><div class="box"><h3>Countdowns</h3><div id="cdEditor"></div></div></div>
 <div id="newsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="newsTitle"><div class="box"><div class="nhead"><h3 id="newsTitle">📰 National headlines</h3></div><div class="nmeta" id="newsMeta"></div><ol id="newsList"></ol><div class="rowb"><button id="newsRefresh" type="button">⟳ Refresh</button><button id="newsDone" type="button" hidden>Close</button></div></div></div>
+<div id="wxAlertModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="wxAlertTitle"><div class="box"><h3 id="wxAlertTitle" class="wxahd"></h3><div class="wxameta" id="wxAlertMeta"></div><div class="wxabody" id="wxAlertBody"></div><div class="wxahint">Tap to close</div></div></div>
 <div id="scoresModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="scoresTitle"><div class="box"><h3 id="scoresTitle">🏆 Scores</h3><div class="nmeta" id="scoresMeta"></div><div id="scoresList"></div><div class="rowb"><button id="scoresRefresh" type="button">⟳ Refresh</button></div></div></div>
 <div id="saveModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="saveTitle"><div class="box"><h3 id="saveTitle">📥 Save for show</h3><div id="saveBody"></div></div></div>
 <div id="syncModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="syncTitle"><div class="box"><h3 id="syncTitle">🔄 Sync devices</h3><div id="syncBody"></div></div></div>
@@ -3131,7 +3139,7 @@ function openCdEditor(){
 $('#cdEditBtn').onclick=openCdEditor;
 $('#cdModal').addEventListener('click',e=>{ if(e.target.id==='cdModal') $('#cdModal').classList.remove('on'); });
 $('#readModal').addEventListener('click',e=>{ if(e.target.id==='readModal') $('#readModal').classList.remove('on'); });
-addEventListener('keydown',e=>{ if(e.key==='Escape'){ ['#readModal','#spModal','#cdModal','#scoresModal','#syncModal','#stModal','#gvModal','#guModal','#cdNewsModal','#saveModal','#newsModal','#r1Modal','#wcModal','#wcDetail','#dayModal'].forEach(m=>{ const el=$(m); if(el) el.classList.remove('on'); }); if(typeof closeRadar==='function') closeRadar(); const who=document.getElementById('whoModal'); if(who) who.remove(); } });
+addEventListener('keydown',e=>{ if(e.key==='Escape'){ ['#readModal','#spModal','#cdModal','#scoresModal','#syncModal','#stModal','#gvModal','#guModal','#cdNewsModal','#saveModal','#newsModal','#wxAlertModal','#r1Modal','#wcModal','#wcDetail','#dayModal'].forEach(m=>{ const el=$(m); if(el) el.classList.remove('on'); }); if(typeof closeRadar==='function') closeRadar(); const who=document.getElementById('whoModal'); if(who) who.remove(); } });
 
 /* ---------- fly-away top ---------- */
 let flown = LS.getItem('hs:flown')==='1';
@@ -3700,7 +3708,7 @@ async function fetchLiveWx(){
   if(a.status==='fulfilled'){ const now=new Date();
     liveWx.alerts=(a.value.features||[]).map(f=>f.properties||{})
       .filter(x=>x.status==='Actual' && x.messageType!=='Cancel' && (!x.ends || new Date(x.ends)>now) && (!x.expires || new Date(x.expires)>now))
-      .map(x=>({event:x.event, headline:x.headline||'', ends:x.ends||x.expires||null, areas:x.areaDesc||'', severity:x.severity||''}));
+      .map(x=>{ const nh=(x.parameters&&x.parameters.NWSheadline); return {event:x.event, headline:x.headline||'', nwsHeadline:Array.isArray(nh)?(nh[0]||''):(nh||''), description:x.description||'', instruction:x.instruction||'', ends:x.ends||x.expires||null, areas:x.areaDesc||'', severity:x.severity||''}; });
     liveWx.alertsAt=Date.now(); }
   try{ LS.setItem('hs:liveWx', JSON.stringify(liveWx)); }catch(e){}
   renderWeather(); renderWxSponsor(); renderTicker();
@@ -3721,7 +3729,7 @@ function effectiveWeather(){
     w.live.fc=liveWeek.at; }
   if(liveWx.alerts && Date.now()-liveWx.alertsAt < 30*60000){
     const al=liveWx.alerts;
-    if(al.length){ w.advisory=[...new Set(al.map(x=>x.event))].join(' · ');
+    if(al.length){ w.advisory=[...new Set(al.map(wxAdvisoryName))].join(' · ');
       const soon=al.map(x=>x.ends).filter(Boolean).sort()[0];
       w.advisory_detail={active:true, until:soon||null, areas:soon?'until '+new Date(soon).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}):'', headline:al.map(x=>x.headline).filter(Boolean).join(' | ')}; }
     else { delete w.advisory; w.advisory_detail={active:false}; }
@@ -4150,6 +4158,90 @@ function renderHourly(){
 }
 if('ResizeObserver' in window){ let lastW=0; new ResizeObserver(en=>{ const w=Math.round(en[0].contentRect.width); if(w && Math.abs(w-lastW)>4){ lastW=w; renderHourly(); } }).observe($('#hourlyGraph')); }
 setInterval(()=>{ if(!document.hidden && !$('#hourly').hidden) renderHourly(); },300000);   // keep the NOW marker moving
+const WX_KIND=[
+  ['snow squalls','Snow Squalls'],['snow squall','Snow Squalls'],['lake effect snow','Lake Effect Snow'],['lake-effect snow','Lake Effect Snow'],
+  ['freezing rain','Freezing Rain'],['freezing drizzle','Freezing Drizzle'],['black ice','Black Ice'],['slick roads','Slick Roads'],['slick roadways','Slick Roads'],
+  ['dense fog','Dense Fog'],['ice storm','Ice Storm'],['winter storm','Winter Storm'],['winter weather','Winter Weather'],['blowing snow','Blowing Snow'],
+  ['heavy snow','Heavy Snow'],['snow showers','Snow Showers'],['flash flood','Flash Flood'],['high wind','High Wind'],['damaging wind','Damaging Wind'],
+  ['severe thunderstorm','Severe Thunderstorms'],['tornado','Tornado'],['wind chill','Wind Chill'],['hard freeze','Hard Freeze'],['excessive heat','Excessive Heat'],
+  ['extreme cold','Extreme Cold'],['rip current','Rip Currents'],['small craft','Small Craft'],['blizzard','Blizzard'],['whiteout','Whiteout'],
+  ['flood','Flood'],['frost','Frost'],['fog','Fog'],['sleet','Sleet'],['hail','Hail'],['smoke','Smoke'],['heat','Heat'],['ice','Ice'],['snow','Snow'],['wind','Wind'],['rain','Rain'],['gale','Gale']
+];
+function wxTitleCase(s){ return String(s||'').replace(/\w\S*/g, w=> /^(of|the|and|a|an|for|in|to|on)$/i.test(w) ? w.toLowerCase() : (w.charAt(0).toUpperCase()+w.slice(1).toLowerCase())); }
+function wxShortenHeadline(s){
+  let t=String(s||'').replace(/\s+/g,' ').trim();
+  if(!t) return '';
+  t=t.replace(/\bissued\b.*$/i,'').replace(/\bin effect\b.*$/i,'').replace(/\buntil\b.*$/i,'')
+    .replace(/\bas of\b.*$/i,'').replace(/\bfor (the )?morning commute\b/i,'').replace(/\bfor (the )?commute\b/i,'')
+    .replace(/[.!?:,;]+$/,'').replace(/\s+/g,' ').trim();
+  if(!t) return '';
+  const words=t.split(' ').filter(Boolean);
+  const isFn=w=>/^(of|the|and|a|an|for|in|to|on)$/i.test(w);
+  const content=words.filter(w=>!isFn(w));
+  if(content.length<=3 && words.length<=5) return wxTitleCase(t);
+  let kept=[], cc=0;
+  for(const w of words){ kept.push(w); if(!isFn(w)) cc++; if(cc>=3) break; }
+  return wxTitleCase(kept.join(' '));
+}
+function wxKindFromText(blob, evLow){
+  const s=String(blob||'').toLowerCase();
+  for(const [pat,label] of WX_KIND){ if(s.includes(pat) && !(evLow||'').includes(pat)) return label; }
+  return '';
+}
+function wxKindLabel(a){
+  const ev=String((a&&a.event)||'').trim();
+  const evLow=ev.toLowerCase();
+  const fromNh=wxShortenHeadline(a&&a.nwsHeadline);
+  if(fromNh && fromNh.toLowerCase()!==evLow && !evLow.includes(fromNh.toLowerCase())) return fromNh;
+  return wxKindFromText([a&&a.nwsHeadline, a&&a.headline, a&&a.description].filter(Boolean).join(' '), evLow);
+}
+function wxAdvisoryName(a){ const ev=String((a&&a.event)||'').trim()||'Weather Alert'; const k=wxKindLabel(a); return k?ev+' – '+k:ev; }
+function wxUnwrap(s){ return String(s||'').replace(/\r\n/g,'\n').replace(/[ \t]+\n/g,'\n').replace(/([^\n])\n(?!\n)/g,'$1 ').replace(/\n{3,}/g,'\n\n').trim(); }
+function wxFmtUntil(iso){ if(!iso) return ''; const u=new Date(iso); if(isNaN(u)) return ''; return 'until '+u.toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}); }
+function wxAlertRecords(w){
+  w=w||effectiveWeather();
+  if(liveWx.alerts && liveWx.alerts.length && Date.now()-liveWx.alertsAt < 30*60000) return liveWx.alerts;
+  const det=(w&&w.advisory_detail)||{};
+  if(w && w.advisory && det.active!==false){
+    return [{event:String(w.advisory).replace(/\s+until\s+.*$/i,'').replace(/\s+[–-]\s+.*$/,'').trim(), headline:det.headline||'', nwsHeadline:'', description:'', instruction:'', ends:det.until||null, areas:(det.areas && !/^until /i.test(det.areas))?det.areas:'', severity:''}];
+  }
+  return [];
+}
+function closeWxAlert(){
+  const m=$('#wxAlertModal'); if(!m||!m.classList.contains('on')) return;
+  m.classList.remove('on');
+  const adv=$('#adv'); if(adv){ adv.setAttribute('aria-expanded','false'); try{ adv.focus({preventScroll:true}); }catch(e){} }
+}
+function openWxAlert(){
+  const recs=wxAlertRecords(); if(!recs.length) return;
+  const title=$('#wxAlertTitle'), meta=$('#wxAlertMeta'), body=$('#wxAlertBody');
+  title.textContent=recs.map(wxAdvisoryName).filter((v,i,a)=>a.indexOf(v)===i).join(' · ');
+  const metas=[];
+  const soon=recs.map(x=>x.ends).filter(Boolean).sort()[0];
+  if(soon) metas.push(wxFmtUntil(soon)+' ET');
+  const areas=[...new Set(recs.map(x=>wxUnwrap(x.areas).replace(/;\s*/g,', ')).filter(Boolean))];
+  if(areas.length) metas.push(areas.join(' · '));
+  const issued=recs.map(x=>x.headline).find(Boolean);
+  if(issued && /issued/i.test(issued)) metas.push(issued.replace(/^.*?\bissued\b/i,'Issued'));
+  meta.textContent=metas.join(' · ');
+  const chunks=[];
+  recs.forEach((a,i)=>{
+    if(recs.length>1) chunks.push(wxAdvisoryName(a));
+    if(a.nwsHeadline) chunks.push(wxUnwrap(a.nwsHeadline));
+    const desc=wxUnwrap(a.description); if(desc) chunks.push(desc);
+    const ins=wxUnwrap(a.instruction); if(ins) chunks.push(ins);
+    if(i<recs.length-1) chunks.push('');
+  });
+  body.textContent=chunks.filter((c,i,arr)=>c || (i>0 && arr[i-1])).join('\n\n') || (recs[0].headline||'No further details from NWS.');
+  const m=$('#wxAlertModal'); m.classList.add('on');
+  const adv=$('#adv'); if(adv) adv.setAttribute('aria-expanded','true');
+  setTimeout(()=>{ const x=m.querySelector('.xclose'); if(x&&x.focus) x.focus({preventScroll:true}); },30);
+}
+function toggleWxAlert(e){
+  if(e){ e.preventDefault(); e.stopPropagation(); }
+  if($('#wxAlertModal').classList.contains('on')) closeWxAlert(); else openWxAlert();
+}
+
 function renderWeather(){
   const w=effectiveWeather();
   $('#wxTemp').textContent=w.temp||'--';
@@ -4162,12 +4254,16 @@ function renderWeather(){
   $('#wxMore').textContent=more.join(' · '); state.wxMore=more.join(' · ');
   const adv=$('#adv'); const det=w.advisory_detail||{};
   adv.className=''; adv.textContent='';
+  adv.removeAttribute('role'); adv.removeAttribute('tabindex'); adv.removeAttribute('aria-haspopup'); adv.removeAttribute('aria-expanded'); adv.removeAttribute('aria-label');
   if(w.advisory){
     let past=false; if(det.until){ const u=new Date(det.until); past=!isNaN(u)&&u<new Date(); }
     if(det.active===false) past=true;
     adv.textContent=(past?'Expired: ':'⚠ ')+w.advisory+(det.areas?' · '+det.areas:'');
-    adv.title=det.headline||'';
+    adv.title=det.headline||'Tap for the full statement';
     adv.className=past?'past':'on';
+    adv.setAttribute('role','button'); adv.setAttribute('tabindex','0'); adv.setAttribute('aria-haspopup','dialog');
+    adv.setAttribute('aria-expanded', $('#wxAlertModal')&&$('#wxAlertModal').classList.contains('on')?'true':'false');
+    adv.setAttribute('aria-label', adv.textContent+(past?'':' . Tap for the full statement'));
   }
   $('#traffic').textContent = w.traffic ? '🚗 '+w.traffic : '';
   renderWindWaves(w); renderHourly();
@@ -5067,10 +5163,30 @@ $('#latestBtn').onclick=()=>load(null);
 $('#refreshBtn').onclick=async()=>{ if(typeof hsCheckForUpdate==='function') hsCheckForUpdate(true); await loadIndex(); loadDays(); loadSponsorDefaults(); loadCountdownDefaults(); loadStationReads(); loadGiveaways(); loadGuests(); if(typeof renderWeekCal==='function') renderWeekCal(); loadSchedules(); loadMovies(); loadTicker(true); load(state.mode==='latest'?null:state.date); };
 
 
+/* weather alert banner: tap opens the full statement, tap again / outside / Escape closes */
+(function(){
+  const adv=$('#adv'), m=$('#wxAlertModal');
+  if(adv){
+    adv.addEventListener('click', e=>{ if(adv.classList.contains('on')||adv.classList.contains('past')) toggleWxAlert(e); });
+    adv.addEventListener('keydown', e=>{ if((e.key==='Enter'||e.key===' ') && (adv.classList.contains('on')||adv.classList.contains('past'))){ e.preventDefault(); toggleWxAlert(e); } });
+  }
+  if(m){
+    let sy=null, moved=false;
+    m.addEventListener('touchstart', e=>{ sy=e.touches[0].clientY; moved=false; }, {passive:true});
+    m.addEventListener('touchmove', e=>{ if(sy!=null && Math.abs(e.touches[0].clientY-sy)>10) moved=true; }, {passive:true});
+    m.addEventListener('click', e=>{
+      if(moved){ moved=false; return; }
+      if(e.target.closest && e.target.closest('.xclose')) return;
+      closeWxAlert();
+    });
+  }
+})();
+addEventListener('keydown', e=>{ if(e.key==='Escape' && $('#wxAlertModal') && $('#wxAlertModal').classList.contains('on')){ e.preventDefault(); closeWxAlert(); } });
+
 /* ================= pinned top ✕ on every overlay ================= */
 (function(){
   const map=[['#readModal',()=>$('#readModal').classList.remove('on')],['#spModal',()=>$('#spModal').classList.remove('on')],['#cdModal',()=>$('#cdModal').classList.remove('on')],
-    ['#newsModal',()=>closeNews()],['#dayModal',()=>$('#dayModal').classList.remove('on')],['#scoresModal',()=>$('#scoresModal').classList.remove('on')],['#syncModal',()=>$('#syncModal').classList.remove('on')],['#stModal',()=>$('#stModal').classList.remove('on')],['#gvModal',()=>$('#gvModal').classList.remove('on')],['#guModal',()=>$('#guModal').classList.remove('on')],['#cdNewsModal',()=>$('#cdNewsModal').classList.remove('on')],['#saveModal',()=>$('#saveModal').classList.remove('on')],
+    ['#newsModal',()=>closeNews()],['#wxAlertModal',()=>closeWxAlert()],['#dayModal',()=>$('#dayModal').classList.remove('on')],['#scoresModal',()=>$('#scoresModal').classList.remove('on')],['#syncModal',()=>$('#syncModal').classList.remove('on')],['#stModal',()=>$('#stModal').classList.remove('on')],['#gvModal',()=>$('#gvModal').classList.remove('on')],['#guModal',()=>$('#guModal').classList.remove('on')],['#cdNewsModal',()=>$('#cdNewsModal').classList.remove('on')],['#saveModal',()=>$('#saveModal').classList.remove('on')],
     ['#radarModal',()=>closeRadar()]];
   for(const [sel,fn] of map){ const m=$(sel); if(!m) continue; const host=m.querySelector('.box')||m;
     const b=h('button',{className:'xclose', type:'button', 'aria-label':'Close'}, '✕'); if(sel==='#newsModal') b.id='newsClose'; b.onclick=()=>{ tapHaptic(); fn(); }; host.prepend(b); }
@@ -7397,7 +7513,7 @@ function b59CompactRow(){ const row=$('#daysRow'); if(!row) return; const p=etPa
 
 window.__hs = state; // for debugging
 window.__b59={clip:{markPlayed:(id)=>markPlayed(id), cst:(id)=>cst(id), wrapEntries:()=>wrapEntries(), air:()=>air}, weekCal:()=>weekCal, brkPoll:b59BrkPoll, brkPush:b59BrkPush, brkPaint:b59BrkPaint, tease:b59PaintTease, autoBuzz:b59AutoBuzz, caliAdd:b59CaliAdd, caliOpen:b59CaliOpen, Bricks:()=>b59Bricks, Got:()=>b59Got, Log:()=>b59Log, lock:b59Lock, gotIt:b59GotIt, undo:b59Undo, icons:b59Icons, battleTitle:b59BattleTitle, rels:b59Rels, tabsSet:b59TabsSet, boost:b59Boost, newsItems:newsItemsWithKeep, newsData:newsData, cur:()=>b59Cur, ctx:()=>scoresCtx, events:()=>weekEvents, viewProfile, setViewProfile, curNews, loadTicker:()=>loadTicker(true), syncSnap, syncApply, ticker:()=>tickerCur};
-window.__hsTest = { storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { wxKindLabel, wxAdvisoryName, wxShortenHeadline, wxUnwrap, openWxAlert, closeWxAlert, toggleWxAlert, wxAlertRecords, storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
