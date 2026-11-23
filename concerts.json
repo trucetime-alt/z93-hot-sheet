@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-23T09:04:06-05:00",
+ "updated": "2026-11-23T12:58:47-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 282,
+ "artistsWatched": 291,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -47,8 +47,7 @@
     "count": 0
    },
    "Little River Casino": {
-    "status": "failed",
-    "error": "URLError",
+    "status": "no-events-in-static-page",
     "count": 0
    },
    "Soaring Eagle": {
@@ -64,8 +63,8 @@
     "count": 0
    },
    "313 Presents (Fox, Saint Andrew's, LCA)": {
-    "status": "ok",
-    "count": 7
+    "status": "no-events-in-static-page",
+    "count": 0
    },
    "Ford Field": {
     "status": "no-events-in-static-page",
@@ -74,30 +73,10 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 108
+   "count": 148
   }
  },
  "shows": [
-  {
-   "id": "cw-dr-seuss-how-the-grinch-stole-christma-2026-12-01-fox-theatre",
-   "artist": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "title": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "matched": [],
-   "inRotation": false,
-   "venue": "Fox Theatre",
-   "city": "Detroit",
-   "region": "Detroit",
-   "date": "2026-12-01",
-   "time": "19:30",
-   "daysOut": 8,
-   "window": "soon",
-   "onSale": "",
-   "presale": [],
-   "url": "https://www.313presents.com/events/detail/how-the-grinch-stole-christmas",
-   "source": "venue-jsonld",
-   "priority": 8.0,
-   "why": "big local venue"
-  },
   {
    "id": "cw-jazz-combo-holidays-showcase-2026-12-06-interlochen",
    "artist": "Jazz Combo Holidays Showcase",
@@ -141,6 +120,16 @@
    "priority": 60
   },
   {
+   "title": "Bruno Mars x Hello Kitty Exclusive Merch Pop-Ups Rolling Out at Every Stop on “The Romantic Tour” …. Including Detroit! - EL CENTRAL Hispanic News",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ucHlaRlF6T1d4TTFmWWxDY3h4Y3o3T21zUU5TQ2tNMWFDSW5JcmdUWnlmMnpXb1Y4bHY2QnIzQk1jSk5wcHBoV1d3U0toRVdJd0pFbWp3RDdFS2Q0UUJrdV9nWWZiTlFQcy13TklJRnUxaF9QMHBFcGVjWmh4dw?oc=5",
+   "at": "2026-05-05T07:00:00+00:00",
+   "src": "EL CENTRAL Hispanic News",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
    "title": "Bruno Mars Detroit ticket deals, best prices for ‘Romantic Tour,’ May 9, 10 - Cleveland.com",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaUFybWlUQUpKMGVlVDdvSjA1RTFRQktEbGlIcmdVaE9QVkdBTWl5bkJQTWVacFZvQkg3cU1LX0ZjbG5oaldLZkcyM1psbk5MQTJNZnVHdVZYWXFyVDJBaTBEMVdNUXZmQkNlRTV6TXRWN08xam1DNHpIRDRub2lWZDBTYmJFRTJZQk14REZPMzFnMGNmNEc1WGhWVm9ieVpBaGlSWklHVmdqaXVXRmpwdERaWVhJR0I4SjEzUFkzcm5qejZSMDlV?oc=5",
    "at": "2026-04-24T07:00:00+00:00",
@@ -161,6 +150,16 @@
    "priority": 60
   },
   {
+   "title": "Macomb Woman Gets 5 Years in $4.6 Million Child Modeling Fraud Scheme. She Used $200,000 for Taylor Swift Tickets. - Deadline Detroit",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSjdpTUNoNTl3Nm40LUVkSXo4MVlzdEVCbW1fWk5zWS1MaGZsSEZONk1UOEljZE5CZ1JDLWJoZXloZ2lhT0RsNzJBM25CRkdncXJCb3NuTmxzUUNoRVROdnFwSEpuNGUtem9lNjNnZUM3YjdLeTVYUXRwVThQSVhwRFZZcFNvdHNXVUdBWGNJLUFqNWFwM0NWWVVRcERMTG05dldYbllWXzA5N2Uwd0ZER0tzbjdXR0lWbGNNdXp1NENGMkIxaVBxSjVKbzdlUWJBR0kycWl4cENlTUhTb1FEZWhSR29xVGo1dHhfMDZ3?oc=5",
+   "at": "2026-09-22T07:00:00+00:00",
+   "src": "Deadline Detroit",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
    "title": "Pop superstar Bruno Mars will now play at least two Detroit shows on his upcoming Romantic Tour, as he adds a second Ford Field show to his May visit. See link below ⬇️ bit.ly/3NkwIgW - Facebook",
    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOElVeGx3WmhORE1paW9ITmJkSVQ5N25YcXRueG5aVnItZWkwQ05kOFFTSnU3SDFNVjVrdkhKN2ZaT2JTTkZKTENOMkhrSnFrZHZfMHAyWTV5LWt5UWxTVTdsVGRfR0xYc2hLRlp5TlZIZ0pMc1FaNUZSM1dKZFJTVjlzTHBpMjdLT09FRnJaVHhIUkIzRG93X0FyVFgwdGp5MjJzRUFJc3dsNHRwTnI0WERlQTBzVHU2bXh2dTBwYnZMUTdKWmp5cnVOcnlIMXhNVGJ3alpONEVORlJvcUdZ?oc=5",
    "at": "2026-01-14T08:00:00+00:00",
@@ -171,40 +170,20 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars' 'The Romantic Tour' breaks LiveNation record, prompts second Detroit show - WWMT",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQOFQ3QVRSZzkwcmgtY3V0VzVxaGpBQ2xGUjloSEhudjZGejdsMDV4Y0NGOGZYTEJKZUt1YnhJeDBhUXlYSVYyUnBvR1R0d1gyRWJZNHB0Q2VQb2JGUFdaTWZsLU9oUC1kdExfNENNVUFKSHYtYkpmdjYxZThoMEJqWDVJWlVfb2NkeDF2Q1Qzc05MdWdHaWxxWExJRTVCODVpc2JuSmVCeWtlRzVSMklVVHp2V0xkRERBcDBBcFFQT3RtUDVKdWJZZnRMY19kUlZtb21ITl9SYTkzR0ZmMDdrdEhramJPUmNw?oc=5",
-   "at": "2026-01-15T08:00:00+00:00",
-   "src": "WWMT",
-   "artists": [
-    "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Gov. Whitmer signs new ‘Taylor Swift bills’ aimed at banning bots from concert sales into law - The Michigan Daily",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOMGNKcmVJVUlsc0lvS19CaVZBaGlwRTZldVQxQ0gxQ1JYd2ZLejN2VkFHRjdTYmhkUzRESHpDMkFGME94Qm56VElvcXlZMjhpc0FqTUc5djY2YWcwbW1qMWljVi1mVTZqaEszU2EyWVcwbkxURmg1dkxrdUM1Vm5sRVlHYVFBV0JwUTdlMHYwci1nRDhudGlBX2JpNkp0dWJadEN6bklFU05IaHA3eFo1SllGQUFYdVhNS2JlVjdDbnNyNjR6NDJwNGhDRkFjTXBMZlJv?oc=5",
-   "at": "2026-01-13T08:00:00+00:00",
-   "src": "The Michigan Daily",
+   "title": "Taylor Swift lookalike coming to Metro Detroit mall for free concert - MLive.com",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTkxiTHJQVFlVdFVRTHVsRWllUzRaVTdiRHB0V0F1RVhGa0h1Y0VsQ3Fubjd1RjJ6Mzc1RWhnYk1PWU84aTI2M2t6M1VKUkVlb2dZbWpKRWwxUGcxampCSEk2eVJhdVl0N3U0VUF6MTFTS3M2cEVBWHBVMDNRLTYyak5FS0NoYmg0TFJBeUlFUXRFRHlHM0RDTWZLTXZ0YUFTTlFlVlNfMWh4NndvM2VLSw?oc=5",
+   "at": "2026-06-14T07:00:00+00:00",
+   "src": "MLive.com",
    "artists": [
     "Taylor Swift"
    ],
    "priority": 60
   },
   {
-   "title": "Bruno Mars tickets on sale in Detroit - TicketNews",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA3elRuXzVMVDFNU2FuRENJeXE4a3luS0ZESHRXVEhMa2hoZnRqSU8xWEF6U05nS1NfLVJlaGxQRkpJc19CZ3R5MTY2OFBDdE00cl9RczdyOXhRMUdBSWhLUUVJRnhmNEFuNlpUOG1GMndGNWVmYlBJUjNqQXBnQQ?oc=5",
-   "at": "2026-01-14T21:23:27+00:00",
-   "src": "TicketNews",
-   "artists": [
-    "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Taylor Swift lookalike coming to Metro Detroit mall for free concert - MLive.com",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTkxiTHJQVFlVdFVRTHVsRWllUzRaVTdiRHB0V0F1RVhGa0h1Y0VsQ3Fubjd1RjJ6Mzc1RWhnYk1PWU84aTI2M2t6M1VKUkVlb2dZbWpKRWwxUGcxampCSEk2eVJhdVl0N3U0VUF6MTFTS3M2cEVBWHBVMDNRLTYyak5FS0NoYmg0TFJBeUlFUXRFRHlHM0RDTWZLTXZ0YUFTTlFlVlNfMWh4NndvM2VLSw?oc=5",
-   "at": "2026-06-14T07:00:00+00:00",
-   "src": "MLive.com",
+   "title": "Bad blood: Metro Detroit woman spent $212K on Taylor Swift tickets in scam - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQR3lPZ3pHQjBOQmJKeFg0YlBPaE9Ba1FmOU5OWS1acm53ZktXZFpCc2xXaF9rcXNkU1FpNzJYb3dWVVAzUE4zbWZRWEpmZUEwbWJramZvcV9ENzZCNjZzb1k3VkxubXp3eldtaktCS19nTGxDQUJCQnBuaFB3NVVxOGl6TmRXdFc5YVpjU3hfY0MxRE9ycDJuUWdpWFl3TktOc3hTUjJmNU1ab2hVbHc5ZzlmRWg4TzZLVC1xQVdKa19SSUtpcUNLOGtLTWVqSUstVHlVUmhrM0UwNUtXZ3Z5dlpNQkg?oc=5",
+   "at": "2026-09-22T07:00:00+00:00",
+   "src": "The Detroit News",
    "artists": [
     "Taylor Swift"
    ],
@@ -231,16 +210,6 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars Detroit tickets May 9: Cheapest concert passes, coupon deals - Cleveland.com",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2l5TGRhc0tfVktHUzFZdjdPOTM1MHFfSzBhNTIwLXByUDFiWkNwYkdoWWt1TTBnNzQ1SkJfQ2ZRRDVsOGt6UHJIa0U3RUI5U1NLenFnQTVvZEk5OUdVVnRIckV0VkZ5T2xkaE83VmlzU1h3RklCbGVweDBPd2poQlBsSTZ5WlRyMTZFWkZsZnhoNl8zT09BSkhhQ2l1VjYwbTN3bnRXcGdua29PZTFqSTZTUjBLR3BYWEs1Nl91S3ByTTNfaUE?oc=5",
-   "at": "2026-01-08T08:00:00+00:00",
-   "src": "Cleveland.com",
-   "artists": [
-    "Bruno Mars"
-   ],
-   "priority": 60
-  },
-  {
    "title": "Bruno Mars 2026 tour to hit Ford Field in May, here’s where fans can still score tickets as they sell out - MLive.com",
    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdXpkOUt6MmlKMVdFV04xaWd4bkRibVV0NUp1Qjh6OUEwdGp1eEpxZWN4X05uelRfczlmUlNtS0ZRT29XLU05Q01JeW1ybmI5OHR6SHR3Z2kwQS0xdnR4cGFrS0ZFS0FRWUo1aGM4WjVBZ2N2NzhxVFdJS3dJR0UyVF9MeHowdU5xZWxKdEdhdzE3Z0VPWUNMSUIySFpBVFhVb0doaU16QUxiUkVzbHNrdVhkMHVBOTdiVjNtZTdaSzhvNGdwTTVnWDdqTkxBZVZtY3VZY3liUEJkblR6b29NUHRlQlc0RjFPTXdvWDFR?oc=5",
    "at": "2026-04-16T07:00:00+00:00",
@@ -251,12 +220,32 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars announces massive Detroit stadium concert as part of new tour - The Detroit News",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVlY4SkRwOXZ2MFFOUEszcmxSLTEzZEY4YmlKNFZmQmFiWnBrUHByUUUybjRjQ3pfUGJncGt6eWxXMUJka1lHcU5HTUVVSGd5cy1XTnJ5MW93MEh3Sy04bVlPZHdvSjVLMmhCcmx4Vi1SX1BQal9LVUFBZS1QcXY2d3ViLUNmYlZQYV9yMExxS3N6TXdwaXBmbjh5TmItSnFSN1k3R081Q2twWnZMQzdWRjhvTXdzeEtxd0tFMng0eWV0QUZ4VVlOT0RtQXhDSklLOHVwTHk0MTFqSWc1OXpjTEc5Z2Q?oc=5",
-   "at": "2026-01-08T08:00:00+00:00",
-   "src": "The Detroit News",
+   "title": "Bruno Mars' 'The Romantic Tour' breaks LiveNation record, prompts second Detroit show - WWMT",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQOFQ3QVRSZzkwcmgtY3V0VzVxaGpBQ2xGUjloSEhudjZGejdsMDV4Y0NGOGZYTEJKZUt1YnhJeDBhUXlYSVYyUnBvR1R0d1gyRWJZNHB0Q2VQb2JGUFdaTWZsLU9oUC1kdExfNENNVUFKSHYtYkpmdjYxZThoMEJqWDVJWlVfb2NkeDF2Q1Qzc05MdWdHaWxxWExJRTVCODVpc2JuSmVCeWtlRzVSMklVVHp2V0xkRERBcDBBcFFQT3RtUDVKdWJZZnRMY19kUlZtb21ITl9SYTkzR0ZmMDdrdEhramJPUmNw?oc=5",
+   "at": "2026-01-15T08:00:00+00:00",
+   "src": "WWMT",
    "artists": [
     "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Whitmer signs ‘Taylor Swift’ bills to crack down on ticket-buying bots - The Michigan Independent",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOEFFYzItTkZYOXhoMWpOTXpkQTN6LUhiWndDUTFWR0hSWmtHenJqWHBHNVJsQlA0TVdHNXQwR0hlbnM0anVJbG4xWTc3bkVWc1VqaHo1Z01MR0FTZm9Fal8yN3ZLZkdJSlkyWG9HcUZtQXZuMjJFbkFGcDBYbmV3bnRQQUZIMmdrS0taYmhBLU91UGxCOER0bTA3Ulp6LTh5Zk5vaGczZ1hub0wwdEE?oc=5",
+   "at": "2026-01-07T08:00:00+00:00",
+   "src": "The Michigan Independent",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Gov. Whitmer signs new ‘Taylor Swift bills’ aimed at banning bots from concert sales into law - The Michigan Daily",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOMGNKcmVJVUlsc0lvS19CaVZBaGlwRTZldVQxQ0gxQ1JYd2ZLejN2VkFHRjdTYmhkUzRESHpDMkFGME94Qm56VElvcXlZMjhpc0FqTUc5djY2YWcwbW1qMWljVi1mVTZqaEszU2EyWVcwbkxURmg1dkxrdUM1Vm5sRVlHYVFBV0JwUTdlMHYwci1nRDhudGlBX2JpNkp0dWJadEN6bklFU05IaHA3eFo1SllGQUFYdVhNS2JlVjdDbnNyNjR6NDJwNGhDRkFjTXBMZlJv?oc=5",
+   "at": "2026-01-13T08:00:00+00:00",
+   "src": "The Michigan Daily",
+   "artists": [
+    "Taylor Swift"
    ],
    "priority": 60
   },
@@ -265,6 +254,36 @@
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQXzl6QWNQeE5sTkFsd1dObUlWcnprN1lsUjVjWEUzc3ZNRDJZWmNCMWVhN3hKY1g3dldBdl9mdks2RF95ekh6TEZHd0FCd293RUVjV2xibUNIZFVjYTFsRzYySVE1WjJLQ3NPNW5DeEJITUJCMXRwNk9HS3JZaXRiTWJxRXEzcnB0LUxnWTBvaVhmVjlBVkRsb3FfdW9HX3U5Wnh0NXFrdVJZNEJhaEVsaXlyb0JRQ0lQMEQ3aHo0Q2s0b3ZkOE02dHY4anVnTk44bm43djNn?oc=5",
    "at": "2026-03-10T07:00:00+00:00",
    "src": "MLive.com",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars Detroit tickets May 9: Cheapest concert passes, coupon deals - Cleveland.com",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb2l5TGRhc0tfVktHUzFZdjdPOTM1MHFfSzBhNTIwLXByUDFiWkNwYkdoWWt1TTBnNzQ1SkJfQ2ZRRDVsOGt6UHJIa0U3RUI5U1NLenFnQTVvZEk5OUdVVnRIckV0VkZ5T2xkaE83VmlzU1h3RklCbGVweDBPd2poQlBsSTZ5WlRyMTZFWkZsZnhoNl8zT09BSkhhQ2l1VjYwbTN3bnRXcGdua29PZTFqSTZTUjBLR3BYWEs1Nl91S3ByTTNfaUE?oc=5",
+   "at": "2026-01-08T08:00:00+00:00",
+   "src": "Cleveland.com",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Austrian who planned attack on Taylor Swift concert gets 15 years in prison - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNUZOdDVuemx3Z1ZsRzRfTGp3N09qM1l1WmpSR3JrMldOVjc2TG5ONHZjUTBBQ3ExQkhjVFZFXzV2bjBNcHk4M3QxT0RiVmVOZEhDQ01UZHhZRk9jVVhBa1o1dDBJUF91LTU4ZU5fVWVhcVJ2MHdTbXp4aElfc1FmT3NnZ3BQWXhuODZ6V3RfNkJXSGtkYk1zRFVxTjYwNWRJdS1PYnQtVi1sRVJiRkk5TmxHMUgtUkRuWWhOaWV3WlhMLTc4NFhQTE1ZaWFtb014UW94XzV3dmNDajZpUjJWbFo0M0g?oc=5",
+   "at": "2026-05-28T07:00:00+00:00",
+   "src": "The Detroit News",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars announces massive Detroit stadium concert as part of new tour - The Detroit News",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVlY4SkRwOXZ2MFFOUEszcmxSLTEzZEY4YmlKNFZmQmFiWnBrUHByUUUybjRjQ3pfUGJncGt6eWxXMUJka1lHcU5HTUVVSGd5cy1XTnJ5MW93MEh3Sy04bVlPZHdvSjVLMmhCcmx4Vi1SX1BQal9LVUFBZS1QcXY2d3ViLUNmYlZQYV9yMExxS3N6TXdwaXBmbjh5TmItSnFSN1k3R081Q2twWnZMQzdWRjhvTXdzeEtxd0tFMng0eWV0QUZ4VVlOT0RtQXhDSklLOHVwTHk0MTFqSWc1OXpjTEc5Z2Q?oc=5",
+   "at": "2026-01-08T08:00:00+00:00",
+   "src": "The Detroit News",
    "artists": [
     "Bruno Mars"
    ],
@@ -281,9 +300,19 @@
    "priority": 60
   },
   {
-   "title": "Bruno Mars ‘The Romantic Tour’ 2026 dates on sale tomorrow; find Detroit tickets - MLive.com",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTHd0Z3poRU5qWlo2dWttUmJTSmJiN0RZUjVxOFVyRGZ6dkI2LTBTdEdEd3NnYlJxeUtyc21fQ1lncU0tVVg1ZzhUSVgtRFVsM0xfekFBT1BFQjBJcFFuc09FYmhrSHFHbG1TYjFmdi0yV3BlVTN2TTZQeERzSUtXanRhZGlEY1FjMmZyZGxfdlFXb0Z1ZlktZ2pTTkRDenNGYkxzdFJLdzNDbjdnajZNaXFzRDJvaDJoSUZHakhlLTBBYUJFMUFScEZRaw?oc=5",
-   "at": "2026-01-14T08:00:00+00:00",
+   "title": "House advances Harris ‘Taylor Swift’ bill package to crack down on ticket bots - Michigan House Republicans",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQWlsRVpxeTM0aTlaeFA1Y0o2SC1HSnM4UVdBcnhjSVRXSXFUWVhsTFBJb0RDSl9GNlhYeUk0WFdxLXcweXJiamZsWndVY2ZkMGVkWm1Udk1mVWdKQUNJaUt2a19NTTR0bVg3cWZ6TmxxaXoyUUR0c1hlbnRoUmtVNUEwdHpNeGtzQk9rTHdVTGZOSEU?oc=5",
+   "at": "2025-12-19T08:00:00+00:00",
+   "src": "Michigan House Republicans",
+   "artists": [
+    "Taylor Swift"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars unveils ‘The Romantic Tour’ bound for Detroit, Chicago, & more in 2026 - MLive.com",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYTZOei0yMjhselViT0dVdGg3N0o3WnppS0lMSlp3a3hsSmQwTWlLb3BXVDlocEtqMVpNb0tBd1FZMkY0S2JUd09laExLQmZZWmhiX19oak5WS3ZDdGZ6VlJrWG5GaVo4NzZ3OEJsTE80ZFBQeTFCc05UOFF1SkI3akNZQ01ES19QYzdFeDdNYzdMR0pHazdGbG9EMVNXWDdJZnVXNERvVG9HSnJodTVUMmFfUTB6V0FXMkNndE01V0RqcEpGdlhmag?oc=5",
+   "at": "2026-01-09T08:00:00+00:00",
    "src": "MLive.com",
    "artists": [
     "Bruno Mars"
@@ -291,85 +320,35 @@
    "priority": 60
   },
   {
-   "title": "‘Taylor Swift’ bills would stop bots from hoarding concert tix in Michigan - Bridge Michigan",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQUswOVNvYnlUMVAxUEJBS3JxV3o2UmF1bHN5NmdZSXBJR3lMUUZvUDExREVPTVFVRkJMY1VySi02c1dOalAySWlkcnJ5RzZxRk1Edm96VF9uWmJTN0ZJTGhaY01nS0pKYkJRSmROQ1ZoLXB4cE1GUzB3ejRsRkxWNmZXQWQ5MTM4d0ZQSGktWDdIS1dEcldnbVE3ZGR4M0FKS0YzbFlhcw?oc=5",
-   "at": "2025-05-15T07:00:00+00:00",
-   "src": "Bridge Michigan",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "The Eras Tour: Taylor Swift takes on Detroit for the 13th time. - The Michigan Daily",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOenpxUFh0bld4c3ZTMGkxUFpJZExpUG1FWkRPN3pPM1NsbE9KaUczMllZSkIwbWx1Rm5ubjRJc1gyRWJUVWRva0NybU55WmFyOW4xRjM5cEx1dXZ1RUR6MGRjeU9PMXJIcF9BcTREMTl0UWtKYnZPMEhlSF9OM1VzZFJiZG5RV042S2xCS2hSaFl6UFNQV3FWWnlXS0FYNUc2djNIT3lxSWM4UmJubFM4?oc=5",
-   "at": "2023-06-10T07:00:00+00:00",
-   "src": "The Michigan Daily",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Zach Bryan’s Michigan Concert: Will It Join This List of Historic Shows by Taylor Swift, The Beatles & More? - Billboard",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWmJvWlYxWEZaS2RKWWVSQTFVRlhBYS1LRDFmanJPWHVRQ3NQTFU0azFOdkNtVmUtZUtwTXl4VlBIbUZaVG9UZk4xTmxrMWtwZENqamJoa3Q5aEZ1WmdBcGhhUUsxZ2VzY1F3ZEl3TE1KWFhzd1RBcFkzc19Jc3BCUWZNWVZWdHZjQWItejVTMmlGYXhhdVlz?oc=5",
-   "at": "2025-09-26T07:00:00+00:00",
-   "src": "Billboard",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "You won’t believe ticket prices to see Taylor Swift in Detroit - New York Post",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbE9UMTBXWWQxTE9Md0hIbk9qTi1RWjUxTTVKWHFxQllhNF9XZDh2LWxPcmU1SXc3eEJRTEg1eHdXbU51WUxONlBSdjF1VjZjcWxCcjFfeFlGRGlCU2lsN2ZrVklGNWxGTTJjSmZlSFZrLWR0RzMyZFdpanJWdnRjTGo5QUN0RGNscFlGeDRBMDNPTUhocWc?oc=5",
-   "at": "2023-06-05T07:00:00+00:00",
-   "src": "New York Post",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Taylor Swift announces 'The Eras Tour' date for Detroit - FOX 2 Detroit",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPT2JlTXp0RGI5YzYxME5IQ19EcEMtX2VPd0VMTWRqeVFXT1cwUVZLWWExQXlva1JWT2FlV3ozeVF6MXdNbzZFeEZKVko3WDdhQzVkUi1KV0lCTW9DTkxTdU9RZVk1S3h4QkczeVhNMGVJM1dXMXdoOW5KQWpQa0JxZ2dTd0ktT2FDSmdVOW83Zw?oc=5",
-   "at": "2022-11-01T07:00:00+00:00",
-   "src": "FOX 2 Detroit",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Tickets to see Taylor Swift in Detroit are getting expensive - FOX 2 Detroit",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbGc5MlBqOW1FQ2FXeDBhWFJnR0ZTNlJucHhZNUp1OXl4blVMLTIyVUJSQUUwc0NnMEFwT3o2U0hEck45cW1EMV8wWXRWYTE3cVc3RkxuWGdiUk85dGkyaUpzaHd3dzVqZkhwQjBFdThOWG9iTWtvYkEyS1AzWVlpNEpZc0lYeVJtY09VU1R3?oc=5",
-   "at": "2023-06-06T07:00:00+00:00",
-   "src": "FOX 2 Detroit",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Taylor Swift brings The Eras Tour to Detroit - The Detroit News",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUDZkYVd0NV9HclBMaUFwb1piV1hHRzZZU2Q4ZkpHZWhtNFRwY3ZYS2xxWWJDRkZRb19RZzBTZGc1cWZZa3l6NmJBdVBlRGVtY0hkenlhTklaN3Z4MTM3TEF2SDYwd01mVGxFMncwa3F1Qlk2eEFSUGs5eG02aWhZQVB2U0ttQ1M3VmVIYWtxc0Qxc2ZCeElkcUtqdTlLRFpYbWxuUTk0ZlFHazJkWW5lMU9kbXJrbkpfeE5HaDNR?oc=5",
-   "at": "2023-06-09T07:00:00+00:00",
-   "src": "The Detroit News",
-   "artists": [
-    "Taylor Swift"
-   ],
-   "priority": 60
-  },
-  {
-   "title": "Taylor Swift plays Detroit's Ford Field this weekend. Here's what to know for the Eras Tour shows - CBS News",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX3VEM3Zxd3g5cXBPLTN3LVBzZTZqcDBtQmFvQ1Z5RHpyMm84VWU5NWdaUWFYRmFXRDVxcEZ2Yk1nR1dkWGtvc1FzWktsM1l2OUowX09tLWpDdjdFREZUdHY5R1NoRmx5ZVhvV2NlQVpCMWtWX3BSd1dzd1NQbURlNERCNE1ueTFCQ2NpdTJqU09zNHY3cU5KOUZQZFcxLVVIam1n?oc=5",
-   "at": "2023-06-09T07:00:00+00:00",
+   "title": "Michigan Gov. Whitmer signs \"Taylor Swift\" bills targeting ticket bots - CBS News",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWl9vRFlDRjZGLXRxcEZvc1Z3OWFjRVF4d3dJOUVOS0F2MjNkNl8xOTY0LUttWm1RRUd1SG1FUWROdHIxdS1seEU0SUx1VzZxSVZsckx0YlNOb2Jkb1o4T0dKeEFPVmZqd2ZNQ1E3NEZ4QWl1VFNiaktIcGVrMEFqb2hlaE1ncUtaRm1yMTJ6el8?oc=5",
+   "at": "2025-12-23T08:00:00+00:00",
    "src": "CBS News",
    "artists": [
     "Taylor Swift"
    ],
    "priority": 60
+  },
+  {
+   "title": "Bruno Mars will play his first Detroit show in eight years when he hits Ford Field on May 9. - Facebook",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOOWZNZUJ4Y1RjdVhHZFQtbEU0NXhFOUVmeXNhSTdGaklZZWRKSGNVZllOUS01TmlkMjlLUXRqM3pzR3FPQzVNS0N5UDBtYjdfem9YVS01UnhlOHZvMUVJVVNybnpWS3FXV05qVG9SUUxmaHNvQVNScjFRcUdMdVFlRVp5NTFOQ0p3ZE9pQVNSeUlvZHFLNXVES0s5ZUJYSTJPMUI2SFV0RlFDdTgyeFZRSWJtTmZVMUo1LVYtU0wzaDU2ejNNVEpFM09HbUQ1eUYxaFh2YUJ1NXVtb1liWG5J?oc=5",
+   "at": "2026-01-08T08:00:00+00:00",
+   "src": "Facebook",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
+  },
+  {
+   "title": "Bruno Mars expands ‘The Romantic’ 2026 tour to include another Detroit, MI date - MLive.com",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNGJBLWRfRE13QnFMTGRzMmNDdFliZml0RnFWb2VEYzBmUktuZG9VTzV4UkRfVFhUVjRxUG9TNXpncFZHOWZFVzJ3V3FvVHNQVjRMdk5HRFU4TldhcmNNYUNmNlZ1ZENlZGJaV0J3Z0pNdk5nVDcweVdQVEstcnJNY1V4c2Jub2YxbnVoUy12SWNrWVU1R0I3S05xdWVodnY5WjVwdUlMTV9jbmdBUzF2VVBaMGY2UU1HVGRFMGJCQjNaR2cxbTR2dUNn?oc=5",
+   "at": "2026-01-15T08:00:00+00:00",
+   "src": "MLive.com",
+   "artists": [
+    "Bruno Mars"
+   ],
+   "priority": 60
   }
  ],
- "tookSec": 38.3
+ "tookSec": 29.5
 }
