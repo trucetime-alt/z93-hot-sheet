@@ -1,5 +1,5 @@
 {
- "latest": "2026-11-20",
+ "latest": "2026-11-23",
  "dates": [
   {
    "date": "2026-11-13",
@@ -107,6 +107,27 @@
     "c10-matt-foley-van-down-by-the-river.mp3"
    ],
    "main": true
+  },
+  {
+   "date": "2026-11-23",
+   "br": false,
+   "audio": true,
+   "files": [
+    "c00-opener-supercut-v2.mp3",
+    "c00-opener-supercut-v3.mp3",
+    "c00-opener-supercut.mp3",
+    "c01-snl-wu-iphone-duo.mp3",
+    "c02-snl-wu-van-gogh.mp3",
+    "c03-snl-wu-banana-split.mp3",
+    "c04-michigan-3ot-winner.mp3",
+    "c05-campbell-goff-catalyst.mp3",
+    "c06-ella-langley-sick-of-me.mp3",
+    "c07-standup-ford-escape-rap.mp3",
+    "c08-standup-rappers-delight-toast.mp3",
+    "c09-lainey-wilson-broom-sweep.mp3",
+    "c10-dodo-shelter-thanksgiving-feast.mp3"
+   ],
+   "main": true
   }
  ],
  "clipFirst": {
@@ -208,7 +229,28 @@
   "file:c09-jim-gaffigan-thanksgiving.mp3": "2026-11-20",
   "id:2026-11-20-c09": "2026-11-20",
   "file:c10-matt-foley-van-down-by-the-river.mp3": "2026-11-20",
-  "id:2026-11-20-c10": "2026-11-20"
+  "id:2026-11-20-c10": "2026-11-20",
+  "id:2026-11-23-c00": "2026-11-23",
+  "file:c01-snl-wu-iphone-duo.mp3": "2026-11-23",
+  "id:2026-11-23-c01": "2026-11-23",
+  "file:c02-snl-wu-van-gogh.mp3": "2026-11-23",
+  "id:2026-11-23-c02": "2026-11-23",
+  "file:c03-snl-wu-banana-split.mp3": "2026-11-23",
+  "id:2026-11-23-c03": "2026-11-23",
+  "file:c04-michigan-3ot-winner.mp3": "2026-11-23",
+  "id:2026-11-23-c04": "2026-11-23",
+  "file:c05-campbell-goff-catalyst.mp3": "2026-11-23",
+  "id:2026-11-23-c05": "2026-11-23",
+  "file:c06-ella-langley-sick-of-me.mp3": "2026-11-23",
+  "id:2026-11-23-c06": "2026-11-23",
+  "file:c07-standup-ford-escape-rap.mp3": "2026-11-23",
+  "id:2026-11-23-c07": "2026-11-23",
+  "file:c08-standup-rappers-delight-toast.mp3": "2026-11-23",
+  "id:2026-11-23-c08": "2026-11-23",
+  "file:c09-lainey-wilson-broom-sweep.mp3": "2026-11-23",
+  "id:2026-11-23-c09": "2026-11-23",
+  "file:c10-dodo-shelter-thanksgiving-feast.mp3": "2026-11-23",
+  "id:2026-11-23-c10": "2026-11-23"
  },
  "clipHistory": {
   "2026-11-13": {
@@ -252,6 +294,9 @@
    "repeats": []
   },
   "2026-11-20": {
+   "repeats": []
+  },
+  "2026-11-23": {
    "repeats": []
   }
  }

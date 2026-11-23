@@ -1,0 +1,1553 @@
+{
+ "weather": {
+  "temp": "37°",
+  "cond": "Cloudy",
+  "advisory": "No advisories",
+  "traffic": "Wet roads, snow showers; leave extra time",
+  "high": "39°",
+  "low": "28°",
+  "tonight": "Scattered Snow Showers then Partly Cloudy",
+  "updated": "2026-11-23T04:08-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Rain And Snow Showers",
+  "icon": "cloudy",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-23",
+    "high": null,
+    "low": 32,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 25
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-23",
+    "high": 39,
+    "low": 28,
+    "short": "Rain And Snow Showers",
+    "icon": "mix",
+    "pop": 86
+   },
+   {
+    "day": "Tue",
+    "date": "2026-11-24",
+    "high": 39,
+    "low": 26,
+    "short": "Mostly Sunny",
+    "icon": "sunny",
+    "pop": 2
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-25",
+    "high": 40,
+    "low": 30,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 0
+   },
+   {
+    "day": "Thu",
+    "date": "2026-11-26",
+    "high": 43,
+    "low": 35,
+    "short": "Mostly Cloudy then Chance Rain Showers",
+    "icon": "rain",
+    "pop": 33
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-27",
+    "high": 44,
+    "low": 36,
+    "short": "Rain Showers Likely",
+    "icon": "rain",
+    "pop": 55
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-28",
+    "high": 45,
+    "low": 37,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 25
+   }
+  ],
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 37
+   },
+   {
+    "t": "5 AM",
+    "temp": 36
+   },
+   {
+    "t": "6 AM",
+    "temp": 35
+   },
+   {
+    "t": "7 AM",
+    "temp": 34
+   },
+   {
+    "t": "8 AM",
+    "temp": 33
+   },
+   {
+    "t": "9 AM",
+    "temp": 35
+   },
+   {
+    "t": "10 AM",
+    "temp": 36
+   },
+   {
+    "t": "11 AM",
+    "temp": 37
+   },
+   {
+    "t": "12 PM",
+    "temp": 37
+   },
+   {
+    "t": "1 PM",
+    "temp": 39
+   },
+   {
+    "t": "2 PM",
+    "temp": 38
+   },
+   {
+    "t": "3 PM",
+    "temp": 38
+   },
+   {
+    "t": "4 PM",
+    "temp": 37
+   },
+   {
+    "t": "5 PM",
+    "temp": 36
+   },
+   {
+    "t": "6 PM",
+    "temp": 34
+   },
+   {
+    "t": "7 PM",
+    "temp": 33
+   },
+   {
+    "t": "8 PM",
+    "temp": 32
+   },
+   {
+    "t": "9 PM",
+    "temp": 32
+   },
+   {
+    "t": "10 PM",
+    "temp": 31
+   }
+  ],
+  "wind": "NW 10 mph",
+  "waves": "Bay & Lake MI: Small Craft Advisory until 4 AM Tue · NW gusts to 30 kt, highest waves ~9 ft"
+ },
+ "bit-roof": {
+  "id": "bit-roof",
+  "title": "AJ's Personal Bit",
+  "category": "Bit",
+  "type": "text",
+  "content": "AJ'S PERSONAL BIT: KIDS ON THE STATION ROOF<br>• What happened: a couple of teens, about 16, got onto the Z93 roof. No ladder. They'd gotten into parkour and climbed the pipes up the side, then stood up there looking down at you.<br>• You went inside: \"Hey, we got kids on the roof.\" The answer: \"Well, call the cops.\" Your thought: there go these kids' lives.<br>• You to the kids: \"Dudes, what are you doing? You guys want to go to jail?\"<br>➜ THE TAKE: Calm down a little. Yes, the internet gave you superpowers and taught you urban climbing. Be free. Go climb a hill. Go climb a tree. Plenty to climb up here. Just don't get arrested.<br>📞 PHONE TOPIC: What did you climb as a kid that you definitely shouldn't have? Parkour parents, how do you handle it? Text 231-929-4487.",
+  "notes": "From Truce's talk-to-text journal (personal-bits/queue.md, 2026-11-21). No names; minors not identified.<br>article_url empty: AJ's own story, no article.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-23-bit-roof-01",
+    "title": "AJ'S PERSONAL BIT: KIDS ON THE STATION ROOF",
+    "recap": "AJ told the story of teens parkouring up the station pipes onto the roof, and we took calls on what you climbed as a kid.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "AJ'S PERSONAL BIT: KIDS ON THE STATION ROOF<br>• What happened: a couple of teens, about 16, got onto the Z93 roof. No ladder. They'd gotten into parkour and climbed the pipes up the side, then stood up there looking down at you.<br>• You went inside: \"Hey, we got kids on the roof.\" The answer: \"Well, call the cops.\" Your thought: there go these kids' lives.<br>• You to the kids: \"Dudes, what are you doing? You guys want to go to jail?\"<br>➜ THE TAKE: Calm down a little. Yes, the internet gave you superpowers and taught you urban climbing. Be free. Go climb a hill. Go climb a tree. Plenty to climb up here. Just don't get arrested.<br>📞 PHONE TOPIC: What did you climb as a kid that you definitely shouldn't have? Parkour parents, how do you handle it? Text 231-929-4487.",
+    "description": "AJ told the story of teens parkouring up the station pipes onto the roof, and we took calls on what you climbed as a kid.",
+    "summary": "AJ told the story of teens parkouring up the station pipes onto the roof, and we took calls on what you climbed as a kid.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "e119bc0d081b",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "SLOW JAM: DIDO, \"THANK YOU\" (2000)<br>• Released as a single Sept. 18, 2000, it first showed up in 1998 on the Sliding Doors soundtrack before landing on Dido's debut album No Angel.<br>• Chart stat: No. 3 on the Billboard Hot 100 in April 2001, her first and only U.S. top 10, and No. 3 in the UK. Eminem's sample on \"Stan\" helped push it.<br>• Why today: Thanksgiving week, gray skies, first flakes. It's a gentle wake-up that literally says thank you.<br>➜ TAKE: Rain on the window, cold tea... she basically wrote the forecast for Northern Michigan this morning.<br>😂 JOKES: She sang \"my tea's gone cold.\" Up here in November, so did the car. / The ultimate Thanksgiving-week song. It's called Thank You, and nobody had to sit through a speech.<br><br>🚗 DRIVE TEASE: Rain and snow showers around for the drive in, about 35 at 6 AM and 33 by 8 AM, northwest wind around 10. Wet roads, so leave a little extra room. High near 39 midday, then snow showers this afternoon with under an inch.<br><br>📅 THIS DAY: THE FIRST JUKEBOX (NOV. 23, 1889)<br>• On Nov. 23, 1889, the first coin-operated phonograph was installed at the Palais Royale Saloon in San Francisco.<br>• It was an Edison Class M electric phonograph in an oak cabinet with four stethoscope-like listening tubes, each one started by a coin. Four people could listen to the same song at once.<br>• Louis Glass called it the \"nickel-in-the-slot player,\" and the saloon handed out towels so people could wipe off the tube after listening. The word \"jukebox\" didn't come along until much later.<br>➜ TAKE: 137 years later, we're still putting money into machines to hear songs. Now it's called a streaming subscription.<br>➜ BAIT: What song did you always play on the jukebox? Text 231-929-4487.<br>😂 JOKES: Four people sharing one ear tube with a towel. That's the original group chat. / A nickel a song. I'd have spent my whole allowance on the same Hootie song.<br><br>💡 FUN FACT: GTA 6 VS. HUNGER GAMES<br>• GTA 6 made $3.79 billion in retail sales on day one, according to Take-Two.<br>• The new Hunger Games movie made about $120 million in its whole opening weekend, according to Boxoffice Pro.<br>• Do the math: GTA 6's first day was more than 31 times the biggest movie opening of the weekend.<br>➜ TAKE: The Hunger Games had a great weekend. GTA 6 had a great Thursday.<br>😂 JOKES: Thirty-one Hunger Games movies. That's a lot of volunteering as tribute. / GTA 6 made more in a day than my family will spend on Thanksgiving in the next 60 million years.<br><br>🎉 NATIONAL DAYS: National Espresso Day · National Eat a Cranberry Day · National Cashew Day<br><br>GOOD MORNING UP NORTH: First flakes of the season. Rain and snow showers this morning, about 35 at 6 AM, high near 39 midday, then snow showers this afternoon with under an inch. Tonight 28. Thanksgiving week is officially here.<br><br>SCHOOLS: No closings or delays listed this morning.<br><br>ROADS: Wet with rain and snow showers; no verified closures. South Airport westbound lane closed between Racquet Club and Park Dr for a sewer repair.<br><br>🌊 WIND & WAVES: Small Craft Advisory on Grand Traverse Bay and Lake Michigan until 4 AM Tuesday, northwest gusts to 30 knots and waves as high as about 9 feet.<br><br>ENERGY: Short week, big week. Snowbirds are state champs, Stags get their props, Lions on Thanksgiving, and everybody is one trip to the store from done.",
+  "notes": "SLOW JAM: DIDO, \"THANK YOU\" (2000): https://en.wikipedia.org/wiki/Thank_You_(Dido_song) Wikipedia citing Billboard and Official Charts. Lyric check: clean.<br>THIS DAY: THE FIRST JUKEBOX (NOV. 23, 1889): https://www.wired.com/2010/11/1123first-jukebox/ Wired This Day in Tech; date also per Mystic Stamp/coin-op histories.<br>FUN FACT: GTA 6 VS. HUNGER GAMES: https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records Ratio computed: 3.79B / 120M = 31.6. Box office source: https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/<br>Weather: NWS Gaylord point forecast + hourly (44.7631,-85.6206); marine: NWS Gaylord Small Craft Advisory (GT Bay, Sleeping Bear Pt to GT Light, Pt Betsie to Sleeping Bear, Manistee to Pt Betsie) issued 1:52 AM until 4 AM Tue, gusts to 30 kt, highest waves ~9 ft (zone-by-zone nearshore text not reachable this morning). National days: https://nationaldaycalendar.com/what-day-is-it . Schools: 9&10 closings desk at 3:44 AM ET (Breaker city pulse: 'No active school closings'); backup UpNorthLive closings page checked ~3:58 AM ET, nothing listed.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-23-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "We opened the Vibe Check with Dido's \"Thank You,\" a Hot 100 No. 3, for Thanksgiving week.",
+    "article_url": "https://en.wikipedia.org/wiki/Thank_You_(Dido_song)",
+    "article_title": "Thank You (Dido song) (Wikipedia)",
+    "jokes": [
+     "She sang \"my tea's gone cold.\" Up here in November, so did the car.",
+     "The ultimate Thanksgiving-week song. It's called Thank You, and nobody had to sit through a speech."
+    ],
+    "body": "SLOW JAM: DIDO, \"THANK YOU\" (2000)<br>• Released as a single Sept. 18, 2000, it first showed up in 1998 on the Sliding Doors soundtrack before landing on Dido's debut album No Angel.<br>• Chart stat: No. 3 on the Billboard Hot 100 in April 2001, her first and only U.S. top 10, and No. 3 in the UK. Eminem's sample on \"Stan\" helped push it.<br>• Why today: Thanksgiving week, gray skies, first flakes. It's a gentle wake-up that literally says thank you.<br>➜ TAKE: Rain on the window, cold tea... she basically wrote the forecast for Northern Michigan this morning.<br>😂 JOKES: She sang \"my tea's gone cold.\" Up here in November, so did the car. / The ultimate Thanksgiving-week song. It's called Thank You, and nobody had to sit through a speech.",
+    "description": "Released as a single Sept. 18, 2000, it first showed up in 1998 on the Sliding Doors soundtrack before landing on Dido's debut album No Angel. Chart stat: No. 3 on the Billboard Hot 100 in April 2001, her first and only U.S. top 10, and No. 3 in the UK. Eminem's sample on \"Stan\" helped push it. Why today: Thanksgiving week, gray skies, first flakes. It's a gentle wake-up that literally says thank you.",
+    "summary": "Released as a single Sept. 18, 2000, it first showed up in 1998 on the Sliding Doors soundtrack before landing on Dido's debut album No Angel. Chart stat: No. 3 on the Billboard Hot 100 in April 2001, her first and only U.S. top 10, and No. 3 in the UK. Eminem's sample on \"Stan\" helped push it. Why today: Thanksgiving week, gray skies, first flakes. It's a gentle wake-up that literally says thank you.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a wet drive with rain and snow showers, about 35 at 6 AM and a high near 39.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord forecast, Traverse City",
+    "jokes": [],
+    "body": "🚗 DRIVE TEASE: Rain and snow showers around for the drive in, about 35 at 6 AM and 33 by 8 AM, northwest wind around 10. Wet roads, so leave a little extra room. High near 39 midday, then snow showers this afternoon with under an inch.",
+    "description": "Rain and snow showers around for the drive in, about 35 at 6 AM and 33 by 8 AM, northwest wind around 10. Wet roads, so leave a little extra room. High near 39 midday, then snow showers this afternoon with under an inch.",
+    "summary": "Rain and snow showers around for the drive in, about 35 at 6 AM and 33 by 8 AM, northwest wind around 10. Wet roads, so leave a little extra room. High near 39 midday, then snow showers this afternoon with under an inch.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-23-vibe-03",
+    "title": "THIS DAY",
+    "recap": "We marked the first jukebox, installed Nov. 23, 1889, in a San Francisco saloon.",
+    "article_url": "https://www.wired.com/2010/11/1123first-jukebox/",
+    "article_title": "Nov. 23, 1889: S.F. Gin Joint Hears World's First Jukebox (Wired)",
+    "jokes": [
+     "Four people sharing one ear tube with a towel. That's the original group chat.",
+     "A nickel a song. I'd have spent my whole allowance on the same Hootie song."
+    ],
+    "body": "THIS DAY: THE FIRST JUKEBOX (NOV. 23, 1889)<br>• On Nov. 23, 1889, the first coin-operated phonograph was installed at the Palais Royale Saloon in San Francisco.<br>• It was an Edison Class M electric phonograph in an oak cabinet with four stethoscope-like listening tubes, each one started by a coin. Four people could listen to the same song at once.<br>• Louis Glass called it the \"nickel-in-the-slot player,\" and the saloon handed out towels so people could wipe off the tube after listening. The word \"jukebox\" didn't come along until much later.<br>➜ TAKE: 137 years later, we're still putting money into machines to hear songs. Now it's called a streaming subscription.<br>➜ BAIT: What song did you always play on the jukebox? Text 231-929-4487.<br>😂 JOKES: Four people sharing one ear tube with a towel. That's the original group chat. / A nickel a song. I'd have spent my whole allowance on the same Hootie song.",
+    "description": "On Nov. 23, 1889, the first coin-operated phonograph was installed at the Palais Royale Saloon in San Francisco. It was an Edison Class M electric phonograph in an oak cabinet with four stethoscope-like listening tubes, each one started by a coin. Four people could listen to the same song at once. Louis Glass called it the \"nickel-in-the-slot player,\" and the saloon handed out towels so people could wipe off the tube after listening. The word \"jukebox\" didn't come along until much later.",
+    "summary": "On Nov. 23, 1889, the first coin-operated phonograph was installed at the Palais Royale Saloon in San Francisco. It was an Edison Class M electric phonograph in an oak cabinet with four stethoscope-like listening tubes, each one started by a coin. Four people could listen to the same song at once. Louis Glass called it the \"nickel-in-the-slot player,\" and the saloon handed out towels so people could wipe off the tube after listening. The word \"jukebox\" didn't come along until much later.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-vibe-04",
+    "title": "FUN FACT",
+    "recap": "We compared GTA 6's $3.79 billion first day to the Hunger Games' $120 million opening weekend: more than 31 times bigger.",
+    "article_url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+    "article_title": "Grand Theft Auto VI Shatters Entertainment Box Office Records (Take-Two, Nov 20)",
+    "jokes": [
+     "Thirty-one Hunger Games movies. That's a lot of volunteering as tribute.",
+     "GTA 6 made more in a day than my family will spend on Thanksgiving in the next 60 million years."
+    ],
+    "body": "FUN FACT: GTA 6 VS. HUNGER GAMES<br>• GTA 6 made $3.79 billion in retail sales on day one, according to Take-Two.<br>• The new Hunger Games movie made about $120 million in its whole opening weekend, according to Boxoffice Pro.<br>• Do the math: GTA 6's first day was more than 31 times the biggest movie opening of the weekend.<br>➜ TAKE: The Hunger Games had a great weekend. GTA 6 had a great Thursday.<br>😂 JOKES: Thirty-one Hunger Games movies. That's a lot of volunteering as tribute. / GTA 6 made more in a day than my family will spend on Thanksgiving in the next 60 million years.",
+    "description": "GTA 6 made $3.79 billion in retail sales on day one, according to Take-Two. The new Hunger Games movie made about $120 million in its whole opening weekend, according to Boxoffice Pro. Do the math: GTA 6's first day was more than 31 times the biggest movie opening of the weekend.",
+    "summary": "GTA 6 made $3.79 billion in retail sales on day one, according to Take-Two. The new Hunger Games movie made about $120 million in its whole opening weekend, according to Boxoffice Pro. Do the math: GTA 6's first day was more than 31 times the biggest movie opening of the weekend.",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "We noted National Espresso Day, National Eat a Cranberry Day and National Cashew Day.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [],
+    "body": "🎉 NATIONAL DAYS: National Espresso Day · National Eat a Cranberry Day · National Cashew Day",
+    "description": "We noted National Espresso Day, National Eat a Cranberry Day and National Cashew Day.",
+    "summary": "We noted National Espresso Day, National Eat a Cranberry Day and National Cashew Day.",
+    "rank": 5,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Thank_You_(Dido_song)",
+  "article_title": "Thank You (Dido song) (Wikipedia)",
+  "jokes": [
+   "She sang \"my tea's gone cold.\" Up here in November, so did the car.",
+   "The ultimate Thanksgiving-week song. It's called Thank You, and nobody had to sit through a speech."
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "b77471a137fe",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "MOOD BOOST: SIXPENCE NONE THE RICHER, \"KISS ME\" (1999)<br>• Released as a single in 1998, it took off in 1999 after the movie She's All That and the first Dawson's Creek soundtrack.<br>• Chart stat: No. 2 on the Billboard Hot 100, the sixth-best-selling single of 1999 in the U.S., and No. 1 in Australia and Canada.<br>• Why today: it's bright, laid-back, and impossible to be grumpy to, which is exactly what a snowy Monday needs.<br>➜ TAKE: If this song doesn't warm up the car faster, nothing will.<br>😂 JOKES: Kiss me beneath the milky twilight. Today it's beneath the milky slush. / This song made every 1999 teenager think they'd fall in love at a prom in a high school gym.",
+  "notes": "MOOD BOOST: SIXPENCE NONE THE RICHER, \"KISS ME\" (1999): https://en.wikipedia.org/wiki/Kiss_Me_(Sixpence_None_the_Richer_song) Wikipedia citing Billboard. Lyric check: clean.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-23-mood-01",
+    "title": "MOOD BOOST: SIXPENCE NONE THE RICHER, \"KISS ME\" (1999)",
+    "recap": "We picked up the 6 AM hour with Sixpence None the Richer's \"Kiss Me,\" a Hot 100 No. 2.",
+    "article_url": "https://en.wikipedia.org/wiki/Kiss_Me_(Sixpence_None_the_Richer_song)",
+    "article_title": "Kiss Me (Sixpence None the Richer song) (Wikipedia)",
+    "jokes": [
+     "Kiss me beneath the milky twilight. Today it's beneath the milky slush.",
+     "This song made every 1999 teenager think they'd fall in love at a prom in a high school gym."
+    ],
+    "body": "MOOD BOOST: SIXPENCE NONE THE RICHER, \"KISS ME\" (1999)<br>• Released as a single in 1998, it took off in 1999 after the movie She's All That and the first Dawson's Creek soundtrack.<br>• Chart stat: No. 2 on the Billboard Hot 100, the sixth-best-selling single of 1999 in the U.S., and No. 1 in Australia and Canada.<br>• Why today: it's bright, laid-back, and impossible to be grumpy to, which is exactly what a snowy Monday needs.<br>➜ TAKE: If this song doesn't warm up the car faster, nothing will.<br>😂 JOKES: Kiss me beneath the milky twilight. Today it's beneath the milky slush. / This song made every 1999 teenager think they'd fall in love at a prom in a high school gym.",
+    "description": "Released as a single in 1998, it took off in 1999 after the movie She's All That and the first Dawson's Creek soundtrack. Chart stat: No. 2 on the Billboard Hot 100, the sixth-best-selling single of 1999 in the U.S., and No. 1 in Australia and Canada. Why today: it's bright, laid-back, and impossible to be grumpy to, which is exactly what a snowy Monday needs.",
+    "summary": "Released as a single in 1998, it took off in 1999 after the movie She's All That and the first Dawson's Creek soundtrack. Chart stat: No. 2 on the Billboard Hot 100, the sixth-best-selling single of 1999 in the U.S., and No. 1 in Australia and Canada. Why today: it's bright, laid-back, and impossible to be grumpy to, which is exactly what a snowy Monday needs.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Kiss_Me_(Sixpence_None_the_Richer_song)",
+  "article_title": "Kiss Me (Sixpence None the Richer song) (Wikipedia)",
+  "jokes": [
+   "Kiss me beneath the milky twilight. Today it's beneath the milky slush.",
+   "This song made every 1999 teenager think they'd fall in love at a prom in a high school gym."
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "a2bfc4816205",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>⭐ THANK YOU, STAGS: KINGSLEY'S RUN ENDS IN THE SEMIS<br>• SUMMARY: Kingsley's dream season ended Saturday in Clare. Almont beat the Stags 30-6 in the Division 6 state semifinal, Kingsley's first loss of the year after a 12-0 start. The Stags scored on their very first drive, then Almont answered with 30 straight points.<br>• THE CATCH: It was revenge. Kingsley beat Almont for the 2023 state title at Ford Field, and Almont flipped the script three years later.<br>• WHO: Kingsley Stags football. WHAT: 30-6 loss in the D6 semifinal. WHERE: Clare. WHEN: Saturday. WHY IT MATTERS: 12-0, a regional title, and a whole town that drove down US-127 for them.<br>• WHAT'S NEXT: Almont plays Jackson Lumen Christi for the D6 title Friday at Ford Field.<br>➜ TAKE: Nobody in Kingsley should hang their head. Twelve straight wins, a regional title, and another semifinal. That's a program, not a fluke. Give those seniors a standing ovation.<br>➜ BAIT: Text 231-929-4487 with your shout-out to a Kingsley senior. We'll read 'em.<br>😂 JOKES: Twelve and one. Most of us can't go twelve and one with a New Year's resolution. / Almont waited three years for that rematch. That's not a grudge, that's a long-term savings plan.<br><br>SNOWBIRDS ARE STATE CHAMPS: GAYLORD ST. MARY'S FIRST TITLE<br>• SUMMARY: Gaylord St. Mary won the 8-player Division 2 state championship Saturday, beating Mendon 49-34 at the Superior Dome in Marquette. It's the first football state title in program history.<br>• THE TWIST: Their starting quarterback got hurt in the playoffs, so Cal Royce, who had played pretty much every other skill position, stepped in. Saturday he threw for 252 yards and four touchdowns, ran for 199 and three more, led the team with 13 tackles and kicked a field goal.<br>• QUOTE: Coach Kevin O'Connell: \"Little Catholic school in northern Michigan, nobody thought we could do this, so it's pretty special.\"<br>• WHO: Gaylord St. Mary. WHAT: first state title, 49-34. WHERE: Superior Dome. WHY: a tiny Up North school just won it all.<br>➜ TAKE: Cal Royce had seven touchdowns, 13 tackles and a field goal. That's not a football player, that's an entire roster in one jersey.<br>➜ BAIT: Who's the most do-everything athlete you ever played with? Text 231-929-4487.<br>😂 JOKES: Royce played quarterback, running back, linebacker and kicker. Somebody check if he drove the bus too. / Gaylord sent the Snowbirds north to the U.P. and they came home champions. That's the only time a snowbird flies north in November.<br><br>231 THANKSGIVING BOXES GO OUT TODAY AT NMC<br>• SUMMARY: NMC Professional Communications students hand out 231 Thanksgiving meal boxes today from 3:30 to 6:30 PM at the roundabout across from the Maple Lot on NMC's Front Street campus. Their goal was 215, so they blew past it.<br>• WHAT'S INSIDE: a turkey and traditional sides to feed a family of six, extra food for the holidays, a roasting pan, and a family activity. Gluten-free, vegetarian and vegan options too.<br>• WHO GETS THEM: 181 boxes go to NMC students and their families, 50 to families picked by Big Brothers Big Sisters.<br>• WHY: it's the 13th year of the class project called Thanks-for-Giving, which fights food insecurity and gives students real-world fundraising experience.<br>➜ TAKE: College students who beat their goal by 16 turkeys. These kids are going to run this town someday, and honestly, good.<br>➜ BAIT: Who taught you how to cook your first turkey? Text 231-929-4487.<br>😂 JOKES: They included a roasting pan. That's thoughtful. Every family has one person who'd try to cook a turkey in a frying pan. / 231 boxes. Somebody at NMC knew exactly what area code they live in.<br><br>NMC CHOIR LANDS A NATIONAL STAGE<br>• SUMMARY: NMC's all-female choir Aurora was picked to perform at the American Choral Directors Association National Conference next March in Minneapolis. It's the first NMC group ever invited and the first from any Michigan community college.<br>• THE CATCH: only 25 groups were selected from hundreds of submissions, from children's choirs to pros.<br>• QUOTE: Director Jeffrey Cobb called the conference \"nirvana for choir nerds\" and said \"there is no higher honor for a choir.\"<br>• BACKSTORY: Aurora used to be the mixed Chamber Singers. Cobb rebuilt it as an all-treble choir four years ago because he couldn't recruit enough men.<br>➜ TAKE: Our community college just got picked over hundreds of choirs across the country. Traverse City, keep sending us your talent.<br>➜ BAIT: Were you a choir kid? What song do you still know every harmony to? Text 231-929-4487.<br>😂 JOKES: Couldn't find enough guys for the choir, so he built an all-women group and it went national. Fellas, that's on you. / Nirvana for choir nerds. Not the band. Please don't show up in flannel.<br><br>ROTARY SQUARE GETS ITS BUILDER (YES, IT'S AJ'S)<br>• SUMMARY: The Traverse City DDA approved more than $3.4 million in contracts Friday to build Rotary Square downtown. Groundbreaking is planned for April, with completion by November next year.<br>• THE TWIST: the low bid came from AJ's Excavating at about $2.85 million. The other bid was about $6.2 million.<br>• WHAT IT'LL HAVE: a big central lawn, swing benches, a raised walkway with a slide, a shaded stage area, native plantings, and a riverwalk path connecting to FishPass.<br>• WHY IT MATTERS: the civic square has been in the works for over 30 years. The design is called Petoskey Stone.<br>➜ TAKE: For the record, I am not getting a cut. But if there's a slide, I'm going down it on opening day.<br>➜ BAIT: What should be the first event in Rotary Square? Text 231-929-4487.<br>😂 JOKES: AJ's Excavating got the job. I want it on record I can't even dig out my driveway. / Thirty years in the making. That's longer than it takes to find parking downtown, but only barely.<br><br>━━ NATIONAL ━━<br><br>HUNGER GAMES OPENS TO $120 MILLION<br>• SUMMARY: The Hunger Games: Sunrise on the Reaping opened at No. 1 with about $120 million this weekend, the franchise's fourth-best start, roughly tied with Mockingjay Part 1. It's about $225 million worldwide.<br>• THE CATCH: it's an estimate, and Monday's actual numbers could move it up a spot in the franchise rankings.<br>• WHY YOU CARE: it's the movie everybody's crew went to this weekend, and it's still going strong into the Thanksgiving holiday.<br>➜ TAKE: Thanksgiving week plan: watch kids fight to the death on screen, then go home and watch your family fight over the last roll.<br>➜ BAIT: Did you see it this weekend? Book people, was it as good as the book? Text 231-929-4487.<br>😂 JOKES: $120 million. May the odds be ever in your favor at the concession stand. / It's called Sunrise on the Reaping. At 6 AM in November, I'm still waiting for my sunrise.<br><br>MILEY CYRUS GOT MARRIED<br>• SUMMARY: Miley Cyrus married drummer Maxx Morando Saturday in a poolside ceremony in Palm Springs. Wayne Coyne from the Flaming Lips officiated.<br>• THE DETAILS: she wore a long-sleeved white satin gown and was photographed wiping away tears during the vows. Guests included Tish Cyrus, Noah Cyrus and Billy Ray Cyrus.<br>• THE CATCH: it came one month after the two sang \"Let's Get Married\" together on stage at the Hollywood Bowl.<br>➜ TAKE: She told us a month ago. She literally sang \"Let's Get Married\" at the Hollywood Bowl. Nobody can say they didn't see this coming.<br>➜ BAIT: Would you do a poolside wedding in November? What's the best wedding you've ever been to? Text 231-929-4487.<br>😂 JOKES: A wedding officiated by the guy from the Flaming Lips. I hope the vows came with confetti cannons. / Billy Ray was there. Somewhere, an achy breaky heart got a little less achy.<br><br>━━ BITS ━━<br><br>FIRST SNOW SHOWERS: WHAT'S YOUR FIRST-SNOW RULE?<br>• NWS says rain and snow showers this morning, then snow showers this afternoon. Less than an inch for Traverse City, temps sliding from the upper 30s.<br>• MLive says the cold front drops temps statewide and brings the first real snow to parts of Michigan.<br>• The bit: everyone has a first-snow rule. Snow tires on? Scraper back in the car? Is the first snow a hot-chocolate day by law?<br>➜ TAKE: My first-snow rule: the ice scraper is in the trunk, buried under summer stuff. Every year.<br>➜ BAIT: What's your first-snow rule? Text 231-929-4487.<br>😂 JOKES: First snow means one thing up here: everybody forgets how to drive for exactly one day. / Somebody in Traverse City is still in shorts today, and we respect it.<br><br>NATIONAL ESPRESSO DAY: HOW DO YOU TAKE IT?<br>• Today is National Espresso Day, plus National Cashew Day and National Eat a Cranberry Day, per National Day Calendar.<br>• The bit: what's your coffee order, and what does it say about you? Black coffee people, latte people, and people whose order takes 30 seconds to say.<br>➜ TAKE: If your order has more than four words, you're not ordering coffee, you're reading a novel.<br>➜ BAIT: Text 231-929-4487 your full coffee order, exactly how you say it at the window.<br>😂 JOKES: A shot of espresso on a snowy Monday isn't a drink. It's a life jacket. / Espresso, cashews and cranberries. That's not three national days, that's a trail mix.<br><br>━━ SPORTS ━━<br><br>KINGSLEY: SEASON ENDS IN THE D6 SEMIS<br>Almont 30, Kingsley 6 · Sat · Clare · Stags finish 12-1.<br>Rundown: Kingsley scored on its first drive, then Almont ran off 30 straight. Almont plays Lumen Christi for the D6 title Friday at Ford Field.<br><br>GAYLORD ST. MARY: 8-PLAYER D2 STATE CHAMPS<br>St. Mary 49, Mendon 34 · Sat · Superior Dome, Marquette · first title in program history.<br>Rundown: Cal Royce, 252 passing yards and 4 TDs, 199 rushing and 3 TDs, 13 tackles and a field goal.<br><br>BAY REPS HOCKEY 4-0<br>Bay Reps 6, Saginaw Heritage 1.<br>Rundown: Nolan Ziecina's first career hat trick.<br><br>LIONS 31, BUCS 21<br>Sun · Ford Field · Detroit 8-2, six straight wins.<br>Rundown: Jameson Williams had 4 catches for 93 yards, including a 57-yard touchdown from Jared Goff in the third quarter. Next: Bears on Thanksgiving Day.<br><br>MICHIGAN 18, NO. 4 UCLA 16 (3OT)<br>Sat · Michigan Stadium · Michigan 6-5 and bowl-eligible; UCLA's first loss.<br>Rundown: won it in triple overtime on Bryce Underwood's two-point pass to Jalen Hoffman. Ohio State is next Saturday.<br><br>MSU: OREGON 45, MICHIGAN STATE 7<br>Fri · Spartan Stadium, senior night · MSU 3-8.<br><br>DETROIT QUICK HITS<br>Pistons lost 105-102 to Toronto Saturday (NBA Cup), now 10-5.<br>Red Wings lost 3-2 to the Islanders.<br>College hoops: Villanova 79, Michigan 73; Michigan State 91, Detroit Mercy 70.",
+  "notes": "Buzz score log (buzz-rubric): Kingsley send-off 14 · Gaylord St. Mary first title 14 · NMC 231 meal boxes 13 · NMC Aurora national invite 12 · Rotary Square/AJ's Excavating 12 · (bench: Aydrian Day beadwork 11, Alpenlights TC hope 10, Bay Reps 4-0 10, TVC bonuses 9; cut: TIF 97 next steps (politics), county TIF legal bill (politics), Team Elle (illness, heavy), Cheboygan commissioner post (politics), Gratiot homicide (crime), vacation-rental cap (repeat, civic))<br>⭐ THANK YOU, STAGS: KINGSLEY'S RUN ENDS IN THE SEMIS: https://upnorthlive.com/sports/hometown-highlights/kingsleys-season-comes-to-a-close-in-d6-state-semifinal-loss-to-almont UpNorthLive, Harrison Beeby, Sat Nov 21 9:54 PM. Score 30-6, first loss, TD on first drive, Almont vs Lumen Christi Friday in Detroit. Also Beloud/Freep confirm 30-6.<br>SNOWBIRDS ARE STATE CHAMPS: GAYLORD ST. MARY'S FIRST TITLE: https://www.mhsaa.com/sports/football/stories/rolling-royce-gaylord-st-mary-pulls-away-mendon-first-finals-title MHSAA.com, Jason Juno, Nov 21. All stats and quote from that story.<br>231 THANKSGIVING BOXES GO OUT TODAY AT NMC: https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/ The Ticker, Nov 22. Distribution is for pre-selected recipients (NMC students/families and BBBS families), not open pickup: don't invite the public to show up.<br>NMC CHOIR LANDS A NATIONAL STAGE: https://www.traverseticker.com/news/nirvana-for-choir-nerds-nmc-lands-a-rare-invite-to-prestigious-choral-conference/ The Ticker, Craig Manning, Nov 22. Quotes and 25-group figure from that story.<br>ROTARY SQUARE GETS ITS BUILDER (YES, IT'S AJ'S): https://www.traverseticker.com/news/dda-approves-34m-in-construction-contracts-for-rotary-square-spring-groundbreaking-planned/ The Ticker, Beth Milligan, Nov 21. AJ's Excavating is an unrelated local company (not our AJ). Construction/project story: the only one in Buzz.<br>HUNGER GAMES OPENS TO $120 MILLION: https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/ Boxoffice Pro, Nov 22 weekend estimate; Monday actuals may move it.<br>MILEY CYRUS GOT MARRIED: https://www.billboard.com/music/pop/miley-cyrus-marries-maxx-morando-palm-springs-wedding-1236387428/ Billboard, Jessica Lynch, citing photos published by People. Ceremony Sat Nov 21.<br>FIRST SNOW SHOWERS: WHAT'S YOUR FIRST-SNOW RULE?: https://www.mlive.com/weather/2026/11/michigan-weather-temperatures-to-plummet-as-cold-front-and-snow-move-in.html NWS Gaylord TC point forecast for numbers; MLive for the statewide front.<br>NATIONAL ESPRESSO DAY: HOW DO YOU TAKE IT?: https://nationaldaycalendar.com/what-day-is-it National Day Calendar what-day-is-it page, fetched 3:55 AM ET.<br>SPORTS: Kingsley: UpNorthLive Nov 21 + Beloud/Freep. St. Mary: MHSAA.com Nov 21. Reps: Record-Eagle Nov 22. Lions: detroitlions.com recap + NBC/PFT (Williams 57-yd TD, 4-93). Michigan: mgoblue.com Nov 21 (Underwood 2-pt to Hoffman per weekend stash/mgoblue). MSU: msuspartans.com/AP (AP lists Oregon as No. 14, MSU site No. 13). Pistons: AP via weekend stash. Red Wings, UM/MSU hoops: ESPN game pages via Ticker local feed (ticker.json), scores not opened individually.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-23-buzz-01",
+    "title": "⭐ THANK YOU, STAGS: KINGSLEY'S RUN ENDS IN THE SEMIS",
+    "recap": "We gave props to Kingsley after the Stags' 30-6 semifinal loss to Almont ended a 12-1 season.",
+    "article_url": "https://upnorthlive.com/sports/hometown-highlights/kingsleys-season-comes-to-a-close-in-d6-state-semifinal-loss-to-almont",
+    "article_title": "Kingsley's season comes to a close in D6 state semifinal loss to Almont (UpNorthLive, Nov 21)",
+    "jokes": [
+     "Twelve and one. Most of us can't go twelve and one with a New Year's resolution.",
+     "Almont waited three years for that rematch. That's not a grudge, that's a long-term savings plan."
+    ],
+    "body": "⭐ THANK YOU, STAGS: KINGSLEY'S RUN ENDS IN THE SEMIS<br>• SUMMARY: Kingsley's dream season ended Saturday in Clare. Almont beat the Stags 30-6 in the Division 6 state semifinal, Kingsley's first loss of the year after a 12-0 start. The Stags scored on their very first drive, then Almont answered with 30 straight points.<br>• THE CATCH: It was revenge. Kingsley beat Almont for the 2023 state title at Ford Field, and Almont flipped the script three years later.<br>• WHO: Kingsley Stags football. WHAT: 30-6 loss in the D6 semifinal. WHERE: Clare. WHEN: Saturday. WHY IT MATTERS: 12-0, a regional title, and a whole town that drove down US-127 for them.<br>• WHAT'S NEXT: Almont plays Jackson Lumen Christi for the D6 title Friday at Ford Field.<br>➜ TAKE: Nobody in Kingsley should hang their head. Twelve straight wins, a regional title, and another semifinal. That's a program, not a fluke. Give those seniors a standing ovation.<br>➜ BAIT: Text 231-929-4487 with your shout-out to a Kingsley senior. We'll read 'em.<br>😂 JOKES: Twelve and one. Most of us can't go twelve and one with a New Year's resolution. / Almont waited three years for that rematch. That's not a grudge, that's a long-term savings plan.",
+    "description": "Kingsley's dream season ended Saturday in Clare. Almont beat the Stags 30-6 in the Division 6 state semifinal, Kingsley's first loss of the year after a 12-0 start. The Stags scored on their very first drive, then Almont answered with 30 straight points. It was revenge. Kingsley beat Almont for the 2023 state title at Ford Field, and Almont flipped the script three years later. Kingsley Stags football. WHAT: 30-6 loss in the D6 semifinal. WHERE: Clare. WHEN: Saturday. WHY IT MATTERS: 12-0, a regional title, and a whole town that drove down US-127 for them. Almont plays Jackson Lumen Christi for the D6 title Friday at Ford Field.",
+    "summary": "Kingsley's dream season ended Saturday in Clare. Almont beat the Stags 30-6 in the Division 6 state semifinal, Kingsley's first loss of the year after a 12-0 start. The Stags scored on their very first drive, then Almont answered with 30 straight points. It was revenge. Kingsley beat Almont for the 2023 state title at Ford Field, and Almont flipped the script three years later. Kingsley Stags football. WHAT: 30-6 loss in the D6 semifinal. WHERE: Clare. WHEN: Saturday. WHY IT MATTERS: 12-0, a regional title, and a whole town that drove down US-127 for them. Almont plays Jackson Lumen Christi for the D6 title Friday at Ford Field.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-23-buzz-02",
+    "title": "SNOWBIRDS ARE STATE CHAMPS: GAYLORD ST. MARY'S FIRST TITLE",
+    "recap": "We congratulated Gaylord St. Mary on its first state title, 49-34 over Mendon, led by Cal Royce's seven touchdowns.",
+    "article_url": "https://www.mhsaa.com/sports/football/stories/rolling-royce-gaylord-st-mary-pulls-away-mendon-first-finals-title",
+    "article_title": "Rolling with Royce, Gaylord St. Mary Pulls Away from Mendon for First Finals Title (MHSAA, Nov 21)",
+    "jokes": [
+     "Royce played quarterback, running back, linebacker and kicker. Somebody check if he drove the bus too.",
+     "Gaylord sent the Snowbirds north to the U.P. and they came home champions. That's the only time a snowbird flies north in November."
+    ],
+    "body": "SNOWBIRDS ARE STATE CHAMPS: GAYLORD ST. MARY'S FIRST TITLE<br>• SUMMARY: Gaylord St. Mary won the 8-player Division 2 state championship Saturday, beating Mendon 49-34 at the Superior Dome in Marquette. It's the first football state title in program history.<br>• THE TWIST: Their starting quarterback got hurt in the playoffs, so Cal Royce, who had played pretty much every other skill position, stepped in. Saturday he threw for 252 yards and four touchdowns, ran for 199 and three more, led the team with 13 tackles and kicked a field goal.<br>• QUOTE: Coach Kevin O'Connell: \"Little Catholic school in northern Michigan, nobody thought we could do this, so it's pretty special.\"<br>• WHO: Gaylord St. Mary. WHAT: first state title, 49-34. WHERE: Superior Dome. WHY: a tiny Up North school just won it all.<br>➜ TAKE: Cal Royce had seven touchdowns, 13 tackles and a field goal. That's not a football player, that's an entire roster in one jersey.<br>➜ BAIT: Who's the most do-everything athlete you ever played with? Text 231-929-4487.<br>😂 JOKES: Royce played quarterback, running back, linebacker and kicker. Somebody check if he drove the bus too. / Gaylord sent the Snowbirds north to the U.P. and they came home champions. That's the only time a snowbird flies north in November.",
+    "description": "Gaylord St. Mary won the 8-player Division 2 state championship Saturday, beating Mendon 49-34 at the Superior Dome in Marquette. It's the first football state title in program history. Their starting quarterback got hurt in the playoffs, so Cal Royce, who had played pretty much every other skill position, stepped in. Saturday he threw for 252 yards and four touchdowns, ran for 199 and three more, led the team with 13 tackles and kicked a field goal. Coach Kevin O'Connell: \"Little Catholic school in northern Michigan, nobody thought we could do this, so it's pretty special.\" Gaylord St. Mary. WHAT: first state title, 49-34. WHERE: Superior Dome. WHY: a tiny Up North school just won it all.",
+    "summary": "Gaylord St. Mary won the 8-player Division 2 state championship Saturday, beating Mendon 49-34 at the Superior Dome in Marquette. It's the first football state title in program history. Their starting quarterback got hurt in the playoffs, so Cal Royce, who had played pretty much every other skill position, stepped in. Saturday he threw for 252 yards and four touchdowns, ran for 199 and three more, led the team with 13 tackles and kicked a field goal. Coach Kevin O'Connell: \"Little Catholic school in northern Michigan, nobody thought we could do this, so it's pretty special.\" Gaylord St. Mary. WHAT: first state title, 49-34. WHERE: Superior Dome. WHY: a tiny Up North school just won it all.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-23-buzz-03",
+    "title": "231 THANKSGIVING BOXES GO OUT TODAY AT NMC",
+    "recap": "We shouted out NMC students handing out 231 Thanksgiving meal boxes Monday afternoon.",
+    "article_url": "https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/",
+    "article_title": "NMC Students To Distribute 231 Thanksgiving Meals Nov. 23 (The Ticker, Nov 22)",
+    "jokes": [
+     "They included a roasting pan. That's thoughtful. Every family has one person who'd try to cook a turkey in a frying pan.",
+     "231 boxes. Somebody at NMC knew exactly what area code they live in."
+    ],
+    "body": "231 THANKSGIVING BOXES GO OUT TODAY AT NMC<br>• SUMMARY: NMC Professional Communications students hand out 231 Thanksgiving meal boxes today from 3:30 to 6:30 PM at the roundabout across from the Maple Lot on NMC's Front Street campus. Their goal was 215, so they blew past it.<br>• WHAT'S INSIDE: a turkey and traditional sides to feed a family of six, extra food for the holidays, a roasting pan, and a family activity. Gluten-free, vegetarian and vegan options too.<br>• WHO GETS THEM: 181 boxes go to NMC students and their families, 50 to families picked by Big Brothers Big Sisters.<br>• WHY: it's the 13th year of the class project called Thanks-for-Giving, which fights food insecurity and gives students real-world fundraising experience.<br>➜ TAKE: College students who beat their goal by 16 turkeys. These kids are going to run this town someday, and honestly, good.<br>➜ BAIT: Who taught you how to cook your first turkey? Text 231-929-4487.<br>😂 JOKES: They included a roasting pan. That's thoughtful. Every family has one person who'd try to cook a turkey in a frying pan. / 231 boxes. Somebody at NMC knew exactly what area code they live in.",
+    "description": "NMC Professional Communications students hand out 231 Thanksgiving meal boxes today from 3:30 to 6:30 PM at the roundabout across from the Maple Lot on NMC's Front Street campus. Their goal was 215, so they blew past it. a turkey and traditional sides to feed a family of six, extra food for the holidays, a roasting pan, and a family activity. Gluten-free, vegetarian and vegan options too. 181 boxes go to NMC students and their families, 50 to families picked by Big Brothers Big Sisters. it's the 13th year of the class project called Thanks-for-Giving, which fights food insecurity and gives students real-world fundraising experience.",
+    "summary": "NMC Professional Communications students hand out 231 Thanksgiving meal boxes today from 3:30 to 6:30 PM at the roundabout across from the Maple Lot on NMC's Front Street campus. Their goal was 215, so they blew past it. a turkey and traditional sides to feed a family of six, extra food for the holidays, a roasting pan, and a family activity. Gluten-free, vegetarian and vegan options too. 181 boxes go to NMC students and their families, 50 to families picked by Big Brothers Big Sisters. it's the 13th year of the class project called Thanks-for-Giving, which fights food insecurity and gives students real-world fundraising experience.",
+    "rank": 5,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-04",
+    "title": "NMC CHOIR LANDS A NATIONAL STAGE",
+    "recap": "We celebrated NMC's Aurora choir, the first Michigan community college choir invited to the national ACDA conference.",
+    "article_url": "https://www.traverseticker.com/news/nirvana-for-choir-nerds-nmc-lands-a-rare-invite-to-prestigious-choral-conference/",
+    "article_title": "'Nirvana for Choir Nerds': NMC Lands a Rare Invite to Prestigious Choral Conference (The Ticker, Nov 22)",
+    "jokes": [
+     "Couldn't find enough guys for the choir, so he built an all-women group and it went national. Fellas, that's on you.",
+     "Nirvana for choir nerds. Not the band. Please don't show up in flannel."
+    ],
+    "body": "NMC CHOIR LANDS A NATIONAL STAGE<br>• SUMMARY: NMC's all-female choir Aurora was picked to perform at the American Choral Directors Association National Conference next March in Minneapolis. It's the first NMC group ever invited and the first from any Michigan community college.<br>• THE CATCH: only 25 groups were selected from hundreds of submissions, from children's choirs to pros.<br>• QUOTE: Director Jeffrey Cobb called the conference \"nirvana for choir nerds\" and said \"there is no higher honor for a choir.\"<br>• BACKSTORY: Aurora used to be the mixed Chamber Singers. Cobb rebuilt it as an all-treble choir four years ago because he couldn't recruit enough men.<br>➜ TAKE: Our community college just got picked over hundreds of choirs across the country. Traverse City, keep sending us your talent.<br>➜ BAIT: Were you a choir kid? What song do you still know every harmony to? Text 231-929-4487.<br>😂 JOKES: Couldn't find enough guys for the choir, so he built an all-women group and it went national. Fellas, that's on you. / Nirvana for choir nerds. Not the band. Please don't show up in flannel.",
+    "description": "NMC's all-female choir Aurora was picked to perform at the American Choral Directors Association National Conference next March in Minneapolis. It's the first NMC group ever invited and the first from any Michigan community college. only 25 groups were selected from hundreds of submissions, from children's choirs to pros. Director Jeffrey Cobb called the conference \"nirvana for choir nerds\" and said \"there is no higher honor for a choir.\" Aurora used to be the mixed Chamber Singers. Cobb rebuilt it as an all-treble choir four years ago because he couldn't recruit enough men.",
+    "summary": "NMC's all-female choir Aurora was picked to perform at the American Choral Directors Association National Conference next March in Minneapolis. It's the first NMC group ever invited and the first from any Michigan community college. only 25 groups were selected from hundreds of submissions, from children's choirs to pros. Director Jeffrey Cobb called the conference \"nirvana for choir nerds\" and said \"there is no higher honor for a choir.\" Aurora used to be the mixed Chamber Singers. Cobb rebuilt it as an all-treble choir four years ago because he couldn't recruit enough men.",
+    "rank": 6,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-05",
+    "title": "ROTARY SQUARE GETS ITS BUILDER (YES, IT'S AJ'S)",
+    "recap": "We talked Rotary Square getting its $3.4 million in contracts, with AJ's Excavating building it starting in April.",
+    "article_url": "https://www.traverseticker.com/news/dda-approves-34m-in-construction-contracts-for-rotary-square-spring-groundbreaking-planned/",
+    "article_title": "DDA Approves $3.4M in Construction Contracts for Rotary Square; Spring Groundbreaking Planned (The Ticker, Nov 21)",
+    "jokes": [
+     "AJ's Excavating got the job. I want it on record I can't even dig out my driveway.",
+     "Thirty years in the making. That's longer than it takes to find parking downtown, but only barely."
+    ],
+    "body": "ROTARY SQUARE GETS ITS BUILDER (YES, IT'S AJ'S)<br>• SUMMARY: The Traverse City DDA approved more than $3.4 million in contracts Friday to build Rotary Square downtown. Groundbreaking is planned for April, with completion by November next year.<br>• THE TWIST: the low bid came from AJ's Excavating at about $2.85 million. The other bid was about $6.2 million.<br>• WHAT IT'LL HAVE: a big central lawn, swing benches, a raised walkway with a slide, a shaded stage area, native plantings, and a riverwalk path connecting to FishPass.<br>• WHY IT MATTERS: the civic square has been in the works for over 30 years. The design is called Petoskey Stone.<br>➜ TAKE: For the record, I am not getting a cut. But if there's a slide, I'm going down it on opening day.<br>➜ BAIT: What should be the first event in Rotary Square? Text 231-929-4487.<br>😂 JOKES: AJ's Excavating got the job. I want it on record I can't even dig out my driveway. / Thirty years in the making. That's longer than it takes to find parking downtown, but only barely.",
+    "description": "The Traverse City DDA approved more than $3.4 million in contracts Friday to build Rotary Square downtown. Groundbreaking is planned for April, with completion by November next year. the low bid came from AJ's Excavating at about $2.85 million. The other bid was about $6.2 million. a big central lawn, swing benches, a raised walkway with a slide, a shaded stage area, native plantings, and a riverwalk path connecting to FishPass. the civic square has been in the works for over 30 years. The design is called Petoskey Stone.",
+    "summary": "The Traverse City DDA approved more than $3.4 million in contracts Friday to build Rotary Square downtown. Groundbreaking is planned for April, with completion by November next year. the low bid came from AJ's Excavating at about $2.85 million. The other bid was about $6.2 million. a big central lawn, swing benches, a raised walkway with a slide, a shaded stage area, native plantings, and a riverwalk path connecting to FishPass. the civic square has been in the works for over 30 years. The design is called Petoskey Stone.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-06",
+    "title": "HUNGER GAMES OPENS TO $120 MILLION",
+    "recap": "We talked The Hunger Games: Sunrise on the Reaping opening to about $120 million.",
+    "article_url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
+    "article_title": "Weekend Box Office: HUNGER GAMES: SUNRISE ON THE REAPING Sweeps the Competition with $120M Debut (Boxoffice Pro, Nov 22)",
+    "jokes": [
+     "$120 million. May the odds be ever in your favor at the concession stand.",
+     "It's called Sunrise on the Reaping. At 6 AM in November, I'm still waiting for my sunrise."
+    ],
+    "body": "HUNGER GAMES OPENS TO $120 MILLION<br>• SUMMARY: The Hunger Games: Sunrise on the Reaping opened at No. 1 with about $120 million this weekend, the franchise's fourth-best start, roughly tied with Mockingjay Part 1. It's about $225 million worldwide.<br>• THE CATCH: it's an estimate, and Monday's actual numbers could move it up a spot in the franchise rankings.<br>• WHY YOU CARE: it's the movie everybody's crew went to this weekend, and it's still going strong into the Thanksgiving holiday.<br>➜ TAKE: Thanksgiving week plan: watch kids fight to the death on screen, then go home and watch your family fight over the last roll.<br>➜ BAIT: Did you see it this weekend? Book people, was it as good as the book? Text 231-929-4487.<br>😂 JOKES: $120 million. May the odds be ever in your favor at the concession stand. / It's called Sunrise on the Reaping. At 6 AM in November, I'm still waiting for my sunrise.",
+    "description": "The Hunger Games: Sunrise on the Reaping opened at No. 1 with about $120 million this weekend, the franchise's fourth-best start, roughly tied with Mockingjay Part 1. It's about $225 million worldwide. it's an estimate, and Monday's actual numbers could move it up a spot in the franchise rankings. it's the movie everybody's crew went to this weekend, and it's still going strong into the Thanksgiving holiday.",
+    "summary": "The Hunger Games: Sunrise on the Reaping opened at No. 1 with about $120 million this weekend, the franchise's fourth-best start, roughly tied with Mockingjay Part 1. It's about $225 million worldwide. it's an estimate, and Monday's actual numbers could move it up a spot in the franchise rankings. it's the movie everybody's crew went to this weekend, and it's still going strong into the Thanksgiving holiday.",
+    "rank": 7,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-07",
+    "title": "MILEY CYRUS GOT MARRIED",
+    "recap": "We congratulated Miley Cyrus, who married Maxx Morando in a poolside Palm Springs ceremony Saturday.",
+    "article_url": "https://www.billboard.com/music/pop/miley-cyrus-marries-maxx-morando-palm-springs-wedding-1236387428/",
+    "article_title": "Miley Cyrus Marries Maxx Morando in Poolside Ceremony Led by the Flaming Lips' Wayne Coyne (Billboard)",
+    "jokes": [
+     "A wedding officiated by the guy from the Flaming Lips. I hope the vows came with confetti cannons.",
+     "Billy Ray was there. Somewhere, an achy breaky heart got a little less achy."
+    ],
+    "body": "MILEY CYRUS GOT MARRIED<br>• SUMMARY: Miley Cyrus married drummer Maxx Morando Saturday in a poolside ceremony in Palm Springs. Wayne Coyne from the Flaming Lips officiated.<br>• THE DETAILS: she wore a long-sleeved white satin gown and was photographed wiping away tears during the vows. Guests included Tish Cyrus, Noah Cyrus and Billy Ray Cyrus.<br>• THE CATCH: it came one month after the two sang \"Let's Get Married\" together on stage at the Hollywood Bowl.<br>➜ TAKE: She told us a month ago. She literally sang \"Let's Get Married\" at the Hollywood Bowl. Nobody can say they didn't see this coming.<br>➜ BAIT: Would you do a poolside wedding in November? What's the best wedding you've ever been to? Text 231-929-4487.<br>😂 JOKES: A wedding officiated by the guy from the Flaming Lips. I hope the vows came with confetti cannons. / Billy Ray was there. Somewhere, an achy breaky heart got a little less achy.",
+    "description": "Miley Cyrus married drummer Maxx Morando Saturday in a poolside ceremony in Palm Springs. Wayne Coyne from the Flaming Lips officiated. she wore a long-sleeved white satin gown and was photographed wiping away tears during the vows. Guests included Tish Cyrus, Noah Cyrus and Billy Ray Cyrus. it came one month after the two sang \"Let's Get Married\" together on stage at the Hollywood Bowl.",
+    "summary": "Miley Cyrus married drummer Maxx Morando Saturday in a poolside ceremony in Palm Springs. Wayne Coyne from the Flaming Lips officiated. she wore a long-sleeved white satin gown and was photographed wiping away tears during the vows. Guests included Tish Cyrus, Noah Cyrus and Billy Ray Cyrus. it came one month after the two sang \"Let's Get Married\" together on stage at the Hollywood Bowl.",
+    "rank": 8,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-08",
+    "title": "FIRST SNOW SHOWERS: WHAT'S YOUR FIRST-SNOW RULE?",
+    "recap": "We asked for your first-snow rules as snow showers moved in Monday.",
+    "article_url": "https://www.mlive.com/weather/2026/11/michigan-weather-temperatures-to-plummet-as-cold-front-and-snow-move-in.html",
+    "article_title": "Michigan Weather: Temperatures to plummet as cold front and snow move in (MLive)",
+    "jokes": [
+     "First snow means one thing up here: everybody forgets how to drive for exactly one day.",
+     "Somebody in Traverse City is still in shorts today, and we respect it."
+    ],
+    "body": "FIRST SNOW SHOWERS: WHAT'S YOUR FIRST-SNOW RULE?<br>• NWS says rain and snow showers this morning, then snow showers this afternoon. Less than an inch for Traverse City, temps sliding from the upper 30s.<br>• MLive says the cold front drops temps statewide and brings the first real snow to parts of Michigan.<br>• The bit: everyone has a first-snow rule. Snow tires on? Scraper back in the car? Is the first snow a hot-chocolate day by law?<br>➜ TAKE: My first-snow rule: the ice scraper is in the trunk, buried under summer stuff. Every year.<br>➜ BAIT: What's your first-snow rule? Text 231-929-4487.<br>😂 JOKES: First snow means one thing up here: everybody forgets how to drive for exactly one day. / Somebody in Traverse City is still in shorts today, and we respect it.",
+    "description": "NWS says rain and snow showers this morning, then snow showers this afternoon. Less than an inch for Traverse City, temps sliding from the upper 30s. MLive says the cold front drops temps statewide and brings the first real snow to parts of Michigan. The bit: everyone has a first-snow rule. Snow tires on? Scraper back in the car? Is the first snow a hot-chocolate day by law?",
+    "summary": "NWS says rain and snow showers this morning, then snow showers this afternoon. Less than an inch for Traverse City, temps sliding from the upper 30s. MLive says the cold front drops temps statewide and brings the first real snow to parts of Michigan. The bit: everyone has a first-snow rule. Snow tires on? Scraper back in the car? Is the first snow a hot-chocolate day by law?",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-09",
+    "title": "NATIONAL ESPRESSO DAY: HOW DO YOU TAKE IT?",
+    "recap": "We celebrated National Espresso Day by asking for your exact coffee order.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It? (National Day Calendar)",
+    "jokes": [
+     "A shot of espresso on a snowy Monday isn't a drink. It's a life jacket.",
+     "Espresso, cashews and cranberries. That's not three national days, that's a trail mix."
+    ],
+    "body": "NATIONAL ESPRESSO DAY: HOW DO YOU TAKE IT?<br>• Today is National Espresso Day, plus National Cashew Day and National Eat a Cranberry Day, per National Day Calendar.<br>• The bit: what's your coffee order, and what does it say about you? Black coffee people, latte people, and people whose order takes 30 seconds to say.<br>➜ TAKE: If your order has more than four words, you're not ordering coffee, you're reading a novel.<br>➜ BAIT: Text 231-929-4487 your full coffee order, exactly how you say it at the window.<br>😂 JOKES: A shot of espresso on a snowy Monday isn't a drink. It's a life jacket. / Espresso, cashews and cranberries. That's not three national days, that's a trail mix.",
+    "description": "Today is National Espresso Day, plus National Cashew Day and National Eat a Cranberry Day, per National Day Calendar. The bit: what's your coffee order, and what does it say about you? Black coffee people, latte people, and people whose order takes 30 seconds to say.",
+    "summary": "Today is National Espresso Day, plus National Cashew Day and National Eat a Cranberry Day, per National Day Calendar. The bit: what's your coffee order, and what does it say about you? Black coffee people, latte people, and people whose order takes 30 seconds to say.",
+    "rank": 9,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-12",
+    "title": "BAY REPS HOCKEY 4-0",
+    "recap": "We noted the Bay Reps' 4-0 hockey start.",
+    "article_url": "https://www.record-eagle.com/sports/local_sports/prep-roundup-reps-continue-hot-start/article_3faa9c0b-65d3-4b90-9459-4b81854bf6e3.html",
+    "article_title": "Bay Reps Hockey 4-0",
+    "jokes": [],
+    "body": "BAY REPS HOCKEY 4-0<br>Bay Reps 6, Saginaw Heritage 1.<br>Rundown: Nolan Ziecina's first career hat trick.",
+    "description": "Bay Reps 6, Saginaw Heritage 1. Rundown: Nolan Ziecina's first career hat trick.",
+    "summary": "Bay Reps 6, Saginaw Heritage 1. Rundown: Nolan Ziecina's first career hat trick.",
+    "rank": 10,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-13",
+    "title": "LIONS 31, BUCS 21",
+    "recap": "We celebrated the Lions' 31-21 win over Tampa Bay, their sixth straight.",
+    "article_url": "https://www.detroitlions.com/news/recap-lions-vs-buccaneers-goff-gibbs-williams",
+    "article_title": "Lions 31, Bucs 21",
+    "jokes": [],
+    "body": "LIONS 31, BUCS 21<br>Sun · Ford Field · Detroit 8-2, six straight wins.<br>Rundown: Jameson Williams had 4 catches for 93 yards, including a 57-yard touchdown from Jared Goff in the third quarter. Next: Bears on Thanksgiving Day.",
+    "description": "Sun · Ford Field · Detroit 8-2, six straight wins. Rundown: Jameson Williams had 4 catches for 93 yards, including a 57-yard touchdown from Jared Goff in the third quarter. Next: Bears on Thanksgiving Day.",
+    "summary": "Sun · Ford Field · Detroit 8-2, six straight wins. Rundown: Jameson Williams had 4 catches for 93 yards, including a 57-yard touchdown from Jared Goff in the third quarter. Next: Bears on Thanksgiving Day.",
+    "rank": 11,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-14",
+    "title": "MICHIGAN 18, NO. 4 UCLA 16 (3OT)",
+    "recap": "We relived Michigan's triple-overtime upset of No. 4 UCLA.",
+    "article_url": "https://mgoblue.com/news/2026/11/21/football-michigan-stuns-no-4-ucla-in-triple-overtime-to-hand-bruins-first-loss",
+    "article_title": "Michigan 18, No. 4 Ucla 16 (3Ot)",
+    "jokes": [],
+    "body": "MICHIGAN 18, NO. 4 UCLA 16 (3OT)<br>Sat · Michigan Stadium · Michigan 6-5 and bowl-eligible; UCLA's first loss.<br>Rundown: won it in triple overtime on Bryce Underwood's two-point pass to Jalen Hoffman. Ohio State is next Saturday.",
+    "description": "Sat · Michigan Stadium · Michigan 6-5 and bowl-eligible; UCLA's first loss. Rundown: won it in triple overtime on Bryce Underwood's two-point pass to Jalen Hoffman. Ohio State is next Saturday.",
+    "summary": "Sat · Michigan Stadium · Michigan 6-5 and bowl-eligible; UCLA's first loss. Rundown: won it in triple overtime on Bryce Underwood's two-point pass to Jalen Hoffman. Ohio State is next Saturday.",
+    "rank": 12,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-15",
+    "title": "MSU: OREGON 45, MICHIGAN STATE 7",
+    "recap": "We noted MSU's 45-7 senior-night loss to Oregon.",
+    "article_url": "https://msuspartans.com/news/2026/11/21/football-spartans-fall-to-no-13-oregon-on-senior-day",
+    "article_title": "Msu: Oregon 45, Michigan State 7",
+    "jokes": [],
+    "body": "MSU: OREGON 45, MICHIGAN STATE 7<br>Fri · Spartan Stadium, senior night · MSU 3-8.",
+    "description": "Fri · Spartan Stadium, senior night · MSU 3-8.",
+    "summary": "Fri · Spartan Stadium, senior night · MSU 3-8.",
+    "rank": 13,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-buzz-16",
+    "title": "DETROIT QUICK HITS",
+    "recap": "We ran Detroit quick hits: a close Pistons loss, a Red Wings loss, and split college hoops results.",
+    "article_url": "https://apnews.com/article/pistons-raptors-score-46bb64352c17867eff62842f5b485129",
+    "article_title": "Detroit Quick Hits",
+    "jokes": [],
+    "body": "DETROIT QUICK HITS<br>Pistons lost 105-102 to Toronto Saturday (NBA Cup), now 10-5.<br>Red Wings lost 3-2 to the Islanders.<br>College hoops: Villanova 79, Michigan 73; Michigan State 91, Detroit Mercy 70.",
+    "description": "Pistons lost 105-102 to Toronto Saturday (NBA Cup), now 10-5. Red Wings lost 3-2 to the Islanders. College hoops: Villanova 79, Michigan 73; Michigan State 91, Detroit Mercy 70.",
+    "summary": "Pistons lost 105-102 to Toronto Saturday (NBA Cup), now 10-5. Red Wings lost 3-2 to the Islanders. College hoops: Villanova 79, Michigan 73; Michigan State 91, Detroit Mercy 70.",
+    "rank": 14,
+    "verify": "Confirmed"
+   }
+  ],
+  "article_url": "https://upnorthlive.com/sports/hometown-highlights/kingsleys-season-comes-to-a-close-in-d6-state-semifinal-loss-to-almont",
+  "article_title": "Kingsley's season comes to a close in D6 state semifinal loss to Almont (UpNorthLive, Nov 21)",
+  "jokes": [
+   "Twelve and one. Most of us can't go twelve and one with a New Year's resolution.",
+   "Almont waited three years for that rematch. That's not a grudge, that's a long-term savings plan."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-23-bench-01",
+    "title": "LEELANAU TEEN'S BEADWORK IS IN A NATIONAL MUSEUM SHOW",
+    "body": "LEELANAU TEEN'S BEADWORK IS IN A NATIONAL MUSEUM SHOW<br>• Aydrian Day, a 16-year-old from the Grand Traverse Band of Ottawa and Chippewa Indians who goes to school in Leelanau County, beaded his first barrette for his mom at age three.<br>• Two of his pieces are now on exhibit in Best of Show: Making History at Santa Fe Indian Market at the Museum of Indian Arts and Culture, on display through March 2027.<br>• He's made moccasins, earrings, cradleboards and full regalia, and credits everything to his mom, who let him watch and try his own styles.<br>• His message: \"From old to young, it's never too late to learn.\"<br>➜ TAKE: Sixteen years old and already in a museum. At 16 my best work was a mixtape.<br>➜ BAIT: What's a skill a parent or grandparent passed down to you? Text 231-929-4487.<br>😂 JOKES: He started beading at three. At three I was still trying to beat the cereal box maze. / Thousands of tiny beads, all in the right place. I can't even keep my socks matched.",
+    "recap": "We spotlighted Leelanau teen Aydrian Day, whose beadwork is on display in a national museum show.",
+    "notes": "https://www.northernexpress.com/news/feature/beading-his-own-legacy-aydrian-day/ Northern Express (Rachel Soulliere), Nov 21; also on The Ticker Nov 23.",
+    "article_url": "https://www.northernexpress.com/news/feature/beading-his-own-legacy-aydrian-day/",
+    "article_title": "Beading His Own Legacy (Northern Express, Nov 21)",
+    "jokes": [
+     "He started beading at three. At three I was still trying to beat the cereal box maze.",
+     "Thousands of tiny beads, all in the right place. I can't even keep my socks matched."
+    ],
+    "description": "We spotlighted Leelanau teen Aydrian Day, whose beadwork is on display in a national museum show.",
+    "summary": "We spotlighted Leelanau teen Aydrian Day, whose beadwork is on display in a national museum show."
+   },
+   {
+    "id": "2026-11-23-bench-02",
+    "title": "ALPENLIGHTS IS OPEN IN GAYLORD (AND MAYBE TC NEXT YEAR)",
+    "body": "ALPENLIGHTS IS OPEN IN GAYLORD (AND MAYBE TC NEXT YEAR)<br>• Alpenlights, the drive-through light show at the Otsego County Fairgrounds in Gaylord, is open for the season with more than 50 props synced to music.<br>• It's priced per car: $15 Sunday, $20 Wednesday and Thursday, $25 Friday and Saturday. Wednesdays have wagon rides.<br>• The news peg: owner Ron Pierson told UpNorthLive he hopes to have two locations next year, one in Gaylord and one in Traverse City.<br>➜ TAKE: A light show you can watch in your pajamas with the heat on? That's Up North luxury.<br>➜ BAIT: Who in your neighborhood goes biggest on Christmas lights? Text 231-929-4487.<br>😂 JOKES: Fifty props synced to music. My house has one inflatable snowman that falls over at 3 AM. / Priced per car. Time to see how many cousins fit in a minivan.",
+    "recap": "We plugged Alpenlights in Gaylord and the owner's hope to add a Traverse City location next year.",
+    "notes": "https://upnorthlive.com/news/local/see-holiday-light-displays-at-alpenlights-gaylord-holiday-otsego-county UpNorthLive (Katrina Bailey), Sat Nov 21. Closed Mon/Tue per Gaylord tourism listings.",
+    "article_url": "https://upnorthlive.com/news/local/see-holiday-light-displays-at-alpenlights-gaylord-holiday-otsego-county",
+    "article_title": "See holiday light displays at Alpenlights (UpNorthLive, Nov 21)",
+    "jokes": [
+     "Fifty props synced to music. My house has one inflatable snowman that falls over at 3 AM.",
+     "Priced per car. Time to see how many cousins fit in a minivan."
+    ],
+    "description": "We plugged Alpenlights in Gaylord and the owner's hope to add a Traverse City location next year.",
+    "summary": "We plugged Alpenlights in Gaylord and the owner's hope to add a Traverse City location next year."
+   },
+   {
+    "id": "2026-11-23-bench-03",
+    "title": "BAY REPS HOCKEY STARTS 4-0",
+    "body": "BAY REPS HOCKEY STARTS 4-0<br>• The Bay Reps boys hockey team is 4-0 after a 6-1 win over Saginaw Heritage.<br>• Nolan Ziecina had his first career hat trick. Joel Ziecina, Colton Davidson and Jake Ingersoll also scored, and Rowan Blain had two assists.<br>➜ TAKE: Football's over, so the Reps are making sure we have something to cheer for. Hat trick on a weekend? Somebody buy that kid a hat.<br>➜ BAIT: Hockey parents, how early does your alarm go off for practice? Text 231-929-4487.<br>😂 JOKES: A hat trick means fans throw hats on the ice. In November up here, that's half your wardrobe. / Two Ziecinas scored. That's not a lineup, that's a family reunion with sticks.",
+    "recap": "We noted the Bay Reps hockey team's 4-0 start, with a Nolan Ziecina hat trick in a 6-1 win.",
+    "notes": "https://www.record-eagle.com/sports/local_sports/prep-roundup-reps-continue-hot-start/article_3faa9c0b-65d3-4b90-9459-4b81854bf6e3.html Record-Eagle, Brian Freiberger, Nov 22.",
+    "article_url": "https://www.record-eagle.com/sports/local_sports/prep-roundup-reps-continue-hot-start/article_3faa9c0b-65d3-4b90-9459-4b81854bf6e3.html",
+    "article_title": "Prep roundup: Reps continue hot start (Record-Eagle, Nov 22)",
+    "jokes": [
+     "A hat trick means fans throw hats on the ice. In November up here, that's half your wardrobe.",
+     "Two Ziecinas scored. That's not a lineup, that's a family reunion with sticks."
+    ],
+    "description": "We noted the Bay Reps hockey team's 4-0 start, with a Nolan Ziecina hat trick in a 6-1 win.",
+    "summary": "We noted the Bay Reps hockey team's 4-0 start, with a Nolan Ziecina hat trick in a 6-1 win."
+   },
+   {
+    "id": "2026-11-23-bench-04",
+    "title": "AIRPORT CEO GETS A 30% BONUS AHEAD OF THE BUSY WEEK",
+    "body": "AIRPORT CEO GETS A 30% BONUS AHEAD OF THE BUSY WEEK<br>• The Northwest Regional Airport Authority board approved 2027 raises and 2026 bonuses for Cherry Capital Airport staff.<br>• CEO Kevin Klein got a 30 percent performance bonus, about $96,720 on his $322,400 salary, after scoring 95 out of 100 on his evaluation for the second year in a row.<br>• The board credited him with what's expected to be a third straight year of record travel at TVC while running the $120 million terminal expansion.<br>➜ TAKE: Record travel three years running, right as the busiest travel week of the year starts. Good timing on that review.<br>➜ BAIT: Flying or driving for Thanksgiving? Text 231-929-4487.<br>😂 JOKES: A 95 out of 100 on his review. I got a 95 once. It was my cholesterol. / A 30 percent bonus. I got a 30 percent off coupon for a turkey.",
+    "recap": "We noted the TVC board approved airport raises and a 30 percent bonus for CEO Kevin Klein.",
+    "notes": "https://www.traverseticker.com/news/tvc-board-approves-raises-bonuses/ The Ticker, Bill O'Brien, Nov 20. Money-about-a-named-official story: keep it light, no shaming.",
+    "article_url": "https://www.traverseticker.com/news/tvc-board-approves-raises-bonuses/",
+    "article_title": "TVC Board Approves Raises, Bonuses (The Ticker, Nov 20)",
+    "jokes": [
+     "A 95 out of 100 on his review. I got a 95 once. It was my cholesterol.",
+     "A 30 percent bonus. I got a 30 percent off coupon for a turkey."
+    ],
+    "description": "We noted the TVC board approved airport raises and a 30 percent bonus for CEO Kevin Klein.",
+    "summary": "We noted the TVC board approved airport raises and a 30 percent bonus for CEO Kevin Klein."
+   }
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "f3369aa9e776",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: THE BIGGEST LAUNCH EVER<br>• CONFIRMED (Take-Two, Nov 20): GTA 6 did $3.79 billion in day-one retail sales, which Take-Two calls a record for entertainment in any medium.<br>• CONFIRMED: 32.5 million units sold before launch, a pre-order record, and a 99 on Metacritic.<br>• STATUS: out now on PlayStation 5 and Xbox Series X|S. No PC version or GTA Online date has been announced.<br>• OFFICE ANGLE: HR platform BambooHR saw time-off requests for launch day, Nov 19, running about 13 percent higher than a normal year (see Office & School).<br>➜ TAKE: $3.79 billion in one day. That's not a video game launch, that's a small country's GDP with a wanted level.<br>➜ BAIT: Gamers, honest review after a long weekend: worth the wait? Text 231-929-4487.<br>😂 JOKES: 32.5 million pre-orders. That's more people than will finish their Christmas shopping on time. / A 99 on Metacritic. The one point they took off was for everyone's sleep schedule.",
+  "notes": "GTA 6 WATCH: THE BIGGEST LAUNCH EVER: https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records Take-Two/Business Wire press release Nov 20 (figures are company estimates through end of day Nov 19). Platform list from the release (PlayStation Store, Microsoft Store, Rockstar Store); 'no PC/Online date' per weekend stash coverage, no announcement found. GTA 6 only, no GTA 5 comparisons.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-23-gta6-01",
+    "title": "GTA 6 WATCH: THE BIGGEST LAUNCH EVER",
+    "recap": "We ran GTA 6's record $3.79 billion day-one sales and 32.5 million pre-launch units.",
+    "article_url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+    "article_title": "Grand Theft Auto VI Shatters Entertainment Box Office Records with $3.79 Billion in Day One Retail Sales (Take-Two, Nov 20)",
+    "jokes": [
+     "32.5 million pre-orders. That's more people than will finish their Christmas shopping on time.",
+     "A 99 on Metacritic. The one point they took off was for everyone's sleep schedule."
+    ],
+    "body": "GTA 6 WATCH: THE BIGGEST LAUNCH EVER<br>• CONFIRMED (Take-Two, Nov 20): GTA 6 did $3.79 billion in day-one retail sales, which Take-Two calls a record for entertainment in any medium.<br>• CONFIRMED: 32.5 million units sold before launch, a pre-order record, and a 99 on Metacritic.<br>• STATUS: out now on PlayStation 5 and Xbox Series X|S. No PC version or GTA Online date has been announced.<br>• OFFICE ANGLE: HR platform BambooHR saw time-off requests for launch day, Nov 19, running about 13 percent higher than a normal year (see Office & School).<br>➜ TAKE: $3.79 billion in one day. That's not a video game launch, that's a small country's GDP with a wanted level.<br>➜ BAIT: Gamers, honest review after a long weekend: worth the wait? Text 231-929-4487.<br>😂 JOKES: 32.5 million pre-orders. That's more people than will finish their Christmas shopping on time. / A 99 on Metacritic. The one point they took off was for everyone's sleep schedule.",
+    "description": "CONFIRMED (Take-Two, Nov 20): GTA 6 did $3.79 billion in day-one retail sales, which Take-Two calls a record for entertainment in any medium. 32.5 million units sold before launch, a pre-order record, and a 99 on Metacritic. out now on PlayStation 5 and Xbox Series X|S. No PC version or GTA Online date has been announced. HR platform BambooHR saw time-off requests for launch day, Nov 19, running about 13 percent higher than a normal year (see Office & School).",
+    "summary": "CONFIRMED (Take-Two, Nov 20): GTA 6 did $3.79 billion in day-one retail sales, which Take-Two calls a record for entertainment in any medium. 32.5 million units sold before launch, a pre-order record, and a 99 on Metacritic. out now on PlayStation 5 and Xbox Series X|S. No PC version or GTA Online date has been announced. HR platform BambooHR saw time-off requests for launch day, Nov 19, running about 13 percent higher than a normal year (see Office & School).",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+  "article_title": "Grand Theft Auto VI Shatters Entertainment Box Office Records with $3.79 Billion in Day One Retail Sales (Take-Two, Nov 20)",
+  "jokes": [
+   "32.5 million pre-orders. That's more people than will finish their Christmas shopping on time.",
+   "A 99 on Metacritic. The one point they took off was for everyone's sleep schedule."
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "3d7abc9e1348",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "THANKSGIVING DINNER FOR 10: $58.63<br>• The American Farm Bureau's annual survey puts a classic Thanksgiving dinner for 10 at $58.63 this year, about $5.86 per person, up about 6 percent from last year.<br>• Turkey is the big driver, up about 10 percent, because flocks are still recovering from disease.<br>• Good news for pie people: pie crust and whipped cream are cheaper, and celery and carrots are down too. The Farm Bureau's tip: watch the store ads, because grocers want your Thanksgiving business.<br>➜ LOCAL ANGLE: Up North, a lot of us are hosting this week, and with turkey up 10 percent, the store flyers in your mailbox are worth a look before you shop.<br>➜ TAKE: Six bucks a person. Cheaper than a fancy coffee, and that coffee doesn't come with leftovers.<br>➜ BAIT: What's the one Thanksgiving dish you'd pay double for? Text 231-929-4487.<br>😂 JOKES: Turkey went up 10 percent. The turkey would like you to know it's not thrilled about the price either. / Pie crust and whipped cream got cheaper. Finally, the economy is listening to me.<br><br>81.5 MILLION HIT THE ROAD FOR THANKSGIVING<br>• AAA projects 81.5 million Americans will travel at least 50 miles for Thanksgiving, Tuesday through next Monday, just under last year's record.<br>• That ends a three-year streak of record Thanksgiving travel. AAA says higher travel costs are part of it, including record gas prices in August, September and October.<br>• Almost 90 percent of travelers will drive, and AAA says check tires, batteries and fluids before you go.<br>➜ LOCAL ANGLE: Up North, with snow showers in the mix this week, checking tires and wipers before Grandma's house isn't optional.<br>➜ TAKE: 81.5 million people traveling and every single one of them will be in front of you at the gas station on Wednesday.<br>➜ BAIT: Are you hosting or traveling this year? Text 231-929-4487.<br>😂 JOKES: Ending a three-year record streak. Thanksgiving travel finally took a year off. Lucky. / Ninety percent driving. That's a lot of 'are we there yet' per mile.",
+  "notes": "THANKSGIVING DINNER FOR 10: $58.63: https://www.fb.org/newsline/farm-bureau-survey-shows-thanksgiving-cost-higher-in-2026 AFBF Newsline (Faith Parum interview). Also fb.org/intel 'Thanksgiving Dinner Cost Ticks Upward in 2026'.<br>81.5 MILLION HIT THE ROAD FOR THANKSGIVING: https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/ AAA Newsroom Nov 16.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-23-lifestyle-01",
+    "title": "THANKSGIVING DINNER FOR 10: $58.63",
+    "recap": "We ran the Farm Bureau's $58.63 Thanksgiving dinner for 10, with turkey up about 10 percent.",
+    "article_url": "https://www.fb.org/newsline/farm-bureau-survey-shows-thanksgiving-cost-higher-in-2026",
+    "article_title": "Farm Bureau Survey Shows Thanksgiving Cost Higher in 2026 (American Farm Bureau Federation)",
+    "jokes": [
+     "Turkey went up 10 percent. The turkey would like you to know it's not thrilled about the price either.",
+     "Pie crust and whipped cream got cheaper. Finally, the economy is listening to me."
+    ],
+    "body": "THANKSGIVING DINNER FOR 10: $58.63<br>• The American Farm Bureau's annual survey puts a classic Thanksgiving dinner for 10 at $58.63 this year, about $5.86 per person, up about 6 percent from last year.<br>• Turkey is the big driver, up about 10 percent, because flocks are still recovering from disease.<br>• Good news for pie people: pie crust and whipped cream are cheaper, and celery and carrots are down too. The Farm Bureau's tip: watch the store ads, because grocers want your Thanksgiving business.<br>➜ LOCAL ANGLE: Up North, a lot of us are hosting this week, and with turkey up 10 percent, the store flyers in your mailbox are worth a look before you shop.<br>➜ TAKE: Six bucks a person. Cheaper than a fancy coffee, and that coffee doesn't come with leftovers.<br>➜ BAIT: What's the one Thanksgiving dish you'd pay double for? Text 231-929-4487.<br>😂 JOKES: Turkey went up 10 percent. The turkey would like you to know it's not thrilled about the price either. / Pie crust and whipped cream got cheaper. Finally, the economy is listening to me.",
+    "description": "The American Farm Bureau's annual survey puts a classic Thanksgiving dinner for 10 at $58.63 this year, about $5.86 per person, up about 6 percent from last year. Turkey is the big driver, up about 10 percent, because flocks are still recovering from disease. Good news for pie people: pie crust and whipped cream are cheaper, and celery and carrots are down too. The Farm Bureau's tip: watch the store ads, because grocers want your Thanksgiving business.",
+    "summary": "The American Farm Bureau's annual survey puts a classic Thanksgiving dinner for 10 at $58.63 this year, about $5.86 per person, up about 6 percent from last year. Turkey is the big driver, up about 10 percent, because flocks are still recovering from disease. Good news for pie people: pie crust and whipped cream are cheaper, and celery and carrots are down too. The Farm Bureau's tip: watch the store ads, because grocers want your Thanksgiving business.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-lifestyle-02",
+    "title": "81.5 MILLION HIT THE ROAD FOR THANKSGIVING",
+    "recap": "We ran AAA's forecast of 81.5 million Thanksgiving travelers, just under last year's record.",
+    "article_url": "https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/",
+    "article_title": "Thanksgiving Travel Expected to Dip Slightly Compared to Last Year (AAA Newsroom, Nov 16)",
+    "jokes": [
+     "Ending a three-year record streak. Thanksgiving travel finally took a year off. Lucky.",
+     "Ninety percent driving. That's a lot of 'are we there yet' per mile."
+    ],
+    "body": "81.5 MILLION HIT THE ROAD FOR THANKSGIVING<br>• AAA projects 81.5 million Americans will travel at least 50 miles for Thanksgiving, Tuesday through next Monday, just under last year's record.<br>• That ends a three-year streak of record Thanksgiving travel. AAA says higher travel costs are part of it, including record gas prices in August, September and October.<br>• Almost 90 percent of travelers will drive, and AAA says check tires, batteries and fluids before you go.<br>➜ LOCAL ANGLE: Up North, with snow showers in the mix this week, checking tires and wipers before Grandma's house isn't optional.<br>➜ TAKE: 81.5 million people traveling and every single one of them will be in front of you at the gas station on Wednesday.<br>➜ BAIT: Are you hosting or traveling this year? Text 231-929-4487.<br>😂 JOKES: Ending a three-year record streak. Thanksgiving travel finally took a year off. Lucky. / Ninety percent driving. That's a lot of 'are we there yet' per mile.",
+    "description": "AAA projects 81.5 million Americans will travel at least 50 miles for Thanksgiving, Tuesday through next Monday, just under last year's record. That ends a three-year streak of record Thanksgiving travel. AAA says higher travel costs are part of it, including record gas prices in August, September and October. Almost 90 percent of travelers will drive, and AAA says check tires, batteries and fluids before you go.",
+    "summary": "AAA projects 81.5 million Americans will travel at least 50 miles for Thanksgiving, Tuesday through next Monday, just under last year's record. That ends a three-year streak of record Thanksgiving travel. AAA says higher travel costs are part of it, including record gas prices in August, September and October. Almost 90 percent of travelers will drive, and AAA says check tires, batteries and fluids before you go.",
+    "rank": 2,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.fb.org/newsline/farm-bureau-survey-shows-thanksgiving-cost-higher-in-2026",
+  "article_title": "Farm Bureau Survey Shows Thanksgiving Cost Higher in 2026 (American Farm Bureau Federation)",
+  "jokes": [
+   "Turkey went up 10 percent. The turkey would like you to know it's not thrilled about the price either.",
+   "Pie crust and whipped cream got cheaper. Finally, the economy is listening to me."
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "45557e12c37e",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "OFFICE: FEWER OF US GET THANKSGIVING OFF<br>• A new YouGov poll says 58 percent of working Americans get Thanksgiving Day off, down from 68 percent last year.<br>• And 19 percent say they'll work a full day or limited hours on Thanksgiving, up from 14 percent.<br>➜ TAKE: If you're working Thursday, you're the real hero. And you get first pick of the leftovers. That's the law.<br>➜ BAIT: Who's working Thanksgiving? Text 231-929-4487 and tell us where.<br>😂 JOKES: Working Thanksgiving means you skip the political debate at the table. Some people call that a perk. / Your boss scheduled you Thursday? Bring him a plate. A small one.<br><br>OFFICE: THE GTA 6 SICK DAY WAS REAL<br>• HR platform BambooHR looked at time-off data for more than 3.4 million U.S. workers: requests for GTA 6 launch day, Nov. 19, ran about 13 percent higher than a normal year, and the bump carried into Friday.<br>• In the same research, 18 percent of salaried workers said they planned to take launch day off, including 32 percent of Gen Z.<br>➜ TAKE: If your coworker 'had a cold' last Thursday and showed up Monday with no sleep and a big smile, you know.<br>➜ BAIT: Did anybody at your work mysteriously take Thursday off? Text 231-929-4487.<br>😂 JOKES: One in three Gen Z workers planned to take the day off. The other two just played it at their desks. / Calling in sick for a video game. In my day we called in sick for Opening Day like normal people.<br><br>SCHOOL: PARENTS WANT AI TAUGHT, WITH GUARDRAILS<br>• A National Parents Union survey found 77 percent of parents want K-12 schools to teach kids how to use AI tools well, and 85 percent want AI safety taught.<br>• Only 46 percent think their state is handling technology in schools well enough. Parents say they want measured rules, not total bans, plus more teacher training.<br>➜ TAKE: We used to get in trouble for using a calculator. Now kids are getting graded on how they use a robot.<br>➜ BAIT: Parents, is your kid using AI for homework, and do you check? Text 231-929-4487.<br>😂 JOKES: My kid asked AI to do his homework. AI asked for an extension. / Teaching AI safety in school. Step one: do not let it write your excuse note.<br><br>SCHOOL: CENTRAL GRADE'S BLACK FRIDAY AUCTION<br>• Central Grade School's PTO online auction opens at 8 AM on Black Friday, Nov. 27, and runs until 8:30 PM Dec. 5.<br>• An adults-only party follows from 7 to 9:30 PM Dec. 5 at Right Brain Brewery.<br>➜ TAKE: Black Friday shopping that actually helps your kid's school? Finally, a doorbuster I can feel good about.<br>➜ BAIT: What's the best thing you ever won at a school auction? Text 231-929-4487.<br>😂 JOKES: A bidding war for a good cause. Just don't get outbid by the gym teacher. They're competitive. / Adults-only party at a brewery for the PTO. That's the most honest name for a parent meeting I've ever heard.",
+  "notes": "OFFICE: FEWER OF US GET THANKSGIVING OFF: https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving YouGov, Taylor Orth, Nov 19.<br>OFFICE: THE GTA 6 SICK DAY WAS REAL: https://www.hubstar.com/blog/gta-6-day/ Hubstar blog (Nov 11) citing BambooHR leave data; these were requests, not confirmed absences.<br>SCHOOL: PARENTS WANT AI TAUGHT, WITH GUARDRAILS: https://www.edsurge.com/news/survey-most-parents-want-students-to-use-ai-in-school-with-strong-safeguards EdSurge (April Rubin), Nov 3, on the National Parents Union September survey of 1,528 parents.<br>SCHOOL: CENTRAL GRADE'S BLACK FRIDAY AUCTION: https://www.record-eagle.com/news/local_news/community-in-brief-11-21-2026/article_fab2161c-5c29-46f0-8faf-9301d9b19f3a.html Record-Eagle Community in Brief 11/21 via Daily Traverse City Nov 22 edition.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-23-officeschool-01",
+    "title": "OFFICE: FEWER OF US GET THANKSGIVING OFF",
+    "recap": "We noted only 58 percent of workers get Thanksgiving off this year, and saluted those working.",
+    "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+    "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+    "jokes": [
+     "Working Thanksgiving means you skip the political debate at the table. Some people call that a perk.",
+     "Your boss scheduled you Thursday? Bring him a plate. A small one."
+    ],
+    "body": "OFFICE: FEWER OF US GET THANKSGIVING OFF<br>• A new YouGov poll says 58 percent of working Americans get Thanksgiving Day off, down from 68 percent last year.<br>• And 19 percent say they'll work a full day or limited hours on Thanksgiving, up from 14 percent.<br>➜ TAKE: If you're working Thursday, you're the real hero. And you get first pick of the leftovers. That's the law.<br>➜ BAIT: Who's working Thanksgiving? Text 231-929-4487 and tell us where.<br>😂 JOKES: Working Thanksgiving means you skip the political debate at the table. Some people call that a perk. / Your boss scheduled you Thursday? Bring him a plate. A small one.",
+    "description": "A new YouGov poll says 58 percent of working Americans get Thanksgiving Day off, down from 68 percent last year. And 19 percent say they'll work a full day or limited hours on Thanksgiving, up from 14 percent.",
+    "summary": "A new YouGov poll says 58 percent of working Americans get Thanksgiving Day off, down from 68 percent last year. And 19 percent say they'll work a full day or limited hours on Thanksgiving, up from 14 percent.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-officeschool-02",
+    "title": "OFFICE: THE GTA 6 SICK DAY WAS REAL",
+    "recap": "We joked about the GTA 6 sick day: time-off requests ran about 13 percent higher on launch day.",
+    "article_url": "https://www.hubstar.com/blog/gta-6-day/",
+    "article_title": "GTA 6 Day: Lessons in Planning Office Attendance Around Predictable Dips (Hubstar)",
+    "jokes": [
+     "One in three Gen Z workers planned to take the day off. The other two just played it at their desks.",
+     "Calling in sick for a video game. In my day we called in sick for Opening Day like normal people."
+    ],
+    "body": "OFFICE: THE GTA 6 SICK DAY WAS REAL<br>• HR platform BambooHR looked at time-off data for more than 3.4 million U.S. workers: requests for GTA 6 launch day, Nov. 19, ran about 13 percent higher than a normal year, and the bump carried into Friday.<br>• In the same research, 18 percent of salaried workers said they planned to take launch day off, including 32 percent of Gen Z.<br>➜ TAKE: If your coworker 'had a cold' last Thursday and showed up Monday with no sleep and a big smile, you know.<br>➜ BAIT: Did anybody at your work mysteriously take Thursday off? Text 231-929-4487.<br>😂 JOKES: One in three Gen Z workers planned to take the day off. The other two just played it at their desks. / Calling in sick for a video game. In my day we called in sick for Opening Day like normal people.",
+    "description": "HR platform BambooHR looked at time-off data for more than 3.4 million U.S. workers: requests for GTA 6 launch day, Nov. 19, ran about 13 percent higher than a normal year, and the bump carried into Friday. In the same research, 18 percent of salaried workers said they planned to take launch day off, including 32 percent of Gen Z.",
+    "summary": "HR platform BambooHR looked at time-off data for more than 3.4 million U.S. workers: requests for GTA 6 launch day, Nov. 19, ran about 13 percent higher than a normal year, and the bump carried into Friday. In the same research, 18 percent of salaried workers said they planned to take launch day off, including 32 percent of Gen Z.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-officeschool-03",
+    "title": "SCHOOL: PARENTS WANT AI TAUGHT, WITH GUARDRAILS",
+    "recap": "We talked about parents wanting AI taught in schools, with guardrails.",
+    "article_url": "https://www.edsurge.com/news/survey-most-parents-want-students-to-use-ai-in-school-with-strong-safeguards",
+    "article_title": "Survey: Most Parents Want Students to Use AI in School, With Strong Safeguards (EdSurge, Nov 3)",
+    "jokes": [
+     "My kid asked AI to do his homework. AI asked for an extension.",
+     "Teaching AI safety in school. Step one: do not let it write your excuse note."
+    ],
+    "body": "SCHOOL: PARENTS WANT AI TAUGHT, WITH GUARDRAILS<br>• A National Parents Union survey found 77 percent of parents want K-12 schools to teach kids how to use AI tools well, and 85 percent want AI safety taught.<br>• Only 46 percent think their state is handling technology in schools well enough. Parents say they want measured rules, not total bans, plus more teacher training.<br>➜ TAKE: We used to get in trouble for using a calculator. Now kids are getting graded on how they use a robot.<br>➜ BAIT: Parents, is your kid using AI for homework, and do you check? Text 231-929-4487.<br>😂 JOKES: My kid asked AI to do his homework. AI asked for an extension. / Teaching AI safety in school. Step one: do not let it write your excuse note.",
+    "description": "A National Parents Union survey found 77 percent of parents want K-12 schools to teach kids how to use AI tools well, and 85 percent want AI safety taught. Only 46 percent think their state is handling technology in schools well enough. Parents say they want measured rules, not total bans, plus more teacher training.",
+    "summary": "A National Parents Union survey found 77 percent of parents want K-12 schools to teach kids how to use AI tools well, and 85 percent want AI safety taught. Only 46 percent think their state is handling technology in schools well enough. Parents say they want measured rules, not total bans, plus more teacher training.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-officeschool-04",
+    "title": "SCHOOL: CENTRAL GRADE'S BLACK FRIDAY AUCTION",
+    "recap": "We plugged Central Grade PTO's online auction, opening Black Friday at 8 AM.",
+    "article_url": "https://www.record-eagle.com/news/local_news/community-in-brief-11-21-2026/article_fab2161c-5c29-46f0-8faf-9301d9b19f3a.html",
+    "article_title": "Community in Brief: 11/21/2026 (Record-Eagle)",
+    "jokes": [
+     "A bidding war for a good cause. Just don't get outbid by the gym teacher. They're competitive.",
+     "Adults-only party at a brewery for the PTO. That's the most honest name for a parent meeting I've ever heard."
+    ],
+    "body": "SCHOOL: CENTRAL GRADE'S BLACK FRIDAY AUCTION<br>• Central Grade School's PTO online auction opens at 8 AM on Black Friday, Nov. 27, and runs until 8:30 PM Dec. 5.<br>• An adults-only party follows from 7 to 9:30 PM Dec. 5 at Right Brain Brewery.<br>➜ TAKE: Black Friday shopping that actually helps your kid's school? Finally, a doorbuster I can feel good about.<br>➜ BAIT: What's the best thing you ever won at a school auction? Text 231-929-4487.<br>😂 JOKES: A bidding war for a good cause. Just don't get outbid by the gym teacher. They're competitive. / Adults-only party at a brewery for the PTO. That's the most honest name for a parent meeting I've ever heard.",
+    "description": "Central Grade School's PTO online auction opens at 8 AM on Black Friday, Nov. 27, and runs until 8:30 PM Dec. 5. An adults-only party follows from 7 to 9:30 PM Dec. 5 at Right Brain Brewery.",
+    "summary": "Central Grade School's PTO online auction opens at 8 AM on Black Friday, Nov. 27, and runs until 8:30 PM Dec. 5. An adults-only party follows from 7 to 9:30 PM Dec. 5 at Right Brain Brewery.",
+    "rank": 4,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+  "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+  "jokes": [
+   "Working Thanksgiving means you skip the political debate at the table. Some people call that a perk.",
+   "Your boss scheduled you Thursday? Bring him a plate. A small one."
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "51b6776e840b",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2ea0d62e0f6e",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "MAKE ONE IF-THEN PLAN FOR THE SNOW<br><br>First real flakes are coming down today, and it's Thanksgiving week, so there's a lot riding on your brain right now: the roads, the groceries, who's bringing what, and whether the scraper is even in the car. When everything piles up like that, our heads try to hold it all at once, and that's exactly what makes us feel frazzled. So here's one small move that researchers have tested in a lot of studies. Pick one thing that's stressing you, and make an if-then plan for it. If it's snowing when I walk out tomorrow, then I leave ten minutes early. If the store's out of my brand of stuffing, then I grab the store brand and move on. Say it out loud once, right now, while you're sitting at this light. A big review of 94 studies found that people who set plans like that, a when and a then, actually followed through on their goals a lot more often than people who just meant to. You decide once, and then you don't have to decide again when you're cold and in a hurry. That's one less thing to carry this week. Text me your if-then at 231-929-4487, and I'll read a few. You've got this.",
+  "notes": "https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f<br>Gollwitzer & Sheeran 2006, Advances in Experimental Social Psychology 38: 94 independent tests, 8,461 participants, d = .65 (via KOPS record and search summary). Move fits today's weather (indoor, in the car).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-23-mental-01",
+    "title": "MAKE ONE IF-THEN PLAN FOR THE SNOW",
+    "recap": "Our Mental Health Minute was one if-then plan for the snow and the Thanksgiving-week to-do list.",
+    "article_url": "https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f",
+    "article_title": "Implementation intentions and goal achievement: a meta-analysis of effects and processes (Gollwitzer & Sheeran, 2006)",
+    "jokes": [],
+    "body": "MAKE ONE IF-THEN PLAN FOR THE SNOW<br>First real flakes are coming down today, and it's Thanksgiving week, so there's a lot riding on your brain right now: the roads, the groceries, who's bringing what, and whether the scraper is even in the car. When everything piles up like that, our heads try to hold it all at once, and that's exactly what makes us feel frazzled. So here's one small move that researchers have tested in a lot of studies. Pick one thing that's stressing you, and make an if-then plan for it. If it's snowing when I walk out tomorrow, then I leave ten minutes early. If the store's out of my brand of stuffing, then I grab the store brand and move on. Say it out loud once, right now, while you're sitting at this light. A big review of 94 studies found that people who set plans like that, a when and a then, actually followed through on their goals a lot more often than people who just meant to. You decide once, and then you don't have to decide again when you're cold and in a hurry. That's one less thing to carry this week. Text me your if-then at 231-929-4487, and I'll read a few. You've got this.",
+    "description": "First real flakes are coming down today, and it's Thanksgiving week, so there's a lot riding on your brain right now: the roads, the groceries, who's bringing what, and whether the scraper is even in the car. When everything piles up like that, our heads try to hold it all at once, and that's exactly what makes us feel frazzled. So here's one small move that researchers have tested in a lot of studies. Pick one thing that's stressing you, and make an if-then plan for it. If it's snowing when I walk out tomorrow, then I leave ten minutes early. If the store's out of my brand of stuffing, then I grab the store brand and move on. Say it out loud once, right now, while you're sitting at this light. A big review of 94 studies found that people who set plans like that, a when and a then, actually followed through on their goals a lot more often than people who just meant to. You decide once, and then you don't have to decide again when you're cold and in a hurry. That's one less thing to carry this week. Text me your if-then at 231-929-4487, and I'll read a few. You've got this.",
+    "summary": "First real flakes are coming down today, and it's Thanksgiving week, so there's a lot riding on your brain right now: the roads, the groceries, who's bringing what, and whether the scraper is even in the car. When everything piles up like that, our heads try to hold it all at once, and that's exactly what makes us feel frazzled. So here's one small move that researchers have tested in a lot of studies. Pick one thing that's stressing you, and make an if-then plan for it. If it's snowing when I walk out tomorrow, then I leave ten minutes early. If the store's out of my brand of stuffing, then I grab the store brand and move on. Say it out loud once, right now, while you're sitting at this light. A big review of 94 studies found that people who set plans like that, a when and a then, actually followed through on their goals a lot more often than people who just meant to. You decide once, and then you don't have to decide again when you're cold and in a hurry. That's one less thing to carry this week. Text me your if-then at 231-929-4487, and I'll read a few. You've got this.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f",
+  "article_title": "Implementation intentions and goal achievement: a meta-analysis of effects and processes (Gollwitzer & Sheeran, 2006)",
+  "jokes": [],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "92cc4c9015c0",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "content": "LINGER — THE CRANBERRIES<br>• Released as a single: Feb. 15, 1993 (second single from Everybody Else Is Doing It, So Why Can't We?; re-released Jan. 31, 1994; first heard on a 1990 Ireland-only demo)<br>• Chart peaks: US Billboard Hot 100: No. 8; Ireland: No. 3; UK Singles Chart: No. 14 (Official Charts); Canada Top Singles (RPM): No. 4; The band's first major hit<br>🎤 SONG STORY: Dolores O'Riordan wrote the lyrics when she auditioned to be the band's singer, turning Noel Hogan's music into a song of regret about a 17-year-old soldier she'd fallen for; she later said it was about her first serious kiss. An early version came out in 1990 on a demo tape when the band was still called The Cranberry Saw Us.<br>😂 JOKES: It's National Eat a Cranberry Day, and this is the only cranberry I'll have before Thursday. / Their first name was The Cranberry Saw Us. Somebody saw a can of sauce at Thanksgiving and said, that's a band.",
+  "notes": "Backup pick (no flashback-request file today), tied to National Eat a Cranberry Day. Peaks and song story: Wikipedia, Linger (The Cranberries song), citing band interviews and the '99 Love Life & Rock 'n' Roll documentary: https://en.wikipedia.org/wiki/Linger_(The_Cranberries_song) (Hot 100 No. 8, UK No. 14, Ireland No. 3, Canada RPM No. 4 per Wikipedia chart table citing Billboard/Official Charts/IRMA/RPM).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-23-flash-01",
+    "title": "LINGER — THE CRANBERRIES",
+    "recap": "We flashed back to The Cranberries' \"Linger,\" a 1993 single and Hot 100 No. 8, on National Eat a Cranberry Day.",
+    "article_url": "https://en.wikipedia.org/wiki/Linger_(The_Cranberries_song)",
+    "article_title": "Linger (The Cranberries song) (Wikipedia)",
+    "jokes": [
+     "It's National Eat a Cranberry Day, and this is the only cranberry I'll have before Thursday.",
+     "Their first name was The Cranberry Saw Us. Somebody saw a can of sauce at Thanksgiving and said, that's a band."
+    ],
+    "body": "LINGER — THE CRANBERRIES<br>• Released as a single: Feb. 15, 1993 (second single from Everybody Else Is Doing It, So Why Can't We?; re-released Jan. 31, 1994; first heard on a 1990 Ireland-only demo)<br>• Chart peaks: US Billboard Hot 100: No. 8; Ireland: No. 3; UK Singles Chart: No. 14 (Official Charts); Canada Top Singles (RPM): No. 4; The band's first major hit<br>🎤 SONG STORY: Dolores O'Riordan wrote the lyrics when she auditioned to be the band's singer, turning Noel Hogan's music into a song of regret about a 17-year-old soldier she'd fallen for; she later said it was about her first serious kiss. An early version came out in 1990 on a demo tape when the band was still called The Cranberry Saw Us.<br>😂 JOKES: It's National Eat a Cranberry Day, and this is the only cranberry I'll have before Thursday. / Their first name was The Cranberry Saw Us. Somebody saw a can of sauce at Thanksgiving and said, that's a band.",
+    "description": "We flashed back to The Cranberries' \"Linger,\" a 1993 single and Hot 100 No. 8, on National Eat a Cranberry Day.",
+    "summary": "We flashed back to The Cranberries' \"Linger,\" a 1993 single and Hot 100 No. 8, on National Eat a Cranberry Day.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Linger_(The_Cranberries_song)",
+  "article_title": "Linger (The Cranberries song) (Wikipedia)",
+  "jokes": [
+   "It's National Eat a Cranberry Day, and this is the only cranberry I'll have before Thursday.",
+   "Their first name was The Cranberry Saw Us. Somebody saw a can of sauce at Thanksgiving and said, that's a band."
+  ],
+  "requester": "",
+  "song": "Linger",
+  "artist": "The Cranberries",
+  "single_year": "1993",
+  "chart_records": [
+   "US Billboard Hot 100: No. 8",
+   "Ireland: No. 3",
+   "UK Singles Chart: No. 14 (Official Charts)",
+   "Canada Top Singles (RPM): No. 4",
+   "The band's first major hit"
+  ],
+  "origin": "Dolores O'Riordan wrote the lyrics when she auditioned to be the band's singer, turning Noel Hogan's music into a song of regret about a 17-year-old soldier she'd fallen for; she later said it was about her first serious kiss. An early version came out in 1990 on a demo tape when the band was still called The Cranberry Saw Us.",
+  "song_story": "Dolores O'Riordan wrote the lyrics when she auditioned to be the band's singer, turning Noel Hogan's music into a song of regret about a 17-year-old soldier she'd fallen for; she later said it was about her first serious kiss. An early version came out in 1990 on a demo tape when the band was still called The Cranberry Saw Us.",
+  "song_story_source": "Wikipedia, Linger (The Cranberries song), citing band interviews and the '99 Love Life & Rock 'n' Roll documentary: https://en.wikipedia.org/wiki/Linger_(The_Cranberries_song)",
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "a03aeab717da",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "CROSS TALK: BLACK FRIDAY, COUCH OR CROWDS?<br>• A new YouGov poll says 34 percent of Americans plan to shop online on Black Friday, up from 29 percent last year.<br>• Only 18 percent plan to shop in an actual store that day.<br>• Prompts: (1) Couch or crowds, which are you? (2) What's the best doorbuster you ever scored? (3) Is getting up at 4 AM for a sale a tradition or a cry for help?<br>➜ TAKE: I wake up at 4 AM every day for this job. I'm not doing it for a TV.<br>➜ BAIT: Couch or crowds on Black Friday? Call or text 231-929-4487.<br>😂 JOKES: Online shopping on Black Friday: the only time you can fight over a TV in your pajamas. / Eighteen percent still go to the store. Those are the same people who still bring a checkbook to the grocery store.",
+  "notes": "CROSS TALK: BLACK FRIDAY, COUCH OR CROWDS?: https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving YouGov Nov 19 (34% online vs 29% last year; 18% in-store).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-23-cross-01",
+    "title": "CROSS TALK: BLACK FRIDAY, COUCH OR CROWDS?",
+    "recap": "Courtney and AJ debated Black Friday: online from the couch or in the crowds.",
+    "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+    "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+    "jokes": [
+     "Online shopping on Black Friday: the only time you can fight over a TV in your pajamas.",
+     "Eighteen percent still go to the store. Those are the same people who still bring a checkbook to the grocery store."
+    ],
+    "body": "CROSS TALK: BLACK FRIDAY, COUCH OR CROWDS?<br>• A new YouGov poll says 34 percent of Americans plan to shop online on Black Friday, up from 29 percent last year.<br>• Only 18 percent plan to shop in an actual store that day.<br>• Prompts: (1) Couch or crowds, which are you? (2) What's the best doorbuster you ever scored? (3) Is getting up at 4 AM for a sale a tradition or a cry for help?<br>➜ TAKE: I wake up at 4 AM every day for this job. I'm not doing it for a TV.<br>➜ BAIT: Couch or crowds on Black Friday? Call or text 231-929-4487.<br>😂 JOKES: Online shopping on Black Friday: the only time you can fight over a TV in your pajamas. / Eighteen percent still go to the store. Those are the same people who still bring a checkbook to the grocery store.",
+    "description": "A new YouGov poll says 34 percent of Americans plan to shop online on Black Friday, up from 29 percent last year. Only 18 percent plan to shop in an actual store that day. Prompts: (1) Couch or crowds, which are you? (2) What's the best doorbuster you ever scored? (3) Is getting up at 4 AM for a sale a tradition or a cry for help?",
+    "summary": "A new YouGov poll says 34 percent of Americans plan to shop online on Black Friday, up from 29 percent last year. Only 18 percent plan to shop in an actual store that day. Prompts: (1) Couch or crowds, which are you? (2) What's the best doorbuster you ever scored? (3) Is getting up at 4 AM for a sale a tradition or a cry for help?",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+  "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+  "jokes": [
+   "Online shopping on Black Friday: the only time you can fight over a TV in your pajamas.",
+   "Eighteen percent still go to the store. Those are the same people who still bring a checkbook to the grocery store."
+  ],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "63ca52aae69e",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "Fridays only",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "d485e215e46a",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "DAN CAMPBELL ON GOFF: \"HE WAS REALLY OUR CATALYST\" · NEWS AUDIO<br>🎙️ SET UP: The Lions beat Tampa Bay 31-21 Sunday for their sixth straight win, and Jared Goff hit Jameson Williams for a 57-yard score. \"Here's Dan Campbell after the game on his quarterback.\"<br>🔈 AUDIO SOURCE: Detroit Lions official YouTube, Dan Campbell postgame press conference. On-air credit: \"courtesy of the Detroit Lions.\"<br>• Campbell on how much the offense loads on Goff each week and how he handles it.<br>🔊 IN: \"But he just played at such a high level, man.\" (0:00)<br>OUT: \"...he was really our catalyst today.\" (0:32)<br>~0:32 · PLAY or TALK-OVER · READY<br>➜ WHY: Real postgame voice going into a Thanksgiving Lions week.<br>⚠️ FLAG: Clean. Says 'man' a couple of times, nothing else.<br><br>ELLA LANGLEY AFTER SIX CMAS: \"I'M SICK OF ME\" · NEWS AUDIO<br>🎙️ SET UP: Ella Langley won six CMA Awards Wednesday, Entertainer of the Year included, and by the last trip to the stage she was over it. \"Here's Ella on GMA's CMA recap.\"<br>🔈 AUDIO SOURCE: ABC News / Good Morning America, \"Biggest moments from the CMA Awards.\" On-air credit: \"courtesy of ABC.\"<br>• A 3.5-second bite: \"At this point, I'm sick of me.\"<br>🔊 IN: \"At this point...\"<br>OUT: \"...I'm sick of me.\"<br>~0:04 · TALK-OVER (quick sting) · READY<br>➜ WHY: A big week for her, she's in every music story, and it's a perfect quick sting.<br>⚠️ FLAG: Clean. ABC network audio: quick bite with credit, or talk over it. Her full speech has a 'Thank you, Jesus' line, which is not in this cut.",
+  "notes": "DAN CAMPBELL ON GOFF: \"HE WAS REALLY OUR CATALYST\": https://www.youtube.com/watch?v=ChmWWzKJA94 ⚠️ FLAG: Clean. Says 'man' a couple of times, nothing else.<br>ELLA LANGLEY AFTER SIX CMAS: \"I'M SICK OF ME\": https://abcnews.com/video/138284899/ ⚠️ FLAG: Clean. ABC network audio: quick bite with credit, or talk over it. Her full speech has a 'Thank you, Jesus' line, which is not in this cut.<br>Lions TD call (NFL highlights) skipped: the call sits under crowd/music and couldn't be verified word-for-word.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-23-c05",
+    "slot": "NEWS AUDIO",
+    "title": "DAN CAMPBELL ON GOFF: \"HE WAS REALLY OUR CATALYST\"",
+    "body": "DAN CAMPBELL ON GOFF: \"HE WAS REALLY OUR CATALYST\" · NEWS AUDIO<br>🎙️ SET UP: The Lions beat Tampa Bay 31-21 Sunday for their sixth straight win, and Jared Goff hit Jameson Williams for a 57-yard score. \"Here's Dan Campbell after the game on his quarterback.\"<br>🔈 AUDIO SOURCE: Detroit Lions official YouTube, Dan Campbell postgame press conference. On-air credit: \"courtesy of the Detroit Lions.\"<br>• Campbell on how much the offense loads on Goff each week and how he handles it.<br>🔊 IN: \"But he just played at such a high level, man.\" (0:00)<br>OUT: \"...he was really our catalyst today.\" (0:32)<br>~0:32 · PLAY or TALK-OVER · READY<br>➜ WHY: Real postgame voice going into a Thanksgiving Lions week.<br>⚠️ FLAG: Clean. Says 'man' a couple of times, nothing else.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c05-campbell-goff-catalyst.mp3",
+    "ready": true,
+    "recap": "We heard Dan Campbell call Jared Goff the Lions' catalyst after the win over Tampa Bay.",
+    "duration": 32.4
+   },
+   {
+    "id": "2026-11-23-c06",
+    "slot": "NEWS AUDIO",
+    "title": "ELLA LANGLEY AFTER SIX CMAS: \"I'M SICK OF ME\"",
+    "body": "ELLA LANGLEY AFTER SIX CMAS: \"I'M SICK OF ME\" · NEWS AUDIO<br>🎙️ SET UP: Ella Langley won six CMA Awards Wednesday, Entertainer of the Year included, and by the last trip to the stage she was over it. \"Here's Ella on GMA's CMA recap.\"<br>🔈 AUDIO SOURCE: ABC News / Good Morning America, \"Biggest moments from the CMA Awards.\" On-air credit: \"courtesy of ABC.\"<br>• A 3.5-second bite: \"At this point, I'm sick of me.\"<br>🔊 IN: \"At this point...\"<br>OUT: \"...I'm sick of me.\"<br>~0:04 · TALK-OVER (quick sting) · READY<br>➜ WHY: A big week for her, she's in every music story, and it's a perfect quick sting.<br>⚠️ FLAG: Clean. ABC network audio: quick bite with credit, or talk over it. Her full speech has a 'Thank you, Jesus' line, which is not in this cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c06-ella-langley-sick-of-me.mp3",
+    "ready": true,
+    "recap": "We heard Ella Langley joke she was sick of herself after winning six CMA Awards.",
+    "duration": 3.5
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "10 of 10 clips today (2 news audio, 6 trending/comedy, 2 buffer) + supercut · all new audio, 0 repeats<br><br>SHOW OPENER SUPERCUT: THANKSGIVING WEEK KICKOFF · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Montage of Thanksgiving movie and TV bites, cut Sunday night. Music bed: \"King Street\" by The 126ers (YouTube Audio Library, royalty-free).<br>• A Charlie Brown Thanksgiving: \"But Charlie Brown, it's Thanksgiving.\"<br>• \"It'll be like a funny Thanksgiving story.\"<br>• \"It tastes like feet.\"<br>• \"It's just perfect.\"<br>• WKRP in Cincinnati, Les Nessman's turkey drop: \"The turkeys are hitting the ground like sacks of wet cement!\"<br>• \"Duck. I go quack quack.\"<br>• Planes, Trains and Automobiles: \"You're going the wrong way!\" (x3, the build)<br>• Peanuts launch line: \"...kick that football clear to the moon!\"<br>🔊 IN: \"But Charlie Brown, it's Thanksgiving.\" (0:00)<br>OUT: \"...kick that football clear to the moon!\" (0:23)<br>~0:23 · PLAY · READY<br>➜ WHY: Eleven quick Thanksgiving bites over a music bed, building on \"You're going the wrong way!\" into a launch line, right into \"Showtime.\"<br>⚠️ FLAG: Clean. Mild: the first-bite \"Thanksgiving\" join is tight, so hear it once. No God line (WKRP's closing line left out), no swears. Mastered -14 LUFS. Bites without a named show were not identified in the Sunday cut notes; they're listed as heard.<br><br>SNL WEEKEND UPDATE: iPHONE DUO, \"YOU FOLDED IT?\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: No new SNL this weekend, NBC re-ran the Halloween episode, so here's a Weekend Update joke you may have missed. The new foldable iPhone is cracking. \"Here's Weekend Update.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: foldable iPhone screens are cracking, and Apple has a question.<br>🔊 IN: \"Some users of the new iPhone Duo...\"<br>OUT: \"...Responded Apple, you folded it?\"<br>~0:09 · PLAY · READY<br>➜ WHY: Quick, clean, relatable tech joke for the first half hour.<br>⚠️ FLAG: Clean. Re-air of the Oct 31, 2026 episode (no new Nov 21 show).<br><br>SNL WEEKEND UPDATE: IF VAN GOGH WERE ALIVE, HE'D SAY \"WHAT?\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Same Weekend Update: scientists now think Van Gogh's Starry Night was the real sky, not his imagination. \"Here's the Update desk.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: Starry Night may have been a real sky, and Van Gogh would have a one-word reaction.<br>🔊 IN: \"Scientists studying Vincent Van Gogh's Starry Night...\"<br>OUT: \"...Yeah, yeah, we got it.\"<br>~0:20 · PLAY · READY<br>➜ WHY: Smart, clean, and a great setup for a quick art-class joke.<br>⚠️ FLAG: Clean. The joke hinges on Van Gogh's ear (he'd say 'What?'); mild, no detail. Re-air.<br><br>SNL WEEKEND UPDATE: FLORIDA WOMAN IN A BANANA SUIT, \"SHE SPLIT\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: One more from the Update desk: a Florida woman called police to report a crash while dressed as a banana, and she didn't stick around. \"Weekend Update.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: banana-suit crash caller left before police arrived.<br>🔊 IN: \"A woman in Florida has gone viral...\"<br>OUT: \"...she split.\"<br>~0:13 · PLAY · READY<br>➜ WHY: Pure pun, family-safe, 13 seconds.<br>⚠️ FLAG: Clean. Car crash mentioned, no injuries in the joke. Re-air. Level a touch hot (-15.6 LUFS).<br><br>MICHIGAN STUNS NO. 4 UCLA IN TRIPLE OVERTIME · SUPER-CLIP 6 AM<br>🎙️ SET UP: Saturday at the Big House, Michigan and unbeaten No. 4 UCLA went three overtimes, and Bryce Underwood rolled out and hit Jalen Hoffman for the two-point win, 18-16. \"Here's the call from the Big Ten.\"<br>🔈 AUDIO SOURCE: Big Ten Football official YouTube (TV broadcast call; announcers not named in the upload). On-air credit: \"courtesy of the Big Ten.\"<br>• The game-winning conversion call and the crowd: \"Touchdown, Michigan, they win it in overtime!\"<br>🔊 IN: \"He rolls to throw, and he throws...\" (0:00)<br>OUT: \"...jubilation on senior day at the Big House.\" (0:21)<br>~0:22 · PLAY · READY<br>➜ WHY: The biggest sound of the weekend in Michigan: a triple-OT upset of an unbeaten top-five team.<br>⚠️ FLAG: Clean. TV broadcast audio via the conference's official channel: get OK to play straight, or talk over it. The announcer says 'touchdown' on what Michigan's recap calls the 2-point conversion.<br><br>STAND-UP: MID-SIZE SUV SWAG · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: A Dry Bar comic says rappers brag about Bugattis, but if he rapped, he'd rap about his actual ride. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube, compilation \"Some Music Has The Dumbest Lyrics\" (comedian not named in the title). On-air credit: \"from Dry Bar Comedy.\"<br>• \"I drive a 2008 Ford Escape. It's pleasant.\" Five-star safety rating, seven airbags, John Mayer in the six-disc changer.<br>🔊 IN: \"If I was a rapper, I'd rap about what I drive.\" (0:00)<br>OUT: \"...it's pleasant to listen to, okay?\" (0:41)<br>~0:41 · PLAY · READY<br>➜ WHY: Dad-rap gold for a hits station, and every minivan driver in the car will feel seen.<br>⚠️ FLAG: Clean. Short fade at the end because the next line follows quickly.<br><br>STAND-UP: RAPPER'S DELIGHT IS ABOUT TOAST · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Same Dry Bar set: the comic loves old-school hip-hop, and he noticed what the classic Rapper's Delight is really about. \"Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube, compilation \"Some Music Has The Dumbest Lyrics.\" On-air credit: \"from Dry Bar Comedy.\"<br>• \"I don't mean to brag, I don't mean to boast, but I like hot butter on my breakfast toast.\" Then he orders margarine at the club.<br>🔊 IN: \"You know what they're rapping about in Rapper's Delight?\" (0:00)<br>OUT: \"...I can't believe it's butter. What's up?\" (0:21)<br>~0:21 · PLAY · READY<br>➜ WHY: Breakfast-time comedy about a song everyone knows.<br>⚠️ FLAG: Clean. Started after an earlier line about 'the size of a woman's posterior,' which is NOT in the cut.<br><br>LAINEY WILSON BRINGS A BROOM FOR ELLA'S SWEEP · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: After Ella Langley's sixth CMA win, host Lainey Wilson came out with a bedazzled broom because Ella swept the night. \"Here's Lainey on the CMA stage.\"<br>🔈 AUDIO SOURCE: CMA Awards official YouTube recap (ABC broadcast). On-air credit: \"courtesy of the CMA Awards.\"<br>• Lainey: \"I knew you was going to sweep, girl.\"<br>🔊 IN: Start of Lainey's broom line<br>OUT: \"...sweep, girl.\"<br>~0:06 · PLAY (quick) · READY<br>➜ WHY: A fun 6-second sting to pair with c06.<br>⚠️ FLAG: Clean.<br><br>SHELTER PETS GET A THANKSGIVING FEAST · BUFFER: PETS & FAMILY<br>🎙️ SET UP: It's Thanksgiving week, and The Dodo filmed a shelter that threw a full holiday feast for its dogs and cats. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube, \"Shelter dogs get epic Thanksgiving feast\" (2023). On-air credit: \"from The Dodo.\"<br>• Narrator over music: the shelter made a Thanksgiving feast so the animals feel warm and loved.<br>🔊 IN: \"These dogs and cats are spending Thanksgiving in a shelter...\"<br>OUT: \"...will make your heart so happy.\"<br>~0:12 · TALK-OVER or PLAY into a shelter plug · READY<br>➜ WHY: Feel-good pets lane for the holiday week; pair with a local adoption plug.<br>⚠️ FLAG: Clean. Narration over music (no barks). It's a 2023 video: evergreen feel-good, not news.",
+  "notes": "SHOW OPENER SUPERCUT: THANKSGIVING WEEK KICKOFF: https://www.youtube.com/watch?v=MmFfTJlIvhQ ⚠️ FLAG: Clean. Mild: the first-bite \"Thanksgiving\" join is tight, so hear it once. No God line (WKRP's closing line left out), no swears. Mastered -14 LUFS. Bites without a named show were not identified in the Sunday cut notes; they're listed as heard.<br>SNL WEEKEND UPDATE: iPHONE DUO, \"YOU FOLDED IT?\": https://www.youtube.com/watch?v=FjOMK0_nZ3o ⚠️ FLAG: Clean. Re-air of the Oct 31, 2026 episode (no new Nov 21 show).<br>SNL WEEKEND UPDATE: IF VAN GOGH WERE ALIVE, HE'D SAY \"WHAT?\": https://www.youtube.com/watch?v=FjOMK0_nZ3o ⚠️ FLAG: Clean. The joke hinges on Van Gogh's ear (he'd say 'What?'); mild, no detail. Re-air.<br>SNL WEEKEND UPDATE: FLORIDA WOMAN IN A BANANA SUIT, \"SHE SPLIT\": https://www.youtube.com/watch?v=FjOMK0_nZ3o ⚠️ FLAG: Clean. Car crash mentioned, no injuries in the joke. Re-air. Level a touch hot (-15.6 LUFS).<br>MICHIGAN STUNS NO. 4 UCLA IN TRIPLE OVERTIME: https://www.youtube.com/watch?v=buAAPGNtx14 ⚠️ FLAG: Clean. TV broadcast audio via the conference's official channel: get OK to play straight, or talk over it. The announcer says 'touchdown' on what Michigan's recap calls the 2-point conversion.<br>STAND-UP: MID-SIZE SUV SWAG: https://www.youtube.com/watch?v=uxsEzDXB3bg ⚠️ FLAG: Clean. Short fade at the end because the next line follows quickly.<br>STAND-UP: RAPPER'S DELIGHT IS ABOUT TOAST: https://www.youtube.com/watch?v=uxsEzDXB3bg ⚠️ FLAG: Clean. Started after an earlier line about 'the size of a woman's posterior,' which is NOT in the cut.<br>LAINEY WILSON BRINGS A BROOM FOR ELLA'S SWEEP: https://www.youtube.com/watch?v=Nn2iGDx08ls ⚠️ FLAG: Clean.<br>SHELTER PETS GET A THANKSGIVING FEAST: https://www.youtube.com/watch?v=lc9SXDbtfjc ⚠️ FLAG: Clean. Narration over music (no barks). It's a 2023 video: evergreen feel-good, not news.<br>No new late night: SNL re-ran the Oct 31 episode on Nov 21 (Thanksgiving hiatus), so the late-night slot is three clean Weekend Update desk jokes pre-cut Sunday night. c00-c03 pre-cut Sunday; c04-c10 cut at 4 AM (cut.py + clip.py), all re-transcribed. Courtney bed: court-01 (Hunger Games soundtrack chorus).",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-23-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: THANKSGIVING WEEK KICKOFF",
+    "body": "SHOW OPENER SUPERCUT: THANKSGIVING WEEK KICKOFF · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Montage of Thanksgiving movie and TV bites, cut Sunday night. Music bed: \"King Street\" by The 126ers (YouTube Audio Library, royalty-free).<br>• A Charlie Brown Thanksgiving: \"But Charlie Brown, it's Thanksgiving.\"<br>• \"It'll be like a funny Thanksgiving story.\"<br>• \"It tastes like feet.\"<br>• \"It's just perfect.\"<br>• WKRP in Cincinnati, Les Nessman's turkey drop: \"The turkeys are hitting the ground like sacks of wet cement!\"<br>• \"Duck. I go quack quack.\"<br>• Planes, Trains and Automobiles: \"You're going the wrong way!\" (x3, the build)<br>• Peanuts launch line: \"...kick that football clear to the moon!\"<br>🔊 IN: \"But Charlie Brown, it's Thanksgiving.\" (0:00)<br>OUT: \"...kick that football clear to the moon!\" (0:23)<br>~0:23 · PLAY · READY<br>➜ WHY: Eleven quick Thanksgiving bites over a music bed, building on \"You're going the wrong way!\" into a launch line, right into \"Showtime.\"<br>⚠️ FLAG: Clean. Mild: the first-bite \"Thanksgiving\" join is tight, so hear it once. No God line (WKRP's closing line left out), no swears. Mastered -14 LUFS. Bites without a named show were not identified in the Sunday cut notes; they're listed as heard.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c00-opener-supercut-v2.mp3",
+    "ready": true,
+    "recap": "We opened with a Thanksgiving-week supercut: Charlie Brown, the WKRP turkey drop and \"You're going the wrong way!\"",
+    "duration": "0:23",
+    "file": "c00-opener-supercut-v2.mp3",
+    "duration_sec": 22.831,
+    "intro_sec": 4,
+    "kind": "opener"
+   },
+   {
+    "id": "2026-11-23-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "C00 OPENER SUPERCUT V3",
+    "body": "C00 OPENER SUPERCUT V3 · SHOW OPENER SUPERCUT",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c00-opener-supercut-v3.mp3",
+    "file": "c00-opener-supercut-v3.mp3",
+    "ready": true,
+    "duration_sec": 17.7,
+    "duration": "0:18",
+    "kind": "opener"
+   },
+   {
+    "id": "2026-11-23-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "C00 OPENER SUPERCUT",
+    "body": "C00 OPENER SUPERCUT · SHOW OPENER SUPERCUT",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c00-opener-supercut.mp3",
+    "file": "c00-opener-supercut.mp3",
+    "ready": true,
+    "duration_sec": 30.1,
+    "duration": "0:30",
+    "kind": "opener"
+   },
+   {
+    "id": "2026-11-23-c01",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "SNL WEEKEND UPDATE: iPHONE DUO, \"YOU FOLDED IT?\"",
+    "body": "SNL WEEKEND UPDATE: iPHONE DUO, \"YOU FOLDED IT?\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: No new SNL this weekend, NBC re-ran the Halloween episode, so here's a Weekend Update joke you may have missed. The new foldable iPhone is cracking. \"Here's Weekend Update.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: foldable iPhone screens are cracking, and Apple has a question.<br>🔊 IN: \"Some users of the new iPhone Duo...\"<br>OUT: \"...Responded Apple, you folded it?\"<br>~0:09 · PLAY · READY<br>➜ WHY: Quick, clean, relatable tech joke for the first half hour.<br>⚠️ FLAG: Clean. Re-air of the Oct 31, 2026 episode (no new Nov 21 show).",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c01-snl-wu-iphone-duo.mp3",
+    "ready": true,
+    "recap": "We played SNL's Weekend Update joke about the cracking foldable iPhone: \"You folded it?\"",
+    "duration": "0:09",
+    "file": "c01-snl-wu-iphone-duo.mp3",
+    "duration_sec": 8.647,
+    "intro_sec": 7,
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-23-c02",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "SNL WEEKEND UPDATE: IF VAN GOGH WERE ALIVE, HE'D SAY \"WHAT?\"",
+    "body": "SNL WEEKEND UPDATE: IF VAN GOGH WERE ALIVE, HE'D SAY \"WHAT?\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Same Weekend Update: scientists now think Van Gogh's Starry Night was the real sky, not his imagination. \"Here's the Update desk.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: Starry Night may have been a real sky, and Van Gogh would have a one-word reaction.<br>🔊 IN: \"Scientists studying Vincent Van Gogh's Starry Night...\"<br>OUT: \"...Yeah, yeah, we got it.\"<br>~0:20 · PLAY · READY<br>➜ WHY: Smart, clean, and a great setup for a quick art-class joke.<br>⚠️ FLAG: Clean. The joke hinges on Van Gogh's ear (he'd say 'What?'); mild, no detail. Re-air.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c02-snl-wu-van-gogh.mp3",
+    "ready": true,
+    "recap": "We heard SNL's Weekend Update joke about Van Gogh and Starry Night.",
+    "duration": "0:20",
+    "file": "c02-snl-wu-van-gogh.mp3",
+    "duration_sec": 20.349,
+    "intro_sec": 8,
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-23-c03",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "SNL WEEKEND UPDATE: FLORIDA WOMAN IN A BANANA SUIT, \"SHE SPLIT\"",
+    "body": "SNL WEEKEND UPDATE: FLORIDA WOMAN IN A BANANA SUIT, \"SHE SPLIT\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: One more from the Update desk: a Florida woman called police to report a crash while dressed as a banana, and she didn't stick around. \"Weekend Update.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: banana-suit crash caller left before police arrived.<br>🔊 IN: \"A woman in Florida has gone viral...\"<br>OUT: \"...she split.\"<br>~0:13 · PLAY · READY<br>➜ WHY: Pure pun, family-safe, 13 seconds.<br>⚠️ FLAG: Clean. Car crash mentioned, no injuries in the joke. Re-air. Level a touch hot (-15.6 LUFS).",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c03-snl-wu-banana-split.mp3",
+    "ready": true,
+    "recap": "We heard SNL's banana-suit joke: \"she split.\"",
+    "duration": "0:13",
+    "file": "c03-snl-wu-banana-split.mp3",
+    "duration_sec": 13.166,
+    "intro_sec": 8,
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-23-c04",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "MICHIGAN STUNS NO. 4 UCLA IN TRIPLE OVERTIME",
+    "body": "MICHIGAN STUNS NO. 4 UCLA IN TRIPLE OVERTIME · SUPER-CLIP 6 AM<br>🎙️ SET UP: Saturday at the Big House, Michigan and unbeaten No. 4 UCLA went three overtimes, and Bryce Underwood rolled out and hit Jalen Hoffman for the two-point win, 18-16. \"Here's the call from the Big Ten.\"<br>🔈 AUDIO SOURCE: Big Ten Football official YouTube (TV broadcast call; announcers not named in the upload). On-air credit: \"courtesy of the Big Ten.\"<br>• The game-winning conversion call and the crowd: \"Touchdown, Michigan, they win it in overtime!\"<br>🔊 IN: \"He rolls to throw, and he throws...\" (0:00)<br>OUT: \"...jubilation on senior day at the Big House.\" (0:21)<br>~0:22 · PLAY · READY<br>➜ WHY: The biggest sound of the weekend in Michigan: a triple-OT upset of an unbeaten top-five team.<br>⚠️ FLAG: Clean. TV broadcast audio via the conference's official channel: get OK to play straight, or talk over it. The announcer says 'touchdown' on what Michigan's recap calls the 2-point conversion.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c04-michigan-3ot-winner.mp3",
+    "ready": true,
+    "recap": "We heard the call of Michigan's triple-overtime winner over No. 4 UCLA.",
+    "duration": "0:22",
+    "file": "c04-michigan-3ot-winner.mp3",
+    "duration_sec": 21.6,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-23-c05",
+    "slot": "TRENDING AUDIO",
+    "title": "C05 CAMPBELL GOFF CATALYST",
+    "body": "C05 CAMPBELL GOFF CATALYST · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c05-campbell-goff-catalyst.mp3",
+    "file": "c05-campbell-goff-catalyst.mp3",
+    "ready": true,
+    "duration_sec": 32.4,
+    "duration": "0:32",
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-23-c06",
+    "slot": "TRENDING AUDIO",
+    "title": "C06 ELLA LANGLEY SICK OF ME",
+    "body": "C06 ELLA LANGLEY SICK OF ME · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c06-ella-langley-sick-of-me.mp3",
+    "file": "c06-ella-langley-sick-of-me.mp3",
+    "ready": true,
+    "duration_sec": 3.5,
+    "duration": "0:04",
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-23-c07",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "STAND-UP: MID-SIZE SUV SWAG",
+    "body": "STAND-UP: MID-SIZE SUV SWAG · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: A Dry Bar comic says rappers brag about Bugattis, but if he rapped, he'd rap about his actual ride. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube, compilation \"Some Music Has The Dumbest Lyrics\" (comedian not named in the title). On-air credit: \"from Dry Bar Comedy.\"<br>• \"I drive a 2008 Ford Escape. It's pleasant.\" Five-star safety rating, seven airbags, John Mayer in the six-disc changer.<br>🔊 IN: \"If I was a rapper, I'd rap about what I drive.\" (0:00)<br>OUT: \"...it's pleasant to listen to, okay?\" (0:41)<br>~0:41 · PLAY · READY<br>➜ WHY: Dad-rap gold for a hits station, and every minivan driver in the car will feel seen.<br>⚠️ FLAG: Clean. Short fade at the end because the next line follows quickly.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c07-standup-ford-escape-rap.mp3",
+    "ready": true,
+    "recap": "We played a Dry Bar bit about rapping about a 2008 Ford Escape.",
+    "duration": "0:41",
+    "file": "c07-standup-ford-escape-rap.mp3",
+    "duration_sec": 40.9,
+    "kind": "comedy"
+   },
+   {
+    "id": "2026-11-23-c08",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "STAND-UP: RAPPER'S DELIGHT IS ABOUT TOAST",
+    "body": "STAND-UP: RAPPER'S DELIGHT IS ABOUT TOAST · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Same Dry Bar set: the comic loves old-school hip-hop, and he noticed what the classic Rapper's Delight is really about. \"Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube, compilation \"Some Music Has The Dumbest Lyrics.\" On-air credit: \"from Dry Bar Comedy.\"<br>• \"I don't mean to brag, I don't mean to boast, but I like hot butter on my breakfast toast.\" Then he orders margarine at the club.<br>🔊 IN: \"You know what they're rapping about in Rapper's Delight?\" (0:00)<br>OUT: \"...I can't believe it's butter. What's up?\" (0:21)<br>~0:21 · PLAY · READY<br>➜ WHY: Breakfast-time comedy about a song everyone knows.<br>⚠️ FLAG: Clean. Started after an earlier line about 'the size of a woman's posterior,' which is NOT in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c08-standup-rappers-delight-toast.mp3",
+    "ready": true,
+    "recap": "We heard a Dry Bar comic point out that Rapper's Delight is about toast.",
+    "duration": "0:21",
+    "file": "c08-standup-rappers-delight-toast.mp3",
+    "duration_sec": 20.6,
+    "kind": "comedy"
+   },
+   {
+    "id": "2026-11-23-c09",
+    "slot": "BUFFER: NEWSY VIRAL",
+    "title": "LAINEY WILSON BRINGS A BROOM FOR ELLA'S SWEEP",
+    "body": "LAINEY WILSON BRINGS A BROOM FOR ELLA'S SWEEP · BUFFER: NEWSY VIRAL<br>🎙️ SET UP: After Ella Langley's sixth CMA win, host Lainey Wilson came out with a bedazzled broom because Ella swept the night. \"Here's Lainey on the CMA stage.\"<br>🔈 AUDIO SOURCE: CMA Awards official YouTube recap (ABC broadcast). On-air credit: \"courtesy of the CMA Awards.\"<br>• Lainey: \"I knew you was going to sweep, girl.\"<br>🔊 IN: Start of Lainey's broom line<br>OUT: \"...sweep, girl.\"<br>~0:06 · PLAY (quick) · READY<br>➜ WHY: A fun 6-second sting to pair with c06.<br>⚠️ FLAG: Clean.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c09-lainey-wilson-broom-sweep.mp3",
+    "ready": true,
+    "recap": "We heard Lainey Wilson hand Ella Langley a broom for her CMA sweep.",
+    "duration": "0:06",
+    "file": "c09-lainey-wilson-broom-sweep.mp3",
+    "duration_sec": 6.4,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-23-c10",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "SHELTER PETS GET A THANKSGIVING FEAST",
+    "body": "SHELTER PETS GET A THANKSGIVING FEAST · BUFFER: PETS & FAMILY<br>🎙️ SET UP: It's Thanksgiving week, and The Dodo filmed a shelter that threw a full holiday feast for its dogs and cats. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube, \"Shelter dogs get epic Thanksgiving feast\" (2023). On-air credit: \"from The Dodo.\"<br>• Narrator over music: the shelter made a Thanksgiving feast so the animals feel warm and loved.<br>🔊 IN: \"These dogs and cats are spending Thanksgiving in a shelter...\"<br>OUT: \"...will make your heart so happy.\"<br>~0:12 · TALK-OVER or PLAY into a shelter plug · READY<br>➜ WHY: Feel-good pets lane for the holiday week; pair with a local adoption plug.<br>⚠️ FLAG: Clean. Narration over music (no barks). It's a 2023 video: evergreen feel-good, not news.",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c10-dodo-shelter-thanksgiving-feast.mp3",
+    "ready": true,
+    "recap": "We heard about a shelter throwing a Thanksgiving feast for its dogs and cats.",
+    "duration": "0:12",
+    "file": "c10-dodo-shelter-thanksgiving-feast.mp3",
+    "duration_sec": 12.4,
+    "kind": "trending"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "1320360c8bef",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "TODAY 3:30-6:30 PM: NMC THANKS-FOR-GIVING MEAL BOXES<br>• 231 boxes go to pre-selected NMC student families and Big Brothers Big Sisters families at NMC's Front Street campus (not an open pickup).<br><br>WED-SUN: ALPENLIGHTS DRIVE-THRU, GAYLORD<br>• Otsego County Fairgrounds; $15 Sun, $20 Wed/Thu, $25 Fri/Sat per car; wagon rides Wednesdays.<br><br>THU: LIONS VS. BEARS ON THANKSGIVING<br>• Detroit (8-2) hosts Chicago on Thanksgiving Day.<br><br>FRI 8 AM: CENTRAL GRADE PTO ONLINE AUCTION OPENS<br>• Runs through 8:30 PM Dec. 5; adults-only party Dec. 5, 7-9:30 PM at Right Brain Brewery.",
+  "notes": "TODAY 3:30-6:30 PM: NMC THANKS-FOR-GIVING MEAL BOXES: https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/<br>WED-SUN: ALPENLIGHTS DRIVE-THRU, GAYLORD: https://upnorthlive.com/news/local/see-holiday-light-displays-at-alpenlights-gaylord-holiday-otsego-county<br>THU: LIONS VS. BEARS ON THANKSGIVING: https://www.detroitlions.com/news/recap-lions-vs-buccaneers-goff-gibbs-williams<br>FRI 8 AM: CENTRAL GRADE PTO ONLINE AUCTION OPENS: https://www.record-eagle.com/news/local_news/community-in-brief-11-21-2026/article_fab2161c-5c29-46f0-8faf-9301d9b19f3a.html",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-23-events-01",
+    "title": "TODAY 3:30-6:30 PM: NMC THANKS-FOR-GIVING MEAL BOXES",
+    "recap": "We plugged Nmc Thanks-For-Giving Meal Boxes.",
+    "article_url": "https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/",
+    "article_title": "Today 3:30-6:30 Pm: Nmc Thanks-For-Giving Meal Boxes",
+    "jokes": [],
+    "body": "TODAY 3:30-6:30 PM: NMC THANKS-FOR-GIVING MEAL BOXES<br>We plugged Nmc Thanks-For-Giving Meal Boxes.",
+    "description": "We plugged Nmc Thanks-For-Giving Meal Boxes.",
+    "summary": "We plugged Nmc Thanks-For-Giving Meal Boxes.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-events-02",
+    "title": "WED-SUN: ALPENLIGHTS DRIVE-THRU, GAYLORD",
+    "recap": "We plugged Alpenlights Drive-Thru, Gaylord.",
+    "article_url": "https://upnorthlive.com/news/local/see-holiday-light-displays-at-alpenlights-gaylord-holiday-otsego-county",
+    "article_title": "Wed-Sun: Alpenlights Drive-Thru, Gaylord",
+    "jokes": [],
+    "body": "WED-SUN: ALPENLIGHTS DRIVE-THRU, GAYLORD<br>We plugged Alpenlights Drive-Thru, Gaylord.",
+    "description": "We plugged Alpenlights Drive-Thru, Gaylord.",
+    "summary": "We plugged Alpenlights Drive-Thru, Gaylord.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-23-events-03",
+    "title": "THU: LIONS VS. BEARS ON THANKSGIVING",
+    "recap": "We plugged Lions Vs. Bears On Thanksgiving.",
+    "article_url": "https://www.detroitlions.com/news/recap-lions-vs-buccaneers-goff-gibbs-williams",
+    "article_title": "Thu: Lions Vs. Bears On Thanksgiving",
+    "jokes": [],
+    "body": "THU: LIONS VS. BEARS ON THANKSGIVING<br>We plugged Lions Vs. Bears On Thanksgiving.",
+    "description": "We plugged Lions Vs. Bears On Thanksgiving.",
+    "summary": "We plugged Lions Vs. Bears On Thanksgiving.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-23-events-04",
+    "title": "FRI 8 AM: CENTRAL GRADE PTO ONLINE AUCTION OPENS",
+    "recap": "We plugged Central Grade Pto Online Auction Opens.",
+    "article_url": "https://www.record-eagle.com/news/local_news/community-in-brief-11-21-2026/article_fab2161c-5c29-46f0-8faf-9301d9b19f3a.html",
+    "article_title": "Fri 8 Am: Central Grade Pto Online Auction Opens",
+    "jokes": [],
+    "body": "FRI 8 AM: CENTRAL GRADE PTO ONLINE AUCTION OPENS<br>We plugged Central Grade Pto Online Auction Opens.",
+    "description": "We plugged Central Grade Pto Online Auction Opens.",
+    "summary": "We plugged Central Grade Pto Online Auction Opens.",
+    "rank": 4,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/",
+  "article_title": "Today 3:30-6:30 Pm: Nmc Thanks-For-Giving Meal Boxes",
+  "jokes": [],
+  "as_of": "2026-11-23T04:08-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "80aad23cf743",
+  "stale_after": "2026-11-23T16:08-05:00"
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · THANK YOU, STAGS<br>What a ride, Kingsley. 🦌🏈<br>Twelve straight wins, a regional title, and a trip to the state semifinals. The season ended Saturday in Clare, but this team gave all of us something to cheer about.<br>Drop a shout-out to a Stags senior or coach below. Or text the studio at 231-929-4487.<br>#KingsleyStags #MHSAAFootball #TraverseCity #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-23/fb1a-thank-you-stags.png<br><br>1B · STATE CHAMPS UP NORTH<br>Gaylord St. Mary is a STATE CHAMPION! 🏆 The Snowbirds beat Mendon 49-34 Saturday at the Superior Dome for the first football title in school history, with Cal Royce accounting for seven touchdowns.<br>Who's the best all-around athlete you ever played with?<br>#GaylordStMary #Snowbirds #MHSAAFootball #NorthernMichigan #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>2A · 231 THANKSGIVING BOXES<br>NMC students set out to pack 215 Thanksgiving meal boxes. They're handing out 231 today. 🦃<br>Each one has a turkey, the sides for a family of six, and a roasting pan, for NMC student families and Big Brothers Big Sisters families.<br>Who taught you how to cook your first turkey?<br>#Thanksgiving #NMC #TraverseCity #GivingBack #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-23/fb2a-nmc-meal-boxes.png<br><br>2B · A NATIONAL STAGE FOR NMC'S CHOIR<br>Big news for NMC! 🎶 The Aurora choir is the first group from any Michigan community college invited to sing at the American Choral Directors Association national conference next March.<br>Were you a choir kid? What song do you still know every harmony to?<br>#NMC #Choir #TraverseCity #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>3A · LINGER ON CRANBERRY DAY<br>It's National Eat a Cranberry Day, so we're thinking about The Cranberries. 🍒 \"Linger\" came out in 1993, hit No. 8 on the Hot 100, and still owns every '90s playlist.<br>What's your favorite Cranberries song: Linger, Dreams, or Zombie?<br>#TheCranberries #90sMusic #Linger #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-23/fb3a-linger-cranberry-day.png<br><br>3B · MILEY'S BIG DAY<br>Miley Cyrus got married this weekend! 💍 She and Maxx Morando said \"I do\" poolside in Palm Springs.<br>Hannah Montana fans: what's your all-time favorite Miley song?<br>#MileyCyrus #HannahMontana #2000sMusic #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)",
+  "notes": "Drafts only, AJ posts during the show; never posted by Hot Sheet. Facts from sheet items above. 1A Kingsley (UpNorthLive), 1B Gaylord St. Mary (MHSAA), 2A NMC meal boxes (The Ticker), 2B NMC Aurora (The Ticker), 3A Linger (Wikipedia/Billboard), 3B Miley wedding (Billboard). Art for 1A/2A/3A per lean plan.",
+  "custom": true,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "courtney": {
+  "songBattle": [
+   {
+    "id": "court-sb-01",
+    "battleTitle": "Two Ways to Say Thanks",
+    "a": {
+     "title": "thank u, next",
+     "artist": "Ariana Grande"
+    },
+    "b": {
+     "title": "Thank U",
+     "artist": "Alanis Morissette"
+    },
+    "angle": "Thanksgiving week: two hits named for gratitude, 20 years apart. Ariana's breakup thank-you (2018) vs. Alanis's spiritual one (1998)."
+   },
+   {
+    "id": "court-sb-02",
+    "battleTitle": "Miley Then and Now",
+    "a": {
+     "title": "Flowers",
+     "artist": "Miley Cyrus"
+    },
+    "b": {
+     "title": "Party in the U.S.A.",
+     "artist": "Miley Cyrus"
+    },
+    "angle": "Wedding weekend for Miley: grown-up Miley (2023) vs. the 2009 song every car sang along to."
+   }
+  ],
+  "hollywood": [
+   {
+    "id": "court-hw-01",
+    "headline": "Hunger Games opens to $120 million",
+    "summary": "The Hunger Games: Sunrise on the Reaping opened at No. 1 with about $120 million, the franchise's fourth-best start, and about $225 million worldwide. Monday's actual numbers could move it up a spot.",
+    "as_of": "2026-11-22T00:00-05:00",
+    "article_url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
+    "article_title": "Weekend Box Office: Hunger Games: Sunrise on the Reaping Sweeps the Competition with $120M Debut (Boxoffice Pro)",
+    "jokes": [
+     "The odds were ever in Lionsgate's favor.",
+     "Bring a blanket and a snack. That's a long movie and a cold theater."
+    ]
+   },
+   {
+    "id": "court-hw-02",
+    "headline": "Miley Cyrus marries Maxx Morando",
+    "summary": "Miley Cyrus married drummer Maxx Morando Saturday in a poolside Palm Springs ceremony officiated by the Flaming Lips' Wayne Coyne. It came a month after the two sang \"Let's Get Married\" at the Hollywood Bowl.",
+    "as_of": "2026-11-22T00:00-05:00",
+    "article_url": "https://www.billboard.com/music/pop/miley-cyrus-marries-maxx-morando-palm-springs-wedding-1236387428/",
+    "article_title": "Miley Cyrus Marries Maxx Morando in Poolside Ceremony Led by the Flaming Lips' Wayne Coyne (Billboard)",
+    "jokes": [
+     "She told us in song first. That's the most Miley save-the-date ever.",
+     "Poolside in November. In Michigan we call that a hot tub."
+    ]
+   },
+   {
+    "id": "court-hw-03",
+    "headline": "The Sprouse twins reunite",
+    "summary": "Cole Sprouse joins his twin Dylan on Dylan's Wildmen podcast in an episode dropping Monday, their first collaboration in 10 years. They talk Suite Life days and being mistaken for each other.",
+    "as_of": "2026-11-22T10:30-05:00",
+    "article_url": "https://ew.com/cole-dylan-sprouse-collab-first-time-10-years-exclusive-12268340",
+    "article_title": "Cole Sprouse joins Dylan Sprouse on his Wildmen podcast for first collaboration in 10 years (EW)",
+    "jokes": [
+     "Ten years apart and they still can't tell who's who.",
+     "Suite Life reunion. Somebody page Mr. Moseby."
+    ]
+   },
+   {
+    "id": "court-hw-04",
+    "headline": "Ella Langley sweeps the CMAs",
+    "summary": "Ella Langley won six CMA Awards Wednesday, including Entertainer of the Year, and joked \"At this point, I'm sick of me.\" She also has seven Grammy nominations, her first.",
+    "as_of": "2026-11-19T00:00-05:00",
+    "article_url": "https://abcnews.com/GMA/Culture/ella-langley-dominates-2026-cma-awards-wins-entertainer/story?id=138275726",
+    "article_title": "Ella Langley dominates 2026 CMA Awards, wins Entertainer (ABC News)",
+    "jokes": [
+     "Six awards in one night. I've never won six of anything except arguments with myself.",
+     "Lainey Wilson brought a broom. Best use of a broom since my mom chased me out of the kitchen."
+    ]
+   }
+  ],
+  "studioLine": [
+   {
+    "id": "court-sl-01",
+    "question": "Black Friday: couch or crowds?",
+    "followup": "What's the best doorbuster you ever scored?"
+   },
+   {
+    "id": "court-sl-02",
+    "question": "What's the one Thanksgiving dish that HAS to be on the table?",
+    "followup": "And who in your family makes it best?"
+   },
+   {
+    "id": "court-sl-03",
+    "question": "What did you climb as a kid that you definitely shouldn't have?",
+    "followup": "Did your parents ever find out?"
+   }
+  ],
+  "clips": [
+   {
+    "file": "court-01-here-then-were-gone-bed.mp3",
+    "path": "/workspace/morning-rush/clips/2026-11-23/court-01-here-then-were-gone-bed.mp3",
+    "title": "HUNGER GAMES BED: ELLA LANGLEY, \"HERE THEN WE'RE GONE\" (chorus)",
+    "duration": "0:12"
+   }
+  ]
+ },
+ "callie": {
+  "songInHead": [
+   {
+    "id": "callie-sh-01",
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "hook": "Miley got married this weekend, so of course this is stuck in my head.",
+    "article_url": "https://www.billboard.com/music/pop/miley-cyrus-marries-maxx-morando-palm-springs-wedding-1236387428/"
+   }
+  ],
+  "teaParty": [
+   {
+    "id": "callie-tp-01",
+    "headline": "Hunger Games opens to $120 million",
+    "summary": "The Hunger Games: Sunrise on the Reaping opened at No. 1 with about $120 million, the franchise's fourth-best start, and about $225 million worldwide. Monday's actual numbers could move it up a spot.",
+    "article_url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
+    "article_title": "Weekend Box Office: Hunger Games: Sunrise on the Reaping Sweeps the Competition with $120M Debut (Boxoffice Pro)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-02",
+    "headline": "Miley Cyrus marries Maxx Morando",
+    "summary": "Miley Cyrus married drummer Maxx Morando Saturday in a poolside Palm Springs ceremony officiated by the Flaming Lips' Wayne Coyne. It came a month after the two sang \"Let's Get Married\" at the Hollywood Bowl.",
+    "article_url": "https://www.billboard.com/music/pop/miley-cyrus-marries-maxx-morando-palm-springs-wedding-1236387428/",
+    "article_title": "Miley Cyrus Marries Maxx Morando in Poolside Ceremony Led by the Flaming Lips' Wayne Coyne (Billboard)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-03",
+    "headline": "The Sprouse twins reunite",
+    "summary": "Cole Sprouse joins his twin Dylan on Dylan's Wildmen podcast in an episode dropping Monday, their first collaboration in 10 years. They talk Suite Life days and being mistaken for each other.",
+    "article_url": "https://ew.com/cole-dylan-sprouse-collab-first-time-10-years-exclusive-12268340",
+    "article_title": "Cole Sprouse joins Dylan Sprouse on his Wildmen podcast for first collaboration in 10 years (EW)",
+    "jokes": []
+   }
+  ],
+  "trendingAudio": [
+   {
+    "id": "callie-ta-01",
+    "clip": "2026-11-23-c06",
+    "title": "ELLA LANGLEY: \"I'M SICK OF ME\""
+   },
+   {
+    "id": "callie-ta-02",
+    "clip": "2026-11-23-c09",
+    "title": "LAINEY WILSON'S BROOM"
+   }
+  ],
+  "events": [
+   {
+    "id": "callie-ev-01",
+    "title": "TODAY 3:30-6:30 PM: NMC THANKS-FOR-GIVING MEAL BOXES",
+    "detail": "231 boxes go to pre-selected NMC student families and Big Brothers Big Sisters families at NMC's Front Street campus (not an open pickup).",
+    "url": "https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/"
+   },
+   {
+    "id": "callie-ev-02",
+    "title": "WED-SUN: ALPENLIGHTS DRIVE-THRU, GAYLORD",
+    "detail": "Otsego County Fairgrounds; $15 Sun, $20 Wed/Thu, $25 Fri/Sat per car; wagon rides Wednesdays.",
+    "url": "https://upnorthlive.com/news/local/see-holiday-light-displays-at-alpenlights-gaylord-holiday-otsego-county"
+   },
+   {
+    "id": "callie-ev-03",
+    "title": "THU: LIONS VS. BEARS ON THANKSGIVING",
+    "detail": "Detroit (8-2) hosts Chicago on Thanksgiving Day.",
+    "url": "https://www.detroitlions.com/news/recap-lions-vs-buccaneers-goff-gibbs-williams"
+   },
+   {
+    "id": "callie-ev-04",
+    "title": "FRI 8 AM: CENTRAL GRADE PTO ONLINE AUCTION OPENS",
+    "detail": "Runs through 8:30 PM Dec. 5; adults-only party Dec. 5, 7-9:30 PM at Right Brain Brewery.",
+    "url": "https://www.record-eagle.com/news/local_news/community-in-brief-11-21-2026/article_fab2161c-5c29-46f0-8faf-9301d9b19f3a.html"
+   }
+  ],
+  "fbDrafts": [
+   {
+    "id": "callie-fb-01",
+    "title": "BLACK FRIDAY: COUCH OR CROWDS?",
+    "text": "Black Friday is Friday! 🛍️ A new YouGov poll says 34% of us plan to shop online that day, and only 18% will brave the stores.\nAre you a couch shopper or a crowd shopper?\n#BlackFriday #Shopping #TraverseCity #Z93",
+    "media": "text only"
+   },
+   {
+    "id": "callie-fb-02",
+    "title": "SPROUSE TWINS REUNITE",
+    "text": "The Suite Life twins are back together! 🛎️ Cole Sprouse joins Dylan on his Wildmen podcast in an episode out today, their first project together in 10 years.\nZack or Cody?\n#SuiteLife #SprouseTwins #2000sTV #Z93",
+    "media": "text only"
+   }
+  ],
+  "liners": [
+   {
+    "id": "callie-ln-01",
+    "text": "First flakes, short week, big leftovers. Z93, Hits from the 90s to Now."
+   },
+   {
+    "id": "callie-ln-02",
+    "text": "Snow on the windshield, Thanksgiving on the brain. Z93 middays with Callie."
+   }
+  ],
+  "lifestyle": [
+   {
+    "id": "callie-ls-01",
+    "title": "THANKSGIVING DINNER FOR 10: $58.63",
+    "summary": "The American Farm Bureau's annual survey puts a classic Thanksgiving dinner for 10 at $58.63 this year, about $5.86 per person, up about 6 percent from last year. Turkey is the big driver, up about 10 percent, because flocks are still recovering from disease. Good news for pie people: pie crust and whipped cream are cheaper, and celery and carrots are down too. The Farm Bureau's tip: watch the store ads, because grocers want your Thanksgiving business.",
+    "article_url": "https://www.fb.org/newsline/farm-bureau-survey-shows-thanksgiving-cost-higher-in-2026",
+    "article_title": "Farm Bureau Survey Shows Thanksgiving Cost Higher in 2026 (American Farm Bureau Federation)",
+    "jokes": []
+   },
+   {
+    "id": "callie-ls-02",
+    "title": "81.5 MILLION HIT THE ROAD FOR THANKSGIVING",
+    "summary": "AAA projects 81.5 million Americans will travel at least 50 miles for Thanksgiving, Tuesday through next Monday, just under last year's record. That ends a three-year streak of record Thanksgiving travel. AAA says higher travel costs are part of it, including record gas prices in August, September and October. Almost 90 percent of travelers will drive, and AAA says check tires, batteries and fluids before you go.",
+    "article_url": "https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/",
+    "article_title": "Thanksgiving Travel Expected to Dip Slightly Compared to Last Year (AAA Newsroom, Nov 16)",
+    "jokes": []
+   }
+  ],
+  "localBuzz": [
+   {
+    "id": "callie-lb-01",
+    "title": "THANK YOU, STAGS: KINGSLEY'S RUN ENDS IN THE SEMIS",
+    "summary": "Kingsley's dream season ended Saturday in Clare. Almont beat the Stags 30-6 in the Division 6 state semifinal, Kingsley's first loss of the year after a 12-0 start. The Stags scored on their very first drive, then Almont answered with 30 straight points.",
+    "article_url": "https://upnorthlive.com/sports/hometown-highlights/kingsleys-season-comes-to-a-close-in-d6-state-semifinal-loss-to-almont",
+    "article_title": "Kingsley's season comes to a close in D6 state semifinal loss to Almont (UpNorthLive, Nov 21)"
+   },
+   {
+    "id": "callie-lb-02",
+    "title": "SNOWBIRDS ARE STATE CHAMPS: GAYLORD ST. MARY'S FIRST TITLE",
+    "summary": "Gaylord St. Mary won the 8-player Division 2 state championship Saturday, beating Mendon 49-34 at the Superior Dome in Marquette. It's the first football state title in program history.",
+    "article_url": "https://www.mhsaa.com/sports/football/stories/rolling-royce-gaylord-st-mary-pulls-away-mendon-first-finals-title",
+    "article_title": "Rolling with Royce, Gaylord St. Mary Pulls Away from Mendon for First Finals Title (MHSAA, Nov 21)"
+   },
+   {
+    "id": "callie-lb-03",
+    "title": "231 THANKSGIVING BOXES GO OUT TODAY AT NMC",
+    "summary": "NMC Professional Communications students hand out 231 Thanksgiving meal boxes today from 3:30 to 6:30 PM at the roundabout across from the Maple Lot on NMC's Front Street campus. Their goal was 215, so they blew past it.",
+    "article_url": "https://www.traverseticker.com/news/nmc-students-to-distribute-231-thanksgiving-meals-nov-23/",
+    "article_title": "NMC Students To Distribute 231 Thanksgiving Meals Nov. 23 (The Ticker, Nov 22)"
+   },
+   {
+    "id": "callie-lb-04",
+    "title": "NMC CHOIR LANDS A NATIONAL STAGE",
+    "summary": "NMC's all-female choir Aurora was picked to perform at the American Choral Directors Association National Conference next March in Minneapolis. It's the first NMC group ever invited and the first from any Michigan community college.",
+    "article_url": "https://www.traverseticker.com/news/nirvana-for-choir-nerds-nmc-lands-a-rare-invite-to-prestigious-choral-conference/",
+    "article_title": "'Nirvana for Choir Nerds': NMC Lands a Rare Invite to Prestigious Choral Conference (The Ticker, Nov 22)"
+   },
+   {
+    "id": "callie-lb-05",
+    "title": "ROTARY SQUARE GETS ITS BUILDER (YES, IT'S AJ'S)",
+    "summary": "The Traverse City DDA approved more than $3.4 million in contracts Friday to build Rotary Square downtown. Groundbreaking is planned for April, with completion by November next year.",
+    "article_url": "https://www.traverseticker.com/news/dda-approves-34m-in-construction-contracts-for-rotary-square-spring-groundbreaking-planned/",
+    "article_title": "DDA Approves $3.4M in Construction Contracts for Rotary Square; Spring Groundbreaking Planned (The Ticker, Nov 21)"
+   }
+  ],
+  "officeSchool": [
+   {
+    "id": "callie-os-01",
+    "title": "OFFICE: FEWER OF US GET THANKSGIVING OFF",
+    "summary": "A new YouGov poll says 58 percent of working Americans get Thanksgiving Day off, down from 68 percent last year. And 19 percent say they'll work a full day or limited hours on Thanksgiving, up from 14 percent.",
+    "article_url": "https://yougov.com/en-us/articles/56014-what-americans-expect-this-thanksgiving",
+    "article_title": "What Americans expect this Thanksgiving (YouGov, Nov 19)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-02",
+    "title": "OFFICE: THE GTA 6 SICK DAY WAS REAL",
+    "summary": "HR platform BambooHR looked at time-off data for more than 3.4 million U.S. workers: requests for GTA 6 launch day, Nov. 19, ran about 13 percent higher than a normal year, and the bump carried into Friday. In the same research, 18 percent of salaried workers said they planned to take launch day off, including 32 percent of Gen Z.",
+    "article_url": "https://www.hubstar.com/blog/gta-6-day/",
+    "article_title": "GTA 6 Day: Lessons in Planning Office Attendance Around Predictable Dips (Hubstar)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-03",
+    "title": "SCHOOL: PARENTS WANT AI TAUGHT, WITH GUARDRAILS",
+    "summary": "A National Parents Union survey found 77 percent of parents want K-12 schools to teach kids how to use AI tools well, and 85 percent want AI safety taught. Only 46 percent think their state is handling technology in schools well enough. Parents say they want measured rules, not total bans, plus more teacher training.",
+    "article_url": "https://www.edsurge.com/news/survey-most-parents-want-students-to-use-ai-in-school-with-strong-safeguards",
+    "article_title": "Survey: Most Parents Want Students to Use AI in School, With Strong Safeguards (EdSurge, Nov 3)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-04",
+    "title": "SCHOOL: CENTRAL GRADE'S BLACK FRIDAY AUCTION",
+    "summary": "Central Grade School's PTO online auction opens at 8 AM on Black Friday, Nov. 27, and runs until 8:30 PM Dec. 5. An adults-only party follows from 7 to 9:30 PM Dec. 5 at Right Brain Brewery.",
+    "article_url": "https://www.record-eagle.com/news/local_news/community-in-brief-11-21-2026/article_fab2161c-5c29-46f0-8faf-9301d9b19f3a.html",
+    "article_title": "Community in Brief: 11/21/2026 (Record-Eagle)",
+    "jokes": []
+   }
+  ]
+ },
+ "_normalized": {
+  "version": 1,
+  "stale_hours": 12
+ }
+}

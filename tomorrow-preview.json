@@ -1,7 +1,7 @@
 {
  "version": 1,
- "for": "2026-11-23",
- "built_from": "2026-11-22",
+ "for": "2026-11-24",
+ "built_from": "2026-11-23",
  "note": "Built from schedules and data files only; no research.",
  "items": [
   {
@@ -57,7 +57,7 @@
    "kind": "clock",
    "time": "08:30",
    "host": "truce",
-   "title": "Main Character",
+   "title": "Guilty Pleasure",
    "src": "station.json"
   },
   {
@@ -167,24 +167,9 @@
   {
    "kind": "sponsor",
    "host": "courtney",
-   "title": "🎬 Devette & Ford Insurance Agency read",
-   "note": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.",
-   "src": "sponsors.json"
-  },
-  {
-   "kind": "sponsor",
-   "host": "courtney",
    "title": "🥪 Jimmy John's read",
    "note": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
    "src": "sponsors.json"
-  },
-  {
-   "kind": "segment",
-   "time": "Monday recap",
-   "host": "courtney",
-   "title": "Weekend movies / must-see",
-   "note": "Devette & Ford Insurance Agency",
-   "src": "schedules.json"
   },
   {
    "kind": "segment",
@@ -234,33 +219,33 @@
   },
   {
    "kind": "birthday",
-   "title": "Alexis Ren, American social media personality, model, and actress (1996)",
+   "title": "Jeremy Swayman, American ice hockey player (1998)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Alexis_Ren"
+   "src": "https://en.wikipedia.org/wiki/Jeremy_Swayman"
   },
   {
    "kind": "birthday",
-   "title": "Miley Cyrus, American singer-songwriter and actress (1992)",
+   "title": "Ivi Adamou, Cypriot-Greek singer-songwriter (1993)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Miley_Cyrus"
+   "src": "https://en.wikipedia.org/wiki/Ivi_Adamou"
   },
   {
    "kind": "birthday",
-   "title": "Gabriel Landeskog, Swedish ice hockey player (1992)",
+   "title": "Sergei Kulbach, Ukrainian figure skater (died 2023) (1992)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Gabriel_Landeskog"
+   "src": "https://en.wikipedia.org/wiki/Sergei_Kulbach"
   },
   {
    "kind": "thisday",
-   "title": "2011: Arab Spring: After months of protests in Yemen, President Ali Abdullah Saleh (pictured) agreed to step down; he subsequently ceded power to Vice President Abdrabbuh Mansour Hadi in February 2012.",
+   "title": "2023: Hibiscus Rising (pictured), a sculpture commemorating the life of David Oluwale, was unveiled in Leeds.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Arab_Spring"
+   "src": "https://en.wikipedia.org/wiki/Hibiscus_Rising"
   },
   {
    "kind": "thisday",
-   "title": "2007: MS Explorer became the first cruise ship to sink in the Southern Ocean.",
+   "title": "2009: The Avdhela Project, an Aromanian digital library and cultural initiative, was launched in Bucharest, Romania.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/MV_Explorer_(1969)"
+   "src": "https://en.wikipedia.org/wiki/Avdhela_Project"
   },
   {
    "kind": "flashback",

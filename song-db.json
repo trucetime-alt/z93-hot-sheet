@@ -1,7 +1,7 @@
 {
 "version": 1,
 "note": "Built by next/tools/build_song_db.py from songs.json + past sheets (+ app queue). background is filled by Hot Sheet's 4 AM pass for songs with needs_background.",
-"count": 129,
+"count": 132,
 "songs": [
 {
 "id": "california-love-2pac-ft-dr-dre",
@@ -422,6 +422,17 @@
 "used": [],
 "source": "https://en.wikipedia.org/wiki/Time_After_Time_(Cyndi_Lauper_song)",
 "pool": "flash"
+},
+{
+"id": "thank-you-dido",
+"artist": "DIDO",
+"title": "THANK YOU",
+"year": 2000,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-23"
+]
 },
 {
 "id": "don-t-start-now-dua-lipa",
@@ -897,6 +908,17 @@
 "pool": "mood"
 },
 {
+"id": "kiss-me-mood-boost-sixpence-none-the-r",
+"artist": "MOOD BOOST: SIXPENCE NONE THE RICHER",
+"title": "KISS ME",
+"year": 1999,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-23"
+]
+},
+{
 "id": "all-star-mood-boost-smash-mouth",
 "artist": "MOOD BOOST: SMASH MOUTH",
 "title": "ALL STAR",
@@ -1251,6 +1273,17 @@
 "used": [],
 "source": "https://en.wikipedia.org/wiki/I_Gotta_Feeling",
 "pool": "mood"
+},
+{
+"id": "linger-the-cranberries",
+"artist": "The Cranberries",
+"title": "Linger",
+"year": 1993,
+"chart_peak": "Billboard Hot 100 No. 8",
+"background": "Dolores O'Riordan wrote the lyrics when she auditioned to be the band's singer, turning Noel Hogan's music into a song of regret about a 17-year-old soldier she'd fallen for; she later said it was about her first serious kiss. An early version came out in 1990 on a demo tape when the band was still called The Cranberry Saw Us.",
+"used": [
+"2026-11-23"
+]
 },
 {
 "id": "how-do-you-talk-to-an-angel-the-heights",
