@@ -619,6 +619,170 @@
   "as_of_sig": "f3369aa9e776",
   "stale_after": "2026-11-23T16:08-05:00"
  },
+ "box_office": {
+  "id": "box_office",
+  "title": "Weekend Box Office",
+  "category": "Daily",
+  "type": "text",
+  "content": "WEEKEND BOX OFFICE (Sunday estimates, Nov 20–22)<br>• 1. The Hunger Games: Sunrise on the Reaping — $120.0 million (new, 4,018 theaters) — the #1 opener<br>• 2. I Play Rocky — $9.33 million (wide expansion in week 3, 2,477 theaters; $10.42 million total)<br>• 3. Ebenezer — $7.70 million (−59% from last week; $32.55 million total)<br>• 4. The Cat in the Hat — $6.85 million (−39%; $47.12 million total)<br>• 5. Godzilla Minus Zero — $2.70 million (−68%; $54.56 million total)<br>• #1 opener / records: Hunger Games is the franchise's fourth-best debut, just behind Mockingjay Part 1 ($121.89 million); Monday's actuals could move it up a spot if they hit $122 million. It's Lionsgate's first $100 million-plus opening in 11 years, the first $100 million-plus debut since Spider-Man: Brand New Day in July, and about $225 million worldwide. Soft spot: Boxoffice Pro called I Play Rocky's wide expansion underwhelming at $9.3 million. Godzilla dropped 68% after losing premium screens.<br>➜ TAKE: One huge opener carried the weekend. Everybody else is waiting on Wednesday's Thanksgiving movies.<br>😂 JOKES: Hunger Games made $120 million. Second place made $9 million. That's not a race, that's a first-round knockout. / I Play Rocky got an A-plus from audiences and still finished about $110 million behind. Even Rocky doesn't always get the underdog ending.<br>As of: Sunday studio estimates as of Sun Nov 22, 2026, 7:08 PM ET (America/New_York). Box Office Mojo marks the whole chart Estimated. Monday actuals are still pending.<br>Sources: Box Office Mojo (Weekend 47) · The Numbers · Deadline Sunday update · Boxoffice Pro, Nov 22",
+  "notes": "Sunday studio estimates for the Nov 20-22, 2026 domestic weekend. All top-5 grosses flagged Estimated on Box Office Mojo (data as of Sun Nov 22, 16:08 PST / 7:08 PM ET). Cross-checked against The Numbers, Deadline's Sunday AM update, and Boxoffice Pro. Monday actuals pending. Do not treat as final.",
+  "custom": true,
+  "weekend": "2026-11-20/2026-11-22",
+  "status": "sunday_estimates",
+  "as_of_label": "Sunday studio estimates as of Sun Nov 22, 2026, 7:08 PM ET (America/New_York). Box Office Mojo marks the whole chart Estimated. Monday actuals are still pending.",
+  "top5": [
+   {
+    "rank": 1,
+    "title": "The Hunger Games: Sunrise on the Reaping",
+    "weekend_gross": 120000000,
+    "weekend_gross_display": "$120.0 million",
+    "is_estimate": true,
+    "is_new": true,
+    "is_number_one_opener": true,
+    "theaters": 4018,
+    "weeks": 1,
+    "total_gross": 120000000,
+    "total_gross_display": "$120.0 million",
+    "pct_change": null,
+    "distributor": "Lionsgate"
+   },
+   {
+    "rank": 2,
+    "title": "I Play Rocky",
+    "weekend_gross": 9328000,
+    "weekend_gross_display": "$9.33 million",
+    "is_estimate": true,
+    "is_new": false,
+    "is_number_one_opener": false,
+    "theaters": 2477,
+    "weeks": 3,
+    "note": "Wide expansion in week 3, after two limited weekends.",
+    "total_gross": 10422798,
+    "total_gross_display": "$10.42 million",
+    "pct_change": 1789.4,
+    "distributor": "Amazon MGM Studios"
+   },
+   {
+    "rank": 3,
+    "title": "Ebenezer",
+    "weekend_gross": 7700000,
+    "weekend_gross_display": "$7.70 million",
+    "is_estimate": true,
+    "is_new": false,
+    "is_number_one_opener": false,
+    "theaters": 3545,
+    "weeks": 2,
+    "total_gross": 32546820,
+    "total_gross_display": "$32.55 million",
+    "pct_change": -59.5,
+    "distributor": "Paramount"
+   },
+   {
+    "rank": 4,
+    "title": "The Cat in the Hat",
+    "weekend_gross": 6850000,
+    "weekend_gross_display": "$6.85 million",
+    "is_estimate": true,
+    "is_new": false,
+    "is_number_one_opener": false,
+    "theaters": 3262,
+    "weeks": 3,
+    "total_gross": 47119053,
+    "total_gross_display": "$47.12 million",
+    "pct_change": -39.4,
+    "distributor": "Warner Bros."
+   },
+   {
+    "rank": 5,
+    "title": "Godzilla Minus Zero",
+    "weekend_gross": 2695000,
+    "weekend_gross_display": "$2.70 million",
+    "is_estimate": true,
+    "is_new": false,
+    "is_number_one_opener": false,
+    "theaters": 2107,
+    "weeks": 3,
+    "total_gross": 54559640,
+    "total_gross_display": "$54.56 million",
+    "pct_change": -68.4,
+    "distributor": "GKIDS"
+   }
+  ],
+  "number_one_opener": {
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "weekend_gross_display": "$120.0 million",
+   "is_estimate": true,
+   "theaters": 4018,
+   "worldwide_display": "about $225 million ($105 million overseas)"
+  },
+  "records": [
+   "Hunger Games is the franchise's fourth-best debut, just behind Mockingjay Part 1 ($121.89 million); Monday actuals could move it up if they hit $122 million (Boxoffice Pro).",
+   "First $100 million-plus domestic opener since Spider-Man: Brand New Day in late July, and the fifth-biggest opening of 2026 (Boxoffice Pro).",
+   "Lionsgate's biggest opening since COVID and first $100 million-plus opening in 11 years; the last was Mockingjay Part 2 at $102.66 million (Deadline).",
+   "Second-best U.S./Canada opening for a prequel, after Rogue One ($155 million) (Deadline).",
+   "Nearly tripled The Ballad of Songbirds & Snakes ($44.6 million) (Boxoffice Pro / Deadline).",
+   "About $225 million worldwide, including $105 million overseas (Deadline / Boxoffice Pro)."
+  ],
+  "notable": [
+   "Boxoffice Pro called I Play Rocky's wide expansion underwhelming at an estimated $9.33 million in 2,477 theaters, despite strong reviews and an A+ CinemaScore.",
+   "Godzilla Minus Zero dropped 68% after losing premium screens, to an estimated $2.70 million.",
+   "No other new wide opener this weekend besides Hunger Games; I Play Rocky was a week-3 expansion."
+  ],
+  "take": "One huge opener carried the weekend. Everybody else is waiting on Wednesday's Thanksgiving movies.",
+  "items": [
+   {
+    "id": "2026-11-23-box-office-01",
+    "title": "WEEKEND BOX OFFICE (Sunday estimates, Nov 20–22)",
+    "recap": "We ran the Sunday estimates: Hunger Games opened to $120 million, with I Play Rocky a distant second at $9.33 million.",
+    "article_url": "https://www.boxofficemojo.com/weekend/2026W47/",
+    "article_title": "Domestic 2026 Weekend 47 (Box Office Mojo; all figures Estimated)",
+    "jokes": [
+     "Hunger Games made $120 million. Second place made $9 million. That's not a race, that's a first-round knockout.",
+     "I Play Rocky got an A-plus from audiences and still finished about $110 million behind. Even Rocky doesn't always get the underdog ending."
+    ],
+    "body": "WEEKEND BOX OFFICE (Sunday estimates, Nov 20–22)<br>• 1. The Hunger Games: Sunrise on the Reaping — $120.0 million (new, 4,018 theaters) — the #1 opener<br>• 2. I Play Rocky — $9.33 million (wide expansion in week 3, 2,477 theaters; $10.42 million total)<br>• 3. Ebenezer — $7.70 million (−59% from last week; $32.55 million total)<br>• 4. The Cat in the Hat — $6.85 million (−39%; $47.12 million total)<br>• 5. Godzilla Minus Zero — $2.70 million (−68%; $54.56 million total)<br>• #1 opener / records: Hunger Games is the franchise's fourth-best debut, just behind Mockingjay Part 1 ($121.89 million); Monday's actuals could move it up a spot if they hit $122 million. It's Lionsgate's first $100 million-plus opening in 11 years, the first $100 million-plus debut since Spider-Man: Brand New Day in July, and about $225 million worldwide. Soft spot: Boxoffice Pro called I Play Rocky's wide expansion underwhelming at $9.3 million. Godzilla dropped 68% after losing premium screens.<br>➜ TAKE: One huge opener carried the weekend. Everybody else is waiting on Wednesday's Thanksgiving movies.<br>😂 JOKES: Hunger Games made $120 million. Second place made $9 million. That's not a race, that's a first-round knockout. / I Play Rocky got an A-plus from audiences and still finished about $110 million behind. Even Rocky doesn't always get the underdog ending.<br>As of: Sunday studio estimates as of Sun Nov 22, 2026, 7:08 PM ET (America/New_York). Box Office Mojo marks the whole chart Estimated. Monday actuals are still pending.<br>Sources: Box Office Mojo (Weekend 47) · The Numbers · Deadline Sunday update · Boxoffice Pro, Nov 22",
+    "description": "WEEKEND BOX OFFICE (Sunday estimates, Nov 20–22)<br>• 1. The Hunger Games: Sunrise on the Reaping — $120.0 million (new, 4,018 theaters) — the #1 opener<br>• 2. I Play Rocky — $9.33 million (wide expansion in week 3, 2,477 theaters; $10.42 million total)<br>• 3. Ebenezer — $7.70 million (−59% from last week; $32.55 million total)<br>• 4. The Cat in the Hat — $6.85 million (−39%; $47.12 million total)<br>• 5. Godzilla Minus Zero — $2.70 million (−68%; $54.56 million total)<br>• #1 opener / records: Hunger Games is the franchise's fourth-best debut, just behind Mockingjay Part 1 ($121.89 million); Monday's actuals could move it up a spot if they hit $122 million. It's Lionsgate's first $100 million-plus opening in 11 years, the first $100 million-plus debut since Spider-Man: Brand New Day in July, and about $225 million worldwide. Soft spot: Boxoffice Pro called I Play Rocky's wide expansion underwhelming at $9.3 million. Godzilla dropped 68% after losing premium screens.<br>➜ TAKE: One huge opener carried the weekend. Everybody else is waiting on Wednesday's Thanksgiving movies.<br>😂 JOKES: Hunger Games made $120 million. Second place made $9 million. That's not a race, that's a first-round knockout. / I Play Rocky got an A-plus from audiences and still finished about $110 million behind. Even Rocky doesn't always get the underdog ending.<br>As of: Sunday studio estimates as of Sun Nov 22, 2026, 7:08 PM ET (America/New_York). Box Office Mojo marks the whole chart Estimated. Monday actuals are still pending.<br>Sources: Box Office Mojo (Weekend 47) · The Numbers · Deadline Sunday update · Boxoffice Pro, Nov 22",
+    "summary": "Hunger Games opened to an estimated $120 million, the weekend's only new wide opener and the franchise's fourth-best start.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.boxofficemojo.com/weekend/2026W47/",
+  "article_title": "Domestic 2026 Weekend 47 (Box Office Mojo; all figures Estimated)",
+  "jokes": [
+   "Hunger Games made $120 million. Second place made $9 million. That's not a race, that's a first-round knockout.",
+   "I Play Rocky got an A-plus from audiences and still finished about $110 million behind. Even Rocky doesn't always get the underdog ending."
+  ],
+  "sources": [
+   {
+    "name": "Box Office Mojo",
+    "title": "Domestic 2026 Weekend 47 (Nov 20-22)",
+    "url": "https://www.boxofficemojo.com/weekend/2026W47/",
+    "note": "All rows flagged Estimated. Data as of Sun Nov 22, 16:08 PST (7:08 PM ET)."
+   },
+   {
+    "name": "The Numbers",
+    "title": "Weekend Domestic Box Office Chart for November 20, 2026",
+    "url": "https://www.the-numbers.com/box-office-chart/weekend/2026/11/20"
+   },
+   {
+    "name": "Deadline",
+    "title": "Hunger Games: Sunrise on the Reaping $120M U.S. Opening — Sunday Update",
+    "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+    "note": "Sunday AM update, Nov 22, 2026, 7:38 AM."
+   },
+   {
+    "name": "Boxoffice Pro",
+    "title": "Weekend Box Office: Hunger Games: Sunrise on the Reaping Sweeps the Competition with $120M Debut",
+    "url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
+    "note": "Nov 22, 2026. Sunday studio estimates."
+   }
+  ],
+  "as_of": "2026-11-23T05:56-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "a848cf9e7892",
+  "stale_after": "2026-11-23T17:56-05:00"
+ },
  "gta6": {
   "id": "gta6",
   "title": "GTA 6 Watch",
@@ -1032,6 +1196,18 @@
    },
    {
     "id": "2026-11-23-c01",
+    "slot": "TRENDING AUDIO",
+    "title": "C01 03 SNL WU COMBINED",
+    "body": "C01 03 SNL WU COMBINED · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-23/c01-03-snl-wu-combined.mp3",
+    "file": "c01-03-snl-wu-combined.mp3",
+    "ready": true,
+    "duration_sec": 41.8,
+    "duration": "0:42",
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-23-c01",
     "slot": "FIRST HALF HOUR: LATE-NIGHT",
     "title": "SNL WEEKEND UPDATE: iPHONE DUO, \"YOU FOLDED IT?\"",
     "body": "SNL WEEKEND UPDATE: iPHONE DUO, \"YOU FOLDED IT?\" · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: No new SNL this weekend, NBC re-ran the Halloween episode, so here's a Weekend Update joke you may have missed. The new foldable iPhone is cracking. \"Here's Weekend Update.\"<br>🔈 AUDIO SOURCE: Weekend Update, Saturday Night Live (NBC), official YouTube. On-air credit: \"from SNL's Weekend Update.\"<br>• Desk joke: foldable iPhone screens are cracking, and Apple has a question.<br>🔊 IN: \"Some users of the new iPhone Duo...\"<br>OUT: \"...Responded Apple, you folded it?\"<br>~0:09 · PLAY · READY<br>➜ WHY: Quick, clean, relatable tech joke for the first half hour.<br>⚠️ FLAG: Clean. Re-air of the Oct 31, 2026 episode (no new Nov 21 show).",
@@ -1165,10 +1341,10 @@
   "article_url": "",
   "article_title": "",
   "jokes": [],
-  "as_of": "2026-11-23T04:08-05:00",
+  "as_of": "2026-11-23T05:56-05:00",
   "as_of_src": "file",
-  "as_of_sig": "1320360c8bef",
-  "stale_after": "2026-11-23T16:08-05:00"
+  "as_of_sig": "a15ee449a900",
+  "stale_after": "2026-11-23T17:56-05:00"
  },
  "events": {
   "id": "events",
@@ -1254,6 +1430,222 @@
   "jokes": []
  },
  "courtney": {
+  "box_office": {
+   "title": "Courtney Movies / Box Office",
+   "pointer": "The short top-5 chart for the whole show is in the top-level WEEKEND BOX OFFICE section (box_office), just after Daily Buzz — National.",
+   "content": "COURTNEY MOVIES / BOX OFFICE<br>Sunday studio estimates for Nov 20–22. Monday actuals are still pending. The short top-5 chart for the whole show is in WEEKEND BOX OFFICE, just after Daily Buzz — National.<br><br>OPENERS<br>• The Hunger Games: Sunrise on the Reaping (Lionsgate, new): estimated $120 million in 4,018 theaters, about $29,866 per screen. Friday $56 million (including $21 million in Thursday previews), Saturday $36.3 million, Sunday $27.7 million. About $225 million worldwide ($105 million overseas). CinemaScore: A− (up from a B+ on Songbirds & Snakes). Rotten Tomatoes as of this morning (Mon Nov 23): 69% critics (181 reviews), 94% audience. Weekend writeups still had the critics score in the 67–68% range; it was moving.<br>• I Play Rocky (Amazon MGM): not a brand-new opener. After two limited weekends it went wide in 2,477 theaters and did an estimated $9.33 million ($10.42 million total). CinemaScore: A+ (only the second A+ this year, after April's A Great Awakening, per The Hollywood Reporter). Rotten Tomatoes as of this morning: 89% critics (190 reviews), 99% audience. Boxoffice Pro still called the wide expansion underwhelming next to that word of mouth.<br><br>RECORDS AND HOLDS<br>• Hunger Games: the franchise's fourth-best debut, just behind Mockingjay Part 1 ($121.89 million). First $100 million-plus opener since Spider-Man: Brand New Day in late July, and the fifth-biggest opening of 2026. Lionsgate's biggest opening since COVID and first $100 million-plus opening in 11 years (the last was Mockingjay Part 2, $102.66 million). Deadline also calls it the second-best U.S./Canada opening for a prequel, after Rogue One ($155 million). It nearly tripled The Ballad of Songbirds & Snakes ($44.6 million).<br>• I Play Rocky's wide jump was the soft spot of the weekend, per Boxoffice Pro. No other new wide opener this frame.<br>• Godzilla Minus Zero fell 68% after losing premium screens to Hunger Games, to $2.70 million ($54.56 million total). Ebenezer dropped 59% in week 2 and still finished third.<br>• Also notable: A24's You Can See Everything has $93.47 million domestic after a $2.52 million sixth weekend and has crossed $100 million worldwide. Boxoffice Pro says it passed 1998's Everest to become the third-highest-grossing documentary domestically, after Fahrenheit 9/11 and Taylor Swift: The Eras Tour.<br><br>REVIEW SCORES (Rotten Tomatoes as of Mon morning, Nov 23, 2026; CinemaScore from studio/trade reports)<br>• Hunger Games: 69% critics / 94% audience · CinemaScore A−<br>• I Play Rocky: 89% critics / 99% audience · CinemaScore A+<br>• Ebenezer: 54% critics / 90% audience · CinemaScore A−<br>• The Cat in the Hat: 48% critics / 87% audience · CinemaScore A<br>• Godzilla Minus Zero: 90% critics / 95% audience · CinemaScore A<br><br>OPENS THIS WEEK<br>Thanksgiving week: the new wide movies open Wednesday, Nov 25, not Friday.<br>• Wednesday: Disney's Hexed (Hailee Steinfeld, animated)<br>• Wednesday: Focker-in-Law (Ben Stiller, Robert De Niro, and Ariana Grande; the fourth Meet the Parents movie)<br>• Wednesday: Hershey (Finn Wittrock and Alexandra Daddario; Angel Studios)<br>• Wednesday: The Further Mis-Adventures of Cliff Booth — IMAX only for about two weeks (Brad Pitt; David Fincher and Quentin Tarantino), then Netflix on Dec 23<br>• Friday, Nov 27: no major wide theatrical opener verified in Boxoffice Pro, Deadline, or Fandango's holiday preview (that calendar jumps from Nov 25 to Dec 4).",
+   "weekend": "2026-11-20/2026-11-22",
+   "status": "sunday_estimates",
+   "as_of_label": "Sunday studio estimates as of Sun Nov 22, 2026, 7:08 PM ET (America/New_York). Box Office Mojo marks the whole chart Estimated. Monday actuals are still pending.",
+   "as_of": "2026-11-23T05:55-05:00",
+   "reviews_as_of": "2026-11-23T05:55-05:00",
+   "openers": [
+    {
+     "title": "The Hunger Games: Sunrise on the Reaping",
+     "distributor": "Lionsgate",
+     "status": "new wide opener, #1",
+     "weekend_gross_display": "$120.0 million (estimate)",
+     "theaters": 4018,
+     "per_screen_display": "about $29,866",
+     "daily": {
+      "friday_display": "$56 million (includes $21 million Thursday previews)",
+      "saturday_display": "$36.3 million",
+      "sunday_display": "$27.7 million",
+      "source": "Boxoffice Pro / Deadline Sunday estimates"
+     },
+     "worldwide_display": "about $225 million ($105 million overseas)",
+     "cinemascore": "A-",
+     "cinemascore_note": "Up from a B+ on The Ballad of Songbirds & Snakes (Deadline / Boxoffice Pro / THR).",
+     "rt_critics": 69,
+     "rt_audience": 94,
+     "rt_critics_reviews": 181,
+     "rt_note": "Official Rotten Tomatoes page as of Mon morning, Nov 23, 2026. Weekend writeups still had critics in the 67–68% range; scores were moving.",
+     "rt_url": "https://www.rottentomatoes.com/m/the_hunger_games_sunrise_on_the_reaping"
+    },
+    {
+     "title": "I Play Rocky",
+     "distributor": "Amazon MGM Studios",
+     "status": "week-3 wide expansion, not a brand-new opener",
+     "weekend_gross_display": "$9.33 million (estimate)",
+     "theaters": 2477,
+     "total_gross_display": "$10.42 million",
+     "cinemascore": "A+",
+     "cinemascore_note": "Only the second A+ this year, after April's A Great Awakening (The Hollywood Reporter, Nov 22).",
+     "rt_critics": 89,
+     "rt_audience": 99,
+     "rt_critics_reviews": 190,
+     "rt_note": "Official Rotten Tomatoes page as of Mon morning, Nov 23, 2026.",
+     "rt_url": "https://www.rottentomatoes.com/m/i_play_rocky",
+     "note": "Boxoffice Pro called the wide expansion underwhelming next to the word of mouth."
+    }
+   ],
+   "records": [
+    "Hunger Games is the franchise's fourth-best debut, just behind Mockingjay Part 1 ($121.89 million); Monday actuals could move it up if they hit $122 million (Boxoffice Pro).",
+    "First $100 million-plus domestic opener since Spider-Man: Brand New Day in late July, and the fifth-biggest opening of 2026 (Boxoffice Pro).",
+    "Lionsgate's biggest opening since COVID and first $100 million-plus opening in 11 years; the last was Mockingjay Part 2 at $102.66 million (Deadline).",
+    "Second-best U.S./Canada opening for a prequel, after Rogue One ($155 million) (Deadline).",
+    "Nearly tripled The Ballad of Songbirds & Snakes ($44.6 million) (Boxoffice Pro / Deadline).",
+    "About $225 million worldwide, including $105 million overseas (Deadline / Boxoffice Pro)."
+   ],
+   "holds_and_notable": [
+    "Boxoffice Pro called I Play Rocky's wide expansion underwhelming at an estimated $9.33 million in 2,477 theaters, despite strong reviews and an A+ CinemaScore.",
+    "Godzilla Minus Zero dropped 68% after losing premium screens, to an estimated $2.70 million.",
+    "No other new wide opener this weekend besides Hunger Games; I Play Rocky was a week-3 expansion.",
+    "Ebenezer dropped 59% in week 2 and still finished third, at an estimated $7.70 million ($32.55 million total).",
+    "A24's You Can See Everything has $93.47 million domestic after a $2.52 million sixth weekend and has crossed $100 million worldwide. Boxoffice Pro says it passed 1998's Everest to become the third-highest-grossing documentary domestically, after Fahrenheit 9/11 and Taylor Swift: The Eras Tour."
+   ],
+   "reviews": [
+    {
+     "title": "The Hunger Games: Sunrise on the Reaping",
+     "rt_critics": 69,
+     "rt_audience": 94,
+     "cinemascore": "A-",
+     "cinemascore_source": "Deadline, Boxoffice Pro, The Hollywood Reporter (Nov 22)",
+     "rt_url": "https://www.rottentomatoes.com/m/the_hunger_games_sunrise_on_the_reaping",
+     "rt_as_of": "Mon morning, Nov 23, 2026"
+    },
+    {
+     "title": "I Play Rocky",
+     "rt_critics": 89,
+     "rt_audience": 99,
+     "cinemascore": "A+",
+     "cinemascore_source": "Boxoffice Pro; The Hollywood Reporter (Nov 22)",
+     "rt_url": "https://www.rottentomatoes.com/m/i_play_rocky",
+     "rt_as_of": "Mon morning, Nov 23, 2026"
+    },
+    {
+     "title": "Ebenezer",
+     "rt_critics": 54,
+     "rt_audience": 90,
+     "cinemascore": "A-",
+     "cinemascore_source": "Paramount (Nov 15); Variety (Nov 16)",
+     "rt_url": "https://www.rottentomatoes.com/m/ebenezer_2026",
+     "rt_as_of": "Mon morning, Nov 23, 2026"
+    },
+    {
+     "title": "The Cat in the Hat",
+     "rt_critics": 48,
+     "rt_audience": 87,
+     "cinemascore": "A",
+     "cinemascore_source": "Variety opening-weekend report (Nov 8, 2026)",
+     "rt_url": "https://www.rottentomatoes.com/m/the_cat_in_the_hat",
+     "rt_as_of": "Mon morning, Nov 23, 2026"
+    },
+    {
+     "title": "Godzilla Minus Zero",
+     "rt_critics": 90,
+     "rt_audience": 95,
+     "cinemascore": "A",
+     "cinemascore_source": "Variety opening-weekend report (Nov 8, 2026)",
+     "rt_url": "https://www.rottentomatoes.com/m/godzilla_minus_zero",
+     "rt_as_of": "Mon morning, Nov 23, 2026"
+    }
+   ],
+   "opens_this_week": {
+    "note": "Thanksgiving week: the new wide movies open Wednesday, Nov 25, not Friday.",
+    "wednesday_2026_11_25": [
+     {
+      "title": "Hexed",
+      "distributor": "Disney",
+      "note": "Animated; Hailee Steinfeld. Confirmed for Nov 25 by Boxoffice Pro (Nov 22) and Fandango's 2026 Holiday Preview."
+     },
+     {
+      "title": "Focker-in-Law",
+      "distributor": "Universal",
+      "note": "Ben Stiller, Robert De Niro, and Ariana Grande; the fourth Meet the Parents movie. Confirmed for Nov 25 by Boxoffice Pro (Nov 22) and Fandango."
+     },
+     {
+      "title": "Hershey",
+      "distributor": "Angel Studios",
+      "note": "Finn Wittrock and Alexandra Daddario. Confirmed for Nov 25 by Fandango's 2026 Holiday Preview."
+     },
+     {
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "distributor": "Netflix",
+      "note": "IMAX-only run for about two weeks starting Nov 25 (Brad Pitt; David Fincher and Quentin Tarantino), then Netflix on Dec 23. Confirmed by Boxoffice Pro (Nov 22) and Fandango."
+     }
+    ],
+    "friday_2026_11_27": "No major wide theatrical opener verified in Boxoffice Pro, Deadline, or Fandango's holiday preview (that calendar jumps from Nov 25 to Dec 4)."
+   },
+   "jokes": [
+    "Hunger Games made $120 million. Second place made $9 million. That's not a race, that's a first-round knockout.",
+    "I Play Rocky got an A-plus from audiences and still finished about $110 million behind. Even Rocky doesn't always get the underdog ending."
+   ],
+   "sources": [
+    {
+     "name": "Box Office Mojo",
+     "title": "Domestic 2026 Weekend 47 (Nov 20-22)",
+     "url": "https://www.boxofficemojo.com/weekend/2026W47/",
+     "note": "All rows flagged Estimated. Data as of Sun Nov 22, 16:08 PST (7:08 PM ET)."
+    },
+    {
+     "name": "The Numbers",
+     "title": "Weekend Domestic Box Office Chart for November 20, 2026",
+     "url": "https://www.the-numbers.com/box-office-chart/weekend/2026/11/20"
+    },
+    {
+     "name": "Deadline",
+     "title": "Hunger Games: Sunrise on the Reaping $120M U.S. Opening — Sunday Update",
+     "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+     "note": "Sunday AM update, Nov 22, 2026, 7:38 AM."
+    },
+    {
+     "name": "Boxoffice Pro",
+     "title": "Weekend Box Office: Hunger Games: Sunrise on the Reaping Sweeps the Competition with $120M Debut",
+     "url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
+     "note": "Nov 22, 2026. Sunday studio estimates."
+    },
+    {
+     "name": "Rotten Tomatoes",
+     "title": "The Hunger Games: Sunrise on the Reaping",
+     "url": "https://www.rottentomatoes.com/m/the_hunger_games_sunrise_on_the_reaping"
+    },
+    {
+     "name": "Rotten Tomatoes",
+     "title": "I Play Rocky",
+     "url": "https://www.rottentomatoes.com/m/i_play_rocky"
+    },
+    {
+     "name": "Rotten Tomatoes",
+     "title": "Ebenezer (2026)",
+     "url": "https://www.rottentomatoes.com/m/ebenezer_2026"
+    },
+    {
+     "name": "Rotten Tomatoes",
+     "title": "The Cat in the Hat",
+     "url": "https://www.rottentomatoes.com/m/the_cat_in_the_hat"
+    },
+    {
+     "name": "Rotten Tomatoes",
+     "title": "Godzilla Minus Zero",
+     "url": "https://www.rottentomatoes.com/m/godzilla_minus_zero"
+    },
+    {
+     "name": "The Hollywood Reporter",
+     "title": "Hunger Games: Sunrise on the Reaping Wins Box Office With $120M+",
+     "url": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-box-office-opening-win-2-1236760511/",
+     "note": "Nov 22, 2026. CinemaScore and I Play Rocky A+ context."
+    },
+    {
+     "name": "Variety",
+     "title": "Godzilla Minus Zero Starts Strong, Cat in the Hat Fizzles",
+     "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
+     "note": "Nov 8, 2026. Opening-weekend CinemaScores for Godzilla (A) and The Cat in the Hat (A)."
+    },
+    {
+     "name": "Paramount",
+     "title": "Ebenezer Opens to No. 1 Worldwide With $42 Million",
+     "url": "https://cms-corp.paramount.com/news/ebenezer-opens-to-no-1-worldwide-with-42-million",
+     "note": "Nov 15, 2026. Ebenezer A- CinemaScore."
+    },
+    {
+     "name": "Fandango",
+     "title": "Fandango's 2026 Holiday Preview",
+     "url": "https://www.fandango.com/movie-news/fandangos-2026-holiday-preview-755294",
+     "note": "Nov 5, 2026. Confirms Nov 25 release dates for Hexed, Focker-In-Law, Hershey, and Cliff Booth."
+    }
+   ]
+  },
   "songBattle": [
    {
     "id": "court-sb-01",
