@@ -1129,7 +1129,9 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c05-campbell-goff-catalyst.mp3",
     "ready": true,
     "recap": "We heard Dan Campbell call Jared Goff the Lions' catalyst after the win over Tampa Bay.",
-    "duration": 32.4
+    "duration": "0:32",
+    "secs": 32,
+    "duration_sec": 32.392
    },
    {
     "id": "2026-11-23-c06",
@@ -1139,7 +1141,9 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c06-ella-langley-sick-of-me.mp3",
     "ready": true,
     "recap": "We heard Ella Langley joke she was sick of herself after winning six CMA Awards.",
-    "duration": 3.5
+    "duration": "0:04",
+    "secs": 4,
+    "duration_sec": 3.527
    }
   ],
   "article_url": "",
@@ -1168,7 +1172,8 @@
     "file": "c00-opener-supercut-v2.mp3",
     "duration_sec": 22.831,
     "intro_sec": 4,
-    "kind": "opener"
+    "kind": "opener",
+    "secs": 23
    },
    {
     "id": "2026-11-23-c00",
@@ -1178,9 +1183,10 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c00-opener-supercut-v3.mp3",
     "file": "c00-opener-supercut-v3.mp3",
     "ready": true,
-    "duration_sec": 17.7,
+    "duration_sec": 17.711,
     "duration": "0:18",
-    "kind": "opener"
+    "kind": "opener",
+    "secs": 18
    },
    {
     "id": "2026-11-23-c00",
@@ -1190,9 +1196,10 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c00-opener-supercut.mp3",
     "file": "c00-opener-supercut.mp3",
     "ready": true,
-    "duration_sec": 30.1,
+    "duration_sec": 30.093,
     "duration": "0:30",
-    "kind": "opener"
+    "kind": "opener",
+    "secs": 30
    },
    {
     "id": "2026-11-23-c01",
@@ -1202,9 +1209,11 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c01-03-snl-wu-combined.mp3",
     "file": "c01-03-snl-wu-combined.mp3",
     "ready": true,
-    "duration_sec": 41.8,
+    "duration_sec": 41.848,
     "duration": "0:42",
-    "kind": "late-night"
+    "kind": "late-night",
+    "secs": 42,
+    "performer": "Colin Jost and Michael Che"
    },
    {
     "id": "2026-11-23-c01",
@@ -1218,7 +1227,9 @@
     "file": "c01-snl-wu-iphone-duo.mp3",
     "duration_sec": 8.647,
     "intro_sec": 7,
-    "kind": "late-night"
+    "kind": "late-night",
+    "secs": 9,
+    "performer": "Colin Jost"
    },
    {
     "id": "2026-11-23-c02",
@@ -1232,7 +1243,9 @@
     "file": "c02-snl-wu-van-gogh.mp3",
     "duration_sec": 20.349,
     "intro_sec": 8,
-    "kind": "late-night"
+    "kind": "late-night",
+    "secs": 20,
+    "performer": "Colin Jost"
    },
    {
     "id": "2026-11-23-c03",
@@ -1246,7 +1259,9 @@
     "file": "c03-snl-wu-banana-split.mp3",
     "duration_sec": 13.166,
     "intro_sec": 8,
-    "kind": "late-night"
+    "kind": "late-night",
+    "secs": 13,
+    "performer": "Michael Che"
    },
    {
     "id": "2026-11-23-c04",
@@ -1258,8 +1273,9 @@
     "recap": "We heard the call of Michigan's triple-overtime winner over No. 4 UCLA.",
     "duration": "0:22",
     "file": "c04-michigan-3ot-winner.mp3",
-    "duration_sec": 21.6,
-    "kind": "trending"
+    "duration_sec": 21.603,
+    "kind": "trending",
+    "secs": 22
    },
    {
     "id": "2026-11-23-c05",
@@ -1269,9 +1285,10 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c05-campbell-goff-catalyst.mp3",
     "file": "c05-campbell-goff-catalyst.mp3",
     "ready": true,
-    "duration_sec": 32.4,
+    "duration_sec": 32.392,
     "duration": "0:32",
-    "kind": "trending"
+    "kind": "trending",
+    "secs": 32
    },
    {
     "id": "2026-11-23-c06",
@@ -1281,9 +1298,10 @@
     "audio": "/workspace/morning-rush/clips/2026-11-23/c06-ella-langley-sick-of-me.mp3",
     "file": "c06-ella-langley-sick-of-me.mp3",
     "ready": true,
-    "duration_sec": 3.5,
+    "duration_sec": 3.527,
     "duration": "0:04",
-    "kind": "trending"
+    "kind": "trending",
+    "secs": 4
    },
    {
     "id": "2026-11-23-c07",
@@ -1295,8 +1313,10 @@
     "recap": "We played a Dry Bar bit about rapping about a 2008 Ford Escape.",
     "duration": "0:41",
     "file": "c07-standup-ford-escape-rap.mp3",
-    "duration_sec": 40.9,
-    "kind": "comedy"
+    "duration_sec": 40.908,
+    "kind": "comedy",
+    "secs": 41,
+    "performer": "Jay Whittaker"
    },
    {
     "id": "2026-11-23-c08",
@@ -1308,8 +1328,10 @@
     "recap": "We heard a Dry Bar comic point out that Rapper's Delight is about toast.",
     "duration": "0:21",
     "file": "c08-standup-rappers-delight-toast.mp3",
-    "duration_sec": 20.6,
-    "kind": "comedy"
+    "duration_sec": 20.558,
+    "kind": "comedy",
+    "secs": 21,
+    "performer": "Jay Whittaker"
    },
    {
     "id": "2026-11-23-c09",
@@ -1321,8 +1343,9 @@
     "recap": "We heard Lainey Wilson hand Ella Langley a broom for her CMA sweep.",
     "duration": "0:06",
     "file": "c09-lainey-wilson-broom-sweep.mp3",
-    "duration_sec": 6.4,
-    "kind": "news"
+    "duration_sec": 6.426,
+    "kind": "news",
+    "secs": 6
    },
    {
     "id": "2026-11-23-c10",
@@ -1334,17 +1357,18 @@
     "recap": "We heard about a shelter throwing a Thanksgiving feast for its dogs and cats.",
     "duration": "0:12",
     "file": "c10-dodo-shelter-thanksgiving-feast.mp3",
-    "duration_sec": 12.4,
-    "kind": "trending"
+    "duration_sec": 12.434,
+    "kind": "trending",
+    "secs": 12
    }
   ],
   "article_url": "",
   "article_title": "",
   "jokes": [],
-  "as_of": "2026-11-23T05:56-05:00",
+  "as_of": "2026-11-23T06:47-05:00",
   "as_of_src": "file",
-  "as_of_sig": "a15ee449a900",
-  "stale_after": "2026-11-23T17:56-05:00"
+  "as_of_sig": "8e24434eeee3",
+  "stale_after": "2026-11-23T18:47-05:00"
  },
  "events": {
   "id": "events",
@@ -1746,7 +1770,9 @@
     "file": "court-01-here-then-were-gone-bed.mp3",
     "path": "/workspace/morning-rush/clips/2026-11-23/court-01-here-then-were-gone-bed.mp3",
     "title": "HUNGER GAMES BED: ELLA LANGLEY, \"HERE THEN WE'RE GONE\" (chorus)",
-    "duration": "0:12"
+    "duration": "0:12",
+    "secs": 12,
+    "duration_sec": 11.938
    }
   ]
  },
