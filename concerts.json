@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-24T05:44:43-05:00",
+ "updated": "2026-11-24T05:59:08-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
  "artistsWatched": 301,
  "sources": {
@@ -11,8 +11,9 @@
   },
   "venues": {
    "Lansing Center (iCal)": {
-    "status": "ok",
-    "count": 1
+    "status": "failed",
+    "error": "URLError",
+    "count": 0
    },
    "Lansing Center (JSON-LD)": {
     "status": "ok",
@@ -73,11 +74,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 151
+   "count": 153
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 150
+   "count": 152
   }
  },
  "shows": [
@@ -103,5 +104,5 @@
   }
  ],
  "announcements": [],
- "tookSec": 30.0
+ "tookSec": 45.9
 }

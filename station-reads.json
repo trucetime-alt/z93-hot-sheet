@@ -27,6 +27,28 @@
    "freq": "shift"
   },
   {
+   "id": "st-secret-santa",
+   "name": "Secret Santa",
+   "short": "Secret Santa",
+   "icon": "\ud83c\udf85",
+   "kill": "2026-12-10",
+   "text": "BE A SECRET SANTA TO SOMEBODY THIS CHRISTMAS BY SIGNING THEM UP TO WIN SOME AMAZING GIFTS FROM OUR MERCHANT PARTNERS. OVER A THOUSAND DOLLARS IN PRIZES ARE UP FOR GRABS. HEAD OVER TO Z93 HITS DOT COM AND NOMINATE SOMEBODY TODAY!",
+   "sourceNote": "Official once-per-shift read, word for word, from station-hot-sheet-2026-11-23.txt (MINIMUM ONCE PER SHIFT). Kill 12/10.",
+   "active": true,
+   "freq": "shift"
+  },
+  {
+   "id": "st-kurtz-playlist",
+   "name": "Kurtz Car Stereo",
+   "short": "Kurtz Playlist",
+   "icon": "\ud83d\udd0a",
+   "kill": "2026-12-31",
+   "text": "TUNE IN AND TURN IT UP WITH KURTZ CAR STEREO AND Z93\u2019S 93-MINUTE COMMERCIAL FREE PLAYLIST AT 10:20, 2:20 AND 6:20 EVERY WEEKDAY.",
+   "sourceNote": "Official once-per-shift read, word for word, from station-hot-sheet-2026-11-23.txt (MINIMUM ONCE PER SHIFT). Kill 12/31. All hosts. Existing shift-specific Kurtz 10:20 / 2:20 / 6:20 reads are unchanged.",
+   "active": true,
+   "freq": "shift"
+  },
+  {
    "id": "st-kurtz-car-stereo",
    "name": "Kurtz Car Stereo",
    "short": "Kurtz",

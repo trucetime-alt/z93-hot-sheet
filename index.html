@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59j-danceread">
+<meta name="hs-build" content="v59k-santakurtz">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -6103,6 +6103,7 @@ function inlineClipBtn(c){
 
 /* ================= station read sheet: once-per-shift reads + liners (station-reads.json + local overlay, synced) ================= */
 /* v59j: 90s, 2K & Today Dance Party is a once-per-shift station read (st-dance-party), same strip and checkoff as Teacher of the Month, every host. Promo Read card on the daily sheet is unchanged. */
+/* v59k: Secret Santa (st-secret-santa, kill 2026-12-10) and Kurtz playlist (st-kurtz-playlist, kill 2026-12-31) are once-per-shift station reads for every host. Dance Party stays kill TFN. */
 var stDefaults=lsGet('hs:stDefaults', {sheetDate:'', reads:[], liners:[]});
 var stOv=lsGet('hs:stLocal', {reads:{}, liners:{}, settings:{}});
 var linerUsed=lsGet('hs:linerUsed', {});
@@ -6125,7 +6126,7 @@ function liveLiners(){ return allLiners().filter(l=>l.active!==false && killLive
 function stAsSp(id){ const r=allStReads().find(x=>x.id===id); if(!r) return null;
   return {id:r.id, name:r.name, short:r.short||r.name, icon:r.icon||'📻', read:r.text||'', station:true, freq:(r.freq==='day'?'day':'shift')}; }
 // readable type for ALL-CAPS station copy: original text kept, shown in sentence case with names restored
-const ST_CAPS=['Z93 Hits dot com','Z93hits.com','@Z93hits','Z93','AJ','TC','KAIR','Kurtz Car Stereo','Teacher of the Month','Kalkaska Festival of Trees','Kalkaska','Festival of Trees','Patriot Farms','Traverse City','Garfield','Highland','Facebook','Morning Rush','Courtney Rehmer','Courtney','Jimmy John\u2019s',"Jimmy John's",'Rihanna','Project Feed the Kids','Cali\u2019s Tea Party',"Cali's Tea Party",'Cali','Weekend Watchlist','This Day, Back in the Day','Random Fact of the Day','Off the Charts','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','November','December','October','90s','AM','PM','I','I\u2019m',"I'm"];
+const ST_CAPS=['Secret Santa','Christmas','Z93 Hits dot com','Z93hits.com','@Z93hits','Z93','AJ','TC','KAIR','Kurtz Car Stereo','Teacher of the Month','Kalkaska Festival of Trees','Kalkaska','Festival of Trees','Patriot Farms','Traverse City','Garfield','Highland','Facebook','Morning Rush','Courtney Rehmer','Courtney','Jimmy John\u2019s',"Jimmy John's",'Rihanna','Project Feed the Kids','Cali\u2019s Tea Party',"Cali's Tea Party",'Cali','Weekend Watchlist','This Day, Back in the Day','Random Fact of the Day','Off the Charts','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','November','December','October','90s','AM','PM','I','I\u2019m',"I'm"];
 function readable(t){ t=String(t||''); const L=t.replace(/[^A-Za-z]/g,''); if(!L || L.replace(/[^A-Z]/g,'').length/L.length<0.7) return t;
   let o=t.toLowerCase().replace(/(^|[.!?]\s+|[—–]\s*|…\s*|\?\s*)([a-z])/g,(a,b,c)=>b+c.toUpperCase());
   for(const w of [...ST_CAPS].sort((a,b)=>b.length-a.length)){ const re=new RegExp('(^|[^A-Za-z0-9@])('+w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![A-Za-z])','gi'); o=o.replace(re,(a,b)=>b+w); }
