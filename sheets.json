@@ -1,5 +1,5 @@
 {
- "latest": "2026-11-23",
+ "latest": "2026-11-24",
  "dates": [
   {
    "date": "2026-11-13",
@@ -129,13 +129,30 @@
     "c10-dodo-shelter-thanksgiving-feast.mp3"
    ],
    "main": true
+  },
+  {
+   "date": "2026-11-24",
+   "br": false,
+   "audio": true,
+   "files": [
+    "c00-opener-supercut.mp3",
+    "c01-sedaris-traverse-city-barber.mp3",
+    "c02-kimmel-bateman-jasons-microwave.mp3",
+    "c03-fallon-tyn-gravy-boats.mp3",
+    "c04-standup-pat-godwin-travel-song.mp3",
+    "c05-standup-jeff-allen-man-food.mp3",
+    "c06-cbs-29-million-flyers.mp3",
+    "c07-wood8-ferris-big-noon.mp3",
+    "c08-dodo-turkey-dog-siblings.mp3"
+   ],
+   "main": true
   }
  ],
  "clipFirst": {
   "file:doberman-swns.mp3": "2026-11-13",
   "file:speed-soty.mp3": "2026-11-13",
-  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:speed-english.mp3": "2026-11-13",
+  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
   "id:2026-11-16-c01": "2026-11-16",
   "file:c02-snl-thanksgiving-song-v2.mp3": "2026-11-16",
@@ -252,7 +269,24 @@
   "file:c09-lainey-wilson-broom-sweep.mp3": "2026-11-23",
   "id:2026-11-23-c09": "2026-11-23",
   "file:c10-dodo-shelter-thanksgiving-feast.mp3": "2026-11-23",
-  "id:2026-11-23-c10": "2026-11-23"
+  "id:2026-11-23-c10": "2026-11-23",
+  "id:2026-11-24-c00": "2026-11-24",
+  "file:c01-sedaris-traverse-city-barber.mp3": "2026-11-24",
+  "id:2026-11-24-c01": "2026-11-24",
+  "file:c02-kimmel-bateman-jasons-microwave.mp3": "2026-11-24",
+  "id:2026-11-24-c02": "2026-11-24",
+  "file:c03-fallon-tyn-gravy-boats.mp3": "2026-11-24",
+  "id:2026-11-24-c03": "2026-11-24",
+  "file:c04-standup-pat-godwin-travel-song.mp3": "2026-11-24",
+  "id:2026-11-24-c04": "2026-11-24",
+  "file:c05-standup-jeff-allen-man-food.mp3": "2026-11-24",
+  "id:2026-11-24-c05": "2026-11-24",
+  "file:c06-cbs-29-million-flyers.mp3": "2026-11-24",
+  "id:2026-11-24-c06": "2026-11-24",
+  "file:c07-wood8-ferris-big-noon.mp3": "2026-11-24",
+  "id:2026-11-24-c07": "2026-11-24",
+  "file:c08-dodo-turkey-dog-siblings.mp3": "2026-11-24",
+  "id:2026-11-24-c08": "2026-11-24"
  },
  "clipHistory": {
   "2026-11-13": {
@@ -299,6 +333,9 @@
    "repeats": []
   },
   "2026-11-23": {
+   "repeats": []
+  },
+  "2026-11-24": {
    "repeats": []
   }
  }

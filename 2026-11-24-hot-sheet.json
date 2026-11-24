@@ -1,0 +1,1449 @@
+{
+ "weather": {
+  "temp": "30°",
+  "cond": "Cloudy",
+  "advisory": "No advisories",
+  "traffic": "Slick spots on bridges, leave extra time",
+  "high": "39°",
+  "low": "25°",
+  "tonight": "Mostly Cloudy",
+  "updated": "2026-11-24T04:12-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Partly Sunny",
+  "icon": "cloudy",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-24",
+    "high": null,
+    "low": 27,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 1
+   },
+   {
+    "day": "Tue",
+    "date": "2026-11-24",
+    "high": 39,
+    "low": 25,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 0
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-25",
+    "high": 40,
+    "low": 28,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 0
+   },
+   {
+    "day": "Thu",
+    "date": "2026-11-26",
+    "high": 45,
+    "low": 34,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 9
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-27",
+    "high": 45,
+    "low": 34,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 44
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-28",
+    "high": 47,
+    "low": 36,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 25
+   },
+   {
+    "day": "Sun",
+    "date": "2026-11-29",
+    "high": 44,
+    "low": 34,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 41
+   }
+  ],
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 28
+   },
+   {
+    "t": "5 AM",
+    "temp": 28
+   },
+   {
+    "t": "6 AM",
+    "temp": 28
+   },
+   {
+    "t": "7 AM",
+    "temp": 29
+   },
+   {
+    "t": "8 AM",
+    "temp": 29
+   },
+   {
+    "t": "9 AM",
+    "temp": 32
+   },
+   {
+    "t": "10 AM",
+    "temp": 34
+   },
+   {
+    "t": "11 AM",
+    "temp": 36
+   },
+   {
+    "t": "12 PM",
+    "temp": 38
+   },
+   {
+    "t": "1 PM",
+    "temp": 39
+   },
+   {
+    "t": "2 PM",
+    "temp": 39
+   },
+   {
+    "t": "3 PM",
+    "temp": 39
+   },
+   {
+    "t": "4 PM",
+    "temp": 39
+   },
+   {
+    "t": "5 PM",
+    "temp": 37
+   },
+   {
+    "t": "6 PM",
+    "temp": 35
+   },
+   {
+    "t": "7 PM",
+    "temp": 33
+   },
+   {
+    "t": "8 PM",
+    "temp": 31
+   },
+   {
+    "t": "9 PM",
+    "temp": 30
+   },
+   {
+    "t": "10 PM",
+    "temp": 29
+   }
+  ],
+  "wind": "W 0-5 mph",
+  "waves": "Bay 2 ft or less · Lake MI 2 ft or less (Small Craft Advisory ended 4 AM)"
+ },
+ "promo-dance-party": {
+  "id": "promo-dance-party",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: 90s, 2K & TODAY DANCE PARTY (SAT. NOV. 28)<br>📣 THIS SATURDAY READ: \"This Saturday, downtown Traverse City turns into one big dance floor! Z93 is teaming up with North Bar and The Pub, and one cover gets you into both. At The Pub, DJ Vi is throwing a '90s Dance Party, so bring your best Macarena. Up at North Bar, I'm spinning Y2K Till Today, everything from the 2000s right up to now. Two great bars, one price, and you can bounce back and forth all night. Grab your crew, come dance, and say hi. Saturday night, downtown TC, presented by Z93!\"<br>🔁 LINER 1: \"Your Saturday night has TWO soundtracks! 90s and 2000s bangers at The Pub, today's hottest hits at North Bar! It's the 90s, 2k & Today Dance Party!\"<br>🔁 LINER 2: \"From No Diggity to no stopping! It's the 90s, 2k & Today Dance Party! Every Saturday at The Pub and North Bar!\"<br>🔁 LINER 3: \"Old school at The Pub! New school at North Bar! Your Saturday night just got schooled!\"<br>➜ HOOK: Two bars, two eras, one epic Saturday night, every Saturday this winter.",
+  "notes": "Official copy only: the Sat read is Truce's own (promos/2026-11-28-downtown-dance-party.md, run through Sat Nov 28); liners word for word from the station deck (promos/dance-party.md). No time, price or prize invented (none given yet).",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-24-promo-dance-party-01",
+    "title": "PROMO READ: 90s, 2K & TODAY DANCE PARTY (SAT. NOV. 28)",
+    "recap": "We plugged Saturday's 90s, 2K & Today Dance Party at The Pub and North Bar, one cover for both.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: 90s, 2K & TODAY DANCE PARTY (SAT. NOV. 28)<br>📣 THIS SATURDAY READ: \"This Saturday, downtown Traverse City turns into one big dance floor! Z93 is teaming up with North Bar and The Pub, and one cover gets you into both. At The Pub, DJ Vi is throwing a '90s Dance Party, so bring your best Macarena. Up at North Bar, I'm spinning Y2K Till Today, everything from the 2000s right up to now. Two great bars, one price, and you can bounce back and forth all night. Grab your crew, come dance, and say hi. Saturday night, downtown TC, presented by Z93!\"<br>🔁 LINER 1: \"Your Saturday night has TWO soundtracks! 90s and 2000s bangers at The Pub, today's hottest hits at North Bar! It's the 90s, 2k & Today Dance Party!\"<br>🔁 LINER 2: \"From No Diggity to no stopping! It's the 90s, 2k & Today Dance Party! Every Saturday at The Pub and North Bar!\"<br>🔁 LINER 3: \"Old school at The Pub! New school at North Bar! Your Saturday night just got schooled!\"<br>➜ HOOK: Two bars, two eras, one epic Saturday night, every Saturday this winter.",
+    "description": "📣 THIS SATURDAY READ: \"This Saturday, downtown Traverse City turns into one big dance floor! Z93 is teaming up with North Bar and The Pub, and one cover gets you into both. At The Pub, DJ Vi is throwing a '90s Dance Party, so bring your best Macarena. Up at North Bar, I'm spinning Y2K Till Today, everything from the 2000s right up to now. Two great bars, one price, and you can bounce back and forth all night. Grab your crew, come dance, and say hi. Saturday night, downtown TC, presented by Z93!\"",
+    "summary": "We plugged Saturday's 90s, 2K & Today Dance Party at The Pub and North Bar, one cover for both.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "102ab4b184f2",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "SLOW JAM: MICHAEL BUBLÉ, \"HOME\" (2005)<br>• STAT: No. 1 on Billboard's Adult Contemporary chart in the U.S. (No. 72 on the Hot 100).<br>• WHY TODAY: The biggest travel week of the year starts now, and this is the song about wanting to get home. Bublé co-wrote it while touring Italy, missing his then-fiancée.<br>😂 JOKES: Bublé wrote 'Home' while touring Italy. I'd miss home too, if home had my mom's stuffing. / This song is for everybody driving to Grandma's. And the one guy still on the US-31 shoulder looking for his phone.<br><br>🚗 DRIVE TEASE: Cold and quiet for the drive in. About 28 at 6 AM and 29 by 8 under partly sunny skies, with calm wind. Wet roads refroze overnight, so watch for slick spots on bridges and overpasses.<br><br>📅 THIS DAY: GANGNAM STYLE TAKES OVER YOUTUBE (NOV. 24, 2012)<br>• On this date in 2012, PSY's 'Gangnam Style' passed Justin Bieber's 'Baby' to become the most-viewed video on YouTube, with more than 803 million views.<br>• Less than a month later, on Dec. 21, 2012, it became the first YouTube video ever to hit a billion views.<br>• Somewhere, every wedding DJ in America did the horse dance in celebration.<br>😂 JOKES: Every uncle at every 2012 wedding did that horse dance. Some of them are still doing it. Nobody has told them. / A billion views. My best YouTube video is me trying to fix a garbage disposal, and it has 11, nine of them from my mom.<br><br>💡 FUN FACT: IT'S NATIONAL SARDINES DAY<br>• The word 'sardine' probably comes from the island of Sardinia, where the fish were once supposedly plentiful.<br>• And there isn't one sardine. The international standard for canned sardines lists 21 different species that can be sold as sardines.<br>😂 JOKES: Twenty-one kinds of sardines, and they all fit in the same little can. That's my family's minivan on the way to Grandma's. / Packed in like sardines is also how they describe Meijer at 6 AM Friday.<br><br>🎉 NATIONAL DAYS: National Sardines Day · Celebrate Your Unique Talent Day<br><br>GOOD MORNING UP NORTH: Cold, quiet and partly sunny. About 28 at 6 AM, a high near 39 this afternoon with light west wind, then mostly cloudy tonight, low 25. Wednesday high near 41, and Thanksgiving Day looks mostly cloudy, high near 45, with the holiday travel window dry.<br><br>SCHOOLS: No closings or delays listed this morning.<br><br>ROADS: Wet roads refroze overnight. Watch for slick spots, especially on bridges and overpasses. No verified closures.<br><br>ENERGY: Short week, giving week. Toys for Tots is rolling, the corn's almost in, and everybody's one grocery run from done.",
+  "notes": "SLOW JAM: MICHAEL BUBLÉ, \"HOME\" (2005): https://en.wikipedia.org/wiki/Home_(Michael_Bubl%C3%A9_song) Wikipedia (US AC No. 1, Hot 100 No. 72 citing Billboard chart history; co-written with Alan Chang and Amy Foster-Gillies while Bublé toured Italy). Clean lyric.<br>THIS DAY: GANGNAM STYLE TAKES OVER YOUTUBE (NOV. 24, 2012): https://en.wikipedia.org/wiki/Gangnam_Style Wikipedia milestones section citing The Hollywood Reporter (Lipshutz, Nov. 24, 2012).<br>FUN FACT: IT'S NATIONAL SARDINES DAY: https://en.wikipedia.org/wiki/Sardine Wikipedia 'Sardine' (FAO/WHO Codex standard, 21 species; etymology). Trending tie: National Day Calendar lists National Sardines Day today https://nationaldaycalendar.com/celebrations/national-sardines-day-november-24<br>Weather: NWS Gaylord point forecast + hourly (44.7631,-85.6206), forecast updated 3:11 AM ET; KTVC obs 2:45 AM ET -1 C (30 F), cloudy. Marine: NWS Gaylord nearshore (LMZ323 GT Bay, LMZ344 Sleeping Bear Pt to GT Light) 1:51 AM ET Tue: Small Craft Advisory ended 4 AM; today W wind 5-10 kt, waves 2 ft or less (calm, so no wind line on air). Slick spots: GT County Emergency Management share of NWS Gaylord Special Weather Statement (Mon 8:12 PM) via Breaker city pulse; NWS alerts API: no active alerts 3:50 AM. National days: https://nationaldaycalendar.com/what-day-is-it . Schools: 9&10 closings desk (Breaker city pulse, 3:39 AM ET): no active closings; backup UpNorthLive/WPBN closings page checked ~4:16 AM ET, nothing listed.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-24-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "We eased in with Michael Bublé's 'Home,' a U.S. Adult Contemporary No. 1, for the start of Thanksgiving travel week.",
+    "article_url": "https://en.wikipedia.org/wiki/Home_(Michael_Bubl%C3%A9_song)",
+    "article_title": "Home (Michael Bublé song) (Wikipedia)",
+    "jokes": [
+     "Bublé wrote 'Home' while touring Italy. I'd miss home too, if home had my mom's stuffing.",
+     "This song is for everybody driving to Grandma's. And the one guy still on the US-31 shoulder looking for his phone."
+    ],
+    "body": "SLOW JAM: MICHAEL BUBLÉ, \"HOME\" (2005)<br>• STAT: No. 1 on Billboard's Adult Contemporary chart in the U.S. (No. 72 on the Hot 100).<br>• WHY TODAY: The biggest travel week of the year starts now, and this is the song about wanting to get home. Bublé co-wrote it while touring Italy, missing his then-fiancée.<br>😂 JOKES: Bublé wrote 'Home' while touring Italy. I'd miss home too, if home had my mom's stuffing. / This song is for everybody driving to Grandma's. And the one guy still on the US-31 shoulder looking for his phone.",
+    "description": "No. 1 on Billboard's Adult Contemporary chart in the U.S. (No. 72 on the Hot 100). The biggest travel week of the year starts now, and this is the song about wanting to get home. Bublé co-wrote it while touring Italy, missing his then-fiancée.",
+    "summary": "No. 1 on Billboard's Adult Contemporary chart in the U.S. (No. 72 on the Hot 100). The biggest travel week of the year starts now, and this is the song about wanting to get home. Bublé co-wrote it while touring Italy, missing his then-fiancée.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a cold, partly sunny drive, about 28 at 6 AM, with slick spots on bridges and a high near 39.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord forecast, Traverse City",
+    "jokes": [],
+    "body": "🚗 DRIVE TEASE: Cold and quiet for the drive in. About 28 at 6 AM and 29 by 8 under partly sunny skies, with calm wind. Wet roads refroze overnight, so watch for slick spots on bridges and overpasses.",
+    "description": "Cold and quiet for the drive in. About 28 at 6 AM and 29 by 8 under partly sunny skies, with calm wind. Wet roads refroze overnight, so watch for slick spots on bridges and overpasses.",
+    "summary": "Cold and quiet for the drive in. About 28 at 6 AM and 29 by 8 under partly sunny skies, with calm wind. Wet roads refroze overnight, so watch for slick spots on bridges and overpasses.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-vibe-03",
+    "title": "THIS DAY",
+    "recap": "We remembered Nov. 24, 2012, when Gangnam Style passed Bieber's Baby as YouTube's most-viewed video.",
+    "article_url": "https://en.wikipedia.org/wiki/Gangnam_Style",
+    "article_title": "Gangnam Style (Wikipedia)",
+    "jokes": [
+     "Every uncle at every 2012 wedding did that horse dance. Some of them are still doing it. Nobody has told them.",
+     "A billion views. My best YouTube video is me trying to fix a garbage disposal, and it has 11, nine of them from my mom."
+    ],
+    "body": "THIS DAY: GANGNAM STYLE TAKES OVER YOUTUBE (NOV. 24, 2012)<br>• On this date in 2012, PSY's 'Gangnam Style' passed Justin Bieber's 'Baby' to become the most-viewed video on YouTube, with more than 803 million views.<br>• Less than a month later, on Dec. 21, 2012, it became the first YouTube video ever to hit a billion views.<br>• Somewhere, every wedding DJ in America did the horse dance in celebration.<br>😂 JOKES: Every uncle at every 2012 wedding did that horse dance. Some of them are still doing it. Nobody has told them. / A billion views. My best YouTube video is me trying to fix a garbage disposal, and it has 11, nine of them from my mom.",
+    "description": "On this date in 2012, PSY's 'Gangnam Style' passed Justin Bieber's 'Baby' to become the most-viewed video on YouTube, with more than 803 million views. Less than a month later, on Dec. 21, 2012, it became the first YouTube video ever to hit a billion views. Somewhere, every wedding DJ in America did the horse dance in celebration.",
+    "summary": "On this date in 2012, PSY's 'Gangnam Style' passed Justin Bieber's 'Baby' to become the most-viewed video on YouTube, with more than 803 million views. Less than a month later, on Dec. 21, 2012, it became the first YouTube video ever to hit a billion views. Somewhere, every wedding DJ in America did the horse dance in celebration.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-vibe-04",
+    "title": "FUN FACT",
+    "recap": "For National Sardines Day, we learned 21 species can be sold as sardines, and the name likely comes from Sardinia.",
+    "article_url": "https://en.wikipedia.org/wiki/Sardine",
+    "article_title": "Sardine (Wikipedia)",
+    "jokes": [
+     "Twenty-one kinds of sardines, and they all fit in the same little can. That's my family's minivan on the way to Grandma's.",
+     "Packed in like sardines is also how they describe Meijer at 6 AM Friday."
+    ],
+    "body": "FUN FACT: IT'S NATIONAL SARDINES DAY<br>• The word 'sardine' probably comes from the island of Sardinia, where the fish were once supposedly plentiful.<br>• And there isn't one sardine. The international standard for canned sardines lists 21 different species that can be sold as sardines.<br>😂 JOKES: Twenty-one kinds of sardines, and they all fit in the same little can. That's my family's minivan on the way to Grandma's. / Packed in like sardines is also how they describe Meijer at 6 AM Friday.",
+    "description": "The word 'sardine' probably comes from the island of Sardinia, where the fish were once supposedly plentiful. And there isn't one sardine. The international standard for canned sardines lists 21 different species that can be sold as sardines.",
+    "summary": "The word 'sardine' probably comes from the island of Sardinia, where the fish were once supposedly plentiful. And there isn't one sardine. The international standard for canned sardines lists 21 different species that can be sold as sardines.",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "We noted National Sardines Day and Celebrate Your Unique Talent Day.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [],
+    "body": "🎉 NATIONAL DAYS: National Sardines Day · Celebrate Your Unique Talent Day",
+    "description": "We noted National Sardines Day and Celebrate Your Unique Talent Day.",
+    "summary": "We noted National Sardines Day and Celebrate Your Unique Talent Day.",
+    "rank": 5,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Home_(Michael_Bubl%C3%A9_song)",
+  "article_title": "Home (Michael Bublé song) (Wikipedia)",
+  "jokes": [
+   "Bublé wrote 'Home' while touring Italy. I'd miss home too, if home had my mom's stuffing.",
+   "This song is for everybody driving to Grandma's. And the one guy still on the US-31 shoulder looking for his phone."
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "1d4a7c4d83e2",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "MOOD BOOST: VANESSA CARLTON, \"A THOUSAND MILES\" (2002)<br>• STAT: Peaked at No. 5 on the Billboard Hot 100 for three weeks in May 2002 and stayed on the chart 41 weeks.<br>• STORY: She wrote the piano riff in 1998 at her parents' house, and her mom heard it and said, 'Vanessa, that's a hit song.' It was first called 'Interlude' until the label president insisted on a new title.<br>• WHY TODAY: Everybody's driving a thousand miles this week. Or at least it feels like it on US-131.<br>😂 JOKES: Mom called it a hit in 1998. My mom called my garage band 'loud' in 1998. Same energy, different results. / They almost named it 'Interlude.' Nobody's walking a thousand miles for a song called 'Interlude.'",
+  "notes": "MOOD BOOST: VANESSA CARLTON, \"A THOUSAND MILES\" (2002): https://en.wikipedia.org/wiki/A_Thousand_Miles Wikipedia (Hot 100 peak 5 for three weeks, 41 weeks; 'Interlude'; Ron Fair). Clean lyric.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-24-mood-01",
+    "title": "MOOD BOOST: VANESSA CARLTON, \"A THOUSAND MILES\" (2002)",
+    "recap": "We woke up with Vanessa Carlton's 'A Thousand Miles,' a No. 5 Hot 100 hit in 2002 first titled 'Interlude.'",
+    "article_url": "https://en.wikipedia.org/wiki/A_Thousand_Miles",
+    "article_title": "A Thousand Miles (Wikipedia)",
+    "jokes": [
+     "Mom called it a hit in 1998. My mom called my garage band 'loud' in 1998. Same energy, different results.",
+     "They almost named it 'Interlude.' Nobody's walking a thousand miles for a song called 'Interlude.'"
+    ],
+    "body": "MOOD BOOST: VANESSA CARLTON, \"A THOUSAND MILES\" (2002)<br>• STAT: Peaked at No. 5 on the Billboard Hot 100 for three weeks in May 2002 and stayed on the chart 41 weeks.<br>• STORY: She wrote the piano riff in 1998 at her parents' house, and her mom heard it and said, 'Vanessa, that's a hit song.' It was first called 'Interlude' until the label president insisted on a new title.<br>• WHY TODAY: Everybody's driving a thousand miles this week. Or at least it feels like it on US-131.<br>😂 JOKES: Mom called it a hit in 1998. My mom called my garage band 'loud' in 1998. Same energy, different results. / They almost named it 'Interlude.' Nobody's walking a thousand miles for a song called 'Interlude.'",
+    "description": "Peaked at No. 5 on the Billboard Hot 100 for three weeks in May 2002 and stayed on the chart 41 weeks. She wrote the piano riff in 1998 at her parents' house, and her mom heard it and said, 'Vanessa, that's a hit song.' It was first called 'Interlude' until the label president insisted on a new title. Everybody's driving a thousand miles this week. Or at least it feels like it on US-131.",
+    "summary": "Peaked at No. 5 on the Billboard Hot 100 for three weeks in May 2002 and stayed on the chart 41 weeks. She wrote the piano riff in 1998 at her parents' house, and her mom heard it and said, 'Vanessa, that's a hit song.' It was first called 'Interlude' until the label president insisted on a new title. Everybody's driving a thousand miles this week. Or at least it feels like it on US-131.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/A_Thousand_Miles",
+  "article_title": "A Thousand Miles (Wikipedia)",
+  "jokes": [
+   "Mom called it a hit in 1998. My mom called my garage band 'loud' in 1998. Same energy, different results.",
+   "They almost named it 'Interlude.' Nobody's walking a thousand miles for a song called 'Interlude.'"
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "18f213f62c55",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>⭐ TOYS FOR TOTS IS ROLLING: KICKOFF HAULS IN THOUSANDS OF TOYS<br>• SUMMARY: The Toys for Tots campaign in northwest Michigan kicked off Saturday with a drive-through toy drive at Fox Grand Traverse, and thousands of toys came in on day one. The campaign now runs through Friday, Dec. 11, with more than 100 drop-off spots.<br>• THE CATCH: Last year organizers handed out 26,000 toys to more than 6,000 kids in Grand Traverse, Benzie, Kalkaska, Leelanau and Antrim counties, so day one is just the warm-up.<br>• WHO: The Marine Corps Reserve's Toys for Tots, 79 years old, with 800 campaigns in all 50 states. WHAT: Toy drive. WHERE: 100-plus drop-off spots across five counties. WHEN: Now through Dec. 11. WHY IT MATTERS: Black Friday is Friday, so it's the easiest time all year to grab one extra toy.<br>➜ TAKE: If you're out shopping Friday anyway, buy one for you and one for the bin. That's the whole plan.<br>➜ BAIT: Text 231-929-4487: what was the toy you wanted most as a kid? Did Santa come through?<br>😂 JOKES: The Marines are collecting toys. Finally, a drill sergeant who yells, 'Drop and give me a Barbie.' / Thousands of toys in one day at a car dealership. Easiest test drive those guys ever did.<br><br>A BAKING SHOW CHAMP IS COMING TO SUTTONS BAY<br>• SUMMARY: Martin Sorge, who won The Great American Baking Show, will teach two hands-on holiday baking classes at the Inn at Black Star Farms in Suttons Bay this December. On Dec. 5 from noon to 2 p.m. it's holiday cookies, and on Dec. 12 from 11 a.m. to 1 p.m. it's traditional German stollen.<br>• THE CATCH: You leave with a box of cookies or a loaf of stollen, plus the recipes, so you can pretend you made them all along.<br>• WHO: Martin Sorge, Great American Baking Show winner. WHAT: Two holiday classes, with his cookbook Great Bakes for sale and signing. WHERE: The Inn at Black Star Farms, Suttons Bay. WHEN: Dec. 5 and Dec. 12. WHY IT MATTERS: It's his third visit to Black Star Farms this year, and holiday baking season starts the second the turkey's gone.<br>➜ TAKE: A TV baking champ teaching you cookies in Leelanau County. That beats my method, which is buying the tube of dough and eating half of it raw.<br>➜ BAIT: Text 231-929-4487: what's the one holiday cookie your family can't live without?<br>😂 JOKES: Stollen is a German fruit bread. Not to be confused with 'stolen,' which is what happens to the last cookie at my house. / He won a baking show. I won a staring contest with a box of Little Debbies. Same energy.<br><br>TROOPERS BUY WINTER COATS AND BOOTS FOR 55 TCAPS KIDS<br>• SUMMARY: The Eagles-for-Children program gave a $6,000 grant to the Michigan State Police STOP program, and troopers used it to buy winter gear for 55 TCAPS elementary students. That's coats, snow pants and boots, just as the snow starts to stick.<br>• THE CATCH: STOP stands for State-Trooper-Outreach-Partnership, and since 2016 it's run Boots for Kids and Coats for Kids, plus bike helmets and life jackets in summer.<br>• WHO: MSP troopers and Eagles-for-Children. WHAT: Winter gear for 55 kids. WHERE: TCAPS elementary schools. WHY IT MATTERS: Trooper Miranda Swanson said nobody wants to see a kid going down the road in a frigid Up North winter without the right gear.<br>➜ TAKE: Troopers in boot-buying mode. Pretty sure that's the only time a kid's happy to see a state cop pull up.<br>➜ BAIT: Text 231-929-4487 a shout-out to somebody who quietly takes care of kids in your town.<br>😂 JOKES: A state trooper fitting a first grader for snow boots. That's the only time 'license and registration' means 'left foot and right foot.' / Fifty-five kids, fifty-five pairs of boots, and somewhere one mitten already missing. That's just science.<br><br>GLEN ARBOR LIGHTS UP THIS WEEKEND FOR LEELANAU TEENS<br>• SUMMARY: The sixth annual Strolling Lights Festival comes to Glen Arbor this weekend, Saturday and Sunday, Nov. 28 and 29, as Crystal River Outfitters fills its corner of town with decorated holiday trees. This year the festival benefits LIFT, Leelanau Investing for Teens.<br>• THE CATCH: Anybody can sponsor and decorate a tree for $150, families and groups included, and the trees stay up for strolling through the holidays.<br>• WHO: Crystal River Outfitters and LIFT. WHAT: A walk-through holiday tree festival. WHERE: Crystal River Outfitters Recreational District, Glen Arbor. WHEN: Nov. 28 and 29. WHY IT MATTERS: LIFT runs free after-school programs for 6th through 12th graders at Suttons Bay, Glen Lake, Leland and Northport.<br>➜ TAKE: Thanksgiving weekend plan: eat Thursday, shop Friday, stroll Glen Arbor Saturday, nap Sunday. You're welcome.<br>➜ BAIT: Text 231-929-4487: when does your tree go up? Before Thanksgiving, the day after, or are you a December 24th person?<br>😂 JOKES: A festival where you just walk and look at lights. Finally, a holiday event my cardio can handle. / Decorate a tree for teens. Which means somebody's hanging a phone charger on it.<br><br>CORN HARVEST NEARLY DONE: GT FARM REPORTS 'PHENOMENAL YIELDS'<br>• SUMMARY: Long Acre Farms in Grand Traverse County is about 90% through its corn harvest, and owner Matt Breithaupt says timely rains plus a long dry fall gave them phenomenal yields. He hopes to wrap up by the end of this week.<br>• THE CATCH: Fuel prices have taken a toll the last four months, he says, on everything from parts to tires to chains. And with no snow cover yet, the winter wheat could be at risk.<br>• WHO: Matt Breithaupt, Long Acre Farms. WHAT: A strong corn year. WHERE: Grand Traverse County. WHY IT MATTERS: His line, 'It's not about how much rain we get, it's a matter of when,' is the most Up North weather wisdom you'll hear all week.<br>➜ TAKE: Farmers rooting for snow and everybody else rooting against it. Thanksgiving week, pick a side.<br>➜ BAIT: Text 231-929-4487: corn on the Thanksgiving table, yes or no? Creamed, kernel or cornbread?<br>😂 JOKES: Ninety percent done by Thanksgiving. That's more than I can say for my gutters. / Phenomenal yields. My garden's yield this year was one zucchini, and it was the size of a canoe.<br><br>━━ NATIONAL ━━<br><br>TAYLOR SWIFT SURPRISES BRENDA LEE WITH A DIAMOND<br>• SUMMARY: Taylor Swift surprised Brenda Lee, 81, in Nashville with an RIAA Diamond plaque for 'Rockin' Around the Christmas Tree,' certified for more than 10 million units in the U.S. The video of the moment came out Monday.<br>• THE CATCH: It's only the second holiday song ever to go Diamond, joining Mariah Carey's 'All I Want for Christmas Is You.'<br>• WHO: Taylor Swift and Brenda Lee. WHAT: Diamond certification. WHERE: Nashville. WHEN: Presented Nov. 16, video out Nov. 23. WHY IT MATTERS: Lee recorded that song as a teenager, and it still owns December.<br>➜ TAKE: Mariah, scoot over. There's another queen on the Christmas throne, and she's 81.<br>➜ BAIT: Text 231-929-4487: what's the first Christmas song you allow yourself to play? And is it too early?<br>😂 JOKES: Ten million units. My Christmas playlist has ten million units too, and they're all Mariah. / Taylor Swift handing out awards now. Next week she's delivering my mail.<br><br>━━ BITS ━━<br><br>BIT: CELEBRATE YOUR UNIQUE TALENT DAY<br>• It's Celebrate Your Unique Talent Day, per the National Day Calendar. Not the talent on your resume. The weird one.<br>• Can you touch your nose with your tongue? Name every Taylor Swift album in order? Parallel park a minivan in one try on Front Street in July?<br>• Pair it with the Dry Bar 'most useless talent' clip in Trending Audio.<br>➜ TAKE: Mine is knowing exactly when the microwave is about to beep and stopping it at one second so nobody wakes up.<br>➜ BAIT: Text 231-929-4487 your weirdest talent. Best one gets read on air.<br>😂 JOKES: My unique talent is falling asleep in any recliner within four minutes. Thanksgiving is my Olympics. / I can also burp the alphabet, but this is a family show, so we'll leave that one in the garage.<br><br>BIT: WHEN ARE YOU ROLLING IN FOR THANKSGIVING?<br>• UpNorthLive is asking its viewers a simple one this week: when do you plan to arrive at your Thanksgiving destination?<br>• Are you the Wednesday-night early bird, the Thursday 'we'll be there by noon' liar, or the person who shows up right when the turkey hits the table?<br>• With slick spots on bridges this morning, AJ's vote: leave early, drive slow.<br>➜ TAKE: There are two kinds of Thanksgiving guests: the ones who help set the table, and the ones who show up with a bag of ice like it's a casserole.<br>➜ BAIT: Text 231-929-4487: what time are you really getting there?<br>😂 JOKES: 'We'll be there at noon' is the most-told lie of Thanksgiving. Right after 'I'm not that hungry.' / If you show up after the dishes are done, you're not a guest. You're a leftover.<br><br>━━ SPORTS ━━<br><br>LIONS: BEARS ON THANKSGIVING, 1 PM, CBS<br>• Lions host the Bears Thursday at Ford Field. Kickoff 1 PM, on CBS and Paramount+.<br>• Monday's injury estimate: Sam LaPorta limited (ankle). Chuck Clark, Skyler Gill-Howard, Ennis Rakestraw Jr. and DJ Wonnum did not participate. D.J. Reed and Khalil Dorsey full.<br>• Rundown: Detroit is coming off a 31-21 win over Tampa Bay.",
+  "notes": "Buzz score log (buzz-rubric): Toys for Tots kickoff 13 · Baking Show champ classes 13 · Troopers coats/boots 12 · Glen Arbor Strolling Lights 12 · Corn harvest 11 · (bench: firefighter residency 10, Ferris State Big Noon/45-14 10, TCPD Flock cameras 9, West End parcels 8; cut: TIF 97 next steps (politics), Garfield Twp shelter/PILOT (politics), bat assault (crime), Mackinaw City 17 dogs (animal harm), commissioner posts (politics), MSP forensic lab (civic)). Ticker feed for 11-24 not out at build time; used ticker.json (Nov 23 12:57 PM) plus my own scan.<br>⭐ TOYS FOR TOTS IS ROLLING: KICKOFF HAULS IN THOUSANDS OF TOYS: https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys UpNorthLive (Katrina Bailey), Sun Nov 22, 2026; photo WPBN. Drop-off list not linked in the story.<br>A BAKING SHOW CHAMP IS COMING TO SUTTONS BAY: https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html MLive Express Desk, Nov 23, 2026, 9 AM, per the winery's announcement. Class prices not in the story; don't quote one.<br>TROOPERS BUY WINTER COATS AND BOOTS FOR 55 TCAPS KIDS: https://upnorthlive.com/news/local/6000-grant-funds-winter-coats-and-boots-for-55-tcaps-elementary-students UpNorthLive (Adam Fierens), Sun Nov 22, 2026. Quote: Trooper Miranda Swanson. Which TCAPS schools isn't named; don't name one.<br>GLEN ARBOR LIGHTS UP THIS WEEKEND FOR LEELANAU TEENS: https://www.9and10news.com/2026/11/29/glen-arbor-strolling-lights-festival-will-benefit-lift/ 9&10 News (Bill Froehlich, Megan Huiskens), Nov 23, 2026 (URL path says 11/29 but the story is dated 11-23). Dates Nov 28-29: Northern Express calendar https://www.northernexpress.com/calendar/2026/11/28/strolling-lights-festival-1/ . $150 tree sponsorship and LIFT details: https://crystalriveroutfitters.com/strolling-lights-festival/ . Daily hours not verified; don't say a start time.<br>CORN HARVEST NEARLY DONE: GT FARM REPORTS 'PHENOMENAL YIELDS': https://upnorthlive.com/news/local/grand-traverse-county-farm-nears-end-of-corn-harvest-after-strong-yields UpNorthLive (Ethan Foreman), Mon Nov 23, 2026. Quotes: Matt Breithaupt, Long Acre Farms owner.<br>TAYLOR SWIFT SURPRISES BRENDA LEE WITH A DIAMOND: https://www.billboard.com/music/music-news/taylor-swift-surprises-brenda-lee-riaa-diamond-plaque-video-1236387743/ Billboard (Jessica Nicholson), 11/23/2026. Video shared on Instagram Monday; no playable official audio cut today.<br>BIT: CELEBRATE YOUR UNIQUE TALENT DAY: https://nationaldaycalendar.com/what-day-is-it Listener-question bit off National Day Calendar's Nov 24 list (the day's own page 404'd; the main list shows it).<br>BIT: WHEN ARE YOU ROLLING IN FOR THANKSGIVING?: https://upnorthlive.com/news/local/poll-when-do-you-plan-on-arriving-to-your-thanksgiving-destination UpNorthLive poll page, Mon Nov 23, 2026 (no results published).<br>SPORTS: Lions: kickoff/TV per CBS Chicago + Bears game page; injury list per detroitlions.com practice report Nov 23 (Monday was a walkthrough; designations are estimates) https://www.detroitlions.com/news/lions-vs-bears-practice-report-nov-23-clark-laporta-reed . No area HS games this week (Kingsley's season ended Sat 11/21). Ferris State 45-14 is on the bench card.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-24-buzz-01",
+    "title": "⭐ TOYS FOR TOTS IS ROLLING: KICKOFF HAULS IN THOUSANDS OF TOYS",
+    "recap": "We talked about the Toys for Tots kickoff at Fox Grand Traverse, thousands of toys in, and drop-offs open through Dec. 11.",
+    "article_url": "https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys",
+    "article_title": "Toys for Tots drive-through kickoff at Fox Grand Traverse collects thousands of toys (UpNorthLive)",
+    "jokes": [
+     "The Marines are collecting toys. Finally, a drill sergeant who yells, 'Drop and give me a Barbie.'",
+     "Thousands of toys in one day at a car dealership. Easiest test drive those guys ever did."
+    ],
+    "body": "⭐ TOYS FOR TOTS IS ROLLING: KICKOFF HAULS IN THOUSANDS OF TOYS<br>• SUMMARY: The Toys for Tots campaign in northwest Michigan kicked off Saturday with a drive-through toy drive at Fox Grand Traverse, and thousands of toys came in on day one. The campaign now runs through Friday, Dec. 11, with more than 100 drop-off spots.<br>• THE CATCH: Last year organizers handed out 26,000 toys to more than 6,000 kids in Grand Traverse, Benzie, Kalkaska, Leelanau and Antrim counties, so day one is just the warm-up.<br>• WHO: The Marine Corps Reserve's Toys for Tots, 79 years old, with 800 campaigns in all 50 states. WHAT: Toy drive. WHERE: 100-plus drop-off spots across five counties. WHEN: Now through Dec. 11. WHY IT MATTERS: Black Friday is Friday, so it's the easiest time all year to grab one extra toy.<br>➜ TAKE: If you're out shopping Friday anyway, buy one for you and one for the bin. That's the whole plan.<br>➜ BAIT: Text 231-929-4487: what was the toy you wanted most as a kid? Did Santa come through?<br>😂 JOKES: The Marines are collecting toys. Finally, a drill sergeant who yells, 'Drop and give me a Barbie.' / Thousands of toys in one day at a car dealership. Easiest test drive those guys ever did.",
+    "description": "The Toys for Tots campaign in northwest Michigan kicked off Saturday with a drive-through toy drive at Fox Grand Traverse, and thousands of toys came in on day one. The campaign now runs through Friday, Dec. 11, with more than 100 drop-off spots. Last year organizers handed out 26,000 toys to more than 6,000 kids in Grand Traverse, Benzie, Kalkaska, Leelanau and Antrim counties, so day one is just the warm-up. The Marine Corps Reserve's Toys for Tots, 79 years old, with 800 campaigns in all 50 states. WHAT: Toy drive. WHERE: 100-plus drop-off spots across five counties. WHEN: Now through Dec. 11. WHY IT MATTERS: Black Friday is Friday, so it's the easiest time all year to grab one extra toy.",
+    "summary": "The Toys for Tots campaign in northwest Michigan kicked off Saturday with a drive-through toy drive at Fox Grand Traverse, and thousands of toys came in on day one. The campaign now runs through Friday, Dec. 11, with more than 100 drop-off spots. Last year organizers handed out 26,000 toys to more than 6,000 kids in Grand Traverse, Benzie, Kalkaska, Leelanau and Antrim counties, so day one is just the warm-up. The Marine Corps Reserve's Toys for Tots, 79 years old, with 800 campaigns in all 50 states. WHAT: Toy drive. WHERE: 100-plus drop-off spots across five counties. WHEN: Now through Dec. 11. WHY IT MATTERS: Black Friday is Friday, so it's the easiest time all year to grab one extra toy.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-buzz-02",
+    "title": "A BAKING SHOW CHAMP IS COMING TO SUTTONS BAY",
+    "recap": "We talked about Great American Baking Show winner Martin Sorge teaching holiday cookie and stollen classes at Black Star Farms in December.",
+    "article_url": "https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html",
+    "article_title": "'Great American Baking Show' winner to host holiday classes in Northern Michigan (MLive)",
+    "jokes": [
+     "Stollen is a German fruit bread. Not to be confused with 'stolen,' which is what happens to the last cookie at my house.",
+     "He won a baking show. I won a staring contest with a box of Little Debbies. Same energy."
+    ],
+    "body": "A BAKING SHOW CHAMP IS COMING TO SUTTONS BAY<br>• SUMMARY: Martin Sorge, who won The Great American Baking Show, will teach two hands-on holiday baking classes at the Inn at Black Star Farms in Suttons Bay this December. On Dec. 5 from noon to 2 p.m. it's holiday cookies, and on Dec. 12 from 11 a.m. to 1 p.m. it's traditional German stollen.<br>• THE CATCH: You leave with a box of cookies or a loaf of stollen, plus the recipes, so you can pretend you made them all along.<br>• WHO: Martin Sorge, Great American Baking Show winner. WHAT: Two holiday classes, with his cookbook Great Bakes for sale and signing. WHERE: The Inn at Black Star Farms, Suttons Bay. WHEN: Dec. 5 and Dec. 12. WHY IT MATTERS: It's his third visit to Black Star Farms this year, and holiday baking season starts the second the turkey's gone.<br>➜ TAKE: A TV baking champ teaching you cookies in Leelanau County. That beats my method, which is buying the tube of dough and eating half of it raw.<br>➜ BAIT: Text 231-929-4487: what's the one holiday cookie your family can't live without?<br>😂 JOKES: Stollen is a German fruit bread. Not to be confused with 'stolen,' which is what happens to the last cookie at my house. / He won a baking show. I won a staring contest with a box of Little Debbies. Same energy.",
+    "description": "Martin Sorge, who won The Great American Baking Show, will teach two hands-on holiday baking classes at the Inn at Black Star Farms in Suttons Bay this December. On Dec. 5 from noon to 2 p.m. it's holiday cookies, and on Dec. 12 from 11 a.m. to 1 p.m. it's traditional German stollen. You leave with a box of cookies or a loaf of stollen, plus the recipes, so you can pretend you made them all along. Martin Sorge, Great American Baking Show winner. WHAT: Two holiday classes, with his cookbook Great Bakes for sale and signing. WHERE: The Inn at Black Star Farms, Suttons Bay. WHEN: Dec. 5 and Dec. 12. WHY IT MATTERS: It's his third visit to Black Star Farms this year, and holiday baking season starts the second the turkey's gone.",
+    "summary": "Martin Sorge, who won The Great American Baking Show, will teach two hands-on holiday baking classes at the Inn at Black Star Farms in Suttons Bay this December. On Dec. 5 from noon to 2 p.m. it's holiday cookies, and on Dec. 12 from 11 a.m. to 1 p.m. it's traditional German stollen. You leave with a box of cookies or a loaf of stollen, plus the recipes, so you can pretend you made them all along. Martin Sorge, Great American Baking Show winner. WHAT: Two holiday classes, with his cookbook Great Bakes for sale and signing. WHERE: The Inn at Black Star Farms, Suttons Bay. WHEN: Dec. 5 and Dec. 12. WHY IT MATTERS: It's his third visit to Black Star Farms this year, and holiday baking season starts the second the turkey's gone.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-buzz-03",
+    "title": "TROOPERS BUY WINTER COATS AND BOOTS FOR 55 TCAPS KIDS",
+    "recap": "We gave props to MSP troopers, who used a $6,000 Eagles-for-Children grant to buy winter coats and boots for 55 TCAPS kids.",
+    "article_url": "https://upnorthlive.com/news/local/6000-grant-funds-winter-coats-and-boots-for-55-tcaps-elementary-students",
+    "article_title": "$6,000 grant funds winter coats and boots for 55 TCAPS elementary students (UpNorthLive)",
+    "jokes": [
+     "A state trooper fitting a first grader for snow boots. That's the only time 'license and registration' means 'left foot and right foot.'",
+     "Fifty-five kids, fifty-five pairs of boots, and somewhere one mitten already missing. That's just science."
+    ],
+    "body": "TROOPERS BUY WINTER COATS AND BOOTS FOR 55 TCAPS KIDS<br>• SUMMARY: The Eagles-for-Children program gave a $6,000 grant to the Michigan State Police STOP program, and troopers used it to buy winter gear for 55 TCAPS elementary students. That's coats, snow pants and boots, just as the snow starts to stick.<br>• THE CATCH: STOP stands for State-Trooper-Outreach-Partnership, and since 2016 it's run Boots for Kids and Coats for Kids, plus bike helmets and life jackets in summer.<br>• WHO: MSP troopers and Eagles-for-Children. WHAT: Winter gear for 55 kids. WHERE: TCAPS elementary schools. WHY IT MATTERS: Trooper Miranda Swanson said nobody wants to see a kid going down the road in a frigid Up North winter without the right gear.<br>➜ TAKE: Troopers in boot-buying mode. Pretty sure that's the only time a kid's happy to see a state cop pull up.<br>➜ BAIT: Text 231-929-4487 a shout-out to somebody who quietly takes care of kids in your town.<br>😂 JOKES: A state trooper fitting a first grader for snow boots. That's the only time 'license and registration' means 'left foot and right foot.' / Fifty-five kids, fifty-five pairs of boots, and somewhere one mitten already missing. That's just science.",
+    "description": "The Eagles-for-Children program gave a $6,000 grant to the Michigan State Police STOP program, and troopers used it to buy winter gear for 55 TCAPS elementary students. That's coats, snow pants and boots, just as the snow starts to stick. STOP stands for State-Trooper-Outreach-Partnership, and since 2016 it's run Boots for Kids and Coats for Kids, plus bike helmets and life jackets in summer. MSP troopers and Eagles-for-Children. WHAT: Winter gear for 55 kids. WHERE: TCAPS elementary schools. WHY IT MATTERS: Trooper Miranda Swanson said nobody wants to see a kid going down the road in a frigid Up North winter without the right gear.",
+    "summary": "The Eagles-for-Children program gave a $6,000 grant to the Michigan State Police STOP program, and troopers used it to buy winter gear for 55 TCAPS elementary students. That's coats, snow pants and boots, just as the snow starts to stick. STOP stands for State-Trooper-Outreach-Partnership, and since 2016 it's run Boots for Kids and Coats for Kids, plus bike helmets and life jackets in summer. MSP troopers and Eagles-for-Children. WHAT: Winter gear for 55 kids. WHERE: TCAPS elementary schools. WHY IT MATTERS: Trooper Miranda Swanson said nobody wants to see a kid going down the road in a frigid Up North winter without the right gear.",
+    "rank": 3,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-buzz-04",
+    "title": "GLEN ARBOR LIGHTS UP THIS WEEKEND FOR LEELANAU TEENS",
+    "recap": "We talked about the sixth annual Strolling Lights Festival in Glen Arbor this weekend, benefiting Leelanau teen program LIFT.",
+    "article_url": "https://www.9and10news.com/2026/11/29/glen-arbor-strolling-lights-festival-will-benefit-lift/",
+    "article_title": "Glen Arbor Strolling Lights Festival will benefit LIFT (9&10 News)",
+    "jokes": [
+     "A festival where you just walk and look at lights. Finally, a holiday event my cardio can handle.",
+     "Decorate a tree for teens. Which means somebody's hanging a phone charger on it."
+    ],
+    "body": "GLEN ARBOR LIGHTS UP THIS WEEKEND FOR LEELANAU TEENS<br>• SUMMARY: The sixth annual Strolling Lights Festival comes to Glen Arbor this weekend, Saturday and Sunday, Nov. 28 and 29, as Crystal River Outfitters fills its corner of town with decorated holiday trees. This year the festival benefits LIFT, Leelanau Investing for Teens.<br>• THE CATCH: Anybody can sponsor and decorate a tree for $150, families and groups included, and the trees stay up for strolling through the holidays.<br>• WHO: Crystal River Outfitters and LIFT. WHAT: A walk-through holiday tree festival. WHERE: Crystal River Outfitters Recreational District, Glen Arbor. WHEN: Nov. 28 and 29. WHY IT MATTERS: LIFT runs free after-school programs for 6th through 12th graders at Suttons Bay, Glen Lake, Leland and Northport.<br>➜ TAKE: Thanksgiving weekend plan: eat Thursday, shop Friday, stroll Glen Arbor Saturday, nap Sunday. You're welcome.<br>➜ BAIT: Text 231-929-4487: when does your tree go up? Before Thanksgiving, the day after, or are you a December 24th person?<br>😂 JOKES: A festival where you just walk and look at lights. Finally, a holiday event my cardio can handle. / Decorate a tree for teens. Which means somebody's hanging a phone charger on it.",
+    "description": "The sixth annual Strolling Lights Festival comes to Glen Arbor this weekend, Saturday and Sunday, Nov. 28 and 29, as Crystal River Outfitters fills its corner of town with decorated holiday trees. This year the festival benefits LIFT, Leelanau Investing for Teens. Anybody can sponsor and decorate a tree for $150, families and groups included, and the trees stay up for strolling through the holidays. Crystal River Outfitters and LIFT. WHAT: A walk-through holiday tree festival. WHERE: Crystal River Outfitters Recreational District, Glen Arbor. WHEN: Nov. 28 and 29. WHY IT MATTERS: LIFT runs free after-school programs for 6th through 12th graders at Suttons Bay, Glen Lake, Leland and Northport.",
+    "summary": "The sixth annual Strolling Lights Festival comes to Glen Arbor this weekend, Saturday and Sunday, Nov. 28 and 29, as Crystal River Outfitters fills its corner of town with decorated holiday trees. This year the festival benefits LIFT, Leelanau Investing for Teens. Anybody can sponsor and decorate a tree for $150, families and groups included, and the trees stay up for strolling through the holidays. Crystal River Outfitters and LIFT. WHAT: A walk-through holiday tree festival. WHERE: Crystal River Outfitters Recreational District, Glen Arbor. WHEN: Nov. 28 and 29. WHY IT MATTERS: LIFT runs free after-school programs for 6th through 12th graders at Suttons Bay, Glen Lake, Leland and Northport.",
+    "rank": 4,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-buzz-05",
+    "title": "CORN HARVEST NEARLY DONE: GT FARM REPORTS 'PHENOMENAL YIELDS'",
+    "recap": "We talked about Long Acre Farms wrapping up a strong corn harvest in Grand Traverse County, with fuel costs the big headache.",
+    "article_url": "https://upnorthlive.com/news/local/grand-traverse-county-farm-nears-end-of-corn-harvest-after-strong-yields",
+    "article_title": "Grand Traverse County farm nears end of corn harvest after strong yields (UpNorthLive)",
+    "jokes": [
+     "Ninety percent done by Thanksgiving. That's more than I can say for my gutters.",
+     "Phenomenal yields. My garden's yield this year was one zucchini, and it was the size of a canoe."
+    ],
+    "body": "CORN HARVEST NEARLY DONE: GT FARM REPORTS 'PHENOMENAL YIELDS'<br>• SUMMARY: Long Acre Farms in Grand Traverse County is about 90% through its corn harvest, and owner Matt Breithaupt says timely rains plus a long dry fall gave them phenomenal yields. He hopes to wrap up by the end of this week.<br>• THE CATCH: Fuel prices have taken a toll the last four months, he says, on everything from parts to tires to chains. And with no snow cover yet, the winter wheat could be at risk.<br>• WHO: Matt Breithaupt, Long Acre Farms. WHAT: A strong corn year. WHERE: Grand Traverse County. WHY IT MATTERS: His line, 'It's not about how much rain we get, it's a matter of when,' is the most Up North weather wisdom you'll hear all week.<br>➜ TAKE: Farmers rooting for snow and everybody else rooting against it. Thanksgiving week, pick a side.<br>➜ BAIT: Text 231-929-4487: corn on the Thanksgiving table, yes or no? Creamed, kernel or cornbread?<br>😂 JOKES: Ninety percent done by Thanksgiving. That's more than I can say for my gutters. / Phenomenal yields. My garden's yield this year was one zucchini, and it was the size of a canoe.",
+    "description": "Long Acre Farms in Grand Traverse County is about 90% through its corn harvest, and owner Matt Breithaupt says timely rains plus a long dry fall gave them phenomenal yields. He hopes to wrap up by the end of this week. Fuel prices have taken a toll the last four months, he says, on everything from parts to tires to chains. And with no snow cover yet, the winter wheat could be at risk. Matt Breithaupt, Long Acre Farms. WHAT: A strong corn year. WHERE: Grand Traverse County. WHY IT MATTERS: His line, 'It's not about how much rain we get, it's a matter of when,' is the most Up North weather wisdom you'll hear all week.",
+    "summary": "Long Acre Farms in Grand Traverse County is about 90% through its corn harvest, and owner Matt Breithaupt says timely rains plus a long dry fall gave them phenomenal yields. He hopes to wrap up by the end of this week. Fuel prices have taken a toll the last four months, he says, on everything from parts to tires to chains. And with no snow cover yet, the winter wheat could be at risk. Matt Breithaupt, Long Acre Farms. WHAT: A strong corn year. WHERE: Grand Traverse County. WHY IT MATTERS: His line, 'It's not about how much rain we get, it's a matter of when,' is the most Up North weather wisdom you'll hear all week.",
+    "rank": 5,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-buzz-06",
+    "title": "TAYLOR SWIFT SURPRISES BRENDA LEE WITH A DIAMOND",
+    "recap": "We talked about Taylor Swift surprising Brenda Lee with a Diamond plaque for 'Rockin' Around the Christmas Tree.'",
+    "article_url": "https://www.billboard.com/music/music-news/taylor-swift-surprises-brenda-lee-riaa-diamond-plaque-video-1236387743/",
+    "article_title": "Watch Taylor Swift Surprise Brenda Lee With an RIAA Diamond Plaque for This 'Incredible Song' (Billboard)",
+    "jokes": [
+     "Ten million units. My Christmas playlist has ten million units too, and they're all Mariah.",
+     "Taylor Swift handing out awards now. Next week she's delivering my mail."
+    ],
+    "body": "TAYLOR SWIFT SURPRISES BRENDA LEE WITH A DIAMOND<br>• SUMMARY: Taylor Swift surprised Brenda Lee, 81, in Nashville with an RIAA Diamond plaque for 'Rockin' Around the Christmas Tree,' certified for more than 10 million units in the U.S. The video of the moment came out Monday.<br>• THE CATCH: It's only the second holiday song ever to go Diamond, joining Mariah Carey's 'All I Want for Christmas Is You.'<br>• WHO: Taylor Swift and Brenda Lee. WHAT: Diamond certification. WHERE: Nashville. WHEN: Presented Nov. 16, video out Nov. 23. WHY IT MATTERS: Lee recorded that song as a teenager, and it still owns December.<br>➜ TAKE: Mariah, scoot over. There's another queen on the Christmas throne, and she's 81.<br>➜ BAIT: Text 231-929-4487: what's the first Christmas song you allow yourself to play? And is it too early?<br>😂 JOKES: Ten million units. My Christmas playlist has ten million units too, and they're all Mariah. / Taylor Swift handing out awards now. Next week she's delivering my mail.",
+    "description": "Taylor Swift surprised Brenda Lee, 81, in Nashville with an RIAA Diamond plaque for 'Rockin' Around the Christmas Tree,' certified for more than 10 million units in the U.S. The video of the moment came out Monday. It's only the second holiday song ever to go Diamond, joining Mariah Carey's 'All I Want for Christmas Is You.' Taylor Swift and Brenda Lee. WHAT: Diamond certification. WHERE: Nashville. WHEN: Presented Nov. 16, video out Nov. 23. WHY IT MATTERS: Lee recorded that song as a teenager, and it still owns December.",
+    "summary": "Taylor Swift surprised Brenda Lee, 81, in Nashville with an RIAA Diamond plaque for 'Rockin' Around the Christmas Tree,' certified for more than 10 million units in the U.S. The video of the moment came out Monday. It's only the second holiday song ever to go Diamond, joining Mariah Carey's 'All I Want for Christmas Is You.' Taylor Swift and Brenda Lee. WHAT: Diamond certification. WHERE: Nashville. WHEN: Presented Nov. 16, video out Nov. 23. WHY IT MATTERS: Lee recorded that song as a teenager, and it still owns December.",
+    "rank": 6,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-buzz-07",
+    "title": "BIT: CELEBRATE YOUR UNIQUE TALENT DAY",
+    "recap": "We celebrated Celebrate Your Unique Talent Day and took texts about your weirdest talents.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [
+     "My unique talent is falling asleep in any recliner within four minutes. Thanksgiving is my Olympics.",
+     "I can also burp the alphabet, but this is a family show, so we'll leave that one in the garage."
+    ],
+    "body": "BIT: CELEBRATE YOUR UNIQUE TALENT DAY<br>• It's Celebrate Your Unique Talent Day, per the National Day Calendar. Not the talent on your resume. The weird one.<br>• Can you touch your nose with your tongue? Name every Taylor Swift album in order? Parallel park a minivan in one try on Front Street in July?<br>• Pair it with the Dry Bar 'most useless talent' clip in Trending Audio.<br>➜ TAKE: Mine is knowing exactly when the microwave is about to beep and stopping it at one second so nobody wakes up.<br>➜ BAIT: Text 231-929-4487 your weirdest talent. Best one gets read on air.<br>😂 JOKES: My unique talent is falling asleep in any recliner within four minutes. Thanksgiving is my Olympics. / I can also burp the alphabet, but this is a family show, so we'll leave that one in the garage.",
+    "description": "It's Celebrate Your Unique Talent Day, per the National Day Calendar. Not the talent on your resume. The weird one. Can you touch your nose with your tongue? Name every Taylor Swift album in order? Parallel park a minivan in one try on Front Street in July? Pair it with the Dry Bar 'most useless talent' clip in Trending Audio.",
+    "summary": "It's Celebrate Your Unique Talent Day, per the National Day Calendar. Not the talent on your resume. The weird one. Can you touch your nose with your tongue? Name every Taylor Swift album in order? Parallel park a minivan in one try on Front Street in July? Pair it with the Dry Bar 'most useless talent' clip in Trending Audio.",
+    "rank": 7,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-buzz-08",
+    "title": "BIT: WHEN ARE YOU ROLLING IN FOR THANKSGIVING?",
+    "recap": "We asked when you're really rolling in for Thanksgiving, off UpNorthLive's arrival poll.",
+    "article_url": "https://upnorthlive.com/news/local/poll-when-do-you-plan-on-arriving-to-your-thanksgiving-destination",
+    "article_title": "Poll: When do you plan on arriving to your Thanksgiving destination? (UpNorthLive)",
+    "jokes": [
+     "'We'll be there at noon' is the most-told lie of Thanksgiving. Right after 'I'm not that hungry.'",
+     "If you show up after the dishes are done, you're not a guest. You're a leftover."
+    ],
+    "body": "BIT: WHEN ARE YOU ROLLING IN FOR THANKSGIVING?<br>• UpNorthLive is asking its viewers a simple one this week: when do you plan to arrive at your Thanksgiving destination?<br>• Are you the Wednesday-night early bird, the Thursday 'we'll be there by noon' liar, or the person who shows up right when the turkey hits the table?<br>• With slick spots on bridges this morning, AJ's vote: leave early, drive slow.<br>➜ TAKE: There are two kinds of Thanksgiving guests: the ones who help set the table, and the ones who show up with a bag of ice like it's a casserole.<br>➜ BAIT: Text 231-929-4487: what time are you really getting there?<br>😂 JOKES: 'We'll be there at noon' is the most-told lie of Thanksgiving. Right after 'I'm not that hungry.' / If you show up after the dishes are done, you're not a guest. You're a leftover.",
+    "description": "UpNorthLive is asking its viewers a simple one this week: when do you plan to arrive at your Thanksgiving destination? Are you the Wednesday-night early bird, the Thursday 'we'll be there by noon' liar, or the person who shows up right when the turkey hits the table? With slick spots on bridges this morning, AJ's vote: leave early, drive slow.",
+    "summary": "UpNorthLive is asking its viewers a simple one this week: when do you plan to arrive at your Thanksgiving destination? Are you the Wednesday-night early bird, the Thursday 'we'll be there by noon' liar, or the person who shows up right when the turkey hits the table? With slick spots on bridges this morning, AJ's vote: leave early, drive slow.",
+    "rank": 8,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-buzz-09",
+    "title": "LIONS: BEARS ON THANKSGIVING, 1 PM, CBS",
+    "recap": "We previewed Lions-Bears on Thanksgiving at 1 PM on CBS, with Sam LaPorta limited in Monday's estimate.",
+    "article_url": "https://www.cbsnews.com/chicago/news/how-to-watch-chicago-bears-vs-detroit-lions-game-thanksgiving-2026/",
+    "article_title": "Lions: Bears On Thanksgiving, 1 Pm, Cbs",
+    "jokes": [],
+    "body": "LIONS: BEARS ON THANKSGIVING, 1 PM, CBS<br>• Lions host the Bears Thursday at Ford Field. Kickoff 1 PM, on CBS and Paramount+.<br>• Monday's injury estimate: Sam LaPorta limited (ankle). Chuck Clark, Skyler Gill-Howard, Ennis Rakestraw Jr. and DJ Wonnum did not participate. D.J. Reed and Khalil Dorsey full.<br>• Rundown: Detroit is coming off a 31-21 win over Tampa Bay.",
+    "description": "• Lions host the Bears Thursday at Ford Field. Kickoff 1 PM, on CBS and Paramount+. • Monday's injury estimate: Sam LaPorta limited (ankle). Chuck Clark, Skyler Gill-Howard, Ennis Rakestraw Jr. and DJ Wonnum did not participate. D.J. Reed and Khalil Dorsey full. • Rundown: Detroit is coming off a 31-21 win over Tampa Bay.",
+    "summary": "• Lions host the Bears Thursday at Ford Field. Kickoff 1 PM, on CBS and Paramount+. • Monday's injury estimate: Sam LaPorta limited (ankle). Chuck Clark, Skyler Gill-Howard, Ennis Rakestraw Jr. and DJ Wonnum did not participate. D.J. Reed and Khalil Dorsey full. • Rundown: Detroit is coming off a 31-21 win over Tampa Bay.",
+    "rank": 9,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys",
+  "article_title": "Toys for Tots drive-through kickoff at Fox Grand Traverse collects thousands of toys (UpNorthLive)",
+  "jokes": [
+   "The Marines are collecting toys. Finally, a drill sergeant who yells, 'Drop and give me a Barbie.'",
+   "Thousands of toys in one day at a car dealership. Easiest test drive those guys ever did."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-24-bench-01",
+    "title": "TC FIREFIGHTERS CAN NOW LIVE OUTSIDE THE CITY",
+    "body": "TC FIREFIGHTERS CAN NOW LIVE OUTSIDE THE CITY<br>• SUMMARY: A new agreement lets Traverse City firefighters live outside the city as home prices keep climbing. Union president Jacob Steichen of Local 646 says it's tough for anybody middle class or below to live where they work in northwest Michigan.<br>• THE CATCH: Redfin puts the average Traverse City home sale price this year at over $450,000, and firefighters start around $60,000.<br>• WHO: TC Firefighters Association Local 646 and the city. WHAT: Relaxed residency rule. WHY IT MATTERS: Labor and management working together on the housing squeeze, his words.<br>➜ TAKE: If the people who run toward the fire can't afford to live near it, that tells you everything about housing up here.<br>➜ BAIT: Text 231-929-4487: how far do you drive to work?<br>😂 JOKES: Four hundred fifty grand for a house. For that money in 1995 you got a house, a boat and a dock to park it at. / Firefighters commuting from Kingsley. Good news is they already know how to drive fast.",
+    "recap": "We talked about a new deal letting TC firefighters live outside the city as home prices top $450,000.",
+    "notes": "https://upnorthlive.com/news/local/new-agreement-lets-firefighters-live-outside-traverse-city-as-home-prices-rise-grand-traverse-county UpNorthLive (Marc Schollett), Sun Nov 22, 2026. Exact new radius not stated in the story.",
+    "article_url": "https://upnorthlive.com/news/local/new-agreement-lets-firefighters-live-outside-traverse-city-as-home-prices-rise-grand-traverse-county",
+    "article_title": "New agreement lets firefighters live outside Traverse City as home prices rise (UpNorthLive)",
+    "jokes": [
+     "Four hundred fifty grand for a house. For that money in 1995 you got a house, a boat and a dock to park it at.",
+     "Firefighters commuting from Kingsley. Good news is they already know how to drive fast."
+    ],
+    "description": "We talked about a new deal letting TC firefighters live outside the city as home prices top $450,000.",
+    "summary": "We talked about a new deal letting TC firefighters live outside the city as home prices top $450,000."
+   },
+   {
+    "id": "2026-11-24-bench-02",
+    "title": "FERRIS STATE: BIG NOON KICKOFF, THEN A 45-14 PLAYOFF WIN",
+    "body": "FERRIS STATE: BIG NOON KICKOFF, THEN A 45-14 PLAYOFF WIN<br>• SUMMARY: Fox's Big Noon Kickoff broadcast from Ferris State in Big Rapids, the first time the show has ever gone to a Division II school, to spotlight the Bulldogs' 41-game win streak. Then Ferris beat Truman State 45-14 in the first round of the D2 playoffs Saturday.<br>• THE CATCH: Fox analyst Brady Quinn said programs like this need more attention, and Ferris made the most of the spotlight.<br>• WHO: Ferris State Bulldogs. WHAT: National TV and a playoff win. WHERE: Big Rapids. WHEN: Saturday, Nov. 21. WHY IT MATTERS: A Michigan small-school dynasty on national TV.<br>➜ TAKE: Forty-two straight now, if you're counting. Big Rapids, the winningest little town in America.<br>➜ BAIT: Text 231-929-4487 if you're a Ferris grad. Bulldogs, check in.<br>😂 JOKES: Forty-plus wins in a row. My longest streak is not hitting snooze, and it's at zero. / Fox came to Big Rapids. Next year they'll do the show from a Meijer parking lot and we'll still watch.",
+    "recap": "We talked about Fox's Big Noon Kickoff visiting Ferris State, then the Bulldogs beating Truman State 45-14 in the playoffs.",
+    "notes": "https://upnorthlive.com/news/local/foxs-big-noon-kickoff-visits-ferris-state-spotlighting-41-game-win-streak UpNorthLive (Tony Lundy) Nov 22, 2026; score 45-14 per Ferris State news release https://www.ferris.edu/news/archive/2026/ferris-state-embraces-historic-fox-big-noon-kickoff-national-spotlight-and-celebrates-playoff-win.htm and Truman State box score. Next-round opponent not verified.",
+    "article_url": "https://upnorthlive.com/news/local/foxs-big-noon-kickoff-visits-ferris-state-spotlighting-41-game-win-streak",
+    "article_title": "Fox's Big Noon Kickoff visits Ferris State, spotlighting 41-game win streak (UpNorthLive)",
+    "jokes": [
+     "Forty-plus wins in a row. My longest streak is not hitting snooze, and it's at zero.",
+     "Fox came to Big Rapids. Next year they'll do the show from a Meijer parking lot and we'll still watch."
+    ],
+    "description": "We talked about Fox's Big Noon Kickoff visiting Ferris State, then the Bulldogs beating Truman State 45-14 in the playoffs.",
+    "summary": "We talked about Fox's Big Noon Kickoff visiting Ferris State, then the Bulldogs beating Truman State 45-14 in the playoffs."
+   },
+   {
+    "id": "2026-11-24-bench-03",
+    "title": "TCPD EXPLAINS THE NEW CAMERAS AT CLINCH, HULL AND ROTARY SQUARE",
+    "body": "TCPD EXPLAINS THE NEW CAMERAS AT CLINCH, HULL AND ROTARY SQUARE<br>• SUMMARY: Traverse City Police installed new Flock cameras over Hull Park, Rotary Square and Clinch Park within the last month. Capt. Pete Simerson says the Hull Park camera went up after an uptick in crime there.<br>• THE CATCH: Police say officers need a reason before they can look at footage, and they credit the plate readers with leads in a theft ring arrest and a missing girl's return.<br>• WHO: TCPD. WHAT: Three pan-tilt-zoom cameras. WHERE: Hull Park, Rotary Square, Clinch Park. WHY IT MATTERS: Those are the city's busiest public spaces and event sites.<br>➜ TAKE: Smile, you're on Clinch Park camera. Maybe fix your hair before the Cherry Festival.<br>➜ BAIT: Text 231-929-4487: cameras in the parks, good idea or too much?<br>😂 JOKES: Clinch Park has a camera now, so somebody finally has video of the seagull that stole my fries. / Rotary Square cameras. Somewhere a guy who parallel parked badly just got nervous.",
+    "recap": "We talked about TCPD explaining its new Flock cameras at Hull Park, Rotary Square and Clinch Park.",
+    "notes": "https://www.9and10news.com/2026/11/23/traverse-city-police-explain-how-new-flock-cameras-work-and-who-can-access-the-footage/ 9&10 News (Nicholas Simon), Nov 23, 2026 6 PM. Privacy-debate angle: keep it light, no politics.",
+    "article_url": "https://www.9and10news.com/2026/11/23/traverse-city-police-explain-how-new-flock-cameras-work-and-who-can-access-the-footage/",
+    "article_title": "Traverse City police explain how new Flock cameras work and who can access the footage (9&10 News)",
+    "jokes": [
+     "Clinch Park has a camera now, so somebody finally has video of the seagull that stole my fries.",
+     "Rotary Square cameras. Somewhere a guy who parallel parked badly just got nervous."
+    ],
+    "description": "We talked about TCPD explaining its new Flock cameras at Hull Park, Rotary Square and Clinch Park.",
+    "summary": "We talked about TCPD explaining its new Flock cameras at Hull Park, Rotary Square and Clinch Park."
+   },
+   {
+    "id": "2026-11-24-bench-04",
+    "title": "WEST END PARCELS: TWO PROPOSALS IN, PARKING IS THE PUZZLE",
+    "body": "WEST END PARCELS: TWO PROPOSALS IN, PARKING IS THE PUZZLE<br>• SUMMARY: Traverse City got two proposals for developing six city-owned parcels in downtown's West End, and parking is the big question. City communications director Colleen Paveglio laid them out last week.<br>• THE CATCH: The lots are parking now, so whatever gets built has to answer where everybody parks.<br>• WHO: City of Traverse City. WHAT: Two RFP responses. WHERE: Downtown West End. WHY IT MATTERS: Anyone who's circled Front Street in July knows parking is the real local sport.<br>➜ TAKE: Build whatever you want, just give me one spot that isn't a parallel-park-in-front-of-a-crowd situation.<br>➜ BAIT: Text 231-929-4487: your best downtown TC parking secret. We won't tell. Much.<br>😂 JOKES: Downtown parking in July is a contact sport. I've seen minivans with better moves than the Lions' offensive line. / Six parcels, two proposals, zero parking spots. Sounds like my driveway at Thanksgiving.",
+    "recap": "We talked about two proposals for six city-owned West End parcels downtown, and the parking puzzle.",
+    "notes": "https://www.record-eagle.com/news/local_news/about-the-west-end-development-pondered-but-parkings-a-puzzle/article_573601e9-2f73-4a15-a1b6-ccf8dcf707f6.html Record-Eagle (Michael J. Breazeale), Nov 21, 2026. Most of the article body is paywalled/garbled; only the lede facts are used.",
+    "article_url": "https://www.record-eagle.com/news/local_news/about-the-west-end-development-pondered-but-parkings-a-puzzle/article_573601e9-2f73-4a15-a1b6-ccf8dcf707f6.html",
+    "article_title": "ABOUT THE WEST END: Development pondered, but parking's a puzzle (Record-Eagle)",
+    "jokes": [
+     "Downtown parking in July is a contact sport. I've seen minivans with better moves than the Lions' offensive line.",
+     "Six parcels, two proposals, zero parking spots. Sounds like my driveway at Thanksgiving."
+    ],
+    "description": "We talked about two proposals for six city-owned West End parcels downtown, and the parking puzzle.",
+    "summary": "We talked about two proposals for six city-owned West End parcels downtown, and the parking puzzle."
+   }
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "c4d00c93ee87",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: FIRST PATCH IS OUT, AND THAT PRE-ORDER PACK IS FOR SALE<br>• CONFIRMED: Rockstar pushed GTA 6's first post-launch update, version 01.002.002, on Monday. It's 603.8 MB on PS5 and 1.6 GB on Xbox, rolling out in stages.<br>• CONFIRMED: The fixes include crashes, autosaves not saving, weather stuck for long stretches, story phone calls not triggering, a Wanted Level you couldn't shake, and the gym deadlift bar.<br>• CONFIRMED: The Vintage Vice City Pack pre-order bonus is now sold on its own for $4.99 on PlayStation and Xbox.<br>• STATUS: Out since Nov. 19 on PS5 and Xbox Series X|S. No PC date announced.<br>➜ TAKE: They fixed the bug where you couldn't lose the cops. Real life still has that bug, by the way.<br>➜ BAIT: Text 231-929-4487: GTA gamers, how many hours are you in? Be honest. Your boss isn't listening.<br>😂 JOKES: They patched the gym so you can deadlift now. In my house the only thing getting deadlifted is the leftover turkey. / Five bucks for retro outfits. My retro outfits are free, they're just in my closet from 1999.",
+  "notes": "GTA 6 WATCH: FIRST PATCH IS OUT, AND THAT PRE-ORDER PACK IS FOR SALE: https://www.polygon.com/gta-6-update-today-ver-01002002-where-is-ps5-xbox-download-size-patch-notes/ Polygon (Patricia Hernandez) Nov 23, 2026 9:41 AM ET; DLC: Polygon (Willa Rowe) Nov 23 https://www.polygon.com/gta-6-vice-city-pre-order-dlc-availble-to-purchase/ ; status: Rockstar https://www.rockstargames.com/VI/out-now . Also checked AP (sales recap, nothing new). Lean pass: 4 sources checked, no rumors used.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-24-gta6-01",
+    "title": "GTA 6 WATCH: FIRST PATCH IS OUT, AND THAT PRE-ORDER PACK IS FOR SALE",
+    "recap": "We covered GTA 6's first patch, fixing crashes, autosaves and a stuck Wanted Level, plus the $4.99 Vintage Vice City Pack.",
+    "article_url": "https://www.polygon.com/gta-6-update-today-ver-01002002-where-is-ps5-xbox-download-size-patch-notes/",
+    "article_title": "GTA 6's First Official Post-Release Update Has A Catch (Polygon)",
+    "jokes": [
+     "They patched the gym so you can deadlift now. In my house the only thing getting deadlifted is the leftover turkey.",
+     "Five bucks for retro outfits. My retro outfits are free, they're just in my closet from 1999."
+    ],
+    "body": "GTA 6 WATCH: FIRST PATCH IS OUT, AND THAT PRE-ORDER PACK IS FOR SALE<br>• CONFIRMED: Rockstar pushed GTA 6's first post-launch update, version 01.002.002, on Monday. It's 603.8 MB on PS5 and 1.6 GB on Xbox, rolling out in stages.<br>• CONFIRMED: The fixes include crashes, autosaves not saving, weather stuck for long stretches, story phone calls not triggering, a Wanted Level you couldn't shake, and the gym deadlift bar.<br>• CONFIRMED: The Vintage Vice City Pack pre-order bonus is now sold on its own for $4.99 on PlayStation and Xbox.<br>• STATUS: Out since Nov. 19 on PS5 and Xbox Series X|S. No PC date announced.<br>➜ TAKE: They fixed the bug where you couldn't lose the cops. Real life still has that bug, by the way.<br>➜ BAIT: Text 231-929-4487: GTA gamers, how many hours are you in? Be honest. Your boss isn't listening.<br>😂 JOKES: They patched the gym so you can deadlift now. In my house the only thing getting deadlifted is the leftover turkey. / Five bucks for retro outfits. My retro outfits are free, they're just in my closet from 1999.",
+    "description": "Rockstar pushed GTA 6's first post-launch update, version 01.002.002, on Monday. It's 603.8 MB on PS5 and 1.6 GB on Xbox, rolling out in stages. The fixes include crashes, autosaves not saving, weather stuck for long stretches, story phone calls not triggering, a Wanted Level you couldn't shake, and the gym deadlift bar. The Vintage Vice City Pack pre-order bonus is now sold on its own for $4.99 on PlayStation and Xbox. Out since Nov. 19 on PS5 and Xbox Series X|S. No PC date announced.",
+    "summary": "Rockstar pushed GTA 6's first post-launch update, version 01.002.002, on Monday. It's 603.8 MB on PS5 and 1.6 GB on Xbox, rolling out in stages. The fixes include crashes, autosaves not saving, weather stuck for long stretches, story phone calls not triggering, a Wanted Level you couldn't shake, and the gym deadlift bar. The Vintage Vice City Pack pre-order bonus is now sold on its own for $4.99 on PlayStation and Xbox. Out since Nov. 19 on PS5 and Xbox Series X|S. No PC date announced.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.polygon.com/gta-6-update-today-ver-01002002-where-is-ps5-xbox-download-size-patch-notes/",
+  "article_title": "GTA 6's First Official Post-Release Update Has A Catch (Polygon)",
+  "jokes": [
+   "They patched the gym so you can deadlift now. In my house the only thing getting deadlifted is the leftover turkey.",
+   "Five bucks for retro outfits. My retro outfits are free, they're just in my closet from 1999."
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "1077e54dbacf",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "BLACK FRIDAY TURNOUT HITS A 10-YEAR HIGH<br>• Deloitte's new survey says 87% of shoppers plan to hit Black Friday through Cyber Monday deals this year, the most since 2016.<br>• Average planned spend is $624, flat with last year, and 72% are holding some purchases for the deals.<br>• Gen Z is all in: 94% plan to shop the week and spend 23% more.<br>➜ LOCAL ANGLE: Up here that means Meijer at dawn, Cherryland or the Grand Traverse Mall, then a hot cocoa downtown. Small Business Saturday is right behind it.<br>➜ BAIT: Text 231-929-4487: are you a 5 AM doorbuster or a Cyber Monday couch shopper?<br>😂 JOKES: Seventy-two percent are waiting for the deal. The other 28% are my wife, who already bought everything in August. / Gen Z is spending 23% more. On what? I don't know. I asked my nephew and he said 'it's giving' and walked away.<br><br>SIDES BEAT THE BIRD: AMERICA WOULD RATHER COOK THE SIDES<br>• Campbell's 2026 State of the Sides report surveyed 5,017 Americans, and 80% would rather cook the side dishes than the turkey.<br>• The top five sides haven't changed in three years: green bean casserole, mac and cheese, yams or sweet potatoes, mashed potatoes, and stuffing or dressing.<br>➜ LOCAL ANGLE: Up North we'd add a cherry something, a jello salad nobody admits to making, and somebody's grandma's pie.<br>➜ BAIT: Text 231-929-4487: what side HAS to be on your table, or it's not Thanksgiving?<br>😂 JOKES: Eighty percent would rather make the sides. The other 20% are the guys standing by the turkey holding a meat thermometer like it's a lightsaber. / Stuffing or dressing is the only Thanksgiving argument where both sides are right and both sides are bread.",
+  "notes": "BLACK FRIDAY TURNOUT HITS A 10-YEAR HIGH: https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html Deloitte press release, Nov 23, 2026.<br>SIDES BEAT THE BIRD: AMERICA WOULD RATHER COOK THE SIDES: https://qz.com/favorite-thanksgiving-side-dishes-2026-campbells Quartz summary of Campbell's State of the Sides report (5,017 respondents), updated Oct 29, 2026. Pegged to Thursday.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-24-lifestyle-01",
+    "title": "BLACK FRIDAY TURNOUT HITS A 10-YEAR HIGH",
+    "recap": "We talked about Deloitte's survey: 87% plan to shop Black Friday to Cyber Monday, a 10-year high, spending about $624.",
+    "article_url": "https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html",
+    "article_title": "Deloitte: Participation in Black Friday-Cyber Monday shopping expected to hit 10-year high",
+    "jokes": [
+     "Seventy-two percent are waiting for the deal. The other 28% are my wife, who already bought everything in August.",
+     "Gen Z is spending 23% more. On what? I don't know. I asked my nephew and he said 'it's giving' and walked away."
+    ],
+    "body": "BLACK FRIDAY TURNOUT HITS A 10-YEAR HIGH<br>• Deloitte's new survey says 87% of shoppers plan to hit Black Friday through Cyber Monday deals this year, the most since 2016.<br>• Average planned spend is $624, flat with last year, and 72% are holding some purchases for the deals.<br>• Gen Z is all in: 94% plan to shop the week and spend 23% more.<br>➜ LOCAL ANGLE: Up here that means Meijer at dawn, Cherryland or the Grand Traverse Mall, then a hot cocoa downtown. Small Business Saturday is right behind it.<br>➜ BAIT: Text 231-929-4487: are you a 5 AM doorbuster or a Cyber Monday couch shopper?<br>😂 JOKES: Seventy-two percent are waiting for the deal. The other 28% are my wife, who already bought everything in August. / Gen Z is spending 23% more. On what? I don't know. I asked my nephew and he said 'it's giving' and walked away.",
+    "description": "Deloitte's new survey says 87% of shoppers plan to hit Black Friday through Cyber Monday deals this year, the most since 2016. Average planned spend is $624, flat with last year, and 72% are holding some purchases for the deals. Gen Z is all in: 94% plan to shop the week and spend 23% more.",
+    "summary": "Deloitte's new survey says 87% of shoppers plan to hit Black Friday through Cyber Monday deals this year, the most since 2016. Average planned spend is $624, flat with last year, and 72% are holding some purchases for the deals. Gen Z is all in: 94% plan to shop the week and spend 23% more.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-lifestyle-02",
+    "title": "SIDES BEAT THE BIRD: AMERICA WOULD RATHER COOK THE SIDES",
+    "recap": "We talked about Campbell's survey: 80% would rather cook the sides than the turkey, and the top five sides haven't budged.",
+    "article_url": "https://qz.com/favorite-thanksgiving-side-dishes-2026-campbells",
+    "article_title": "Campbell's 2026 State of the Sides report: 10 Thanksgiving findings (Quartz)",
+    "jokes": [
+     "Eighty percent would rather make the sides. The other 20% are the guys standing by the turkey holding a meat thermometer like it's a lightsaber.",
+     "Stuffing or dressing is the only Thanksgiving argument where both sides are right and both sides are bread."
+    ],
+    "body": "SIDES BEAT THE BIRD: AMERICA WOULD RATHER COOK THE SIDES<br>• Campbell's 2026 State of the Sides report surveyed 5,017 Americans, and 80% would rather cook the side dishes than the turkey.<br>• The top five sides haven't changed in three years: green bean casserole, mac and cheese, yams or sweet potatoes, mashed potatoes, and stuffing or dressing.<br>➜ LOCAL ANGLE: Up North we'd add a cherry something, a jello salad nobody admits to making, and somebody's grandma's pie.<br>➜ BAIT: Text 231-929-4487: what side HAS to be on your table, or it's not Thanksgiving?<br>😂 JOKES: Eighty percent would rather make the sides. The other 20% are the guys standing by the turkey holding a meat thermometer like it's a lightsaber. / Stuffing or dressing is the only Thanksgiving argument where both sides are right and both sides are bread.",
+    "description": "Campbell's 2026 State of the Sides report surveyed 5,017 Americans, and 80% would rather cook the side dishes than the turkey. The top five sides haven't changed in three years: green bean casserole, mac and cheese, yams or sweet potatoes, mashed potatoes, and stuffing or dressing.",
+    "summary": "Campbell's 2026 State of the Sides report surveyed 5,017 Americans, and 80% would rather cook the side dishes than the turkey. The top five sides haven't changed in three years: green bean casserole, mac and cheese, yams or sweet potatoes, mashed potatoes, and stuffing or dressing.",
+    "rank": 2,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html",
+  "article_title": "Deloitte: Participation in Black Friday-Cyber Monday shopping expected to hit 10-year high",
+  "jokes": [
+   "Seventy-two percent are waiting for the deal. The other 28% are my wife, who already bought everything in August.",
+   "Gen Z is spending 23% more. On what? I don't know. I asked my nephew and he said 'it's giving' and walked away."
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "b1a31ed01307",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "OFFICE: THE HARDEST-WORKING OFFICE IN AMERICA THIS WEEK<br>• The Butterball Turkey Talk-Line has more than 50 culinary experts on the phones right now, answering questions on thawing, roasting, doneness and leftovers.<br>• It started in 1981, it's open through Dec. 24, and you can call 1-800-BUTTERBALL, text, email or chat.<br>➜ TAKE: Your office thinks Monday's busy. Imagine Thursday morning at Butterball: 'Ma'am, the turkey is still frozen. Put down the hair dryer.'<br>➜ BAIT: Text 231-929-4487: what's the worst question you've ever gotten at work?<br>😂 JOKES: It even got a West Wing episode. That's more TV time than my whole department. / Their busiest day is Thanksgiving. Mine is the day after, when I eat lunch over the sink.<br><br>OFFICE: THE SHORT-WEEK OFFICE, RANKED<br>• It's a two-and-a-half-day week for a lot of offices, and everybody plays a role.<br>• There's the coworker who's 'out of office' since Friday, the one with a slow cooker under the desk, and the one asking 'are we doing anything for Thanksgiving?' in a group text at 4:59.<br>➜ TAKE: Short-week rule: if a meeting can be an email, and the email can be a 'happy Thanksgiving,' do that.<br>➜ BAIT: Text 231-929-4487: what's your office doing this short week? Potluck? Ghost town?<br>😂 JOKES: Nobody does real work the Wednesday before Thanksgiving. We just move files from one folder to another and call it 'getting ahead.' / The office potluck sign-up sheet: six people bringing chips, one brave soul bringing a casserole, and Kevin bringing napkins. Again.<br><br>SCHOOL: THE GREAT THANKSGIVING BREAK DEBATE<br>• School calendars are getting surveyed everywhere, and Thanksgiving break is one of the big fights.<br>• Colorado's District 49 just asked more than 2,200 parents, students and staff about eight parts of the calendar, and Thanksgiving break was one of them.<br>➜ TAKE: Full week off or just Wednesday through Friday? Parents, this is where you find out what your kids really eat in a day.<br>➜ BAIT: Text 231-929-4487: Thanksgiving break, full week or short break? Parents and teachers, settle it.<br>😂 JOKES: A full week off with the kids. Day one: 'This is great.' Day three: 'Is the school open for visitors?' / Teachers love Thanksgiving break, because it's the one time they get to eat lunch sitting down.<br><br>SCHOOL: THE HANDPRINT TURKEY HALL OF FAME<br>• It's Thanksgiving craft week in a lot of classrooms: handprint turkeys, paper Pilgrim hats, and the 'I am thankful for' sheet.<br>• Parents, those sheets are honest. Some kids are thankful for family. Some are thankful for their dog, pizza and Wi-Fi, in that order.<br>➜ TAKE: Keep every handprint turkey. In 20 years it's the only proof your kid's hand was ever that small.<br>➜ BAIT: Text 231-929-4487: what's the funniest thing your kid said they're thankful for?<br>😂 JOKES: My kid's thankful sheet said 'Mom, Dad and the iPad.' I'm just glad I beat the iPad. Barely. / A handprint turkey is the only art on my fridge that's appreciated in value.",
+  "notes": "OFFICE: THE HARDEST-WORKING OFFICE IN AMERICA THIS WEEK: https://www.livenowfox.com/news/butterball-turkey-talk-line-2026 LiveNOW from FOX, Nov 21, 2026.<br>OFFICE: THE SHORT-WEEK OFFICE, RANKED:  Listener-question bit, no article: framed as a call-in, no facts claimed.<br>SCHOOL: THE GREAT THANKSGIVING BREAK DEBATE: https://www.d49.org/our-community/calendar-survey-results D49 calendar survey page (2,200+ respondents, Thanksgiving Break one of eight items). TCAPS calendar not checked; don't say what TCAPS does.<br>SCHOOL: THE HANDPRINT TURKEY HALL OF FAME:  Listener-question bit, no article: no facts claimed.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-24-officeschool-01",
+    "title": "OFFICE: THE HARDEST-WORKING OFFICE IN AMERICA THIS WEEK",
+    "recap": "We saluted the Butterball Turkey Talk-Line, 50-plus experts working the phones through Dec. 24.",
+    "article_url": "https://www.livenowfox.com/news/butterball-turkey-talk-line-2026",
+    "article_title": "Butterball Turkey Talk-Line experts ready to help holiday cooks (LiveNOW from FOX)",
+    "jokes": [
+     "It even got a West Wing episode. That's more TV time than my whole department.",
+     "Their busiest day is Thanksgiving. Mine is the day after, when I eat lunch over the sink."
+    ],
+    "body": "OFFICE: THE HARDEST-WORKING OFFICE IN AMERICA THIS WEEK<br>• The Butterball Turkey Talk-Line has more than 50 culinary experts on the phones right now, answering questions on thawing, roasting, doneness and leftovers.<br>• It started in 1981, it's open through Dec. 24, and you can call 1-800-BUTTERBALL, text, email or chat.<br>➜ TAKE: Your office thinks Monday's busy. Imagine Thursday morning at Butterball: 'Ma'am, the turkey is still frozen. Put down the hair dryer.'<br>➜ BAIT: Text 231-929-4487: what's the worst question you've ever gotten at work?<br>😂 JOKES: It even got a West Wing episode. That's more TV time than my whole department. / Their busiest day is Thanksgiving. Mine is the day after, when I eat lunch over the sink.",
+    "description": "The Butterball Turkey Talk-Line has more than 50 culinary experts on the phones right now, answering questions on thawing, roasting, doneness and leftovers. It started in 1981, it's open through Dec. 24, and you can call 1-800-BUTTERBALL, text, email or chat.",
+    "summary": "The Butterball Turkey Talk-Line has more than 50 culinary experts on the phones right now, answering questions on thawing, roasting, doneness and leftovers. It started in 1981, it's open through Dec. 24, and you can call 1-800-BUTTERBALL, text, email or chat.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-officeschool-02",
+    "title": "OFFICE: THE SHORT-WEEK OFFICE, RANKED",
+    "recap": "We ranked the short-week office characters, from the slow cooker coworker to the 4:59 group text.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [
+     "Nobody does real work the Wednesday before Thanksgiving. We just move files from one folder to another and call it 'getting ahead.'",
+     "The office potluck sign-up sheet: six people bringing chips, one brave soul bringing a casserole, and Kevin bringing napkins. Again."
+    ],
+    "body": "OFFICE: THE SHORT-WEEK OFFICE, RANKED<br>• It's a two-and-a-half-day week for a lot of offices, and everybody plays a role.<br>• There's the coworker who's 'out of office' since Friday, the one with a slow cooker under the desk, and the one asking 'are we doing anything for Thanksgiving?' in a group text at 4:59.<br>➜ TAKE: Short-week rule: if a meeting can be an email, and the email can be a 'happy Thanksgiving,' do that.<br>➜ BAIT: Text 231-929-4487: what's your office doing this short week? Potluck? Ghost town?<br>😂 JOKES: Nobody does real work the Wednesday before Thanksgiving. We just move files from one folder to another and call it 'getting ahead.' / The office potluck sign-up sheet: six people bringing chips, one brave soul bringing a casserole, and Kevin bringing napkins. Again.",
+    "description": "It's a two-and-a-half-day week for a lot of offices, and everybody plays a role. There's the coworker who's 'out of office' since Friday, the one with a slow cooker under the desk, and the one asking 'are we doing anything for Thanksgiving?' in a group text at 4:59.",
+    "summary": "It's a two-and-a-half-day week for a lot of offices, and everybody plays a role. There's the coworker who's 'out of office' since Friday, the one with a slow cooker under the desk, and the one asking 'are we doing anything for Thanksgiving?' in a group text at 4:59.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-officeschool-03",
+    "title": "SCHOOL: THE GREAT THANKSGIVING BREAK DEBATE",
+    "recap": "We asked parents and teachers to settle it: full week off for Thanksgiving, or just a short break?",
+    "article_url": "https://www.d49.org/our-community/calendar-survey-results",
+    "article_title": "Calendar Survey Results (Colorado District 49)",
+    "jokes": [
+     "A full week off with the kids. Day one: 'This is great.' Day three: 'Is the school open for visitors?'",
+     "Teachers love Thanksgiving break, because it's the one time they get to eat lunch sitting down."
+    ],
+    "body": "SCHOOL: THE GREAT THANKSGIVING BREAK DEBATE<br>• School calendars are getting surveyed everywhere, and Thanksgiving break is one of the big fights.<br>• Colorado's District 49 just asked more than 2,200 parents, students and staff about eight parts of the calendar, and Thanksgiving break was one of them.<br>➜ TAKE: Full week off or just Wednesday through Friday? Parents, this is where you find out what your kids really eat in a day.<br>➜ BAIT: Text 231-929-4487: Thanksgiving break, full week or short break? Parents and teachers, settle it.<br>😂 JOKES: A full week off with the kids. Day one: 'This is great.' Day three: 'Is the school open for visitors?' / Teachers love Thanksgiving break, because it's the one time they get to eat lunch sitting down.",
+    "description": "School calendars are getting surveyed everywhere, and Thanksgiving break is one of the big fights. Colorado's District 49 just asked more than 2,200 parents, students and staff about eight parts of the calendar, and Thanksgiving break was one of them.",
+    "summary": "School calendars are getting surveyed everywhere, and Thanksgiving break is one of the big fights. Colorado's District 49 just asked more than 2,200 parents, students and staff about eight parts of the calendar, and Thanksgiving break was one of them.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-officeschool-04",
+    "title": "SCHOOL: THE HANDPRINT TURKEY HALL OF FAME",
+    "recap": "We took texts on the funniest things your kids said they're thankful for, handprint turkeys included.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [
+     "My kid's thankful sheet said 'Mom, Dad and the iPad.' I'm just glad I beat the iPad. Barely.",
+     "A handprint turkey is the only art on my fridge that's appreciated in value."
+    ],
+    "body": "SCHOOL: THE HANDPRINT TURKEY HALL OF FAME<br>• It's Thanksgiving craft week in a lot of classrooms: handprint turkeys, paper Pilgrim hats, and the 'I am thankful for' sheet.<br>• Parents, those sheets are honest. Some kids are thankful for family. Some are thankful for their dog, pizza and Wi-Fi, in that order.<br>➜ TAKE: Keep every handprint turkey. In 20 years it's the only proof your kid's hand was ever that small.<br>➜ BAIT: Text 231-929-4487: what's the funniest thing your kid said they're thankful for?<br>😂 JOKES: My kid's thankful sheet said 'Mom, Dad and the iPad.' I'm just glad I beat the iPad. Barely. / A handprint turkey is the only art on my fridge that's appreciated in value.",
+    "description": "It's Thanksgiving craft week in a lot of classrooms: handprint turkeys, paper Pilgrim hats, and the 'I am thankful for' sheet. Parents, those sheets are honest. Some kids are thankful for family. Some are thankful for their dog, pizza and Wi-Fi, in that order.",
+    "summary": "It's Thanksgiving craft week in a lot of classrooms: handprint turkeys, paper Pilgrim hats, and the 'I am thankful for' sheet. Parents, those sheets are honest. Some kids are thankful for family. Some are thankful for their dog, pizza and Wi-Fi, in that order.",
+    "rank": 4,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.livenowfox.com/news/butterball-turkey-talk-line-2026",
+  "article_title": "Butterball Turkey Talk-Line experts ready to help holiday cooks (LiveNOW from FOX)",
+  "jokes": [
+   "It even got a West Wing episode. That's more TV time than my whole department.",
+   "Their busiest day is Thanksgiving. Mine is the day after, when I eat lunch over the sink."
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "67dd51966143",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2ea0d62e0f6e",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "SAVOR ONE GOOD THING FOR TWENTY SECONDS<br><br>It's the start of Thanksgiving week, and if your brain already feels like a grocery list, you're in good company. Between the travel, the cooking and the slick bridges this morning, it's easy to rush right past the good stuff. So here's one small move for today. When something good happens, like the first sip of coffee, a kid's laugh in the back seat, or the sun coming up over the bay, stop and stay with it for about twenty seconds. Notice what you see and how it feels, because researchers who tracked people's days found that the days they savored their good moments were the days they felt happier. It costs nothing, it works in a warm kitchen, and you can do it at a red light. Try it once this morning, and then text us at 231-929-4487 and tell us the one good thing you savored today.",
+  "notes": "https://www.tandfonline.com/doi/full/10.1080/17439760.2012.671345<br>Jose, Lim & Bryant (2012), J. Positive Psychology 7(3): daily diary study linking savoring of positive events with higher daily happiness. Indoor move (no walking) for icy roads.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-24-mental-01",
+    "title": "SAVOR ONE GOOD THING FOR TWENTY SECONDS",
+    "recap": "In the Mental Health Minute we tried savoring one good moment for twenty seconds, and took texts on what you savored.",
+    "article_url": "https://www.tandfonline.com/doi/full/10.1080/17439760.2012.671345",
+    "article_title": "Does savoring increase happiness? A daily diary study (Jose, Lim & Bryant, Journal of Positive Psychology, 2012)",
+    "jokes": [],
+    "body": "SAVOR ONE GOOD THING FOR TWENTY SECONDS<br>It's the start of Thanksgiving week, and if your brain already feels like a grocery list, you're in good company. Between the travel, the cooking and the slick bridges this morning, it's easy to rush right past the good stuff. So here's one small move for today. When something good happens, like the first sip of coffee, a kid's laugh in the back seat, or the sun coming up over the bay, stop and stay with it for about twenty seconds. Notice what you see and how it feels, because researchers who tracked people's days found that the days they savored their good moments were the days they felt happier. It costs nothing, it works in a warm kitchen, and you can do it at a red light. Try it once this morning, and then text us at 231-929-4487 and tell us the one good thing you savored today.",
+    "description": "It's the start of Thanksgiving week, and if your brain already feels like a grocery list, you're in good company. Between the travel, the cooking and the slick bridges this morning, it's easy to rush right past the good stuff. So here's one small move for today. When something good happens, like the first sip of coffee, a kid's laugh in the back seat, or the sun coming up over the bay, stop and stay with it for about twenty seconds. Notice what you see and how it feels, because researchers who tracked people's days found that the days they savored their good moments were the days they felt happier. It costs nothing, it works in a warm kitchen, and you can do it at a red light. Try it once this morning, and then text us at 231-929-4487 and tell us the one good thing you savored today.",
+    "summary": "It's the start of Thanksgiving week, and if your brain already feels like a grocery list, you're in good company. Between the travel, the cooking and the slick bridges this morning, it's easy to rush right past the good stuff. So here's one small move for today. When something good happens, like the first sip of coffee, a kid's laugh in the back seat, or the sun coming up over the bay, stop and stay with it for about twenty seconds. Notice what you see and how it feels, because researchers who tracked people's days found that the days they savored their good moments were the days they felt happier. It costs nothing, it works in a warm kitchen, and you can do it at a red light. Try it once this morning, and then text us at 231-929-4487 and tell us the one good thing you savored today.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.tandfonline.com/doi/full/10.1080/17439760.2012.671345",
+  "article_title": "Does savoring increase happiness? A daily diary study (Jose, Lim & Bryant, Journal of Positive Psychology, 2012)",
+  "jokes": [],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "06f887ee8d52",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "content": "HOLD ON — WILSON PHILLIPS<br>• Released as a single: Feb. 27, 1990 (lead single from their debut album, Wilson Phillips)<br>• Chart peaks: US Billboard Hot 100 No. 1 (one week, June 9, 1990); Billboard's No. 1 song of 1990 on the Year-End Hot 100; UK Singles No. 6; Billboard Music Award, Hot 100 Single of the Year (1990)<br>🎤 SONG STORY: Producer Glen Ballard brought the group a track that still needed words, and Chynna Phillips and Carnie Wilson wrote it with him. It spent just one week at No. 1, yet Billboard ranked it the top song of all of 1990.<br>😂 JOKES: One week at No. 1 and still the song of the year. That's the Thanksgiving pie of songs. Shows up once, wins the whole day. / Hold on for one more day is also my advice to anyone waiting on the turkey to thaw.",
+  "notes": "Backup pick (no flashback-request file today). Peaks and song story: Wikipedia, Hold On (Wilson Phillips song), citing Billboard https://en.wikipedia.org/wiki/Hold_On_(Wilson_Phillips_song) (Hot 100 No. 1 June 9, 1990; Billboard 1990 Year-End No. 1; UK No. 6 per Official Charts in the Wikipedia chart table). The song's lyric backstory involves Chynna Phillips' personal struggles; not used on air.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-24-flash-01",
+    "title": "HOLD ON — WILSON PHILLIPS",
+    "recap": "Our Flashback was Wilson Phillips' 'Hold On,' one week at No. 1 in 1990 and still Billboard's top song of the year.",
+    "article_url": "https://en.wikipedia.org/wiki/Hold_On_(Wilson_Phillips_song)",
+    "article_title": "Hold On (Wilson Phillips song) (Wikipedia)",
+    "jokes": [
+     "One week at No. 1 and still the song of the year. That's the Thanksgiving pie of songs. Shows up once, wins the whole day.",
+     "Hold on for one more day is also my advice to anyone waiting on the turkey to thaw."
+    ],
+    "body": "HOLD ON — WILSON PHILLIPS<br>• Released as a single: Feb. 27, 1990 (lead single from their debut album, Wilson Phillips)<br>• Chart peaks: US Billboard Hot 100 No. 1 (one week, June 9, 1990); Billboard's No. 1 song of 1990 on the Year-End Hot 100; UK Singles No. 6; Billboard Music Award, Hot 100 Single of the Year (1990)<br>🎤 SONG STORY: Producer Glen Ballard brought the group a track that still needed words, and Chynna Phillips and Carnie Wilson wrote it with him. It spent just one week at No. 1, yet Billboard ranked it the top song of all of 1990.<br>😂 JOKES: One week at No. 1 and still the song of the year. That's the Thanksgiving pie of songs. Shows up once, wins the whole day. / Hold on for one more day is also my advice to anyone waiting on the turkey to thaw.",
+    "description": "Our Flashback was Wilson Phillips' 'Hold On,' one week at No. 1 in 1990 and still Billboard's top song of the year.",
+    "summary": "Our Flashback was Wilson Phillips' 'Hold On,' one week at No. 1 in 1990 and still Billboard's top song of the year.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Hold_On_(Wilson_Phillips_song)",
+  "article_title": "Hold On (Wilson Phillips song) (Wikipedia)",
+  "jokes": [
+   "One week at No. 1 and still the song of the year. That's the Thanksgiving pie of songs. Shows up once, wins the whole day.",
+   "Hold on for one more day is also my advice to anyone waiting on the turkey to thaw."
+  ],
+  "requester": "",
+  "song": "Hold On",
+  "artist": "Wilson Phillips",
+  "single_year": "1990",
+  "chart_records": [
+   "US Billboard Hot 100 No. 1 (one week, June 9, 1990)",
+   "Billboard's No. 1 song of 1990 on the Year-End Hot 100",
+   "UK Singles No. 6",
+   "Billboard Music Award, Hot 100 Single of the Year (1990)"
+  ],
+  "origin": "Producer Glen Ballard brought the group a track that still needed words, and Chynna Phillips and Carnie Wilson wrote it with him. It spent just one week at No. 1, yet Billboard ranked it the top song of all of 1990.",
+  "song_story": "Producer Glen Ballard brought the group a track that still needed words, and Chynna Phillips and Carnie Wilson wrote it with him. It spent just one week at No. 1, yet Billboard ranked it the top song of all of 1990.",
+  "song_story_source": "Wikipedia, Hold On (Wilson Phillips song), citing Billboard https://en.wikipedia.org/wiki/Hold_On_(Wilson_Phillips_song)",
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "96624ceee360",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "CROSS TALK: MEET THE PARENTS, THANKSGIVING EDITION<br>• 'Focker In-Law' opens in theaters Wednesday, the fourth movie in the Meet the Parents series, with Ariana Grande joining Ben Stiller and Robert De Niro, 16 years after the last one.<br>• Early reviews are rough on the movie but kind to Ariana. The Hollywood Reporter says she outshines De Niro and Stiller.<br>• And it lands right as a whole lot of people meet a significant other's family over turkey.<br>PROMPT 1: What's your worst meet-the-parents moment?<br>PROMPT 2: Bringing someone new to Thanksgiving: brave or crazy?<br>PROMPT 3: What's the one question your family always asks a new date?<br>➜ TAKE: Nobody has ever had a calm first Thanksgiving with the in-laws. Somebody always spills the gravy, and it's usually you.<br>➜ BAIT: Call in with your worst meet-the-parents story.<br>😂 JOKES: De Niro's still doing the lie detector bit. In my family, the lie detector is Grandma asking 'So, what do you do for work?' / Bringing a new date to Thanksgiving is like taking them to a job interview, except the interviewers are drinking.",
+  "notes": "CROSS TALK: MEET THE PARENTS, THANKSGIVING EDITION: https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/ THR review (Frank Scheck), Nov 23, 2026. Opening date Wed Nov 25 per THR/Rotten Tomatoes listing. Ariana Grande's 'Wildest place' quote item skipped (bikini wax).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-24-cross-01",
+    "title": "CROSS TALK: MEET THE PARENTS, THANKSGIVING EDITION",
+    "recap": "On Cross Talk we swapped meet-the-parents horror stories, with Focker In-Law opening Wednesday.",
+    "article_url": "https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/",
+    "article_title": "'Focker In-Law' Review: Ariana Grande Outshines Robert De Niro and Ben Stiller (The Hollywood Reporter)",
+    "jokes": [
+     "De Niro's still doing the lie detector bit. In my family, the lie detector is Grandma asking 'So, what do you do for work?'",
+     "Bringing a new date to Thanksgiving is like taking them to a job interview, except the interviewers are drinking."
+    ],
+    "body": "CROSS TALK: MEET THE PARENTS, THANKSGIVING EDITION<br>• 'Focker In-Law' opens in theaters Wednesday, the fourth movie in the Meet the Parents series, with Ariana Grande joining Ben Stiller and Robert De Niro, 16 years after the last one.<br>• Early reviews are rough on the movie but kind to Ariana. The Hollywood Reporter says she outshines De Niro and Stiller.<br>• And it lands right as a whole lot of people meet a significant other's family over turkey.<br>PROMPT 1: What's your worst meet-the-parents moment?<br>PROMPT 2: Bringing someone new to Thanksgiving: brave or crazy?<br>PROMPT 3: What's the one question your family always asks a new date?<br>➜ TAKE: Nobody has ever had a calm first Thanksgiving with the in-laws. Somebody always spills the gravy, and it's usually you.<br>➜ BAIT: Call in with your worst meet-the-parents story.<br>😂 JOKES: De Niro's still doing the lie detector bit. In my family, the lie detector is Grandma asking 'So, what do you do for work?' / Bringing a new date to Thanksgiving is like taking them to a job interview, except the interviewers are drinking.",
+    "description": "'Focker In-Law' opens in theaters Wednesday, the fourth movie in the Meet the Parents series, with Ariana Grande joining Ben Stiller and Robert De Niro, 16 years after the last one. Early reviews are rough on the movie but kind to Ariana. The Hollywood Reporter says she outshines De Niro and Stiller. And it lands right as a whole lot of people meet a significant other's family over turkey.",
+    "summary": "'Focker In-Law' opens in theaters Wednesday, the fourth movie in the Meet the Parents series, with Ariana Grande joining Ben Stiller and Robert De Niro, 16 years after the last one. Early reviews are rough on the movie but kind to Ariana. The Hollywood Reporter says she outshines De Niro and Stiller. And it lands right as a whole lot of people meet a significant other's family over turkey.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/",
+  "article_title": "'Focker In-Law' Review: Ariana Grande Outshines Robert De Niro and Ben Stiller (The Hollywood Reporter)",
+  "jokes": [
+   "De Niro's still doing the lie detector bit. In my family, the lie detector is Grandma asking 'So, what do you do for work?'",
+   "Bringing a new date to Thanksgiving is like taking them to a job interview, except the interviewers are drinking."
+  ],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "ebba3165dbe7",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "Fridays only",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "d485e215e46a",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "29 MILLION FLYING FOR THANKSGIVING · NEWS AUDIO<br>🎙️ SET UP: If you're flying out of Cherry Capital this week, you're not alone. CBS News says U.S. airlines expect about 29 million flyers. \"Here's CBS.\"<br>🔈 AUDIO SOURCE: CBS Evening News official YouTube, Nov. 21. On-air credit: \"from CBS News.\"<br>• U.S. airlines expect about 29 million flyers for Thanksgiving, down roughly 2 million from last year, amid surging travel costs.<br>🔊 IN: \"US airlines expect about 29 million flyers...\" (0:00)<br>OUT: \"...amid surging travel costs.\" (0:09)<br>~0:09 · TALK-OVER or quick PLAY · READY<br>➜ WHY: Travel week is the story; short bite to set up the arrival-time bit.<br>⚠️ FLAG: Clean in the cut. The full report has political lines (the president and the transportation secretary on air-traffic systems), NOT in the cut. CBS network audio: credit it, or talk over.<br><br>BIG NOON KICKOFF COMES TO BIG RAPIDS · NEWS AUDIO<br>🎙️ SET UP: Before Saturday's game, WOOD TV8 previewed Fox's Big Noon Kickoff coming to Ferris State, the first time ever at a Division II school. Ferris then won 45-14. \"Courtesy of WOOD TV8.\"<br>🔈 AUDIO SOURCE: WOOD TV8 (Grand Rapids) sports, official YouTube, Nov. 18. On-air credit: \"courtesy of WOOD TV8.\"<br>• Preview: Fox's Big Noon pregame show live from Top Taggart Field, and the Bulldogs getting ready for Truman State in round one.<br>🔊 IN: \"Ferris State has spent a lot of time in the Division 2 spotlight...\" (0:00)<br>OUT: \"...first round of the Division 2 playoffs.\" (0:20)<br>~0:20 · TALK-OVER · READY<br>➜ WHY: Michigan small school on national TV, and they won. Pairs with the Ferris bench story.<br>⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. It's a pre-game preview; the set-up gives the result.",
+  "notes": "29 MILLION FLYING FOR THANKSGIVING: https://www.youtube.com/watch?v=_plyDJNFV9c ⚠️ FLAG: Clean in the cut. The full report has political lines (the president and the transportation secretary on air-traffic systems), NOT in the cut. CBS network audio: credit it, or talk over.<br>BIG NOON KICKOFF COMES TO BIG RAPIDS: https://www.youtube.com/watch?v=ZFtOdPkmTfI ⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. It's a pre-game preview; the set-up gives the result.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-24-c06",
+    "slot": "NEWS AUDIO",
+    "title": "29 MILLION FLYING FOR THANKSGIVING",
+    "body": "29 MILLION FLYING FOR THANKSGIVING · NEWS AUDIO<br>🎙️ SET UP: If you're flying out of Cherry Capital this week, you're not alone. CBS News says U.S. airlines expect about 29 million flyers. \"Here's CBS.\"<br>🔈 AUDIO SOURCE: CBS Evening News official YouTube, Nov. 21. On-air credit: \"from CBS News.\"<br>• U.S. airlines expect about 29 million flyers for Thanksgiving, down roughly 2 million from last year, amid surging travel costs.<br>🔊 IN: \"US airlines expect about 29 million flyers...\" (0:00)<br>OUT: \"...amid surging travel costs.\" (0:09)<br>~0:09 · TALK-OVER or quick PLAY · READY<br>➜ WHY: Travel week is the story; short bite to set up the arrival-time bit.<br>⚠️ FLAG: Clean in the cut. The full report has political lines (the president and the transportation secretary on air-traffic systems), NOT in the cut. CBS network audio: credit it, or talk over.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c06-cbs-29-million-flyers.mp3",
+    "ready": true,
+    "recap": "We heard CBS report about 29 million people flying for Thanksgiving, down 2 million from last year.",
+    "duration": "0:09",
+    "duration_sec": 9.25,
+    "secs": 9,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-24-c07",
+    "slot": "NEWS AUDIO",
+    "title": "BIG NOON KICKOFF COMES TO BIG RAPIDS",
+    "body": "BIG NOON KICKOFF COMES TO BIG RAPIDS · NEWS AUDIO<br>🎙️ SET UP: Before Saturday's game, WOOD TV8 previewed Fox's Big Noon Kickoff coming to Ferris State, the first time ever at a Division II school. Ferris then won 45-14. \"Courtesy of WOOD TV8.\"<br>🔈 AUDIO SOURCE: WOOD TV8 (Grand Rapids) sports, official YouTube, Nov. 18. On-air credit: \"courtesy of WOOD TV8.\"<br>• Preview: Fox's Big Noon pregame show live from Top Taggart Field, and the Bulldogs getting ready for Truman State in round one.<br>🔊 IN: \"Ferris State has spent a lot of time in the Division 2 spotlight...\" (0:00)<br>OUT: \"...first round of the Division 2 playoffs.\" (0:20)<br>~0:20 · TALK-OVER · READY<br>➜ WHY: Michigan small school on national TV, and they won. Pairs with the Ferris bench story.<br>⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. It's a pre-game preview; the set-up gives the result.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c07-wood8-ferris-big-noon.mp3",
+    "ready": true,
+    "recap": "We heard WOOD TV8 preview Fox's Big Noon Kickoff at Ferris State, before the Bulldogs won 45-14.",
+    "duration": "0:20",
+    "duration_sec": 20.09,
+    "secs": 20,
+    "kind": "news"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "8 of 10 clips today (2 news audio, 5 trending/comedy, 1 buffer) + supercut · all new audio, 0 repeats<br><br>SHOW OPENER SUPERCUT: CELEBRATE YOUR UNIQUE TALENT DAY · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Montage of talent bites into a launch line. Music bed: \"Give My Regards To Broadway\" by Freedom Trail Studio (YouTube Audio Library, /workspace/audio-library, royalty-free).<br>• Dry Bar's Pat Godwin: \"I can imitate anybody. Useless talent, apparently.\"<br>• Napoleon Dynamite: \"Nunchuck skills, bow hunting skills, computer hacking skills. Girls only want boyfriends who have great skills.\"<br>• Kimmel to Jason Bateman: \"Don't you guys like hot food?\"<br>• Fallon: \"Today's a day all about giving thanks...\"<br>• Beetlejuice: \"Beetlejuice, Beetlejuice, Beetlejuice... It's showtime!\" (the build and launch line, straight into \"Showtime.\")<br>🔊 IN: \"I can imitate anybody...\" (0:00)<br>OUT: \"It's showtime!\" (0:23)<br>~0:23 · PLAY · READY<br>➜ WHY: Five quick bites for Celebrate Your Unique Talent Day, ending on the Beetlejuice chant and 'It's showtime!' right into your 'Showtime.'<br>⚠️ FLAG: Clean. Mild: only 5 bites (target 5-10, lean morning); the Beetlejuice chant sits under movie music, so hear the last 8 seconds once. Mastered about -14 LUFS with bed ~-19 dB under. Fallon bite ends on 'giving thanks' mid-sentence, crossfaded.<br><br>SUPER-CLIP: DAVID SEDARIS GOT A HAIRCUT IN TRAVERSE CITY · SUPER-CLIP 6 AM<br>🎙️ SET UP: Last night on Kimmel, bestselling humorist David Sedaris said he writes about every haircut he gets, and his last one before that was right here in Traverse City, with a barber who has a trick for nuisance calls. \"Listen to this, from Kimmel last night.\"<br>🔈 AUDIO SOURCE: Jimmy Kimmel Live (ABC), official YouTube upload posted Nov. 24. On-air credit: \"from Jimmy Kimmel Live.\"<br>• Sedaris: a TC barber answers spam calls as a 'Deputy Marshal' to scare them off, and Sedaris loved it.<br>🔊 IN: \"And the haircut before that, I was in Traverse City, Michigan.\" (0:00)<br>OUT: \"That could really freak a guy in Traverse City out.\" (1:02)<br>~1:02 · PLAY · READY<br>➜ WHY: Traverse City on national late-night TV last night, and it's a fun barber story. Ask listeners: who's the TC barber?<br>⚠️ FLAG: Clean. Mild: the barber is named on air in the audio (a fake 'Deputy Marshal' name he uses on spam calls); don't add a real name or shop on air. Kimmel's line 'you have no standards' is about the haircut, fine. ABC network audio: credit it.<br><br>KIMMEL BUILT JASON BATEMAN HIS OWN MICROWAVE · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Jason Bateman spends Thanksgiving at Jimmy Kimmel's house, and he likes his food HOT. So Kimmel did something about it. \"Here's Kimmel last night.\"<br>🔈 AUDIO SOURCE: Jimmy Kimmel Live (ABC), official YouTube, posted Nov. 24. On-air credit: \"from Jimmy Kimmel Live.\"<br>• Kimmel put in a microwave by the dining table just for Bateman, called 'Jason's microwave,' with a Post-it: 'Welcome Jason. Happy Thanksgiving.'<br>🔊 IN: \"...microwave that's close to the dining table, specifically for you.\" (0:00)<br>OUT: \"Welcome, Jason. Happy Thanksgiving.\" (0:21)<br>~0:21 · PLAY · READY<br>➜ WHY: Thanksgiving week, fresh from last night, and everybody has a relative who reheats their plate.<br>⚠️ FLAG: Clean. Starts on 'microwave' (lead-in words trimmed), so read the set-up first. The rest of this interview has a drug joke, NOT in the cut.<br><br>PAST BIT: FALLON THANKS THE GRAVY BOAT · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Fallon's show is in reruns this week, so here's a Thanksgiving Thank You Notes from last year. \"Jimmy Fallon, Thank You Notes.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov. 2025. On-air credit: \"from The Tonight Show.\"<br>• Thank you notes to gravy boats, canned cranberry sauce, and canceled Thanksgiving flights: \"as turkeys put it, now who can't fly?\"<br>🔊 IN: \"Thank you, gravy boats, for being snobby coffee mugs.\" (0:00)<br>OUT: \"...now who can't fly?\" (0:59)<br>~0:59 · PLAY · READY<br>➜ WHY: No new Fallon this week (rerun), so a clean past holiday bit that matches the day.<br>⚠️ FLAG: Clean. Mild: 'burp like a baby' (bodily, light). A Thanksgiving-and-elections line just before the start is NOT in the cut.<br><br>STAND-UP: TRAVELING WITH A 14-YEAR-OLD, THE SONG · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Comedian Pat Godwin travels with his 14-year-old son, and he wrote a little song about every family trip. Perfect for travel week. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube, \"I Have the Most Useless Talent Ever | Pat Godwin.\" On-air credit: \"from Dry Bar Comedy.\"<br>• Sung: Niagara Falls, big ships, the sights, and the kid only asks, \"Dad, does the hotel have a pool?\"<br>🔊 IN: \"Here's a little song about traveling with him.\" (0:00)<br>OUT: \"...does the hotel have a pool?\" (0:21)<br>~0:21 · PLAY · READY<br>➜ WHY: Every parent hauling kids to Grandma's this week will feel this, and it ties to Unique Talent Day.<br>⚠️ FLAG: Clean. It's sung; the full song runs longer, this ends on the first big punchline.<br><br>STAND-UP: SARDINES ARE MAN FOOD · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: It's National Sardines Day, and comedian Jeff Allen remembers his dad handing him sardines as 'man food.' \"Jeff Allen.\"<br>🔈 AUDIO SOURCE: Jeff Allen Comedy official YouTube, \"Why No One Eats Sardines Anymore.\" On-air credit: \"comedian Jeff Allen.\"<br>• Dad said sardines put hair on your chest. Now every guy waxes it off, and his wife wants him to try it. \"Get used to the belt.\"<br>🔊 IN: \"All I know is my father gave my brother and I food...\" (0:00)<br>OUT: \"Get used to the belt. It's not going anywhere.\" (0:30)<br>~0:30 · PLAY · READY<br>➜ WHY: National Sardines Day, and it's a dad-joke goldmine.<br>⚠️ FLAG: Clean in the cut. The rest of this clip has waterboarding and religious jokes, NOT in the cut; don't play the full video.<br><br>THE TURKEY AND THE DOG ARE BEST FRIENDS · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Thanksgiving week's best friendship: The Dodo met a rescue turkey and a dog who act like siblings. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube, \"Turkey and Dog Best Friends are Inseparable\" (2018). On-air credit: \"from The Dodo.\"<br>• The owner: one minute they're watching the world from the front door together, the next they're fighting over a toy. \"Two peas in a pod.\"<br>🔊 IN: \"It's more of like a sibling relationship.\" (0:00)<br>OUT: \"They're two peas in a pod.\" (0:30)<br>~0:30 · TALK-OVER or PLAY · READY<br>➜ WHY: The one pets clip today, and it's a turkey who is definitely NOT on the menu.<br>⚠️ FLAG: Clean. Owner talks over music. It's a 2018 video: evergreen feel-good, not news.",
+  "notes": "SHOW OPENER SUPERCUT: CELEBRATE YOUR UNIQUE TALENT DAY: https://www.youtube.com/watch?v=MW0rIKyyTII https://www.youtube.com/watch?v=b58fAt0MdgI https://www.youtube.com/watch?v=btccAp5SeP8 https://www.youtube.com/watch?v=cT7sy16gu2s https://www.youtube.com/watch?v=aDm4L7gjYNs ⚠️ FLAG: Clean. Mild: only 5 bites (target 5-10, lean morning); the Beetlejuice chant sits under movie music, so hear the last 8 seconds once. Mastered about -14 LUFS with bed ~-19 dB under. Fallon bite ends on 'giving thanks' mid-sentence, crossfaded.<br>SUPER-CLIP: DAVID SEDARIS GOT A HAIRCUT IN TRAVERSE CITY: https://www.youtube.com/watch?v=0sL--EvgJfU ⚠️ FLAG: Clean. Mild: the barber is named on air in the audio (a fake 'Deputy Marshal' name he uses on spam calls); don't add a real name or shop on air. Kimmel's line 'you have no standards' is about the haircut, fine. ABC network audio: credit it.<br>KIMMEL BUILT JASON BATEMAN HIS OWN MICROWAVE: https://www.youtube.com/watch?v=btccAp5SeP8 ⚠️ FLAG: Clean. Starts on 'microwave' (lead-in words trimmed), so read the set-up first. The rest of this interview has a drug joke, NOT in the cut.<br>PAST BIT: FALLON THANKS THE GRAVY BOAT: https://www.youtube.com/watch?v=cT7sy16gu2s ⚠️ FLAG: Clean. Mild: 'burp like a baby' (bodily, light). A Thanksgiving-and-elections line just before the start is NOT in the cut.<br>STAND-UP: TRAVELING WITH A 14-YEAR-OLD, THE SONG: https://www.youtube.com/watch?v=MW0rIKyyTII ⚠️ FLAG: Clean. It's sung; the full song runs longer, this ends on the first big punchline.<br>STAND-UP: SARDINES ARE MAN FOOD: https://www.youtube.com/watch?v=7mT4otjyu6o ⚠️ FLAG: Clean in the cut. The rest of this clip has waterboarding and religious jokes, NOT in the cut; don't play the full video.<br>THE TURKEY AND THE DOG ARE BEST FRIENDS: https://www.youtube.com/watch?v=KZQk79xVIuc ⚠️ FLAG: Clean. Owner talks over music. It's a 2018 video: evergreen feel-good, not news.<br>Buffer thin today (8 of 10): no new Fallon/Colbert-clean monologue (Fallon in reruns; Kimmel's monologue was political), Pitch Perfect riff-off dropped (sex lyrics), one-pet max. Jeff Allen and CBS clips trimmed around non-clean material.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-24-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: CELEBRATE YOUR UNIQUE TALENT DAY",
+    "body": "SHOW OPENER SUPERCUT: CELEBRATE YOUR UNIQUE TALENT DAY · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Montage of talent bites into a launch line. Music bed: \"Give My Regards To Broadway\" by Freedom Trail Studio (YouTube Audio Library, /workspace/audio-library, royalty-free).<br>• Dry Bar's Pat Godwin: \"I can imitate anybody. Useless talent, apparently.\"<br>• Napoleon Dynamite: \"Nunchuck skills, bow hunting skills, computer hacking skills. Girls only want boyfriends who have great skills.\"<br>• Kimmel to Jason Bateman: \"Don't you guys like hot food?\"<br>• Fallon: \"Today's a day all about giving thanks...\"<br>• Beetlejuice: \"Beetlejuice, Beetlejuice, Beetlejuice... It's showtime!\" (the build and launch line, straight into \"Showtime.\")<br>🔊 IN: \"I can imitate anybody...\" (0:00)<br>OUT: \"It's showtime!\" (0:23)<br>~0:23 · PLAY · READY<br>➜ WHY: Five quick bites for Celebrate Your Unique Talent Day, ending on the Beetlejuice chant and 'It's showtime!' right into your 'Showtime.'<br>⚠️ FLAG: Clean. Mild: only 5 bites (target 5-10, lean morning); the Beetlejuice chant sits under movie music, so hear the last 8 seconds once. Mastered about -14 LUFS with bed ~-19 dB under. Fallon bite ends on 'giving thanks' mid-sentence, crossfaded.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c00-opener-supercut.mp3",
+    "ready": true,
+    "recap": "We opened with a Celebrate Your Unique Talent Day supercut, from Napoleon Dynamite's skills to Beetlejuice's 'It's showtime!'",
+    "duration": "0:23",
+    "duration_sec": 23.3,
+    "secs": 23,
+    "kind": "opener",
+    "file": "c00-opener-supercut.mp3"
+   },
+   {
+    "id": "2026-11-24-c01",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "SUPER-CLIP: DAVID SEDARIS GOT A HAIRCUT IN TRAVERSE CITY",
+    "body": "SUPER-CLIP: DAVID SEDARIS GOT A HAIRCUT IN TRAVERSE CITY · SUPER-CLIP 6 AM<br>🎙️ SET UP: Last night on Kimmel, bestselling humorist David Sedaris said he writes about every haircut he gets, and his last one before that was right here in Traverse City, with a barber who has a trick for nuisance calls. \"Listen to this, from Kimmel last night.\"<br>🔈 AUDIO SOURCE: Jimmy Kimmel Live (ABC), official YouTube upload posted Nov. 24. On-air credit: \"from Jimmy Kimmel Live.\"<br>• Sedaris: a TC barber answers spam calls as a 'Deputy Marshal' to scare them off, and Sedaris loved it.<br>🔊 IN: \"And the haircut before that, I was in Traverse City, Michigan.\" (0:00)<br>OUT: \"That could really freak a guy in Traverse City out.\" (1:02)<br>~1:02 · PLAY · READY<br>➜ WHY: Traverse City on national late-night TV last night, and it's a fun barber story. Ask listeners: who's the TC barber?<br>⚠️ FLAG: Clean. Mild: the barber is named on air in the audio (a fake 'Deputy Marshal' name he uses on spam calls); don't add a real name or shop on air. Kimmel's line 'you have no standards' is about the haircut, fine. ABC network audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c01-sedaris-traverse-city-barber.mp3",
+    "ready": true,
+    "recap": "We heard David Sedaris tell Kimmel about a Traverse City barber who scares spam callers as a 'Deputy Marshal.'",
+    "duration": "1:02",
+    "duration_sec": 62.2,
+    "secs": 62,
+    "kind": "comedy",
+    "performer": "David Sedaris",
+    "file": "c01-sedaris-traverse-city-barber.mp3",
+    "intro_sec": 1,
+    "credit": "Jimmy Kimmel Live official"
+   },
+   {
+    "id": "2026-11-24-c02",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "KIMMEL BUILT JASON BATEMAN HIS OWN MICROWAVE",
+    "body": "KIMMEL BUILT JASON BATEMAN HIS OWN MICROWAVE · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Jason Bateman spends Thanksgiving at Jimmy Kimmel's house, and he likes his food HOT. So Kimmel did something about it. \"Here's Kimmel last night.\"<br>🔈 AUDIO SOURCE: Jimmy Kimmel Live (ABC), official YouTube, posted Nov. 24. On-air credit: \"from Jimmy Kimmel Live.\"<br>• Kimmel put in a microwave by the dining table just for Bateman, called 'Jason's microwave,' with a Post-it: 'Welcome Jason. Happy Thanksgiving.'<br>🔊 IN: \"...microwave that's close to the dining table, specifically for you.\" (0:00)<br>OUT: \"Welcome, Jason. Happy Thanksgiving.\" (0:21)<br>~0:21 · PLAY · READY<br>➜ WHY: Thanksgiving week, fresh from last night, and everybody has a relative who reheats their plate.<br>⚠️ FLAG: Clean. Starts on 'microwave' (lead-in words trimmed), so read the set-up first. The rest of this interview has a drug joke, NOT in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c02-kimmel-bateman-jasons-microwave.mp3",
+    "ready": true,
+    "recap": "We heard Jimmy Kimmel reveal 'Jason's microwave,' installed by the table so Jason Bateman's Thanksgiving plate stays hot.",
+    "duration": "0:21",
+    "duration_sec": 20.8,
+    "secs": 21,
+    "kind": "comedy",
+    "performer": "Jimmy Kimmel, Jason Bateman",
+    "file": "c02-kimmel-bateman-jasons-microwave.mp3",
+    "intro_sec": 1,
+    "credit": "Jimmy Kimmel Live official"
+   },
+   {
+    "id": "2026-11-24-c03",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "PAST BIT: FALLON THANKS THE GRAVY BOAT",
+    "body": "PAST BIT: FALLON THANKS THE GRAVY BOAT · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Fallon's show is in reruns this week, so here's a Thanksgiving Thank You Notes from last year. \"Jimmy Fallon, Thank You Notes.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov. 2025. On-air credit: \"from The Tonight Show.\"<br>• Thank you notes to gravy boats, canned cranberry sauce, and canceled Thanksgiving flights: \"as turkeys put it, now who can't fly?\"<br>🔊 IN: \"Thank you, gravy boats, for being snobby coffee mugs.\" (0:00)<br>OUT: \"...now who can't fly?\" (0:59)<br>~0:59 · PLAY · READY<br>➜ WHY: No new Fallon this week (rerun), so a clean past holiday bit that matches the day.<br>⚠️ FLAG: Clean. Mild: 'burp like a baby' (bodily, light). A Thanksgiving-and-elections line just before the start is NOT in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c03-fallon-tyn-gravy-boats.mp3",
+    "ready": true,
+    "recap": "We played Jimmy Fallon's Thanksgiving thank you notes to gravy boats, canned cranberry and canceled flights.",
+    "duration": "0:59",
+    "duration_sec": 59.2,
+    "secs": 59,
+    "kind": "comedy",
+    "performer": "Jimmy Fallon",
+    "file": "c03-fallon-tyn-gravy-boats.mp3",
+    "intro_sec": 1,
+    "credit": "Tonight Show official"
+   },
+   {
+    "id": "2026-11-24-c04",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "STAND-UP: TRAVELING WITH A 14-YEAR-OLD, THE SONG",
+    "body": "STAND-UP: TRAVELING WITH A 14-YEAR-OLD, THE SONG · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Comedian Pat Godwin travels with his 14-year-old son, and he wrote a little song about every family trip. Perfect for travel week. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube, \"I Have the Most Useless Talent Ever | Pat Godwin.\" On-air credit: \"from Dry Bar Comedy.\"<br>• Sung: Niagara Falls, big ships, the sights, and the kid only asks, \"Dad, does the hotel have a pool?\"<br>🔊 IN: \"Here's a little song about traveling with him.\" (0:00)<br>OUT: \"...does the hotel have a pool?\" (0:21)<br>~0:21 · PLAY · READY<br>➜ WHY: Every parent hauling kids to Grandma's this week will feel this, and it ties to Unique Talent Day.<br>⚠️ FLAG: Clean. It's sung; the full song runs longer, this ends on the first big punchline.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c04-standup-pat-godwin-travel-song.mp3",
+    "ready": true,
+    "recap": "We heard Pat Godwin's song about traveling with his teen, who only cares if the hotel has a pool.",
+    "duration": "0:21",
+    "duration_sec": 21.1,
+    "secs": 21,
+    "kind": "comedy",
+    "performer": "Pat Godwin",
+    "file": "c04-standup-pat-godwin-travel-song.mp3",
+    "intro_sec": 1,
+    "credit": "Dry Bar Comedy"
+   },
+   {
+    "id": "2026-11-24-c05",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "STAND-UP: SARDINES ARE MAN FOOD",
+    "body": "STAND-UP: SARDINES ARE MAN FOOD · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: It's National Sardines Day, and comedian Jeff Allen remembers his dad handing him sardines as 'man food.' \"Jeff Allen.\"<br>🔈 AUDIO SOURCE: Jeff Allen Comedy official YouTube, \"Why No One Eats Sardines Anymore.\" On-air credit: \"comedian Jeff Allen.\"<br>• Dad said sardines put hair on your chest. Now every guy waxes it off, and his wife wants him to try it. \"Get used to the belt.\"<br>🔊 IN: \"All I know is my father gave my brother and I food...\" (0:00)<br>OUT: \"Get used to the belt. It's not going anywhere.\" (0:30)<br>~0:30 · PLAY · READY<br>➜ WHY: National Sardines Day, and it's a dad-joke goldmine.<br>⚠️ FLAG: Clean in the cut. The rest of this clip has waterboarding and religious jokes, NOT in the cut; don't play the full video.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c05-standup-jeff-allen-man-food.mp3",
+    "ready": true,
+    "recap": "For National Sardines Day, Jeff Allen told us sardines were 'man food' that put hair on your chest.",
+    "duration": "0:30",
+    "duration_sec": 29.8,
+    "secs": 30,
+    "kind": "comedy",
+    "performer": "Jeff Allen",
+    "file": "c05-standup-jeff-allen-man-food.mp3",
+    "intro_sec": 1,
+    "credit": "Jeff Allen Comedy"
+   },
+   {
+    "id": "2026-11-24-c06",
+    "slot": "TRENDING AUDIO",
+    "title": "NEWS AUDIO: 29 MILLION FLYING FOR THANKSGIVING",
+    "body": "NEWS AUDIO: 29 MILLION FLYING FOR THANKSGIVING · TRENDING AUDIO<br>SET UP: CBS Evening News.<br>IN: \"US Airlines expect about 29 million flyers for Thanksgiving this year, down...\" OUT: \"...roughly 2 million from last year, amid surging travel costs.\"<br>Source: https://www.youtube.com/watch?v=_plyDJNFV9c<br>READY · FLAG: CHECK-WARN first word heard: 'Trust' (hook starts 'us')",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c06-cbs-29-million-flyers.mp3",
+    "file": "c06-cbs-29-million-flyers.mp3",
+    "ready": true,
+    "duration_sec": 10.3,
+    "duration": "0:10",
+    "intro_sec": 1,
+    "kind": "news",
+    "secs": 10,
+    "credit": "CBS Evening News"
+   },
+   {
+    "id": "2026-11-24-c07",
+    "slot": "TRENDING AUDIO",
+    "title": "NEWS AUDIO: BIG NOON KICKOFF COMES TO BIG RAPIDS",
+    "body": "NEWS AUDIO: BIG NOON KICKOFF COMES TO BIG RAPIDS · TRENDING AUDIO<br>SET UP: WOOD TV8.<br>IN: \"Ferris State has spent a lot of time in the Division 2...\" OUT: \"...State in the first round of the Division 2 playoffs.\"<br>Source: https://www.youtube.com/watch?v=ZFtOdPkmTfI<br>READY · FLAG: short-fade 0.21s (next speech close)",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c07-wood8-ferris-big-noon.mp3",
+    "file": "c07-wood8-ferris-big-noon.mp3",
+    "ready": true,
+    "duration_sec": 20.1,
+    "duration": "0:20",
+    "intro_sec": 1,
+    "kind": "news",
+    "secs": 20,
+    "credit": "WOOD TV8"
+   },
+   {
+    "id": "2026-11-24-c08",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "THE TURKEY AND THE DOG ARE BEST FRIENDS",
+    "body": "THE TURKEY AND THE DOG ARE BEST FRIENDS · BUFFER: PETS & FAMILY<br>🎙️ SET UP: Thanksgiving week's best friendship: The Dodo met a rescue turkey and a dog who act like siblings. \"From The Dodo.\"<br>🔈 AUDIO SOURCE: The Dodo official YouTube, \"Turkey and Dog Best Friends are Inseparable\" (2018). On-air credit: \"from The Dodo.\"<br>• The owner: one minute they're watching the world from the front door together, the next they're fighting over a toy. \"Two peas in a pod.\"<br>🔊 IN: \"It's more of like a sibling relationship.\" (0:00)<br>OUT: \"They're two peas in a pod.\" (0:30)<br>~0:30 · TALK-OVER or PLAY · READY<br>➜ WHY: The one pets clip today, and it's a turkey who is definitely NOT on the menu.<br>⚠️ FLAG: Clean. Owner talks over music. It's a 2018 video: evergreen feel-good, not news.",
+    "audio": "/workspace/morning-rush/clips/2026-11-24/c08-dodo-turkey-dog-siblings.mp3",
+    "ready": true,
+    "recap": "We heard about a rescue turkey and a dog who act like siblings, from The Dodo.",
+    "duration": "0:30",
+    "duration_sec": 29.9,
+    "secs": 30,
+    "kind": "pets",
+    "file": "c08-dodo-turkey-dog-siblings.mp3",
+    "intro_sec": 1,
+    "credit": "The Dodo"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-24T04:13-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "4b965a5e7bff",
+  "stale_after": "2026-11-24T16:13-05:00"
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "STROLLING LIGHTS FESTIVAL, GLEN ARBOR<br>• Sat-Sun Nov 28-29 at Crystal River Outfitters, benefiting LIFT. Trees $150 to sponsor.<br><br>TOYS FOR TOTS DROP-OFFS<br>• Now through Fri Dec 11, 100-plus drop-off spots in five counties.<br><br>HOLIDAY COOKIE CLASS WITH MARTIN SORGE<br>• Sat Dec 5, noon-2 PM, Inn at Black Star Farms, Suttons Bay (stollen class Dec 12, 11 AM-1 PM).<br><br>LIONS VS. BEARS, THANKSGIVING<br>• Thu Nov 26, 1 PM, Ford Field, on CBS.",
+  "notes": "STROLLING LIGHTS FESTIVAL, GLEN ARBOR: https://crystalriveroutfitters.com/strolling-lights-festival/<br>TOYS FOR TOTS DROP-OFFS: https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys<br>HOLIDAY COOKIE CLASS WITH MARTIN SORGE: https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html<br>LIONS VS. BEARS, THANKSGIVING: https://www.cbsnews.com/chicago/news/how-to-watch-chicago-bears-vs-detroit-lions-game-thanksgiving-2026/",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-24-events-01",
+    "title": "STROLLING LIGHTS FESTIVAL, GLEN ARBOR",
+    "recap": "We plugged Strolling Lights Festival, Glen Arbor.",
+    "article_url": "https://crystalriveroutfitters.com/strolling-lights-festival/",
+    "article_title": "Strolling Lights Festival, Glen Arbor",
+    "jokes": [],
+    "body": "STROLLING LIGHTS FESTIVAL, GLEN ARBOR<br>We plugged Strolling Lights Festival, Glen Arbor.",
+    "description": "We plugged Strolling Lights Festival, Glen Arbor.",
+    "summary": "We plugged Strolling Lights Festival, Glen Arbor.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-events-02",
+    "title": "TOYS FOR TOTS DROP-OFFS",
+    "recap": "We plugged Toys For Tots Drop-Offs.",
+    "article_url": "https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys",
+    "article_title": "Toys For Tots Drop-Offs",
+    "jokes": [],
+    "body": "TOYS FOR TOTS DROP-OFFS<br>We plugged Toys For Tots Drop-Offs.",
+    "description": "We plugged Toys For Tots Drop-Offs.",
+    "summary": "We plugged Toys For Tots Drop-Offs.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-24-events-03",
+    "title": "HOLIDAY COOKIE CLASS WITH MARTIN SORGE",
+    "recap": "We plugged Holiday Cookie Class With Martin Sorge.",
+    "article_url": "https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html",
+    "article_title": "Holiday Cookie Class With Martin Sorge",
+    "jokes": [],
+    "body": "HOLIDAY COOKIE CLASS WITH MARTIN SORGE<br>We plugged Holiday Cookie Class With Martin Sorge.",
+    "description": "We plugged Holiday Cookie Class With Martin Sorge.",
+    "summary": "We plugged Holiday Cookie Class With Martin Sorge.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-24-events-04",
+    "title": "LIONS VS. BEARS, THANKSGIVING",
+    "recap": "We plugged Lions Vs. Bears, Thanksgiving.",
+    "article_url": "https://www.cbsnews.com/chicago/news/how-to-watch-chicago-bears-vs-detroit-lions-game-thanksgiving-2026/",
+    "article_title": "Lions Vs. Bears, Thanksgiving",
+    "jokes": [],
+    "body": "LIONS VS. BEARS, THANKSGIVING<br>We plugged Lions Vs. Bears, Thanksgiving.",
+    "description": "We plugged Lions Vs. Bears, Thanksgiving.",
+    "summary": "We plugged Lions Vs. Bears, Thanksgiving.",
+    "rank": 4,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://crystalriveroutfitters.com/strolling-lights-festival/",
+  "article_title": "Strolling Lights Festival, Glen Arbor",
+  "jokes": [],
+  "as_of": "2026-11-24T04:12-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "22cd97c0c67b",
+  "stale_after": "2026-11-24T16:12-05:00"
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · TOYS FOR TOTS IS ROLLING<br>Toys for Tots kicked off Saturday at Fox Grand Traverse, and thousands of toys came in on day one! 🎁 Drop-offs are open through Dec. 11 at 100-plus spots across five counties. Last year they reached more than 6,000 kids.<br>What was the one toy you HAD to have as a kid?<br>#ToysForTots #TraverseCity #NorthernMichigan #GiveBack #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-24/fb1a-toys-for-tots.png<br><br>1B · A BAKING CHAMP IN SUTTONS BAY<br>Great American Baking Show winner Martin Sorge is teaching holiday baking at the Inn at Black Star Farms! 🍪 Cookies Dec. 5, German stollen Dec. 12.<br>What's the one holiday cookie your family can't live without?<br>#HolidayBaking #SuttonsBay #Leelanau #TraverseCity #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>2A · GLEN ARBOR LIGHTS UP THIS WEEKEND<br>The sixth annual Strolling Lights Festival is this weekend, Nov. 28-29, at Crystal River Outfitters in Glen Arbor! ✨ This year it benefits LIFT, Leelanau Investing for Teens.<br>Who's making this part of their Thanksgiving weekend?<br>#GlenArbor #Leelanau #StrollingLights #TraverseCity #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-24/fb2a-strolling-lights.png<br><br>2B · TROOPERS + 55 PAIRS OF BOOTS<br>Love this. 💙 Michigan State Police troopers used a $6,000 Eagles-for-Children grant to buy winter coats and boots for 55 TCAPS elementary students.<br>Give a shout-out to someone in your town who quietly takes care of kids!<br>#TCAPS #TraverseCity #MichiganStatePolice #NorthernMichigan #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>3A · GANGNAM STYLE, 2012<br>On this day in 2012, Gangnam Style passed Justin Bieber's Baby as the most-viewed video on YouTube! 🐴 A month later it was the first to hit a billion views.<br>Where were you the first time you did the horse dance?<br>#GangnamStyle #PSY #2010sMusic #ThrowbackTuesday #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-24/fb3a-gangnam-style.png<br><br>3B · A THOUSAND MILES<br>Vanessa Carlton's A Thousand Miles hit No. 5 in 2002, and it almost had a different name: Interlude. 🎹<br>Who's driving a thousand miles (or at least to Grandma's) this week?<br>#VanessaCarlton #AThousandMiles #2000sMusic #ThanksgivingTravel #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)",
+  "notes": "Drafts only, AJ posts during the show; never posted by Hot Sheet. Facts from sheet items above. 1A Toys for Tots (UpNorthLive), 1B Martin Sorge classes (MLive), 2A Strolling Lights (9&10/Crystal River Outfitters), 2B troopers coats (UpNorthLive), 3A Gangnam Style (Wikipedia/THR), 3B A Thousand Miles (Wikipedia). Art for 1A/2A/3A per lean plan.",
+  "custom": true,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "courtney": {
+  "songBattle": [
+   {
+    "id": "court-sb-01",
+    "battleTitle": "Two Roads Home",
+    "a": {
+     "title": "Home",
+     "artist": "Phillip Phillips"
+    },
+    "b": {
+     "title": "Home",
+     "artist": "Daughtry"
+    },
+    "angle": "Thanksgiving travel week: two Idol alums, two songs both called 'Home.' Phillip Phillips (2012) vs. Chris Daughtry (2007)."
+   },
+   {
+    "id": "court-sb-02",
+    "battleTitle": "Highway Hymns",
+    "a": {
+     "title": "Life Is a Highway",
+     "artist": "Rascal Flatts"
+    },
+    "b": {
+     "title": "Everyday Is a Winding Road",
+     "artist": "Sheryl Crow"
+    },
+    "angle": "Busiest road week of the year: the Cars-soundtrack singalong (2006) vs. Sheryl's '90s road anthem (1996)."
+   }
+  ],
+  "hollywood": [
+   {
+    "id": "court-hw-01",
+    "headline": "Focker In-Law opens Wednesday",
+    "summary": "The fourth Meet the Parents movie, Focker In-Law, opens Wednesday, 16 years after Little Fockers, with Ariana Grande joining Ben Stiller and Robert De Niro. Early reviews are rough on the movie, but The Hollywood Reporter says Ariana outshines both of them.",
+    "as_of": "2026-11-23T09:00-05:00",
+    "article_url": "https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/",
+    "article_title": "'Focker In-Law' Review: Ariana Grande Outshines Robert De Niro and Ben Stiller (The Hollywood Reporter)",
+    "jokes": [
+     "Ariana married into the Fockers. That's the bravest thing she's done since that ponytail.",
+     "Sixteen years between sequels. Even my leftovers don't last that long."
+    ]
+   },
+   {
+    "id": "court-hw-02",
+    "headline": "Taylor Swift hands Brenda Lee a Diamond",
+    "summary": "Taylor Swift surprised Brenda Lee, 81, in Nashville with an RIAA Diamond plaque for 'Rockin' Around the Christmas Tree,' certified for more than 10 million U.S. units. It's only the second holiday song to go Diamond, after Mariah's 'All I Want for Christmas Is You.'",
+    "as_of": "2026-11-23T00:00-05:00",
+    "article_url": "https://www.billboard.com/music/music-news/taylor-swift-surprises-brenda-lee-riaa-diamond-plaque-video-1236387743/",
+    "article_title": "Watch Taylor Swift Surprise Brenda Lee With an RIAA Diamond Plaque (Billboard)",
+    "jokes": [
+     "Brenda Lee and Mariah, the only two people who get paid every December just for existing.",
+     "Taylor brought the plaque herself. My mail carrier won't even bring the package to the porch."
+    ]
+   },
+   {
+    "id": "court-hw-03",
+    "headline": "Post Malone celebrates 10 years of Stoney",
+    "summary": "Post Malone is marking 10 years since his debut album Stoney with a 10-year anniversary edition out Dec. 11. The digital version has 26 tracks, including eight previously unreleased songs, with vinyl, CD and even cassette editions.",
+    "as_of": "2026-11-23T00:00-05:00",
+    "article_url": "https://news.livenationentertainment.com/news/post-malone-celebrates-10th-anniversary-of-debut-album-stoney",
+    "article_title": "Post Malone Celebrates 10th Anniversary of Debut Album Stoney (Live Nation)",
+    "jokes": [
+     "A cassette edition. Finally, a reason to find out if the minivan's tape deck still works.",
+     "Ten years of Post Malone. Somewhere, a 2016 frat house just felt old."
+    ]
+   },
+   {
+    "id": "court-hw-04",
+    "headline": "Hulk Hogan's WrestleMania boot sells for $494K",
+    "summary": "A signed boot Hulk Hogan wore in his WrestleMania X8 match against The Rock sold at a Goldin auction for $494,100 with the buyer's premium. The winning bid was $405,000 before fees.",
+    "as_of": "2026-11-23T00:00-05:00",
+    "article_url": "https://www.tmz.com/2026/11/23/hulk-hogan-wrestlemania-x8-boot-auction/",
+    "article_title": "Hulk Hogan's Boot From WrestleMania X8 Match Vs. The Rock Fetches $494K At Auction (TMZ)",
+    "jokes": [
+     "Half a million dollars for one boot. Imagine what the pair goes for.",
+     "My old work boots are free to a good home. They smell like a WrestleMania, too."
+    ]
+   }
+  ],
+  "studioLine": [
+   {
+    "id": "court-sl-01",
+    "question": "What's your worst meet-the-parents moment?",
+    "followup": "Did you ever get invited back?"
+   },
+   {
+    "id": "court-sl-02",
+    "question": "What's your weirdest talent? It's Celebrate Your Unique Talent Day.",
+    "followup": "Who taught you, and why?"
+   },
+   {
+    "id": "court-sl-03",
+    "question": "When are you really getting to Thanksgiving dinner?",
+    "followup": "And what are you bringing?"
+   }
+  ],
+  "clips": []
+ },
+ "callie": {
+  "songInHead": [
+   {
+    "id": "callie-sh-01",
+    "title": "Rockin' Around the Christmas Tree",
+    "artist": "Brenda Lee",
+    "hook": "Taylor Swift just handed Brenda Lee a Diamond plaque for it, so yes, it's officially in my head before Thanksgiving.",
+    "article_url": "https://www.billboard.com/music/music-news/taylor-swift-surprises-brenda-lee-riaa-diamond-plaque-video-1236387743/"
+   }
+  ],
+  "teaParty": [
+   {
+    "id": "callie-tp-01",
+    "headline": "Focker In-Law opens Wednesday",
+    "summary": "The fourth Meet the Parents movie, Focker In-Law, opens Wednesday, 16 years after Little Fockers, with Ariana Grande joining Ben Stiller and Robert De Niro. Early reviews are rough on the movie, but The Hollywood Reporter says Ariana outshines both of them.",
+    "article_url": "https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/",
+    "article_title": "'Focker In-Law' Review: Ariana Grande Outshines Robert De Niro and Ben Stiller (The Hollywood Reporter)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-02",
+    "headline": "Taylor Swift hands Brenda Lee a Diamond",
+    "summary": "Taylor Swift surprised Brenda Lee, 81, in Nashville with an RIAA Diamond plaque for 'Rockin' Around the Christmas Tree,' certified for more than 10 million U.S. units. It's only the second holiday song to go Diamond, after Mariah's 'All I Want for Christmas Is You.'",
+    "article_url": "https://www.billboard.com/music/music-news/taylor-swift-surprises-brenda-lee-riaa-diamond-plaque-video-1236387743/",
+    "article_title": "Watch Taylor Swift Surprise Brenda Lee With an RIAA Diamond Plaque (Billboard)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-03",
+    "headline": "Post Malone celebrates 10 years of Stoney",
+    "summary": "Post Malone is marking 10 years since his debut album Stoney with a 10-year anniversary edition out Dec. 11. The digital version has 26 tracks, including eight previously unreleased songs, with vinyl, CD and even cassette editions.",
+    "article_url": "https://news.livenationentertainment.com/news/post-malone-celebrates-10th-anniversary-of-debut-album-stoney",
+    "article_title": "Post Malone Celebrates 10th Anniversary of Debut Album Stoney (Live Nation)",
+    "jokes": []
+   }
+  ],
+  "trendingAudio": [],
+  "events": [
+   {
+    "id": "callie-ev-01",
+    "title": "STROLLING LIGHTS FESTIVAL, GLEN ARBOR",
+    "detail": "Sat-Sun Nov 28-29 at Crystal River Outfitters, benefiting LIFT. Trees $150 to sponsor.",
+    "url": "https://crystalriveroutfitters.com/strolling-lights-festival/"
+   },
+   {
+    "id": "callie-ev-02",
+    "title": "TOYS FOR TOTS DROP-OFFS",
+    "detail": "Now through Fri Dec 11, 100-plus drop-off spots in five counties.",
+    "url": "https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys"
+   },
+   {
+    "id": "callie-ev-03",
+    "title": "HOLIDAY COOKIE CLASS WITH MARTIN SORGE",
+    "detail": "Sat Dec 5, noon-2 PM, Inn at Black Star Farms, Suttons Bay (stollen class Dec 12, 11 AM-1 PM).",
+    "url": "https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html"
+   },
+   {
+    "id": "callie-ev-04",
+    "title": "LIONS VS. BEARS, THANKSGIVING",
+    "detail": "Thu Nov 26, 1 PM, Ford Field, on CBS.",
+    "url": "https://www.cbsnews.com/chicago/news/how-to-watch-chicago-bears-vs-detroit-lions-game-thanksgiving-2026/"
+   }
+  ],
+  "fbDrafts": [
+   {
+    "id": "callie-fb-01",
+    "title": "MEET THE PARENTS, THANKSGIVING EDITION",
+    "text": "Focker In-Law opens Wednesday, and a LOT of you are meeting somebody's family over turkey this week. 🦃\nWhat's your worst meet-the-parents moment?\n#FockerInLaw #Thanksgiving #TraverseCity #Z93",
+    "media": "text only"
+   },
+   {
+    "id": "callie-fb-02",
+    "title": "SIDES OR TURKEY?",
+    "text": "A new Campbell's survey says 80% of us would rather make the side dishes than the turkey. 🥔\nWhat side HAS to be on your table?\n#Thanksgiving #SideDishes #TraverseCity #Z93",
+    "media": "text only"
+   }
+  ],
+  "liners": [
+   {
+    "id": "callie-ln-01",
+    "text": "Short week, long drive, big leftovers. Z93, Hits from the 90s to Now."
+   },
+   {
+    "id": "callie-ln-02",
+    "text": "Slick bridges, warm coffee, Thanksgiving on the brain. Z93 middays with Callie."
+   }
+  ],
+  "lifestyle": [
+   {
+    "id": "callie-ls-01",
+    "title": "BLACK FRIDAY TURNOUT HITS A 10-YEAR HIGH",
+    "summary": "Deloitte's new survey says 87% of shoppers plan to hit Black Friday through Cyber Monday deals this year, the most since 2016. Average planned spend is $624, flat with last year, and 72% are holding some purchases for the deals. Gen Z is all in: 94% plan to shop the week and spend 23% more.",
+    "article_url": "https://www.deloitte.com/us/en/about/press-room/deloitte-black-friday-cyber-monday-survey.html",
+    "article_title": "Deloitte: Participation in Black Friday-Cyber Monday shopping expected to hit 10-year high",
+    "jokes": []
+   },
+   {
+    "id": "callie-ls-02",
+    "title": "SIDES BEAT THE BIRD: AMERICA WOULD RATHER COOK THE SIDES",
+    "summary": "Campbell's 2026 State of the Sides report surveyed 5,017 Americans, and 80% would rather cook the side dishes than the turkey. The top five sides haven't changed in three years: green bean casserole, mac and cheese, yams or sweet potatoes, mashed potatoes, and stuffing or dressing.",
+    "article_url": "https://qz.com/favorite-thanksgiving-side-dishes-2026-campbells",
+    "article_title": "Campbell's 2026 State of the Sides report: 10 Thanksgiving findings (Quartz)",
+    "jokes": []
+   }
+  ],
+  "localBuzz": [
+   {
+    "id": "callie-lb-01",
+    "title": "TOYS FOR TOTS IS ROLLING: KICKOFF HAULS IN THOUSANDS OF TOYS",
+    "summary": "The Toys for Tots campaign in northwest Michigan kicked off Saturday with a drive-through toy drive at Fox Grand Traverse, and thousands of toys came in on day one. The campaign now runs through Friday, Dec. 11, with more than 100 drop-off spots.",
+    "article_url": "https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys",
+    "article_title": "Toys for Tots drive-through kickoff at Fox Grand Traverse collects thousands of toys (UpNorthLive)"
+   },
+   {
+    "id": "callie-lb-02",
+    "title": "A BAKING SHOW CHAMP IS COMING TO SUTTONS BAY",
+    "summary": "Martin Sorge, who won The Great American Baking Show, will teach two hands-on holiday baking classes at the Inn at Black Star Farms in Suttons Bay this December. On Dec. 5 from noon to 2 p.m. it's holiday cookies, and on Dec. 12 from 11 a.m. to 1 p.m. it's traditional German stollen.",
+    "article_url": "https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html",
+    "article_title": "'Great American Baking Show' winner to host holiday classes in Northern Michigan (MLive)"
+   },
+   {
+    "id": "callie-lb-03",
+    "title": "TROOPERS BUY WINTER COATS AND BOOTS FOR 55 TCAPS KIDS",
+    "summary": "The Eagles-for-Children program gave a $6,000 grant to the Michigan State Police STOP program, and troopers used it to buy winter gear for 55 TCAPS elementary students. That's coats, snow pants and boots, just as the snow starts to stick.",
+    "article_url": "https://upnorthlive.com/news/local/6000-grant-funds-winter-coats-and-boots-for-55-tcaps-elementary-students",
+    "article_title": "$6,000 grant funds winter coats and boots for 55 TCAPS elementary students (UpNorthLive)"
+   },
+   {
+    "id": "callie-lb-04",
+    "title": "GLEN ARBOR LIGHTS UP THIS WEEKEND FOR LEELANAU TEENS",
+    "summary": "The sixth annual Strolling Lights Festival comes to Glen Arbor this weekend, Saturday and Sunday, Nov. 28 and 29, as Crystal River Outfitters fills its corner of town with decorated holiday trees. This year the festival benefits LIFT, Leelanau Investing for Teens.",
+    "article_url": "https://www.9and10news.com/2026/11/29/glen-arbor-strolling-lights-festival-will-benefit-lift/",
+    "article_title": "Glen Arbor Strolling Lights Festival will benefit LIFT (9&10 News)"
+   },
+   {
+    "id": "callie-lb-05",
+    "title": "CORN HARVEST NEARLY DONE: GT FARM REPORTS 'PHENOMENAL YIELDS'",
+    "summary": "Long Acre Farms in Grand Traverse County is about 90% through its corn harvest, and owner Matt Breithaupt says timely rains plus a long dry fall gave them phenomenal yields. He hopes to wrap up by the end of this week.",
+    "article_url": "https://upnorthlive.com/news/local/grand-traverse-county-farm-nears-end-of-corn-harvest-after-strong-yields",
+    "article_title": "Grand Traverse County farm nears end of corn harvest after strong yields (UpNorthLive)"
+   }
+  ],
+  "officeSchool": [
+   {
+    "id": "callie-os-01",
+    "title": "OFFICE: THE HARDEST-WORKING OFFICE IN AMERICA THIS WEEK",
+    "summary": "The Butterball Turkey Talk-Line has more than 50 culinary experts on the phones right now, answering questions on thawing, roasting, doneness and leftovers. It started in 1981, it's open through Dec. 24, and you can call 1-800-BUTTERBALL, text, email or chat.",
+    "article_url": "https://www.livenowfox.com/news/butterball-turkey-talk-line-2026",
+    "article_title": "Butterball Turkey Talk-Line experts ready to help holiday cooks (LiveNOW from FOX)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-02",
+    "title": "OFFICE: THE SHORT-WEEK OFFICE, RANKED",
+    "summary": "It's a two-and-a-half-day week for a lot of offices, and everybody plays a role. There's the coworker who's 'out of office' since Friday, the one with a slow cooker under the desk, and the one asking 'are we doing anything for Thanksgiving?' in a group text at 4:59.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-03",
+    "title": "SCHOOL: THE GREAT THANKSGIVING BREAK DEBATE",
+    "summary": "School calendars are getting surveyed everywhere, and Thanksgiving break is one of the big fights. Colorado's District 49 just asked more than 2,200 parents, students and staff about eight parts of the calendar, and Thanksgiving break was one of them.",
+    "article_url": "https://www.d49.org/our-community/calendar-survey-results",
+    "article_title": "Calendar Survey Results (Colorado District 49)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-04",
+    "title": "SCHOOL: THE HANDPRINT TURKEY HALL OF FAME",
+    "summary": "It's Thanksgiving craft week in a lot of classrooms: handprint turkeys, paper Pilgrim hats, and the 'I am thankful for' sheet. Parents, those sheets are honest. Some kids are thankful for family. Some are thankful for their dog, pizza and Wi-Fi, in that order.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": []
+   }
+  ]
+ },
+ "_normalized": {
+  "version": 1,
+  "stale_hours": 12
+ }
+}

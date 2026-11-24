@@ -1,60 +1,69 @@
 {
- "date": "2026-11-23",
- "note": "On-air rewrites for ticker stories, keyed by ticker id. Short conversational reads plus W's and sources. Title-only feed items (scores) are read straight from the score; no extra details invented.",
+ "date": "2026-11-24",
+ "note": "On-air rewrites for ticker stories, keyed by ticker id. Short conversational reads plus W's and sources. No extra details invented.",
  "items": {
-  "loc-fb127ec305": {
-   "read": "Tough one for Kingsley. The Stags' season ended Saturday in the Division 6 state semifinal in Clare, 30-6 against Almont. Kingsley actually scored on its first drive, then Almont ran off 30 straight. The Stags finish 12-1 with a regional title, so give those seniors a big Up North thank-you. Almont plays Lumen Christi for the title Friday at Ford Field.",
-   "who": "Kingsley Stags football vs. Almont",
-   "what": "30-6 loss in the D6 state semifinal; season ends 12-1",
-   "when": "Saturday, Nov 21",
-   "where": "Clare",
-   "why": "Twelve straight wins, a regional title and a town that followed them down US-127",
-   "src": "https://upnorthlive.com/sports/hometown-highlights/kingsleys-season-comes-to-a-close-in-d6-state-semifinal-loss-to-almont"
+  "loc-56a06f06d1": {
+   "read": "Toys for Tots is rolling. The drive-through kickoff at Fox Grand Traverse brought in thousands of toys on day one, and the campaign runs through Friday, December 11th, with more than 100 drop-off spots. Last year they handed out 26,000 toys to more than 6,000 kids across five counties, so day one is just the warm-up.",
+   "who": "Marine Corps Reserve Toys for Tots, northwest Michigan",
+   "what": "Drive-through kickoff collected thousands of toys",
+   "when": "Kickoff Saturday; runs through Dec. 11",
+   "where": "Fox Grand Traverse, plus 100+ drop-off spots",
+   "why": "26,000 toys to 6,000+ kids last year in GT, Benzie, Kalkaska, Leelanau and Antrim",
+   "src": "https://upnorthlive.com/news/local/toys-for-tots-drive-through-kickoff-at-fox-grand-traverse-collects-thousands-of-toys"
   },
-  "loc-b90f641339": {
-   "read": "Michigan pulled off the upset of the weekend. They beat No. 4 UCLA 18-16 in triple overtime at the Big House, and it ended on Bryce Underwood's two-point pass to Jalen Hoffman. That's UCLA's first loss, and Michigan is now 6-5 and bowl-eligible. Ohio State is next Saturday.",
-   "who": "Michigan football vs. No. 4 UCLA",
-   "what": "18-16 win in triple overtime; UCLA's first loss",
-   "when": "Saturday, Nov 21",
-   "where": "Michigan Stadium, Ann Arbor",
-   "why": "Michigan becomes bowl-eligible heading into Ohio State week",
-   "src": "https://mgoblue.com/news/2026/11/21/football-michigan-stuns-no-4-ucla-in-triple-overtime-to-hand-bruins-first-loss"
+  "loc-c84dc574d7": {
+   "read": "A baking show champ is coming to Suttons Bay. Martin Sorge, who won The Great American Baking Show, teaches two holiday classes at the Inn at Black Star Farms. December 5th it's holiday cookies, and December 12th it's German stollen. You go home with the goods and the recipes.",
+   "who": "Martin Sorge, Great American Baking Show winner",
+   "what": "Two hands-on holiday baking classes",
+   "when": "Dec. 5, noon to 2; Dec. 12, 11 to 1",
+   "where": "Inn at Black Star Farms, Suttons Bay",
+   "why": "Leave with cookies or stollen plus the recipes",
+   "src": "https://www.mlive.com/life/2026/11/great-american-baking-show-winner-to-host-holiday-classes-in-northern-michigan.html"
   },
-  "loc-bdd1cd5f00": {
-   "read": "If you want Christmas lights without leaving your heated car, Alpenlights is open at the Otsego County Fairgrounds in Gaylord. It's a drive-through show with more than 50 props synced to music, priced per car: $15 on Sunday, $20 Wednesday and Thursday, $25 Friday and Saturday. And the owner told UpNorthLive he hopes to add a Traverse City location next year.",
-   "who": "Alpenlights, owner Ron Pierson",
-   "what": "Drive-through holiday light show open for the season",
-   "when": "Now through the season; Wed, Thu, Fri, Sat, Sun nights",
-   "where": "Otsego County Fairgrounds, Gaylord",
-   "why": "Easy family holiday outing, with a possible TC location next year",
-   "src": "https://upnorthlive.com/news/local/see-holiday-light-displays-at-alpenlights-gaylord-holiday-otsego-county"
+  "loc-746ab9edeb": {
+   "read": "Nice one from Michigan State Police. Troopers used a $6,000 Eagles-for-Children grant to buy coats, snow pants and boots for 55 TCAPS elementary kids, right as the snow starts to stick.",
+   "who": "MSP STOP program and Eagles-for-Children",
+   "what": "Winter coats, snow pants and boots for 55 kids",
+   "when": "This month",
+   "where": "TCAPS elementary schools",
+   "why": "Warm kids walking into winter",
+   "src": "https://upnorthlive.com/news/local/6000-grant-funds-winter-coats-and-boots-for-55-tcaps-elementary-students"
   },
-  "loc-0ce49c9a73": {
-   "read": "In college hoops, Michigan's men's team lost to Villanova, 79-73.",
-   "who": "Michigan men's basketball vs. Villanova",
-   "what": "79-73 loss",
-   "when": "This weekend",
-   "where": "See ESPN box score",
-   "why": "Michigan team score for the Detroit-area rundown",
-   "src": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921776/michigan-villanova"
+  "loc-e3e7244386": {
+   "read": "Corn harvest is almost done in Grand Traverse County. Long Acre Farms is about 90 percent through, and owner Matt Breithaupt calls the yields phenomenal, thanks to timely rain and a long dry fall. The catch is fuel prices, and no snow cover yet for the winter wheat.",
+   "who": "Matt Breithaupt, Long Acre Farms",
+   "what": "Corn harvest about 90% done with strong yields",
+   "when": "Hoping to wrap by the end of this week",
+   "where": "Grand Traverse County",
+   "why": "Good year, but fuel costs and bare fields are a worry",
+   "src": "https://upnorthlive.com/news/local/grand-traverse-county-farm-nears-end-of-corn-harvest-after-strong-yields"
   },
-  "loc-3820243085": {
-   "read": "Michigan State's men's basketball team handled Detroit Mercy, 91-70.",
-   "who": "Michigan State men's basketball vs. Detroit Mercy",
-   "what": "91-70 win",
-   "when": "This weekend",
-   "where": "See ESPN box score",
-   "why": "In-state matchup, MSU win",
-   "src": "https://www.espn.com/mens-college-basketball/game/_/gameId/401925756/detroit-mercy-michigan-st"
+  "loc-b33bfaabeb": {
+   "read": "Glen Arbor lights up this weekend. The sixth annual Strolling Lights Festival is Saturday and Sunday at Crystal River Outfitters, with decorated holiday trees to walk through, and this year it benefits LIFT, Leelanau Investing for Teens. You can sponsor and decorate a tree for $150.",
+   "who": "Crystal River Outfitters and LIFT",
+   "what": "Sixth annual Strolling Lights Festival",
+   "when": "Sat-Sun, Nov. 28-29",
+   "where": "Crystal River Outfitters, Glen Arbor",
+   "why": "Benefits Leelanau teens",
+   "src": "https://www.9and10news.com/2026/11/29/glen-arbor-strolling-lights-festival-will-benefit-lift/"
   },
-  "loc-f0ae26a97c": {
-   "read": "The Red Wings came up just short against the Islanders, 3-2.",
-   "who": "Detroit Red Wings vs. New York Islanders",
-   "what": "3-2 loss",
-   "when": "This weekend",
-   "where": "See ESPN box score",
-   "why": "Detroit team score",
-   "src": "https://www.espn.com/nhl/game/_/gameId/401892762/islanders-red-wings"
+  "loc-9e3547505c": {
+   "read": "Traverse City firefighters can now live outside the city. A new agreement relaxes the residency rule as home prices keep climbing. Redfin puts the average TC sale price this year over $450,000, and firefighters start around $60,000.",
+   "who": "TC Firefighters Association Local 646 and the city",
+   "what": "Relaxed residency rule",
+   "when": "New agreement, reported Sunday",
+   "where": "Traverse City",
+   "why": "Housing costs; exact new radius not stated",
+   "src": "https://upnorthlive.com/news/local/new-agreement-lets-firefighters-live-outside-traverse-city-as-home-prices-rise-grand-traverse-county"
+  },
+  "loc-baf84448a6": {
+   "read": "Ferris State had a big Saturday. Fox's Big Noon Kickoff broadcast from Big Rapids, the first time the show ever went to a Division Two school. Then the Bulldogs beat Truman State 45 to 14 in the first round of the playoffs.",
+   "who": "Ferris State Bulldogs",
+   "what": "Big Noon Kickoff visit, then a 45-14 playoff win",
+   "when": "Saturday, Nov. 21",
+   "where": "Big Rapids",
+   "why": "A Michigan small-school powerhouse on national TV",
+   "src": "https://upnorthlive.com/news/local/foxs-big-noon-kickoff-visits-ferris-state-spotlighting-41-game-win-streak"
   }
  }
 }

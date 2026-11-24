@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59f-wx">
+<meta name="hs-build" content="v59i-pershow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -662,6 +662,12 @@ button:active{transform:scale(.96)}
 .cready{background:#123b2a;color:#9ff0c4}
 .cplayed{background:#10213d;color:#9cc7ff}
 .ctitle{font-weight:900;font-size:1em;line-height:1.25}
+.ctitle .cwho{font-weight:800;color:var(--accent2)}
+.ctitle .cwho.missing{display:inline-block;color:var(--warn);background:#3a2208;border:1px solid var(--warn);border-radius:6px;padding:1px 7px;margin:0 6px 0 0;font-size:.72em;letter-spacing:.04em;text-transform:uppercase;font-weight:900;vertical-align:middle}
+.ctitle .cdur{font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ctitle .cdur.pending{color:var(--dim)}
+.r1pwho{display:block;font-size:.72em;font-weight:800;color:var(--accent2);margin-top:2px}
+.r1pwho.missing{color:var(--warn)}
 .cbody{white-space:pre-wrap;font-size:.8em;color:#cfd7de;margin-top:4px;line-height:1.35}
 .clc .player{margin:8px 0 0}
 .cfile{margin-top:6px;font-size:.75em;color:var(--dim);font-weight:700}
@@ -829,6 +835,36 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 .wcstubgrp.today .wcbadge{border-color:var(--accent);background:rgba(255,179,0,.14)}.wcstubgrp.today .wcbadge span,.wcstubgrp.today .wcbadge b{color:var(--accent)}
 .wcrows{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
 #weekCalDays.wcstubs .wcit{min-height:52px;margin:0;padding:8px 10px;background:var(--panel2);border:1px solid var(--line);border-left:6px solid var(--wc);border-radius:10px;font-size:.82em}
+/* v59h: publish dates on every story + tour tracker */
+.ndate{font-weight:700;color:var(--dim);white-space:nowrap}
+.ndate.old,.ndate.undated{display:inline-block;color:#ffcf7a;background:#3a2208;border:1px solid #ff9f1c;border-radius:6px;padding:0 6px;font-weight:900;letter-spacing:.02em}
+.ndate.recent{color:var(--text)}
+.ncard.isold{opacity:.88}.ncard.isold .tt{color:#e9dcc8}
+.ncoll{font-size:.78em;color:var(--dim);margin-left:4px}
+.tourtrk{margin:0 0 10px;border:1px solid #3ddc84;border-radius:14px;background:var(--panel);padding:0 10px 8px}
+.tourtrk>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:6px;font-weight:900;color:#c9ffe0;list-style:none}
+.tourtrk>summary::-webkit-details-marker{display:none}.tourtrk>summary::after{content:'▾';margin-left:auto;color:var(--accent)}.tourtrk[open]>summary::after{content:'▴'}
+.tourtrk .trow{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--line)}
+.tourtrk .tdate{flex:0 0 52px;text-align:center;border:1px solid var(--line);border-radius:10px;padding:3px 0;background:var(--panel2);line-height:1.1}
+.tourtrk .tdate b{display:block;font-size:1.05em}.tourtrk .tdate span{font-size:.68em;color:var(--dim);text-transform:uppercase;letter-spacing:.05em}
+.tourtrk .trow.mi .tdate{border-color:#3ddc84;background:#0f2a1c}.tourtrk .trow.mi .tdate b{color:#3ddc84}
+.tourtrk .tmain{flex:1;min-width:0}.tourtrk .tart{font-weight:900}.tourtrk .tven{font-size:.84em;color:var(--dim)}
+.tourtrk .tchips{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}
+.tchip{font-size:.7em;font-weight:800;border-radius:6px;padding:1px 6px;border:1px solid var(--line);color:var(--dim)}
+.tchip.mi{color:#0b1d12;background:#3ddc84;border-color:#3ddc84}.tchip.soon{color:#ffd2ad;border-color:#ff8a3d}.tchip.sec{color:#9fb3c8}
+.tourtrk .tmore{background:none;border:0;color:var(--accent);font-weight:800;padding:4px 0;min-height:32px;font-size:.82em;cursor:pointer}
+.tourtrk .tmorelist{font-size:.8em;color:var(--dim);margin:2px 0 0;padding-left:14px}
+.tourtrk .tmorelist li.mi{color:#3ddc84;font-weight:800}
+.tourtrk .tsrc,.tourdates .tsrc{font-size:.72em;color:var(--dim);margin-top:6px}
+.tourdates{margin:0 0 12px;border:1px solid #a855f7;border-radius:14px;background:var(--panel);padding:0 10px 10px}
+.tourdates>summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:900;color:#e3c8ff;list-style:none}
+.tourdates>summary::-webkit-details-marker{display:none}.tourdates>summary::after{content:'▾';margin-left:auto;color:var(--accent)}.tourdates[open]>summary::after{content:'▴'}
+.tourdates .tdart{padding:8px 10px;margin:0 0 8px;border:1px solid var(--line);border-left:5px solid #a855f7;border-radius:12px;background:var(--panel2)}
+.tourdates .tdart.near{border-left-color:#3ddc84}
+.tourdates .tdh{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.tourdates .tdh b{font-size:1.02em}
+.tourdates ul{margin:4px 0 0;padding-left:16px;font-size:.84em}.tourdates li.mi{color:#3ddc84;font-weight:800}
+.tourdates .tdnews{display:block;font-size:.8em;margin-top:5px;color:var(--text)}
+.tourdates .tdnone{font-size:.78em;color:var(--dim)}
 /* concerts strip */
 .b59conc{margin:0 0 12px;border:1px solid #ff8a3d;border-radius:14px;background:var(--panel);padding:0 10px 10px}
 .b59conc>summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font-weight:900;color:#ffd2ad;list-style:none}
@@ -2599,7 +2635,7 @@ function b59Summary(text){ const t=String(text||'').replace(/\s+/g,' ').trim(); 
 var b59Conc=lsGet('hs:concerts', null);
 async function b59LoadConcerts(){ if(!isHttp) return; try{ const j=await fetchJson('concerts.json'); if(j && Array.isArray(j.shows)){ b59Conc=j; try{ LS.setItem('hs:concerts', JSON.stringify(j)); }catch(e){} if(state.tab==='news' && typeof renderView==='function') renderView(); } }catch(e){} }
 function b59ConcertList(){ const d=b59Conc; if(!d||!Array.isArray(d.shows)) return []; const today=etParts().date; return d.shows.filter(x=>x.date>=today).slice().sort((a,b)=>(b.priority-a.priority) || a.date.localeCompare(b.date)); }
-function b59ConcertCount(){ return b59ConcertList().length + ((b59Conc&&b59Conc.announcements)||[]).length; }
+function b59ConcertCount(){ return b59ConcertList().length + hsFreshAnn((b59Conc&&b59Conc.announcements)||[]).length + (((hsTours&&hsTours.artists)||[]).some(a=>(a.next||[]).length)?1:0); }
 function b59ChaseSet(show,on){ if(on) b59Chase[show.id]={t:Date.now(), by:b59Prof(), title:show.title||show.artist, artist:show.artist, date:show.date, venue:show.venue}; else delete b59Chase[show.id];
   try{ LS.setItem('hs:chase', JSON.stringify(b59Chase)); }catch(e){} if(window.__hsSyncSoon) window.__hsSyncSoon(); }
 function b59FmtShowDate(d){ try{ const dt=new Date(d+'T12:00:00'); return dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}); }catch(e){ return d; } }
@@ -2616,7 +2652,10 @@ function b59ConcertRow(x){ const chased=b59Chase[x.id]; const bits=b59SaleBit(x)
       h('div',{className:'b59cchips'}, h('span',{className:'b59chip win-'+x.window}, win), x.inRotation?h('span',{className:'b59chip artist'}, '🎵 In rotation'):null, ...bits.map(t=>h('span',{className:'b59chip pin'}, t)), chased?h('span',{className:'b59chip'}, '🎯 '+b59Name(chased.by)+' is chasing'):null)),
     h('button',{type:'button', className:'b59chase'+(chased?' on':''), 'aria-pressed':String(!!chased), on:{click:e=>{ e.preventDefault(); e.stopPropagation(); tapHaptic(); b59ChaseSet(x,!chased); renderView(); }}}, chased?'✓ Chasing':'🎯 Chase tickets'));
   return row; }
-function b59ConcertsCard(){ const L=b59ConcertList(), A=(b59Conc&&b59Conc.announcements)||[]; if(!L.length && !A.length) return null;
+function hsFreshAnn(A){ const now=nowDate().getTime(), seen=new Set(); const touring=new Set(((hsTours&&hsTours.artists)||[]).filter(a=>(a.next||[]).length).map(a=>a.name.toLowerCase()));
+  return (A||[]).map(a=>Object.assign({}, a, {_t:Date.parse(a.at||0)||0})).filter(a=>a._t && now-a._t<=HS_MAX_DAYS*864e5).sort((x,y)=>y._t-x._t)
+    .filter(a=>{ const k=((a.artists||[])[0]||a.title).toLowerCase(); if(seen.has(k) || touring.has(k)) return false; seen.add(k); return true; }); }
+function b59ConcertsCard(){ const L=b59ConcertList(), A=hsFreshAnn((b59Conc&&b59Conc.announcements)||[]); if(!L.length && !A.length) return null;
   const chasing=Object.keys(b59Chase||{}).length;
   const d=h('details',{className:'b59conc', open:LS.getItem('hs:concOpen')!=='0'}); d.addEventListener('toggle',()=>{ try{ LS.setItem('hs:concOpen', d.open?'1':'0'); }catch(e){} });
   d.append(h('summary',{}, '🎟 Concerts to watch · '+L.length+(chasing?' · 🎯 '+chasing+' chasing':'')));
@@ -2625,9 +2664,91 @@ function b59ConcertsCard(){ const L=b59ConcertList(), A=(b59Conc&&b59Conc.announ
   sorted.forEach((x,i)=>{ const r=b59ConcertRow(x); if(i>=8){ r.hidden=true; extra.push(r); } body.append(r); });
   if(extra.length){ const m=h('button',{type:'button', className:'nmore'}, 'Show all '+sorted.length+' shows'); m.onclick=()=>{ extra.forEach(r=>r.hidden=false); m.remove(); }; body.append(m); }
   if(!sorted.length) body.append(h('div',{className:'b59lgn'}, 'No dated shows found yet. Headlines below.'));
-  if(A.length){ body.append(h('div',{className:'nsub'}, 'Announced / on sale (headlines)')); A.slice(0,8).forEach(a=>body.append(h('div',{className:'b59crow ann'}, h('div',{className:'b59cmain'}, h('a',{className:'b59ct', href:a.link, target:'_blank', rel:'noopener'}, a.title), h('div',{className:'b59cm'}, (a.src||'')+(a.artists&&a.artists.length?' · 🎵 '+a.artists.join(', '):'')))))); }
+  const A2=hsFreshAnn(A);
+  if(A2.length){ body.append(h('div',{className:'nsub'}, 'Announced / on sale (headlines, last '+HS_MAX_DAYS+' days)')); A2.slice(0,8).forEach(a=>body.append(h('div',{className:'b59crow ann'}, h('div',{className:'b59cmain'}, h('a',{className:'b59ct', href:(a.link||'').replace('news.google.com/rss/articles/','news.google.com/articles/'), target:'_blank', rel:'noopener'}, a.title), h('div',{className:'b59cm'}, hsDateChip(Date.parse(a.at||0)||0), ' · '+(a.src||'')+(a.artists&&a.artists.length?' · 🎵 '+a.artists.join(', '):'')))))); }
   const src=b59Conc&&b59Conc.sources; if(src){ const ok=[]; if(src.ticketmaster&&src.ticketmaster.status==='ok') ok.push('Ticketmaster'); for(const [k,v] of Object.entries(src.venues||{})) if(v.status==='ok' && v.count) ok.push(k); if(src.googleNews&&src.googleNews.count) ok.push('Google News'); body.append(h('div',{className:'b59lgn'}, 'Sources working: '+(ok.join(', ')||'none')+' · updated '+String(b59Conc.updated||'').slice(0,16).replace('T',' '))); }
   d.append(body); return d; }
+/* ================= v59h: publish dates, music de-dup, tour tracker (tours.json from tools/tour_tracker.py) ================= */
+const HS_OLD_DAYS=3, HS_MAX_DAYS=14;
+function hsPubWhen(ms){
+  if(!ms) return {t:'date ?', cls:'undated', full:'No publish date in the feed', old:true};
+  const now=nowDate().getTime(), age=(now-ms)/864e5; const d=etParts(new Date(ms)).date, today=etParts().date;
+  const yest=etParts(new Date(now-864e5)).date; const P=d.split('-'); const full=fmtStamp(ms);
+  const md=MONS[(+P[1])-1]+' '+(+P[2])+(P[0]!==today.slice(0,4)?', '+P[0]:'');
+  if(age>=HS_OLD_DAYS) return {t:'OLD · '+md, cls:'old', full:'Published '+full, old:true};
+  if(now-ms<3600e3 && now>=ms) return {t:ago(ms), cls:'recent', full:'Published '+full};
+  if(d===today) return {t:'Today '+b59Tm(ms), cls:'recent', full:'Published '+full};
+  if(d===yest) return {t:'Yesterday '+b59Tm(ms), cls:'', full:'Published '+full};
+  return {t:nice(d)+' '+b59Tm(ms), cls:'', full:'Published '+full};
+}
+function hsDateChip(ms){ const w=hsPubWhen(ms); return h('span',{className:'ndate '+w.cls, title:w.full}, w.t); }
+const HS_BUCKETS=[['tour',/\b(tour|tours|touring|tickets?|concerts?|tour dates|residency|stadium|presales?|on[- ]sale|setlist|dates? announced|adds? (?:new )?(?:dates|shows))\b/i],
+  ['awards',/\b(grammys?|cmas?|amas?|vmas?|awards?|nominat\w+|nominees?)\b/i],
+  ['chart',/\b(billboard|charts?|hot 100|airplay|no\. ?1|number one|#1|tops|debuts at)\b/i],
+  ['release',/\b(new (?:album|single|song|music|video)|album|single|music video|releases?|drops|deluxe|tracklist|ep)\b/i]];
+function hsBucket(t){ for(const [k,rx] of HS_BUCKETS) if(rx.test(t||'')) return k; return null; }
+function hsArtistOf(it){ return ((it.artists||[])[0]||'').toLowerCase(); }
+/* same lead artist + same kind of story -> one entry; keeps the best slot, shows the newest dated source */
+function hsDedupeMusic(list){ const firstAt={}, out=[];
+  for(const it of list){ const a=hsArtistOf(it), b=hsBucket(it.title); const key=a&&b?a+'|'+b:null;
+    if(!key || firstAt[key]===undefined){ if(key) firstAt[key]=out.length; out.push(Object.assign({}, it)); continue; }
+    const w=out[firstAt[key]]; w.collapsed=(w.collapsed||0)+1+(it.collapsed||0); w.votes=(w.votes||1)+1;
+    if((it.at||0)>(w.at||0)){ ['title','link','at','desc','src','tid'].forEach(k=>{ if(it[k]) w[k]=it[k]; }); } }
+  return out; }
+var hsTours=lsGet('hs:tours', null);
+async function hsLoadTours(){ if(!isHttp) return; try{ const j=await fetchJson('tours.json'); if(j && Array.isArray(j.artists)){ hsTours=j; try{ LS.setItem('hs:tours', JSON.stringify(j)); }catch(e){} if(state.tab==='news' && typeof renderView==='function') renderView(); } }catch(e){} }
+function hsDaysAway(ymd){ const t=parseYmd(etParts().date), d=parseYmd(ymd); return Math.round((d-t)/864e5); }
+function hsDayWord(ymd){ const n=hsDaysAway(ymd); return n===0?'Tonight':n===1?'Tomorrow':nice(ymd); }
+function hsAsOf(){ const u=hsTours&&hsTours.asOf; if(!u) return ''; try{ return fmtStamp(u); }catch(e){ return String(u).slice(0,16); } }
+function hsTourRows(){ const today=etParts().date; return ((hsTours&&hsTours.nearby)||[]).map(r=>{ const all=[r].concat(r.moreDates||[]).filter(x=>x.date>=today);
+    if(!all.length) return null; const mi=all.filter(x=>x.mi); const first=(mi[0]||all[0]); return Object.assign({}, r, first, {artist:r.artist, rest:all.filter(x=>x!==first), extra:Math.max(0,(r.more||0)-(r.moreDates||[]).length)}); })
+  .filter(Boolean).sort((a,b)=>a.date.localeCompare(b.date) || (!!b.mi-!!a.mi)); }
+/* the small list above the news columns: one row per artist, next show near Michigan */
+function hsTourTracker(){ if(!hsTours) return null; const rows=hsTourRows();
+  const d=h('details',{className:'tourtrk', id:'tourTrk', open:LS.getItem('hs:tourOpen')!=='0'}); d.addEventListener('toggle',()=>{ try{ LS.setItem('hs:tourOpen', d.open?'1':'0'); }catch(e){} });
+  const nMi=rows.filter(r=>r.mi).length;
+  d.append(h('summary',{}, '🎤 Pop tours near Michigan', h('span',{className:'tchip'+(nMi?' mi':'')}, rows.length+(rows.length===1?' artist':' artists')+(nMi?' · '+nMi+' in MI':''))));
+  if(!rows.length) d.append(h('div',{className:'tsrc'}, 'No upcoming pop shows near Michigan for the '+(hsTours.artistsChecked||0)+' rotation artists checked.'));
+  rows.forEach(r=>{ const P=r.date.split('-'); const n=hsDaysAway(r.date);
+    const row=h('div',{className:'trow'+(r.mi?' mi':'')},
+      h('div',{className:'tdate', 'aria-hidden':'true'}, h('span',{}, MONS[(+P[1])-1]), h('b',{}, String(+P[2])), h('span',{}, DAYS[parseYmd(r.date).getDay()])),
+      h('div',{className:'tmain'},
+        h('a',{className:'tart', href:r.url||r.sourceUrl||'#', target:'_blank', rel:'noopener'}, r.artist),
+        h('div',{className:'tven'}, [r.venue, [r.city, r.state].filter(Boolean).join(', ')].filter(Boolean).join(' · ')+' · '+hsDayWord(r.date)+(r.time?' '+fmt12(r.time):'')),
+        h('div',{className:'tchips'}, h('span',{className:'tchip'+(n<=21?' soon':'')}, n===0?'Today':n+(n===1?' day':' days')), r.mi?h('span',{className:'tchip mi'}, '📍 Michigan'):h('span',{className:'tchip sec'}, (r.area||'Nearby')+' · drive'), r.soldOut?h('span',{className:'tchip'}, 'Sold out'):null, r.postponed?h('span',{className:'tchip soon'}, 'Postponed'):null)));
+    const rest=r.rest||[]; const more=rest.length+(r.extra||0);
+    if(more){ const ul=h('ul',{className:'tmorelist', hidden:true}); rest.forEach(x=>ul.append(h('li',{className:x.mi?'mi':''}, nice(x.date)+' · '+[x.venue, [x.city,x.state].filter(Boolean).join(', ')].filter(Boolean).join(' · '))));
+      if(r.extra) ul.append(h('li',{}, '+'+r.extra+' more on the source page'));
+      const b=h('button',{type:'button', className:'tmore', 'aria-expanded':'false'}, '+'+more+' more date'+(more===1?'':'s')+' ▾');
+      b.onclick=()=>{ tapHaptic(); ul.hidden=!ul.hidden; b.setAttribute('aria-expanded', String(!ul.hidden)); b.textContent='+'+more+' more date'+(more===1?'':'s')+(ul.hidden?' ▾':' ▴'); };
+      row.querySelector('.tmain').append(b, ul); }
+    d.append(row); });
+  d.append(h('div',{className:'tsrc'}, 'Source: Ticketmaster artist pages · as of '+hsAsOf()+' · green = Michigan, the rest are Chicago / Toledo / Cleveland / Toronto drives'));
+  return d; }
+/* Music column: every rotation pop artist that's touring, next dates + the newest tour headline folded in (one entry per artist) */
+/* back-to-back nights at one venue read as one line: "Tonight + Tue Nov 24 (2 shows)" */
+function hsGroupDates(L){ const G=[]; (L||[]).forEach(x=>{ const g=G[G.length-1]; if(g && g.venue===x.venue && g.city===x.city){ g.dates.push(x.date); g.n++; } else G.push({venue:x.venue, city:x.city, st:(/^(US|CA)$/.test(x.country||'US')?(x.state||x.country):(x.country||x.state)), mi:x.mi, dates:[x.date], n:1}); });
+  G.forEach(g=>{ const f=hsDayWord(g.dates[0]); g.when=g.n===1?f:(g.n===2?f+' & '+hsDayWord(g.dates[1]):f+' – '+nice(g.dates[g.n-1]))+' ('+g.n+' shows)'; }); return G; }
+function hsTourDatesCard(tourNews){ if(!hsTours) return null; const today=etParts().date;
+  const A=(hsTours.artists||[]).map(a=>Object.assign({}, a, {next:(a.next||[]).filter(x=>x.date>=today)}));
+  const on=A.filter(a=>a.next.length), off=A.filter(a=>!a.next.length && (a.status==='no-dates'||a.status==='touring'));
+  if(!on.length && !off.length) return null;
+  const near=new Set(hsTourRows().map(r=>r.artist.toLowerCase()));
+  const d=h('details',{className:'tourdates', open:LS.getItem('hs:tdOpen')!=='0'}); d.addEventListener('toggle',()=>{ try{ LS.setItem('hs:tdOpen', d.open?'1':'0'); }catch(e){} });
+  d.append(h('summary',{}, '🗓 Tour dates · rotation pop artists · '+on.length+' touring'));
+  on.forEach(a=>{ const box=h('div',{className:'tdart'+(near.has(a.name.toLowerCase())?' near':'')});
+    const nr=hsTourRows().find(r=>r.artist.toLowerCase()===a.name.toLowerCase());
+    box.append(h('div',{className:'tdh'}, h('b',{}, a.name), h('span',{className:'tchip'}, (a.total||a.next.length)+' upcoming'), nr?h('span',{className:'tchip'+(nr.mi?' mi':' sec')}, '📍 '+(nr.mi?'':'')+nr.city+' '+nice(nr.date).replace(/^\w+ /,'')):h('span',{className:'tchip sec'}, 'No Michigan-area date')));
+    const G=hsGroupDates(a.next), ul=h('ul',{}); let shown=0;
+    G.slice(0,3).forEach(g=>{ shown+=g.n; ul.append(h('li',{className:g.mi?'mi':''}, g.when+' · '+[g.city, g.st].filter(Boolean).join(', ')+(g.venue?' · '+g.venue:''))); });
+    const left=Math.max(0,(a.total||a.next.length)-shown); if(left) ul.append(h('li',{}, h('a',{href:a.url, target:'_blank', rel:'noopener'}, '+'+left+' more date'+(left===1?'':'s')+' ↗')));
+    box.append(ul);
+    const tn=(tourNews||{})[a.name.toLowerCase()];
+    if(tn){ box.append(h('a',{className:'tdnews', href:tn.link||'#', target:'_blank', rel:'noopener'}, '📰 ', tn.title, ' ', hsDateChip(tn.at), tn.collapsed?h('span',{className:'ncoll'}, '+'+tn.collapsed+' similar'):null)); }
+    d.append(box); });
+  if(off.length) d.append(h('div',{className:'tdnone'}, 'No upcoming dates listed right now: '+off.map(a=>a.name).join(', ')+'.'));
+  d.append(h('div',{className:'tsrc'}, 'Source: Ticketmaster artist pages · as of '+hsAsOf()));
+  return d; }
 function storyCard(orig, kind){
   const shown=storyResolve(orig.slot, orig);
   const remixed=!!shown.remixed;
@@ -4274,6 +4395,12 @@ function renderWeather(){
 }
 
 function sectionList(){ const b=sectionListBase(); try{ if(typeof viewProfile==='function' && viewProfile()==='callie') return b59CalSections(b); }catch(e){} return b; }
+/* v59i: a sheet card that belongs to one host ("AJ's Personal Bit", or owner:"truce|courtney|callie") shows only on that host's show */
+function sectionOwner(k,v){ if(!v || typeof v!=='object') return '';
+  const o=String(v.owner||'').toLowerCase().replace(/^aj$/,'truce').replace(/^cali$/,'callie'); if(['truce','courtney','callie'].includes(o)) return o;
+  const t=String(v.title||'')+' | '+String(v.category||'')+' | '+String(v.id||k||'');
+  if(!/personal[\s_-]*bits?\b/i.test(t)) return '';
+  if(/courtney/i.test(t)) return 'courtney'; if(/\bcall?ie\b|\bcali\b/i.test(t)) return 'callie'; return 'truce'; }
 function sectionListBase(){
   const s=state.sheet||{}; const out=[{key:'news', v:{title:'📰 News', category:'Local · National · Gossip', content:'x', virtual:true}}];
   if(typeof onAirProfile==='function' && onAirProfile('courtney') && etParts().dow>=1 && etParts().dow<=5){
@@ -4286,6 +4413,7 @@ function sectionListBase(){
   for(const [k,v] of Object.entries(s)){
     if(k==='weather' || k==='newsclips' || k==='courtney' || k==='callie' || k==='_normalized' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v)) continue;
     if(k==='offcharts' && etParts().dow!==5) continue;   // Off the Charts: Fridays only (ET)
+    { const ow=sectionOwner(k,v); if(ow && ow!==((typeof viewProfile==='function'&&viewProfile())||'truce')) continue; }   // v59i: personal bits stay on their own show
     if(k==='mood' && isSection(s.vibe)) out.push({key:'vibe', v:s.vibe}); // Vibe Check: own tab, right before Mood Boost
     if(k==='buzz' && typeof morningEnded==='function' && morningEnded()){ out.push({key:k, v:Object.assign({}, v, {title:'🔥 Trending Local Buzz', category:'From the morning'})}); continue; }
     out.push({key:k, v});
@@ -4375,7 +4503,7 @@ function renderNewsMeta(){ const m=$('#newsMeta'); if(!m) return;
   m.textContent = newsBusy ? 'Updating…' : (news ? 'Updated '+hm(new Date(news.at))+' ET · '+(news.sources||[]).join(', ')+' · refreshes every 20 min' : 'Loading…'); }
 function renderNewsList(){ const ol=$('#newsList'); ol.innerHTML=''; renderNewsMeta();
   if(!news || !news.items || !news.items.length){ const li=document.createElement('li'); li.className='hint'; li.style.padding='10px 4px'; li.textContent=navigator.onLine?'No headlines yet.':'Offline: no saved headlines.'; ol.append(li); return; }
-  for(const it of news.items){ const a=h('a',{href:it.link, target:'_blank', rel:'noopener'}, h('div',{className:'t'}, it.title), h('div',{className:'s'}, h('b',{}, it.src), ' · '+(it.at?ago(it.at)+' · '+hm(new Date(it.at)):'')));
+  for(const it of news.items){ const a=h('a',{href:it.link, target:'_blank', rel:'noopener'}, h('div',{className:'t'}, it.title), h('div',{className:'s'}, h('b',{}, it.src), ' · ', hsDateChip(it.at)));
     ol.append(h('li',{}, a)); } }
 function openNews(){ renderNewsList(); $('#newsModal').classList.add('on'); fetchNews(false); setTimeout(()=>{ const el=$('#newsClose'); if(el&&el.focus) el.focus({preventScroll:true}); },30); }
 function closeNews(){ $('#newsModal').classList.remove('on'); $('#newsChip').focus({preventScroll:true}); }
@@ -4701,7 +4829,8 @@ let newsCol=LS.getItem('hs:newsCol')||'local';
 function tickerFresh(){ const t=tickerCur; if(!t||!(t.local||t.national)) return false;
   const ms=t.updatedMs||Date.parse(t.updated||0)||0; return ms && (Date.now()-ms)<18*3600e3; }
 function tickerPicks(scope){ if(!tickerFresh()||!tickerCur||!tickerCur[scope]) return [];
-  return (tickerCur[scope].picks||[]).map(it=>({tag:it.tag||(scope==='local'?'LOCAL':'NATIONAL'), text:it.title, section:'news', newsCol:scope, tid:it.id, link:it.link, source:it.source})); }
+  return (tickerCur[scope].picks||[]).filter(it=>{ const ms=it.atMs||Date.parse(it.at||0)||0; return !ms || nowDate().getTime()-ms<=HS_MAX_DAYS*864e5; })
+    .map(it=>{ const ms=it.atMs||Date.parse(it.at||0)||0; const w=ms?hsPubWhen(ms):null; return {tag:it.tag||(scope==='local'?'LOCAL':'NATIONAL'), text:it.title+(w&&w.old?' ('+w.t+')':''), section:'news', newsCol:scope, tid:it.id, link:it.link, source:it.source}; }); }
 function curNews(scope){ if(!tickerFresh()||!tickerCur||!tickerCur[scope]) return null;
   const as=(arr,pick)=>(arr||[]).map(it=>({title:it.title, src:it.source, sources:it.sources, votes:it.votes, at:it.atMs||Date.parse(it.at||0)||0, link:it.link, desc:it.desc, live:true, pick:!!pick, why:it.why, tid:it.id, tag:it.tag, hot:!!it.hot, pin:it.pin||'', tags:it.tags||[], artists:it.artists||[], top:!!it.top, boost:it.boost||0}));
   return {picks:as(tickerCur[scope].picks,true), more:as(tickerCur[scope].more,false), updated:tickerCur.updatedMs||Date.parse(tickerCur.updated||0)||0}; }
@@ -4734,8 +4863,13 @@ function newsData(){
   const gos=[{head:'Live entertainment', items:(gossip&&gossip.items||[]).map(it=>({...it, live:true}))}];
   const bits=asSheet(P.BITS||P.BIT,'Bits');
   if(bits.length) gos.push({head:'Sheet bits', items:bits});
-  const musCur=curNews('music'); const music=[];
-  if(musCur){ if(musCur.picks.length) music.push({head:'Music & nostalgia', items:musCur.picks}); if(musCur.more.length) music.push({head:'More music news', items:musCur.more}); }
+  const musCur=curNews('music'); const music=[]; const tourNews={};
+  if(musCur){ const np=musCur.picks.length; const all=hsDedupeMusic(musCur.picks.concat(musCur.more).filter(x=>!x.at || nowDate().getTime()-x.at<=HS_MAX_DAYS*864e5));
+    const touring=new Set(((hsTours&&hsTours.artists)||[]).filter(a=>(a.next||[]).some(x=>x.date>=etParts().date)).map(a=>a.name.toLowerCase()));
+    const keep=[]; all.forEach((x,i)=>{ const a=hsArtistOf(x); if(a && touring.has(a) && hsBucket(x.title)==='tour'){ if(!tourNews[a] || (x.at||0)>(tourNews[a].at||0)) tourNews[a]=x; } else keep.push(Object.assign(x,{_wasPick:i<np && x.pick})); });
+    const P=keep.filter(x=>x.pick), M=keep.filter(x=>!x.pick);
+    if(P.length) music.push({head:'Music & nostalgia', items:P}); if(M.length) music.push({head:'More music news', items:M}); }
+  music.tourNews=tourNews;
   return {local, national, gossip:gos, music};
 }
 const ncount=g=>g.reduce((n,x)=>n+x.items.length,0);
@@ -4743,11 +4877,11 @@ function newsCard(it, col){
   const card=h('article',{className:'ncard b59has'+(it.pick?' pick':'')+(it.pinned?' pinned':'')+(it.savedFrom?' fromsave':'')+(it._brick?' b59brick':'')+(it.hot?' b59hot':'')}); if(it.tid) card.dataset.tid=it.tid;
   if(typeof storyKeepId==='function') card.setAttribute('data-keep-id', storyKeepId(it));
   const body=h('div',{className:'nbody', hidden:true});
-  const when=it.at ? (Date.now()-it.at<3600e3 ? ago(it.at) : hm(new Date(it.at))+' ET') : (it.sub||'');
+  const pw=(it.live||it.at)?hsPubWhen(it.at):null; if(pw&&pw.old) card.classList.add('isold');
   const srcLine=(it.votes>1?it.src+' · '+it.votes+' sources':it.src)||'';
   const btn=h('div',{className:'nhd', role:'button', tabIndex:0, 'aria-expanded':'false'},
     h('span',{className:'tt'}, it.title, it.pick?h('span',{className:'npill'},'Show pick'):null),
-    h('span',{className:'sr'}, h('b',{}, srcLine), when?h('span',{}, '· '+when):null, it.live? h('span',{className:'live'}, '● live') : null, b59Chips(it)));
+    h('span',{className:'sr'}, h('b',{}, srcLine), pw?h('span',{}, ' · ', h('span',{className:'ndate '+pw.cls, title:pw.full}, pw.t)):(it.sub?h('span',{}, '· '+it.sub):null), it.collapsed?h('span',{className:'ncoll'}, '· +'+it.collapsed+' similar'):null, it.live? h('span',{className:'live'}, '● live') : null, b59Chips(it)));
   btn.onclick=()=>{ tapHaptic(); const o=body.hidden; if(o){ try{ b59LogAct(it,'news',col||'','tap',true); }catch(e){} } body.hidden=!o; card.classList.toggle('open',o); btn.setAttribute('aria-expanded',String(o)); };
   btn.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); btn.click(); } });
   let sum=null; if(it.desc){ sum=b59Summary(it.desc); }
@@ -4789,7 +4923,7 @@ function renderNewsView(view){
     seg.append(b);
     const col=h('section',{className:'ncol '+c.cls, id:'ncol-'+c.id, role:'tabpanel', 'aria-labelledby':'nsb-'+c.id},
       h('div',{className:'nch'}, h('span',{className:'ic','aria-hidden':'true'}, c.icon), h('span',{className:'nl'}, c.full||c.label), h('span',{className:'ct'}, String(n))));
-    if(c.id==='music'){ try{ const cc=b59ConcertsCard(); if(cc) col.append(cc); }catch(e){ console.warn('concerts card', e); } }
+    if(c.id==='music'){ try{ const td=hsTourDatesCard((data.music||{}).tourNews); if(td) col.append(td); }catch(e){ console.warn('tour dates card', e); } try{ const cc=b59ConcertsCard(); if(cc) col.append(cc); }catch(e){ console.warn('concerts card', e); } }
     let shown=0; const extra=[];
     const keepItems=nItems[c.id];
     if(keepItems){
@@ -4811,6 +4945,8 @@ function renderNewsView(view){
     if(!n) col.append(h('div',{className:'nempty'}, c.id==='local' ? (navigator.onLine?'No local headlines yet.':'Offline: no local headlines saved.') : (navigator.onLine ? 'Loading…' : 'Offline: nothing saved yet.')));
     cols.append(col);
   });
+  let trk=null; try{ trk=hsTourTracker(); }catch(e){ console.warn('tour tracker', e); }
+  if(trk) view.append(trk);
   view.append(seg, cols);
   const tb=$('#tabsBar'); if(tb) document.documentElement.style.setProperty('--tabsH', tb.offsetHeight+'px');
   let t=null;
@@ -5102,7 +5238,7 @@ function hsPreloadToday(){
   next();
 }
 
-function makePlayer(title, src, notes, lazy, clipId){
+function makePlayer(title, src, notes, lazy, clipId, secs){
   const w=document.createElement('div'); w.className='player';
   w.dataset.hsAudio=src; if(clipId) w.dataset.clip=clipId;
   const t=document.createElement('div'); t.className='ptitle'; t.textContent=title; w.append(t);
@@ -5111,7 +5247,8 @@ function makePlayer(title, src, notes, lazy, clipId){
   const pp=document.createElement('button'); pp.className='pp'; pp.type='button'; pp.textContent='▶'; pp.setAttribute('aria-label','Play '+title);
   const bar=document.createElement('div'); bar.className='bar';
   const rng=document.createElement('input'); rng.type='range'; rng.min=0; rng.max=1000; rng.value=0; rng.setAttribute('aria-label','Seek');
-  const tm=document.createElement('div'); tm.className='time'; tm.textContent='0:00 / --:--';
+  const known=clipParseSecs?clipParseSecs(secs):0;
+  const tm=document.createElement('div'); tm.className='time'; tm.textContent='0:00 / '+(known && typeof fmt==='function'?fmt(known):'--:--');
   bar.append(rng,tm);
   const stop=document.createElement('button'); stop.className='stop'; stop.type='button'; stop.textContent='■'; stop.setAttribute('aria-label','Stop and rewind');
   row.append(pp,bar,stop); w.append(row);
@@ -5121,6 +5258,17 @@ function makePlayer(title, src, notes, lazy, clipId){
   rng.oninput=()=>{ hsSeek(src, rng.value/1000); };
   hsPaintAudio();
   if(!lazy) hsEnsure(src).catch(()=>{});
+  if(!known && src && !clipId){
+    try{
+      const a=new Audio(); a.preload='metadata';
+      a.addEventListener('loadedmetadata',()=>{
+        const d=a.duration;
+        if(isFinite(d)&&d>0 && /\/ --:--\s*$/.test(tm.textContent||'')) tm.textContent='0:00 / '+(typeof fmt==='function'?fmt(Math.round(d)):'');
+        try{ a.removeAttribute('src'); a.load(); }catch(e){}
+      });
+      a.src=src;
+    }catch(e){}
+  }
   return w;
 }
 
@@ -5315,11 +5463,90 @@ function clipAudioUrl(a){ if(!a) return null; a=String(a);
   if(pm&&pm[1]) return 'clips/'+pm[1]+'/'+name;
   if(typeof clipDate==='function' && clipDate()) return 'clips/'+clipDate()+'/'+name;
   return null; }
+
+function clipParseSecs(v){
+  if(v==null || v==='') return 0;
+  if(typeof v==='number' && isFinite(v) && v>0) return Math.round(v);
+  const s=String(v).trim();
+  if(/^\d+(\.\d+)?$/.test(s)){ const n=parseFloat(s); return n>0?Math.round(n):0; }
+  const m=s.match(/^(\d+):([0-5]\d)$/);
+  if(m) return parseInt(m[1],10)*60+parseInt(m[2],10);
+  return 0;
+}
+function clipSecsOf(p){
+  if(!p) return 0;
+  let n=clipParseSecs(p.secs)||clipParseSecs(p.duration_sec);
+  if(!n && p.duration!=null) n=clipParseSecs(p.duration);
+  if(!n){ const m=String(p.title||'').match(/\((?:TIGHT\s+)?(\d+):(\d{2})\)/i); if(m) n=parseInt(m[1],10)*60+parseInt(m[2],10); }
+  return n||0;
+}
+function clipDurLabel(sec){
+  if(!sec) return '';
+  const clock=(typeof fmt==='function'?fmt(sec):(Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0')));
+  return clock+' ('+sec+'s)';
+}
+function clipIsComedy(p){
+  const kind=String((p&&p.kind)||'').toLowerCase();
+  if(kind==='comedy') return true;
+  return /stand-?\s?up|\bdry bar\b/i.test(((p&&p.slot)||'')+' '+((p&&p.title)||''));
+}
+function clipPerformerOf(p){
+  if(!p) return '';
+  const raw=[p.performer,p.comedian,p.artist,p.who,p.speaker,p.source].map(x=>String(x||'').trim()).filter(Boolean);
+  for(const n of raw){
+    if(/^(https?:|www\.)/i.test(n)) continue;
+    if(/^(courtesy of|official youtube|youtube|tiktok)\b/i.test(n)) continue;
+    if(/dry bar|weekend update|saturday night live|\bsnl\b|good morning america|\bgma\b|the dodo|big ten/i.test(n)) continue;
+    return n;
+  }
+  return '';
+}
+function clipTitleParts(p){
+  const who=clipPerformerOf(p);
+  const comedy=clipIsComedy(p);
+  const secs=clipSecsOf(p);
+  const title=String(p.title||'Clip').replace(/\s*\((?:TIGHT\s+)?\d+:\d{2}\)\s*$/i,'').trim()||String(p.title||'Clip');
+  const parts=[];
+  if(who) parts.push(h('span',{className:'cwho'}, who+' — '));
+  else if(comedy) parts.push(h('span',{className:'cwho missing', title:'Hot Sheet did not name the comedian'}, 'Comedian: ?'));
+  parts.push(document.createTextNode((who?'':(comedy?' ':''))+title));
+  parts.push(h('span',{className:'cdur'+(secs?'':' pending'), 'data-cdur':'1'}, secs?(' · '+clipDurLabel(secs)):''));
+  return parts;
+}
+function clipFillDur(el, p, url){
+  if(!el) return;
+  const apply=sec=>{
+    if(!sec) return;
+    if(p) p.secs=sec;
+    const badge=el.querySelector('[data-cdur]');
+    if(badge){ badge.textContent=' · '+clipDurLabel(sec); badge.classList.remove('pending'); }
+    const tm=el.querySelector('.player .time');
+    if(tm && /\/ --:--\s*$/.test(tm.textContent||'')) tm.textContent='0:00 / '+(typeof fmt==='function'?fmt(sec):clipDurLabel(sec));
+  };
+  const have=clipSecsOf(p);
+  if(have){ apply(have); return; }
+  if(!url) return;
+  try{
+    const a=new Audio();
+    a.preload='metadata';
+    a.addEventListener('loadedmetadata',()=>{
+      const d=a.duration;
+      apply(isFinite(d)&&d>0?Math.round(d):0);
+      try{ a.removeAttribute('src'); a.load(); }catch(e){}
+    });
+    a.addEventListener('error',()=>{ try{ a.removeAttribute('src'); a.load(); }catch(e){} });
+    a.src=(typeof hsAbs==='function'?hsAbs(url):url);
+  }catch(e){}
+}
+function clipPickMeta(x){
+  return {duration:x.duration, duration_sec:x.duration_sec, secs:x.secs, kind:x.kind||'', intro_sec:x.intro_sec,
+    performer:x.performer||'', comedian:x.comedian||'', artist:x.artist||'', who:x.who||'', speaker:x.speaker||'', source:x.source||'', credit:x.credit||''};
+}
 function clipPicks(key){
   const v=state.sheet && state.sheet[key]; if(!isSection(v)) return [];
   const d=clipDate();
-  if(Array.isArray(v.clips)) return v.clips.map((x,i)=>({id:String(x.id||(d+'-'+key+'-'+i)), sec:key, slot:x.slot||'', title:x.title||'Clip', body:cleanText(x.body||''), audio:x.audio||'', ready:!!x.ready,
-    file:(String(x.audio||'').match(/([\w.-]+\.(?:mp3|m4a|wav|aac|ogg))$/i)||[])[1]||'', src:/^https?:/.test(x.audio||'') && !/\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(x.audio)?x.audio:''}));
+  if(Array.isArray(v.clips)) return v.clips.map((x,i)=>Object.assign({id:String(x.id||(d+'-'+key+'-'+i)), sec:key, slot:x.slot||'', title:x.title||'Clip', body:cleanText(x.body||''), audio:x.audio||'', ready:!!x.ready,
+    file:(String(x.audio||x.file||'').match(/([\w.-]+\.(?:mp3|m4a|wav|aac|ogg))$/i)||[])[1]||'', src:/^https?:/.test(x.audio||'') && !/\.(mp3|m4a|wav|aac|ogg)(\?|$)/i.test(x.audio)?x.audio:''}, clipPickMeta(x)));
   const raw=String(v.content||'').replace(/<audio[\s\S]*?(<\/audio>|\/?>)/gi,'');
   const out=[];
   for(const chunk of raw.split(/(?:<br\s*\/?>\s*){2,}|\n\s*\n/i)){
@@ -5444,12 +5671,13 @@ function renderClipTracker(view, opts){ opts=opts||{};
   const card=(p, used)=>{ const s=cst(p.id); const dn=audioDone(p); used=!!dn;
     const c=h('article',{className:'clc'+((s.s||s.p)?' sampled':'')+(dn?' played aired':'')+(used?' used':''), 'data-id':p.id, 'data-akey':audioKey(p), 'data-arch':isArch(p)?'1':'', 'data-saved':p.heldFrom||''});
     const tags=h('div',{className:'ctags'}, p.slot?h('span',{className:'cslot'}, p.slot):null, p.heldFrom?h('span',{className:'cheld'}, 'Saved from '+nice(p.heldFrom)):null, p.ready?h('span',{className:'cready'},'READY'):null, ...audioTagBits(p), h('span',{className:'ctk'}, airBtn('clip:'+p.id, readable(p.title), 'clips', true, p.body), holdBtn(p)));
-    const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, p.title));
+    const main=h('div',{className:'cmain'}, tags, h('div',{className:'ctitle'}, ...clipTitleParts(p)));
     if(p.body) main.append(h('div',{className:'cbody'}, p.body));
     const url=(p.heldFrom && typeof heldAudioUrl==='function' && heldAudioUrl(p)) || clipAudioUrl(p.audio);
-    if(url){ main.append(makePlayer(p.title, url, '', true, p.id)); }
+    if(url){ main.append(makePlayer(p.title, url, '', true, p.id, clipSecsOf(p))); }
     else if(p.src) main.append(h('a',{className:'csrc', href:p.src, target:'_blank', rel:'noopener'}, 'Source ↗'));
     else if(p.ready && p.file) main.append(h('div',{className:'cfile'}, '🎧 '+p.file+' · not online yet'));
+    clipFillDur(c, p, url);
     const btn=airedBox(p, on=>{ if(on){ audioUse(p); rerender(); toast('Aired: '+p.title, ()=>{ audioReset(p); rerender(); }); } else { audioReset(p); rerender(); } });
     c.append(main, btn); return c; };
   for(const g of groups){ if(!g.picks.length) continue; const gl=g.picks.filter(p=>!clipUsed(p)); const ordered=airedLast(g.picks);
@@ -5514,7 +5742,7 @@ var savedMap=lsGet('hs:saved', {}); if(!savedMap || typeof savedMap!=='object' |
 const SAVE_CATS=[['buzz','Buzz'],['news','News'],['clip','Clip/Audio'],['bit','Bit idea'],['flash','Flashback'],['other','Other']];
 const saveCatLabel=c=>(SAVE_CATS.find(x=>x[0]===c)||SAVE_CATS[5])[1];
 function savedList(){ const prof=(typeof profileId==='function'&&profileId())||'truce';
-  return Object.entries(savedMap||{}).filter(([,o])=>o&&typeof o==='object' && (!o.profile || o.profile===prof)).map(([id,o])=>({id,...o})).sort((a,b)=>String(b.at||'').localeCompare(String(a.at||''))); }
+  return Object.entries(savedMap||{}).filter(([,o])=>o&&typeof o==='object' && (o.profile||'truce')===prof).map(([id,o])=>({id,...o})).sort((a,b)=>String(b.at||'').localeCompare(String(a.at||''))); }
 function saveStore(){ lsSet('hs:saved', savedMap); }
 function extractUrl(t){ const m=String(t||'').match(/https?:\/\/[^\s<>"'”’)\]]+/i); return m?m[0].replace(/[.,;:!?]+$/,''):''; }
 function parseShare(sp){ const title=(sp.get('title')||'').trim(), text=(sp.get('text')||'').trim(); let url=(sp.get('url')||'').trim();
@@ -5525,26 +5753,36 @@ function parseShare(sp){ const title=(sp.get('title')||'').trim(), text=(sp.get(
   const host=(()=>{ try{ return new URL(url).hostname; }catch(_){ return ''; } })();
   const cat=/youtube|youtu\.be|tiktok|soundcloud|spotify|instagram\.com\/reel/i.test(host)?'clip':'buzz';
   return {title:t, url, note, cat}; }
+/* v59i: whose show a save belongs to. Share-menu saves go to the phone's owner (pinned device), never to whichever tab happened to be open. */
+function saveOwnerDefault(pre){ const r=(typeof deviceRole==='function'&&deviceRole())||''; const pers=['truce','courtney','callie'];
+  if(pre && pre.src==='share' && pers.includes(r)) return r;
+  return (typeof profileId==='function'&&profileId())||'truce'; }
+function saveOwnerName(id){ return (typeof showTabLabel==='function'?showTabLabel(id):id)+(/s$/i.test(id)?"'":"'s")+' show'; }
 function openSave(pre, id){ const b=$('#saveBody'); b.innerHTML=''; const o=id?savedMap[id]:null; const d=Object.assign({title:'',url:'',note:'',cat:'buzz'}, o||pre||{});
+  let owner=o?(o.profile||'truce'):saveOwnerDefault(pre);   // editing never moves an item to another show unless picked
   $('#saveTitle').textContent=id?'✏️ Edit saved item':'📥 Save for show';
   const ti=h('input',{type:'text', value:d.title, placeholder:'Title', 'aria-label':'Title'});
   const ur=h('input',{type:'url', value:d.url, placeholder:'https://…', 'aria-label':'Link', autocapitalize:'off', spellcheck:false});
   const nt=h('textarea',{rows:3, placeholder:'Note (optional): why it fits the show', 'aria-label':'Note'}); nt.value=d.note||'';
   let cat=d.cat; const cats=h('div',{className:'svcats', role:'radiogroup', 'aria-label':'Category'});
   const drawCats=()=>{ cats.innerHTML=''; SAVE_CATS.forEach(([k,l])=>{ const c=h('button',{type:'button', className:'svcat'+(k===cat?' on':''), role:'radio', 'aria-checked':String(k===cat)}, l); c.onclick=()=>{ tapHaptic(); cat=k; drawCats(); }; cats.append(c); }); }; drawCats();
+  const owns=h('div',{className:'svcats svowner', role:'radiogroup', 'aria-label':'Whose show'});
+  const drawOwns=()=>{ owns.innerHTML=''; [['truce','AJ'],['courtney','Courtney'],['callie','Cali']].forEach(([k,l])=>{ const c=h('button',{type:'button', className:'svcat'+(k===owner?' on':''), role:'radio', 'aria-checked':String(k===owner)}, l); c.dataset.owner=k; c.onclick=()=>{ tapHaptic(); owner=k; drawOwns(); }; owns.append(c); }); }; drawOwns();
   const save=h('button',{type:'button', className:'svsave'}, id?'💾 Save changes':'📥 Save');
   save.onclick=()=>{ const title=ti.value.trim(), url=ur.value.trim(); if(!title && !url){ ti.focus(); return; }
     const now=new Date().toISOString(); const k=id||('s'+Date.now().toString(36)+Math.random().toString(36).slice(2,6));
-    savedMap[k]=Object.assign({}, savedMap[k]||{at:now, src:pre&&pre.src||'manual'}, {title:title||url, url, note:nt.value.trim(), cat, upd:now, profile:(typeof profileId==='function'&&profileId())||'truce'}); if(!savedMap[k].used) savedMap[k].used=false;
-    saveStore(); $('#saveModal').classList.remove('on'); toast(id?'Saved changes':'📥 Saved for show'); if(state.tab==='saved') rerender(); else renderTabs(); };
-  b.append(h('label',{},'Title'), ti, h('label',{},'Link'), ur, h('label',{},'Note'), nt, h('label',{},'Category'), cats,
+    savedMap[k]=Object.assign({}, savedMap[k]||{at:now, src:pre&&pre.src||'manual'}, {title:title||url, url, note:nt.value.trim(), cat, upd:now, profile:owner}); if(!savedMap[k].used) savedMap[k].used=false;
+    if(!id && !savedMap[k].by) savedMap[k].by=(typeof deviceRole==='function'&&deviceRole())||'unpinned';
+    const here=(typeof profileId==='function'&&profileId())||'truce';
+    saveStore(); $('#saveModal').classList.remove('on'); toast(id?'Saved changes':(owner===here?'📥 Saved for show':'📥 Saved to '+saveOwnerName(owner))); if(state.tab==='saved') rerender(); else renderTabs(); };
+  b.append(h('label',{},'Title'), ti, h('label',{},'Link'), ur, h('label',{},'Note'), nt, h('label',{},'Category'), cats, h('label',{},'For whose show'), owns,
     h('div',{className:'rowb'}, save, h('button',{type:'button', on:{click:()=>$('#saveModal').classList.remove('on')}}, 'Cancel')));
   $('#saveModal').classList.add('on'); }
 function savedDel(id){ const o=savedMap[id]; if(!o) return; delete savedMap[id]; saveStore(); renderTabs(); rerender();
   toast('Deleted “'+String(o.title||'').slice(0,40)+'”', ()=>{ savedMap[id]=o; saveStore(); rerender(); }); }
 function savedUsed(id){ const o=savedMap[id]; if(!o) return; o.used=!o.used; o.usedAt=o.used?new Date().toISOString():null; o.upd=new Date().toISOString(); saveStore(); renderTabs(); rerender(); }
 function renderSaved(view){
-  view.append(mk('div',{className:'catline'},'From your Share menu'), mk('h2',{},'📥 Saved for Show'));
+  view.append(mk('div',{className:'catline'},'From your Share menu · '+saveOwnerName((typeof profileId==='function'&&profileId())||'truce')), mk('h2',{},'📥 Saved for Show'));
   const add=mk('button',{type:'button', className:'svadd'},'＋ Add a link or idea'); add.onclick=()=>{ tapHaptic(); openSave({cat:'bit'}); }; view.append(add);
   const L=savedList(); if(!L.length){ view.append(mk('p',{className:'hint'},'Nothing saved yet. In YouTube, TikTok, Facebook or Chrome tap Share → Hot Sheet, and it lands here.')); return; }
   const fmtD=iso=>{ try{ return new Date(iso).toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit', timeZone:TZ}); }catch(_){ return ''; } };
@@ -5839,7 +6077,7 @@ function storyClips(){ const d=clipDate(); if(storyClipCache.sheet===state.sheet
     const lines=String(p.body||'').split('\n'); const keep=lines.filter(l=>/^\s*(•|🎙)/.test(l)).join(' ');
     const title=String(p.title||'').replace(/\(READY\)/i,'').trim();
     const urls=(String(raw.source||raw.story||'')+' '+String(p.body||'')).match(/https?:\/\/[^\s<"')]+/g)||[];
-    list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:storyTok(title), tk:storyTok(title+' '+keep)}); }
+    list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:storyTok(title), tk:storyTok(title+' '+keep), secs:clipSecsOf(p), kind:p.kind, performer:clipPerformerOf(p)}); }
   storyClipCache={sheet:state.sheet, idx:sheetIndex, date:d, list}; return list; }
 function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
   const head=String(blk[0]).replace(/^\s*\d+\)\s*/,''); const body=blk.filter(l=>!/^\s*➜/.test(l)).join(' ');
@@ -5856,7 +6094,8 @@ function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
 let inlineCur=null;
 function inlineClipBtn(c){
   const dn=audioDone(c);
-  const b=h('button',{className:'sclip'+(dn?' aired':''), type:'button', title:'Play clip: '+c.title, 'aria-label':'Play clip: '+c.title}, h('span',{className:'sci','aria-hidden':'true'},'▶'), h('span',{className:'scl'}, 'Clip'));
+  const sec=c.secs||clipSecsOf(c); const lab='Clip'+(sec?' · '+(typeof fmt==='function'?fmt(sec):sec+'s'):'');
+  const b=h('button',{className:'sclip'+(dn?' aired':''), type:'button', title:'Play clip: '+c.title, 'aria-label':'Play clip: '+c.title}, h('span',{className:'sci','aria-hidden':'true'},'▶'), h('span',{className:'scl'}, lab));
   b.dataset.clip=c.id; b.dataset.hsAudio=c.url; if(audioSampled(c)) b.classList.add('played');
   b.onclick=e=>{ e.stopPropagation(); tapHaptic(); hsToggle(c.url, {title:c.title, id:c.id}); };
   const box=airedBox(c, on=>{ if(on){ audioUse(c); toast('Aired: '+c.title, ()=>{ audioReset(c); rerender(); }); } else audioReset(c); rerender(); });
@@ -7172,7 +7411,7 @@ function r1CourtBattle(view){ const c=r1Court(); const list=c&&Array.isArray(c.s
 let r1PadPage=null;
 function r1ClipKind(c){ if(c.kind) return c.kind; const t=((c.slot||'')+' '+(c.title||'')).toUpperCase();
   return /SUPERCUT|OPENER/.test(t)?'opener':/LATE-?\s?NIGHT|KIMMEL|FALLON/.test(t)?'late-night':/STAND-?\s?UP|COMEDY|DRY BAR/.test(t)?'comedy':/NEWS|ANCHOR|CNN|ABC|FOX/.test(t)?'news':'trending'; }
-function r1ClipDur(c){ if(c.duration) return c.duration; const m=String(c.title||'').match(/\((?:TIGHT\s+)?(\d+:\d{2})\)/i); return m?m[1]:''; }
+function r1ClipDur(c){ const s=typeof clipSecsOf==='function'?clipSecsOf(c):0; if(s && typeof fmt==='function') return fmt(s); if(c.duration && !/^\d+(\.\d+)?$/.test(String(c.duration))) return c.duration; const m=String(c.title||'').match(/\((?:TIGHT\s+)?(\d+:\d{2})\)/i); return m?m[1]:''; }
 function r1ClipPad(view){
   const page=r1PadPage||viewProfile(); const wrap=h('div',{className:'r1pad'});
   const tabs=h('div',{className:'r1padtabs'}); SHOW_TABS.forEach(t=>tabs.append(h('button',{type:'button', className:'r1ptab'+(t.id===page?' on':''), on:{click:()=>{ r1PadPage=t.id; rerender(); }}}, t.label)));
@@ -7182,10 +7421,12 @@ function r1ClipPad(view){
   const grid=h('div',{className:'r1grid'});
   if(!list.length) grid.append(h('div',{className:'hint'}, 'No clips on this page today.'));
   airedLast(list, c=>({id:c.id, file:c.file, audio:c.audio})).forEach(c=>{ const id=String(c.id||c.file||''); const kind=r1ClipKind(c); const dur=r1ClipDur(c); const used=c.id?clipUsed({id:c.id, file:c.file, audio:c.audio}):false;
+    const who=typeof clipPerformerOf==='function'?clipPerformerOf(c):''; const comedy=typeof clipIsComedy==='function'?clipIsComedy(c):kind==='comedy';
     grid.append(h('button',{type:'button', className:'r1padbtn k-'+kind+(used?' used':''), title:String(c.title||''), on:{click:()=>{ tapHaptic();
       const el=document.querySelector('.clc[data-id="'+CSS.escape(id)+'"]'); const pp=el&&el.querySelector('.pp');
       if(pp){ pp.click(); } else { const url=clipAudioUrl(c.audio||c.file); if(url){ const a=new Audio(url); a.dataset.clip=id; a.play().catch(()=>{}); } else toast('No audio for this clip'); } }}},
       h('span',{className:'r1pk'}, kind.replace('-',' ')), h('span',{className:'r1pt'}, String(c.title||c.file||'Clip').replace(/\s*\((?:TIGHT\s+)?\d+:\d{2}\)\s*$/i,'').slice(0,60)),
+      who?h('span',{className:'r1pwho'}, who):(comedy?h('span',{className:'r1pwho missing'}, 'Comedian: ?'):null),
       h('span',{className:'r1pd'}, (dur?'⏱ '+dur:'')+(c.intro_sec?' · talk-up '+r1Mmss(c.intro_sec):'')+(used?' · ✓ aired':'')))); });
   wrap.append(grid); view.append(wrap); }
 /* ---- Download today's audio: published ZIP if the publish step built one, else built here (stored ZIP) ---- */
@@ -7387,7 +7628,7 @@ function b59BrkPush(o){ const k=newsKey(o.title||''); if(!k) return false; b59Br
   b59Brk.items=b59Brk.items||[]; b59Brk.items.push({k, title:o.title, link:o.link||'', src:o.src||o.source||'', at:o.at||Date.now(), why:o.why||''}); b59Brk.items=b59Brk.items.slice(-10); b59BrkSave(); b59BrkPaint(); return true; }
 function b59BrkPaint(){ let el=document.getElementById('b59Brk'); const L=(b59Brk&&b59Brk.items)||[]; if(!L.length){ if(el) el.remove(); document.documentElement.classList.remove('b59brk'); return; }
   if(!el){ el=h('div',{id:'b59Brk', role:'alert'}); document.body.append(el); } el.innerHTML=''; const it=L[L.length-1];
-  el.append(h('b',{}, '🚨 BREAKING'), h('a',{href:it.link||'#', target:'_blank', rel:'noopener'}, it.title), h('small',{}, (it.src||'')+(L.length>1?' · +'+(L.length-1)+' more':'')),
+  el.append(h('b',{}, '🚨 BREAKING'), h('a',{href:it.link||'#', target:'_blank', rel:'noopener'}, it.title), h('small',{}, (it.src||''), it.at?' · ':'', it.at?hsDateChip(it.at):null, (L.length>1?' · +'+(L.length-1)+' more':'')),
     h('button',{type:'button', 'aria-label':'Dismiss breaking alert', on:{click:()=>{ b59Brk.items.pop(); b59BrkSave(); b59BrkPaint(); }}}, '✕ Dismiss'), L.length>1?h('button',{type:'button', 'aria-label':'Dismiss all breaking alerts', on:{click:()=>{ b59Brk.items=[]; b59BrkSave(); b59BrkPaint(); }}}, 'All'):null);
   document.documentElement.classList.add('b59brk'); }
 async function b59BrkPoll(force){ if(!isHttp) return; const p=etParts(); if(!force && !(isShowDay(p) && p.hm>='06:00' && p.hm<='19:00')) return; if(!force && document.visibilityState!=='visible') return;
@@ -7486,7 +7727,7 @@ function r1Boot(){
 try{ r1Boot(); }catch(e){ console.warn('round1 boot', e); }
 try{ hsJoinFirstRun(); }catch(e){ console.warn('join first run', e); }   // after every store (stOv etc.) exists
 try{ b59ClipMigrate(); }catch(e){ console.warn('clip migrate', e); }
-try{ b59LoadCuration(); fetchScoresCtx(); b59LoadEvents(); b59LoadConcerts(); setInterval(b59LoadConcerts, 30*60000); }catch(e){ console.warn('b59 boot', e); }
+try{ b59LoadCuration(); fetchScoresCtx(); b59LoadEvents(); b59LoadConcerts(); setInterval(b59LoadConcerts, 30*60000); hsLoadTours(); setInterval(hsLoadTours, 60*60000); }catch(e){ console.warn('b59 boot', e); }
 /* ---- compact clock row (tomorrow preview + viewing-another-day chip live beside the date/now chips) ---- */
 function b59CompactRow(){ const row=$('#daysRow'); if(!row) return; const p=etParts();
   let t=$('#tmrwBtn'); if(!t){ t=h('button',{type:'button', id:'tmrwBtn', 'aria-label':'Tomorrow preview', on:{click:()=>{ try{ r1OpenPreview(); }catch(e){} }}}, '🌙 Tomorrow'); const dw=$('#dowLabel'); if(dw&&dw.nextSibling) row.insertBefore(t,dw.nextSibling); else row.append(t); }

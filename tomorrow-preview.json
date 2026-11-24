@@ -1,7 +1,7 @@
 {
  "version": 1,
- "for": "2026-11-24",
- "built_from": "2026-11-23",
+ "for": "2026-11-25",
+ "built_from": "2026-11-24",
  "note": "Built from schedules and data files only; no research.",
  "items": [
   {
@@ -57,7 +57,7 @@
    "kind": "clock",
    "time": "08:30",
    "host": "truce",
-   "title": "Guilty Pleasure",
+   "title": "Old vs New",
    "src": "station.json"
   },
   {
@@ -172,6 +172,13 @@
    "src": "sponsors.json"
   },
   {
+   "kind": "sponsor",
+   "host": "courtney",
+   "title": "🐾 Paws'd in Time read",
+   "note": "Cherryland Humane Society Pet of the Week, presented by Paws'd in Time. From the website, confirm with the hourly log.",
+   "src": "sponsors.json"
+  },
+  {
    "kind": "segment",
    "time": "10:20 AM",
    "host": "courtney",
@@ -203,6 +210,14 @@
   },
   {
    "kind": "segment",
+   "time": "Wednesday",
+   "host": "courtney",
+   "title": "Pet of the Week (Cherryland Humane Society)",
+   "note": "Paws'd in Time",
+   "src": "schedules.json"
+  },
+  {
+   "kind": "segment",
    "time": "2:20 PM",
    "host": "callie",
    "title": "93 Minutes commercial-free",
@@ -218,34 +233,39 @@
    "src": "schedules.json"
   },
   {
-   "kind": "birthday",
-   "title": "Jeremy Swayman, American ice hockey player (1998)",
-   "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Jeremy_Swayman"
+   "kind": "day",
+   "title": "International Day for the Elimination of Violence against Women",
+   "src": "days.json"
   },
   {
    "kind": "birthday",
-   "title": "Ivi Adamou, Cypriot-Greek singer-songwriter (1993)",
+   "title": "Talen Horton-Tucker, American basketball player (2000)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Ivi_Adamou"
+   "src": "https://en.wikipedia.org/wiki/Talen_Horton-Tucker"
   },
   {
    "kind": "birthday",
-   "title": "Sergei Kulbach, Ukrainian figure skater (died 2023) (1992)",
+   "title": "Kaja Juvan, Slovenian tennis player (2000)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Sergei_Kulbach"
+   "src": "https://en.wikipedia.org/wiki/Kaja_Juvan"
+  },
+  {
+   "kind": "birthday",
+   "title": "Dennis Smith Jr., American basketball player (1997)",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Dennis_Smith_Jr."
   },
   {
    "kind": "thisday",
-   "title": "2023: Hibiscus Rising (pictured), a sculpture commemorating the life of David Oluwale, was unveiled in Leeds.",
+   "title": "2013: English-Irish boy band One Direction released their third studio album Midnight Memories which debuted at number one on the Billboard 200 and became the best-selling album of 2013.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Hibiscus_Rising"
+   "src": "https://en.wikipedia.org/wiki/One_Direction"
   },
   {
    "kind": "thisday",
-   "title": "2009: The Avdhela Project, an Aromanian digital library and cultural initiative, was launched in Bucharest, Romania.",
+   "title": "1984: Band Aid, a supergroup consisting of more than 30 leading British and Irish pop musicians, recorded the song \"Do They Know It's Christmas?\" to raise money for famine relief in Ethiopia.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Avdhela_Project"
+   "src": "https://en.wikipedia.org/wiki/Do_They_Know_It's_Christmas%3F"
   },
   {
    "kind": "flashback",

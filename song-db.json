@@ -1,7 +1,7 @@
 {
 "version": 1,
 "note": "Built by next/tools/build_song_db.py from songs.json + past sheets (+ app queue). background is filled by Hot Sheet's 4 AM pass for songs with needs_background.",
-"count": 132,
+"count": 135,
 "songs": [
 {
 "id": "california-love-2pac-ft-dr-dre",
@@ -864,6 +864,17 @@
 "pool": "mood"
 },
 {
+"id": "home-michael-bubl",
+"artist": "MICHAEL BUBLÉ",
+"title": "HOME",
+"year": 2005,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-24"
+]
+},
+{
 "id": "billie-jean-michael-jackson",
 "artist": "Michael Jackson",
 "title": "Billie Jean",
@@ -927,6 +938,17 @@
 "background": "",
 "used": [
 "2026-11-20"
+]
+},
+{
+"id": "a-thousand-miles-mood-boost-vanessa-carlton",
+"artist": "MOOD BOOST: VANESSA CARLTON",
+"title": "A THOUSAND MILES",
+"year": 2002,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-24"
 ]
 },
 {
@@ -1462,6 +1484,17 @@
 "used": [],
 "source": "https://en.wikipedia.org/wiki/I_Wanna_Dance_with_Somebody_(Who_Loves_Me)",
 "pool": "mood"
+},
+{
+"id": "hold-on-wilson-phillips",
+"artist": "Wilson Phillips",
+"title": "Hold On",
+"year": 1990,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Producer Glen Ballard brought the group a track that still needed words, and Chynna Phillips and Carnie Wilson wrote it with him. It spent just one week at No. 1, yet Billboard ranked it the top song of all of 1990.",
+"used": [
+"2026-11-24"
+]
 }
 ]
 }
