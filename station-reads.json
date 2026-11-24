@@ -16,6 +16,17 @@
    "freq": "shift"
   },
   {
+   "id": "st-dance-party",
+   "name": "90s, 2K & Today Dance Party",
+   "short": "Dance Party",
+   "icon": "\ud83c\udf89",
+   "kill": "TFN",
+   "text": "This Saturday, downtown Traverse City turns into one big dance floor! Z93 is teaming up with North Bar and The Pub, and one cover gets you into both. At The Pub, DJ Vi is throwing a '90s Dance Party, so bring your best Macarena. Up at North Bar, I'm spinning Y2K Till Today, everything from the 2000s right up to now. Two great bars, one price, and you can bounce back and forth all night. Grab your crew, come dance, and say hi. Saturday night, downtown TC, presented by Z93!",
+   "sourceNote": "Official Saturday read from Truce (promos/2026-11-28-downtown-dance-party.md). No end date \u2014 stays as a once-per-shift read until taken down. The Promo Read card with liners stays on the daily sheet.",
+   "active": true,
+   "freq": "shift"
+  },
+  {
    "id": "st-kurtz-car-stereo",
    "name": "Kurtz Car Stereo",
    "short": "Kurtz",

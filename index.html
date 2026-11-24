@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59i-pershow">
+<meta name="hs-build" content="v59j-danceread">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -6102,6 +6102,7 @@ function inlineClipBtn(c){
   const w=h('span',{className:'sclipw'+(dn?' aired':''), 'data-akey':audioKey(c), 'data-id':c.id}, b, box, ...audioTagBits(c)); hsPaintAudio(); return w; }
 
 /* ================= station read sheet: once-per-shift reads + liners (station-reads.json + local overlay, synced) ================= */
+/* v59j: 90s, 2K & Today Dance Party is a once-per-shift station read (st-dance-party), same strip and checkoff as Teacher of the Month, every host. Promo Read card on the daily sheet is unchanged. */
 var stDefaults=lsGet('hs:stDefaults', {sheetDate:'', reads:[], liners:[]});
 var stOv=lsGet('hs:stLocal', {reads:{}, liners:{}, settings:{}});
 var linerUsed=lsGet('hs:linerUsed', {});
