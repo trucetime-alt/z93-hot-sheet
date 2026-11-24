@@ -1,20 +1,72 @@
 {
  "version": 1,
- "updated": "2026-11-24T05:01:27-05:00",
- "updatedMs": 1795514487280,
+ "updated": "2026-11-24T08:59:02-05:00",
+ "updatedMs": 1795528742614,
  "items": [
   {
-   "id": "nat-f3802ee42c",
-   "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+   "id": "loc-f4d9f805ca",
+   "title": "Traverse City Fire Department shares Thanksgiving safety tips — What NOT to do",
+   "link": "https://upnorthlive.com/news/local/traverse-city-fire-department-shares-thanksgiving-safety-tips",
+   "source": "UpNorthLive",
+   "at": "2026-11-24T08:01:21-05:00",
+   "atMs": 1795525281000,
+   "pub": "2026-11-24",
+   "pubLabel": "Nov 24",
+   "score": 508.0,
+   "why": "trending · 3 outlets",
+   "scope": "local"
+  },
+  {
+   "id": "nat-223dab3d16",
+   "title": "Trump faces backlash over role in Nvidia CEO’s reinstatement",
    "link": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
    "source": "NPR",
-   "at": "2026-11-24T04:42:54-05:00",
-   "atMs": 1795513374000,
+   "at": "2026-11-24T07:53:41-05:00",
+   "atMs": 1795524821000,
    "pub": "2026-11-24",
    "pubLabel": "Nov 24",
    "score": 104.0,
-   "why": "5 outlets in 0h",
+   "why": "5 outlets in 1h",
    "scope": "national"
+  },
+  {
+   "id": "nat-e0b3d7781b",
+   "title": "Oregon Delegation Pushes for Multimillion-Dollar Military Fuel Facility as Kingsley Field Prepares for F-35 Expansion",
+   "link": "https://news.google.com/articles/CBMi1AFBVV95cUxOV0RhM0dsNmJpdjkyREpPbjFqdWM2Ml8ya1h0aXFkVVpKZldfNFVLMTNQeTV6MHZVNFA4LW5TNHJoQTMzQktNX3B0MnV0SUhTUWJ4VEV3My05cGlrNmhYa1NGaGVZejY4b3ZlaDBWQXhOY0E2UGFhLW95R1ZONzZXM3J5QlZhbnZMdmktX2JLR0IyNUY4Z2ctU3B3bU8wQkwxSmdpMlBHS080T0pkVmxzc2xTUGJwaXU5QjE3UjlBV1VPeEdGN1h2d3VZMWRwTTd2SlAyLQ?oc=5",
+   "source": "Merkley (.gov)",
+   "at": "2026-11-24T08:03:06-05:00",
+   "atMs": 1795525386000,
+   "pub": "2026-11-24",
+   "pubLabel": "Nov 24",
+   "score": 90.0,
+   "why": "3 outlets in 1h",
+   "scope": "national"
+  },
+  {
+   "id": "nat-74da0b6b10",
+   "title": "Hot Wheels adds Cadillac and Audi to its 2026 F1 grid",
+   "link": "https://news.google.com/articles/CBMizwFBVV95cUxPUHdVejYxbXRPelo1YTRzcXJ6MVB4bDF2MlhnX21SR2VXd29RX09PZUlUMWxBSEFBei0tYmRGTDg0cnhjTjRrYnJzQWdCNTBRMS1zTUJjcllBbWc3ZDRPRk5UNlVBOF9tYnVvUHktT1UtNmRObTJ3c2p0TndRTnJaY2V5b2ZrcWFPTTc2OFY3TGtNcXdtWmJ2dGlkVFYyVThuV3dUTHFiaTlMR1RHQzRxZ21IS1FuSUlJaHN4b3h0MS1YTWFsVTY4S01Ja3BoWm8?oc=5",
+   "source": "Mattel Corporate",
+   "at": "2026-11-24T06:08:51-05:00",
+   "atMs": 1795518531000,
+   "pub": "2026-11-24",
+   "pubLabel": "Nov 24",
+   "score": 78.0,
+   "why": "3 outlets in 3h",
+   "scope": "national"
+  },
+  {
+   "id": "loc-9d8270b03b",
+   "title": "Camp Grayling hosted wildfire training for Michigan firefighters",
+   "link": "https://upnorthlive.com/news/local/camp-grayling-hosts-multiagency-wildfire-training-in-crawford-county",
+   "source": "UpNorthLive",
+   "at": "2026-11-24T08:00:00-05:00",
+   "atMs": 1795525200000,
+   "pub": "2026-11-24",
+   "pubLabel": "Nov 24",
+   "score": 68.0,
+   "why": "breaking keyword · 2 outlets",
+   "scope": "local"
   }
  ]
 }

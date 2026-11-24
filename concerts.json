@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-24T06:39:37-05:00",
+ "updated": "2026-11-24T09:00:49-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 301,
+ "artistsWatched": 306,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -47,8 +47,7 @@
     "count": 0
    },
    "Little River Casino": {
-    "status": "failed",
-    "error": "URLError",
+    "status": "no-events-in-static-page",
     "count": 0
    },
    "Soaring Eagle": {
@@ -64,8 +63,8 @@
     "count": 0
    },
    "313 Presents (Fox, Saint Andrew's, LCA)": {
-    "status": "ok",
-    "count": 7
+    "status": "no-events-in-static-page",
+    "count": 0
    },
    "Ford Field": {
     "status": "no-events-in-static-page",
@@ -74,34 +73,14 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 139
+   "count": 91
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 137
+   "count": 88
   }
  },
  "shows": [
-  {
-   "id": "cw-dr-seuss-how-the-grinch-stole-christma-2026-12-01-fox-theatre",
-   "artist": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "title": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "matched": [],
-   "inRotation": false,
-   "venue": "Fox Theatre",
-   "city": "Detroit",
-   "region": "Detroit",
-   "date": "2026-12-01",
-   "time": "19:30",
-   "daysOut": 7,
-   "window": "soon",
-   "onSale": "",
-   "presale": [],
-   "url": "https://www.313presents.com/events/detail/how-the-grinch-stole-christmas",
-   "source": "venue-jsonld",
-   "priority": 8.0,
-   "why": "big local venue"
-  },
   {
    "id": "cw-jazz-combo-holidays-showcase-2026-12-06-interlochen",
    "artist": "Jazz Combo Holidays Showcase",
@@ -123,20 +102,6 @@
    "why": "big local venue"
   }
  ],
- "announcements": [
-  {
-   "title": "Paris Jackson, daughter of Michael Jackson, bringing tour to Detroit - AOL.com",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUnNuVF9WdmFaOWV5M05TUVM2R25YYVRvRGJ3MU5xSTJLMHY0UHY2WVluRk9obW9qZFl0TjRmbE5ZRFlMak1wRVRwWEZwZzgtSnlNNGpVWmpBUjI1algwQkUxankzZzFYVkFNa25lTU9idWJwN1gzZmg3M2tkWlJocTM3d2x6NjlZT0E?oc=5",
-   "at": "2026-11-17T15:20:27+00:00",
-   "src": "AOL.com",
-   "artists": [
-    "Michael Jackson"
-   ],
-   "priority": 26.0,
-   "ageDays": 6.8,
-   "pub": "2026-11-17",
-   "old": true
-  }
- ],
- "tookSec": 34.4
+ "announcements": [],
+ "tookSec": 29.4
 }
