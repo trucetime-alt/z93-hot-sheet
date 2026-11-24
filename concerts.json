@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-24T09:00:49-05:00",
+ "updated": "2026-11-24T13:03:35-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 306,
+ "artistsWatched": 312,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -73,11 +73,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 91
+   "count": 128
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 88
+   "count": 125
   }
  },
  "shows": [
@@ -102,6 +102,21 @@
    "why": "big local venue"
   }
  ],
- "announcements": [],
- "tookSec": 29.4
+ "announcements": [
+  {
+   "title": "Three weeks after Katseye abruptly canceled its sold-out Little Caesars Arena show minutes before it was scheduled to start, Detroit fans have a new date with the L.A. pop group. 📸 by Dimitrios Kambouris, Getty Images for Victoria's Secret - Facebook",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUVc4andDWnJTV2dEbEVYZ3lMTlNvTzZHd1VrMUhPUFJvTlQ1NDEtTHRNUm8xeFZENFd6dS1yYmJXTllzc0ZlY3FFM0hnbTd6aEs2Y1VJdHZzUlN6SVROVmRkOWx6NlA2R2tnZW1OTEFFN1ZtRXJRcFpIQk9WNXJDakxmQW1heXVOZ0VJWE5wa2dUZ1l3UW5XX0xNS2NzRi1CYURkdkNnMkJFWTdtNEZCeDhRZ0JBZDM0LTJQVVZ5RFdiaEFndDlIeERUNFAxcWtwWnlhQ05reFZyZzBtMFVz?oc=5",
+   "at": "2026-11-24T17:10:28+00:00",
+   "src": "Facebook",
+   "artists": [
+    "KATSEYE"
+   ],
+   "priority": 60,
+   "ageDays": 0.0,
+   "pub": "2026-11-24",
+   "old": false,
+   "alsoCovered": 1
+  }
+ ],
+ "tookSec": 28.7
 }
