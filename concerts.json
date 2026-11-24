@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-24T04:37:13-05:00",
+ "updated": "2026-11-24T05:03:11-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 294,
+ "artistsWatched": 301,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -73,11 +73,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 136
+   "count": 143
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 133
+   "count": 142
   }
  },
  "shows": [
@@ -103,5 +103,5 @@
   }
  ],
  "announcements": [],
- "tookSec": 28.4
+ "tookSec": 27.3
 }

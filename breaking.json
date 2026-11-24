@@ -1,6 +1,20 @@
 {
  "version": 1,
- "updated": "2026-11-24T04:24:05-05:00",
- "updatedMs": 1795512245716,
- "items": []
+ "updated": "2026-11-24T05:01:27-05:00",
+ "updatedMs": 1795514487280,
+ "items": [
+  {
+   "id": "nat-f3802ee42c",
+   "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+   "link": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
+   "source": "NPR",
+   "at": "2026-11-24T04:42:54-05:00",
+   "atMs": 1795513374000,
+   "pub": "2026-11-24",
+   "pubLabel": "Nov 24",
+   "score": 104.0,
+   "why": "5 outlets in 0h",
+   "scope": "national"
+  }
+ ]
 }
