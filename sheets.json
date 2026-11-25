@@ -152,6 +152,7 @@
    "br": false,
    "audio": true,
    "files": [
+    "c00-opener-supercut-v2.mp3",
     "c00-opener-supercut.mp3",
     "c01-fallon-tim-allen-toy-story-movie.mp3",
     "c02-fallon-martin-short-canadian-thanksgiving.mp3",
@@ -161,6 +162,7 @@
     "c06-abc-wu-tang-lions-halftime.mp3",
     "c07-today-national-dog-show-backstage.mp3",
     "c08-upnorthlive-michigan-gas-spike.mp3",
+    "c09-cbs-macys-100th-inflatables.mp3",
     "tg00-opener-supercut.mp3",
     "tg01-fallon-mountain-dew.mp3",
     "tg02-meyers-ya-brined-pants.mp3",
@@ -175,10 +177,10 @@
   }
  ],
  "clipFirst": {
-  "file:speed-soty.mp3": "2026-11-13",
-  "file:doberman-swns.mp3": "2026-11-13",
   "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:speed-english.mp3": "2026-11-13",
+  "file:doberman-swns.mp3": "2026-11-13",
+  "file:speed-soty.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
   "id:2026-11-16-c01": "2026-11-16",
   "file:c02-snl-thanksgiving-song-v2.mp3": "2026-11-16",
@@ -330,6 +332,8 @@
   "id:2026-11-25-c07": "2026-11-25",
   "file:c08-upnorthlive-michigan-gas-spike.mp3": "2026-11-25",
   "id:2026-11-25-c08": "2026-11-25",
+  "file:c09-cbs-macys-100th-inflatables.mp3": "2026-11-25",
+  "id:2026-11-25-c09": "2026-11-25",
   "file:tg01-fallon-mountain-dew.mp3": "2026-11-25",
   "id:2026-11-25-tg01-fallon-mountain-dew": "2026-11-25",
   "file:tg02-meyers-ya-brined-pants.mp3": "2026-11-25",

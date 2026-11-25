@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-25T05:03:06-05:00",
+ "updated": "2026-11-25T05:43:43-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
  "artistsWatched": 318,
  "sources": {
@@ -73,11 +73,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 110
+   "count": 148
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 107
+   "count": 145
   }
  },
  "shows": [
@@ -112,11 +112,11 @@
     "KATSEYE"
    ],
    "priority": 60,
-   "ageDays": 0.3,
+   "ageDays": 0.4,
    "pub": "2026-11-24",
    "old": false,
    "alsoCovered": 2
   }
  ],
- "tookSec": 33.0
+ "tookSec": 28.3
 }
