@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-25T04:30:27-05:00",
+ "updated": "2026-11-25T05:03:06-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 316,
+ "artistsWatched": 318,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -63,8 +63,8 @@
     "count": 0
    },
    "313 Presents (Fox, Saint Andrew's, LCA)": {
-    "status": "ok",
-    "count": 7
+    "status": "no-events-in-static-page",
+    "count": 0
    },
    "Ford Field": {
     "status": "no-events-in-static-page",
@@ -73,34 +73,14 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 125
+   "count": 110
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 122
+   "count": 107
   }
  },
  "shows": [
-  {
-   "id": "cw-dr-seuss-how-the-grinch-stole-christma-2026-12-01-fox-theatre",
-   "artist": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "title": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
-   "matched": [],
-   "inRotation": false,
-   "venue": "Fox Theatre",
-   "city": "Detroit",
-   "region": "Detroit",
-   "date": "2026-12-01",
-   "time": "19:30",
-   "daysOut": 6,
-   "window": "soon",
-   "onSale": "",
-   "presale": [],
-   "url": "https://www.313presents.com/events/detail/how-the-grinch-stole-christmas",
-   "source": "venue-jsonld",
-   "priority": 8.0,
-   "why": "big local venue"
-  },
   {
    "id": "cw-jazz-combo-holidays-showcase-2026-12-06-interlochen",
    "artist": "Jazz Combo Holidays Showcase",
@@ -138,5 +118,5 @@
    "alsoCovered": 2
   }
  ],
- "tookSec": 31.0
+ "tookSec": 33.0
 }

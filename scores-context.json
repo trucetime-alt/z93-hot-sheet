@@ -1,39 +1,39 @@
 {
  "version": 1,
- "updated": "2026-11-24T13:01:40-05:00",
- "updatedMs": 1795543300358,
+ "updated": "2026-11-25T05:00:45-05:00",
+ "updatedMs": 1795600845780,
  "games": [
   {
-   "id": "401873078",
-   "league": "nfl",
-   "sport": "football",
-   "atMs": 1795482900000,
+   "id": "401909314",
+   "league": "nba",
+   "sport": "basketball",
+   "atMs": 1795564800000,
    "state": "post",
    "detail": "Final",
    "home": {
-    "id": "28",
-    "abbr": "WSH",
-    "name": "Commanders",
-    "score": "22",
-    "winner": true,
-    "rank": null,
-    "record": "4-5-1"
-   },
-   "away": {
-    "id": "4",
-    "abbr": "CIN",
-    "name": "Bengals",
-    "score": "20",
+    "id": "19",
+    "abbr": "ORL",
+    "name": "Magic",
+    "score": "86",
     "winner": false,
     "rank": null,
-    "record": "7-3"
+    "record": "7-10"
    },
-   "detroit": false,
+   "away": {
+    "id": "8",
+    "abbr": "DET",
+    "name": "Pistons",
+    "score": "104",
+    "winner": true,
+    "rank": null,
+    "record": "11-6"
+   },
+   "detroit": true,
    "postseason": false,
-   "note": "",
-   "link": "https://www.espn.com/nfl/game/_/gameId/401873078/bengals-commanders",
-   "weight": 15,
-   "line": "Jayden Daniels rallies Commanders in final seconds to set up winning kick in 22-20 win over Bengals"
+   "note": "NBA Cup - Group Play",
+   "link": "https://www.espn.com/nba/game/_/gameId/401909314/pistons-magic",
+   "weight": 40,
+   "line": "Without Cade Cunningham, Pistons get 21 from Isaiah Joe to hand Magic their first NBA Cup loss"
   }
  ],
  "local": [
