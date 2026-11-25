@@ -1,15 +1,28 @@
 {
  "version": 1,
- "updated": "2026-11-25T05:00:45-05:00",
- "updatedMs": 1795600845780,
+ "updated": "2026-11-25T08:55:22-05:00",
+ "updatedMs": 1795614922516,
  "items": [
   {
-   "id": "nat-ec758abb91",
-   "title": "Kilmar Abrego Garcia leaves U.S. voluntarily for Spain",
+   "id": "loc-831341cf49",
+   "title": "Antrim County license plate cameras destroyed. Sheriff says it's a felony",
+   "link": "https://upnorthlive.com/news/local/two-license-plate-reader-cameras-destroyed-in-antrim-county-us-131-johnson-road-m-88-lesher-school-northern-michigan-flock-sheriff",
+   "source": "UpNorthLive",
+   "at": "2026-11-25T07:08:00-05:00",
+   "atMs": 1795608480000,
+   "pub": "2026-11-25",
+   "pubLabel": "Nov 25",
+   "score": 152.0,
+   "why": "5 outlets in 2h",
+   "scope": "local"
+  },
+  {
+   "id": "nat-f482cc0c2c",
+   "title": "Abrego Garcia Arrives in Spain After Voluntarily Leaving U.S.",
    "link": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html",
    "source": "NYT",
-   "at": "2026-11-25T04:19:50-05:00",
-   "atMs": 1795598390000,
+   "at": "2026-11-25T07:32:52-05:00",
+   "atMs": 1795609972000,
    "pub": "2026-11-25",
    "pubLabel": "Nov 25",
    "score": 76.0,
@@ -17,16 +30,16 @@
    "scope": "national"
   },
   {
-   "id": "nat-e6f997efba",
-   "title": "Two children among six dead after plane crash off Mississippi coast",
-   "link": "https://www.foxnews.com/us/coast-guard-searching-2-children-4-adults-after-plane-crashes-off-mississippi-coast",
-   "source": "Fox News",
-   "at": "2026-11-25T02:08:22-05:00",
-   "atMs": 1795590502000,
+   "id": "nat-329e20ce27",
+   "title": "Kilmar Ábrego García arrives in Spain, ending Trump deportation battle",
+   "link": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
+   "source": "BBC",
+   "at": "2026-11-25T07:42:11-05:00",
+   "atMs": 1795610531000,
    "pub": "2026-11-25",
    "pubLabel": "Nov 25",
    "score": 48.0,
-   "why": "breaking keyword · 2 outlets",
+   "why": "3 outlets in 1h",
    "scope": "national"
   }
  ]

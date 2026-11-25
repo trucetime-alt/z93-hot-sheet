@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-25T07:02:53-05:00",
+ "updated": "2026-11-25T08:57:19-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 318,
+ "artistsWatched": 325,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -73,11 +73,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 123
+   "count": 101
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 120
+   "count": 97
   }
  },
  "shows": [
@@ -112,11 +112,11 @@
     "KATSEYE"
    ],
    "priority": 60,
-   "ageDays": 0.4,
+   "ageDays": 0.5,
    "pub": "2026-11-24",
    "old": false,
    "alsoCovered": 2
   }
  ],
- "tookSec": 29.8
+ "tookSec": 33.3
 }
