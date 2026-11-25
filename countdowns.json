@@ -1,86 +1,87 @@
 {
- "version": 1,
- "countdowns": [
-  {
-   "id": "interview-turkey-trot-2026-11-25",
-   "name": "Interview 7:45 — Turkey Trot",
-   "emoji": "🎙",
-   "when": "2026-11-25T07:45",
-   "note": "Brian Hagerty (Turkey Trot organizer) and Kat Paye (National Cherry Festival Executive Director) in studio at 7:45 AM on Morning Rush. Courtney Rehmer booked it. Watch for them arriving around 7:45 — nobody else may be at the station yet.",
-   "source": "",
-   "newsQuery": "Traverse City Turkey Trot",
-   "facts": [
+  "version": 1,
+  "countdowns": [
     {
-     "text": "Guests: Brian Hagerty (Turkey Trot organizer) and Kat Paye (National Cherry Festival Executive Director).",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
+      "id": "interview-turkey-trot-2026-11-25",
+      "name": "Interview 7:45 \u2014 Turkey Trot",
+      "emoji": "\ud83c\udf99",
+      "when": "2026-11-25T07:45",
+      "note": "Brian Hagerty (Turkey Trot organizer) and Kat Paye (National Cherry Festival Executive Director) in studio at 7:45 AM on Morning Rush. Courtney Rehmer booked it. Watch for them arriving around 7:45 \u2014 nobody else may be at the station yet.",
+      "source": "",
+      "newsQuery": "Traverse City Turkey Trot",
+      "facts": [
+        {
+          "text": "Guests: Brian Hagerty (Turkey Trot organizer) and Kat Paye (National Cherry Festival Executive Director).",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        },
+        {
+          "text": "When: today, Wednesday, Nov. 25, at 7:45 AM on Morning Rush. Courtney Rehmer booked it and asked AJ to watch for them arriving around 7:45, since nobody else may be at the station yet.",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        },
+        {
+          "text": "Topic: Thursday's 19th annual Traverse City Turkey Trot.",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        },
+        {
+          "text": "The 5 Mile Flyer starts at 8:45 AM and the 5K at 9:00 AM, both at St. Francis High School.",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        },
+        {
+          "text": "Packet pickup is TODAY, 3\u20137 PM at the St. Francis gym. Sign-ups stay open online through race morning.",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        },
+        {
+          "text": "It benefits the Festival Foundation and TART Trails, and it's presented by 4Front Credit Union (an OK'd sponsor mention).",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        },
+        {
+          "text": "Ready questions: How many runners are expected in year 19? For a first-timer, the downtown 5K or the 5 Mile around Boardman Lake? How festive does it get, with costumes and dogs?",
+          "source": "Wren / Courtney Rehmer",
+          "date": "2026-11-25"
+        }
+      ],
+      "until": "2026-11-25"
     },
     {
-     "text": "When: today, Wednesday, Nov. 25, at 7:45 AM on Morning Rush. Courtney Rehmer booked it and asked AJ to watch for them arriving around 7:45, since nobody else may be at the station yet.",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
-    },
-    {
-     "text": "Topic: Thursday's 19th annual Traverse City Turkey Trot.",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
-    },
-    {
-     "text": "The 5 Mile Flyer starts at 8:45 AM and the 5K at 9:00 AM, both at St. Francis High School.",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
-    },
-    {
-     "text": "Packet pickup is TODAY, 3–7 PM at the St. Francis gym. Sign-ups stay open online through race morning.",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
-    },
-    {
-     "text": "It benefits the Festival Foundation and TART Trails, and it's presented by 4Front Credit Union (an OK'd sponsor mention).",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
-    },
-    {
-     "text": "Ready questions: How many runners are expected in year 19? For a first-timer, the downtown 5K or the 5 Mile around Boardman Lake? How festive does it get, with costumes and dogs?",
-     "source": "Wren / Courtney Rehmer",
-     "date": "2026-11-25"
+      "id": "gta6",
+      "name": "GTA 6",
+      "emoji": "\ud83c\udfae",
+      "when": "2026-11-19T00:00",
+      "note": "Grand Theft Auto VI, PS5 and Xbox Series X|S, midnight local time",
+      "source": "https://www.rockstargames.com/VI/pre-load-now",
+      "newsQuery": "GTA 6",
+      "facts": [
+        {
+          "text": "Sony's PlayStation Blog says GTA 6 is the biggest launch in PlayStation history. More than 39 million unique players on PS5 from Nov. 19 to 22 logged 683 million hours, an average of 17.4 hours per player. It was the first game played on 70 percent of brand-new PS5s, and it set a PlayStation record for concurrent players.",
+          "source": "PlayStation.Blog (SIE internal data, Nov. 19-22)",
+          "date": "2026-11-23",
+          "url": "https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/"
+        },
+        {
+          "text": "Alinea Analytics estimates GTA 6 sold 44.9 million copies and about $4 billion through its first weekend (33.7 million on PS5, 11.2 million on Xbox). These are analyst estimates, not official Take-Two numbers.",
+          "source": "GameSpot, citing Alinea Analytics",
+          "date": "2026-11-23",
+          "url": "https://www.gamespot.com/articles/gta-6-is-approaching-an-absurd-new-sales-milestone-report-says/"
+        },
+        {
+          "text": "Take-Two says GTA 6 did $3.79 billion in day-one retail sales (company estimate through the end of Nov. 19) and sold 32.5 million units pre-release, calling it the biggest entertainment launch in history.",
+          "source": "Take-Two Interactive (official)",
+          "date": "2026-11-20",
+          "url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
+        },
+        {
+          "text": "GTA 6 streams hit 125.47 million hours watched in the first 24 hours, peaking at 7.91 million viewers at once across Twitch, YouTube and Kick. The Twitch peak of 3.31 million makes it the most-watched game ever on Twitch, passing League of Legends' 2022 World Championship final.",
+          "source": "CNN, citing Streams Charts",
+          "date": "2026-11-19",
+          "url": "https://www.cnn.com/2026/11/19/media/grand-theft-auto-gta-vi-twitch-youtube-livestream"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "gta6",
-   "name": "GTA 6",
-   "emoji": "🎮",
-   "when": "2026-11-19T00:00",
-   "note": "Grand Theft Auto VI, PS5 and Xbox Series X|S, midnight local time",
-   "source": "https://www.rockstargames.com/VI/pre-load-now",
-   "newsQuery": "GTA 6",
-   "facts": [
-    {
-     "text": "Sony's PlayStation Blog says GTA 6 is the biggest launch in PlayStation history. More than 39 million unique players on PS5 from Nov. 19 to 22 logged 683 million hours, an average of 17.4 hours per player. It was the first game played on 70 percent of brand-new PS5s, and it set a PlayStation record for concurrent players.",
-     "source": "PlayStation.Blog (SIE internal data, Nov. 19-22)",
-     "date": "2026-11-23",
-     "url": "https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/"
-    },
-    {
-     "text": "Alinea Analytics estimates GTA 6 sold 44.9 million copies and about $4 billion through its first weekend (33.7 million on PS5, 11.2 million on Xbox). These are analyst estimates, not official Take-Two numbers.",
-     "source": "GameSpot, citing Alinea Analytics",
-     "date": "2026-11-23",
-     "url": "https://www.gamespot.com/articles/gta-6-is-approaching-an-absurd-new-sales-milestone-report-says/"
-    },
-    {
-     "text": "Take-Two says GTA 6 did $3.79 billion in day-one retail sales (company estimate through the end of Nov. 19) and sold 32.5 million units pre-release, calling it the biggest entertainment launch in history.",
-     "source": "Take-Two Interactive (official)",
-     "date": "2026-11-20",
-     "url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
-    },
-    {
-     "text": "GTA 6 streams hit 125.47 million hours watched in the first 24 hours, peaking at 7.91 million viewers at once across Twitch, YouTube and Kick. The Twitch peak of 3.31 million makes it the most-watched game ever on Twitch, passing League of Legends' 2022 World Championship final.",
-     "source": "CNN, citing Streams Charts",
-     "date": "2026-11-19",
-     "url": "https://www.cnn.com/2026/11/19/media/grand-theft-auto-gta-vi-twitch-youtube-livestream"
-    }
-   ]
-  }
- ]
+  ]
 }

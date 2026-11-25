@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59k-santakurtz">
+<meta name="hs-build" content="v59o-batch">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -779,8 +779,14 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 .songcard .sartist{font-size:1em;font-weight:800;color:var(--accent);margin:2px 0 4px}
 .songcard .stag{font-size:.72em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
 .skbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 2px}
-.skbar button{min-height:40px;padding:4px 10px;font-weight:800;font-size:.82em;border-radius:10px;border:2px solid var(--line);background:var(--panel2);color:var(--text)}
+.skbar button{min-height:44px;padding:4px 10px;font-weight:800;font-size:.82em;border-radius:10px;border:2px solid var(--line);background:var(--panel2);color:var(--text)}
 .skbar button.on{border-color:#ffd23f;background:#3a3206;color:#ffe27a}
+.ncard.b59gotit,.buzzcard.b59gotit{opacity:.48;filter:grayscale(.4)}
+.ncard.b59gotit .tt,.buzzcard.b59gotit .headline,.buzzcard.b59gotit .buzzhd{color:var(--dim)}
+.skbar .b59got.on{border-color:#7a8a7a;background:#1c2620;color:#c5d4c8}
+.sclipw{display:inline-flex;flex-direction:column;align-items:flex-start;gap:3px;vertical-align:middle;max-width:min(36rem,100%)}
+.sclipintro{display:block;font-size:.78em;line-height:1.35;color:var(--dim);font-weight:650;margin:0}
+.sclipintro.missing{color:#e8c36a}
 .stag-saved,.stag-pin{display:inline-block;margin:0 6px 0 0;padding:2px 7px;border-radius:999px;font-size:.72em;font-weight:800;letter-spacing:.02em;background:#3a3206;color:#ffe27a;border:1px solid #ffd23f}
 .stag-pin{background:#1e2a14;color:#d4f5a6;border-color:#b6e06a}
 .ncard.pinned,.buzzcard.pinned{box-shadow:inset 4px 0 0 #ffd23f}
@@ -810,11 +816,12 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 #syncDot.st-off i{background:#ffd23f;box-shadow:0 0 6px #ffd23f}
 @keyframes b59pulse{50%{opacity:.35}}
 @media (max-width:520px){ #syncDot span{display:none;} #syncDot{padding:0 8px} }
-/* story summary: real body preview, Read more bar, full text on expand */
+/* story summary: collapsed = 1-2 full sentences; Read more / Show less shows the whole text, never clamped, never mid-sentence */
 .nsum{padding:0 12px 8px 16px;font-size:.9em;line-height:1.42;color:#d6dde3}
 .ncard.b59has .nsum{padding-left:62px}
-.nsumt{white-space:normal;overflow:visible}
+.nsumt{display:block;white-space:normal;overflow:visible;max-height:none;-webkit-line-clamp:unset}
 .nsumt.clamp{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;cursor:pointer}
+.nsum.open .nsumt,.nsumt:not(.clamp){display:block;-webkit-line-clamp:unset;-webkit-box-orient:unset;overflow:visible;max-height:none}
 .nsumt[role=button]{cursor:pointer}
 .nsummore{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:44px;margin-top:6px;padding:4px 14px;border-radius:12px;border:2px solid var(--accent);background:rgba(255,179,0,.10);color:var(--accent);font-weight:900;font-size:.95em;letter-spacing:.02em;cursor:pointer}
 .nsummore .chev{font-size:1.3em;line-height:1}
@@ -929,7 +936,7 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 }
 /* ===== v59: bricks, Got it, read marks, side icons, legend, scoreboard rundown, tabs ===== */
 .skbar .b59lock.on{border-color:#ff8a3d;background:#4a2208;color:#ffd2ad}
-.skbar .b59got{border-color:#3ddc84;color:#c9ffe0}
+.skbar .b59got{border-color:#3ddc84;color:#c9ffe0;min-height:44px}
 .b59rd{display:inline-flex;align-items:center;min-height:30px;padding:2px 10px;border-radius:999px;font-size:.78em;font-weight:800;color:#bcd7ff;background:#14243d;border:1px solid #2f6fff}
 .b59brick{border:2px solid #ff8a3d!important;background-image:repeating-linear-gradient(0deg,rgba(255,138,61,.10) 0 2px,transparent 2px 22px),repeating-linear-gradient(90deg,rgba(255,138,61,.07) 0 2px,transparent 2px 46px);box-shadow:0 0 0 1px #ff8a3d,0 6px 18px rgba(255,138,61,.22)!important;position:relative}
 .b59brick::after{content:"🧱 LOCKED";position:absolute;top:6px;right:8px;z-index:2;font-size:.62em;font-weight:900;letter-spacing:.08em;color:#ffd2ad;background:#4a2208;border:1px solid #ff8a3d;border-radius:999px;padding:2px 8px;pointer-events:none}
@@ -992,6 +999,33 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 .wrapline .wl{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700}
 @media (max-width:620px){ .wrapline{flex-wrap:wrap;row-gap:2px} .wrapline .wl{flex-basis:100%} .wrapline .wt{min-width:0} }
 .wrapx{flex:none;min-width:48px;min-height:52px;border-radius:var(--r-sm);font-weight:900}
+.wrapsponsors{margin:0 0 12px;padding:8px 12px;border-radius:var(--r-sm);border:1px solid var(--line);background:var(--panel);font-size:.92em;font-weight:800;line-height:1.35;color:var(--text)}
+#jqScrim{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .22s ease-out}
+#jqScrim.on{opacity:1;pointer-events:auto}
+#jqPanel{position:fixed;top:0;right:0;bottom:0;z-index:81;width:min(92vw,440px);max-width:100%;background:var(--panel);border-left:2px solid var(--line);box-shadow:-12px 0 40px rgba(0,0,0,.6);
+  transform:translateX(105%);transition:transform .22s ease-out;display:flex;flex-direction:column;
+  padding:max(10px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) 12px;touch-action:pan-y;visibility:hidden}
+#jqPanel.on{transform:translateX(0);visibility:visible}
+#jqPanel.dragging{transition:none}
+@media (prefers-reduced-motion:reduce){ #jqPanel,#jqScrim{transition:none} }
+body.jq-open{overflow:hidden}
+.jqhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:2px 0 10px;border-bottom:1px solid var(--line)}
+#jqTitle{margin:0;color:var(--accent);font-size:1.08em;font-weight:900;letter-spacing:.02em;padding-right:4px}
+.jqnote{margin:4px 0 0;font-size:.72em;color:var(--dim);font-weight:700;line-height:1.35}
+#jqClose{flex:none;width:48px;min-width:48px;min-height:48px;padding:0;border-radius:50%;font-size:1.2em}
+.jqbody{overflow-y:auto;flex:1;padding:10px 0 16px;overscroll-behavior:contain}
+.jqbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.jqbar button,.jqslot .jqlock,.jqslot .jqunlock,.jqopen{min-height:48px;min-width:48px;padding:8px 12px;font-weight:800}
+.jqday{border:1px solid var(--line);border-radius:var(--r);padding:10px;margin:0 0 10px;background:var(--bg)}
+.jqdaylab{width:100%;min-height:44px;font-weight:900;font-size:1em;background:#000;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:0 0 8px}
+.jqslot{display:flex;flex-wrap:wrap;gap:6px;align-items:stretch;padding:8px 0;border-top:1px solid var(--line)}
+.jqslotlab{flex:1 1 100%;min-height:44px;font-weight:800;font-size:.9em;background:#000;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:6px 8px}
+.jqslot input[type=text],.jqslot input[type=tel]{flex:1 1 100%;min-height:44px;min-width:0;background:#000;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:1em}
+.jqslot .jqlock,.jqslot .jqunlock{flex:1 1 100%}
+.jqslot.locked input{opacity:.85}
+.jqmeta{flex-basis:100%;font-size:.72em;font-weight:700;color:var(--dim);line-height:1.35}
+#readStrip .jqopen{flex:1 1 100%;width:100%;border:2px solid #ffb020;background:#3a2a08;color:#ffe9b8;border-radius:var(--r-sm);font-weight:900}
+.gvjqbtn{width:100%;margin:0 0 10px;min-height:48px;border:2px solid #ffb020;background:#3a2a08;color:#ffe9b8;font-weight:900}
 .airflash{outline:3px solid #e74c8b;outline-offset:2px;transition:outline-color 1.5s}
 .cdnlist{list-style:none;margin:6px 0 10px;padding:0}
 .cdnlist li{margin:0 0 6px}
@@ -1240,6 +1274,17 @@ main{padding-bottom:calc(200px + env(safe-area-inset-bottom,0px))}
 <div id="cdNewsModal" class="modal" role="dialog" aria-label="Countdown news"><div class="box"><h3 id="cdNewsTitle">News</h3><div id="cdFacts"></div><div class="nmeta" id="cdNewsMeta"></div><ol class="cdnlist" id="cdNewsList"></ol><div class="rowb"><button type="button" id="cdNewsRefresh">↻ Refresh</button><button type="button" id="cdNewsEdit">✎ Edit countdowns</button></div></div></div>
 <div id="stModal" class="modal" role="dialog" aria-label="Station reads editor"><div class="box"><h3>Station reads</h3><div id="stEditor"></div></div></div>
 <div id="gvModal" class="modal" role="dialog" aria-label="Giveaways editor"><div class="box"><h3>Giveaways</h3><div id="gvEditor"></div></div></div>
+<div id="jqScrim" hidden></div>
+<aside id="jqPanel" role="dialog" aria-modal="true" aria-labelledby="jqTitle" aria-hidden="true" inert>
+  <div class="jqhead">
+    <div>
+      <h2 id="jqTitle">Jonas Brothers qualifiers</h2>
+      <p class="jqnote">15 listening appointments · names and phones stay on this device only. Never synced or published.</p>
+    </div>
+    <button type="button" id="jqClose" aria-label="Close">✕</button>
+  </div>
+  <div class="jqbody" id="jqBody"></div>
+</aside>
 <div id="guModal" class="modal" role="dialog" aria-label="In-studio guests"><div class="box"><h3>In-studio guests</h3><div id="guEditor"></div></div></div>
 <div id="wcModal" class="modal" role="dialog" aria-label="This Week at Z93"><div class="box"><button type="button" class="xclose" id="wcModalClose" aria-label="Close">✕</button><h3>This Week at Z93</h3><div id="wcEditor"></div></div></div>
 <div id="wcDetail" class="modal" role="dialog" aria-label="Event detail"><div class="box"><button type="button" class="xclose" id="wcDetailClose" aria-label="Close">✕</button><div id="wcDetailBody"></div></div></div>
@@ -1349,7 +1394,7 @@ function richLines(el, text){
     // inline ▶ for a story header whose block matches a published clip
     if(!sub && typeof storyClipFor==='function' && (h || isStoryHead(ln, arr[i-1]))){
       let j=i+1; const blk=[ln]; while(j<arr.length && arr[j].trim() && !isStoryHead(arr[j], arr[j-1]) && !/^\s*\d+\)\s/.test(arr[j])){ blk.push(arr[j]); j++; }
-      const m=storyClipFor(blk); if(m) el.append(' ', inlineClipBtn(m));
+      const m=storyClipFor(blk, (typeof it!=='undefined'?it:null)); if(m) el.append(' ', inlineClipBtn(m));
     }
     if(!sub && typeof airBtn==='function' && window.__airSec && (h || isStoryHead(ln, arr[i-1]))){ const t=ln.replace(/^\s*\d+\)\s*/,'').trim();
       let j=i+1; const body=[]; while(j<arr.length && arr[j].trim() && !isStoryHead(arr[j], arr[j-1]) && !/^\s*\d+\)\s/.test(arr[j])){ body.push(arr[j]); j++; }
@@ -1818,6 +1863,7 @@ const fmtStamp=iso=>new Date(iso).toLocaleString([], {weekday:'short',month:'sho
 const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
+/* never add hs:gvWins or hs:jonasQual — listener names/phones stay on this device and must never sync */
 const SYNC_KEYS=new Set(['hs:manualPlays','hs:caliQueue','hs:calSong','hs:bricks','hs:gotit','hs:readlog','hs:chase','hs:songLocks','hs:r1Skip','hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:guLocal','hs:guMentions','hs:weekCal','hs:songPicks','hs:buzzRemix','hs:storyRemix','hs:moviePicks','hs:remix','hs:storyKeep','hs:tabByProfile','hs:openerDraft']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
@@ -1983,12 +2029,10 @@ function setViewProfile(id){
   const p=etParts();
   expireViewOv(p);
   id=String(id||'truce');
-  if(!deviceRole() && (id==='truce'||id==='courtney'||id==='callie')){
-    hsDevice=id;
-    try{ LS.setItem('hs:device', id); LS.setItem('hs:whoDone','1'); }catch(e){}
-    const nm=(typeof showTabLabel==='function'?showTabLabel(id):id);
-    if(typeof toast==='function') toast('This device is now '+nm+"'s. Change it anytime in Menu → Sync devices.");
-  }
+  /* v59n: tapping AJ/Courtney/Cali only changes the view. Pinning the phone
+     stays in Menu → Sync devices (or the first-run who dialog). A tab tap used
+     to silently claim an unpinned phone for that host, which then routed Share
+     saves to the wrong show. */
   if(id===autoProfile(p)){ viewOv=null; try{ LS.removeItem('hs:viewOv'); }catch(e){} }
   else { viewOv={id, until:nextAutoChange(p)}; try{ LS.setItem('hs:viewOv', JSON.stringify(viewOv)); }catch(e){} }
   window.__hsMorningPeek=false;
@@ -2286,12 +2330,65 @@ function storyKeepSnap(it, sec, col){
   it=it||{};
   return {title:it.title||'', desc:it.desc||'', lines:Array.isArray(it.lines)?it.lines.slice():[], link:it.link||it.url||it.article_url||'', src:it.src||it.source||'', at:it.at||null, article_url:it.article_url||it.link||'', article_title:it.article_title||it.title||'', recap:it.recap||it.body||'', tid:it.tid||'', col:col||it.col||'', sec:sec||it.sec||'news'};
 }
-function storyPinned(id, prof){ const p=prof||storyKeepProf(); return !!(storyKeep.pins[p]&&storyKeep.pins[p][id]); }
+function storyKeepIdsOf(it){
+  const ids=[]; const add=x=>{ x=String(x||'').trim(); if(x && ids.indexOf(x)<0) ids.push(x); };
+  if(!it) return ids;
+  if(typeof it==='string'){ add(it); return ids; }
+  add(it._keepId); add(it._id);
+  if(it.id && String(it.id).indexOf('k:')===0) add(it.id);
+  try{ add(storyKeepId(it)); }catch(e){}
+  try{ if(typeof storyKeepIdLegacy==='function') add(storyKeepIdLegacy(it)); }catch(e){}
+  return ids;
+}
+function storyPinAgeDays(rec){
+  const t=Date.parse((rec&&rec.at)||(rec&&rec.snap&&rec.snap.at)||0);
+  if(!t) return 999;
+  const dayOf=ms=>{ try{ return new Date(ms).toLocaleDateString('en-CA',{timeZone:'America/New_York'}); }catch(e){ return new Date(ms).toISOString().slice(0,10); } };
+  const a=dayOf(t), b=(typeof etParts==='function'&&etParts().date)||dayOf(Date.now());
+  const A=Date.parse(a+'T00:00:00'), B=Date.parse(b+'T00:00:00');
+  if(!isFinite(A)||!isFinite(B)) return 999;
+  return Math.round((B-A)/864e5);
+}
+function storyPinStale(rec){ return storyPinAgeDays(rec)>3; }
+function storyPruneStalePins(){
+  let n=0;
+  for(const p of Object.keys((storyKeep&&storyKeep.pins)||{})){
+    const pins=storyKeep.pins[p]||{};
+    for(const id of Object.keys(pins)){
+      if(storyPinStale(pins[id])){ delete pins[id]; n++; }
+    }
+    if(!Object.keys(pins).length) delete storyKeep.pins[p];
+  }
+  if(n) try{ storyKeepSave(); }catch(e){}
+  return n;
+}
+function storyPinRec(it, prof){
+  const p=prof||storyKeepProf();
+  const pins=(storyKeep.pins&&storyKeep.pins[p])||{};
+  for(const id of storyKeepIdsOf(it)){ if(pins[id]) return pins[id]; }
+  const probe=(it && typeof it==='object')?it:{};
+  try{ return Object.values(pins).find(r=>typeof b59Same==='function' && b59Same(probe, r.snap||r))||null; }catch(e){ return null; }
+}
+function storyPinned(id, prof){
+  if(id && typeof id==='object') return !!storyPinRec(id, prof);
+  const p=prof||storyKeepProf();
+  if(storyKeep.pins[p]&&storyKeep.pins[p][id]) return true;
+  return false;
+}
 function storySavedRec(id, prof){ const p=prof||storyKeepProf(); return (storyKeep.saves[p]||{})[id]||null; }
 function pinStory(it, on, sec, col){
-  const p=storyKeepProf(); const id=it.id&&String(it.id).indexOf('k:')===0?it.id:storyKeepId(it);
+  const p=storyKeepProf();
   storyKeep.pins[p]=storyKeep.pins[p]||{};
-  if(on===false || (on==null && storyKeep.pins[p][id])){ delete storyKeep.pins[p][id]; if(!Object.keys(storyKeep.pins[p]).length) delete storyKeep.pins[p]; storyKeepSave(); if(typeof rerender==='function') rerender(); toast('Unpinned'); return false; }
+  const rec=storyPinRec(it,p);
+  const id=rec?rec.id:(it&&it._keepId)||(it&&it.id&&String(it.id).indexOf('k:')===0?it.id:storyKeepId(it));
+  if(on===false || (on==null && rec)){
+    const drop=new Set(storyKeepIdsOf(it));
+    if(rec) drop.add(rec.id);
+    try{ Object.values(storyKeep.pins[p]||{}).forEach(r=>{ if(r && (drop.has(r.id) || (typeof b59Same==='function' && b59Same(it||{}, r.snap||r)))) drop.add(r.id); }); }catch(e){}
+    drop.forEach(k=>delete storyKeep.pins[p][k]);
+    if(!Object.keys(storyKeep.pins[p]).length) delete storyKeep.pins[p];
+    storyKeepSave(); if(typeof rerender==='function') rerender(); toast('Unpinned'); return false;
+  }
   const snap=storyKeepSnap(it, sec, col); snap.id=id;
   storyKeep.pins[p][id]={id, sec:snap.sec, col:snap.col, at:new Date().toISOString(), snap};
   const ids=Object.keys(storyKeep.pins[p]); if(ids.length>40){ ids.slice(0,-40).forEach(k=>delete storyKeep.pins[p][k]); }
@@ -2319,39 +2416,59 @@ function saveStory(it, on, sec, col){
 }
 function storyKeepBar(it, sec, col){
   const id=storyKeepId(it);
-  const pinOn=storyPinned(id);
-  const sav=storySavedRec(id);
+  const pinRec=storyPinRec(it);
+  const pinOn=!!pinRec;
+  const sav=storySavedRec(id) || (pinRec && storySavedRec(pinRec.id));
   const bar=h('div',{className:'skbar'});
   bar.append(h('button',{type:'button', className:pinOn?'on':'', 'aria-pressed':String(pinOn), title:pinOn?'Unpin this story':'Pin this story to the top of the section', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); pinStory(it, !pinOn, sec, col); }}}, pinOn?'📌 Pinned':'📌 Pin'));
   bar.append(h('button',{type:'button', className:sav?'on':'', 'aria-pressed':String(!!sav), title:sav?'Remove from saved':'Save this story into tomorrow, like a held clip', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); saveStory(it, !sav, sec, col); }}}, sav?'📥 Saved':'📥 Save'));
   try{ b59Buttons(bar, it, sec, col); }catch(e){ console.warn('b59 buttons', e); }
   if(it.savedFrom) bar.append(h('span',{className:'stag-saved'}, 'Saved from '+(typeof nice==='function'?nice(it.savedFrom):it.savedFrom)));
-  else if(it.pinned) bar.append(h('span',{className:'stag-pin'}, 'Pinned'));
   return bar;
 }
 function newsItemsWithKeep(colId, groups){
+  try{ storyPruneStalePins(); }catch(e){}
   const p=storyKeepProf(); const today=(typeof etParts==='function'?etParts().date:''); const date=b59Date('news');
   const have=new Set();
-  const shownOk=it=>!b59IsGot(it,date) && !b59IsBrick(it,date);
-  const pinList=Object.values((storyKeep.pins[p]||{})).filter(x=>(x.sec||'news')==='news' && (!x.col || x.col===colId));
+  const shownOk=it=>!b59IsBrick(it,date);   // v59m: Got it stays in the list (gray + sunk); never deleted
+  const markHave=it=>{ storyKeepIdsOf(it).forEach(id=>have.add(id)); };
+  const pinList=Object.values((storyKeep.pins[p]||{})).filter(x=>(x.sec||'news')==='news' && (!x.col || x.col===colId) && !storyPinStale(x));
   const saveList=Object.values((storyKeep.saves[p]||{})).filter(x=>(x.sec||'news')==='news' && (!x.col || x.col===colId) && x.appearOn===today);
   const pack=(rec, flags)=>{ const it=Object.assign({}, rec.snap||rec, flags); if(!it.title && rec.snap) Object.assign(it, rec.snap); it._keepId=rec.id; return it; };
   const pins=[], saves=[];
-  for(const rec of pinList){ have.add(rec.id); const it=pack(rec,{pinned:true, savedFrom:(saveList.find(s=>s.id===rec.id)||{}).fromDate||null, pick:false, _keep:true}); if(shownOk(it)) pins.push(it); }
-  for(const rec of saveList){ if(have.has(rec.id)) continue; have.add(rec.id); const it=pack(rec,{pinned:false, savedFrom:rec.fromDate, pick:false, _keep:true}); if(shownOk(it)) saves.push(it); }
+  for(const rec of pinList){ const it=pack(rec,{pinned:true, savedFrom:(saveList.find(s=>s.id===rec.id)||{}).fromDate||null, pick:false, _keep:true}); markHave(it); have.add(rec.id); if(shownOk(it)) pins.push(it); }
+  for(const rec of saveList){ if(have.has(rec.id) || storyKeepIdsOf(rec.snap||rec).some(id=>have.has(id))) continue; const it=pack(rec,{pinned:false, savedFrom:rec.fromDate, pick:false, _keep:true}); markHave(it); if(shownOk(it)) saves.push(it); }
   const flow=[];
   for(const g of (groups||[])){
     const items=[];
     for(const it of (g.items||[])){
-      const id=storyKeepId(it); if(have.has(id)) continue; have.add(id);
-      if(b59Suppressed(it) || !shownOk(it)) continue;      // suppress list (curation.json), Got it, and bricks (re-inserted below)
-      const pin=storyPinned(id,p); const sav=storySavedRec(id,p);
+      const ids=storyKeepIdsOf(it); if(ids.some(id=>have.has(id))) continue; ids.forEach(id=>have.add(id));
+      if(b59Suppressed(it) || !shownOk(it)) continue;      // suppress list (curation.json) and bricks (re-inserted below)
+      const pin=!!storyPinRec(it,p); const sav=storySavedRec(storyKeepId(it),p);
       items.push(Object.assign({}, it, {pinned:pin, savedFrom:(sav&&sav.appearOn===today)?sav.fromDate:null}));
     }
     flow.push(...b59Learn(items, colId));
   }
-  const hotF=flow.filter(x=>x.hot), pinF=flow.filter(x=>!x.hot && b59PinTopic(x)), rest=flow.filter(x=>!x.hot && !b59PinTopic(x));
-  const list=[].concat(hotF, pinF, pins, saves, rest);
+  const markClip=it=>{ try{ if(it && it._clip===undefined && typeof storyClipFor==='function') it._clip=storyClipFor(it)||null; }catch(e){ it._clip=null; } return it && it._clip; };
+  const hotF=flow.filter(x=>x.hot), topicF=flow.filter(x=>!x.hot && b59PinTopic(x)), rest=flow.filter(x=>!x.hot && !b59PinTopic(x));
+  const raw=[].concat(hotF, pins, topicF, rest, saves);
+  const clip=[], mid=[], got=[];
+  const seen=new Set();
+  const keyOf=it=>storyKeepIdsOf(it)[0]||normT(it&&it.title||'');
+  for(const it of raw){
+    const k=keyOf(it); if(k && seen.has(k)) continue; if(k) seen.add(k);
+    if(b59IsGot(it,date)) got.push(it);
+    else if(markClip(it)) clip.push(it);
+    else mid.push(it);
+  }
+  // v59m: clip-matched stories sort to the top (after user pins/saves). Hot-but-clipless items no longer bury them.
+  const list=[].concat(
+    mid.filter(x=>x.pinned||x._keep),
+    clip,
+    mid.filter(x=>x.hot && !x.pinned && !x._keep),
+    mid.filter(x=>!(x.hot||x.pinned||x._keep)),
+    got
+  );
   const bricks=Object.values(b59Bricks[b59Bk(date)]||{}).filter(r=>(r.sec||'news')==='news' && (!r.col || r.col===colId)).sort((a,b)=>((a.pos<0?1e9:a.pos)-(b.pos<0?1e9:b.pos)) || a.at-b.at);
   for(const r of bricks){ const sn=r.snap||{}; const it=Object.assign({}, sn, {title:sn.title||r.title, src:sn.src, sources:sn.srcs||[], votes:sn.votes||0, tags:sn.tags||[], artists:sn.artists||[], top:!!sn.top, tag:sn.tag||'', pick:false, live:false, _brick:true, _keepId:r.id});
     const at=r.pos<0?0:Math.min(r.pos, list.length); list.splice(at,0,it); }
@@ -2432,11 +2549,14 @@ function b59Lock(it, sec, col, pos){ const date=b59Date(sec==='news'?'news':'she
   b59LogAct(it, sec, col, 'use', true, date); b59Persist(); rerender(); toast('🧱 Locked in: '+String(it.title||'').slice(0,50)); }
 function b59Unlock(it, sec, col){ const date=b59Date(sec==='news'?'news':'sheet'); const r=b59IsBrick(it,date); if(r) b59Del(b59Bricks, date, r.id);
   b59LogAct(it, sec, col, 'use', false, date); b59Persist(); rerender(); toast('Unlocked'); }
-function b59GotIt(it, sec, col){ const date=b59Date(sec==='news'?'news':'sheet'); const id=storyKeepId(it); const sn=b59Info(it, sec, col);
+function b59GotIt(it, sec, col){ const date=b59Date(sec==='news'?'news':'sheet');
+  const already=b59IsGot(it,date);
+  if(already){ b59Undo(already.id, date); toast('Restored: '+String((it&&it.title)||already.title||'').slice(0,48)); return false; }
+  const id=already?already.id:storyKeepId(it); const sn=b59Info(it, sec, col);
   b59Put(b59Got, date, id, {id, sec:sec||'news', col:col||'', title:sn.title, at:Date.now(), snap:sn});
   const br=b59IsBrick(it,date); if(br) b59Del(b59Bricks, date, br.id);
   b59LogAct(it, sec, col, 'gotit', true, date); b59Persist(); rerender();
-  toast('✓ Got it · in the Show Wrap: '+String(it.title||'').slice(0,40), ()=>b59Undo(id, date)); }
+  toast('✓ Got it · moved to the bottom', ()=>b59Undo(id, date)); return true; }
 function b59Undo(id, date){ const r=b59Rec(b59Got, date, id); if(!r) return; b59Del(b59Got, date, id);
   b59LogAct(Object.assign({}, r.snap, {title:r.title, _id:r.id}), r.sec, r.col, 'gotit', false, date); b59Persist(); rerender(); }
 function b59PosOf(card){ const col=card.closest('.ncol'); if(!col) return -1; return [...col.querySelectorAll('.ncard')].indexOf(card); }
@@ -2445,8 +2565,9 @@ function b59Buttons(bar, it, sec, col){ const brick=b59IsBrick(it, b59Date(sec==
   const cardOf=e=>e.target.closest('.ncard');
   bar.append(h('button',{type:'button', className:'b59lock'+(brick?' on':''), 'aria-pressed':String(!!brick), title:brick?'Unlock this card':'Lock this card in place for the show',
     on:{click:e=>{ e.preventDefault(); e.stopPropagation(); tapHaptic(); if(brick) b59Unlock(it,sec,col); else { const c=cardOf(e); b59Lock(it,sec,col,c?b59PosOf(c):-1); } }}}, brick?'🧱 Locked · unlock':'🔒 Lock'));
-  bar.append(h('button',{type:'button', className:'b59got', title:'Done with this: send it to the end-of-show wrap and clear it from the screen',
-    on:{click:e=>{ e.preventDefault(); e.stopPropagation(); tapHaptic(); b59GotIt(it,sec,col); }}}, '✓ Got it'));
+  const got=!!b59IsGot(it, b59Date(sec==='news'?'news':'sheet'));
+  bar.append(h('button',{type:'button', className:'b59got'+(got?' on':''), 'aria-pressed':String(got), title:got?'Put this headline back in its usual place':'Gray this out and move it to the bottom of the list (does not go in the Show Wrap)',
+    on:{click:e=>{ e.preventDefault(); e.stopPropagation(); tapHaptic(); b59GotIt(it,sec,col); }}}, got?'↩ Put back':'✓ Got it'));
   for(const r of b59ReadBy(it, sec)) bar.append(h('span',{className:'b59rd', title:fmtTime(new Date(r.t).toISOString())}, '👁 '+b59Name(r.prof)+' '+(r.act==='used'?'used':'read')+' this'));
 }
 /* post-render pass: brick look, read taps feed the log, read tags on every story card */
@@ -2455,21 +2576,37 @@ function b59Post(view){ if(!view) return;
     if(view.id==='view' && state.tab==='buzz' && !view.querySelector('.b59ab') && !/^cal_/.test(state.tab)){ const ab=b59AutoBuzz(); if(ab){ const hh=view.querySelector('h2'); if(hh) hh.after(ab); else view.prepend(ab); } } }catch(e){ console.warn('b59Post x', e); }
   view.querySelectorAll('[data-keep-id]').forEach(el=>{ const bar=el.querySelector('.skbar'); const inf=bar&&bar.__b59; if(!inf) return;
     const date=b59Date(inf.sec==='news'?'news':'sheet');
-    if(!el.classList.contains('ncard') && b59IsGot(inf.it,date)){ el.replaceWith(b59GotLine(inf.it, inf.sec, inf.col)); return; }
+    el.classList.toggle('b59gotit', !!b59IsGot(inf.it,date));
     el.classList.toggle('b59brick', !!b59IsBrick(inf.it, date));
     const ab=el.querySelector('.airbtn'); if(ab && !ab.dataset.b59){ ab.dataset.b59='1';
-      ab.addEventListener('click',()=>setTimeout(()=>{ b59LogAct(inf.it, inf.sec, inf.col, 'read', ab.classList.contains('on')); },0)); } }); }
+      ab.addEventListener('click',()=>setTimeout(()=>{ b59LogAct(inf.it, inf.sec, inf.col, 'read', ab.classList.contains('on')); },0)); } });
+  try{ b59SinkGot(view); }catch(e){} }
+function b59SinkGot(view){
+  if(!view) return;
+  const isCard=el=>el && /(?:^|\s)(ncard|buzzcard|keepbox)\b/.test(el.className||'');
+  const parents=new Set();
+  view.querySelectorAll('.ncard.b59gotit, .buzzcard.b59gotit').forEach(el=>{ if(el.parentNode) parents.add(el.parentNode); });
+  parents.forEach(p=>{
+    const all=[...p.children];
+    let i=0;
+    while(i<all.length){
+      if(!isCard(all[i])){ i++; continue; }
+      let j=i; while(j<all.length && isCard(all[j])) j++;
+      const run=all.slice(i,j);
+      const live=run.filter(el=>!el.classList.contains('b59gotit'));
+      const got=run.filter(el=>el.classList.contains('b59gotit'));
+      const end=all[j]||null;
+      live.concat(got).forEach(el=>p.insertBefore(el, end));
+      i=j;
+    }
+  });
+}
 function b59GotLine(it, sec, col, label){ const date=b59Date(sec==='news'?'news':'sheet');
-  return h('div',{className:'b59gotline'}, h('span',{}, '✓ Got it · '+(label||String(it.title||'').slice(0,60))+' · in the Show Wrap'), h('button',{type:'button', on:{click:()=>{ tapHaptic(); const r=b59IsGot(it,date); if(r) b59Undo(r.id,date); }}}, 'Put back')); }
+  return h('div',{className:'b59gotline'}, h('span',{}, '✓ Got it · '+(label||String(it.title||'').slice(0,60))), h('button',{type:'button', on:{click:()=>{ tapHaptic(); const r=b59IsGot(it,date); if(r) b59Undo(r.id,date); }}}, 'Put back')); }
 function b59GotList(colId){ const date=b59Date('news'); const bk=b59Got[b59Bk(date)]||{}; return Object.values(bk).filter(r=>(r.sec||'news')==='news' && (!r.col||r.col===colId)).sort((a,b)=>a.at-b.at); }
-function b59GotBox(colId){ const L=b59GotList(colId); if(!L.length) return null; const d=h('details',{className:'b59gotbox'}, h('summary',{}, '✓ Got it ('+L.length+') · in the Show Wrap'));
-  for(const r of L) d.append(h('div',{className:'b59gotline'}, h('span',{}, String(r.title||'').slice(0,90)), h('button',{type:'button', on:{click:()=>{ tapHaptic(); b59Undo(r.id,b59Date('news')); }}}, 'Put back'))); return d; }
-/* wrap entries: Got it items land at the end of the show wrap list */
-function b59WrapEntries(p, have){ const out=[]; const haveT=new Set((have||[]).map(e=>normT(e.title)));
-  for(const [bk,items] of Object.entries(b59Got)){ const m=bk.split('#'); if(m[0]!==p.date) continue;
-    for(const r of Object.values(items)){ if(haveT.has(normT(r.title))) continue;
-      out.push({key:'gi:'+r.id, t:new Date(r.at).toISOString(), title:r.title, sec:r.sec||'news', sh:m[1]||'truce', bucket:bk, gotit:true, gid:r.id, gdate:m[0], link:(r.snap||{}).link||''}); } }
-  return out; }
+function b59GotBox(colId){ return null; }   // v59m: Got it stays in the list, grayed and sunk — no separate wrap pile
+/* v59m: Got it does not add wrap entries. Only On Air does, once, deduped by item id. */
+function b59WrapEntries(p, have){ return []; }
 /* music: tags + banner */
 function b59Chips(it){ const o=[]; const pt=b59PinTopic(it); if(pt) o.push(h('span',{className:'b59chip pin'}, (pt.icon?pt.icon+' ':'')+pt.label)); else if(it.pin) o.push(h('span',{className:'b59chip pin'}, it.pin));
   if(it.hot) o.push(h('span',{className:'b59chip hot'}, '🔥 Trending')); else if(it.top) o.push(h('span',{className:'b59chip hot'}, '🔥 Breaking'));
@@ -2617,16 +2754,24 @@ function b59BattleHeader(){ if(typeof songPick!=='function') return null; const 
 function b59SegOk(key){ return !['clips','buzz','news','wrap','liners','saved','battle','kuwc','studioq','movies'].includes(key) && !(typeof isSongSec==='function' && isSongSec(key)) && !(key==='lifestyle' && typeof onAirProfile==='function' && onAirProfile('courtney')); }
 function b59SegIt(item){ return {title:(item.v&&item.v.title)||item.key, _id:'sec:'+item.key, src:'', tag:item.key}; }
 function b59SegBar(item){ const it=b59SegIt(item); const bar=h('div',{className:'skbar b59seg'}); b59Buttons(bar, it, item.key, ''); return bar; }
-/* story summary: collapsed preview = first ~45 words (2-3 lines) of the real story body; a full-width Read more bar
-   (or a tap on the text) expands the whole story inline, Show less collapses it. Title stays the article link. */
-function b59Summary(text){ const t=String(text||'').replace(/\s+/g,' ').trim(); const w=t.split(' '); const PV=45; const box=h('div',{className:'nsum'});
+/* story summary: collapsed preview = first 1-2 complete sentences (~45 words, never mid-sentence).
+   Read more (or a tap on the text) shows the whole story with no line-clamp; Show less collapses it. Title stays the article link. */
+function b59Sents(text){ const t=String(text||'').replace(/\s+/g,' ').trim(); if(!t) return [];
+  const hold=[]; const prot=t.replace(/\b(?:Mr|Mrs|Ms|Mx|Dr|Rep|Sen|Gov|Gen|Lt|Col|St|Jr|Sr|Inc|Ltd|Co|vs|etc|Prof|Rev|Sgt|Capt|Ave|Blvd|Rd|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|Ala|Ariz|Calif|Colo|Conn|Fla|Ga|Ill|Ind|Kan|Ky|La|Mass|Md|Mich|Minn|Miss|Mo|Mont|Neb|Nev|Okla|Ore|Pa|Tenn|Tex|Va|Vt|Wash|Wis|Wyo|U\.S|U\.N|D\.C|N\.Y|L\.A)\./gi, m=>{ hold.push(m); return '\0'+ (hold.length-1) +'\0'; }).replace(/\b([A-Z])\./g, m=>{ hold.push(m); return '\0'+ (hold.length-1) +'\0'; });
+  return prot.split(/(?<=[.!?])(?:["')\]]+)?\s+/).map(s=>s.replace(/\0(\d+)\0/g,(_,i)=>hold[+i]).trim()).filter(Boolean); }
+function b59Preview(text){ const t=String(text||'').replace(/\s+/g,' ').trim(); if(!t) return '';
+  const sents=b59Sents(t); if(!sents.length) return t;
+  const parts=[]; let words=0;
+  for(const s of sents){ const w=s.split(/\s+/).filter(Boolean).length; if(parts.length && (words>=15 || words+w>45)) break; parts.push(s); words+=w; if(parts.length>=2) break; }
+  return parts.join(' ').trim()||t; }
+function b59Summary(text){ const t=String(text||'').replace(/\s+/g,' ').trim(); const box=h('div',{className:'nsum'});
   const txt=h('div',{className:'nsumt', role:'text'}); box.append(txt);
-  if(w.length<=PV+8){ txt.textContent=t; return box; }          // short story: show all of it, no bar
-  const head=w.slice(0,PV).join(' ').replace(/[,;:\-–]$/,'')+'…';
+  const head=b59Preview(t);
+  if(!t || head===t){ txt.textContent=t; return box; }          // short story or one sentence: show all of it, no bar
   const bar=h('button',{type:'button', className:'nsummore', 'aria-expanded':'false'}, h('span',{className:'lbl'}, 'Read more'), h('span',{className:'chev','aria-hidden':'true'}, '⌄'));
-  txt.textContent=head; txt.classList.add('clamp'); txt.tabIndex=0; txt.setAttribute('role','button');
+  txt.textContent=head; txt.tabIndex=0; txt.setAttribute('role','button');
   const toggle=e=>{ if(e){ e.stopPropagation(); } const open=bar.getAttribute('aria-expanded')==='true';
-    txt.textContent=open?head:t; txt.classList.toggle('clamp',open); box.classList.toggle('open',!open);
+    txt.textContent=open?head:t; txt.classList.remove('clamp'); box.classList.toggle('open',!open);
     bar.setAttribute('aria-expanded',String(!open)); bar.querySelector('.lbl').textContent=open?'Read more':'Show less'; bar.querySelector('.chev').textContent=open?'⌄':'⌃'; };
   bar.onclick=toggle; txt.onclick=toggle; txt.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(e); } });
   box.append(bar); return box; }
@@ -2966,6 +3111,13 @@ function migratePersonSaves(){ /* Truce 11/19: saves/holds belong to one person.
       if(ch) lsSet('hs:holds', holds); }
     if(typeof savedMap==='object' && savedMap){ let ch=false;
       for(const o of Object.values(savedMap)){ if(o && typeof o==='object' && !o.profile){ o.profile='truce'; ch=true; } }
+      /* v59n / Truce 11/25: two Share-menu items from his phone landed on
+         Courtney's and Cali's lists because the open host tab owned the save.
+         Move those two back to AJ. Idempotent. */
+      for(const id of ['smwohl9n6izvr','smwpvqao9tirm']){
+        const o=savedMap[id];
+        if(o && typeof o==='object' && o.profile && o.profile!=='truce'){ o.profile='truce'; o.upd=new Date().toISOString(); ch=true; }
+      }
       if(ch) lsSet('hs:saved', savedMap); }
   }catch(e){ console.warn('migratePersonSaves', e); } }
 function migrateShiftBuckets(){
@@ -3092,11 +3244,12 @@ function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp
     if(readFreq(sp.id)==='shift') return rp==='early'||rp==='warn';
     return inFirst && (rp==='early'||rp==='warn');
   }) : [];
+  const jqShow=typeof jqInSeason==='function' && jqInSeason();
   const list=[...gvl, ...sps, ...stl];
-  const was=box.hidden; const sig=ph+'|'+(sh?sh.id+(sh.ended?':ended':''):'none')+'|'+(hot?'hot':'')+'|'+list.map(x=>x.id+(x.giveaway&&typeof gvWinTag==='function'?':'+gvWinTag(x):'')).join(',');
-  if(box.dataset.sig===sig && !box.hidden===!!list.length) return;
+  const was=box.hidden; const sig=ph+'|'+(sh?sh.id+(sh.ended?':ended':''):'none')+'|'+(hot?'hot':'')+'|'+(jqShow?'jq':'')+'|'+list.map(x=>x.id+(x.giveaway&&typeof gvWinTag==='function'?':'+gvWinTag(x):'')).join(',');
+  if(box.dataset.sig===sig && !box.hidden===!!(list.length||jqShow)) return;
   box.dataset.sig=sig; box.innerHTML=''; box.className=(ph==='over'?'early':ph)+(hot?' gvhot':'');
-  if(!list.length){ box.hidden=true; if(!was) setHdr(); return; }
+  if(!list.length && !jqShow){ box.hidden=true; if(!was) setHdr(); return; }
   const onlyGv=gvl.length && !stl.length && !list.some(x=>!x.giveaway && !x.station);
   const shiftLine=sh && !sh.ended ? shiftLabel(sh) : '';
   box.append(h('span',{className:'rsl', id:'rsShift'}, hot && gvl.some(x=>!x.announce) ? '🎟 Listening appointment' : onlyGv && !stl.length ? '🎟 Giveaways today' : shiftLine || (ph==='warn' ? '⏰ Ad reads due by '+fmt12((spSettings().deadline||'09:00')) : 'Ad reads today')));
@@ -3110,6 +3263,7 @@ function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp
         showCopy ? h('span',{className:'rc'+((sp.station||sp.giveaway)?' long':'')}, sp.giveaway ? (sp.shortLine||sp.read) : (sp.station ? readable(sp.read) : sp.read)) : null),
       h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:per?'Done: hide until the next shift':'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓')));
   }
+  if(jqShow && typeof jqOpenBtn==='function') box.append(jqOpenBtn());
   box.hidden=false; setHdr(); }
 function fmt12(hm){ const [H,M]=String(hm).split(':').map(Number); return ((H%12)||12)+(M?':'+String(M).padStart(2,'0'):'')+(H<12?' AM':' PM'); }
 function renderBanner(){ renderReadStrip(); const due=overdueList(); const b=$('#spBanner');
@@ -3204,6 +3358,17 @@ async function loadCountdownDefaults(){
   if(isHttp){ try{ const j=await fetchJson('countdowns.json'); if(j && Array.isArray(j.countdowns)){ cdDefaults=j; lsSet('hs:cdDefaults', j); } }catch(e){} }
   renderCountdowns(); if(typeof renderWeekCal==='function') renderWeekCal(); }
 function allCountdowns(){ return mergeList(cdDefaults.countdowns, cdOv); }
+/* until or kill: 'YYYY-MM-DD' = chip is shown through the end of that day (ET), same as station-read kills. Blank = no expiry. */
+function cdUntilOf(c){ return (c&&(c.until||c.kill))||''; }
+function cdStillLive(c){
+  const t=cdUntilOf(c);
+  if(!t) return true;
+  if(typeof killLive==='function') return killLive(t);
+  const k=String(t).trim();
+  if(!k || /^(tbd|tfn)$/i.test(k)) return true;
+  const day=/^\d{4}-\d{2}-\d{2}$/.test(k)?k:(typeof normKill==='function'?normKill(k):k);
+  return !/^\d{4}-\d{2}-\d{2}$/.test(day) || ((typeof etParts==='function'?etParts().date:'')<=day);
+}
 function daysBetween(a,b){ return Math.round((parseYmd(b)-parseYmd(a))/864e5); }
 function cdText(c){ const today=etParts().date; const d=String(c.when||'').slice(0,10); if(!/^\d{4}-\d{2}-\d{2}$/.test(d)) return null;
   const n=daysBetween(today,d); const mid=/T00:00/.test(String(c.when||''));   // 12 AM = the night before, on air
@@ -3218,7 +3383,7 @@ function cdText(c){ const today=etParts().date; const d=String(c.when||'').slice
   if(n>=-7) return {cls:'out', t:[c.emoji, c.name], n:'Out now'};
   return null; }
 function renderCountdowns(){ const box=$('#countdowns'); if(!box) return; box.innerHTML='';
-  for(const c of allCountdowns()){ const x=cdText(c); if(!x) continue;
+  for(const c of allCountdowns()){ if(!cdStillLive(c)) continue; const x=cdText(c); if(!x) continue;
     box.append(h('button',{className:'cdchip '+x.cls, type:'button', title:(c.note||c.name)+(c.when?' · '+c.when.replace('T',' '):'')+(cdQuery(c)?' · tap for latest news':''), on:{click:()=>cdQuery(c)?openCdNews(c):openCdEditor()}},
       x.t.filter(Boolean).join(' ')+' ', h('span',{className:'n'}, x.n))); } }
 function logCd(what,note){ cdLog.unshift({at:new Date().toISOString(), what, note:note||''}); cdLog=cdLog.slice(0,300); lsSet('hs:cdLog', cdLog); }
@@ -3233,6 +3398,8 @@ function openCdEditor(){
           h('input',{type:'time', value:(t||'').slice(0,5), on:{input:e=>{ const dd=String(c.when||'').split('T')[0]; c.when=dd+(e.target.value?'T'+e.target.value:''); }}})),
         h('label',{},'Emoji (optional)'), h('input',{type:'text', value:c.emoji||'', style:'max-width:120px', on:{input:e=>c.emoji=e.target.value}}),
         h('label',{},'Note (optional)'), h('input',{type:'text', value:c.note||'', on:{input:e=>c.note=e.target.value}}),
+        h('label',{},'Hide after (optional until/kill date: shown through the end of that day ET; blank, TBD or TFN = stays)'),
+        h('input',{type:'text', value:c.until||c.kill||'', placeholder:'2026-11-25, 11/25, TBD or TFN', on:{input:e=>{ const v=e.target.value.trim(); c.until=v; if('kill' in c && !v) delete c.kill; }}}),
         h('label',{},'News query (optional): tapping the chip shows the latest headlines for it'), h('input',{type:'text', value:cdQuery(c), placeholder:'e.g. GTA 6', on:{input:e=>c.newsQuery=e.target.value.trim()}}),
         h('label',{},'📈 Records / facts for the news panel: one per line as  fact | source | date (YYYY-MM-DD) | link'),
         h('textarea',{rows:5, value:(c.facts||[]).map(f=>[f.text,f.source||'',f.date||'',f.url||''].join(' | ')).join('\n'), on:{input:e=>{ c.facts=e.target.value.split('\n').map(l=>l.split('|').map(x=>x.trim())).filter(a=>a[0]).map(([text,source,date,url])=>({text, source:source||'', date:date||'', url:/^https?:/.test(url||'')?url:''})); }}}),
@@ -4401,6 +4568,18 @@ function sectionOwner(k,v){ if(!v || typeof v!=='object') return '';
   const t=String(v.title||'')+' | '+String(v.category||'')+' | '+String(v.id||k||'');
   if(!/personal[\s_-]*bits?\b/i.test(t)) return '';
   if(/courtney/i.test(t)) return 'courtney'; if(/\bcall?ie\b|\bcali\b/i.test(t)) return 'callie'; return 'truce'; }
+/* v59m: true for sheet cards that belong in the top #readStrip (or are GTA Watch), never in the swipe slider. Matches key/id/category/title so future promo-* or GTA Watch JSON still stays out. Does not hide the virtual Liners tab. */
+function isSliderStripOnly(k,v){
+  const key=String(k||'').toLowerCase();
+  const id=String((v&&v.id)||'').toLowerCase();
+  const cat=String((v&&v.category)||'').toLowerCase();
+  const typ=String((v&&v.type)||'').toLowerCase();
+  const title=String((v&&v.title)||'');
+  if(key==='gta6' || id==='gta6' || /^gta-?6$/.test(key) || /^gta-?6$/.test(id) || /gta\s*6?\s*watch/i.test(title)) return true;
+  if(/^promo($|[-_])/.test(key) || /^promo($|[-_])/.test(id)) return true;
+  if(cat==='promo' || typ==='promo' || /^promo\s*reads?$/i.test(cat) || /^promo\s*reads?$/i.test(title)) return true;
+  return false;
+}
 function sectionListBase(){
   const s=state.sheet||{}; const out=[{key:'news', v:{title:'📰 News', category:'Local · National · Gossip', content:'x', virtual:true}}];
   if(typeof onAirProfile==='function' && onAirProfile('courtney') && etParts().dow>=1 && etParts().dow<=5){
@@ -4411,7 +4590,7 @@ function sectionListBase(){
     if(cj && Array.isArray(cj.studioLine) && cj.studioLine.length) out.push({key:'studioq', v:{title:'📞 Studio Line Q', category:'1:30', content:'x', virtual:true}});
   }
   for(const [k,v] of Object.entries(s)){
-    if(k==='weather' || k==='newsclips' || k==='courtney' || k==='callie' || k==='_normalized' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v)) continue;
+    if(k==='weather' || k==='newsclips' || k==='courtney' || k==='callie' || k==='_normalized' || (k==='vibe' && isSection(s.mood)) || !isSection(v) || isClipKey(k,v) || isSliderStripOnly(k,v)) continue;
     if(k==='offcharts' && etParts().dow!==5) continue;   // Off the Charts: Fridays only (ET)
     { const ow=sectionOwner(k,v); if(ow && ow!==((typeof viewProfile==='function'&&viewProfile())||'truce')) continue; }   // v59i: personal bits stay on their own show
     if(k==='mood' && isSection(s.vibe)) out.push({key:'vibe', v:s.vibe}); // Vibe Check: own tab, right before Mood Boost
@@ -4732,14 +4911,16 @@ function buzzCard(orig){
 
 function storyKeepInject(c, sec, col){
   if(!c || typeof storyKeepBar!=='function') return;
+  try{ storyPruneStalePins(); }catch(e){}
   const p=storyKeepProf(); const today=(typeof etParts==='function'?etParts().date:'');
   const shown=new Set([...c.querySelectorAll('[data-keep-id]')].map(el=>el.getAttribute('data-keep-id')));
   const extras=[];
   for(const rec of Object.values((storyKeep.pins[p]||{}))){
     if((rec.sec||'')!==sec) continue; if(col && rec.col && rec.col!==col) continue;
-    if(shown.has(rec.id)) continue;
-    const it=Object.assign({}, rec.snap||{}, {pinned:true, title:(rec.snap||{}).title||'Pinned story'});
-    extras.push({it, pinned:true}); shown.add(rec.id);
+    if(storyPinStale(rec)) continue;
+    const it=Object.assign({}, rec.snap||{}, {pinned:true, title:(rec.snap||{}).title||'Pinned story', _keepId:rec.id});
+    if(shown.has(rec.id) || storyKeepIdsOf(it).some(id=>shown.has(id))) continue;
+    extras.push({it, pinned:true, got:!!b59IsGot(it)}); shown.add(rec.id); storyKeepIdsOf(it).forEach(id=>shown.add(id));
   }
   for(const rec of Object.values((storyKeep.saves[p]||{}))){
     if((rec.sec||'')!==sec || rec.appearOn!==today) continue;
@@ -4750,14 +4931,15 @@ function storyKeepInject(c, sec, col){
   }
   if(!extras.length) return;
   const box=h('div',{className:'keepbox'});
-  for(const x of extras){
-    const card=h('article',{className:'buzzcard '+(x.pinned?'pinned':'fromsave'), 'data-keep-id':storyKeepId(x.it)});
+  const live=extras.filter(x=>!x.got), sunk=extras.filter(x=>x.got);
+  for(const x of live.concat(sunk)){
+    const card=h('article',{className:'buzzcard '+(x.pinned?'pinned':'fromsave')+(x.got?' b59gotit':''), 'data-keep-id':x.it._keepId||storyKeepId(x.it)});
     card.append(h('div',{className:'headline buzzhd'}, tcase(x.it.title||'')));
     if(x.it.desc||x.it.recap){ const body=h('div',{className:'buzzbody'}); richLines(body, x.it.desc||x.it.recap); card.append(body); }
     card.append(storyKeepBar(x.it, sec, col||''));
     box.append(card);
   }
-  c.insertBefore(box, c.firstChild);
+  if(sunk.length && !live.length) c.append(box); else c.insertBefore(box, c.firstChild);
 }
 function renderBuzzLocal(c, txt){ renderBuzz(c, txt); if(typeof storyKeepInject==='function') storyKeepInject(c,'buzz',''); }
 function renderBuzz(c, txt){
@@ -4887,7 +5069,7 @@ function newsCard(it, col){
   let sum=null; if(it.desc){ sum=b59Summary(it.desc); }
   if(it.lines && it.lines.length){ const c=h('div',{className:'content'}); richLines(c, typeof stripJokeLines==='function'?stripJokeLines(it.lines.join('\n')):it.lines.join('\n')); body.append(c); }
   else if(!it.desc && !it.link) body.append(h('div',{className:'nempty'}, 'Bit from today\'s sheet.'));
-  let cm=null; try{ if(typeof storyClipFor==='function' && it.title) cm=storyClipFor([it.title, ...(it.lines||[]), it.desc||'', it.link||'']); }catch(e){}
+  let cm=it._clip||null; try{ if(!cm && typeof storyClipFor==='function' && (it.title||it.clip||it.clipId)) cm=storyClipFor(it); }catch(e){}
   const nrow=h('div',{className:'nclip'}, cm?inlineClipBtn(cm):null, (()=>{ const si=storyItemAny(it.title); return airBtn(si?'it:'+si.id:'n:'+fnv(it.title), it.title, si?si.sec:'news', true, (it.lines||[]).join('\n')||it.desc||''); })()); if(cm) card.classList.add('hasclip');
   card.append(b59Side(it), btn); if(sum) card.append(sum); card.append(nrow, body);
   if(typeof appendArticleAndJokes==='function'){
@@ -4941,7 +5123,7 @@ function renderNewsView(view){
     if(extra.length){ const more=h('button',{className:'nmore', type:'button'}, 'More headlines ('+extra.length+')');
       more.onclick=()=>{ tapHaptic(); extra.forEach(x=>x.hidden=false); more.remove(); }; col.append(more); }
     try{ col.append(b59MoreBox(c.id, null, c.id==='gossip'?'celebrity news':c.id==='music'?'music news':c.id+' headlines')); }catch(e){ console.warn('more', e); }
-    { const gb=b59GotBox(c.id); if(gb) col.append(gb); }
+    /* v59m: Got it items stay in the column, grayed and at the bottom */
     if(!n) col.append(h('div',{className:'nempty'}, c.id==='local' ? (navigator.onLine?'No local headlines yet.':'Offline: no local headlines saved.') : (navigator.onLine ? 'Loading…' : 'Offline: nothing saved yet.')));
     cols.append(col);
   });
@@ -5751,11 +5933,16 @@ function parseShare(sp){ const title=(sp.get('title')||'').trim(), text=(sp.get(
   let t=title; if(!t || t===url) t=rest.slice(0,140); if(!t && url){ try{ t=new URL(url).hostname.replace(/^www\./,''); }catch(_){ t=url; } }
   const note=(rest && rest!==t) ? rest : '';
   const host=(()=>{ try{ return new URL(url).hostname; }catch(_){ return ''; } })();
-  const cat=/youtube|youtu\.be|tiktok|soundcloud|spotify|instagram\.com\/reel/i.test(host)?'clip':'buzz';
+  const cat=/youtube|youtu\.be|tiktok|soundcloud|spotify|instagram\.com\/(reel|p|tv|reels)\//i.test(host+' '+url)?'clip':'buzz';
   return {title:t, url, note, cat}; }
-/* v59i: whose show a save belongs to. Share-menu saves go to the phone's owner (pinned device), never to whichever tab happened to be open. */
+/* v59n: whose show a save belongs to.
+   Share-menu saves: pinned phone → that person; unpinned or studio → AJ.
+   Never the open host tab and never the shift clock. The "For whose show"
+   radios still let him send one to Courtney or Cali on purpose.
+   Manual ＋ Add still defaults to the pinned owner, or the host you're viewing. */
 function saveOwnerDefault(pre){ const r=(typeof deviceRole==='function'&&deviceRole())||''; const pers=['truce','courtney','callie'];
-  if(pre && pre.src==='share' && pers.includes(r)) return r;
+  if(pre && pre.src==='share') return pers.includes(r)?r:'truce';
+  if(pers.includes(r)) return r;
   return (typeof profileId==='function'&&profileId())||'truce'; }
 function saveOwnerName(id){ return (typeof showTabLabel==='function'?showTabLabel(id):id)+(/s$/i.test(id)?"'":"'s")+' show'; }
 function openSave(pre, id){ const b=$('#saveBody'); b.innerHTML=''; const o=id?savedMap[id]:null; const d=Object.assign({title:'',url:'',note:'',cat:'buzz'}, o||pre||{});
@@ -5823,6 +6010,7 @@ function syncSnap(){ const m={};
   for(const [d,r] of Object.entries((typeof holds!=='undefined'&&holds)||{})) for(const [id,o] of Object.entries(r||{})) m['hd:'+d+':'+id]=o;
   for(const [id,o] of Object.entries((typeof gvOv!=='undefined'&&gvOv&&gvOv.items)||{})) m['gv:'+id]=o;
   /* giveaway winners (names + phone numbers) stay on this device: never put in the shared bin */
+  /* Jonas qualifier names + phones (hs:jonasQual) stay on this device: never put in the shared bin */
   for(const [id,o] of Object.entries(b59Chase||{})) m['ch:'+id]=o;
   for(const [pf,r] of Object.entries((typeof b59MP!=='undefined'&&b59MP)||{})) for(const [id,o] of Object.entries(r||{})) m['mpl:'+pf+':'+id]=o;
   for(const [id,o] of Object.entries((typeof b59CQ!=='undefined'&&b59CQ)||{})) m['cq:'+id]=o;
@@ -5908,8 +6096,8 @@ async function syncNow(){
   try{
     syncMark(); const local=syncLocalDoc(); const remote=((await syncReq('GET'))||{}).items||{};
     const merged={}; let pushNeeded=false, pulled=0;
-    for(const k of Object.keys(remote)) if(k.indexOf('gw:')===0){ delete remote[k]; pushNeeded=true; }   // scrub winner phones from the bin if an older build left any
-    for(const k of Object.keys(local)) if(k.indexOf('gw:')===0) delete local[k];
+    for(const k of Object.keys(remote)) if(k.indexOf('gw:')===0 || k.indexOf('jq:')===0 || k==='hs:jonasQual' || k.indexOf('jonasQual')>=0){ delete remote[k]; pushNeeded=true; }   // scrub winner/qualifier phones from the bin if an older build left any
+    for(const k of Object.keys(local)) if(k.indexOf('gw:')===0 || k.indexOf('jq:')===0 || k==='hs:jonasQual' || k.indexOf('jonasQual')>=0) delete local[k];
     for(const k of new Set([...Object.keys(local), ...Object.keys(remote)])){ const L=local[k], R=remote[k];
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
@@ -6068,42 +6256,127 @@ renderSyncState(); setTimeout(syncNow, syncCfg&&syncCfg.since&&Date.now()-syncCf
 
 
 /* ---------- inline story ▶ (published clips matched to story blocks) ---------- */
-const CLIP_STOP=new Set('this that with from your they them their there have here what when were will just about into over more than then after before right first last today said says been also only like dont cant baby back show week weekend friday saturday sunday monday tuesday wednesday thursday morning night tonight play talk talkover over ready clip audio call calls listen hear heard text going year years time pairs'.split(' '));
-function storyTok(t){ return new Set(String(t||'').toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[’']/g,'').split(/[^a-z0-9]+/).filter(w=>w && !CLIP_STOP.has(w) && (w.length>=4 || /^\d{2,}$/.test(w) || /^(st|ra|nfl|snl|tvc)$/.test(w)))); }
+/* v59m: token match uses the clip TITLE only (not the long SET UP), after stripping SUPER-CLIP / CLIP / SUPERCUT prefixes.
+   Conservative: no clip is better than the wrong clip. Weekly generics (Thanksgiving, parade, Detroit, holiday, Lions, Bears, halftime, and similar) are stop words and cannot create a match.
+   A token match needs 2 distinctive overlapping title tokens with at least one in the story headline, or one rare 6+ subject token in both headlines. Explicit clip ids and exact titles still win. */
+const CLIP_STOP=new Set('this that with from your they them their there have here what when were will just about into over more than then after before right first last today said says been also only like dont doesnt cant baby back show week weekend friday saturday sunday monday tuesday wednesday thursday morning night tonight play talk talkover over ready clip audio call calls listen hear heard text going year years time pairs because could would being other these those where which while still every plus thanksgiving parade detroit holiday holidays travelers nationwide storms millions wednesday tomorrow halftime lions bears football dish dinner community pie poll game field ford national weekend people family city county state house biggest plans severe threaten season awards official movie story cinema release prices firefighters firefighter department super bowl music news live disney shop shopping reminder days day the was not and for are but you all one new five even great better short case upnorthlive northern cooks'.split(' '));
+const CLIP_WEAK=new Set('michigan blood boiling quotes layers everybody likes northern coastal coast'.split(' '));
+const CLIP_NOSOLO=new Set('turkey trot interview cooked cook eat wants want loves martin better short case raymond everybody doesnt'.split(' '));
+const CLIP_SOLO_OK=new Set('gas fryer parfait inflatables gasbuddy gasbuddys tcfd maniscalco brined stovetop wutang'.split(' '));
+function clipPrefixStrip(t){
+  return String(t||'')
+    .replace(/^(?:c\d{2}|tg\d{2})\s+/i,'')
+    .replace(/\b(?:super[\s-]?clip|super[\s-]?cut|show\s+opener(?:\s+supercut)?|past\s+bit|stand-?up|trending\s+audio)\b[:.\-\s]*/gi,' ')
+    .replace(/(?:^|[\s·|(\[])(?:clip)(?=$|[\s:.\-|)\]])/gi,' ')
+    .replace(/\b(?:c\d{2}|tg\d{2})\b/gi,' ')
+    .replace(/\s+/g,' ').trim();
+}
+function storyTok(t, loose){
+  t=clipPrefixStrip(String(t||'').toLowerCase().replace(/https?:\/\/\S+/g,' ').replace(/[’']/g,''));
+  return new Set(t.split(/[^a-z0-9]+/).map(w=>w.replace(/^(\d+)(?:st|nd|rd|th)$/,'$1')).filter(w=>w && !CLIP_STOP.has(w) && !CLIP_WEAK.has(w) && (w.length>=4 || /^\d{2,}$/.test(w) || /^(st|ra|nfl|snl|tvc|gas)$/.test(w))));
+}
+function clipSetupOf(p){
+  if(!p) return '';
+  for(const k of ['setup','intro','desc','description']){ const v=String(p[k]||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim(); if(v && !/^https?:/i.test(v)) return v; }
+  const body=String(p.body||p.recap||p.content||'').replace(/<br\s*\/?>/gi,'\n');
+  const m=body.match(/(?:🎙️\s*)?SET UP:\s*([\s\S]+?)(?=\s*(?:🔈|•|IN\s*:|OUT\s*:|$))/i);
+  return m?String(m[1]).replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim():'';
+}
+function clipIntroOf(c){
+  let setup=clipSetupOf(c);
+  if(setup){ if(setup.length>180) setup=setup.slice(0,178).replace(/\s+\S*$/,'')+'…'; return {text:setup, missing:false}; }
+  const title=clipPrefixStrip(String(c.title||'Clip')).replace(/\(READY\)/i,'').trim()||String(c.title||'Clip');
+  const sec=c.secs||(typeof clipSecsOf==='function'?clipSecsOf(c):0);
+  const who=c.performer||(typeof clipPerformerOf==='function'?clipPerformerOf(c):'');
+  const bits=[title];
+  if(sec) bits.push(typeof fmt==='function'?fmt(sec):sec+'s');
+  if(who) bits.push(who);
+  return {text:bits.join(' · '), missing:true};
+}
 var storyClipCache={sheet:null, idx:null, date:null, list:[]};
 function storyClips(){ const d=clipDate(); if(storyClipCache.sheet===state.sheet && storyClipCache.idx===sheetIndex && storyClipCache.date===d && storyClipCache.list.length) return storyClipCache.list;
-  const list=[]; for(const key of ['newsclips','clips']) for(const p of clipPicks(key)){ const url=clipAudioUrl(p.audio); if(!url) continue;
+  const list=[], seen=new Set();
+  for(const key of ['newsclips','clips']) for(const p of clipPicks(key)){ const url=clipAudioUrl(p.audio); if(!url) continue;
     const raw=state.sheet[key] && Array.isArray(state.sheet[key].clips) ? (state.sheet[key].clips.find(x=>String(x.id)===p.id)||{}) : {};
-    const lines=String(p.body||'').split('\n'); const keep=lines.filter(l=>/^\s*(•|🎙)/.test(l)).join(' ');
-    const title=String(p.title||'').replace(/\(READY\)/i,'').trim();
-    const urls=(String(raw.source||raw.story||'')+' '+String(p.body||'')).match(/https?:\/\/[^\s<"')]+/g)||[];
-    list.push({id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:storyTok(title), tk:storyTok(title+' '+keep), secs:clipSecsOf(p), kind:p.kind, performer:clipPerformerOf(p)}); }
+    const merged=Object.assign({}, raw, p);
+    const title=String(p.title||raw.title||'').replace(/\(READY\)/i,'').trim();
+    const setup=clipSetupOf(merged);
+    const urls=(String(raw.source||raw.story||'')+' '+String(p.body||raw.body||'')).match(/https?:\/\/[^\s<"')]+/g)||[];
+    const rec={id:p.id, title, url, urls:urls.map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,'')), tt:storyTok(title, true), secs:clipSecsOf(merged), kind:p.kind||raw.kind, performer:clipPerformerOf(merged), setup, body:merged.body||p.body||raw.body||'', recap:merged.recap||raw.recap||''};
+    const prev=seen.has(p.id)?list.find(x=>x.id===p.id):null;
+    if(prev){ if((!prev.setup && rec.setup) || ((rec.setup||'').length>(prev.setup||'').length)){ Object.assign(prev, rec); } continue; }
+    seen.add(p.id); list.push(rec); }
   storyClipCache={sheet:state.sheet, idx:sheetIndex, date:d, list}; return list; }
-function storyClipFor(blk){ const cl=storyClips(); if(!cl.length) return null;
-  const head=String(blk[0]).replace(/^\s*\d+\)\s*/,''); const body=blk.filter(l=>!/^\s*➜/.test(l)).join(' ');
-  const urls=(body.match(/https?:\/\/[^\s<"')]+/g)||[]).map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,''));
-  const ht=storyTok(head), bt=storyTok(body); let best=null, bs=0;
+function storyExplicitClipId(it){
+  if(!it || typeof it!=='object') return '';
+  for(const k of ['clipId','clip_id','clipID','audioId','audio_id','clip']){
+    const v=it[k]; if(v==null || v===true || v===false) continue;
+    const s=String(v).trim(); if(s && !/^https?:/i.test(s)) return s;
+  }
+  return '';
+}
+function storyClipById(id){
+  if(!id) return null;
+  const want=String(id).toLowerCase().replace(/^clip[s:]/,'');
+  const cl=storyClips();
+  return cl.find(c=>String(c.id).toLowerCase()===want || String(c.id).toLowerCase()===String(id).toLowerCase())
+    || cl.find(c=>String(c.id).toLowerCase().endsWith('-'+want))
+    || cl.find(c=>{ const tail=String(c.id).toLowerCase().split('-').pop(); return tail===want || tail===want.replace(/^0/,''); })
+    || null;
+}
+function storyClipFor(blk, item){
+  if(blk && !Array.isArray(blk) && typeof blk==='object'){ item=blk; blk=[item.title||item.head||'', ...((item.lines)||[]), item.desc||item.recap||item.body||item.content||'', item.link||item.url||item.article_url||'']; }
+  const xid=storyExplicitClipId(item||{});
+  if(xid){ const hit=storyClipById(xid); if(hit) return hit; }
+  const cl=storyClips(); if(!cl.length) return null;
+  const arr=Array.isArray(blk)?blk:[blk];
+  const head=String(arr[0]||'').replace(/^\s*\d+\)\s*/,'');
+  const body=arr.filter(l=>!/^\s*➜/.test(String(l||''))).join(' ');
+  const urls=(String(body).match(/https?:\/\/[^\s<"')]+/g)||[]).map(u=>u.replace(/[?#].*$/,'').replace(/\/$/,''));
+  const ht=storyTok(head, true), bt=storyTok(body, true); let best=null, bs=0;
   for(const c of cl){
     if(urls.some(u=>c.urls.includes(u))) return c;                          // 1) same source URL
-    const hn=head.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(), tn=c.title.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
-    if(hn.length>=8 && (hn===tn || (tn.length>=8 && (hn.includes(tn)||tn.includes(hn))))) return c;   // 2) same headline
-    let shared=0, inHead=0; for(const w of c.tk){ if(bt.has(w)){ shared++; if(ht.has(w)) inHead++; } }
-    const sc=shared+inHead; if(shared>=3 && inHead>=1 && sc>bs){ bs=sc; best=c; }   // 3) strong overlap, anchored in the headline
+    const hn=clipPrefixStrip(head).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+    const tn=clipPrefixStrip(c.title).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+    if(hn.length>=8 && hn===tn) return c;   // 2) exact headline only — substring matches were too loose
+    let shared=0, inHead=0, rare=0;
+    for(const w of (c.tt||[])){
+      if(bt.has(w) || ht.has(w)){
+        shared++;
+        if(ht.has(w)) inHead++;
+        if(w.length>=6 && !CLIP_NOSOLO.has(w)) rare++;
+      }
+    }
+    let sc=0;
+    // Conservative: at least one distinctive, non-generic token must sit in the story headline.
+    // A NOSOLO word like "turkey" in the headline is not enough, even with a second token only in the body.
+    const headDistinct=[...(c.tt||[])].filter(w=>ht.has(w)&&(CLIP_SOLO_OK.has(w)||!CLIP_NOSOLO.has(w)));
+    const headRare=headDistinct.some(w=>CLIP_SOLO_OK.has(w)||w.length>=6);
+    if(shared>=2 && inHead>=1 && (headDistinct.length>=2 || headRare)) sc=shared+inHead+rare;
+    else if(shared===1 && inHead>=1 && headRare) sc=1+inHead;
+    if(sc>bs){ bs=sc; best=c; }
   }
-  return best; }
+  return best;
+}
 let inlineCur=null;
 function inlineClipBtn(c){
   const dn=audioDone(c);
   const sec=c.secs||clipSecsOf(c); const lab='Clip'+(sec?' · '+(typeof fmt==='function'?fmt(sec):sec+'s'):'');
+  const intro=clipIntroOf(c);
   const b=h('button',{className:'sclip'+(dn?' aired':''), type:'button', title:'Play clip: '+c.title, 'aria-label':'Play clip: '+c.title}, h('span',{className:'sci','aria-hidden':'true'},'▶'), h('span',{className:'scl'}, lab));
   b.dataset.clip=c.id; b.dataset.hsAudio=c.url; if(audioSampled(c)) b.classList.add('played');
   b.onclick=e=>{ e.stopPropagation(); tapHaptic(); hsToggle(c.url, {title:c.title, id:c.id}); };
   const box=airedBox(c, on=>{ if(on){ audioUse(c); toast('Aired: '+c.title, ()=>{ audioReset(c); rerender(); }); } else audioReset(c); rerender(); });
-  const w=h('span',{className:'sclipw'+(dn?' aired':''), 'data-akey':audioKey(c), 'data-id':c.id}, b, box, ...audioTagBits(c)); hsPaintAudio(); return w; }
+  const line=h('div',{className:'sclipintro'+(intro.missing?' missing':''), 'data-clip-intro':intro.missing?'missing':'ok'}, intro.missing?('no clip intro · '+intro.text):("What's in the clip: "+intro.text));
+  const w=h('span',{className:'sclipw'+(dn?' aired':''), 'data-akey':audioKey(c), 'data-id':c.id}, line, b, box, ...audioTagBits(c)); hsPaintAudio(); return w; }
 
 /* ================= station read sheet: once-per-shift reads + liners (station-reads.json + local overlay, synced) ================= */
 /* v59j: 90s, 2K & Today Dance Party is a once-per-shift station read (st-dance-party), same strip and checkoff as Teacher of the Month, every host. Promo Read card on the daily sheet is unchanged. */
 /* v59k: Secret Santa (st-secret-santa, kill 2026-12-10) and Kurtz playlist (st-kurtz-playlist, kill 2026-12-31) are once-per-shift station reads for every host. Dance Party stays kill TFN. */
+/* v59l: daily ad/sponsor/promo reads never appear as Show Wrap items; one compact “Sponsored by:” line of unique sponsor names instead. Giveaways still list in the wrap as before. Jonas qualifier form is device-local only (hs:jonasQual, never synced). */
+/* v59m: station/promo reads (Dance Party, Secret Santa, Kurtz Car Stereo, Teacher of the Month, and any other promo- key or category-Promo card) stay in #readStrip only — never as swipe-slider tabs. GTA Watch is also out of the slider. Filter is by key/id/category/title at render, so a later curate JSON cannot put them back.
+   Got it grays a headline and sinks it to the bottom of its list (reversible, never deleted, never added to the Show Wrap). Only On Air adds a wrap row, once, deduped by item id. Daily ad/sponsor reads stay out of the wrap body; one “Sponsored by:” line sits at the top.
+   storyClipFor matches on clip titles only (not SET UP text), strips SUPER-CLIP/CLIP/SUPERCUT prefixes, and needs 2 distinctive tokens or one rare 6+ headline token. Explicit clip ids win. Attached clips show a short intro from the sheet setup, or title + seconds + comedian, flagged “no clip intro” when the setup is missing. Stories with a real clip sort to the top of News / Local / National / Music / Gossip. Stale user pins older than 3 ET days are dropped; unpin and Got it work on every headline, including pins. */
 var stDefaults=lsGet('hs:stDefaults', {sheetDate:'', reads:[], liners:[]});
 var stOv=lsGet('hs:stLocal', {reads:{}, liners:{}, settings:{}});
 var linerUsed=lsGet('hs:linerUsed', {});
@@ -6279,6 +6552,7 @@ function renderGvWinLog(gid, host){
   const g=allGiveaways().find(x=>x.id===gid);
   if(!host) return;
   host.innerHTML='';
+  if(g && g.id==='gv-jonas-brothers' && typeof jqOpenBtn==='function') host.append(jqOpenBtn(true));
   if(!g || !gvLogsWinners(g)) return;
   const list=gvWinList(g); const cap=+g.pairs||0;
   const rows=h('div',{className:'gvlog'});
@@ -6441,6 +6715,100 @@ function openGvEditor(){
 $('#gvEditBtn').onclick=openGvEditor;
 $('#gvModal').addEventListener('click',e=>{ if(e.target.id==='gvModal') $('#gvModal').classList.remove('on'); });
 
+
+/* ================= Jonas Brothers qualifier form (hs:jonasQual: device localStorage only, never synced) ================= */
+const JQ_KEY='hs:jonasQual';
+const JQ_DAYS=['2026-11-30','2026-12-01','2026-12-02','2026-12-03','2026-12-04'];
+const JQ_SLOTS=['07:00','11:00','16:00'];
+function jqDefaultDayLabel(d){ const dt=new Date(d+'T12:00:00-05:00'); return dt.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:TZ}); }
+function jqDefaultSlotLabel(hm){ return (typeof fmt12==='function')?fmt12(hm):hm; }
+function jqEmpty(){ return {v:1, dayLabels:Object.fromEntries(JQ_DAYS.map(d=>[d,jqDefaultDayLabel(d)])), slotLabels:Object.fromEntries(JQ_SLOTS.map(s=>[s,jqDefaultSlotLabel(s)])), slots:{}}; }
+function jqLoad(){ let o=null; try{ o=JSON.parse(localStorage.getItem(JQ_KEY)); }catch(e){ o=null; } const base=jqEmpty(); if(!o || typeof o!=='object') return base;
+  base.dayLabels=Object.assign(base.dayLabels, o.dayLabels||{}); base.slotLabels=Object.assign(base.slotLabels, o.slotLabels||{});
+  const slots=(o.slots&&typeof o.slots==='object')?o.slots:{}; for(const [k,v] of Object.entries(slots)){ if(!v||typeof v!=='object') continue;
+    base.slots[k]={name:String(v.name||''), phone:String(v.phone||''), locked:!!v.locked, lockedAt:v.lockedAt||null, edits:Array.isArray(v.edits)?v.edits.filter(Boolean):[]}; }
+  return base; }
+function jqSave(data){ try{ localStorage.setItem(JQ_KEY, JSON.stringify(data||jqLoad())); }catch(e){} }   // raw localStorage only — never lsSet / SYNC_KEYS
+function jqSlotKey(day, slot){ return day+'|'+slot; }
+function jqGiveaway(){ return (typeof allGiveaways==='function'?allGiveaways():[]).find(g=>g && g.id==='gv-jonas-brothers' && g.active!==false); }
+function jqInSeason(p=etParts()){ const g=jqGiveaway(); if(!g) return false;
+  const start=ymdOrEmpty(g.start)||'2026-11-30'; if(p.date<start) return false;
+  const last=[ymdOrEmpty(g.event), ymdOrEmpty(g.announce), ymdOrEmpty(g.end), '2026-12-15'].filter(Boolean).sort().pop();
+  return !last || p.date<=last; }
+function jqOpenBtn(inModal){ return h('button',{type:'button', className:inModal?'gvjqbtn':'jqopen', id:inModal?'jqOpenModal':'jqOpenStrip', 'aria-label':'Open Jonas Brothers qualifier form', on:{click:()=>{ tapHaptic(); openJonasQual(); }}}, '🎟 Jonas qualifiers'); }
+function jqSlotOf(data, day, slot){ const k=jqSlotKey(day,slot); data.slots[k]=data.slots[k]||{name:'',phone:'',locked:false,lockedAt:null,edits:[]}; return data.slots[k]; }
+function jqLock(day, slot, name, phone){ const data=jqLoad(); const s=jqSlotOf(data,day,slot);
+  s.name=String(name!=null?name:s.name||'').trim(); s.phone=String(phone!=null?phone:s.phone||'').trim();
+  if(!s.name && !s.phone){ if(typeof toast==='function') toast('Add a name or phone first'); return data; }
+  const now=new Date().toISOString();
+  if(s.lockedAt){ if(!s.locked) s.edits.push(now); }
+  else s.lockedAt=now;
+  s.locked=true; jqSave(data); return data; }
+function jqUnlock(day, slot){ const data=jqLoad(); const s=jqSlotOf(data,day,slot); s.locked=false; jqSave(data); return data; }
+function jqSetLabel(kind, key, val){ const data=jqLoad(); const bag=kind==='day'?data.dayLabels:data.slotLabels; bag[key]=String(val||'').trim()||bag[key]; jqSave(data); return data; }
+function jqCsvEscape(v){ v=String(v==null?'':v); return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v; }
+function jqCsvText(data){ data=data||jqLoad(); const lines=[['Day','Slot','Name','Phone','Locked at','Edit times'].join(',')];
+  for(const d of JQ_DAYS){ for(const sl of JQ_SLOTS){ const s=data.slots[jqSlotKey(d,sl)]||{}; lines.push([jqCsvEscape(data.dayLabels[d]||d), jqCsvEscape(data.slotLabels[sl]||sl), jqCsvEscape(s.name||''), jqCsvEscape(s.phone||''), jqCsvEscape(s.lockedAt||''), jqCsvEscape((s.edits||[]).join('; '))].join(',')); } }
+  return lines.join('\n')+'\n'; }
+function jqDownloadCsv(){ const csv=jqCsvText(); const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); a.download='jonas-qualifiers.csv'; document.body.append(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000); }
+function jqFmtTs(iso){ if(!iso) return ''; try{ return (typeof fmtStamp==='function')?fmtStamp(iso):iso; }catch(e){ return iso; } }
+function renderJonasQual(){ const body=$('#jqBody'); if(!body) return; const data=jqLoad(); body.innerHTML='';
+  body.append(h('div',{className:'jqbar'},
+    h('button',{type:'button', id:'jqCsvBtn', on:{click:()=>{ tapHaptic(); jqDownloadCsv(); if(typeof toast==='function') toast('CSV saved on this device'); }}}, '⬇ Export CSV')));
+  for(const d of JQ_DAYS){
+    const dayBox=h('div',{className:'jqday','data-day':d});
+    const dayIn=h('input',{type:'text', className:'jqdaylab', value:data.dayLabels[d]||jqDefaultDayLabel(d), 'aria-label':'Day label for '+d, on:{change:e=>{ jqSetLabel('day',d,e.target.value); }}});
+    dayBox.append(dayIn);
+    for(const sl of JQ_SLOTS){
+      const s=jqSlotOf(data,d,sl); const locked=!!s.locked;
+      const name=h('input',{type:'text', className:'jqname', value:s.name||'', placeholder:'Name', 'aria-label':'Qualifier name '+d+' '+sl, disabled:locked, autocomplete:'off', autocorrect:'off', spellcheck:false});
+      const phone=h('input',{type:'tel', className:'jqphone', value:s.phone||'', placeholder:'Phone', 'aria-label':'Qualifier phone '+d+' '+sl, disabled:locked, autocomplete:'off'});
+      const lock=()=>{ jqLock(d,sl,name.value,phone.value); renderJonasQual(); };
+      name.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); if(!locked) lock(); } });
+      phone.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); if(!locked) lock(); } });
+      const meta=[]; if(s.lockedAt) meta.push('Locked '+jqFmtTs(s.lockedAt)); if(s.edits&&s.edits.length) meta.push('Edited '+(s.edits.map(jqFmtTs).join(', ')));
+      dayBox.append(h('div',{className:'jqslot'+(locked?' locked':''),'data-slot':jqSlotKey(d,sl)},
+        h('input',{type:'text', className:'jqslotlab', value:data.slotLabels[sl]||jqDefaultSlotLabel(sl), 'aria-label':'Slot label '+sl, on:{change:e=>{ jqSetLabel('slot',sl,e.target.value); renderJonasQual(); }}}),
+        name, phone,
+        locked ? h('button',{type:'button', className:'jqunlock', on:{click:()=>{ tapHaptic(); jqUnlock(d,sl); renderJonasQual(); }}}, 'Unlock & edit')
+               : h('button',{type:'button', className:'jqlock', on:{click:()=>{ tapHaptic(); lock(); }}}, 'Lock'),
+        meta.length?h('div',{className:'jqmeta'}, meta.join(' · ')):null));
+    }
+    body.append(dayBox);
+  }
+}
+let jqOpen=false, jqReturn=null;
+function jqMotionOff(){ return !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches); }
+function openJonasQual(){ const panel=$('#jqPanel'), scrim=$('#jqScrim'); if(!panel||!scrim) return;
+  if(jqOpen){ renderJonasQual(); return; } jqOpen=true; jqReturn=document.activeElement;
+  renderJonasQual(); scrim.hidden=false; panel.inert=false; panel.setAttribute('aria-hidden','false');
+  void panel.offsetWidth; document.body.classList.add('jq-open'); scrim.classList.add('on'); panel.classList.add('on');
+  const focusDelay=jqMotionOff()?0:60; setTimeout(()=>{ if(jqOpen && $('#jqClose')) $('#jqClose').focus({preventScroll:true}); }, focusDelay); }
+function closeJonasQual(){ const panel=$('#jqPanel'), scrim=$('#jqScrim'); if(!panel||!scrim||!jqOpen) return; jqOpen=false;
+  document.body.classList.remove('jq-open'); panel.classList.remove('on','dragging'); panel.style.transform=''; if(scrim) scrim.style.opacity='';
+  panel.inert=true; panel.setAttribute('aria-hidden','true'); scrim.classList.remove('on');
+  const wait=jqMotionOff()?0:230; setTimeout(()=>{ if(!jqOpen) scrim.hidden=true; }, wait);
+  const r=jqReturn && document.contains(jqReturn) ? jqReturn : ($('#jqOpenStrip')||$('#jqOpenModal')); if(r && r.focus) r.focus({preventScroll:true}); }
+(function bindJonasQual(){ const panel=$('#jqPanel'), scrim=$('#jqScrim'), close=$('#jqClose'); if(!panel||!scrim) return;
+  if(close) close.addEventListener('click',()=>closeJonasQual());
+  scrim.addEventListener('click',()=>closeJonasQual());
+  addEventListener('keydown',e=>{ if(!jqOpen) return; if(e.key==='Escape'){ e.preventDefault(); closeJonasQual(); return; }
+    if(e.key==='Tab'){ const f=[...panel.querySelectorAll('button,input,[tabindex]:not([tabindex="-1"])')].filter(x=>!x.disabled && x.offsetParent!==null);
+      if(!f.length) return; const first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); } }
+  });
+  let x0=null,y0=0,dx=0,horiz=null,t0=0;
+  panel.addEventListener('touchstart',e=>{ if(e.touches.length!==1) return; x0=e.touches[0].clientX; y0=e.touches[0].clientY; dx=0; horiz=null; t0=Date.now(); },{passive:true});
+  panel.addEventListener('touchmove',e=>{ if(x0===null) return; const mx=e.touches[0].clientX-x0, my=e.touches[0].clientY-y0;
+    if(horiz===null && (Math.abs(mx)>8||Math.abs(my)>8)) horiz=Math.abs(mx)>Math.abs(my);
+    if(!horiz) return; dx=Math.max(0,mx); panel.classList.add('dragging'); panel.style.transform='translateX('+dx+'px)';
+    scrim.style.opacity=String(Math.max(0,1-dx/panel.offsetWidth)); },{passive:true});
+  panel.addEventListener('touchend',()=>{ if(x0===null) return; const fast=dx>40 && (Date.now()-t0)<250;
+    panel.classList.remove('dragging'); panel.style.transform=''; scrim.style.opacity='';
+    if(horiz && (dx>panel.offsetWidth*0.3 || fast)) closeJonasQual(); x0=null; });
+})();
+
 /* ================= Show Wrap: "✓ Read on air" ticks per show date (synced) ================= */
 var air=lsGet('hs:air', {});
 function airDay(){ return (air||{})[currentShiftBucket()]||{}; }
@@ -6452,7 +6820,7 @@ function airFindBucket(key, p=etParts()){
   return prefer;
 }
 function airEntryFor(key){ if(/^clip:/.test(key)){ const a=airTodayEntry(audioFamily(key.slice(5)).ids); return a?a.e:null; } return airDay()[key]; }
-function airSet(key, on, title, sec, quiet, body){
+function airSet(key, on, title, sec, quiet, body, itemId){
   if(/^clip:/.test(key)){
     const id=key.slice(5), f=audioFamily(id);
     if(on){ audioWrapOnce(f, key, body); f.ids.forEach(i=>{ if(!cst(i).u) setClip(i,{u:Date.now()}); }); airSave(); }
@@ -6460,9 +6828,9 @@ function airSet(key, on, title, sec, quiet, body){
     document.querySelectorAll('[data-air^="clip:"]').forEach(airPaint);
     rerender();
     return; }
-  return airSetRaw(key, on, title, sec, quiet, body); }
-function airSetRaw(key, on, title, sec, quiet, body){ const d=on?currentShiftBucket():airFindBucket(key); air[d]=air[d]||{};
-  if(on){ const sh=currentShift(); if(!air[d][key]){ air[d][key]={t:new Date().toISOString(), title:String(title||'').slice(0,240), sec:sec||'', sh:sh&&sh.id}; const sm=summarize(body); if(sm) air[d][key].body=sm; } }
+  return airSetRaw(key, on, title, sec, quiet, body, itemId); }
+function airSetRaw(key, on, title, sec, quiet, body, itemId){ const d=on?currentShiftBucket():airFindBucket(key); air[d]=air[d]||{};
+  if(on){ const sh=currentShift(); if(!air[d][key]){ air[d][key]={t:new Date().toISOString(), title:String(title||'').slice(0,240), sec:sec||'', sh:sh&&sh.id}; const sm=summarize(body); if(sm) air[d][key].body=sm; if(itemId) air[d][key].itemId=String(itemId); } }
   else delete air[d][key];
   airSave(); document.querySelectorAll('[data-air="'+CSS.escape(key)+'"]').forEach(airPaint);
   if(state.tab==='wrap' && !quiet) rerender(); }
@@ -6472,8 +6840,10 @@ function airPaint(b){ const e=airEntryFor(b.dataset.air); b.classList.toggle('on
 function airBtn(key, title, sec, small, body){
   const b=h('button',{className:'airbtn'+(small?' sm':''), type:'button', title:'Mark as read on air (Show Wrap)'}, h('span',{className:'ab','aria-hidden':'true'}), h('span',{className:'at'}));
   b.dataset.air=key; if(small) b.dataset.small='1'; airPaint(b);
-  b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=!!airEntryFor(key); airSet(key, !was, title, sec, true, body);
-    if(!was) toast('On air ✓ '+String(title).slice(0,48), ()=>airSet(key,false,title,sec,true)); };
+  b.onclick=e=>{ e.stopPropagation(); e.preventDefault(); tapHaptic(); const was=!!airEntryFor(key);
+    const keep=b.closest('[data-keep-id]'); const itemId=keep && keep.getAttribute('data-keep-id');
+    airSet(key, !was, title, sec, true, body, itemId);
+    if(!was) toast('On air ✓ '+String(title).slice(0,48), ()=>airSet(key,false,title,sec,true,null,itemId)); };
   return b; }
 function openerTab(){ const l=sectionList().filter(x=>!['news','wrap','liners','clips','flash','saved'].includes(x.key)); return l.length?l[0].key:(sectionList().some(x=>x.key==='flash')?'flash':null); }
 function openerDraftRead(){
@@ -6500,10 +6870,43 @@ function openerCard(){ const e=airDay().opener; const dr=openerDraftRead();
   return h('div',{className:'opener'}, h('div',{className:'oplab'}, '🎤 Opener · starts the Show Wrap'), h('div',{className:'oprow'}, inp, b)); }
 const AIR_SEC={reads:'Read', liners:'Liner', clips:'Clip', news:'News', days:'Day of note', opener:'Opener'};
 function airSecLabel(sec){ if(AIR_SEC[sec]) return AIR_SEC[sec]; if(/^cdf:/.test(sec)) return 'Record'; if(/^cdh:/.test(sec)) return 'Headline'; const it=sectionList().find(x=>x.key===sec); return it?String(it.v.title||sec).replace(/^[^\w]+/,''):sec; }
+function wrapIsGiveawayRead(key){ if(!/^rd:/.test(key||'')) return false; const sp=typeof spById==='function'?spById(String(key).slice(3)):null; return !!(sp && sp.giveaway); }
+function wrapIsDailyAd(key){ return /^rd:/.test(key||'') && !wrapIsGiveawayRead(key); }
+function wrapSponsorName(sp){ if(sp && sp.wrapName) return String(sp.wrapName).trim(); const n=String((sp&&(sp.name||sp.short))||'').trim(); const m=n.match(/^(.*?)\s*\(([^)]+)\)\s*$/); if(m && m[2].length>4 && m[2].split(/\s+/).length>=2) return m[2].trim(); return n; }
+function wrapSponsorNames(){ const names=[], seen=new Set(); const add=n=>{ n=String(n||'').trim(); if(!n) return; const k=n.toLowerCase(); if(seen.has(k)) return; seen.add(k); names.push(n); };
+  const promo=new Set(['st-teacher-of-month','st-dance-party','st-secret-santa']);
+  if(typeof activeSponsors==='function') for(const sp of activeSponsors()) add(wrapSponsorName(sp));
+  if(typeof liveStationReads==='function') for(const r of liveStationReads()){ if(promo.has(r.id)) continue; add(wrapSponsorName(typeof stAsSp==='function'?(stAsSp(r.id)||r):r)); }
+  return names; }
+function wrapSponsoredBy(){ const n=wrapSponsorNames(); return n.length?('Sponsored by: '+n.join(', ')): ''; }
+function wrapEntryIds(e){
+  const ids=new Set(); const add=x=>{ x=String(x||'').trim(); if(x) ids.add(x); };
+  if(!e) return ids;
+  add(e.itemId); add(e.gid);
+  const k=String(e.key||'');
+  if(/^(gi|it|cal):/.test(k)) add(k.slice(k.indexOf(':')+1));
+  if(/^n:/.test(k)) add(k.slice(2));
+  if(/^clip:/.test(k)) add('clip:'+k.slice(5));
+  return ids;
+}
+function wrapSameItem(a,b){
+  if(!a||!b) return false;
+  const A=wrapEntryIds(a), B=wrapEntryIds(b);
+  for(const id of A) if(B.has(id)) return true;
+  const ta=normT(a.title), tb=normT(b.title);
+  return !!(ta && ta===tb);
+}
+function wrapDedupe(list){
+  const out=[];
+  const rest=(list||[]).slice().sort((a,b)=>String(a.t).localeCompare(String(b.t)) || String(a.key).localeCompare(String(b.key)));
+  for(const e of rest){ if(out.some(x=>wrapSameItem(x,e))) continue; out.push(e); }
+  return out;
+}
 function wrapEntries(){ const p=etParts(); const list=[];
   for(const [bucket,items] of Object.entries(air||{})){
     const b=parseBucketDate(bucket); if(b.date!==p.date) continue;
     for(const [key,e] of Object.entries(items||{})){
+      if(wrapIsDailyAd(key)) continue;   // v59l: daily ad/sponsor/promo reads stay out of the wrap
       const sid=e.sh||b.shift||shiftIdAt(e.t);
       list.push({key, ...e, bucket, sh:sid});
     }
@@ -6511,9 +6914,9 @@ function wrapEntries(){ const p=etParts(); const list=[];
   { const seenA=new Set(); list.sort((a,b)=>String(a.t).localeCompare(String(b.t)));   // linked audio shows once in the wrap, at its first air time
     for(let i=0;i<list.length;i++){ const e=list[i]; if(!/^clip:/.test(e.key)) continue; const fam=audioFamily(e.key.slice(5)); const k=fam.key||('id:'+e.key);
       if(seenA.has(k)){ list.splice(i,1); i--; } else seenA.add(k); } }
-  list.sort((a,b)=>String(a.t).localeCompare(String(b.t)) || String(a.key).localeCompare(String(b.key)));
-  try{ list.push(...b59WrapEntries(p, list).sort((a,b)=>String(a.t).localeCompare(String(b.t)))); }catch(e){}
-  return list; }
+  // v59m: only On Air adds wrap rows, once, deduped by item id. Got it never does.
+  return wrapDedupe(list);
+}
 function wrapShiftLabel(e, p=etParts()){
   if(!e||!e.sh) return '';
   const sh=shiftById(e.sh, p);
@@ -6522,17 +6925,20 @@ function wrapShiftLabel(e, p=etParts()){
 function oneLine(t){ t=String(t||'').replace(/\s+/g,' ').trim(); return t.length>90?t.slice(0,88).replace(/\s+\S*$/,'')+'…':t; }
 function wrapText(){ const d=etParts().date; const L=wrapEntries();
   const lines=['🎬 Show Wrap · Morning Rush · '+fmtSheetDate(d), ''];
+  const by=wrapSponsoredBy(); if(by) lines.push(by, '');
   let last='';
   for(const e of L){ const lab=e.gotit?'✓ Got it (cleared from the screen)':wrapShiftLabel(e); if(lab && lab!==last){ lines.push(lab); last=lab; }
     const rc=recapFor(e); lines.push(fmtTime(e.t)+' · '+(e.gotit?'Got it · ':'')+airSecLabel(e.sec)+' · '+oneLine(e.title)+(rc?'\n   '+rc:'')); }
   return lines.join('\n'); }
 function renderWrap(view){
   const L=wrapEntries();
+  const by=wrapSponsoredBy();
   view.append(h('div',{className:'catline'}, 'Recap · kept by shift all day'), h('h2',{}, '🎬 Show Wrap'));
   view.append(h('div',{className:'lnmeta'}, h('b',{}, String(L.length)), ' item'+(L.length===1?'':'s')+' read on air · '+fmtSheetDate(etParts().date)));
   const cp=h('button',{className:'wrapcopy', type:'button', on:{click:async()=>{ tapHaptic(); const t=wrapText(); let ok=false;
       try{ await navigator.clipboard.writeText(t); ok=true; }catch(e){ const ta=h('textarea',{value:t}); document.body.append(ta); ta.select(); try{ ok=document.execCommand('copy'); }catch(_){} ta.remove(); }
       toast(ok?'Show wrap copied ('+L.length+' lines)':'Copy failed: long-press the list to copy'); }}}, '📋 Copy wrap');
+  if(by) view.append(h('div',{className:'wrapsponsors','data-sponsored':'1'}, by));
   view.append(cp);
   if(!airDay().opener) view.append(openerCard());
   if(!L.length){ view.append(h('p',{className:'hint'}, 'Nothing yet. Tick "✓ Read on air" on any story, read, liner or clip, or play a clip, and it lands here in the order you aired it.')); return; }
@@ -7044,7 +7450,7 @@ function songPanel(key){
   }
   wrap.append(card);
   wrap.append(songAirHost(key, pick));
-  { const bar=h('div',{className:'skbar b59seg'}); bar.append(h('button',{type:'button', className:'b59got', title:'Done with this song slot: send it to the end-of-show wrap and clear it', on:{click:()=>{ tapHaptic(); b59GotIt(Object.assign({}, sit0, {desc:songAirTitle(songPick(key))}), key, ''); }}}, '✓ Got it')); wrap.append(bar); }
+  { const bar=h('div',{className:'skbar b59seg'}); bar.append(h('button',{type:'button', className:'b59got', title:'Gray this song slot and move it to the bottom (does not go in the Show Wrap)', on:{click:()=>{ tapHaptic(); b59GotIt(Object.assign({}, sit0, {desc:songAirTitle(songPick(key))}), key, ''); }}}, '✓ Got it')); wrap.append(bar); }
   if(r1L) wrap.classList.add('b59brick');
   fillSongCard(card, pick, key);
   return wrap;
@@ -7756,7 +8162,7 @@ function b59CompactRow(){ const row=$('#daysRow'); if(!row) return; const p=etPa
 
 window.__hs = state; // for debugging
 window.__b59={clip:{markPlayed:(id)=>markPlayed(id), cst:(id)=>cst(id), wrapEntries:()=>wrapEntries(), air:()=>air}, weekCal:()=>weekCal, brkPoll:b59BrkPoll, brkPush:b59BrkPush, brkPaint:b59BrkPaint, tease:b59PaintTease, autoBuzz:b59AutoBuzz, caliAdd:b59CaliAdd, caliOpen:b59CaliOpen, Bricks:()=>b59Bricks, Got:()=>b59Got, Log:()=>b59Log, lock:b59Lock, gotIt:b59GotIt, undo:b59Undo, icons:b59Icons, battleTitle:b59BattleTitle, rels:b59Rels, tabsSet:b59TabsSet, boost:b59Boost, newsItems:newsItemsWithKeep, newsData:newsData, cur:()=>b59Cur, ctx:()=>scoresCtx, events:()=>weekEvents, viewProfile, setViewProfile, curNews, loadTicker:()=>loadTicker(true), syncSnap, syncApply, ticker:()=>tickerCur};
-window.__hsTest = { wxKindLabel, wxAdvisoryName, wxShortenHeadline, wxUnwrap, openWxAlert, closeWxAlert, toggleWxAlert, wxAlertRecords, storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { wxKindLabel, wxAdvisoryName, wxShortenHeadline, wxUnwrap, openWxAlert, closeWxAlert, toggleWxAlert, wxAlertRecords, storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), sectionList:()=>sectionList().map(x=>({key:x.key,title:(x.v&&x.v.title)||x.key,category:(x.v&&x.v.category)||''})), isSliderStripOnly, wrapIsDailyAd, wrapIsGiveawayRead, wrapSponsorNames, wrapSponsoredBy, wrapSponsorName, getStoryKeep:()=>storyKeep, allCountdowns, cdStillLive, cdUntilOf, renderCountdowns, wrapEntryIds, wrapSameItem, wrapDedupe, storyClipFor, storyClips, storyTok, clipPrefixStrip, clipSetupOf, clipIntroOf, storyExplicitClipId, storyClipById, storyKeepIdsOf, storyPinRec, storyPinStale, storyPruneStalePins, pinStory, b59SinkGot, openJonasQual, closeJonasQual, jqLoad, jqSave, jqLock, jqUnlock, jqCsvText, jqInSeason, jqGiveaway, saveOwnerDefault, parseShare, migratePersonSaves, deviceRole, savedMap:()=>savedMap, b59Sents, b59Preview, setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
