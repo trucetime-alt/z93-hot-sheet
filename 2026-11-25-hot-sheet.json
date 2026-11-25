@@ -1,0 +1,1677 @@
+{
+ "weather": {
+  "temp": "21°",
+  "cond": "Clear",
+  "advisory": "No advisories",
+  "traffic": "S. Airport Rd lane closures at Logan's Landing; dry roads",
+  "high": "41°",
+  "low": "29°",
+  "tonight": "Mostly Cloudy",
+  "updated": "2026-11-25T04:22-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Mostly Cloudy",
+  "icon": "sunny",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-25",
+    "high": null,
+    "low": 23,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 0
+   },
+   {
+    "day": "Wed",
+    "date": "2026-11-25",
+    "high": 41,
+    "low": 29,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 0
+   },
+   {
+    "day": "Thu",
+    "date": "2026-11-26",
+    "high": 45,
+    "low": 36,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 0
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-27",
+    "high": 46,
+    "low": 34,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 25
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-28",
+    "high": 48,
+    "low": 37,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 10
+   },
+   {
+    "day": "Sun",
+    "date": "2026-11-29",
+    "high": 46,
+    "low": 35,
+    "short": "Rain Showers Likely",
+    "icon": "rain",
+    "pop": 61
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-30",
+    "high": 42,
+    "low": 33,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 36
+   }
+  ],
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 26
+   },
+   {
+    "t": "5 AM",
+    "temp": 27
+   },
+   {
+    "t": "6 AM",
+    "temp": 27
+   },
+   {
+    "t": "7 AM",
+    "temp": 27
+   },
+   {
+    "t": "8 AM",
+    "temp": 28
+   },
+   {
+    "t": "9 AM",
+    "temp": 30
+   },
+   {
+    "t": "10 AM",
+    "temp": 34
+   },
+   {
+    "t": "11 AM",
+    "temp": 37
+   },
+   {
+    "t": "12 PM",
+    "temp": 38
+   },
+   {
+    "t": "1 PM",
+    "temp": 40
+   },
+   {
+    "t": "2 PM",
+    "temp": 41
+   },
+   {
+    "t": "3 PM",
+    "temp": 40
+   },
+   {
+    "t": "4 PM",
+    "temp": 41
+   },
+   {
+    "t": "5 PM",
+    "temp": 39
+   },
+   {
+    "t": "6 PM",
+    "temp": 38
+   },
+   {
+    "t": "7 PM",
+    "temp": 36
+   },
+   {
+    "t": "8 PM",
+    "temp": 34
+   },
+   {
+    "t": "9 PM",
+    "temp": 33
+   },
+   {
+    "t": "10 PM",
+    "temp": 32
+   }
+  ],
+  "wind": "Calm to SE 5 mph",
+  "waves": "Bay 2 ft or less · Lake MI 2 ft or less (SE 5-10 kt)"
+ },
+ "promo-dance-party": {
+  "id": "promo-dance-party",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: 90s, 2K & TODAY DANCE PARTY<br>📣 STATION READ (once per shift): \"Join AJ for the 90s, 2K and Today Dance Party at The Pub and North Bar every Saturday night! It's a double shot of dance with bangers from the 90s and 2000s at The Pub and today's hits at North Bar! Two bars, two vibes! One amazing Saturday night! It's Traverse City's hottest dance party, every Saturday night! Don't miss it!\"<br>🔁 LINER (optional): \"Two bars! Two vibes! One amazing Saturday night! The 90s, 2k & Today Dance Party!\"<br>🔁 LINER (optional): \"From TRL to TikTok! We're playing the hits that MOVE YOU! Every Saturday at The Pub and North Bar!\"",
+  "notes": "Station read verbatim from station-hot-sheet-2026-11-23.txt (kill 12/31). Liners from the deck (promos/dance-party.md), rotated from Tue (used 'Two soundtracks', 'No Diggity', 'Schooled'). No price, cover, DJ names or set themes added. Kill 12/31.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-promo-dance-party-01",
+    "title": "PROMO READ: 90s, 2K & TODAY DANCE PARTY",
+    "recap": "We plugged the 90s, 2K & Today Dance Party at The Pub and North Bar, every Saturday night.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: 90s, 2K & TODAY DANCE PARTY<br>📣 STATION READ (once per shift): \"Join AJ for the 90s, 2K and Today Dance Party at The Pub and North Bar every Saturday night! It's a double shot of dance with bangers from the 90s and 2000s at The Pub and today's hits at North Bar! Two bars, two vibes! One amazing Saturday night! It's Traverse City's hottest dance party, every Saturday night! Don't miss it!\"<br>🔁 LINER (optional): \"Two bars! Two vibes! One amazing Saturday night! The 90s, 2k & Today Dance Party!\"<br>🔁 LINER (optional): \"From TRL to TikTok! We're playing the hits that MOVE YOU! Every Saturday at The Pub and North Bar!\"",
+    "description": "📣 STATION READ (once per shift): \"Join AJ for the 90s, 2K and Today Dance Party at The Pub and North Bar every Saturday night! It's a double shot of dance with bangers from the 90s and 2000s at The Pub and today's hits at North Bar! Two bars, two vibes! One amazing Saturday night! It's Traverse City's hottest dance party, every Saturday night! Don't miss it!\"",
+    "summary": "We plugged the 90s, 2K & Today Dance Party at The Pub and North Bar, every Saturday night.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "0c0e8f4204c5",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "promo-secret-santa": {
+  "id": "promo-secret-santa",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: Z93 SECRET SANTA<br>📣 STATION READ (once per shift): \"Be a Secret Santa to somebody this Christmas by signing them up to win some amazing gifts from our merchant partners. Over a thousand dollars in prizes are up for grabs. Head over to Z93 Hits dot com and nominate somebody today!\"",
+  "notes": "Station read from station-hot-sheet-2026-11-23.txt (kill 12/10). Paraphrase OK; no extra prize details. Kill 12/10.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-promo-secret-santa-01",
+    "title": "PROMO READ: Z93 SECRET SANTA",
+    "recap": "We asked listeners to nominate someone for Z93 Secret Santa at z93hits.com.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: Z93 SECRET SANTA<br>📣 STATION READ (once per shift): \"Be a Secret Santa to somebody this Christmas by signing them up to win some amazing gifts from our merchant partners. Over a thousand dollars in prizes are up for grabs. Head over to Z93 Hits dot com and nominate somebody today!\"",
+    "description": "📣 STATION READ (once per shift): \"Be a Secret Santa to somebody this Christmas by signing them up to win some amazing gifts from our merchant partners. Over a thousand dollars in prizes are up for grabs. Head over to Z93 Hits dot com and nominate somebody today!\"",
+    "summary": "We asked listeners to nominate someone for Z93 Secret Santa at z93hits.com.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "ece6d76b3dcc",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "promo-teacher": {
+  "id": "promo-teacher",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: Z93 TEACHER OF THE MONTH<br>📣 STATION READ (once per shift): \"Know a teacher who deserves recognition? Nominate them for the Z93 Teacher of the Month award at Z93 Hits dot com. Each month we'll choose a winner, highlight them on the air and award them with a prize package. We'll announce a winner on the third Thursday of each month.\"",
+  "notes": "Station read from station-hot-sheet-2026-11-23.txt (kill TBD). Kill TBD.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-promo-teacher-01",
+    "title": "PROMO READ: Z93 TEACHER OF THE MONTH",
+    "recap": "We asked for Z93 Teacher of the Month nominations at z93hits.com.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: Z93 TEACHER OF THE MONTH<br>📣 STATION READ (once per shift): \"Know a teacher who deserves recognition? Nominate them for the Z93 Teacher of the Month award at Z93 Hits dot com. Each month we'll choose a winner, highlight them on the air and award them with a prize package. We'll announce a winner on the third Thursday of each month.\"",
+    "description": "📣 STATION READ (once per shift): \"Know a teacher who deserves recognition? Nominate them for the Z93 Teacher of the Month award at Z93 Hits dot com. Each month we'll choose a winner, highlight them on the air and award them with a prize package. We'll announce a winner on the third Thursday of each month.\"",
+    "summary": "We asked for Z93 Teacher of the Month nominations at z93hits.com.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "8b64cf7817cd",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "promo-kurtz": {
+  "id": "promo-kurtz",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: KURTZ CAR STEREO 93-MINUTE PLAYLIST<br>📣 STATION READ (once per shift): \"Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20, 2:20 and 6:20 every weekday.\"",
+  "notes": "Station read from station-hot-sheet-2026-11-23.txt (kill 12/31). Note: no Thursday show; playlist times are weekdays per the station sheet. Kill 12/31.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-promo-kurtz-01",
+    "title": "PROMO READ: KURTZ CAR STEREO 93-MINUTE PLAYLIST",
+    "recap": "We plugged the Kurtz Car Stereo 93-minute commercial-free playlist at 10:20, 2:20 and 6:20.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: KURTZ CAR STEREO 93-MINUTE PLAYLIST<br>📣 STATION READ (once per shift): \"Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20, 2:20 and 6:20 every weekday.\"",
+    "description": "📣 STATION READ (once per shift): \"Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20, 2:20 and 6:20 every weekday.\"",
+    "summary": "We plugged the Kurtz Car Stereo 93-minute commercial-free playlist at 10:20, 2:20 and 6:20.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "008de9995603",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "SLOW JAM: K-CI & JOJO, \"ALL MY LIFE\" (1998)<br>• STAT: It topped the Billboard Hot 100 for three straight weeks in 1998, the duo's longest-running No. 1.<br>• STORY: JoJo Hailey wrote it, and the lyric came from words his daughter said in the studio. He first meant it for a female artist, then decided to keep it.<br>• WHY TODAY: Day before Thanksgiving, the 'thankful for you' slow jam. Play it for the person who's driving you to Grandma's.<br>➜ TAKE: Every 1998 middle school dance ended with this song and a chaperone walking around with a yardstick.<br>➜ BAIT: Text 231-929-4487: who's the person you're most thankful for this year? We'll read a few.<br>😂 JOKES: 'All My Life' was No. 1 for three weeks. My slow-dance career lasted three seconds. / JoJo wrote it from something his daughter said. My kid's lyrics would be 'Can I have your phone?'<br><br>🚗 DRIVE TEASE: Cold and calm for the drive in. About 27 at 6 AM and 28 by 8, no wind to speak of, and dry roads. Up to a high near 41 this afternoon.<br><br>📅 THIS DAY: THE BAND'S 'LAST WALTZ' ON THANKSGIVING, 1976<br>• On Thanksgiving Day, Nov. 25, 1976, The Band played its farewell concert, The Last Waltz, at Winterland Ballroom in San Francisco.<br>• Guests included Bob Dylan, Joni Mitchell, Neil Young, Van Morrison, Eric Clapton, Neil Diamond and Ringo Starr.<br>• The 5,000 fans were served turkey dinners starting at 5 PM, and Martin Scorsese filmed it, a movie Rolling Stone later called the greatest concert movie of all time.<br>➜ TAKE: A rock concert that served 5,000 turkey dinners. That's the only show where the mosh pit had gravy.<br>➜ BAIT: Text 231-929-4487: best concert you ever saw over a holiday weekend?<br>😂 JOKES: Bob Dylan, Neil Young and Joni Mitchell, plus turkey. My family Thanksgiving has my uncle, a guitar with five strings, and Stove Top. / Scorsese filmed the whole thing. At my house, the only thing that gets filmed is Grandpa falling asleep during the Lions.<br><br>💡 FUN FACT: GTA 6 PLAYERS LOGGED ABOUT 78,000 YEARS IN FOUR DAYS<br>• Sony says PlayStation players logged 683 million hours of GTA 6 from Nov. 19 to 22.<br>• Do the math, and 683 million hours is roughly 78,000 years of play time.<br>• That's an average of 17.4 hours per player, in four days.<br>➜ TAKE: Seventy-eight thousand years in one weekend. Somewhere a Leonida traffic cop is still writing tickets.<br>➜ BAIT: Text 231-929-4487: what's the longest you ever played one game in a single weekend?<br>😂 JOKES: Seventy-eight thousand years is also how long it feels waiting for the turkey to rest. / Seventeen hours per player. My nephew did that by Friday lunch.<br><br>🎉 NATIONAL DAYS: National Parfait Day · Shopping Reminder Day · National Play Day With Dad · Blasé Day<br><br>GOOD MORNING UP NORTH: Cold and calm to start, about 27 at 6 AM, then mostly cloudy with a high near 41 and barely a breeze. Tonight's low is about 29. Thanksgiving Day looks mostly cloudy with a high near 45 and a light northeast breeze.<br><br>SCHOOLS: No closings or delays listed this morning.<br><br>ROADS: Dry and cold. South Airport Road has lane closures at Logan's Landing, so leave extra time if you're headed that way.<br><br>ENERGY: Thanksgiving eve. Biggest travel day, last grocery run, and the Christmas Ship's already loaded. No show tomorrow, so we're doing it all today.",
+  "notes": "SLOW JAM: K-CI & JOJO, \"ALL MY LIFE\" (1998): https://en.wikipedia.org/wiki/All_My_Life_(K-Ci_%26_JoJo_song) Wikipedia (Billboard Hot 100 chart citations; Stereogum 'The Number Ones'). Lyrics clean.<br>THIS DAY: THE BAND'S 'LAST WALTZ' ON THANKSGIVING, 1976: https://en.wikipedia.org/wiki/The_Last_Waltz Wikipedia (concert date/venue/guests; turkey dinners at 5 PM citing SFGate; Rolling Stone 2020 'Greatest Concert Movie of All Time').<br>FUN FACT: GTA 6 PLAYERS LOGGED ABOUT 78,000 YEARS IN FOUR DAYS: https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/ PlayStation.Blog Nov 23, 2026 (683M hours, 17.4 hrs avg, Nov 19-22). 683,000,000 / 8,766 hours per year = about 77,900 years (our math, said as 'roughly').<br>Weather: NWS Gaylord point forecast + hourly (44.7631,-85.6206), forecast updated 4:11 AM ET Wed; KTVC obs 3:35 AM ET -6 C (21 F), clear (colder than the hourly; the forecast still says about 27 at 6 AM). Marine: NWS Gaylord nearshore (LMZ323 GT Bay, LMZ344 Sleeping Bear Pt to GT Light) 1:48 AM ET Wed: today SE wind 5-10 kt, waves 2 ft or less (calm, so no wind line on air). NWS alerts API: no active alerts. Roads: UpNorthLive / Grand Traverse County Road Commission S. Airport Rd lane closures at Logan's Landing (only verified road item). National days: https://nationaldaycalendar.com/what-day-is-it . Schools: 9&10 closings desk (Breaker city pulse, ~3:30 AM ET): no active closings. Backup source not checked (UpNorthLive closings page didn't load). Lots of districts are already on Thanksgiving break; don't name any without checking.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-25-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "Our slow jam was K-Ci & JoJo's 'All My Life,' three weeks at No. 1 in 1998.",
+    "article_url": "https://en.wikipedia.org/wiki/All_My_Life_(K-Ci_%26_JoJo_song)",
+    "article_title": "All My Life (K-Ci & JoJo song) (Wikipedia, citing Billboard and Stereogum)",
+    "jokes": [
+     "'All My Life' was No. 1 for three weeks. My slow-dance career lasted three seconds.",
+     "JoJo wrote it from something his daughter said. My kid's lyrics would be 'Can I have your phone?'"
+    ],
+    "body": "SLOW JAM: K-CI & JOJO, \"ALL MY LIFE\" (1998)<br>• STAT: It topped the Billboard Hot 100 for three straight weeks in 1998, the duo's longest-running No. 1.<br>• STORY: JoJo Hailey wrote it, and the lyric came from words his daughter said in the studio. He first meant it for a female artist, then decided to keep it.<br>• WHY TODAY: Day before Thanksgiving, the 'thankful for you' slow jam. Play it for the person who's driving you to Grandma's.<br>➜ TAKE: Every 1998 middle school dance ended with this song and a chaperone walking around with a yardstick.<br>➜ BAIT: Text 231-929-4487: who's the person you're most thankful for this year? We'll read a few.<br>😂 JOKES: 'All My Life' was No. 1 for three weeks. My slow-dance career lasted three seconds. / JoJo wrote it from something his daughter said. My kid's lyrics would be 'Can I have your phone?'",
+    "description": "It topped the Billboard Hot 100 for three straight weeks in 1998, the duo's longest-running No. 1. JoJo Hailey wrote it, and the lyric came from words his daughter said in the studio. He first meant it for a female artist, then decided to keep it. Day before Thanksgiving, the 'thankful for you' slow jam. Play it for the person who's driving you to Grandma's.",
+    "summary": "It topped the Billboard Hot 100 for three straight weeks in 1998, the duo's longest-running No. 1. JoJo Hailey wrote it, and the lyric came from words his daughter said in the studio. He first meant it for a female artist, then decided to keep it. Day before Thanksgiving, the 'thankful for you' slow jam. Play it for the person who's driving you to Grandma's.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a cold, calm drive, about 27 at 6 AM, with a high near 41.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord forecast, Traverse City",
+    "jokes": [],
+    "body": "🚗 DRIVE TEASE: Cold and calm for the drive in. About 27 at 6 AM and 28 by 8, no wind to speak of, and dry roads. Up to a high near 41 this afternoon.",
+    "description": "Cold and calm for the drive in. About 27 at 6 AM and 28 by 8, no wind to speak of, and dry roads. Up to a high near 41 this afternoon.",
+    "summary": "Cold and calm for the drive in. About 27 at 6 AM and 28 by 8, no wind to speak of, and dry roads. Up to a high near 41 this afternoon.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-vibe-03",
+    "title": "THIS DAY",
+    "recap": "This Day: The Band played The Last Waltz on Thanksgiving 1976, with Dylan and Joni Mitchell, and served the crowd turkey dinners.",
+    "article_url": "https://en.wikipedia.org/wiki/The_Last_Waltz",
+    "article_title": "The Last Waltz (Wikipedia)",
+    "jokes": [
+     "Bob Dylan, Neil Young and Joni Mitchell, plus turkey. My family Thanksgiving has my uncle, a guitar with five strings, and Stove Top.",
+     "Scorsese filmed the whole thing. At my house, the only thing that gets filmed is Grandpa falling asleep during the Lions."
+    ],
+    "body": "THIS DAY: THE BAND'S 'LAST WALTZ' ON THANKSGIVING, 1976<br>• On Thanksgiving Day, Nov. 25, 1976, The Band played its farewell concert, The Last Waltz, at Winterland Ballroom in San Francisco.<br>• Guests included Bob Dylan, Joni Mitchell, Neil Young, Van Morrison, Eric Clapton, Neil Diamond and Ringo Starr.<br>• The 5,000 fans were served turkey dinners starting at 5 PM, and Martin Scorsese filmed it, a movie Rolling Stone later called the greatest concert movie of all time.<br>➜ TAKE: A rock concert that served 5,000 turkey dinners. That's the only show where the mosh pit had gravy.<br>➜ BAIT: Text 231-929-4487: best concert you ever saw over a holiday weekend?<br>😂 JOKES: Bob Dylan, Neil Young and Joni Mitchell, plus turkey. My family Thanksgiving has my uncle, a guitar with five strings, and Stove Top. / Scorsese filmed the whole thing. At my house, the only thing that gets filmed is Grandpa falling asleep during the Lions.",
+    "description": "On Thanksgiving Day, Nov. 25, 1976, The Band played its farewell concert, The Last Waltz, at Winterland Ballroom in San Francisco. Guests included Bob Dylan, Joni Mitchell, Neil Young, Van Morrison, Eric Clapton, Neil Diamond and Ringo Starr. The 5,000 fans were served turkey dinners starting at 5 PM, and Martin Scorsese filmed it, a movie Rolling Stone later called the greatest concert movie of all time.",
+    "summary": "On Thanksgiving Day, Nov. 25, 1976, The Band played its farewell concert, The Last Waltz, at Winterland Ballroom in San Francisco. Guests included Bob Dylan, Joni Mitchell, Neil Young, Van Morrison, Eric Clapton, Neil Diamond and Ringo Starr. The 5,000 fans were served turkey dinners starting at 5 PM, and Martin Scorsese filmed it, a movie Rolling Stone later called the greatest concert movie of all time.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-vibe-04",
+    "title": "FUN FACT",
+    "recap": "Fun fact: GTA 6 players logged 683 million hours on PS5 in four days, roughly 78,000 years.",
+    "article_url": "https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/",
+    "article_title": "Thank you for making Grand Theft Auto VI the biggest launch in PlayStation history (PlayStation.Blog)",
+    "jokes": [
+     "Seventy-eight thousand years is also how long it feels waiting for the turkey to rest.",
+     "Seventeen hours per player. My nephew did that by Friday lunch."
+    ],
+    "body": "FUN FACT: GTA 6 PLAYERS LOGGED ABOUT 78,000 YEARS IN FOUR DAYS<br>• Sony says PlayStation players logged 683 million hours of GTA 6 from Nov. 19 to 22.<br>• Do the math, and 683 million hours is roughly 78,000 years of play time.<br>• That's an average of 17.4 hours per player, in four days.<br>➜ TAKE: Seventy-eight thousand years in one weekend. Somewhere a Leonida traffic cop is still writing tickets.<br>➜ BAIT: Text 231-929-4487: what's the longest you ever played one game in a single weekend?<br>😂 JOKES: Seventy-eight thousand years is also how long it feels waiting for the turkey to rest. / Seventeen hours per player. My nephew did that by Friday lunch.",
+    "description": "Sony says PlayStation players logged 683 million hours of GTA 6 from Nov. 19 to 22. Do the math, and 683 million hours is roughly 78,000 years of play time. That's an average of 17.4 hours per player, in four days.",
+    "summary": "Sony says PlayStation players logged 683 million hours of GTA 6 from Nov. 19 to 22. Do the math, and 683 million hours is roughly 78,000 years of play time. That's an average of 17.4 hours per player, in four days.",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "We noted National Parfait Day and Shopping Reminder Day.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [],
+    "body": "🎉 NATIONAL DAYS: National Parfait Day · Shopping Reminder Day · National Play Day With Dad · Blasé Day",
+    "description": "We noted National Parfait Day and Shopping Reminder Day.",
+    "summary": "We noted National Parfait Day and Shopping Reminder Day.",
+    "rank": 5,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/All_My_Life_(K-Ci_%26_JoJo_song)",
+  "article_title": "All My Life (K-Ci & JoJo song) (Wikipedia, citing Billboard and Stereogum)",
+  "jokes": [
+   "'All My Life' was No. 1 for three weeks. My slow-dance career lasted three seconds.",
+   "JoJo wrote it from something his daughter said. My kid's lyrics would be 'Can I have your phone?'"
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "b2d8cceaa40a",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "MOOD BOOST: DEEP BLUE SOMETHING, \"BREAKFAST AT TIFFANY'S\" (1995)<br>• STAT: It peaked at No. 5 on the Billboard Hot 100 in January 1996 and went all the way to No. 1 on the UK Singles Chart.<br>• STORY: Released as a single in July 1995, it was the Texas band's only big U.S. hit, so yes, the textbook one-hit wonder.<br>• FUN PART: Bassist Todd Pipes told Q magazine that because the song had 'breakfast' in the title, radio stations kept booking them for breakfast-time shows.<br>➜ TAKE: A song with 'breakfast' in the title, at 6 AM, on a morning show. Deep Blue Something would hate this, and I love it.<br>➜ BAIT: Text 231-929-4487: the one '90s song you know every word to, but couldn't name the band.<br>😂 JOKES: The only thing we've got in common is we both liked that song. That's also how my whole friend group started. / Breakfast at Tiffany's? Around here it's breakfast at the Omelette Shoppe, and the vibe is the same.",
+  "notes": "MOOD BOOST: DEEP BLUE SOMETHING, \"BREAKFAST AT TIFFANY'S\" (1995): https://en.wikipedia.org/wiki/Breakfast_at_Tiffany%27s_(song) Wikipedia (Hot 100 No. 5 Jan 1996; UK No. 1; July 1995 single; Todd Pipes Q quote). Pipes' full quote has a mild curse word; paraphrased, don't read it verbatim. Lyrics clean.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-25-mood-01",
+    "title": "MOOD BOOST: DEEP BLUE SOMETHING, \"BREAKFAST AT TIFFANY'S\" (1995)",
+    "recap": "Our Mood Boost was Deep Blue Something's 'Breakfast at Tiffany's,' No. 5 in the U.S. and No. 1 in the UK.",
+    "article_url": "https://en.wikipedia.org/wiki/Breakfast_at_Tiffany%27s_(song)",
+    "article_title": "Breakfast at Tiffany's (song) (Wikipedia)",
+    "jokes": [
+     "The only thing we've got in common is we both liked that song. That's also how my whole friend group started.",
+     "Breakfast at Tiffany's? Around here it's breakfast at the Omelette Shoppe, and the vibe is the same."
+    ],
+    "body": "MOOD BOOST: DEEP BLUE SOMETHING, \"BREAKFAST AT TIFFANY'S\" (1995)<br>• STAT: It peaked at No. 5 on the Billboard Hot 100 in January 1996 and went all the way to No. 1 on the UK Singles Chart.<br>• STORY: Released as a single in July 1995, it was the Texas band's only big U.S. hit, so yes, the textbook one-hit wonder.<br>• FUN PART: Bassist Todd Pipes told Q magazine that because the song had 'breakfast' in the title, radio stations kept booking them for breakfast-time shows.<br>➜ TAKE: A song with 'breakfast' in the title, at 6 AM, on a morning show. Deep Blue Something would hate this, and I love it.<br>➜ BAIT: Text 231-929-4487: the one '90s song you know every word to, but couldn't name the band.<br>😂 JOKES: The only thing we've got in common is we both liked that song. That's also how my whole friend group started. / Breakfast at Tiffany's? Around here it's breakfast at the Omelette Shoppe, and the vibe is the same.",
+    "description": "It peaked at No. 5 on the Billboard Hot 100 in January 1996 and went all the way to No. 1 on the UK Singles Chart. Released as a single in July 1995, it was the Texas band's only big U.S. hit, so yes, the textbook one-hit wonder. Bassist Todd Pipes told Q magazine that because the song had 'breakfast' in the title, radio stations kept booking them for breakfast-time shows.",
+    "summary": "It peaked at No. 5 on the Billboard Hot 100 in January 1996 and went all the way to No. 1 on the UK Singles Chart. Released as a single in July 1995, it was the Texas band's only big U.S. hit, so yes, the textbook one-hit wonder. Bassist Todd Pipes told Q magazine that because the song had 'breakfast' in the title, radio stations kept booking them for breakfast-time shows.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Breakfast_at_Tiffany%27s_(song)",
+  "article_title": "Breakfast at Tiffany's (song) (Wikipedia)",
+  "jokes": [
+   "The only thing we've got in common is we both liked that song. That's also how my whole friend group started.",
+   "Breakfast at Tiffany's? Around here it's breakfast at the Omelette Shoppe, and the vibe is the same."
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "623a9449887e",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>⭐ THE CHRISTMAS SHIP SAILS AGAIN: 1,400 TREES ON THE CUTTER MACKINAW<br>• SUMMARY: Hundreds of hands loaded 1,400 northern Michigan Christmas trees onto the U.S. Coast Guard Cutter Mackinaw in Cheboygan on Tuesday. The trees head to families in Chicago, and the Cheboygan Area Chamber collects nearly 3,000 decorated letters to send along with them.<br>• THE CATCH: On the way, the crew holds a wreath ceremony where the original Christmas tree ship, the Rouse Simmons, went down in a 1912 storm. Every year the Coast Guard invites schools and the community to help load.<br>• WHO: The Cutter Mackinaw crew, local schools and the Cheboygan Area Chamber. WHAT: 1,400 trees loaded. WHERE: Cheboygan. WHEN: Loaded Tuesday, with a public send-off UpNorthLive lists for 'next Saturday' at 10 a.m. at the Cheboygan County Marina. WHY IT MATTERS: A northern Michigan tree is going to be somebody's living-room Christmas in Chicago.<br>➜ TAKE: Northern Michigan doesn't just grow Christmas trees. We ship them by icebreaker. Try topping that, Amazon.<br>➜ BAIT: Text 231-929-4487: real tree or fake tree at your house? And when does it go up?<br>😂 JOKES: A Coast Guard icebreaker full of Christmas trees. That's the most Michigan sentence ever spoken. / Fourteen hundred trees on one ship. I can't even get one tree on top of my car without a neighbor holding the twine.<br><br>SIGN THE LAST STEEL BEAM AT CHERRY CAPITAL AIRPORT<br>• SUMMARY: Cherry Capital Airport is inviting the public to sign the final structural steel beam for its new concourse, part of the 'Gates to the Future' project. The beam is inside the terminal now, and you can sign it through January.<br>• THE CATCH: It's the last piece of structural steel going into the terminal, so your Sharpie autograph gets built into the airport for good. To sign, you just let a TVC police officer know.<br>• WHO: Cherry Capital Airport, CEO Kevin Klein. WHAT: Public beam signing. WHERE: Inside the TVC terminal. WHEN: Now through January. WHY IT MATTERS: Klein says he'll bring his own kids and family to sign it, and calls it the first of many ways the public can be part of the project.<br>➜ TAKE: Busiest travel week of the year, and TVC says, 'While you're here, autograph the building.' Flying home Sunday? Bring a marker.<br>➜ BAIT: Text 231-929-4487: if you signed the beam, what would you write? Keep it radio-friendly.<br>😂 JOKES: Finally, a way to leave your mark at the airport that doesn't involve losing a carry-on. / Sign the beam, and in 50 years your grandkids can point at the ceiling and say, 'That's where Grandpa misspelled Traverse.'<br><br>SOUTH AIRPORT ROAD: LANE CLOSURES START TODAY AT LOGAN'S LANDING<br>• SUMMARY: Single-lane closures in both directions start today, Wednesday, on South Airport Road at Logan's Landing for the Garfield Township sewer replacement. It's daylight hours only, with flaggers and short stops westbound, and the median crossovers are closed.<br>• THE CATCH: Crews pull the non-essential traffic control for the holiday weekend, and the closures pick back up Monday, Nov. 30. So it's one rough day, then a break.<br>• WHO: Grand Traverse County Road Commission, for Garfield Township. WHAT: Sewer replacement lane closures. WHERE: South Airport Road at Logan's Landing. WHEN: Daylight hours today, then again from Mon Nov 30. WHY IT MATTERS: That's the road to Meijer, Costco and the airport on the busiest grocery-run day of the year.<br>➜ TAKE: Of course the lane closure starts on the day every one of us is making a last-minute run for cream of mushroom soup.<br>➜ BAIT: Text 231-929-4487 your best back-way around South Airport. We'll keep it between us and everybody listening.<br>😂 JOKES: The flaggers today deserve a turkey dinner. Possibly two. / Median crossovers closed. So if you miss your turn, congratulations, you're going to Kalkaska.<br><br>TC FIREFIGHTERS SHOW YOU WHAT NOT TO DO WITH A TURKEY FRYER<br>• SUMMARY: Traverse City firefighters set up a live what-not-to-do demo at Fire Station 1: oil way too hot, a pot filled too full, and a frozen turkey dropped in. The National Fire Protection Association says Thanksgiving Day is the peak day of the year for home cooking fires.<br>• THE CATCH: In the demo, a firefighter puts water on the grease fire on purpose, to show you why you never, ever do that.<br>• WHO: TCFD Captain Steve Ball, with UpNorthLive's Katrina Bailey. WHAT: Fryer safety tips. WHERE: Fire Station 1, downtown TC. WHEN: Tuesday morning. WHY IT MATTERS: The tips are simple. Fry outdoors on level ground away from the house, thaw the bird, don't overfill the oil, watch the temperature, wear long sleeves and gloves, and keep an extinguisher close, not a hose.<br>➜ TAKE: If your uncle says, 'Watch this,' while holding a frozen turkey over a fryer, that's your cue to watch from the next county.<br>➜ BAIT: Text 231-929-4487: who's the one person in your family who should never be allowed near the turkey fryer?<br>😂 JOKES: Thaw the bird. It's a turkey, not a hockey puck. / Water on a grease fire is how a family dinner becomes a family reunion with the fire department.<br><br>CADILLAC SALVATION ARMY PLANS ITS BIGGEST THANKSGIVING YET<br>• SUMMARY: The Salvation Army of Cadillac is holding its largest-ever Thanksgiving food distribution, helping 600 households across three counties. Families get boxes and packages with what they need for the holiday meal.<br>• THE CATCH: Organizers say more people are asking for help, including first-time households, and KAIR in Kalkaska County says it's seen a 30 percent jump in need.<br>• WHO: The Cadillac Salvation Army's Micah Chisholm, and KAIR director Kathy Somes. WHAT: Thanksgiving food boxes. WHERE: Three counties around Cadillac, plus KAIR in Kalkaska County. WHY IT MATTERS: Chisholm says it's about more than the food. It's about the dignity of a family sitting down to a meal around the table.<br>➜ TAKE: Six hundred families getting a real Thanksgiving. If you've got room in the budget this week, the pantry shelves are a good place to put it.<br>➜ BAIT: Text 231-929-4487 a shout-out to the volunteers in your town making sure everybody eats.<br>😂 JOKES: Six hundred households. That's more turkeys than my whole family has ever successfully cooked combined. / The real heroes this week wear aprons and hairnets, and they never once ask when dinner's ready.<br><br>━━ NATIONAL ━━<br><br>THE MACY'S PARADE TURNS 100 TOMORROW<br>• SUMMARY: Tomorrow is the 100th Macy's Thanksgiving Day Parade, and Macy's says it's bringing a record 100 inflatables plus floats and Santa Claus. Megan Moroney and Teddy Swims headline the Herald Square performances.<br>• THE CATCH: One hundred parades, one hundred inflatables. Macy's is going for the round number.<br>• WHO: Macy's. WHAT: The 100th parade. WHERE: New York City, on TV everywhere. WHEN: Thursday, 8:30 a.m. to noon on NBC and Telemundo, streaming on Peacock. WHY IT MATTERS: It's the background noise of every kitchen in America tomorrow morning.<br>➜ TAKE: The parade's on, the oven's on, and somebody's yelling that the giant balloon looks nothing like the character. Tradition.<br>➜ BAIT: Text 231-929-4487: parade on TV tomorrow morning, or straight to football?<br>😂 JOKES: A hundred inflatables. That's still fewer than the inflatable decorations on one house on my street. / Teddy Swims at the parade. Finally, someone with more tattoos than the balloon handlers have blisters.<br><br>━━ BITS ━━<br><br>BIT: THE NATIONAL DAYS ARE PARFAIT DAY AND SHOPPING REMINDER DAY<br>• It's National Parfait Day. National Day Calendar says 'parfait' is French for 'perfect,' and it described a frozen dessert as far back as 1894.<br>• Northern states turned it into the yogurt-granola-fruit breakfast most of us know.<br>• It's also Shopping Reminder Day, the nudge to make a list of who's left and actually check them off.<br>➜ TAKE: So today you're supposed to eat something layered and finish your shopping. That's also my plan for tomorrow, minus the shopping.<br>➜ BAIT: Text 231-929-4487: what's the one thing you ALWAYS forget at the grocery store the day before Thanksgiving?<br>😂 JOKES: Parfait means 'perfect.' So does my description of my own green bean casserole, and both are lies. / Shopping Reminder Day falls the day before Thanksgiving, which is like a smoke-detector reminder going off while the kitchen's already on fire.<br><br>BIT: THE LIONS' FIRST THANKSGIVING GAME WAS ALSO AGAINST THE BEARS<br>• UpNorthLive is asking folks to guess what year the Lions played their first Thanksgiving Day game.<br>• The answer, per the Pro Football Hall of Fame: 1934, the team's first year in Detroit, against the champion Chicago Bears.<br>• All 26,000 tickets at the University of Detroit Stadium sold out two weeks early, and the Bears won 19 to 16.<br>➜ TAKE: Ninety-two years later, it's Bears at Lions on Thanksgiving again, and both teams are 8-2. Revenge is a dish best served with gravy.<br>➜ BAIT: Text 231-929-4487 your score prediction for tomorrow, Lions-Bears, 1 o'clock.<br>😂 JOKES: The Bears beat us on Thanksgiving in 1934. Some grandpas in Michigan are still not over it. / Twenty-six thousand tickets sold out two weeks early in 1934. Without an app. Ticketmaster could never.<br><br>━━ SPORTS ━━<br><br>LIONS VS. BEARS: TOMORROW, 1 PM, FORD FIELD<br>• Both teams are 8-2, so the winner takes the NFC North lead after Week 12, and the Lions bring a six-game win streak.<br>• Kickoff 1 PM on CBS. Showtime starts at 12:40.<br>• Halftime: Wu-Tang Clan headlines, with Red Hot Chili Peppers drummer Chad Smith. Eminem and Paul Rosenberg produce the show.<br>• Anthem: Detroit native Antonio Cipriano of Off Campus.",
+  "notes": "Buzz score log (buzz-rubric): Christmas Ship / Mackinaw 1,400 trees 14 · TVC final beam signing 13 · TCFD turkey fryer demo 12 · Cadillac Salvation Army 600 households 11 · S. Airport Rd lane closures 10 (only road story) · (bench: Cadillac Christmas in the Park 10, free Thanksgiving meals list 10, Broomhead Rd equestrian staging 8, Black Friday stores vs online poll 8). Ticker feed for 11-25 not out at build time; used ticker.json (Nov 24 1:02 PM) plus my own scan.<br>⭐ THE CHRISTMAS SHIP SAILS AGAIN: 1,400 TREES ON THE CUTTER MACKINAW: https://upnorthlive.com/news/local/coast-guard-cutter-mackinaw-loads-1400-northern-michigan-christmas-trees UpNorthLive (WPBN/WGTU), Tue Nov 24, 2026, 6:43 PM ET. Send-off date given only as 'next Saturday' at 10 a.m.; don't name a date beyond that.<br>SIGN THE LAST STEEL BEAM AT CHERRY CAPITAL AIRPORT: https://upnorthlive.com/news/local/community-invited-to-sign-final-steel-concourse-beam-at-cherry-capital-airport-grand-traverse-county UpNorthLive, Tue Nov 24, 2026, 6:35 PM ET. Quote: CEO Kevin Klein. No signing hours given; 'let a TVC police officer know.'<br>SOUTH AIRPORT ROAD: LANE CLOSURES START TODAY AT LOGAN'S LANDING: https://www.facebook.com/permalink.php?story_fbid=pfbid026N9Av9R6KSbgtLJ7qGbpfWkeJYQjGUigoxD1on1DDPVeAJo5VUPHA8X8JSYWk6Evl&id=100064583803947 GT County Road Commission Facebook post Tue Nov 24, 12:03 PM ET, read-only via Breaker's city pulse 11/25 (curl gets an FB login wall; link from Breaker's scan). The day's only road story.<br>TC FIREFIGHTERS SHOW YOU WHAT NOT TO DO WITH A TURKEY FRYER: https://upnorthlive.com/news/local/traverse-city-fire-department-shares-thanksgiving-safety-tips UpNorthLive, Tue Nov 24, 2026, 7:55 AM ET. Same safety theme in GT Metro Emergency Services post shared by GT County Emergency Management (Breaker city pulse). Audio: c05 below.<br>CADILLAC SALVATION ARMY PLANS ITS BIGGEST THANKSGIVING YET: https://upnorthlive.com/news/local/salvation-army-plans-largest-ever-thanksgiving-food-distribution-aiding-600-households UpNorthLive, Mon Nov 23, 2026, 6:18 PM ET. Three counties not named in the story; don't name them.<br>THE MACY'S PARADE TURNS 100 TOMORROW: https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx Macy's Inc. newsroom release (Business Wire), Nov 2026. AP lineup story blocked our fetch (403); not used.<br>BIT: THE NATIONAL DAYS ARE PARFAIT DAY AND SHOPPING REMINDER DAY: https://nationaldaycalendar.com/national-day/national-parfait-day-november-25 National Day Calendar pages for Parfait Day and Shopping Reminder Day (https://nationaldaycalendar.com/national-day/shopping-reminder-day-november-25). Supercut theme ties in (Shrek layers/parfait).<br>BIT: THE LIONS' FIRST THANKSGIVING GAME WAS ALSO AGAINST THE BEARS: https://www.profootballhof.com/football-history/thanksgiving-and-the-nfl Pro Football Hall of Fame history page; UpNorthLive trivia poll https://upnorthlive.com/news/local/trivia-in-what-year-did-the-lions-play-their-first-thanksgiving-day-game (Nov 24). Game date Nov. 29, 1934 per PFR box score (fetch blocked, 403) not quoted on air.<br>SPORTS: Lions.com 'How to watch' (Nov 24, 11 AM ET): records, six-game streak, NFC North stakes, halftime, anthem, 12:40 Showtime. CBS Detroit (Nov 20): Chad Smith joins Wu-Tang; Eminem/Rosenberg producers; 1 PM CBS https://www.cbsnews.com/detroit/news/drummer-chad-smith-wu-tang-clan-detroit-lions-thanksgiving-day-game/. No show Thursday, so this is the last pre-game sheet. Wu-Tang lyrics not radio-clean; don't play their music cold.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-25-buzz-01",
+    "title": "⭐ THE CHRISTMAS SHIP SAILS AGAIN: 1,400 TREES ON THE CUTTER MACKINAW",
+    "recap": "We talked about the Coast Guard Cutter Mackinaw loading 1,400 northern Michigan Christmas trees for families in Chicago.",
+    "article_url": "https://upnorthlive.com/news/local/coast-guard-cutter-mackinaw-loads-1400-northern-michigan-christmas-trees",
+    "article_title": "Coast Guard Cutter Mackinaw loads 1,400 northern Michigan Christmas trees (UpNorthLive)",
+    "jokes": [
+     "A Coast Guard icebreaker full of Christmas trees. That's the most Michigan sentence ever spoken.",
+     "Fourteen hundred trees on one ship. I can't even get one tree on top of my car without a neighbor holding the twine."
+    ],
+    "body": "⭐ THE CHRISTMAS SHIP SAILS AGAIN: 1,400 TREES ON THE CUTTER MACKINAW<br>• SUMMARY: Hundreds of hands loaded 1,400 northern Michigan Christmas trees onto the U.S. Coast Guard Cutter Mackinaw in Cheboygan on Tuesday. The trees head to families in Chicago, and the Cheboygan Area Chamber collects nearly 3,000 decorated letters to send along with them.<br>• THE CATCH: On the way, the crew holds a wreath ceremony where the original Christmas tree ship, the Rouse Simmons, went down in a 1912 storm. Every year the Coast Guard invites schools and the community to help load.<br>• WHO: The Cutter Mackinaw crew, local schools and the Cheboygan Area Chamber. WHAT: 1,400 trees loaded. WHERE: Cheboygan. WHEN: Loaded Tuesday, with a public send-off UpNorthLive lists for 'next Saturday' at 10 a.m. at the Cheboygan County Marina. WHY IT MATTERS: A northern Michigan tree is going to be somebody's living-room Christmas in Chicago.<br>➜ TAKE: Northern Michigan doesn't just grow Christmas trees. We ship them by icebreaker. Try topping that, Amazon.<br>➜ BAIT: Text 231-929-4487: real tree or fake tree at your house? And when does it go up?<br>😂 JOKES: A Coast Guard icebreaker full of Christmas trees. That's the most Michigan sentence ever spoken. / Fourteen hundred trees on one ship. I can't even get one tree on top of my car without a neighbor holding the twine.",
+    "description": "Hundreds of hands loaded 1,400 northern Michigan Christmas trees onto the U.S. Coast Guard Cutter Mackinaw in Cheboygan on Tuesday. The trees head to families in Chicago, and the Cheboygan Area Chamber collects nearly 3,000 decorated letters to send along with them. On the way, the crew holds a wreath ceremony where the original Christmas tree ship, the Rouse Simmons, went down in a 1912 storm. Every year the Coast Guard invites schools and the community to help load. The Cutter Mackinaw crew, local schools and the Cheboygan Area Chamber. WHAT: 1,400 trees loaded. WHERE: Cheboygan. WHEN: Loaded Tuesday, with a public send-off UpNorthLive lists for 'next Saturday' at 10 a.m. at the Cheboygan County Marina. WHY IT MATTERS: A northern Michigan tree is going to be somebody's living-room Christmas in Chicago.",
+    "summary": "Hundreds of hands loaded 1,400 northern Michigan Christmas trees onto the U.S. Coast Guard Cutter Mackinaw in Cheboygan on Tuesday. The trees head to families in Chicago, and the Cheboygan Area Chamber collects nearly 3,000 decorated letters to send along with them. On the way, the crew holds a wreath ceremony where the original Christmas tree ship, the Rouse Simmons, went down in a 1912 storm. Every year the Coast Guard invites schools and the community to help load. The Cutter Mackinaw crew, local schools and the Cheboygan Area Chamber. WHAT: 1,400 trees loaded. WHERE: Cheboygan. WHEN: Loaded Tuesday, with a public send-off UpNorthLive lists for 'next Saturday' at 10 a.m. at the Cheboygan County Marina. WHY IT MATTERS: A northern Michigan tree is going to be somebody's living-room Christmas in Chicago.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-buzz-02",
+    "title": "SIGN THE LAST STEEL BEAM AT CHERRY CAPITAL AIRPORT",
+    "recap": "We told you Cherry Capital Airport is letting the public sign the final steel beam for its new concourse, now through January.",
+    "article_url": "https://upnorthlive.com/news/local/community-invited-to-sign-final-steel-concourse-beam-at-cherry-capital-airport-grand-traverse-county",
+    "article_title": "Community invited to sign final steel concourse beam at Cherry Capital Airport (UpNorthLive)",
+    "jokes": [
+     "Finally, a way to leave your mark at the airport that doesn't involve losing a carry-on.",
+     "Sign the beam, and in 50 years your grandkids can point at the ceiling and say, 'That's where Grandpa misspelled Traverse.'"
+    ],
+    "body": "SIGN THE LAST STEEL BEAM AT CHERRY CAPITAL AIRPORT<br>• SUMMARY: Cherry Capital Airport is inviting the public to sign the final structural steel beam for its new concourse, part of the 'Gates to the Future' project. The beam is inside the terminal now, and you can sign it through January.<br>• THE CATCH: It's the last piece of structural steel going into the terminal, so your Sharpie autograph gets built into the airport for good. To sign, you just let a TVC police officer know.<br>• WHO: Cherry Capital Airport, CEO Kevin Klein. WHAT: Public beam signing. WHERE: Inside the TVC terminal. WHEN: Now through January. WHY IT MATTERS: Klein says he'll bring his own kids and family to sign it, and calls it the first of many ways the public can be part of the project.<br>➜ TAKE: Busiest travel week of the year, and TVC says, 'While you're here, autograph the building.' Flying home Sunday? Bring a marker.<br>➜ BAIT: Text 231-929-4487: if you signed the beam, what would you write? Keep it radio-friendly.<br>😂 JOKES: Finally, a way to leave your mark at the airport that doesn't involve losing a carry-on. / Sign the beam, and in 50 years your grandkids can point at the ceiling and say, 'That's where Grandpa misspelled Traverse.'",
+    "description": "Cherry Capital Airport is inviting the public to sign the final structural steel beam for its new concourse, part of the 'Gates to the Future' project. The beam is inside the terminal now, and you can sign it through January. It's the last piece of structural steel going into the terminal, so your Sharpie autograph gets built into the airport for good. To sign, you just let a TVC police officer know. Cherry Capital Airport, CEO Kevin Klein. WHAT: Public beam signing. WHERE: Inside the TVC terminal. WHEN: Now through January. WHY IT MATTERS: Klein says he'll bring his own kids and family to sign it, and calls it the first of many ways the public can be part of the project.",
+    "summary": "Cherry Capital Airport is inviting the public to sign the final structural steel beam for its new concourse, part of the 'Gates to the Future' project. The beam is inside the terminal now, and you can sign it through January. It's the last piece of structural steel going into the terminal, so your Sharpie autograph gets built into the airport for good. To sign, you just let a TVC police officer know. Cherry Capital Airport, CEO Kevin Klein. WHAT: Public beam signing. WHERE: Inside the TVC terminal. WHEN: Now through January. WHY IT MATTERS: Klein says he'll bring his own kids and family to sign it, and calls it the first of many ways the public can be part of the project.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-buzz-03",
+    "title": "SOUTH AIRPORT ROAD: LANE CLOSURES START TODAY AT LOGAN'S LANDING",
+    "recap": "We warned drivers about daylight lane closures on South Airport Road at Logan's Landing today, back again Monday, Nov. 30.",
+    "article_url": "https://www.facebook.com/permalink.php?story_fbid=pfbid026N9Av9R6KSbgtLJ7qGbpfWkeJYQjGUigoxD1on1DDPVeAJo5VUPHA8X8JSYWk6Evl&id=100064583803947",
+    "article_title": "Grand Traverse County Road Commission: South Airport Rd lane closures at Logan's Landing (Facebook post, Nov 24)",
+    "jokes": [
+     "The flaggers today deserve a turkey dinner. Possibly two.",
+     "Median crossovers closed. So if you miss your turn, congratulations, you're going to Kalkaska."
+    ],
+    "body": "SOUTH AIRPORT ROAD: LANE CLOSURES START TODAY AT LOGAN'S LANDING<br>• SUMMARY: Single-lane closures in both directions start today, Wednesday, on South Airport Road at Logan's Landing for the Garfield Township sewer replacement. It's daylight hours only, with flaggers and short stops westbound, and the median crossovers are closed.<br>• THE CATCH: Crews pull the non-essential traffic control for the holiday weekend, and the closures pick back up Monday, Nov. 30. So it's one rough day, then a break.<br>• WHO: Grand Traverse County Road Commission, for Garfield Township. WHAT: Sewer replacement lane closures. WHERE: South Airport Road at Logan's Landing. WHEN: Daylight hours today, then again from Mon Nov 30. WHY IT MATTERS: That's the road to Meijer, Costco and the airport on the busiest grocery-run day of the year.<br>➜ TAKE: Of course the lane closure starts on the day every one of us is making a last-minute run for cream of mushroom soup.<br>➜ BAIT: Text 231-929-4487 your best back-way around South Airport. We'll keep it between us and everybody listening.<br>😂 JOKES: The flaggers today deserve a turkey dinner. Possibly two. / Median crossovers closed. So if you miss your turn, congratulations, you're going to Kalkaska.",
+    "description": "Single-lane closures in both directions start today, Wednesday, on South Airport Road at Logan's Landing for the Garfield Township sewer replacement. It's daylight hours only, with flaggers and short stops westbound, and the median crossovers are closed. Crews pull the non-essential traffic control for the holiday weekend, and the closures pick back up Monday, Nov. 30. So it's one rough day, then a break. Grand Traverse County Road Commission, for Garfield Township. WHAT: Sewer replacement lane closures. WHERE: South Airport Road at Logan's Landing. WHEN: Daylight hours today, then again from Mon Nov 30. WHY IT MATTERS: That's the road to Meijer, Costco and the airport on the busiest grocery-run day of the year.",
+    "summary": "Single-lane closures in both directions start today, Wednesday, on South Airport Road at Logan's Landing for the Garfield Township sewer replacement. It's daylight hours only, with flaggers and short stops westbound, and the median crossovers are closed. Crews pull the non-essential traffic control for the holiday weekend, and the closures pick back up Monday, Nov. 30. So it's one rough day, then a break. Grand Traverse County Road Commission, for Garfield Township. WHAT: Sewer replacement lane closures. WHERE: South Airport Road at Logan's Landing. WHEN: Daylight hours today, then again from Mon Nov 30. WHY IT MATTERS: That's the road to Meijer, Costco and the airport on the busiest grocery-run day of the year.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-buzz-04",
+    "title": "TC FIREFIGHTERS SHOW YOU WHAT NOT TO DO WITH A TURKEY FRYER",
+    "recap": "We passed along TCFD's turkey fryer tips after their what-not-to-do demo: fry outside, thaw the bird, never water on a grease fire.",
+    "article_url": "https://upnorthlive.com/news/local/traverse-city-fire-department-shares-thanksgiving-safety-tips",
+    "article_title": "What NOT to do: Traverse City Fire Department shares Thanksgiving safety tips (UpNorthLive)",
+    "jokes": [
+     "Thaw the bird. It's a turkey, not a hockey puck.",
+     "Water on a grease fire is how a family dinner becomes a family reunion with the fire department."
+    ],
+    "body": "TC FIREFIGHTERS SHOW YOU WHAT NOT TO DO WITH A TURKEY FRYER<br>• SUMMARY: Traverse City firefighters set up a live what-not-to-do demo at Fire Station 1: oil way too hot, a pot filled too full, and a frozen turkey dropped in. The National Fire Protection Association says Thanksgiving Day is the peak day of the year for home cooking fires.<br>• THE CATCH: In the demo, a firefighter puts water on the grease fire on purpose, to show you why you never, ever do that.<br>• WHO: TCFD Captain Steve Ball, with UpNorthLive's Katrina Bailey. WHAT: Fryer safety tips. WHERE: Fire Station 1, downtown TC. WHEN: Tuesday morning. WHY IT MATTERS: The tips are simple. Fry outdoors on level ground away from the house, thaw the bird, don't overfill the oil, watch the temperature, wear long sleeves and gloves, and keep an extinguisher close, not a hose.<br>➜ TAKE: If your uncle says, 'Watch this,' while holding a frozen turkey over a fryer, that's your cue to watch from the next county.<br>➜ BAIT: Text 231-929-4487: who's the one person in your family who should never be allowed near the turkey fryer?<br>😂 JOKES: Thaw the bird. It's a turkey, not a hockey puck. / Water on a grease fire is how a family dinner becomes a family reunion with the fire department.",
+    "description": "Traverse City firefighters set up a live what-not-to-do demo at Fire Station 1: oil way too hot, a pot filled too full, and a frozen turkey dropped in. The National Fire Protection Association says Thanksgiving Day is the peak day of the year for home cooking fires. In the demo, a firefighter puts water on the grease fire on purpose, to show you why you never, ever do that. TCFD Captain Steve Ball, with UpNorthLive's Katrina Bailey. WHAT: Fryer safety tips. WHERE: Fire Station 1, downtown TC. WHEN: Tuesday morning. WHY IT MATTERS: The tips are simple. Fry outdoors on level ground away from the house, thaw the bird, don't overfill the oil, watch the temperature, wear long sleeves and gloves, and keep an extinguisher close, not a hose.",
+    "summary": "Traverse City firefighters set up a live what-not-to-do demo at Fire Station 1: oil way too hot, a pot filled too full, and a frozen turkey dropped in. The National Fire Protection Association says Thanksgiving Day is the peak day of the year for home cooking fires. In the demo, a firefighter puts water on the grease fire on purpose, to show you why you never, ever do that. TCFD Captain Steve Ball, with UpNorthLive's Katrina Bailey. WHAT: Fryer safety tips. WHERE: Fire Station 1, downtown TC. WHEN: Tuesday morning. WHY IT MATTERS: The tips are simple. Fry outdoors on level ground away from the house, thaw the bird, don't overfill the oil, watch the temperature, wear long sleeves and gloves, and keep an extinguisher close, not a hose.",
+    "rank": 4,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-buzz-05",
+    "title": "CADILLAC SALVATION ARMY PLANS ITS BIGGEST THANKSGIVING YET",
+    "recap": "We gave props to the Cadillac Salvation Army, helping 600 households with its biggest Thanksgiving food distribution ever.",
+    "article_url": "https://upnorthlive.com/news/local/salvation-army-plans-largest-ever-thanksgiving-food-distribution-aiding-600-households",
+    "article_title": "Salvation Army plans largest-ever Thanksgiving food distribution, aiding 600 households (UpNorthLive)",
+    "jokes": [
+     "Six hundred households. That's more turkeys than my whole family has ever successfully cooked combined.",
+     "The real heroes this week wear aprons and hairnets, and they never once ask when dinner's ready."
+    ],
+    "body": "CADILLAC SALVATION ARMY PLANS ITS BIGGEST THANKSGIVING YET<br>• SUMMARY: The Salvation Army of Cadillac is holding its largest-ever Thanksgiving food distribution, helping 600 households across three counties. Families get boxes and packages with what they need for the holiday meal.<br>• THE CATCH: Organizers say more people are asking for help, including first-time households, and KAIR in Kalkaska County says it's seen a 30 percent jump in need.<br>• WHO: The Cadillac Salvation Army's Micah Chisholm, and KAIR director Kathy Somes. WHAT: Thanksgiving food boxes. WHERE: Three counties around Cadillac, plus KAIR in Kalkaska County. WHY IT MATTERS: Chisholm says it's about more than the food. It's about the dignity of a family sitting down to a meal around the table.<br>➜ TAKE: Six hundred families getting a real Thanksgiving. If you've got room in the budget this week, the pantry shelves are a good place to put it.<br>➜ BAIT: Text 231-929-4487 a shout-out to the volunteers in your town making sure everybody eats.<br>😂 JOKES: Six hundred households. That's more turkeys than my whole family has ever successfully cooked combined. / The real heroes this week wear aprons and hairnets, and they never once ask when dinner's ready.",
+    "description": "The Salvation Army of Cadillac is holding its largest-ever Thanksgiving food distribution, helping 600 households across three counties. Families get boxes and packages with what they need for the holiday meal. Organizers say more people are asking for help, including first-time households, and KAIR in Kalkaska County says it's seen a 30 percent jump in need. The Cadillac Salvation Army's Micah Chisholm, and KAIR director Kathy Somes. WHAT: Thanksgiving food boxes. WHERE: Three counties around Cadillac, plus KAIR in Kalkaska County. WHY IT MATTERS: Chisholm says it's about more than the food. It's about the dignity of a family sitting down to a meal around the table.",
+    "summary": "The Salvation Army of Cadillac is holding its largest-ever Thanksgiving food distribution, helping 600 households across three counties. Families get boxes and packages with what they need for the holiday meal. Organizers say more people are asking for help, including first-time households, and KAIR in Kalkaska County says it's seen a 30 percent jump in need. The Cadillac Salvation Army's Micah Chisholm, and KAIR director Kathy Somes. WHAT: Thanksgiving food boxes. WHERE: Three counties around Cadillac, plus KAIR in Kalkaska County. WHY IT MATTERS: Chisholm says it's about more than the food. It's about the dignity of a family sitting down to a meal around the table.",
+    "rank": 5,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-buzz-06",
+    "title": "THE MACY'S PARADE TURNS 100 TOMORROW",
+    "recap": "We previewed the 100th Macy's Thanksgiving Day Parade, with a record 100 inflatables and Megan Moroney and Teddy Swims performing.",
+    "article_url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx",
+    "article_title": "The 100th Macy's Thanksgiving Day Parade Brings Holiday Magic to Life (Macy's, Inc. newsroom)",
+    "jokes": [
+     "A hundred inflatables. That's still fewer than the inflatable decorations on one house on my street.",
+     "Teddy Swims at the parade. Finally, someone with more tattoos than the balloon handlers have blisters."
+    ],
+    "body": "THE MACY'S PARADE TURNS 100 TOMORROW<br>• SUMMARY: Tomorrow is the 100th Macy's Thanksgiving Day Parade, and Macy's says it's bringing a record 100 inflatables plus floats and Santa Claus. Megan Moroney and Teddy Swims headline the Herald Square performances.<br>• THE CATCH: One hundred parades, one hundred inflatables. Macy's is going for the round number.<br>• WHO: Macy's. WHAT: The 100th parade. WHERE: New York City, on TV everywhere. WHEN: Thursday, 8:30 a.m. to noon on NBC and Telemundo, streaming on Peacock. WHY IT MATTERS: It's the background noise of every kitchen in America tomorrow morning.<br>➜ TAKE: The parade's on, the oven's on, and somebody's yelling that the giant balloon looks nothing like the character. Tradition.<br>➜ BAIT: Text 231-929-4487: parade on TV tomorrow morning, or straight to football?<br>😂 JOKES: A hundred inflatables. That's still fewer than the inflatable decorations on one house on my street. / Teddy Swims at the parade. Finally, someone with more tattoos than the balloon handlers have blisters.",
+    "description": "Tomorrow is the 100th Macy's Thanksgiving Day Parade, and Macy's says it's bringing a record 100 inflatables plus floats and Santa Claus. Megan Moroney and Teddy Swims headline the Herald Square performances. One hundred parades, one hundred inflatables. Macy's is going for the round number. Macy's. WHAT: The 100th parade. WHERE: New York City, on TV everywhere. WHEN: Thursday, 8:30 a.m. to noon on NBC and Telemundo, streaming on Peacock. WHY IT MATTERS: It's the background noise of every kitchen in America tomorrow morning.",
+    "summary": "Tomorrow is the 100th Macy's Thanksgiving Day Parade, and Macy's says it's bringing a record 100 inflatables plus floats and Santa Claus. Megan Moroney and Teddy Swims headline the Herald Square performances. One hundred parades, one hundred inflatables. Macy's is going for the round number. Macy's. WHAT: The 100th parade. WHERE: New York City, on TV everywhere. WHEN: Thursday, 8:30 a.m. to noon on NBC and Telemundo, streaming on Peacock. WHY IT MATTERS: It's the background noise of every kitchen in America tomorrow morning.",
+    "rank": 6,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-buzz-07",
+    "title": "BIT: THE NATIONAL DAYS ARE PARFAIT DAY AND SHOPPING REMINDER DAY",
+    "recap": "We marked National Parfait Day and Shopping Reminder Day and asked what you always forget at the store.",
+    "article_url": "https://nationaldaycalendar.com/national-day/national-parfait-day-november-25",
+    "article_title": "National Parfait Day, November 25 (National Day Calendar)",
+    "jokes": [
+     "Parfait means 'perfect.' So does my description of my own green bean casserole, and both are lies.",
+     "Shopping Reminder Day falls the day before Thanksgiving, which is like a smoke-detector reminder going off while the kitchen's already on fire."
+    ],
+    "body": "BIT: THE NATIONAL DAYS ARE PARFAIT DAY AND SHOPPING REMINDER DAY<br>• It's National Parfait Day. National Day Calendar says 'parfait' is French for 'perfect,' and it described a frozen dessert as far back as 1894.<br>• Northern states turned it into the yogurt-granola-fruit breakfast most of us know.<br>• It's also Shopping Reminder Day, the nudge to make a list of who's left and actually check them off.<br>➜ TAKE: So today you're supposed to eat something layered and finish your shopping. That's also my plan for tomorrow, minus the shopping.<br>➜ BAIT: Text 231-929-4487: what's the one thing you ALWAYS forget at the grocery store the day before Thanksgiving?<br>😂 JOKES: Parfait means 'perfect.' So does my description of my own green bean casserole, and both are lies. / Shopping Reminder Day falls the day before Thanksgiving, which is like a smoke-detector reminder going off while the kitchen's already on fire.",
+    "description": "It's National Parfait Day. National Day Calendar says 'parfait' is French for 'perfect,' and it described a frozen dessert as far back as 1894. Northern states turned it into the yogurt-granola-fruit breakfast most of us know. It's also Shopping Reminder Day, the nudge to make a list of who's left and actually check them off.",
+    "summary": "It's National Parfait Day. National Day Calendar says 'parfait' is French for 'perfect,' and it described a frozen dessert as far back as 1894. Northern states turned it into the yogurt-granola-fruit breakfast most of us know. It's also Shopping Reminder Day, the nudge to make a list of who's left and actually check them off.",
+    "rank": 7,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-buzz-08",
+    "title": "BIT: THE LIONS' FIRST THANKSGIVING GAME WAS ALSO AGAINST THE BEARS",
+    "recap": "We learned the Lions' first Thanksgiving game, in 1934, was against the Bears too, a 19-16 loss before 26,000 fans.",
+    "article_url": "https://www.profootballhof.com/football-history/thanksgiving-and-the-nfl",
+    "article_title": "Thanksgiving and the NFL (Pro Football Hall of Fame)",
+    "jokes": [
+     "The Bears beat us on Thanksgiving in 1934. Some grandpas in Michigan are still not over it.",
+     "Twenty-six thousand tickets sold out two weeks early in 1934. Without an app. Ticketmaster could never."
+    ],
+    "body": "BIT: THE LIONS' FIRST THANKSGIVING GAME WAS ALSO AGAINST THE BEARS<br>• UpNorthLive is asking folks to guess what year the Lions played their first Thanksgiving Day game.<br>• The answer, per the Pro Football Hall of Fame: 1934, the team's first year in Detroit, against the champion Chicago Bears.<br>• All 26,000 tickets at the University of Detroit Stadium sold out two weeks early, and the Bears won 19 to 16.<br>➜ TAKE: Ninety-two years later, it's Bears at Lions on Thanksgiving again, and both teams are 8-2. Revenge is a dish best served with gravy.<br>➜ BAIT: Text 231-929-4487 your score prediction for tomorrow, Lions-Bears, 1 o'clock.<br>😂 JOKES: The Bears beat us on Thanksgiving in 1934. Some grandpas in Michigan are still not over it. / Twenty-six thousand tickets sold out two weeks early in 1934. Without an app. Ticketmaster could never.",
+    "description": "UpNorthLive is asking folks to guess what year the Lions played their first Thanksgiving Day game. The answer, per the Pro Football Hall of Fame: 1934, the team's first year in Detroit, against the champion Chicago Bears. All 26,000 tickets at the University of Detroit Stadium sold out two weeks early, and the Bears won 19 to 16.",
+    "summary": "UpNorthLive is asking folks to guess what year the Lions played their first Thanksgiving Day game. The answer, per the Pro Football Hall of Fame: 1934, the team's first year in Detroit, against the champion Chicago Bears. All 26,000 tickets at the University of Detroit Stadium sold out two weeks early, and the Bears won 19 to 16.",
+    "rank": 8,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-buzz-09",
+    "title": "LIONS VS. BEARS: TOMORROW, 1 PM, FORD FIELD",
+    "recap": "We set up tomorrow's 8-2 vs. 8-2 Lions-Bears game, 1 PM on CBS, with Wu-Tang Clan and Chad Smith at halftime.",
+    "article_url": "https://www.detroitlions.com/news/lions-vs-bears-how-to-watch-listen-and-follow-2026-goff-gibbs-williams-joseph",
+    "article_title": "Lions Vs. Bears: Tomorrow, 1 Pm, Ford Field",
+    "jokes": [],
+    "body": "LIONS VS. BEARS: TOMORROW, 1 PM, FORD FIELD<br>• Both teams are 8-2, so the winner takes the NFC North lead after Week 12, and the Lions bring a six-game win streak.<br>• Kickoff 1 PM on CBS. Showtime starts at 12:40.<br>• Halftime: Wu-Tang Clan headlines, with Red Hot Chili Peppers drummer Chad Smith. Eminem and Paul Rosenberg produce the show.<br>• Anthem: Detroit native Antonio Cipriano of Off Campus.",
+    "description": "• Both teams are 8-2, so the winner takes the NFC North lead after Week 12, and the Lions bring a six-game win streak. • Kickoff 1 PM on CBS. Showtime starts at 12:40. • Halftime: Wu-Tang Clan headlines, with Red Hot Chili Peppers drummer Chad Smith. Eminem and Paul Rosenberg produce the show. • Anthem: Detroit native Antonio Cipriano of Off Campus.",
+    "summary": "• Both teams are 8-2, so the winner takes the NFC North lead after Week 12, and the Lions bring a six-game win streak. • Kickoff 1 PM on CBS. Showtime starts at 12:40. • Halftime: Wu-Tang Clan headlines, with Red Hot Chili Peppers drummer Chad Smith. Eminem and Paul Rosenberg produce the show. • Anthem: Detroit native Antonio Cipriano of Off Campus.",
+    "rank": 9,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://upnorthlive.com/news/local/coast-guard-cutter-mackinaw-loads-1400-northern-michigan-christmas-trees",
+  "article_title": "Coast Guard Cutter Mackinaw loads 1,400 northern Michigan Christmas trees (UpNorthLive)",
+  "jokes": [
+   "A Coast Guard icebreaker full of Christmas trees. That's the most Michigan sentence ever spoken.",
+   "Fourteen hundred trees on one ship. I can't even get one tree on top of my car without a neighbor holding the twine."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-25-bench-01",
+    "title": "CADILLAC LIGHTS ITS COMMUNITY TREE FRIDAY",
+    "body": "CADILLAC LIGHTS ITS COMMUNITY TREE FRIDAY<br>• SUMMARY: Crews were stringing lights on the community tree at Cadillac Commons Park on Tuesday. The tree lighting is Friday during Cadillac's Christmas in the Park celebration.<br>• THE CATCH: There's community caroling, plus photos with Santa and Mrs. Claus, and the fun starts at 5:30 p.m.<br>• WHO: City of Cadillac. WHAT: Christmas in the Park and tree lighting. WHERE: Cadillac Commons Park. WHEN: Friday, starting 5:30 p.m. WHY IT MATTERS: It's a free, easy Black Friday night out that doesn't involve a checkout line.<br>➜ TAKE: Black Friday plan: shop in the morning, carol in Cadillac at night, and pretend you didn't spend all that money.<br>➜ BAIT: Text 231-929-4487: what's the best small-town tree lighting Up North?<br>😂 JOKES: Photos with Santa on Black Friday. He's the only guy at the mall who's not stressed out. / Crews put the lights on Tuesday. At my house that job takes until Valentine's Day.",
+    "recap": "We told you Cadillac lights its community tree Friday at Christmas in the Park, starting at 5:30 p.m.",
+    "notes": "https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event UpNorthLive, Tue Nov 24, 2026, 6:43 PM ET.",
+    "article_url": "https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event",
+    "article_title": "Crews begin decorating the Cadillac Commons Park community tree ahead of Friday event (UpNorthLive)",
+    "jokes": [
+     "Photos with Santa on Black Friday. He's the only guy at the mall who's not stressed out.",
+     "Crews put the lights on Tuesday. At my house that job takes until Valentine's Day."
+    ],
+    "description": "We told you Cadillac lights its community tree Friday at Christmas in the Park, starting at 5:30 p.m.",
+    "summary": "We told you Cadillac lights its community tree Friday at Christmas in the Park, starting at 5:30 p.m."
+   },
+   {
+    "id": "2026-11-25-bench-02",
+    "title": "FREE THANKSGIVING MEALS AROUND NORTHERN MICHIGAN",
+    "body": "FREE THANKSGIVING MEALS AROUND NORTHERN MICHIGAN<br>• SUMMARY: UpNorthLive keeps a running list of free community Thanksgiving meals across northern Michigan. In Traverse City, Trinity Lutheran Church's Community Meals program serves a dine-in dinner from 1 to 3 p.m. on Thanksgiving, with no RSVP needed for dine-in.<br>• THE CATCH: Grayling's Crawford AuSable community dinner does deliveries too, but you have to call 989-387-3672 by noon today, Wednesday.<br>• WHO: Churches, Eagles clubs and the Salvation Army across the region. WHAT: Free meals. WHERE: Frankfort, East Jordan, Cheboygan, Grayling, Traverse City and more. WHEN: Thanksgiving Day. WHY IT MATTERS: Nobody should eat alone tomorrow, and there's always a seat.<br>➜ TAKE: If you know somebody who'll be alone tomorrow, this list is the best thing you can text them today.<br>➜ BAIT: Text 231-929-4487 if your group is serving a free meal and isn't on the list yet.<br>😂 JOKES: Free meal, no RSVP, and nobody asks when you're getting married. That's the best Thanksgiving in town. / Volunteers serving hundreds of plates while I can't get my family to pass the rolls clockwise.",
+    "recap": "We shared UpNorthLive's list of free Thanksgiving community meals, including Trinity Lutheran in TC from 1 to 3 p.m.",
+    "notes": "https://upnorthlive.com/news/local/thanksgiving-community-meals-served-around-northern-michigan-10-21-2026 UpNorthLive running list (first posted Nov 16, 2026, updated). Read only listings as printed; Grayling delivery deadline 'call by noon Wednesday, November 25.'",
+    "article_url": "https://upnorthlive.com/news/local/thanksgiving-community-meals-served-around-northern-michigan-10-21-2026",
+    "article_title": "Thanksgiving community meals served around northern Michigan (UpNorthLive)",
+    "jokes": [
+     "Free meal, no RSVP, and nobody asks when you're getting married. That's the best Thanksgiving in town.",
+     "Volunteers serving hundreds of plates while I can't get my family to pass the rolls clockwise."
+    ],
+    "description": "We shared UpNorthLive's list of free Thanksgiving community meals, including Trinity Lutheran in TC from 1 to 3 p.m.",
+    "summary": "We shared UpNorthLive's list of free Thanksgiving community meals, including Trinity Lutheran in TC from 1 to 3 p.m."
+   },
+   {
+    "id": "2026-11-25-bench-03",
+    "title": "HORSE RIDERS ASK THE DNR FOR A STAGING AREA ON BROOMHEAD ROAD",
+    "body": "HORSE RIDERS ASK THE DNR FOR A STAGING AREA ON BROOMHEAD ROAD<br>• SUMMARY: The Sleeping Bear Equestrian Club wants the Michigan DNR to set up a designated horseback staging area along Broomhead Road in Kalkaska County. It would give riders a safer spot to park horse trailers and get onto nearby trails.<br>• THE CATCH: Members say they've worked about a year and a half on the proposal, and it comes with a volunteer maintenance plan.<br>• WHO: Gretchen Knoblock, founder of the Sleeping Bear Equestrian Club. WHAT: Proposed staging area. WHERE: Broomhead Road, Kalkaska County. WHY IT MATTERS: Riders share those trails with cars, ORVs, bikes, snowmobiles, skiers and hikers, and Knoblock says that's not always safe. The DNR still has to review it, and the club wants letters of support.<br>➜ TAKE: Parking a horse trailer is harder than parallel parking downtown during the Film Festival. Give these folks a lot.<br>➜ BAIT: Text 231-929-4487: have you ever ridden a horse Up North, or are you strictly a hayride person?<br>😂 JOKES: Horses sharing trails with snowmobiles. That's one awkward merge. / A year and a half of paperwork for a parking lot. The horse could've learned to parallel park by now.",
+    "recap": "We told you a local equestrian club is asking the DNR for a horse-trailer staging area on Broomhead Road in Kalkaska County.",
+    "notes": "https://upnorthlive.com/news/local/dnr-to-review-equestrian-clubs-request-for-a-horse-riding-staging-area-on-broomhead-road UpNorthLive, Tue Nov 24, 2026, 6:24 PM ET (dateline says Leelanau County; road is in Kalkaska County per the story).",
+    "article_url": "https://upnorthlive.com/news/local/dnr-to-review-equestrian-clubs-request-for-a-horse-riding-staging-area-on-broomhead-road",
+    "article_title": "DNR to review equestrian clubs' request for a horse-riding staging area on Broomhead Road (UpNorthLive)",
+    "jokes": [
+     "Horses sharing trails with snowmobiles. That's one awkward merge.",
+     "A year and a half of paperwork for a parking lot. The horse could've learned to parallel park by now."
+    ],
+    "description": "We told you a local equestrian club is asking the DNR for a horse-trailer staging area on Broomhead Road in Kalkaska County.",
+    "summary": "We told you a local equestrian club is asking the DNR for a horse-trailer staging area on Broomhead Road in Kalkaska County."
+   },
+   {
+    "id": "2026-11-25-bench-04",
+    "title": "POLL: IS BLACK FRIDAY BETTER IN STORES OR ONLINE?",
+    "body": "POLL: IS BLACK FRIDAY BETTER IN STORES OR ONLINE?<br>• SUMMARY: UpNorthLive is asking northern Michigan whether Black Friday shopping is better in stores or online. Their post cites the National Retail Federation, which expects nearly 187 million people to shop between Thanksgiving and Cyber Monday.<br>• THE CATCH: It's Shopping Reminder Day, too, the unofficial countdown to finishing your list.<br>• WHO: UpNorthLive viewers. WHAT: Stores versus online. WHEN: Black Friday is this Friday, Nov. 27. WHY IT MATTERS: Half of us love the doorbuster thrill, and the other half think pajamas are the best deal of the year.<br>➜ TAKE: I'm team in-store, but only for the free samples and the people-watching.<br>➜ BAIT: Text 231-929-4487: Black Friday in person, online in pajamas, or not at all?<br>😂 JOKES: Online shopping is great until you're arguing with a chatbot about a waffle maker. / In-store Black Friday is cardio. The parking lot alone is about five thousand steps.",
+    "recap": "We asked if Black Friday is better in stores or online, with nearly 187 million people expected to shop, per the NRF.",
+    "notes": "https://upnorthlive.com/news/local/poll-is-black-friday-shopping-better-in-stores-or-online UpNorthLive poll page, Tue Nov 24, 2026, 1:01 PM ET; NRF figure as quoted in the photo caption there.",
+    "article_url": "https://upnorthlive.com/news/local/poll-is-black-friday-shopping-better-in-stores-or-online",
+    "article_title": "Poll: Is Black Friday shopping better in stores or online? (UpNorthLive)",
+    "jokes": [
+     "Online shopping is great until you're arguing with a chatbot about a waffle maker.",
+     "In-store Black Friday is cardio. The parking lot alone is about five thousand steps."
+    ],
+    "description": "We asked if Black Friday is better in stores or online, with nearly 187 million people expected to shop, per the NRF.",
+    "summary": "We asked if Black Friday is better in stores or online, with nearly 187 million people expected to shop, per the NRF."
+   }
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "7760c1d2a2aa",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: BIGGEST LAUNCH IN PLAYSTATION HISTORY, PLUS REAL TRADING CARDS<br>• PLAYSTATION RECORD: Sony's PlayStation Blog says GTA 6 is the biggest launch in PlayStation history. More than 39 million unique players on PS5 from Nov. 19 to 22, 683 million hours played, and an average of 17.4 hours per player.<br>• NEW CONSOLES: GTA 6 was the first game played on 70 percent of brand-new PS5s, and launch weekend set a PlayStation record for concurrent players.<br>• TRADING CARDS: Panini and Rockstar announced real GTA 6 trading cards based on the in-game card collectibles, out in December 2026.<br>• PC (UNOFFICIAL): PC Gamer reports the leads of 'Leonida,' an unofficial effort to get a leaked build running on PC, quit after Rockstar had its Discord server taken down. There's still no official PC version or date.<br>➜ TAKE: Seventeen hours per player in four days. That's not a video game, that's a part-time job with car chases.<br>➜ BAIT: Text 231-929-4487: how many hours are you in? Be honest, your family's going to ask tomorrow.<br>😂 JOKES: Thirty-nine million people played GTA over one weekend. That explains why nobody returned my calls. / GTA trading cards. Finally, something from the game Grandma can hold and still not understand.",
+  "notes": "GTA 6 WATCH: BIGGEST LAUNCH IN PLAYSTATION HISTORY, PLUS REAL TRADING CARDS: https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/ Sources checked (6): PlayStation.Blog (Nov 23); Polygon (Nov 24) https://www.polygon.com/gta-6-biggest-launch-in-ps-history/; Panini America (Nov 24, fetch 403 to curl; text via search) https://blog.paniniamerica.net/panini-and-rockstar-games-announce-grand-theft-auto-vi-trading-card-collection/; PC Gamer (Nov 24) https://www.pcgamer.com/games/grand-theft-auto/gta-6-recomp-leaders-bail-out-as-take-two-cracks-down-on-illicit-efforts-to-get-the-game-running-on-pc/; Rockstar Newswire (nothing newer on page at build); Take-Two IR ($3.79B release Nov 20, already used Mon). Rumor/leak item labeled unofficial; no piracy how-to on air.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-gta6-01",
+    "title": "GTA 6 WATCH: BIGGEST LAUNCH IN PLAYSTATION HISTORY, PLUS REAL TRADING CARDS",
+    "recap": "On GTA 6 Watch, Sony called it the biggest launch in PlayStation history, and Panini announced GTA 6 trading cards for December.",
+    "article_url": "https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/",
+    "article_title": "Thank you for making Grand Theft Auto VI the biggest launch in PlayStation history (PlayStation.Blog)",
+    "jokes": [
+     "Thirty-nine million people played GTA over one weekend. That explains why nobody returned my calls.",
+     "GTA trading cards. Finally, something from the game Grandma can hold and still not understand."
+    ],
+    "body": "GTA 6 WATCH: BIGGEST LAUNCH IN PLAYSTATION HISTORY, PLUS REAL TRADING CARDS<br>• PLAYSTATION RECORD: Sony's PlayStation Blog says GTA 6 is the biggest launch in PlayStation history. More than 39 million unique players on PS5 from Nov. 19 to 22, 683 million hours played, and an average of 17.4 hours per player.<br>• NEW CONSOLES: GTA 6 was the first game played on 70 percent of brand-new PS5s, and launch weekend set a PlayStation record for concurrent players.<br>• TRADING CARDS: Panini and Rockstar announced real GTA 6 trading cards based on the in-game card collectibles, out in December 2026.<br>• PC (UNOFFICIAL): PC Gamer reports the leads of 'Leonida,' an unofficial effort to get a leaked build running on PC, quit after Rockstar had its Discord server taken down. There's still no official PC version or date.<br>➜ TAKE: Seventeen hours per player in four days. That's not a video game, that's a part-time job with car chases.<br>➜ BAIT: Text 231-929-4487: how many hours are you in? Be honest, your family's going to ask tomorrow.<br>😂 JOKES: Thirty-nine million people played GTA over one weekend. That explains why nobody returned my calls. / GTA trading cards. Finally, something from the game Grandma can hold and still not understand.",
+    "description": "Sony's PlayStation Blog says GTA 6 is the biggest launch in PlayStation history. More than 39 million unique players on PS5 from Nov. 19 to 22, 683 million hours played, and an average of 17.4 hours per player. GTA 6 was the first game played on 70 percent of brand-new PS5s, and launch weekend set a PlayStation record for concurrent players. Panini and Rockstar announced real GTA 6 trading cards based on the in-game card collectibles, out in December 2026. PC (UNOFFICIAL): PC Gamer reports the leads of 'Leonida,' an unofficial effort to get a leaked build running on PC, quit after Rockstar had its Discord server taken down. There's still no official PC version or date.",
+    "summary": "Sony's PlayStation Blog says GTA 6 is the biggest launch in PlayStation history. More than 39 million unique players on PS5 from Nov. 19 to 22, 683 million hours played, and an average of 17.4 hours per player. GTA 6 was the first game played on 70 percent of brand-new PS5s, and launch weekend set a PlayStation record for concurrent players. Panini and Rockstar announced real GTA 6 trading cards based on the in-game card collectibles, out in December 2026. PC (UNOFFICIAL): PC Gamer reports the leads of 'Leonida,' an unofficial effort to get a leaked build running on PC, quit after Rockstar had its Discord server taken down. There's still no official PC version or date.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/",
+  "article_title": "Thank you for making Grand Theft Auto VI the biggest launch in PlayStation history (PlayStation.Blog)",
+  "jokes": [
+   "Thirty-nine million people played GTA over one weekend. That explains why nobody returned my calls.",
+   "GTA trading cards. Finally, something from the game Grandma can hold and still not understand."
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "c6c2f090fd92",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "MICHIGAN GAS PRICES JUMPED RIGHT BEFORE THE HOLIDAY DRIVE<br>• SUMMARY: AAA says 73 million Americans are traveling this week, and 90 percent of them are driving. Michigan gas prices had been trending down, then made an overnight U-turn.<br>• THE CATCH: GasBuddy's Patrick De Haan, who's tracked prices for about 20 years, said his blood was boiling, because Michigan went up while virtually every other state was falling.<br>• WHO: GasBuddy's Patrick De Haan. WHAT: An unexplained price spike. WHERE: Stations across Michigan. WHY IT MATTERS: He says the margin is the part that varies, and he couldn't find a rational reason for the jump.<br>➜ TAKE: ➜ LOCAL ANGLE: Fill up before you head to Grandma's, and if you see a cheaper station on US-31, tell the rest of us.<br>➜ BAIT: Text 231-929-4487 the cheapest gas you've seen this morning, and where.<br>😂 JOKES: When the GasBuddy guy's blood is boiling, you know it's bad. That man is usually calmer than a Sunday at Meijer. / Michigan gas went up while the whole country went down. We're contrarians, even at the pump.<br><br>THE GREAT PIE POLL: 1 IN 5 DOESN'T EVEN EAT PIE<br>• SUMMARY: A new Siena poll of New Yorkers found 73 percent have a favorite Thanksgiving pie, but one in five don't eat pie at Thanksgiving at all.<br>• THE CATCH: 31 percent plan to go to a Friendsgiving this year, and about 2 in 5 people under 50 do.<br>• WHO: Siena Research Institute. WHAT: Thanksgiving habits poll of 870 New York State residents. WHEN: Taken Nov. 9 to 18, released Nov. 24. WHY IT MATTERS: It's one state, but the pie debate is universal.<br>➜ TAKE: ➜ LOCAL ANGLE: Up here the pie answer is cherry, and I will not be taking questions.<br>➜ BAIT: Text 231-929-4487: your Thanksgiving pie. Pumpkin, apple, pecan, cherry, or are you a no-pie person?<br>😂 JOKES: One in five people don't eat pie at Thanksgiving. I'd like to meet them, from a safe distance. / Friendsgiving is just Thanksgiving where nobody asks about your love life.",
+  "notes": "MICHIGAN GAS PRICES JUMPED RIGHT BEFORE THE HOLIDAY DRIVE: https://upnorthlive.com/news/local/experts-lost-on-why-gas-prices-spiked-in-michigan-as-prices-trend-downward-across-us UpNorthLive, Mon Nov 23, 2026, 6:01 PM ET. AAA 73M figure as reported there (differs from the 81.5M travelers figure used Monday, which counts all modes).<br>THE GREAT PIE POLL: 1 IN 5 DOESN'T EVEN EAT PIE: https://sri.siena.edu/2026/11/24/3-in-4-nyers-will-host-or-attend-a-thanksgiving-celebration/ Siena Research Institute, Nov 24, 2026; New York State sample (say 'New Yorkers' on air).",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-lifestyle-01",
+    "title": "MICHIGAN GAS PRICES JUMPED RIGHT BEFORE THE HOLIDAY DRIVE",
+    "recap": "We talked about Michigan gas prices jumping right before Thanksgiving travel, even as prices fell nationally.",
+    "article_url": "https://upnorthlive.com/news/local/experts-lost-on-why-gas-prices-spiked-in-michigan-as-prices-trend-downward-across-us",
+    "article_title": "Experts lost on why gas prices spiked in Michigan as prices trend downward across U.S. (UpNorthLive)",
+    "jokes": [
+     "When the GasBuddy guy's blood is boiling, you know it's bad. That man is usually calmer than a Sunday at Meijer.",
+     "Michigan gas went up while the whole country went down. We're contrarians, even at the pump."
+    ],
+    "body": "MICHIGAN GAS PRICES JUMPED RIGHT BEFORE THE HOLIDAY DRIVE<br>• SUMMARY: AAA says 73 million Americans are traveling this week, and 90 percent of them are driving. Michigan gas prices had been trending down, then made an overnight U-turn.<br>• THE CATCH: GasBuddy's Patrick De Haan, who's tracked prices for about 20 years, said his blood was boiling, because Michigan went up while virtually every other state was falling.<br>• WHO: GasBuddy's Patrick De Haan. WHAT: An unexplained price spike. WHERE: Stations across Michigan. WHY IT MATTERS: He says the margin is the part that varies, and he couldn't find a rational reason for the jump.<br>➜ TAKE: ➜ LOCAL ANGLE: Fill up before you head to Grandma's, and if you see a cheaper station on US-31, tell the rest of us.<br>➜ BAIT: Text 231-929-4487 the cheapest gas you've seen this morning, and where.<br>😂 JOKES: When the GasBuddy guy's blood is boiling, you know it's bad. That man is usually calmer than a Sunday at Meijer. / Michigan gas went up while the whole country went down. We're contrarians, even at the pump.",
+    "description": "AAA says 73 million Americans are traveling this week, and 90 percent of them are driving. Michigan gas prices had been trending down, then made an overnight U-turn. GasBuddy's Patrick De Haan, who's tracked prices for about 20 years, said his blood was boiling, because Michigan went up while virtually every other state was falling. GasBuddy's Patrick De Haan. WHAT: An unexplained price spike. WHERE: Stations across Michigan. WHY IT MATTERS: He says the margin is the part that varies, and he couldn't find a rational reason for the jump.",
+    "summary": "AAA says 73 million Americans are traveling this week, and 90 percent of them are driving. Michigan gas prices had been trending down, then made an overnight U-turn. GasBuddy's Patrick De Haan, who's tracked prices for about 20 years, said his blood was boiling, because Michigan went up while virtually every other state was falling. GasBuddy's Patrick De Haan. WHAT: An unexplained price spike. WHERE: Stations across Michigan. WHY IT MATTERS: He says the margin is the part that varies, and he couldn't find a rational reason for the jump.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-lifestyle-02",
+    "title": "THE GREAT PIE POLL: 1 IN 5 DOESN'T EVEN EAT PIE",
+    "recap": "We talked pie: a Siena poll found 73 percent have a favorite Thanksgiving pie, while one in five skip pie entirely.",
+    "article_url": "https://sri.siena.edu/2026/11/24/3-in-4-nyers-will-host-or-attend-a-thanksgiving-celebration/",
+    "article_title": "3 in 4 NY'ers Will Host or Attend a Thanksgiving Celebration (Siena Research Institute)",
+    "jokes": [
+     "One in five people don't eat pie at Thanksgiving. I'd like to meet them, from a safe distance.",
+     "Friendsgiving is just Thanksgiving where nobody asks about your love life."
+    ],
+    "body": "THE GREAT PIE POLL: 1 IN 5 DOESN'T EVEN EAT PIE<br>• SUMMARY: A new Siena poll of New Yorkers found 73 percent have a favorite Thanksgiving pie, but one in five don't eat pie at Thanksgiving at all.<br>• THE CATCH: 31 percent plan to go to a Friendsgiving this year, and about 2 in 5 people under 50 do.<br>• WHO: Siena Research Institute. WHAT: Thanksgiving habits poll of 870 New York State residents. WHEN: Taken Nov. 9 to 18, released Nov. 24. WHY IT MATTERS: It's one state, but the pie debate is universal.<br>➜ TAKE: ➜ LOCAL ANGLE: Up here the pie answer is cherry, and I will not be taking questions.<br>➜ BAIT: Text 231-929-4487: your Thanksgiving pie. Pumpkin, apple, pecan, cherry, or are you a no-pie person?<br>😂 JOKES: One in five people don't eat pie at Thanksgiving. I'd like to meet them, from a safe distance. / Friendsgiving is just Thanksgiving where nobody asks about your love life.",
+    "description": "A new Siena poll of New Yorkers found 73 percent have a favorite Thanksgiving pie, but one in five don't eat pie at Thanksgiving at all. 31 percent plan to go to a Friendsgiving this year, and about 2 in 5 people under 50 do. Siena Research Institute. WHAT: Thanksgiving habits poll of 870 New York State residents. WHEN: Taken Nov. 9 to 18, released Nov. 24. WHY IT MATTERS: It's one state, but the pie debate is universal.",
+    "summary": "A new Siena poll of New Yorkers found 73 percent have a favorite Thanksgiving pie, but one in five don't eat pie at Thanksgiving at all. 31 percent plan to go to a Friendsgiving this year, and about 2 in 5 people under 50 do. Siena Research Institute. WHAT: Thanksgiving habits poll of 870 New York State residents. WHEN: Taken Nov. 9 to 18, released Nov. 24. WHY IT MATTERS: It's one state, but the pie debate is universal.",
+    "rank": 2,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://upnorthlive.com/news/local/experts-lost-on-why-gas-prices-spiked-in-michigan-as-prices-trend-downward-across-us",
+  "article_title": "Experts lost on why gas prices spiked in Michigan as prices trend downward across U.S. (UpNorthLive)",
+  "jokes": [
+   "When the GasBuddy guy's blood is boiling, you know it's bad. That man is usually calmer than a Sunday at Meijer.",
+   "Michigan gas went up while the whole country went down. We're contrarians, even at the pump."
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "cdea7ac61c75",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "OFFICE: THE WEDNESDAY BEFORE THANKSGIVING IS A GHOST TOWN<br>• LISTENER BIT: The office on the day before Thanksgiving is half empty, and the half that's there is mostly planning the drive.<br>• Who's in, who's out, and who 'has a dentist appointment' at 1 o'clock?<br>➜ TAKE: Every office has the one person who answers emails at 4:59 today just to prove they were there.<br>➜ BAIT: Text 231-929-4487: are you working a full day today, a half day, or is your out-of-office already on?<br>😂 JOKES: My out-of-office says 'returning Monday.' It doesn't say which Monday. / Today the break room fridge is just one yogurt and a sticky note that says 'please.'<br><br>OFFICE: WORKERS ARE USING THE COMPANY DISCOUNT ON BLACK FRIDAY<br>• A survey from the employee benefits platform Boostworks found 64 percent of workers with workplace discounts plan to use them on Black Friday purchases.<br>• 87 percent say price, discounts and offers decide where they shop, versus 26 percent who say brand loyalty does.<br>• 71 percent are buying Christmas gifts, and 67 percent are buying stuff for the house for themselves.<br>➜ TAKE: The best job perk isn't the free coffee. It's the 15 percent off you forgot you had.<br>➜ BAIT: Text 231-929-4487: what's the best employee perk you've ever had?<br>😂 JOKES: Brand loyalty is dead. My loyalty goes to whoever has the shortest checkout line. / Sixty-seven percent are buying gifts for themselves. Same. Merry Christmas to me, from me.<br><br>SCHOOL: 'SKIP SCHOOL WEDNESDAY' IS A REAL THING<br>• The Boston Globe reports the day before Thanksgiving is one of the most frustrating days of the year for school leaders.<br>• Last year, more than 12,000 Boston public school students, about one in four, were marked absent that Wednesday.<br>• One district made the day a holiday, and kids just skipped Tuesday instead.<br>➜ TAKE: Kids will find a way. Give them Wednesday, they take Tuesday. Give them Tuesday, they take Monday. By 2030 Thanksgiving break starts on Halloween.<br>➜ BAIT: Text 231-929-4487: did your parents ever let you skip the day before Thanksgiving?<br>😂 JOKES: One district made Wednesday a holiday, and the kids skipped Tuesday. That's not truancy, that's negotiation. / If your kid is home today, they're not skipping school. They're on turkey duty.<br><br>SCHOOL: HOW DID YOUR KID SAY TO COOK THE TURKEY?<br>• LISTENER BIT: It's the classic preschool and kindergarten assignment: 'How do you cook a turkey?'<br>• Kids' answers usually involve 400 minutes, 5 degrees and a whole bottle of ketchup.<br>• Read us your kid's recipe, word for word.<br>➜ TAKE: Honestly, the kid recipes are about as accurate as mine.<br>➜ BAIT: Text 231-929-4487 your kid's turkey recipe. We'll read the best ones.<br>😂 JOKES: 'Cook it at 2,000 degrees for 5 minutes.' Kid, that's not a recipe, that's a fire department demo. / Step one, buy turkey. Step two, ask Grandma. Step three, eat. Honestly, flawless.",
+  "notes": "OFFICE: THE WEDNESDAY BEFORE THANKSGIVING IS A GHOST TOWN:  Listener-question bit, no article (no fresh 2026 survey found on leaving early; YouGov day-off stat already used Monday).<br>OFFICE: WORKERS ARE USING THE COMPANY DISCOUNT ON BLACK FRIDAY: https://retailtimes.co.uk/brand-loyalty-takes-a-back-seat-as-87-of-employees-prioritise-discounts/ Retail Times, Nov 24, 2026; Boostworks surveyed employees on its own (UK-based) platform. Say 'a survey of workers' rather than 'Americans.'<br>SCHOOL: 'SKIP SCHOOL WEDNESDAY' IS A REAL THING: https://www.bostonglobe.com/2026/11/23/metro/skip-school-wednesday-chronic-absenteeism-thanksgiving/ Boston Globe, Nov 23, 2026. Many area districts are off today anyway (schools: no closings).<br>SCHOOL: HOW DID YOUR KID SAY TO COOK THE TURKEY?:  Listener-question bit, no article. Example answers are illustrative prompts, not quotes from real kids; only read real texts on air.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-officeschool-01",
+    "title": "OFFICE: THE WEDNESDAY BEFORE THANKSGIVING IS A GHOST TOWN",
+    "recap": "We asked who's actually working a full day the day before Thanksgiving.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [
+     "My out-of-office says 'returning Monday.' It doesn't say which Monday.",
+     "Today the break room fridge is just one yogurt and a sticky note that says 'please.'"
+    ],
+    "body": "OFFICE: THE WEDNESDAY BEFORE THANKSGIVING IS A GHOST TOWN<br>• LISTENER BIT: The office on the day before Thanksgiving is half empty, and the half that's there is mostly planning the drive.<br>• Who's in, who's out, and who 'has a dentist appointment' at 1 o'clock?<br>➜ TAKE: Every office has the one person who answers emails at 4:59 today just to prove they were there.<br>➜ BAIT: Text 231-929-4487: are you working a full day today, a half day, or is your out-of-office already on?<br>😂 JOKES: My out-of-office says 'returning Monday.' It doesn't say which Monday. / Today the break room fridge is just one yogurt and a sticky note that says 'please.'",
+    "description": "The office on the day before Thanksgiving is half empty, and the half that's there is mostly planning the drive. Who's in, who's out, and who 'has a dentist appointment' at 1 o'clock?",
+    "summary": "The office on the day before Thanksgiving is half empty, and the half that's there is mostly planning the drive. Who's in, who's out, and who 'has a dentist appointment' at 1 o'clock?",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-officeschool-02",
+    "title": "OFFICE: WORKERS ARE USING THE COMPANY DISCOUNT ON BLACK FRIDAY",
+    "recap": "We heard 64 percent of workers with workplace discounts plan to use them on Black Friday, per a Boostworks survey.",
+    "article_url": "https://retailtimes.co.uk/brand-loyalty-takes-a-back-seat-as-87-of-employees-prioritise-discounts/",
+    "article_title": "Brand loyalty takes a back seat as 87% of employees prioritise discounts (Retail Times)",
+    "jokes": [
+     "Brand loyalty is dead. My loyalty goes to whoever has the shortest checkout line.",
+     "Sixty-seven percent are buying gifts for themselves. Same. Merry Christmas to me, from me."
+    ],
+    "body": "OFFICE: WORKERS ARE USING THE COMPANY DISCOUNT ON BLACK FRIDAY<br>• A survey from the employee benefits platform Boostworks found 64 percent of workers with workplace discounts plan to use them on Black Friday purchases.<br>• 87 percent say price, discounts and offers decide where they shop, versus 26 percent who say brand loyalty does.<br>• 71 percent are buying Christmas gifts, and 67 percent are buying stuff for the house for themselves.<br>➜ TAKE: The best job perk isn't the free coffee. It's the 15 percent off you forgot you had.<br>➜ BAIT: Text 231-929-4487: what's the best employee perk you've ever had?<br>😂 JOKES: Brand loyalty is dead. My loyalty goes to whoever has the shortest checkout line. / Sixty-seven percent are buying gifts for themselves. Same. Merry Christmas to me, from me.",
+    "description": "A survey from the employee benefits platform Boostworks found 64 percent of workers with workplace discounts plan to use them on Black Friday purchases. 87 percent say price, discounts and offers decide where they shop, versus 26 percent who say brand loyalty does. 71 percent are buying Christmas gifts, and 67 percent are buying stuff for the house for themselves.",
+    "summary": "A survey from the employee benefits platform Boostworks found 64 percent of workers with workplace discounts plan to use them on Black Friday purchases. 87 percent say price, discounts and offers decide where they shop, versus 26 percent who say brand loyalty does. 71 percent are buying Christmas gifts, and 67 percent are buying stuff for the house for themselves.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-officeschool-03",
+    "title": "SCHOOL: 'SKIP SCHOOL WEDNESDAY' IS A REAL THING",
+    "recap": "We talked about 'Skip School Wednesday,' when one in four Boston students were absent the day before Thanksgiving last year.",
+    "article_url": "https://www.bostonglobe.com/2026/11/23/metro/skip-school-wednesday-chronic-absenteeism-thanksgiving/",
+    "article_title": "'Skip School Wednesday.' Why Thanksgiving Week has such light attendance. (The Boston Globe)",
+    "jokes": [
+     "One district made Wednesday a holiday, and the kids skipped Tuesday. That's not truancy, that's negotiation.",
+     "If your kid is home today, they're not skipping school. They're on turkey duty."
+    ],
+    "body": "SCHOOL: 'SKIP SCHOOL WEDNESDAY' IS A REAL THING<br>• The Boston Globe reports the day before Thanksgiving is one of the most frustrating days of the year for school leaders.<br>• Last year, more than 12,000 Boston public school students, about one in four, were marked absent that Wednesday.<br>• One district made the day a holiday, and kids just skipped Tuesday instead.<br>➜ TAKE: Kids will find a way. Give them Wednesday, they take Tuesday. Give them Tuesday, they take Monday. By 2030 Thanksgiving break starts on Halloween.<br>➜ BAIT: Text 231-929-4487: did your parents ever let you skip the day before Thanksgiving?<br>😂 JOKES: One district made Wednesday a holiday, and the kids skipped Tuesday. That's not truancy, that's negotiation. / If your kid is home today, they're not skipping school. They're on turkey duty.",
+    "description": "The Boston Globe reports the day before Thanksgiving is one of the most frustrating days of the year for school leaders. Last year, more than 12,000 Boston public school students, about one in four, were marked absent that Wednesday. One district made the day a holiday, and kids just skipped Tuesday instead.",
+    "summary": "The Boston Globe reports the day before Thanksgiving is one of the most frustrating days of the year for school leaders. Last year, more than 12,000 Boston public school students, about one in four, were marked absent that Wednesday. One district made the day a holiday, and kids just skipped Tuesday instead.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-officeschool-04",
+    "title": "SCHOOL: HOW DID YOUR KID SAY TO COOK THE TURKEY?",
+    "recap": "We read listeners' kids' turkey recipes, from wild temperatures to a whole bottle of ketchup.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [
+     "'Cook it at 2,000 degrees for 5 minutes.' Kid, that's not a recipe, that's a fire department demo.",
+     "Step one, buy turkey. Step two, ask Grandma. Step three, eat. Honestly, flawless."
+    ],
+    "body": "SCHOOL: HOW DID YOUR KID SAY TO COOK THE TURKEY?<br>• LISTENER BIT: It's the classic preschool and kindergarten assignment: 'How do you cook a turkey?'<br>• Kids' answers usually involve 400 minutes, 5 degrees and a whole bottle of ketchup.<br>• Read us your kid's recipe, word for word.<br>➜ TAKE: Honestly, the kid recipes are about as accurate as mine.<br>➜ BAIT: Text 231-929-4487 your kid's turkey recipe. We'll read the best ones.<br>😂 JOKES: 'Cook it at 2,000 degrees for 5 minutes.' Kid, that's not a recipe, that's a fire department demo. / Step one, buy turkey. Step two, ask Grandma. Step three, eat. Honestly, flawless.",
+    "description": "It's the classic preschool and kindergarten assignment: 'How do you cook a turkey?' Kids' answers usually involve 400 minutes, 5 degrees and a whole bottle of ketchup. Read us your kid's recipe, word for word.",
+    "summary": "It's the classic preschool and kindergarten assignment: 'How do you cook a turkey?' Kids' answers usually involve 400 minutes, 5 degrees and a whole bottle of ketchup. Read us your kid's recipe, word for word.",
+    "rank": 4,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [
+   "My out-of-office says 'returning Monday.' It doesn't say which Monday.",
+   "Today the break room fridge is just one yogurt and a sticky note that says 'please.'"
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "8eb8cc402e6f",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2ea0d62e0f6e",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "TAKE A TEN-MINUTE WALK BEFORE THE CHAOS<br><br>Today's the day the house fills up, the grocery list gets longer, and somebody calls asking if they should bring rolls. Before all of that hits, here's one small move. Step outside for ten minutes and just walk. It's calm out there this morning, no wind, and it climbs to about 41 this afternoon, so grab a coat and go around the block. Researchers have found that even a short walk, ten or fifteen minutes, tends to shift your mood in a better, calmer direction. You don't need a plan or a step goal. Leave the phone in your pocket, notice the cold air and the quiet, and let your shoulders drop a little. Then come back in and start the day a little lighter than you left it. If you take that walk today, text me at 231-929-4487 and tell me what you noticed out there.",
+  "notes": "https://pubmed.ncbi.nlm.nih.gov/10863677/<br>Ekkekakis et al. 2000, J Behav Med (10-15 min walks shift affect positively). Supported by later meta-analysis (JMIR 2024, PMC11287235). No clinical claims; weather matches NWS (calm, high near 41).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-25-mental-01",
+    "title": "TAKE A TEN-MINUTE WALK BEFORE THE CHAOS",
+    "recap": "On the Mental Health Minute, we suggested a ten-minute walk before the holiday rush, since short walks tend to lift mood.",
+    "article_url": "https://pubmed.ncbi.nlm.nih.gov/10863677/",
+    "article_title": "Walking in (affective) circles: can short walks enhance affect? (Ekkekakis, Hall, VanLanduyt & Petruzzello, J Behav Med 2000, PubMed)",
+    "jokes": [],
+    "body": "TAKE A TEN-MINUTE WALK BEFORE THE CHAOS<br>Today's the day the house fills up, the grocery list gets longer, and somebody calls asking if they should bring rolls. Before all of that hits, here's one small move. Step outside for ten minutes and just walk. It's calm out there this morning, no wind, and it climbs to about 41 this afternoon, so grab a coat and go around the block. Researchers have found that even a short walk, ten or fifteen minutes, tends to shift your mood in a better, calmer direction. You don't need a plan or a step goal. Leave the phone in your pocket, notice the cold air and the quiet, and let your shoulders drop a little. Then come back in and start the day a little lighter than you left it. If you take that walk today, text me at 231-929-4487 and tell me what you noticed out there.",
+    "description": "Today's the day the house fills up, the grocery list gets longer, and somebody calls asking if they should bring rolls. Before all of that hits, here's one small move. Step outside for ten minutes and just walk. It's calm out there this morning, no wind, and it climbs to about 41 this afternoon, so grab a coat and go around the block. Researchers have found that even a short walk, ten or fifteen minutes, tends to shift your mood in a better, calmer direction. You don't need a plan or a step goal. Leave the phone in your pocket, notice the cold air and the quiet, and let your shoulders drop a little. Then come back in and start the day a little lighter than you left it. If you take that walk today, text me at 231-929-4487 and tell me what you noticed out there.",
+    "summary": "Today's the day the house fills up, the grocery list gets longer, and somebody calls asking if they should bring rolls. Before all of that hits, here's one small move. Step outside for ten minutes and just walk. It's calm out there this morning, no wind, and it climbs to about 41 this afternoon, so grab a coat and go around the block. Researchers have found that even a short walk, ten or fifteen minutes, tends to shift your mood in a better, calmer direction. You don't need a plan or a step goal. Leave the phone in your pocket, notice the cold air and the quiet, and let your shoulders drop a little. Then come back in and start the day a little lighter than you left it. If you take that walk today, text me at 231-929-4487 and tell me what you noticed out there.",
+    "rank": 1,
+    "verify": "Confirmed"
+   }
+  ],
+  "article_url": "https://pubmed.ncbi.nlm.nih.gov/10863677/",
+  "article_title": "Walking in (affective) circles: can short walks enhance affect? (Ekkekakis, Hall, VanLanduyt & Petruzzello, J Behav Med 2000, PubMed)",
+  "jokes": [],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "34a67846e551",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "content": "I'M GONNA BE (500 MILES) — THE PROCLAIMERS<br>• Released as a single: August 1988 (lead single from Sunshine on Leith); U.S. release 1993 after Benny & Joon<br>• Chart peaks: US Billboard Hot 100 No. 3 (1993 U.S. release); US Modern Rock Tracks No. 8; UK Singles No. 11 (1988); No. 1 in Australia, Iceland and New Zealand; 2007 Comic Relief re-recording: UK No. 1<br>🎤 SONG STORY: It came out in August 1988 as the lead single from their album Sunshine on Leith and was mostly a UK and Australia hit. Five years later it landed in the movie Benny & Joon, got a 1993 North American release, and climbed to No. 3 on the Hot 100.<br>😂 JOKES: Five hundred miles is about Traverse City to Grandma's house in Indiana, with three stops for gas and one for fudge. / This song took five years to become a U.S. hit. That's still faster than I-75 construction.",
+  "notes": "Backup pick (no flashback-request file today). Peaks and song story: Wikipedia, I'm Gonna Be (500 Miles), citing Billboard https://en.wikipedia.org/wiki/I%27m_Gonna_Be_(500_Miles). Travel-day tie-in: 500 miles to get home for Thanksgiving.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-25-flash-01",
+    "title": "I'M GONNA BE (500 MILES) — THE PROCLAIMERS",
+    "recap": "Our Flashback was The Proclaimers' '500 Miles,' a 1988 single that hit No. 3 in the U.S. in 1993 after Benny & Joon.",
+    "article_url": "https://en.wikipedia.org/wiki/I%27m_Gonna_Be_(500_Miles)",
+    "article_title": "I'm Gonna Be (500 Miles) (Wikipedia)",
+    "jokes": [
+     "Five hundred miles is about Traverse City to Grandma's house in Indiana, with three stops for gas and one for fudge.",
+     "This song took five years to become a U.S. hit. That's still faster than I-75 construction."
+    ],
+    "body": "I'M GONNA BE (500 MILES) — THE PROCLAIMERS<br>• Released as a single: August 1988 (lead single from Sunshine on Leith); U.S. release 1993 after Benny & Joon<br>• Chart peaks: US Billboard Hot 100 No. 3 (1993 U.S. release); US Modern Rock Tracks No. 8; UK Singles No. 11 (1988); No. 1 in Australia, Iceland and New Zealand; 2007 Comic Relief re-recording: UK No. 1<br>🎤 SONG STORY: It came out in August 1988 as the lead single from their album Sunshine on Leith and was mostly a UK and Australia hit. Five years later it landed in the movie Benny & Joon, got a 1993 North American release, and climbed to No. 3 on the Hot 100.<br>😂 JOKES: Five hundred miles is about Traverse City to Grandma's house in Indiana, with three stops for gas and one for fudge. / This song took five years to become a U.S. hit. That's still faster than I-75 construction.",
+    "description": "Our Flashback was The Proclaimers' '500 Miles,' a 1988 single that hit No. 3 in the U.S. in 1993 after Benny & Joon.",
+    "summary": "Our Flashback was The Proclaimers' '500 Miles,' a 1988 single that hit No. 3 in the U.S. in 1993 after Benny & Joon.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/I%27m_Gonna_Be_(500_Miles)",
+  "article_title": "I'm Gonna Be (500 Miles) (Wikipedia)",
+  "jokes": [
+   "Five hundred miles is about Traverse City to Grandma's house in Indiana, with three stops for gas and one for fudge.",
+   "This song took five years to become a U.S. hit. That's still faster than I-75 construction."
+  ],
+  "requester": "",
+  "song": "I'm Gonna Be (500 Miles)",
+  "artist": "The Proclaimers",
+  "single_year": "1988",
+  "chart_records": [
+   "US Billboard Hot 100 No. 3 (1993 U.S. release)",
+   "US Modern Rock Tracks No. 8",
+   "UK Singles No. 11 (1988)",
+   "No. 1 in Australia, Iceland and New Zealand",
+   "2007 Comic Relief re-recording: UK No. 1"
+  ],
+  "origin": "It came out in August 1988 as the lead single from their album Sunshine on Leith and was mostly a UK and Australia hit. Five years later it landed in the movie Benny & Joon, got a 1993 North American release, and climbed to No. 3 on the Hot 100.",
+  "song_story": "It came out in August 1988 as the lead single from their album Sunshine on Leith and was mostly a UK and Australia hit. Five years later it landed in the movie Benny & Joon, got a 1993 North American release, and climbed to No. 3 on the Hot 100.",
+  "song_story_source": "Wikipedia, I'm Gonna Be (500 Miles), citing Billboard https://en.wikipedia.org/wiki/I%27m_Gonna_Be_(500_Miles)",
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "7d6437ec8fca",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "CROSS TALK: THE ONE THANKSGIVING DISH THAT HAS TO BE ON THE TABLE<br>• UpNorthLive asked viewers this week to vote on their favorite Thanksgiving dish.<br>• It's the eve of the big meal, so it's the perfect time to settle it: turkey, stuffing, mashed potatoes, green bean casserole or pie.<br>• And somewhere, somebody's defending the cranberry sauce with the can ridges still on it.<br>PROMPT 1: If you could only eat ONE Thanksgiving dish tomorrow, what is it?<br>PROMPT 2: What's the most overrated thing on the table?<br>PROMPT 3: What's the weird family dish nobody outside your family understands?<br>➜ TAKE: Stuffing is the real main course. The turkey is just the stuffing's container.<br>➜ BAIT: Call in with the dish that HAS to be on your table, or the one you'd quietly retire.<br>😂 JOKES: Green bean casserole is the only vegetable that's legally required to be covered in crunchy onions. / Every family has one aunt who brings the same Jell-O salad and dares anyone to say something.",
+  "notes": "CROSS TALK: THE ONE THANKSGIVING DISH THAT HAS TO BE ON THE TABLE: https://upnorthlive.com/news/local/poll-what-is-your-favorite-thanksgiving-dish-11-24-2026 UpNorthLive poll page, Nov 24, 2026, for 'UpNorthLive Unscripted.' Results not published; don't quote any.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-25-cross-01",
+    "title": "CROSS TALK: THE ONE THANKSGIVING DISH THAT HAS TO BE ON THE TABLE",
+    "recap": "On Cross Talk we debated the one Thanksgiving dish that has to be on the table.",
+    "article_url": "https://upnorthlive.com/news/local/poll-what-is-your-favorite-thanksgiving-dish-11-24-2026",
+    "article_title": "Poll: What is your favorite Thanksgiving dish? (UpNorthLive)",
+    "jokes": [
+     "Green bean casserole is the only vegetable that's legally required to be covered in crunchy onions.",
+     "Every family has one aunt who brings the same Jell-O salad and dares anyone to say something."
+    ],
+    "body": "CROSS TALK: THE ONE THANKSGIVING DISH THAT HAS TO BE ON THE TABLE<br>• UpNorthLive asked viewers this week to vote on their favorite Thanksgiving dish.<br>• It's the eve of the big meal, so it's the perfect time to settle it: turkey, stuffing, mashed potatoes, green bean casserole or pie.<br>• And somewhere, somebody's defending the cranberry sauce with the can ridges still on it.<br>PROMPT 1: If you could only eat ONE Thanksgiving dish tomorrow, what is it?<br>PROMPT 2: What's the most overrated thing on the table?<br>PROMPT 3: What's the weird family dish nobody outside your family understands?<br>➜ TAKE: Stuffing is the real main course. The turkey is just the stuffing's container.<br>➜ BAIT: Call in with the dish that HAS to be on your table, or the one you'd quietly retire.<br>😂 JOKES: Green bean casserole is the only vegetable that's legally required to be covered in crunchy onions. / Every family has one aunt who brings the same Jell-O salad and dares anyone to say something.",
+    "description": "UpNorthLive asked viewers this week to vote on their favorite Thanksgiving dish. It's the eve of the big meal, so it's the perfect time to settle it: turkey, stuffing, mashed potatoes, green bean casserole or pie. And somewhere, somebody's defending the cranberry sauce with the can ridges still on it.",
+    "summary": "UpNorthLive asked viewers this week to vote on their favorite Thanksgiving dish. It's the eve of the big meal, so it's the perfect time to settle it: turkey, stuffing, mashed potatoes, green bean casserole or pie. And somewhere, somebody's defending the cranberry sauce with the can ridges still on it.",
+    "rank": 1,
+    "verify": "Confirmed"
+   }
+  ],
+  "article_url": "https://upnorthlive.com/news/local/poll-what-is-your-favorite-thanksgiving-dish-11-24-2026",
+  "article_title": "Poll: What is your favorite Thanksgiving dish? (UpNorthLive)",
+  "jokes": [
+   "Green bean casserole is the only vegetable that's legally required to be covered in crunchy onions.",
+   "Every family has one aunt who brings the same Jell-O salad and dares anyone to say something."
+  ],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "8af7f0a4fddb",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "Fridays only",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "d485e215e46a",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "TCFD SHOWS WHAT NOT TO DO WITH A TURKEY FRYER · NEWS AUDIO<br>🎙️ SET UP: Traverse City firefighters dropped a frozen turkey into overfilled, overheated oil at Station 1, on purpose, so you don't do it tomorrow. \"Courtesy of UpNorthLive.\"<br>🔈 AUDIO SOURCE: UpNorthLive (WPBN/WGTU), official YouTube, Nov. 24: \"Turkey Fryer Safety: Firefighters Show What Not to Do This Thanksgiving.\" On-air credit: \"courtesy of UpNorthLive.\"<br>• A TCFD captain explains the demo: oil too hot and too full, frozen bird, then water on a grease fire. \"We don't want to see that next to your house.\"<br>🔊 IN: \"Yeah, so we have a fryer turkey demonstration going on...\" (0:00)<br>OUT: \"...as you can see what's happening.\" (0:51)<br>~0:51 · TALK-OVER · READY<br>➜ WHY: Local, visual, and it's a real safety tip the day before Thanksgiving. Pairs with the Buzz turkey-fryer story.<br>⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. The audio doesn't clearly say the captain's name; use the name from the Buzz story's article.<br><br>WU-TANG CLAN TAKES THANKSGIVING HALFTIME IN DETROIT · NEWS AUDIO<br>🎙️ SET UP: Wu-Tang Clan plays halftime at the Lions-Bears game tomorrow at Ford Field. ABC News asked what it means for the tradition. \"Here's ABC.\"<br>🔈 AUDIO SOURCE: ABC News official YouTube, posted Nov. 25: \"Thanksgiving halftime lineup: What to expect.\" On-air credit: \"from ABC News.\"<br>• The guest calls Wu-Tang on Thanksgiving 'major' and credits Eminem and Paul Rosenberg, in their second year producing Detroit's Thanksgiving halftime show.<br>🔊 IN: \"How significant is it to see a group like the Wu-Tang Clan...\" (0:00)<br>OUT: \"...the Detroit Thanksgiving halftime show.\" (0:23)<br>~0:23 · TALK-OVER or quick PLAY · READY<br>➜ WHY: Lions on Thanksgiving is the biggest local sports story of the week, and Eminem's in it.<br>⚠️ FLAG: Clean. One name at about 0:09 ('if ___ can do Thanksgiving Eve') is unclear on the transcript; hear it once before you name that act. ABC network audio: credit it.<br><br>GASBUDDY'S 'BLOOD WAS BOILING' OVER MICHIGAN GAS · NEWS AUDIO<br>🎙️ SET UP: Michigan gas prices jumped right before the holiday, and GasBuddy's Patrick De Haan says he can't explain it. \"Courtesy of UpNorthLive.\"<br>🔈 AUDIO SOURCE: UpNorthLive (WPBN/WGTU), official YouTube, Nov. 23: \"Experts lost on why gas prices spiked in Michigan as prices trend downward across U.S.\" On-air credit: \"courtesy of UpNorthLive.\"<br>• De Haan: no 'rational situation' explains why just Michigan went up. The reporter: shop around, a better price may be 'something a lot of us will be thankful for.'<br>🔊 IN: \"This is one that I don't really have much of an explanation for...\" (0:00)<br>OUT: \"...a lot of us will be thankful for.\" (0:28)<br>~0:28 · TALK-OVER · READY<br>➜ WHY: Everyone's filling up for the drive today; pairs with the Lifestyle gas story.<br>⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. It's from Monday; give today's price from the Lifestyle story.",
+  "notes": "TCFD SHOWS WHAT NOT TO DO WITH A TURKEY FRYER: https://www.youtube.com/watch?v=p5lvIF8rEHQ ⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. The audio doesn't clearly say the captain's name; use the name from the Buzz story's article.<br>WU-TANG CLAN TAKES THANKSGIVING HALFTIME IN DETROIT: https://www.youtube.com/watch?v=XinlZoPxXHI ⚠️ FLAG: Clean. One name at about 0:09 ('if ___ can do Thanksgiving Eve') is unclear on the transcript; hear it once before you name that act. ABC network audio: credit it.<br>GASBUDDY'S 'BLOOD WAS BOILING' OVER MICHIGAN GAS: https://www.youtube.com/watch?v=m9BBF6ffGbs ⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. It's from Monday; give today's price from the Lifestyle story.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-25-c05",
+    "slot": "NEWS AUDIO",
+    "title": "TCFD SHOWS WHAT NOT TO DO WITH A TURKEY FRYER",
+    "body": "TCFD SHOWS WHAT NOT TO DO WITH A TURKEY FRYER · NEWS AUDIO<br>🎙️ SET UP: Traverse City firefighters dropped a frozen turkey into overfilled, overheated oil at Station 1, on purpose, so you don't do it tomorrow. \"Courtesy of UpNorthLive.\"<br>🔈 AUDIO SOURCE: UpNorthLive (WPBN/WGTU), official YouTube, Nov. 24: \"Turkey Fryer Safety: Firefighters Show What Not to Do This Thanksgiving.\" On-air credit: \"courtesy of UpNorthLive.\"<br>• A TCFD captain explains the demo: oil too hot and too full, frozen bird, then water on a grease fire. \"We don't want to see that next to your house.\"<br>🔊 IN: \"Yeah, so we have a fryer turkey demonstration going on...\" (0:00)<br>OUT: \"...as you can see what's happening.\" (0:51)<br>~0:51 · TALK-OVER · READY<br>➜ WHY: Local, visual, and it's a real safety tip the day before Thanksgiving. Pairs with the Buzz turkey-fryer story.<br>⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. The audio doesn't clearly say the captain's name; use the name from the Buzz story's article.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c05-upnorthlive-tcfd-turkey-fryer.mp3",
+    "ready": true,
+    "recap": "We heard Traverse City firefighters show what NOT to do with a turkey fryer.",
+    "duration": "0:51",
+    "duration_sec": 50.99,
+    "secs": 51,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-25-c06",
+    "slot": "NEWS AUDIO",
+    "title": "WU-TANG CLAN TAKES THANKSGIVING HALFTIME IN DETROIT",
+    "body": "WU-TANG CLAN TAKES THANKSGIVING HALFTIME IN DETROIT · NEWS AUDIO<br>🎙️ SET UP: Wu-Tang Clan plays halftime at the Lions-Bears game tomorrow at Ford Field. ABC News asked what it means for the tradition. \"Here's ABC.\"<br>🔈 AUDIO SOURCE: ABC News official YouTube, posted Nov. 25: \"Thanksgiving halftime lineup: What to expect.\" On-air credit: \"from ABC News.\"<br>• The guest calls Wu-Tang on Thanksgiving 'major' and credits Eminem and Paul Rosenberg, in their second year producing Detroit's Thanksgiving halftime show.<br>🔊 IN: \"How significant is it to see a group like the Wu-Tang Clan...\" (0:00)<br>OUT: \"...the Detroit Thanksgiving halftime show.\" (0:23)<br>~0:23 · TALK-OVER or quick PLAY · READY<br>➜ WHY: Lions on Thanksgiving is the biggest local sports story of the week, and Eminem's in it.<br>⚠️ FLAG: Clean. One name at about 0:09 ('if ___ can do Thanksgiving Eve') is unclear on the transcript; hear it once before you name that act. ABC network audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c06-abc-wu-tang-lions-halftime.mp3",
+    "ready": true,
+    "recap": "We heard ABC News on Wu-Tang Clan headlining the Lions' Thanksgiving halftime, produced by Eminem and Paul Rosenberg.",
+    "duration": "0:23",
+    "duration_sec": 23.43,
+    "secs": 23,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-25-c08",
+    "slot": "NEWS AUDIO",
+    "title": "GASBUDDY'S 'BLOOD WAS BOILING' OVER MICHIGAN GAS",
+    "body": "GASBUDDY'S 'BLOOD WAS BOILING' OVER MICHIGAN GAS · NEWS AUDIO<br>🎙️ SET UP: Michigan gas prices jumped right before the holiday, and GasBuddy's Patrick De Haan says he can't explain it. \"Courtesy of UpNorthLive.\"<br>🔈 AUDIO SOURCE: UpNorthLive (WPBN/WGTU), official YouTube, Nov. 23: \"Experts lost on why gas prices spiked in Michigan as prices trend downward across U.S.\" On-air credit: \"courtesy of UpNorthLive.\"<br>• De Haan: no 'rational situation' explains why just Michigan went up. The reporter: shop around, a better price may be 'something a lot of us will be thankful for.'<br>🔊 IN: \"This is one that I don't really have much of an explanation for...\" (0:00)<br>OUT: \"...a lot of us will be thankful for.\" (0:28)<br>~0:28 · TALK-OVER · READY<br>➜ WHY: Everyone's filling up for the drive today; pairs with the Lifestyle gas story.<br>⚠️ FLAG: Clean. Another station's broadcast: get their OK before playing it straight, or talk over it. It's from Monday; give today's price from the Lifestyle story.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c08-upnorthlive-michigan-gas-spike.mp3",
+    "ready": true,
+    "recap": "We heard GasBuddy's Patrick De Haan say he can't explain Michigan's pre-holiday gas spike.",
+    "duration": "0:28",
+    "duration_sec": 28.37,
+    "secs": 28,
+    "kind": "news"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "8 of 10 clips today (3 news audio, 4 trending/comedy, 1 buffer) + supercut · all new audio, 0 repeats<br><br>SHOW OPENER SUPERCUT: NATIONAL PARFAIT DAY (EVERYBODY LIKES LAYERS) · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Shrek (2001) and Shrek 2 (2004), DreamWorks Animation, clips from YouTube uploads. DRY, no music bed. Mastered about -14 LUFS.<br>• Shrek 2, Donkey on the road trip: \"This is taking forever.\" / \"That's where we're going. Far, far away.\"<br>• Shrek: \"Onions have layers. Ogres have layers... We both have layers.\"<br>• Donkey: \"You know, not everybody likes onions.\" / \"Cake! Everybody loves cakes. Cakes have layers.\"<br>• Donkey: \"You know what else everybody likes? Parfait!\"<br>• Shrek 2 payoff: \"Yes! Oh, finally!\" (the launch line, straight into your open)<br>🔊 IN: \"This is taking forever.\" (0:00)<br>OUT: \"Yes! Oh, finally!\" (0:23)<br>~0:23 · PLAY · READY<br>➜ WHY: National Parfait Day, so it's Shrek's layers speech, framed by the Thanksgiving-eve 'taking forever... far, far away' drive and a 'finally!' into the show.<br>⚠️ FLAG: Clean. The parfait bite stops before Shrek's 'Hell no' and Donkey's 'damn' later in that scene, NOT in the cut. The 'Are we there yet?' line was left out on purpose (the Thanksgiving extras opener tg00 uses it). The two Shrek 2 bites may have a little score under them; hear it once.<br><br>SUPER-CLIP: TIM ALLEN DIDN'T KNOW TOY STORY WAS A MOVIE THING · SUPER-CLIP 6 AM<br>🎙️ SET UP: Tim Allen was on Fallon last night. Disney sent him to the Governors Awards, the night that kicks off Oscar season, and he had no idea what he was walking into. \"Here's Tim Allen on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, posted Nov. 25: \"Tim Allen Gets Competitive About Playing Santa Claus, Talks Return to Buzz Lightyear in Toy Story 5.\" On-air credit: \"from The Tonight Show.\"<br>• Allen thought it was a TV event, then saw Matt Damon, Tom Cruise and Zendaya. He was seated with the Pixar people \"because of Toy Story. It's a movie.\" \"I have no clue what I'm doing. I don't know where I am.\"<br>🔊 IN: \"Have these things kick off the big Academy Awards season?\" (0:00)<br>OUT: \"...I don't know where I am.\" (0:58)<br>~0:59 · PLAY · READY<br>➜ WHY: Brand-new from last night, a huge star, and a self-deprecating story everybody gets.<br>⚠️ FLAG: Clean. The transcript garbles one name (he says he's a big fan of Glenn Close); hear it once before you name anyone besides Damon, Cruise and Zendaya. NBC network audio: credit it.<br><br>PAST BIT: MARTIN SHORT ON CANADIAN THANKSGIVING · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Canadians had their Thanksgiving back in October. Martin Short once explained to Jimmy Fallon how they do it up there. \"Martin Short, on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov. 2017: \"Martin Short Explains How Canadians Celebrate Thanksgiving.\" On-air credit: \"from The Tonight Show.\"<br>• Canadians say what they're thankful for, then apologize if it sounds like bragging. Whole potatoes, \"because mashing requires too much aggression.\"<br>🔊 IN: \"Well, Canadians, we have our Thanksgiving in October.\" (0:00)<br>OUT: \"...it's not a beautiful thing to do.\" (0:42)<br>~0:42 · PLAY · READY<br>➜ WHY: Thanksgiving eve, a clean classic from a beloved comic, and Michigan has plenty of Canadian neighbors.<br>⚠️ FLAG: Clean in the cut. It's a 2017 interview: earlier in it there's a Roy Moore line and a 'breasts or thighs' joke, NOT in the cut. Say 'a few years back.'<br><br>STAND-UP: JUST TAKE SOMEBODY ELSE'S CART · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Today's the big grocery run, so here's comedian Kellen Erskine with some very bad grocery store advice. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube: \"Kellen Erskine | Bad Grocery Store Advice\" (2018). On-air credit: \"from Dry Bar Comedy.\"<br>• Leaving a cart in a parking space is the most selfish thing a human can do. His fix: walk in and take someone else's full cart. \"That's how I found out I like hummus.\"<br>🔊 IN: \"The most selfish thing that a human being can do...\" (0:00)<br>OUT: \"That's how I find out that I like hummus.\" (1:24)<br>~1:24 · PLAY · READY<br>➜ WHY: Thanksgiving-eve grocery chaos, and everyone hates the parking-space cart.<br>⚠️ FLAG: Clean. Runs 1:24, the full bit. A trim point if you need it: 'It is so much faster.' at about 0:45.<br><br>STAND-UP: WHY MEN DON'T ASK FOR DIRECTIONS · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Biggest travel day of the year, and somebody in your car refuses to ask for directions. Comedian Seth Tippetts says there's a historical reason. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube: \"The Real Reason Men Don't Ask For Directions. Seth Tippetts\" (2021). On-air credit: \"from Dry Bar Comedy.\"<br>• Pioneer men who asked for directions didn't make it, so it got 'bred out.' He feels bad for the oxen. 'You're not going to eat the engine, right?'<br>🔊 IN: \"I'm pretty sure that's why men today don't take directions at all...\" (0:00)<br>OUT: \"You're not going to eat the engine, right?\" (0:35)<br>~0:35 · PLAY · READY<br>➜ WHY: Pairs with the travel-day traffic talk, and everybody knows that driver.<br>⚠️ FLAG: Clean. Short (0:35). The bit right after this (Wyoming is a 'dumpster fire') is NOT in the cut.<br><br>BACKSTAGE AT THE NATIONAL DOG SHOW · BUFFER: PETS & FAMILY<br>🎙️ SET UP: After the parade tomorrow, it's the National Dog Show on NBC. TODAY went backstage. There are 2,170 dogs. \"From TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube, posted Nov. 24: \"Get a Behind the Scenes Look at the 2026 'National Dog Show.'\" On-air credit: \"from TODAY on NBC.\"<br>• 2,170 dogs waiting to 'fetch that coveted title of Top Dog.' The show's voice says he writes his own scripts, 217 of them: 'you can teach old dogs new tricks.'<br>🔊 IN: \"Each one waiting its turn to try and fetch that coveted title of Top Dog.\" (0:00)<br>OUT: \"...you're looking at one of them.\" (0:44)<br>~0:44 · TALK-OVER or PLAY · READY<br>➜ WHY: The one pets clip today, and the dog show is a Thanksgiving Day ritual for a lot of families.<br>⚠️ FLAG: Clean. The commentator isn't named in the audio; don't name him without checking. NBC audio: credit it.",
+  "notes": "SHOW OPENER SUPERCUT: NATIONAL PARFAIT DAY (EVERYBODY LIKES LAYERS): https://www.youtube.com/watch?v=n-YlPTpDU1k https://www.youtube.com/watch?v=Hp3C8GeRUUE https://www.youtube.com/watch?v=NIPfRu-J4i0 ⚠️ FLAG: Clean. The parfait bite stops before Shrek's 'Hell no' and Donkey's 'damn' later in that scene, NOT in the cut. The 'Are we there yet?' line was left out on purpose (the Thanksgiving extras opener tg00 uses it). The two Shrek 2 bites may have a little score under them; hear it once.<br>SUPER-CLIP: TIM ALLEN DIDN'T KNOW TOY STORY WAS A MOVIE THING: https://www.youtube.com/watch?v=8Sju2XxqNBc ⚠️ FLAG: Clean. The transcript garbles one name (he says he's a big fan of Glenn Close); hear it once before you name anyone besides Damon, Cruise and Zendaya. NBC network audio: credit it.<br>PAST BIT: MARTIN SHORT ON CANADIAN THANKSGIVING: https://www.youtube.com/watch?v=5LlLKk0ZQoU ⚠️ FLAG: Clean in the cut. It's a 2017 interview: earlier in it there's a Roy Moore line and a 'breasts or thighs' joke, NOT in the cut. Say 'a few years back.'<br>STAND-UP: JUST TAKE SOMEBODY ELSE'S CART: https://www.youtube.com/watch?v=QfAe6Z3eAF4 ⚠️ FLAG: Clean. Runs 1:24, the full bit. A trim point if you need it: 'It is so much faster.' at about 0:45.<br>STAND-UP: WHY MEN DON'T ASK FOR DIRECTIONS: https://www.youtube.com/watch?v=k-5F9smQpo8 ⚠️ FLAG: Clean. Short (0:35). The bit right after this (Wyoming is a 'dumpster fire') is NOT in the cut.<br>BACKSTAGE AT THE NATIONAL DOG SHOW: https://www.youtube.com/watch?v=RYdewsUNbd8 ⚠️ FLAG: Clean. The commentator isn't named in the audio; don't name him without checking. NBC audio: credit it.<br>Short of 10 today (8 + supercut): the box CPU was jammed and several uploads were unavailable, so the Meyers Corrections, Joel McHale (vape pen and knife gifts, not clean enough) and Grand Central reunion candidates were dropped. Thanksgiving extras tg00-tg08 are a separate audio file. One pets clip max (dog show).",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-25-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: NATIONAL PARFAIT DAY (EVERYBODY LIKES LAYERS)",
+    "body": "SHOW OPENER SUPERCUT: NATIONAL PARFAIT DAY (EVERYBODY LIKES LAYERS) · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Shrek (2001) and Shrek 2 (2004), DreamWorks Animation, clips from YouTube uploads. DRY, no music bed. Mastered about -14 LUFS.<br>• Shrek 2, Donkey on the road trip: \"This is taking forever.\" / \"That's where we're going. Far, far away.\"<br>• Shrek: \"Onions have layers. Ogres have layers... We both have layers.\"<br>• Donkey: \"You know, not everybody likes onions.\" / \"Cake! Everybody loves cakes. Cakes have layers.\"<br>• Donkey: \"You know what else everybody likes? Parfait!\"<br>• Shrek 2 payoff: \"Yes! Oh, finally!\" (the launch line, straight into your open)<br>🔊 IN: \"This is taking forever.\" (0:00)<br>OUT: \"Yes! Oh, finally!\" (0:23)<br>~0:23 · PLAY · READY<br>➜ WHY: National Parfait Day, so it's Shrek's layers speech, framed by the Thanksgiving-eve 'taking forever... far, far away' drive and a 'finally!' into the show.<br>⚠️ FLAG: Clean. The parfait bite stops before Shrek's 'Hell no' and Donkey's 'damn' later in that scene, NOT in the cut. The 'Are we there yet?' line was left out on purpose (the Thanksgiving extras opener tg00 uses it). The two Shrek 2 bites may have a little score under them; hear it once.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c00-opener-supercut.mp3",
+    "ready": true,
+    "recap": "We opened with a National Parfait Day supercut: Shrek's 'ogres have layers' and Donkey's 'everybody likes parfait.'",
+    "duration": "0:23",
+    "duration_sec": 23.09,
+    "secs": 23,
+    "kind": "opener",
+    "file": "c00-opener-supercut.mp3"
+   },
+   {
+    "id": "2026-11-25-c01",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "SUPER-CLIP: TIM ALLEN DIDN'T KNOW TOY STORY WAS A MOVIE THING",
+    "body": "SUPER-CLIP: TIM ALLEN DIDN'T KNOW TOY STORY WAS A MOVIE THING · SUPER-CLIP 6 AM<br>🎙️ SET UP: Tim Allen was on Fallon last night. Disney sent him to the Governors Awards, the night that kicks off Oscar season, and he had no idea what he was walking into. \"Here's Tim Allen on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, posted Nov. 25: \"Tim Allen Gets Competitive About Playing Santa Claus, Talks Return to Buzz Lightyear in Toy Story 5.\" On-air credit: \"from The Tonight Show.\"<br>• Allen thought it was a TV event, then saw Matt Damon, Tom Cruise and Zendaya. He was seated with the Pixar people \"because of Toy Story. It's a movie.\" \"I have no clue what I'm doing. I don't know where I am.\"<br>🔊 IN: \"Have these things kick off the big Academy Awards season?\" (0:00)<br>OUT: \"...I don't know where I am.\" (0:58)<br>~0:59 · PLAY · READY<br>➜ WHY: Brand-new from last night, a huge star, and a self-deprecating story everybody gets.<br>⚠️ FLAG: Clean. The transcript garbles one name (he says he's a big fan of Glenn Close); hear it once before you name anyone besides Damon, Cruise and Zendaya. NBC network audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c01-fallon-tim-allen-toy-story-movie.mp3",
+    "ready": true,
+    "recap": "We heard Tim Allen tell Fallon he went to the Governors Awards with no clue Toy Story counted as 'a movie.'",
+    "duration": "0:59",
+    "duration_sec": 58.54,
+    "secs": 59,
+    "kind": "comedy",
+    "performer": "Tim Allen",
+    "file": "c01-fallon-tim-allen-toy-story-movie.mp3"
+   },
+   {
+    "id": "2026-11-25-c02",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "PAST BIT: MARTIN SHORT ON CANADIAN THANKSGIVING",
+    "body": "PAST BIT: MARTIN SHORT ON CANADIAN THANKSGIVING · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Canadians had their Thanksgiving back in October. Martin Short once explained to Jimmy Fallon how they do it up there. \"Martin Short, on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Nov. 2017: \"Martin Short Explains How Canadians Celebrate Thanksgiving.\" On-air credit: \"from The Tonight Show.\"<br>• Canadians say what they're thankful for, then apologize if it sounds like bragging. Whole potatoes, \"because mashing requires too much aggression.\"<br>🔊 IN: \"Well, Canadians, we have our Thanksgiving in October.\" (0:00)<br>OUT: \"...it's not a beautiful thing to do.\" (0:42)<br>~0:42 · PLAY · READY<br>➜ WHY: Thanksgiving eve, a clean classic from a beloved comic, and Michigan has plenty of Canadian neighbors.<br>⚠️ FLAG: Clean in the cut. It's a 2017 interview: earlier in it there's a Roy Moore line and a 'breasts or thighs' joke, NOT in the cut. Say 'a few years back.'",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c02-fallon-martin-short-canadian-thanksgiving.mp3",
+    "ready": true,
+    "recap": "We heard Martin Short explain Canadian Thanksgiving, where mashing potatoes 'requires too much aggression.'",
+    "duration": "0:42",
+    "duration_sec": 41.93,
+    "secs": 42,
+    "kind": "comedy",
+    "performer": "Martin Short",
+    "file": "c02-fallon-martin-short-canadian-thanksgiving.mp3"
+   },
+   {
+    "id": "2026-11-25-c03",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "STAND-UP: JUST TAKE SOMEBODY ELSE'S CART",
+    "body": "STAND-UP: JUST TAKE SOMEBODY ELSE'S CART · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Today's the big grocery run, so here's comedian Kellen Erskine with some very bad grocery store advice. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube: \"Kellen Erskine | Bad Grocery Store Advice\" (2018). On-air credit: \"from Dry Bar Comedy.\"<br>• Leaving a cart in a parking space is the most selfish thing a human can do. His fix: walk in and take someone else's full cart. \"That's how I found out I like hummus.\"<br>🔊 IN: \"The most selfish thing that a human being can do...\" (0:00)<br>OUT: \"That's how I find out that I like hummus.\" (1:24)<br>~1:24 · PLAY · READY<br>➜ WHY: Thanksgiving-eve grocery chaos, and everyone hates the parking-space cart.<br>⚠️ FLAG: Clean. Runs 1:24, the full bit. A trim point if you need it: 'It is so much faster.' at about 0:45.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c03-standup-kellen-erskine-someone-elses-cart.mp3",
+    "ready": true,
+    "recap": "We heard Kellen Erskine's bad grocery advice: just take somebody else's full cart.",
+    "duration": "1:24",
+    "duration_sec": 84.32,
+    "secs": 84,
+    "kind": "comedy",
+    "performer": "Kellen Erskine",
+    "file": "c03-standup-kellen-erskine-someone-elses-cart.mp3"
+   },
+   {
+    "id": "2026-11-25-c04",
+    "slot": "FIRST HALF HOUR: STAND-UP",
+    "title": "STAND-UP: WHY MEN DON'T ASK FOR DIRECTIONS",
+    "body": "STAND-UP: WHY MEN DON'T ASK FOR DIRECTIONS · FIRST HALF HOUR: STAND-UP<br>🎙️ SET UP: Biggest travel day of the year, and somebody in your car refuses to ask for directions. Comedian Seth Tippetts says there's a historical reason. \"From Dry Bar Comedy.\"<br>🔈 AUDIO SOURCE: Dry Bar Comedy official YouTube: \"The Real Reason Men Don't Ask For Directions. Seth Tippetts\" (2021). On-air credit: \"from Dry Bar Comedy.\"<br>• Pioneer men who asked for directions didn't make it, so it got 'bred out.' He feels bad for the oxen. 'You're not going to eat the engine, right?'<br>🔊 IN: \"I'm pretty sure that's why men today don't take directions at all...\" (0:00)<br>OUT: \"You're not going to eat the engine, right?\" (0:35)<br>~0:35 · PLAY · READY<br>➜ WHY: Pairs with the travel-day traffic talk, and everybody knows that driver.<br>⚠️ FLAG: Clean. Short (0:35). The bit right after this (Wyoming is a 'dumpster fire') is NOT in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c04-standup-seth-tippetts-directions.mp3",
+    "ready": true,
+    "recap": "We heard Seth Tippetts explain why men don't ask for directions: the pioneers who did, didn't make it.",
+    "duration": "0:35",
+    "duration_sec": 34.85,
+    "secs": 35,
+    "kind": "comedy",
+    "performer": "Seth Tippetts",
+    "file": "c04-standup-seth-tippetts-directions.mp3"
+   },
+   {
+    "id": "2026-11-25-c05",
+    "slot": "TRENDING AUDIO",
+    "title": "C05 UPNORTHLIVE TCFD TURKEY FRYER",
+    "body": "C05 UPNORTHLIVE TCFD TURKEY FRYER · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c05-upnorthlive-tcfd-turkey-fryer.mp3",
+    "file": "c05-upnorthlive-tcfd-turkey-fryer.mp3",
+    "ready": true,
+    "duration_sec": 51.0,
+    "duration": "0:51",
+    "secs": 51,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-c06",
+    "slot": "TRENDING AUDIO",
+    "title": "C06 ABC WU TANG LIONS HALFTIME",
+    "body": "C06 ABC WU TANG LIONS HALFTIME · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c06-abc-wu-tang-lions-halftime.mp3",
+    "file": "c06-abc-wu-tang-lions-halftime.mp3",
+    "ready": true,
+    "duration_sec": 23.4,
+    "duration": "0:23",
+    "secs": 23,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-25-c07",
+    "slot": "BUFFER: PETS & FAMILY",
+    "title": "BACKSTAGE AT THE NATIONAL DOG SHOW",
+    "body": "BACKSTAGE AT THE NATIONAL DOG SHOW · BUFFER: PETS & FAMILY<br>🎙️ SET UP: After the parade tomorrow, it's the National Dog Show on NBC. TODAY went backstage. There are 2,170 dogs. \"From TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube, posted Nov. 24: \"Get a Behind the Scenes Look at the 2026 'National Dog Show.'\" On-air credit: \"from TODAY on NBC.\"<br>• 2,170 dogs waiting to 'fetch that coveted title of Top Dog.' The show's voice says he writes his own scripts, 217 of them: 'you can teach old dogs new tricks.'<br>🔊 IN: \"Each one waiting its turn to try and fetch that coveted title of Top Dog.\" (0:00)<br>OUT: \"...you're looking at one of them.\" (0:44)<br>~0:44 · TALK-OVER or PLAY · READY<br>➜ WHY: The one pets clip today, and the dog show is a Thanksgiving Day ritual for a lot of families.<br>⚠️ FLAG: Clean. The commentator isn't named in the audio; don't name him without checking. NBC audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c07-today-national-dog-show-backstage.mp3",
+    "ready": true,
+    "recap": "We went backstage at the National Dog Show with TODAY, where 2,170 dogs are chasing Top Dog.",
+    "duration": "0:44",
+    "duration_sec": 44.28,
+    "secs": 44,
+    "kind": "pets",
+    "file": "c07-today-national-dog-show-backstage.mp3"
+   },
+   {
+    "id": "2026-11-25-c08",
+    "slot": "TRENDING AUDIO",
+    "title": "C08 UPNORTHLIVE MICHIGAN GAS SPIKE",
+    "body": "C08 UPNORTHLIVE MICHIGAN GAS SPIKE · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/c08-upnorthlive-michigan-gas-spike.mp3",
+    "file": "c08-upnorthlive-michigan-gas-spike.mp3",
+    "ready": true,
+    "duration_sec": 28.4,
+    "duration": "0:28",
+    "secs": 28,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-tg00-opener-supercut",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "TG00 OPENER SUPERCUT",
+    "body": "TG00 OPENER SUPERCUT · SHOW OPENER SUPERCUT",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg00-opener-supercut.mp3",
+    "file": "tg00-opener-supercut.mp3",
+    "ready": true,
+    "duration_sec": 32.2,
+    "duration": "0:32",
+    "secs": 32,
+    "kind": "opener"
+   },
+   {
+    "id": "2026-11-25-tg01-fallon-mountain-dew",
+    "slot": "TRENDING AUDIO",
+    "title": "TG01 FALLON MOUNTAIN DEW",
+    "body": "TG01 FALLON MOUNTAIN DEW · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg01-fallon-mountain-dew.mp3",
+    "file": "tg01-fallon-mountain-dew.mp3",
+    "ready": true,
+    "duration_sec": 73.0,
+    "duration": "1:13",
+    "secs": 73,
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-25-tg02-meyers-ya-brined-pants",
+    "slot": "TRENDING AUDIO",
+    "title": "TG02 MEYERS YA BRINED PANTS",
+    "body": "TG02 MEYERS YA BRINED PANTS · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg02-meyers-ya-brined-pants.mp3",
+    "file": "tg02-meyers-ya-brined-pants.mp3",
+    "ready": true,
+    "duration_sec": 100.2,
+    "duration": "1:40",
+    "secs": 100,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-tg03-fallon-tyn-pilgrims-spirit",
+    "slot": "TRENDING AUDIO",
+    "title": "TG03 FALLON TYN PILGRIMS SPIRIT",
+    "body": "TG03 FALLON TYN PILGRIMS SPIRIT · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg03-fallon-tyn-pilgrims-spirit.mp3",
+    "file": "tg03-fallon-tyn-pilgrims-spirit.mp3",
+    "ready": true,
+    "duration_sec": 101.8,
+    "duration": "1:42",
+    "secs": 102,
+    "kind": "late-night"
+   },
+   {
+    "id": "2026-11-25-tg04-kevin-james-stovetop",
+    "slot": "TRENDING AUDIO",
+    "title": "TG04 KEVIN JAMES STOVETOP",
+    "body": "TG04 KEVIN JAMES STOVETOP · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg04-kevin-james-stovetop.mp3",
+    "file": "tg04-kevin-james-stovetop.mp3",
+    "ready": true,
+    "duration_sec": 91.2,
+    "duration": "1:31",
+    "secs": 91,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-tg05-pta-rental-tv-edit",
+    "slot": "TRENDING AUDIO",
+    "title": "TG05 PTA RENTAL TV EDIT",
+    "body": "TG05 PTA RENTAL TV EDIT · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg05-pta-rental-tv-edit.mp3",
+    "file": "tg05-pta-rental-tv-edit.mp3",
+    "ready": true,
+    "duration_sec": 104.9,
+    "duration": "1:45",
+    "secs": 105,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-tg06-sebastian-two-pounds",
+    "slot": "TRENDING AUDIO",
+    "title": "TG06 SEBASTIAN TWO POUNDS",
+    "body": "TG06 SEBASTIAN TWO POUNDS · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg06-sebastian-two-pounds.mp3",
+    "file": "tg06-sebastian-two-pounds.mp3",
+    "ready": true,
+    "duration_sec": 97.8,
+    "duration": "1:38",
+    "secs": 98,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-tg07-campbell-lions-bears",
+    "slot": "TRENDING AUDIO",
+    "title": "TG07 CAMPBELL LIONS BEARS",
+    "body": "TG07 CAMPBELL LIONS BEARS · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg07-campbell-lions-bears.mp3",
+    "file": "tg07-campbell-lions-bears.mp3",
+    "ready": true,
+    "duration_sec": 72.8,
+    "duration": "1:13",
+    "secs": 73,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-25-tg08-elr-fish-and-fowl",
+    "slot": "TRENDING AUDIO",
+    "title": "TG08 ELR FISH AND FOWL",
+    "body": "TG08 ELR FISH AND FOWL · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-25/tg08-elr-fish-and-fowl.mp3",
+    "file": "tg08-elr-fish-and-fowl.mp3",
+    "ready": true,
+    "duration_sec": 40.9,
+    "duration": "0:41",
+    "secs": 41,
+    "kind": "trending"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "8629ce9dd3ee",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "MACY'S THANKSGIVING DAY PARADE, 100TH<br>• Thu Nov 26, 8:30 AM-noon on NBC and Telemundo, streaming on Peacock.<br><br>LIONS VS. BEARS, THANKSGIVING<br>• Thu Nov 26, 1 PM, Ford Field, on CBS. Wu-Tang Clan at halftime.<br><br>FREE COMMUNITY THANKSGIVING DINNER, TRINITY LUTHERAN TC<br>• Thu Nov 26, 1-3 PM dine-in, no RSVP needed (1003 S. Maple St.).<br><br>CADILLAC CHRISTMAS IN THE PARK<br>• Fri Nov 27, starts 5:30 PM at Cadillac Commons Park: tree lighting, caroling, Santa and Mrs. Claus.<br><br>SIGN THE FINAL BEAM AT TVC<br>• Now through January inside the Cherry Capital Airport terminal; ask a TVC police officer.",
+  "notes": "MACY'S THANKSGIVING DAY PARADE, 100TH: https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx<br>LIONS VS. BEARS, THANKSGIVING: https://www.detroitlions.com/news/lions-vs-bears-how-to-watch-listen-and-follow-2026-goff-gibbs-williams-joseph<br>FREE COMMUNITY THANKSGIVING DINNER, TRINITY LUTHERAN TC: https://upnorthlive.com/news/local/thanksgiving-community-meals-served-around-northern-michigan-10-21-2026<br>CADILLAC CHRISTMAS IN THE PARK: https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event<br>SIGN THE FINAL BEAM AT TVC: https://upnorthlive.com/news/local/community-invited-to-sign-final-steel-concourse-beam-at-cherry-capital-airport-grand-traverse-county",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-25-events-01",
+    "title": "MACY'S THANKSGIVING DAY PARADE, 100TH",
+    "recap": "We plugged Macy'S Thanksgiving Day Parade, 100Th.",
+    "article_url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx",
+    "article_title": "Macy'S Thanksgiving Day Parade, 100Th",
+    "jokes": [],
+    "body": "MACY'S THANKSGIVING DAY PARADE, 100TH<br>We plugged Macy'S Thanksgiving Day Parade, 100Th.",
+    "description": "We plugged Macy'S Thanksgiving Day Parade, 100Th.",
+    "summary": "We plugged Macy'S Thanksgiving Day Parade, 100Th.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-events-02",
+    "title": "LIONS VS. BEARS, THANKSGIVING",
+    "recap": "We plugged Lions Vs. Bears, Thanksgiving.",
+    "article_url": "https://www.detroitlions.com/news/lions-vs-bears-how-to-watch-listen-and-follow-2026-goff-gibbs-williams-joseph",
+    "article_title": "Lions Vs. Bears, Thanksgiving",
+    "jokes": [],
+    "body": "LIONS VS. BEARS, THANKSGIVING<br>We plugged Lions Vs. Bears, Thanksgiving.",
+    "description": "We plugged Lions Vs. Bears, Thanksgiving.",
+    "summary": "We plugged Lions Vs. Bears, Thanksgiving.",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-25-events-03",
+    "title": "FREE COMMUNITY THANKSGIVING DINNER, TRINITY LUTHERAN TC",
+    "recap": "We plugged Free Community Thanksgiving Dinner, Trinity Lutheran Tc.",
+    "article_url": "https://upnorthlive.com/news/local/thanksgiving-community-meals-served-around-northern-michigan-10-21-2026",
+    "article_title": "Free Community Thanksgiving Dinner, Trinity Lutheran Tc",
+    "jokes": [],
+    "body": "FREE COMMUNITY THANKSGIVING DINNER, TRINITY LUTHERAN TC<br>We plugged Free Community Thanksgiving Dinner, Trinity Lutheran Tc.",
+    "description": "We plugged Free Community Thanksgiving Dinner, Trinity Lutheran Tc.",
+    "summary": "We plugged Free Community Thanksgiving Dinner, Trinity Lutheran Tc.",
+    "rank": 5,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-events-04",
+    "title": "CADILLAC CHRISTMAS IN THE PARK",
+    "recap": "We plugged Cadillac Christmas In The Park.",
+    "article_url": "https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event",
+    "article_title": "Cadillac Christmas In The Park",
+    "jokes": [],
+    "body": "CADILLAC CHRISTMAS IN THE PARK<br>We plugged Cadillac Christmas In The Park.",
+    "description": "We plugged Cadillac Christmas In The Park.",
+    "summary": "We plugged Cadillac Christmas In The Park.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-25-events-05",
+    "title": "SIGN THE FINAL BEAM AT TVC",
+    "recap": "We plugged Sign The Final Beam At Tvc.",
+    "article_url": "https://upnorthlive.com/news/local/community-invited-to-sign-final-steel-concourse-beam-at-cherry-capital-airport-grand-traverse-county",
+    "article_title": "Sign The Final Beam At Tvc",
+    "jokes": [],
+    "body": "SIGN THE FINAL BEAM AT TVC<br>We plugged Sign The Final Beam At Tvc.",
+    "description": "We plugged Sign The Final Beam At Tvc.",
+    "summary": "We plugged Sign The Final Beam At Tvc.",
+    "rank": 2,
+    "verify": "Confirmed"
+   }
+  ],
+  "article_url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx",
+  "article_title": "Macy'S Thanksgiving Day Parade, 100Th",
+  "jokes": [],
+  "as_of": "2026-11-25T04:22-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "82546f01aaed",
+  "stale_after": "2026-11-25T16:22-05:00"
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · THE CHRISTMAS SHIP SAILS AGAIN<br>Hundreds of hands loaded 1,400 northern Michigan Christmas trees onto the Coast Guard Cutter Mackinaw in Cheboygan! 🎄⚓ The trees are headed to families in Chicago, along with nearly 3,000 decorated letters.<br>Real tree or fake tree at your house this year?<br>#ChristmasShip #CutterMackinaw #Cheboygan #NorthernMichigan #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-25/fb1a-christmas-ship.png<br><br>1B · SIGN A PIECE OF TVC HISTORY<br>Flying out of Cherry Capital this week? You can sign the final steel beam for the new concourse! ✈️ It's inside the terminal through January. Just ask a TVC police officer.<br>If you signed it, what would you write?<br>#CherryCapitalAirport #TVC #TraverseCity #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-25/fb1b-tvc-beam.png<br><br>2A · NOBODY EATS ALONE TOMORROW<br>Free community Thanksgiving dinners are happening all over northern Michigan tomorrow. 🦃 In Traverse City, Trinity Lutheran serves dine-in from 1 to 3 PM, no RSVP needed.<br>Know a group serving a free meal? Drop it in the comments so others can find it.<br>#Thanksgiving #TraverseCity #NorthernMichigan #CommunityMeal #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-25/fb2a-free-meals.png<br><br>2B · CADILLAC LIGHTS UP FRIDAY<br>Cadillac's Christmas in the Park kicks off Friday at 5:30 PM at Cadillac Commons Park! 🎄 Tree lighting, caroling, and photos with Santa and Mrs. Claus.<br>What's your favorite small-town tree lighting Up North?<br>#Cadillac #ChristmasInThePark #NorthernMichigan #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>3A · THE MACY'S PARADE TURNS 100<br>Tomorrow is the 100th Macy's Thanksgiving Day Parade! 🎈 A record 100 balloons and inflatables, on NBC at 8:30 AM.<br>What parade balloon do you remember from when you were a kid?<br>#MacysParade #Thanksgiving #Throwback #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-25/fb3a-macys-100.png<br><br>3B · 1998'S BIGGEST SLOW JAM<br>K-Ci & JoJo's 'All My Life' spent three weeks at No. 1 in 1998. 💿<br>What song was playing at the last slow dance you remember?<br>#KCiAndJoJo #90sMusic #Throwback #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)",
+  "notes": "Drafts only, AJ posts during the show; never posted by Hot Sheet. Facts from sheet items above. 1A Christmas Ship / Cutter Mackinaw (UpNorthLive), 1B TVC final beam (UpNorthLive), 2A free Thanksgiving meals (UpNorthLive), 2B Cadillac Christmas in the Park (UpNorthLive), 3A Macy's 100th parade (Macy's Inc.), 3B All My Life (Wikipedia). Art for 1A/1B/2A/3A; SOURCES.md in the art folder.",
+  "custom": true,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "courtney": {
+  "songBattle": [
+   {
+    "id": "court-sb-01",
+    "battleTitle": "Parade Day Headliners",
+    "a": {
+     "title": "Lose Control",
+     "artist": "Teddy Swims"
+    },
+    "b": {
+     "title": "Tennessee Orange",
+     "artist": "Megan Moroney"
+    },
+    "angle": "Both are headlining Herald Square at tomorrow's 100th Macy's parade: Teddy Swims' 2023 smash vs. Megan Moroney's 2022 breakout."
+   },
+   {
+    "id": "court-sb-02",
+    "battleTitle": "Swamp Soundtrack Showdown",
+    "a": {
+     "title": "I'm a Believer",
+     "artist": "Smash Mouth"
+    },
+    "b": {
+     "title": "Accidentally in Love",
+     "artist": "Counting Crows"
+    },
+    "angle": "National Parfait Day, so it's Shrek: the Shrek (2001) closer vs. the Shrek 2 (2004) Oscar-nominated song."
+   }
+  ],
+  "hollywood": [
+   {
+    "id": "court-hw-01",
+    "headline": "The Macy's parade turns 100 tomorrow",
+    "summary": "Macy's says its 100th Thanksgiving Day Parade brings a record 100 inflatables, floats and Santa, with Megan Moroney and Teddy Swims performing at Herald Square. It airs Thursday from 8:30 a.m. to noon on NBC and Telemundo and streams on Peacock.",
+    "as_of": "2026-11-24T12:00-05:00",
+    "article_url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx",
+    "article_title": "The 100th Macy's Thanksgiving Day Parade Brings Holiday Magic to Life (Macy's, Inc.)",
+    "jokes": [
+     "A hundred balloons and only one of them looks exactly like the character. Every year, same one.",
+     "Teddy Swims at a parade in late November. Somebody get that man a scarf."
+    ]
+   },
+   {
+    "id": "court-hw-02",
+    "headline": "Netflix buys the 'Seinfeld' studio lot",
+    "summary": "Netflix is buying the historic Radford Studio Center in Studio City for $380 million, according to the L.A. Times, its first L.A.-area studio lot it will own. The lot, nicknamed 'Hit City,' was home to Seinfeld, Leave It to Beaver and Gilligan's Island.",
+    "as_of": "2026-11-24T15:15-05:00",
+    "article_url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-24/netflix-to-buy-radford-studio-center-in-380-million-deal",
+    "article_title": "Netflix to buy Radford Studio Center in $380-million deal (Los Angeles Times)",
+    "jokes": [
+     "Netflix bought the Seinfeld lot. It's a studio about nothing, for $380 million.",
+     "Next week they'll raise our subscription to pay for it. Serenity now."
+    ]
+   },
+   {
+    "id": "court-hw-03",
+    "headline": "Macaulay Culkin joins an A24 movie",
+    "summary": "Deadline reports Macaulay Culkin is part of an all-star ensemble, with Constance Wu and Ken Leung, for the untitled directorial debut of Walter Woodman at A24. Perfect timing, since Home Alone season officially starts Friday.",
+    "as_of": "2026-11-24T12:30-05:00",
+    "article_url": "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
+    "article_title": "Macauly Culkin To Star In Walter Woodman's Directorial Debut For A24 (Deadline)",
+    "jokes": [
+     "Macaulay Culkin, booked again. Somebody finally remembered he's not home alone.",
+     "A24 plus Culkin. I'm already scared of the paint cans."
+    ]
+   },
+   {
+    "id": "court-hw-04",
+    "headline": "Wu-Tang Clan and Chad Smith play Lions halftime",
+    "summary": "Wu-Tang Clan headlines halftime at tomorrow's Lions-Bears Thanksgiving game at Ford Field, with Red Hot Chili Peppers drummer Chad Smith joining them. Eminem and his manager Paul Rosenberg produce the show; kickoff is 1 p.m. on CBS.",
+    "as_of": "2026-11-24T11:00-05:00",
+    "article_url": "https://www.detroitlions.com/news/lions-vs-bears-how-to-watch-listen-and-follow-2026-goff-gibbs-williams-joseph",
+    "article_title": "Chicago Bears vs. Detroit Lions: How to watch, listen and follow (DetroitLions.com)",
+    "jokes": [
+     "Wu-Tang at halftime and Chad Smith on drums. The Lions' pass rush better be that loud.",
+     "Eminem's booking the halftime show again. Detroit's basically got a hometown ticket agent."
+    ]
+   }
+  ],
+  "studioLine": [
+   {
+    "id": "court-sl-01",
+    "question": "What's the one Thanksgiving dish you'd fight for?",
+    "followup": "And who in your family makes it best?"
+   },
+   {
+    "id": "court-sl-02",
+    "question": "Parade on TV, football, or nap? What's your Thanksgiving afternoon?",
+    "followup": "Who controls the remote at your house?"
+   },
+   {
+    "id": "court-sl-03",
+    "question": "What did you forget at the store today?",
+    "followup": "Did you go back, or wing it?"
+   }
+  ],
+  "clips": []
+ },
+ "callie": {
+  "songInHead": [
+   {
+    "id": "callie-sh-01",
+    "title": "Lose Control",
+    "artist": "Teddy Swims",
+    "hook": "He's singing at the 100th Macy's parade tomorrow, so it's been stuck in my head since I saw the lineup.",
+    "article_url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx"
+   }
+  ],
+  "teaParty": [
+   {
+    "id": "callie-tp-01",
+    "headline": "The Macy's parade turns 100 tomorrow",
+    "summary": "Macy's says its 100th Thanksgiving Day Parade brings a record 100 inflatables, floats and Santa, with Megan Moroney and Teddy Swims performing at Herald Square. It airs Thursday from 8:30 a.m. to noon on NBC and Telemundo and streams on Peacock.",
+    "article_url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx",
+    "article_title": "The 100th Macy's Thanksgiving Day Parade Brings Holiday Magic to Life (Macy's, Inc.)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-02",
+    "headline": "Netflix buys the 'Seinfeld' studio lot",
+    "summary": "Netflix is buying the historic Radford Studio Center in Studio City for $380 million, according to the L.A. Times, its first L.A.-area studio lot it will own. The lot, nicknamed 'Hit City,' was home to Seinfeld, Leave It to Beaver and Gilligan's Island.",
+    "article_url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-24/netflix-to-buy-radford-studio-center-in-380-million-deal",
+    "article_title": "Netflix to buy Radford Studio Center in $380-million deal (Los Angeles Times)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-03",
+    "headline": "Macaulay Culkin joins an A24 movie",
+    "summary": "Deadline reports Macaulay Culkin is part of an all-star ensemble, with Constance Wu and Ken Leung, for the untitled directorial debut of Walter Woodman at A24. Perfect timing, since Home Alone season officially starts Friday.",
+    "article_url": "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
+    "article_title": "Macauly Culkin To Star In Walter Woodman's Directorial Debut For A24 (Deadline)",
+    "jokes": []
+   }
+  ],
+  "trendingAudio": [],
+  "events": [
+   {
+    "id": "callie-ev-01",
+    "title": "MACY'S THANKSGIVING DAY PARADE, 100TH",
+    "detail": "Thu Nov 26, 8:30 AM-noon on NBC and Telemundo, streaming on Peacock.",
+    "url": "https://www.macysinc.com/newsroom/news/news-details/2026/The-100th-Macys-Thanksgiving-Day-Parade-Brings-Holiday-Magic-to-Life-Through-a-Celebration-of-Culture-and-Creativity/default.aspx"
+   },
+   {
+    "id": "callie-ev-02",
+    "title": "LIONS VS. BEARS, THANKSGIVING",
+    "detail": "Thu Nov 26, 1 PM, Ford Field, on CBS. Wu-Tang Clan at halftime.",
+    "url": "https://www.detroitlions.com/news/lions-vs-bears-how-to-watch-listen-and-follow-2026-goff-gibbs-williams-joseph"
+   },
+   {
+    "id": "callie-ev-03",
+    "title": "FREE COMMUNITY THANKSGIVING DINNER, TRINITY LUTHERAN TC",
+    "detail": "Thu Nov 26, 1-3 PM dine-in, no RSVP needed (1003 S. Maple St.).",
+    "url": "https://upnorthlive.com/news/local/thanksgiving-community-meals-served-around-northern-michigan-10-21-2026"
+   },
+   {
+    "id": "callie-ev-04",
+    "title": "CADILLAC CHRISTMAS IN THE PARK",
+    "detail": "Fri Nov 27, starts 5:30 PM at Cadillac Commons Park: tree lighting, caroling, Santa and Mrs. Claus.",
+    "url": "https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event"
+   },
+   {
+    "id": "callie-ev-05",
+    "title": "SIGN THE FINAL BEAM AT TVC",
+    "detail": "Now through January inside the Cherry Capital Airport terminal; ask a TVC police officer.",
+    "url": "https://upnorthlive.com/news/local/community-invited-to-sign-final-steel-concourse-beam-at-cherry-capital-airport-grand-traverse-county"
+   }
+  ],
+  "fbDrafts": [
+   {
+    "id": "callie-fb-01",
+    "title": "THE ONE DISH",
+    "text": "It's Thanksgiving eve. 🦃 If you could only eat ONE dish tomorrow, what's it gonna be?\n#Thanksgiving #TraverseCity #NorthernMichigan #Z93",
+    "media": "text only"
+   },
+   {
+    "id": "callie-fb-02",
+    "title": "PIE PEOPLE",
+    "text": "A new poll says 1 in 5 people don't even eat pie at Thanksgiving. 🥧 Pumpkin, apple, pecan, cherry, or no pie at all?\n#Thanksgiving #Pie #TraverseCity #Z93",
+    "media": "text only"
+   }
+  ],
+  "liners": [
+   {
+    "id": "callie-ln-01",
+    "text": "Calm skies, full fridges, and a parade tomorrow. Z93, Hits from the 90s to Now."
+   },
+   {
+    "id": "callie-ln-02",
+    "text": "Last-minute grocery run? We'll ride along. Z93 middays with Callie."
+   }
+  ],
+  "lifestyle": [
+   {
+    "id": "callie-ls-01",
+    "title": "MICHIGAN GAS PRICES JUMPED RIGHT BEFORE THE HOLIDAY DRIVE",
+    "summary": "SUMMARY: AAA says 73 million Americans are traveling this week, and 90 percent of them are driving. Michigan gas prices had been trending down, then made an overnight U-turn. THE CATCH: GasBuddy's Patrick De Haan, who's tracked prices for about 20 years, said his blood was boiling, because Michigan went up while virtually every other state was falling. WHO: GasBuddy's Patrick De Haan. WHAT: An unexplained price spike. WHERE: Stations across Michigan. WHY IT MATTERS: He says the margin is the part that varies, and he couldn't find a rational reason for the jump.",
+    "article_url": "https://upnorthlive.com/news/local/experts-lost-on-why-gas-prices-spiked-in-michigan-as-prices-trend-downward-across-us",
+    "article_title": "Experts lost on why gas prices spiked in Michigan as prices trend downward across U.S. (UpNorthLive)",
+    "jokes": []
+   },
+   {
+    "id": "callie-ls-02",
+    "title": "THE GREAT PIE POLL: 1 IN 5 DOESN'T EVEN EAT PIE",
+    "summary": "SUMMARY: A new Siena poll of New Yorkers found 73 percent have a favorite Thanksgiving pie, but one in five don't eat pie at Thanksgiving at all. THE CATCH: 31 percent plan to go to a Friendsgiving this year, and about 2 in 5 people under 50 do. WHO: Siena Research Institute. WHAT: Thanksgiving habits poll of 870 New York State residents. WHEN: Taken Nov. 9 to 18, released Nov. 24. WHY IT MATTERS: It's one state, but the pie debate is universal.",
+    "article_url": "https://sri.siena.edu/2026/11/24/3-in-4-nyers-will-host-or-attend-a-thanksgiving-celebration/",
+    "article_title": "3 in 4 NY'ers Will Host or Attend a Thanksgiving Celebration (Siena Research Institute)",
+    "jokes": []
+   }
+  ],
+  "localBuzz": [
+   {
+    "id": "callie-lb-01",
+    "title": "THE CHRISTMAS SHIP SAILS AGAIN: 1,400 TREES ON THE CUTTER MACKINAW",
+    "summary": "Hundreds of hands loaded 1,400 northern Michigan Christmas trees onto the U.S. Coast Guard Cutter Mackinaw in Cheboygan on Tuesday. The trees head to families in Chicago, and the Cheboygan Area Chamber collects nearly 3,000 decorated letters to send along with them.",
+    "article_url": "https://upnorthlive.com/news/local/coast-guard-cutter-mackinaw-loads-1400-northern-michigan-christmas-trees",
+    "article_title": "Coast Guard Cutter Mackinaw loads 1,400 northern Michigan Christmas trees (UpNorthLive)"
+   },
+   {
+    "id": "callie-lb-02",
+    "title": "SIGN THE LAST STEEL BEAM AT CHERRY CAPITAL AIRPORT",
+    "summary": "Cherry Capital Airport is inviting the public to sign the final structural steel beam for its new concourse, part of the 'Gates to the Future' project. The beam is inside the terminal now, and you can sign it through January.",
+    "article_url": "https://upnorthlive.com/news/local/community-invited-to-sign-final-steel-concourse-beam-at-cherry-capital-airport-grand-traverse-county",
+    "article_title": "Community invited to sign final steel concourse beam at Cherry Capital Airport (UpNorthLive)"
+   },
+   {
+    "id": "callie-lb-03",
+    "title": "SOUTH AIRPORT ROAD: LANE CLOSURES START TODAY AT LOGAN'S LANDING",
+    "summary": "Single-lane closures in both directions start today, Wednesday, on South Airport Road at Logan's Landing for the Garfield Township sewer replacement. It's daylight hours only, with flaggers and short stops westbound, and the median crossovers are closed.",
+    "article_url": "https://www.facebook.com/permalink.php?story_fbid=pfbid026N9Av9R6KSbgtLJ7qGbpfWkeJYQjGUigoxD1on1DDPVeAJo5VUPHA8X8JSYWk6Evl&id=100064583803947",
+    "article_title": "Grand Traverse County Road Commission: South Airport Rd lane closures at Logan's Landing (Facebook post, Nov 24)"
+   },
+   {
+    "id": "callie-lb-04",
+    "title": "TC FIREFIGHTERS SHOW YOU WHAT NOT TO DO WITH A TURKEY FRYER",
+    "summary": "Traverse City firefighters set up a live what-not-to-do demo at Fire Station 1: oil way too hot, a pot filled too full, and a frozen turkey dropped in. The National Fire Protection Association says Thanksgiving Day is the peak day of the year for home cooking fires.",
+    "article_url": "https://upnorthlive.com/news/local/traverse-city-fire-department-shares-thanksgiving-safety-tips",
+    "article_title": "What NOT to do: Traverse City Fire Department shares Thanksgiving safety tips (UpNorthLive)"
+   },
+   {
+    "id": "callie-lb-05",
+    "title": "CADILLAC SALVATION ARMY PLANS ITS BIGGEST THANKSGIVING YET",
+    "summary": "The Salvation Army of Cadillac is holding its largest-ever Thanksgiving food distribution, helping 600 households across three counties. Families get boxes and packages with what they need for the holiday meal.",
+    "article_url": "https://upnorthlive.com/news/local/salvation-army-plans-largest-ever-thanksgiving-food-distribution-aiding-600-households",
+    "article_title": "Salvation Army plans largest-ever Thanksgiving food distribution, aiding 600 households (UpNorthLive)"
+   }
+  ],
+  "officeSchool": [
+   {
+    "id": "callie-os-01",
+    "title": "OFFICE: THE WEDNESDAY BEFORE THANKSGIVING IS A GHOST TOWN",
+    "summary": "LISTENER BIT: The office on the day before Thanksgiving is half empty, and the half that's there is mostly planning the drive. Who's in, who's out, and who 'has a dentist appointment' at 1 o'clock?",
+    "article_url": "",
+    "article_title": "",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-02",
+    "title": "OFFICE: WORKERS ARE USING THE COMPANY DISCOUNT ON BLACK FRIDAY",
+    "summary": "A survey from the employee benefits platform Boostworks found 64 percent of workers with workplace discounts plan to use them on Black Friday purchases. 87 percent say price, discounts and offers decide where they shop, versus 26 percent who say brand loyalty does. 71 percent are buying Christmas gifts, and 67 percent are buying stuff for the house for themselves.",
+    "article_url": "https://retailtimes.co.uk/brand-loyalty-takes-a-back-seat-as-87-of-employees-prioritise-discounts/",
+    "article_title": "Brand loyalty takes a back seat as 87% of employees prioritise discounts (Retail Times)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-03",
+    "title": "SCHOOL: 'SKIP SCHOOL WEDNESDAY' IS A REAL THING",
+    "summary": "The Boston Globe reports the day before Thanksgiving is one of the most frustrating days of the year for school leaders. Last year, more than 12,000 Boston public school students, about one in four, were marked absent that Wednesday. One district made the day a holiday, and kids just skipped Tuesday instead.",
+    "article_url": "https://www.bostonglobe.com/2026/11/23/metro/skip-school-wednesday-chronic-absenteeism-thanksgiving/",
+    "article_title": "'Skip School Wednesday.' Why Thanksgiving Week has such light attendance. (The Boston Globe)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-04",
+    "title": "SCHOOL: HOW DID YOUR KID SAY TO COOK THE TURKEY?",
+    "summary": "LISTENER BIT: It's the classic preschool and kindergarten assignment: 'How do you cook a turkey?' Kids' answers usually involve 400 minutes, 5 degrees and a whole bottle of ketchup. Read us your kid's recipe, word for word.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": []
+   }
+  ]
+ },
+ "_normalized": {
+  "version": 1,
+  "stale_hours": 12
+ }
+}

@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-24T13:03:35-05:00",
+ "updated": "2026-11-25T04:30:27-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 312,
+ "artistsWatched": 316,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -63,8 +63,8 @@
     "count": 0
    },
    "313 Presents (Fox, Saint Andrew's, LCA)": {
-    "status": "no-events-in-static-page",
-    "count": 0
+    "status": "ok",
+    "count": 7
    },
    "Ford Field": {
     "status": "no-events-in-static-page",
@@ -73,14 +73,34 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 128
+   "count": 125
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 125
+   "count": 122
   }
  },
  "shows": [
+  {
+   "id": "cw-dr-seuss-how-the-grinch-stole-christma-2026-12-01-fox-theatre",
+   "artist": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
+   "title": "Dr. Seuss' How The Grinch Stole Christmas! The Musical",
+   "matched": [],
+   "inRotation": false,
+   "venue": "Fox Theatre",
+   "city": "Detroit",
+   "region": "Detroit",
+   "date": "2026-12-01",
+   "time": "19:30",
+   "daysOut": 6,
+   "window": "soon",
+   "onSale": "",
+   "presale": [],
+   "url": "https://www.313presents.com/events/detail/how-the-grinch-stole-christmas",
+   "source": "venue-jsonld",
+   "priority": 8.0,
+   "why": "big local venue"
+  },
   {
    "id": "cw-jazz-combo-holidays-showcase-2026-12-06-interlochen",
    "artist": "Jazz Combo Holidays Showcase",
@@ -92,7 +112,7 @@
    "region": "Northern Michigan",
    "date": "2026-12-06",
    "time": "19:30",
-   "daysOut": 12,
+   "daysOut": 11,
    "window": "soon",
    "onSale": "",
    "presale": [],
@@ -104,19 +124,19 @@
  ],
  "announcements": [
   {
-   "title": "Three weeks after Katseye abruptly canceled its sold-out Little Caesars Arena show minutes before it was scheduled to start, Detroit fans have a new date with the L.A. pop group. 📸 by Dimitrios Kambouris, Getty Images for Victoria's Secret - Facebook",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUVc4andDWnJTV2dEbEVYZ3lMTlNvTzZHd1VrMUhPUFJvTlQ1NDEtTHRNUm8xeFZENFd6dS1yYmJXTllzc0ZlY3FFM0hnbTd6aEs2Y1VJdHZzUlN6SVROVmRkOWx6NlA2R2tnZW1OTEFFN1ZtRXJRcFpIQk9WNXJDakxmQW1heXVOZ0VJWE5wa2dUZ1l3UW5XX0xNS2NzRi1CYURkdkNnMkJFWTdtNEZCeDhRZ0JBZDM0LTJQVVZ5RFdiaEFndDlIeERUNFAxcWtwWnlhQ05reFZyZzBtMFVz?oc=5",
-   "at": "2026-11-24T17:10:28+00:00",
-   "src": "Facebook",
+   "title": "KATSEYE reschedules postponed 'THE WILDWORLD TOUR' shows: Chicago on January 6, Detroit on January 8 and Minneapolis on January 10. - Complex",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RMG9aYnIxWGlTdkVUS1pWSWh0MEY3VDNCVVNiV1V4TjhDaDhneURtcEZTLWxianBtTWgzOE1CTlNnR3pVSTVTbVRJYjRSMEtjSE1vcExNelROZXQ5dVBKWVY0Z2RSMEtEOEE?oc=5",
+   "at": "2026-11-25T01:45:01+00:00",
+   "src": "Complex",
    "artists": [
     "KATSEYE"
    ],
    "priority": 60,
-   "ageDays": 0.0,
+   "ageDays": 0.3,
    "pub": "2026-11-24",
    "old": false,
-   "alsoCovered": 1
+   "alsoCovered": 2
   }
  ],
- "tookSec": 28.7
+ "tookSec": 31.0
 }

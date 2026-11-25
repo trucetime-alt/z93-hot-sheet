@@ -1,5 +1,5 @@
 {
- "latest": "2026-11-24",
+ "latest": "2026-11-25",
  "dates": [
   {
    "date": "2026-11-13",
@@ -146,6 +146,32 @@
     "c08-dodo-turkey-dog-siblings.mp3"
    ],
    "main": true
+  },
+  {
+   "date": "2026-11-25",
+   "br": false,
+   "audio": true,
+   "files": [
+    "c00-opener-supercut.mp3",
+    "c01-fallon-tim-allen-toy-story-movie.mp3",
+    "c02-fallon-martin-short-canadian-thanksgiving.mp3",
+    "c03-standup-kellen-erskine-someone-elses-cart.mp3",
+    "c04-standup-seth-tippetts-directions.mp3",
+    "c05-upnorthlive-tcfd-turkey-fryer.mp3",
+    "c06-abc-wu-tang-lions-halftime.mp3",
+    "c07-today-national-dog-show-backstage.mp3",
+    "c08-upnorthlive-michigan-gas-spike.mp3",
+    "tg00-opener-supercut.mp3",
+    "tg01-fallon-mountain-dew.mp3",
+    "tg02-meyers-ya-brined-pants.mp3",
+    "tg03-fallon-tyn-pilgrims-spirit.mp3",
+    "tg04-kevin-james-stovetop.mp3",
+    "tg05-pta-rental-tv-edit.mp3",
+    "tg06-sebastian-two-pounds.mp3",
+    "tg07-campbell-lions-bears.mp3",
+    "tg08-elr-fish-and-fowl.mp3"
+   ],
+   "main": true
   }
  ],
  "clipFirst": {
@@ -286,7 +312,40 @@
   "file:c07-wood8-ferris-big-noon.mp3": "2026-11-24",
   "id:2026-11-24-c07": "2026-11-24",
   "file:c08-dodo-turkey-dog-siblings.mp3": "2026-11-24",
-  "id:2026-11-24-c08": "2026-11-24"
+  "id:2026-11-24-c08": "2026-11-24",
+  "id:2026-11-25-c00": "2026-11-25",
+  "file:c01-fallon-tim-allen-toy-story-movie.mp3": "2026-11-25",
+  "id:2026-11-25-c01": "2026-11-25",
+  "file:c02-fallon-martin-short-canadian-thanksgiving.mp3": "2026-11-25",
+  "id:2026-11-25-c02": "2026-11-25",
+  "file:c03-standup-kellen-erskine-someone-elses-cart.mp3": "2026-11-25",
+  "id:2026-11-25-c03": "2026-11-25",
+  "file:c04-standup-seth-tippetts-directions.mp3": "2026-11-25",
+  "id:2026-11-25-c04": "2026-11-25",
+  "file:c05-upnorthlive-tcfd-turkey-fryer.mp3": "2026-11-25",
+  "id:2026-11-25-c05": "2026-11-25",
+  "file:c06-abc-wu-tang-lions-halftime.mp3": "2026-11-25",
+  "id:2026-11-25-c06": "2026-11-25",
+  "file:c07-today-national-dog-show-backstage.mp3": "2026-11-25",
+  "id:2026-11-25-c07": "2026-11-25",
+  "file:c08-upnorthlive-michigan-gas-spike.mp3": "2026-11-25",
+  "id:2026-11-25-c08": "2026-11-25",
+  "file:tg01-fallon-mountain-dew.mp3": "2026-11-25",
+  "id:2026-11-25-tg01-fallon-mountain-dew": "2026-11-25",
+  "file:tg02-meyers-ya-brined-pants.mp3": "2026-11-25",
+  "id:2026-11-25-tg02-meyers-ya-brined-pants": "2026-11-25",
+  "file:tg03-fallon-tyn-pilgrims-spirit.mp3": "2026-11-25",
+  "id:2026-11-25-tg03-fallon-tyn-pilgrims-spirit": "2026-11-25",
+  "file:tg04-kevin-james-stovetop.mp3": "2026-11-25",
+  "id:2026-11-25-tg04-kevin-james-stovetop": "2026-11-25",
+  "file:tg05-pta-rental-tv-edit.mp3": "2026-11-25",
+  "id:2026-11-25-tg05-pta-rental-tv-edit": "2026-11-25",
+  "file:tg06-sebastian-two-pounds.mp3": "2026-11-25",
+  "id:2026-11-25-tg06-sebastian-two-pounds": "2026-11-25",
+  "file:tg07-campbell-lions-bears.mp3": "2026-11-25",
+  "id:2026-11-25-tg07-campbell-lions-bears": "2026-11-25",
+  "file:tg08-elr-fish-and-fowl.mp3": "2026-11-25",
+  "id:2026-11-25-tg08-elr-fish-and-fowl": "2026-11-25"
  },
  "clipHistory": {
   "2026-11-13": {
@@ -336,6 +395,9 @@
    "repeats": []
   },
   "2026-11-24": {
+   "repeats": []
+  },
+  "2026-11-25": {
    "repeats": []
   }
  }
