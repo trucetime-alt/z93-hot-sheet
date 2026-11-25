@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta name="hs-build" content="v59o-batch">
+<meta name="hs-build" content="v59p-flags">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0d10">
@@ -781,6 +781,30 @@ input.opin:-webkit-autofill, input.songin:-webkit-autofill{
 .skbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 2px}
 .skbar button{min-height:44px;padding:4px 10px;font-weight:800;font-size:.82em;border-radius:10px;border:2px solid var(--line);background:var(--panel2);color:var(--text)}
 .skbar button.on{border-color:#ffd23f;background:#3a3206;color:#ffe27a}
+/* v59p: daily flag button (separate from pin) + Vibe Check "What we're working on" */
+.flagbtn{min-height:44px;min-width:44px;padding:4px 8px;font-weight:800;font-size:.8em;border-radius:10px;border:2px solid var(--line);background:var(--panel2);color:var(--text);line-height:1.1;flex:0 0 auto}
+.flagbtn.on{border-color:#ff7a59;background:#3a1510;color:#ffc4b4}
+.skbar .flagbtn.on{border-color:#ff7a59;background:#3a1510;color:#ffc4b4}
+.cdchipw,.wcitw{display:inline-flex;align-items:center;gap:4px;vertical-align:middle;max-width:100%}
+.cdchipw .flagbtn,.wcitw .flagbtn,#wx .flagbtn{min-height:36px;min-width:36px;padding:2px 7px;font-size:.78em}
+#wx{position:relative}
+#wx > .flagbtn{position:absolute;top:6px;right:6px;z-index:3}
+.rsb .flagbtn{min-height:40px;align-self:center}
+.gvkrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.workon{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;margin:0 0 14px;scroll-margin-top:88px}
+.flagbtn,.skbar{scroll-margin-bottom:140px;scroll-margin-top:80px}
+.workon h3{margin:0 0 8px;font-size:1.05em;font-weight:900}
+.workon ol{list-style:none;margin:0;padding:0}
+.workon li{display:flex;align-items:stretch;gap:8px;margin:0 0 8px}
+.workon .wojump{flex:1;text-align:left;min-height:44px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:8px 10px;font-weight:800}
+.workon .wojump .woord{display:inline-block;min-width:1.4em;color:var(--dim)}
+.workon .wokind{display:block;font-size:.72em;font-weight:700;color:var(--dim);margin-top:2px}
+.workon .wounflag{min-height:44px;min-width:44px;border-radius:10px;border:2px solid var(--line);background:var(--panel2);color:var(--text);font-weight:900}
+.workon .woempty{color:var(--dim);font-weight:700;margin:0}
+.ncard.flagged,.buzzcard.flagged,.bitcard.flagged{outline:2px solid color-mix(in srgb,#ff7a59 55%,transparent);outline-offset:-2px}
+.flagflash{animation:flagflash 1.6s ease}
+@keyframes flagflash{0%{box-shadow:0 0 0 3px #ff7a59}100%{box-shadow:none}}
+
 .ncard.b59gotit,.buzzcard.b59gotit{opacity:.48;filter:grayscale(.4)}
 .ncard.b59gotit .tt,.buzzcard.b59gotit .headline,.buzzcard.b59gotit .buzzhd{color:var(--dim)}
 .skbar .b59got.on{border-color:#7a8a7a;background:#1c2620;color:#c5d4c8}
@@ -1640,6 +1664,7 @@ function bitCard(opts){
   const airId=item&&item.id ? 'it:'+item.id : 'h:'+sec+':'+fnv(opts.title||bodyTxt||String(index));
   if(item&&item.id && window.__airUsed) window.__airUsed.add(item.id);
   card.append(h('div',{className:'airsec'}, airBtn(airId, tcase(opts.title||'Bit'), sec, true, bodyTxt)));
+  try{ if(typeof flagBtn==='function'){ const fid='fl:bit:'+sec+':'+index+':'+((item&&item.id)||(typeof storyHash==='function'?storyHash(opts.title||bodyTxt||String(index)):(opts.title||index))); const kind=sec==='events'?'event':'bit'; const tab=sec||''; card.setAttribute('data-flag-id', fid); if(typeof flagIs==='function'&&flagIs(fid)) card.classList.add('flagged'); card.append(h('div',{className:'skbar'}, flagBtn({id:fid, kind, title:opts.title||'Bit', tab, jump:{sel:'[data-flag-id="'+fid+'"]', tab}}))); } }catch(e){}
   return card;
 }
 function renderBitSec(c, sec, txt){
@@ -1864,7 +1889,7 @@ const uid=()=>Math.random().toString(36).slice(2,9);
 const clone=o=>JSON.parse(JSON.stringify(o));
 function lsGet(k,def){ try{ const v=JSON.parse(LS.getItem(k)); return v==null?def:v; }catch(e){ return def; } }
 /* never add hs:gvWins or hs:jonasQual — listener names/phones stay on this device and must never sync */
-const SYNC_KEYS=new Set(['hs:manualPlays','hs:caliQueue','hs:calSong','hs:bricks','hs:gotit','hs:readlog','hs:chase','hs:songLocks','hs:r1Skip','hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:guLocal','hs:guMentions','hs:weekCal','hs:songPicks','hs:buzzRemix','hs:storyRemix','hs:moviePicks','hs:remix','hs:storyKeep','hs:tabByProfile','hs:openerDraft']);
+const SYNC_KEYS=new Set(['hs:flags','hs:manualPlays','hs:caliQueue','hs:calSong','hs:bricks','hs:gotit','hs:readlog','hs:chase','hs:songLocks','hs:r1Skip','hs:spLocal','hs:cdLocal','hs:reads','hs:clipState','hs:stLocal','hs:linerUsed','hs:air','hs:saved','hs:holds','hs:gvLocal','hs:guLocal','hs:guMentions','hs:weekCal','hs:songPicks','hs:buzzRemix','hs:storyRemix','hs:moviePicks','hs:remix','hs:storyKeep','hs:tabByProfile','hs:openerDraft']);
 function lsSet(k,v){ try{ LS.setItem(k,JSON.stringify(v)); }catch(e){} if(SYNC_KEYS.has(k) && window.__hsSyncSoon) window.__hsSyncSoon(); }
 function h(tag, attrs={}, ...kids){ const e=document.createElement(tag);
   for(const [k,v] of Object.entries(attrs||{})){ if(k==='on') Object.entries(v).forEach(([ev,fn])=>e.addEventListener(ev,fn)); else if(k in e && k!=='list') e[k]=v; else e.setAttribute(k,v); }
@@ -2423,9 +2448,133 @@ function storyKeepBar(it, sec, col){
   bar.append(h('button',{type:'button', className:pinOn?'on':'', 'aria-pressed':String(pinOn), title:pinOn?'Unpin this story':'Pin this story to the top of the section', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); pinStory(it, !pinOn, sec, col); }}}, pinOn?'📌 Pinned':'📌 Pin'));
   bar.append(h('button',{type:'button', className:sav?'on':'', 'aria-pressed':String(!!sav), title:sav?'Remove from saved':'Save this story into tomorrow, like a held clip', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); saveStory(it, !sav, sec, col); }}}, sav?'📥 Saved':'📥 Save'));
   try{ b59Buttons(bar, it, sec, col); }catch(e){ console.warn('b59 buttons', e); }
+  try{ if(typeof flagBtn==='function'){ const fid=(typeof storyKeepId==='function'?storyKeepId(it):'')||id; const kind=(sec==='buzz'?'buzz':(sec==='events'?'event':'news')); bar.append(flagBtn({id:fid, kind, title:it.title||it.head||'', tab:sec==='buzz'?'buzz':'news', col:col||'', jump:{keepId:fid, tab:sec==='buzz'?'buzz':'news', col:col||''}})); } }catch(e){}
   if(it.savedFrom) bar.append(h('span',{className:'stag-saved'}, 'Saved from '+(typeof nice==='function'?nice(it.savedFrom):it.savedFrom)));
   return bar;
 }
+
+/* v59p: per-host daily flags. Sync like pins (fl:profile:day:id). Reset each ET day.
+   Store only public item id/title/kind/tab/jump — never listener names, phones, winners, or qualifier PII. */
+var hsFlags=lsGet('hs:flags', {});
+if(!hsFlags || typeof hsFlags!=='object' || Array.isArray(hsFlags)) hsFlags={};
+function flagProf(){ return (typeof profileId==='function'&&profileId())||'truce'; }
+function flagDay(){ return (typeof etParts==='function'&&etParts().date)||''; }
+function flagSave(){ try{ flagPrune(true); }catch(e){} lsSet('hs:flags', hsFlags); }
+function flagSafeTitle(s){
+  s=String(s||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
+  s=s.replace(/\b(?:\+?1[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b/g,'').replace(/\s+/g,' ').trim();
+  return s.slice(0,140);
+}
+function flagKindLabel(k){ return ({news:'News',weather:'Weather',giveaway:'Giveaway',contest:'Contest',bit:'Bit',event:'Event',interview:'Interview',countdown:'Countdown',buzz:'Daily Buzz'})[k]||'Flagged'; }
+function flagBucket(prof){ const p=prof||flagProf(); hsFlags[p]=hsFlags[p]||{}; return hsFlags[p]; }
+function flagDayMap(prof, day){ const b=flagBucket(prof); const d=day||flagDay(); b[d]=b[d]||{}; return b[d]; }
+function flagPrune(silent){
+  const today=flagDay(); let n=0;
+  for(const p of Object.keys(hsFlags||{})){
+    const b=hsFlags[p]; if(!b || typeof b!=='object'){ delete hsFlags[p]; n++; continue; }
+    for(const d of Object.keys(b)){ if(d!==today){ delete b[d]; n++; } }
+    if(!Object.keys(b).length) delete hsFlags[p];
+  }
+  if(n && !silent) try{ lsSet('hs:flags', hsFlags); }catch(e){}
+  return n;
+}
+function flagList(prof){
+  flagPrune(true);
+  const m=flagDayMap(prof);
+  return Object.values(m).filter(r=>r && r.id && r.day===flagDay()).sort((a,b)=>(a.n||0)-(b.n||0) || String(a.at||'').localeCompare(String(b.at||'')));
+}
+function flagShouldShowVibe(prof){ try{ return flagList(prof).length>0; }catch(e){ return false; } }
+function flagIs(id, prof){ if(!id) return false; const m=flagDayMap(prof); return !!(m[id] || (typeof id==='object' && m[id.id])); }
+function flagRec(id, prof){ const m=flagDayMap(prof); return m[id]||null; }
+function flagEnsureVibe(list){
+  if(!flagShouldShowVibe()) return list;
+  if((list||[]).some(x=>x.key==='vibe')) return list;
+  const vibe={key:'vibe', v:{title:'🧭 Vibe Check', category:"What we're working on", content:'', virtual:true}};
+  const out=(list||[]).slice();
+  const i=out.findIndex(x=>x.key==='news');
+  out.splice(i>=0?i+1:0, 0, vibe);
+  return out;
+}
+function flagSpecOf(spec){
+  spec=spec||{};
+  const kind=spec.kind||'bit';
+  const title=flagSafeTitle(spec.title||'');
+  const id=String(spec.id||('fl:'+kind+':'+((typeof storyHash==='function'?storyHash(title):title)||'x')));
+  return {
+    id, kind, title, tab:spec.tab||'', col:spec.col||'',
+    jump:spec.jump&&typeof spec.jump==='object'?{keepId:spec.jump.keepId||'', sel:spec.jump.sel||'', tab:spec.jump.tab||spec.tab||'', col:spec.jump.col||spec.col||''}:{},
+    day:flagDay(), at:spec.at||new Date().toISOString(), n:spec.n||0
+  };
+}
+function flagToggle(spec, on){
+  const rec=flagSpecOf(spec);
+  const m=flagDayMap();
+  const has=!!m[rec.id];
+  if(on===false || (on==null && has)){
+    delete m[rec.id];
+    if(!Object.keys(m).length){ const b=flagBucket(); delete b[flagDay()]; }
+    flagSave(); flagRefresh(); if(typeof toast==='function') toast('Unflagged'); return false;
+  }
+  if(!has){ const used=Object.values(m).map(x=>x.n||0); rec.n=(used.length?Math.max.apply(null,used):0)+1; rec.at=new Date().toISOString(); }
+  else { rec.n=m[rec.id].n; rec.at=m[rec.id].at; }
+  m[rec.id]=rec; flagSave(); flagRefresh(); if(typeof toast==='function') toast('🚩 Flagged · Vibe Check'); return true;
+}
+function flagRefresh(){
+  try{ if(typeof renderCountdowns==='function') renderCountdowns(); }catch(e){}
+  try{ if(typeof renderWeather==='function') renderWeather(); }catch(e){}
+  try{ if(typeof renderWeekCal==='function') renderWeekCal(); }catch(e){}
+  try{ if(typeof renderReadStrip==='function') renderReadStrip(); }catch(e){}
+  try{ if(typeof renderTabs==='function') renderTabs(); }catch(e){}
+  try{ if(typeof rerender==='function') rerender(); else if(typeof renderView==='function') renderView(); }catch(e){}
+}
+function flagBtn(spec){
+  const rec=flagSpecOf(spec);
+  const on=flagIs(rec.id);
+  return h('button',{type:'button', className:'flagbtn'+(on?' on':''), 'data-flag-id':rec.id, 'aria-pressed':String(on), 'aria-label':on?'Unflag '+(rec.title||rec.kind):'Flag '+(rec.title||rec.kind)+' for Vibe Check', title:on?'Unflag — remove from What we\'re working on':'Flag for What we\'re working on (Vibe Check)', on:{click:e=>{ e.preventDefault(); e.stopPropagation(); if(typeof tapHaptic==='function') tapHaptic(); flagToggle(rec); }}}, on?'🚩 Flagged':'🚩 Flag');
+}
+function flagRevealTop(){
+  try{
+    if(document.body.classList.contains('flown') && typeof applyFly==='function'){
+      flown=false; try{ LS.setItem('hs:flown','0'); }catch(e){} applyFly();
+    }
+  }catch(e){}
+}
+function flagJump(rec){
+  rec=rec||{};
+  const jump=rec.jump||{};
+  const tab=jump.tab||rec.tab||'';
+  const sel=jump.sel|| (jump.keepId ? ('[data-keep-id="'+String(jump.keepId).replace(/"/g,'')+'"]') : (rec.id?('[data-flag-id="'+String(rec.id).replace(/"/g,'')+'"]'):''));
+  const go=()=>{
+    let el=null;
+    try{ if(sel) el=document.querySelector(sel); }catch(e){}
+    if(!el && rec.id) el=document.querySelector('[data-flag-id="'+CSS.escape(rec.id)+'"]');
+    if(el){ el.classList.add('flagflash'); el.scrollIntoView({block:'center', behavior:'smooth'}); setTimeout(()=>{ try{ el.classList.remove('flagflash'); }catch(e){} }, 2200); }
+    else if(typeof toast==='function') toast('Flagged item is not on this screen right now');
+  };
+  if(tab==='_weather' || rec.kind==='weather' || rec.kind==='interview' || rec.kind==='countdown'){ flagRevealTop(); setTimeout(go, 80); return; }
+  if(tab==='_weekcal' || rec.kind==='event' && jump.tab==='_weekcal'){ flagRevealTop(); if(jump.wcid && typeof openWeekCalDetail==='function'){ const it=(typeof weekCalCollect==='function'?weekCalCollect():[]).find(x=>x.id===jump.wcid); if(it){ openWeekCalDetail(it); return; } } setTimeout(go, 80); return; }
+  if(tab && typeof window.__hsTest==='object' && __hsTest.openTab){ __hsTest.openTab(tab); }
+  else if(tab && typeof renderTabs==='function'){ state.tab=tab; if(typeof tabPrefSave==='function') tabPrefSave(tab); renderTabs(); if(typeof renderView==='function') renderView(); }
+  if((rec.kind==='news' || tab==='news') && jump.col && typeof showNewsCol==='function') try{ showNewsCol(jump.col, false); }catch(e){}
+  setTimeout(go, 220);
+}
+function renderWorkOn(){
+  const list=flagList();
+  const box=h('div',{className:'workon', id:'workOn'});
+  box.append(h('h3',{}, "What we're working on"));
+  if(!list.length){ box.append(h('p',{className:'woempty'}, 'Nothing flagged yet. Tap 🚩 Flag on a story, bit, giveaway, event, weather, or interview chip.')); return box; }
+  const ol=h('ol',{});
+  list.forEach((rec,i)=>{
+    const jump=h('button',{type:'button', className:'wojump', on:{click:()=>{ if(typeof tapHaptic==='function') tapHaptic(); flagJump(rec); }}},
+      h('span',{className:'woord'}, String(i+1)+'.'), ' '+(rec.title||flagKindLabel(rec.kind)),
+      h('span',{className:'wokind'}, flagKindLabel(rec.kind)));
+    const un=h('button',{type:'button', className:'wounflag', 'aria-label':'Unflag '+(rec.title||''), title:'Unflag', on:{click:()=>{ if(typeof tapHaptic==='function') tapHaptic(); flagToggle(rec, false); }}}, '✕');
+    ol.append(h('li',{'data-flag-id':rec.id}, jump, un));
+  });
+  box.append(ol);
+  return box;
+}
+
 function newsItemsWithKeep(colId, groups){
   try{ storyPruneStalePins(); }catch(e){}
   const p=storyKeepProf(); const today=(typeof etParts==='function'?etParts().date:''); const date=b59Date('news');
@@ -3256,12 +3405,15 @@ function renderReadStrip(){ const box=$('#readStrip'); if(!box) return; const rp
   for(const sp of list){
     const showCopy=ph==='warn' || ph==='due' || !!sp.giveaway;
     const per=readFreq(sp.id)==='shift';
-    box.append(h('div',{className:'rsb'+(sp.station?' st':'')+(sp.giveaway?' gv':'')+(sp.announce?' gvwin':'')},
+    const rsb=h('div',{className:'rsb'+(sp.station?' st':'')+(sp.giveaway?' gv':'')+(sp.announce?' gvwin':'')});
+    rsb.append(
       h('button',{className:'rsn', type:'button', title:'Open the read', on:{click:()=>openRead(sp.id)}},
         h('span',{className:'ri','aria-hidden':'true'}, sp.icon||'⭐'), h('span',{className:'rn'}, sp.short||sp.name),
         sp.giveaway ? h('span',{className:'rtag'}, typeof gvWinTag==='function'?gvWinTag(sp):(sp.announce?'winners':'1/day')) : (sp.station || per ? h('span',{className:'rtag'}, per?'once/shift':'1/day') : null),
         showCopy ? h('span',{className:'rc'+((sp.station||sp.giveaway)?' long':'')}, sp.giveaway ? (sp.shortLine||sp.read) : (sp.station ? readable(sp.read) : sp.read)) : null),
-      h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:per?'Done: hide until the next shift':'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓')));
+      h('button',{className:'rsk', type:'button', 'aria-label':'Mark '+(sp.short||sp.name)+' read', title:per?'Done: hide until the next shift':'Done: hide until next show day', on:{click:()=>{ tapHaptic(); setRead(sp.id,true); }}}, '✓'));
+    try{ if(sp.giveaway && typeof flagBtn==='function'){ const fid='fl:gv:'+String(sp.id||''); rsb.setAttribute('data-flag-id', fid); rsb.append(flagBtn({id:fid, kind:'giveaway', title:sp.short||sp.name||'Giveaway', tab:sp.tagSection||'', jump:{sel:'[data-flag-id="'+fid+'"]', tab:sp.tagSection||''}})); } }catch(e){}
+    box.append(rsb);
   }
   if(jqShow && typeof jqOpenBtn==='function') box.append(jqOpenBtn());
   box.hidden=false; setHdr(); }
@@ -3384,8 +3536,13 @@ function cdText(c){ const today=etParts().date; const d=String(c.when||'').slice
   return null; }
 function renderCountdowns(){ const box=$('#countdowns'); if(!box) return; box.innerHTML='';
   for(const c of allCountdowns()){ if(!cdStillLive(c)) continue; const x=cdText(c); if(!x) continue;
-    box.append(h('button',{className:'cdchip '+x.cls, type:'button', title:(c.note||c.name)+(c.when?' · '+c.when.replace('T',' '):'')+(cdQuery(c)?' · tap for latest news':''), on:{click:()=>cdQuery(c)?openCdNews(c):openCdEditor()}},
-      x.t.filter(Boolean).join(' ')+' ', h('span',{className:'n'}, x.n))); } }
+    const kind=/interview/i.test(String(c.id||'')+' '+String(c.name||''))?'interview':'countdown';
+    const fid='fl:cd:'+String(c.id||c.name||'');
+    const wrap=h('span',{className:'cdchipw', 'data-flag-id':fid});
+    wrap.append(h('button',{className:'cdchip '+x.cls, type:'button', title:(c.note||c.name)+(c.when?' · '+c.when.replace('T',' '):'')+(cdQuery(c)?' · tap for latest news':''), on:{click:()=>cdQuery(c)?openCdNews(c):openCdEditor()}},
+      x.t.filter(Boolean).join(' ')+' ', h('span',{className:'n'}, x.n)));
+    try{ if(typeof flagBtn==='function') wrap.append(flagBtn({id:fid, kind, title:c.name||'Countdown', tab:'_weather', jump:{sel:'[data-flag-id="'+fid+'"]', tab:'_weather'}})); }catch(e){}
+    box.append(wrap); } }
 function logCd(what,note){ cdLog.unshift({at:new Date().toISOString(), what, note:note||''}); cdLog=cdLog.slice(0,300); lsSet('hs:cdLog', cdLog); }
 function openCdEditor(){
   let work=clone(allCountdowns()); const box=$('#cdEditor');
@@ -3757,8 +3914,14 @@ function renderWeekCal(){
     const isPast=(it)=>it.date<p.date || (it.date===p.date && (it.endTime||it.time) && (it.endTime||it.time)<nowHm);
     const mkItem=(it)=>{ const ownTag=(all && it.src==='custom')?' · '+(typeof showTabLabel==='function'?showTabLabel(weekCalOwner(it.raw||it)):''):'';
       const lab=(it.icon?it.icon+' ':'')+(it.time?weekCalRange(it)+' · ':'')+(it.title||'');
-      return h('button',{type:'button', className:'wcit wc-'+colT(it.type)+(isPast(it)?' past':''), 'data-wcid':it.id, 'data-type':it.type||'', title:lab, on:{click:()=>openWeekCalDetail(it)}},
-        h('span',{className:'wct'}, (it.icon?it.icon+' ':'')+(it.title||'')+ownTag), it.time?h('span',{className:'tm'}, weekCalRange(it)):null); };
+      const btn=h('button',{type:'button', className:'wcit wc-'+colT(it.type)+(isPast(it)?' past':''), 'data-wcid':it.id, 'data-type':it.type||'', title:lab, on:{click:()=>openWeekCalDetail(it)}},
+        h('span',{className:'wct'}, (it.icon?it.icon+' ':'')+(it.title||'')+ownTag), it.time?h('span',{className:'tm'}, weekCalRange(it)):null);
+      const kind=(it.type==='contest'||it.type==='giveaway')?(it.type==='contest'?'contest':'giveaway'):'event';
+      const fid='fl:wc:'+String(it.id||'');
+      const wrap=h('span',{className:'wcitw', 'data-flag-id':fid, 'data-wcid':it.id});
+      wrap.append(btn);
+      try{ if(typeof flagBtn==='function') wrap.append(flagBtn({id:fid, kind, title:it.title||'Event', tab:'_weekcal', jump:{sel:'[data-flag-id="'+fid+'"]', tab:'_weekcal', wcid:it.id}})); }catch(e){}
+      return wrap; };
     for(let i=0;i<days.length;i++){
       const d=days[i];
       const dow=typeof dowFromDate==='function'?dowFromDate(d):(new Date(d+'T12:00:00').getDay());
@@ -4559,9 +4722,14 @@ function renderWeather(){
   if(w.live.obs){ const src=(liveWx.obs&&liveWx.obs.src)||'KTVC'; lv.className='wxlive on'; lv.textContent='as of '+hm(new Date(w.live.obs))+(src==='KTVC'?'':' · '+src); lv.title=(src==='KTVC'?'NWS KTVC (Cherry Capital) observation':'Open-Meteo current conditions')+' at '+hm(new Date(w.live.obs))+' ET · checked '+hm(new Date(liveWx.at))+' · refreshes every 10 min'; }
   else if(sw && sw.updated){ lv.className='wxlive'; lv.textContent='from sheet · '+new Date(sw.updated).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit',timeZone:TZ}); lv.title='Live NWS weather unavailable; showing the sheet'; }
   else { lv.className='wxlive'; lv.textContent=''; }
+  try{
+    const host=$('#wx'); if(host){ host.querySelectorAll('.flagbtn').forEach(el=>el.remove());
+      if(typeof flagBtn==='function'){ const fid='fl:weather:'+((typeof flagDay==='function'?flagDay():'')||'today');
+        const b=flagBtn({id:fid, kind:'weather', title:"Today's weather", tab:'_weather', jump:{sel:'#wx', tab:'_weather'}}); b.id='wxFlag'; host.append(b); } }
+  }catch(e){}
 }
 
-function sectionList(){ const b=sectionListBase(); try{ if(typeof viewProfile==='function' && viewProfile()==='callie') return b59CalSections(b); }catch(e){} return b; }
+function sectionList(){ let b=sectionListBase(); try{ if(typeof viewProfile==='function' && viewProfile()==='callie') b=b59CalSections(b); }catch(e){} try{ if(typeof flagEnsureVibe==='function') b=flagEnsureVibe(b); }catch(e){} return b; }
 /* v59i: a sheet card that belongs to one host ("AJ's Personal Bit", or owner:"truce|courtney|callie") shows only on that host's show */
 function sectionOwner(k,v){ if(!v || typeof v!=='object') return '';
   const o=String(v.owner||'').toLowerCase().replace(/^aj$/,'truce').replace(/^cali$/,'callie'); if(['truce','courtney','callie'].includes(o)) return o;
@@ -4611,9 +4779,10 @@ function renderTabs(){
   const list=sectionList();
   const morn=new Set(typeof morningKeys==='function'?morningKeys():[]);
   const hideM=typeof morningEnded==='function' && morningEnded();
-  const main=hideM?list.filter(x=>!morn.has(x.key)):list;
+  const keepVibe=typeof flagShouldShowVibe==='function' && flagShouldShowVibe();
+  const main=hideM?list.filter(x=>!morn.has(x.key) || (x.key==='vibe' && keepVibe)):list;
   let saved=(typeof tabPrefRead==='function'?tabPrefRead():null)||LS.getItem('hs:tab');
-  if(hideM && morn.has(state.tab) && !window.__hsMorningPeek){
+  if(hideM && morn.has(state.tab) && !window.__hsMorningPeek && !(state.tab==='vibe' && keepVibe)){
     state.tab = main.find(x=>x.key===saved && !morn.has(saved)) ? saved : ((main[0]&&main[0].key)||(list[0]&&list[0].key));
   }
   if(!state.tab || !list.find(x=>x.key===state.tab)) state.tab = main.find(x=>x.key===saved) ? saved : ((main[0]||list[0]).key);
@@ -4905,6 +5074,7 @@ function buzzCard(orig){
     if(storyPinned(id)) card.classList.add('pinned');
     const sav=storySavedRec(id); if(sav && sav.appearOn===(typeof etParts==='function'&&etParts().date)){ card.classList.add('fromsave'); keepIt.savedFrom=sav.fromDate; }
     card.append(storyKeepBar(keepIt, 'buzz', ''));
+    try{ if(id && typeof flagIs==='function' && flagIs(id)) card.classList.add('flagged'); }catch(e){}
   }
   return card;
 }
@@ -5077,6 +5247,7 @@ function newsCard(it, col){
     appendArticleAndJokes(card, {sec:'news', item:it.article_url!=null?it:newsIt, title:it.title, text:(it.desc||'')+'\n'+(it.lines||[]).join('\n'), index:0, total:1});
   }
   if(typeof storyKeepBar==='function') card.append(storyKeepBar(it, 'news', col||it.col||''));
+  try{ const fid=typeof storyKeepId==='function'?storyKeepId(it):''; if(fid && typeof flagIs==='function' && flagIs(fid)) card.classList.add('flagged'); }catch(e){}
   return card;
 }
 function renderNewsView(view){
@@ -5188,6 +5359,7 @@ function renderViewCore(){
   try{ const st=r1SecStamp(item.v); if(st) view.append(st); if(item.key==='buzz'){ const ms=r1MissingStrip(); if(ms) view.append(ms); } const tb=r1TopBlock(item.key); if(tb) view.append(tb); }catch(e){ console.warn('r1 extras', e); }
   if(typeof gvSectionCard==='function'){ const gc=gvSectionCard(item.key); if(gc) view.append(gc); }
   if(item.key===openerTab()) view.append(openerCard());
+  if(item.key==='vibe'){ try{ if(typeof renderWorkOn==='function'){ const wo=renderWorkOn(); if(wo) view.append(wo); } }catch(e){ console.warn('work on', e); } }
   if(item.key==='vibe'){ try{ const ow=mk('div',{className:'openerclips'}); if(renderClipTracker(ow,{opener:true})) view.append(ow); }catch(e){ console.warn('opener clips', e); } }
   if(typeof isSongSec==='function' && isSongSec(item.key) && typeof songPanel==='function') view.append(songPanel(item.key));
   else if(typeof poolFor==='function' && poolFor(item.key).length) view.append(remixBar(item.key, rx));
@@ -5208,7 +5380,7 @@ function renderViewCore(){
     if(txt && item.key==='buzz' && typeof renderBuzz==='function') renderBuzz(c, txt);
     else if(txt && item.key==='lifestyle' && typeof renderStorySec==='function' && typeof onAirProfile==='function' && onAirProfile('courtney')) renderStorySec(c, 'lifestyle', txt);
     else if(txt && typeof renderBitSec==='function' && typeof isBitSec==='function' && isBitSec(item.key)) renderBitSec(c, item.key, txt);
-    else if(txt) richLines(c, txt); else c.textContent='Nothing in this section today.';
+    else if(txt) richLines(c, txt); else if(!(item.key==='vibe' && typeof flagShouldShowVibe==='function' && flagShouldShowVibe())) c.textContent='Nothing in this section today.';
     view.append(c);
     if(b59SegOk(item.key)){ try{ const si=b59SegIt(item), sd=b59Date('sheet'); if(b59IsGot(si,sd)) c.replaceWith(b59GotLine(si,item.key,'',si.title)); else if(b59IsBrick(si,sd)) c.classList.add('b59brick'); }catch(e){} }
     try{ r1CardTimes(view); }catch(e){}
@@ -6026,6 +6198,7 @@ function syncSnap(){ const m={};
   for(const [id,v] of Object.entries((typeof weekCal!=='undefined'&&weekCal&&weekCal.hidden)||{})) if(v) m['wh:'+id]=v;
   for(const [id,v] of Object.entries((typeof weekCal!=='undefined'&&weekCal&&weekCal.allByProfile)||{})) if(v) m['wa:'+id]=v;
   for(const [d,r] of Object.entries((typeof remixSt!=='undefined'&&remixSt)||{})) for(const [id,o] of Object.entries(r||{})) m['rx:'+d+':'+id]=o;
+  for(const [prof,days] of Object.entries((typeof hsFlags!=='undefined'&&hsFlags)||{})) for(const [day,recs] of Object.entries(days||{})) for(const [id,o] of Object.entries(recs||{})) if(o) m['fl:'+prof+':'+day+':'+id]=o;
   for(const [prof,r] of Object.entries((typeof storyKeep!=='undefined'&&storyKeep&&storyKeep.pins)||{})) for(const [id,o] of Object.entries(r||{})) m['kp:'+prof+':'+id]=o;
   for(const [prof,r] of Object.entries((typeof storyKeep!=='undefined'&&storyKeep&&storyKeep.saves)||{})) for(const [id,o] of Object.entries(r||{})) m['ks:'+prof+':'+id]=o;
   for(const [id,v] of Object.entries((typeof tabPrefs==='function'?tabPrefs():lsGet('hs:tabByProfile',{}))||{})) if(v) m['tb:'+id]=v;
@@ -6069,6 +6242,11 @@ function syncApply(key, val){ const del=(val==='~'||val===undefined); const i=ke
   else if(kind==='wh'){ weekCal=weekCal||{items:{},hidden:{}}; weekCal.hidden=weekCal.hidden||{}; if(del) delete weekCal.hidden[rest]; else weekCal.hidden[rest]=val; }
   else if(kind==='wa'){ weekCal=weekCal||{items:{},hidden:{},allByProfile:{}}; weekCal.allByProfile=weekCal.allByProfile||{}; if(del) delete weekCal.allByProfile[rest]; else weekCal.allByProfile[rest]=val; }
   else if(kind==='rx'){ const [d,id]=two(); remixSt=remixSt||{}; remixSt[d]=remixSt[d]||{}; if(del) delete remixSt[d][id]; else remixSt[d][id]=val; if(!Object.keys(remixSt[d]).length) delete remixSt[d]; }
+  else if(kind==='fl'){ const j=rest.indexOf(':'); const prof=rest.slice(0,j), r2=rest.slice(j+1); const k=r2.indexOf(':'); const day=r2.slice(0,k), id=r2.slice(k+1);
+    hsFlags=hsFlags||{}; hsFlags[prof]=hsFlags[prof]||{}; hsFlags[prof][day]=hsFlags[prof][day]||{};
+    if(del) delete hsFlags[prof][day][id]; else hsFlags[prof][day][id]=val;
+    if(!Object.keys(hsFlags[prof][day]).length) delete hsFlags[prof][day];
+    if(!Object.keys(hsFlags[prof]).length) delete hsFlags[prof]; }
   else if(kind==='kp'){ const [prof,id]=two(); storyKeep=storyKeep||{pins:{},saves:{}}; storyKeep.pins=storyKeep.pins||{}; storyKeep.pins[prof]=storyKeep.pins[prof]||{}; if(del) delete storyKeep.pins[prof][id]; else storyKeep.pins[prof][id]=val; if(!Object.keys(storyKeep.pins[prof]).length) delete storyKeep.pins[prof]; }
   else if(kind==='ks'){ const [prof,id]=two(); storyKeep=storyKeep||{pins:{},saves:{}}; storyKeep.saves=storyKeep.saves||{}; storyKeep.saves[prof]=storyKeep.saves[prof]||{}; if(del) delete storyKeep.saves[prof][id]; else storyKeep.saves[prof][id]=val; if(!Object.keys(storyKeep.saves[prof]).length) delete storyKeep.saves[prof]; }
   else if(kind==='lk'){ r1Locks=r1Locks||{}; if(del) delete r1Locks[rest]; else r1Locks[rest]=val; try{ LS.setItem('hs:songLocks', JSON.stringify(r1Locks)); }catch(e){} }
@@ -6102,7 +6280,7 @@ async function syncNow(){
       if(R && (!L || R.t>=L.t)){ merged[k]=R; if(!L || JSON.stringify(L.v)!==JSON.stringify(R.v)){ syncApply(k, R.v); pulled++; } }
       else { merged[k]=L; pushNeeded=true; } }
     syncPrune(merged);
-    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); LS.setItem('hs:storyRemix', JSON.stringify(storyRemix||{})); LS.setItem('hs:moviePicks', JSON.stringify(moviePicks||{})); LS.setItem('hs:guMentions', JSON.stringify(guMentions||{})); LS.setItem('hs:weekCal', JSON.stringify(weekCal||{items:{},hidden:{}})); LS.setItem('hs:remix', JSON.stringify(remixSt||{})); LS.setItem('hs:storyKeep', JSON.stringify(storyKeep||{pins:{},saves:{}})); }
+    if(pulled){ if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); LS.setItem('hs:spLocal', JSON.stringify(spOv)); LS.setItem('hs:cdLocal', JSON.stringify(cdOv)); LS.setItem('hs:reads', JSON.stringify(reads)); LS.setItem('hs:clipState', JSON.stringify(clipState)); LS.setItem('hs:stLocal', JSON.stringify(stOv)); LS.setItem('hs:linerUsed', JSON.stringify(linerUsed)); LS.setItem('hs:air', JSON.stringify(air)); LS.setItem('hs:saved', JSON.stringify(savedMap)); LS.setItem('hs:holds', JSON.stringify(holds)); LS.setItem('hs:gvLocal', JSON.stringify(gvOv)); LS.setItem('hs:guLocal', JSON.stringify(guOv||{items:{}})); LS.setItem('hs:songPicks', JSON.stringify(songPicks)); LS.setItem('hs:buzzRemix', JSON.stringify(buzzRemix)); LS.setItem('hs:storyRemix', JSON.stringify(storyRemix||{})); LS.setItem('hs:moviePicks', JSON.stringify(moviePicks||{})); LS.setItem('hs:guMentions', JSON.stringify(guMentions||{})); LS.setItem('hs:weekCal', JSON.stringify(weekCal||{items:{},hidden:{}})); LS.setItem('hs:remix', JSON.stringify(remixSt||{})); LS.setItem('hs:storyKeep', JSON.stringify(storyKeep||{pins:{},saves:{}})); LS.setItem('hs:flags', JSON.stringify(hsFlags||{})); }
     if(pulled){ try{ b59ClipMigrate(); }catch(e){} }
     syncMeta.stamps=Object.fromEntries(Object.entries(merged).map(([k,x])=>[k,x.t]));
     const snap=syncSnap(); syncMeta.last=Object.fromEntries(Object.keys(merged).map(k=>[k, k in snap?JSON.stringify(snap[k]):'"~"'])); lsSet('hs:syncMeta', syncMeta);
@@ -6635,7 +6813,9 @@ function gvSectionCard(key){ const p=etParts(); const list=allGiveaways().filter
   for(const g of list){ const sp=gvAsSp(g.id);
     box.append(h('div',{className:'gvk'}, (g.icon||'🎟')+' Giveaway'+(g.tagSection==='cross'?' · during Cross Talk with Courtney':'')),
       h('div',{className:'gvh'}, sp.shortLine||sp.read), tickButton(sp, ()=>{ if(state.tab===key) rerender(); }),
-      h('button',{type:'button', style:'margin-top:8px;min-height:48px;width:100%', on:{click:()=>openRead(sp.id)}}, 'Open giveaway')); }
+      h('button',{type:'button', style:'margin-top:8px;min-height:48px;width:100%', on:{click:()=>openRead(sp.id)}}, 'Open giveaway'));
+      try{ if(typeof flagBtn==='function'){ const fid='fl:gv:'+String(g.id||sp.id||''); const row=h('div',{className:'gvkrow', 'data-flag-id':fid}); row.append(flagBtn({id:fid, kind:'giveaway', title:g.name||sp.short||sp.name||'Giveaway', tab:key, jump:{sel:'[data-flag-id="'+fid+'"]', tab:key}})); box.append(row); } }catch(e){}
+    }
   return box; }
 
 function gvWeekdays(g){ const start=ymdOrEmpty(g.start)||etParts().date; const end=ymdOrEmpty(g.end);
@@ -8162,7 +8342,7 @@ function b59CompactRow(){ const row=$('#daysRow'); if(!row) return; const p=etPa
 
 window.__hs = state; // for debugging
 window.__b59={clip:{markPlayed:(id)=>markPlayed(id), cst:(id)=>cst(id), wrapEntries:()=>wrapEntries(), air:()=>air}, weekCal:()=>weekCal, brkPoll:b59BrkPoll, brkPush:b59BrkPush, brkPaint:b59BrkPaint, tease:b59PaintTease, autoBuzz:b59AutoBuzz, caliAdd:b59CaliAdd, caliOpen:b59CaliOpen, Bricks:()=>b59Bricks, Got:()=>b59Got, Log:()=>b59Log, lock:b59Lock, gotIt:b59GotIt, undo:b59Undo, icons:b59Icons, battleTitle:b59BattleTitle, rels:b59Rels, tabsSet:b59TabsSet, boost:b59Boost, newsItems:newsItemsWithKeep, newsData:newsData, cur:()=>b59Cur, ctx:()=>scoresCtx, events:()=>weekEvents, viewProfile, setViewProfile, curNews, loadTicker:()=>loadTicker(true), syncSnap, syncApply, ticker:()=>tickerCur};
-window.__hsTest = { wxKindLabel, wxAdvisoryName, wxShortenHeadline, wxUnwrap, openWxAlert, closeWxAlert, toggleWxAlert, wxAlertRecords, storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), sectionList:()=>sectionList().map(x=>({key:x.key,title:(x.v&&x.v.title)||x.key,category:(x.v&&x.v.category)||''})), isSliderStripOnly, wrapIsDailyAd, wrapIsGiveawayRead, wrapSponsorNames, wrapSponsoredBy, wrapSponsorName, getStoryKeep:()=>storyKeep, allCountdowns, cdStillLive, cdUntilOf, renderCountdowns, wrapEntryIds, wrapSameItem, wrapDedupe, storyClipFor, storyClips, storyTok, clipPrefixStrip, clipSetupOf, clipIntroOf, storyExplicitClipId, storyClipById, storyKeepIdsOf, storyPinRec, storyPinStale, storyPruneStalePins, pinStory, b59SinkGot, openJonasQual, closeJonasQual, jqLoad, jqSave, jqLock, jqUnlock, jqCsvText, jqInSeason, jqGiveaway, saveOwnerDefault, parseShare, migratePersonSaves, deviceRole, savedMap:()=>savedMap, b59Sents, b59Preview, setNow:(iso)=>{ window.__hsNow=iso; if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
+window.__hsTest = { wxKindLabel, wxAdvisoryName, wxShortenHeadline, wxUnwrap, openWxAlert, closeWxAlert, toggleWxAlert, wxAlertRecords, storyKey, storyCanonUrl, storyNormTitle, storyKeepIdLegacy, storyHash, b59Same, b59IsGot, b59GotIt, b59IsBrick, b59Undo, openNews, openScores, openSave, openSync, openSpEditor, openCdEditor, openStEditor, openGvEditor, openGuEditor, openWeekCalEditor, openWeekCalDetail, openCdNews, openDay, openRead, openDrawer, closeDrawer, closeNews, closeRadar, toast, r1Modal, hsOpenWho, hsRememberWho, hsMaybeWho, liveGiveawayIds:()=>liveGiveawayTicks().map(s=>s.id), winList:id=>gvWinList(id), syncKeys:()=>Object.keys(syncSnap()), shiftOk:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvShiftOk(g):false; }, dailyDue:(id)=>{ const g=allGiveaways().find(x=>x.id===id); return g?gvDailyDue(g):false; }, guests:()=>allGuests(), guestMins:(id)=>{ const g=allGuests().find(x=>x.id===id); return g?guestMinsLeft(g):null; }, guestMentioned, markGuestMentioned, mentionBucket, guMentions:()=>guMentions, renderGuests, weekCalCollect, renderWeekCal, weekCalAll, weekCalDates, weekCalFitsShift, openWeekCalDetail, openWeekCalEditor, weekCal:()=>weekCal, wikiSongStory, fbPickStory, fbBlankStory, songById:(id)=>songById(id), songPick, songAirId, songAirTitle, typo1, matchTyped, songSetCustom, songLock, songRemix, songRemixPair, songBack, songBackPair, songSnapshot, songPicks:()=>songPicks, pinStory, saveStory, storyPinned, storySavedRec, storyKeepId, storyKeep:()=>storyKeep, tabPrefRead, tabPrefSave, savedList, newsItemsWithKeep, hsEnsure, hsPlay, hsToggle, hsPlayer, hsIsPlaying, hsTodayUrls, hsAudioMap, rerender, clipAudioUrl, clipLookupDates, clipAltUrls, clipPicks, clipIsCarryover, clipIsSavedHold, clipFirstDate, clipArchiveDate, holdSet, isHeld, heldIncoming, holdBucket, findHoldOrigin, holds:()=>holds, load, showSheet, auditSheetLinks, parseBits, storyArticle, articleRow, linkifyCardTitle, appendArticleAndJokes, renderBitSec, isBitSec, currentShift, currentShiftBucket, profileId, profileBucket, onAirProfile, viewProfile, setViewProfile, autoProfile, morningEnded, morningKeys, nextAutoChange, renderShowTabs, renderMorningFold, renderBuildLabel, bindShowTabScrollFade, expireViewOv, viewedShift, itemFitsNow, activeSponsors:()=>activeSponsors().map(s=>s.id), liveStationReads:()=>liveStationReads().map(r=>r.id), shiftSegments, skDay, bzDay, sxDay, songPool, renderTabs, renderView, renderShiftLabel, openTab:(key)=>{ state.tab=key; if(typeof tabPrefSave==='function') tabPrefSave(key); else try{ localStorage.setItem('hs:tab',key); }catch(e){} renderTabs(); renderView(); }, shiftLabel, readKey, readFreq, isRead, setRead, lnUsedAt, setLiner, airDay, airSet, wrapEntries, wrapText, migrateShiftBuckets, normalizeShiftKey, syncApply, etParts, refreshSponsorUI:(v)=>refreshSponsorUI(v), sectionList:()=>sectionList().map(x=>({key:x.key,title:(x.v&&x.v.title)||x.key,category:(x.v&&x.v.category)||''})), isSliderStripOnly, wrapIsDailyAd, wrapIsGiveawayRead, wrapSponsorNames, wrapSponsoredBy, wrapSponsorName, getStoryKeep:()=>storyKeep, allCountdowns, cdStillLive, cdUntilOf, renderCountdowns, wrapEntryIds, wrapSameItem, wrapDedupe, storyClipFor, storyClips, storyTok, clipPrefixStrip, clipSetupOf, clipIntroOf, storyExplicitClipId, storyClipById, storyKeepIdsOf, storyPinRec, storyPinStale, storyPruneStalePins, pinStory, b59SinkGot, openJonasQual, closeJonasQual, jqLoad, jqSave, jqLock, jqUnlock, jqCsvText, jqInSeason, jqGiveaway, saveOwnerDefault, parseShare, migratePersonSaves, deviceRole, savedMap:()=>savedMap, b59Sents, b59Preview, flagList, flagToggle, flagIs, flagJump, flagPrune, flagBtn, flagShouldShowVibe, renderWorkOn, hsFlags:()=>hsFlags, setNow:(iso)=>{ window.__hsNow=iso; try{ if(typeof flagPrune==='function') flagPrune(); }catch(e){} if(typeof migrateShiftBuckets==='function') migrateShiftBuckets(); if(typeof renderShiftLabel==='function') renderShiftLabel(); if(typeof tick==='function') tick(); if(typeof refreshSponsorUI==='function') refreshSponsorUI(true); if(typeof renderTabs==='function') renderTabs(); if(typeof renderView==='function') renderView(); } };
 })();
 </script>
 </body>
