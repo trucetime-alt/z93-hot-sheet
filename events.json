@@ -11,6 +11,15 @@
       "icon": "🎁",
       "note": "Drive-through toy drop-off with Santa at Fox Grand Traverse, noon to 2 PM",
       "type": "event"
+    },
+    {
+      "id": "interview-turkey-trot-2026-11-25",
+      "date": "2026-11-25",
+      "time": "07:45",
+      "title": "Interview 7:45 — Turkey Trot",
+      "icon": "🎙",
+      "note": "Brian Hagerty (Turkey Trot organizer) and Kat Paye (National Cherry Festival Executive Director) in studio on Morning Rush. Courtney Rehmer booked it. Watch for them arriving around 7:45.",
+      "type": "guest"
     }
   ]
 }
