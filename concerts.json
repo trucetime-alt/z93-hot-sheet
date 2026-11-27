@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-27T05:49:52-05:00",
+ "updated": "2026-11-27T06:04:26-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
  "artistsWatched": 337,
  "sources": {
@@ -73,11 +73,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 197
+   "count": 232
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 194
+   "count": 229
   }
  },
  "shows": [
@@ -118,5 +118,5 @@
    "alsoCovered": 2
   }
  ],
- "tookSec": 28.8
+ "tookSec": 30.0
 }

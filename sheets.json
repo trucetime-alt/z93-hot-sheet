@@ -192,15 +192,18 @@
     "c08-fallon-bargatze-applebees-anniversary.mp3",
     "c09-fallon-bargatze-pepcid.mp3",
     "c10-today-al-roker-butter-man-2019.mp3",
-    "c11-abc-fedex-jet-overruns-runway.mp3"
+    "c11-abc-fedex-jet-overruns-runway.mp3",
+    "c12-today-vicky-nguyen-bf-deals.mp3",
+    "c13-wcco-mall-of-america.mp3",
+    "c14-cbs-chicago-black-november.mp3"
    ],
    "main": true
   }
  ],
  "clipFirst": {
   "file:speed-english.mp3": "2026-11-13",
-  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:doberman-swns.mp3": "2026-11-13",
+  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:speed-soty.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
   "id:2026-11-16-c01": "2026-11-16",
@@ -395,7 +398,13 @@
   "file:c10-today-al-roker-butter-man-2019.mp3": "2026-11-27",
   "id:2026-11-27-c10": "2026-11-27",
   "file:c11-abc-fedex-jet-overruns-runway.mp3": "2026-11-27",
-  "id:2026-11-27-c11": "2026-11-27"
+  "id:2026-11-27-c11": "2026-11-27",
+  "file:c12-today-vicky-nguyen-bf-deals.mp3": "2026-11-27",
+  "id:2026-11-27-c12": "2026-11-27",
+  "file:c13-wcco-mall-of-america.mp3": "2026-11-27",
+  "id:2026-11-27-c13": "2026-11-27",
+  "file:c14-cbs-chicago-black-november.mp3": "2026-11-27",
+  "id:2026-11-27-c14": "2026-11-27"
  },
  "clipHistory": {
   "2026-11-13": {
