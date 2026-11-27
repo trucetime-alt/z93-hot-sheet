@@ -1,0 +1,1677 @@
+{
+ "weather": {
+  "temp": "43°",
+  "cond": "Mostly Clear",
+  "advisory": "No advisories",
+  "traffic": "Roads clear",
+  "high": "48°",
+  "low": "35°",
+  "tonight": "Mostly Cloudy",
+  "updated": "2026-11-27T04:03-05:00",
+  "source": [
+   "https://api.weather.gov/stations/KTVC/observations/latest",
+   "https://api.weather.gov/gridpoints/APX/30,46/forecast",
+   "https://api.weather.gov/alerts/active?zone=MIZ026"
+  ],
+  "advisory_detail": {
+   "active": false
+  },
+  "today": "Mostly Cloudy",
+  "icon": "sunny",
+  "week": [
+   {
+    "day": "Tonight",
+    "date": "2026-11-27",
+    "high": null,
+    "low": 37,
+    "short": "Cloudy",
+    "icon": "cloudy",
+    "pop": 9
+   },
+   {
+    "day": "Fri",
+    "date": "2026-11-27",
+    "high": 48,
+    "low": 35,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 11
+   },
+   {
+    "day": "Sat",
+    "date": "2026-11-28",
+    "high": 46,
+    "low": 37,
+    "short": "Mostly Cloudy then Chance Light Rain",
+    "icon": "rain",
+    "pop": 32
+   },
+   {
+    "day": "Sun",
+    "date": "2026-11-29",
+    "high": 44,
+    "low": 34,
+    "short": "Chance Rain Showers",
+    "icon": "rain",
+    "pop": 37
+   },
+   {
+    "day": "Mon",
+    "date": "2026-11-30",
+    "high": 38,
+    "low": 30,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 12
+   },
+   {
+    "day": "Tue",
+    "date": "2026-12-01",
+    "high": 43,
+    "low": 36,
+    "short": "Partly Sunny",
+    "icon": "partly",
+    "pop": 5
+   },
+   {
+    "day": "Wed",
+    "date": "2026-12-02",
+    "high": 49,
+    "low": 40,
+    "short": "Mostly Cloudy",
+    "icon": "cloudy",
+    "pop": 5
+   }
+  ],
+  "hourly": [
+   {
+    "t": "4 AM",
+    "temp": 37
+   },
+   {
+    "t": "5 AM",
+    "temp": 38
+   },
+   {
+    "t": "6 AM",
+    "temp": 38
+   },
+   {
+    "t": "7 AM",
+    "temp": 38
+   },
+   {
+    "t": "8 AM",
+    "temp": 39
+   },
+   {
+    "t": "9 AM",
+    "temp": 40
+   },
+   {
+    "t": "10 AM",
+    "temp": 42
+   },
+   {
+    "t": "11 AM",
+    "temp": 43
+   },
+   {
+    "t": "12 PM",
+    "temp": 44
+   },
+   {
+    "t": "1 PM",
+    "temp": 46
+   },
+   {
+    "t": "2 PM",
+    "temp": 46
+   },
+   {
+    "t": "3 PM",
+    "temp": 46
+   },
+   {
+    "t": "4 PM",
+    "temp": 47
+   },
+   {
+    "t": "5 PM",
+    "temp": 46
+   },
+   {
+    "t": "6 PM",
+    "temp": 44
+   },
+   {
+    "t": "7 PM",
+    "temp": 44
+   },
+   {
+    "t": "8 PM",
+    "temp": 41
+   },
+   {
+    "t": "9 PM",
+    "temp": 40
+   },
+   {
+    "t": "10 PM",
+    "temp": 39
+   }
+  ],
+  "wind": "N 10 mph, gusts ~18",
+  "waves": "Bay 2-3 ft · Lake MI 2-4 ft (N 10-15 kt) · Small Craft Advisory"
+ },
+ "promo-dance-party": {
+  "id": "promo-dance-party",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: 90s, 2K & TODAY DANCE PARTY (THIS SATURDAY)<br>📣 STATION READ (once per shift): \"Join AJ for the 90s, 2K and Today Dance Party at The Pub and North Bar every Saturday night! It's a double shot of dance with bangers from the 90s and 2000s at The Pub and today's hits at North Bar! Two bars, two vibes! One amazing Saturday night! It's Traverse City's hottest dance party, every Saturday night! Don't miss it!\"<br>🗓️ THIS SATURDAY PUSH: It's tomorrow night, Sat Nov 28, downtown TC. Use the station read; add only 'this Saturday' and 'tomorrow night.'<br>🔁 LINER (optional): \"The songs you grew up with... and the songs you're obsessed with RIGHT NOW! Every Saturday at The Pub and North Bar!\"<br>🔁 LINER (optional): \"One night. Two bars. Zero excuses to stay home! It's the 90s, 2k & Today Dance Party!\"<br>🔁 LINER (optional): \"The Pub brings the nostalgia! North Bar brings the NOW! Together, they're bringing the PARTY!\"",
+  "notes": "Station read verbatim from station-hot-sheet-2026-11-23.txt (kill 12/31). Liners from the deck (promos/dance-party.md), rotated (Tue: Two soundtracks/No Diggity/Schooled; Wed: Two bars two vibes, TRL to TikTok; today: grew up with, zero excuses, nostalgia/NOW). Friday 'this Saturday' push per addenda. promos/2026-11-28-downtown-dance-party.md has a longer read with 'one cover gets you into both' and DJ Vi/set names, but the Nov 24 addenda says not to add cover, DJ names or set themes unless Truce confirms, so it's left off. Kill 12/31.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-promo-dance-party-01",
+    "title": "PROMO READ: 90s, 2K & TODAY DANCE PARTY (THIS SATURDAY)",
+    "recap": "We plugged the 90s, 2K & Today Dance Party at The Pub and North Bar, this Saturday night.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: 90s, 2K & TODAY DANCE PARTY (THIS SATURDAY)<br>📣 STATION READ (once per shift): \"Join AJ for the 90s, 2K and Today Dance Party at The Pub and North Bar every Saturday night! It's a double shot of dance with bangers from the 90s and 2000s at The Pub and today's hits at North Bar! Two bars, two vibes! One amazing Saturday night! It's Traverse City's hottest dance party, every Saturday night! Don't miss it!\"<br>🗓️ THIS SATURDAY PUSH: It's tomorrow night, Sat Nov 28, downtown TC. Use the station read; add only 'this Saturday' and 'tomorrow night.'<br>🔁 LINER (optional): \"The songs you grew up with... and the songs you're obsessed with RIGHT NOW! Every Saturday at The Pub and North Bar!\"<br>🔁 LINER (optional): \"One night. Two bars. Zero excuses to stay home! It's the 90s, 2k & Today Dance Party!\"<br>🔁 LINER (optional): \"The Pub brings the nostalgia! North Bar brings the NOW! Together, they're bringing the PARTY!\"",
+    "description": "📣 STATION READ (once per shift): \"Join AJ for the 90s, 2K and Today Dance Party at The Pub and North Bar every Saturday night! It's a double shot of dance with bangers from the 90s and 2000s at The Pub and today's hits at North Bar! Two bars, two vibes! One amazing Saturday night! It's Traverse City's hottest dance party, every Saturday night! Don't miss it!\"",
+    "summary": "We plugged the 90s, 2K & Today Dance Party at The Pub and North Bar, this Saturday night.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "9b698edb039b",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "promo-secret-santa": {
+  "id": "promo-secret-santa",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: Z93 SECRET SANTA<br>📣 STATION READ (once per shift): \"Be a Secret Santa to somebody this Christmas by signing them up to win some amazing gifts from our merchant partners. Over a thousand dollars in prizes are up for grabs. Head over to Z93 Hits dot com and nominate somebody today!\"",
+  "notes": "Station read from station-hot-sheet-2026-11-23.txt (kill 12/10). Paraphrase OK; no extra prize details. Kill 12/10.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-promo-secret-santa-01",
+    "title": "PROMO READ: Z93 SECRET SANTA",
+    "recap": "We asked listeners to nominate someone for Z93 Secret Santa at z93hits.com.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: Z93 SECRET SANTA<br>📣 STATION READ (once per shift): \"Be a Secret Santa to somebody this Christmas by signing them up to win some amazing gifts from our merchant partners. Over a thousand dollars in prizes are up for grabs. Head over to Z93 Hits dot com and nominate somebody today!\"",
+    "description": "📣 STATION READ (once per shift): \"Be a Secret Santa to somebody this Christmas by signing them up to win some amazing gifts from our merchant partners. Over a thousand dollars in prizes are up for grabs. Head over to Z93 Hits dot com and nominate somebody today!\"",
+    "summary": "We asked listeners to nominate someone for Z93 Secret Santa at z93hits.com.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "8623c3c96c41",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "promo-teacher": {
+  "id": "promo-teacher",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: Z93 TEACHER OF THE MONTH<br>📣 STATION READ (once per shift): \"Know a teacher who deserves recognition? Nominate them for the Z93 Teacher of the Month award at Z93 Hits dot com. Each month we'll choose a winner, highlight them on the air and award them with a prize package. We'll announce a winner on the third Thursday of each month.\"",
+  "notes": "Station read from station-hot-sheet-2026-11-23.txt (kill TBD). Kill TBD.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-promo-teacher-01",
+    "title": "PROMO READ: Z93 TEACHER OF THE MONTH",
+    "recap": "We asked for Z93 Teacher of the Month nominations at z93hits.com.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: Z93 TEACHER OF THE MONTH<br>📣 STATION READ (once per shift): \"Know a teacher who deserves recognition? Nominate them for the Z93 Teacher of the Month award at Z93 Hits dot com. Each month we'll choose a winner, highlight them on the air and award them with a prize package. We'll announce a winner on the third Thursday of each month.\"",
+    "description": "📣 STATION READ (once per shift): \"Know a teacher who deserves recognition? Nominate them for the Z93 Teacher of the Month award at Z93 Hits dot com. Each month we'll choose a winner, highlight them on the air and award them with a prize package. We'll announce a winner on the third Thursday of each month.\"",
+    "summary": "We asked for Z93 Teacher of the Month nominations at z93hits.com.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "c8b986b91b6d",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "promo-kurtz": {
+  "id": "promo-kurtz",
+  "title": "Promo Read",
+  "category": "Promo",
+  "type": "text",
+  "content": "PROMO READ: KURTZ CAR STEREO 93-MINUTE PLAYLIST<br>📣 STATION READ (once per shift): \"Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20, 2:20 and 6:20 every weekday.\"",
+  "notes": "Station read from station-hot-sheet-2026-11-23.txt (kill 12/31). Kill 12/31.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-promo-kurtz-01",
+    "title": "PROMO READ: KURTZ CAR STEREO 93-MINUTE PLAYLIST",
+    "recap": "We plugged the Kurtz Car Stereo 93-minute commercial-free playlist at 10:20, 2:20 and 6:20.",
+    "article_url": "",
+    "article_title": "",
+    "jokes": [],
+    "body": "PROMO READ: KURTZ CAR STEREO 93-MINUTE PLAYLIST<br>📣 STATION READ (once per shift): \"Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20, 2:20 and 6:20 every weekday.\"",
+    "description": "📣 STATION READ (once per shift): \"Tune in and turn it up with Kurtz Car Stereo and Z93's 93-minute commercial-free playlist at 10:20, 2:20 and 6:20 every weekday.\"",
+    "summary": "We plugged the Kurtz Car Stereo 93-minute commercial-free playlist at 10:20, 2:20 and 6:20.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "owner": "truce",
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "e6d024545001",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "vibe": {
+  "id": "vibe",
+  "title": "Vibe Check",
+  "category": "Daily",
+  "type": "text",
+  "content": "SLOW JAM: BRIAN MCKNIGHT, \"BACK AT ONE\" (1999)<br>• STAT: Released Aug. 9, 1999, as the lead single from his album of the same name, it reached No. 2 on the Billboard Hot 100 and went top 10 in Canada and New Zealand.<br>• STORY: The whole song counts up, one, two, three, four, five, and then he's back at one. It's the ultimate 'start over' slow jam.<br>• WHY TODAY: Day after Thanksgiving. Leftovers in the fridge, the tree is coming out, and we're all back at one.<br>➜ TAKE: Every 1999 wedding DJ played this right after the cake. Every single one.<br>➜ BAIT: Text 231-929-4487: what's the song that was playing at your first dance, prom or wedding?<br>😂 JOKES: One, you're like a dream come true. Two, you brought the leftovers. Three, they're in my fridge now. / Brian McKnight counted to five in this song. Most of us lost count of pie slices at three.<br><br>🚗 DRIVE TEASE: Mild for late November. About 38 at 6 AM, 39 by 8, with a north wind around 10 mph. Mostly cloudy, high near 48. Dry roads.<br><br>📅 THIS DAY: THE FIRST MACY'S PARADE, NOV. 27, 1924<br>• It started as the Macy's Christmas Parade, on Nov. 27, 1924, to push holiday shopping at the new flagship store on 34th Street.<br>• So 102 years ago today the very first one marched, and this year's 100th edition got bumped to tomorrow by the storm. It began as a shopping promotion, so a Saturday after Black Friday is honestly on brand.<br>➜ TAKE: The parade was invented to sell stuff. Moving it to the weekend after Black Friday is the most Macy's move ever.<br>➜ BAIT: Text 231-929-4487: what's the first parade you remember going to?<br>😂 JOKES: The 1924 parade had Santa on a sleigh. The 2026 parade has a 60 mph wind delay and a Snoopy in a warehouse in Jersey. / A hundred and two years ago today. And it's still the only place you can see a 50-foot Pikachu without a ticket.<br><br>💡 FUN FACT: PHILLY COPS NAMED BLACK FRIDAY, AND IT WASN'T A COMPLIMENT<br>• Police in Philadelphia used 'Black Friday' to describe the crowds and traffic jams that kicked off Christmas shopping.<br>• In 1961, Philadelphia merchants hired a PR expert who tried to rebrand it 'Big Friday.' Nobody went for it.<br>➜ TAKE: Somebody tried to rename Black Friday to 'Big Friday' and the whole country said 'no thanks.' Marketing has never recovered.<br>➜ BAIT: Text 231-929-4487: rename Black Friday. What should it be called?<br>😂 JOKES: 'Big Friday' sounds like a casual-dress day at a bank. / Black Friday was named by traffic cops. That's why it comes with a headache.<br><br>🎉 NATIONAL DAYS (Fri Nov 27, verified on National Day Calendar and Days of the Year): Black Friday · Buy Nothing Day · National Day of Listening · Native American Heritage Day · National Bavarian Cream Pie Day · National Craft Jerky Day · National Flossing Day · Maize Day · You're Welcomegiving Day · Fur-Free Friday · Pins and Needles Day · National Illustration Day · Sinkie Day · Turtle Adoption Day<br><br>GOOD MORNING UP NORTH: Mostly cloudy today with a high near 48, easing back to about 46 this afternoon, and a north wind around 10. Tonight's low is about 35. Saturday is mostly cloudy, high near 46, with a 30 percent chance of rain in the afternoon.<br><br>SCHOOLS: No closings or delays listed this morning.<br><br>ROADS: No verified problems. Clear for Black Friday shopping.<br><br>🌊 WIND & WAVES: Small Craft Advisory on Grand Traverse Bay and the Lake Michigan shore through this evening. North wind 10-15 knots, Bay waves 2-3 ft, Lake Michigan 2-4 ft.<br><br>🍂 TOWN BUZZ: City of TC offices are closed today. Final leaf pickup is the week of Nov 30, so leaves go to the curb by Sunday.<br><br>ENERGY: Black Friday. Leftovers in the fridge, doorbusters downtown, Mariah is officially allowed, and the Macy's parade is tomorrow morning.<br><br>🎉 NATIONAL DAYS: BIT MATERIAL<br>• BLACK FRIDAY: Bit: the Jingle All the Way 'Turbo Man' store scene (it's in today's opener, c00). Line: 'Turbo Man's only the hottest selling Christmas toy ever!' Also the 1961 'Big Friday' rebrand flop (Fun Fact).<br>• BUY NOTHING DAY: Bit: Team Doorbuster vs. Team Buy Nothing call-in (Conversation Bits). Line: 'I'm celebrating Buy Nothing Day by filling my online cart and not checking out.'<br>• NATIONAL DAY OF LISTENING: Bit: ask the best story from the Thanksgiving table; MH Minute ties in (phone in the other room). Classic line: 'Are you listening to me?' 'Huh?'<br>• NATIVE AMERICAN HERITAGE DAY: Straight mention, no jokes. Local tie from this week's news: St. Ignace birch bark canoe maker Ron Paquin's Joyce Award (UpNorthLive Nov 25).<br>• NATIONAL FLOSSING DAY: Bit: the day after Thanksgiving, everybody's flossing out turkey. Callback: the Floss dance (Backpack Kid, then the Fortnite emote). Ask who in the house can still do it.<br>• NATIONAL BAVARIAN CREAM PIE DAY: Bit: one more pie day, the day after the pie holiday. 'My doctor says I'm on a pie-free diet. Free pie, I eat it.'<br>• NATIONAL CRAFT JERKY DAY: Bit: 'Black Friday survival kit: jerky, a phone charger, and a parking spot.'<br>• MAIZE DAY: Bit: tie to the corn on the table yesterday; Michigan maize-and-blue goes to Columbus tomorrow.<br>• YOU'RE WELCOMEGIVING DAY: Bit: the day you get to say 'you're welcome' for everything you cooked. Callback: Maui's 'You're Welcome' from Moana (2016).<br>• ALSO LISTED: Fur-Free Friday, Pins and Needles Day, National Illustration Day, Sinkie Day, Turtle Adoption Day (Days of the Year). Mention only.<br><br>👀 LOOK-AHEAD: Sat Nov 28: Small Business Saturday, National French Toast Day, Red Planet Day. Sun Nov 29: National Square Dancing Day, Electronic Greetings Day, National Lemon Cream Pie Day, Throw Out Your Leftovers Day. Mon Nov 30: Cyber Monday, National Mason Jar Day, National Mousse Day, National Personal Space Day, Blue Beanie Day. (Days of the Year date pages, checked 3:49 AM ET.)",
+  "notes": "SLOW JAM: BRIAN MCKNIGHT, \"BACK AT ONE\" (1999): https://en.wikipedia.org/wiki/Back_at_One_(song) Wikipedia (release Aug 9 1999; Hot 100 No. 2). Lyrics clean.<br>THIS DAY: THE FIRST MACY'S PARADE, NOV. 27, 1924: https://en.wikipedia.org/wiki/Macy%27s_Thanksgiving_Day_Parade Wikipedia: first held 1924 as Macy's Christmas Parade; photo caption dated Nov 27, 1924; promote holiday shopping at 34th St flagship.<br>FUN FACT: PHILLY COPS NAMED BLACK FRIDAY, AND IT WASN'T A COMPLIMENT: https://en.wikipedia.org/wiki/Black_Friday_(shopping) Wikipedia, Black Friday (shopping), citing period sources.<br>Weather: NWS Gaylord point forecast + hourly (44.7631,-85.6206), forecast updated 2:41 AM ET Fri; KTVC obs 3:40 AM ET 6 C (43 F), mostly clear, wind about 12 mph gusting 18. Marine: NWS Gaylord nearshore 1:53 AM ET: SMALL CRAFT ADVISORY through this evening, LMZ323 GT Bay N 10-15 kt 2-3 ft, LMZ344 N 10-15 kt 2-4 ft. NWS alerts API: no active land alerts. Roads: city pulse 11-27 (GT County Road Commission): Logan's Landing sewer-work closures lifted for the holiday weekend, resume Mon Nov 30; save next week's S. Airport Rd work for Monday. National days: National Day Calendar (WebFetch) + Days of the Year date pages, checked 3:49 AM ET. Schools: 9&10 closings (Breaker city pulse, 3:38 AM ET): no active closings. Many districts are already on Thanksgiving break; don't name any without checking.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-27-vibe-01",
+    "title": "SLOW JAM",
+    "recap": "Our slow jam was Brian McKnight's 'Back at One,' No. 2 on the Hot 100 in 1999.",
+    "article_url": "https://en.wikipedia.org/wiki/Back_at_One_(song)",
+    "article_title": "Back at One (song) (Wikipedia, citing Billboard)",
+    "jokes": [
+     "One, you're like a dream come true. Two, you brought the leftovers. Three, they're in my fridge now.",
+     "Brian McKnight counted to five in this song. Most of us lost count of pie slices at three."
+    ],
+    "body": "SLOW JAM: BRIAN MCKNIGHT, \"BACK AT ONE\" (1999)<br>• STAT: Released Aug. 9, 1999, as the lead single from his album of the same name, it reached No. 2 on the Billboard Hot 100 and went top 10 in Canada and New Zealand.<br>• STORY: The whole song counts up, one, two, three, four, five, and then he's back at one. It's the ultimate 'start over' slow jam.<br>• WHY TODAY: Day after Thanksgiving. Leftovers in the fridge, the tree is coming out, and we're all back at one.<br>➜ TAKE: Every 1999 wedding DJ played this right after the cake. Every single one.<br>➜ BAIT: Text 231-929-4487: what's the song that was playing at your first dance, prom or wedding?<br>😂 JOKES: One, you're like a dream come true. Two, you brought the leftovers. Three, they're in my fridge now. / Brian McKnight counted to five in this song. Most of us lost count of pie slices at three.",
+    "description": "Released Aug. 9, 1999, as the lead single from his album of the same name, it reached No. 2 on the Billboard Hot 100 and went top 10 in Canada and New Zealand. The whole song counts up, one, two, three, four, five, and then he's back at one. It's the ultimate 'start over' slow jam. Day after Thanksgiving. Leftovers in the fridge, the tree is coming out, and we're all back at one.",
+    "summary": "Released Aug. 9, 1999, as the lead single from his album of the same name, it reached No. 2 on the Billboard Hot 100 and went top 10 in Canada and New Zealand. The whole song counts up, one, two, three, four, five, and then he's back at one. It's the ultimate 'start over' slow jam. Day after Thanksgiving. Leftovers in the fridge, the tree is coming out, and we're all back at one.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-vibe-02",
+    "title": "DRIVE TEASE",
+    "recap": "We teased a mostly cloudy Black Friday with a high near 48.",
+    "article_url": "https://forecast.weather.gov/MapClick.php?lat=44.7631&lon=-85.6206",
+    "article_title": "NWS Gaylord forecast, Traverse City",
+    "jokes": [],
+    "body": "🚗 DRIVE TEASE: Mild for late November. About 38 at 6 AM, 39 by 8, with a north wind around 10 mph. Mostly cloudy, high near 48. Dry roads.",
+    "description": "Mild for late November. About 38 at 6 AM, 39 by 8, with a north wind around 10 mph. Mostly cloudy, high near 48. Dry roads.",
+    "summary": "Mild for late November. About 38 at 6 AM, 39 by 8, with a north wind around 10 mph. Mostly cloudy, high near 48. Dry roads.",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-vibe-03",
+    "title": "THIS DAY",
+    "recap": "On This Day we noted the first Macy's parade marched Nov. 27, 1924, as a Christmas shopping promotion.",
+    "article_url": "https://en.wikipedia.org/wiki/Macy%27s_Thanksgiving_Day_Parade",
+    "article_title": "Macy's Thanksgiving Day Parade (Wikipedia)",
+    "jokes": [
+     "The 1924 parade had Santa on a sleigh. The 2026 parade has a 60 mph wind delay and a Snoopy in a warehouse in Jersey.",
+     "A hundred and two years ago today. And it's still the only place you can see a 50-foot Pikachu without a ticket."
+    ],
+    "body": "THIS DAY: THE FIRST MACY'S PARADE, NOV. 27, 1924<br>• It started as the Macy's Christmas Parade, on Nov. 27, 1924, to push holiday shopping at the new flagship store on 34th Street.<br>• So 102 years ago today the very first one marched, and this year's 100th edition got bumped to tomorrow by the storm. It began as a shopping promotion, so a Saturday after Black Friday is honestly on brand.<br>➜ TAKE: The parade was invented to sell stuff. Moving it to the weekend after Black Friday is the most Macy's move ever.<br>➜ BAIT: Text 231-929-4487: what's the first parade you remember going to?<br>😂 JOKES: The 1924 parade had Santa on a sleigh. The 2026 parade has a 60 mph wind delay and a Snoopy in a warehouse in Jersey. / A hundred and two years ago today. And it's still the only place you can see a 50-foot Pikachu without a ticket.",
+    "description": "It started as the Macy's Christmas Parade, on Nov. 27, 1924, to push holiday shopping at the new flagship store on 34th Street. So 102 years ago today the very first one marched, and this year's 100th edition got bumped to tomorrow by the storm. It began as a shopping promotion, so a Saturday after Black Friday is honestly on brand.",
+    "summary": "It started as the Macy's Christmas Parade, on Nov. 27, 1924, to push holiday shopping at the new flagship store on 34th Street. So 102 years ago today the very first one marched, and this year's 100th edition got bumped to tomorrow by the storm. It began as a shopping promotion, so a Saturday after Black Friday is honestly on brand.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-vibe-04",
+    "title": "FUN FACT",
+    "recap": "Our fun fact: Philadelphia police coined 'Black Friday,' and a 1961 'Big Friday' rebrand flopped.",
+    "article_url": "https://en.wikipedia.org/wiki/Black_Friday_(shopping)",
+    "article_title": "Black Friday (shopping) (Wikipedia)",
+    "jokes": [
+     "'Big Friday' sounds like a casual-dress day at a bank.",
+     "Black Friday was named by traffic cops. That's why it comes with a headache."
+    ],
+    "body": "FUN FACT: PHILLY COPS NAMED BLACK FRIDAY, AND IT WASN'T A COMPLIMENT<br>• Police in Philadelphia used 'Black Friday' to describe the crowds and traffic jams that kicked off Christmas shopping.<br>• In 1961, Philadelphia merchants hired a PR expert who tried to rebrand it 'Big Friday.' Nobody went for it.<br>➜ TAKE: Somebody tried to rename Black Friday to 'Big Friday' and the whole country said 'no thanks.' Marketing has never recovered.<br>➜ BAIT: Text 231-929-4487: rename Black Friday. What should it be called?<br>😂 JOKES: 'Big Friday' sounds like a casual-dress day at a bank. / Black Friday was named by traffic cops. That's why it comes with a headache.",
+    "description": "Police in Philadelphia used 'Black Friday' to describe the crowds and traffic jams that kicked off Christmas shopping. In 1961, Philadelphia merchants hired a PR expert who tried to rebrand it 'Big Friday.' Nobody went for it.",
+    "summary": "Police in Philadelphia used 'Black Friday' to describe the crowds and traffic jams that kicked off Christmas shopping. In 1961, Philadelphia merchants hired a PR expert who tried to rebrand it 'Big Friday.' Nobody went for it.",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-vibe-05",
+    "title": "NATIONAL DAYS",
+    "recap": "We ran through today's national days: Black Friday, Buy Nothing Day, National Day of Listening, Native American Heritage Day and more.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar)",
+    "jokes": [],
+    "body": "🎉 NATIONAL DAYS (Fri Nov 27, verified on National Day Calendar and Days of the Year): Black Friday · Buy Nothing Day · National Day of Listening · Native American Heritage Day · National Bavarian Cream Pie Day · National Craft Jerky Day · National Flossing Day · Maize Day · You're Welcomegiving Day · Fur-Free Friday · Pins and Needles Day · National Illustration Day · Sinkie Day · Turtle Adoption Day",
+    "description": "We ran through today's national days: Black Friday, Buy Nothing Day, National Day of Listening, Native American Heritage Day and more.",
+    "summary": "We ran through today's national days: Black Friday, Buy Nothing Day, National Day of Listening, Native American Heritage Day and more.",
+    "rank": 5,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Back_at_One_(song)",
+  "article_title": "Back at One (song) (Wikipedia, citing Billboard)",
+  "jokes": [
+   "One, you're like a dream come true. Two, you brought the leftovers. Three, they're in my fridge now.",
+   "Brian McKnight counted to five in this song. Most of us lost count of pie slices at three."
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "c7d3b142954f",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "mood": {
+  "id": "mood",
+  "title": "Mood Boost",
+  "category": "6AM",
+  "type": "text",
+  "content": "MOOD BOOST: THE CURE, \"FRIDAY I'M IN LOVE\" (1992)<br>• STAT: Released in May 1992 as the second single from Wish, it reached No. 6 in the UK and No. 18 on the Billboard Hot 100, and it topped Billboard's Modern Rock Tracks chart.<br>• STORY: The Tim Pope-directed video won European Viewer's Choice at the 1992 MTV Video Music Awards.<br>• WHY TODAY: It's Friday, it's a holiday Friday, and for a lot of us it's a day off. Monday you can fall apart. Today, we're in love.<br>➜ TAKE: Robert Smith wrote the happiest song of his career about a day of the week. Same, Robert.<br>➜ BAIT: Text 231-929-4487: what's the best part of your day-after-Thanksgiving Friday?<br>😂 JOKES: 'Monday you can fall apart.' That's my whole plan for the Lions loss. / The Cure made a happy song once and everyone still dressed in black for it. That's commitment.",
+  "notes": "MOOD BOOST: THE CURE, \"FRIDAY I'M IN LOVE\" (1992): https://en.wikipedia.org/wiki/Friday_I%27m_in_Love Wikipedia (May 1992; UK 6, US 18, Modern Rock No. 1; VMA European Viewer's Choice). Lyrics clean.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-27-mood-01",
+    "title": "MOOD BOOST: THE CURE, \"FRIDAY I'M IN LOVE\" (1992)",
+    "recap": "Our Mood Boost was The Cure's 'Friday I'm in Love,' No. 18 in the U.S. and No. 6 in the UK.",
+    "article_url": "https://en.wikipedia.org/wiki/Friday_I%27m_in_Love",
+    "article_title": "Friday I'm in Love (Wikipedia)",
+    "jokes": [
+     "'Monday you can fall apart.' That's my whole plan for the Lions loss.",
+     "The Cure made a happy song once and everyone still dressed in black for it. That's commitment."
+    ],
+    "body": "MOOD BOOST: THE CURE, \"FRIDAY I'M IN LOVE\" (1992)<br>• STAT: Released in May 1992 as the second single from Wish, it reached No. 6 in the UK and No. 18 on the Billboard Hot 100, and it topped Billboard's Modern Rock Tracks chart.<br>• STORY: The Tim Pope-directed video won European Viewer's Choice at the 1992 MTV Video Music Awards.<br>• WHY TODAY: It's Friday, it's a holiday Friday, and for a lot of us it's a day off. Monday you can fall apart. Today, we're in love.<br>➜ TAKE: Robert Smith wrote the happiest song of his career about a day of the week. Same, Robert.<br>➜ BAIT: Text 231-929-4487: what's the best part of your day-after-Thanksgiving Friday?<br>😂 JOKES: 'Monday you can fall apart.' That's my whole plan for the Lions loss. / The Cure made a happy song once and everyone still dressed in black for it. That's commitment.",
+    "description": "Released in May 1992 as the second single from Wish, it reached No. 6 in the UK and No. 18 on the Billboard Hot 100, and it topped Billboard's Modern Rock Tracks chart. The Tim Pope-directed video won European Viewer's Choice at the 1992 MTV Video Music Awards. It's Friday, it's a holiday Friday, and for a lot of us it's a day off. Monday you can fall apart. Today, we're in love.",
+    "summary": "Released in May 1992 as the second single from Wish, it reached No. 6 in the UK and No. 18 on the Billboard Hot 100, and it topped Billboard's Modern Rock Tracks chart. The Tim Pope-directed video won European Viewer's Choice at the 1992 MTV Video Music Awards. It's Friday, it's a holiday Friday, and for a lot of us it's a day off. Monday you can fall apart. Today, we're in love.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Friday_I%27m_in_Love",
+  "article_title": "Friday I'm in Love (Wikipedia)",
+  "jokes": [
+   "'Monday you can fall apart.' That's my whole plan for the Lions loss.",
+   "The Cure made a happy song once and everyone still dressed in black for it. That's commitment."
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "e3cf243e87ee",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "buzz": {
+  "id": "buzz",
+  "title": "Daily Buzz",
+  "category": "7AM",
+  "type": "text",
+  "content": "━━ LOCAL ━━<br><br>⭐ KALKASKA DANCERS STUCK IN NEW YORK AFTER THE MACY'S PARADE GOT PUSHED<br>• SUMMARY: Fifteen dancers from Kalkaska's Fitch Dance Company flew to New York City to perform in the 100th Macy's Thanksgiving Day Parade. Then Macy's pushed the parade from Thursday to Saturday because of the storm, the first postponement in the parade's 100 years. The group, about 60 people with families and coaches, is now scrambling over hotels, food and flights.<br>• THE CATCH: Director Candace Musselman says they found out from an NBC post on social media and honestly thought it was a hoax. The performance company's hotel deal only covers the dancers, so parents have to find their own rooms over a holiday weekend in Manhattan.<br>• WHO: Fitch Dance Company, Kalkaska, director Candace Musselman. WHAT: Parade moved to Sat Nov 28, 8:30 AM on NBC. WHERE: New York City. WHY IT MATTERS: Months of practice and fundraising, and some families may have to head home before the kids get to march.<br>➜ TAKE: Our kids trained all year for the biggest parade on Earth, and the weather said 'how about Saturday.' Northern Michigan families know a storm delay when they see one. Let's get these dancers some love.<br>➜ BAIT: Text 231-929-4487: send a shout-out to the Fitch Dance Company kids stuck in New York. We'll read them on air.<br>😂 JOKES: Kalkaska to Times Square is a big jump. Kalkaska to Times Square with a two-day weather delay is just a really expensive layover. / Up here we'd call 60 mph gusts 'a Tuesday on the bay.' New York called off the whole parade.<br><br>TC TURKEY TROT SETS AN ALL-TIME RECORD: NEARLY 3,000<br>• Nearly 3,000 runners and walkers turned out downtown Thanksgiving morning for the 19th annual Traverse City Turkey Trot, the biggest crowd it has ever had. There was a 5-K and the five-mile race called the Five Mile Flyer.<br>• Traverse City Central senior Evan Fox won the five-miler, per 9&10. People came from as far as Washington, D.C., and plenty pulled kids in wagons. MC Kat Paye called the trotters 'memory makers.'<br>➜ TAKE: Three thousand people ran five miles so they could eat 5,000 calories. That's not a race, that's a down payment.<br>➜ BAIT: Text 231-929-4487: did you trot yesterday? Give us your time, your costume, or your excuse.<br>😂 JOKES: Evan Fox won the five-miler. Most of us were still deciding if the couch counted as stretching. / Record turnout for the Turkey Trot. The turkeys did not attend. Smart birds.<br><br>BLACK FRIDAY IN DOWNTOWN TC: DOORBUSTERS, FREE WRAPPING, SHOP-SMALL SATURDAY<br>• Downtown Traverse City's Black Friday and Small Business Saturday run today and tomorrow, with participating shops and restaurants offering deals, samples and a free gift-wrapping station.<br>• A few from the DTCA list: Glik's first 50 customers get a coupon for 50% off one item priced $100 or less, and one downtown shop has $3.50 cherry stocking-stuffer snack packs, Friday only.<br>• Owners at Lakes and Grapes and Serendipity told 9&10 this is one of their biggest weekends, and Small Business Saturday is tomorrow, Nov 28.<br>➜ TAKE: Big-box stores open at 5 AM with a stampede. Downtown TC opens with gift wrap and cherry samples. I know which line I'm in.<br>➜ BAIT: Text 231-929-4487: are you out shopping today, or are you a Black Friday couch shopper?<br>😂 JOKES: Glik's has a doorbuster for the first 50 people. Front Street is about to look like a Turbo Man aisle in 1996. / Free gift wrapping downtown. Finally, presents that don't look like they lost a fight with the tape dispenser.<br><br>THE IRONTON FERRY WRAPS UP YEAR 100<br>• The Ironton Ferry on Lake Charlevoix made its last run of the season Wednesday night, closing out its 100th year in service.<br>• Cars drive right onto it for a roughly 700-foot, five-minute crossing between Ironton and Boyne City that saves 15 to 25 minutes of driving.<br>• Director Joe Kroll says a big project with EGLE and MDOT to replace and modernize the ramps is coming soon.<br>➜ TAKE: A hundred years of a five-minute boat ride. That ferry has outlasted every shortcut your uncle swears by.<br>➜ BAIT: Text 231-929-4487: ever taken the Ironton Ferry? What's the best shortcut Up North?<br>😂 JOKES: Five minutes, 700 feet, saves you 20 minutes. That's the best return on investment in Charlevoix County. / The ferry turned 100 and it's getting new ramps. When I turn 100 I'm asking for new knees.<br><br>600 THANKSGIVING MEALS FROM COMMUNITY MEALS TC<br>• More than 50 volunteers with Community Meals Traverse City spent their Thanksgiving cooking and delivering. They prepared nearly 300 meals for delivery and another 300 for a dine-in dinner at Trinity Lutheran Church.<br>• The group has served people since 1989. Volunteer Anna Modzel said she started helping with her dad years ago, and keeps doing it for him since he passed in 2022.<br>➜ TAKE: Six hundred plates, fifty-plus volunteers, one holiday. That's Traverse City at its best.<br>➜ BAIT: Text 231-929-4487: give a shout-out to somebody who worked or volunteered on Thanksgiving.<br>😂 JOKES: Three hundred deliveries on Thanksgiving. Those drivers saw more turkey than the turkey did. / Fifty volunteers in one kitchen, and nobody fought over the oven. That's the real Thanksgiving miracle.<br><br>━━ NATIONAL ━━<br><br>THE MACY'S PARADE GOT POSTPONED FOR THE FIRST TIME IN 100 YEARS<br>• Macy's moved its 100th Thanksgiving Day Parade from Thursday to Saturday because of the East Coast storm. NBC News reports forecasts of sustained winds of 30 to 40 mph in New York with gusts up to 65.<br>• It now steps off Saturday, Nov. 28 at 8:30 AM ET on NBC and Peacock, with Telemundo in Spanish. NBC aired a replay of last year's parade on Thursday instead.<br>• The balloons had already been inflated Wednesday, then were deflated and trucked back to New Jersey to be re-inflated in time for Saturday.<br>➜ TAKE: A hundred years of parades and this is the first rain check. Snoopy finally gets a long weekend.<br>➜ BAIT: Text 231-929-4487: did you watch the rerun yesterday and not even notice?<br>😂 JOKES: They showed last year's parade on Thursday. Honestly, half of America didn't notice. Same Snoopy. / Sixty mile an hour gusts and a 70-foot balloon. That's not a parade, that's a Wizard of Oz remake.<br><br>━━ BITS ━━<br><br>BLACK FRIDAY VS. BUY NOTHING DAY: IT'S BOTH TODAY<br>• National Day Calendar lists both Black Friday and Buy Nothing Day for today, Nov. 27. Days of the Year says Black Friday has been seen as the start of the Christmas shopping season for decades.<br>• So half the country is in a doorbuster line, and the other half is officially buying nothing out of protest. Same day, same calendar.<br>➜ TAKE: Black Friday and Buy Nothing Day on the same date. That's the holiday version of a gym next to a donut shop.<br>➜ BAIT: Call 231-929-4487: which team are you today, doorbuster or buy-nothing?<br>😂 JOKES: I'm celebrating Buy Nothing Day by putting everything in my online cart and not checking out. / Black Friday used to mean camping outside Best Buy. Now it means arguing with your phone at 5 AM.<br><br>NATIONAL DAY OF LISTENING: INTERVIEW SOMEBODY AT THE TABLE<br>• Today is also the National Day of Listening, listed by both National Day Calendar and Days of the Year. The idea is to sit down with a relative or friend and record their story while the family's still together.<br>• Leftover turkey sandwich, one grandparent, one phone on record. That's the whole assignment.<br>➜ TAKE: Ask Grandpa one question you've never asked him. Worst case, you get a 40-minute story about a 1978 snowstorm. Best case, same thing.<br>➜ BAIT: Text 231-929-4487: what's the best story you heard at the table yesterday?<br>😂 JOKES: National Day of Listening. My wife says I've been celebrating it wrong for 15 years. / Record Grandma's story. Some day you'll want to hear exactly how cold it was walking to school, both ways.<br><br>━━ SPORTS ━━<br><br>LIONS: BEARS 39, LIONS 35 (THANKSGIVING)<br>• Caleb Williams hit Rome Odunze for a 6-yard touchdown with 3 seconds left. It was the Bears' first lead of the game.<br>• RUNDOWN: Jahmyr Gibbs ran for 205 yards and three scores, including a 70-yarder for a 35-24 lead with 8:20 left. Then a Jameson Williams tip became an interception, and a 4th-and-4 try at the Bears' 33 came up short.<br>• Lions fall to 8-3, first home loss (6-1 at Ford Field), six-game win streak over. The Bears are 9-2 and alone in first in the NFC North.<br>• Dan Campbell to the team: 'Don't let this ruin your Thanksgiving.' (clip c02)<br>• NEXT: No Lions game this Sunday. They're at Atlanta Sun Dec 6, 1 PM, CBS.<br><br>SATURDAY: THE GAME, MICHIGAN AT OHIO STATE, NOON, FOX<br>• Kickoff noon ET at Ohio Stadium on FOX (FOX One streams). Ohio State is No. 25 in the AP poll.<br>• RUNDOWN: Michigan has won four of the last five and won its last two trips to Columbus (2022, 2024). The team that wins the rushing battle has won 24 straight in this series.<br>• Kyle Whittingham's second game vs. Ohio State; his Utah team lost the 2022 Rose Bowl to the Buckeyes 48-45.<br><br>SATURDAY: MSU AT RUTGERS, 4:15 PM, BIG TEN NETWORK<br>• Season finale for the Spartans (3-8, 1-7) at Rutgers (3-8, 2-6), SHI Stadium. Big Ten Network, FOX One app.<br>• Radio: Spartan Media Network with George Blaha.<br><br>HS STATE FINALS AT FORD FIELD (TODAY + SATURDAY)<br>• No area football tonight: Kingsley's season ended in the D6 semifinal (Almont 30, Kingsley 6, Nov 21), so the D6 final is Almont vs. Jackson Lumen Christi, today 4 PM.<br>• Closest to us: D8 Beal City (13-0) vs. Hudson (12-1), today 9:30 AM. Beal City is in its 11th final; it's a rematch of the 2021 title game Hudson won 14-7.<br>• Today also: D4 Divine Child vs. Kenowa Hills 12:30, D2 Mona Shores vs. Orchard Lake St. Mary's 7 PM. Saturday: D7 Whiteford vs. Ithaca 9:30, D3 Zeeland West vs. Harper Woods 12:30, D5 Frankenmuth vs. GR West Catholic 4, D1 Catholic Central vs. Romeo 7.<br>• All streamed on NFHS Network; no TV this year. Lumen Christi is going for a fifth straight title.<br>• Already a champ: Gaylord St. Mary won its first state title, 49-34 over Mendon (8-player D2, Nov 21).<br><br>NFL NEWS: STEELERS CUT AARON RODGERS<br>• Pittsburgh released Aaron Rodgers Wednesday after he went on 'The Pat McAfee Show' and blasted coach Mike McCarthy, including a claim McCarthy used the wrong team name at halftime: '1-2-3 Packers.'<br>• Mason Rudolph starts tonight vs. Denver. (clip c04)",
+  "notes": "Buzz score log (buzz-rubric): Kalkaska Fitch Dance Company stuck in NYC for the postponed parade 15 · TC Turkey Trot record ~3,000 13 · Downtown TC Black Friday/Small Business Saturday 12 · Ironton Ferry 100th year 10 · Community Meals TC ~600 meals 10 · (bench: MDOT rest areas closing Dec 1, Michigan wild turkeys, Manistee dune amphitheater $400K, Cadillac Salvation Army bell ringers). Ticker feed for 11-27 not out at build time (latest 11-25); used tc-city-pulse-2026-11-27 plus my own scan. City pulse TCPD/City greetings and Overheard store promos not aired.<br>⭐ KALKASKA DANCERS STUCK IN NEW YORK AFTER THE MACY'S PARADE GOT PUSHED: https://www.9and10news.com/2026/11/26/kalkaska-dancers-face-unexpected-expenses-after-macys-thanksgiving-day-parade-postponement/ 9&10 News, Nov 26 2026 (story linked from 9&10 Latest, checked 3:52 AM ET Fri). Whether the dancers stay for Saturday isn't settled in the story; don't say they will or won't march. Parade date/time: NBC News + NBC Insider (Sat Nov 28, 8:30 AM ET, NBC/Peacock/Telemundo).<br>TC TURKEY TROT SETS AN ALL-TIME RECORD: NEARLY 3,000: https://www.9and10news.com/2026/11/26/traverse-city-turkey-trot-sets-record-turnout-with-nearly-3000-participants/ 9&10 News, Nov 26 2026, 1:49 PM ET. Winning time not given in the article text we fetched; don't quote one.<br>BLACK FRIDAY IN DOWNTOWN TC: DOORBUSTERS, FREE WRAPPING, SHOP-SMALL SATURDAY: https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html DTCA event page (fetched 3:52 AM ET Fri) for the deals; 9&10 Nov 25 6:10 PM ET for the owners (https://www.9and10news.com/2026/11/25/traverse-city-businesses-prepare-for-black-friday-and-small-business-saturday/). The cherry snack-pack deal is listed on the DTCA page without a store name in our fetch, so don't name the shop. Hours vary by store.<br>THE IRONTON FERRY WRAPS UP YEAR 100: https://upnorthlive.com/news/local/ironton-ferry-wrapping-up-its-100th-year-in-service UpNorthLive, Nov 25 2026, 5:16 PM ET. Season closed with the 9:30 PM Wed crossing.<br>600 THANKSGIVING MEALS FROM COMMUNITY MEALS TC: https://upnorthlive.com/news/local/traverse-city-volunteers-deliver-nearly-300-thanksgiving-meals-host-300-more-dining-in UpNorthLive, Nov 26 2026, 6:37 PM ET. Quote from co-facilitator Russ Mehrhof also in story. Mild religion mention in volunteer quote; we paraphrased around it.<br>THE MACY'S PARADE GOT POSTPONED FOR THE FIRST TIME IN 100 YEARS: https://www.nbcnews.com/news/us-news/macys-thanksgiving-day-parade-weather-delay-rcna611355 NBC News Nov 25 2026 3:53 PM ET; NBC Insider Nov 25 7:26 PM ET (https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28) for the 2025 replay and Saturday time. Balloons deflated/re-inflated per TODAY (clip c01). Local angle: Buzz #1 Kalkaska dancers. Avoid the NYC mayor quote (politics-adjacent).<br>BLACK FRIDAY VS. BUY NOTHING DAY: IT'S BOTH TODAY: https://nationaldaycalendar.com/what-day-is-it NDC 'Today's National Days' list fetched 3:49 AM ET Fri; Days of the Year Black Friday page https://www.daysoftheyear.com/days/black-friday/<br>NATIONAL DAY OF LISTENING: INTERVIEW SOMEBODY AT THE TABLE: https://www.daysoftheyear.com/days/day-of-listening/ Days of the Year page + NDC list.<br>SPORTS: Lions: DetroitLions.com recap Nov 26 5:07 PM ET; NFL game book (39-35, 1:02 PM start); Falcons game Sun Dec 6 1 PM CBS per DetroitLions.com game-day page + AtlantaFalcons.com (https://www.detroitlions.com/game-day/2026/reg-week13/lions-at-falcons/). U-M: mgoblue.com Michigan Monday (Nov 23). U-M record not on the page we fetched; don't quote one. MSU: msuspartans.com Nov 24. HS: MHSAA/Tri-City Times/Freep: Almont 30, Kingsley 6 (Nov 21). Finals schedule: Freep (https://www.freep.com/story/sports/high-school/2026/11/21/mhsaa-football-finals-schedule-2026-detroit-ford-field/92849486007/), CBS Detroit Nov 26, MHSAA preview (https://www.mhsaa.com/sports/football/stories/1st-goal-2026-11-player-finals-preview; its 'Sunday' for Nov 28 is a typo, all other sources say Saturday). Beal City is Isabella County (Mt. Pleasant area), 9&10 coverage area. Rodgers: NFL.com Nov 25. Roscommon volleyball: not re-checked today (season item from Nov 19 addenda; no game today found).",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-27-buzz-01",
+    "title": "⭐ KALKASKA DANCERS STUCK IN NEW YORK AFTER THE MACY'S PARADE GOT PUSHED",
+    "recap": "We talked about Kalkaska's Fitch Dance Company, 15 dancers stuck in New York with surprise costs after the Macy's parade moved to Saturday.",
+    "article_url": "https://www.9and10news.com/2026/11/26/kalkaska-dancers-face-unexpected-expenses-after-macys-thanksgiving-day-parade-postponement/",
+    "article_title": "Kalkaska dancers face unexpected expenses after Macy's Thanksgiving Day Parade postponement (9&10 News)",
+    "jokes": [
+     "Kalkaska to Times Square is a big jump. Kalkaska to Times Square with a two-day weather delay is just a really expensive layover.",
+     "Up here we'd call 60 mph gusts 'a Tuesday on the bay.' New York called off the whole parade."
+    ],
+    "body": "⭐ KALKASKA DANCERS STUCK IN NEW YORK AFTER THE MACY'S PARADE GOT PUSHED<br>• SUMMARY: Fifteen dancers from Kalkaska's Fitch Dance Company flew to New York City to perform in the 100th Macy's Thanksgiving Day Parade. Then Macy's pushed the parade from Thursday to Saturday because of the storm, the first postponement in the parade's 100 years. The group, about 60 people with families and coaches, is now scrambling over hotels, food and flights.<br>• THE CATCH: Director Candace Musselman says they found out from an NBC post on social media and honestly thought it was a hoax. The performance company's hotel deal only covers the dancers, so parents have to find their own rooms over a holiday weekend in Manhattan.<br>• WHO: Fitch Dance Company, Kalkaska, director Candace Musselman. WHAT: Parade moved to Sat Nov 28, 8:30 AM on NBC. WHERE: New York City. WHY IT MATTERS: Months of practice and fundraising, and some families may have to head home before the kids get to march.<br>➜ TAKE: Our kids trained all year for the biggest parade on Earth, and the weather said 'how about Saturday.' Northern Michigan families know a storm delay when they see one. Let's get these dancers some love.<br>➜ BAIT: Text 231-929-4487: send a shout-out to the Fitch Dance Company kids stuck in New York. We'll read them on air.<br>😂 JOKES: Kalkaska to Times Square is a big jump. Kalkaska to Times Square with a two-day weather delay is just a really expensive layover. / Up here we'd call 60 mph gusts 'a Tuesday on the bay.' New York called off the whole parade.",
+    "description": "Fifteen dancers from Kalkaska's Fitch Dance Company flew to New York City to perform in the 100th Macy's Thanksgiving Day Parade. Then Macy's pushed the parade from Thursday to Saturday because of the storm, the first postponement in the parade's 100 years. The group, about 60 people with families and coaches, is now scrambling over hotels, food and flights. Director Candace Musselman says they found out from an NBC post on social media and honestly thought it was a hoax. The performance company's hotel deal only covers the dancers, so parents have to find their own rooms over a holiday weekend in Manhattan. Fitch Dance Company, Kalkaska, director Candace Musselman. WHAT: Parade moved to Sat Nov 28, 8:30 AM on NBC. WHERE: New York City. WHY IT MATTERS: Months of practice and fundraising, and some families may have to head home before the kids get to march.",
+    "summary": "Fifteen dancers from Kalkaska's Fitch Dance Company flew to New York City to perform in the 100th Macy's Thanksgiving Day Parade. Then Macy's pushed the parade from Thursday to Saturday because of the storm, the first postponement in the parade's 100 years. The group, about 60 people with families and coaches, is now scrambling over hotels, food and flights. Director Candace Musselman says they found out from an NBC post on social media and honestly thought it was a hoax. The performance company's hotel deal only covers the dancers, so parents have to find their own rooms over a holiday weekend in Manhattan. Fitch Dance Company, Kalkaska, director Candace Musselman. WHAT: Parade moved to Sat Nov 28, 8:30 AM on NBC. WHERE: New York City. WHY IT MATTERS: Months of practice and fundraising, and some families may have to head home before the kids get to march.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-buzz-02",
+    "title": "TC TURKEY TROT SETS AN ALL-TIME RECORD: NEARLY 3,000",
+    "recap": "We celebrated a record Traverse City Turkey Trot, nearly 3,000 people, with TC Central senior Evan Fox winning the five-miler.",
+    "article_url": "https://www.9and10news.com/2026/11/26/traverse-city-turkey-trot-sets-record-turnout-with-nearly-3000-participants/",
+    "article_title": "Traverse City Turkey Trot sets record turnout with nearly 3,000 participants (9&10 News)",
+    "jokes": [
+     "Evan Fox won the five-miler. Most of us were still deciding if the couch counted as stretching.",
+     "Record turnout for the Turkey Trot. The turkeys did not attend. Smart birds."
+    ],
+    "body": "TC TURKEY TROT SETS AN ALL-TIME RECORD: NEARLY 3,000<br>• Nearly 3,000 runners and walkers turned out downtown Thanksgiving morning for the 19th annual Traverse City Turkey Trot, the biggest crowd it has ever had. There was a 5-K and the five-mile race called the Five Mile Flyer.<br>• Traverse City Central senior Evan Fox won the five-miler, per 9&10. People came from as far as Washington, D.C., and plenty pulled kids in wagons. MC Kat Paye called the trotters 'memory makers.'<br>➜ TAKE: Three thousand people ran five miles so they could eat 5,000 calories. That's not a race, that's a down payment.<br>➜ BAIT: Text 231-929-4487: did you trot yesterday? Give us your time, your costume, or your excuse.<br>😂 JOKES: Evan Fox won the five-miler. Most of us were still deciding if the couch counted as stretching. / Record turnout for the Turkey Trot. The turkeys did not attend. Smart birds.",
+    "description": "Nearly 3,000 runners and walkers turned out downtown Thanksgiving morning for the 19th annual Traverse City Turkey Trot, the biggest crowd it has ever had. There was a 5-K and the five-mile race called the Five Mile Flyer. Traverse City Central senior Evan Fox won the five-miler, per 9&10. People came from as far as Washington, D.C., and plenty pulled kids in wagons. MC Kat Paye called the trotters 'memory makers.'",
+    "summary": "Nearly 3,000 runners and walkers turned out downtown Thanksgiving morning for the 19th annual Traverse City Turkey Trot, the biggest crowd it has ever had. There was a 5-K and the five-mile race called the Five Mile Flyer. Traverse City Central senior Evan Fox won the five-miler, per 9&10. People came from as far as Washington, D.C., and plenty pulled kids in wagons. MC Kat Paye called the trotters 'memory makers.'",
+    "rank": 2,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-buzz-03",
+    "title": "BLACK FRIDAY IN DOWNTOWN TC: DOORBUSTERS, FREE WRAPPING, SHOP-SMALL SATURDAY",
+    "recap": "We ran down Black Friday and Small Business Saturday deals in downtown Traverse City.",
+    "article_url": "https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html",
+    "article_title": "Black Friday & Small Business Saturday (Downtown TC)",
+    "jokes": [
+     "Glik's has a doorbuster for the first 50 people. Front Street is about to look like a Turbo Man aisle in 1996.",
+     "Free gift wrapping downtown. Finally, presents that don't look like they lost a fight with the tape dispenser."
+    ],
+    "body": "BLACK FRIDAY IN DOWNTOWN TC: DOORBUSTERS, FREE WRAPPING, SHOP-SMALL SATURDAY<br>• Downtown Traverse City's Black Friday and Small Business Saturday run today and tomorrow, with participating shops and restaurants offering deals, samples and a free gift-wrapping station.<br>• A few from the DTCA list: Glik's first 50 customers get a coupon for 50% off one item priced $100 or less, and one downtown shop has $3.50 cherry stocking-stuffer snack packs, Friday only.<br>• Owners at Lakes and Grapes and Serendipity told 9&10 this is one of their biggest weekends, and Small Business Saturday is tomorrow, Nov 28.<br>➜ TAKE: Big-box stores open at 5 AM with a stampede. Downtown TC opens with gift wrap and cherry samples. I know which line I'm in.<br>➜ BAIT: Text 231-929-4487: are you out shopping today, or are you a Black Friday couch shopper?<br>😂 JOKES: Glik's has a doorbuster for the first 50 people. Front Street is about to look like a Turbo Man aisle in 1996. / Free gift wrapping downtown. Finally, presents that don't look like they lost a fight with the tape dispenser.",
+    "description": "Downtown Traverse City's Black Friday and Small Business Saturday run today and tomorrow, with participating shops and restaurants offering deals, samples and a free gift-wrapping station. A few from the DTCA list: Glik's first 50 customers get a coupon for 50% off one item priced $100 or less, and one downtown shop has $3.50 cherry stocking-stuffer snack packs, Friday only. Owners at Lakes and Grapes and Serendipity told 9&10 this is one of their biggest weekends, and Small Business Saturday is tomorrow, Nov 28.",
+    "summary": "Downtown Traverse City's Black Friday and Small Business Saturday run today and tomorrow, with participating shops and restaurants offering deals, samples and a free gift-wrapping station. A few from the DTCA list: Glik's first 50 customers get a coupon for 50% off one item priced $100 or less, and one downtown shop has $3.50 cherry stocking-stuffer snack packs, Friday only. Owners at Lakes and Grapes and Serendipity told 9&10 this is one of their biggest weekends, and Small Business Saturday is tomorrow, Nov 28.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-04",
+    "title": "THE IRONTON FERRY WRAPS UP YEAR 100",
+    "recap": "We marked the Ironton Ferry finishing its 100th season on Lake Charlevoix.",
+    "article_url": "https://upnorthlive.com/news/local/ironton-ferry-wrapping-up-its-100th-year-in-service",
+    "article_title": "Ironton Ferry wrapping up its 100th year in service (UpNorthLive)",
+    "jokes": [
+     "Five minutes, 700 feet, saves you 20 minutes. That's the best return on investment in Charlevoix County.",
+     "The ferry turned 100 and it's getting new ramps. When I turn 100 I'm asking for new knees."
+    ],
+    "body": "THE IRONTON FERRY WRAPS UP YEAR 100<br>• The Ironton Ferry on Lake Charlevoix made its last run of the season Wednesday night, closing out its 100th year in service.<br>• Cars drive right onto it for a roughly 700-foot, five-minute crossing between Ironton and Boyne City that saves 15 to 25 minutes of driving.<br>• Director Joe Kroll says a big project with EGLE and MDOT to replace and modernize the ramps is coming soon.<br>➜ TAKE: A hundred years of a five-minute boat ride. That ferry has outlasted every shortcut your uncle swears by.<br>➜ BAIT: Text 231-929-4487: ever taken the Ironton Ferry? What's the best shortcut Up North?<br>😂 JOKES: Five minutes, 700 feet, saves you 20 minutes. That's the best return on investment in Charlevoix County. / The ferry turned 100 and it's getting new ramps. When I turn 100 I'm asking for new knees.",
+    "description": "The Ironton Ferry on Lake Charlevoix made its last run of the season Wednesday night, closing out its 100th year in service. Cars drive right onto it for a roughly 700-foot, five-minute crossing between Ironton and Boyne City that saves 15 to 25 minutes of driving. Director Joe Kroll says a big project with EGLE and MDOT to replace and modernize the ramps is coming soon.",
+    "summary": "The Ironton Ferry on Lake Charlevoix made its last run of the season Wednesday night, closing out its 100th year in service. Cars drive right onto it for a roughly 700-foot, five-minute crossing between Ironton and Boyne City that saves 15 to 25 minutes of driving. Director Joe Kroll says a big project with EGLE and MDOT to replace and modernize the ramps is coming soon.",
+    "rank": 4,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-buzz-05",
+    "title": "600 THANKSGIVING MEALS FROM COMMUNITY MEALS TC",
+    "recap": "We thanked Community Meals Traverse City volunteers for nearly 600 Thanksgiving meals.",
+    "article_url": "https://upnorthlive.com/news/local/traverse-city-volunteers-deliver-nearly-300-thanksgiving-meals-host-300-more-dining-in",
+    "article_title": "Traverse City volunteers deliver nearly 300 Thanksgiving meals, host 300 more dining-in (UpNorthLive)",
+    "jokes": [
+     "Three hundred deliveries on Thanksgiving. Those drivers saw more turkey than the turkey did.",
+     "Fifty volunteers in one kitchen, and nobody fought over the oven. That's the real Thanksgiving miracle."
+    ],
+    "body": "600 THANKSGIVING MEALS FROM COMMUNITY MEALS TC<br>• More than 50 volunteers with Community Meals Traverse City spent their Thanksgiving cooking and delivering. They prepared nearly 300 meals for delivery and another 300 for a dine-in dinner at Trinity Lutheran Church.<br>• The group has served people since 1989. Volunteer Anna Modzel said she started helping with her dad years ago, and keeps doing it for him since he passed in 2022.<br>➜ TAKE: Six hundred plates, fifty-plus volunteers, one holiday. That's Traverse City at its best.<br>➜ BAIT: Text 231-929-4487: give a shout-out to somebody who worked or volunteered on Thanksgiving.<br>😂 JOKES: Three hundred deliveries on Thanksgiving. Those drivers saw more turkey than the turkey did. / Fifty volunteers in one kitchen, and nobody fought over the oven. That's the real Thanksgiving miracle.",
+    "description": "More than 50 volunteers with Community Meals Traverse City spent their Thanksgiving cooking and delivering. They prepared nearly 300 meals for delivery and another 300 for a dine-in dinner at Trinity Lutheran Church. The group has served people since 1989. Volunteer Anna Modzel said she started helping with her dad years ago, and keeps doing it for him since he passed in 2022.",
+    "summary": "More than 50 volunteers with Community Meals Traverse City spent their Thanksgiving cooking and delivering. They prepared nearly 300 meals for delivery and another 300 for a dine-in dinner at Trinity Lutheran Church. The group has served people since 1989. Volunteer Anna Modzel said she started helping with her dad years ago, and keeps doing it for him since he passed in 2022.",
+    "rank": 5,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-buzz-06",
+    "title": "THE MACY'S PARADE GOT POSTPONED FOR THE FIRST TIME IN 100 YEARS",
+    "recap": "We talked about the Macy's parade being postponed for the first time ever, now Saturday 8:30 AM on NBC.",
+    "article_url": "https://www.nbcnews.com/news/us-news/macys-thanksgiving-day-parade-weather-delay-rcna611355",
+    "article_title": "Macy's Thanksgiving Day Parade is pushed back to Saturday due to weather (NBC News)",
+    "jokes": [
+     "They showed last year's parade on Thursday. Honestly, half of America didn't notice. Same Snoopy.",
+     "Sixty mile an hour gusts and a 70-foot balloon. That's not a parade, that's a Wizard of Oz remake."
+    ],
+    "body": "THE MACY'S PARADE GOT POSTPONED FOR THE FIRST TIME IN 100 YEARS<br>• Macy's moved its 100th Thanksgiving Day Parade from Thursday to Saturday because of the East Coast storm. NBC News reports forecasts of sustained winds of 30 to 40 mph in New York with gusts up to 65.<br>• It now steps off Saturday, Nov. 28 at 8:30 AM ET on NBC and Peacock, with Telemundo in Spanish. NBC aired a replay of last year's parade on Thursday instead.<br>• The balloons had already been inflated Wednesday, then were deflated and trucked back to New Jersey to be re-inflated in time for Saturday.<br>➜ TAKE: A hundred years of parades and this is the first rain check. Snoopy finally gets a long weekend.<br>➜ BAIT: Text 231-929-4487: did you watch the rerun yesterday and not even notice?<br>😂 JOKES: They showed last year's parade on Thursday. Honestly, half of America didn't notice. Same Snoopy. / Sixty mile an hour gusts and a 70-foot balloon. That's not a parade, that's a Wizard of Oz remake.",
+    "description": "Macy's moved its 100th Thanksgiving Day Parade from Thursday to Saturday because of the East Coast storm. NBC News reports forecasts of sustained winds of 30 to 40 mph in New York with gusts up to 65. It now steps off Saturday, Nov. 28 at 8:30 AM ET on NBC and Peacock, with Telemundo in Spanish. NBC aired a replay of last year's parade on Thursday instead. The balloons had already been inflated Wednesday, then were deflated and trucked back to New Jersey to be re-inflated in time for Saturday.",
+    "summary": "Macy's moved its 100th Thanksgiving Day Parade from Thursday to Saturday because of the East Coast storm. NBC News reports forecasts of sustained winds of 30 to 40 mph in New York with gusts up to 65. It now steps off Saturday, Nov. 28 at 8:30 AM ET on NBC and Peacock, with Telemundo in Spanish. NBC aired a replay of last year's parade on Thursday instead. The balloons had already been inflated Wednesday, then were deflated and trucked back to New Jersey to be re-inflated in time for Saturday.",
+    "rank": 7,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-07",
+    "title": "BLACK FRIDAY VS. BUY NOTHING DAY: IT'S BOTH TODAY",
+    "recap": "We played Black Friday against Buy Nothing Day, both on the calendar today.",
+    "article_url": "https://nationaldaycalendar.com/what-day-is-it",
+    "article_title": "What Day Is It (National Day Calendar), Nov 27 list",
+    "jokes": [
+     "I'm celebrating Buy Nothing Day by putting everything in my online cart and not checking out.",
+     "Black Friday used to mean camping outside Best Buy. Now it means arguing with your phone at 5 AM."
+    ],
+    "body": "BLACK FRIDAY VS. BUY NOTHING DAY: IT'S BOTH TODAY<br>• National Day Calendar lists both Black Friday and Buy Nothing Day for today, Nov. 27. Days of the Year says Black Friday has been seen as the start of the Christmas shopping season for decades.<br>• So half the country is in a doorbuster line, and the other half is officially buying nothing out of protest. Same day, same calendar.<br>➜ TAKE: Black Friday and Buy Nothing Day on the same date. That's the holiday version of a gym next to a donut shop.<br>➜ BAIT: Call 231-929-4487: which team are you today, doorbuster or buy-nothing?<br>😂 JOKES: I'm celebrating Buy Nothing Day by putting everything in my online cart and not checking out. / Black Friday used to mean camping outside Best Buy. Now it means arguing with your phone at 5 AM.",
+    "description": "National Day Calendar lists both Black Friday and Buy Nothing Day for today, Nov. 27. Days of the Year says Black Friday has been seen as the start of the Christmas shopping season for decades. So half the country is in a doorbuster line, and the other half is officially buying nothing out of protest. Same day, same calendar.",
+    "summary": "National Day Calendar lists both Black Friday and Buy Nothing Day for today, Nov. 27. Days of the Year says Black Friday has been seen as the start of the Christmas shopping season for decades. So half the country is in a doorbuster line, and the other half is officially buying nothing out of protest. Same day, same calendar.",
+    "rank": 8,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-08",
+    "title": "NATIONAL DAY OF LISTENING: INTERVIEW SOMEBODY AT THE TABLE",
+    "recap": "We marked the National Day of Listening by asking for the best story from the Thanksgiving table.",
+    "article_url": "https://www.daysoftheyear.com/days/day-of-listening/",
+    "article_title": "National Day of Listening (Days of the Year)",
+    "jokes": [
+     "National Day of Listening. My wife says I've been celebrating it wrong for 15 years.",
+     "Record Grandma's story. Some day you'll want to hear exactly how cold it was walking to school, both ways."
+    ],
+    "body": "NATIONAL DAY OF LISTENING: INTERVIEW SOMEBODY AT THE TABLE<br>• Today is also the National Day of Listening, listed by both National Day Calendar and Days of the Year. The idea is to sit down with a relative or friend and record their story while the family's still together.<br>• Leftover turkey sandwich, one grandparent, one phone on record. That's the whole assignment.<br>➜ TAKE: Ask Grandpa one question you've never asked him. Worst case, you get a 40-minute story about a 1978 snowstorm. Best case, same thing.<br>➜ BAIT: Text 231-929-4487: what's the best story you heard at the table yesterday?<br>😂 JOKES: National Day of Listening. My wife says I've been celebrating it wrong for 15 years. / Record Grandma's story. Some day you'll want to hear exactly how cold it was walking to school, both ways.",
+    "description": "Today is also the National Day of Listening, listed by both National Day Calendar and Days of the Year. The idea is to sit down with a relative or friend and record their story while the family's still together. Leftover turkey sandwich, one grandparent, one phone on record. That's the whole assignment.",
+    "summary": "Today is also the National Day of Listening, listed by both National Day Calendar and Days of the Year. The idea is to sit down with a relative or friend and record their story while the family's still together. Leftover turkey sandwich, one grandparent, one phone on record. That's the whole assignment.",
+    "rank": 9,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-09",
+    "title": "LIONS: BEARS 39, LIONS 35 (THANKSGIVING)",
+    "recap": "We recapped the Bears' 39-35 last-second Thanksgiving win over the Lions and noted Detroit's next game is Dec 6 at Atlanta.",
+    "article_url": "https://www.detroitlions.com/news/recap-lions-vs-bears-gibbs-goff-moore",
+    "article_title": "Lions: Bears 39, Lions 35 (Thanksgiving)",
+    "jokes": [],
+    "body": "LIONS: BEARS 39, LIONS 35 (THANKSGIVING)<br>• Caleb Williams hit Rome Odunze for a 6-yard touchdown with 3 seconds left. It was the Bears' first lead of the game.<br>• RUNDOWN: Jahmyr Gibbs ran for 205 yards and three scores, including a 70-yarder for a 35-24 lead with 8:20 left. Then a Jameson Williams tip became an interception, and a 4th-and-4 try at the Bears' 33 came up short.<br>• Lions fall to 8-3, first home loss (6-1 at Ford Field), six-game win streak over. The Bears are 9-2 and alone in first in the NFC North.<br>• Dan Campbell to the team: 'Don't let this ruin your Thanksgiving.' (clip c02)<br>• NEXT: No Lions game this Sunday. They're at Atlanta Sun Dec 6, 1 PM, CBS.",
+    "description": "• Caleb Williams hit Rome Odunze for a 6-yard touchdown with 3 seconds left. It was the Bears' first lead of the game. • RUNDOWN: Jahmyr Gibbs ran for 205 yards and three scores, including a 70-yarder for a 35-24 lead with 8:20 left. Then a Jameson Williams tip became an interception, and a 4th-and-4 try at the Bears' 33 came up short. • Lions fall to 8-3, first home loss (6-1 at Ford Field), six-game win streak over. The Bears are 9-2 and alone in first in the NFC North. • Dan Campbell to the team: 'Don't let this ruin your Thanksgiving.' (clip c02) • NEXT: No Lions game this Sunday. They're at Atlanta Sun Dec 6, 1 PM, CBS.",
+    "summary": "• Caleb Williams hit Rome Odunze for a 6-yard touchdown with 3 seconds left. It was the Bears' first lead of the game. • RUNDOWN: Jahmyr Gibbs ran for 205 yards and three scores, including a 70-yarder for a 35-24 lead with 8:20 left. Then a Jameson Williams tip became an interception, and a 4th-and-4 try at the Bears' 33 came up short. • Lions fall to 8-3, first home loss (6-1 at Ford Field), six-game win streak over. The Bears are 9-2 and alone in first in the NFC North. • Dan Campbell to the team: 'Don't let this ruin your Thanksgiving.' (clip c02) • NEXT: No Lions game this Sunday. They're at Atlanta Sun Dec 6, 1 PM, CBS.",
+    "rank": 10,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-10",
+    "title": "SATURDAY: THE GAME, MICHIGAN AT OHIO STATE, NOON, FOX",
+    "recap": "We previewed Michigan at Ohio State, Saturday at noon on FOX.",
+    "article_url": "https://mgoblue.com/sports/2026/11/23/michigan-monday-game-12-at-ohio-state",
+    "article_title": "Saturday: The Game, Michigan At Ohio State, Noon, Fox",
+    "jokes": [],
+    "body": "SATURDAY: THE GAME, MICHIGAN AT OHIO STATE, NOON, FOX<br>• Kickoff noon ET at Ohio Stadium on FOX (FOX One streams). Ohio State is No. 25 in the AP poll.<br>• RUNDOWN: Michigan has won four of the last five and won its last two trips to Columbus (2022, 2024). The team that wins the rushing battle has won 24 straight in this series.<br>• Kyle Whittingham's second game vs. Ohio State; his Utah team lost the 2022 Rose Bowl to the Buckeyes 48-45.",
+    "description": "• Kickoff noon ET at Ohio Stadium on FOX (FOX One streams). Ohio State is No. 25 in the AP poll. • RUNDOWN: Michigan has won four of the last five and won its last two trips to Columbus (2022, 2024). The team that wins the rushing battle has won 24 straight in this series. • Kyle Whittingham's second game vs. Ohio State; his Utah team lost the 2022 Rose Bowl to the Buckeyes 48-45.",
+    "summary": "• Kickoff noon ET at Ohio Stadium on FOX (FOX One streams). Ohio State is No. 25 in the AP poll. • RUNDOWN: Michigan has won four of the last five and won its last two trips to Columbus (2022, 2024). The team that wins the rushing battle has won 24 straight in this series. • Kyle Whittingham's second game vs. Ohio State; his Utah team lost the 2022 Rose Bowl to the Buckeyes 48-45.",
+    "rank": 11,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-11",
+    "title": "SATURDAY: MSU AT RUTGERS, 4:15 PM, BIG TEN NETWORK",
+    "recap": "We previewed MSU's finale at Rutgers, Saturday 4:15 PM on BTN.",
+    "article_url": "https://msuspartans.com/news/2026/11/24/football-spartans-conclude-regular-season-with-road-trip-to-rutgers-saturday",
+    "article_title": "Saturday: Msu At Rutgers, 4:15 Pm, Big Ten Network",
+    "jokes": [],
+    "body": "SATURDAY: MSU AT RUTGERS, 4:15 PM, BIG TEN NETWORK<br>• Season finale for the Spartans (3-8, 1-7) at Rutgers (3-8, 2-6), SHI Stadium. Big Ten Network, FOX One app.<br>• Radio: Spartan Media Network with George Blaha.",
+    "description": "• Season finale for the Spartans (3-8, 1-7) at Rutgers (3-8, 2-6), SHI Stadium. Big Ten Network, FOX One app. • Radio: Spartan Media Network with George Blaha.",
+    "summary": "• Season finale for the Spartans (3-8, 1-7) at Rutgers (3-8, 2-6), SHI Stadium. Big Ten Network, FOX One app. • Radio: Spartan Media Network with George Blaha.",
+    "rank": 12,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-12",
+    "title": "HS STATE FINALS AT FORD FIELD (TODAY + SATURDAY)",
+    "recap": "We set up the MHSAA finals at Ford Field, led by Beal City's D8 final this morning, and noted Kingsley's run ended in the semis.",
+    "article_url": "https://www.cbsnews.com/detroit/news/michigan-high-school-football-2026-state-finals-schedule/",
+    "article_title": "Hs State Finals At Ford Field (Today + Saturday)",
+    "jokes": [],
+    "body": "HS STATE FINALS AT FORD FIELD (TODAY + SATURDAY)<br>• No area football tonight: Kingsley's season ended in the D6 semifinal (Almont 30, Kingsley 6, Nov 21), so the D6 final is Almont vs. Jackson Lumen Christi, today 4 PM.<br>• Closest to us: D8 Beal City (13-0) vs. Hudson (12-1), today 9:30 AM. Beal City is in its 11th final; it's a rematch of the 2021 title game Hudson won 14-7.<br>• Today also: D4 Divine Child vs. Kenowa Hills 12:30, D2 Mona Shores vs. Orchard Lake St. Mary's 7 PM. Saturday: D7 Whiteford vs. Ithaca 9:30, D3 Zeeland West vs. Harper Woods 12:30, D5 Frankenmuth vs. GR West Catholic 4, D1 Catholic Central vs. Romeo 7.<br>• All streamed on NFHS Network; no TV this year. Lumen Christi is going for a fifth straight title.<br>• Already a champ: Gaylord St. Mary won its first state title, 49-34 over Mendon (8-player D2, Nov 21).",
+    "description": "• No area football tonight: Kingsley's season ended in the D6 semifinal (Almont 30, Kingsley 6, Nov 21), so the D6 final is Almont vs. Jackson Lumen Christi, today 4 PM. • Closest to us: D8 Beal City (13-0) vs. Hudson (12-1), today 9:30 AM. Beal City is in its 11th final; it's a rematch of the 2021 title game Hudson won 14-7. • Today also: D4 Divine Child vs. Kenowa Hills 12:30, D2 Mona Shores vs. Orchard Lake St. Mary's 7 PM. Saturday: D7 Whiteford vs. Ithaca 9:30, D3 Zeeland West vs. Harper Woods 12:30, D5 Frankenmuth vs. GR West Catholic 4, D1 Catholic Central vs. Romeo 7. • All streamed on NFHS Network; no TV this year. Lumen Christi is going for a fifth straight title. • Already a champ: Gaylord St. Mary won its first state title, 49-34 over Mendon (8-player D2, Nov 21).",
+    "summary": "• No area football tonight: Kingsley's season ended in the D6 semifinal (Almont 30, Kingsley 6, Nov 21), so the D6 final is Almont vs. Jackson Lumen Christi, today 4 PM. • Closest to us: D8 Beal City (13-0) vs. Hudson (12-1), today 9:30 AM. Beal City is in its 11th final; it's a rematch of the 2021 title game Hudson won 14-7. • Today also: D4 Divine Child vs. Kenowa Hills 12:30, D2 Mona Shores vs. Orchard Lake St. Mary's 7 PM. Saturday: D7 Whiteford vs. Ithaca 9:30, D3 Zeeland West vs. Harper Woods 12:30, D5 Frankenmuth vs. GR West Catholic 4, D1 Catholic Central vs. Romeo 7. • All streamed on NFHS Network; no TV this year. Lumen Christi is going for a fifth straight title. • Already a champ: Gaylord St. Mary won its first state title, 49-34 over Mendon (8-player D2, Nov 21).",
+    "rank": 6,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-buzz-13",
+    "title": "NFL NEWS: STEELERS CUT AARON RODGERS",
+    "recap": "We covered the Steelers releasing Aaron Rodgers after his McAfee Show appearance.",
+    "article_url": "https://www.nfl.com/news/steelers-release-aaron-rodgers",
+    "article_title": "Nfl News: Steelers Cut Aaron Rodgers",
+    "jokes": [],
+    "body": "NFL NEWS: STEELERS CUT AARON RODGERS<br>• Pittsburgh released Aaron Rodgers Wednesday after he went on 'The Pat McAfee Show' and blasted coach Mike McCarthy, including a claim McCarthy used the wrong team name at halftime: '1-2-3 Packers.'<br>• Mason Rudolph starts tonight vs. Denver. (clip c04)",
+    "description": "• Pittsburgh released Aaron Rodgers Wednesday after he went on 'The Pat McAfee Show' and blasted coach Mike McCarthy, including a claim McCarthy used the wrong team name at halftime: '1-2-3 Packers.' • Mason Rudolph starts tonight vs. Denver. (clip c04)",
+    "summary": "• Pittsburgh released Aaron Rodgers Wednesday after he went on 'The Pat McAfee Show' and blasted coach Mike McCarthy, including a claim McCarthy used the wrong team name at halftime: '1-2-3 Packers.' • Mason Rudolph starts tonight vs. Denver. (clip c04)",
+    "rank": 13,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.9and10news.com/2026/11/26/kalkaska-dancers-face-unexpected-expenses-after-macys-thanksgiving-day-parade-postponement/",
+  "article_title": "Kalkaska dancers face unexpected expenses after Macy's Thanksgiving Day Parade postponement (9&10 News)",
+  "jokes": [
+   "Kalkaska to Times Square is a big jump. Kalkaska to Times Square with a two-day weather delay is just a really expensive layover.",
+   "Up here we'd call 60 mph gusts 'a Tuesday on the bay.' New York called off the whole parade."
+  ],
+  "localBench": [
+   {
+    "id": "2026-11-27-bench-01",
+    "title": "FIVE MICHIGAN REST AREAS CLOSE DEC. 1, TWO ON THE WAY DOWNSTATE",
+    "body": "FIVE MICHIGAN REST AREAS CLOSE DEC. 1, TWO ON THE WAY DOWNSTATE<br>• MDOT is closing five seasonal rest areas for 20 weeks starting Tuesday, Dec. 1, citing low winter use and steep, slippery drives and stairs.<br>• On I-75: St. Ignace southbound, Topinabee northbound and Hebron southbound. On US-31: Ludington northbound and Hart southbound. They reopen April 12, 2027, and the other 56 stay open.<br>➜ TAKE: Plan your stops before you head south for Christmas. Topinabee is closed till spring.<br>➜ BAIT: Text 231-929-4487: what's your go-to bathroom stop on I-75?<br>😂 JOKES: Twenty weeks closed. Plan your coffee accordingly. / Signs will say 'Closed Until Spring.' Same sign I hang on my motivation every December.",
+    "recap": "We flagged five Michigan rest areas, including Topinabee and Hebron on I-75, closing Dec. 1 until April 12.",
+    "notes": "https://www.9and10news.com/2026/11/25/five-michigan-rest-areas-will-close-for-20-weeks-starting-december-1/ 9&10 News Nov 25 2026 (MDOT). Only road-type item today; kept on the bench.",
+    "article_url": "https://www.9and10news.com/2026/11/25/five-michigan-rest-areas-will-close-for-20-weeks-starting-december-1/",
+    "article_title": "Five Michigan rest areas will close for 20 weeks starting December 1 (9&10 News)",
+    "jokes": [
+     "Twenty weeks closed. Plan your coffee accordingly.",
+     "Signs will say 'Closed Until Spring.' Same sign I hang on my motivation every December."
+    ],
+    "description": "We flagged five Michigan rest areas, including Topinabee and Hebron on I-75, closing Dec. 1 until April 12.",
+    "summary": "We flagged five Michigan rest areas, including Topinabee and Hebron on I-75, closing Dec. 1 until April 12."
+   },
+   {
+    "id": "2026-11-27-bench-02",
+    "title": "MICHIGAN'S WILD TURKEYS HIT 200,000",
+    "body": "MICHIGAN'S WILD TURKEYS HIT 200,000<br>• Michigan now has an estimated 200,000 wild turkeys, a full comeback after the birds vanished from the state by 1906.<br>• The National Wild Turkey Federation's Ryan Boyer blamed unregulated market hunting and habitat loss for the crash, and seasons and bag limits for the rebound.<br>➜ TAKE: Two hundred thousand turkeys, and every one of them heard what we did yesterday.<br>➜ BAIT: Text 231-929-4487: ever been chased by a wild turkey?<br>😂 JOKES: The day after Thanksgiving, 200,000 turkeys are walking around Michigan like they won something. / They disappeared in 1906 and came back stronger. That's the most Michigan comeback story ever.",
+    "recap": "We noted Michigan's wild turkey population is back to about 200,000.",
+    "notes": "https://www.9and10news.com/2026/11/25/michigans-wild-turkeys-reach-200000-completing-a-century-long-recovery/ 9&10 News Nov 25 2026, citing Traverse Northern Michigan magazine. Pairs with the Inside Edition turkey clip (c05).",
+    "article_url": "https://www.9and10news.com/2026/11/25/michigans-wild-turkeys-reach-200000-completing-a-century-long-recovery/",
+    "article_title": "Michigan's wild turkeys reach 200,000, completing a century-long recovery (9&10 News)",
+    "jokes": [
+     "The day after Thanksgiving, 200,000 turkeys are walking around Michigan like they won something.",
+     "They disappeared in 1906 and came back stronger. That's the most Michigan comeback story ever."
+    ],
+    "description": "We noted Michigan's wild turkey population is back to about 200,000.",
+    "summary": "We noted Michigan's wild turkey population is back to about 200,000."
+   },
+   {
+    "id": "2026-11-27-bench-03",
+    "title": "MANISTEE'S DUNE AMPHITHEATER IS $400K FROM ITS GOAL",
+    "body": "MANISTEE'S DUNE AMPHITHEATER IS $400K FROM ITS GOAL<br>• The Manistee Amphitheater Foundation has raised nearly $3.7 million of its $4.5 million goal for The Dune, a community amphitheater at First Street Beach.<br>• About $400,000 is still needed by Dec. 31 to fully match a $1.6 million challenge grant; if they make it, groundbreaking is planned for July 2027.<br>➜ TAKE: A concert venue on a Lake Michigan beach. Somebody book the sunset.<br>➜ BAIT: Text 231-929-4487: who's the first act you'd want at a beach amphitheater in Manistee?<br>😂 JOKES: Four hundred grand to go. I checked my couch cushions, I found eleven dollars and a guitar pick. / Music on the beach in Manistee. Bring a blanket, a hoodie, and a second hoodie.",
+    "recap": "We noted Manistee's Dune Amphitheater is about $400K from its challenge-grant goal.",
+    "notes": "https://upnorthlive.com/news/local/manistee-dune-amphitheater-project-around-400k-away-from-challenge-grant-goal UpNorthLive Nov 25 2026, 1:01 PM ET.",
+    "article_url": "https://upnorthlive.com/news/local/manistee-dune-amphitheater-project-around-400k-away-from-challenge-grant-goal",
+    "article_title": "Manistee Dune Amphitheater project around $400K away from challenge grant goal (UpNorthLive)",
+    "jokes": [
+     "Four hundred grand to go. I checked my couch cushions, I found eleven dollars and a guitar pick.",
+     "Music on the beach in Manistee. Bring a blanket, a hoodie, and a second hoodie."
+    ],
+    "description": "We noted Manistee's Dune Amphitheater is about $400K from its challenge-grant goal.",
+    "summary": "We noted Manistee's Dune Amphitheater is about $400K from its challenge-grant goal."
+   },
+   {
+    "id": "2026-11-27-bench-04",
+    "title": "CADILLAC'S SALVATION ARMY NEEDS BELL RINGERS NOW",
+    "body": "CADILLAC'S SALVATION ARMY NEEDS BELL RINGERS NOW<br>• The Cadillac Salvation Army says it's so short on volunteer bell ringers that some Red Kettle stands outside stores are sitting empty this week.<br>• Its holiday goal is $400,000 across Wexford, Missaukee and Kalkaska counties, and store policies don't allow unattended kettles. Captain Greg Bock: 'There's nobody out there ringing the bell.'<br>➜ TAKE: An hour of ringing a bell. That's the easiest way to help on the busiest shopping day of the year.<br>➜ BAIT: Text 231-929-4487: have you ever rung a kettle bell? Best thing anybody dropped in?<br>😂 JOKES: Bell ringing is the only volunteer job where your whole training is 'shake your wrist.' / Black Friday, red kettles. That's the whole color scheme of the holidays.",
+    "recap": "We asked for volunteer bell ringers for the Cadillac Salvation Army's Red Kettle drive.",
+    "notes": "https://www.9and10news.com/2026/11/25/cadillac-salvation-army-faces-severe-volunteer-shortage-for-red-kettle-drive/ 9&10 News Nov 25 2026. Self-aware nod: the same Salvation Army was in Wednesday's Buzz for its 600-household food giveaway.",
+    "article_url": "https://www.9and10news.com/2026/11/25/cadillac-salvation-army-faces-severe-volunteer-shortage-for-red-kettle-drive/",
+    "article_title": "Cadillac Salvation Army faces severe volunteer shortage for Red Kettle drive (9&10 News)",
+    "jokes": [
+     "Bell ringing is the only volunteer job where your whole training is 'shake your wrist.'",
+     "Black Friday, red kettles. That's the whole color scheme of the holidays."
+    ],
+    "description": "We asked for volunteer bell ringers for the Cadillac Salvation Army's Red Kettle drive.",
+    "summary": "We asked for volunteer bell ringers for the Cadillac Salvation Army's Red Kettle drive."
+   }
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "19a89bbc88a4",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "gta6": {
+  "id": "gta6",
+  "title": "GTA 6 Watch",
+  "category": "Daily",
+  "type": "text",
+  "content": "GTA 6 WATCH: PATCH DIDN'T FIX EVERYTHING, AND WHAT $3.79 BILLION MEANS<br>• STUCK PLAYERS: GameRant reports some players say the 01.002.002 patch still leaves them softlocked, unable to switch back to Jason after a story mission, and that support tickets are getting closed. Workarounds being shared: load an older save, or call Lucia's contact Dunk.<br>• BIG PICTURE: NBC News, Thanksgiving morning: GTA VI's $3.79 billion opening shattered records, but some experts say even the biggest launch ever may not fix the struggling game industry.<br>• STILL NO PC DATE: GameRant notes Rockstar is still silent on a PC release.<br>• Self-aware nod: we covered the patch itself on Tuesday; today's news is what it didn't fix.<br>➜ TAKE: Biggest launch in history, and some players still can't switch characters. Jason's stuck. Relatable, Jason.<br>➜ BAIT: Text 231-929-4487: GTA marathon over the holiday weekend, or did the family make you put the controller down?<br>😂 JOKES: Stuck as Lucia with no way back to Jason. That's every couple fighting over the remote this weekend. / Rockstar closes support tickets fast. Fastest thing in the whole game besides the cops.",
+  "notes": "GTA 6 WATCH: PATCH DIDN'T FIX EVERYTHING, AND WHAT $3.79 BILLION MEANS: https://gamerant.com/gta-6-patch-jason-grayed-out-cant-switch-bug/ GameRant Nov 26 2026 5:00 AM ET; NBC News Nov 26 2026 6:00 AM ET (https://www.nbcnews.com/pop-culture/pop-culture-news/success-gta-vi-means-gaming-industrys-future-rcna611209). Sources checked: GameRant, NBC News, Polygon (patch notes Nov 23), plus search results from GTA6Vault/gta6ecrets (fan sites, tips only), Kimmel 'GTA VI Mania' segment title (political monologue, not used). No Rockstar Newswire item since the patch.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-gta6-01",
+    "title": "GTA 6 WATCH: PATCH DIDN'T FIX EVERYTHING, AND WHAT $3.79 BILLION MEANS",
+    "recap": "On GTA 6 Watch, players say the first patch didn't fix a story softlock, and NBC asked what the $3.79B launch means for gaming.",
+    "article_url": "https://gamerant.com/gta-6-patch-jason-grayed-out-cant-switch-bug/",
+    "article_title": "GTA 6's First Patch Fixes Story-Blocking Phone Calls, but Players Say One Problem Is Still There (GameRant)",
+    "jokes": [
+     "Stuck as Lucia with no way back to Jason. That's every couple fighting over the remote this weekend.",
+     "Rockstar closes support tickets fast. Fastest thing in the whole game besides the cops."
+    ],
+    "body": "GTA 6 WATCH: PATCH DIDN'T FIX EVERYTHING, AND WHAT $3.79 BILLION MEANS<br>• STUCK PLAYERS: GameRant reports some players say the 01.002.002 patch still leaves them softlocked, unable to switch back to Jason after a story mission, and that support tickets are getting closed. Workarounds being shared: load an older save, or call Lucia's contact Dunk.<br>• BIG PICTURE: NBC News, Thanksgiving morning: GTA VI's $3.79 billion opening shattered records, but some experts say even the biggest launch ever may not fix the struggling game industry.<br>• STILL NO PC DATE: GameRant notes Rockstar is still silent on a PC release.<br>• Self-aware nod: we covered the patch itself on Tuesday; today's news is what it didn't fix.<br>➜ TAKE: Biggest launch in history, and some players still can't switch characters. Jason's stuck. Relatable, Jason.<br>➜ BAIT: Text 231-929-4487: GTA marathon over the holiday weekend, or did the family make you put the controller down?<br>😂 JOKES: Stuck as Lucia with no way back to Jason. That's every couple fighting over the remote this weekend. / Rockstar closes support tickets fast. Fastest thing in the whole game besides the cops.",
+    "description": "GameRant reports some players say the 01.002.002 patch still leaves them softlocked, unable to switch back to Jason after a story mission, and that support tickets are getting closed. Workarounds being shared: load an older save, or call Lucia's contact Dunk. NBC News, Thanksgiving morning: GTA VI's $3.79 billion opening shattered records, but some experts say even the biggest launch ever may not fix the struggling game industry. GameRant notes Rockstar is still silent on a PC release. Self-aware nod: we covered the patch itself on Tuesday; today's news is what it didn't fix.",
+    "summary": "GameRant reports some players say the 01.002.002 patch still leaves them softlocked, unable to switch back to Jason after a story mission, and that support tickets are getting closed. Workarounds being shared: load an older save, or call Lucia's contact Dunk. NBC News, Thanksgiving morning: GTA VI's $3.79 billion opening shattered records, but some experts say even the biggest launch ever may not fix the struggling game industry. GameRant notes Rockstar is still silent on a PC release. Self-aware nod: we covered the patch itself on Tuesday; today's news is what it didn't fix.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://gamerant.com/gta-6-patch-jason-grayed-out-cant-switch-bug/",
+  "article_title": "GTA 6's First Patch Fixes Story-Blocking Phone Calls, but Players Say One Problem Is Still There (GameRant)",
+  "jokes": [
+   "Stuck as Lucia with no way back to Jason. That's every couple fighting over the remote this weekend.",
+   "Rockstar closes support tickets fast. Fastest thing in the whole game besides the cops."
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "11ac4e32ee56",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "lifestyle": {
+  "id": "lifestyle",
+  "title": "Lifestyle & Trends",
+  "category": "Daily",
+  "type": "text",
+  "content": "MICHIGAN'S $50 BLACK FRIDAY COLLEGE BONUS<br>• Michigan Education Trust is giving families an extra $50 per child when they put at least $300 online into a new or existing MET account this weekend.<br>• It runs Nov. 25 through 11:59 PM Nov. 30, or until $25,000 in bonuses is gone. The bonus can take 8 to 10 weeks to show up, and grandparents and relatives can chip in.<br>➜ TAKE: A Black Friday deal that's actually an investment. My doorbuster was a waffle maker.<br>➜ BAIT: Text 231-929-4487: what's the smartest thing you ever bought on Black Friday?<br>😂 JOKES: Fifty bucks toward college. That covers one textbook's shrink wrap. / Only $25,000 in bonuses total, so it's basically a doorbuster for nerds. Respect.<br><br>THANKSGIVING BOX OFFICE: HUNGER GAMES ROLLS ON<br>• Deadline's Thanksgiving morning update has The Hunger Games: Sunrise on the Reaping heading for $85 million-plus over the five-day holiday.<br>• Focker In-Law and Disney's Hexed are coming in lighter than forecast, around $36 million each for five days, per Deadline.<br>➜ TAKE: Hunger Games over Thanksgiving. Fitting, after watching my family go for the last roll.<br>➜ BAIT: Text 231-929-4487: are you hitting a movie this weekend? Which one?<br>😂 JOKES: The Fockers are back and still losing to District 12. / A movie called Hexed on a weekend when we're all still in a food coma. Too real.",
+  "notes": "MICHIGAN'S $50 BLACK FRIDAY COLLEGE BONUS: https://www.9and10news.com/2026/11/26/michigan-families-can-get-a-50-bonus-for-college-savings-this-black-friday/ 9&10 News Nov 26 2026 (MET release). Eligibility rules apply; don't give tax advice.<br>THANKSGIVING BOX OFFICE: HUNGER GAMES ROLLS ON: https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/ Deadline, Nov 26 2026 12:04 PM ET (estimates, not finals). Self-aware nod: Hunger Games was Monday's box office story.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-lifestyle-01",
+    "title": "MICHIGAN'S $50 BLACK FRIDAY COLLEGE BONUS",
+    "recap": "We shared Michigan Education Trust's $50-per-child Black Friday bonus through Nov 30.",
+    "article_url": "https://www.9and10news.com/2026/11/26/michigan-families-can-get-a-50-bonus-for-college-savings-this-black-friday/",
+    "article_title": "Michigan families can get a $50 bonus for college savings this Black Friday (9&10 News)",
+    "jokes": [
+     "Fifty bucks toward college. That covers one textbook's shrink wrap.",
+     "Only $25,000 in bonuses total, so it's basically a doorbuster for nerds. Respect."
+    ],
+    "body": "MICHIGAN'S $50 BLACK FRIDAY COLLEGE BONUS<br>• Michigan Education Trust is giving families an extra $50 per child when they put at least $300 online into a new or existing MET account this weekend.<br>• It runs Nov. 25 through 11:59 PM Nov. 30, or until $25,000 in bonuses is gone. The bonus can take 8 to 10 weeks to show up, and grandparents and relatives can chip in.<br>➜ TAKE: A Black Friday deal that's actually an investment. My doorbuster was a waffle maker.<br>➜ BAIT: Text 231-929-4487: what's the smartest thing you ever bought on Black Friday?<br>😂 JOKES: Fifty bucks toward college. That covers one textbook's shrink wrap. / Only $25,000 in bonuses total, so it's basically a doorbuster for nerds. Respect.",
+    "description": "Michigan Education Trust is giving families an extra $50 per child when they put at least $300 online into a new or existing MET account this weekend. It runs Nov. 25 through 11:59 PM Nov. 30, or until $25,000 in bonuses is gone. The bonus can take 8 to 10 weeks to show up, and grandparents and relatives can chip in.",
+    "summary": "Michigan Education Trust is giving families an extra $50 per child when they put at least $300 online into a new or existing MET account this weekend. It runs Nov. 25 through 11:59 PM Nov. 30, or until $25,000 in bonuses is gone. The bonus can take 8 to 10 weeks to show up, and grandparents and relatives can chip in.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-lifestyle-02",
+    "title": "THANKSGIVING BOX OFFICE: HUNGER GAMES ROLLS ON",
+    "recap": "We ran the Thanksgiving box office: Hunger Games heading for $85M-plus over five days.",
+    "article_url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+    "article_title": "Box Office: 'Hunger Games: Sunrise on Reaping' $85M 5-day Over Thanksgiving (Deadline)",
+    "jokes": [
+     "The Fockers are back and still losing to District 12.",
+     "A movie called Hexed on a weekend when we're all still in a food coma. Too real."
+    ],
+    "body": "THANKSGIVING BOX OFFICE: HUNGER GAMES ROLLS ON<br>• Deadline's Thanksgiving morning update has The Hunger Games: Sunrise on the Reaping heading for $85 million-plus over the five-day holiday.<br>• Focker In-Law and Disney's Hexed are coming in lighter than forecast, around $36 million each for five days, per Deadline.<br>➜ TAKE: Hunger Games over Thanksgiving. Fitting, after watching my family go for the last roll.<br>➜ BAIT: Text 231-929-4487: are you hitting a movie this weekend? Which one?<br>😂 JOKES: The Fockers are back and still losing to District 12. / A movie called Hexed on a weekend when we're all still in a food coma. Too real.",
+    "description": "Deadline's Thanksgiving morning update has The Hunger Games: Sunrise on the Reaping heading for $85 million-plus over the five-day holiday. Focker In-Law and Disney's Hexed are coming in lighter than forecast, around $36 million each for five days, per Deadline.",
+    "summary": "Deadline's Thanksgiving morning update has The Hunger Games: Sunrise on the Reaping heading for $85 million-plus over the five-day holiday. Focker In-Law and Disney's Hexed are coming in lighter than forecast, around $36 million each for five days, per Deadline.",
+    "rank": 2,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.9and10news.com/2026/11/26/michigan-families-can-get-a-50-bonus-for-college-savings-this-black-friday/",
+  "article_title": "Michigan families can get a $50 bonus for college savings this Black Friday (9&10 News)",
+  "jokes": [
+   "Fifty bucks toward college. That covers one textbook's shrink wrap.",
+   "Only $25,000 in bonuses total, so it's basically a doorbuster for nerds. Respect."
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "984f8b049342",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "officeschool": {
+  "id": "officeschool",
+  "title": "Office & School Bits",
+  "category": "Bit",
+  "type": "text",
+  "content": "OFFICE: WHO'S ACTUALLY WORKING TODAY?<br>• City of Traverse City offices are closed today, Nov. 26 and 27 both, per the city's own post. Plenty of other offices are open with about three people in them.<br>• If you're at work today, you're either the hero or the person who forgot to request it off.<br>➜ TAKE: Black Friday at the office: the parking lot is empty and the leftover pie in the break room is untouched. Paradise.<br>➜ BAIT: Text 231-929-4487: working today? Tell us where, and how many people showed up.<br>😂 JOKES: Day-after-Thanksgiving meetings are the only ones where nobody has their camera on, because they're still in pajamas at their desk. / If you're at work today, you get to set the thermostat. That's power.<br><br>OFFICE: THE LEAF DEADLINE IS SUNDAY<br>• The City of Traverse City says the final leaf pickup pass is the week of Nov. 30, and leaves have to be at the curb by Sunday, Nov. 29.<br>• So this weekend's to-do list: leftovers, football, rake.<br>➜ TAKE: Nothing says holiday weekend like a rake and a sore back.<br>➜ BAIT: Text 231-929-4487: who in your house does the raking, and who 'supervises'?<br>😂 JOKES: Rake by Sunday. That's the last group project of 2026. / My leaf strategy is waiting for the wind to move them to my neighbor's yard. Ten mph north wind today. We'll see.<br><br>SCHOOL: NMC ADDS TWO ONE-YEAR MANUFACTURING CERTIFICATES<br>• Northwestern Michigan College's board approved two new one-year certificates for fall 2027: CAD Technology, and Precision Machining and CNC Technology.<br>• They split the existing Manufacturing Technology degree into shorter, stackable pieces, and credits carry over to the degree. NMC's Dan Goodchild says 'there are a lot of local industry jobs available.' Registration opens March 10, 2027.<br>➜ TAKE: One year and you're running a CNC machine. That beats my one year of college where I learned how to microwave ramen.<br>➜ BAIT: Text 231-929-4487: what's a trade you wish you'd learned in school?<br>😂 JOKES: CAD and CNC. Finally a school program with more acronyms than my group text. / Stackable certificates. Like Legos, but they pay your rent.<br><br>SCHOOL: TC CENTRAL SENIOR WINS THE TURKEY TROT FIVE-MILER<br>• Traverse City Central senior Evan Fox won the five-mile race at yesterday's record Turkey Trot, per 9&10. Nearly 3,000 people ran or walked.<br>• Shout-out to every kid who got dragged out of bed early on a day off to run in the cold, and to the parents pulling wagons.<br>➜ TAKE: A high schooler beat 3,000 adults on Thanksgiving morning. Somewhere a gym teacher is crying happy tears.<br>➜ BAIT: Text 231-929-4487: shout out a kid in your family who ran yesterday.<br>😂 JOKES: Evan Fox won five miles before most of us found our slippers. / He beat 3,000 people and still had room for pie. That's the real athlete.",
+  "notes": "OFFICE: WHO'S ACTUALLY WORKING TODAY?: https://www.facebook.com/cityoftc/posts/pfbid0rsm8owQxzsi8k6VETjfmZ1yB8uLcaZZ2zvhD6Nn2NbUKHRKjWrSmQbSpXpPBgpRkl City of TC Facebook post Wed Nov 25 12:39 PM ET via Breaker's city pulse. Post says nothing about trash or parking; don't claim any changes. Listener bit.<br>OFFICE: THE LEAF DEADLINE IS SUNDAY: https://www.facebook.com/cityoftc/posts/pfbid0xtFXLemoRhK96TzPBqgi9mYzAFoniD9YmxudV1eqDiJzPqSE6UNeATRstVqofThPl City of TC Facebook post Wed Nov 25 11:16 AM ET via Breaker's city pulse.<br>SCHOOL: NMC ADDS TWO ONE-YEAR MANUFACTURING CERTIFICATES: https://upnorthlive.com/news/local/nmc-board-approves-two-new-one-year-manufacturing-certificates-for-fall-2027 UpNorthLive Nov 26 2026 7:00 AM ET.<br>SCHOOL: TC CENTRAL SENIOR WINS THE TURKEY TROT FIVE-MILER: https://www.9and10news.com/2026/11/26/traverse-city-turkey-trot-sets-record-turnout-with-nearly-3000-participants/ 9&10 News Nov 26 2026. Student is named in the public story; keep it positive, no extra personal details.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-officeschool-01",
+    "title": "OFFICE: WHO'S ACTUALLY WORKING TODAY?",
+    "recap": "We asked who's actually at work on Black Friday; City of TC offices are closed.",
+    "article_url": "https://www.facebook.com/cityoftc/posts/pfbid0rsm8owQxzsi8k6VETjfmZ1yB8uLcaZZ2zvhD6Nn2NbUKHRKjWrSmQbSpXpPBgpRkl",
+    "article_title": "City of Traverse City: City Offices Closed, November 26 & 27 (Facebook)",
+    "jokes": [
+     "Day-after-Thanksgiving meetings are the only ones where nobody has their camera on, because they're still in pajamas at their desk.",
+     "If you're at work today, you get to set the thermostat. That's power."
+    ],
+    "body": "OFFICE: WHO'S ACTUALLY WORKING TODAY?<br>• City of Traverse City offices are closed today, Nov. 26 and 27 both, per the city's own post. Plenty of other offices are open with about three people in them.<br>• If you're at work today, you're either the hero or the person who forgot to request it off.<br>➜ TAKE: Black Friday at the office: the parking lot is empty and the leftover pie in the break room is untouched. Paradise.<br>➜ BAIT: Text 231-929-4487: working today? Tell us where, and how many people showed up.<br>😂 JOKES: Day-after-Thanksgiving meetings are the only ones where nobody has their camera on, because they're still in pajamas at their desk. / If you're at work today, you get to set the thermostat. That's power.",
+    "description": "City of Traverse City offices are closed today, Nov. 26 and 27 both, per the city's own post. Plenty of other offices are open with about three people in them. If you're at work today, you're either the hero or the person who forgot to request it off.",
+    "summary": "City of Traverse City offices are closed today, Nov. 26 and 27 both, per the city's own post. Plenty of other offices are open with about three people in them. If you're at work today, you're either the hero or the person who forgot to request it off.",
+    "rank": 1,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-officeschool-02",
+    "title": "OFFICE: THE LEAF DEADLINE IS SUNDAY",
+    "recap": "We reminded city residents leaves need to be at the curb by Sunday for the final pickup.",
+    "article_url": "https://www.facebook.com/cityoftc/posts/pfbid0xtFXLemoRhK96TzPBqgi9mYzAFoniD9YmxudV1eqDiJzPqSE6UNeATRstVqofThPl",
+    "article_title": "City of Traverse City: final leaf pickup (Facebook)",
+    "jokes": [
+     "Rake by Sunday. That's the last group project of 2026.",
+     "My leaf strategy is waiting for the wind to move them to my neighbor's yard. Ten mph north wind today. We'll see."
+    ],
+    "body": "OFFICE: THE LEAF DEADLINE IS SUNDAY<br>• The City of Traverse City says the final leaf pickup pass is the week of Nov. 30, and leaves have to be at the curb by Sunday, Nov. 29.<br>• So this weekend's to-do list: leftovers, football, rake.<br>➜ TAKE: Nothing says holiday weekend like a rake and a sore back.<br>➜ BAIT: Text 231-929-4487: who in your house does the raking, and who 'supervises'?<br>😂 JOKES: Rake by Sunday. That's the last group project of 2026. / My leaf strategy is waiting for the wind to move them to my neighbor's yard. Ten mph north wind today. We'll see.",
+    "description": "The City of Traverse City says the final leaf pickup pass is the week of Nov. 30, and leaves have to be at the curb by Sunday, Nov. 29. So this weekend's to-do list: leftovers, football, rake.",
+    "summary": "The City of Traverse City says the final leaf pickup pass is the week of Nov. 30, and leaves have to be at the curb by Sunday, Nov. 29. So this weekend's to-do list: leftovers, football, rake.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-officeschool-03",
+    "title": "SCHOOL: NMC ADDS TWO ONE-YEAR MANUFACTURING CERTIFICATES",
+    "recap": "We noted NMC's two new one-year manufacturing certificates starting fall 2027.",
+    "article_url": "https://upnorthlive.com/news/local/nmc-board-approves-two-new-one-year-manufacturing-certificates-for-fall-2027",
+    "article_title": "NMC board approves two new one-year manufacturing certificates for fall 2027 (UpNorthLive)",
+    "jokes": [
+     "CAD and CNC. Finally a school program with more acronyms than my group text.",
+     "Stackable certificates. Like Legos, but they pay your rent."
+    ],
+    "body": "SCHOOL: NMC ADDS TWO ONE-YEAR MANUFACTURING CERTIFICATES<br>• Northwestern Michigan College's board approved two new one-year certificates for fall 2027: CAD Technology, and Precision Machining and CNC Technology.<br>• They split the existing Manufacturing Technology degree into shorter, stackable pieces, and credits carry over to the degree. NMC's Dan Goodchild says 'there are a lot of local industry jobs available.' Registration opens March 10, 2027.<br>➜ TAKE: One year and you're running a CNC machine. That beats my one year of college where I learned how to microwave ramen.<br>➜ BAIT: Text 231-929-4487: what's a trade you wish you'd learned in school?<br>😂 JOKES: CAD and CNC. Finally a school program with more acronyms than my group text. / Stackable certificates. Like Legos, but they pay your rent.",
+    "description": "Northwestern Michigan College's board approved two new one-year certificates for fall 2027: CAD Technology, and Precision Machining and CNC Technology. They split the existing Manufacturing Technology degree into shorter, stackable pieces, and credits carry over to the degree. NMC's Dan Goodchild says 'there are a lot of local industry jobs available.' Registration opens March 10, 2027.",
+    "summary": "Northwestern Michigan College's board approved two new one-year certificates for fall 2027: CAD Technology, and Precision Machining and CNC Technology. They split the existing Manufacturing Technology degree into shorter, stackable pieces, and credits carry over to the degree. NMC's Dan Goodchild says 'there are a lot of local industry jobs available.' Registration opens March 10, 2027.",
+    "rank": 4,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-officeschool-04",
+    "title": "SCHOOL: TC CENTRAL SENIOR WINS THE TURKEY TROT FIVE-MILER",
+    "recap": "We gave a shout-out to TC Central senior Evan Fox for winning the Turkey Trot five-miler.",
+    "article_url": "https://www.9and10news.com/2026/11/26/traverse-city-turkey-trot-sets-record-turnout-with-nearly-3000-participants/",
+    "article_title": "Traverse City Turkey Trot sets record turnout with nearly 3,000 participants (9&10 News)",
+    "jokes": [
+     "Evan Fox won five miles before most of us found our slippers.",
+     "He beat 3,000 people and still had room for pie. That's the real athlete."
+    ],
+    "body": "SCHOOL: TC CENTRAL SENIOR WINS THE TURKEY TROT FIVE-MILER<br>• Traverse City Central senior Evan Fox won the five-mile race at yesterday's record Turkey Trot, per 9&10. Nearly 3,000 people ran or walked.<br>• Shout-out to every kid who got dragged out of bed early on a day off to run in the cold, and to the parents pulling wagons.<br>➜ TAKE: A high schooler beat 3,000 adults on Thanksgiving morning. Somewhere a gym teacher is crying happy tears.<br>➜ BAIT: Text 231-929-4487: shout out a kid in your family who ran yesterday.<br>😂 JOKES: Evan Fox won five miles before most of us found our slippers. / He beat 3,000 people and still had room for pie. That's the real athlete.",
+    "description": "Traverse City Central senior Evan Fox won the five-mile race at yesterday's record Turkey Trot, per 9&10. Nearly 3,000 people ran or walked. Shout-out to every kid who got dragged out of bed early on a day off to run in the cold, and to the parents pulling wagons.",
+    "summary": "Traverse City Central senior Evan Fox won the five-mile race at yesterday's record Turkey Trot, per 9&10. Nearly 3,000 people ran or walked. Shout-out to every kid who got dragged out of bed early on a day off to run in the cold, and to the parents pulling wagons.",
+    "rank": 3,
+    "verify": "Confirmed"
+   }
+  ],
+  "article_url": "https://www.facebook.com/cityoftc/posts/pfbid0rsm8owQxzsi8k6VETjfmZ1yB8uLcaZZ2zvhD6Nn2NbUKHRKjWrSmQbSpXpPBgpRkl",
+  "article_title": "City of Traverse City: City Offices Closed, November 26 & 27 (Facebook)",
+  "jokes": [
+   "Day-after-Thanksgiving meetings are the only ones where nobody has their camera on, because they're still in pajamas at their desk.",
+   "If you're at work today, you get to set the thermostat. That's power."
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "68991ab3c3a6",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "verse": {
+  "id": "verse",
+  "title": "Verse Reverse",
+  "category": "Optional",
+  "type": "text",
+  "content": "",
+  "notes": "",
+  "custom": false,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "2ea0d62e0f6e",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "mental": {
+  "id": "mental",
+  "title": "Mental Health Minute",
+  "category": "8:05",
+  "type": "text",
+  "content": "PUT THE PHONE IN THE OTHER ROOM FOR ONE CONVERSATION<br><br>It's the National Day of Listening, and a lot of us still have family in the house. Here's one small move for today. Pick one conversation, and before it starts, put your phone in another room. Not face down on the table. Somewhere else. In a 2013 study, people who talked about something meaningful with a phone just sitting nearby reported feeling less close and less understood. Later research hasn't always found the same effect, so think of it as a cheap experiment, not a rule. Ask your grandma, your dad, or your kid one question, and then just listen to the whole answer. If you try it today, text me at 231-929-4487 and tell me what you heard.",
+  "notes": "https://journals.sagepub.com/doi/full/10.1177/0265407512453827<br>Przybylski & Weinstein 2013 (phone presence lowered closeness/trust in meaningful conversations). A 2018 replication (Communication Studies, doi 10.1080/10510974.2018.1467941) did not reproduce it; the script says so. No clinical claims.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-27-mental-01",
+    "title": "PUT THE PHONE IN THE OTHER ROOM FOR ONE CONVERSATION",
+    "recap": "On the Mental Health Minute, we suggested putting the phone in another room for one conversation on the National Day of Listening.",
+    "article_url": "https://journals.sagepub.com/doi/full/10.1177/0265407512453827",
+    "article_title": "Can you connect with me now? How the presence of mobile communication technology influences face-to-face conversation quality (Przybylski & Weinstein, J Soc Pers Relat 2013)",
+    "jokes": [],
+    "body": "PUT THE PHONE IN THE OTHER ROOM FOR ONE CONVERSATION<br>It's the National Day of Listening, and a lot of us still have family in the house. Here's one small move for today. Pick one conversation, and before it starts, put your phone in another room. Not face down on the table. Somewhere else. In a 2013 study, people who talked about something meaningful with a phone just sitting nearby reported feeling less close and less understood. Later research hasn't always found the same effect, so think of it as a cheap experiment, not a rule. Ask your grandma, your dad, or your kid one question, and then just listen to the whole answer. If you try it today, text me at 231-929-4487 and tell me what you heard.",
+    "description": "It's the National Day of Listening, and a lot of us still have family in the house. Here's one small move for today. Pick one conversation, and before it starts, put your phone in another room. Not face down on the table. Somewhere else. In a 2013 study, people who talked about something meaningful with a phone just sitting nearby reported feeling less close and less understood. Later research hasn't always found the same effect, so think of it as a cheap experiment, not a rule. Ask your grandma, your dad, or your kid one question, and then just listen to the whole answer. If you try it today, text me at 231-929-4487 and tell me what you heard.",
+    "summary": "It's the National Day of Listening, and a lot of us still have family in the house. Here's one small move for today. Pick one conversation, and before it starts, put your phone in another room. Not face down on the table. Somewhere else. In a 2013 study, people who talked about something meaningful with a phone just sitting nearby reported feeling less close and less understood. Later research hasn't always found the same effect, so think of it as a cheap experiment, not a rule. Ask your grandma, your dad, or your kid one question, and then just listen to the whole answer. If you try it today, text me at 231-929-4487 and tell me what you heard.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://journals.sagepub.com/doi/full/10.1177/0265407512453827",
+  "article_title": "Can you connect with me now? How the presence of mobile communication technology influences face-to-face conversation quality (Przybylski & Weinstein, J Soc Pers Relat 2013)",
+  "jokes": [],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "200e064ba7ac",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "flash": {
+  "id": "flash",
+  "title": "Flashback",
+  "category": "9AM",
+  "type": "text",
+  "content": "ALL I WANT FOR CHRISTMAS IS YOU — MARIAH CAREY<br>• Released: 1994<br>• Chart peaks: US Billboard Hot 100 No. 1 (first reached December 2019, 25 years after release); US Adult Contemporary No. 6 on first release; UK and Japan No. 2 on first release; RIAA Diamond (Dec. 3, 2021), the first holiday song to get there<br>🎤 SONG STORY: Mariah wrote and produced it with Walter Afanasieff for her first holiday album, Merry Christmas, and Columbia released it Oct. 29, 1994. It was a hit right away overseas, but streaming turned it into a yearly comeback that finally reached No. 1 on the Hot 100 in December 2019.<br>😂 JOKES: Day after Thanksgiving, Mariah legally takes over. She's been defrosting since Halloween. / It took this song 25 years to hit No. 1. That's longer than it takes my family to agree on a restaurant.",
+  "notes": "Backup pick (no flashback-request file today). Peaks and song story: Wikipedia, All I Want for Christmas Is You, citing Billboard and RIAA https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You. Tie-in: day after Thanksgiving, Christmas music season officially opens.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-27-flash-01",
+    "title": "ALL I WANT FOR CHRISTMAS IS YOU — MARIAH CAREY",
+    "recap": "Our Flashback was Mariah Carey's 'All I Want for Christmas Is You,' released in 1994 and No. 1 on the Hot 100 in 2019.",
+    "article_url": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+    "article_title": "All I Want for Christmas Is You (Wikipedia)",
+    "jokes": [
+     "Day after Thanksgiving, Mariah legally takes over. She's been defrosting since Halloween.",
+     "It took this song 25 years to hit No. 1. That's longer than it takes my family to agree on a restaurant."
+    ],
+    "body": "ALL I WANT FOR CHRISTMAS IS YOU — MARIAH CAREY<br>• Released: 1994<br>• Chart peaks: US Billboard Hot 100 No. 1 (first reached December 2019, 25 years after release); US Adult Contemporary No. 6 on first release; UK and Japan No. 2 on first release; RIAA Diamond (Dec. 3, 2021), the first holiday song to get there<br>🎤 SONG STORY: Mariah wrote and produced it with Walter Afanasieff for her first holiday album, Merry Christmas, and Columbia released it Oct. 29, 1994. It was a hit right away overseas, but streaming turned it into a yearly comeback that finally reached No. 1 on the Hot 100 in December 2019.<br>😂 JOKES: Day after Thanksgiving, Mariah legally takes over. She's been defrosting since Halloween. / It took this song 25 years to hit No. 1. That's longer than it takes my family to agree on a restaurant.",
+    "description": "Our Flashback was Mariah Carey's 'All I Want for Christmas Is You,' released in 1994 and No. 1 on the Hot 100 in 2019.",
+    "summary": "Our Flashback was Mariah Carey's 'All I Want for Christmas Is You,' released in 1994 and No. 1 on the Hot 100 in 2019.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+  "article_title": "All I Want for Christmas Is You (Wikipedia)",
+  "jokes": [
+   "Day after Thanksgiving, Mariah legally takes over. She's been defrosting since Halloween.",
+   "It took this song 25 years to hit No. 1. That's longer than it takes my family to agree on a restaurant."
+  ],
+  "requester": "",
+  "song": "All I Want for Christmas Is You",
+  "artist": "Mariah Carey",
+  "single_year": "1994",
+  "chart_records": [
+   "US Billboard Hot 100 No. 1 (first reached December 2019, 25 years after release)",
+   "US Adult Contemporary No. 6 on first release",
+   "UK and Japan No. 2 on first release",
+   "RIAA Diamond (Dec. 3, 2021), the first holiday song to get there"
+  ],
+  "origin": "Mariah wrote and produced it with Walter Afanasieff for her first holiday album, Merry Christmas, and Columbia released it Oct. 29, 1994. It was a hit right away overseas, but streaming turned it into a yearly comeback that finally reached No. 1 on the Hot 100 in December 2019.",
+  "song_story": "Mariah wrote and produced it with Walter Afanasieff for her first holiday album, Merry Christmas, and Columbia released it Oct. 29, 1994. It was a hit right away overseas, but streaming turned it into a yearly comeback that finally reached No. 1 on the Hot 100 in December 2019.",
+  "song_story_source": "Wikipedia, All I Want for Christmas Is You, citing Billboard and RIAA https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "549008a66f42",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "cross": {
+  "id": "cross",
+  "title": "Cross Talk",
+  "category": "Midday",
+  "type": "text",
+  "content": "CROSS TALK: WHEN DOES CHRISTMAS START AT YOUR HOUSE?<br>• Thanksgiving's done, Mariah's thawing, and downtown TC is doing Black Friday and Small Business Saturday all weekend.<br>• So, today's fight: does the tree go up today, or is there a rule in your house?<br>PROMPT 1: Tree up today, or are you a December 1st purist?<br>PROMPT 2: Real tree or fake tree, and who's in charge of the lights?<br>PROMPT 3: What's the first Christmas song that's allowed in your car?<br>➜ TAKE: The day after Thanksgiving is the official start. Anything before that is a cry for help. Anything after that is just lazy.<br>➜ BAIT: Call in: when does Christmas officially start at your house?<br>😂 JOKES: My neighbor's had his lights up since October. He's not festive, he's just never taken them down. / Real tree people and fake tree people should never share a living room. It's how wars start.",
+  "notes": "CROSS TALK: WHEN DOES CHRISTMAS START AT YOUR HOUSE?: https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You Opinion topic. Source is the Flashback song page (Mariah season starts). Ties to Christmas Vacation / Jingle All the Way opener.",
+  "custom": false,
+  "items": [
+   {
+    "id": "2026-11-27-cross-01",
+    "title": "CROSS TALK: WHEN DOES CHRISTMAS START AT YOUR HOUSE?",
+    "recap": "On Cross Talk we debated when Christmas officially starts at home.",
+    "article_url": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+    "article_title": "All I Want for Christmas Is You (Wikipedia)",
+    "jokes": [
+     "My neighbor's had his lights up since October. He's not festive, he's just never taken them down.",
+     "Real tree people and fake tree people should never share a living room. It's how wars start."
+    ],
+    "body": "CROSS TALK: WHEN DOES CHRISTMAS START AT YOUR HOUSE?<br>• Thanksgiving's done, Mariah's thawing, and downtown TC is doing Black Friday and Small Business Saturday all weekend.<br>• So, today's fight: does the tree go up today, or is there a rule in your house?<br>PROMPT 1: Tree up today, or are you a December 1st purist?<br>PROMPT 2: Real tree or fake tree, and who's in charge of the lights?<br>PROMPT 3: What's the first Christmas song that's allowed in your car?<br>➜ TAKE: The day after Thanksgiving is the official start. Anything before that is a cry for help. Anything after that is just lazy.<br>➜ BAIT: Call in: when does Christmas officially start at your house?<br>😂 JOKES: My neighbor's had his lights up since October. He's not festive, he's just never taken them down. / Real tree people and fake tree people should never share a living room. It's how wars start.",
+    "description": "Thanksgiving's done, Mariah's thawing, and downtown TC is doing Black Friday and Small Business Saturday all weekend. So, today's fight: does the tree go up today, or is there a rule in your house?",
+    "summary": "Thanksgiving's done, Mariah's thawing, and downtown TC is doing Black Friday and Small Business Saturday all weekend. So, today's fight: does the tree go up today, or is there a rule in your house?",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+  "article_title": "All I Want for Christmas Is You (Wikipedia)",
+  "jokes": [
+   "My neighbor's had his lights up since October. He's not festive, he's just never taken them down.",
+   "Real tree people and fake tree people should never share a living room. It's how wars start."
+  ],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "9bec26546294",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "offcharts": {
+  "id": "offcharts",
+  "title": "Off the Charts",
+  "category": "Fri 8:30",
+  "type": "text",
+  "content": "📣 SPONSOR (read first): Z93 OFF THE CHARTS is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort, where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com.<br><br>JACK JOHNSON, \"BETTER TOGETHER\" (2005)<br>- RELEASE: Opener of In Between Dreams, out March 1, 2005, on Brushfire Records. Recorded in October 2004 at The Mango Tree, his studio in Hawaii. Issued as a single in February 2006.<br>- THE MISS: It never entered the Billboard Hot 100. On the same album, \"Sitting, Waiting, Wishing\" did, peaking at No. 66. \"Better Together\" reached No. 12 on Billboard's Adult Alternative Airplay chart and No. 24 on the U.K. Official Singles Chart. It is certified Gold in the U.S. by the RIAA, and 2× Platinum in the U.K.<br>- BACKGROUND: Jack Johnson grew up surfing on the North Shore of Oahu. At 17 he made the finals of the Pipeline Masters, then a wipeout at Pipeline a week later ended that run and pushed him toward music. He studied film at UC Santa Barbara. This is the first track on In Between Dreams, which peaked at No. 2 on the Billboard 200 and is 2× Platinum in the U.S. It's a radio-clean love song whose hook is \"it's always better when we're together,\" the right feeling the day after Thanksgiving, when the house is still full or you're heading out.<br>➜ TAKE: A Gold record and a No. 2 album, and Billboard never put this one on the Hot 100. The morning after Thanksgiving, this is the song for a full house.<br>➜ BAIT: Text 231-929-4487: is it always better when we're together, or do you need a little space after Thanksgiving?<br>😂 JOKES: If you're still on the same couch as your cousins, Jack Johnson already wrote your theme song. / Gold at home, 2× Platinum in the U.K., and still no Hot 100.<br>Source: Better Together (Wikipedia, citing Official Charts and RIAA): https://en.wikipedia.org/wiki/Better_Together_(Jack_Johnson_song); Jack Johnson discography (Wikipedia, citing Billboard Hot 100 and Adult Alternative): https://en.wikipedia.org/wiki/Jack_Johnson_discography; UK Official Singles Chart, peak No. 24: https://www.officialcharts.com/songs/jack-johnson-better-together/<br>Official audio: YouTube: https://www.youtube.com/watch?v=RSsTx2TBrww<br>Optional live: VEVO, Live in Paris: https://www.youtube.com/watch?v=6m6V0XlnVpI<br>BACKUP, if this is already loaded: Edward Sharpe & The Magnetic Zeros, \"Home\" (2010). The \"home is wherever I'm with you\" singalong from Up from Below, released as a single in January 2010. It never entered the Billboard Hot 100. It reached No. 25 on Billboard's Alternative Airplay chart, No. 50 in the U.K., and No. 7 in France, and it is Platinum in the U.S. (RIAA). Official video: YouTube: https://www.youtube.com/watch?v=DHEOF_rcND8<br>⚠ Lyric heads-up: one line uses \"Jesus Christ\" as an exclamation (\"hot and heavy, pumpkin pie, chocolate candy, Jesus Christ\"). Not a religious song, but flag it for the no-religion rule.",
+  "notes": "- Truce had not named a Friday Nov 27 pick in handoff notes, status files, or the used list. This is a Hot Sheet suggestion so he can load it tonight.<br>- Lyrics on \"Better Together\" are radio-clean (Songfacts / LyricFind). No politics, religion, sex, or war.<br>- Thanksgiving tie-in is the hook, not a novelty holiday song.<br>- Not a repeat. Checked `off-the-charts-used.md` and past sheets. Avoided: The Paradox \"Bender\" (played Oct 23); Jamiroquai \"Virtual Insanity\" and Coldplay \"The Scientist\" (Nov 6); Sade \"King of Sorrow\" and Pearl Jam \"Black\" (Nov 13 bonus/backup); Gigi Perez \"Sailor Song\" (Nov 13 Truce pick on the sheet); The Rembrandts \"I'll Be There for You\" (Nov 20).<br>- Chart check (Thu Nov 26, 2026): Wikipedia's Jack Johnson discography, citing Billboard, lists a dash for \"Better Together\" on the Hot 100 and No. 12 on Adult Alternative. It specifically footnotes \"In the Morning\" as a Bubbling Under Hot 100 peak, and does not give \"Better Together\" a Bubbling Under note. Billboard's Jack Johnson Hot 100 history lists seven songs (including \"Flake\" at No. 73, \"Sitting, Waiting, Wishing\" at No. 66, and \"Upside Down\" at No. 38) and does not include \"Better Together.\"<br>- Backup chart check: Edward Sharpe discography (Wikipedia, citing Billboard) lists a dash on the U.S. Hot 100 for \"Home.\" Alternative Airplay No. 25 is in Billboard's May 7, 2021 Kelly Clarkson cover write-up and on the song's Wikipedia chart table. RIAA Platinum is cited on the Wikipedia song page.",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-offcharts-01",
+    "title": "BETTER TOGETHER — JACK JOHNSON (2005)",
+    "recap": "For Off the Charts we played Jack Johnson's \"Better Together,\" a Gold record that never made the Billboard Hot 100.",
+    "article_url": "https://en.wikipedia.org/wiki/Better_Together_(Jack_Johnson_song)",
+    "article_title": "Better Together (Jack Johnson song) (Wikipedia)",
+    "jokes": [
+     "If you're still on the same couch as your cousins, Jack Johnson already wrote your theme song.",
+     "Gold at home, 2× Platinum in the U.K., and still no Hot 100."
+    ],
+    "body": "BETTER TOGETHER — JACK JOHNSON (2005)<br>For Off the Charts we played Jack Johnson's \"Better Together,\" a Gold record that never made the Billboard Hot 100.",
+    "description": "For Off the Charts we played Jack Johnson's \"Better Together,\" a Gold record that never made the Billboard Hot 100.",
+    "summary": "For Off the Charts we played Jack Johnson's \"Better Together,\" a Gold record that never made the Billboard Hot 100.",
+    "rank": 1,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://en.wikipedia.org/wiki/Better_Together_(Jack_Johnson_song)",
+  "article_title": "Better Together (Wikipedia)",
+  "jokes": [
+   "If you're still on the same couch as your cousins, Jack Johnson already wrote your theme song.",
+   "Gold at home, 2× Platinum in the U.K., and still no Hot 100."
+  ],
+  "sponsor": "Schuss Mountain at Shanty Creek Resort",
+  "sponsor_read": "Z93 OFF THE CHARTS is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski resort, where you can hit the face, take the scenic route through the glades, or send it in the terrain parks. More at shantycreek.com.",
+  "song": "Better Together",
+  "artist": "Jack Johnson",
+  "owner": "truce",
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "725dcffbe596",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "newsclips": {
+  "id": "newsclips",
+  "title": "News Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "MACY'S PARADE POSTPONED FOR THE FIRST TIME IN 100 YEARS · NEWS AUDIO<br>🎙️ SET UP: For the first time ever, the Macy's Thanksgiving Day Parade got pushed, to tomorrow morning. TODAY was in Times Square when the news hit. \"Here's NBC's TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube, posted Nov. 26: \"Macy's Thanksgiving Day Parade Postponed for First Time Ever.\" On-air credit: \"from NBC's TODAY.\"<br>• Wind forecast of 35 mph sustained and 60 mph gusts, twice the balloon limit. The balloons were inflated Wednesday, then deflated and trucked back to New Jersey. Bands and performers 'left wondering what happens next.'<br>🔊 IN: \"For the first time in its 100-year history...\" (0:00)<br>OUT: \"...now left wondering what happens next.\" (1:02)<br>~1:02 · PLAY · READY<br>➜ WHY: The biggest holiday TV story of the week, and our own Kalkaska dancers are caught in it (Buzz #1).<br>⚠️ FLAG: Clean. The next part of the video is a Texas band director plus a long music/crowd stretch, NOT in the cut. NBC network audio: credit it.<br><br>DAN CAMPBELL: 'DON'T LET THIS RUIN YOUR THANKSGIVING' · NEWS AUDIO<br>🎙️ SET UP: The Bears beat the Lions 39-35 on a touchdown with three seconds left. Here's what Dan Campbell told his team after. \"Dan Campbell, courtesy of the Detroit Lions.\"<br>🔈 AUDIO SOURCE: Detroit Lions, official YouTube: \"Dan Campbell postgame media availability | 2026 NFL Regular Season Week 12: Lions vs Bears.\" On-air credit: \"courtesy of the Detroit Lions.\"<br>• Credit to Chicago; 'I just told the guys, man, don't let this ruin your Thanksgiving. It's going to stink, and it should stink for a while.' Clean it up Monday.<br>🔊 IN: \"You've got to credit that team, man...\" (0:00)<br>OUT: \"...get ready for whoever we play next.\" (0:45)<br>~0:45 · PLAY · READY<br>➜ WHY: Every Lions fan needs this exact pep talk this morning.<br>⚠️ FLAG: Clean. Campbell's 'stink' is fine for air. Later in the presser he talks about Martha Firestone Ford's passing, NOT in the cut; handle that with care if you mention it.<br><br>THE CALL: BEARS WIN IT WITH 3 SECONDS LEFT · NEWS AUDIO<br>🎙️ SET UP: If you turned it off with a few minutes left, here's how it ended. \"From the NFL.\"<br>🔈 AUDIO SOURCE: NFL, official YouTube: \"Chicago Bears vs. Detroit Lions Thanksgiving Day Game Highlights | 2026 NFL Season Week 12\" (CBS broadcast call). On-air credit: \"courtesy of the NFL.\"<br>• First and goal, a near-pick, then on third and goal Caleb Williams finds Rome Odunze, who gets his feet down for the go-ahead touchdown.<br>🔊 IN: \"First and goal to go...\" (0:00)<br>OUT: \"...Odunze holds it in.\" (0:32)<br>~0:32 · TALK-OVER · READY<br>➜ WHY: The play everybody's talking about. Painful, but it's the news.<br>⚠️ FLAG: Clean. Crowd noise is heavy and the transcript is rough; hear it once. It's the Bears' winning moment, so set it up with sympathy, or skip if the room's too sore. Network audio: credit it.<br><br>STEELERS CUT AARON RODGERS AFTER HIS MCAFEE RANT · NEWS AUDIO<br>🎙️ SET UP: Aaron Rodgers went on 'The Pat McAfee Show,' blasted his coach, and was released a few hours later. \"Here's NBC's TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube, posted Nov. 26: \"Steelers Release Aaron Rodgers After Public Criticism of Coach.\" On-air credit: \"from NBC's TODAY.\"<br>• Rodgers says Mike McCarthy came in late to a QB meeting and was snoring within 10 minutes, that he learned of his benching from a teammate, and that McCarthy used the wrong team name at halftime: 'One, two, three, Packers.'<br>🔊 IN: \"This morning, four-time NFL MVP Aaron Rodgers...\" (0:00)<br>OUT: \"...One, two, three, Packers.\" (0:57)<br>~0:57 · PLAY · READY<br>➜ WHY: Biggest NFL story of the week off the field, and the Packers line is a gift for Michigan listeners.<br>⚠️ FLAG: Clean. 'This morning' in the clip means Thursday; say 'Wednesday night/this week' in your set-up. NBC network audio: credit it.",
+  "notes": "MACY'S PARADE POSTPONED FOR THE FIRST TIME IN 100 YEARS: https://www.youtube.com/watch?v=R1_b-FEzKD8 ⚠️ FLAG: Clean. The next part of the video is a Texas band director plus a long music/crowd stretch, NOT in the cut. NBC network audio: credit it.<br>DAN CAMPBELL: 'DON'T LET THIS RUIN YOUR THANKSGIVING': https://www.youtube.com/watch?v=DSQ_IeOT0Ys ⚠️ FLAG: Clean. Campbell's 'stink' is fine for air. Later in the presser he talks about Martha Firestone Ford's passing, NOT in the cut; handle that with care if you mention it.<br>THE CALL: BEARS WIN IT WITH 3 SECONDS LEFT: https://www.youtube.com/watch?v=6mDrkExeNSY ⚠️ FLAG: Clean. Crowd noise is heavy and the transcript is rough; hear it once. It's the Bears' winning moment, so set it up with sympathy, or skip if the room's too sore. Network audio: credit it.<br>STEELERS CUT AARON RODGERS AFTER HIS MCAFEE RANT: https://www.youtube.com/watch?v=eYCEvzj9sM0 ⚠️ FLAG: Clean. 'This morning' in the clip means Thursday; say 'Wednesday night/this week' in your set-up. NBC network audio: credit it.",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-27-c01",
+    "slot": "NEWS AUDIO",
+    "title": "MACY'S PARADE POSTPONED FOR THE FIRST TIME IN 100 YEARS",
+    "body": "MACY'S PARADE POSTPONED FOR THE FIRST TIME IN 100 YEARS · NEWS AUDIO<br>🎙️ SET UP: For the first time ever, the Macy's Thanksgiving Day Parade got pushed, to tomorrow morning. TODAY was in Times Square when the news hit. \"Here's NBC's TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube, posted Nov. 26: \"Macy's Thanksgiving Day Parade Postponed for First Time Ever.\" On-air credit: \"from NBC's TODAY.\"<br>• Wind forecast of 35 mph sustained and 60 mph gusts, twice the balloon limit. The balloons were inflated Wednesday, then deflated and trucked back to New Jersey. Bands and performers 'left wondering what happens next.'<br>🔊 IN: \"For the first time in its 100-year history...\" (0:00)<br>OUT: \"...now left wondering what happens next.\" (1:02)<br>~1:02 · PLAY · READY<br>➜ WHY: The biggest holiday TV story of the week, and our own Kalkaska dancers are caught in it (Buzz #1).<br>⚠️ FLAG: Clean. The next part of the video is a Texas band director plus a long music/crowd stretch, NOT in the cut. NBC network audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c01-today-macys-parade-postponed.mp3",
+    "ready": true,
+    "recap": "We heard TODAY's report on the Macy's parade being postponed for the first time in 100 years.",
+    "duration": "1:02",
+    "duration_sec": 62.35,
+    "secs": 62,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-27-c02",
+    "slot": "NEWS AUDIO",
+    "title": "DAN CAMPBELL: 'DON'T LET THIS RUIN YOUR THANKSGIVING'",
+    "body": "DAN CAMPBELL: 'DON'T LET THIS RUIN YOUR THANKSGIVING' · NEWS AUDIO<br>🎙️ SET UP: The Bears beat the Lions 39-35 on a touchdown with three seconds left. Here's what Dan Campbell told his team after. \"Dan Campbell, courtesy of the Detroit Lions.\"<br>🔈 AUDIO SOURCE: Detroit Lions, official YouTube: \"Dan Campbell postgame media availability | 2026 NFL Regular Season Week 12: Lions vs Bears.\" On-air credit: \"courtesy of the Detroit Lions.\"<br>• Credit to Chicago; 'I just told the guys, man, don't let this ruin your Thanksgiving. It's going to stink, and it should stink for a while.' Clean it up Monday.<br>🔊 IN: \"You've got to credit that team, man...\" (0:00)<br>OUT: \"...get ready for whoever we play next.\" (0:45)<br>~0:45 · PLAY · READY<br>➜ WHY: Every Lions fan needs this exact pep talk this morning.<br>⚠️ FLAG: Clean. Campbell's 'stink' is fine for air. Later in the presser he talks about Martha Firestone Ford's passing, NOT in the cut; handle that with care if you mention it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c02-lions-campbell-dont-ruin-thanksgiving.mp3",
+    "ready": true,
+    "recap": "We heard Dan Campbell tell the Lions not to let the Bears loss ruin their Thanksgiving.",
+    "duration": "0:45",
+    "duration_sec": 45.14,
+    "secs": 45,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-27-c03",
+    "slot": "NEWS AUDIO",
+    "title": "THE CALL: BEARS WIN IT WITH 3 SECONDS LEFT",
+    "body": "THE CALL: BEARS WIN IT WITH 3 SECONDS LEFT · NEWS AUDIO<br>🎙️ SET UP: If you turned it off with a few minutes left, here's how it ended. \"From the NFL.\"<br>🔈 AUDIO SOURCE: NFL, official YouTube: \"Chicago Bears vs. Detroit Lions Thanksgiving Day Game Highlights | 2026 NFL Season Week 12\" (CBS broadcast call). On-air credit: \"courtesy of the NFL.\"<br>• First and goal, a near-pick, then on third and goal Caleb Williams finds Rome Odunze, who gets his feet down for the go-ahead touchdown.<br>🔊 IN: \"First and goal to go...\" (0:00)<br>OUT: \"...Odunze holds it in.\" (0:32)<br>~0:32 · TALK-OVER · READY<br>➜ WHY: The play everybody's talking about. Painful, but it's the news.<br>⚠️ FLAG: Clean. Crowd noise is heavy and the transcript is rough; hear it once. It's the Bears' winning moment, so set it up with sympathy, or skip if the room's too sore. Network audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c03-nfl-bears-game-winner-call.mp3",
+    "ready": true,
+    "recap": "We heard the call of Rome Odunze's last-second touchdown that beat the Lions.",
+    "duration": "0:32",
+    "duration_sec": 31.69,
+    "secs": 32,
+    "kind": "news"
+   },
+   {
+    "id": "2026-11-27-c04",
+    "slot": "NEWS AUDIO",
+    "title": "STEELERS CUT AARON RODGERS AFTER HIS MCAFEE RANT",
+    "body": "STEELERS CUT AARON RODGERS AFTER HIS MCAFEE RANT · NEWS AUDIO<br>🎙️ SET UP: Aaron Rodgers went on 'The Pat McAfee Show,' blasted his coach, and was released a few hours later. \"Here's NBC's TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube, posted Nov. 26: \"Steelers Release Aaron Rodgers After Public Criticism of Coach.\" On-air credit: \"from NBC's TODAY.\"<br>• Rodgers says Mike McCarthy came in late to a QB meeting and was snoring within 10 minutes, that he learned of his benching from a teammate, and that McCarthy used the wrong team name at halftime: 'One, two, three, Packers.'<br>🔊 IN: \"This morning, four-time NFL MVP Aaron Rodgers...\" (0:00)<br>OUT: \"...One, two, three, Packers.\" (0:57)<br>~0:57 · PLAY · READY<br>➜ WHY: Biggest NFL story of the week off the field, and the Packers line is a gift for Michigan listeners.<br>⚠️ FLAG: Clean. 'This morning' in the clip means Thursday; say 'Wednesday night/this week' in your set-up. NBC network audio: credit it.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c04-today-steelers-release-rodgers.mp3",
+    "ready": true,
+    "recap": "We heard TODAY's report on the Steelers releasing Aaron Rodgers after he ripped Mike McCarthy.",
+    "duration": "0:57",
+    "duration_sec": 57.29,
+    "secs": 57,
+    "kind": "news"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "clips": {
+  "id": "clips",
+  "title": "Trending Audio",
+  "category": "Clips",
+  "type": "text",
+  "content": "11 of 10 clips today (4 news audio, 5 trending/comedy, 2 buffer) + supercut · all new audio, 0 repeats<br><br>SHOW OPENER SUPERCUT: BLACK FRIDAY, THE TURBO MAN HUNT · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Fallon monologue (NBC, Nov 25) + Jingle All the Way (1996, 20th Century Fox), clips from JoBlo Movie Clips and Movieclips YouTube uploads. DRY, no music bed. Mastered about -14 LUFS.<br>• Fallon: \"We're also just days away from Black Friday, and there are so many great deals out there.\"<br>• Sinbad (Myron): \"We are being set up by rich and powerful toy cartels.\"<br>• Store clerk: \"Where have you guys been? Turbo Man's only the hottest selling Christmas toy ever!\"<br>• Clerk: \"The last one just left. Some lady had it on layaway.\" / Arnold: \"A lady? What lady?\" (button, straight into your open)<br>🔊 IN: \"We're also just days away from Black Friday...\" (0:00)<br>OUT: \"A lady? What lady?\" (0:18)<br>~0:18 · PLAY · READY<br>➜ WHY: Black Friday morning, and Jingle All the Way turns 30 this month. Every parent who ever hunted one toy knows this scene.<br>⚠️ FLAG: Clean. Short (18 s), 4 bites. The Sinbad rant continues into an adult line about the post office, NOT in the cut. Jingle All the Way bites may carry a little film score under the dialogue; hear it once. Fallon bite is from the Wed monologue whose next segment is a political joke, NOT in the cut.<br><br>TURKEYS CHASE A WOMAN DOWN THE STREET, AND A STRANGER SAVES HER · TRENDING AUDIO<br>🎙️ SET UP: Thanksgiving week, and the turkeys fought back. A woman in Newton, Massachusetts got chased down the street by a gang of them. \"From Inside Edition.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube: \"Woman Jumps Into Stranger's Car To Escape Turkeys Chasing Her.\" On-air credit: \"courtesy of Inside Edition.\"<br>• 'Go away! Go away!' She runs, the turkeys follow, and two strangers let her jump in their car. 'They were trying to bite your butt.'<br>🔊 IN: \"Oh, no. Turkeys are understandably on high alert this week.\" (0:00)<br>OUT: \"...trying to bite your butt.\" (0:47)<br>~0:47 · PLAY · READY<br>➜ WHY: Viral, funny, and it's the day after Thanksgiving. Revenge of the birds. Pairs with the bench story on Michigan's 200,000 wild turkeys.<br>⚠️ FLAG: Clean. Stops before an 'Oh my God' a few seconds later. 'Butt' is fine for air.<br><br>FALLON MONOLOGUE: A GUILT-FREE GUIDE FOR MOMS · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Fewer people traveled for Thanksgiving this year, so Jimmy Fallon made a guide for moms whose kids skipped it. \"From The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Wed Nov 25 monologue (titled 'Trump Celebrates Thanksgiving at Mar-a-Lago'; the cut skips that joke). On-air credit: \"from The Tonight Show.\"<br>• 'That's fine.' 'We'll save a place for you, just in case you decide family is important.' 'I got you a pecan pie. I guess I'll just throw it out.' 'I love you, even though you're really, really selfish. See you at Christmas.'<br>🔊 IN: \"...fewer Americans are expected to travel for Thanksgiving...\" (0:00)<br>OUT: \"...See you at Christmas.\" (1:13)<br>~1:13 · PLAY · READY<br>➜ WHY: Last new late-night monologue before the holiday (Thursday was a special), every mom-guilt line lands, and it's a perfect day-after call-in.<br>⚠️ FLAG: Clean. The very next joke in the monologue is about President Trump at Mar-a-Lago, NOT in the cut. Later bits in the monologue have innuendo, also NOT in the cut.<br><br>HODA KOTB BREAKS THE PARADE NEWS ON SETH MEYERS · TRENDING AUDIO<br>🎙️ SET UP: Hoda Kotb was on Seth Meyers to talk about co-hosting the 100th Macy's parade, and then it got postponed. \"Here's Late Night with Seth Meyers.\"<br>🔈 AUDIO SOURCE: Late Night with Seth Meyers (NBC), official YouTube: \"Hoda Kotb on the Macy's Thanksgiving Day Parade Being Postponed for the First Time.\" On-air credit: \"from Late Night.\"<br>• 'We waited 100 years for this parade, we're going to wait two more days.' Seth: 'It sounds really fun to watch on TV. Floats going everywhere, kids' trumpets being whipped away.'<br>🔊 IN: \"And you know what? You're a longtime news person.\" (0:00)<br>OUT: \"...first time in a hundred years.\" (1:01)<br>~1:01 · PLAY · READY<br>➜ WHY: The parade story with a laugh. Pairs with c01 and Buzz #1.<br>⚠️ FLAG: Clean. Seth's next line is a climate-change quip, NOT in the cut (avoid list).<br><br>NATE BARGATZE RENTED OUT THE APPLEBEE'S WHERE HE MET HIS WIFE · SUPER-CLIP 6 AM<br>🎙️ SET UP: Nate Bargatze just celebrated 20 years of marriage, and he did it at the most romantic place in America. \"Nate Bargatze, on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube: \"Nate Bargatze Was His School's Class Clown Runner-Up, Calls Himself a Thanksgiving 'Ham Guy'.\" On-air credit: \"from The Tonight Show.\"<br>• They met working at a Nashville Applebee's (he was the host, she was a waitress, 'she was higher up'). His wife rented out that Applebee's for their 20th, and a cook named Donut still works there. They were going to the Macy's parade, but it moved to Saturday.<br>🔊 IN: \"I gotta say, I saw your beautiful wife backstage.\" (0:00)<br>OUT: \"...We're gonna go back.\" (1:18)<br>~1:18 · PLAY · READY<br>➜ WHY: Clean, sweet, very Bargatze, and it lands on the parade news. Runs long but flows; the 'Donut' run is the laugh.<br>⚠️ FLAG: Clean. Transcript is rough in the Donut section (crosstalk); hear it once. Runs 1:18.<br><br>NATE BARGATZE'S BLOOD TEST KNEW HIS ANTACID BRAND · TRENDING AUDIO<br>🎙️ SET UP: The day after Thanksgiving, the antacid aisle is busy. Nate Bargatze says his doctor could tell exactly which one he takes. \"Nate Bargatze, on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube (same interview as c08). On-air credit: \"from The Tonight Show.\"<br>• 'She goes, do you take Pepcid AC? I go, you can tell? I don't take it enough that I'm bleeding Pepcid AC.' Then she asks if he's around a lot of fireworks. 'I must go to a witch.'<br>🔊 IN: \"The method comedian, you put on the pounds...\" (0:00)<br>OUT: \"...I must go to a witch.\" (0:59)<br>~0:59 · PLAY · READY<br>➜ WHY: Perfect food-coma morning joke, clean, about a minute.<br>⚠️ FLAG: Clean. Brand name (Pepcid AC) is said repeatedly; it's his joke, not an ad. Starts with Fallon's set-up line.<br><br>PAST BIT: AL ROKER VS. THE BUTTER MAN (2019 PARADE) · BUFFER: TRENDING<br>🎙️ SET UP: With the parade moved to tomorrow, a favorite parade moment: Al Roker's 2019 run-in with a man dressed as a stick of butter. \"From NBC's TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube: \"Al Roker Battles Butter Man at 2019 Macy's Thanksgiving Parade.\" On-air credit: \"from NBC's TODAY.\"<br>• 'I hate to butter you up, but you've got to move on.' 'I can't believe it's not butter.' Then the Butter Man catches up with Al again later on the parade route.<br>🔊 IN: \"I hate to butter you up...\" (0:00)<br>OUT: \"...that's why everybody loves clowns.\" (0:32)<br>~0:32 · PLAY · READY<br>➜ WHY: Light parade nostalgia while we wait for Saturday.<br>⚠️ FLAG: Clean. It's from 2019; say so. Short (32 s).<br><br>FEDEX JET RUNS OFF A RAIN-SOAKED RUNWAY IN MIAMI · BUFFER: NEWS<br>🎙️ SET UP: Same storm, different coast: a FedEx cargo jet ran off the end of a runway in Miami. Nobody was hurt. \"From ABC News.\"<br>🔈 AUDIO SOURCE: ABC News, official YouTube: \"New video shows FedEx cargo jet overshooting runway in Miami.\" On-air credit: \"courtesy of ABC News.\"<br>• An MD-11 from Memphis overran the runway around 8:25 PM, kicking up dirt and debris. Both pilots got out unharmed, and FedEx says it's cooperating with authorities.<br>🔊 IN: \"Tonight, this is the moment a FedEx jet overran...\" (0:00)<br>OUT: \"...cooperating with authorities.\" (0:33)<br>~0:33 · TALK-OVER · READY<br>➜ WHY: Holiday-travel weather story with dramatic video audio; nobody hurt.<br>⚠️ FLAG: Clean. The report goes on to a deadly cargo crash at the same airport, NOT in the cut. Date of the incident isn't stated in the clip; ABC posted it Nov 26.",
+  "notes": "SHOW OPENER SUPERCUT: BLACK FRIDAY, THE TURBO MAN HUNT: https://www.youtube.com/watch?v=C7og4Y1-OEA https://www.youtube.com/watch?v=TIiZfey_OTw https://www.youtube.com/watch?v=YTcFsdIJ_Xo ⚠️ FLAG: Clean. Short (18 s), 4 bites. The Sinbad rant continues into an adult line about the post office, NOT in the cut. Jingle All the Way bites may carry a little film score under the dialogue; hear it once. Fallon bite is from the Wed monologue whose next segment is a political joke, NOT in the cut.<br>TURKEYS CHASE A WOMAN DOWN THE STREET, AND A STRANGER SAVES HER: https://www.youtube.com/watch?v=BnsT7RnuXbs ⚠️ FLAG: Clean. Stops before an 'Oh my God' a few seconds later. 'Butt' is fine for air.<br>FALLON MONOLOGUE: A GUILT-FREE GUIDE FOR MOMS: https://www.youtube.com/watch?v=C7og4Y1-OEA ⚠️ FLAG: Clean. The very next joke in the monologue is about President Trump at Mar-a-Lago, NOT in the cut. Later bits in the monologue have innuendo, also NOT in the cut.<br>HODA KOTB BREAKS THE PARADE NEWS ON SETH MEYERS: https://www.youtube.com/watch?v=_BbB1rx0NYo ⚠️ FLAG: Clean. Seth's next line is a climate-change quip, NOT in the cut (avoid list).<br>NATE BARGATZE RENTED OUT THE APPLEBEE'S WHERE HE MET HIS WIFE: https://www.youtube.com/watch?v=GZ3Q27Yp9UE ⚠️ FLAG: Clean. Transcript is rough in the Donut section (crosstalk); hear it once. Runs 1:18.<br>NATE BARGATZE'S BLOOD TEST KNEW HIS ANTACID BRAND: https://www.youtube.com/watch?v=GZ3Q27Yp9UE ⚠️ FLAG: Clean. Brand name (Pepcid AC) is said repeatedly; it's his joke, not an ad. Starts with Fallon's set-up line.<br>PAST BIT: AL ROKER VS. THE BUTTER MAN (2019 PARADE): https://www.youtube.com/watch?v=JgKn3QIwLXU ⚠️ FLAG: Clean. It's from 2019; say so. Short (32 s).<br>FEDEX JET RUNS OFF A RAIN-SOAKED RUNWAY IN MIAMI: https://www.youtube.com/watch?v=vNo2Y8MOfJg ⚠️ FLAG: Clean. The report goes on to a deadly cargo crash at the same airport, NOT in the cut. Date of the incident isn't stated in the clip; ABC posted it Nov 26.<br>11 of 10 today + supercut. Dropped: Jeff Dunham 'Walter' Black Friday bit (not radio-clean) and a CBS Black Friday tips piece (audio too gappy). Seth's climate line, Fallon's Mar-a-Lago joke and ABC's deadly-crash follow-up are cut out. One animal clip (turkeys, viral).",
+  "custom": true,
+  "items": [],
+  "clips": [
+   {
+    "id": "2026-11-27-c00",
+    "slot": "SHOW OPENER SUPERCUT",
+    "title": "SHOW OPENER SUPERCUT: BLACK FRIDAY, THE TURBO MAN HUNT",
+    "body": "SHOW OPENER SUPERCUT: BLACK FRIDAY, THE TURBO MAN HUNT · SHOW OPENER SUPERCUT<br>🔈 AUDIO SOURCE: Fallon monologue (NBC, Nov 25) + Jingle All the Way (1996, 20th Century Fox), clips from JoBlo Movie Clips and Movieclips YouTube uploads. DRY, no music bed. Mastered about -14 LUFS.<br>• Fallon: \"We're also just days away from Black Friday, and there are so many great deals out there.\"<br>• Sinbad (Myron): \"We are being set up by rich and powerful toy cartels.\"<br>• Store clerk: \"Where have you guys been? Turbo Man's only the hottest selling Christmas toy ever!\"<br>• Clerk: \"The last one just left. Some lady had it on layaway.\" / Arnold: \"A lady? What lady?\" (button, straight into your open)<br>🔊 IN: \"We're also just days away from Black Friday...\" (0:00)<br>OUT: \"A lady? What lady?\" (0:18)<br>~0:18 · PLAY · READY<br>➜ WHY: Black Friday morning, and Jingle All the Way turns 30 this month. Every parent who ever hunted one toy knows this scene.<br>⚠️ FLAG: Clean. Short (18 s), 4 bites. The Sinbad rant continues into an adult line about the post office, NOT in the cut. Jingle All the Way bites may carry a little film score under the dialogue; hear it once. Fallon bite is from the Wed monologue whose next segment is a political joke, NOT in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c00-opener-supercut.mp3",
+    "ready": true,
+    "recap": "We opened with a Black Friday supercut: Fallon on deals, then the Jingle All the Way Turbo Man hunt.",
+    "duration": "0:18",
+    "duration_sec": 18.31,
+    "secs": 18,
+    "kind": "opener",
+    "file": "c00-opener-supercut.mp3"
+   },
+   {
+    "id": "2026-11-27-c01",
+    "slot": "TRENDING AUDIO",
+    "title": "C01 TODAY MACYS PARADE POSTPONED",
+    "body": "C01 TODAY MACYS PARADE POSTPONED · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c01-today-macys-parade-postponed.mp3",
+    "file": "c01-today-macys-parade-postponed.mp3",
+    "ready": true,
+    "duration_sec": 62.4,
+    "duration": "1:02",
+    "secs": 62,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-27-c02",
+    "slot": "TRENDING AUDIO",
+    "title": "C02 LIONS CAMPBELL DONT RUIN THANKSGIVING",
+    "body": "C02 LIONS CAMPBELL DONT RUIN THANKSGIVING · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c02-lions-campbell-dont-ruin-thanksgiving.mp3",
+    "file": "c02-lions-campbell-dont-ruin-thanksgiving.mp3",
+    "ready": true,
+    "duration_sec": 45.1,
+    "duration": "0:45",
+    "secs": 45,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-27-c03",
+    "slot": "TRENDING AUDIO",
+    "title": "C03 NFL BEARS GAME WINNER CALL",
+    "body": "C03 NFL BEARS GAME WINNER CALL · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c03-nfl-bears-game-winner-call.mp3",
+    "file": "c03-nfl-bears-game-winner-call.mp3",
+    "ready": true,
+    "duration_sec": 31.7,
+    "duration": "0:32",
+    "secs": 32,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-27-c04",
+    "slot": "TRENDING AUDIO",
+    "title": "C04 TODAY STEELERS RELEASE RODGERS",
+    "body": "C04 TODAY STEELERS RELEASE RODGERS · TRENDING AUDIO",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c04-today-steelers-release-rodgers.mp3",
+    "file": "c04-today-steelers-release-rodgers.mp3",
+    "ready": true,
+    "duration_sec": 57.3,
+    "duration": "0:57",
+    "secs": 57,
+    "kind": "trending"
+   },
+   {
+    "id": "2026-11-27-c05",
+    "slot": "TRENDING AUDIO",
+    "title": "TURKEYS CHASE A WOMAN DOWN THE STREET, AND A STRANGER SAVES HER",
+    "body": "TURKEYS CHASE A WOMAN DOWN THE STREET, AND A STRANGER SAVES HER · TRENDING AUDIO<br>🎙️ SET UP: Thanksgiving week, and the turkeys fought back. A woman in Newton, Massachusetts got chased down the street by a gang of them. \"From Inside Edition.\"<br>🔈 AUDIO SOURCE: Inside Edition, official YouTube: \"Woman Jumps Into Stranger's Car To Escape Turkeys Chasing Her.\" On-air credit: \"courtesy of Inside Edition.\"<br>• 'Go away! Go away!' She runs, the turkeys follow, and two strangers let her jump in their car. 'They were trying to bite your butt.'<br>🔊 IN: \"Oh, no. Turkeys are understandably on high alert this week.\" (0:00)<br>OUT: \"...trying to bite your butt.\" (0:47)<br>~0:47 · PLAY · READY<br>➜ WHY: Viral, funny, and it's the day after Thanksgiving. Revenge of the birds. Pairs with the bench story on Michigan's 200,000 wild turkeys.<br>⚠️ FLAG: Clean. Stops before an 'Oh my God' a few seconds later. 'Butt' is fine for air.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c05-inside-edition-turkeys-chase-woman.mp3",
+    "ready": true,
+    "recap": "We heard the viral clip of turkeys chasing a woman until strangers let her into their car.",
+    "duration": "0:47",
+    "duration_sec": 47.41,
+    "secs": 47,
+    "kind": "news",
+    "file": "c05-inside-edition-turkeys-chase-woman.mp3"
+   },
+   {
+    "id": "2026-11-27-c06",
+    "slot": "FIRST HALF HOUR: LATE-NIGHT",
+    "title": "FALLON MONOLOGUE: A GUILT-FREE GUIDE FOR MOMS",
+    "body": "FALLON MONOLOGUE: A GUILT-FREE GUIDE FOR MOMS · FIRST HALF HOUR: LATE-NIGHT<br>🎙️ SET UP: Fewer people traveled for Thanksgiving this year, so Jimmy Fallon made a guide for moms whose kids skipped it. \"From The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube, Wed Nov 25 monologue (titled 'Trump Celebrates Thanksgiving at Mar-a-Lago'; the cut skips that joke). On-air credit: \"from The Tonight Show.\"<br>• 'That's fine.' 'We'll save a place for you, just in case you decide family is important.' 'I got you a pecan pie. I guess I'll just throw it out.' 'I love you, even though you're really, really selfish. See you at Christmas.'<br>🔊 IN: \"...fewer Americans are expected to travel for Thanksgiving...\" (0:00)<br>OUT: \"...See you at Christmas.\" (1:13)<br>~1:13 · PLAY · READY<br>➜ WHY: Last new late-night monologue before the holiday (Thursday was a special), every mom-guilt line lands, and it's a perfect day-after call-in.<br>⚠️ FLAG: Clean. The very next joke in the monologue is about President Trump at Mar-a-Lago, NOT in the cut. Later bits in the monologue have innuendo, also NOT in the cut.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c06-fallon-mom-guilt-guide.mp3",
+    "ready": true,
+    "recap": "We heard Jimmy Fallon's guilt-trip phrase guide for moms whose kids skipped Thanksgiving.",
+    "duration": "1:13",
+    "duration_sec": 72.78,
+    "secs": 73,
+    "kind": "comedy",
+    "performer": "Jimmy Fallon",
+    "file": "c06-fallon-mom-guilt-guide.mp3"
+   },
+   {
+    "id": "2026-11-27-c07",
+    "slot": "TRENDING AUDIO",
+    "title": "HODA KOTB BREAKS THE PARADE NEWS ON SETH MEYERS",
+    "body": "HODA KOTB BREAKS THE PARADE NEWS ON SETH MEYERS · TRENDING AUDIO<br>🎙️ SET UP: Hoda Kotb was on Seth Meyers to talk about co-hosting the 100th Macy's parade, and then it got postponed. \"Here's Late Night with Seth Meyers.\"<br>🔈 AUDIO SOURCE: Late Night with Seth Meyers (NBC), official YouTube: \"Hoda Kotb on the Macy's Thanksgiving Day Parade Being Postponed for the First Time.\" On-air credit: \"from Late Night.\"<br>• 'We waited 100 years for this parade, we're going to wait two more days.' Seth: 'It sounds really fun to watch on TV. Floats going everywhere, kids' trumpets being whipped away.'<br>🔊 IN: \"And you know what? You're a longtime news person.\" (0:00)<br>OUT: \"...first time in a hundred years.\" (1:01)<br>~1:01 · PLAY · READY<br>➜ WHY: The parade story with a laugh. Pairs with c01 and Buzz #1.<br>⚠️ FLAG: Clean. Seth's next line is a climate-change quip, NOT in the cut (avoid list).",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c07-meyers-hoda-parade-postponed.mp3",
+    "ready": true,
+    "recap": "We heard Hoda Kotb tell Seth Meyers 'we waited 100 years, we can wait two more days' for the Macy's parade.",
+    "duration": "1:01",
+    "duration_sec": 61.44,
+    "secs": 61,
+    "kind": "comedy",
+    "performer": "Hoda Kotb",
+    "file": "c07-meyers-hoda-parade-postponed.mp3"
+   },
+   {
+    "id": "2026-11-27-c08",
+    "slot": "SUPER-CLIP 6 AM",
+    "title": "NATE BARGATZE RENTED OUT THE APPLEBEE'S WHERE HE MET HIS WIFE",
+    "body": "NATE BARGATZE RENTED OUT THE APPLEBEE'S WHERE HE MET HIS WIFE · SUPER-CLIP 6 AM<br>🎙️ SET UP: Nate Bargatze just celebrated 20 years of marriage, and he did it at the most romantic place in America. \"Nate Bargatze, on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube: \"Nate Bargatze Was His School's Class Clown Runner-Up, Calls Himself a Thanksgiving 'Ham Guy'.\" On-air credit: \"from The Tonight Show.\"<br>• They met working at a Nashville Applebee's (he was the host, she was a waitress, 'she was higher up'). His wife rented out that Applebee's for their 20th, and a cook named Donut still works there. They were going to the Macy's parade, but it moved to Saturday.<br>🔊 IN: \"I gotta say, I saw your beautiful wife backstage.\" (0:00)<br>OUT: \"...We're gonna go back.\" (1:18)<br>~1:18 · PLAY · READY<br>➜ WHY: Clean, sweet, very Bargatze, and it lands on the parade news. Runs long but flows; the 'Donut' run is the laugh.<br>⚠️ FLAG: Clean. Transcript is rough in the Donut section (crosstalk); hear it once. Runs 1:18.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c08-fallon-bargatze-applebees-anniversary.mp3",
+    "ready": true,
+    "recap": "We heard Nate Bargatze explain he celebrated 20 years of marriage at the Applebee's where he met his wife.",
+    "duration": "1:18",
+    "duration_sec": 78.0,
+    "secs": 78,
+    "kind": "comedy",
+    "performer": "Nate Bargatze",
+    "file": "c08-fallon-bargatze-applebees-anniversary.mp3"
+   },
+   {
+    "id": "2026-11-27-c09",
+    "slot": "TRENDING AUDIO",
+    "title": "NATE BARGATZE'S BLOOD TEST KNEW HIS ANTACID BRAND",
+    "body": "NATE BARGATZE'S BLOOD TEST KNEW HIS ANTACID BRAND · TRENDING AUDIO<br>🎙️ SET UP: The day after Thanksgiving, the antacid aisle is busy. Nate Bargatze says his doctor could tell exactly which one he takes. \"Nate Bargatze, on The Tonight Show.\"<br>🔈 AUDIO SOURCE: The Tonight Show Starring Jimmy Fallon (NBC), official YouTube (same interview as c08). On-air credit: \"from The Tonight Show.\"<br>• 'She goes, do you take Pepcid AC? I go, you can tell? I don't take it enough that I'm bleeding Pepcid AC.' Then she asks if he's around a lot of fireworks. 'I must go to a witch.'<br>🔊 IN: \"The method comedian, you put on the pounds...\" (0:00)<br>OUT: \"...I must go to a witch.\" (0:59)<br>~0:59 · PLAY · READY<br>➜ WHY: Perfect food-coma morning joke, clean, about a minute.<br>⚠️ FLAG: Clean. Brand name (Pepcid AC) is said repeatedly; it's his joke, not an ad. Starts with Fallon's set-up line.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c09-fallon-bargatze-pepcid.mp3",
+    "ready": true,
+    "recap": "We heard Nate Bargatze's story about a blood test that knew his antacid brand.",
+    "duration": "0:59",
+    "duration_sec": 59.19,
+    "secs": 59,
+    "kind": "comedy",
+    "performer": "Nate Bargatze",
+    "file": "c09-fallon-bargatze-pepcid.mp3"
+   },
+   {
+    "id": "2026-11-27-c10",
+    "slot": "BUFFER: TRENDING",
+    "title": "PAST BIT: AL ROKER VS. THE BUTTER MAN (2019 PARADE)",
+    "body": "PAST BIT: AL ROKER VS. THE BUTTER MAN (2019 PARADE) · BUFFER: TRENDING<br>🎙️ SET UP: With the parade moved to tomorrow, a favorite parade moment: Al Roker's 2019 run-in with a man dressed as a stick of butter. \"From NBC's TODAY.\"<br>🔈 AUDIO SOURCE: TODAY (NBC), official YouTube: \"Al Roker Battles Butter Man at 2019 Macy's Thanksgiving Parade.\" On-air credit: \"from NBC's TODAY.\"<br>• 'I hate to butter you up, but you've got to move on.' 'I can't believe it's not butter.' Then the Butter Man catches up with Al again later on the parade route.<br>🔊 IN: \"I hate to butter you up...\" (0:00)<br>OUT: \"...that's why everybody loves clowns.\" (0:32)<br>~0:32 · PLAY · READY<br>➜ WHY: Light parade nostalgia while we wait for Saturday.<br>⚠️ FLAG: Clean. It's from 2019; say so. Short (32 s).",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c10-today-al-roker-butter-man-2019.mp3",
+    "ready": true,
+    "recap": "We replayed Al Roker's 2019 parade run-in with the Butter Man.",
+    "duration": "0:32",
+    "duration_sec": 31.9,
+    "secs": 32,
+    "kind": "news",
+    "file": "c10-today-al-roker-butter-man-2019.mp3"
+   },
+   {
+    "id": "2026-11-27-c11",
+    "slot": "BUFFER: NEWS",
+    "title": "FEDEX JET RUNS OFF A RAIN-SOAKED RUNWAY IN MIAMI",
+    "body": "FEDEX JET RUNS OFF A RAIN-SOAKED RUNWAY IN MIAMI · BUFFER: NEWS<br>🎙️ SET UP: Same storm, different coast: a FedEx cargo jet ran off the end of a runway in Miami. Nobody was hurt. \"From ABC News.\"<br>🔈 AUDIO SOURCE: ABC News, official YouTube: \"New video shows FedEx cargo jet overshooting runway in Miami.\" On-air credit: \"courtesy of ABC News.\"<br>• An MD-11 from Memphis overran the runway around 8:25 PM, kicking up dirt and debris. Both pilots got out unharmed, and FedEx says it's cooperating with authorities.<br>🔊 IN: \"Tonight, this is the moment a FedEx jet overran...\" (0:00)<br>OUT: \"...cooperating with authorities.\" (0:33)<br>~0:33 · TALK-OVER · READY<br>➜ WHY: Holiday-travel weather story with dramatic video audio; nobody hurt.<br>⚠️ FLAG: Clean. The report goes on to a deadly cargo crash at the same airport, NOT in the cut. Date of the incident isn't stated in the clip; ABC posted it Nov 26.",
+    "audio": "/workspace/morning-rush/clips/2026-11-27/c11-abc-fedex-jet-overruns-runway.mp3",
+    "ready": true,
+    "recap": "We heard ABC's report on a FedEx cargo jet overrunning a Miami runway; nobody was hurt.",
+    "duration": "0:33",
+    "duration_sec": 33.49,
+    "secs": 33,
+    "kind": "news",
+    "file": "c11-abc-fedex-jet-overruns-runway.mp3"
+   }
+  ],
+  "article_url": "",
+  "article_title": "",
+  "jokes": [],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "f89d98a0148e",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "events": {
+  "id": "events",
+  "title": "Events",
+  "category": "Daily",
+  "type": "text",
+  "content": "BLACK FRIDAY + SMALL BUSINESS SATURDAY, DOWNTOWN TC<br>• Today and Saturday: deals at participating shops, free gift-wrapping station. Hours vary by store.<br><br>CADILLAC CHRISTMAS IN THE PARK<br>• Tonight, starts 5:30 PM at Cadillac Commons Park: tree lighting, caroling, Santa and Mrs. Claus.<br><br>MHSAA FOOTBALL FINALS, FORD FIELD<br>• Today and Saturday; Beal City-Hudson D8 at 9:30 AM today. Streaming on NFHS Network.<br><br>MACY'S PARADE, RESCHEDULED<br>• Sat Nov 28, 8:30 AM ET on NBC and Peacock (Telemundo in Spanish).<br><br>MICHIGAN AT OHIO STATE<br>• Sat Nov 28, noon, FOX.",
+  "notes": "BLACK FRIDAY + SMALL BUSINESS SATURDAY, DOWNTOWN TC: https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html<br>CADILLAC CHRISTMAS IN THE PARK: https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event<br>MHSAA FOOTBALL FINALS, FORD FIELD: https://www.cbsnews.com/detroit/news/michigan-high-school-football-2026-state-finals-schedule/<br>MACY'S PARADE, RESCHEDULED: https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28<br>MICHIGAN AT OHIO STATE: https://mgoblue.com/sports/2026/11/23/michigan-monday-game-12-at-ohio-state",
+  "custom": true,
+  "items": [
+   {
+    "id": "2026-11-27-events-01",
+    "title": "BLACK FRIDAY + SMALL BUSINESS SATURDAY, DOWNTOWN TC",
+    "recap": "We plugged Black Friday + Small Business Saturday, Downtown Tc.",
+    "article_url": "https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html",
+    "article_title": "Black Friday + Small Business Saturday, Downtown Tc",
+    "jokes": [],
+    "body": "BLACK FRIDAY + SMALL BUSINESS SATURDAY, DOWNTOWN TC<br>We plugged Black Friday + Small Business Saturday, Downtown Tc.",
+    "description": "We plugged Black Friday + Small Business Saturday, Downtown Tc.",
+    "summary": "We plugged Black Friday + Small Business Saturday, Downtown Tc.",
+    "rank": 2,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-events-02",
+    "title": "CADILLAC CHRISTMAS IN THE PARK",
+    "recap": "We plugged Cadillac Christmas In The Park.",
+    "article_url": "https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event",
+    "article_title": "Cadillac Christmas In The Park",
+    "jokes": [],
+    "body": "CADILLAC CHRISTMAS IN THE PARK<br>We plugged Cadillac Christmas In The Park.",
+    "description": "We plugged Cadillac Christmas In The Park.",
+    "summary": "We plugged Cadillac Christmas In The Park.",
+    "rank": 1,
+    "verify": "Confirmed"
+   },
+   {
+    "id": "2026-11-27-events-03",
+    "title": "MHSAA FOOTBALL FINALS, FORD FIELD",
+    "recap": "We plugged Mhsaa Football Finals, Ford Field.",
+    "article_url": "https://www.cbsnews.com/detroit/news/michigan-high-school-football-2026-state-finals-schedule/",
+    "article_title": "Mhsaa Football Finals, Ford Field",
+    "jokes": [],
+    "body": "MHSAA FOOTBALL FINALS, FORD FIELD<br>We plugged Mhsaa Football Finals, Ford Field.",
+    "description": "We plugged Mhsaa Football Finals, Ford Field.",
+    "summary": "We plugged Mhsaa Football Finals, Ford Field.",
+    "rank": 3,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-events-04",
+    "title": "MACY'S PARADE, RESCHEDULED",
+    "recap": "We plugged Macy'S Parade, Rescheduled.",
+    "article_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+    "article_title": "Macy'S Parade, Rescheduled",
+    "jokes": [],
+    "body": "MACY'S PARADE, RESCHEDULED<br>We plugged Macy'S Parade, Rescheduled.",
+    "description": "We plugged Macy'S Parade, Rescheduled.",
+    "summary": "We plugged Macy'S Parade, Rescheduled.",
+    "rank": 4,
+    "verify": "Reported"
+   },
+   {
+    "id": "2026-11-27-events-05",
+    "title": "MICHIGAN AT OHIO STATE",
+    "recap": "We plugged Michigan At Ohio State.",
+    "article_url": "https://mgoblue.com/sports/2026/11/23/michigan-monday-game-12-at-ohio-state",
+    "article_title": "Michigan At Ohio State",
+    "jokes": [],
+    "body": "MICHIGAN AT OHIO STATE<br>We plugged Michigan At Ohio State.",
+    "description": "We plugged Michigan At Ohio State.",
+    "summary": "We plugged Michigan At Ohio State.",
+    "rank": 5,
+    "verify": "Reported"
+   }
+  ],
+  "article_url": "https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html",
+  "article_title": "Black Friday + Small Business Saturday, Downtown Tc",
+  "jokes": [],
+  "as_of": "2026-11-27T04:03-05:00",
+  "as_of_src": "file",
+  "as_of_sig": "061cb2d42dbc",
+  "stale_after": "2026-11-27T16:03-05:00"
+ },
+ "fb": {
+  "id": "fb",
+  "title": "Z93 Facebook Drafts",
+  "category": "Social",
+  "type": "text",
+  "content": "1A · KALKASKA'S DANCERS, STRANDED IN NYC<br>Fifteen dancers from Kalkaska's Fitch Dance Company flew to New York for the 100th Macy's parade, and then the storm pushed it to Saturday. 🎈 Now families are scrambling for hotels and flights.<br>Drop a shout-out for these kids in the comments! 💙<br>#Kalkaska #MacysParade #NorthernMichigan #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-27/fb1a-kalkaska-dancers.png<br><br>1B · RECORD TURKEY TROT<br>Nearly 3,000 people ran or walked the Traverse City Turkey Trot yesterday, an all-time record! 🦃🏃 TC Central senior Evan Fox won the five-miler.<br>Did you trot? Drop your time (or your excuse)!<br>#TurkeyTrot #TraverseCity #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>2A · SHOP SMALL THIS WEEKEND<br>Black Friday and Small Business Saturday are happening all weekend in Downtown Traverse City! 🛍️ Deals, doorbusters and a free gift-wrapping station at participating shops.<br>What's the first shop on your list?<br>#ShopSmall #DowntownTC #TraverseCity #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-27/fb2a-shop-small-tc.png<br><br>2B · CADILLAC LIGHTS UP TONIGHT<br>Christmas in the Park is TONIGHT in Cadillac, starting at 5:30 PM at Cadillac Commons Park! 🎄 Tree lighting, caroling, and photos with Santa and Mrs. Claus.<br>Who's going?<br>#Cadillac #ChristmasInThePark #NorthernMichigan #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)<br><br>3A · IT'S OFFICIALLY MARIAH SEASON<br>Thanksgiving's over. Mariah has been released. 🎄🎶 'All I Want for Christmas Is You' came out in 1994 and didn't hit No. 1 until 2019.<br>When does Christmas music start at YOUR house?<br>#MariahCarey #ChristmasMusic #Throwback #Z93<br>📷 MEDIA: /workspace/z93/fb/2026-11-27/fb3a-mariah-season.png<br><br>3B · TURBO MAN TURNS 30<br>Jingle All the Way hit theaters 30 years ago this month (1996). 🎁 Arnold vs. Sinbad, fighting over one Turbo Man.<br>What's the toy YOUR parents fought the crowds for?<br>#JingleAllTheWay #90s #BlackFriday #Z93<br>📷 MEDIA: text only (lean plan: art for A options only)",
+  "notes": "Drafts only, AJ posts during the show; never posted by Hot Sheet. Facts from sheet items above. 1A Kalkaska Fitch Dance Company in NYC (9&10 News), 1B TC Turkey Trot (sheet Buzz source), 2A Shop small downtown TC (DTCA), 2B Cadillac item (sheet bench source), 3A Mariah season (Wikipedia), 3B Turbo Man turns 30 (Wikipedia). Art for 1A/2A/3A only (lean plan); SOURCES.md in the art folder.",
+  "custom": true,
+  "items": [],
+  "article_url": "",
+  "article_title": "",
+  "jokes": []
+ },
+ "courtney": {
+  "songBattle": [
+   {
+    "id": "court-sb-01",
+    "battleTitle": "Christmas Breakup Hotline",
+    "a": {
+     "title": "Last Christmas",
+     "artist": "Wham!"
+    },
+    "b": {
+     "title": "Santa Tell Me",
+     "artist": "Ariana Grande"
+    },
+    "angle": "Day one of Christmas music: George Michael's 1984 holiday heartbreak vs. Ariana's 2014 'Santa, is he for real?' Both are about not getting played twice."
+   },
+   {
+    "id": "court-sb-02",
+    "battleTitle": "Two Fridays, One Winner",
+    "a": {
+     "title": "Last Friday Night (T.G.I.F.)",
+     "artist": "Katy Perry"
+    },
+    "b": {
+     "title": "Friday",
+     "artist": "Rebecca Black"
+    },
+    "angle": "It's Black Friday: Katy's 2011 Teenage Dream single vs. the 2011 viral 'Friday' everybody pretended not to know the words to."
+   }
+  ],
+  "hollywood": [
+   {
+    "id": "court-hw-01",
+    "headline": "The Macy's parade moved to Saturday",
+    "summary": "For the first time in 100 years, Macy's postponed its Thanksgiving parade because of the East Coast storm. It now airs Saturday at 8:30 a.m. ET on NBC and Peacock, after NBC ran a replay of last year's parade on Thursday.",
+    "as_of": "2026-11-25T19:26-05:00",
+    "article_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+    "article_title": "2026 Macy's Thanksgiving Day Parade Moves to Saturday, November 28: Details (NBC Insider)",
+    "jokes": [
+     "They aired last year's parade and nobody could tell. Snoopy doesn't age.",
+     "Hoda says Saturday will be 'a beautiful sun-splash day.' Hoda, it's November. We'll take 'not tornado.'"
+    ]
+   },
+   {
+    "id": "court-hw-02",
+    "headline": "Hunger Games owns Thanksgiving at the box office",
+    "summary": "Deadline's Thanksgiving update has The Hunger Games: Sunrise on the Reaping headed for $85 million-plus over the five-day holiday. Focker In-Law and Disney's Hexed are tracking lighter than forecast, around $36 million each.",
+    "as_of": "2026-11-26T12:04-05:00",
+    "article_url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+    "article_title": "Box Office: 'Hunger Games: Sunrise on Reaping' $85M 5-day Over Thanksgiving (Deadline)",
+    "jokes": [
+     "The Fockers lost to a teenager with a bow. Again.",
+     "Hunger Games on Thanksgiving is just a documentary about my family's dessert table."
+    ]
+   },
+   {
+    "id": "court-hw-03",
+    "headline": "Justin Timberlake's four-part doc is coming Dec. 11",
+    "summary": "Apple TV announced TIMBERLAKE, a four-part documentary directed by Fisher Stevens. Jimmy Fallon plugged it on his Thanksgiving-night Tonight Show with Timberlake as his guest; the first two episodes drop Dec. 11.",
+    "as_of": "2026-11-23T12:00-05:00",
+    "article_url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
+    "article_title": "Apple TV announces four-part documentary event \"TIMBERLAKE\" (Apple TV Press)",
+    "jokes": [
+     "Four parts. One for each member of NSYNC who isn't Justin.",
+     "It's gonna be May... no, it's gonna be December 11th."
+    ]
+   }
+  ],
+  "studioLine": [
+   {
+    "id": "court-sl-01",
+    "question": "What's the best thing you scored on Black Friday, ever?",
+    "followup": "Did you have to fight anybody for it, Turbo Man style?"
+   },
+   {
+    "id": "court-sl-02",
+    "question": "Is your tree up yet, and who made that call?",
+    "followup": "Real or fake, and what's on top?"
+   },
+   {
+    "id": "court-sl-03",
+    "question": "What's the weirdest leftover combo you've made this weekend?",
+    "followup": "Would you serve it to company?"
+   }
+  ]
+ },
+ "callie": {
+  "songInHead": [
+   {
+    "id": "callie-sh-01",
+    "title": "All I Want for Christmas Is You",
+    "artist": "Mariah Carey",
+    "hook": "Day after Thanksgiving, so Mariah is officially allowed, and she's been in my head since the turkey went in the fridge.",
+    "article_url": "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You"
+   }
+  ],
+  "teaParty": [
+   {
+    "id": "callie-tp-01",
+    "headline": "The Macy's parade moved to Saturday",
+    "summary": "For the first time in 100 years, Macy's postponed its Thanksgiving parade because of the East Coast storm. It now airs Saturday at 8:30 a.m. ET on NBC and Peacock, after NBC ran a replay of last year's parade on Thursday.",
+    "article_url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28",
+    "article_title": "2026 Macy's Thanksgiving Day Parade Moves to Saturday, November 28: Details (NBC Insider)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-02",
+    "headline": "Hunger Games owns Thanksgiving at the box office",
+    "summary": "Deadline's Thanksgiving update has The Hunger Games: Sunrise on the Reaping headed for $85 million-plus over the five-day holiday. Focker In-Law and Disney's Hexed are tracking lighter than forecast, around $36 million each.",
+    "article_url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+    "article_title": "Box Office: 'Hunger Games: Sunrise on Reaping' $85M 5-day Over Thanksgiving (Deadline)",
+    "jokes": []
+   },
+   {
+    "id": "callie-tp-03",
+    "headline": "Justin Timberlake's four-part doc is coming Dec. 11",
+    "summary": "Apple TV announced TIMBERLAKE, a four-part documentary directed by Fisher Stevens. Jimmy Fallon plugged it on his Thanksgiving-night Tonight Show with Timberlake as his guest; the first two episodes drop Dec. 11.",
+    "article_url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
+    "article_title": "Apple TV announces four-part documentary event \"TIMBERLAKE\" (Apple TV Press)",
+    "jokes": []
+   }
+  ],
+  "trendingAudio": [],
+  "events": [
+   {
+    "id": "callie-ev-01",
+    "title": "BLACK FRIDAY + SMALL BUSINESS SATURDAY, DOWNTOWN TC",
+    "detail": "Today and Saturday: deals at participating shops, free gift-wrapping station. Hours vary by store.",
+    "url": "https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html"
+   },
+   {
+    "id": "callie-ev-02",
+    "title": "CADILLAC CHRISTMAS IN THE PARK",
+    "detail": "Tonight, starts 5:30 PM at Cadillac Commons Park: tree lighting, caroling, Santa and Mrs. Claus.",
+    "url": "https://upnorthlive.com/news/local/crews-begin-decorating-the-cadillac-commons-park-community-tree-ahead-of-friday-event"
+   },
+   {
+    "id": "callie-ev-03",
+    "title": "MHSAA FOOTBALL FINALS, FORD FIELD",
+    "detail": "Today and Saturday; Beal City-Hudson D8 at 9:30 AM today. Streaming on NFHS Network.",
+    "url": "https://www.cbsnews.com/detroit/news/michigan-high-school-football-2026-state-finals-schedule/"
+   },
+   {
+    "id": "callie-ev-04",
+    "title": "MACY'S PARADE, RESCHEDULED",
+    "detail": "Sat Nov 28, 8:30 AM ET on NBC and Peacock (Telemundo in Spanish).",
+    "url": "https://www.nbc.com/nbc-insider/2026-macys-thanksgiving-day-parade-moves-to-saturday-november-28"
+   },
+   {
+    "id": "callie-ev-05",
+    "title": "MICHIGAN AT OHIO STATE",
+    "detail": "Sat Nov 28, noon, FOX.",
+    "url": "https://mgoblue.com/sports/2026/11/23/michigan-monday-game-12-at-ohio-state"
+   }
+  ],
+  "fbDrafts": [
+   {
+    "id": "callie-fb-01",
+    "title": "TREE UP YET?",
+    "text": "It's the day after Thanksgiving. 🎄 Is the tree up yet, or are you a 'wait till December' household?\n#Christmas #TraverseCity #NorthernMichigan #Z93",
+    "media": "text only"
+   },
+   {
+    "id": "callie-fb-02",
+    "title": "LEFTOVER CHAMPION",
+    "text": "Rate your best leftover creation this weekend. 🦃🥪 Bonus points for anything with cranberry sauce.\n#Leftovers #Thanksgiving #Z93",
+    "media": "text only"
+   }
+  ],
+  "liners": [
+   {
+    "id": "callie-ln-01",
+    "text": "Leftovers in the fridge, Mariah on the radio, deals downtown. Z93, Hits from the 90s to Now."
+   },
+   {
+    "id": "callie-ln-02",
+    "text": "Shopping, wrapping, or napping? We'll ride along. Z93 middays with Callie."
+   }
+  ],
+  "lifestyle": [
+   {
+    "id": "callie-ls-01",
+    "title": "MICHIGAN'S $50 BLACK FRIDAY COLLEGE BONUS",
+    "summary": "Michigan Education Trust is giving families an extra $50 per child when they put at least $300 online into a new or existing MET account this weekend. It runs Nov. 25 through 11:59 PM Nov. 30, or until $25,000 in bonuses is gone. The bonus can take 8 to 10 weeks to show up, and grandparents and relatives can chip in.",
+    "article_url": "https://www.9and10news.com/2026/11/26/michigan-families-can-get-a-50-bonus-for-college-savings-this-black-friday/",
+    "article_title": "Michigan families can get a $50 bonus for college savings this Black Friday (9&10 News)",
+    "jokes": []
+   },
+   {
+    "id": "callie-ls-02",
+    "title": "THANKSGIVING BOX OFFICE: HUNGER GAMES ROLLS ON",
+    "summary": "Deadline's Thanksgiving morning update has The Hunger Games: Sunrise on the Reaping heading for $85 million-plus over the five-day holiday. Focker In-Law and Disney's Hexed are coming in lighter than forecast, around $36 million each for five days, per Deadline.",
+    "article_url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+    "article_title": "Box Office: 'Hunger Games: Sunrise on Reaping' $85M 5-day Over Thanksgiving (Deadline)",
+    "jokes": []
+   }
+  ],
+  "localBuzz": [
+   {
+    "id": "callie-lb-01",
+    "title": "KALKASKA DANCERS STUCK IN NEW YORK AFTER THE MACY'S PARADE GOT PUSHED",
+    "summary": "Fifteen dancers from Kalkaska's Fitch Dance Company flew to New York City to perform in the 100th Macy's Thanksgiving Day Parade. Then Macy's pushed the parade from Thursday to Saturday because of the storm, the first postponement in the parade's 100 years. The group, about 60 people with families and coaches, is now scrambling over hotels, food and flights.",
+    "article_url": "https://www.9and10news.com/2026/11/26/kalkaska-dancers-face-unexpected-expenses-after-macys-thanksgiving-day-parade-postponement/",
+    "article_title": "Kalkaska dancers face unexpected expenses after Macy's Thanksgiving Day Parade postponement (9&10 News)"
+   },
+   {
+    "id": "callie-lb-02",
+    "title": "TC TURKEY TROT SETS AN ALL-TIME RECORD: NEARLY 3,000",
+    "summary": "Nearly 3,000 runners and walkers turned out downtown Thanksgiving morning for the 19th annual Traverse City Turkey Trot, the biggest crowd it has ever had. There was a 5-K and the five-mile race called the Five Mile Flyer.",
+    "article_url": "https://www.9and10news.com/2026/11/26/traverse-city-turkey-trot-sets-record-turnout-with-nearly-3000-participants/",
+    "article_title": "Traverse City Turkey Trot sets record turnout with nearly 3,000 participants (9&10 News)"
+   },
+   {
+    "id": "callie-lb-03",
+    "title": "BLACK FRIDAY IN DOWNTOWN TC: DOORBUSTERS, FREE WRAPPING, SHOP-SMALL SATURDAY",
+    "summary": "Downtown Traverse City's Black Friday and Small Business Saturday run today and tomorrow, with participating shops and restaurants offering deals, samples and a free gift-wrapping station.",
+    "article_url": "https://www.downtowntc.com/events/black-friday-and-small-business-saturday.html",
+    "article_title": "Black Friday & Small Business Saturday (Downtown TC)"
+   },
+   {
+    "id": "callie-lb-04",
+    "title": "THE IRONTON FERRY WRAPS UP YEAR 100",
+    "summary": "The Ironton Ferry on Lake Charlevoix made its last run of the season Wednesday night, closing out its 100th year in service.",
+    "article_url": "https://upnorthlive.com/news/local/ironton-ferry-wrapping-up-its-100th-year-in-service",
+    "article_title": "Ironton Ferry wrapping up its 100th year in service (UpNorthLive)"
+   },
+   {
+    "id": "callie-lb-05",
+    "title": "600 THANKSGIVING MEALS FROM COMMUNITY MEALS TC",
+    "summary": "More than 50 volunteers with Community Meals Traverse City spent their Thanksgiving cooking and delivering. They prepared nearly 300 meals for delivery and another 300 for a dine-in dinner at Trinity Lutheran Church.",
+    "article_url": "https://upnorthlive.com/news/local/traverse-city-volunteers-deliver-nearly-300-thanksgiving-meals-host-300-more-dining-in",
+    "article_title": "Traverse City volunteers deliver nearly 300 Thanksgiving meals, host 300 more dining-in (UpNorthLive)"
+   }
+  ],
+  "officeSchool": [
+   {
+    "id": "callie-os-01",
+    "title": "OFFICE: WHO'S ACTUALLY WORKING TODAY?",
+    "summary": "City of Traverse City offices are closed today, Nov. 26 and 27 both, per the city's own post. Plenty of other offices are open with about three people in them. If you're at work today, you're either the hero or the person who forgot to request it off.",
+    "article_url": "https://www.facebook.com/cityoftc/posts/pfbid0rsm8owQxzsi8k6VETjfmZ1yB8uLcaZZ2zvhD6Nn2NbUKHRKjWrSmQbSpXpPBgpRkl",
+    "article_title": "City of Traverse City: City Offices Closed, November 26 & 27 (Facebook)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-02",
+    "title": "OFFICE: THE LEAF DEADLINE IS SUNDAY",
+    "summary": "The City of Traverse City says the final leaf pickup pass is the week of Nov. 30, and leaves have to be at the curb by Sunday, Nov. 29. So this weekend's to-do list: leftovers, football, rake.",
+    "article_url": "https://www.facebook.com/cityoftc/posts/pfbid0xtFXLemoRhK96TzPBqgi9mYzAFoniD9YmxudV1eqDiJzPqSE6UNeATRstVqofThPl",
+    "article_title": "City of Traverse City: final leaf pickup (Facebook)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-03",
+    "title": "SCHOOL: NMC ADDS TWO ONE-YEAR MANUFACTURING CERTIFICATES",
+    "summary": "Northwestern Michigan College's board approved two new one-year certificates for fall 2027: CAD Technology, and Precision Machining and CNC Technology. They split the existing Manufacturing Technology degree into shorter, stackable pieces, and credits carry over to the degree. NMC's Dan Goodchild says 'there are a lot of local industry jobs available.' Registration opens March 10, 2027.",
+    "article_url": "https://upnorthlive.com/news/local/nmc-board-approves-two-new-one-year-manufacturing-certificates-for-fall-2027",
+    "article_title": "NMC board approves two new one-year manufacturing certificates for fall 2027 (UpNorthLive)",
+    "jokes": []
+   },
+   {
+    "id": "callie-os-04",
+    "title": "SCHOOL: TC CENTRAL SENIOR WINS THE TURKEY TROT FIVE-MILER",
+    "summary": "Traverse City Central senior Evan Fox won the five-mile race at yesterday's record Turkey Trot, per 9&10. Nearly 3,000 people ran or walked. Shout-out to every kid who got dragged out of bed early on a day off to run in the cold, and to the parents pulling wagons.",
+    "article_url": "https://www.9and10news.com/2026/11/26/traverse-city-turkey-trot-sets-record-turnout-with-nearly-3000-participants/",
+    "article_title": "Traverse City Turkey Trot sets record turnout with nearly 3,000 participants (9&10 News)",
+    "jokes": []
+   }
+  ]
+ },
+ "_normalized": {
+  "version": 1,
+  "stale_hours": 12
+ }
+}

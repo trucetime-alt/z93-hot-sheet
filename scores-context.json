@@ -1,39 +1,199 @@
 {
  "version": 1,
- "updated": "2026-11-25T13:00:58-05:00",
- "updatedMs": 1795629658565,
+ "updated": "2026-11-27T04:54:01-05:00",
+ "updatedMs": 1795773241834,
  "games": [
   {
-   "id": "401909314",
-   "league": "nba",
-   "sport": "basketball",
-   "atMs": 1795564800000,
+   "id": "401873081",
+   "league": "nfl",
+   "sport": "football",
+   "atMs": 1795716000000,
    "state": "post",
    "detail": "Final",
    "home": {
-    "id": "19",
-    "abbr": "ORL",
-    "name": "Magic",
-    "score": "86",
-    "winner": false,
-    "rank": null,
-    "record": "7-10"
-   },
-   "away": {
     "id": "8",
     "abbr": "DET",
-    "name": "Pistons",
-    "score": "104",
+    "name": "Lions",
+    "score": "35",
+    "winner": false,
+    "rank": null,
+    "record": "8-3"
+   },
+   "away": {
+    "id": "3",
+    "abbr": "CHI",
+    "name": "Bears",
+    "score": "39",
     "winner": true,
     "rank": null,
-    "record": "11-6"
+    "record": "9-2"
    },
    "detroit": true,
    "postseason": false,
-   "note": "NBA Cup - Group Play",
-   "link": "https://www.espn.com/nba/game/_/gameId/401909314/pistons-magic",
+   "note": "",
+   "link": "https://www.espn.com/nfl/game/_/gameId/401873081/bears-lions",
+   "weight": 55,
+   "line": "Caleb Williams' TD pass with 3 seconds left gives Bears 39-35 win over Lions"
+  },
+  {
+   "id": "401925757",
+   "league": "mens-college-basketball",
+   "sport": "basketball",
+   "atMs": 1795728600000,
+   "state": "post",
+   "detail": "Final",
+   "home": {
+    "id": "127",
+    "abbr": "MSU",
+    "name": "Michigan St",
+    "score": "70",
+    "winner": true,
+    "rank": 11,
+    "record": "6-1"
+   },
+   "away": {
+    "id": "8",
+    "abbr": "ARK",
+    "name": "Arkansas",
+    "score": "67",
+    "winner": false,
+    "rank": null,
+    "record": "4-3"
+   },
+   "detroit": true,
+   "postseason": false,
+   "note": "",
+   "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401925757/arkansas-michigan-st",
    "weight": 40,
-   "line": "Without Cade Cunningham, Pistons get 21 from Isaiah Joe to hand Magic their first NBA Cup loss"
+   "line": "Fears' 20 points, 10 rebounds help No. 11 Michigan State top Arkansas 70-67 at Thanksgiving Classic"
+  },
+  {
+   "id": "401920537",
+   "league": "mens-college-basketball",
+   "sport": "basketball",
+   "atMs": 1795725000000,
+   "state": "post",
+   "detail": "Final",
+   "home": {
+    "id": "130",
+    "abbr": "MICH",
+    "name": "Michigan",
+    "score": "70",
+    "winner": false,
+    "rank": null,
+    "record": "3-4"
+   },
+   "away": {
+    "id": "2390",
+    "abbr": "MIA",
+    "name": "Miami",
+    "score": "97",
+    "winner": true,
+    "rank": 17,
+    "record": "6-2"
+   },
+   "detroit": true,
+   "postseason": false,
+   "note": "Players Era 16",
+   "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920537/miami-michigan",
+   "weight": 40,
+   "line": "Henderson, Allen power No. 17 Miami to a 97-70 win over Michigan at Players Era 16 tournament"
+  },
+  {
+   "id": "401873082",
+   "league": "nfl",
+   "sport": "football",
+   "atMs": 1795742400000,
+   "state": "post",
+   "detail": "Final",
+   "home": {
+    "id": "2",
+    "abbr": "BUF",
+    "name": "Bills",
+    "score": "13",
+    "winner": true,
+    "rank": null,
+    "record": "10-1"
+   },
+   "away": {
+    "id": "12",
+    "abbr": "KC",
+    "name": "Chiefs",
+    "score": "10",
+    "winner": false,
+    "rank": null,
+    "record": "8-3"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "https://www.espn.com/nfl/game/_/gameId/401873082/chiefs-bills",
+   "weight": 15,
+   "line": "Tyler Bass hits 57-yard field goal as time expires to lift Bills past Chiefs, 13-10"
+  },
+  {
+   "id": "401873080",
+   "league": "nfl",
+   "sport": "football",
+   "atMs": 1795728600000,
+   "state": "post",
+   "detail": "Final",
+   "home": {
+    "id": "6",
+    "abbr": "DAL",
+    "name": "Cowboys",
+    "score": "38",
+    "winner": false,
+    "rank": null,
+    "record": "5-7"
+   },
+   "away": {
+    "id": "21",
+    "abbr": "PHI",
+    "name": "Eagles",
+    "score": "39",
+    "winner": true,
+    "rank": null,
+    "record": "4-7"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "https://www.espn.com/nfl/game/_/gameId/401873080/eagles-cowboys",
+   "weight": 15,
+   "line": "Schottenheimer defends 4th-down call before Eagles' 59-yard FG in 39-38 stunner over Cowboys"
+  },
+  {
+   "id": "401856879",
+   "league": "college-football",
+   "sport": "football",
+   "atMs": 1795741200000,
+   "state": "post",
+   "detail": "Final",
+   "home": {
+    "id": "2641",
+    "abbr": "TTU",
+    "name": "Texas Tech",
+    "score": "48",
+    "winner": true,
+    "rank": 11,
+    "record": "11-1"
+   },
+   "away": {
+    "id": "2628",
+    "abbr": "TCU",
+    "name": "TCU",
+    "score": "27",
+    "winner": false,
+    "rank": null,
+    "record": "5-7"
+   },
+   "detroit": false,
+   "postseason": false,
+   "note": "",
+   "link": "https://www.espn.com/college-football/game/_/gameId/401856879/tcu-texas-tech",
+   "weight": 0,
+   "line": "No. 9 Texas Tech beats TCU 48-27 to secure spot against No. 2 Utah in Big 12 title game"
   }
  ],
  "local": [

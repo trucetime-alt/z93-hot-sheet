@@ -1,7 +1,7 @@
 {
  "version": 1,
- "updated": "2026-11-25T04:30:27-05:00",
- "asOf": "2026-11-25T04:30:27-05:00",
+ "updated": "2026-11-27T05:20:50-05:00",
+ "asOf": "2026-11-27T05:20:50-05:00",
  "region": "Michigan (primary) + Chicago, Toledo, Cleveland, Toronto (secondary)",
  "source": "Ticketmaster public artist pages (read once per publish; dates are never typed in by hand)",
  "artistsChecked": 30,
@@ -22,10 +22,10 @@
    "onSale": "2026-10-02T16:00:00Z",
    "url": "https://www.ticketmaster.com/channel-955s-jingle-ball-presented-by-detroit-michigan-12-08-2026/event/0800652FCC6C9691",
    "artist": "Alex Warren",
-   "daysAway": 13,
+   "daysAway": 11,
    "source": "Ticketmaster artist page",
    "sourceUrl": "https://www.ticketmaster.com/alex-warren-tickets/artist/2965178",
-   "asOf": "2026-11-25T04:30:27-05:00",
+   "asOf": "2026-11-27T05:20:50-05:00",
    "more": 2,
    "moreDates": [
     {
@@ -62,10 +62,10 @@
    "onSale": "2026-05-21T19:00:00Z",
    "url": "https://www.ticketmaster.com/katseye-the-wildworld-tour-detroit-michigan-01-08-2027/event/080064A9C8CDBB55",
    "artist": "KATSEYE",
-   "daysAway": 44,
+   "daysAway": 42,
    "source": "Ticketmaster artist page",
    "sourceUrl": "https://www.ticketmaster.com/katseye-tickets/artist/3259344",
-   "asOf": "2026-11-25T04:30:27-05:00",
+   "asOf": "2026-11-27T05:20:50-05:00",
    "more": 1,
    "moreDates": [
     {
@@ -94,10 +94,10 @@
    "onSale": "2026-09-16T13:00:00Z",
    "url": "https://www.ticketmaster.ca/harry-styles-together-together-toronto-ontario-05-07-2027/event/10006529D6B422E4",
    "artist": "Harry Styles",
-   "daysAway": 163,
+   "daysAway": 161,
    "source": "Ticketmaster artist page",
    "sourceUrl": "https://www.ticketmaster.com/harry-styles-tickets/artist/2366444",
-   "asOf": "2026-11-25T04:30:27-05:00",
+   "asOf": "2026-11-27T05:20:50-05:00",
    "more": 8,
    "moreDates": [
     {
@@ -288,7 +288,7 @@
      "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-docklands-19-02-2027/event/2500651484041D55"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -298,17 +298,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
-   "source": "Ticketmaster artist page"
-  },
-  {
-   "name": "Lady Gaga",
-   "tmId": "1249444",
-   "url": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
-   "status": "no-dates",
-   "total": 0,
-   "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -447,7 +437,60 @@
      "url": "https://www.ticketmaster.com/olivia-rodrigo-the-unraveled-tour-sacramento-california-12-15-2026/event/1C00649CABA73528"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
+   "source": "Ticketmaster artist page"
+  },
+  {
+   "name": "Lady Gaga",
+   "tmId": "1249444",
+   "url": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+   "status": "no-dates",
+   "total": 0,
+   "next": [],
+   "checked": "2026-11-27T05:20:50-05:00",
+   "source": "Ticketmaster artist page"
+  },
+  {
+   "name": "Ella Langley",
+   "tmId": "2514177",
+   "url": "https://www.ticketmaster.com/ella-langley-tickets/artist/2514177",
+   "status": "touring",
+   "total": 2,
+   "next": [
+    {
+     "date": "2027-04-18",
+     "time": "11:00",
+     "title": "Friends of Georgetown Parks and REC. Presents Two Step Inn",
+     "venue": "San Gabriel Park",
+     "city": "Georgetown",
+     "state": "TX",
+     "country": "US",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 1174,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-09-25T18:00:00Z",
+     "url": "https://on.fgtix.com/trk/iXnT"
+    },
+    {
+     "date": "2027-05-29",
+     "time": "18:00",
+     "title": "Patriotic Festival",
+     "venue": "Virginia Beach Oceanfront",
+     "city": "Virginia Beach",
+     "state": "VA",
+     "country": "US",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 744,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-06-03T13:00:00Z",
+     "url": "https://on.fgtix.com/trk/c5snc"
+    }
+   ],
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -455,7 +498,7 @@
    "tmId": "2712573",
    "url": "https://www.ticketmaster.com/teddy-swims-tickets/artist/2712573",
    "status": "touring",
-   "total": 46,
+   "total": 47,
    "next": [
     {
      "date": "2026-12-11",
@@ -539,7 +582,7 @@
     },
     {
      "date": "2027-03-05",
-     "time": "",
+     "time": "19:30",
      "title": "Teddy Swims - The UGLY Tour, Platinum tickets",
      "venue": "Avicii Arena",
      "city": "Stockholm",
@@ -586,60 +629,7 @@
      "url": "https://www.ticketmaster.dk/event/teddy-swims-the-ugly-tour-%7C-vinyl-room-package-billetter/2080028926"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
-   "source": "Ticketmaster artist page"
-  },
-  {
-   "name": "Ed Sheeran",
-   "tmId": "1560779",
-   "url": "https://www.ticketmaster.com/ed-sheeran-tickets/artist/1560779",
-   "status": "no-dates",
-   "total": 0,
-   "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
-   "source": "Ticketmaster artist page"
-  },
-  {
-   "name": "Ella Langley",
-   "tmId": "2514177",
-   "url": "https://www.ticketmaster.com/ella-langley-tickets/artist/2514177",
-   "status": "touring",
-   "total": 2,
-   "next": [
-    {
-     "date": "2027-04-18",
-     "time": "11:00",
-     "title": "Friends of Georgetown Parks and REC. Presents Two Step Inn",
-     "venue": "San Gabriel Park",
-     "city": "Georgetown",
-     "state": "TX",
-     "country": "US",
-     "mi": false,
-     "area": "",
-     "milesFromTC": 1174,
-     "postponed": false,
-     "soldOut": false,
-     "onSale": "2026-09-25T18:00:00Z",
-     "url": "https://on.fgtix.com/trk/iXnT"
-    },
-    {
-     "date": "2027-05-29",
-     "time": "18:00",
-     "title": "Patriotic Festival",
-     "venue": "Virginia Beach Oceanfront",
-     "city": "Virginia Beach",
-     "state": "VA",
-     "country": "US",
-     "mi": false,
-     "area": "",
-     "milesFromTC": 744,
-     "postponed": false,
-     "soldOut": false,
-     "onSale": "2026-06-03T13:00:00Z",
-     "url": "https://on.fgtix.com/trk/c5snc"
-    }
-   ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -649,7 +639,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -659,7 +649,27 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
+   "source": "Ticketmaster artist page"
+  },
+  {
+   "name": "Ed Sheeran",
+   "tmId": "1560779",
+   "url": "https://www.ticketmaster.com/ed-sheeran-tickets/artist/1560779",
+   "status": "no-dates",
+   "total": 0,
+   "next": [],
+   "checked": "2026-11-27T05:20:50-05:00",
+   "source": "Ticketmaster artist page"
+  },
+  {
+   "name": "The Weeknd",
+   "tmId": "1697014",
+   "url": "https://www.ticketmaster.com/the-weeknd-tickets/artist/1697014",
+   "status": "no-dates",
+   "total": 0,
+   "next": [],
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -702,7 +712,7 @@
      "url": "https://www.ticketmaster.co.uk/american-express-presents-bst-hyde-park-london-03-07-2027/event/37006572FDC89E8F"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -712,7 +722,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -722,7 +732,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -732,7 +742,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -871,7 +881,7 @@
      "url": "https://www.ticketmaster.no/event/shuttlebuss-til-unity-arena-sombr-08052027-billetter/1246544227"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -983,11 +993,11 @@
      "title": "KATSEYE: THE WILDWORLD TOUR-MANILA",
      "venue": "SM Mall of Asia Arena",
      "city": "Pasay",
-     "state": "",
+     "state": "PH-00",
      "country": "PH",
      "mi": false,
      "area": "",
-     "milesFromTC": null,
+     "milesFromTC": 8013,
      "postponed": false,
      "soldOut": false,
      "onSale": "2026-11-13T04:00:00Z",
@@ -999,18 +1009,18 @@
      "title": "KATSEYE: THE WILDWORLD TOUR-MANILA",
      "venue": "SM Mall of Asia Arena",
      "city": "Pasay",
-     "state": "",
+     "state": "PH-00",
      "country": "PH",
      "mi": false,
      "area": "",
-     "milesFromTC": null,
+     "milesFromTC": 8013,
      "postponed": false,
      "soldOut": false,
      "onSale": "2026-11-23T06:00:00Z",
      "url": "https://ticketmaster.ph/ticket/area/27ph_katseye/4066"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1020,7 +1030,98 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
+   "source": "Ticketmaster artist page"
+  },
+  {
+   "name": "Audrey Hobert",
+   "tmId": "3919869",
+   "url": "https://www.ticketmaster.com/audrey-hobert-tickets/artist/3919869",
+   "status": "touring",
+   "total": 5,
+   "next": [
+    {
+     "date": "2027-02-13",
+     "time": "18:30",
+     "title": "Charli xcx - Music, Fashion, Film Tour",
+     "venue": "3Arena",
+     "city": "Dublin",
+     "state": "",
+     "country": "IE",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 3454,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-09-18T08:00:00Z",
+     "url": "https://www.ticketmaster.ie/charli-xcx-music-fashion-film-tour-dublin-13-02-2027/event/1800652981CD3494"
+    },
+    {
+     "date": "2027-02-15",
+     "time": "18:30",
+     "title": "Charli xcx - Music, Fashion, Film Tour",
+     "venue": "OVO Hydro",
+     "city": "Glasgow",
+     "state": "",
+     "country": "GB",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 3454,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-09-18T08:00:00Z",
+     "url": "https://www.ticketmaster.co.uk/charli-xcx-music-fashion-film-tour-glasgow-15-02-2027/event/360065298E962A11"
+    },
+    {
+     "date": "2027-02-19",
+     "time": "18:30",
+     "title": "Charli xcx - Music, Fashion, Film Tour",
+     "venue": "The O2",
+     "city": "London",
+     "state": "",
+     "country": "GB",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 3746,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-09-18T08:00:00Z",
+     "url": "https://www.ticketmaster.co.uk/charli-xcx-music-fashion-film-tour-london-19-02-2027/event/35006528AA7822A9"
+    },
+    {
+     "date": "2027-02-20",
+     "time": "18:30",
+     "title": "Charli xcx - Music, Fashion, Film Tour",
+     "venue": "The O2",
+     "city": "London",
+     "state": "",
+     "country": "GB",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 3746,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-09-18T08:00:00Z",
+     "url": "https://www.ticketmaster.co.uk/charli-xcx-music-fashion-film-tour-london-20-02-2027/event/3500652AA3A04876"
+    },
+    {
+     "date": "2027-02-22",
+     "time": "20:00",
+     "title": "Charli xcx - Music, Fashion, Film Tour",
+     "venue": "Ziggo Dome",
+     "city": "Amsterdam",
+     "state": "",
+     "country": "NL",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 3899,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-09-18T08:00:00Z",
+     "url": "https://www.ticketmaster.nl/event/charli-xcx-music-fashion-film-tour-tickets/763107448"
+    }
+   ],
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1030,17 +1131,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
-   "source": "Ticketmaster artist page"
-  },
-  {
-   "name": "The Weeknd",
-   "tmId": "1697014",
-   "url": "https://www.ticketmaster.com/the-weeknd-tickets/artist/1697014",
-   "status": "no-dates",
-   "total": 0,
-   "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1048,7 +1139,7 @@
    "tmId": "2119390",
    "url": "https://www.ticketmaster.com/post-malone-tickets/artist/2119390",
    "status": "touring",
-   "total": 3,
+   "total": 5,
    "next": [
     {
      "date": "2026-12-09",
@@ -1083,6 +1174,38 @@
      "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7Skb"
     },
     {
+     "date": "2027-03-26",
+     "time": "",
+     "title": "Abono Ascendente 3 días Tecate Pal Norte 2027",
+     "venue": "Parque Fundidora",
+     "city": "Monterrey",
+     "state": "NL",
+     "country": "MX",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 1552,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-12-01T20:00:00Z",
+     "url": "https://www.ticketmaster.com.mx/abono-ascendente-3-dias-tecate-pal-monterrey-26-03-2027/event/14006557A00A5E8B"
+    },
+    {
+     "date": "2027-03-26",
+     "time": "",
+     "title": "Abono VIP 3 días Tecate Pal Norte 2027",
+     "venue": "Parque Fundidora",
+     "city": "Monterrey",
+     "state": "NL",
+     "country": "MX",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 1552,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-12-01T20:00:00Z",
+     "url": "https://www.ticketmaster.com.mx/abono-vip-3-dias-tecate-pal-monterrey-26-03-2027/event/1400655798DD4EB0"
+    },
+    {
      "date": "2027-04-11",
      "time": "12:00",
      "title": "Pilgrimage Music and Cultural Festival",
@@ -1099,7 +1222,7 @@
      "url": "https://on.fgtix.com/trk/VxTM"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1109,7 +1232,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1248,7 +1371,7 @@
      "url": "https://www.ticketmaster.com/alex-warren-finding-more-family-on-oklahoma-city-oklahoma-04-05-2027/event/0C00656B99576487"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1258,7 +1381,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1268,7 +1391,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1339,7 +1462,7 @@
      "milesFromTC": 9812,
      "postponed": false,
      "soldOut": false,
-     "onSale": "2026-05-22T01:00:00Z",
+     "onSale": "2026-01-30T00:00:00Z",
      "url": "https://www.ticketmaster.com.au/harry-styles-together-together-docklands-04-12-2026/event/25006436CFE9E468"
     },
     {
@@ -1407,7 +1530,7 @@
      "url": "https://seatgeek.com/harry-styles-tickets/glendale-arizona-state-farm-stadium-2027-04-03-7-45-pm/concert/18577793"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1417,7 +1540,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1556,98 +1679,125 @@
      "url": "https://www.ticketmaster.es/event/karol-g-viajando-por-el-mundo-tropitour-entradas/977013223"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
-   "name": "Audrey Hobert",
-   "tmId": "3919869",
-   "url": "https://www.ticketmaster.com/audrey-hobert-tickets/artist/3919869",
+   "name": "David Guetta",
+   "tmId": "1109508",
+   "url": "https://www.ticketmaster.com/david-guetta-tickets/artist/1109508",
    "status": "touring",
-   "total": 5,
+   "total": 2,
    "next": [
     {
-     "date": "2027-02-13",
-     "time": "18:30",
-     "title": "Charli xcx - Music, Fashion, Film Tour",
-     "venue": "3Arena",
-     "city": "Dublin",
-     "state": "",
-     "country": "IE",
+     "date": "2026-12-31",
+     "time": "21:00",
+     "title": "Fontainebleau Presents: DAVID GUETTA - NEW YEAR'S EVE 2027",
+     "venue": "Fontainebleau Miami Beach",
+     "city": "Miami Beach",
+     "state": "FL",
+     "country": "US",
      "mi": false,
      "area": "",
-     "milesFromTC": 3454,
+     "milesFromTC": 1344,
      "postponed": false,
      "soldOut": false,
-     "onSale": "2026-09-18T08:00:00Z",
-     "url": "https://www.ticketmaster.ie/charli-xcx-music-fashion-film-tour-dublin-13-02-2027/event/1800652981CD3494"
+     "onSale": "2026-11-02T22:35:00Z",
+     "url": "https://www.ticketweb.com/event/fontainebleau-presents-david-guetta-fontainebleau-miami-beach-tickets/14413824"
     },
     {
-     "date": "2027-02-15",
-     "time": "18:30",
-     "title": "Charli xcx - Music, Fashion, Film Tour",
-     "venue": "OVO Hydro",
-     "city": "Glasgow",
-     "state": "",
-     "country": "GB",
+     "date": "2027-05-08",
+     "time": "21:00",
+     "title": "David Guetta",
+     "venue": "Estadio GNP Seguros",
+     "city": "Ciudad de México",
+     "state": "CDMX",
+     "country": "MX",
      "mi": false,
      "area": "",
-     "milesFromTC": 3454,
+     "milesFromTC": 1915,
      "postponed": false,
      "soldOut": false,
-     "onSale": "2026-09-18T08:00:00Z",
-     "url": "https://www.ticketmaster.co.uk/charli-xcx-music-fashion-film-tour-glasgow-15-02-2027/event/360065298E962A11"
-    },
-    {
-     "date": "2027-02-19",
-     "time": "18:30",
-     "title": "Charli xcx - Music, Fashion, Film Tour",
-     "venue": "The O2",
-     "city": "London",
-     "state": "",
-     "country": "GB",
-     "mi": false,
-     "area": "",
-     "milesFromTC": 3746,
-     "postponed": false,
-     "soldOut": false,
-     "onSale": "2026-09-18T08:00:00Z",
-     "url": "https://www.ticketmaster.co.uk/charli-xcx-music-fashion-film-tour-london-19-02-2027/event/35006528AA7822A9"
-    },
-    {
-     "date": "2027-02-20",
-     "time": "18:30",
-     "title": "Charli xcx - Music, Fashion, Film Tour",
-     "venue": "The O2",
-     "city": "London",
-     "state": "",
-     "country": "GB",
-     "mi": false,
-     "area": "",
-     "milesFromTC": 3746,
-     "postponed": false,
-     "soldOut": false,
-     "onSale": "2026-09-18T08:00:00Z",
-     "url": "https://www.ticketmaster.co.uk/charli-xcx-music-fashion-film-tour-london-20-02-2027/event/3500652AA3A04876"
-    },
-    {
-     "date": "2027-02-22",
-     "time": "20:00",
-     "title": "Charli xcx - Music, Fashion, Film Tour",
-     "venue": "Ziggo Dome",
-     "city": "Amsterdam",
-     "state": "",
-     "country": "NL",
-     "mi": false,
-     "area": "",
-     "milesFromTC": 3899,
-     "postponed": false,
-     "soldOut": false,
-     "onSale": "2026-09-18T08:00:00Z",
-     "url": "https://www.ticketmaster.nl/event/charli-xcx-music-fashion-film-tour-tickets/763107448"
+     "onSale": "2026-11-06T20:00:00Z",
+     "url": "https://www.ticketmaster.com.mx/david-guetta-ciudad-de-mexico-08-05-2027/event/14006538B6C8B41D"
     }
    ],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
+   "source": "Ticketmaster artist page"
+  },
+  {
+   "name": "Marshmello",
+   "tmId": "2193605",
+   "url": "https://www.ticketmaster.com/marshmello-tickets/artist/2193605",
+   "status": "touring",
+   "total": 4,
+   "next": [
+    {
+     "date": "2026-12-30",
+     "time": "21:00",
+     "title": "Marshmello",
+     "venue": "Armory",
+     "city": "Minneapolis",
+     "state": "MN",
+     "country": "US",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 374,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-11-06T16:00:00Z",
+     "url": "https://www.ticketmaster.com/marshmello-minneapolis-minnesota-12-30-2026/event/0600655DF05EE809"
+    },
+    {
+     "date": "2027-03-26",
+     "time": "16:00",
+     "title": "Ultra Music Festival",
+     "venue": "FPL Solar Amphitheater at Bayfront Park",
+     "city": "Miami",
+     "state": "FL",
+     "country": "US",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 1346,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-10-14T16:14:00Z",
+     "url": "https://on.fgtix.com/trk/DDCK"
+    },
+    {
+     "date": "2027-03-27",
+     "time": "16:00",
+     "title": "Ultra Music Festival",
+     "venue": "FPL Solar Amphitheater at Bayfront Park",
+     "city": "Miami",
+     "state": "FL",
+     "country": "US",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 1346,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-10-14T16:15:00Z",
+     "url": "https://on.fgtix.com/trk/DDCK"
+    },
+    {
+     "date": "2027-03-28",
+     "time": "16:00",
+     "title": "Ultra Music Festival",
+     "venue": "FPL Solar Amphitheater at Bayfront Park",
+     "city": "Miami",
+     "state": "FL",
+     "country": "US",
+     "mi": false,
+     "area": "",
+     "milesFromTC": 1346,
+     "postponed": false,
+     "soldOut": false,
+     "onSale": "2026-10-14T16:15:00Z",
+     "url": "https://on.fgtix.com/trk/DDCK"
+    }
+   ],
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   },
   {
@@ -1657,23 +1807,7 @@
    "status": "no-dates",
    "total": 0,
    "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
-   "source": "Ticketmaster artist page"
-  },
-  {
-   "name": "Miley Cyrus",
-   "status": "not-found",
-   "checked": "2026-11-25T04:30:27-05:00",
-   "next": []
-  },
-  {
-   "name": "Beyoncé",
-   "tmId": "894191",
-   "url": "https://www.ticketmaster.com/beyonce-tickets/artist/894191",
-   "status": "no-dates",
-   "total": 0,
-   "next": [],
-   "checked": "2026-11-25T04:30:27-05:00",
+   "checked": "2026-11-27T05:20:50-05:00",
    "source": "Ticketmaster artist page"
   }
  ],
@@ -1707,7 +1841,9 @@
   "Lizzo": "1948208",
   "Beyoncé": "894191",
   "Jonas Brothers": "1052712",
-  "Karol G": "2412593"
+  "Karol G": "2412593",
+  "David Guetta": "1109508",
+  "Marshmello": "2193605"
  },
  "errors": {},
  "tookSec": 98.8

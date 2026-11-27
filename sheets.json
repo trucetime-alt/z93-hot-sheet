@@ -1,5 +1,5 @@
 {
- "latest": "2026-11-25",
+ "latest": "2026-11-27",
  "dates": [
   {
    "date": "2026-11-13",
@@ -175,13 +175,33 @@
     "tg08-elr-fish-and-fowl.mp3"
    ],
    "main": true
+  },
+  {
+   "date": "2026-11-27",
+   "br": false,
+   "audio": true,
+   "files": [
+    "c00-opener-supercut.mp3",
+    "c01-today-macys-parade-postponed.mp3",
+    "c02-lions-campbell-dont-ruin-thanksgiving.mp3",
+    "c03-nfl-bears-game-winner-call.mp3",
+    "c04-today-steelers-release-rodgers.mp3",
+    "c05-inside-edition-turkeys-chase-woman.mp3",
+    "c06-fallon-mom-guilt-guide.mp3",
+    "c07-meyers-hoda-parade-postponed.mp3",
+    "c08-fallon-bargatze-applebees-anniversary.mp3",
+    "c09-fallon-bargatze-pepcid.mp3",
+    "c10-today-al-roker-butter-man-2019.mp3",
+    "c11-abc-fedex-jet-overruns-runway.mp3"
+   ],
+   "main": true
   }
  ],
  "clipFirst": {
-  "file:speed-english.mp3": "2026-11-13",
-  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:doberman-swns.mp3": "2026-11-13",
   "file:speed-soty.mp3": "2026-11-13",
+  "file:speed-english.mp3": "2026-11-13",
+  "file:stable-ronaldo-speech.mp3": "2026-11-13",
   "file:c01-st-brown-56-td.mp3": "2026-11-16",
   "id:2026-11-16-c01": "2026-11-16",
   "file:c02-snl-thanksgiving-song-v2.mp3": "2026-11-16",
@@ -352,7 +372,30 @@
   "file:tg07-campbell-lions-bears.mp3": "2026-11-25",
   "id:2026-11-25-tg07-campbell-lions-bears": "2026-11-25",
   "file:tg08-elr-fish-and-fowl.mp3": "2026-11-25",
-  "id:2026-11-25-tg08-elr-fish-and-fowl": "2026-11-25"
+  "id:2026-11-25-tg08-elr-fish-and-fowl": "2026-11-25",
+  "id:2026-11-27-c00": "2026-11-27",
+  "file:c01-today-macys-parade-postponed.mp3": "2026-11-27",
+  "id:2026-11-27-c01": "2026-11-27",
+  "file:c02-lions-campbell-dont-ruin-thanksgiving.mp3": "2026-11-27",
+  "id:2026-11-27-c02": "2026-11-27",
+  "file:c03-nfl-bears-game-winner-call.mp3": "2026-11-27",
+  "id:2026-11-27-c03": "2026-11-27",
+  "file:c04-today-steelers-release-rodgers.mp3": "2026-11-27",
+  "id:2026-11-27-c04": "2026-11-27",
+  "file:c05-inside-edition-turkeys-chase-woman.mp3": "2026-11-27",
+  "id:2026-11-27-c05": "2026-11-27",
+  "file:c06-fallon-mom-guilt-guide.mp3": "2026-11-27",
+  "id:2026-11-27-c06": "2026-11-27",
+  "file:c07-meyers-hoda-parade-postponed.mp3": "2026-11-27",
+  "id:2026-11-27-c07": "2026-11-27",
+  "file:c08-fallon-bargatze-applebees-anniversary.mp3": "2026-11-27",
+  "id:2026-11-27-c08": "2026-11-27",
+  "file:c09-fallon-bargatze-pepcid.mp3": "2026-11-27",
+  "id:2026-11-27-c09": "2026-11-27",
+  "file:c10-today-al-roker-butter-man-2019.mp3": "2026-11-27",
+  "id:2026-11-27-c10": "2026-11-27",
+  "file:c11-abc-fedex-jet-overruns-runway.mp3": "2026-11-27",
+  "id:2026-11-27-c11": "2026-11-27"
  },
  "clipHistory": {
   "2026-11-13": {
@@ -405,6 +448,9 @@
    "repeats": []
   },
   "2026-11-25": {
+   "repeats": []
+  },
+  "2026-11-27": {
    "repeats": []
   }
  }

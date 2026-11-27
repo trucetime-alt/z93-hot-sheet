@@ -1,7 +1,7 @@
 {
  "version": 1,
- "for": "2026-11-27",
- "built_from": "2026-11-25",
+ "for": "2026-11-30",
+ "built_from": "2026-11-27",
  "note": "Built from schedules and data files only; no research.",
  "items": [
   {
@@ -57,7 +57,7 @@
    "kind": "clock",
    "time": "08:30",
    "host": "truce",
-   "title": "Off the Charts",
+   "title": "Main Character",
    "src": "station.json"
   },
   {
@@ -152,6 +152,12 @@
    "src": "station.json"
   },
   {
+   "kind": "giveaway",
+   "title": "Jonas Brothers Ticket Giveaway: listening appointments 07:00, 11:00, 16:00",
+   "note": "Three pairs of tickets to the Jonas Brothers show, Tuesday Dec 15",
+   "src": "giveaways.json"
+  },
+  {
    "kind": "sponsor",
    "host": "truce",
    "title": "💳 Forefront Credit Union read",
@@ -167,23 +173,24 @@
   {
    "kind": "sponsor",
    "host": "courtney",
-   "title": "🥪 Jimmy John's read",
-   "note": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
+   "title": "🎬 Devette & Ford Insurance Agency read",
+   "note": "Weekend movie recap and must-see movies, presented by Devette & Ford Insurance Agency. From the website, confirm with the hourly log.",
    "src": "sponsors.json"
   },
   {
    "kind": "sponsor",
    "host": "courtney",
-   "title": "💛 MI Health & Wellness Center read",
-   "note": "Uplifting story to start the weekend, presented by MI Health & Wellness Center. From the website, confirm with the hourly log.",
+   "title": "🥪 Jimmy John's read",
+   "note": "Courtney's Lunchbox, the all-request hour from noon to 1 PM, with a chance to win Jimmy John's subs. From the website, confirm with the hourly log.",
    "src": "sponsors.json"
   },
   {
-   "kind": "sponsor",
-   "host": "truce",
-   "title": "⛷️ Shanty Creek Resort (Schuss Mountain) read",
-   "note": "Z93 Off the Charts is brought to you by Schuss Mountain at Shanty Creek Resort. Trade your screen time for ski time at Northern Michigan's most authentic ski re",
-   "src": "sponsors.json"
+   "kind": "segment",
+   "time": "Monday recap",
+   "host": "courtney",
+   "title": "Weekend movies / must-see",
+   "note": "Devette & Ford Insurance Agency",
+   "src": "schedules.json"
   },
   {
    "kind": "segment",
@@ -217,14 +224,6 @@
   },
   {
    "kind": "segment",
-   "time": "Friday",
-   "host": "courtney",
-   "title": "Uplifting story to start the weekend",
-   "note": "MI Health & Wellness Center",
-   "src": "schedules.json"
-  },
-  {
-   "kind": "segment",
    "time": "2:20 PM",
    "host": "callie",
    "title": "93 Minutes commercial-free",
@@ -240,39 +239,34 @@
    "src": "schedules.json"
   },
   {
-   "kind": "day",
-   "title": "Native American Heritage Day",
-   "src": "days.json"
+   "kind": "birthday",
+   "title": "Jane Paknia, American musician (2000)",
+   "note": "unverified (Wikipedia)",
+   "src": "https://en.wikipedia.org/wiki/Jane_Paknia"
   },
   {
    "kind": "birthday",
-   "title": "Adéla Jergová, Slovak singer-songwriter (2003)",
+   "title": "Grant Williams, American basketball player (1998)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Ad%C3%A9la"
+   "src": "https://en.wikipedia.org/wiki/Grant_Williams_(basketball)"
   },
   {
    "kind": "birthday",
-   "title": "Zoe Colletti, American actress (2001)",
+   "title": "Lancey Foux, British rapper and singer (1995)",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Zoe_Colletti"
-  },
-  {
-   "kind": "birthday",
-   "title": "Mike Williams, Dutch DJ and record producer (1996)",
-   "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Mike_Williams_(DJ)"
+   "src": "https://en.wikipedia.org/wiki/Lancey_Foux"
   },
   {
    "kind": "thisday",
-   "title": "2009: Lady Gaga performed the first concert of The Monster Ball Tour, which became the highest-grossing tour in history for a debut headlining artist.",
+   "title": "2021: Barbados, a Commonwealth realm for 55 years since gaining independence on this day in 1966, became a republic, with Sandra Mason (pictured) taking office as the inaugural President of Barbados.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Lady_Gaga"
+   "src": "https://en.wikipedia.org/wiki/Barbados"
   },
   {
    "kind": "thisday",
-   "title": "2001: Astronomers announced the detection of sodium in the atmosphere of the extrasolar planet HD 209458 b, the first exoplanet atmosphere to be measured.",
+   "title": "1979: The Wall, a rock opera and concept album by the English band Pink Floyd, was first released.",
    "note": "unverified (Wikipedia)",
-   "src": "https://en.wikipedia.org/wiki/Sodium"
+   "src": "https://en.wikipedia.org/wiki/The_Wall"
   },
   {
    "kind": "flashback",

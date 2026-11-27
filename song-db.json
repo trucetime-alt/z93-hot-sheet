@@ -1,7 +1,7 @@
 {
 "version": 1,
 "note": "Built by next/tools/build_song_db.py from songs.json + past sheets (+ app queue). background is filled by Hot Sheet's 4 AM pass for songs with needs_background.",
-"count": 138,
+"count": 141,
 "songs": [
 {
 "id": "california-love-2pac-ft-dr-dre",
@@ -257,6 +257,17 @@
 "used": [],
 "source": "https://en.wikipedia.org/wiki/Lovely_(Billie_Eilish_and_Khalid_song)",
 "pool": "vibe"
+},
+{
+"id": "back-at-one-brian-mcknight",
+"artist": "BRIAN MCKNIGHT",
+"title": "BACK AT ONE",
+"year": 1999,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-27"
+]
 },
 {
 "id": "baby-one-more-time-britney-spears",
@@ -853,6 +864,17 @@
 "pool": "flash"
 },
 {
+"id": "all-i-want-for-christmas-is-you-mariah-carey",
+"artist": "Mariah Carey",
+"title": "All I Want for Christmas Is You",
+"year": 1994,
+"chart_peak": "Billboard Hot 100 No. 1",
+"background": "Mariah wrote and produced it with Walter Afanasieff for her first holiday album, Merry Christmas, and Columbia released it Oct. 29, 1994. It was a hit right away overseas, but streaming turned it into a yearly comeback that finally reached No. 1 on the Hot 100 in December 2019.",
+"used": [
+"2026-11-27"
+]
+},
+{
 "id": "hero-mariah-carey",
 "artist": "MARIAH CAREY",
 "title": "HERO",
@@ -960,6 +982,17 @@
 "background": "",
 "used": [
 "2026-11-20"
+]
+},
+{
+"id": "friday-i-m-in-love-mood-boost-the-cure",
+"artist": "MOOD BOOST: THE CURE",
+"title": "FRIDAY I'M IN LOVE",
+"year": 1992,
+"chart_peak": "",
+"background": "",
+"used": [
+"2026-11-27"
 ]
 },
 {
