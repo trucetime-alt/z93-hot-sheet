@@ -1,8 +1,8 @@
 {
  "version": 1,
- "updated": "2026-11-27T06:38:23-05:00",
+ "updated": "2026-11-28T08:57:29-05:00",
  "region": "Detroit, Grand Rapids, Lansing, Kalamazoo, Northern Michigan",
- "artistsWatched": 337,
+ "artistsWatched": 355,
  "sources": {
   "ticketmaster": {
    "status": "skipped",
@@ -73,11 +73,11 @@
   },
   "googleNews": {
    "status": "ok",
-   "count": 185
+   "count": 142
   },
   "announcementsDropped": {
    "olderThanDays": 14,
-   "count": 183
+   "count": 142
   }
  },
  "shows": [
@@ -92,7 +92,7 @@
    "region": "Northern Michigan",
    "date": "2026-12-06",
    "time": "19:30",
-   "daysOut": 9,
+   "daysOut": 8,
    "window": "soon",
    "onSale": "",
    "presale": [],
@@ -102,21 +102,6 @@
    "why": "big local venue"
   }
  ],
- "announcements": [
-  {
-   "title": "KATSEYE reschedules postponed 'THE WILDWORLD TOUR' shows: Chicago on January 6, Detroit on January 8 and Minneapolis on January 10. - Complex",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1RMG9aYnIxWGlTdkVUS1pWSWh0MEY3VDNCVVNiV1V4TjhDaDhneURtcEZTLWxianBtTWgzOE1CTlNnR3pVSTVTbVRJYjRSMEtjSE1vcExNelROZXQ5dVBKWVY0Z2RSMEtEOEE?oc=5",
-   "at": "2026-11-25T01:45:01+00:00",
-   "src": "Complex",
-   "artists": [
-    "KATSEYE"
-   ],
-   "priority": 60,
-   "ageDays": 2.4,
-   "pub": "2026-11-24",
-   "old": false,
-   "alsoCovered": 1
-  }
- ],
- "tookSec": 29.8
+ "announcements": [],
+ "tookSec": 31.9
 }
